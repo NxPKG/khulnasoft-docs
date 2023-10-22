@@ -1,0 +1,46 @@
+{
+  "affected": {
+    "defaultBase": "main"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {
+        "useLightClient": true
+      }
+    }
+  },
+  "workspaceLayout": {
+    "appsDir": "e2e",
+    "libsDir": "packages"
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build", "build-base"],
+      "cache": true
+    },
+    "lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+      "cache": true
+    },
+    "e2e": {
+      "dependsOn": ["^build"],
+      "cache": true
+    },
+    "publish": {
+      "dependsOn": ["build"]
+    },
+    "build-base": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    }
+  },
+  "nxCloudAccessToken": "ZTI4MGQyN2EtZDkwNi00NDVlLTg4Y2QtZmM0NGQ0OWEyYmE3fHJlYWQtd3JpdGU=",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "sharedGlobals": [],
+    "production": ["default"]
+  }
+}
