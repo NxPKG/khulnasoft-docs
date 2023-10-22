@@ -9,11 +9,11 @@ meta:
 
 # Limits
 
-Cloudflare GraphQL API exposes more than 70 datasets representing products with
+Khulnasoft GraphQL API exposes more than 70 datasets representing products with
 different configurations and data availability for different zones and accounts
 plans.
 
-To support this variety of products, Cloudflare GraphQL API has three layers of
+To support this variety of products, Khulnasoft GraphQL API has three layers of
 limits:
 
 * global limits
@@ -29,13 +29,13 @@ These limits are applied to every query for every plan:
 
 ## User limits
 
-Cloudflare GraphQL API limits the number of GraphQL requests each user can send.
+Khulnasoft GraphQL API limits the number of GraphQL requests each user can send.
 The default quota is **300 GraphQL queries over 5-minute window**. It allows a
 user to run at least **1 query every second** or do a burst of 300 queries and
 then wait 5 minutes before issuing another query.
 
 That rate limit is applied in addition to the general rate limits enforced by
-the Cloudflare API.
+the Khulnasoft API.
 
 ## Node limits and availability
 

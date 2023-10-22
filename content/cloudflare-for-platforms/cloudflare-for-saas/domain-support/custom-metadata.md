@@ -33,7 +33,7 @@ You may add custom metadata to Cloudflare via the Custom Hostnames API. This dat
 
 ```bash
 $ curl -sXPATCH \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/custom_hostnames/<HOSTNAME_ID>" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/custom_hostnames/<HOSTNAME_ID>" \
 -H "X-Auth-Email: {email}" \
 -H "X-Auth-Key: {key}" \
 -H "Content-Type: application/json" \

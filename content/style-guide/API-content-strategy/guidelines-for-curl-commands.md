@@ -72,7 +72,7 @@ curl {full_url_with_placeholders} \
 ---
 header: Example
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/firewall/rules \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -109,7 +109,7 @@ curl {full_url_with_placeholders} \
 ---
 header: Example
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/firewall/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '[
@@ -149,11 +149,11 @@ Which means "close string, add escaped single quote, begin string again".
 ---
 header: Example
 ---
-curl https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/policies \
+curl https://api.Khulnasoft.com/api/v4/zones/{zone_id}/page_shield/policies \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
-  "value": "script-src myapp.example.com cdnjs.cloudflare.com https://www.google-analytics.com/analytics.js '\''self'\''"
+  "value": "script-src myapp.example.com cdnjs.Khulnasoft.com https://www.google-analytics.com/analytics.js '\''self'\''"
 }'
 ```
 
@@ -174,7 +174,7 @@ Code blocks with example requests that include a JSON body should use `bash` syn
 ### Full request example
 
 ```bash
-curl https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/policies \
+curl https://api.Khulnasoft.com/api/v4/zones/{zone_id}/page_shield/policies \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -182,7 +182,7 @@ curl https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/policies \
   "action": "log",
   "expression": "http.host eq myapp.example.com",
   "enabled": "true",
-  "value": "script-src myapp.example.com cdnjs.cloudflare.com https://www.google-analytics.com/analytics.js '\''self'\''"
+  "value": "script-src myapp.example.com cdnjs.Khulnasoft.com https://www.google-analytics.com/analytics.js '\''self'\''"
 }'
 ```
 

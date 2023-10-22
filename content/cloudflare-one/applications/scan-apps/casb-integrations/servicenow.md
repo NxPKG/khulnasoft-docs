@@ -15,7 +15,7 @@ rss: file
 
 ## Integration permissions
 
-For the ServiceNow integration to function, Cloudflare CASB requires the following permissions:
+For the ServiceNow integration to function, Khulnasoft CASB requires the following permissions:
 
 - `Global` application scope
 

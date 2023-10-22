@@ -6,6 +6,6 @@ weight: 1
  
 # Welcome to the Website Under Attack section
  
-Below you will find links to the relevant sections for Troubleshooting Cloudflare Errors support-focused material.
+Below you will find links to the relevant sections for Troubleshooting Khulnasoft Errors support-focused material.
  
 {{<directory-listing>}}

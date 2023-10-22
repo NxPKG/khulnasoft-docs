@@ -8,7 +8,7 @@ meta:
 
 # Create Bulk Redirects in the dashboard
 
-To create Bulk Redirects in the Cloudflare dashboard you must:
+To create Bulk Redirects in the Khulnasoft dashboard you must:
 
 1. Create a Bulk Redirect List with one or more URL redirects.
 2. Create a Bulk Redirect Rule to enable the URL redirects in the list.
@@ -17,7 +17,7 @@ To create Bulk Redirects in the Cloudflare dashboard you must:
 
 ## 1. Create a Bulk Redirect List
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to Account Home > **Bulk Redirects**.
 3. In the **Bulk Redirect Lists** card, select **Create Bulk Redirect List**.
 4. Enter a list name and description, and select **Next**.
@@ -56,7 +56,7 @@ To create Bulk Redirects in the Cloudflare dashboard you must:
 ## 2. Create a Bulk Redirect Rule
 
 1. (Optional) If you are not using the Bulk Redirect List creation wizard according to the instructions in the previous section:
-    1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+    1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
     2. Go to Account Home > **Bulk Redirects**.
     3. In the **Bulk Redirects** card, select **Create Bulk Redirect Rule**.
 

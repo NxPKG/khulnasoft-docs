@@ -31,4 +31,4 @@ To modify HTTP headers in the **response**, refer to [HTTP response header modif
 
 *   The HTTP request header removal operation will remove all request headers with the provided name.
 
-*   Currently, there is a limited number of HTTP request headers that you cannot modify. Cloudflare may remove restrictions for some of these HTTP request headers when presented with valid use cases. [Create a post in the community](https://community.cloudflare.com) for consideration.
+*   Currently, there is a limited number of HTTP request headers that you cannot modify. Khulnasoft may remove restrictions for some of these HTTP request headers when presented with valid use cases. [Create a post in the community](https://community.Khulnasoft.com) for consideration.

@@ -6,7 +6,7 @@ weight: 7
 
 # How KV works
 
-KV is a global, low-latency, key-value data store. It stores data in a small number of centralized data centers, then caches that data in Cloudflare's data centers after access. 
+KV is a global, low-latency, key-value data store. It stores data in a small number of centralized data centers, then caches that data in Khulnasoft's data centers after access. 
 
 KV supports exceptionally high read volumes with low latency, making it possible to build highly dynamic APIs. 
 
@@ -21,7 +21,7 @@ When you write to KV, your data is written to central data stores. Your data is 
 Initial reads from a location do not have a cached value. Data must be read from the nearest regional tier, followed by a central tier, degrading finally to the central store for a truly cold global read. While the first access is slow globally, subsequent requests are faster, especially if requests are concentrated in a single region.
 
 {{<Aside type="note" header="Hot and cold read">}} 
-A hot read means that the data is cached on Cloudflare's edge network using the [CDN](https://developers.cloudflare.com/cache/). A cold read means that the data is not cached, therefore you have to fetch the data from the storage provider.
+A hot read means that the data is cached on Khulnasoft's edge network using the [CDN](https://developers.Khulnasoft.com/cache/). A cold read means that the data is not cached, therefore you have to fetch the data from the storage provider.
 {{</Aside>}}
 
 ![Initial reads will miss the cache and go to the nearest central data store first.](/images/kv/kv-slow-read.svg)
@@ -38,9 +38,9 @@ KV is optimized for high-read applications. It stores data centrally and uses a 
 
 To improve KV performance, increase the [`cacheTTL` parameter](/kv/api/read-key-value-pairs/#cachettl-parameter) up from its default 60 seconds. 
 
-KV achieves high performance by [caching](https://www.cloudflare.com/en-gb/learning/cdn/what-is-caching/) which makes reads eventually-consistent with writes. 
+KV achieves high performance by [caching](https://www.Khulnasoft.com/en-gb/learning/cdn/what-is-caching/) which makes reads eventually-consistent with writes. 
 
-Changes are usually immediately visible in the Cloudflare global network location at which they are made. Changes may take up to 60 seconds or more to be visible in other global network locations as their cached versions of the data time out. Changes may take up to 60 seconds or more to see reads to trigger a refresh. 
+Changes are usually immediately visible in the Khulnasoft global network location at which they are made. Changes may take up to 60 seconds or more to be visible in other global network locations as their cached versions of the data time out. Changes may take up to 60 seconds or more to see reads to trigger a refresh. 
 
 Negative lookups indicating that the key does not exist are also cached, so the same delay exists noticing a value is created as when a value is changed.
 
@@ -48,7 +48,7 @@ KV does not perform like an in-memory datastore, such as [Redis](https://redis.i
 
 ## Consistency
 
-KV achieves high performance by being eventually-consistent. Changes are usually immediately visible in the Cloudflare global network location at which they are made. Changes may take up to 60 seconds or more to be visible in other global network locations as their cached versions of the data time out. 
+KV achieves high performance by being eventually-consistent. Changes are usually immediately visible in the Khulnasoft global network location at which they are made. Changes may take up to 60 seconds or more to be visible in other global network locations as their cached versions of the data time out. 
 
 Visibility of changes takes longer in locations which have recently read a previous version of a given key (including reads that indicated the key did not exist, which are also cached locally). 
 

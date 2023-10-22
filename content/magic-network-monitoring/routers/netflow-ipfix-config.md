@@ -3,7 +3,7 @@ title: Netflow/IPFIX configuration
 pcx_content_type: how-to
 weight: 3
 meta:
-    description: A step-by-step configuration guide for exporting NetFlow or IPFIX data to Cloudflare’s network.
+    description: A step-by-step configuration guide for exporting NetFlow or IPFIX data to Khulnasoft’s network.
 ---
 
 # Netflow/IPFIX configuration

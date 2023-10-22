@@ -1,21 +1,21 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: french
-source: https://support.cloudflare.com/hc/fr-fr/articles/360054452251-Avis-d-abandon-Cloudflare-Mobile-SDK
-title: Avis d’abandon  Cloudflare Mobile SDK
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/360054452251-Avis-d-abandon-Khulnasoft-Mobile-SDK
+title: Avis d’abandon  Khulnasoft Mobile SDK
 ---
 
-# Avis d’abandon : Cloudflare Mobile SDK
+# Avis d’abandon : Khulnasoft Mobile SDK
 
-## Avis d’abandon : Cloudflare Mobile SDK
+## Avis d’abandon : Khulnasoft Mobile SDK
 
-_Cloudflare abandonne Mobile SDK. Vous ne pourrez plus vous connecter au portail, ni consulter les statistiques de votre application mobile après le 22 février 2021._
+_Khulnasoft abandonne Mobile SDK. Vous ne pourrez plus vous connecter au portail, ni consulter les statistiques de votre application mobile après le 22 février 2021._
 
 ___
 
-## Cloudflare abandonne le portail Mobile SDK 22 février 2021
+## Khulnasoft abandonne le portail Mobile SDK 22 février 2021
 
-Nous abandonnons l’application Mobile SDK de Cloudflare. Vous ne pourrez plus vous connecter au portail, ni consulter les statistiques de votre application mobile après le 22 février 2021.
+Nous abandonnons l’application Mobile SDK de Khulnasoft. Vous ne pourrez plus vous connecter au portail, ni consulter les statistiques de votre application mobile après le 22 février 2021.
 
 Nous savons que vous nous avez accordé une grande confiance en incluant Mobile SDK dans votre application, et nous ne prenons pas cette décision à la légère. Nous avons conçu Mobile SDK pour vous aider dans deux domaines : rendre votre application aussi rapide que possible, grâce au mode Acceleration, et comprendre les performances, grâce au mode Metrics.
 

@@ -8,21 +8,21 @@ inputParameters: editWord
 
 | Name                                                         | Description                                                                                                                                              |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Access: Apps and Policies Read                               | Grants read access to [Cloudflare Access](/cloudflare-one/policies/access/) account resources.                                                           |
-| Access: Apps and Policies Revoke                             | Grants ability to revoke all tokens to [Cloudflare Access](/cloudflare-one/policies/access/) account resources.                                          |
-| Access: Apps and Policies $1                               | Grants write access to [Cloudflare Access](/cloudflare-one/policies/access/) account resources.                                                          |
-| Access: Audit Logs Read                                      | Grants read access to [Cloudflare Access audit logs](/cloudflare-one/insights/logs/audit-logs/).                                                         |
-| Access: Custom Pages Read                                    | Grants read access to [Cloudflare Access Custom Pages](/cloudflare-one/policies/gateway/configuring-block-page/).                                        |
-| Access: Custom Pages $1                                    | Grants write access to [Cloudflare Access Custom Pages](/cloudflare-one/policies/gateway/configuring-block-page/).                                       |
-| Access: Device Posture Read                                  | Grants read access to [Cloudflare Access Device Posture](/cloudflare-one/identity/devices/).                                                             |
-| Access: Device Posture $1                                  | Grants write access to [Cloudflare Access Device Posture](/cloudflare-one/identity/devices/).                                                            |
-| Access: Mutual TLS Certificates Read                         | Grants read access to [Cloudflare Access mTLS certificates](/cloudflare-one/identity/devices/access-integrations/mutual-tls-authentication/).            |
-| Access: Mutual TLS Certificates $1                         | Grants write access to [Cloudflare Access mTLS certificates](/cloudflare-one/identity/devices/access-integrations/mutual-tls-authentication/).           |
-| Access: Organizations, Identity Providers, and Groups Read   | Grants read access to [Cloudflare Access account resources](/cloudflare-one/identity/).                                                                 |
-| Access: Organizations, Identity Providers, and Groups Revoke | Grants ability to revoke user sessions to [Cloudflare Access account resources](/cloudflare-one/identity/).                                              |
-| Access: Organizations, Identity Providers, and Groups $1   | Grants write access to [Cloudflare Access account resources](/cloudflare-one/identity/).                                                                 |
-| Access: Service Tokens Read                                  | Grants read access to [Cloudflare Access Service Tokens](/cloudflare-one/identity/service-tokens/).                                                      |
-| Access: Service Tokens $1                                  | Grants write access to [Cloudflare Access Service Tokens](/cloudflare-one/identity/service-tokens/).                                                     |
+| Access: Apps and Policies Read                               | Grants read access to [Khulnasoft Access](/cloudflare-one/policies/access/) account resources.                                                           |
+| Access: Apps and Policies Revoke                             | Grants ability to revoke all tokens to [Khulnasoft Access](/cloudflare-one/policies/access/) account resources.                                          |
+| Access: Apps and Policies $1                               | Grants write access to [Khulnasoft Access](/cloudflare-one/policies/access/) account resources.                                                          |
+| Access: Audit Logs Read                                      | Grants read access to [Khulnasoft Access audit logs](/cloudflare-one/insights/logs/audit-logs/).                                                         |
+| Access: Custom Pages Read                                    | Grants read access to [Khulnasoft Access Custom Pages](/cloudflare-one/policies/gateway/configuring-block-page/).                                        |
+| Access: Custom Pages $1                                    | Grants write access to [Khulnasoft Access Custom Pages](/cloudflare-one/policies/gateway/configuring-block-page/).                                       |
+| Access: Device Posture Read                                  | Grants read access to [Khulnasoft Access Device Posture](/cloudflare-one/identity/devices/).                                                             |
+| Access: Device Posture $1                                  | Grants write access to [Khulnasoft Access Device Posture](/cloudflare-one/identity/devices/).                                                            |
+| Access: Mutual TLS Certificates Read                         | Grants read access to [Khulnasoft Access mTLS certificates](/cloudflare-one/identity/devices/access-integrations/mutual-tls-authentication/).            |
+| Access: Mutual TLS Certificates $1                         | Grants write access to [Khulnasoft Access mTLS certificates](/cloudflare-one/identity/devices/access-integrations/mutual-tls-authentication/).           |
+| Access: Organizations, Identity Providers, and Groups Read   | Grants read access to [Khulnasoft Access account resources](/cloudflare-one/identity/).                                                                 |
+| Access: Organizations, Identity Providers, and Groups Revoke | Grants ability to revoke user sessions to [Khulnasoft Access account resources](/cloudflare-one/identity/).                                              |
+| Access: Organizations, Identity Providers, and Groups $1   | Grants write access to [Khulnasoft Access account resources](/cloudflare-one/identity/).                                                                 |
+| Access: Service Tokens Read                                  | Grants read access to [Khulnasoft Access Service Tokens](/cloudflare-one/identity/service-tokens/).                                                      |
+| Access: Service Tokens $1                                  | Grants write access to [Khulnasoft Access Service Tokens](/cloudflare-one/identity/service-tokens/).                                                     |
 | Access: SSH Auditing Read                                    | Grants read access to [SSH Auditing](/cloudflare-one/policies/gateway/network-policies/ssh-logging/).                                                    |
 | Access: SSH Auditing $1                                    | Grants write access to [SSH Auditing](/cloudflare-one/policies/gateway/network-policies/ssh-logging/).                                                   |
 | Account Analytics Read                                       | Grants read access to [account analytics](/analytics/account-and-zone-analytics/account-analytics/).                                                     |
@@ -51,22 +51,22 @@ inputParameters: editWord
 | China Network Steering $1                                  | Grants write access to [China Network Steering](/china-network/).                                                                                        |
 | Cloudchamer Read | Grants read access to Cloudchamber deployments. |
 | Cloudchamer $1 | Grants write access to Cloudchamber deployments. |
-| Cloudflare DEX Read                                          | Grants read access to [Digital Experience Monitoring](/cloudflare-one/insights/dex/).                                                                    |
-| Cloudflare DEX $1                                          | Grants write access to [Digital Experience Monitoring](/cloudflare-one/insights/dex/).                                                                   |
-| Cloudflare Images Read                                       | Grants read access to [Cloudflare Images](/images/cloudflare-images/).                                                                                   |
-| Cloudflare Images $1                                       | Grants write access to [Cloudflare Images](/images/cloudflare-images/).                                                                                  |
-| Cloudflare One Connector: cloudflared Read | Grants read access to `cloudflared` Connectors |
-| Cloudflare One Connector: cloudflared $1 | Grants write access to `cloudflared` Connectors |
-| Cloudflare One Connector: WARP Read | Grants read access to Warp Connectors |
-| Cloudflare One Connector: WARP $1 | Grants write access to Warp Connectors |
-| Cloudflare One Connectors Read | Grants read access to Cloudflare One Connectors |
-| Cloudflare One Connectors $1 | Grants write access to Cloudflare One Connectors |
-| Cloudflare One Networks Read | Grants read access to Cloudflare One Networks |
-| Cloudflare One Networks $1 | Grants write access to Cloudflare One Networks |
-| Cloudflare Pages Read                                        | Grants access to view [Cloudflare Pages](/pages/) projects.                                                                                              |
-| Cloudflare Pages $1                                        | Grants access to create, edit and delete [Cloudflare Pages](/pages/) projects.                                                                           |
-| Cloudflare Tunnel Read                                       | Grants access to view [Cloudflare Tunnels](/cloudflare-one/connections/connect-networks/).                                                               |
-| Cloudflare Tunnel $1                                       | Grants access to create and delete [Cloudflare Tunnels](/cloudflare-one/connections/connect-networks/).                                                  |
+| Khulnasoft DEX Read                                          | Grants read access to [Digital Experience Monitoring](/cloudflare-one/insights/dex/).                                                                    |
+| Khulnasoft DEX $1                                          | Grants write access to [Digital Experience Monitoring](/cloudflare-one/insights/dex/).                                                                   |
+| Khulnasoft Images Read                                       | Grants read access to [Khulnasoft Images](/images/cloudflare-images/).                                                                                   |
+| Khulnasoft Images $1                                       | Grants write access to [Khulnasoft Images](/images/cloudflare-images/).                                                                                  |
+| Khulnasoft One Connector: cloudflared Read | Grants read access to `cloudflared` Connectors |
+| Khulnasoft One Connector: cloudflared $1 | Grants write access to `cloudflared` Connectors |
+| Khulnasoft One Connector: WARP Read | Grants read access to Warp Connectors |
+| Khulnasoft One Connector: WARP $1 | Grants write access to Warp Connectors |
+| Khulnasoft One Connectors Read | Grants read access to Khulnasoft One Connectors |
+| Khulnasoft One Connectors $1 | Grants write access to Khulnasoft One Connectors |
+| Khulnasoft One Networks Read | Grants read access to Khulnasoft One Networks |
+| Khulnasoft One Networks $1 | Grants write access to Khulnasoft One Networks |
+| Khulnasoft Pages Read                                        | Grants access to view [Khulnasoft Pages](/pages/) projects.                                                                                              |
+| Khulnasoft Pages $1                                        | Grants access to create, edit and delete [Khulnasoft Pages](/pages/) projects.                                                                           |
+| Khulnasoft Tunnel Read                                       | Grants access to view [Khulnasoft Tunnels](/cloudflare-one/connections/connect-networks/).                                                               |
+| Khulnasoft Tunnel $1                                       | Grants access to create and delete [Khulnasoft Tunnels](/cloudflare-one/connections/connect-networks/).                                                  |
 | Constellation Read                                           | Grants read access to [Constellation](/constellation/).                                                                                                  |
 | Constellation $1                                           | Grants write access to [Constellation](/constellation/).                                                                                                 |
 | D1 Read                                                      | Grants read access to [D1](/d1/).                                                                                                                        |
@@ -81,8 +81,8 @@ inputParameters: editWord
 | Hyperdrive $1 | Grants write access to [Hyperdrive](/hyperdrive/). |
 | Intel Read                                                   | Grants read access to [Intel](/security-center/intel-apis/).                                                                                             |
 | Intel $1                                                   | Grants write access to [Intel](/security-center/intel-apis/).                                                                                            |
-| IOT Read                                                     | Grants read access to [IOT](https://blog.cloudflare.com/rethinking-internet-of-things-security/).                                                        |
-| IOT $1                                                     | Grants write access to [IOT](https://blog.cloudflare.com/rethinking-internet-of-things-security/).                                                       |
+| IOT Read                                                     | Grants read access to [IOT](https://blog.Khulnasoft.com/rethinking-internet-of-things-security/).                                                        |
+| IOT $1                                                     | Grants write access to [IOT](https://blog.Khulnasoft.com/rethinking-internet-of-things-security/).                                                       |
 | IP Prefixes: Read                                            | Grants access to read IP prefix settings.                                                                                                                |
 | IP Prefixes: $1                                            | Grants access to read/write IP prefix settings.                                                                                                          |
 | IP Prefixes: BGP On Demand Read                              | Grants access to read IP prefix BGP configuration.                                                                                                       |
@@ -109,8 +109,8 @@ inputParameters: editWord
 | Pub/Sub $1                                                 | Grants read access to [Pub/Sub](/pub-sub/).                                                                                                              |
 | Rule Policies Read                                           | Grants read access to Rule Policies.                                                                                                                     |
 | Rule Policies $1                                           | Grants write access to Rule Policies.                                                                                                                    |
-| Stream Read                                                  | Grants read access to [Cloudflare Stream](/stream/).                                                                                                     |
-| Stream $1                                                  | Grants write access to [Cloudflare Stream](/stream/).                                                                                                    |
+| Stream Read                                                  | Grants read access to [Khulnasoft Stream](/stream/).                                                                                                     |
+| Stream $1                                                  | Grants write access to [Khulnasoft Stream](/stream/).                                                                                                    |
 | Transform Rules Read                                         | Grants read access to [Transform Rules](/rules/transform/).                                                                                              |
 | Transform Rules $1                                         | Grants write access to [Transform Rules](/rules/transform/).                                                                                            |
 | Turnstile Read                                               | Grants read access to [Turnstile](/turnstile/).                                                                                                          |
@@ -120,14 +120,14 @@ inputParameters: editWord
 | Vectorize Read | Grants read access to [Vectorize](/vectorize/). |
 | Vectorize $1 | Grants write access to [Vectorize](/vectorize/). |
 | Workers AI Read | Grants read access to [Workers AI](/workers-ai/). |
-| Workers KV Storage Read                                      | Grants read access to [Cloudflare Workers KV Storage](/kv/api/).                                                                        |
-| Workers KV Storage $1                                      | Grants write access to [Cloudflare Workers KV Storage](/kv/api/).                                                                       |
-| Workers R2 Storage Read                                      | Grants read access to [Cloudflare R2 Storage](/r2/).                                                                                                     |
-| Workers R2 Storage $1                                      | Grants write access to [Cloudflare R2 Storage](/r2/).                                                                                                    |
-| Workers Scripts Read                                         | Grants read access to [Cloudflare Workers scripts](/workers/).                                                                                           |
-| Workers Scripts $1                                         | Grants write access to [Cloudflare Workers scripts](/workers/).                                                                                           |
+| Workers KV Storage Read                                      | Grants read access to [Khulnasoft Workers KV Storage](/kv/api/).                                                                        |
+| Workers KV Storage $1                                      | Grants write access to [Khulnasoft Workers KV Storage](/kv/api/).                                                                       |
+| Workers R2 Storage Read                                      | Grants read access to [Khulnasoft R2 Storage](/r2/).                                                                                                     |
+| Workers R2 Storage $1                                      | Grants write access to [Khulnasoft R2 Storage](/r2/).                                                                                                    |
+| Workers Scripts Read                                         | Grants read access to [Khulnasoft Workers scripts](/workers/).                                                                                           |
+| Workers Scripts $1                                         | Grants write access to [Khulnasoft Workers scripts](/workers/).                                                                                           |
 | Workers Tail Read                                            | Grants [`wrangler tail`](/workers/wrangler/commands/#tail) read permissions.                                                                             |
-| Zero Trust Read                                              | Grants read access to [Cloudflare Zero Trust](/cloudflare-one/).                                                                                         |
-| Zero Trust Report                                            | Grants reporting access to [Cloudflare Zero Trust](/cloudflare-one/).                                                                                    |
-| Zero Trust $1                                              | Grants write access to [Cloudflare Zero Trust](/cloudflare-one/).                                                                                        |
+| Zero Trust Read                                              | Grants read access to [Khulnasoft Zero Trust](/cloudflare-one/).                                                                                         |
+| Zero Trust Report                                            | Grants reporting access to [Khulnasoft Zero Trust](/cloudflare-one/).                                                                                    |
+| Zero Trust $1                                              | Grants write access to [Khulnasoft Zero Trust](/cloudflare-one/).                                                                                        |
 | Zero Trust Seats $1                                        | Grants write access to the number of [Zero Trust Seats](/cloudflare-one/identity/users/seat-management/) your organization can use (and be billed for).  |

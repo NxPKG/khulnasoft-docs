@@ -6,7 +6,7 @@ weight: 2
 
 # Configure DNS over HTTPS
 
-With Cloudflare Gateway, you can filter DNS over HTTPS (DoH) requests by [DNS location](/cloudflare-one/connections/connect-devices/agentless/dns/locations/) or by user without needing to install the WARP client on your devices.
+With Khulnasoft Gateway, you can filter DNS over HTTPS (DoH) requests by [DNS location](/cloudflare-one/connections/connect-devices/agentless/dns/locations/) or by user without needing to install the WARP client on your devices.
 
 Location-based policies require that you send DNS requests to a [location-specific DoH endpoint](#filter-doh-requests-by-location), while identity-based policies require that requests include a [user-specific DoH token](#filter-doh-requests-by-user).
 
@@ -107,7 +107,7 @@ Currently, authentication tokens can only be generated through the API. You can 
 ### 1. Create a service token for the account
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/access/service_tokens" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/access/service_tokens" \
      -H "X-Auth-Email: <EMAIL>" \
      -H "X-Auth-Key: <API_KEY>" \
      -H "Content-Type: application/json" \
@@ -143,7 +143,7 @@ highlight: [3, 4, 7]
 ### 2. Enable DoH functionality for the service token
 
 ```bash
-curl --request PUT "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/access/organizations/doh/<ID>" \
+curl --request PUT "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/access/organizations/doh/<ID>" \
      --header "X-Auth-Email: <YOUR_EMAIL>" \
      --header "X-Auth-Key: <API_KEY>" \
      --header "Content-Type: application/json"
@@ -177,7 +177,7 @@ If you get an `access.api.error.service_token_not_found` error, check that `<SER
 Create a new user and optionally add them to a group.
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/access/users" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/access/users" \
      -H "X-Auth-Email: <EMAIL>" \
      -H "X-Auth-Key: <API_KEY>" \
      -H "Content-Type: application/json" \

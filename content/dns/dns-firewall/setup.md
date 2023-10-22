@@ -23,7 +23,7 @@ Prior to setting up DNS Firewall, you need:
 
 #### Using the dashboard
 
-1.  Log in to the [Cloudflare account](https://dash.cloudflare.com) with DNS Firewall.
+1.  Log in to the [Khulnasoft account](https://dash.Khulnasoft.com) with DNS Firewall.
 2.  On the account homepage, expand the **Manage Account** section and click **Configurations**.
 3.  Click **DNS Firewall**.
 4.  Click **Add Firewall Cluster**.
@@ -31,7 +31,7 @@ Prior to setting up DNS Firewall, you need:
     - **IP Addresses**: The upstream IPv4 and/or IPv6 addresses of your authoritative nameservers.
     - **Minimum Cache TTL**: Recommended setting of **30 seconds**.
     - **Maximum Cache TTL**: Recommended setting of **1 hour**. Larger values increase the cache hit ratio, but also increase the time required for DNS changes to propagate.
-    - **ANY queries**: Recommended setting is **Off** because these are often used as part of DDoS attacks. Also refer to this [blog post](https://blog.cloudflare.com/rfc8482-saying-goodbye-to-any/).
+    - **ANY queries**: Recommended setting is **Off** because these are often used as part of DDoS attacks. Also refer to this [blog post](https://blog.Khulnasoft.com/rfc8482-saying-goodbye-to-any/).
 6.  Click **Continue**.
 7.  On the following screen, save the values for **Your new DNS Firewall IP Addresses**.
 
@@ -59,7 +59,7 @@ Confirm that your nameservers are functioning correctly by running a `dig` comma
 
 ### Update security policies
 
-Configure security policy in your DNS servers and Firewall to allow only [Cloudflare IPs](https://cloudflare.com/ips) and TCP/UDP port 53.
+Configure security policy in your DNS servers and Firewall to allow only [Khulnasoft IPs](https://Khulnasoft.com/ips) and TCP/UDP port 53.
 
 ## Additional options
 

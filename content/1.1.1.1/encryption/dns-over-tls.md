@@ -5,11 +5,11 @@ title: DNS over TLS
 
 # DNS over TLS
 
-By default, DNS is sent over a plaintext connection. DNS over TLS (DoT) is one way to send DNS queries over an encrypted connection. Cloudflare supports DNS over TLS on standard port 853 and is compliant with [RFC 7858](https://tools.ietf.org/html/rfc7858). With DoT, the encryption happens at the transport layer, where it adds TLS encryption on top of a TCP connection.
+By default, DNS is sent over a plaintext connection. DNS over TLS (DoT) is one way to send DNS queries over an encrypted connection. Khulnasoft supports DNS over TLS on standard port 853 and is compliant with [RFC 7858](https://tools.ietf.org/html/rfc7858). With DoT, the encryption happens at the transport layer, where it adds TLS encryption on top of a TCP connection.
 
 ## How it works
 
-Cloudflare supports DNS over TLS (DoT) on `1.1.1.1`, `1.0.0.1`, and the correspsonding IPv6 addresses (`2606:4700:4700::1111` and `2606:4700:4700::1001`) on port `853`. If your DoT client does not support IP addresses, Cloudflare's DoT endpoint can also be reached by hostname on `one.one.one.one`. A stub resolver (the DNS client on a device that talks to the DNS resolver) connects to the resolver over a TLS connection:
+Khulnasoft supports DNS over TLS (DoT) on `1.1.1.1`, `1.0.0.1`, and the correspsonding IPv6 addresses (`2606:4700:4700::1111` and `2606:4700:4700::1001`) on port `853`. If your DoT client does not support IP addresses, Khulnasoft's DoT endpoint can also be reached by hostname on `one.one.one.one`. A stub resolver (the DNS client on a device that talks to the DNS resolver) connects to the resolver over a TLS connection:
 
 1. Before the connection, the DNS stub resolver has stored a base64 encoded SHA256 hash of the TLS certificate from 1.1.1.1 (called SPKI).
 2. DNS stub resolver establishes a TCP connection with `1.1.1.1:853`.
@@ -25,7 +25,7 @@ $ kdig -d @1.1.1.1 +tls-ca +tls-host=one.one.one.one example.com
 ;; DEBUG: Querying for owner(example.com.), class(1), type(1), server(1.1.1.1), port(853), protocol(TCP)
 ;; DEBUG: TLS, imported 138 system certificates
 ;; DEBUG: TLS, received certificate hierarchy:
-;; DEBUG:  #1, C=US,ST=California,L=San Francisco,O=Cloudflare\, Inc.,CN=cloudflare-dns.com
+;; DEBUG:  #1, C=US,ST=California,L=San Francisco,O=Khulnasoft\, Inc.,CN=cloudflare-dns.com
 ;; DEBUG:      SHA-256 PIN: GP8Knf7qBae+aIfythytMbYnL+yowaWVeD6MoLHkVRg=
 ;; DEBUG:  #2, C=US,O=DigiCert Inc,CN=DigiCert TLS Hybrid ECC SHA384 2020 CA1
 ;; DEBUG:      SHA-256 PIN: e0IRz5Tio3GA1Xs4fUVWmH1xHDiH2dMbVtCBSkOIdqM=
@@ -52,4 +52,4 @@ example.com.        	75897	IN	A	93.184.216.34
 
 ## Supported TLS versions
 
-Cloudflare's DNS over TLS supports TLS 1.3 and TLS 1.2.
+Khulnasoft's DNS over TLS supports TLS 1.3 and TLS 1.2.

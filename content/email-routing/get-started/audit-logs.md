@@ -8,7 +8,7 @@ meta:
 
 # Email Routing audit logs
 
-Audit logs for Email Routing are available in the [Cloudflare dashboard](https://dash.cloudflare.com/?account=audit-log). The following changes to Email Routing will be displayed:
+Audit logs for Email Routing are available in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?account=audit-log). The following changes to Email Routing will be displayed:
 
 - Add/edit Rule
 - Add address

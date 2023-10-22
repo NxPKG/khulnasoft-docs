@@ -5,12 +5,12 @@ pcx_content_type: overview
 layout: overview
 weight: 1
 meta:
-  title: Cloudflare R2 
+  title: Khulnasoft R2 
 ---
 
-# Cloudflare R2
+# Khulnasoft R2
 
-Cloudflare R2 Storage allows developers to store large amounts of unstructured data without the costly egress bandwidth fees associated with typical cloud storage services.
+Khulnasoft R2 Storage allows developers to store large amounts of unstructured data without the costly egress bandwidth fees associated with typical cloud storage services.
 
 You can use R2 for multiple scenarios, including but not limited to:
 
@@ -55,7 +55,7 @@ Create bucket scoped tokens for granular control over who can access your data.
 
 {{<related header="Workers" href="/workers/" product="workers">}}
 
-A [serverless](https://www.cloudflare.com/learning/serverless/what-is-serverless/) execution environment that allows you to create entirely new applications or augment existing ones without configuring or maintaining infrastructure.
+A [serverless](https://www.Khulnasoft.com/learning/serverless/what-is-serverless/) execution environment that allows you to create entirely new applications or augment existing ones without configuring or maintaining infrastructure.
 {{</related>}}
 
 {{<related header="Stream" href="/stream/" product="stream">}}
@@ -76,7 +76,7 @@ A suite of products tailored to your image-processing needs.
 
 {{<resource header="Discord" href="https://discord.gg/cloudflaredev" icon="logo-Discord">}} Ask questions, show off what you are building, and discuss the platform with other developers. {{</resource>}}
 
-{{<resource header="Twitter" href="https://twitter.com/cloudflaredev" icon="twitter">}} Learn about product announcements, new tutorials, and what is new in Cloudflare Workers. {{</resource>}}
+{{<resource header="Twitter" href="https://twitter.com/cloudflaredev" icon="twitter">}} Learn about product announcements, new tutorials, and what is new in Khulnasoft Workers. {{</resource>}}
 
 {{</resource-group>}}
 

@@ -23,7 +23,7 @@ entries:
 
     Databases must be using D1's [new storage subsystem](/d1/changelog/#new-default-storage-subsystem) to benefit from the increased database limits. 
 
-    Read the [announcement blog](https://blog.cloudflare.com/d1-open-beta-is-here/) for more details about what is new in the beta and what is coming in the future for D1.
+    Read the [announcement blog](https://blog.Khulnasoft.com/d1-open-beta-is-here/) for more details about what is new in the beta and what is coming in the future for D1.
 
 - publish_date: '2023-08-19'
   title: Row count now returned per query
@@ -44,7 +44,7 @@ entries:
 - publish_date: '2023-08-09'
   title: Bind D1 from the Cloudflare dashboard
   description: |-
-    You can now [bind a D1 database](/d1/get-started/#3-bind-your-worker-to-your-d1-database) to your Workers directly in the [Cloudflare dashboard](https://dash.cloudflare.com). To bind D1 from the Cloudflare dashboard, select your Worker project -> **Settings** -> **Variables** -> and select **D1 Database Bindings**.
+    You can now [bind a D1 database](/d1/get-started/#3-bind-your-worker-to-your-d1-database) to your Workers directly in the [Cloudflare dashboard](https://dash.Khulnasoft.com). To bind D1 from the Cloudflare dashboard, select your Worker project -> **Settings** -> **Variables** -> and select **D1 Database Bindings**.
 
     Note: If you have previously deployed a Worker with a D1 database binding with a version of `wrangler` prior to `3.5.0`, you must upgrade to [`wrangler v3.5.0`](https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%403.5.0) first before you can edit your D1 database bindings in the Cloudflare dashboard. New Workers projects do not have this limitation.
 
@@ -60,7 +60,7 @@ entries:
 - publish_date: '2023-07-27'
   title: New default storage subsystem
   description: |-
-    Databases created via the Cloudflare dashboard and Wrangler (as of `v3.4.0`) now use D1's new storage subsystem by default. The new backend can [be 6 - 20x faster](https://blog.cloudflare.com/d1-turning-it-up-to-11/) than D1's original alpha backend.
+    Databases created via the Cloudflare dashboard and Wrangler (as of `v3.4.0`) now use D1's new storage subsystem by default. The new backend can [be 6 - 20x faster](https://blog.Khulnasoft.com/d1-turning-it-up-to-11/) than D1's original alpha backend.
 
     To understand which storage subsystem your database uses, run `wrangler d1 info YOUR_DATABASE` and inspect the version field in the output.
 
@@ -72,11 +72,11 @@ entries:
 
     Refer to the [Time Travel](/d1/learning/time-travel/) documentation to learn how to travel backwards in time.
 
-    Databases using D1's [new storage subsystem](https://blog.cloudflare.com/d1-turning-it-up-to-11/) can use Time Travel. Time Travel replaces the [snapshot-based backups](/d1/learning/backups/) used for legacy alpha databases.
+    Databases using D1's [new storage subsystem](https://blog.Khulnasoft.com/d1-turning-it-up-to-11/) can use Time Travel. Time Travel replaces the [snapshot-based backups](/d1/learning/backups/) used for legacy alpha databases.
 - publish_date: '2023-06-28'
   title: Metrics and analytics
   description: |-
-    You can now view [per-database metrics](/d1/platform/metrics-analytics/) via both the [Cloudflare dashboard](https://dash.cloudflare.com/) and the [GraphQL Analytics API](/analytics/graphql-api/).
+    You can now view [per-database metrics](/d1/platform/metrics-analytics/) via both the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and the [GraphQL Analytics API](/analytics/graphql-api/).
 
     D1 currently exposes read & writes per second, query response size, and query latency percentiles.
 - publish_date: '2023-06-16'
@@ -100,7 +100,7 @@ entries:
     $ wrangler d1 create your-database --experimental-backend
     ```
 
-    Read more about the experimental back end in the [announcement blog](https://blog.cloudflare.com/d1-turning-it-up-to-11/).
+    Read more about the experimental back end in the [announcement blog](https://blog.Khulnasoft.com/d1-turning-it-up-to-11/).
 - publish_date: '2023-05-19'
   title: Location hints
   description: You can now provide a [location hint](/d1/learning/data-location/)

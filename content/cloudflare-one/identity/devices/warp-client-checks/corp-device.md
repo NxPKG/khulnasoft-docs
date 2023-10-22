@@ -8,15 +8,15 @@ weight: 3
 
 {{<render file="posture/_available-for-warp-with-gateway.md">}}
 
-Cloudflare Zero Trust allows you to build Zero Trust rules based on device serial numbers. You can create these rules so that access to applications is granted only to users connecting from company devices.
+Khulnasoft Zero Trust allows you to build Zero Trust rules based on device serial numbers. You can create these rules so that access to applications is granted only to users connecting from company devices.
 
 ## Create a list of serial numbers
 
 To create rules based on device serial numbers, you first need to create a [Gateway List](/cloudflare-one/policies/gateway/lists/) of numbers.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **My Team** > **Lists**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **My Team** > **Lists**.
 
-1. Select **Create manual list** or **Upload CSV**. For larger teams, we recommend uploading a CSV or using Cloudflare's [API endpoint](/api/operations/zero-trust-lists-list-zero-trust-lists).
+1. Select **Create manual list** or **Upload CSV**. For larger teams, we recommend uploading a CSV or using Khulnasoft's [API endpoint](/api/operations/zero-trust-lists-list-zero-trust-lists).
 
 1. Give your list a descriptive name, as this name will appear when configuring your policies.
 

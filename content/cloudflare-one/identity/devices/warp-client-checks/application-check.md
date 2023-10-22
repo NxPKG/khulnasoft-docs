@@ -12,7 +12,7 @@ The Application Check device posture attribute checks that a specific applicatio
 
 ## Configure an application check
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 
 2. Scroll down to **WARP client checks** and select **Add new**.
 
@@ -37,7 +37,7 @@ Next, go to **Logs** > **Posture** and verify that the application check is retu
 
 ## Determine the signing thumbprint
 
-The process to determine the signing thumbprint of an application varies depending on the operating system. This is how you would look up the signing thumbprint of the Cloudflare WARP application on macOS and Windows.
+The process to determine the signing thumbprint of an application varies depending on the operating system. This is how you would look up the signing thumbprint of the Khulnasoft WARP application on macOS and Windows.
 
 {{<Aside type="note">}}
 
@@ -58,8 +58,8 @@ When setting up new device posture checks, we recommend first testing them witho
 2. Run the following command to extract certificates for the WARP application:
 
    ```sh
-   ~/Desktop/tmp $ codesign -d --extract-certificates "/Applications/Cloudflare WARP.app/Contents/Resources/CloudflareWARP"
-   Executable=/Applications/Cloudflare WARP.app/Contents/Resources/CloudflareWARP
+   ~/Desktop/tmp $ codesign -d --extract-certificates "/Applications/Khulnasoft WARP.app/Contents/Resources/KhulnasoftWARP"
+   Executable=/Applications/Khulnasoft WARP.app/Contents/Resources/KhulnasoftWARP
    ```
 
 3. Next, run the following command to extract the SHA1 thumbprint:

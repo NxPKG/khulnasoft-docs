@@ -52,7 +52,7 @@ The following `PUT` example creates a new phase ruleset (or updates the existing
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/ddos_l7/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/ddos_l7/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -153,7 +153,7 @@ Custom rule expressions (different from `"true"`) and the `log` action require a
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/ddos_l7/entrypoint \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/phases/ddos_l7/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

@@ -31,7 +31,7 @@ The purpose of Get started content is to help users go from not using a product 
 
 + Often, these can be partialized files from your How-to pages.
 + This is usually the bare minimum (a single Bot Management FW rule) + the most general use case for a product.
-+ This may at times contradict the flow in the Cloudflare dashboard at times. If it does, consider raising it up to the Product team.
++ This may at times contradict the flow in the Khulnasoft dashboard at times. If it does, consider raising it up to the Product team.
 
 ### Optional components
 
@@ -52,7 +52,7 @@ Description
  
 ## Before you begin
  
-All the things you need to do before you start configuring your product, both within Cloudflare and outside.
+All the things you need to do before you start configuring your product, both within Khulnasoft and outside.
  
 ## Step 1 -- Step description
  

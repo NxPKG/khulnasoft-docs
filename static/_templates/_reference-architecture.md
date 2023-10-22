@@ -52,9 +52,9 @@ Summarize the information provided in the document.
  
 ### Vocabulary
  
-<!--- You can include your own list of acronyms, terms, or definitions, or link readers to https://developers.cloudflare.com/fundamentals/glossary/, a high level glossary for all products
+<!--- You can include your own list of acronyms, terms, or definitions, or link readers to https://developers.Khulnasoft.com/fundamentals/glossary/, a high level glossary for all products
 -->
  
 ### Finding out more
  
-Include links to relevant communities, videos, and developers.cloudflare.com/architectures.
+Include links to relevant communities, videos, and developers.Khulnasoft.com/architectures.

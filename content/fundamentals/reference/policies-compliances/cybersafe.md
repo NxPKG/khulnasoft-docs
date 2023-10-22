@@ -5,7 +5,7 @@ title: Project Cybersafe Schools
 
 # Project Cybersafe Schools
 
-Project Cybersafe Schools grants eligible schools with free access to Cloudflare's [Email Security](/email-security/) and [Gateway](/cloudflare-one/policies/gateway/) products. 
+Project Cybersafe Schools grants eligible schools with free access to Khulnasoft's [Email Security](/email-security/) and [Gateway](/cloudflare-one/policies/gateway/) products. 
 
 ## School Eligibility
 

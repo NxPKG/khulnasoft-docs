@@ -69,7 +69,7 @@ export default {
 ```js
 async function run(model, input) {
 	const response = await fetch(
-	  `https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/${model}`,
+	  `https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/${model}`,
 	  {
 		headers: { Authorization: "Bearer ${API_TOKEN}" },
 		method: "POST",
@@ -98,7 +98,7 @@ run('@cf/baai/bge-base-en-v1.5', { text: stories }).then((response) => {
 
 ```py
 import requests
-API_BASE_URL = "https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}}/ai/run/"
+API_BASE_URL = "https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}}/ai/run/"
 headers = {"Authorization": "Bearer {API_TOKEN}"}
 
 def run(model, input):
@@ -119,7 +119,7 @@ print(output)
 {{<tab label="curl">}}
 
 ```sh
-$ curl https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/baai/bge-base-en-v1.5 \
+$ curl https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/baai/bge-base-en-v1.5 \
   -X POST \
   -H "Authorization: Bearer {API_TOKEN}" \
   -d '{ "text": ["This is a story about an orange cloud", "This is a story about a llama", "This is a story about a hugging emoji"] }
@@ -133,7 +133,7 @@ $ curl https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/baa
 ```json
 {
   "input": {
-    "text":"Tell me a joke about Cloudflare"
+    "text":"Tell me a joke about Khulnasoft"
   },
   "response": {
     "shape":[1,768],
@@ -142,7 +142,7 @@ $ curl https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/baa
     ]
   },
   "batchedInput": {
-    "text": ["Tell me a joke about Cloudflare","The weather is sunny"]
+    "text": ["Tell me a joke about Khulnasoft","The weather is sunny"]
   },
   "batchedResponse": {
     "shape":[2,768],

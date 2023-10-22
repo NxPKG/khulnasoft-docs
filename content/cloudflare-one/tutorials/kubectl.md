@@ -2,22 +2,22 @@
 updated: 2022-07-19
 category: 🔐 Zero Trust
 pcx_content_type: tutorial
-title: Connect through Cloudflare Access using kubectl
+title: Connect through Khulnasoft Access using kubectl
 ---
 
-# Connect through Cloudflare Access using kubectl
+# Connect through Khulnasoft Access using kubectl
 
-You can connect to machines over `kubectl` using Cloudflare's Zero Trust platform.
+You can connect to machines over `kubectl` using Khulnasoft's Zero Trust platform.
 
 **This walkthrough covers how to:**
 
-- Build a policy in Cloudflare Access to secure the machine
-- Connect a machine to Cloudflare's network using kubectl
+- Build a policy in Khulnasoft Access to secure the machine
+- Connect a machine to Khulnasoft's network using kubectl
 - Connect from a client machine
 
 **Before you start**
 
-- [Add a website to Cloudflare](/fundamentals/setup/account-setup/add-site/)
+- [Add a website to Khulnasoft](/fundamentals/setup/account-setup/add-site/)
 
 **Time to complete:**
 
@@ -40,21 +40,21 @@ You can connect to machines over `kubectl` using Cloudflare's Zero Trust platfor
 
 ## Install `cloudflared`
 
-Cloudflare Tunnel creates a secure, outbound-only connection between this machine and Cloudflare's network. With an outbound-only model, you can prevent any direct access to this machine and lock down any externally exposed points of ingress. And with that, no open firewall ports.
+Khulnasoft Tunnel creates a secure, outbound-only connection between this machine and Khulnasoft's network. With an outbound-only model, you can prevent any direct access to this machine and lock down any externally exposed points of ingress. And with that, no open firewall ports.
 
-Cloudflare Tunnel is made possible through a lightweight daemon from Cloudflare called `cloudflared`. Download and install `cloudflared` on the DigitalOcean machine by following the instructions listed on the [Downloads](/cloudflare-one/connections/connect-networks/downloads/) page.
+Khulnasoft Tunnel is made possible through a lightweight daemon from Khulnasoft called `cloudflared`. Download and install `cloudflared` on the DigitalOcean machine by following the instructions listed on the [Downloads](/cloudflare-one/connections/connect-networks/downloads/) page.
 
 ## Authenticate `cloudflared`
 
-Run the following command to authenticate cloudflared into your Cloudflare account.
+Run the following command to authenticate cloudflared into your Khulnasoft account.
 
 ```sh
 $ cloudflared tunnel login
 ```
 
-`cloudflared` will open a browser window and prompt you to log in to your Cloudflare account. If you are working on a machine that does not have a browser, or a browser window does not launch, you can copy the URL from the command-line output and visit the URL in a browser on any machine.
+`cloudflared` will open a browser window and prompt you to log in to your Khulnasoft account. If you are working on a machine that does not have a browser, or a browser window does not launch, you can copy the URL from the command-line output and visit the URL in a browser on any machine.
 
-Choose any hostname presented in the list. Cloudflare will issue a certificate scoped to your account. You do not need to pick the specific hostname where you will serve the Tunnel.
+Choose any hostname presented in the list. Khulnasoft will issue a certificate scoped to your account. You do not need to pick the specific hostname where you will serve the Tunnel.
 
 ## Create a Tunnel
 
@@ -82,7 +82,7 @@ Create a `YAML` file that `cloudflared` can reach. By default, `cloudflared` wil
 $ vim ~/.cloudflared/config.yml
 ```
 
-Next, configure the Tunnel, replacing the example ID below with the ID of the Tunnel created above. Additionally, replace the hostname in this example with the hostname of the application configured with Cloudflare Access.
+Next, configure the Tunnel, replacing the example ID below with the ID of the Tunnel created above. Additionally, replace the hostname in this example with the hostname of the application configured with Khulnasoft Access.
 
 ```yaml
 tunnel: 6ff42ae2-765d-4adf-8112-31c55c1551ef
@@ -102,7 +102,7 @@ ingress:
 
 You can now create a DNS record that will route traffic to this Tunnel. Multiple DNS records can point to a single Tunnel and will send traffic to the configured service as long as the hostname is defined with an [ingress rule](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/#file-structure-for-public-hostnames).
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account. Select your domain and go to **DNS**.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account. Select your domain and go to **DNS**.
 
 2. Select **Add record**. Choose `CNAME` as the record type. For **Name**, choose the hostname where you want to create a Tunnel. This should match the hostname of the Access policy.
 
@@ -116,7 +116,7 @@ You can now create a DNS record that will route traffic to this Tunnel. Multiple
 
 ## Run the Tunnel
 
-You can now run the Tunnel to connect the target service to Cloudflare. Use the following command to run the Tunnel, replacing `<NAME>` with the name created for your Tunnel.
+You can now run the Tunnel to connect the target service to Khulnasoft. Use the following command to run the Tunnel, replacing `<NAME>` with the name created for your Tunnel.
 
 ```sh
 $ cloudflared tunnel run <NAME>
@@ -134,7 +134,7 @@ This example uses a macOS laptop. On macOS, you can install `cloudflared` with t
 $ brew install cloudflare/cloudflare/cloudflared
 ```
 
-Run the following command to create a connection from the device to Cloudflare. Any available port can be specified.
+Run the following command to create a connection from the device to Khulnasoft. Any available port can be specified.
 
 ```sh
 $ cloudflared access tcp --hostname azure.widgetcorp.tech --url 127.0.0.1:1234

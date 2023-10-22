@@ -14,7 +14,7 @@ This example creates several filters using a single API call.
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/filters" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/filters" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \

@@ -10,7 +10,7 @@ In this guide, you will setup your local development environment, in order to st
 
 To setup your dev environement you will need to:
 
-1. Create a [Cloudflare account](https://dash.cloudflare.com/sign-up/workers-and-pages)
+1. Create a [Khulnasoft account](https://dash.Khulnasoft.com/sign-up/workers-and-pages)
 
 2. Install [Wrangler](/workers/wrangler/install-and-update/)
 

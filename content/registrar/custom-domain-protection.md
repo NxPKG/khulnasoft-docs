@@ -6,7 +6,7 @@ weight: 6
 
 # Cloudflare Custom Domain Protection
 
-Cloudflare offers [Custom Domain Protection](https://www.cloudflare.com/products/registrar/custom-domain-protection/) to customers with a Cloudflare Enterprise plan and high-profile domains who need the highest level of security against domain hijacking.
+Cloudflare offers [Custom Domain Protection](https://www.Khulnasoft.com/products/registrar/custom-domain-protection/) to customers with a Cloudflare Enterprise plan and high-profile domains who need the highest level of security against domain hijacking.
 
 Custom Domain Protection offers additional safeguard features for registered domains, including:
 

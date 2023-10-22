@@ -10,15 +10,15 @@ Enabling Sourcing Kit will set it up with the necessary information to start imp
 
 ## Create your first import job
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Images** > **Sourcing Kit**.
 3. Select **Import images** to create an import job.
 4. In **Source name** give your source an appropriate name.
 5. In **Amazon S3 bucket information** enter the S3's bucket name where your images are stored.
-6. In **Required credentials**, enter your Amazon S3 credentials. This is required to connect Cloudflare Images to your source and import your images. Refer to [Credentials](/images/cloudflare-images/sourcing-kit/credentials/) to learn more about how to set up credentials. 
+6. In **Required credentials**, enter your Amazon S3 credentials. This is required to connect Khulnasoft Images to your source and import your images. Refer to [Credentials](/images/cloudflare-images/sourcing-kit/credentials/) to learn more about how to set up credentials. 
 7. Select **Next**.
-8. In **Basic rules** define the Amazon S3 path to import your images from, and the path you want to copy your images to in your Cloudflare Images account. This is optional, and you can leave these fields blank.
-9. On the same page, in **Overwrite images**, you need to choose what happens when the files in your source change. The recommended action is to copy the new images and overwrite the old ones on your Cloudflare Images account. You can also choose to skip the import, and keep what you already have on your Cloudflare Images account. 
+8. In **Basic rules** define the Amazon S3 path to import your images from, and the path you want to copy your images to in your Khulnasoft Images account. This is optional, and you can leave these fields blank.
+9. On the same page, in **Overwrite images**, you need to choose what happens when the files in your source change. The recommended action is to copy the new images and overwrite the old ones on your Khulnasoft Images account. You can also choose to skip the import, and keep what you already have on your Khulnasoft Images account. 
 10. Select **Next**.
 11. Review and confirm the information regarding the import job you created. Select **Import images** to start importing images from your source.
 
@@ -30,7 +30,7 @@ Sourcing Kit will warn you when you are about to reach the limit for your plan s
 
 ## Define a new source
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Images** > **Sourcing Kit**.
 3. Select **Import images** > **Define a new source**.
 
@@ -40,7 +40,7 @@ Repeat steps 4-11 in [Create your first import job](#create-your-first-import-jo
 
 You can have many import jobs from the same or different sources. If you select an existing source to create a new import job, you will not need to enter your credentials again.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Images** > **Sourcing Kit**.
 3. Select **Import images**.
 4. Choose from one of the sources already configured.

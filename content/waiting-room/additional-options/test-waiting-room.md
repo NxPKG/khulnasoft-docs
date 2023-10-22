@@ -9,7 +9,7 @@ weight: 9
 Follow this tutorial to test your waiting room behavior in response to load. To accurately simulate traffic through your waiting room with a load test, run your test script or planner for a period of time longer than a minute, ideally more than 2-3 minutes. You can run a load test using a variety of tools including [loader.io](http://loader.io), [jmeter](http://jmeter.apache.org), and [postman.com](http://postman.com). You can also write a plain shell script to simulate user requests (each representing a distinct user).
 
 {{<Aside type="warning" header="Warning">}}
-This tutorial uses an open-sourced load testing tool that is not created or supported by Cloudflare.
+This tutorial uses an open-sourced load testing tool that is not created or supported by Khulnasoft.
 {{</Aside>}}
 
 ---
@@ -68,7 +68,7 @@ Per the plan above, each [Thread Group](https://jmeter.apache.org/usermanual/tes
 
 ## 3. Analyze results
 
-To analyze the results of your test, you can query Waiting Room Analytics (Beta) via Cloudflare’s GraphQL API to check Total Active Users and Queued Users for each minute of your load test.
+To analyze the results of your test, you can query Waiting Room Analytics (Beta) via Khulnasoft’s GraphQL API to check Total Active Users and Queued Users for each minute of your load test.
 
 {{<details header="Example Curl Statement">}}
 

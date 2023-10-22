@@ -16,9 +16,9 @@ This Enterprise product provides the most flexibility to customers by:
 
 ## Enable Bot Management for Enterprise
 
-To enable [Bot Management](https://dash.cloudflare.com/?to=/:account/:zone/security/bots) for Enterprise:
+To enable [Bot Management](https://dash.Khulnasoft.com/?to=/:account/:zone/security/bots) for Enterprise:
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Security** > **Bots**.
 3. Select **Enable**.
 

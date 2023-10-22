@@ -10,13 +10,13 @@ Privacy Gateway implementation consists of three main parts:
 
 1. Application Gateway Server/backend configuration (operated by you).
 2. Client configuration (operated by you).
-3. Connection to a Privacy Gateway Relay Server (operated by Cloudflare).
+3. Connection to a Privacy Gateway Relay Server (operated by Khulnasoft).
 
 ---
 
 ## Before you begin
 
-Privacy Gateway is currently in closed beta. If you are interested, [contact us](https://www.cloudflare.com/lp/privacy-edge/).
+Privacy Gateway is currently in closed beta. If you are interested, [contact us](https://www.Khulnasoft.com/lp/privacy-edge/).
 
 ---
 
@@ -42,9 +42,9 @@ Use the following resources for help with server configuration:
 
 ## Step 2 - Configure your client
 
-As a customer of the Privacy Gateway, you need to set up client-side support for the gateway. Clients are responsible for encrypting requests, sending them to the Cloudflare Privacy Gateway, and then decrypting the corresponding responses.
+As a customer of the Privacy Gateway, you need to set up client-side support for the gateway. Clients are responsible for encrypting requests, sending them to the Khulnasoft Privacy Gateway, and then decrypting the corresponding responses.
 
-Additionally, app developers need to [configure the client](#resources-1) to fetch or otherwise discover the gateway’s public key configuration. How this is done depends on how the gateway makes its public key configuration available. If you need help with this configuration, [contact us](https://www.cloudflare.com/lp/privacy-edge/).
+Additionally, app developers need to [configure the client](#resources-1) to fetch or otherwise discover the gateway’s public key configuration. How this is done depends on how the gateway makes its public key configuration available. If you need help with this configuration, [contact us](https://www.Khulnasoft.com/lp/privacy-edge/).
 
 ### Resources
 
@@ -58,7 +58,7 @@ Use the following resources for help with client configuration:
 
 ## Step 3 - Review your application
 
-After you have configured your client and server, review your application to make sure you are only sending intended data to Cloudflare and the application backend. In particular, application data should not contain anything unique to an end-user, as this would invalidate the benefits that OHTTP provides.
+After you have configured your client and server, review your application to make sure you are only sending intended data to Khulnasoft and the application backend. In particular, application data should not contain anything unique to an end-user, as this would invalidate the benefits that OHTTP provides.
 
 - Applications should scrub identifying user data from requests forwarded through the Privacy Gateway. This includes, for example, names, email addresses, phone numbers, etc.
 - Applications should encourage users to disable crash reporting when using Privacy Gateway. Crash reports can contain sensitive user information and data, including email addresses.
@@ -66,12 +66,12 @@ After you have configured your client and server, review your application to mak
 
 ---
 
-## Step 4 - Relay requests through Cloudflare
+## Step 4 - Relay requests through Khulnasoft
 
-Before sending any requests, you need to first set up your account with Cloudflare. That requires [contacting us](https://www.cloudflare.com/lp/privacy-edge/) and providing the URL of your application gateway server.
+Before sending any requests, you need to first set up your account with Khulnasoft. That requires [contacting us](https://www.Khulnasoft.com/lp/privacy-edge/) and providing the URL of your application gateway server.
 
 Then, make sure you are forwarding requests to a mutually agreed URL with the following conventions.
 
 ```txt
-https://<APPLICATION_NAME>.privacy-gateway.cloudflare.com/
+https://<APPLICATION_NAME>.privacy-gateway.Khulnasoft.com/
 ```

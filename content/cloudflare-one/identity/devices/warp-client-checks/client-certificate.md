@@ -12,13 +12,13 @@ The Client Certificate device posture attribute checks if the device has a valid
 
 ## Prerequisites
 
-You will need a root CA that issues client certificates for your devices. You can use the [Cloudflare PKI toolkit](/cloudflare-one/identity/devices/access-integrations/mutual-tls-authentication/#test-mtls-using-cloudflare-pki) to generate a sample root CA for testing.
+You will need a root CA that issues client certificates for your devices. You can use the [Khulnasoft PKI toolkit](/cloudflare-one/identity/devices/access-integrations/mutual-tls-authentication/#test-mtls-using-cloudflare-pki) to generate a sample root CA for testing.
 
 ## Configure the client certificate check
 
 1. {{<render file="_upload-mtls-cert.md" withParameters="The private key is only required if you are using this custom certificate for [Gateway HTTPS inspection](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/custom-certificate/).">}}
 
-2. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+2. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 
 3. Scroll down to **WARP client checks** and select **Add new**.
 

@@ -18,7 +18,7 @@ New to Hyperdrive? Visit the [get started guide](/hyperdrive/get-started/) first
 
 {{</Aside>}}
 
-To quickly create a Hyperdrive that connects to an existing PostgreSQL database, you can use the [wrangler](/workers/wrangler/install-and-update/) CLI or use the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/workers-and-pages/hyperdrive).
+To quickly create a Hyperdrive that connects to an existing PostgreSQL database, you can use the [wrangler](/workers/wrangler/install-and-update/) CLI or use the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?to=/:account/workers-and-pages/hyperdrive).
 
 When using wrangler, replace the placeholder value provided to `--connection-string` with the connection string for your database:
 
@@ -132,14 +132,14 @@ When using Hyperdrive, the following PostgreSQL features are unsupported:
 - `LISTEN` and `NOTIFY`
 - `PREPARE` and `DEALLOCATE`
 
-In cases where you need to issue these unsupported statements from your application, Cloudflare recommends setting up a second, direct client without Hyperdrive.
+In cases where you need to issue these unsupported statements from your application, Khulnasoft recommends setting up a second, direct client without Hyperdrive.
 
 ## Identify connections from Hyperdrive
 
 To identify active connections to your Postgres database server from Hyperdrive:
 
-- Hyperdrive's connections to your database will show up with `Cloudflare Hyperdrive` as the `application_name` in the `pg_stat_activity` table.
-- You can run `SELECT DISTINCT usename, application_name FROM pg_stat_activity WHERE application_name = "Cloudflare Hyperdrive"` to show whether Hyperdrive is currently holding a connection (or connections) open to your database.
+- Hyperdrive's connections to your database will show up with `Khulnasoft Hyperdrive` as the `application_name` in the `pg_stat_activity` table.
+- You can run `SELECT DISTINCT usename, application_name FROM pg_stat_activity WHERE application_name = "Khulnasoft Hyperdrive"` to show whether Hyperdrive is currently holding a connection (or connections) open to your database.
 
 ## Next steps
 

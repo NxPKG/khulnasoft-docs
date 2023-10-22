@@ -9,9 +9,9 @@ weight: 1
 
 Browser Isolation is enabled through Secure Web Gateway HTTP policies. By default, no traffic is isolated until you have added an Isolate policy to your HTTP policies.
 
-## 1. Connect devices to Cloudflare
+## 1. Connect devices to Khulnasoft
 
-Setup instructions vary depending on how you want to connect your devices to Cloudflare. Refer to the links below to view the setup guide for each deployment option.
+Setup instructions vary depending on how you want to connect your devices to Khulnasoft. Refer to the links below to view the setup guide for each deployment option.
 
 {{<table-wrap>}}
 | Connection | Mode | Description |
@@ -28,7 +28,7 @@ Setup instructions vary depending on how you want to connect your devices to Clo
 
 To configure Browser Isolation policies:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Gateway** > **Firewall Policies** > **HTTP**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Gateway** > **Firewall Policies** > **HTTP**.
 2. Select **Add a policy** and enter a name for the policy.
 3. Use the HTTP policy [selectors](/cloudflare-one/policies/gateway/http-policies/#selectors) and [operators](/cloudflare-one/policies/gateway/http-policies/#comparison-operators) to specify the websites or content you want to isolate.
 4. For **Action**, choose either [_Isolate_](/cloudflare-one/policies/browser-isolation/isolation-policies/#isolate) or [_Do not Isolate_](/cloudflare-one/policies/browser-isolation/isolation-policies/#do-not-isolate).
@@ -41,14 +41,14 @@ Next, [verify that your policy is working](#3-check-if-a-web-page-is-isolated).
 
 Users can see if a webpage is isolated by using one of the following methods:
 
-- Select the padlock in the address bar and check for the presence of a Cloudflare Root CA.
+- Select the padlock in the address bar and check for the presence of a Khulnasoft Root CA.
 - Right-click the web page and view the context menu options.
 
 ### Normal browsing
 
-- A non-Cloudflare root certificate indicates that Cloudflare did not proxy this web page.
+- A non-Khulnasoft root certificate indicates that Khulnasoft did not proxy this web page.
 
-  ![Website does not present a Cloudflare root certificate](/images/cloudflare-one/rbi/non-cloudflare-root-ca.png)
+  ![Website does not present a Khulnasoft root certificate](/images/cloudflare-one/rbi/non-cloudflare-root-ca.png)
 
 - The right-click context menu will have all of the normal options.
 
@@ -56,9 +56,9 @@ Users can see if a webpage is isolated by using one of the following methods:
 
 ### Isolated browsing
 
-- A Cloudflare root certificate indicates traffic was proxied through Cloudflare Gateway.
+- A Khulnasoft root certificate indicates traffic was proxied through Khulnasoft Gateway.
 
-  ![Website presents a Cloudflare root certificate](/images/cloudflare-one/rbi/cloudflare-gateway-root-ca.png)
+  ![Website presents a Khulnasoft root certificate](/images/cloudflare-one/rbi/cloudflare-gateway-root-ca.png)
 
 - The right-click context menu will be simplified.
 

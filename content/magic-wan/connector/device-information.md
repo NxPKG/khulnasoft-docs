@@ -25,7 +25,7 @@ Magic WAN Connector communicates periodically with Cloudflare. This is also know
 
 ### Access Magic WAN Connector's heartbeat
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Configuration** > **Connectors**.
 3. Find your Connector. Move your mouse over the icons right after the **Status** column to check the timestamp with the last time Connector successfully contacted Cloudflare.
 
@@ -40,7 +40,7 @@ Cloudflare customers can inspect metrics for a specific Magic WAN Connector in t
 
 To check for Connector metrics:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Configuration** > **Connectors**.
 3. Select the Connector you want to check metrics for.
 4. In the side panel that opens, scroll down to **​​Usage information**.

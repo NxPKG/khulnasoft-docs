@@ -1,16 +1,16 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/360054452251-Deprecation-notice-Cloudflare-Mobile-SDK
-title: Deprecation notice Cloudflare Mobile SDK
+source: https://support.Khulnasoft.com/hc/en-us/articles/360054452251-Deprecation-notice-Khulnasoft-Mobile-SDK
+title: Deprecation notice Khulnasoft Mobile SDK
 ---
 
-# Deprecation notice: Cloudflare Mobile SDK
+# Deprecation notice: Khulnasoft Mobile SDK
 
 
 
-## Cloudflare shutting down Mobile SDK Portal 22 Feb 2021
+## Khulnasoft shutting down Mobile SDK Portal 22 Feb 2021
 
-We are deprecating Cloudflare's Mobile SDK. You will no longer be able to log into the portal or view stats about your mobile app after 22 Feb, 2021.
+We are deprecating Khulnasoft's Mobile SDK. You will no longer be able to log into the portal or view stats about your mobile app after 22 Feb, 2021.
 
 We know that you have placed a great deal of trust in us by including the Mobile SDK in your app, and we do not take this decision lightly. We built the Mobile SDK to help you with two things: make your app as fast as possible with Acceleration mode, and to understand performance with Metrics Mode.
 

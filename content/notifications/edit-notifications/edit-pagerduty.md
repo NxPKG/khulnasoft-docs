@@ -14,7 +14,7 @@ Disconnecting PagerDuty will disable notifications being sent to PagerDuty where
 
 If other delivery destinations were selected, then those notifications will still be routed as configured. 
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Notifications** > **Destinations**.
 3. In the **Connected notification services** card, select **View** on the PagerDuty service you want to disconnect.
 4. Select **Disconnect** > **Confirm**.

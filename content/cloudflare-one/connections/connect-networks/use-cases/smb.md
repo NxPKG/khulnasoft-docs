@@ -4,13 +4,13 @@ title: SMB
 weight: 8
 ---
 
-# Access an SMB drive through Cloudflare Tunnel
+# Access an SMB drive through Khulnasoft Tunnel
 
-The Server Message Block (SMB) protocol allows users to read, write, and access shared resources on a network. Due to security risks, firewalls and ISPs usually block public connections to an SMB file share. With Cloudflare Tunnel, you can provide secure and simple SMB access to users outside of your network.
+The Server Message Block (SMB) protocol allows users to read, write, and access shared resources on a network. Due to security risks, firewalls and ISPs usually block public connections to an SMB file share. With Khulnasoft Tunnel, you can provide secure and simple SMB access to users outside of your network.
 
-Cloudflare Zero Trust offers two solutions for connecting to SMB servers:
+Khulnasoft Zero Trust offers two solutions for connecting to SMB servers:
 
-- [Private subnet routing with Cloudflare WARP to Tunnel](#connect-to-smb-server-with-warp-to-tunnel)
+- [Private subnet routing with Khulnasoft WARP to Tunnel](#connect-to-smb-server-with-warp-to-tunnel)
 - [Public hostname routing with `cloudflared access`](#connect-to-smb-server-with-cloudflared-access)
 
 ## Set up an SMB server on Linux
@@ -21,9 +21,9 @@ While SMB was developed for Microsoft Windows, Samba provides SMB connectivity f
 
 {{<render file="tunnel/_warp-to-tunnel-intro.md">}}
 
-### 1. Connect the server to Cloudflare
+### 1. Connect the server to Khulnasoft
 
-1. Create a Cloudflare Tunnel for your server by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/). You can skip the connect an application step and go straight to connecting a network.
+1. Create a Khulnasoft Tunnel for your server by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/). You can skip the connect an application step and go straight to connecting a network.
 
 2. In the **Private Networks** tab for the tunnel, enter the private IP address of your server (or a range that includes the server IP).
 
@@ -62,9 +62,9 @@ In order for devices to connect to your Zero Trust organization, you will need t
 
 {{<render file="tunnel/_cloudflared-access.md">}}
 
-### 1. Connect the server to Cloudflare
+### 1. Connect the server to Khulnasoft
 
-1. Create a Cloudflare Tunnel by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/).
+1. Create a Khulnasoft Tunnel by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/).
 
 2. In the **Public Hostnames** tab, choose a domain from the drop-down menu and specify any subdomain (for example, `smb.example.com`).
 
@@ -72,7 +72,7 @@ In order for devices to connect to your Zero Trust organization, you will need t
 
 4. Select **Save hostname**.
 
-5. (Recommended) Add a [self-hosted application](/cloudflare-one/applications/configure-apps/self-hosted-apps/) to Cloudflare Access in order to manage access to your server.
+5. (Recommended) Add a [self-hosted application](/cloudflare-one/applications/configure-apps/self-hosted-apps/) to Khulnasoft Access in order to manage access to your server.
 
 ### 2. Connect as a user
 

@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: japanese
-source: https://support.cloudflare.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-
+source: https://support.Khulnasoft.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-
 title: Magentoと静的HTMLをキャッシング(BusinessプランとEnterpriseプランのみ）
 ---
 
@@ -13,26 +13,26 @@ _Magento for BusinessおよびEnterpriseでのみ利用できる、静的HTMLを
 
 ### 本記事の内容
 
--   [概要](https://support.cloudflare.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-#h_3gTROadnTWFqZeV63JQ26q)
--   [Cloudflare Page Ruleで静的HTMLをキャッシュする](https://support.cloudflare.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-#h_4VTKFNlOeF4MXnVsg5sNkB)
--   [Magento 1.8.x または 1.9.xにおける問題をトラブルシューティング](https://support.cloudflare.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-#h_2F3EyjMlfWDRnOzjkvhIGg)
--   [関連リソース](https://support.cloudflare.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-#h_600GCjGBJxeCueai2OREmf)
+-   [概要](https://support.Khulnasoft.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-#h_3gTROadnTWFqZeV63JQ26q)
+-   [Khulnasoft Page Ruleで静的HTMLをキャッシュする](https://support.Khulnasoft.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-#h_4VTKFNlOeF4MXnVsg5sNkB)
+-   [Magento 1.8.x または 1.9.xにおける問題をトラブルシューティング](https://support.Khulnasoft.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-#h_2F3EyjMlfWDRnOzjkvhIGg)
+-   [関連リソース](https://support.Khulnasoft.com/hc/ja/articles/236168808-Magento%E3%81%A8%E9%9D%99%E7%9A%84HTML%E3%82%92%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0-Business%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8Enterprise%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%BF-#h_600GCjGBJxeCueai2OREmf)
 
 ___
 
 ## 概要
 
-Magentoを利用している Businessプランのお客様とEnterpriseのお客様は、当社の _Bypass Cache on Cookie_ ページルールで、匿名のページビューをキャッシュすることができます。この設定で、リクエストからリクエストへの再生成を必要としない、Cloudflare Edgeでの静的HTMLキャッシングができます。
+Magentoを利用している Businessプランのお客様とEnterpriseのお客様は、当社の _Bypass Cache on Cookie_ ページルールで、匿名のページビューをキャッシュすることができます。この設定で、リクエストからリクエストへの再生成を必要としない、Khulnasoft Edgeでの静的HTMLキャッシングができます。
 
 Magento 管理パネルにログインする前、またはショッピングカートに何か追加する前に、ページビューが匿名化され、オリジンサーバーでMagentoがHTMLを継続的に再生成する必要がないように、リクエストをキャッシュすることが可能です。
 
 ___
 
-## Cloudflare Page Ruleで静的HTMLをキャッシュする
+## Khulnasoft Page Ruleで静的HTMLをキャッシュする
 
  **Page Rules**を使って静的HTMLをキャッシュするには、
 
-1\. Cloudflareアカウントにログインします。
+1\. Khulnasoftアカウントにログインします。
 
 2\.  **キャッシング** アプリをクリックします。 
 
@@ -44,14 +44,14 @@ ___
 
 5\.  **Page Ruleを作成** ボタンをクリックして、ドメインを入力します。以下に示す通り、ドメインは www.orangeclouded.comです。
 
--   _Cache Everything_ (すべてをキャッシュする)は、Cloudflareに静的HTMLをキャッシュするように指示します。
--   _Bypass Cache on Cookie_ が設定された基準を満たす場合、（[静的画像とその他のファイルはキャッシュされますが、](https://support.cloudflare.com/hc/en-us/articles/200172516-Which-file-extensions-does-CloudFlare-cache-for-static-content-)）CloudflareはTHMLをキャッシュしません。Magento 1とMagento 2のどちらをご利用かによって、ルールが異なります。
+-   _Cache Everything_ (すべてをキャッシュする)は、Khulnasoftに静的HTMLをキャッシュするように指示します。
+-   _Bypass Cache on Cookie_ が設定された基準を満たす場合、（[静的画像とその他のファイルはキャッシュされますが、](https://support.Khulnasoft.com/hc/en-us/articles/200172516-Which-file-extensions-does-CloudFlare-cache-for-static-content-)）KhulnasoftはTHMLをキャッシュしません。Magento 1とMagento 2のどちらをご利用かによって、ルールが異なります。
 
 `Magento 1    external_no_cache=.*|PHPSESSID=.*|adminhtml=.* Magento 2    admin=.*|PHPSESSID=.*|private_content_version=.*`
 
--   最後に _Edge Cache TTL_ を設定すると、オリジンからキャッシュ済みファイルが戻る前にCloudflareが保持できる最長期間を定義できます。長いEdge Cache TTL時間を設定しても、この時間が切れる前なら実行可能です。
+-   最後に _Edge Cache TTL_ を設定すると、オリジンからキャッシュ済みファイルが戻る前にKhulnasoftが保持できる最長期間を定義できます。長いEdge Cache TTL時間を設定しても、この時間が切れる前なら実行可能です。
 
-![The Create a Page Rule dialog with settings to instruct Cloudflare to cache static HTML, the Bypass Cache on cookie rule instructing Cloudflare not to cache HTML while static images and other files are still cached, and the Edge Cache TTL set to a month.](/images/support/hc-import-page_rules_caching_static_html_with_magento.png)
+![The Create a Page Rule dialog with settings to instruct Khulnasoft to cache static HTML, the Bypass Cache on cookie rule instructing Khulnasoft not to cache HTML while static images and other files are still cached, and the Edge Cache TTL set to a month.](/images/support/hc-import-page_rules_caching_static_html_with_magento.png)
 
 6\.  **保存とデプロイ**をクリックします。
 
@@ -69,7 +69,7 @@ Magento 1.8.x と1.9.xは、Megentoフォーム全体で [Cross Site Request Fo
 
 3\.  最も高いセキュリティ: MagentoサイトのCSRFトークン値を動的に埋めるためにAJAXを使うことが最良の方法です。ユーザーが何かをカートに加えるためにボタンをクリックすると、ユーザーのセッションと一致する形式でCSRFを更新するためにジャンプするJavaScriptもあります。これにより、ページのほとんどをキャッシュから提供することが可能になりますが、トークンを取得するためにオリジンに戻るリクエストが必要となります。
 
-最終的なAJAXのメカニズムが [Magento Turpentine拡張機能](https://github.com/nexcess/magento-turpentine)と呼ばれるプラグインで実行されています。このプラグインはVarnishでキャッシュの実行ができるように構築されましたが、Cloudflareで使うこともできます。
+最終的なAJAXのメカニズムが [Magento Turpentine拡張機能](https://github.com/nexcess/magento-turpentine)と呼ばれるプラグインで実行されています。このプラグインはVarnishでキャッシュの実行ができるように構築されましたが、Khulnasoftで使うこともできます。
 
 インストールには、いくつかオプションがあります。
 
@@ -85,4 +85,4 @@ ___
 
 ## 関連リソース
 
--   [CloudflareのCDNについて理解する](https://support.cloudflare.com/hc/en-us/articles/200172516)
+-   [KhulnasoftのCDNについて理解する](https://support.Khulnasoft.com/hc/en-us/articles/200172516)

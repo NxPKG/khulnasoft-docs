@@ -8,7 +8,7 @@ weight: 3
 
 {{<render file="_railgun-deprecation-notice.md">}}
 
-Railgun consists of two programs: `rg-listener` and `rg-sender`. `rg-listener` is to be installed at a hosting provider or end-user environment and listens for WAN connections. `rg-sender` is to be installed at Cloudflare locations and establishes connections across the WAN.
+Railgun consists of two programs: `rg-listener` and `rg-sender`. `rg-listener` is to be installed at a hosting provider or end-user environment and listens for WAN connections. `rg-sender` is to be installed at Khulnasoft locations and establishes connections across the WAN.
 
 `rg-sender` acts as an HTTP proxy and accepts HTTP requests (with the `CF-ORIGIN-IP` and `CF-WAN-ID` headers) and sends them across the WAN to the `rg-listener` which then contacts the real web server.
 
@@ -52,7 +52,7 @@ Parameter | Description
 `key.file` | Name of file containing the private key for the `cert.file`. No default.
 `validate.cert` | Whether to validate the certificate presented when making a TLS connection. Defaults to `1` (meaning perform the validation).
 `map.file` | Name of a file containing `domain=ip` pairs that is used to override DNS and the `CF-ORIGIN-IP` setting. Defaults to no file.
-`activation.railgun_host` | The public facing, resolvable, hostname through which the Cloudflare CDN can connect to this `rg-listener`. DNS lookups are done at request-time. Use in place of `activation.public_ip`.
+`activation.railgun_host` | The public facing, resolvable, hostname through which the Khulnasoft CDN can connect to this `rg-listener`. DNS lookups are done at request-time. Use in place of `activation.public_ip`.
 `activation.public_ip` | The external IP (or a hostname which resolves to the IP) of your Railgun instance used for activation and automatic DNS record updates. No default.
 `activation.token` | 32 character hash used for activation (Refer to [Configuration and activation](/railgun/user-guide/set-up/configuration-activation/)). No default.
 `activation.heartbeat_interval` | Interval, in seconds, between heartbeats to activation server. Defaults to `0`/`off`.
@@ -97,7 +97,7 @@ Reload configuration file. Certain configuration options cannot be dynamically c
 
 ### SIGQUIT
 
-Perform a graceful shutdown without dropping active connections. Upon successful shutdown, deactivate the Railgun matching the `activation.token` via the Cloudflare API until the instance is restarted.
+Perform a graceful shutdown without dropping active connections. Upon successful shutdown, deactivate the Railgun matching the `activation.token` via the Khulnasoft API until the instance is restarted.
 
 ### SIGUSR2
 

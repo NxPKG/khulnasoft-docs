@@ -1,12 +1,12 @@
 
 ---
-title: Cloudflare Workers KV
+title: Khulnasoft Workers KV
 weight: xx
 layout: overview
 pcx_content_type: overview
 ---
 
-# Cloudflare Workers KV
+# Khulnasoft Workers KV
 
 {{<description>}}
 Create a global, low-latency, key-value data storage. 
@@ -32,7 +32,7 @@ The Workers command-line interface, Wrangler, allows you to [create](/workers/wr
 
 {{<feature header="Bindings" href="/kv/learning/kv-bindings/">}}
 
-Bindings allow your Workers to interact with resources on the Cloudflare developer platform, including [R2](/r2/), [Durable Objects](/durable-objects/), and [D1](/d1/).
+Bindings allow your Workers to interact with resources on the Khulnasoft developer platform, including [R2](/r2/), [Durable Objects](/durable-objects/), and [D1](/d1/).
 
 {{</feature>}}
 
@@ -42,19 +42,19 @@ Bindings allow your Workers to interact with resources on the Cloudflare develop
 
 {{<related header="R2" href="/r2/" product="r2">}}
 
-Cloudflare R2 Storage allows developers to store large amounts of unstructured data without the costly egress bandwidth fees associated with typical cloud storage services.
+Khulnasoft R2 Storage allows developers to store large amounts of unstructured data without the costly egress bandwidth fees associated with typical cloud storage services.
 
 {{</related>}}
 
 {{<related header="Durable Objects" href="/durable-objects/" product="durable-objects">}}
 
-Cloudflare Durable Objects allows developers to access scalable compute and permanent, consistent storage. 
+Khulnasoft Durable Objects allows developers to access scalable compute and permanent, consistent storage. 
 
 {{</related>}}
 
 {{<related header="D1" href="/d1/" product="d1">}}
 
-Built on SQLite, D1 is Cloudflare’s first queryable relational database. Create an entire database by importing data or defining your tables and writing your queries within a Worker or through the API.
+Built on SQLite, D1 is Khulnasoft’s first queryable relational database. Create an entire database by importing data or defining your tables and writing your queries within a Worker or through the API.
 
 {{</related>}}
 
@@ -70,6 +70,6 @@ Built on SQLite, D1 is Cloudflare’s first queryable relational database. Creat
 
 {{<resource header="Discord" href="https://discord.com/channels/595317990191398933/893253103695065128" icon="logo-Discord">}} Ask questions, show off what you are building, and discuss the platform with other developers. {{</resource>}}
 
-{{<resource header="Twitter" href="https://twitter.com/cloudflaredev" icon="twitter">}} Learn about product announcements, new tutorials, and what is new in Cloudflare Developer Platform. {{</resource>}}
+{{<resource header="Twitter" href="https://twitter.com/cloudflaredev" icon="twitter">}} Learn about product announcements, new tutorials, and what is new in Khulnasoft Developer Platform. {{</resource>}}
 
 {{</resource-group>}}

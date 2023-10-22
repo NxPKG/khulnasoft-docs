@@ -16,7 +16,7 @@ rss: file
 
 ## Integration permissions
 
-For the Box integration to function, Cloudflare CASB requires the following Box permissions via an OAuth 2.0 app:
+For the Box integration to function, Khulnasoft CASB requires the following Box permissions via an OAuth 2.0 app:
 
 - `Read all files and folders stored in Box`
 

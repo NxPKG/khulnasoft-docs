@@ -6,7 +6,7 @@ weight: 12
 
 # OneLogin OIDC
 
-OneLogin provides SSO identity management. Cloudflare Access supports OneLogin as an OIDC identity provider.
+OneLogin provides SSO identity management. Khulnasoft Access supports OneLogin as an OIDC identity provider.
 
 ## Set up OneLogin as an OIDC provider
 
@@ -32,7 +32,7 @@ OneLogin provides SSO identity management. Cloudflare Access supports OneLogin a
 
 9. Copy the **Client ID** and **Client Secret**.
 
-10. In [Zero Trust](https://one.dash.cloudflare.com),, go to **Settings** > **Authentication**.
+10. In [Zero Trust](https://one.dash.Khulnasoft.com),, go to **Settings** > **Authentication**.
 
 11. Under **Login methods**, select **Add new**.
 

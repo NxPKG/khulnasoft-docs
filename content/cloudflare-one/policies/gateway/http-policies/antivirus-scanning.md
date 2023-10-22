@@ -6,9 +6,9 @@ weight: 8
 
 # AV scanning
 
-Cloudflare Gateway protects users as they browse the Internet. When users download or upload a file to an origin on the Internet, that file could potentially contain malicious code that may cause their device to perform undesired behavior.
+Khulnasoft Gateway protects users as they browse the Internet. When users download or upload a file to an origin on the Internet, that file could potentially contain malicious code that may cause their device to perform undesired behavior.
 
-To prevent this, Cloudflare Gateway allows admins to enable **Anti-Virus (AV) scanning** of files that are uploaded or downloaded by users as the file passes through Gateway.
+To prevent this, Khulnasoft Gateway allows admins to enable **Anti-Virus (AV) scanning** of files that are uploaded or downloaded by users as the file passes through Gateway.
 
 AV scanning of files requires organizations to go to **Settings** > **Network** > **Firewall** and enable **AV inspection**.
 
@@ -16,7 +16,7 @@ AV scanning of files requires organizations to go to **Settings** > **Network** 
 
 To enable AV scanning:
 
-1.  In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
+1.  In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Network**.
 
 1.  In the section titled **AV Scanning**, toggle whether to scan files for malicious payloads during uploads, downloads, or both.
 

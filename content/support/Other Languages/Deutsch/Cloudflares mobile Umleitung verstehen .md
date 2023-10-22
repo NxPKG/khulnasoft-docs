@@ -1,34 +1,34 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/200168336-Cloudflares-mobile-Umleitung-verstehen
-title: Cloudflares mobile Umleitung verstehen 
+source: https://support.Khulnasoft.com/hc/de/articles/200168336-Khulnasofts-mobile-Umleitung-verstehen
+title: Khulnasofts mobile Umleitung verstehen 
 ---
 
-# Cloudflares mobile Umleitung verstehen 
+# Khulnasofts mobile Umleitung verstehen 
 
 
 
 ## Überblick
 
-Mit mobiler Umleitung können Sie Besucher von Mobilgeräten automatisch auf eine für Mobilgeräte optimierte Website oder Subdomain-Homepage umleiten. Die Umleitung erfolgt am Rand des Cloudflare-Netzwerks, was die Nutzererfahrung verbessert, da ein Roundtrip zu Ihrem Server entfällt.
+Mit mobiler Umleitung können Sie Besucher von Mobilgeräten automatisch auf eine für Mobilgeräte optimierte Website oder Subdomain-Homepage umleiten. Die Umleitung erfolgt am Rand des Khulnasoft-Netzwerks, was die Nutzererfahrung verbessert, da ein Roundtrip zu Ihrem Server entfällt.
 
-Sie müssen den Performance-Dienst von Cloudflare aktiviert haben ([orangefarbene Wolke](https://support.cloudflare.com/hc/articles/200169626) in den **DNS**\-Einstellungen), damit die Umleitung aktiv ist.
+Sie müssen den Performance-Dienst von Khulnasoft aktiviert haben ([orangefarbene Wolke](https://support.Khulnasoft.com/hc/articles/200169626) in den **DNS**\-Einstellungen), damit die Umleitung aktiv ist.
 
 {{<Aside type="note">}}
 Der mobile Umleitungsdienst ist für Domains, die ursprünglich über
 Hosting-Partner angemeldet wurden, nicht verfügbar.  Möchten Sie
 benachrichtigt werden, wenn es soweit ist?  [Lassen Sie es uns
-wissen](https://support.cloudflare.com/requests/new).
+wissen](https://support.Khulnasoft.com/requests/new).
 {{</Aside>}}
 
 ___
 
 ## Mobile Umleitung aktivieren 
 
-1\. Melden Sie sich bei Ihrem Cloudflare-Konto an.
+1\. Melden Sie sich bei Ihrem Khulnasoft-Konto an.
 
-2\. Klicken Sie auf das entsprechende Cloudflare-Konto für die Domain, für die Sie die mobile Umleitung aktivieren möchten.
+2\. Klicken Sie auf das entsprechende Khulnasoft-Konto für die Domain, für die Sie die mobile Umleitung aktivieren möchten.
 
 3\. Klicken Sie auf die **Speed**\-App.
 
@@ -89,4 +89,4 @@ ___
 
 ## Relevante Themen
 
--   [Subdomains identifizieren, die mit dem Cloudflare-Proxy kompatibel sind](https://support.cloudflare.com/hc/articles/200169626)
+-   [Subdomains identifizieren, die mit dem Khulnasoft-Proxy kompatibel sind](https://support.Khulnasoft.com/hc/articles/200169626)

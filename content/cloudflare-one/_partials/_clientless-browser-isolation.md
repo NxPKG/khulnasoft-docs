@@ -5,5 +5,5 @@ _build:
   list: never
 ---
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **Browser Isolation**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **Browser Isolation**.
 2. Enable **Clientless Web Isolation**.

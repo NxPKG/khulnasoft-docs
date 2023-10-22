@@ -6,6 +6,6 @@ layout: list
 
 # Glossary
 
-Review the definitions for terms used across Cloudflare's DNS documentation.
+Review the definitions for terms used across Khulnasoft's DNS documentation.
 
 {{<glossary product="DNS">}}

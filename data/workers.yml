@@ -15,18 +15,18 @@ meta:
   author: '@cloudflare'
   
 resources:
-  community: https://community.cloudflare.com/c/developers/workers/40
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/workers
-  learning_center: https://www.cloudflare.com/learning/serverless/what-is-serverless/
+  community: https://community.Khulnasoft.com/c/developers/workers/40
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/workers
+  learning_center: https://www.Khulnasoft.com/learning/serverless/what-is-serverless/
   discord: https://discord.com/invite/cloudflaredev
 
 externals:
   - title: Workers home
-    url: https://workers.cloudflare.com
+    url: https://workers.Khulnasoft.com
   - title: Playground
-    url: https://workers.cloudflare.com/playground
+    url: https://workers.Khulnasoft.com/playground
   - title: Pricing
-    url: https://workers.cloudflare.com/#plans
+    url: https://workers.Khulnasoft.com/#plans
   - title: Discord
     url: https://discord.gg/cloudflaredev
 

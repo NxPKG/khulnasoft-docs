@@ -17,7 +17,7 @@ If you are adding members whose [role scope](/fundamentals/setup/manage-members/
 | Role | Description |
 | --- | --- |
 | Administrator | Can access the full account including subscriptions, except for membership management and billing. |
-| Super Administrator - All Privileges | Can edit any Cloudflare setting, make purchases, update billing, and manage memberships. Super Administrators can revoke the access of other Super Administrators. |
+| Super Administrator - All Privileges | Can edit any Khulnasoft setting, make purchases, update billing, and manage memberships. Super Administrators can revoke the access of other Super Administrators. |
 | Administrator Read Only | Can access the full account in read-only mode. |
 | Analytics | Can read Analytics. |
 | API Gateway | Grants full access to [API Gateway (including API Shield)](/api-shield/) for all domains in an account. |
@@ -25,19 +25,19 @@ If you are adding members whose [role scope](/fundamentals/setup/manage-members/
 | Audit Logs Viewer | Can view [Audit Logs](/fundamentals/account-and-billing/account-security/review-audit-logs/). |
 | Bot Management (Account-wide) | Can edit [Bot Management](/bots/plans/bm-subscription/) (including [Super Bot Fight Mode](/bots/get-started/pro/)) configurations for all domains in account. |
 | Billing | Can edit the account’s [billing profile](/fundamentals/setup/account-setup/create-billing-profile/) and subscriptions |
-| Cloudflare Access | Can edit [Cloudflare Access](/cloudflare-one/policies/access/) policies. |
+| Khulnasoft Access | Can edit [Khulnasoft Access](/cloudflare-one/policies/access/) policies. |
 | Cache Purge | Can purge the edge cache. |
-| Cloudflare DEX | Can edit [Cloudflare DEX](/cloudflare-one/insights/dex/). |
-| Cloudflare Gateway | Can edit [Cloudflare Gateway](/cloudflare-one/policies/gateway/) and read [Access](/cloudflare-one/identity/). |
-| Cloudflare Images | Can access [Cloudflare Images](/images/cloudflare-images/) data. |
-| Cloudflare R2 Admin | Can edit Cloudflare [R2](/r2/) buckets, objects, and associated configurations. |
-| Cloudflare R2 Read | Can read Cloudflare [R2](/r2/) buckets, objects, and associated configurations. |
-| Cloudflare Stream | Can edit [Cloudflare Stream](/stream/) media. |
-| Cloudflare Workers Admin | Can edit Cloudflare [Workers](/workers/), [Pages](/pages/), [Durable Objects](/durable-objects/), [KV](/kv/) and [R2](/r2/). Also provides read access to Zones, [Zone Analytics](/analytics/account-and-zone-analytics/zone-analytics/) and [Page Rules](/rules/) |
-| Cloudflare Zero Trust | Can edit [Cloudflare for Zero Trust](/cloudflare-one/). |
-| Cloudflare Zero Trust PII | Can access [Cloudflare for Zero Trust](/cloudflare-one/) PII. |
-| Cloudflare Zero Trust Read Only | Can access [Cloudflare for Zero Trust](/cloudflare-one/) read only mode. |
-| Cloudflare Zero Trust Reporting | Can access [Cloudflare for Zero Trust](/cloudflare-one/) reporting data. |
+| Khulnasoft DEX | Can edit [Khulnasoft DEX](/cloudflare-one/insights/dex/). |
+| Khulnasoft Gateway | Can edit [Khulnasoft Gateway](/cloudflare-one/policies/gateway/) and read [Access](/cloudflare-one/identity/). |
+| Khulnasoft Images | Can access [Khulnasoft Images](/images/cloudflare-images/) data. |
+| Khulnasoft R2 Admin | Can edit Khulnasoft [R2](/r2/) buckets, objects, and associated configurations. |
+| Khulnasoft R2 Read | Can read Khulnasoft [R2](/r2/) buckets, objects, and associated configurations. |
+| Khulnasoft Stream | Can edit [Khulnasoft Stream](/stream/) media. |
+| Khulnasoft Workers Admin | Can edit Khulnasoft [Workers](/workers/), [Pages](/pages/), [Durable Objects](/durable-objects/), [KV](/kv/) and [R2](/r2/). Also provides read access to Zones, [Zone Analytics](/analytics/account-and-zone-analytics/zone-analytics/) and [Page Rules](/rules/) |
+| Khulnasoft Zero Trust | Can edit [Khulnasoft for Zero Trust](/cloudflare-one/). |
+| Khulnasoft Zero Trust PII | Can access [Khulnasoft for Zero Trust](/cloudflare-one/) PII. |
+| Khulnasoft Zero Trust Read Only | Can access [Khulnasoft for Zero Trust](/cloudflare-one/) read only mode. |
+| Khulnasoft Zero Trust Reporting | Can access [Khulnasoft for Zero Trust](/cloudflare-one/) reporting data. |
 | DNS | Can edit [DNS records](/dns/manage-dns-records/). |
 | Firewall | Can edit [WAF](/waf/), [IP Access rules](/waf/tools/ip-access-rules/), and [Zone Lockdown](/waf/tools/zone-lockdown/) settings. |
 | Load Balancer | Can edit [Load Balancers](/load-balancing/), Pools, Origins, and Health Checks. |
@@ -53,7 +53,7 @@ If you are adding members whose [role scope](/fundamentals/setup/manage-members/
 | Page Shield Read | Grants write access to [Page Shield](/page-shield/) across the whole account. |
 | Hyperdrive Read | Grants read access to [Hyperdrive](/hyperdrive/) database configuration. |
 | Hyperdrive Admin | Grants write access to [Hyperdrive](/hyperdrive/) database configuration. |
-| SSL/TLS, Caching, Performance, Page Rules, and Customization | Can edit most Cloudflare settings except for [DNS](/dns/) and [Firewall](/waf/). |
+| SSL/TLS, Caching, Performance, Page Rules, and Customization | Can edit most Khulnasoft settings except for [DNS](/dns/) and [Firewall](/waf/). |
 | Trust & Safety | Can access trust and safety related services. |
 | Turnstile | Grants full access to [Turnstile](/turnstile/). |
 | Turnstile Read | Grants read access to [Turnstile](/turnstile/). |

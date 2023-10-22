@@ -23,7 +23,7 @@ layout: list
   </thead>
   <tbody>
        <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...66edb651</td>
       <td>100555</td>
       <td>Apache Commons Text - Code Injection - CVE:CVE-2022-42889</td>

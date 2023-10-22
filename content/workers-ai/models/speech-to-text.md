@@ -47,7 +47,7 @@ export default {
 {{<tab label="curl">}}
 
 ```sh
-$ curl https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/openai/whisper \
+$ curl https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/openai/whisper \
   -X POST \
   -H "Authorization: Bearer {API_TOKEN}" \
   --data-binary @talking-llama.mp3

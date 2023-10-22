@@ -8,7 +8,7 @@ weight: 1
 
 Ansible is a software tool that enables at scale management of infrastructure. Ansible is agentless — all it needs to function is the ability to SSH to the target and Python installed on the target.
 
-Ansible works alongside Terraform to streamline the Cloudflare Tunnel setup process. In this guide, you will use Terraform to deploy an SSH server on Google Cloud and create a [locally-managed tunnel](/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/) that makes the server available over the Internet. Terraform will automatically run an Ansible playbook that installs and configures `cloudflared` on the server.
+Ansible works alongside Terraform to streamline the Khulnasoft Tunnel setup process. In this guide, you will use Terraform to deploy an SSH server on Google Cloud and create a [locally-managed tunnel](/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/) that makes the server available over the Internet. Terraform will automatically run an Ansible playbook that installs and configures `cloudflared` on the server.
 
 ## Prerequisites
 
@@ -16,8 +16,8 @@ To complete the steps in this guide, you will need:
 
 - [A Google Cloud Project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) and [GCP CLI installed and authenticated](https://cloud.google.com/sdk/docs/install).
 - [Basic knowledge of Terraform](/cloudflare-one/connections/connect-networks/deploy-tunnels/deployment-guides/terraform/) and[Terraform installed](https://developer.hashicorp.com/terraform/tutorials/certification-associate-tutorials/install-cli).
-- [A zone on Cloudflare](/fundamentals/setup/account-setup/add-site/).
-- [A Cloudflare API token](/fundamentals/api/get-started/create-token/) with `Cloudflare Tunnel` and `DNS` permissions.
+- [A zone on Khulnasoft](/fundamentals/setup/account-setup/add-site/).
+- [A Khulnasoft API token](/fundamentals/api/get-started/create-token/) with `Khulnasoft Tunnel` and `DNS` permissions.
 
 ## 1. Install Ansible
 
@@ -103,21 +103,21 @@ You will need to declare the [providers](https://registry.terraform.io/browse/pr
     }
     ```
 
-### Configure Cloudflare resources
+### Configure Khulnasoft resources
 
-The following configuration will modify settings in your Cloudflare account.
+The following configuration will modify settings in your Khulnasoft account.
 
 1. In your configuration directory, create a `.tf` file:
 
    ```sh
-   $ touch Cloudflare-config.tf
+   $ touch Khulnasoft-config.tf
    ```
 
-2. Add the following resources to `Cloudflare-config.tf`:
+2. Add the following resources to `Khulnasoft-config.tf`:
 
    ```txt
    ---
-   filename: Cloudflare-config.tf
+   filename: Khulnasoft-config.tf
    ---
    # Generates a 35-character secret for the tunnel.
    resource "random_id" "tunnel_secret" {
@@ -328,7 +328,7 @@ Once you have created the configuration files, you can deploy them through Terra
    $ terraform apply
    ```
 
-It may take several minutes for the GCP instance and tunnel to come online. You can view your new tunnel in [Zero Trust](https://one.dash.cloudflare.com) under **Access** > **Tunnels**.
+It may take several minutes for the GCP instance and tunnel to come online. You can view your new tunnel in [Zero Trust](https://one.dash.Khulnasoft.com) under **Access** > **Tunnels**.
 
 ## 7. Test the connection
 

@@ -6,7 +6,7 @@ weight: 1
 
 # Domains
 
-Cloudflare Area 1 works through a system of domain-based routing, where Cloudflare receives and evaluates incoming email from a domain.
+Khulnasoft Area 1 works through a system of domain-based routing, where Khulnasoft receives and evaluates incoming email from a domain.
 
 ## Create a domain
 

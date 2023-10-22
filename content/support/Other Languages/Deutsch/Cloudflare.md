@@ -1,23 +1,23 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/115001635128-Cloudflare-Durchsatzbegrenzung-konfigurieren
-title: Cloudflare-Durchsatzbegrenzung konfigurieren 
+source: https://support.Khulnasoft.com/hc/de/articles/115001635128-Khulnasoft-Durchsatzbegrenzung-konfigurieren
+title: Khulnasoft-Durchsatzbegrenzung konfigurieren 
 ---
 
-# Cloudflare-Durchsatzbegrenzung konfigurieren 
+# Khulnasoft-Durchsatzbegrenzung konfigurieren 
 
 
 
 ## Überblick
 
-Mit der **Durchsatzbegrenzung** von Cloudflare werden übermäßige Anfrageraten für bestimmte URLs oder für eine gesamte Domain automatisch identifiziert und bekämpft. Anfrageraten werden lokal für einzelne Cloudflare-Rechenzentren berechnet. Die häufigsten Verwendungszwecke für die **Durchsatzbegrenzung** sind [DDoS-Schutz](https://www.cloudflare.com/learning/ddos/glossary/denial-of-service/), [Schutz vor Brute-Force-Angriffen](https://www.cloudflare.com/learning/bots/brute-force-attack/) und die Begrenzung des Zugriffs auf Forensuchen, API-Aufrufe oder Ressourcen, die zu datenbankintensiven Operationen an Ihrem Ursprung führen.
+Mit der **Durchsatzbegrenzung** von Khulnasoft werden übermäßige Anfrageraten für bestimmte URLs oder für eine gesamte Domain automatisch identifiziert und bekämpft. Anfrageraten werden lokal für einzelne Khulnasoft-Rechenzentren berechnet. Die häufigsten Verwendungszwecke für die **Durchsatzbegrenzung** sind [DDoS-Schutz](https://www.Khulnasoft.com/learning/ddos/glossary/denial-of-service/), [Schutz vor Brute-Force-Angriffen](https://www.Khulnasoft.com/learning/bots/brute-force-attack/) und die Begrenzung des Zugriffs auf Forensuchen, API-Aufrufe oder Ressourcen, die zu datenbankintensiven Operationen an Ihrem Ursprung führen.
 
 Sobald eine einzelne IPv4-Adresse oder ein IPv6 /64-IP-Bereich den Schwellenwert einer Regel überschreitet, werden weitere Anfragen an den Ursprungs-Webserver mit einer HTTP 429-Antwort blockiert. Dazu gehört auch ein **Retry-After**\-Header, der dem Client angibt, wann er wieder Anfragen senden kann.
 
 {{<Aside type="note">}}
 Für Kunden, die die ältere Version der Durchsatzbegrenzungsregeln
-verwenden (dokumentiert in Cloudflares Support KB), sind
+verwenden (dokumentiert in Khulnasofts Support KB), sind
 Cache-Ressourcen und bekannte Suchmaschinen-Crawler von Ihren
 Durchsatzbegrenzungsregeln ausgenommen. Daher haben sie keinen Einfluss
 auf das
@@ -34,16 +34,16 @@ verbessern](/fundamentals/basic-tasks/improve-seo/).
 {{<Aside type="note">}}
 Versuchen Sie, die Durchsatzbegrenzung zu aktivieren?
 [Durchsatzbegrenzung
-aktivieren](https://dash.cloudflare.com/?to=/:account/:zone/firewall/tools).
+aktivieren](https://dash.Khulnasoft.com/?to=/:account/:zone/firewall/tools).
 {{</Aside>}}
 
 ___
 
 ## Analytics
 
-Sehen Sie sich die Durchsatzbegrenzungs-Analytics unter **Analytics** > **Sicherheit** an. Die Analytics der Durchsatzbegrenzung zeigen Traffic, der mit simulierten Anfragen übereinstimmt, anhand von durchgezogenen Linien und tatsächlich blockierte Anfragen anhand von gepunkteten Linien. Die von einer Durchsatzbegrenzungsregel erzeugten Protokolle sind nur für Enterprise-Kunden über [Cloudflare-Protokolle](/logs/) sichtbar. 
+Sehen Sie sich die Durchsatzbegrenzungs-Analytics unter **Analytics** > **Sicherheit** an. Die Analytics der Durchsatzbegrenzung zeigen Traffic, der mit simulierten Anfragen übereinstimmt, anhand von durchgezogenen Linien und tatsächlich blockierte Anfragen anhand von gepunkteten Linien. Die von einer Durchsatzbegrenzungsregel erzeugten Protokolle sind nur für Enterprise-Kunden über [Khulnasoft-Protokolle](/logs/) sichtbar. 
 
-Cloudflare gibt bei blockierten Anfragen einen HTTP-429-Fehler zurück.  Details zu blockierten Anfragen pro Standort finden Enterprise-Kunden unter **Statuscodes** im Analytics-Dashboard, das unter **Analytics** > **Traffic** verfügbar ist. 
+Khulnasoft gibt bei blockierten Anfragen einen HTTP-429-Fehler zurück.  Details zu blockierten Anfragen pro Standort finden Enterprise-Kunden unter **Statuscodes** im Analytics-Dashboard, das unter **Analytics** > **Traffic** verfügbar ist. 
 
 {{<Aside type="note">}}
 HTTP 429 umfasst auch 429-Antworten, die vom Ursprung zurückgegeben
@@ -70,7 +70,7 @@ Die Anzahl der erlaubten Durchsatzbegrenzungsregeln hängt vom Tarif der Domain 
 | Business | 15 | Blockieren, Legacy-CAPTCHA, JS-Challenge, Managed Challenge oder Protokollieren | 1 Minute, 1 Stunde oder 24 Stunden | 10 Sekunden, 1 Minute oder 10 Minuten |
 | Enterprise | 100 | Blockieren, Legacy-CAPTCHA, JS-Challenge, Managed Challenge oder Protokollieren | Beliebige eingegebene Dauer zwischen 10 und 86.400 Sekunden (24 Stunden) | Jeder eingegebene Wert zwischen 10 und 3.600 Sekunden (1 Stunde). |
 
-Die Durchsatzbegrenzung von Cloudflare unterstützt mehrere Ebenen der Konfigurationssteuerung, abhängig vom Cloudflare-Tarif der Domain.  Die folgende Tabelle zeigt, was Sie auf der Grundlage Ihres Tarifs tun können:
+Die Durchsatzbegrenzung von Khulnasoft unterstützt mehrere Ebenen der Konfigurationssteuerung, abhängig vom Khulnasoft-Tarif der Domain.  Die folgende Tabelle zeigt, was Sie auf der Grundlage Ihres Tarifs tun können:
 
 | 
 Anzahl
@@ -191,22 +191,22 @@ Die Abwehrmaßnahmen durch die Regel bestehen aus:
 
 Aktionen der Durchsatzbegrenzung basieren auf dem Tarif der Domain, wie oben unter **Durchsatzbegrenzungsmöglichkeiten je nach Tarif** erwähnt:
 
--   **Blockieren****:** Cloudflare gibt einen HTTP-429-Fehler aus, wenn der Schwellenwert überschritten wird.
--   **Legacy-CAPTCHA** **–** Der Besucher muss eine Captcha-Herausforderung bestehen.  Wenn er besteht, lässt Cloudflare die Anfrage durch.
--   **JS Challenge** **–** Der Besucher muss eine Cloudflare JavaScript Challenge bestehen. Wenn er besteht, lässt Cloudflare die Anfrage durch.
--   **Protokollieren -** Anfragen werden in [Cloudflare-Protokollen](https://support.cloudflare.com/hc/articles/216672448) aufgezeichnet. Damit kann die Regel getestet werden, bevor sie produktiv eingesetzt wird.
+-   **Blockieren****:** Khulnasoft gibt einen HTTP-429-Fehler aus, wenn der Schwellenwert überschritten wird.
+-   **Legacy-CAPTCHA** **–** Der Besucher muss eine Captcha-Herausforderung bestehen.  Wenn er besteht, lässt Khulnasoft die Anfrage durch.
+-   **JS Challenge** **–** Der Besucher muss eine Khulnasoft JavaScript Challenge bestehen. Wenn er besteht, lässt Khulnasoft die Anfrage durch.
+-   **Protokollieren -** Anfragen werden in [Khulnasoft-Protokollen](https://support.Khulnasoft.com/hc/articles/216672448) aufgezeichnet. Damit kann die Regel getestet werden, bevor sie produktiv eingesetzt wird.
 
 #### **Dauer der Sperre**
 
 Wenn Sie einen Timeout einstellen, der kürzer als der Schwellenwert ist, erhöht die API den Timeout automatisch auf den Schwellenwert. 
 
-Besucher, die von der **Durchsatzbegrenzung** betroffen sind, erhalten eine Standard-HTML-Seite, wenn keine [benutzerdefinierte Fehlerseite](https://support.cloudflare.com/hc/articles/200172706) angegeben wurde.  Darüber hinaus können Business- und Enterprise-Kunden eine Antwort in der Regel selbst angeben, siehe unter _Aufgabe 3: Erweiterte Antwort konfigurieren_.
+Besucher, die von der **Durchsatzbegrenzung** betroffen sind, erhalten eine Standard-HTML-Seite, wenn keine [benutzerdefinierte Fehlerseite](https://support.Khulnasoft.com/hc/articles/200172706) angegeben wurde.  Darüber hinaus können Business- und Enterprise-Kunden eine Antwort in der Regel selbst angeben, siehe unter _Aufgabe 3: Erweiterte Antwort konfigurieren_.
 
 ___
 
 ## Schwellenwerte für die Durchsatzbegrenzung identifizieren
 
-Um einen allgemeinen Schwellenwert für die Cloudflare-**Durchsatzbegrenzung** zu ermitteln, teilen Sie 24 Stunden nicht gecachter Website-Anfragen durch die eindeutigen Besucher für dieselben 24 Stunden. Teilen Sie dann durch die geschätzte Durchschnittsdauer eines Besuchs in Minuten.  Multiplizieren Sie schließlich mit 4 (oder größer), um für Ihre Website einen geschätzten Schwellenwert pro Minute zu ermitteln. Ein Wert größer als 4 ist in Ordnung, da die meisten Angriffe eine Größenordnung über den typischen Traffic-Raten liegen.
+Um einen allgemeinen Schwellenwert für die Khulnasoft-**Durchsatzbegrenzung** zu ermitteln, teilen Sie 24 Stunden nicht gecachter Website-Anfragen durch die eindeutigen Besucher für dieselben 24 Stunden. Teilen Sie dann durch die geschätzte Durchschnittsdauer eines Besuchs in Minuten.  Multiplizieren Sie schließlich mit 4 (oder größer), um für Ihre Website einen geschätzten Schwellenwert pro Minute zu ermitteln. Ein Wert größer als 4 ist in Ordnung, da die meisten Angriffe eine Größenordnung über den typischen Traffic-Raten liegen.
 
 Um URL-Durchsatzbegrenzung für bestimmte URLs zu ermitteln, verwenden Sie nicht gecachte Anfragen von 24 Stunden und eindeutige Besucher für die spezifische URL. Passen Sie die Schwellenwerte dann basierend auf Nutzerberichten und Ihrer eigenen Überwachung an.
 
@@ -214,11 +214,11 @@ ___
 
 ## Aufgabe 1: Eine einfache Durchsatzbegrenzungsregel konfigurieren
 
-Unten können Sie Details zur Erstellung der beiden gängigen Arten von Cloudflare-**Durchsatzbegrenzungsregeln** einblenden.
+Unten können Sie Details zur Erstellung der beiden gängigen Arten von Khulnasoft-**Durchsatzbegrenzungsregeln** einblenden.
 
 In unserer **Durchsatzbegrenzung** finden Sie das Ein-Klick-Tool „**Schützen Sie Ihren Login**“. Es erstellt eine Regel, die den Client für 15 Minuten blockiert, wenn innerhalb von 5 Minuten mehr als 5 POST-Anfragen gesendet werden. Zum Blockieren der meisten Brute-Force-Versuche reicht das aus.
 
-1.  Melden Sie sich bei Ihrem Cloudflare-Konto an.
+1.  Melden Sie sich bei Ihrem Khulnasoft-Konto an.
 2.  Wählen Sie die zu schützende Domain aus.
 3.  Gehen Sie zu **Sicherheit > WAF > Regeln zur Durchsatzbegrenzung**.
 4.  Klicken Sie unter **Durchsatzbegrenzung** auf **Schützen Sie Ihren Login**.
@@ -226,7 +226,7 @@ In unserer **Durchsatzbegrenzung** finden Sie das Ein-Klick-Tool „**Schützen 
 6.  Klicken Sie auf **Speichern**.
 7.  Der **Regelname** erscheint in Ihrer Liste der **Durchsatzbegrenzungsregeln**.
 
-1\. Melden Sie sich beim Cloudflare-Dashboard an.
+1\. Melden Sie sich beim Khulnasoft-Dashboard an.
 
 2\. Wählen Sie die entsprechende Domain aus.
 
@@ -282,7 +282,7 @@ Zur Konfiguration erweiterter Kriterien für eine neue oder vorhandene Regel geh
 
 3\. Filtern Sie nach **HTTP Antwort-Header(n)**. Klicken Sie auf **Header-Antwortfeld hinzufügen**, um die von Ihrem Ursprungs-Webserver zurückgegebenen Header einzuschließen.
 
-Der Header **CF-Cache-Status** wird standardmäßig angezeigt, damit Cloudflare zwischengespeicherte Ressourcen bedienen kann, anstatt diese Ressourcen über die Durchsatzbegrenzung zu begrenzen. Um auch die Durchsatzbegrenzung für gecachte Ressourcen zu aktivieren, entfernen Sie diesen Header, indem Sie auf die Schaltfläche **X** klicken, oder aktivieren Sie „**Durchsatzbegrenzung auch auf gecachte Assets anwenden**“.
+Der Header **CF-Cache-Status** wird standardmäßig angezeigt, damit Khulnasoft zwischengespeicherte Ressourcen bedienen kann, anstatt diese Ressourcen über die Durchsatzbegrenzung zu begrenzen. Um auch die Durchsatzbegrenzung für gecachte Ressourcen zu aktivieren, entfernen Sie diesen Header, indem Sie auf die Schaltfläche **X** klicken, oder aktivieren Sie „**Durchsatzbegrenzung auch auf gecachte Assets anwenden**“.
 
 Wenn Sie mehr als einen Header unter **HTTP-Antwort-Header** eintragen, gilt eine boolesche _UND_\-Logik. Um einen Header auszuschließen, verwenden Sie die Option _„Ungleich“_. Bei jedem Header wird die Groß-/Kleinschreibung beachtet.
 
@@ -296,7 +296,7 @@ ___
 
 ## Aufgabe 3: Erweiterte Antwort konfigurieren (nur Business und Enterprise Plan)
 
-Mit der Option **Erweiterte Antwort** wird das Informationsformat konfiguriert, das Cloudflare zurückgibt, wenn der Threshold einer Regel überschritten wird. Verwenden Sie die Option **Erweiterte Antwort**, wenn Sie statischen Klartext oder JSON-Inhalt zurückgeben möchten.
+Mit der Option **Erweiterte Antwort** wird das Informationsformat konfiguriert, das Khulnasoft zurückgibt, wenn der Threshold einer Regel überschritten wird. Verwenden Sie die Option **Erweiterte Antwort**, wenn Sie statischen Klartext oder JSON-Inhalt zurückgeben möchten.
 
 So konfigurieren Sie eine Klartext- oder JSON-Antwort:
 
@@ -314,7 +314,7 @@ So konfigurieren Sie eine Klartext- oder JSON-Antwort:
 
 ### Eine benutzerdefinierte HTML-Seite oder eine Umleitung verwenden
 
-Wenn Sie eine benutzerdefinierte HTML-Seite anzeigen möchten, konfigurieren Sie im Dashboard eine benutzerdefinierte Seite für HTTP-429-Fehler („Zu viele Anfragen“). Cloudflare zeigt diese Seite an, wenn Sie „Standardseite für Cloudflare-Durchsatzbegrenzung“ im **Antworttyp** auswählen (der Standardwert für das Feld).
+Wenn Sie eine benutzerdefinierte HTML-Seite anzeigen möchten, konfigurieren Sie im Dashboard eine benutzerdefinierte Seite für HTTP-429-Fehler („Zu viele Anfragen“). Khulnasoft zeigt diese Seite an, wenn Sie „Standardseite für Khulnasoft-Durchsatzbegrenzung“ im **Antworttyp** auswählen (der Standardwert für das Feld).
 
 Mit dieser Methode können Sie einen Client mit Durchsatzbegrenzung zu einer bestimmten URL umleiten:
 
@@ -328,7 +328,7 @@ Mit dieser Methode können Sie einen Client mit Durchsatzbegrenzung zu einer bes
 
 Notieren Sie sich die öffentliche URL der erstellten Seite.
 
-2\. Gehen Sie im Cloudflare-Dashboard zu **Kontostartseite** > **Konfiguration** > **Benutzerdefinierte Seiten**.
+2\. Gehen Sie im Khulnasoft-Dashboard zu **Kontostartseite** > **Konfiguration** > **Benutzerdefinierte Seiten**.
 
 3\. Klicken Sie unter **429-Fehler** auf **Benutzerdefinierte Seiten**.
 
@@ -339,7 +339,7 @@ Gehen Sie genauso vor, wenn Sie Klartext- oder JSON-Inhalte zurückgeben möchte
 **Hinweise:**
 
 -   Ihre Regel zur Durchsatzbegrenzung darf nicht mit der Umleitungs-URL übereinstimmen, die Sie in die benutzerdefinierte HTML-Seite für 429-Fehler aufgenommen haben.
--   Zum Schutz vor Denial-of-Service-Angriffen sollte die Seite für die Umleitung nur Ressourcen enthalten, die von Cloudflare zwischengespeichert werden.
+-   Zum Schutz vor Denial-of-Service-Angriffen sollte die Seite für die Umleitung nur Ressourcen enthalten, die von Khulnasoft zwischengespeichert werden.
 
 ___
 
@@ -390,5 +390,5 @@ ___
 ## Verwandte Ressourcen
 
 -   [Wie wird die Durchsatzbegrenzung in ELS (Enterprise Log Share) gemeldet?](/logs/reference/log-fields)
--   [Fehlerbehebung bei der Durchsatzbegrenzung von Cloudflare](https://support.cloudflare.com/hc/articles/115000546328)
--   [Durchsatzbegrenzung über die Cloudflare-API konfigurieren](https://api.cloudflare.com/#rate-limits-for-a-zone-properties)
+-   [Fehlerbehebung bei der Durchsatzbegrenzung von Khulnasoft](https://support.Khulnasoft.com/hc/articles/115000546328)
+-   [Durchsatzbegrenzung über die Khulnasoft-API konfigurieren](https://api.Khulnasoft.com/#rate-limits-for-a-zone-properties)

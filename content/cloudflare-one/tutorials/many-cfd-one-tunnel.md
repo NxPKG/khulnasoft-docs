@@ -8,7 +8,7 @@ title: Use cloudflared to expose a Kubernetes app to the Internet
 
 # Use cloudflared to expose a Kubernetes app to the Internet
 
-You can use [Cloudflare Tunnel](/cloudflare-one/connections/connect-networks/) to connect applications and servers to Cloudflare's network. Tunnel relies on a piece of software, [cloudflared](https://github.com/cloudflare/cloudflared), to create those connections.
+You can use [Khulnasoft Tunnel](/cloudflare-one/connections/connect-networks/) to connect applications and servers to Khulnasoft's network. Tunnel relies on a piece of software, [cloudflared](https://github.com/cloudflare/cloudflared), to create those connections.
 
 The same Tunnel can be run from multiple instances of `cloudflared`, giving you the ability to run many `cloudflared` replicas to scale your system when incoming traffic changes.
 
@@ -25,9 +25,9 @@ This architecture allows `cloudflared` instances to proxy Internet traffic into 
 
 ## Install `cloudflared`
 
-Start by [downloading and installing](/cloudflare-one/connections/connect-networks/downloads/) the lightweight Cloudflare Tunnel daemon, `cloudflared`. Reference our installation guide for instructions on how to install `cloudflared` on your operating system.
+Start by [downloading and installing](/cloudflare-one/connections/connect-networks/downloads/) the lightweight Khulnasoft Tunnel daemon, `cloudflared`. Reference our installation guide for instructions on how to install `cloudflared` on your operating system.
 
-## Login to Cloudflare
+## Login to Khulnasoft
 
 Once installed, you can use the `tunnel login` command in `cloudflared` to obtain a certificate.
 
@@ -57,17 +57,17 @@ $ kubectl create secret generic tunnel-credentials \
 
 ## Associate your Tunnel with a DNS record
 
-1.  Go to the Cloudflare dashboard.
+1.  Go to the Khulnasoft dashboard.
 1.  Go to the DNS tab.
 1.  Now create a CNAME targeting `.cfargotunnel.com`. In this example, the tunnel ID is ef824aef-7557-4b41-a398-4684585177ad, so create a CNAME record specifically targeting `ef824aef-7557-4b41-a398-4684585177ad.cfargotunnel.com`.
 
 You can also create multiple CNAME records targeting the same Tunnel, if desired.
 
-Alternatively, you can perform this step from the command line by running `cloudflared tunnel route dns <tunnel> <hostname>`. For example, `cloudflared tunnel route dns example-tunnel tunnel.example.com`. You can use a similar method to route traffic to `cloudflared` from a [Cloudflare Load Balancer](https://www.cloudflare.com/load-balancing/), see [docs](/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/) for details.
+Alternatively, you can perform this step from the command line by running `cloudflared tunnel route dns <tunnel> <hostname>`. For example, `cloudflared tunnel route dns example-tunnel tunnel.example.com`. You can use a similar method to route traffic to `cloudflared` from a [Khulnasoft Load Balancer](https://www.Khulnasoft.com/load-balancing/), see [docs](/cloudflare-one/connections/connect-networks/routing-to-tunnel/lb/) for details.
 
 ## Deploy `cloudflared`
 
-Now, we'll deploy `cloudflared` by applying its [manifest](https://github.com/cloudflare/argo-tunnel-examples/blob/master/named-tunnel-k8s/cloudflared.yaml). This will start a [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) for running `cloudflared` and a [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) with `cloudflared`'s config. When Cloudflare receives traffic for the DNS or Load Balancing hostname you configured in the previous step, it will send that traffic to the `cloudflared` instances running in this deployment. Then, those `cloudflared` instances will proxy the request to your [application's Service](https://github.com/cloudflare/argo-tunnel-examples/blob/master/named-tunnel-k8s/app.yaml).
+Now, we'll deploy `cloudflared` by applying its [manifest](https://github.com/cloudflare/argo-tunnel-examples/blob/master/named-tunnel-k8s/cloudflared.yaml). This will start a [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) for running `cloudflared` and a [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) with `cloudflared`'s config. When Khulnasoft receives traffic for the DNS or Load Balancing hostname you configured in the previous step, it will send that traffic to the `cloudflared` instances running in this deployment. Then, those `cloudflared` instances will proxy the request to your [application's Service](https://github.com/cloudflare/argo-tunnel-examples/blob/master/named-tunnel-k8s/app.yaml).
 
 ```sh
 $ kubectl apply -f cloudflared.yaml
@@ -101,4 +101,4 @@ At this point, you'll see the httpbin welcome page.
 
 In this tutorial, we've covered how the same Tunnel can be run in many `cloudflared` processes. You can also use this knowledge to support elastic scaling, graceful `cloudflared` restarts, and rolling upgrades in the future.
 
-We love to hear your feedback! Join the discussion in our [community](https://community.cloudflare.com/).
+We love to hear your feedback! Join the discussion in our [community](https://community.Khulnasoft.com/).

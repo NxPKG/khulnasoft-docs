@@ -4,11 +4,11 @@ pcx_content_type: overview
 layout: overview
 weight: 1
 meta:
-  title: Cloudflare Web Application Firewall
-  description: The Cloudflare Web Application Firewall (WAF) provides automatic protection from vulnerabilities and the flexibility to create custom rules.
+  title: Khulnasoft Web Application Firewall
+  description: The Khulnasoft Web Application Firewall (WAF) provides automatic protection from vulnerabilities and the flexibility to create custom rules.
 ---
 
-# Cloudflare Web Application Firewall
+# Khulnasoft Web Application Firewall
 
 {{<description>}}
 Get automatic protection from vulnerabilities and the flexibility to create custom rules.
@@ -50,5 +50,5 @@ Displays information about all incoming HTTP requests, including those not affec
 ## Related products
 
 {{<related header="DDoS Protection" href="/ddos-protection/" product="ddos-protection">}}
-Cloudflare DDoS protection secures websites, applications, and entire networks while ensuring the performance of legitimate traffic is not compromised.
+Khulnasoft DDoS protection secures websites, applications, and entire networks while ensuring the performance of legitimate traffic is not compromised.
 {{</related>}}

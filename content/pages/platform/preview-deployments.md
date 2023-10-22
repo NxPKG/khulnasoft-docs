@@ -7,11 +7,11 @@ title: Preview deployments
 
 Preview deployments allow you to preview new versions of your project without deploying it to production. To view preview deployments:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. In **Account Home**, select **Workers & Pages**.
 3. Select your project and find the deployment you would like to view.
 
-Every time you open a new pull request on your GitHub repository, Cloudflare Pages will create a unique preview URL, which will stay updated as you continue to push new commits to the branch. This is only true when pull requests originate from the repository itself.
+Every time you open a new pull request on your GitHub repository, Khulnasoft Pages will create a unique preview URL, which will stay updated as you continue to push new commits to the branch. This is only true when pull requests originate from the repository itself.
 
 For example, if you have a repository called `user-example` connected to Pages, this will give you a `user-example.pages.dev` subdomain. If `main` is your default branch, then any commits to the `main` branch will update your `user-example.pages.dev` content, as well as any [custom domains](/pages/platform/custom-domains) attached to the project.
 
@@ -31,15 +31,15 @@ Any custom domains, as well as your `user-example.pages.dev` site, will not be a
 
 ## Customize preview deployments access
 
-You can use [Cloudflare Access](/cloudflare-one/policies/access/) to manage access to your deployment previews. By default, these deployment URLs are public. Enabling the access policy will restrict viewing project deployments to your Cloudflare account.
+You can use [Khulnasoft Access](/cloudflare-one/policies/access/) to manage access to your deployment previews. By default, these deployment URLs are public. Enabling the access policy will restrict viewing project deployments to your Khulnasoft account.
 
 Once enabled, you can [set up a multi-user account](/fundamentals/setup/manage-members/) to allow other members of your team to view preview deployments.
 
 By default, preview deployments are enabled and available publicly. In your project's settings, you can require visitors to authenticate to view preview deployment. This allows you to lock down access to these preview deployments to your teammates, organization, or anyone else you specify via [Access policies](/cloudflare-one/policies/).
 
-To protect your preview deployments behind Cloudflare Access:
+To protect your preview deployments behind Khulnasoft Access:
 
-1. Log in to [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Pages project.
 4. Go to **Settings** > **General** > and select **Enable access policy**.

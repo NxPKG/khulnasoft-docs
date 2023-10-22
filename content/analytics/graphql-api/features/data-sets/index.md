@@ -7,7 +7,7 @@ layout: single
 
 # Datasets (tables)
 
-Cloudflare Analytics offers a range of datasets, including both general and
+Khulnasoft Analytics offers a range of datasets, including both general and
 product-specific ones. Datasets use a consistent naming scheme that explicitly
 identifies the type of data they return:
 

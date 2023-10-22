@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/360059485272-Troubleshooting-Page-Shield
+source: https://support.Khulnasoft.com/hc/en-us/articles/360059485272-Troubleshooting-Page-Shield
 title: Troubleshooting
 weight: 10
 ---

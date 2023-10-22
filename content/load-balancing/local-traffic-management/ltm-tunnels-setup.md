@@ -4,13 +4,13 @@ title: Set up private IPs with Tunnel
 weight: 2
 ---
 
-# Set up private IPs with Cloudflare Tunnel
+# Set up private IPs with Khulnasoft Tunnel
 
-Consider the following steps to learn how to configure Cloudflare local traffic management (LTM) solution, using [Cloudflare Tunnel](/cloudflare-one/connections/connect-networks/) as the off-ramp to securely connect to your private/internal services.
+Consider the following steps to learn how to configure Khulnasoft local traffic management (LTM) solution, using [Khulnasoft Tunnel](/cloudflare-one/connections/connect-networks/) as the off-ramp to securely connect to your private/internal services.
 
-## 1. Configure a Cloudflare tunnel with an assigned virtual network
+## 1. Configure a Khulnasoft tunnel with an assigned virtual network
 
-The specific configuration steps can vary depending on your infrastructure and services you are looking to connect. If you are not familiar with Cloudflare Tunnel, the pages linked on each step provide more guidance.
+The specific configuration steps can vary depending on your infrastructure and services you are looking to connect. If you are not familiar with Khulnasoft Tunnel, the pages linked on each step provide more guidance.
 
 1. [Create a tunnel](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/#1-create-a-tunnel).
 2. [Deploy the tunnel](/cloudflare-one/connections/connect-networks/deploy-tunnels/) to connect to the data center hosting the origin servers.
@@ -21,7 +21,7 @@ The specific configuration steps can vary depending on your infrastructure and s
 
 To create a virtual network:
 
-1. Within the [Zero Trust dashboard](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client** and find the **Virtual networks** setting.
+1. Within the [Zero Trust dashboard](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client** and find the **Virtual networks** setting.
 2. Select **Add new** or **Manage** > **Create virtual network** to create virtual networks.
 3. Define your virtual network name and select **Save**.
 
@@ -51,16 +51,16 @@ $ cloudflared tunnel route ip add --vnet <VNET_NAME> <IP_RANGE> <TUNNEL_NAME>
 {{</tab>}}
 {{</tabs>}}
 
-## 2. Configure Cloudflare Load Balancing
+## 2. Configure Khulnasoft Load Balancing
 
-Once you have Cloudflare tunnels with associated virtual networks (VNets) configured, the VNets can be specified for each origin when you [create or edit a pool](/load-balancing/pools/create-pool/#create-a-pool). This will enable Cloudflare load balancers to use the correct tunnel and securely reach the private IP origins.
+Once you have Khulnasoft tunnels with associated virtual networks (VNets) configured, the VNets can be specified for each origin when you [create or edit a pool](/load-balancing/pools/create-pool/#create-a-pool). This will enable Khulnasoft load balancers to use the correct tunnel and securely reach the private IP origins.
 
 1. [Create the Load Balancing monitor](/load-balancing/monitors/create-monitor/) according to your needs.
 2. [Create the origin pool](/load-balancing/pools/create-pool/) specifying your private origin IP addresses and corresponding virtual networks.
 
 {{<Aside type="note">}}
 
-* Currently, Cloudflare does not support entering the same origin IP addresses more than once, even when using different virtual networks.
+* Currently, Khulnasoft does not support entering the same origin IP addresses more than once, even when using different virtual networks.
 * All origins with private IPs must have `virtual_network_id` specified.
 
 {{</Aside>}}
@@ -75,7 +75,7 @@ Once you have Cloudflare tunnels with associated virtual networks (VNets) config
 
 To get a list of your current virtual networks, use the [List virtual networks](/api/operations/tunnel-virtual-network-list-virtual-networks) API operation.
 
-Enable virtual/private IP support by adding the `virtual_network_id` field to the origins in you API request. Refer to the [Cloudflare Load Balancer API documentation](/api/operations/account-load-balancer-pools-create-pool) for more information on how to create a pool using the API.
+Enable virtual/private IP support by adding the `virtual_network_id` field to the origins in you API request. Refer to the [Khulnasoft Load Balancer API documentation](/api/operations/account-load-balancer-pools-create-pool) for more information on how to create a pool using the API.
 
 Consider the following example for updating an existing Load Balancer pool with a Virtual IP origin using cURL.
 
@@ -87,7 +87,7 @@ All origins with private IPs must have `virtual_network_id` specified.
 
 ```bash
 $ curl --request PATCH \
-  https://api.cloudflare.com/client/v4/accounts/<account_id>/load_balancers/pools/<pool_id> \
+  https://api.Khulnasoft.com/client/v4/accounts/<account_id>/load_balancers/pools/<pool_id> \
   --header 'Content-Type: application/json' \
   --header 'X-Auth-Email: <email>' \
   --header 'X-Auth-Key: <key>' \

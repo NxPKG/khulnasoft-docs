@@ -115,7 +115,7 @@ If you are configuring your Cloudflare Pages site for the first time, refer to t
 
 To deploy your site to Pages:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. In Account Home, select **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
 3. Select the new GitHub repository that you created and, in the **Set up builds and deployments** section, provide the following information:
 

@@ -10,7 +10,7 @@ meta:
 
 {{<details header="Feature availability">}}
 
-| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.cloudflare.com/teams-pricing/) |
+| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.Khulnasoft.com/teams-pricing/) |
 | ----------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | Windows           | WARP with Gateway                                                                         | All plans                                                     |
 
@@ -20,7 +20,7 @@ The Domain Joined device posture attribute ensures that a user is a member of a 
 
 ## Enable the Domain Joined check
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 1. Scroll down to **WARP client checks** and select **Add new**.
 1. Select **Domain Joined**.
 1. Enter a descriptive name for the check.

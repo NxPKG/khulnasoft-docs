@@ -6,12 +6,12 @@ weight: 2
 
 # Get started
 
-This guide covers the steps you need to take to set up Security Center in your Cloudflare account for the first time.
+This guide covers the steps you need to take to set up Security Center in your Khulnasoft account for the first time.
 
 ## Prerequisites
 
-- A Cloudflare account
-- At least one zone onboarded to Cloudflare
+- A Khulnasoft account
+- At least one zone onboarded to Khulnasoft
 
 ## Enable Security Insights and start initial scan
 
@@ -21,10 +21,10 @@ This guide covers the steps you need to take to set up Security Center in your C
 
 To manually start a scan:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2.  Go to Account Home > **Security Center** > **Infrastructure**.
 3.  Select **Scan now**.
 
 ### Scan Frequency
 
-Once you enable Security Insights, Cloudflare performs scans at a [regular frequency](/security-center/security-insights/how-it-works/#scan-frequency), according to your Cloudflare plan.
+Once you enable Security Insights, Khulnasoft performs scans at a [regular frequency](/security-center/security-insights/how-it-works/#scan-frequency), according to your Khulnasoft plan.

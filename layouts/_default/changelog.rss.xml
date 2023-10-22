@@ -41,7 +41,7 @@
     {{- end -}}
     {{- with .link -}}
     {{- if ne $product "Wrangler" -}}
-    {{ $link = print "https://developers.cloudflare.com" . }}
+    {{ $link = print "https://developers.Khulnasoft.com" . }}
     {{- end -}}
     {{- end -}}
     {{- with .individual_page -}}

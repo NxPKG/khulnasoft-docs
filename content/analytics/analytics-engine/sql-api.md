@@ -10,7 +10,7 @@ meta:
 
 The Workers Analytics Engine SQL API is an HTTP API that allows executing SQL queries against your Workers Anaytics Engine datasets.
 
-The API is hosted at `https://api.cloudflare.com/client/v4/accounts/<account_id>/analytics_engine/sql`. 
+The API is hosted at `https://api.Khulnasoft.com/client/v4/accounts/<account_id>/analytics_engine/sql`. 
 
 ## Authentication
 
@@ -18,7 +18,7 @@ Authentication is done via bearer token. An `Authorization: Bearer <token>` head
 
 Use the dashboard to create a token with permssion to read analytics data on your account:
 
-1. Visit the [API tokens](https://dash.cloudflare.com/profile/api-tokens) page in the Cloudflare dashboard.
+1. Visit the [API tokens](https://dash.Khulnasoft.com/profile/api-tokens) page in the Khulnasoft dashboard.
 2. Select **Create Token**.
 3. Select **Create Custom Token**.
 4. Complete the **Create Custom Token** form as follows:
@@ -35,13 +35,13 @@ Submit the query text in the body of a `POST` request to the API address. The fo
 You can use cURL to test the API as follows, replacing the `<account_id>` with your 32 character account ID (available in the dashboard) and the `<token>` with the token string you generated above.
 
 ```sh
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<account_id>/analytics_engine/sql" -H "Authorization: Bearer <token>" -d "SELECT 'Hello Workers Analytics Engine' AS message"
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<account_id>/analytics_engine/sql" -H "Authorization: Bearer <token>" -d "SELECT 'Hello Workers Analytics Engine' AS message"
 ```
 
 If you have already published some data, you might try executing the following to confirm that the dataset has been created in the DB.
 
 ```sh
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<account_id>/analytics_engine/sql" -H "Authorization: Bearer <token>" -d "SHOW TABLES"
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<account_id>/analytics_engine/sql" -H "Authorization: Bearer <token>" -d "SHOW TABLES"
 ```
 
 Refer to the Workers Analytics Engine [SQL reference](/analytics/analytics-engine/sql-reference/), for the full supported query syntax.
@@ -70,7 +70,7 @@ The table will have the following columns:
 At very high volumes of data, Analytics Engine will downsample data in order to be able to maintain performance. Sampling can occur on write and on read.
 Sampling is based on the index of your dataset so that only indexes that receive large numbers of events will be sampled. For example, if your worker serves multiple customers, you might consider making customer ID the index field. This would mean that if one customer starts making a high rate of requests then events from that customer could be sampled while other customers data remains unsampled.
 
-We have tested this system of sampling over a number of years at Cloudflare and it has enabled us to scale our web analytics systems to very high throughput, while still providing statistically meaningful results irrespective of the amount of traffic a website receives.
+We have tested this system of sampling over a number of years at Khulnasoft and it has enabled us to scale our web analytics systems to very high throughput, while still providing statistically meaningful results irrespective of the amount of traffic a website receives.
 
 The rate at which the data is sampled is exposed via the `_sample_interval` column. This means that if you are doing statistical analysis of your data, you may need to take this column into account. For example:
 

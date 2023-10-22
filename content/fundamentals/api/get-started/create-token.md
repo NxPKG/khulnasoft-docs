@@ -3,7 +3,7 @@ title: Create API token
 pcx_content_type: how-to
 weight: 3
 meta:
-  description: Learn how to create a token to perform actions using the Cloudflare API.
+  description: Learn how to create a token to perform actions using the Khulnasoft API.
 ---
 
 # Create an API token
@@ -14,7 +14,7 @@ Before you begin, [find your zone and account IDs](/fundamentals/setup/find-acco
  
 {{</Aside>}}
 
-1. From the [Cloudflare dashboard](https://dash.cloudflare.com/profile/api-tokens/), go to **My Profile** > **API Tokens**.
+1. From the [Khulnasoft dashboard](https://dash.Khulnasoft.com/profile/api-tokens/), go to **My Profile** > **API Tokens**.
 2. Select **Create Token**.
 3. Select a template from the available [API token templates](/fundamentals/api/reference/template/) or create a custom token. We use the **Edit zone DNS** template in the following examples.
 4. Add or edit the token name to describe why or how the token is used. Templates are prefilled with a token name and permissions.
@@ -43,7 +43,7 @@ Before you begin, [find your zone and account IDs](/fundamentals/setup/find-acco
 The token secret page also includes an example command to test the token. Use the `/user/tokens/verify` endpoint to fetch the current status of the given token.
 
 ```bash
- $ curl "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+ $ curl "https://api.Khulnasoft.com/client/v4/user/tokens/verify" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -67,4 +67,4 @@ The result:
 }
 ```
 
-With this you have successfully created an API token and can start working with the Cloudflare API. After creating your first API token, you can create additional API tokens [via the API](/fundamentals/api/how-to/create-via-api/).
+With this you have successfully created an API token and can start working with the Khulnasoft API. After creating your first API token, you can create additional API tokens [via the API](/fundamentals/api/how-to/create-via-api/).

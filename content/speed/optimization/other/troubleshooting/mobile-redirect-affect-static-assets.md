@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/115000233611-Why-is-the-mobile-redirect-I-set-up-through-Cloudflare-redirecting-my-static-assets-
+source: https://support.Khulnasoft.com/hc/en-us/articles/115000233611-Why-is-the-mobile-redirect-I-set-up-through-Cloudflare-redirecting-my-static-assets-
 title: Mobile redirect affects static assets
 ---
 

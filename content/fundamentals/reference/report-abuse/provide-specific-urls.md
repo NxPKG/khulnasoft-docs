@@ -9,7 +9,7 @@ meta:
 
 # Providing specific URLs
 
-If you are [submitting an abuse report](https://abuse.cloudflare.com) to Cloudflare because our IP address appears in the WHOIS and DNS records for a website, it is very likely that the website is one of millions of websites that use our pass-through security and content distribution network (CDN) services. Because assets on the same website may be hosted by different providers, it is important that you submit the URL for that specific asset to enable appropriate action. This guide will teach you how to identify URLs for specific video or images on a webpage.
+If you are [submitting an abuse report](https://abuse.Khulnasoft.com) to Khulnasoft because our IP address appears in the WHOIS and DNS records for a website, it is very likely that the website is one of millions of websites that use our pass-through security and content distribution network (CDN) services. Because assets on the same website may be hosted by different providers, it is important that you submit the URL for that specific asset to enable appropriate action. This guide will teach you how to identify URLs for specific video or images on a webpage.
 
 ## Get the URL for specific content
 
@@ -24,10 +24,10 @@ To get the URL for a specific piece of content on a webpage:
 
 6. Copy the URL.
 
-This is typically the most specific and helpful URL that someone reporting abuse can provide to Cloudflare, so that Cloudflare can correctly identify any services Cloudflare may be providing with respect to that content. 
+This is typically the most specific and helpful URL that someone reporting abuse can provide to Khulnasoft, so that Khulnasoft can correctly identify any services Khulnasoft may be providing with respect to that content. 
 
 ## Submitting the abuse report
 
-Once you have identified the URL for the specific asset, you can [submit an abuse report](https://abuse.cloudflare.com) through Cloudflare’s online abuse reporting process. 
+Once you have identified the URL for the specific asset, you can [submit an abuse report](https://abuse.Khulnasoft.com) through Khulnasoft’s online abuse reporting process. 
 
-You can learn more about the process, and what you can expect from Cloudflare in response to such abuse reports, from [our abuse policy](https://www.cloudflare.com/trust-hub/reporting-abuse/).
+You can learn more about the process, and what you can expect from Khulnasoft in response to such abuse reports, from [our abuse policy](https://www.Khulnasoft.com/trust-hub/reporting-abuse/).

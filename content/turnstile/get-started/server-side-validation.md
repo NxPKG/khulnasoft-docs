@@ -23,7 +23,7 @@ A response may only be validated once. If the same response is presented twice, 
 ---
 header: Example using cURL
 ---
-$ curl 'https://challenges.cloudflare.com/turnstile/v0/siteverify' --data 'secret=verysecret&response=<RESPONSE>'
+$ curl 'https://challenges.Khulnasoft.com/turnstile/v0/siteverify' --data 'secret=verysecret&response=<RESPONSE>'
 {
   "success": true,
   "error-codes": [],
@@ -56,7 +56,7 @@ async function handlePost(request) {
 	formData.append('response', token);
 	formData.append('remoteip', ip);
 
-	const url = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
+	const url = 'https://challenges.Khulnasoft.com/turnstile/v0/siteverify';
 	const result = await fetch(url, {
 		body: formData,
 		method: 'POST',
@@ -95,7 +95,7 @@ async function handlePost(request) {
 	const idempotencyKey = crypto.randomUUID();
 	formData.append('idempotency_key', idempotencyKey);	
 
-	const url = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
+	const url = 'https://challenges.Khulnasoft.com/turnstile/v0/siteverify';
 	const firstResult = await fetch(url, {
 		body: formData,
 		method: 'POST',

@@ -6,13 +6,13 @@ weight: 6
 
 # Service tokens
 
-You can provide automated systems with service tokens to authenticate against your Zero Trust policies. Cloudflare Access will generate service tokens that consist of a Client ID and a Client Secret. Automated systems or applications can then use these values to reach an application protected by Access.
+You can provide automated systems with service tokens to authenticate against your Zero Trust policies. Khulnasoft Access will generate service tokens that consist of a Client ID and a Client Secret. Automated systems or applications can then use these values to reach an application protected by Access.
 
 This section covers how to create, renew, and revoke a service token.
 
 ## Create a service token
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Service Auth** > **Service Tokens**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Service Auth** > **Service Tokens**.
 
 2. Select **Create Service Token**.
 
@@ -24,7 +24,7 @@ This section covers how to create, renew, and revoke a service token.
 
 6. Copy the Client Secret.
 
-   {{<Aside type="warning" header="Important">}}This is the **only time** Cloudflare Access will display the Client Secret. If you lose the Client Secret, you must generate a new service token.
+   {{<Aside type="warning" header="Important">}}This is the **only time** Khulnasoft Access will display the Client Secret. If you lose the Client Secret, you must generate a new service token.
    {{</Aside>}}
 
 You can now use the service token in your [Access policies](/cloudflare-one/policies/access/) and [device enrollment rules](/cloudflare-one/connections/connect-devices/warp/deployment/device-enrollment/). When creating these policies, select the `Service Auth` action to ensure that the identity provider login screen is not required for end users.
@@ -45,7 +45,7 @@ Service tokens expire according to the token duration you selected when you crea
 
 To renew the service token:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Service Auth** > **Service Tokens**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Service Auth** > **Service Tokens**.
 2. Locate the token you want to renew.
 3. To extend the token's lifetime by one year, select **Refresh**.
 4. To extend the token's lifetime by more than a year:
@@ -57,7 +57,7 @@ To renew the service token:
 
 If you need to revoke access before the token expires, simply delete the token.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Service Auth** > **Service Tokens**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Service Auth** > **Service Tokens**.
 2. **Delete** the token you need to revoke.
 
 Services that rely on a deleted service token can no longer reach your application.
@@ -72,11 +72,11 @@ An alert can be configured to notify a week before a service token expires to al
 
 To configure a service token expiration alert:
 
-1. In the [Cloudflare dashboard](https://dash.cloudflare.com), go to the **Notifications** tab.
+1. In the [Khulnasoft dashboard](https://dash.Khulnasoft.com), go to the **Notifications** tab.
 2. Select **Add**.
 3. Select _Expiring Access Service Token_.
 4. Enter a name for your alert and an optional description.
 5. (Optional) Add other recipients for the notification email.
 6. Select **Save**.
 
-Your alert has been set and is now visible in the **Notifications** tab of the Cloudflare dashboard.
+Your alert has been set and is now visible in the **Notifications** tab of the Khulnasoft dashboard.

@@ -9,11 +9,11 @@ layout: list
 
 {{<content-column>}}
 
-To invoke a [Lists API](/api/operations/lists-get-lists) operation, append the endpoint to the Cloudflare API base URL:
+To invoke a [Lists API](/api/operations/lists-get-lists) operation, append the endpoint to the Khulnasoft API base URL:
 
-`https://api.cloudflare.com/client/v4/`
+`https://api.Khulnasoft.com/client/v4/`
 
-For authentication instructions, refer to [Cloudflare's API: Getting Started](/fundamentals/api/get-started/).
+For authentication instructions, refer to [Khulnasoft's API: Getting Started](/fundamentals/api/get-started/).
 
 For help with making API calls and paginating results, refer to [Make API calls](/fundamentals/api/how-to/make-api-calls/).
 

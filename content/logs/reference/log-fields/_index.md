@@ -7,7 +7,7 @@ weight: 51
 # Log fields
 
 The datasets below describe the fields available by log category. The list of fields is also accessible directly from the API:
-`https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/datasets/<DATASET>/fields` for zone-scoped datasets or `https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/logpush/datasets/<DATASET>/fields` for account-scoped datasets, where the **dataset** argument indicates the log category (such as `http_requests`, `spectrum_events`, `firewall_events`, `nel_reports`, or `dns_logs`).
+`https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/datasets/<DATASET>/fields` for zone-scoped datasets or `https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/logpush/datasets/<DATASET>/fields` for account-scoped datasets, where the **dataset** argument indicates the log category (such as `http_requests`, `spectrum_events`, `firewall_events`, `nel_reports`, or `dns_logs`).
 
 Zone-scoped HTTP requests are available in both Logpush and Logpull, except for [custom fields](/logs/reference/custom-fields/), which are only available in Logpush. All other datasets are only available through Logpush.
 

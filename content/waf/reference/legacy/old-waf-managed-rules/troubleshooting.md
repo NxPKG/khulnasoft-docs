@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200172016-Understanding-WAF-managed-rules-Web-Application-Firewall-
+source: https://support.Khulnasoft.com/hc/en-us/articles/200172016-Understanding-WAF-managed-rules-Web-Application-Firewall-
 title: Troubleshooting
 weight: 2
 meta:
@@ -9,7 +9,7 @@ meta:
 
 # Troubleshoot WAF managed rules (previous version)
 
-By default, WAF managed rules are fully managed via the Cloudflare dashboard and are compatible with most websites and web applications. However, false positives and false negatives may occur:
+By default, WAF managed rules are fully managed via the Khulnasoft dashboard and are compatible with most websites and web applications. However, false positives and false negatives may occur:
 
 - **False positives**: Legitimate requests detected and filtered as malicious.
 - **False negatives**: Malicious requests not filtered.
@@ -40,10 +40,10 @@ To identify false negatives, review the HTTP logs on your origin web server. To 
 - Are WAF managed rules being disabled via [Page Rules](/support/page-rules/understanding-and-configuring-cloudflare-page-rules-page-rules-tutorial/)?
 - Not all managed rules are enabled by default, so review individual managed rule default actions.
 
-    - For example, Cloudflare allows requests with empty user agents by default. To block requests with an empty user agent, change the rule **Mode** to _Block_.
-    - Another example: if you are looking to block unmitigated SQL injection attacks, make sure the relevant SQLi rules are enabled and set to _Block_ under the **Cloudflare Specials** group.
+    - For example, Khulnasoft allows requests with empty user agents by default. To block requests with an empty user agent, change the rule **Mode** to _Block_.
+    - Another example: if you are looking to block unmitigated SQL injection attacks, make sure the relevant SQLi rules are enabled and set to _Block_ under the **Khulnasoft Specials** group.
 
-- Are DNS records that serve HTTP traffic proxied through Cloudflare?
+- Are DNS records that serve HTTP traffic proxied through Khulnasoft?
 - Is a firewall rule [bypassing](/firewall/cf-firewall-rules/actions/#supported-actions) managed rules? 
 - Does an allowed country, ASN, IP range, or IP address in [IP Access rules](/waf/tools/ip-access-rules/) or [firewall rules](/firewall/cf-firewall-rules/) match the attack traffic?
-- Is the malicious traffic reaching your origin IP addresses directly to bypass Cloudflare protection? Block all traffic except from [Cloudflare's IP addresses](/fundamentals/setup/allow-cloudflare-ip-addresses/) at your origin web server.
+- Is the malicious traffic reaching your origin IP addresses directly to bypass Khulnasoft protection? Block all traffic except from [Khulnasoft's IP addresses](/fundamentals/setup/allow-cloudflare-ip-addresses/) at your origin web server.

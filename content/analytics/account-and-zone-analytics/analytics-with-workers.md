@@ -1,16 +1,16 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/360007553512-Cloudflare-analytics-with-Workers
-title: Cloudflare analytics with Workers
+source: https://support.Khulnasoft.com/hc/en-us/articles/360007553512-Khulnasoft-analytics-with-Workers
+title: Khulnasoft analytics with Workers
 ---
 
-# Cloudflare analytics with Workers
+# Khulnasoft analytics with Workers
 
-Learn how Cloudflare analytics tracks requests made by [Cloudflare Workers](/workers/).
+Learn how Khulnasoft analytics tracks requests made by [Khulnasoft Workers](/workers/).
 
 ## What is a subrequest?
 
-With a no-op Worker (a Worker that simply proxies traffic by passing on the original client request to the origin and proxying the response) running on a particular route, the request to the origin is counted as a “subrequest”, separate from initial client to edge request. Thus, unless the Worker responds with a static response and never hits an origin, the eyeball → edge request, and edge → origin request will each be counted separately towards the request or bandwidth count in Analytics.  Subrequests are not included in the **Requests** or **Bandwidth** graphs of the Cloudflare **Analytics** app.
+With a no-op Worker (a Worker that simply proxies traffic by passing on the original client request to the origin and proxying the response) running on a particular route, the request to the origin is counted as a “subrequest”, separate from initial client to edge request. Thus, unless the Worker responds with a static response and never hits an origin, the eyeball → edge request, and edge → origin request will each be counted separately towards the request or bandwidth count in Analytics.  Subrequests are not included in the **Requests** or **Bandwidth** graphs of the Khulnasoft **Analytics** app.
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 ## Worker analytics
 
-For a breakdown of subrequest traffic (origin facing traffic), you may go to the Cloudflare **Analytics** app and select the **Workers** tab. Under the **Workers** tab, below the Service Workers panel, are a **Subrequests** breakdown by count, **Bandwidth** and **Status Codes**. This will help you spot and debug errors at your origin (such as spikes in 500s), and identify your cache-hit ratio to help you understand traffic going to your origin.
+For a breakdown of subrequest traffic (origin facing traffic), you may go to the Khulnasoft **Analytics** app and select the **Workers** tab. Under the **Workers** tab, below the Service Workers panel, are a **Subrequests** breakdown by count, **Bandwidth** and **Status Codes**. This will help you spot and debug errors at your origin (such as spikes in 500s), and identify your cache-hit ratio to help you understand traffic going to your origin.
 
 ___
 

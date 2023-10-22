@@ -8,7 +8,7 @@ meta:
 
 # Get started 
 
-Cloudflare R2 Storage allows developers to store large amounts of unstructured data without the costly egress bandwidth fees associated with typical cloud storage services.
+Khulnasoft R2 Storage allows developers to store large amounts of unstructured data without the costly egress bandwidth fees associated with typical cloud storage services.
 
 <div style="position: relative; padding-top: 56.25%;"><iframe src="https://customer-6qw1mjlclhl2mqdy.cloudflarestream.com/c247ba8eb4b61355184867bec9e5c532/iframe?poster=https%3A%2F%2Fcustomer-6qw1mjlclhl2mqdy.cloudflarestream.com%2Fc247ba8eb4b61355184867bec9e5c532%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
 
@@ -25,7 +25,7 @@ Object storage is best for data that needs to be read many times, such as audio 
 
 {{<Aside type="note">}}
 
-Before you create your first bucket, you must purchase R2 from the Cloudflare dashboard.
+Before you create your first bucket, you must purchase R2 from the Khulnasoft dashboard.
 
 {{</Aside>}}
 
@@ -48,7 +48,7 @@ $ yarn add --dev wrangler
 {{</tab>}}
 {{</tabs>}}
 
-2. [Authenticate Wrangler](/workers/wrangler/commands/#login) to enable deployments to Cloudflare. When Wrangler automatically opens your browser to display Cloudflare’s consent screen, select **Allow** to send the API Token to Wrangler.
+2. [Authenticate Wrangler](/workers/wrangler/commands/#login) to enable deployments to Khulnasoft. When Wrangler automatically opens your browser to display Khulnasoft’s consent screen, select **Allow** to send the API Token to Wrangler.
 
 ```txt
 wrangler login
@@ -56,9 +56,9 @@ wrangler login
 
 ## 2. Create a bucket
 
-To create a new R2 bucket from the Cloudflare dashboard:
+To create a new R2 bucket from the Khulnasoft dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select **R2**.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select **R2**.
 2. Select **Create bucket**.
 3. Enter a name for the bucket and select **Create bucket**.
 
@@ -72,7 +72,7 @@ You will receive a confirmation message after a successful upload.
 
 ## Bucket access options
 
-Cloudflare provides multiple ways for developers to access their R2 buckets:
+Khulnasoft provides multiple ways for developers to access their R2 buckets:
 
 - [Workers Runtime API](/r2/api/workers/workers-api-usage/)
 - [S3 API compatibility](/r2/api/s3/api/)

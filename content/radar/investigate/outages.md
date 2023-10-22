@@ -6,9 +6,9 @@ weight: 7
 
 # Outages
 
-[Cloudflare Radar Outage Center (CROC)](https://radar.cloudflare.com/outage-center) provides data on outages occurring around the world.
+[Khulnasoft Radar Outage Center (CROC)](https://radar.Khulnasoft.com/outage-center) provides data on outages occurring around the world.
 
-Refer the [blog post](https://blog.cloudflare.com/announcing-cloudflare-radar-outage-center/) for more information but, in short, Radar provides the following information:
+Refer the [blog post](https://blog.Khulnasoft.com/announcing-cloudflare-radar-outage-center/) for more information but, in short, Radar provides the following information:
 
 - **Location**: Where was the outage?
 - **ASN**: What autonomous system experienced a disruption in connectivity?
@@ -25,7 +25,7 @@ Refer the [blog post](https://blog.cloudflare.com/announcing-cloudflare-radar-ou
 #### Example: Get outages in the last 7 days
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/annotations/outages?limit=5&offset=0&dateRange=7d&format=json" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/annotations/outages?limit=5&offset=0&dateRange=7d&format=json" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -54,7 +54,7 @@ curl -X GET "https://api.cloudflare.com/client/v4/radar/annotations/outages?limi
     "locations": ["US"],
     "asns": [],
     "eventType": "OUTAGE",
-    "linkedUrl": "https://twitter.com/CloudflareRadar/status/1575229448353349632",
+    "linkedUrl": "https://twitter.com/KhulnasoftRadar/status/1575229448353349632",
     "outage": {
       "outageCause": "WEATHER",
       "outageType": "REGIONAL"
@@ -65,4 +65,4 @@ curl -X GET "https://api.cloudflare.com/client/v4/radar/annotations/outages?limi
 
 Refer to the [API reference](/api/operations/radar-get-annotations-outages) for more information regarding this endpoint.
 
-Having data on a given outage allows you to examine its impact through both [Netflows](/radar/investigate/netflows/) (like in the [Tonga outage](/radar/get-started/making-comparisons/#use-specific-timestamps) and [others](https://blog.cloudflare.com/q3-2022-internet-disruption-summary/)) and [HTTP](/radar/investigate/http-requests/) data (for example, did the outage affect more mobile than desktop traffic?).
+Having data on a given outage allows you to examine its impact through both [Netflows](/radar/investigate/netflows/) (like in the [Tonga outage](/radar/get-started/making-comparisons/#use-specific-timestamps) and [others](https://blog.Khulnasoft.com/q3-2022-internet-disruption-summary/)) and [HTTP](/radar/investigate/http-requests/) data (for example, did the outage affect more mobile than desktop traffic?).

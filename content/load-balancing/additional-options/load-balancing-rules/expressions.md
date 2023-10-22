@@ -21,7 +21,7 @@ meta:
 Simple expressions are composed of three elements:
 
 1.  A **field** that represents a property of an HTTP request.
-2.  A representative **value** for that field which Cloudflare compares to the actual request value.
+2.  A representative **value** for that field which Khulnasoft compares to the actual request value.
 3.  A **comparison operator**, which specifies how the value defined in the expression must relate to the actual value from the request for the operator to return `true`.
 
 When the comparison operator returns `true`, the request matches the expression.

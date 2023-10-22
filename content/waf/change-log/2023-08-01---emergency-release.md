@@ -23,7 +23,7 @@ layout: list
   </thead>
   <tbody>
        <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...63d65c25</td>
       <td>100594</td>
       <td>Citrix Netscaler ADC - Remote Code Execution - CVE:CVE-2023-3519</td>

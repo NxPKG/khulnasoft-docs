@@ -1,20 +1,20 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/360058639551-WordPress-com-and-Cloudflare
-title: WordPress.com and Cloudflare
+source: https://support.Khulnasoft.com/hc/en-us/articles/360058639551-WordPress-com-and-Khulnasoft
+title: WordPress.com and Khulnasoft
 ---
 
-# WordPress.com and Cloudflare
+# WordPress.com and Khulnasoft
 
 
 
-## Getting started with WordPress.com and Cloudflare
+## Getting started with WordPress.com and Khulnasoft
 
-Cloudflare and WordPress.com are partnering to offer customers Cloudflare's performance and security solutions with WordPress.com's web-hosting platform. Getting started is easy.
+Khulnasoft and WordPress.com are partnering to offer customers Khulnasoft's performance and security solutions with WordPress.com's web-hosting platform. Getting started is easy.
 
-1\. Add your WordPress site to Cloudflare. Visit [Creating a Cloudflare account and adding a website](https://support.cloudflare.com/hc/en-us/articles/201720164) for more information.
+1\. Add your WordPress site to Khulnasoft. Visit [Creating a Khulnasoft account and adding a website](https://support.Khulnasoft.com/hc/en-us/articles/201720164) for more information.
 
-During this process, Cloudflare scans your existing WordPress.com DNS records and displays them. The records will look similar to the examples below.
+During this process, Khulnasoft scans your existing WordPress.com DNS records and displays them. The records will look similar to the examples below.
 
 -   `A example.com 192.0.78.12`
 -   `A example.com 192.0.78.13`
@@ -31,19 +31,19 @@ WordPress.com does not guarantee the IP address will never change. For maximum u
 
 ![Example of completed CNAME record setup.](/images/support/add-cname-wp.png)
 
-Congratulations! Your site is now accelerated and protected by Cloudflare.
+Congratulations! Your site is now accelerated and protected by Khulnasoft.
 
 ___
 
-## Enabling additional Cloudflare products
+## Enabling additional Khulnasoft products
 
-## **Cloudflare Web Analytics (Free)**
+## **Khulnasoft Web Analytics (Free)**
 
-Cloudflare Web Analytics gives web creators the information they need in a simple, clean way that doesn't sacrifice their visitors' privacy. One of the goals of the partnership is to bring a privacy-first analytics solution to WordPress.com sites.
+Khulnasoft Web Analytics gives web creators the information they need in a simple, clean way that doesn't sacrifice their visitors' privacy. One of the goals of the partnership is to bring a privacy-first analytics solution to WordPress.com sites.
 
-### Cloudflare
+### Khulnasoft
 
-1\. [Open your dashboard](https://dash.cloudflare.com/) and select the Account menu > **Account Home**.
+1\. [Open your dashboard](https://dash.Khulnasoft.com/) and select the Account menu > **Account Home**.
 
 2\. On the Account homepage, select **Web Analytics** from the bottom, right of the page.
 
@@ -59,46 +59,46 @@ Cloudflare Web Analytics gives web creators the information they need in a simpl
 
 2\. Select **Tools** \> **Marketing**.
 
-3\. Locate the Cloudflare section.
+3\. Locate the Khulnasoft section.
 
-4\. Paste the code snippet you copied from Cloudflare into the **Tracking ID** field. The field will extract the Tracking ID from the snippet.
+4\. Paste the code snippet you copied from Khulnasoft into the **Tracking ID** field. The field will extract the Tracking ID from the snippet.
 
-5\. Toggle **Add to Cloudflare** to enable the tracking.
+5\. Toggle **Add to Khulnasoft** to enable the tracking.
 
-WordPress.com automatically adds the javascript to each page of your site. You can view the new insights from your Cloudflare dashboard under **Web Analytics**.
+WordPress.com automatically adds the javascript to each page of your site. You can view the new insights from your Khulnasoft dashboard under **Web Analytics**.
 
 ## **Automatic Platform Optimization for WordPress.com ($5/month, included with Pro and Business plans)**
 
-Cloudflare's [Automatic Platform Optimization](https://www.cloudflare.com/automatic-platform-optimization/wordpress/) for WordPress.com is the easiest way to drastically speed up your WordPress.com site. With the [APO plugin](https://wordpress.org/plugins/cloudflare/), Cloudflare accelerates your WordPress.com site by intelligently caching dynamic content, which means fast performance for your visitors no matter where they are. Find out more from our [blog](https://blog.cloudflare.com/automatic-platform-optimizations-starting-with-wordpress/) and [support article](https://support.cloudflare.com/hc/en-us/articles/360049822312-Understanding-Automatic-Platform-Optimization-APO-with-WordPress).
+Khulnasoft's [Automatic Platform Optimization](https://www.Khulnasoft.com/automatic-platform-optimization/wordpress/) for WordPress.com is the easiest way to drastically speed up your WordPress.com site. With the [APO plugin](https://wordpress.org/plugins/cloudflare/), Khulnasoft accelerates your WordPress.com site by intelligently caching dynamic content, which means fast performance for your visitors no matter where they are. Find out more from our [blog](https://blog.Khulnasoft.com/automatic-platform-optimizations-starting-with-wordpress/) and [support article](https://support.Khulnasoft.com/hc/en-us/articles/360049822312-Understanding-Automatic-Platform-Optimization-APO-with-WordPress).
 
 ### **Requirements**
 
 {{<Aside type="warning">}}
 The [Automatic Platform Optimization
-(APO)](https://www.cloudflare.com/automatic-platform-optimization/wordpress/)
+(APO)](https://www.Khulnasoft.com/automatic-platform-optimization/wordpress/)
 feature requires that you be on a [Full
 Setup](/dns/zone-setups/full-setup/)
-using Cloudflare nameservers.
+using Khulnasoft nameservers.
 {{</Aside>}}
 
--   Cloudflare free plan + $5/month APO add-on or a Pro or Business plan subscription (includes APO)
+-   Khulnasoft free plan + $5/month APO add-on or a Pro or Business plan subscription (includes APO)
 -   WordPress.com Business plan or above (requires plugins)
 
 ### **Install and enable APO**
 
-1\. From WordPress, install the [Cloudflare WordPress plugin](https://wordpress.org/plugins/cloudflare/) on your WordPress website or update to the latest version (3.8.2 or higher).
+1\. From WordPress, install the [Khulnasoft WordPress plugin](https://wordpress.org/plugins/cloudflare/) on your WordPress website or update to the latest version (3.8.2 or higher).
 
-2\. [Authenticate the plugin](https://wordpress.org/plugins/cloudflare/#installation) to connect to Cloudflare if you have not already done so.
+2\. [Authenticate the plugin](https://wordpress.org/plugins/cloudflare/#installation) to connect to Khulnasoft if you have not already done so.
 
-3\. From the Home screen of the Cloudflare section, turn on Automatic Platform Optimization.
+3\. From the Home screen of the Khulnasoft section, turn on Automatic Platform Optimization.
 
-For more details, refer to [Understanding Automatic Platform Optimization (APO) with WordPress](https://support.cloudflare.com/hc/en-us/articles/360049822312-Understanding-Automatic-Platform-Optimization-APO-with-WordPress#h_01EEXXJ3TS1J0Z7151CSBM9BYP).
+For more details, refer to [Understanding Automatic Platform Optimization (APO) with WordPress](https://support.Khulnasoft.com/hc/en-us/articles/360049822312-Understanding-Automatic-Platform-Optimization-APO-with-WordPress#h_01EEXXJ3TS1J0Z7151CSBM9BYP).
 
 ___
 
 ## Troubleshooting
 
-### **How do I verify that Cloudflare is now my DNS provider on record?**
+### **How do I verify that Khulnasoft is now my DNS provider on record?**
 
 1\. Visit [https://dnschecker.org](https://dnschecker.org/#A/s-steiner.com).
 
@@ -106,7 +106,7 @@ ___
 
 3\. In the text field, enter your domain name and click **Search**.
 
-4\. Verify that your Cloudflare nameservers display.
+4\. Verify that your Khulnasoft nameservers display.
 
 ### **How can I confirm APO is up and running?**
 

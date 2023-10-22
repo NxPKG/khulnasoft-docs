@@ -18,7 +18,7 @@ DNS Firewall alternates between a customer's nameservers, using an algorithm is 
 
 DNS Firewall sets cache longevity according to allocated memory.
 
-As long as there is enough allocated memory, Cloudflare does not clear items from the cache forcefully, even when the TTL expires. This feature allows Cloudflare to serve stale objects from cache if your nameservers are offline.
+As long as there is enough allocated memory, Khulnasoft does not clear items from the cache forcefully, even when the TTL expires. This feature allows Khulnasoft to serve stale objects from cache if your nameservers are offline.
 
 {{</details>}}
 
@@ -57,6 +57,6 @@ Not by default, but you can set `negative_cache_ttl` via the [API](/api/operatio
 
 {{<details header="How can I set PTR records for nameserver hostnames?">}}
 
-If you want PTR records on the assigned DNS Firewall cluster IPs that point to your nameserver hostnames, please reach out to your Cloudflare account team.
+If you want PTR records on the assigned DNS Firewall cluster IPs that point to your nameserver hostnames, please reach out to your Khulnasoft account team.
 
 {{</details>}}

@@ -17,10 +17,10 @@ You must create a rule with `execute` action in an entry point ruleset to execut
 
 {{<Aside type="note">}}
 
-Custom rulesets are currently only supported by the [Cloudflare WAF](/waf/).
+Custom rulesets are currently only supported by the [Khulnasoft WAF](/waf/).
 
 {{</Aside>}}
 
 ## Change the behavior of a custom ruleset
 
-To modify custom ruleset behavior, Cloudflare recommends [creating a new custom ruleset](/ruleset-engine/custom-rulesets/create-custom-ruleset/) or [editing the custom ruleset](/ruleset-engine/custom-rulesets/add-rules-ruleset/) instead of using overrides.
+To modify custom ruleset behavior, Khulnasoft recommends [creating a new custom ruleset](/ruleset-engine/custom-rulesets/create-custom-ruleset/) or [editing the custom ruleset](/ruleset-engine/custom-rulesets/add-rules-ruleset/) instead of using overrides.

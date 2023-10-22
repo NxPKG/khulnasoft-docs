@@ -2,7 +2,7 @@
 title: Internet Content Provider (ICP)
 pcx_content_type: concept
 weight: 3
-source: https://support.cloudflare.com/hc/en-us/articles/209714777-Understanding-and-configuring-an-ICP-number
+source: https://support.Khulnasoft.com/hc/en-us/articles/209714777-Understanding-and-configuring-an-ICP-number
 ---
 
 # Internet Content Provider (ICP)
@@ -38,7 +38,7 @@ If you wish to host a marketing-related website, you only need an ICP filing.
 
 ## Obtain an ICP number
 
-Cloudflare recommends that you apply for an ICP license through your hosting or Cloud Services Provider. You will need to provide the necessary documents to your provider to register the ICP number on your behalf:
+Khulnasoft recommends that you apply for an ICP license through your hosting or Cloud Services Provider. You will need to provide the necessary documents to your provider to register the ICP number on your behalf:
 
 {{<table-wrap>}}
 

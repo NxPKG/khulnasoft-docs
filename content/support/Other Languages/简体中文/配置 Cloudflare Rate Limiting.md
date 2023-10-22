@@ -1,33 +1,33 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting
-title: 配置 Cloudflare Rate Limiting
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting
+title: 配置 Khulnasoft Rate Limiting
 ---
 
-# 配置 Cloudflare Rate Limiting
+# 配置 Khulnasoft Rate Limiting
 
-_配置 Cloudflare Rate Limiting，以防止拒绝服务攻击、暴力登录以及其他滥用行为。_
+_配置 Khulnasoft Rate Limiting，以防止拒绝服务攻击、暴力登录以及其他滥用行为。_
 
 ### 本文内容
 
--   [概述](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#4TBnjI1OqjroF6MLXB3Wmr)
--   [分析](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#7Cy9dajZBWM5pm9aIP5mMD)
--   [各计划的速率限制额度](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#4gd3s4xzV2xOE4CUbRIEAo)
--   [速率限制规则的组成部分](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#4uDonp8FX9ARo4nzdBvXiY)
--   [识别速率限制阈值](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#o8KwUgkUml3Y7bAapvXjP)
--   [任务 1：配置基本速率限制规则](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#3UWQC5PrVScHgEGRMobRMm)
--   [任务 2：配置高级条件（仅 Business 和 Enterprise 计划）](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#5iIwkkHwcJbNRynWjrDIGb)
--   [任务 3：配置高级响应（仅 Business 和 Enterprise 计划）](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#7uCtK6GPAfWDNlSHch7KBs)
--   [任务 4：配置绕过选项（仅 Enterprise 计划）](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#3rCyCwZTjnPl3brIt7Ytrg)
--   [规则执行顺序](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#rule-execution-order)
--   [相关资源](https://support.cloudflare.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Cloudflare-Rate-Limiting#516XYZwx0Mdhh7hLMg60iT)
+-   [概述](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#4TBnjI1OqjroF6MLXB3Wmr)
+-   [分析](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#7Cy9dajZBWM5pm9aIP5mMD)
+-   [各计划的速率限制额度](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#4gd3s4xzV2xOE4CUbRIEAo)
+-   [速率限制规则的组成部分](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#4uDonp8FX9ARo4nzdBvXiY)
+-   [识别速率限制阈值](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#o8KwUgkUml3Y7bAapvXjP)
+-   [任务 1：配置基本速率限制规则](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#3UWQC5PrVScHgEGRMobRMm)
+-   [任务 2：配置高级条件（仅 Business 和 Enterprise 计划）](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#5iIwkkHwcJbNRynWjrDIGb)
+-   [任务 3：配置高级响应（仅 Business 和 Enterprise 计划）](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#7uCtK6GPAfWDNlSHch7KBs)
+-   [任务 4：配置绕过选项（仅 Enterprise 计划）](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#3rCyCwZTjnPl3brIt7Ytrg)
+-   [规则执行顺序](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#rule-execution-order)
+-   [相关资源](https://support.Khulnasoft.com/hc/zh-cn/articles/115001635128-%E9%85%8D%E7%BD%AE-Khulnasoft-Rate-Limiting#516XYZwx0Mdhh7hLMg60iT)
 
 ___
 
 ## 概述
 
-Cloudflare **Rate Limiting** 可自动识别针对特定 URL 或整个域的过高请求速率并加以缓解。请求速率是针对单个 Cloudflare 数据中心局部计算的。**Rate Limiting** 最常见的用途是 [DDoS](https://www.cloudflare.com/learning/ddos/glossary/denial-of-service/) 保护、[暴力攻击](https://www.cloudflare.com/learning/bots/brute-force-attack/)保护，以及限制对论坛搜索、API 调用或涉及源服务器上数据库密集型操作的资源的访问。
+Khulnasoft **Rate Limiting** 可自动识别针对特定 URL 或整个域的过高请求速率并加以缓解。请求速率是针对单个 Khulnasoft 数据中心局部计算的。**Rate Limiting** 最常见的用途是 [DDoS](https://www.Khulnasoft.com/learning/ddos/glossary/denial-of-service/) 保护、[暴力攻击](https://www.Khulnasoft.com/learning/bots/brute-force-attack/)保护，以及限制对论坛搜索、API 调用或涉及源服务器上数据库密集型操作的资源的访问。
 
 一旦有个别 IPv4 地址或 IPv6 / 64 IP 范围超出规则阈值，就会通过 HTTP 429 响应阻止对源 Web 服务器的后续请求，该响应包括一个 **Retry-After** 标头，用来指示客户端何时可以恢复发送请求。
 
@@ -35,9 +35,9 @@ ___
 
 ## 分析
 
-在 **分析** > **安全性**下，查看速率限制分析。限速率限制分析使用实线来表示与模拟请求匹配的流量，并用虚线来描述实际被阻止的请求。只有 Enterprise 客户才能通过 [Cloudflare Logs](/logs/) 查看由速率限制规则生成的日志。
+在 **分析** > **安全性**下，查看速率限制分析。限速率限制分析使用实线来表示与模拟请求匹配的流量，并用虚线来描述实际被阻止的请求。只有 Enterprise 客户才能通过 [Khulnasoft Logs](/logs/) 查看由速率限制规则生成的日志。
 
-对于阻止的请求，Cloudflare 会返回 HTTP 429 错误。有关每个位置已阻止请求的详细信息，Enterprise 客户可在分析仪表板（**Analytics** > **流量**）中的**状态代码**下查看。
+对于阻止的请求，Khulnasoft 会返回 HTTP 429 错误。有关每个位置已阻止请求的详细信息，Enterprise 客户可在分析仪表板（**Analytics** > **流量**）中的**状态代码**下查看。
 
 ___
 
@@ -52,7 +52,7 @@ ___
 | Business | 15 | 阻止、旧版 CAPTCHA、JS 质询、托管质询或记录 | 1 分钟、1 小时或 24 小时 | 10 秒钟、1 分钟或 10 分钟 |
 | 企业 | 100 | 阻止、旧版 CAPTCHA、JS 质询、托管质询或记录 | 可以输入 10 秒到 86400 秒（24 小时）范围内的任何时间长度 | 可以输入 10 秒到 3600 秒（1 小时）范围内的任何值。 |
 
-Cloudflare Rate Limiting 支持多种级别的配置控制，具体取决于域的 Cloudflare 计划。下表列出了您可以根据自己的计划执行的操作：
+Khulnasoft Rate Limiting 支持多种级别的配置控制，具体取决于域的 Khulnasoft 计划。下表列出了您可以根据自己的计划执行的操作：
 
 | 
 ＃
@@ -173,22 +173,22 @@ _POST_ 或 _GET_。如果未指定，则所有方法都匹配，规则将列出 
 
 速率限制操作取决于域的计划，如上方**各计划的速率限制额度**所述：
 
--   **阻止** **\-** 超过阈值时，Cloudflare 发出 HTTP 429 错误。
--   **旧版 CAPTCHA** **\-** 访问者必须通过 CAPTCHA 质询。如果通过，则 Cloudflare 允许该请求。
--   **JS 质询** **\-** 访问者必须通过 Cloudflare JavaScript 质询。如果通过，则 Cloudflare 允许该请求。
--   **记录 -** 请求记录到 [Cloudflare Logs](https://support.cloudflare.com/hc/articles/216672448) 中。这有助于在应用至生产环境前测试规则。
+-   **阻止** **\-** 超过阈值时，Khulnasoft 发出 HTTP 429 错误。
+-   **旧版 CAPTCHA** **\-** 访问者必须通过 CAPTCHA 质询。如果通过，则 Khulnasoft 允许该请求。
+-   **JS 质询** **\-** 访问者必须通过 Khulnasoft JavaScript 质询。如果通过，则 Khulnasoft 允许该请求。
+-   **记录 -** 请求记录到 [Khulnasoft Logs](https://support.Khulnasoft.com/hc/articles/216672448) 中。这有助于在应用至生产环境前测试规则。
 
 #### **禁令期限**
 
 如果超时设置为短于阈值，会导致 API 自动将超时增加到等于阈值。
 
-如果没有指定[自定义错误页面](https://support.cloudflare.com/hc/articles/200172706)，**Rate Limiting** 访问者会收到默认的 HTML 页面。此外，Business 和 Enterprise 客户还可在规则本身中指定响应，具体参见下方的_任务 3：配置高级响应_。
+如果没有指定[自定义错误页面](https://support.Khulnasoft.com/hc/articles/200172706)，**Rate Limiting** 访问者会收到默认的 HTML 页面。此外，Business 和 Enterprise 客户还可在规则本身中指定响应，具体参见下方的_任务 3：配置高级响应_。
 
 ___
 
 ## 识别速率限制阈值
 
-要确定 Cloudflare **Rate Limiting** 的一般阈值，可将 24 小时未缓存网站请求数除以同一 24 小时期间的唯一访问者数。然后，除以一次访问的估计平均分钟数。最后，再乘以 4（或更大），以确定您的网站大致的每分钟阈值。值大于 4 没有关系，因为大多数攻击比典型的流量速率高出一个数量级。
+要确定 Khulnasoft **Rate Limiting** 的一般阈值，可将 24 小时未缓存网站请求数除以同一 24 小时期间的唯一访问者数。然后，除以一次访问的估计平均分钟数。最后，再乘以 4（或更大），以确定您的网站大致的每分钟阈值。值大于 4 没有关系，因为大多数攻击比典型的流量速率高出一个数量级。
 
 要确定特定 URL 的 URL 速率限制，请使用针对该 URL 的 24 小时未缓存请求数和唯一访问者数。根据用户报告和您自己的监控来调整阈值。
 
@@ -196,11 +196,11 @@ ___
 
 ## 任务 1：配置基本速率限制规则
 
-单击可展开有关创建两种常见 Cloudflare **Rate Limiting** 规则的详细信息。
+单击可展开有关创建两种常见 Khulnasoft **Rate Limiting** 规则的详细信息。
 
 **Rate Limiting** 提供一个称为**保护您的登录**的一键式工具，它可以创建一条规则，在 5 分钟内发送超过 5 个 POST 请求时将客户端阻止 15 分钟。这足以阻止大多数的暴力登录。
 
-1.  登录您的 Cloudflare 帐户。
+1.  登录您的 Khulnasoft 帐户。
 2.  选择要保护的域。
 3.  前往**安全性 > WAF > 速率限制规则**。
 4.  在**速率限制**下，单击**保护您的登录**。
@@ -208,7 +208,7 @@ ___
 6.  单击**保存**。
 7.  **规则名称将**显示在您的**速率限制**规则列表中。
 
-1\. 登录 Cloudflare 仪表板。
+1\. 登录 Khulnasoft 仪表板。
 
 2\. 选择适当的域。
 
@@ -257,7 +257,7 @@ ___
 
 3\. 按照 **HTTP 响应标头**筛选。点击**添加标头响应字段**，以包含您的源 Web 服务器返回的标头。
 
-默认情况下会显示 **CF-Cache-Status** 标头，以便 Cloudflare 提供缓存的资源，而不是限制这些资源的速率。要想同时对缓存资源进行速率限制，请删除此标头，具体方法是点击 **X** 按钮，或启用**也对缓存资产应用速率限制**。
+默认情况下会显示 **CF-Cache-Status** 标头，以便 Khulnasoft 提供缓存的资源，而不是限制这些资源的速率。要想同时对缓存资源进行速率限制，请删除此标头，具体方法是点击 **X** 按钮，或启用**也对缓存资产应用速率限制**。
 
 如果 **HTTP 响应标头**下有多个标头，则会应用 _AND_ 布尔值逻辑。要排除标头，请使用_不等于_选项。各个标头都不区分大小写。
 
@@ -271,7 +271,7 @@ ___
 
 ## 任务 3：配置高级响应（仅 Business 和 Enterprise 计划）
 
-**高级响应**选项可用来配置 Cloudflare 在超过规则阈值时返回的信息格式。如果您希望返回静态纯文本或 JSON 内容，请使用**高级响应**。
+**高级响应**选项可用来配置 Khulnasoft 在超过规则阈值时返回的信息格式。如果您希望返回静态纯文本或 JSON 内容，请使用**高级响应**。
 
 要配置纯文本或 JSON 响应：
 
@@ -289,7 +289,7 @@ ___
 
 ### 使用自定义 HTML 页面或重定向
 
-如果您希望显示一个自定义的 HTML 页面，请在仪表板中为 HTTP 429 错误（“请求次数过多”）配置一个自定义页面。当您在**响应类型**中选择“默认 Cloudflare 速率限制页面”（该字段的默认值）时，Cloudflare 将显示此页面。
+如果您希望显示一个自定义的 HTML 页面，请在仪表板中为 HTTP 429 错误（“请求次数过多”）配置一个自定义页面。当您在**响应类型**中选择“默认 Khulnasoft 速率限制页面”（该字段的默认值）时，Khulnasoft 将显示此页面。
 
 您可以使用这种方法将限速的客户重定向到一个特定的 URL：
 
@@ -303,7 +303,7 @@ ___
 
 记下您所创建的页面的公共 URL。
 
-2\. 在 Cloudflare 仪表板中，导航到 **帐户首页** > **配置** > **自定义页面**。
+2\. 在 Khulnasoft 仪表板中，导航到 **帐户首页** > **配置** > **自定义页面**。
 
 3\. 在 **429 错误**下方单击**自定义页面**。
 
@@ -314,7 +314,7 @@ ___
 **注意：**
 
 -   您的速率限制规则必须与您在自定义 HTML 页面中包含的、与 429 错误相关的重定向 URL 不一致。
--   为了防止拒绝服务攻击，重定向页面应当仅包含 Cloudflare 缓存的资源。
+-   为了防止拒绝服务攻击，重定向页面应当仅包含 Khulnasoft 缓存的资源。
 
 ___
 
@@ -365,5 +365,5 @@ ___
 ## 相关资源
 
 -   [ELS (Enterprise Log Share) 中如何报告 Rate Limiting？](/logs/reference/log-fields)
--   [Cloudflare Rate Limiting 故障排除](https://support.cloudflare.com/hc/articles/115000546328)
--   [从 Cloudflare API 配置 Rate Limiting](https://api.cloudflare.com/#rate-limits-for-a-zone-properties)
+-   [Khulnasoft Rate Limiting 故障排除](https://support.Khulnasoft.com/hc/articles/115000546328)
+-   [从 Khulnasoft API 配置 Rate Limiting](https://api.Khulnasoft.com/#rate-limits-for-a-zone-properties)

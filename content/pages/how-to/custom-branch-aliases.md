@@ -25,7 +25,7 @@ Next, add a custom domain under your Pages project for your desired custom domai
 
 To do this:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 2. In Account Home, go to **Workers & Pages**.
 3. Select your Pages project.
 4. Select **Custom domains** > **Setup a custom domain**.
@@ -34,7 +34,7 @@ To do this:
 
 ![After selecting your custom domain, you will be asked to activate it.](/images/pages/how-to//pages_custom_domain-2.png)
 
-After activating your custom domain, go to [DNS](https://dash.cloudflare.com/?to=/:account/:zone/dns) for the `example.com` zone and find the `CNAME` record with the name `staging` and change the target to include your branch alias.
+After activating your custom domain, go to [DNS](https://dash.Khulnasoft.com/?to=/:account/:zone/dns) for the `example.com` zone and find the `CNAME` record with the name `staging` and change the target to include your branch alias.
 
 In this instance, change `your-project.pages.dev` to `staging.your-project.pages.dev`.
 

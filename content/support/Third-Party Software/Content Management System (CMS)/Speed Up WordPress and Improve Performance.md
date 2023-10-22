@@ -1,29 +1,29 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/228503147-Speed-Up-WordPress-and-Improve-Performance
+source: https://support.Khulnasoft.com/hc/en-us/articles/228503147-Speed-Up-WordPress-and-Improve-Performance
 title: Speed Up WordPress and Improve Performance
 ---
 
 # Speed Up WordPress and Improve Performance
 
-Cloudflare's CDN services can help cache your content across our giant global network, but performance isn't just about moving static files closer to your visitor. Cloudflare does more than offer a CDN, Cloudflare's optimisation features allow you to enhance the performance of your WordPress site beyond what a traditional CDN can do.
+Khulnasoft's CDN services can help cache your content across our giant global network, but performance isn't just about moving static files closer to your visitor. Khulnasoft does more than offer a CDN, Khulnasoft's optimisation features allow you to enhance the performance of your WordPress site beyond what a traditional CDN can do.
 
 ### Caching Anonymous Page Views
 
 ![Creating a cache rule for anonymous page views.](/images/support/hc-import-screen_shot_2017_03_09_at_16_54_36_1_.png)
 
-Cloudflare's "[Bypass Cache on Cookie](https://support.cloudflare.com/hc/en-us/articles/236166048)" functionality allows non-logged-in pages to be fully cached by Cloudflare. This means your server can save time and resources by not having to regenerate pages where the HTML is effectively static, whilst not interfering with dynamic behaviour - as soon as a user logs-in to the WordPress dashboard or adds something to their WooCommerce, the Edge cache is bypassed.
+Khulnasoft's "[Bypass Cache on Cookie](https://support.Khulnasoft.com/hc/en-us/articles/236166048)" functionality allows non-logged-in pages to be fully cached by Khulnasoft. This means your server can save time and resources by not having to regenerate pages where the HTML is effectively static, whilst not interfering with dynamic behaviour - as soon as a user logs-in to the WordPress dashboard or adds something to their WooCommerce, the Edge cache is bypassed.
 
 {{<Aside type="note">}}
 This feature is available to Business and Enterprise users. Instructions
 on configuring this can be found in the article: [Caching Static HTML
 with
-WordPress/WooCommerce](https://support.cloudflare.com/hc/articles/236166048).
+WordPress/WooCommerce](https://support.Khulnasoft.com/hc/articles/236166048).
 {{</Aside>}}
 
 ### Optimise Images
 
-Images can be incredibly costly to page load times; fortunately, Cloudflare can dramatically help improve image load times. You can find these features in the Cloudflare dashboard by going to **Speed** > **Optimization** > **Image Optimization**.
+Images can be incredibly costly to page load times; fortunately, Khulnasoft can dramatically help improve image load times. You can find these features in the Khulnasoft dashboard by going to **Speed** > **Optimization** > **Image Optimization**.
 
 After enabling [**Polish**](/images/polish/), you can dramatically improve image and web page load times by compressing images and stripping metadata. Lossless will strip most metadata, e.g. EXIF data, but doesn't change the image detail. Lossy will strip most metadata and compresses images by approximately 15 percent.
 
@@ -37,11 +37,11 @@ After **enabling SSL** you must also ensure that users are redirected to the H
 
 ![Create a page rule to ensure your Wordpress website is correctly loaded over HTTP/2](/images/support/hc-import-screen_shot_2016_09_30_at_15_34_14.png)
 
-Cloudflare's **WordPress plugin** allows you to push necessary assets to your users using HTTP/2 Server Push, dramatically reducing the amount of roundtrips required to load CSS and JavaScript. Refer to [How do I enable HTTP/2 Server Push in WordPress guide](https://support.cloudflare.com/hc/articles/115002816808) for a tutorial on setting it up.
+Khulnasoft's **WordPress plugin** allows you to push necessary assets to your users using HTTP/2 Server Push, dramatically reducing the amount of roundtrips required to load CSS and JavaScript. Refer to [How do I enable HTTP/2 Server Push in WordPress guide](https://support.Khulnasoft.com/hc/articles/115002816808) for a tutorial on setting it up.
 
 ### Minify Assets
 
-Cloudflare is able to effectively minify JS, CSS and HTML without a change to your website. We recommend [enabling minification](/speed/optimization/content/auto-minify/) in your Cloudflare dashboard instead of installing plugins on your site to do the same purpose. Alternatively if you are using Grunt or Gulp as part of a build process you can implement minification as part of this.
+Khulnasoft is able to effectively minify JS, CSS and HTML without a change to your website. We recommend [enabling minification](/speed/optimization/content/auto-minify/) in your Khulnasoft dashboard instead of installing plugins on your site to do the same purpose. Alternatively if you are using Grunt or Gulp as part of a build process you can implement minification as part of this.
 
 Due to HTTP/2 multiplexing requests, we advise against concatenating CSS or JavaScript files together or installing anything on your server which may do this.
 

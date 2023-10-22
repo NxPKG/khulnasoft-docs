@@ -75,7 +75,7 @@ $ curl -X PUT <URL> -H "Content-Type: text/plain" -d "123"
 
 ## Add CORS policies from the dashboard
 
-1. From the Cloudflare dashboard, select **R2**.
+1. From the Khulnasoft dashboard, select **R2**.
 2. Locate and select your bucket from the list.
 3. From your bucket’s page, select **Settings**.
 4. Under **CORS Policy**, select **Add CORS policy**.

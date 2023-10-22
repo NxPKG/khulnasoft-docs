@@ -7,7 +7,7 @@ weight: 2
 
 # Content types
 
-The content sections are in prioritized order and should be applied to all new [developers.cloudflare.com](https://developers.cloudflare.com/) products.
+The content sections are in prioritized order and should be applied to all new [developers.Khulnasoft.com](https://developers.Khulnasoft.com/) products.
 
 <table>
     <tr>
@@ -63,7 +63,7 @@ The content sections are in prioritized order and should be applied to all new [
     <tr>
         <td><a href="/style-guide/documentation-content-strategy/content-types/3rd-party-integration-guide/">3rd-party integration guide</a></td>
         <td>No</td>
-        <td>The purpose of a 3rd-party integration guide is to explain how to use a 3rd-party product with Cloudflare.</td>
+        <td>The purpose of a 3rd-party integration guide is to explain how to use a 3rd-party product with Khulnasoft.</td>
     </tr>
     <tr>
         <td><a href="/style-guide/documentation-content-strategy/content-types/changelog/">Changelog</a></td>
@@ -83,6 +83,6 @@ The content sections are in prioritized order and should be applied to all new [
     <tr>
         <td><a href="/style-guide/documentation-content-strategy/content-types/support-content/">Support content</a></td>
         <td>No</td>
-        <td>The purpose of support content is to provide guidance for solving specific problems with Cloudflare.</td>
+        <td>The purpose of support content is to provide guidance for solving specific problems with Khulnasoft.</td>
     </tr>
 </table>

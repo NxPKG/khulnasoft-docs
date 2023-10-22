@@ -13,7 +13,7 @@ meta:
 Schema Validation 2.0 API is currently in an experimental functionality and may change in future updates.
 {{</Aside>}}
 
-Schema Validation 2.0 allows all corresponding configuration calls to be made via API. This validation centers more around individual endpoints and lets you set mitigation actions for each endpoint individually. Additionally, you can use Cloudflare-provided learned schemas that we [learn automatically](/api-shield/management-and-monitoring/#endpoint-schema-learning) from your traffic for individual endpoints. 
+Schema Validation 2.0 allows all corresponding configuration calls to be made via API. This validation centers more around individual endpoints and lets you set mitigation actions for each endpoint individually. Additionally, you can use Khulnasoft-provided learned schemas that we [learn automatically](/api-shield/management-and-monitoring/#endpoint-schema-learning) from your traffic for individual endpoints. 
 
 {{<Aside type="note">}}
 [Classic Schema Validation documentation](/api-shield/reference/classic-schema-validation/) is available for reference only.
@@ -33,7 +33,7 @@ Schema Validation 2.0 allows all corresponding configuration calls to be made vi
     - Temporarily override all schemas zone-wide to `none`.
     - Remove the temporary override.
 
-Cloudflare recommends you to rerun test traffic and monitor the HTTP response codes after changing any settings to ensure Schema Validation is operating as expected.
+Khulnasoft recommends you to rerun test traffic and monitor the HTTP response codes after changing any settings to ensure Schema Validation is operating as expected.
 
 Settings changes may take a few minutes to implement.
 
@@ -51,7 +51,7 @@ Upload a schema via the v4 API using `POST`. This example requires a `example_sc
 ---
 header: cURL command
 ---
-curl --request POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/user_schemas" \
+curl --request POST "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/user_schemas" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --form file=@example_schema.yaml --form kind=openapi_v3 --form name=example_schema --form validation_enabled=false
 ```
@@ -88,7 +88,7 @@ Use a `PATCH` request to activate a schema after inspection.
 ---
 header: cURL command
 ---
-curl --request PATCH "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/user_schemas/{schema_id}" \
+curl --request PATCH "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/user_schemas/{schema_id}" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header 'Content-Type: application/json' \
 --data '{
@@ -127,7 +127,7 @@ Schemas contain a set of servers, paths, and methods, which together define an o
 ---
 header: cURL command
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/user_schemas/{schema_id}/operations?feature=schema_info" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/user_schemas/{schema_id}/operations?feature=schema_info" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -180,7 +180,7 @@ header: Result
 }
 ```
 
-To receive information about the configuration of existing operations, Cloudflare recommends passing the `?feature=schema_info` parameter.
+To receive information about the configuration of existing operations, Khulnasoft recommends passing the `?feature=schema_info` parameter.
 
 You can add new operations in a schema to Endpoint Management using `POST`.
 
@@ -188,7 +188,7 @@ You can add new operations in a schema to Endpoint Management using `POST`.
 ---
 header: cURL command
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/operations" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/operations" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header 'Content-Type: application/json' \
 --data '[
@@ -228,10 +228,10 @@ You can add all operations in a schema that do not already exist in Endpoint Man
 ---
 header: cURL command
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/operations" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/operations" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
---data "(curl --silent "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/user_schemas/{schema_id}/operations?feature=schema_info" \
+--data "(curl --silent "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/user_schemas/{schema_id}/operations?feature=schema_info" \
 --header "Authorization: Bearer <API_TOKEN>" | jq ".result.new_operations")"
 ```
 
@@ -249,7 +249,7 @@ New operations will not have a mitigation action set and will use the zone-wide 
 ---
 header: cURL command
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/settings/schema_validation" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/settings/schema_validation" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -276,7 +276,7 @@ A new value out of `none`, `log`, and `block` can be set using `PUT`.
 ---
 header: cURL command
 ---
-curl --request PUT "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/settings/schema_validation" \
+curl --request PUT "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/settings/schema_validation" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -308,7 +308,7 @@ If the mitigation action for an individual operation is of interest, the current
 ---
 header: cURL command
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/operations/{operation_id}/schema_validation" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/operations/{operation_id}/schema_validation" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -337,7 +337,7 @@ You can set the mitigation action to a value out of `none`, `block`, `log`, and 
 ---
 header: cURL command
 ---
-curl --request PUT "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/operations/{operation_id}/schema_validation" \
+curl --request PUT "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/operations/{operation_id}/schema_validation" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -371,7 +371,7 @@ You can get an overview of the schemas currently active on a zone using `GET`.
 ---
 header: cURL command
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/user_schemas?omit_source=true" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/user_schemas?omit_source=true" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -410,7 +410,7 @@ You can delete a schema using `DELETE`.
 ---
 header: cURL command
 ---
-curl --request DELETE "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/user_schemas/{schema_id}" \
+curl --request DELETE "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/user_schemas/{schema_id}" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -430,13 +430,13 @@ header: Result
 
 ### Activate a learned schema for an operation
 
-Cloudflare provides automatically learned parameter schemas for all operations in Endpoint Management with a sufficient amount of requests. A learned schema can be inspected using `GET`.
+Khulnasoft provides automatically learned parameter schemas for all operations in Endpoint Management with a sufficient amount of requests. A learned schema can be inspected using `GET`.
 
 ```bash
 ---
 header: cURL command
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/operations/{operation_id}?feature=parameter_schemas" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/operations/{operation_id}?feature=parameter_schemas" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -492,7 +492,7 @@ If you are satisfied with the inspected parameter schema, you can add and activa
 ---
 header: cURL command
 ---
-curl --request PUT "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/operations/{operation_id}/cloudflare_learned_schema?timestamp=2023-04-03T20:11:55.879006Z" \
+curl --request PUT "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/operations/{operation_id}/cloudflare_learned_schema?timestamp=2023-04-03T20:11:55.879006Z" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -512,7 +512,7 @@ header: Result
 ```
 
 {{<Aside type="note">}}
-Parameter schemas are updated between every 24 hours up to one week. To ensure that a parameter schema has not been updated during the inspection, Cloudflare recommends that you pass the `last_updated` timestamp of the parameter-schema feature (not the `last_updated` of the whole operation) as an identifier in the timestamp query parameter.
+Parameter schemas are updated between every 24 hours up to one week. To ensure that a parameter schema has not been updated during the inspection, Khulnasoft recommends that you pass the `last_updated` timestamp of the parameter-schema feature (not the `last_updated` of the whole operation) as an identifier in the timestamp query parameter.
 {{</Aside>}}
 
 ### Disable Schema Validation
@@ -523,7 +523,7 @@ To quickly disable schema validation for a whole zone, use `PATCH`. This operati
 ---
 header: cURL command
 ---
-curl --request PATCH "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/settings/schema_validation" \
+curl --request PATCH "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/settings/schema_validation" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header 'Content-Type: application/json' \
 --data '{

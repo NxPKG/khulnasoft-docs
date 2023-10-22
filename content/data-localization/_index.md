@@ -8,7 +8,7 @@ meta:
 
 # Data Localization Suite
 
-The Data Localization Suite (DLS) is a collection of tools that enable customers to choose the location where Cloudflare inspects and stores data, while maintaining the security and performance benefits of our global network.
+The Data Localization Suite (DLS) is a collection of tools that enable customers to choose the location where Khulnasoft inspects and stores data, while maintaining the security and performance benefits of our global network.
 
 {{<Aside type="note">}}
 
@@ -73,7 +73,7 @@ Overview by product-behavior is summarized in the following table. Below you can
 | Page Shield | ✅ | ✅ | ✅ |
 | Rate Limiting | ✅ | ✅ | 🚧{{<fnref num="1">}} |
 | SSL | ✅ | ✅ | ✅ |
-| Cloudflare for SaaS | ✘ | ✅ | ✅ |
+| Khulnasoft for SaaS | ✘ | ✅ | ✅ |
 | Turnstile | ⚫️ | ✘ | ✅ |
 | WAF/L7 Firewall | ✅ | ✅ | ✅ |
 | DMARC Management | ⚫️ | ⚫️ | ✅ |
@@ -83,8 +83,8 @@ Overview by product-behavior is summarized in the following table. Below you can
 
 | Product | Geo Key Manager | Regional Services | Customer Metadata Boundary |
 | --- | --- | --- | --- |
-| Cloudflare Images | ⚫️ | ✘ | ✘ |
-| Cloudflare Pages | ✘ | ✅{{<fnref num="11">}} | ✘ |
+| Khulnasoft Images | ⚫️ | ✘ | ✘ |
+| Khulnasoft Pages | ✘ | ✅{{<fnref num="11">}} | ✘ |
 | Durable Objects | ⚫️ | ✅{{<fnref num="7">}} | 🚧{{<fnref num="1">}} |
 | Email Routing | ⚫️ | ⚫️ | ✅ |
 | R2 | ⚫️ | 🚧{{<fnref num="8">}} | ✅ |
@@ -122,7 +122,7 @@ Overview by product-behavior is summarized in the following table. Below you can
 | Area 1 | ⚫️ | ✅{{<fnref num="23">}} | 🚧{{<fnref num="24">}} |
 | Browser Isolation | ⚫️ | 🚧{{<fnref num="17">}} | ✅ |
 | CASB | ⚫️ | ⚫️ | ✘ |
-| Cloudflare Tunnel | ⚫️ | 🚧{{<fnref num="18">}} | ⚫️ |
+| Khulnasoft Tunnel | ⚫️ | 🚧{{<fnref num="18">}} | ⚫️ |
 | DLP | ⚫️{{<fnref num="19">}} | ⚫️{{<fnref num="19">}} | ✘ |
 | Gateway | 🚧{{<fnref num="20">}} | 🚧{{<fnref num="21">}} | 🚧{{<fnref num="22">}} |
 | WARP | ⚫️ | ⚫️ | 🚧{{<fnref num="1">}} |
@@ -141,7 +141,7 @@ Overview by product-behavior is summarized in the following table. Below you can
 {{<fnentry num="8">}}You can not yet specify region location for object storage; this is expected in 2023.{{</fnentry>}}
 {{<fnentry num="10">}}Argo cannot be used with Customer Metadata Boundary.{{</fnentry>}}
 {{<fnentry num="11">}}Only when using Custom Domain set to a region.{{</fnentry>}}
-{{<fnentry num="12">}}Logpull not available when using Customer Metadata Boundary outside US region. Logs may be stored and retrieved with [Logs Engine](https://blog.cloudflare.com/announcing-logs-engine/) which is adding region support in 2023.{{</fnentry>}}
+{{<fnentry num="12">}}Logpull not available when using Customer Metadata Boundary outside US region. Logs may be stored and retrieved with [Logs Engine](https://blog.Khulnasoft.com/announcing-logs-engine/) which is adding region support in 2023.{{</fnentry>}}
 {{<fnentry num="13">}}Logpush available with Customer Metadata Boundary for HTTP requests and Firewall events. Please contact your Customer Success Manager if you need to push another dataset.{{</fnentry>}}
 {{<fnentry num="14">}}Access App SSL keys can use Geo Key Manager. [Access JWT](/cloudflare-one/identity/authorization-cookie/validating-json/) is not yet localized.{{</fnentry>}}
 {{<fnentry num="15">}}Can be localized to US FedRAMP region only. More regions coming in 2023.{{</fnentry>}}
@@ -149,10 +149,10 @@ Overview by product-behavior is summarized in the following table. Below you can
 {{<fnentry num="17">}}Currently may only be used with US FedRAMP region.{{</fnentry>}}
 {{<fnentry num="18">}}Only US FedRAMP region.{{</fnentry>}}
 {{<fnentry num="19">}}Uses Gateway and CASB.{{</fnentry>}}
-{{<fnentry num="20">}}You can [bring your own certificate](https://blog.cloudflare.com/bring-your-certificates-cloudflare-gateway/) to Gateway but these cannot yet be restricted to a specific region.{{</fnentry>}}
+{{<fnentry num="20">}}You can [bring your own certificate](https://blog.Khulnasoft.com/bring-your-certificates-cloudflare-gateway/) to Gateway but these cannot yet be restricted to a specific region.{{</fnentry>}}
 {{<fnentry num="21">}}Gateway HTTP supports Regional Services. Gateway DNS does not yet support regionalization. <br> ICMP proxy and WARP-to-WARP proxy are not available to Regional Services users.{{</fnentry>}}
 {{<fnentry num="22">}}Gateway HTTP and Gateway Network can be used with Customer Metadata Boundary and logs are available via Logpush (logs are still not available in the dashboard when setting the region to the EU).{{</fnentry>}}
 {{<fnentry num="23">}}[US, EU and India regions](/email-security/deployment/). <br> For Area 1, this is called the **Processing &amp; Inspection Boundary**.{{</fnentry>}}
-{{<fnentry num="24">}}Email metadata (`subject`, `from:`, `to:`) can only be stored in US. <br> Customers have the option to obfuscate  metadata from being viewed by Cloudflare. <br> Email message bodies are only stored for emails that are marked with a disposition (like `MALICIOUS` or `SPAM`).{{</fnentry>}}
+{{<fnentry num="24">}}Email metadata (`subject`, `from:`, `to:`) can only be stored in US. <br> Customers have the option to obfuscate  metadata from being viewed by Khulnasoft. <br> Email message bodies are only stored for emails that are marked with a disposition (like `MALICIOUS` or `SPAM`).{{</fnentry>}}
 {{<fnentry num="25">}}Only supported in [Geo Key Manager v2](/ssl/edge-certificates/geokey-manager/).{{</fnentry>}}
 {{</fnsection>}}

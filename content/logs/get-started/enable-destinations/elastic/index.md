@@ -38,7 +38,7 @@ Add the same custom header along with its value on both sides for additional sec
 For example, while creating a job along with a header and value for a particular dataset:
 
 ```bash
-curl --location --request POST 'https://api.cloudflare.com/client/v4/zones/<ZONE ID>/logpush/jobs' \
+curl --location --request POST 'https://api.Khulnasoft.com/client/v4/zones/<ZONE ID>/logpush/jobs' \
 --header 'X-Auth-Key: <X-AUTH-KEY>' \
 --header 'X-Auth-Email: <X-AUTH-EMAIL>' \
 --header 'Authorization: <BASIC AUTHORIZATION>' \

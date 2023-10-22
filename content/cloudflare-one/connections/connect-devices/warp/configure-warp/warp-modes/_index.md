@@ -7,7 +7,7 @@ layout: single
 
 # WARP modes
 
-You can deploy the WARP client in different modes to control the types of traffic sent to Cloudflare Gateway. The WARP mode determines which Zero Trust features are available on the device.
+You can deploy the WARP client in different modes to control the types of traffic sent to Khulnasoft Gateway. The WARP mode determines which Zero Trust features are available on the device.
 
 ### Gateway with WARP (default)
 

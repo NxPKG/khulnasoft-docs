@@ -15,7 +15,7 @@ This can be set up [with the API](/api/operations/magic-ipsec-tunnels-update-ips
 
 ```bash
 $ curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{tunnel_id} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{tunnel_id} \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL> ' \
 --header "X-Auth-Key: <API_KEY>" \
@@ -81,7 +81,7 @@ conn cloudflare-ipsec
     # Private IP of the VM
     left=%any
     # Tunnel ID from dashboard, in this example FQDN is used
-    leftid=<YOUR_TUNNEL_ID>.<YOUR_ACCOUNT_ID>.ipsec.cloudflare.com
+    leftid=<YOUR_TUNNEL_ID>.<YOUR_ACCOUNT_ID>.ipsec.Khulnasoft.com
     leftsubnet=0.0.0.0/0
     # Cloudflare Anycast IP
     right=<YOUR_CLOUDFLARE_ANYCAST_IP>
@@ -171,7 +171,7 @@ $ ip route add default dev vti0 table viatunicmp
 ```bash
 $ ipsec start
 Security Associations (1 up, 0 connecting):
-cloudflare-ipsec[1]: ESTABLISHED 96 minutes ago, <IPSEC_TUNNEL_IDENTIFIER>.ipsec.cloudflare.com]...162.159.67.88[162.159.67.88]
+cloudflare-ipsec[1]: ESTABLISHED 96 minutes ago, <IPSEC_TUNNEL_IDENTIFIER>.ipsec.Khulnasoft.com]...162.159.67.88[162.159.67.88]
 cloudflare-ipsec{4}:  INSTALLED, TUNNEL, reqid 1, ESP SPIs: c4e20a95_i c5373d00_o
 cloudflare-ipsec{4}:   0.0.0.0/0 === 0.0.0.0/0
 ```

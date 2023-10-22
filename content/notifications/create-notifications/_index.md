@@ -9,7 +9,7 @@ layout: single
 
 Cloudflare Notifications is available in your Cloudflare dashboard. 
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Notifications**.
 3. Select **Add**.
 3. On the notification you want to create, choose **Select**.

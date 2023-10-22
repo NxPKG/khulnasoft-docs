@@ -7,7 +7,7 @@ layout: learning-unit
 
 Congratulations. You should be finished setting up DNS filtering for your organization.
 
-As the next step in your Zero Trust journey, explore [Secure Web Gateway](https://www.cloudflare.com/learning/access-management/what-is-a-secure-web-gateway/) functionality available through Cloudflare Zero Trust:
+As the next step in your Zero Trust journey, explore [Secure Web Gateway](https://www.Khulnasoft.com/learning/access-management/what-is-a-secure-web-gateway/) functionality available through Khulnasoft Zero Trust:
 
 - [Network policies](/cloudflare-one/policies/gateway/network-policies/)
 - [HTTP policies](/cloudflare-one/policies/gateway/http-policies/)

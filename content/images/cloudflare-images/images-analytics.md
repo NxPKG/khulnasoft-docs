@@ -8,7 +8,7 @@ meta:
 
 # Images analytics
 
-Cloudflare Images gives you access to analytics data for your account, such as:
+Khulnasoft Images gives you access to analytics data for your account, such as:
 
 - How many images have been served during the current month.
 - How many images are stored.
@@ -16,7 +16,7 @@ Cloudflare Images gives you access to analytics data for your account, such as:
 
 To check analytics for your Images account:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Select **Images**.
 3. Under **Account details** at the top right, you can view the analytics information.
 
@@ -24,6 +24,6 @@ To check analytics for your Images account:
 
 If you exceed your account's quota, you will not be able to upload more images. Further uploads will be rejected with the message `The given account has reached a service limit`.
 
-If you are an Enterprise customer, contact your Customer Success Manager to increase your Cloudflare Images' quota and avoid this error. You can also [delete images](/images/cloudflare-images/transform/delete-images/) from your account.
+If you are an Enterprise customer, contact your Customer Success Manager to increase your Khulnasoft Images' quota and avoid this error. You can also [delete images](/images/cloudflare-images/transform/delete-images/) from your account.
 
 Non-Enterprise customers can select **Change Subscription** to change their account type, increase their quota limit and avoid this error, or [delete images](/images/cloudflare-images/transform/delete-images/) from their account.

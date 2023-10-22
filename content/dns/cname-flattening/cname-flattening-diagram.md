@@ -10,18 +10,18 @@ meta:
 
 # How CNAME flattening works
 
-With `CNAME` flattening, Cloudflare returns an IP address instead of the target hostname that a `CNAME` record points to.
+With `CNAME` flattening, Khulnasoft returns an IP address instead of the target hostname that a `CNAME` record points to.
 This process supports a few features and delivers better performance and flexibility, as mentioned in the [CNAME flattening concept page](/dns/cname-flattening/).
 
 Consider the diagram below to have an overview of the steps that may be involved in `CNAME` flattening. 
 
 {{<Aside type="note">}}
-Note that this is a simpler scenario. Cases where `CNAME` flattening is optional and/or the target hostname is not external to Cloudflare work differently.
+Note that this is a simpler scenario. Cases where `CNAME` flattening is optional and/or the target hostname is not external to Khulnasoft work differently.
 {{</Aside>}}
 
 ## Example use case
 
-- `domain.test` is a zone on Cloudflare and has the following `CNAME` record:
+- `domain.test` is a zone on Khulnasoft and has the following `CNAME` record:
 
 {{<example>}}
 | Type | Name | Content | TTL |
@@ -42,11 +42,11 @@ In this case, the process to respond to queries for `domain.test` directly with 
 ```mermaid
 flowchart BT
 accTitle: CNAME flattening diagram
-accDescr: Diagram of CNAME flattening process when there is a request for a domain in Cloudflare and the zone has a CNAME record at apex that points to an external A record.
+accDescr: Diagram of CNAME flattening process when there is a request for a domain in Khulnasoft and the zone has a CNAME record at apex that points to an external A record.
   A((User)) <--query for <code>domain.test</code>--> B[Resolver] --> C
   C["Question: 
   <code>domain.test IN A</code>"]
- subgraph Y[Cloudflare DNS]
+ subgraph Y[Khulnasoft DNS]
  direction RL
   D{{Look up record}} --> G["Answer:
   <code>domain.test 3600 CNAME external-origin.test</code>
@@ -56,8 +56,8 @@ accDescr: Diagram of CNAME flattening process when there is a request for a doma
   K{{Append answer with overwritten query name}} --> L["Answer:
   <code>domain.test 7200 IN A 192.0.2.1</code>"] --- M{Proxy status}
   M --Proxied--> O["Answer:
-  <code>domain.test 300 IN A {$Cloudflare IP 1}</code>
-  <code>domain.test 300 IN A {$Cloudflare IP 2}</code>"]
+  <code>domain.test 300 IN A {$Khulnasoft IP 1}</code>
+  <code>domain.test 300 IN A {$Khulnasoft IP 2}</code>"]
   M --DNS only--> N["Answer:
   <code>domain.test 3600 IN A 192.0.2.1</code>"]
  end
@@ -75,5 +75,5 @@ accDescr: Diagram of CNAME flattening process when there is a request for a doma
 
 ## Aspects to consider
 
-- If the `CNAME` record is proxied in Cloudflare, the answer is made up of multiple [Cloudflare IPs](https://www.cloudflare.com/ips/) and its Time to Live (TTL) is set to `300`.
-- If the `CNAME` record in Cloudflare is not proxied, the flattened answer consists of the IP address from the external DNS provider and its TTL corresponds to the lower value between the external record and the Cloudflare `CNAME` record.
+- If the `CNAME` record is proxied in Khulnasoft, the answer is made up of multiple [Khulnasoft IPs](https://www.Khulnasoft.com/ips/) and its Time to Live (TTL) is set to `300`.
+- If the `CNAME` record in Khulnasoft is not proxied, the flattened answer consists of the IP address from the external DNS provider and its TTL corresponds to the lower value between the external record and the Khulnasoft `CNAME` record.

@@ -1,25 +1,25 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: korean
-source: https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-
-title: Cloudflare Page Rules의 이해 및 구성(Page Rules 튜토리얼)
+source: https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-
+title: Khulnasoft Page Rules의 이해 및 구성(Page Rules 튜토리얼)
 ---
 
-# Cloudflare Page Rules의 이해 및 구성(Page Rules 튜토리얼)
+# Khulnasoft Page Rules의 이해 및 구성(Page Rules 튜토리얼)
 
 _요청이 사용자가 정의한 URL 패턴 중 하나와 일치하면, Page Rules는 특정 조치를 트리거합니다. 페이지 규칙을 작성 및 편집하는 방법과 사용 가능한 여러 설정을 알아봅니다._
 
 ### 이 문서에서
 
--   [개요](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_5a7SkOsNo5d5LE7e9IRiz)
--   [시작하기 전에](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_7rzfw5kI8cqu4VKur6Mnur)
--   [페이지 규칙 생성](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_38Gq7mduJiXIjpVLxp3q19)
--   [페이지 규칙 편집](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_2WLkFHGqwlRgnZg3i0fl9I)
--   [와일드카드 일치 및 참조 이해](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_6N5SySNYCjYUUnCKnC1Ea6)
--   [Page Rules 설정 요약](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_18YTlvNlZET4Poljeih3TJ)
--   [알려진 문제점](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_5lzcszkjqrZ2bZpZOtMQoP)
--   [추가 정보](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_2VORFoOUImLy7rpTgEWYLM)
--   [관련 자료](https://support.cloudflare.com/hc/ko/articles/218411427-Cloudflare-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_7hlLS0cORjDJ2NCQqZTp8X)
+-   [개요](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_5a7SkOsNo5d5LE7e9IRiz)
+-   [시작하기 전에](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_7rzfw5kI8cqu4VKur6Mnur)
+-   [페이지 규칙 생성](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_38Gq7mduJiXIjpVLxp3q19)
+-   [페이지 규칙 편집](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_2WLkFHGqwlRgnZg3i0fl9I)
+-   [와일드카드 일치 및 참조 이해](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_6N5SySNYCjYUUnCKnC1Ea6)
+-   [Page Rules 설정 요약](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_18YTlvNlZET4Poljeih3TJ)
+-   [알려진 문제점](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_5lzcszkjqrZ2bZpZOtMQoP)
+-   [추가 정보](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_2VORFoOUImLy7rpTgEWYLM)
+-   [관련 자료](https://support.Khulnasoft.com/hc/ko/articles/218411427-Khulnasoft-Page-Rules%EC%9D%98-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%EC%84%B1-Page-Rules-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-#h_7hlLS0cORjDJ2NCQqZTp8X)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
  |
 
-Free, Pro, Business 요금제 도메인의 경우,  [추가 규칙(최대 100개)을 구매](https://www.cloudflare.com/features-page-rules/) 할 수 있습니다.
+Free, Pro, Business 요금제 도메인의 경우,  [추가 규칙(최대 100개)을 구매](https://www.Khulnasoft.com/features-page-rules/) 할 수 있습니다.
 
 ___
 
@@ -76,7 +76,7 @@ ___
 Page Rules의 두 가지 기본 동작을 이해해야 합니다.
 
 -   요청에 대해 일치된 페이지 규칙 중 우선순위가 가장 높은 규칙만 적용됩니다.
--   페이지 규칙은 Cloudflare 대시보드에서 위에서부터 우선순위가 높은 규칙이 배열됩니다.
+-   페이지 규칙은 Khulnasoft 대시보드에서 위에서부터 우선순위가 높은 규칙이 배열됩니다.
 
 Page Rule은 다섯 부분으로 구성된 <scheme>://<hostname><:port>/<path>?<query\_string>의 형식에 기초해 URL 패턴의 일치 여부를 검사합니다.
 
@@ -95,12 +95,12 @@ ___
 
 페이지 규칙을 작성하는 단계는 다음과 같습니다.
 
-1.  Cloudflare dashboard에 로그인합니다.
+1.  Khulnasoft dashboard에 로그인합니다.
 2.  페이지 규칙을 추가할 도메인을 선택합니다.
 3.  **Rules** 앱을 클릭합니다.
 4.  **Page Rules** 탭에서 **페이지 규칙 작성**을 클릭합니다. _<your domain>의 페이지 규칙 생성_ 대화 상자가 표시됩니다.
-5.   **URL이 일치하는 경우**에 규칙과 일치해야 하는 URL 또는 URL 패턴을 입력합니다. [_와일드 카드 일치에 대해 자세히 보기_](https://support.cloudflare.com/hc/ko/articles/218411427-Understanding-and-Configuring-Cloudflare-Page-Rules-Page-Rules-Tutorial-#h_6N5SySNYCjYUUnCKnC1Ea6)
-6.  다음으로 **설정:**에서 **+ 설정 추가**를 클릭하고, 드롭다운에서 원하는 설정을 선택합니다. 하나의 규칙에 둘 이상의 설정을 포함할 수 있습니다. 설정에 대한 자세한 내용은 아래의 [요약](https://support.cloudflare.com/hc/ko/articles/218411427-Understanding-and-Configuring-Cloudflare-Page-Rules-Page-Rules-Tutorial-#h_18YTlvNlZET4Poljeih3TJ)을 참조하세요.
+5.   **URL이 일치하는 경우**에 규칙과 일치해야 하는 URL 또는 URL 패턴을 입력합니다. [_와일드 카드 일치에 대해 자세히 보기_](https://support.Khulnasoft.com/hc/ko/articles/218411427-Understanding-and-Configuring-Khulnasoft-Page-Rules-Page-Rules-Tutorial-#h_6N5SySNYCjYUUnCKnC1Ea6)
+6.  다음으로 **설정:**에서 **+ 설정 추가**를 클릭하고, 드롭다운에서 원하는 설정을 선택합니다. 하나의 규칙에 둘 이상의 설정을 포함할 수 있습니다. 설정에 대한 자세한 내용은 아래의 [요약](https://support.Khulnasoft.com/hc/ko/articles/218411427-Understanding-and-Configuring-Khulnasoft-Page-Rules-Page-Rules-Tutorial-#h_18YTlvNlZET4Poljeih3TJ)을 참조하세요.
 7.  **순서** 드롭다운에서 _최초, 마지막_, _사용자 지정_ 중 원하는 순서를 지정합니다.
 8.  다음 옵션 중 한 가지를 클릭해 저장합니다.
     -   **초안으로 저장** 하면 규칙을 저장하고 비활성화합니다.
@@ -112,7 +112,7 @@ ___
 
 기존 규칙을 수정하려면 다음을 수행합니다.
 
-1.  Cloudflare dashboard에 로그인합니다.
+1.  Khulnasoft dashboard에 로그인합니다.
 2.  페이지 규칙을 편집할 도메인을 선택합니다.
 3.  **Rules** 앱을 클릭합니다.
 4.  **Page Rules** 탭에서 편집할 규칙을 찾습니다.
@@ -174,12 +174,12 @@ URL 전달에서  _$_  문자를 사용하려면, 앞에 "\\"를 추가하여 
 
 ___
 
-요청이 페이지 규칙에 지정된 URL 패턴과 일치하게 되면 Cloudflare가 취하는 조치를 설정이 제어합니다. 설정을 이용하여 다수의 대시보드 앱에서 다수의 Cloudflare 기능을 활성화하거나 비활성화할 수도 있습니다. 다음을 참고하시기 바랍니다.
+요청이 페이지 규칙에 지정된 URL 패턴과 일치하게 되면 Khulnasoft가 취하는 조치를 설정이 제어합니다. 설정을 이용하여 다수의 대시보드 앱에서 다수의 Khulnasoft 기능을 활성화하거나 비활성화할 수도 있습니다. 다음을 참고하시기 바랍니다.
 
 -   설정 중에는 Pro, Business, Enterprise 요금제 도메인에만 적용되는 것도 있습니다.
 -   규칙이 트리거될 때 적용할 설정을 둘 이상 지정할 수 있습니다.
 
-다음은 사용 가능한 전체 설정 목록을 **Cloudflare Page Rules** UI에 나타나는 순서대로 정리한 것입니다.
+다음은 사용 가능한 전체 설정 목록을 **Khulnasoft Page Rules** UI에 나타나는 순서대로 정리한 것입니다.
 
 | 
 **설정**
@@ -200,7 +200,7 @@ HTTPS 항상 사용
 
  | 
 
-**Cloudflare SSL/TLS** 앱의 **에지 인증서** 탭에 있는 **[항상 HTTPS](/ssl/edge-certificates/additional-options/always-use-https)** 기능을 켜거나 끕니다. 활성화되면, 모든 _http://_ URL은 301 리디렉션을 통해 _https://_로 변환됩니다.
+**Khulnasoft SSL/TLS** 앱의 **에지 인증서** 탭에 있는 **[항상 HTTPS](/ssl/edge-certificates/additional-options/always-use-https)** 기능을 켜거나 끕니다. 활성화되면, 모든 _http://_ URL은 301 리디렉션을 통해 _https://_로 변환됩니다.
 
 이 옵션이 표시되지 않으면 활성  **에지 인증서**가 없는 것입니다.
 
@@ -215,7 +215,7 @@ HTTPS 항상 사용
 
  | 
 
-자동으로 축소할 파일 확장자를 표시합니다.[자세히 알아보세요](https://support.cloudflare.com/hc/articles/200168196).
+자동으로 축소할 파일 확장자를 표시합니다.[자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/200168196).
 
  | 
 
@@ -228,7 +228,7 @@ Automatic HTTPS Rewrites
 
  | 
 
-**Cloudflare SSL/TLS** 앱의 **Edge 인증서** 탭에서 **Cloudflare 자동 HTTPS 재작성** 기능을 켜거나 끕니다.[자세히 알아보세요](/ssl/edge-certificates/additional-options/automatic-https-rewrites).
+**Khulnasoft SSL/TLS** 앱의 **Edge 인증서** 탭에서 **Khulnasoft 자동 HTTPS 재작성** 기능을 켜거나 끕니다.[자세히 알아보세요](/ssl/edge-certificates/additional-options/automatic-https-rewrites).
 
  | 
 
@@ -241,7 +241,7 @@ Automatic HTTPS Rewrites
 
  | 
 
-클라이언트 브라우저가 캐시한 자원이 유효한 상태로 유지되는 기간을 제어합니다. Cloudflare UI 및 API 모두 Enterprise 도메인이 아닌 경우, **브라우저 캐시 TTL** 을 _0_으로 설정할 수 없습니다. [자세히 알아보세요](/cache/how-to/edge-browser-cache-ttl/).
+클라이언트 브라우저가 캐시한 자원이 유효한 상태로 유지되는 기간을 제어합니다. Khulnasoft UI 및 API 모두 Enterprise 도메인이 아닌 경우, **브라우저 캐시 TTL** 을 _0_으로 설정할 수 없습니다. [자세히 알아보세요](/cache/how-to/edge-browser-cache-ttl/).
 
  | 
 
@@ -254,7 +254,7 @@ Automatic HTTPS Rewrites
 
  | 
 
-방문자의 브라우저에서 스패머 및 특정 봇에 많이 연결되는 헤더를 검사합니다. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/200170086).
+방문자의 브라우저에서 스패머 및 특정 봇에 많이 연결되는 헤더를 검사합니다. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/200170086).
 
  | 
 
@@ -328,7 +328,7 @@ _제한된 정규식 지원에 대해 학습하려면 아래의 세부 사항을
 
 선택한 옵션에 따라 사용자 정의 캐싱을 적용합니다.
 
-**Bypass** \- Cloudflare는 캐시하지 않습니다.
+**Bypass** \- Khulnasoft는 캐시하지 않습니다.
 
 **쿼리 문자열 없음** -  쿼리 문자열이 없는 경우 캐시에서 자원을 전달합니다.
 
@@ -336,7 +336,7 @@ _제한된 정규식 지원에 대해 학습하려면 아래의 세부 사항을
 
 **표준 -** 쿼리 문자열이 있는 모든 정적 콘텐츠를 캐시합니다.
 
-**모두 캐시** - 모든 콘텐츠를 정적인 것으로 간주하고 [Cloudflare 기본 캐시 콘텐츠](/cache/concepts/default-cache-behavior#default-cached-file-extensions) 이외의 모든 파일 유형을 캐시합니다. 페이지 규칙에서 **Edge Cache TTL**도 설정하지 않았다면, 원본 웹 서버의 캐시 헤더를 따릅니다. **Edge Cache TTL > 0과 결합된 경우**_0_,**모두 캐시**는 원본 웹 서버 응답에서 쿠키를 제거합니다.   
+**모두 캐시** - 모든 콘텐츠를 정적인 것으로 간주하고 [Khulnasoft 기본 캐시 콘텐츠](/cache/concepts/default-cache-behavior#default-cached-file-extensions) 이외의 모든 파일 유형을 캐시합니다. 페이지 규칙에서 **Edge Cache TTL**도 설정하지 않았다면, 원본 웹 서버의 캐시 헤더를 따릅니다. **Edge Cache TTL > 0과 결합된 경우**_0_,**모두 캐시**는 원본 웹 서버 응답에서 쿠키를 제거합니다.   
 
 
  | 
@@ -366,7 +366,7 @@ _제한된 정규식 지원에 대해 학습하려면 아래의 세부 사항을
 
  | 
 
-Enterprise 고객은 원본 웹 서버의 응답 상태에 따라 캐시 TTL(Time-to-live)을 설정할 수 있습니다. 캐시 TTL이란 Cloudflare 네트워크에 있는 자원이 진부화되었다고 표시되거나 캐시에서 폐기되기 전까지의 시간을 말합니다. 자원의 원본에서 상태 코드가 반환됩니다. 응답 상태에 따라 캐시 TTL을 설정하면 정적 파일에 대한 기본 캐시 작업(표준 캐시)가 재정의되고 원본 웹 서버가 보내는 캐시 지침도 재정의됩니다. 비정적 자산을 캐시하려면, Page Rule을 이용해 캐시 수준을 '모두 캐시'로 설정하시기 바랍니다. 비저장 캐시 제어를 설정하거나 (max-age/s-maxage를 이용하여) TTL을 낮게 설정하면 원본 웹 서버에 대한 요청이 많아져 성능이 떨어집니다.[자세히 알아보세요.](https://support.cloudflare.com/hc/ko/articles/360043842472-Configuring-cache-TTL-by-status-code).
+Enterprise 고객은 원본 웹 서버의 응답 상태에 따라 캐시 TTL(Time-to-live)을 설정할 수 있습니다. 캐시 TTL이란 Khulnasoft 네트워크에 있는 자원이 진부화되었다고 표시되거나 캐시에서 폐기되기 전까지의 시간을 말합니다. 자원의 원본에서 상태 코드가 반환됩니다. 응답 상태에 따라 캐시 TTL을 설정하면 정적 파일에 대한 기본 캐시 작업(표준 캐시)가 재정의되고 원본 웹 서버가 보내는 캐시 지침도 재정의됩니다. 비정적 자산을 캐시하려면, Page Rule을 이용해 캐시 수준을 '모두 캐시'로 설정하시기 바랍니다. 비저장 캐시 제어를 설정하거나 (max-age/s-maxage를 이용하여) TTL을 낮게 설정하면 원본 웹 서버에 대한 요청이 많아져 성능이 떨어집니다.[자세히 알아보세요.](https://support.Khulnasoft.com/hc/ko/articles/360043842472-Configuring-cache-TTL-by-status-code).
 
  | 
 
@@ -379,7 +379,7 @@ Enterprise 고객은 원본 웹 서버의 응답 상태에 따라 캐시 TTL(Tim
 
  | 
 
-활성 **Cloudflare Apps**를 모두 끕니다.
+활성 **Khulnasoft Apps**를 모두 끕니다.
 
  | 
 
@@ -394,10 +394,10 @@ Enterprise 고객은 원본 웹 서버의 응답 상태에 따라 캐시 TTL(Tim
 
 다음을 끕니다.
 
--   [자동 최소화](https://support.cloudflare.com/hc/articles/200168196)
--   [Rocket Loader](https://support.cloudflare.com/hc/articles/200168056)
--   [Mirage](https://support.cloudflare.com/hc/articles/200403554)
--   [Polish](https://support.cloudflare.com/hc/articles/360000607372)
+-   [자동 최소화](https://support.Khulnasoft.com/hc/articles/200168196)
+-   [Rocket Loader](https://support.Khulnasoft.com/hc/articles/200168056)
+-   [Mirage](https://support.Khulnasoft.com/hc/articles/200403554)
+-   [Polish](https://support.Khulnasoft.com/hc/articles/360000607372)
 
  | 
 
@@ -410,7 +410,7 @@ Railgun 비활성화
 
  | 
 
-Cloudflare **Speed** 앱의 **Railgun** 기능을 끕니다.
+Khulnasoft **Speed** 앱의 **Railgun** 기능을 끕니다.
 
  | 
 
@@ -426,12 +426,12 @@ Cloudflare **Speed** 앱의 **Railgun** 기능을 끕니다.
 
 다음을 끕니다.
 
--   [이메일 난독화](https://support.cloudflare.com/hc/articles/200170016)
--   [속도 제한(이전 버전)](https://support.cloudflare.com/hc/articles/115001635128)
--   [Scrape Shield](https://support.cloudflare.com/hc/articles/200171036)
--   [서버 측 제외](https://support.cloudflare.com/hc/articles/200170036)
+-   [이메일 난독화](https://support.Khulnasoft.com/hc/articles/200170016)
+-   [속도 제한(이전 버전)](https://support.Khulnasoft.com/hc/articles/115001635128)
+-   [Scrape Shield](https://support.Khulnasoft.com/hc/articles/200171036)
+-   [서버 측 제외](https://support.Khulnasoft.com/hc/articles/200170036)
 -   [URL(영역) 잠금](/waf/tools/zone-lockdown/)
--   [WAF 관리형 규칙(이전 버전)](https://support.cloudflare.com/hc/articles/200172016)
+-   [WAF 관리형 규칙(이전 버전)](https://support.Khulnasoft.com/hc/articles/200172016)
 
  | 
 
@@ -444,7 +444,7 @@ Cloudflare **Speed** 앱의 **Railgun** 기능을 끕니다.
 
  | 
 
-Cloudflare 에지 네트워크에서 자원을 캐시하는 기간을 지정합니다._Edge Cache TTL_ 은 응답 헤더에 보이지 않습니다. 최소 _Edge Cache TTL_은 요금제에 따라 다릅니다.
+Khulnasoft 에지 네트워크에서 자원을 캐시하는 기간을 지정합니다._Edge Cache TTL_ 은 응답 헤더에 보이지 않습니다. 최소 _Edge Cache TTL_은 요금제에 따라 다릅니다.
 
 Free - 2시간  
 Pro - 1시간  
@@ -462,7 +462,7 @@ Enterprise - 1초
 
  | 
 
-**Cloudflare Scrape Shield** 앱의 **Cloudflare 이메일 난독화** 기능을 켜거나 끕니다.[자세히 알아보세요.](https://support.cloudflare.com/hc/articles/200170016)
+**Khulnasoft Scrape Shield** 앱의 **Khulnasoft 이메일 난독화** 기능을 켜거나 끕니다.[자세히 알아보세요.](https://support.Khulnasoft.com/hc/articles/200170016)
 
  | 
 
@@ -475,7 +475,7 @@ URL 전달
 
  | 
 
-_HTTP 301/302 리디렉션_을 사용하여 하나의 URL을 다른 URL로 리디렉션합니다.  _[와일드카드 일치 및 참조](https://support.cloudflare.com/hc/articles/218411427#h_6N5SySNYCjYUUnCKnC1Ea6)를 참조하시기 바랍니다._
+_HTTP 301/302 리디렉션_을 사용하여 하나의 URL을 다른 URL로 리디렉션합니다.  _[와일드카드 일치 및 참조](https://support.Khulnasoft.com/hc/articles/218411427#h_6N5SySNYCjYUUnCKnC1Ea6)를 참조하시기 바랍니다._
 
  | 
 
@@ -488,7 +488,7 @@ Host Header Override
 
  | 
 
-특정 호스트 헤더를 적용합니다. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/206652947).
+특정 호스트 헤더를 적용합니다. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/206652947).
 
  | 
 
@@ -501,7 +501,7 @@ IP 위치 정보 헤더
 
  | 
 
-Cloudflare는 방문자에 해당하는 국가 코드가 포함된 _CF-IPCountry_ HTTP 헤더를 추가합니다.
+Khulnasoft는 방문자에 해당하는 국가 코드가 포함된 _CF-IPCountry_ HTTP 헤더를 추가합니다.
 
  | 
 
@@ -514,7 +514,7 @@ Mirage
 
  | 
 
-Cloudflare **Speed** 앱의 **Cloudflare Mirage**를 켜거나 끕니다.[자세히 알아보세요](https://support.cloudflare.com/hc/articles/200403554).
+Khulnasoft **Speed** 앱의 **Khulnasoft Mirage**를 켜거나 끕니다.[자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/200403554).
 
  | 
 
@@ -529,7 +529,7 @@ Cloudflare **Speed** 앱의 **Cloudflare Mirage**를 켜거나 끕니다.[자세
 
  | 
 
-Cloudflare **SSL/TLS** 앱의 **에지 인증서** 탭에 있는 **Cloudflare 편의적 암호화** 기능을 켜거나 끕니다. [자세히 알아보세요](/ssl/edge-certificates/additional-options/opportunistic-encryption).
+Khulnasoft **SSL/TLS** 앱의 **에지 인증서** 탭에 있는 **Khulnasoft 편의적 암호화** 기능을 켜거나 끕니다. [자세히 알아보세요](/ssl/edge-certificates/additional-options/opportunistic-encryption).
 
  | 
 
@@ -547,7 +547,7 @@ Cloudflare **SSL/TLS** 앱의 **에지 인증서** 탭에 있는 **Cloudflare �
 
  | 
 
-원본 서버로부터 전송된 문제에서 생성된 Cloudflare 오류 페이지를 켜거나 끕니다. 이 설정이 활성화되면 원본에서 만들어진 오류 페이지가 트리거됩니다.
+원본 서버로부터 전송된 문제에서 생성된 Khulnasoft 오류 페이지를 켜거나 끕니다. 이 설정이 활성화되면 원본에서 만들어진 오류 페이지가 트리거됩니다.
 
  | 
 
@@ -560,7 +560,7 @@ Polish
 
  | 
 
-Cloudflare  **Speed**  앱의  **Polish**  기능의 옵션을 적용합니다. [자세히 알아보세요](/images/polish).
+Khulnasoft  **Speed**  앱의  **Polish**  기능의 옵션을 적용합니다. [자세히 알아보세요](/images/polish).
 
  | 
 
@@ -575,7 +575,7 @@ Query String Sort
 
  | 
 
-쿼리 문자열의 재배열을 켜거나 끕니다. 쿼리 문자열의 구조가 동일한 경우, 캐싱이 개선됩니다.[자세히 알아보세요](https://support.cloudflare.com/hc/articles/206776797).
+쿼리 문자열의 재배열을 켜거나 끕니다. 쿼리 문자열의 구조가 동일한 경우, 캐싱이 개선됩니다.[자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/206776797).
 
  | 
 
@@ -588,7 +588,7 @@ Resolve Override
 
  | 
 
-이 설정에 지정된 값으로 원본 주소를 변경합니다. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/206190798).
+이 설정에 지정된 값으로 원본 주소를 변경합니다. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/206190798).
 
  | 
 
@@ -601,7 +601,7 @@ Resolve Override
 
  | 
 
-Cloudflare 캐시와 원본 서버 간에 바이트별 동등성 검사를 켜거나 끕니다. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/218505467).
+Khulnasoft 캐시와 원본 서버 간에 바이트별 동등성 검사를 켜거나 끕니다. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/218505467).
 
  | 
 
@@ -614,7 +614,7 @@ Cloudflare 캐시와 원본 서버 간에 바이트별 동등성 검사를 켜�
 
  | 
 
-Cloudflare가 원본 서버에서 전체 파일을 받은 후 사이트 방문자에게 전달할지 여부를 켜거나 끕니다. 기본적으로 Cloudflare는 원본 서버에서 패킷이 도착하면 클라이언트로 패킷을 전송합니다.
+Khulnasoft가 원본 서버에서 전체 파일을 받은 후 사이트 방문자에게 전달할지 여부를 켜거나 끕니다. 기본적으로 Khulnasoft는 원본 서버에서 패킷이 도착하면 클라이언트로 패킷을 전송합니다.
 
  | 
 
@@ -627,7 +627,7 @@ Rocket Loader
 
  | 
 
-Cloudflare **Speed** 앱의 **로켓 로더**를 켜거나 끕니다. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/200168056).
+Khulnasoft **Speed** 앱의 **로켓 로더**를 켜거나 끕니다. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/200168056).
 
  | 
 
@@ -640,7 +640,7 @@ Cloudflare **Speed** 앱의 **로켓 로더**를 켜거나 끕니다. [자세히
 
  | 
 
-**보안** 앱의 **보안 수준** 기능 제어 옵션. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/200170056).
+**보안** 앱의 **보안 수준** 기능 제어 옵션. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/200170056).
 
  | 
 
@@ -653,7 +653,7 @@ Cloudflare **Speed** 앱의 **로켓 로더**를 켜거나 끕니다. [자세히
 
  | 
 
-Cloudflare **Scrape Shield** 앱의 **서버측 제외** 기능을 켜거나 끕니다. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/200170036).
+Khulnasoft **Scrape Shield** 앱의 **서버측 제외** 기능을 켜거나 끕니다. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/200170036).
 
  | 
 
@@ -666,7 +666,7 @@ SSL
 
  | 
 
-Cloudflare **SSL/TLS** 앱에 있는 **에지 인증서** 탭의 **SSL** 기능에 대한 제어 옵션.[자세히 알아보세요.](/ssl/origin-configuration/ssl-modes)
+Khulnasoft **SSL/TLS** 앱에 있는 **에지 인증서** 탭의 **SSL** 기능에 대한 제어 옵션.[자세히 알아보세요.](/ssl/origin-configuration/ssl-modes)
 
  | 
 
@@ -679,7 +679,7 @@ Cloudflare **SSL/TLS** 앱에 있는 **에지 인증서** 탭의 **SSL** 기능�
 
  | 
 
-Cloudflare **네트워크** 앱의 **True-Client-IP 헤더** 기능을 켜거나 끕니다. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/206776727).
+Khulnasoft **네트워크** 앱의 **True-Client-IP 헤더** 기능을 켜거나 끕니다. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/206776727).
 
  | 
 
@@ -692,7 +692,7 @@ Cloudflare **네트워크** 앱의 **True-Client-IP 헤더** 기능을 켜거나
 
  | 
 
-**보안** > **WAF** > **관리형 규칙**에서 **WAF 관리형 규칙을 켜거나 끕니다**. [자세히 알아보세요](https://support.cloudflare.com/hc/articles/200172016).
+**보안** > **WAF** > **관리형 규칙**에서 **WAF 관리형 규칙을 켜거나 끕니다**. [자세히 알아보세요](https://support.Khulnasoft.com/hc/articles/200172016).
 
 Page Rules를 통해서는 WAF 관리형 규칙을 개별적으로 활성화/비활성화할 수 없습니다.
 
@@ -743,27 +743,27 @@ ___
 
 다양한 플랫폼을 사용하여 **쿠키에 대한 캐시 무시**를 구성하는 방법은,
 
--   [WordPress 또는 WooCommerce에서 익명 페이지 뷰 캐시하기](https://support.cloudflare.com/hc/articles/236166048)
--   [Magento 1과 Magento 2에서 익명 페이지 뷰 캐시하기](https://support.cloudflare.com/hc/articles/236168808)
--   ['정적 HTML의 캐시 방법'을 참조하시기 바랍니다.](https://support.cloudflare.com/hc/articles/202775670)
+-   [WordPress 또는 WooCommerce에서 익명 페이지 뷰 캐시하기](https://support.Khulnasoft.com/hc/articles/236166048)
+-   [Magento 1과 Magento 2에서 익명 페이지 뷰 캐시하기](https://support.Khulnasoft.com/hc/articles/236168808)
+-   ['정적 HTML의 캐시 방법'을 참조하시기 바랍니다.](https://support.Khulnasoft.com/hc/articles/202775670)
 
 **참고:** 이 설정과 Enterprise 요금제에만 제공되는 _쿠키에 따라 캐시_ 설정을 하나의 페이지 규칙에 추가하면 _쿠키에 따라 캐시_가 _쿠키에 대한 캐시 무시_ 보다 우선합니다.
 
 ### 구역 이름은 슬래시로 끝나야 합니다
 
-Page Rule을 저장할 때, Cloudflare는 **URL이 일치하는 경우** 필드의 현재 구역 이름 뒤에 슬래시가 있도록 보장합니다. 예를 들어 현재 구역 이름이 `example.com`인 경우,
+Page Rule을 저장할 때, Khulnasoft는 **URL이 일치하는 경우** 필드의 현재 구역 이름 뒤에 슬래시가 있도록 보장합니다. 예를 들어 현재 구역 이름이 `example.com`인 경우,
 
 -   `example.com`은 `example.com/`으로 저장
 -   `example.com/path/example.com`은 `example.com/path/example.com/`으로 저장
 
-`example.com/some-path/cloudflare.com`은 구역 이름이 `cloudflare.com`이 아니므로 마지막에 슬래시가 _없이_ 저장됩니다.
+`example.com/some-path/Khulnasoft.com`은 구역 이름이 `Khulnasoft.com`이 아니므로 마지막에 슬래시가 _없이_ 저장됩니다.
 
 ### Page Rules가 지원하는 네트워크 포트
 
 **If the URL matches** 필드 또는 Page Rule에서 포트를 지정하면 해당 포트는 다음 중 한 가지여야 합니다.
 
--   [Cloudflare 프록시와 호환되는](/fundamentals/reference/network-ports/#network-ports-compatible-with-cloudflares-proxy) HTTP/HTTPS 포트 중 하나.
--   [Cloudflare Spectrum](/spectrum/) HTTPS 응용 프로그램의 사용자 지정 포트.
+-   [Khulnasoft 프록시와 호환되는](/fundamentals/reference/network-ports/#network-ports-compatible-with-cloudflares-proxy) HTTP/HTTPS 포트 중 하나.
+-   [Khulnasoft Spectrum](/spectrum/) HTTPS 응용 프로그램의 사용자 지정 포트.
 
 ### Workers와 함께 Page Rules 사용하기
 
@@ -773,8 +773,8 @@ ___
 
 ## 관련 자료
 
--   [고려할 권장 Page Rules](https://support.cloudflare.com/hc/articles/224509547)
--   [오렌지색 / 회색 구름에 적합한 하위 도메인](https://support.cloudflare.com/hc/ko/articles/200169626-What-subdomains-are-appropriate-for-orange-gray-clouds-)
--   [Cloudflare에서 모두 캐시를 사용하는 방법](https://support.cloudflare.com/hc/articles/202775670)
--   ['정적 HTML의 캐시 방법'을 참조하시기 바랍니다.](https://support.cloudflare.com/hc/articles/200172256)
--   [콘텐츠 관리 시스템의 관리 섹션을 업데이트하거나 액세스할 때의 오프라인 오류 메시지](https://support.cloudflare.com/hc/articles/200169526)
+-   [고려할 권장 Page Rules](https://support.Khulnasoft.com/hc/articles/224509547)
+-   [오렌지색 / 회색 구름에 적합한 하위 도메인](https://support.Khulnasoft.com/hc/ko/articles/200169626-What-subdomains-are-appropriate-for-orange-gray-clouds-)
+-   [Khulnasoft에서 모두 캐시를 사용하는 방법](https://support.Khulnasoft.com/hc/articles/202775670)
+-   ['정적 HTML의 캐시 방법'을 참조하시기 바랍니다.](https://support.Khulnasoft.com/hc/articles/200172256)
+-   [콘텐츠 관리 시스템의 관리 섹션을 업데이트하거나 액세스할 때의 오프라인 오류 메시지](https://support.Khulnasoft.com/hc/articles/200169526)

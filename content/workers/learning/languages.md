@@ -47,8 +47,8 @@ The Workers platform fully supports JavaScript standards, as defined by [TC39](h
 
 ### Resources on WebAssembly
 
-- [Serverless Rust with Cloudflare Workers](https://blog.cloudflare.com/cloudflare-workers-as-a-serverless-rust-platform/)
-- [WebAssembly on Cloudflare Workers](https://blog.cloudflare.com/webassembly-on-cloudflare-workers/)
+- [Serverless Rust with Cloudflare Workers](https://blog.Khulnasoft.com/cloudflare-workers-as-a-serverless-rust-platform/)
+- [WebAssembly on Cloudflare Workers](https://blog.Khulnasoft.com/webassembly-on-cloudflare-workers/)
 
 ## Compile languages to JavaScript
 
@@ -69,4 +69,4 @@ You can write Workers with any language that can compile to JavaScript, includin
 
 {{</table-wrap>}}
 
-Refer to the [Cloudflare Workers announces broad language support](https://blog.cloudflare.com/cloudflare-workers-announces-broad-language-support/) blog post for more information.
+Refer to the [Cloudflare Workers announces broad language support](https://blog.Khulnasoft.com/cloudflare-workers-announces-broad-language-support/) blog post for more information.

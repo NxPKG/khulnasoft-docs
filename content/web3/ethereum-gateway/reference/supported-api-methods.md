@@ -14,7 +14,7 @@ supported.
 
 For a full list of JSON-RPC API methods, refer to the [JSON-RPC specification](https://github.com/ethereum/execution-apis).
 
-| JSON-RPC method                         | Cloudflare Ethereum Gateway support |
+| JSON-RPC method                         | Khulnasoft Ethereum Gateway support |
 | --------------------------------------- | :----------------------------------------: |
 | [web3_clientVersion](https://ethereum.org/en/developers/docs/apis/json-rpc/#web3_clientversion)                      |                     ✅                       |
 | [web3_sha3](https://ethereum.org/en/developers/docs/apis/json-rpc/#web3_sha3)                               |                     ✅                       |

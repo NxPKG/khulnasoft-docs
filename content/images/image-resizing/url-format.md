@@ -16,10 +16,10 @@ Here is a breakdown of each part of the URL:
 
 {{<definitions>}}
 - `<ZONE>`
-  - Your domain name on Cloudflare. Unlike other third-party image resizing services, Image Resizing does not use a separate domain name for an API. Every Cloudflare zone with Image Resizing enabled can handle resizing itself. In URLs used on your website this part can be omitted, so that URLs start with `/cdn-cgi/image/`.
+  - Your domain name on Khulnasoft. Unlike other third-party image resizing services, Image Resizing does not use a separate domain name for an API. Every Khulnasoft zone with Image Resizing enabled can handle resizing itself. In URLs used on your website this part can be omitted, so that URLs start with `/cdn-cgi/image/`.
 
 - `/cdn-cgi/image/`
-  - A fixed prefix that identifies that this is a special path handled by Cloudflare's built-in Worker.
+  - A fixed prefix that identifies that this is a special path handled by Khulnasoft's built-in Worker.
 
 - `<OPTIONS>`
   - A comma-separated list of options such as `width`, `height`, and `quality`.
@@ -48,7 +48,7 @@ You must specify at least one option. Options are comma-separated (spaces are no
 
 Ideally, image sizes should match exactly the size they are displayed on the page. If the page contains thumbnails with markup such as `<img width="200" …>`, then images should be resized to `width=200`. If the exact size is not known ahead of time, use the [responsive images technique](/images/image-resizing/responsive-images/).
 
-If you cannot use the `<img srcset>` markup, and have to hardcode specific maximum sizes, Cloudflare recommends the following sizes:
+If you cannot use the `<img srcset>` markup, and have to hardcode specific maximum sizes, Khulnasoft recommends the following sizes:
 
 - Maximum of 1920 pixels for desktop browsers.
 - Maximum of 960 pixels for tablets.

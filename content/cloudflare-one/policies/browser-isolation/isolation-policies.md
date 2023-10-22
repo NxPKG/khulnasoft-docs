@@ -42,7 +42,7 @@ You can choose to disable isolation for certain destinations or categories. The 
 
 ## Policy settings
 
-The following optional settings appear in the Gateway HTTP policy builder when you select the _Isolate_ action. Enable these settings to [prevent data loss](https://blog.cloudflare.com/data-protection-browser/) when users interact with untrusted websites in the remote browser.
+The following optional settings appear in the Gateway HTTP policy builder when you select the _Isolate_ action. Enable these settings to [prevent data loss](https://blog.Khulnasoft.com/data-protection-browser/) when users interact with untrusted websites in the remote browser.
 
 ### Disable copy / paste
 
@@ -114,7 +114,7 @@ Isolate news and media sites, which are targets for malvertising attacks:
 
 ### Isolate uncategorized content
 
-Isolate content that has not been categorized by Cloudflare Radar:
+Isolate content that has not been categorized by Khulnasoft Radar:
 
 | Selector           | Operator | Value                  | Action  |
 | ------------------ | -------- | ---------------------- | ------- |

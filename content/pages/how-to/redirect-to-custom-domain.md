@@ -13,7 +13,7 @@ Learn how to use [Bulk Redirects](/rules/url-forwarding/bulk-redirects/) to redi
 
 To set up a redirect to a custom domain:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/pages/view/:pages-project/domains), and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/?to=/:account/pages/view/:pages-project/domains), and select your account.
 2. Select **Workers & Pages** and select your Pages application.
 3. Go to **Custom domains** and make sure that your custom domain is listed. If it is not, add it by clicking **Set up a custom domain**.
 4. Go to **Account Home** > **Bulk Redirects**.

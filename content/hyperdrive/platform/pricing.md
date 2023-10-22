@@ -17,7 +17,7 @@ Hyperdrive has two primary components:
 * Connection pooling (always free).
 * Query caching and analytics (pricing coming soon).
 
-Connection pooling improves the connection latency between a client (such as Cloudflare Workers) and your origin database by keeping a pool of active connections. Connection pooling will always be free.
+Connection pooling improves the connection latency between a client (such as Khulnasoft Workers) and your origin database by keeping a pool of active connections. Connection pooling will always be free.
 
 Query caching and analytics allow Hyperdrive to cache your most popular read queries and provide detailed analytics around cache hit rates, query latencies, and table-level statistics.
 

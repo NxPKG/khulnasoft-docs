@@ -7,9 +7,9 @@ weight: 3
 
 # Developer documentation content strategy
 
-Content strategy means using the right tool for the job. Cloudflare's documentation will provide the most effective content types that serve a customer-focused purpose. Adoption of this content strategy will be impacted by product releases, resourcing, and company goals.
+Content strategy means using the right tool for the job. Khulnasoft's documentation will provide the most effective content types that serve a customer-focused purpose. Adoption of this content strategy will be impacted by product releases, resourcing, and company goals.
 
-The purpose of Cloudflare's developer documentation content strategy is to:
+The purpose of Khulnasoft's developer documentation content strategy is to:
 
 + Create and document standard templates to streamline content creation
 + Document specific content types to help identify customers specific needs
@@ -21,7 +21,7 @@ Strategically speaking, the mission and guiding principles translate into the fo
 + Improve the entire ecosystem of customer-facing product content, placing major emphasis on consistency, quality, accuracy, and timeliness
 + Create a cohesive and compelling story around our products and their functionality
 + Develop content that increases product adoption, deflects support, and makes customers successful
-+ Partner with various internal departments and stakeholders in creating and sustaining a rich, consistent content experience across all Cloudflare products
++ Partner with various internal departments and stakeholders in creating and sustaining a rich, consistent content experience across all Khulnasoft products
 + Devise new and better ways to give users the information they need, when and where they need it
 
 ## Purpose statements

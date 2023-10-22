@@ -1,13 +1,13 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: japanese
-source: https://support.cloudflare.com/hc/ja/articles/200168336-Cloudflare%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%AA%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
-title: Cloudflareモバイルリダイレクトについて
+source: https://support.Khulnasoft.com/hc/ja/articles/200168336-Khulnasoft%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%AA%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+title: Khulnasoftモバイルリダイレクトについて
 ---
 
-# Cloudflareモバイルリダイレクトについて
+# Khulnasoftモバイルリダイレクトについて
 
-## Cloudflareモバイルリダイレクトについて
+## Khulnasoftモバイルリダイレクトについて
 
 _モバイルリダイレクトが、モバイルデバイスで利用するWebサイトの外観と操作性を最適化する方法を説明します。_
 
@@ -15,17 +15,17 @@ ___
 
 ## 概要
 
-モバイルリダイレクトを使用すると、モバイルデバイスの訪問者をモバイル向けに最適化されたWebサイト、またはサブドメインのホームページに自動的にリダイレクトできます。リダイレクトがCloudflareのネットワークのエッジで行われ、サーバーへのラウンドトリップを排除することでユーザーエクスペリエンスが向上します。
+モバイルリダイレクトを使用すると、モバイルデバイスの訪問者をモバイル向けに最適化されたWebサイト、またはサブドメインのホームページに自動的にリダイレクトできます。リダイレクトがKhulnasoftのネットワークのエッジで行われ、サーバーへのラウンドトリップを排除することでユーザーエクスペリエンスが向上します。
 
-リダイレクトをアクティブにするには、Cloudflareのパフォーマンスサービスを有効化( **DNS** 設定で[「オレンジ色のクラウド」](https://support.cloudflare.com/hc/articles/200169626) に)する必要があります。
+リダイレクトをアクティブにするには、Khulnasoftのパフォーマンスサービスを有効化( **DNS** 設定で[「オレンジ色のクラウド」](https://support.Khulnasoft.com/hc/articles/200169626) に)する必要があります。
 
 ___
 
 ## モバイルリダイレクトの有効化
 
-1\. Cloudflareアカウントにログインします。
+1\. Khulnasoftアカウントにログインします。
 
-2\. モバイルリダイレクトを無効にしたいドメインに適切なCloudflareアカウントをクリックします。
+2\. モバイルリダイレクトを無効にしたいドメインに適切なKhulnasoftアカウントをクリックします。
 
 3\.  **スピード** アプリをクリックします。
 
@@ -74,4 +74,4 @@ ___
 
 ## 関連リソース
 
--   [Cloudflareのプロキシと互換性のあるサブドメインを特定する](https://support.cloudflare.com/hc/articles/200169626)
+-   [Khulnasoftのプロキシと互換性のあるサブドメインを特定する](https://support.Khulnasoft.com/hc/articles/200169626)

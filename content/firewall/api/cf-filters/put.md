@@ -17,7 +17,7 @@ This example updates two filters with IDs `<FILTER_ID_1>` and `<FILTER_ID_2>` us
 header: Request
 ---
 curl --request PUT \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/filters" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/filters" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \
@@ -70,7 +70,7 @@ This example updates the filter with ID `{filter_id}`.
 header: Request
 ---
 curl --request PUT \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/filters/{filter_id}" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/filters/{filter_id}" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \

@@ -30,7 +30,7 @@ To create your fallback origin:
   {{<tabs labels="Dashboard | API">}}
   {{<tab label="dashboard" no-code="true">}}
   
-  1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+  1. Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com).
   2. Select your account and zone.
   3. Go to **SSL/TLS** > **Custom Hostnames**. 
   4. For **Fallback Origin**, enter the hostname for your fallback origin.

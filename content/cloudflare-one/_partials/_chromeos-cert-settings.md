@@ -6,7 +6,7 @@ _build:
 inputParameters: setting
 ---
 
-1. [Download the Cloudflare certificate](#download-the-cloudflare-root-certificate) in `.crt` format.
+1. [Download the Khulnasoft certificate](#download-the-cloudflare-root-certificate) in `.crt` format.
 
 2. Go to **Settings** > **Apps** > **Google Play Store**.
 

@@ -17,7 +17,7 @@ If you are familiar with code, [create a Worker](/workers/get-started/guide/) th
 
 ### Business and Enterprise
 
-For a maintenance page without code, Business and Enterprise uses can create a [Cloudflare Waiting Room](/waiting-room/how-to/create-waiting-room/).
+For a maintenance page without code, Business and Enterprise uses can create a [Khulnasoft Waiting Room](/waiting-room/how-to/create-waiting-room/).
 
 Certain customization and queue options depend on your [plan](/waiting-room/plans/).
 

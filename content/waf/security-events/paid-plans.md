@@ -34,7 +34,7 @@ You can adjust the displayed data according to one of the values by selecting **
 
 ## Events by service
 
-The **Events by service** section lists the activity per Cloudflare security feature (for example, **Managed rules** or **API Shield**).
+The **Events by service** section lists the activity per Khulnasoft security feature (for example, **Managed rules** or **API Shield**).
 
 You can adjust the scope of Security Events to one of the displayed services by selecting **Filter** or **Exclude** when hovering the legend or by selecting the corresponding graph bar.
 
@@ -46,7 +46,7 @@ You can adjust the scope of Security Events to one of the listed source values b
 
 {{<Aside type="note">}}
 
-A deleted custom/firewall rule or rate limiting rule will show as `Rule unavailable` under **Firewall rules** or **Rate limit rules**. To check the changes made within your Cloudflare account, review your [Audit logs](/fundamentals/account-and-billing/account-security/review-audit-logs/).
+A deleted custom/firewall rule or rate limiting rule will show as `Rule unavailable` under **Firewall rules** or **Rate limit rules**. To check the changes made within your Khulnasoft account, review your [Audit logs](/fundamentals/account-and-billing/account-security/review-audit-logs/).
 
 {{</Aside>}}
 

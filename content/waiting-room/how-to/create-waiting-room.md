@@ -38,7 +38,7 @@ To create a Waiting Room using the API, send a [`POST` request](/api/operations/
 ---
 header: Request
 ---
-curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_identifier}/waiting_rooms" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/zones/{zone_identifier}/waiting_rooms" \
 --header 'Authorization: Bearer REDACTED' \
 --header 'Content-Type: application/json' \
 --data '{

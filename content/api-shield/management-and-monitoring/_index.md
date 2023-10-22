@@ -13,15 +13,15 @@ Monitor the health of your API endpoints by saving, updating, and monitoring per
 
 This will add the specified endpoints to your list of managed endpoints. You can view your list of saved endpoints in the **Endpoint Management** page.
 
-Cloudflare will start collecting [performance data](/api-shield/management-and-monitoring/#endpoint-performance-analysis) on your endpoint when you save an endpoint.
+Khulnasoft will start collecting [performance data](/api-shield/management-and-monitoring/#endpoint-performance-analysis) on your endpoint when you save an endpoint.
 
 {{<Aside type="note">}}
-When an endpoint is using [Cloudflare Workers](/workers/), the metrics data will not be populated.
+When an endpoint is using [Khulnasoft Workers](/workers/), the metrics data will not be populated.
 {{</Aside>}}
 
 ## Access
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Add your endpoints [manually](#add-endpoints-manually), from [Schema Validation](#add-endpoints-from-schema-validation), or from [API Discovery](#add-endpoints-from-api-discovery).
 
@@ -65,17 +65,17 @@ By selecting multiple checkboxes, you can add several endpoints from Discovery a
 
 When adding a path manually, you can specify variable fields by enclosing them in braces, `/api/user/{var1}/details`. 
 
-For more information on how Cloudflare uses variables in API Shield, refer to the examples from [API Discovery](/api-shield/security/api-discovery/).
+For more information on how Khulnasoft uses variables in API Shield, refer to the examples from [API Discovery](/api-shield/security/api-discovery/).
 
 ## Endpoint schema learning
 
-Cloudflare learns schema parameters via traffic inspection. For all endpoints saved to Endpoint Management, you can export OpenAPI schemas in `v3.0.0` format by hostname. You can also include learned schema parameters. 
+Khulnasoft learns schema parameters via traffic inspection. For all endpoints saved to Endpoint Management, you can export OpenAPI schemas in `v3.0.0` format by hostname. You can also include learned schema parameters. 
 
 To protect your API with a learned schema, refer to [Schema Validation](/api-shield/security/schema-validation/#add-validation-by-applying-a-learned-schema-to-an-entire-hostname).
 
 ### Export a schema
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Navigate to **Endpoint Management**.
 4. Select **Export schema** and choose a hostname to export.
@@ -111,13 +111,13 @@ For each saved endpoint, customers can view:
 Customers viewing analytics have the ability to toggle detailed metrics view between the last 24 hours and 7 days.
 {{</Aside>}}
 
-## Using the Cloudflare API
+## Using the Khulnasoft API
 
-You can interact with Endpoint Management through the Cloudflare API. Refer to [Endpoint Management’s API documentation](/api/operations/api-shield-api-discovery-retrieve-discovered-operations-on-a-zone) for more information.
+You can interact with Endpoint Management through the Khulnasoft API. Refer to [Endpoint Management’s API documentation](/api/operations/api-shield-api-discovery-retrieve-discovered-operations-on-a-zone) for more information.
 
 ## Sensitive Data Detection
 
-Sensitive data comprises various personally identifiable information and financial data. Cloudflare created this ruleset to address common data loss threats, and the WAF can search for this data in HTTP response bodies from your origin.
+Sensitive data comprises various personally identifiable information and financial data. Khulnasoft created this ruleset to address common data loss threats, and the WAF can search for this data in HTTP response bodies from your origin.
 
 API Shield will alert users to the presence of sensitive data in the response body of API endpoints listed in Endpoint Management if the zone is also subscribed to the [Sensitive Data Detection managed ruleset](/waf/managed-rules/).
 
@@ -127,4 +127,4 @@ Once Sensitive Data Detection is enabled for your zone, API Shield queries firew
 
 API Shield displays the types of sensitive data found if you expand the Endpoint Management table row to view further details. Select **Explore Events** to view the matched events in Security Events.
 
-After Sensitive Data Detection is enabled for your zone, you can [browse the Sensitive Data Detection ruleset](https://dash.cloudflare.com/?to=/:account/:zone/security/data/ruleset/e22d83c647c64a3eae91b71b499d988e/rules). The link will not work if Sensitive Data Detection is not enabled.
+After Sensitive Data Detection is enabled for your zone, you can [browse the Sensitive Data Detection ruleset](https://dash.Khulnasoft.com/?to=/:account/:zone/security/data/ruleset/e22d83c647c64a3eae91b71b499d988e/rules). The link will not work if Sensitive Data Detection is not enabled.

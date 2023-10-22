@@ -7,7 +7,7 @@ layout: single
 
 {{<heading-pill style="beta">}}Security Analytics{{</heading-pill>}}
 
-The Security Analytics dashboard displays information about all incoming HTTP requests for your domain, including requests not handled by Cloudflare security products.
+The Security Analytics dashboard displays information about all incoming HTTP requests for your domain, including requests not handled by Khulnasoft security products.
 
 {{<Aside type="note">}}
 Available to customers on Business and Enterprise plans.
@@ -16,18 +16,18 @@ Available to customers on Business and Enterprise plans.
 Use the Security Analytics dashboard to:
 
 * View the traffic distribution for your domain.
-* Understand which traffic is being mitigated by Cloudflare security products, and where non-mitigated traffic is being served from (Cloudflare global network or origin server).
+* Understand which traffic is being mitigated by Khulnasoft security products, and where non-mitigated traffic is being served from (Khulnasoft global network or origin server).
 * Analyze suspicious traffic and create tailored WAF custom rules based on applied filters.
-* Learn more about Cloudflare’s security scores ([attack score](/waf/about/waf-attack-score/), [bot score](/bots/concepts/bot-score/), [uploaded content scanning](/waf/about/content-scanning/) results) with real data.
+* Learn more about Khulnasoft’s security scores ([attack score](/waf/about/waf-attack-score/), [bot score](/bots/concepts/bot-score/), [uploaded content scanning](/waf/about/content-scanning/) results) with real data.
 * [Find an appropriate rate limit](/waf/rate-limiting-rules/find-rate-limit/) for incoming traffic.
 
-If you need to modify existing security-related rules you already configured, consider also using the [Security Events](/waf/security-events/) dashboard. This dashboard displays information about requests affected by Cloudflare security products.
+If you need to modify existing security-related rules you already configured, consider also using the [Security Events](/waf/security-events/) dashboard. This dashboard displays information about requests affected by Khulnasoft security products.
 
 ## Access
 
 To use Security Analytics:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 
 2. Go to the account or zone dashboard:
 
@@ -78,7 +78,7 @@ You can filter or exclude some of the top values by selecting **Filter** or **Ex
 To display additional top statistics, select **More top statistics**.
 
 {{<Aside type="note">}}
-Cloudflare calculates the top statistics from a sample of requests in the selected time frame. To know the applied sampling rate, hover the icon next to the name of a top statistic.
+Khulnasoft calculates the top statistics from a sample of requests in the selected time frame. To know the applied sampling rate, hover the icon next to the name of a top statistic.
 {{</Aside>}}
 
 ### Insights
@@ -101,10 +101,10 @@ Additionally, you can use the slider tool below the chart to filter incoming req
 
 The main chart displays the following data for the selected time frame, according to the selected tab:
 
-* **HTTP requests**: Traffic mitigated by the Cloudflare security platform, served by Cloudflare, and served by the origin server, according to the following classification:
+* **HTTP requests**: Traffic mitigated by the Khulnasoft security platform, served by Khulnasoft, and served by the origin server, according to the following classification:
 
-    * **Mitigated by WAF**: Requests blocked or challenged by Cloudflare's application security products such as the WAF and HTTP DDoS protection. It does not include requests that had the following actions applied: _Log_, _Skip_, and _Allow_.
-    * **Served by Cloudflare**: Requests served by the Cloudflare global network such as cached content and redirects.
+    * **Mitigated by WAF**: Requests blocked or challenged by Khulnasoft's application security products such as the WAF and HTTP DDoS protection. It does not include requests that had the following actions applied: _Log_, _Skip_, and _Allow_.
+    * **Served by Khulnasoft**: Requests served by the Khulnasoft global network such as cached content and redirects.
     * **Served by origin**: Requests served by your origin server.
 
 * **Attack analysis**: [WAF attack score](/waf/about/waf-attack-score/) analysis of incoming requests, classifying them as _Clean_, _Likely clean_, _Likely attack_, or _Attack_.
@@ -121,8 +121,8 @@ The displayed information includes:
 
 * Mitigation action applied to the request
 * Cache status
-* Status code returned by the origin server to Cloudflare (in case of a cache miss)
-* Status code returned by Cloudflare to the client
+* Status code returned by the origin server to Khulnasoft (in case of a cache miss)
+* Status code returned by Khulnasoft to the client
 * Security scores for the request (attack, bot, uploaded content scanning)
 * Request properties
 

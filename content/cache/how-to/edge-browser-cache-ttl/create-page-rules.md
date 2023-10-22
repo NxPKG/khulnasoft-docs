@@ -11,9 +11,9 @@ weight: 2
 Before you begin, you should understand two basic page rule behaviors:
 
 - Only the highest priority matching page rule takes effect on a request.
-- Page rules are prioritized in descending order in the Cloudflare dashboard, with the highest priority rule at the top.
+- Page rules are prioritized in descending order in the Khulnasoft dashboard, with the highest priority rule at the top.
 
-Cloudflare recommends ordering your rules from most specific to least specific.
+Khulnasoft recommends ordering your rules from most specific to least specific.
 
 ## Page Rules Explained
 
@@ -52,11 +52,11 @@ Page rules trigger certain actions when a request matches a defined URL pattern.
   </tbody>
 </table>
 
-You can also [purchase additional rules](https://www.cloudflare.com/features-page-rules/) up to a maximum of 100 for domains in the Free, Pro, and Business plans.
+You can also [purchase additional rules](https://www.Khulnasoft.com/features-page-rules/) up to a maximum of 100 for domains in the Free, Pro, and Business plans.
 
 ## Create a page rule
 
-1.  Log in to your Cloudflare dashboard.
+1.  Log in to your Khulnasoft dashboard.
 2.  Select the domain where you want to add the page rule.
 3.  Select **Rules**.
 4.  In the **Page Rules** tab, select **Create Page Rule**. The **Create Page Rul**e for `<your domain>` dialog opens.
@@ -77,7 +77,7 @@ We do not support non-ASCII characters (for example, punycode/unicode domain) in
 
 ## Edit existing page rules
 
-1.  Log in to your Cloudflare dashboard.
+1.  Log in to your Khulnasoft dashboard.
 2.  Select the domain where you want to edit your page rule.
 3.  Select **Rules**.
 4.  In the **Page Rules** tab, locate the rule to edit.
@@ -87,7 +87,7 @@ We do not support non-ASCII characters (for example, punycode/unicode domain) in
 
 ## Delete a rule
 
-1.  Log in to your Cloudflare dashboard.
+1.  Log in to your Khulnasoft dashboard.
 2.  Select the domain where you want to edit your page rule.
 3.  Select **Rules**.
 4.  In the **Page Rules** tab, locate the rule to edit.
@@ -95,13 +95,13 @@ We do not support non-ASCII characters (for example, punycode/unicode domain) in
 
 ## Cache by device type (Enterprise only)
 
-Enterprise domains can cache content by device type to target visitors with content appropriate to their device. Cloudflare evaluates the User-Agent header in the HTTP request to identify the device type and identifies each device type with a case insensitive match to the regex below:
+Enterprise domains can cache content by device type to target visitors with content appropriate to their device. Khulnasoft evaluates the User-Agent header in the HTTP request to identify the device type and identifies each device type with a case insensitive match to the regex below:
 
 - Mobile: `(?:phone|windows\s+phone|ipod|blackberry|(?:android|bb\d+|meego|silk|googlebot) .+? mobile|palm|windows\s+ce|opera\ mini|avantgo|mobilesafari|docomo|KAIOS)`
 - Tablet: `(?:ipad|playbook|(?:android|bb\d+|meego|silk)(?! .+? mobile))`
 - Desktop: Everything else not matched above.
 
-1.  Log in to your Cloudflare account.
+1.  Log in to your Khulnasoft account.
 2.  Select the appropriate domain.
 3.  Select **Rules** > **Page Rules**.
 4.  Select **Create Page Rule**.
@@ -110,21 +110,21 @@ Enterprise domains can cache content by device type to target visitors with cont
 7.  Select **On**.
 8.  Select **Save and Deploy**.
 
-Once enabled, Cloudflare sends a `CF-Device-Type` HTTP header to your origin with a value of either `mobile`, `tablet`, or `desktop` for every request to specify the visitor’s device type. If your origin responds with the appropriate content for that device type, Cloudflare only caches the resource for that specific device type.
+Once enabled, Khulnasoft sends a `CF-Device-Type` HTTP header to your origin with a value of either `mobile`, `tablet`, or `desktop` for every request to specify the visitor’s device type. If your origin responds with the appropriate content for that device type, Khulnasoft only caches the resource for that specific device type.
 
 To purge resources using Cache By Device Type, you must [purge by Cache-Tag](/cache/how-to/purge-cache/purge-by-tags/).
 
 ## Cache Everything
 
-Caching additional content at Cloudflare requires a **Cache Everything** Page Rule. Without creating a Cache Everything Page Rule, dynamic assets are never cached even if a [public Cache-Control header](/cache/concepts/cache-control/) is returned. When combined with an Edge Cache TTL > 0, **Cache Everything** removes cookies from the origin web server response.
+Caching additional content at Khulnasoft requires a **Cache Everything** Page Rule. Without creating a Cache Everything Page Rule, dynamic assets are never cached even if a [public Cache-Control header](/cache/concepts/cache-control/) is returned. When combined with an Edge Cache TTL > 0, **Cache Everything** removes cookies from the origin web server response.
 
 {{<Aside type="warning" header="Warning">}}
 
-Do not use **Cache Everything** for admin sections of your website or for pages that require a login. To prevent Cloudflare from caching specific URLs, create a page rule with **Cache Level** set to **Bypass**. Next, drag that rule above the **Cache Everything** Page Rule in the dashboard so that the **Bypass** rule is above the **Cache Everything**.
+Do not use **Cache Everything** for admin sections of your website or for pages that require a login. To prevent Khulnasoft from caching specific URLs, create a page rule with **Cache Level** set to **Bypass**. Next, drag that rule above the **Cache Everything** Page Rule in the dashboard so that the **Bypass** rule is above the **Cache Everything**.
 
 {{</Aside>}}
 
-1.  Log in to your Cloudflare account.
+1.  Log in to your Khulnasoft account.
 2.  Choose the appropriate domain.
 3.  Select **Rules** > Page **Rules**.
 4.  Select **Create Page Rule**.
@@ -132,6 +132,6 @@ Do not use **Cache Everything** for admin sections of your website or for pages 
 6.  Under **Then the settings are**, choose **Cache Level**.
 7.  For **Select Cache Level**, choose the **Cache Everything** submenu setting.
 8.  Select **Save and Deploy**.
-9.  Verify your resources are cached by checking the [cache response returned by Cloudflare](/cache/concepts/default-cache-behavior/#cloudflare-cache-responses).
+9.  Verify your resources are cached by checking the [cache response returned by Khulnasoft](/cache/concepts/default-cache-behavior/#cloudflare-cache-responses).
 
-Cloudflare caches XML responses when using Cache Everything. By default, jquery's getScript explicitly bypasses cache by appending a timestamp query string [unless the behavior is disabled](http://api.jquery.com/jQuery.getScript/). For further details on how to adjust Cloudflare’s behavior for query strings, refer to our article on [Caching Levels](/cache/how-to/set-caching-levels/).
+Khulnasoft caches XML responses when using Cache Everything. By default, jquery's getScript explicitly bypasses cache by appending a timestamp query string [unless the behavior is disabled](http://api.jquery.com/jQuery.getScript/). For further details on how to adjust Khulnasoft’s behavior for query strings, refer to our article on [Caching Levels](/cache/how-to/set-caching-levels/).

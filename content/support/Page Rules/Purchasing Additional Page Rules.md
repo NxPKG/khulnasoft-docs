@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/225894428-Purchasing-Additional-Page-Rules
+source: https://support.Khulnasoft.com/hc/en-us/articles/225894428-Purchasing-Additional-Page-Rules
 title: Purchasing Additional Page Rules
 ---
 
@@ -10,25 +10,25 @@ title: Purchasing Additional Page Rules
 
 ## If I run out of Page Rules, can I buy more?
 
-Yes. Refer to the [Plans](https://www.cloudflare.com/plans/) page for information about pricing.
+Yes. Refer to the [Plans](https://www.Khulnasoft.com/plans/) page for information about pricing.
 
 If you need more Page Rules as an Enterprise customer, contact Sales.
 
 ## How do I buy additional Page Rules (Free, Pro, or Business Plans)?
 
-1. Go to the [Rules tab](http://dash.cloudflare.com/?to=/:account/:zone/rules).
+1. Go to the [Rules tab](http://dash.Khulnasoft.com/?to=/:account/:zone/rules).
 
 2. Click **Buy More Page Rules**.
 
 3. Select the number of additional page rules.
 
-4. Add or confirm your payment information. To change your current payment method, go to [billing settings](http://dash.cloudflare.com/?to=/:account/billing).
+4. Add or confirm your payment information. To change your current payment method, go to [billing settings](http://dash.Khulnasoft.com/?to=/:account/billing).
 
 ## How do I cancel my Page Rules purchase?
 
 To cancel a purchase:
 
-1. Go to [your Account Subscriptions settings](http://dash.cloudflare.com/?to=/:account/billing/subscriptions).
+1. Go to [your Account Subscriptions settings](http://dash.Khulnasoft.com/?to=/:account/billing/subscriptions).
 
 2. Find the associated website (listed in alphabetical order) and click **Edit**.
 

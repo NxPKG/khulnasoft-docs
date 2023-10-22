@@ -6,7 +6,7 @@ weight: 51
 
 # Supported fields and operators
 
-The fields that are supported by load balancing rules depend on whether Cloudflare proxies the traffic going through your load balancer or not.
+The fields that are supported by load balancing rules depend on whether Khulnasoft proxies the traffic going through your load balancer or not.
 
 If you use the wrong set of fields, you might see unexpected behaviors. For best results, use the fields associated with your traffic's [proxy status](/load-balancing/understand-basics/proxy-modes/).
 
@@ -74,7 +74,7 @@ Regardless of your traffic [proxy status](/load-balancing/understand-basics/prox
 
 ## Proxied-only fields
 
-If your traffic is proxied through Cloudflare, you have access to all the fields listed under [Fields supported regardless of proxy](#fields-supported-regardless-of-proxy) in addition to the following fields:
+If your traffic is proxied through Khulnasoft, you have access to all the fields listed under [Fields supported regardless of proxy](#fields-supported-regardless-of-proxy) in addition to the following fields:
 
 Many of these fields are referenced from the [Rules language documentation](/ruleset-engine/rules-language/fields/).
 
@@ -153,7 +153,7 @@ Many of these fields are referenced from the [Rules language documentation](/rul
       <td valign="top"><a href="/ruleset-engine/rules-language/fields/#field-http-request-timestamp-sec"><code>http.request.timestamp.sec</code></a><br />{{<type>}}Integer{{</type>}}</td>
       <td><code>Timestamp</code></td>
       <td>
-        <p>Represents the timestamp when Cloudflare received the request, expressed as Unix time in seconds. This value is 10 digits long.
+        <p>Represents the timestamp when Khulnasoft received the request, expressed as Unix time in seconds. This value is 10 digits long.
         </p>
         <p>Example value:
         <br /><code class="InlineCode">1484063137</code>
@@ -270,7 +270,7 @@ Many of these fields are referenced from the [Rules language documentation](/rul
 
 ## Unproxied-only fields
 
-If your traffic is not proxied through Cloudflare, you have access to all the fields listed under [Fields supported regardless of proxy](#fields-supported-regardless-of-proxy) in addition to the following fields:
+If your traffic is not proxied through Khulnasoft, you have access to all the fields listed under [Fields supported regardless of proxy](#fields-supported-regardless-of-proxy) in addition to the following fields:
 
 <table style="width:100%">
   <thead>

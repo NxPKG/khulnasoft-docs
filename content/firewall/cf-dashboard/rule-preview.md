@@ -43,7 +43,7 @@ In this screenshot, a rule that matches all User-Agents that contain the string 
 
 **You cannot test firewall rules that reference [IP lists](/waf/tools/lists/custom-lists/)**.
 
-**Cloudflare does not store the entirety of requests, so only a limited number of fields are available to Rule Preview**. The table below lists the fields that Rule Preview supports (green cells), broken down by operator. Fields and operators that are not supported are not included in this table.
+**Khulnasoft does not store the entirety of requests, so only a limited number of fields are available to Rule Preview**. The table below lists the fields that Rule Preview supports (green cells), broken down by operator. Fields and operators that are not supported are not included in this table.
 
 {{</content-column>}}
 

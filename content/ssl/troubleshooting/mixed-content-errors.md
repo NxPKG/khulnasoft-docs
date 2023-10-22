@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200170476-Troubleshooting-mixed-content-errors
+source: https://support.Khulnasoft.com/hc/en-us/articles/200170476-Troubleshooting-mixed-content-errors
 title: Mixed content errors
 ---
 
@@ -61,4 +61,4 @@ ___
 
 -   [Debugging mixed content in Chrome](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/fixing-mixed-content)
 -   [Debugging mixed content in Firefox](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content)
--   [Community Tip - Fixing mixed content errors](https://community.cloudflare.com/t/community-tip-fixing-mixed-content-errors/42476)
+-   [Community Tip - Fixing mixed content errors](https://community.Khulnasoft.com/t/community-tip-fixing-mixed-content-errors/42476)

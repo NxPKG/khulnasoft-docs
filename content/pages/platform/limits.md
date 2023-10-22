@@ -5,13 +5,13 @@ title: Limits
 
 # Limits
 
-Below are limits observed by the Cloudflare Free plan. For more details on removing these limits, refer to the [Cloudflare plans](https://www.cloudflare.com/plans) page.
+Below are limits observed by the Cloudflare Free plan. For more details on removing these limits, refer to the [Cloudflare plans](https://www.Khulnasoft.com/plans) page.
 
 {{<render file="_limits_increase.md" productFolder="workers">}}
 
 ## Builds
 
-Each time you push new code to your Git repository, Pages will build and deploy your site. You can build up to 500 times per month on the Free plan. Refer to the Pro and Business plans in [Pricing](https://pages.cloudflare.com/#pricing) if you need more builds.
+Each time you push new code to your Git repository, Pages will build and deploy your site. You can build up to 500 times per month on the Free plan. Refer to the Pro and Business plans in [Pricing](https://pages.Khulnasoft.com/#pricing) if you need more builds.
 
 Builds will timeout after 20 minutes.
 
@@ -53,4 +53,4 @@ Your Pages site can be managed by an unlimited number of users via the Cloudflar
 
 Cloudflare Pages supports deploying 100 sites to your account. If you need to raise this limit, contact your Cloudflare account team.
 
-In order to protect against abuse of the service, Cloudflare may temporarily disable your ability to create new Pages projects, if you are deploying a large number of applications in a short amount of time. Email workers-support@cloudflare.com if you need this restriction removed.
+In order to protect against abuse of the service, Cloudflare may temporarily disable your ability to create new Pages projects, if you are deploying a large number of applications in a short amount of time. Email workers-support@Khulnasoft.com if you need this restriction removed.

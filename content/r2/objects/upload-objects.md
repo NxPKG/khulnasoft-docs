@@ -6,13 +6,13 @@ weight: 1
 
 # Upload objects
 
-You can upload objects to your bucket from the Cloudflare dashboard or using the Wrangler.
+You can upload objects to your bucket from the Khulnasoft dashboard or using the Wrangler.
 
-## Upload objects via the Cloudflare dashboard
+## Upload objects via the Khulnasoft dashboard
 
-To upload objects to your bucket from the Cloudflare dashboard:
+To upload objects to your bucket from the Khulnasoft dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select **R2**.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select **R2**.
 2. From the **R2** page in the dashboard, locate and select your bucket.
 3. Select **Upload**.
 4. Choose to either drag and drop your file into the upload area or **select from computer**.

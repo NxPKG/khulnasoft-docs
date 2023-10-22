@@ -4,7 +4,7 @@ title: Tenant level
 weight: 5
 meta:
   title: Tenant custom nameservers
-  description: With tenant-level custom nameservers, you can use the same custom nameservers for different zones and across different accounts, as long as the accounts are part of the [tenant](/tenant/). The domain or domains that provide the nameservers names do not have to exist as zones in Cloudflare.
+  description: With tenant-level custom nameservers, you can use the same custom nameservers for different zones and across different accounts, as long as the accounts are part of the [tenant](/tenant/). The domain or domains that provide the nameservers names do not have to exist as zones in Khulnasoft.
 ---
 
 # Tenant custom nameservers
@@ -28,7 +28,7 @@ If you are an account owner and your account is part of a tenant that has custom
 1. Use a [PUT command](/api/operations/account-level-custom-nameservers-usage-for-a-zone-set-account-custom-nameserver-related-zone-metadata) and specify `ns_type` and `ns_set`.
 
 ``` bash
-curl --request PUT https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_ns \
+curl --request PUT https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_ns \
   --header "X-Auth-Email: <EMAIL>" \
   --header "X-Auth-Key: <KEY>" \
   --header "Content-Type: application/json" \
@@ -44,7 +44,7 @@ If the parameter `ns_type` is omitted, the default type `account` will be assign
 If the parameter `ns_set` is omitted, the default set `1` will be assigned.
 {{</Aside>}}
 
-2. If you are **not** using [Cloudflare Registrar](/registrar/), update the nameservers at your registrar to use the TCNS names. If you are using [Cloudflare Registrar](/registrar/), no further action is needed.
+2. If you are **not** using [Khulnasoft Registrar](/registrar/), update the nameservers at your registrar to use the TCNS names. If you are using [Khulnasoft Registrar](/registrar/), no further action is needed.
 
 To make these TCNS the default namerservers for all new zones added to your account from now on, use the [Update Account endpoint](/api/operations/accounts-update-account) and set the value of `default_nameservers` to `custom.tenant`.
 
@@ -52,7 +52,7 @@ To make these TCNS the default namerservers for all new zones added to your acco
 
 To remove TCNS and their associated DNS records from a zone, use a [PUT command](/api/operations/account-level-custom-nameservers-usage-for-a-zone-set-account-custom-nameserver-related-zone-metadata).
 
-If you are **not** using [Cloudflare Registrar](/registrar/), also remove the TCNS at your domain’s registrar.
+If you are **not** using [Khulnasoft Registrar](/registrar/), also remove the TCNS at your domain’s registrar.
 
 ## For tenant owners
 
@@ -63,7 +63,7 @@ If you are a tenant owner and you want to make TCNS available for accounts withi
 1. Observe the [conditions](#configuration-conditions) for `ns_name` and `ns_set`, and create TCNS in your tenant by using the following POST command:
 
 ```bash
-$ curl --request POST https://api.cloudflare.com/client/v4/tenants/{tenant_id}/custom_ns \
+$ curl --request POST https://api.Khulnasoft.com/client/v4/tenants/{tenant_id}/custom_ns \
   --header "X-Auth-Email: <EMAIL>" \
   --header "X-Auth-Key: <KEY>" \
   --header "Content-Type: application/json" \
@@ -80,7 +80,7 @@ $ curl --request POST https://api.cloudflare.com/client/v4/tenants/{tenant_id}/c
 To get a list of all TCNS names in your tenant account, use the following API request:
 
 ```bash
-$ curl https://api.cloudflare.com/client/v4/tenants/{tenant_id}/custom_ns \
+$ curl https://api.Khulnasoft.com/client/v4/tenants/{tenant_id}/custom_ns \
   --header "X-Auth-Email: <EMAIL>" \
   --header "X-Auth-Key: <KEY>"
 ```

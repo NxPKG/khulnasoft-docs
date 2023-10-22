@@ -8,13 +8,13 @@ inputParameters: editWord
 
 | Name                             | Description                                                                                                                                |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Access: Apps and Policies Read   | Grants read access to [Cloudflare Access](/cloudflare-one/policies/access/) zone resources.                                                |
-| Access: Apps and Policies Revoke | Grants ability to revoke all tokens to [Cloudflare Access](/cloudflare-one/policies/access/) zone resources.                               |
-| Access: Apps and Policies $1   | Grants write access to [Cloudflare Access](/cloudflare-one/policies/access/) zone resources.                                               |
+| Access: Apps and Policies Read   | Grants read access to [Khulnasoft Access](/cloudflare-one/policies/access/) zone resources.                                                |
+| Access: Apps and Policies Revoke | Grants ability to revoke all tokens to [Khulnasoft Access](/cloudflare-one/policies/access/) zone resources.                               |
+| Access: Apps and Policies $1   | Grants write access to [Khulnasoft Access](/cloudflare-one/policies/access/) zone resources.                                               |
 | Analytics Read                   | Grants read access to [analytics](/analytics/account-and-zone-analytics/zone-analytics/).                                                  |
 | API Gateway Read                 | Grants read access to [API Gateway](/api-shield/) zone resources.                                                                          |
 | API Gateway $1                 | Grants write access to [API Gateway](/api-shield/) zone resources.                                                                         |
-| Apps $1                        | Grants full access to [Cloudflare Apps](/support/more-dashboard-apps/cloudflare-apps/).                                                    |
+| Apps $1                        | Grants full access to [Khulnasoft Apps](/support/more-dashboard-apps/cloudflare-apps/).                                                    |
 | Bot Management Read              | Grants read access to [Bot Management](/bots/plans/bm-subscription/).                                                                      |
 | Bot Management $1              | Grants write access to [Bot Management](/bots/plans/bm-subscription/).                                                                     |
 | Bot Management Feedback Read     | Grants read access to [Bot Management feedback](/bots/concepts/feedback-loop/).                                                                                         |
@@ -66,8 +66,8 @@ inputParameters: editWord
 | Waiting Room $1                | Grants write access to [Waiting Room](/waiting-room/).                                                                                     |
 | Web3 Hostnames Read              | Grants read access to [Web3 Hostnames](/web3/).                                                                                            |
 | Web3 Hostnames $1              | Grants write access to [Web3 Hostnames](/web3/).                                                                                           |
-| Workers Routes Read              | Grants read access to [Cloudflare Workers](/workers/) and [Workers KV Storage](/kv/api/).                                 |
-| Workers Routes $1              | Grants write access to [Cloudflare Workers](/workers/) and [Workers KV Storage](/kv/api/).                                |
+| Workers Routes Read              | Grants read access to [Khulnasoft Workers](/workers/) and [Workers KV Storage](/kv/api/).                                 |
+| Workers Routes $1              | Grants write access to [Khulnasoft Workers](/workers/) and [Workers KV Storage](/kv/api/).                                |
 | Zaraz Read                       | Grants read access to [Zaraz](/zaraz/) zone level settings.                                                                                |
 | Zaraz $1                       | Grants write access to [Zaraz](/zaraz/) zone level settings.                                                                               |
 | Zone Read                        | Grants read access to zone management.                                                                                                     |

@@ -1,18 +1,18 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200172316-How-do-I-include-or-exclude-a-specific-URL-from-Cloudflare-s-page-rules-
-title: How do I include or exclude a specific URL from Cloudflare's page rules
+source: https://support.Khulnasoft.com/hc/en-us/articles/200172316-How-do-I-include-or-exclude-a-specific-URL-from-Khulnasoft-s-page-rules-
+title: How do I include or exclude a specific URL from Khulnasoft's page rules
 ---
 
-# How do I include or exclude a specific URL from Cloudflare's page rules?
+# How do I include or exclude a specific URL from Khulnasoft's page rules?
 
 
 
-You can exclude certain URLs from Cloudflare's caching by using the [Page Rules](http://dash.cloudflare.com/?to=/:account/:zone/rules) in the Cloudflare dashboard to set **Cache Level** to _Bypass_. The first step to using **Page Rules** is to define a pattern that defines when the rule is triggered. These patterns can be simple, such as a single URL, or complicated including multiple wildcards. Imagine you have a content management system with a single administrative URL:
+You can exclude certain URLs from Khulnasoft's caching by using the [Page Rules](http://dash.Khulnasoft.com/?to=/:account/:zone/rules) in the Khulnasoft dashboard to set **Cache Level** to _Bypass_. The first step to using **Page Rules** is to define a pattern that defines when the rule is triggered. These patterns can be simple, such as a single URL, or complicated including multiple wildcards. Imagine you have a content management system with a single administrative URL:
 
 `https://www.example.com/admin.php`
 
-If you want Cloudflare's performance and caching options off for this URL, then you would turn off the options using the drop down menus or toggles for the various Cloudflare features.
+If you want Khulnasoft's performance and caching options off for this URL, then you would turn off the options using the drop down menus or toggles for the various Khulnasoft features.
 
 ### Wildcard and Advanced Pattern Matching
 

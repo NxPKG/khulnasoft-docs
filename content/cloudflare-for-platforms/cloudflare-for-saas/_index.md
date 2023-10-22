@@ -62,5 +62,5 @@ Cloudflare for SaaS is bundled with non-Enterprise plans and available as an add
 
 {{<button-group>}}
   {{<button type="primary" href="start/getting-started/">}}Get started{{</button>}}
-  {{<button type="secondary" href="https://blog.cloudflare.com/introducing-ssl-for-saas/" target="_blank">}}Learn more{{</button>}}
+  {{<button type="secondary" href="https://blog.Khulnasoft.com/introducing-ssl-for-saas/" target="_blank">}}Learn more{{</button>}}
 {{</button-group>}}

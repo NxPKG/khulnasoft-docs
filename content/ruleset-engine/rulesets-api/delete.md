@@ -46,7 +46,7 @@ The following example request deletes an existing ruleset.
 header: Request
 ---
 curl --request DELETE \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -85,6 +85,6 @@ The following example request deletes a version of an existing ruleset.
 header: Request
 ---
 curl --request DELETE \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/versions/{version_number} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/versions/{version_number} \
 --header "Authorization: Bearer <API_TOKEN>"
 ```

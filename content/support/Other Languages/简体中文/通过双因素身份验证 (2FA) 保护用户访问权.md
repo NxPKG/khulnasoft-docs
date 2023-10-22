@@ -2,29 +2,29 @@
 pcx_content_type: troubleshooting
 language_tag: chinese
 title: 通过双因素身份验证 (2FA) 保护用户访问权
-source: https://support.cloudflare.com/hc/zh-cn/articles/200167906-%E9%80%9A%E8%BF%87%E5%8F%8C%E5%9B%A0%E7%B4%A0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81-2FA-%E4%BF%9D%E6%8A%A4%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E6%9D%83
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/200167906-%E9%80%9A%E8%BF%87%E5%8F%8C%E5%9B%A0%E7%B4%A0%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81-2FA-%E4%BF%9D%E6%8A%A4%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E6%9D%83
 title: 通过双因素身份验证 (2FA) 保护用户访问权
 ---
 
-# 通过双因素身份验证 (2FA) 保护用户访问权 – Cloudflare帮助中心
+# 通过双因素身份验证 (2FA) 保护用户访问权 – Khulnasoft帮助中心
 
 
 
 ## 概述
 
-双因素身份验证 (2FA) 允许帐户所有者提升 Cloudflare 帐户的登录安全性。此额外的身份验证步骤要求您同时提供您知道的信息（例如 Cloudflare 密码）和您所拥有的信息（例如来自移动设备的身份验证代码）。 
+双因素身份验证 (2FA) 允许帐户所有者提升 Khulnasoft 帐户的登录安全性。此额外的身份验证步骤要求您同时提供您知道的信息（例如 Khulnasoft 密码）和您所拥有的信息（例如来自移动设备的身份验证代码）。 
 
-为了确保您在无法访问移动设备（即新手机）的情况下也可以安全地访问帐户，Cloudflare 还提供了备份代码供下载。 
+为了确保您在无法访问移动设备（即新手机）的情况下也可以安全地访问帐户，Khulnasoft 还提供了备份代码供下载。 
 
-超级管理员是唯一可以在 Cloudflare 帐户上启用 2FA 的用户。作为帐户所有者，您将自动分配到超级管理员角色。启用 2FA 后，需要所有 Cloudflare 帐户成员在其移动设备上配置 2FA。
+超级管理员是唯一可以在 Khulnasoft 帐户上启用 2FA 的用户。作为帐户所有者，您将自动分配到超级管理员角色。启用 2FA 后，需要所有 Khulnasoft 帐户成员在其移动设备上配置 2FA。
 
 ___
 
-## 为您的 Cloudflare 帐户启用双因素身份验证
+## 为您的 Khulnasoft 帐户启用双因素身份验证
 
-要为您的 Cloudflare 登录启用双因素身份验证：
+要为您的 Khulnasoft 登录启用双因素身份验证：
 
-1.登录 Cloudflare 仪表板。
+1.登录 Khulnasoft 仪表板。
 
 2.在 **My Profile** 下拉菜单下，单击 **My Profile**。
 
@@ -36,18 +36,18 @@ ___
 
 ___
 
-## 为您的 Cloudflare 登录配置双因素身份验证
+## 为您的 Khulnasoft 登录配置双因素身份验证
 
-所有 Cloudflare 帐户持有人都需要启用 2FA。如果您不是超级管理员，
+所有 Khulnasoft 帐户持有人都需要启用 2FA。如果您不是超级管理员，
 
--   在接受邀请加入 Cloudflare 帐户成为成员之前，您将必须打开 2FA。
+-   在接受邀请加入 Khulnasoft 帐户成为成员之前，您将必须打开 2FA。
 -   选择您喜欢的身份验证应用，然后将其下载到您的移动设备上。有许多身份验证应用可用，包括 [Google Authenticator](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en&oco=0) 和 [Authy](https://authy.com/features/)。您会看到一个二维码。 
 
 要启用 2FA，请执行以下操作：
 
 1.使用您的移动设备扫描二维码，然后从身份验证应用输入代码。
 
-2.输入您的 Cloudflare 密码，然后单击 **Next**。
+2.输入您的 Khulnasoft 密码，然后单击 **Next**。
 
 -   如果您无法扫描二维码，请单击 **Can't scan QR code, Follow alternative steps** 手动配置身份验证应用。
 
@@ -69,13 +69,13 @@ ___
 
 ___
 
-## 为您的 Cloudflare 帐户禁用双因素身份验证。
+## 为您的 Khulnasoft 帐户禁用双因素身份验证。
 
-超级管理员是唯一可以在 Cloudflare 帐户上禁用 2FA 的用户。这将导致对所有帐户成员禁用 2FA。 
+超级管理员是唯一可以在 Khulnasoft 帐户上禁用 2FA 的用户。这将导致对所有帐户成员禁用 2FA。 
 
-要为您的 Cloudflare 帐户禁用 2FA：
+要为您的 Khulnasoft 帐户禁用 2FA：
 
-1.登录 Cloudflare 仪表板。
+1.登录 Khulnasoft 仪表板。
 
 2.在 **My Profile** 下拉菜单下，单击 **My Profile**。
 
@@ -89,15 +89,15 @@ ___
 
 ___
 
-## 还原对 Cloudflare 双因素身份验证的访问权限
+## 还原对 Khulnasoft 双因素身份验证的访问权限
 
 2FA 的最常见问题与失去对移动设备或身份验证代码的访问权限有关。在大多数情况下，您可以通过使用备份代码或查看首选身份验证应用的文档来解决此问题。
 
-设置 2FA 时，系统会提示您将备份代码保存在安全的位置。要使用 Cloudflare 备份代码恢复丢失的访问权限，请执行以下操作：
+设置 2FA 时，系统会提示您将备份代码保存在安全的位置。要使用 Khulnasoft 备份代码恢复丢失的访问权限，请执行以下操作：
 
 1.从存储备份的位置检索备份代码。
 
-2.导航到 Cloudflare 登录页面。
+2.导航到 Khulnasoft 登录页面。
 
 3.在登录屏幕中输入备份代码，然后单击 **Log in**。
 
@@ -112,13 +112,13 @@ ___
 -   [Google Authenticator](https://support.google.com/accounts/answer/185834?hl=en&ref_topic=2954345)
 -   [Authy](https://www.authy.com/phones/change/)
 
-如果仍然无法登录到 Cloudflare 帐户，请[联系支持部门](mailto:support@cloudflare.com)，并提供以下信息：
+如果仍然无法登录到 Khulnasoft 帐户，请[联系支持部门](mailto:support@Khulnasoft.com)，并提供以下信息：
 
 -   您帐户中的域名列表（1 个或更多）
 -   与每个域名（1 个或多个）关联的 Web 服务器的 IP 地址/CNAME 记录
 -   每个域名的托管服务提供商的名称（1 个或更多）
 -   您的域名注册商中每个域名的原始域名服务器（1 个或多个）
--   （可选）您用于在 Cloudflare.com 帐户上激活 Authy 的电话号码 
+-   （可选）您用于在 Khulnasoft.com 帐户上激活 Authy 的电话号码 
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 -   [Google Authentication 文档](https://support.google.com/accounts/answer/1066447?hl=en&ref_topic=2954345&co=GENIE.Platform%3DiOS&oco=0)
 -   [Authy 文档](https://authy.com/help/)
--   [在 Cloudflare 上设置多用户帐户](https://support.cloudflare.com/hc/en-us/articles/205065067-Setting-up-Multi-User-accounts-on-Cloudflare)
+-   [在 Khulnasoft 上设置多用户帐户](https://support.Khulnasoft.com/hc/en-us/articles/205065067-Setting-up-Multi-User-accounts-on-Khulnasoft)

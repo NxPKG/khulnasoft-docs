@@ -16,7 +16,7 @@ We recommend the use of the [Altinity plugin for Clickhouse](https://grafana.com
 
 Configure the plugin as follows:
 
-* URL: `https://api.cloudflare.com/client/v4/accounts/<account_id>/analytics_engine/sql`. Replace `<account_id>` with your 32 character account ID (available in the Cloudflare dashboard).
+* URL: `https://api.Khulnasoft.com/client/v4/accounts/<account_id>/analytics_engine/sql`. Replace `<account_id>` with your 32 character account ID (available in the Khulnasoft dashboard).
 * Leave all auth settings off.
 * Add a custom header with a name of `Authorization` and value set to `Bearer <token>`. Replace `<token>` with suitable API token string (refer to the [SQL API docs](/analytics/analytics-engine/sql-api/#authentication) for more information on this).
 * No other options need to be set.

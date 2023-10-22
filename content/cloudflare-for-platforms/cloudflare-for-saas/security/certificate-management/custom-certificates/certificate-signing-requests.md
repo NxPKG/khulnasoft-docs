@@ -50,7 +50,7 @@ EOF
 Now, you want to generate a CSR that you can provide to your customer.
 
 ```bash
-$ curl -sXPOST https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_csrs \
+$ curl -sXPOST https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_csrs \
     -H "X-Auth-Email: {email}" -H "X-Auth-Key: {key}"\
     -H 'Content-Type: application/json' -d "$request_body"
 
@@ -79,7 +79,7 @@ $ curl -sXPOST https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_csrs 
 Replace the ‘\n’ strings with actual newline before passing to your customer. This can be accomplished by piping the output of the prior call to a tool like jq and perl, such as:
 
 ```bash
-$ curl -sXPOST https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_csrs \
+$ curl -sXPOST https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_csrs \
     -H "X-Auth-Email: {email}" -H "X-Auth-Key: {key}"\
     -H 'Content-Type: application/json' -d "$request_body" | jq .result.csr |\
     perl -npe s'/\\n/\n/g; s/"//g' > csr.txt
@@ -119,10 +119,10 @@ With the request body built, [create the custom hostname](/api/operations/custom
 
 ### List all CSRs
 
-You can request the (paginated) collection of all previously generated custom CSRs by making a `GET` request to `https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_csrs`.
+You can request the (paginated) collection of all previously generated custom CSRs by making a `GET` request to `https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_csrs`.
 
 ### Delete a CSR
 
-Delete one or more of the CSRs to delete the underlying private key by making a `DELETE` request to `https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_csrs/{csr_id}`.
+Delete one or more of the CSRs to delete the underlying private key by making a `DELETE` request to `https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_csrs/{csr_id}`.
 
 You may delete a CSR provided there are no custom certificates using the private key that was generated for the CSR. If you attempt to delete a CSR whose private key is still in use, you will receive an error.

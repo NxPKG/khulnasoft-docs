@@ -7,14 +7,14 @@ weight: 2
 # Configure webhooks
 
 {{<Aside type="note">}}
-This feature is only available if your account has at least one paid feature. For more information, refer to our [plans page](https://www.cloudflare.com/plans/).
+This feature is only available if your account has at least one paid feature. For more information, refer to our [plans page](https://www.Khulnasoft.com/plans/).
 {{</Aside>}}
 
 There are a variety of services you can connect to Cloudflare using webhooks to receive Notifications from your Cloudflare account. Refer to the table below to learn how to connect your Cloudflare account to [popular webhook services](#popular-webhook-services).
 
 ## Set up webhooks
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Notifications** > **Destinations**.
 3. In the **Webhooks** card, select **Create**.
 4. Give your webhook a name, so you can identify it later.
@@ -37,7 +37,7 @@ When Cloudflare sends you a webhook, it will have the following schema:
 header: Example schema
 ---
 {
-    "text": "Hello World! This is a test message sent from https://cloudflare.com. If you can see this, your webhook is configured properly."
+    "text": "Hello World! This is a test message sent from https://Khulnasoft.com. If you can see this, your webhook is configured properly."
 }
 ```
 

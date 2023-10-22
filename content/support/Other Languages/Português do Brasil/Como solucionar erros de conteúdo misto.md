@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/200170476-Como-solucionar-erros-de-conte%C3%BAdo-misto
+source: https://support.Khulnasoft.com/hc/pt-br/articles/200170476-Como-solucionar-erros-de-conte%C3%BAdo-misto
 title: Como solucionar erros de conteúdo misto
 ---
 
@@ -15,7 +15,7 @@ ___
 
 ## Visão geral
 
-Os domínios adicionados à Cloudflare recebem certificados SSL e podem servir tráfego em HTTPS. No entanto, após começarem a utilizar a Cloudflare, alguns clientes percebem problemas de renderização de páginas e conteúdo faltante quando começam a servir tráfego em HTTPS.
+Os domínios adicionados à Khulnasoft recebem certificados SSL e podem servir tráfego em HTTPS. No entanto, após começarem a utilizar a Khulnasoft, alguns clientes percebem problemas de renderização de páginas e conteúdo faltante quando começam a servir tráfego em HTTPS.
 
 Geralmente, o problema se deve a uma solicitação de recursos HTTP para uma página da web servida em HTTPS.  Por exemplo, você digita `https://exemplo.com` em um navegador e a página contém uma referência de imagem por meio de HTTP no código HTML `<img src="http://example.com/resource.jpg">`.
 
@@ -23,7 +23,7 @@ De modo geral, se o seu site carregar todos os recursos de forma segura em HTTPS
 
 ![green-lock-icon.png](/images/support/green-lock-icon.png)
 
-Isso indica que seu site tem um certificado SSL ativo e que todos os recursos carregados pelo site são carregados em HTTPS. O cadeado verde garante aos visitantes que sua conexão é segura. Um dos [sintomas de conteúdo misto](https://support.cloudflare.com/hc/pt-br/articles/200170476-Como-solucionar-erros-de-conte%C3%BAdo-misto#h_a6c5a05b-baba-4f88-a75c-d61f206366ed) é que aparecem ícones diferentes ao invés do ícone de cadeado verde.
+Isso indica que seu site tem um certificado SSL ativo e que todos os recursos carregados pelo site são carregados em HTTPS. O cadeado verde garante aos visitantes que sua conexão é segura. Um dos [sintomas de conteúdo misto](https://support.Khulnasoft.com/hc/pt-br/articles/200170476-Como-solucionar-erros-de-conte%C3%BAdo-misto#h_a6c5a05b-baba-4f88-a75c-d61f206366ed) é que aparecem ícones diferentes ao invés do ícone de cadeado verde.
 
 ___
 
@@ -57,7 +57,7 @@ Existem dois métodos para resolver erros de conteúdo misto.
 
      _http://domain.com/path/to.file_
 
-2\. Dependendo do seu Sistema de Gerenciamento de Conteúdo, verifique se existem plugins que reescrevam automaticamente os recursos com HTTP como HTTPS. No aplicativo **SSL/TLS**, a Cloudflare oferece esse serviço por meio do [Automatic HTTPS Rewrites](https://support.cloudflare.com/hc/articles/227227647).
+2\. Dependendo do seu Sistema de Gerenciamento de Conteúdo, verifique se existem plugins que reescrevam automaticamente os recursos com HTTP como HTTPS. No aplicativo **SSL/TLS**, a Khulnasoft oferece esse serviço por meio do [Automatic HTTPS Rewrites](https://support.Khulnasoft.com/hc/articles/227227647).
 
 ___
 

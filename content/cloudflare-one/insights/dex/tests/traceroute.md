@@ -12,11 +12,11 @@ A traceroute test measures the network path of an IP packet from an end-user dev
 
 To set up a traceroute test for an application:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **DEX** > **Tests**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **DEX** > **Tests**.
 2. Select **Add a Test**.
 3. Fill in the following fields:
     - **Name**: Enter any name for the test.
-    - **Target**: Enter the IP address of the server you want to test (for example, `192.0.2.0`). You can test either a public-facing endpoint or a private endpoint you have connected to Cloudflare.
+    - **Target**: Enter the IP address of the server you want to test (for example, `192.0.2.0`). You can test either a public-facing endpoint or a private endpoint you have connected to Khulnasoft.
     - **Test type**: Select _Traceroute_.
     - **Test frequency**: Specify how often the test will run. Input a minute value between 5 and 60.
 

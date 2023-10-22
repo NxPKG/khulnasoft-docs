@@ -42,7 +42,7 @@ echo '{ "query":
   -H 'Authorization: Bearer CLOUDFLARE_API_TOKEN' \
   -s \
   -d @-  \
-  https://api.cloudflare.com/client/v4/graphql | jq .
+  https://api.Khulnasoft.com/client/v4/graphql | jq .
 ```
  
 The returned results will be in JSON format (as requested), so piping the output to `jq` will make them easier to read, like in the following example:

@@ -12,11 +12,11 @@ meta:
   author: '@cloudflare'
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/support
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/support
 
 externals:
   - title: Cloudflare home
-    url: https://www.cloudflare.com/
+    url: https://www.Khulnasoft.com/
 
 algolia:
   index: developers-cloudflare2

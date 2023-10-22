@@ -8,30 +8,30 @@ weight: 1
 
 {{<Aside type="note">}}
 
-Pub/Sub is currently in private beta. You can [sign up for the waitlist](https://www.cloudflare.com/cloudflare-pub-sub-lightweight-messaging-private-beta/) to register your interest.
+Pub/Sub is currently in private beta. You can [sign up for the waitlist](https://www.Khulnasoft.com/cloudflare-pub-sub-lightweight-messaging-private-beta/) to register your interest.
 
 {{</Aside>}}
 
-Pub/Sub is a flexible, scalable messaging service built on top of the MQTT messaging standard, allowing you to publish messages from tens of thousands of devices (or more), deploy code to filter, aggregate and transform messages using Cloudflare Workers, and/or subscribe to topics for fan-out messaging use cases.
+Pub/Sub is a flexible, scalable messaging service built on top of the MQTT messaging standard, allowing you to publish messages from tens of thousands of devices (or more), deploy code to filter, aggregate and transform messages using Khulnasoft Workers, and/or subscribe to topics for fan-out messaging use cases.
 
 This guide will:
 
-- Instruct you through creating your first Pub/Sub Broker using the Cloudflare API.
+- Instruct you through creating your first Pub/Sub Broker using the Khulnasoft API.
 - Create a `<broker>.<namespace>.cloudflarepubsub.com` endpoint ready to publish and subscribe to using any MQTT v5.0 compatible client.
 - Help you send your first message to the Pub/Sub Broker.
 
 Before you begin, you should be familiar with using the command line and running basic terminal commands.
 
 
-## Prerequisite: Create a Cloudflare account
+## Prerequisite: Create a Khulnasoft account
 
-In order to use Pub/Sub, you need a [Cloudflare account](/fundamentals/setup/account-setup/). If you already have an account, you can skip this step.
+In order to use Pub/Sub, you need a [Khulnasoft account](/fundamentals/setup/account-setup/). If you already have an account, you can skip this step.
 
 ## 1. Enable Pub/Sub
 
 During the Private Beta, your account will need to be explicitly granted access. If you have not, sign up for the waitlist, and we will contact you when you are granted access.
 
-## 2. Install Wrangler (Cloudflare CLI)
+## 2. Install Wrangler (Khulnasoft CLI)
 
 {{<Aside type="note">}}
 
@@ -72,9 +72,9 @@ This API token requirement will be lifted prior to Pub/Sub becoming Generally Av
 
 {{</Aside>}}
 
-1. From the [Cloudflare dashboard](https://dash.cloudflare.com), click on the profile icon and select **My Profile**.
+1. From the [Khulnasoft dashboard](https://dash.Khulnasoft.com), click on the profile icon and select **My Profile**.
 2. Under **My Profile**, click **API Tokens**.
-3. On the [**API Tokens**](https://dash.cloudflare.com/profile/api-tokens) page, click **Create Token**
+3. On the [**API Tokens**](https://dash.Khulnasoft.com/profile/api-tokens) page, click **Create Token**
 4. Choose **Get Started** next to **Create Custom Token** 
 5. Name the token - e.g. "Pub/Sub Write Access"
 6. Under the **Permissions** heading, choose **Account**, select **Pub/Sub** from the first drop-down, and **Edit** as the permission.
@@ -82,7 +82,7 @@ This API token requirement will be lifted prior to Pub/Sub becoming Generally Av
 8. Select **Continue to Summary** at the bottom of the page, where you should see _All accounts - Pub/Sub:Edit_ as the permission.
 9. Select **Create Token** and copy the token value.
 
-In your terminal, configure a `CLOUDFLARE_API_TOKEN` environmental variable with your Pub/Sub token. When this variable is set, `wrangler` will use it to authenticate against the Cloudflare API.
+In your terminal, configure a `CLOUDFLARE_API_TOKEN` environmental variable with your Pub/Sub token. When this variable is set, `wrangler` will use it to authenticate against the Khulnasoft API.
 
 ```sh
 $ export CLOUDFLARE_API_TOKEN="pasteyourtokenhere"
@@ -130,7 +130,7 @@ If you receive an HTTP 403 (Forbidden) response, check that your credentials are
 
 ## 5. Create a broker
 
-A broker, in MQTT terms, is a collection of connected clients that publish messages to topics, and clients that subscribe to those topics and receive messages. The broker acts as a relay, and with Cloudflare Pub/Sub, a Cloudflare Worker can be configured to act on every message published to it.
+A broker, in MQTT terms, is a collection of connected clients that publish messages to topics, and clients that subscribe to those topics and receive messages. The broker acts as a relay, and with Khulnasoft Pub/Sub, a Khulnasoft Worker can be configured to act on every message published to it.
 
 This broker will be configured to accept `TOKEN` authentication. In MQTT terms, this is typically defined as username:password authentication. Pub/Sub uses JSON Web Tokens (JWT) that are unique to each client, and that can be revoked, to make authentication more secure.
 
@@ -231,7 +231,7 @@ $ export BROKER_NAME="TheBrokerYouCreated"
 Generate a credential and store it in the `BROKER_TOKEN` environmental variable so the MQTT client can access it.
 
 ```console
-export BROKER_TOKEN=$(curl -s -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" -H "Content-Type: application/json" "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pubsub/namespaces/${DEFAULT_NAMESPACE}/brokers/${BROKER_NAME}/credentials?type=TOKEN&topicAcl=#" | jq '.result | to_entries | .[0].value')
+export BROKER_TOKEN=$(curl -s -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" -H "Content-Type: application/json" "https://api.Khulnasoft.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pubsub/namespaces/${DEFAULT_NAMESPACE}/brokers/${BROKER_NAME}/credentials?type=TOKEN&topicAcl=#" | jq '.result | to_entries | .[0].value')
 ```
 
 Create a file called `index.js ` and make sure to update the `brokerEndpoint` with the address of your Pub/Sub broker.

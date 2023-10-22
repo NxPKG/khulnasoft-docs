@@ -6,18 +6,18 @@ weight: 5
 
 # Adaptive DDoS Protection
 
-Adaptive DDoS Protection learns your unique traffic patterns and adapts to them to provide better protection against sophisticated DDoS attacks on layer 7 and layers 3/4, depending on your subscribed Cloudflare services.
+Adaptive DDoS Protection learns your unique traffic patterns and adapts to them to provide better protection against sophisticated DDoS attacks on layer 7 and layers 3/4, depending on your subscribed Khulnasoft services.
 
 Adaptive DDoS Protection provides the following types of protection:
 
 * **Adaptive DDoS Protection for Origins**: Detects and mitigates traffic that deviates from your site's origin errors profile.
-* **Adaptive DDoS Protection for User-Agents**: Detects and mitigates traffic that deviates from the top User Agents seen by Cloudflare on the network. The User Agent profile is built from the entire Cloudflare network and not only from the customer's zone.
+* **Adaptive DDoS Protection for User-Agents**: Detects and mitigates traffic that deviates from the top User Agents seen by Khulnasoft on the network. The User Agent profile is built from the entire Khulnasoft network and not only from the customer's zone.
 * **Adaptive DDoS Protection for Locations**: Detects and mitigates traffic that deviates from your site’s geo-distribution profile. The profile is calculated from the rate for every client country and region, using the rates from the past seven days.
 * **Adaptive DDoS Protection for Protocols**: Detects and mitigates traffic that deviates from your traffic’s IP protocol profile. The profile is calculated as a global rate for each of your prefixes.
 
 ## Availability
 
-Cloudflare Adaptive DDoS Protection is available to Enterprise customers according to the following table:
+Khulnasoft Adaptive DDoS Protection is available to Enterprise customers according to the following table:
 
 {{<table-wrap>}}
 
@@ -25,7 +25,7 @@ Feature | Profiling dimension  | WAF/CDN<sup>1</sup> | Magic Transit /<br/>Spect
 --------|----------------------|:--------------------:|:------------------------------------------:
 **HTTP Adaptive DDoS Protection** |                          |     |
 For Origins     | Origin errors                              | Yes | —
-For User-Agents | User Agent<br/>(entire Cloudflare network) | Yes | —
+For User-Agents | User Agent<br/>(entire Khulnasoft network) | Yes | —
 For Locations   | Client IP country and region               | Yes | —
 **L3/4 Adaptive DDoS Protection** |                          |     |
 For Protocols   | IP protocol                                | —   | Yes
@@ -39,21 +39,21 @@ For Protocols   | IP protocol                                | —   | Yes
 
 Adaptive DDoS Protection creates a traffic profile by looking at the maximum rates of traffic every day, for the past seven days. These profiles are recalculated every day, keeping the seven-day time window. Adaptive DDoS Protection stores the maximal traffic rates seen for every predefined dimension value (the profiling dimension varies for each rule). Every profile uses one dimension, such as the source country of the request, the user agent, and the IP protocol. Incoming traffic that deviates from your profile may be malicious.
 
-To eliminate outliers, rate calculations only consider the 95th percentile rates (discarding the top 5% of the highest rates). Additionally, Adaptive DDoS Protection rules also take into account Cloudflare’s [Machine Learning (ML) models](/bots/concepts/bot-score/#machine-learning) to identify traffic that is likely automated.
+To eliminate outliers, rate calculations only consider the 95th percentile rates (discarding the top 5% of the highest rates). Additionally, Adaptive DDoS Protection rules also take into account Khulnasoft’s [Machine Learning (ML) models](/bots/concepts/bot-score/#machine-learning) to identify traffic that is likely automated.
 
-Cloudflare may change the logic of these protection rules from time to time to improve them. Any rule changes will appear in the [Managed rulesets changelog](/ddos-protection/change-log/) page.
+Khulnasoft may change the logic of these protection rules from time to time to improve them. Any rule changes will appear in the [Managed rulesets changelog](/ddos-protection/change-log/) page.
 
 ### DDoS protection based on the origin HTTP error rate
 
-Cloudflare’s network is built to automatically monitor and mitigate large DDoS attacks. Cloudflare also helps mitigate smaller DDoS attacks, based on the following general rules:
+Khulnasoft’s network is built to automatically monitor and mitigate large DDoS attacks. Khulnasoft also helps mitigate smaller DDoS attacks, based on the following general rules:
 
-* For zones on any plan, Cloudflare will apply mitigations when the HTTP error rate is above the _High_ (default) sensitivity level of 1,000 errors-per-second rate threshold. You can decrease the sensitivity level by [configuring the HTTP DDoS Attack Protection managed ruleset](/ddos-protection/managed-rulesets/http/configure-dashboard/).
+* For zones on any plan, Khulnasoft will apply mitigations when the HTTP error rate is above the _High_ (default) sensitivity level of 1,000 errors-per-second rate threshold. You can decrease the sensitivity level by [configuring the HTTP DDoS Attack Protection managed ruleset](/ddos-protection/managed-rulesets/http/configure-dashboard/).
 
-* For zones on Pro, Business, and Enterprise plans, Cloudflare performs an additional check for better detection accuracy: the errors-per-second rate must also be at least five times the normal origin traffic levels before applying DDoS mitigations.
+* For zones on Pro, Business, and Enterprise plans, Khulnasoft performs an additional check for better detection accuracy: the errors-per-second rate must also be at least five times the normal origin traffic levels before applying DDoS mitigations.
 
-Cloudflare determines the error rate based on all HTTP errors in the 52X range (Internal Server Error) and in the 53X range, except for [error 530](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-5xx-errors/#error-530). Currently, for DDoS mitigations based on HTTP error rate, you cannot exclude specific HTTP error codes.
+Khulnasoft determines the error rate based on all HTTP errors in the 52X range (Internal Server Error) and in the 53X range, except for [error 530](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-5xx-errors/#error-530). Currently, for DDoS mitigations based on HTTP error rate, you cannot exclude specific HTTP error codes.
 
-For more information on the types of DDoS attacks covered by Cloudflare's DDoS protection, refer to [DDoS attack coverage](/ddos-protection/about/attack-coverage/).
+For more information on the types of DDoS attacks covered by Khulnasoft's DDoS protection, refer to [DDoS attack coverage](/ddos-protection/about/attack-coverage/).
 
 ---
 
@@ -61,7 +61,7 @@ For more information on the types of DDoS attacks covered by Cloudflare's DDoS p
 
 To view traffic flagged by HTTP Adaptive DDoS Protection rules:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and website.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and website.
 2. Go to **Security** > **Events**.
 3. Filter by `Service equals HTTP DDoS` and by the rule ID.
 

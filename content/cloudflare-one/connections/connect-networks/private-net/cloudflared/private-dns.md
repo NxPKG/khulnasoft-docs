@@ -6,11 +6,11 @@ weight: 5
 
 # Private DNS
 
-By default, the WARP client sends DNS requests to [1.1.1.1](/1.1.1.1/), Cloudflare's public DNS resolver, for resolution. With Cloudflare Tunnel, you can connect an internal DNS resolver to Cloudflare and use it to resolve non-publicly routed domains.
+By default, the WARP client sends DNS requests to [1.1.1.1](/1.1.1.1/), Khulnasoft's public DNS resolver, for resolution. With Khulnasoft Tunnel, you can connect an internal DNS resolver to Khulnasoft and use it to resolve non-publicly routed domains.
 
 ## Configure private DNS
 
-1. [Connect your private network](/cloudflare-one/connections/connect-networks/get-started/) with Cloudflare Tunnel.
+1. [Connect your private network](/cloudflare-one/connections/connect-networks/get-started/) with Khulnasoft Tunnel.
 
 2. Under **Networks** > **Routes**, verify that the IP address of your internal DNS resolver is included in the tunnel.
 
@@ -46,15 +46,15 @@ Both `dig` commands will fail if the WARP client is disabled on your end user's 
 
 ## Troubleshooting
 
-Use the following troubleshooting strategies if you are running into issues while configuring your private network with Cloudflare Tunnel.
+Use the following troubleshooting strategies if you are running into issues while configuring your private network with Khulnasoft Tunnel.
 
-- Ensure that `cloudflared` is connected to Cloudflare by visiting **Access** > **Tunnels** in Zero Trust.
+- Ensure that `cloudflared` is connected to Khulnasoft by visiting **Access** > **Tunnels** in Zero Trust.
 
 - Ensure that `cloudflared` is running with the `quic` protocol (search for `Initial protocol quic` in its logs).
 
-- Ensure that the machine where `cloudflared` is running is allowed to egress via UDP to port 7844 to talk out to Cloudflare.
+- Ensure that the machine where `cloudflared` is running is allowed to egress via UDP to port 7844 to talk out to Khulnasoft.
 
-- Ensure that end-user devices are enrolled into WARP by visiting <https://help.teams.cloudflare.com>.
+- Ensure that end-user devices are enrolled into WARP by visiting <https://help.teams.Khulnasoft.com>.
 
 - Double-check the precedence of your application policies in the Gateway Network policies tab. Ensure that a more global Block or Allow policy will not supersede the application policies.
 

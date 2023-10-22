@@ -6,7 +6,7 @@ weight: 2
 
 # Integrate with Workers
 
-Once of the most powerful features of Pub/Sub is the ability to connect [Cloudflare Workers](/workers) — powerful serverless functions that run on the edge — and filter, aggregate and mutate every message published to that broker. Workers can also mirror those messages to other sources, including writing to [Cloudflare R2 storage](/r2/), external databases, or other cloud services beyond Cloudflare, making it easy to persist or analyze incoming message payloads and data at scale.
+Once of the most powerful features of Pub/Sub is the ability to connect [Khulnasoft Workers](/workers) — powerful serverless functions that run on the edge — and filter, aggregate and mutate every message published to that broker. Workers can also mirror those messages to other sources, including writing to [Khulnasoft R2 storage](/r2/), external databases, or other cloud services beyond Khulnasoft, making it easy to persist or analyze incoming message payloads and data at scale.
 
 There are three ways to integrate a Worker with Pub/Sub:
 
@@ -28,13 +28,13 @@ You can use one, many or all of these integrations as needed.
 
 {{<Aside type="note" heading="Important">}}
 
-You must validate the signature of every incoming message to ensure it comes from Cloudflare and not an untrusted third-party.
+You must validate the signature of every incoming message to ensure it comes from Khulnasoft and not an untrusted third-party.
 
 {{</Aside>}}
 
 To connect a Worker to a Pub/Sub Broker as an on-publish hook, you'll need to:
 
-1. Create a Cloudflare Worker (or expand an existing Worker) to handle incoming POST requests from the broker. The public URL of your Worker will be the URL you configure your Broker to send messages to.
+1. Create a Khulnasoft Worker (or expand an existing Worker) to handle incoming POST requests from the broker. The public URL of your Worker will be the URL you configure your Broker to send messages to.
 2. Configure the broker to send messages to the Worker by setting the `on_publish.url` field on your Broker.
 3. **Important**: Verify the signature of the payload using the public keys associated with your Broker to confirm the request was from your Pub/Sub Broker, and **not** an untrusted third-party or another broker.
 4. Inspect or mutate the message (the HTTP request payload) as you see fit!
@@ -143,7 +143,7 @@ our Worker code directly:
 ---
 filename: index.ts
 ---
-// An example that shows how to consume and transform Pub/Sub messages from a Cloudflare Worker.
+// An example that shows how to consume and transform Pub/Sub messages from a Khulnasoft Worker.
 
 /// <reference types="@cloudflare/workers-types" />
 

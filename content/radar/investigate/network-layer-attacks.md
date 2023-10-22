@@ -6,14 +6,14 @@ weight: 6
 
 # Network layer attacks
 
-Network layer attacks show [DDoS](https://www.cloudflare.com/en-gb/learning/ddos/layer-3-ddos-attacks/) attack trends at the network layer. These attacks can be split by the network protocol they use: [ICMP](https://www.cloudflare.com/en-gb/learning/ddos/glossary/internet-control-message-protocol-icmp/), [TCP](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/), [UDP](https://www.cloudflare.com/en-gb/learning/ddos/glossary/user-datagram-protocol-udp/) and others.
+Network layer attacks show [DDoS](https://www.Khulnasoft.com/en-gb/learning/ddos/layer-3-ddos-attacks/) attack trends at the network layer. These attacks can be split by the network protocol they use: [ICMP](https://www.Khulnasoft.com/en-gb/learning/ddos/glossary/internet-control-message-protocol-icmp/), [TCP](https://www.Khulnasoft.com/learning/ddos/glossary/tcp-ip/), [UDP](https://www.Khulnasoft.com/en-gb/learning/ddos/glossary/user-datagram-protocol-udp/) and others.
 
 {{<Aside type="note">}}
-Unlike what happens in [Application Layer Attacks](/radar/investigate/application-layer-attacks/), in network layer attacks location attribution does not use the location associated with the client's IP address. Instead, it uses the location of the data center itself. This is due to [IP spoofing](https://www.cloudflare.com/en-gb/learning/ddos/glossary/ip-spoofing/).
+Unlike what happens in [Application Layer Attacks](/radar/investigate/application-layer-attacks/), in network layer attacks location attribution does not use the location associated with the client's IP address. Instead, it uses the location of the data center itself. This is due to [IP spoofing](https://www.Khulnasoft.com/en-gb/learning/ddos/glossary/ip-spoofing/).
 {{</Aside>}}
 
 When filtering by location or autonomous system (AS), we are filtering by the source location/AS of the attack
- — which can be very different to the location of the human orchestrator of the attack. Refer to [botnets](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-botnet/) for more information.
+ — which can be very different to the location of the human orchestrator of the attack. Refer to [botnets](https://www.Khulnasoft.com/learning/ddos/what-is-a-ddos-botnet/) for more information.
 
 ## List of endpoints
 
@@ -24,7 +24,7 @@ When filtering by location or autonomous system (AS), we are filtering by the so
 In the following example, we will examine the worldwide versus Singapore distribution of mitigated attacks by network protocol:
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/attacks/layer3/timeseries_groups?name=global&dateRange=1d&location=&name=singapore&location=SG&dateRange=1d&aggInterval=1h&format=json" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/attacks/layer3/timeseries_groups?name=global&dateRange=1d&location=&name=singapore&location=SG&dateRange=1d&aggInterval=1h&format=json" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -60,7 +60,7 @@ If we inspect the abbreviated response below, we can conclude that globally, at 
 }
 ```
 
-We can also conclude that the distribution of network layer attacks coming from Singapore  — or, more accurately, reaching Cloudflare's data center located in Singapore — differs quite a bit from the worldwide distribution. At those times, the distribution of network layer attacks clearly favors [TCP](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/).
+We can also conclude that the distribution of network layer attacks coming from Singapore  — or, more accurately, reaching Khulnasoft's data center located in Singapore — differs quite a bit from the worldwide distribution. At those times, the distribution of network layer attacks clearly favors [TCP](https://www.Khulnasoft.com/learning/ddos/glossary/tcp-ip/).
 
 For more information refer to the [API reference](/api/operations/radar-get-attacks-layer3-timeseries-by-bytes) for this endpoint.
 
@@ -71,7 +71,7 @@ For more information refer to the [API reference](/api/operations/radar-get-atta
 We can also filter by source location and examine attacks coming from Russia:
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/attacks/layer3/summary?location=RU&name=attacks_ru&dateRange=1d&format=json" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/attacks/layer3/summary?location=RU&name=attacks_ru&dateRange=1d&format=json" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -97,11 +97,11 @@ curl -X GET "https://api.cloudflare.com/client/v4/radar/attacks/layer3/summary?l
 }
 ```
 
-The response shows that the attacks coming from Russia to other locations tended to use the [UDP](https://www.cloudflare.com/en-gb/learning/ddos/glossary/user-datagram-protocol-udp/) network protocol at those timestamps.
+The response shows that the attacks coming from Russia to other locations tended to use the [UDP](https://www.Khulnasoft.com/en-gb/learning/ddos/glossary/user-datagram-protocol-udp/) network protocol at those timestamps.
 
 For more information refer to the [API reference](/api/operations/radar-get-attacks-layer3-timeseries-by-bytes) for this endpoint.
 
 
 ## Next steps
 
-Refer to [DNS](/radar/investigate/dns/) to learn more about the aggregated and anonymized DNS queries to Cloudflare's [1.1.1.1](/1.1.1.1/) public resolver service.
+Refer to [DNS](/radar/investigate/dns/) to learn more about the aggregated and anonymized DNS queries to Khulnasoft's [1.1.1.1](/1.1.1.1/) public resolver service.

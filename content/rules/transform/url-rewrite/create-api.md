@@ -35,7 +35,7 @@ The following example sets the rules of an existing phase ruleset (`{ruleset_id}
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -107,7 +107,7 @@ The following example sets the rules of an existing phase ruleset (`{ruleset_id}
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

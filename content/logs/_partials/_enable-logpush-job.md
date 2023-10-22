@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 
 2. Select the Enterprise account or domain you want to use with Logpush.
 

@@ -7,5 +7,5 @@ inputParameters: sentenceIntro
 ---
 
 {{<Aside type="note">}}
-$1 that you [proxy the DNS records](/dns/manage-dns-records/reference/proxied-dns-records/) of your domain (or subdomain) through Cloudflare.
+$1 that you [proxy the DNS records](/dns/manage-dns-records/reference/proxied-dns-records/) of your domain (or subdomain) through Khulnasoft.
 {{</Aside>}}

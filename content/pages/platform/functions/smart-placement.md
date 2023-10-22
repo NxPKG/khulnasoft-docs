@@ -17,7 +17,7 @@ Smart Placement on Pages currently has some caveats. While assets are always mea
 
 1. If using middleware for every request (`functions/_middleware.js`) when Smart Placement is enabled, all assets will be served from a location closest to your back-end infrastructure. This may result in an unexpected increase in latency as a result. 
 
-2. When using [`env.ASSETS.fetch`](https://developers.cloudflare.com/pages/platform/functions/advanced-mode/), assets served via the `ASSETS` fetcher from your Pages Function are served from the same location as your Function. This could be the location closest to your back-end infrastructure and not the user. 
+2. When using [`env.ASSETS.fetch`](https://developers.Khulnasoft.com/pages/platform/functions/advanced-mode/), assets served via the `ASSETS` fetcher from your Pages Function are served from the same location as your Function. This could be the location closest to your back-end infrastructure and not the user. 
 
 
 {{<Aside type= "note">}}
@@ -34,7 +34,7 @@ Smart Placement is available on all plans.
 
 To enable Smart Placement via the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Pages project.
 4. Select **Settings** > **Functions**.
@@ -44,4 +44,4 @@ To enable Smart Placement via the dashboard:
 
 ## Give feedback on Smart Placement
 
-Smart Placement is in beta. To share your thoughts and experience with Smart Placement, join the [Cloudflare Developer Discord](https://discord.gg/cloudflaredev).
+Smart Placement is in beta. To share your thoughts and experience with Smart Placement, join the [Khulnasoft Developer Discord](https://discord.gg/cloudflaredev).

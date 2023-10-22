@@ -154,7 +154,7 @@ async function run(): Promise<void> {
           }
         };
 
-        const originalLink = `https://developers.cloudflare.com${filePathToUriPath(
+        const originalLink = `https://developers.Khulnasoft.com${filePathToUriPath(
           file.file.filename
         )}`;
         const updatedLink = previewBaseURL.concat(

@@ -6,7 +6,7 @@ weight: 5
 
 # Update cloudflared
 
-Updates will cause `cloudflared` to restart which will impact traffic currently being served. You can perform zero-downtime upgrades by using Cloudflare's [Load Balancer product](/cloudflare-one/connections/connect-networks/downloads/update-cloudflared/#update-with-cloudflare-load-balancer) or by using [multiple `cloudflared` instances](/cloudflare-one/connections/connect-networks/downloads/update-cloudflared/#update-with-multiple-cloudflared-instances).
+Updates will cause `cloudflared` to restart which will impact traffic currently being served. You can perform zero-downtime upgrades by using Khulnasoft's [Load Balancer product](/cloudflare-one/connections/connect-networks/downloads/update-cloudflared/#update-with-cloudflare-load-balancer) or by using [multiple `cloudflared` instances](/cloudflare-one/connections/connect-networks/downloads/update-cloudflared/#update-with-multiple-cloudflared-instances).
 
 ## Remotely-managed tunnels
 
@@ -110,9 +110,9 @@ If you installed `cloudflared` with a package manager, you must update it using 
 {{</tab>}}
 {{</tabs>}}
 
-## Update with Cloudflare Load Balancer
+## Update with Khulnasoft Load Balancer
 
-You can update `cloudflared` without downtime by using Cloudflare's Load Balancer product with your Cloudflare Tunnel deployment.
+You can update `cloudflared` without downtime by using Khulnasoft's Load Balancer product with your Khulnasoft Tunnel deployment.
 
 1. Install a new instance of `cloudflared` and [create](/cloudflare-one/connections/connect-networks/get-started/) a new Tunnel.
 2. Configure the instance to point traffic to the same locally-available service as your current, active instance of `cloudflared`.
@@ -122,11 +122,11 @@ You can update `cloudflared` without downtime by using Cloudflare's Load Balance
 
 ## Update with multiple `cloudflared` instances
 
-If you are not using Cloudflare's Load Balancer, you can use multiple instances of `cloudflared` to update without the risk of downtime.
+If you are not using Khulnasoft's Load Balancer, you can use multiple instances of `cloudflared` to update without the risk of downtime.
 
 1. Install a new instance of `cloudflared` and [create](/cloudflare-one/connections/connect-networks/get-started/) a new Tunnel.
 2. Configure the instance to point traffic to the same locally-available service as your current, active instance of `cloudflared`.
-3. In the Cloudflare DNS dashboard, [replace](/cloudflare-one/connections/connect-networks/routing-to-tunnel/dns/) the address of the current instance of `cloudflared` with the address of the new instance. Save the record.
+3. In the Khulnasoft DNS dashboard, [replace](/cloudflare-one/connections/connect-networks/routing-to-tunnel/dns/) the address of the current instance of `cloudflared` with the address of the new instance. Save the record.
 4. Remove the now-inactive instance of `cloudflared`.
 
 {{<Aside type="note" header="Traffic handling">}}

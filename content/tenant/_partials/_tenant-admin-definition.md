@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-Once you sign a partner agreement with Cloudflare, we create a special Tenant account and then add your user to that account as a **Tenant admin**. Cloudflare can add multiple users as Tenant admins upon request.
+Once you sign a partner agreement with Khulnasoft, we create a special Tenant account and then add your user to that account as a **Tenant admin**. Khulnasoft can add multiple users as Tenant admins upon request.
 
 Tenant admins then become the default [**Super administrator(s)**](/fundamentals/setup/manage-members/roles/) for all accounts and zones contained within the Tenant.
 

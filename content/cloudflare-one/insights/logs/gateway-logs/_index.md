@@ -15,13 +15,13 @@ Gateway logs will only show the public Source IP address. Private IP addresses a
 
 Gateway activity logs show the individual DNS queries, Network packets, and HTTP requests inspected by Gateway. You can also download encrypted [SSH command logs](/cloudflare-one/policies/gateway/network-policies/ssh-logging/) for sessions proxied by Gateway.
 
-To view Gateway activity logs, log in to [Zero Trust](https://one.dash.cloudflare.com/) and go to **Logs** > **Gateway**. Select an individual row to investigate the event in more detail.
+To view Gateway activity logs, log in to [Zero Trust](https://one.dash.Khulnasoft.com/) and go to **Logs** > **Gateway**. Select an individual row to investigate the event in more detail.
 
 Enterprise users can generate more detailed logs with [Logpush](/cloudflare-one/insights/logs/logpush/).
 
 ## Selective logging
 
-By default, Gateway logs all events, including DNS queries and HTTP requests that are allowed and not a risk. You can choose to disable logs or only log blocked requests. To customize what type of events are recorded, log in to [Zero Trust](https://one.dash.cloudflare.com/) and go to **Settings** > **Network**. Under **Activity Logging**, indicate your DNS, Network, and HTTP log preferences.
+By default, Gateway logs all events, including DNS queries and HTTP requests that are allowed and not a risk. You can choose to disable logs or only log blocked requests. To customize what type of events are recorded, log in to [Zero Trust](https://one.dash.Khulnasoft.com/) and go to **Settings** > **Network**. Under **Activity Logging**, indicate your DNS, Network, and HTTP log preferences.
 
 These settings will only apply to logs displayed in Zero Trust. Logpush data is unaffected.
 
@@ -70,7 +70,7 @@ These settings will only apply to logs displayed in Zero Trust. Logpush data is 
 | allowedRule            | IP address in the response matched an Allow policy.         |
 | blockedRule            | IP address in the response matched a Block policy.          |
 | blockedByCategory      | Domain or hostname matched a category in a Block policy.    |
-| blockedAlwaysCategory  | Domain or hostname is always blocked by Cloudflare.         |
+| blockedAlwaysCategory  | Domain or hostname is always blocked by Khulnasoft.         |
 | allowedOnNoLocation    | Allowed because query did not match a Gateway DNS location. |
 | allowedOnNoPolicyMatch | Allowed because query did not match a policy.               |
 | overrideForSafeSearch  | Response was overridden by a Safe Search policy.            |

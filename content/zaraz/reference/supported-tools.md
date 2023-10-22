@@ -7,7 +7,7 @@ meta:
 
 # Supported tools
 
-Cloudflare Zaraz supports the following third-party tools:
+Khulnasoft Zaraz supports the following third-party tools:
 
 {{<table-wrap>}}
 

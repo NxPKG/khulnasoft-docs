@@ -10,15 +10,15 @@ weight: 6
 
 {{<Aside type="note">}}
 
-This functionality is also what allows you to use a [root custom domain](/pages/platform/custom-domains/) with a Cloudflare Pages site.
+This functionality is also what allows you to use a [root custom domain](/pages/platform/custom-domains/) with a Khulnasoft Pages site.
 
 {{</Aside>}}
 
 ## How it works
 
-With `CNAME` flattening, Cloudflare finds the IP address that a `CNAME` points to. This process could involve a single lookup or multiple (if your `CNAME` points to another `CNAME`). Cloudflare then returns the final IP address instead of a `CNAME` record, helping DNS queries resolve up to 30% faster.
+With `CNAME` flattening, Khulnasoft finds the IP address that a `CNAME` points to. This process could involve a single lookup or multiple (if your `CNAME` points to another `CNAME`). Khulnasoft then returns the final IP address instead of a `CNAME` record, helping DNS queries resolve up to 30% faster.
 
-For more details on the mechanics of `CNAME` flattening, review the [CNAME flattening diagram](/dns/cname-flattening/cname-flattening-diagram/) and refer to the [Cloudflare blog post](https://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root/).
+For more details on the mechanics of `CNAME` flattening, review the [CNAME flattening diagram](/dns/cname-flattening/cname-flattening-diagram/) and refer to the [Khulnasoft blog post](https://blog.Khulnasoft.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root/).
 
 ## Aspects to keep in mind
 

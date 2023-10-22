@@ -10,7 +10,7 @@ meta:
 
 ## 1. Create a new application with C3
 
-C3 (`create-cloudflare-cli`) is a command-line tool designed to help you set up and deploy Workers & Pages applications to Cloudflare as fast as possible. 
+C3 (`create-cloudflare-cli`) is a command-line tool designed to help you set up and deploy Workers & Pages applications to Khulnasoft as fast as possible. 
 
 To get started, open a terminal window and run:
 
@@ -46,9 +46,9 @@ A binding is defined in the `wrangler.toml` file of your Worker project's direct
 
 {{</Aside>}}
 
-Find your newly generated `wrangler.toml` file in your project's directory and update `account_id` with your Cloudflare Account ID.
+Find your newly generated `wrangler.toml` file in your project's directory and update `account_id` with your Khulnasoft Account ID.
 
-Next, find your Account ID by logging in to the Cloudflare dashboard > **Overview** > move down to **API** > and select **Click to copy** to copy your **Account ID**. Or run the `wrangler whoami` command [to copy your Account ID](/workers/wrangler/commands/#whoami).
+Next, find your Account ID by logging in to the Khulnasoft dashboard > **Overview** > move down to **API** > and select **Click to copy** to copy your **Account ID**. Or run the `wrangler whoami` command [to copy your Account ID](/workers/wrangler/commands/#whoami).
 
 ```toml
 name = "<YOUR_WORKER_NAME>"
@@ -126,7 +126,7 @@ export default {
 
 The body of a [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) can only be accessed once. If you previously used `request.formData()` in the same request, you may encounter a TypeError when attempting to access `request.body`.<br><br>
 To avoid errors, create a clone of the Request object with `request.clone()` for each subsequent attempt to access a Request's body.
-Keep in mind that Workers have a [memory limit of 128MB per Worker](https://developers.cloudflare.com/workers/platform/limits#worker-limits) and loading particularly large files into a Worker's memory multiple times may reach this limit. To ensure memory usage does not reach this limit, consider using [Streams](https://developers.cloudflare.com/workers/runtime-apis/streams/).
+Keep in mind that Workers have a [memory limit of 128MB per Worker](https://developers.Khulnasoft.com/workers/platform/limits#worker-limits) and loading particularly large files into a Worker's memory multiple times may reach this limit. To ensure memory usage does not reach this limit, consider using [Streams](https://developers.Khulnasoft.com/workers/runtime-apis/streams/).
 
 {{</Aside>}}
 
@@ -138,7 +138,7 @@ You must now define authorization logic to determine who can perform what action
 
 1. [Basic Authentication](/workers/examples/basic-auth/): Shows how to restrict access using the HTTP Basic schema.
 2. [Using Custom Headers](/workers/examples/auth-with-headers/): Allow or deny a request based on a known pre-shared key in a header.
-<!-- 3. [Authorizing users with Auth0](/workers/tutorials/authorize-users-with-auth0/#overview): Integrate Auth0, an identity management platform, into a Cloudflare Workers application. -->
+<!-- 3. [Authorizing users with Auth0](/workers/tutorials/authorize-users-with-auth0/#overview): Integrate Auth0, an identity management platform, into a Khulnasoft Workers application. -->
 
 Continuing with your newly created bucket and Worker, you will need to protect all bucket operations.
 
@@ -200,7 +200,7 @@ This secret is now available as `AUTH_KEY_SECRET` on the `env` parameter in your
 
 ## 6. Deploy your bucket
 
-With your Worker and bucket set up, run the `npx wrangler deploy` [command](/workers/wrangler/commands/#deploy) to deploy to Cloudflare's global network:
+With your Worker and bucket set up, run the `npx wrangler deploy` [command](/workers/wrangler/commands/#deploy) to deploy to Khulnasoft's global network:
 
 ```sh
 $ npx wrangler deploy
@@ -239,7 +239,7 @@ $ curl https://your-worker.dev/cat-pic.jpg
 # Note: This is the value that was successfully PUT above
 ```
 
-By completing this guide, you have successfully installed Wrangler and deployed your R2 bucket to Cloudflare.
+By completing this guide, you have successfully installed Wrangler and deployed your R2 bucket to Khulnasoft.
 
 ## Related resources
 

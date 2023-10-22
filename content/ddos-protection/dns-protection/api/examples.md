@@ -15,7 +15,7 @@ The following sections contain example requests for common API calls. For a list
 The following example retrieves the currently configured rules for Advanced DNS Protection.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_dns_protection/configs/dns_protection/rules" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_dns_protection/configs/dns_protection/rules" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -48,7 +48,7 @@ header: Example response
 The following example creates an Advanced DNS Protection rule with a global scope.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_dns_protection/configs/dns_protection/rules" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_dns_protection/configs/dns_protection/rules" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --data '{
   "scope": "global",
@@ -92,7 +92,7 @@ The request body can contain only the fields you want to update (from `mode`, `p
 
 ```bash
 curl --request PATCH \
-"https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_dns_protection/configs/dns_protection/rules/{rule_id}" \
+"https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_dns_protection/configs/dns_protection/rules/{rule_id}" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --data '{
   "mode": "<NEW_MODE>",

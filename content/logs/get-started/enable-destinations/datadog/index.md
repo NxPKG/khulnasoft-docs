@@ -98,7 +98,7 @@ Example request using cURL:
 
 ```bash
 curl -s -X POST \
-https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/jobs \
+https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/jobs \
 -H "X-Auth-Email: <EMAIL>" \
 -H "X-Auth-Key: <API_KEY>" \
 -d '{"name":"<DOMAIN_NAME>",
@@ -134,7 +134,7 @@ Example request using cURL:
 
 ```bash
 curl -s -X PUT \
-https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/jobs/100 -d'{"enabled":true}' | jq .
+https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/jobs/100 -d'{"enabled":true}' | jq .
 ```
 
 Response:

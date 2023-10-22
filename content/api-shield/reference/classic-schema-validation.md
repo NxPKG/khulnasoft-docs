@@ -16,14 +16,14 @@ Before you can configure Schema Validation for an API, you must obtain an API Sc
 If you are in the Schema Validation 2.0 beta, you can make changes to your settings but you cannot add any new Classic Schema Validation schemas.
 
 {{<Aside type="note">}}
-This feature is only available for customers on an Enterprise plan. Contact your Cloudflare Customer Success Manager to get access.
+This feature is only available for customers on an Enterprise plan. Contact your Khulnasoft Customer Success Manager to get access.
 {{</Aside>}}
 
 ## Create an API Shield with Schema Validation
 
-To configure Schema Validation in the Cloudflare dashboard:
+To configure Schema Validation in the Khulnasoft dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Go to **Schema Validation** and select **Add schema**.
 4. Enter a descriptive name for your policy and optionally edit the expression to trigger Schema Validation.
@@ -40,7 +40,7 @@ To validate the hostname, you must include the _Hostname_ field explicitly in th
 
     If you get a validation error, ensure that you are using one of the [supported file formats](/api-shield/security/schema-validation/#specifications) and that each endpoint and method pair has a unique operation ID.
 
-After deploying your API Shield rule, Cloudflare displays a summary of all API endpoints organized by their protection level and actions that will occur for non-compliant and unprotected requests.
+After deploying your API Shield rule, Khulnasoft displays a summary of all API endpoints organized by their protection level and actions that will occur for non-compliant and unprotected requests.
 
 1. In the **Endpoint action** dropdown, select an action for every request that targets a protected endpoint and fails Schema Validation.
 2. In the **Fallthrough action** dropdown, select an action for every request that targets an unprotected endpoint.

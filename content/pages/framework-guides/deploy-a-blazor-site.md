@@ -56,7 +56,7 @@ Your `build.sh` file needs to be executable for the build command to work. You c
 
 To deploy your site to Pages:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. Select **Create application** > **Pages** > **Connect to Git**.
 

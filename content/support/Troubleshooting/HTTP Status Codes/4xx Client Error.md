@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/115003014512-4xx-Client-Error
+source: https://support.Khulnasoft.com/hc/en-us/articles/115003014512-4xx-Client-Error
 title: 4xx Client Error
 ---
 
@@ -31,19 +31,19 @@ Not yet implemented by RFC standards but reserved for future use.
 
 ### **403 Forbidden (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
-If you're seeing a 403 error without Cloudflare branding, this is always returned directly from the origin web server, not Cloudflare, and is generally related to permission rules on your server. The top reasons for this error are:
+If you're seeing a 403 error without Khulnasoft branding, this is always returned directly from the origin web server, not Khulnasoft, and is generally related to permission rules on your server. The top reasons for this error are:
 
 1. Permission rules you have set on the origin web server (in the Apache .htaccess for example)
 2. Mod\_security rules
-3. IP deny rules. You need to make sure that [Cloudflare's IP ranges](https://www.cloudflare.com/ips) aren't being blocked
+3. IP deny rules. You need to make sure that [Khulnasoft's IP ranges](https://www.Khulnasoft.com/ips) aren't being blocked
 
-Cloudflare will serve 403 responses if the request violated either a default WAF managed rule enabled for all orange-clouded Cloudflare domains or a WAF managed rule enabled for that particular zone. Read more at [WAF Managed Rules](/waf/managed-rules/).
+Khulnasoft will serve 403 responses if the request violated either a default WAF managed rule enabled for all orange-clouded Khulnasoft domains or a WAF managed rule enabled for that particular zone. Read more at [WAF Managed Rules](/waf/managed-rules/).
 
-If you're seeing a 403 response that contains Cloudflare branding in the response body, this is the HTTP response code returned along with many of our security features:
+If you're seeing a 403 response that contains Khulnasoft branding in the response body, this is the HTTP response code returned along with many of our security features:
 
 -   [WAF Custom or Managed Rules](/waf/) with the challenge or block action
 -   [Security Level](/waf/tools/security-level/), that is set to Medium by default
--   Most [1xxx Cloudflare error codes](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/)
+-   Most [1xxx Khulnasoft error codes](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/)
 -   The [Browser Integrity Check](/waf/tools/browser-integrity-check/)
 
 ### **404 Not Found (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
@@ -54,7 +54,7 @@ These errors typically occur when someone mistypes a URL on your site when there
 
 Website owners usually implement a custom page to be served when this error is generated.
 
-Cloudflare does not generate 404s for customer websites, we only proxy the request from the origin server. When seeing a 404 for your Cloudflare powered site you should contact your hosting provider for help.
+Khulnasoft does not generate 404s for customer websites, we only proxy the request from the origin server. When seeing a 404 for your Khulnasoft powered site you should contact your hosting provider for help.
 
 ### **405 Method Not Allowed (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -88,7 +88,7 @@ The request did not complete because of a conflict with the current state of the
 -   The server _should_ generate a payload that includes enough information for the client to recognize the source of the conflict.
 -   Clients can and should retry the request again
 
-Cloudflare will generate and serve a 409 response for a [Error 1001: DNS Resolution Error](https://support.cloudflare.com/hc/articles/360029779472#error1001).
+Khulnasoft will generate and serve a 409 response for a [Error 1001: DNS Resolution Error](https://support.Khulnasoft.com/hc/articles/360029779472#error1001).
 
 ### **410 Gone (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -109,7 +109,7 @@ Server denies the request because the resource failed to meet the conditions spe
 
 For an example of version control, a client is modifying an existing resource and thus sets the `If-Unmodified-Since` header to match the date that the client downloaded the resource and began edits. If the resource was edited (likely by another client) after this date and before the upload of the edits, this response will be generated since the date of the last edit will come after the date set in `If-Unmodified-Since` by the client.
 
-Cloudflare will serve this response. For more information, refer to: [ETag Headers](/cache/reference/etag-headers/)
+Khulnasoft will serve this response. For more information, refer to: [ETag Headers](/cache/reference/etag-headers/)
 
 ### **413 Payload Too Large  (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -121,7 +121,7 @@ Refusal from the server to process the request because the payload sent from the
 
 Refusal from the server that the URI was too long to be processed. For example, if a client is attempting a GET request with an unusually long URI after a POST, this could be seen as a security risk and a 414 gets generated.
 
-Cloudflare will generate this response for a URI longer than 32KB
+Khulnasoft will generate this response for a URI longer than 32KB
 
 ### **415 Unsupported Media Type (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -145,7 +145,7 @@ Failure of server to meet the requirements specified in the `Expect` header of
 
 Client has sent too many requests in the specified amount of time according to the server. Often known as "rate-limiting". Server may respond with information allowing the requester to retry after a specific period of time.
 
-Cloudflare will generate and send this status code when a request is being [rate limited](https://www.cloudflare.com/rate-limiting/). If visitors to your site are receiving these error codes, you will be able to see this in the [Rate Limiting Analytics](/waf/reference/legacy/old-rate-limiting/#analytics).
+Khulnasoft will generate and send this status code when a request is being [rate limited](https://www.Khulnasoft.com/rate-limiting/). If visitors to your site are receiving these error codes, you will be able to see this in the [Rate Limiting Analytics](/waf/reference/legacy/old-rate-limiting/#analytics).
 
 ### **451 Unavailable For Legal Reason (**[**RFC7725**](https://tools.ietf.org/html/rfc7725)**)**
 
@@ -159,26 +159,26 @@ Typically search engines (e.g. Google) and ISP (e.g. ATT) are the ones affected 
 
 nginx specific response code to indicate when the connection has been closed by the client while the server is still processing its request, making server unable to send a status code back.
 
--   This will be shown in [Cloudflare Logs](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-REST-API) and status code analytics for Enterprise customers.
+-   This will be shown in [Khulnasoft Logs](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-REST-API) and status code analytics for Enterprise customers.
 
 {{<Aside type="tip">}}
-Since Cloudflare was built on nginx, we also have a 499 HTTP code in Cloudflare Logs
+Since Khulnasoft was built on nginx, we also have a 499 HTTP code in Khulnasoft Logs
 and analytics for connections which go away before we have finished
 processing the request. It is expected behavior to see these at your
 logs intermittently as clients close connections.
 {{</Aside>}}
 
-To provide more context, a TCP connection must be established between Cloudflare and the website's Origin server before any higher protocol (in this case is HTTP) started the "conversation". In order to establish a connection, TCP uses a three-way handshake :
+To provide more context, a TCP connection must be established between Khulnasoft and the website's Origin server before any higher protocol (in this case is HTTP) started the "conversation". In order to establish a connection, TCP uses a three-way handshake :
 
-* SYN: Cloudflare sends three SYN packets to the origin server.
+* SYN: Khulnasoft sends three SYN packets to the origin server.
 * SYN+ACK: In response, the origin server replies with an SYN+ACK.
-* ACK: Finally, Cloudflare sends an ACK back to the origin server.
+* ACK: Finally, Khulnasoft sends an ACK back to the origin server.
 
-At this point, both Cloudflare and the origin server have received an acknowledgment of the connection, and communication is established. However, if the origin server does not send an SYN+ACK back to Cloudflare **within 15 seconds, Cloudflare will retry one more time (another 15 seconds timeout)**.
+At this point, both Khulnasoft and the origin server have received an acknowledgment of the connection, and communication is established. However, if the origin server does not send an SYN+ACK back to Khulnasoft **within 15 seconds, Khulnasoft will retry one more time (another 15 seconds timeout)**.
 
 So, depending on the timeout value on the client-side, there will be 3 different scenarios along with each own status code generated :
 
-* If the client has a shorter timeout (less than 30s), they will give up the connection, and thus Cloudflare logs the 499 error.
-* If the client has a higher timeout (more than 30s), once the TCP connection has been successfully established, the HTTP transaction will be continued as per normal. In this case, Cloudflare returns a normal status code (HTTP 200).
-* If the client has a higher timeout and Cloudflare was unable to establish the TCP handshake with the Origin server, we will return HTTP 522.
+* If the client has a shorter timeout (less than 30s), they will give up the connection, and thus Khulnasoft logs the 499 error.
+* If the client has a higher timeout (more than 30s), once the TCP connection has been successfully established, the HTTP transaction will be continued as per normal. In this case, Khulnasoft returns a normal status code (HTTP 200).
+* If the client has a higher timeout and Khulnasoft was unable to establish the TCP handshake with the Origin server, we will return HTTP 522.
 

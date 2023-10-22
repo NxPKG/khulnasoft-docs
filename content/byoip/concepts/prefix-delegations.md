@@ -12,9 +12,9 @@ The effect of a delegation depends on the service used with the prefix. Currentl
 
 ## CDN
 
-CDN delegations only have an effect if you are using [Cloudflare for SaaS](/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/) in addition to BYOIP + CDN. 
+CDN delegations only have an effect if you are using [Khulnasoft for SaaS](/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/) in addition to BYOIP + CDN. 
 
-In this example, Account A is using BYOIP + CDN and Cloudflare for SaaS. Account A can validate and serve traffic for a custom hostname on any of the IPs in its prefix. If Account A delegates some or all of the prefix to Account B, Account B may also validate and serve traffic for custom hostnames on those IPs as well. This is very useful if you use Cloudflare for SaaS but manage different configurations in different accounts. All the accounts can use the IPs through a delegation.
+In this example, Account A is using BYOIP + CDN and Khulnasoft for SaaS. Account A can validate and serve traffic for a custom hostname on any of the IPs in its prefix. If Account A delegates some or all of the prefix to Account B, Account B may also validate and serve traffic for custom hostnames on those IPs as well. This is very useful if you use Khulnasoft for SaaS but manage different configurations in different accounts. All the accounts can use the IPs through a delegation.
 
 ## API calls for prefix delegations
 
@@ -22,7 +22,7 @@ API calls for delegations can be found at [Prefix Delegations](/api/operations/i
 
 ## Configure prefix delegations
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **IP Addresses** > **IP Prefixes**.
 2. Select **Edit** to modify a prefix. **Edit IP Prefixes** displays.
 3. At the bottom of the page, select **Add Delegation**. Other accounts that your user is a part of will auto-load when you create the delegation.

@@ -10,7 +10,7 @@ meta:
 
 {{<render file="posture/_available-for-warp-with-gateway.md">}}
 
-Cloudflare Zero Trust can check if [SentinelOne](https://www.sentinelone.com/) is running on a device to determine if a request should be allowed to reach a protected resource.
+Khulnasoft Zero Trust can check if [SentinelOne](https://www.sentinelone.com/) is running on a device to determine if a request should be allowed to reach a protected resource.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ Before you start, make sure SentinelOne is installed on your machine.
 
 ## Configure the SentinelOne check
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 
 2. Scroll down to **WARP client checks** and select **Add new**.
 

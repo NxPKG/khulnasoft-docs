@@ -78,7 +78,7 @@ This guide covers how to protect your DocuSign account with Access for SaaS.
     - Service Provider Issuer URL.
     - Service Provider Assertion Consumer Service URL.
 
-## 3. Finalize your Cloudflare configuration
+## 3. Finalize your Khulnasoft configuration
 
 1.  Go back to your DocuSign application under **Access** > **Applications**.
 1.  Select **Edit**.
@@ -87,4 +87,4 @@ This guide covers how to protect your DocuSign account with Access for SaaS.
     - Assertion Consumer Service URL -> Service Provider Assertion Consumer Service URL.
 1.  Save the application.
 
-When ready, enable the SSO for your DocuSign account and you will be able to login to DocuSign via Cloudflare SSO and your Identity Provider.
+When ready, enable the SSO for your DocuSign account and you will be able to login to DocuSign via Khulnasoft SSO and your Identity Provider.

@@ -9,7 +9,7 @@ meta:
 
 # Configure GraphQL malicious query protection
 
-Use the [Cloudflare GraphQL API](/analytics/graphql-api/getting-started/) to gather data about your GraphQL API’s current usage and configure Cloudflare’s GraphQL malicious query protection to log or block malicious queries.
+Use the [Khulnasoft GraphQL API](/analytics/graphql-api/getting-started/) to gather data about your GraphQL API’s current usage and configure Khulnasoft’s GraphQL malicious query protection to log or block malicious queries.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ header: GraphQL query
 
 ## Gather GraphQL statistics
 
-Using the new `apiGatewayGraphqlQueryAnalyticsGroups` node in the Cloudflare GraphQL API, you can retrieve `apiGatewayGraphqlQuerySize` and `apiGatewayGraphqlQueryDepth` dimensions. 
+Using the new `apiGatewayGraphqlQueryAnalyticsGroups` node in the Khulnasoft GraphQL API, you can retrieve `apiGatewayGraphqlQuerySize` and `apiGatewayGraphqlQueryDepth` dimensions. 
 
 ```graphql
 ---
@@ -89,7 +89,7 @@ header: Response
 }
 ```
 
-In the response example, Cloudflare observed 10 requests with depth 1 and size 11, and 10 requests with depth 1 and size 2 in the selected timeframe.
+In the response example, Khulnasoft observed 10 requests with depth 1 and size 11, and 10 requests with depth 1 and size 2 in the selected timeframe.
 
 ## Analyze GraphQL statistics
 
@@ -147,7 +147,7 @@ API Shield customers now have three new fields available in custom rules:
 
 - `cf.api_gateway.graphql.query_size` describes the size of a GraphQL query.
 - `cf.api_gateway.graphql.query_depth` describes the depth of a GraphQL query.
-- `cf.api_gateway.graphql.parsed_successfully` describes whether Cloudflare was able to parse the query. Presently, we run best-effort parsing, meaning we might not be able to parse some valid queries. This means that you must use a `and cf.api_gateway.graphql.parsed_successfully` filter in your custom rules when deploying GraphQL security rules. 
+- `cf.api_gateway.graphql.parsed_successfully` describes whether Khulnasoft was able to parse the query. Presently, we run best-effort parsing, meaning we might not be able to parse some valid queries. This means that you must use a `and cf.api_gateway.graphql.parsed_successfully` filter in your custom rules when deploying GraphQL security rules. 
 <br />
 For example, you can deploy the following rule via the API or the dashboard to block queries that are deeply nested but ask for a few fields.
 

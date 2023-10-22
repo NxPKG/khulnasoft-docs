@@ -31,7 +31,7 @@ To manage the TLS version applied to your whole zone when proxied through Cloudf
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2.  Select your website.
 3.  Go to **SSL/TLS** > **Edge Certificates**.
 4.  For **Minimum TLS Version**, select an option.

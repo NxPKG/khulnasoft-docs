@@ -12,7 +12,7 @@ For basic uploads, you will need to add the Creator ID after you upload the vide
 ## Upload from URL
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/copy" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/copy" \
      -H "Authorization: Bearer <API_TOKEN>" \
      -H "Content-Type: application/json" \
      --data '{"url":"https://example.com/myvideo.mp4","creator": "<CREATOR_ID>","thumbnailTimestampPct":0.529241,"allowedOrigins":["example.com"],"requireSignedURLs":true,"watermark":{"uid":"ea95132c15732412d22c1476fa83f27a"}}'
@@ -83,7 +83,7 @@ highlight: [35]
 You can associate videos with a single creator by setting a default creator ID value, which you can later use for searching for videos by creator ID or for analytics data.
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/stream/live_inputs"
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/$ACCOUNT_ID/stream/live_inputs"
 –header ‘X-Auth-Email: --’
 –header ‘X-Auth-Key: --’
 –data ‘{“DefaultCreator”:“1234”}’
@@ -98,7 +98,7 @@ At this time, you can only manage the default creator ID values via the API.
 To update the creator property in existing videos, make a POST request to the video object endpoint with a JSON payload specifying the creator property as show in the example below.
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>" \
   -H "Authorization: Bearer <AUTH_TOKEN>" \
   -d '{"creator":"test123"}'  
 ```
@@ -106,7 +106,7 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/
 ## Direct creator upload
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/direct_upload" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/direct_upload" \
      -H "Authorization: Bearer <AUTH_TOKEN>" \
      -H "Content-Type: application/json" \
      --data '{"maxDurationSeconds":300,"expiry":"2021-01-02T02:20:00Z","creator": "<CREATOR_ID>", "thumbnailTimestampPct":0.529241,"allowedOrigins":["example.com"],"requireSignedURLs":true,"watermark":{"uid":"ea95132c15732412d22c1476fa83f27a"}}'
@@ -146,7 +146,7 @@ highlight: [8]
 ## Get videos by Creator ID
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream?after=2014-01-02T02:20:00Z&before=2014-01-02T02:20:00Z&include_counts=false&creator=<CREATOR_ID>&limit=undefined&asc=false&status=downloading,queued,inprogress,ready,error" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream?after=2014-01-02T02:20:00Z&before=2014-01-02T02:20:00Z&include_counts=false&creator=<CREATOR_ID>&limit=undefined&asc=false&status=downloading,queued,inprogress,ready,error" \
      -H "Authorization: Bearer <API_TOKEN>" \
      -H "Content-Type: application/json"
 ```

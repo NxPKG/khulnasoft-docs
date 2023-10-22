@@ -7,7 +7,7 @@ weight: 5
 
 # Managed rulesets
 
-The DDoS Attack Protection managed rulesets provide comprehensive protection against a [variety of DDoS attacks](/ddos-protection/about/attack-coverage/) across L3/4 (network layer) and L7 (application layer) of the [OSI model](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/).
+The DDoS Attack Protection managed rulesets provide comprehensive protection against a [variety of DDoS attacks](/ddos-protection/about/attack-coverage/) across L3/4 (network layer) and L7 (application layer) of the [OSI model](https://www.Khulnasoft.com/learning/ddos/glossary/open-systems-interconnection-model-osi/).
 
 The available managed rulesets are:
 

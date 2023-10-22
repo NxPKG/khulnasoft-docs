@@ -14,7 +14,7 @@ Sending messages from the dashboard allows you to debug Queues or queue consumer
 
 To send messages from the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages** > **Queues**.
 3. Select the queue to send a message to.
 4. Select the **Messages** tab.

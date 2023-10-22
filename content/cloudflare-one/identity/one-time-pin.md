@@ -6,7 +6,7 @@ weight: 2
 
 # One-time PIN login
 
-Cloudflare Access can send a one-time PIN (OTP) to approved email addresses as an alternative to integrating an identity provider. You can simultaneously configure OTP login and the identity provider of your choice to allow users to select their own authentication method.
+Khulnasoft Access can send a one-time PIN (OTP) to approved email addresses as an alternative to integrating an identity provider. You can simultaneously configure OTP login and the identity provider of your choice to allow users to select their own authentication method.
 
 For example, if your team uses Okta® but you are collaborating with someone outside your organization, you can use OTP to grant access to guests.
 

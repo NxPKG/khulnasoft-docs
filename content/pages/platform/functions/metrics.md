@@ -12,7 +12,7 @@ Functions metrics can help you diagnose issues and understand your workloads by 
 
 Functions metrics aggregate request data for an individual Pages project. To view your Functions metrics:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In **Account Home**, select **Workers & Pages** > in **Overview**, select your Pages project.
 3. In your Pages project, select **Functions Metrics**.
 
@@ -26,7 +26,7 @@ There are three metrics that can help you understand the health of your Function
 
 In **Functions metrics**, you can see historical request counts broken down into total requests, successful requests and errored requests. Information on subrequests is available by selecting **Subrequests**.
 
-* **Total**: All incoming requests registered by a Function. Requests blocked by [Web Application Firewall (WAF)](https://www.cloudflare.com/waf/) or other security features will not count.
+* **Total**: All incoming requests registered by a Function. Requests blocked by [Web Application Firewall (WAF)](https://www.Khulnasoft.com/waf/) or other security features will not count.
 * **Success**: Requests that returned a `Success` or `Client Disconnected` [invocation status](#invocation-statuses). 
 * **Errors**: Requests that returned a `Script Threw Exception`, `Exceeded Resources`, or `Internal Error` [invocation status](#invocation-statuses)
 * **Subrequests**: Requests triggered by calling `fetch` from within a Function. When your Function fetches a static asset, it will count as a subrequest. A subrequest that throws an uncaught error will not be counted.

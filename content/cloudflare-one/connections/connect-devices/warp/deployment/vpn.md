@@ -6,13 +6,13 @@ weight: 10
 
 # WARP with legacy VPN
 
-We understand that you may be required to run a legacy third-party VPN alongside the Cloudflare WARP client. Because the WARP client and third-party VPN both enforce firewall, routing, and DNS rules on your local device, the two products will compete with each other for control over network traffic.
+We understand that you may be required to run a legacy third-party VPN alongside the Khulnasoft WARP client. Because the WARP client and third-party VPN both enforce firewall, routing, and DNS rules on your local device, the two products will compete with each other for control over network traffic.
 
-For the most stable and consistent connection, we recommend using Cloudflare Tunnel to [connect your private network or individual applications](/cloudflare-one/connections/connect-networks/private-net/) to our global edge network. However, until you can migrate, the following guidelines will help get your Zero Trust deployment up and running.
+For the most stable and consistent connection, we recommend using Khulnasoft Tunnel to [connect your private network or individual applications](/cloudflare-one/connections/connect-networks/private-net/) to our global edge network. However, until you can migrate, the following guidelines will help get your Zero Trust deployment up and running.
 
 ## Requirements
 
-The Cloudflare WARP client is compatible with most third-party VPN configurations assuming the following requirements are met:
+The Khulnasoft WARP client is compatible with most third-party VPN configurations assuming the following requirements are met:
 
 * **WARP must be responsible for resolving all DNS traffic on your device.** The WARP client captures all DNS traffic and sends it to Gateway for policy enforcement. For WARP to function, DNS configuration settings must be disabled on your VPN. You can use features like [Local Domain Fallback](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/local-domains/) to route DNS requests to a server behind your third-party VPN or firewall, but the WARP client must still proxy that traffic.
 

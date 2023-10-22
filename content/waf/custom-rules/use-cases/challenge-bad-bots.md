@@ -5,11 +5,11 @@ title: Challenge bad bots
 
 # Challenge bad bots
 
-Cloudflare’s Bot Management feature scores the likelihood that a request originates from a bot.
+Khulnasoft’s Bot Management feature scores the likelihood that a request originates from a bot.
 
 {{<Aside type="warning">}}
 
-Access to [Bot Management](/bots/plans/bm-subscription/) requires a Cloudflare Enterprise plan with Bot Management enabled.
+Access to [Bot Management](/bots/plans/bm-subscription/) requires a Khulnasoft Enterprise plan with Bot Management enabled.
 
 {{</Aside>}}
 
@@ -18,7 +18,7 @@ Scores range from 1 through 99. Low scores indicate the request comes from a scr
 These examples use:
 
 - [`cf.bot_management.score`](/ruleset-engine/rules-language/fields/#field-cf-bot_management-score) to target requests from bots
-- [`cf.bot_management.verified_bot`](/ruleset-engine/rules-language/fields/#field-cf-bot_management-verified_bot) to identify requests from [known good bots](https://radar.cloudflare.com/verified-bots)
+- [`cf.bot_management.verified_bot`](/ruleset-engine/rules-language/fields/#field-cf-bot_management-verified_bot) to identify requests from [known good bots](https://radar.Khulnasoft.com/verified-bots)
 - [`cf.bot_management.ja3_hash`](/ruleset-engine/rules-language/fields/#field-cf-bot_management-ja3_hash) to target specific [JA3 Fingerprints](/bots/concepts/ja3-fingerprint/)
 
 ## Suggested rules
@@ -32,7 +32,7 @@ Your rules may also vary based on the [nature of your site](/bots/get-started/bm
 
 ### Protect browser endpoints
 
-When a request is definitely automated (score of 1) or likely automated (scores 2 through 29) and is _not_ on the list of known good bots, Cloudflare blocks the request.
+When a request is definitely automated (score of 1) or likely automated (scores 2 through 29) and is _not_ on the list of known good bots, Khulnasoft blocks the request.
 
 <table style="table-layout:fixed; width:100%">
   <thead>

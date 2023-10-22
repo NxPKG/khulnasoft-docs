@@ -5,14 +5,14 @@ pcx_content_type: overview
 weight: 1
 layout: list
 meta:
-  title: Cloudflare Zero Trust
+  title: Khulnasoft Zero Trust
 ---
 
-# Cloudflare Zero Trust
+# Khulnasoft Zero Trust
 
 {{<content-column>}}
 
-Cloudflare Zero Trust replaces legacy security perimeters with our global network, making the Internet faster and safer for teams around the world.
+Khulnasoft Zero Trust replaces legacy security perimeters with our global network, making the Internet faster and safer for teams around the world.
 
 {{<render file="_non-contract-enablement.md" productFolder="fundamentals" >}}
 

@@ -4,7 +4,7 @@ title: Create via API
 weight: 7
 meta:
   title: Create Bulk Redirects via API
-  description: Learn how to create Bulk Redirects using the Cloudflare API.
+  description: Learn how to create Bulk Redirects using the Khulnasoft API.
 ---
 
 # Create Bulk Redirects via API
@@ -25,7 +25,7 @@ Use the [Create a list](/api/operations/lists-create-a-list) operation to create
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rules/lists \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -71,7 +71,7 @@ Use the [Create list items](/api/operations/lists-create-list-items) operation t
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists/f848b6ccb07647749411f504d6f88794/items \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rules/lists/f848b6ccb07647749411f504d6f88794/items \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '[
@@ -113,7 +113,7 @@ This is an asynchronous operation. The response will contain an `operation_id` w
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists/bulk_operations/92558f8b296d4dbe9d0419e0e53f6622 \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rules/lists/bulk_operations/92558f8b296d4dbe9d0419e0e53f6622 \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -152,7 +152,7 @@ The following request of the [Create an account ruleset](/api/operations/createA
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -219,7 +219,7 @@ If there is already a phase entry point ruleset for the `http_request_redirect` 
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

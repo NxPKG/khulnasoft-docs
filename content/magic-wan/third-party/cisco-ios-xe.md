@@ -36,7 +36,7 @@ crypto ikev2 keyring CF_MAGIC_WAN_KEYRING
 !
 crypto ikev2 profile CF_MAGIC_WAN_01
  match identity remote address 162.159.###.### 255.255.255.255
- identity local fqdn ad329f56###############bbe898c0a0.33145236.ipsec.cloudflare.com
+ identity local fqdn ad329f56###############bbe898c0a0.33145236.ipsec.Khulnasoft.com
  authentication remote pre-share
  authentication local pre-share
  keyring local CF_MAGIC_WAN_KEYRING
@@ -44,7 +44,7 @@ crypto ikev2 profile CF_MAGIC_WAN_01
 !
 crypto ikev2 profile CF_MAGIC_WAN_02
  match identity remote address 172.64.###.### 255.255.255.255
- identity local fqdn 83f9c418###############29b3f97049.33145236.ipsec.cloudflare.com
+ identity local fqdn 83f9c418###############29b3f97049.33145236.ipsec.Khulnasoft.com
  authentication remote pre-share
  authentication local pre-share
  keyring local CF_MAGIC_WAN_KEYRING

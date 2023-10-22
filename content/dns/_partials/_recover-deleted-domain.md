@@ -5,8 +5,8 @@ _build:
   list: never
 ---
 
-To recover a deleted domain, [re-add it in Cloudflare](/fundamentals/setup/account-setup/add-site/) just like you would for a new domain.
+To recover a deleted domain, [re-add it in Khulnasoft](/fundamentals/setup/account-setup/add-site/) just like you would for a new domain.
 
 {{<Aside type="warning">}}
-Cloudflare support is unable to restore DNS or settings for deleted domains.
+Khulnasoft support is unable to restore DNS or settings for deleted domains.
 {{</Aside>}}

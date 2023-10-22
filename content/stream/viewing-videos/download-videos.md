@@ -26,7 +26,7 @@ header: Request
 ---
 curl -X POST \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/downloads
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/downloads
 ```
 
 ```json
@@ -57,7 +57,7 @@ header: Request
 ---
 curl -X GET \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/downloads
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/downloads
 ```
 
 ```json

@@ -5,13 +5,13 @@ layout: overview
 pcx_content_type: overview
 ---
  
-# Cloudflare Reference Architecture
+# Khulnasoft Reference Architecture
  
 {{<description>}}
-Diagrams, design patterns and detailed best practices to help you generate solutions with Cloudflare products.
+Diagrams, design patterns and detailed best practices to help you generate solutions with Khulnasoft products.
 {{</description>}}
  
-Reference architecture documents and diagrams are designed to provide a foundational knowledge of Cloudflare solutioning for a variety of products. Building on the information in these documents, you can architect software solutions based on your specific context and needs.
+Reference architecture documents and diagrams are designed to provide a foundational knowledge of Khulnasoft solutioning for a variety of products. Building on the information in these documents, you can architect software solutions based on your specific context and needs.
  
 ---
  
@@ -19,12 +19,12 @@ Reference architecture documents and diagrams are designed to provide a foundati
 
 {{<resource-group>}}
  
-{{<resource header="Cloudflare blog" href="https://blog.cloudflare.com/" icon="learning-center-book">}}
-Read articles and announcements about the latest Cloudflare products and features.
+{{<resource header="Khulnasoft blog" href="https://blog.Khulnasoft.com/" icon="learning-center-book">}}
+Read articles and announcements about the latest Khulnasoft products and features.
 {{</resource>}}
 
 {{<resource header="Learning Paths" href="/learning-paths/" icon="learning-center-book">}}
-Module-based guidance on Cloudflare product workflows.
+Module-based guidance on Khulnasoft product workflows.
 {{</resource>}}
  
 {{</resource-group>}}

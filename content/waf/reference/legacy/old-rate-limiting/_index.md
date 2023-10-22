@@ -1,14 +1,14 @@
 ---
 pcx_content_type: concept
-source: https://support.cloudflare.com/hc/en-us/articles/115001635128-Configuring-Cloudflare-Rate-Limiting
+source: https://support.Khulnasoft.com/hc/en-us/articles/115001635128-Configuring-Khulnasoft-Rate-Limiting
 title: Rate Limiting (previous version)
 weight: 3
 layout: single
 ---
 
-# Cloudflare Rate Limiting (previous version)
+# Khulnasoft Rate Limiting (previous version)
 
-Cloudflare Rate Limiting automatically identifies and mitigates excessive request rates for specific URLs or for an entire domain.
+Khulnasoft Rate Limiting automatically identifies and mitigates excessive request rates for specific URLs or for an entire domain.
 
 {{<Aside type="warning">}}
 The information in this page refers to the previous version of rate limiting rules (now deprecated), which are billed based on usage.
@@ -16,16 +16,16 @@ The information in this page refers to the previous version of rate limiting rul
 To benefit from unmetered rate limiting, rewrite your current rules in the [new version of rate limiting rules](/waf/rate-limiting-rules/). For more information, refer to the [migration guide](/waf/reference/migration-guides/old-rate-limiting-deprecation/).
 {{</Aside>}}
 
-Request rates are calculated locally for individual Cloudflare data centers. The most common uses for Rate Limiting are:
+Request rates are calculated locally for individual Khulnasoft data centers. The most common uses for Rate Limiting are:
 
-- Protect against [DDoS attacks](https://www.cloudflare.com/learning/ddos/glossary/denial-of-service/)
-- Protect against [Brute-force attack](https://www.cloudflare.com/learning/bots/brute-force-attack/)
+- Protect against [DDoS attacks](https://www.Khulnasoft.com/learning/ddos/glossary/denial-of-service/)
+- Protect against [Brute-force attack](https://www.Khulnasoft.com/learning/bots/brute-force-attack/)
 - Limit access to forum searches, API calls, or resources that involve database-intensive operations at your origin
 
 Once an individual IPv4 address or IPv6 `/64` IP range exceeds a rule threshold, further requests to the origin server are blocked with an `HTTP 429` response status code. The response includes a `Retry-After` header to indicate when the client can resume sending requests.
 
 {{<Aside type="note">}}
-Are you trying to enable Rate Limiting? [Enable Rate Limiting](https://dash.cloudflare.com/?to=/:account/:zone/firewall/tools).
+Are you trying to enable Rate Limiting? [Enable Rate Limiting](https://dash.Khulnasoft.com/?to=/:account/:zone/firewall/tools).
 {{</Aside>}}
 
 ### Rate limiting and SEO
@@ -37,7 +37,7 @@ ___
 ## Availability
 
 {{<Aside type="note">}}
-Cloudflare Rate Limiting (previous version) is an add-on service for all customer plans, available in **Security** > **WAF** > **Rate limiting rules**.
+Khulnasoft Rate Limiting (previous version) is an add-on service for all customer plans, available in **Security** > **WAF** > **Rate limiting rules**.
 {{</Aside>}}
 
 The number of allowed rate limiting rules depends on the domain’s plan:
@@ -53,7 +53,7 @@ The number of allowed rate limiting rules depends on the domain’s plan:
 
 {{</table-wrap>}}
 
-Cloudflare Rate Limiting supports multiple levels of configuration control depending on the domain’s Cloudflare plan. The table below maps out what you can do based on your plan:
+Khulnasoft Rate Limiting supports multiple levels of configuration control depending on the domain’s Khulnasoft plan. The table below maps out what you can do based on your plan:
 
 {{<table-wrap>}}
 
@@ -126,13 +126,13 @@ Rule mitigations consist of mitigation action and ban duration.
 
 Rate limit actions are based on the domain plan as mentioned in [Availability](#availability):
 
-- **Block**: Cloudflare issues an `HTTP 429` error when the threshold is exceeded.
-- **JS Challenge**: Visitor must pass a Cloudflare JavaScript Challenge. If passed, Cloudflare allows the request.
-- **Managed Challenge (recommended)**: Visitor must pass a challenge dynamically chosen by Cloudflare based on the characteristics of the request. If passed, Cloudflare allows the request.
-- **Interactive Challenge**: Visitor must pass an Interactive Challenge. If passed, Cloudflare allows the request.
-- **Log**: Requests are logged in [Cloudflare Logs](/logs/). This helps test rules before applying to production.
+- **Block**: Khulnasoft issues an `HTTP 429` error when the threshold is exceeded.
+- **JS Challenge**: Visitor must pass a Khulnasoft JavaScript Challenge. If passed, Khulnasoft allows the request.
+- **Managed Challenge (recommended)**: Visitor must pass a challenge dynamically chosen by Khulnasoft based on the characteristics of the request. If passed, Khulnasoft allows the request.
+- **Interactive Challenge**: Visitor must pass an Interactive Challenge. If passed, Khulnasoft allows the request.
+- **Log**: Requests are logged in [Khulnasoft Logs](/logs/). This helps test rules before applying to production.
 
-For more information on challenge actions, refer to [Cloudflare challenges](/firewall/cf-firewall-rules/cloudflare-challenges/).
+For more information on challenge actions, refer to [Khulnasoft challenges](/firewall/cf-firewall-rules/cloudflare-challenges/).
 
 #### Ban duration
 
@@ -144,7 +144,7 @@ ___
 
 ## Identify rate-limit thresholds
 
-To identify a general threshold for Cloudflare Rate Limiting, divide 24 hours of uncached website requests by the unique visitors for the same 24 hours. Then, divide by the estimated average minutes of a visit. Finally, multiply by 4 (or larger) to establish an estimated threshold per minute for your website. A value higher than 4 is fine since most attacks are an order of magnitude above typical traffic rates.
+To identify a general threshold for Khulnasoft Rate Limiting, divide 24 hours of uncached website requests by the unique visitors for the same 24 hours. Then, divide by the estimated average minutes of a visit. Finally, multiply by 4 (or larger) to establish an estimated threshold per minute for your website. A value higher than 4 is fine since most attacks are an order of magnitude above typical traffic rates.
 
 To identify URL rate limits for specific URLs, use 24 hours of uncached requests and unique visitors for the specific URL. Adjust thresholds based on user reports and your own monitoring.
 
@@ -158,7 +158,7 @@ The following sections cover two common types of rate limiting rules.
 
 Rate Limiting features a one-click **Protect your login** tool that creates a rule to block the client for 15 minutes when sending more than 5 POST requests within 5 minutes. This is sufficient to block most brute-force attempts.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Security** > **WAF** > **Rate limiting rules**.
 3. Under **Rate Limiting**, select **Protect your login**.
 4. Enter **Rule Name** and **Enter your login URL** in the **Protect your login** dialog that appears.
@@ -167,7 +167,7 @@ Rate Limiting features a one-click **Protect your login** tool that creates a ru
 
 ### Create a custom rate limiting rule
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 
 2. Go to **Security** > **WAF** > **Rate limiting rules**.
 
@@ -218,7 +218,7 @@ To configure your advanced criteria for a new or existing rule:
 
 3. Filter by **HTTP Response Header(s)**. Select **Add header response field** to include headers returned by your origin web server.
 
-    The `CF-Cache-Status` header appears by default so that Cloudflare serves cached resources rather than rate limit those resources. To also rate limit cached resources, remove this header by selecting **X** or enable **Also apply rate limit to cached assets**.
+    The `CF-Cache-Status` header appears by default so that Khulnasoft serves cached resources rather than rate limit those resources. To also rate limit cached resources, remove this header by selecting **X** or enable **Also apply rate limit to cached assets**.
 
     If you have more than one header under **HTTP Response Header(s)**, an _AND_ boolean logic applies. To exclude a header, use the _Not Equals_ option. Each header is case insensitive.
 
@@ -232,7 +232,7 @@ ___
 
 ## Task 3: Configure Advanced Response (only Business and Enterprise plans)
 
-The **Advanced Response** option configures the information format returned by Cloudflare when a rule's threshold is exceeded. Use **Advanced Response** when you wish to return static plain text or JSON content.
+The **Advanced Response** option configures the information format returned by Khulnasoft when a rule's threshold is exceeded. Use **Advanced Response** when you wish to return static plain text or JSON content.
 
 To configure a plain text or JSON response:
 
@@ -250,7 +250,7 @@ To configure a plain text or JSON response:
 
 ### Using a custom HTML page or a redirect
 
-If you wish to display a custom HTML page, configure an custom page for `HTTP 429` errors (`Too many requests`) in the dashboard. Cloudflare will display this page when you select _Default Cloudflare Rate Limiting Page_ in **Response type** (the default value for the field).
+If you wish to display a custom HTML page, configure an custom page for `HTTP 429` errors (`Too many requests`) in the dashboard. Khulnasoft will display this page when you select _Default Khulnasoft Rate Limiting Page_ in **Response type** (the default value for the field).
 
 You can use the following method to redirect a rate-limited client to a specific URL:
 
@@ -273,7 +273,7 @@ You can use the following method to redirect a rate-limited client to a specific
 
     Take note of the public URL of the page you created.
 
-2. In the Cloudflare dashboard, go to Account Home > **Configurations** > **Custom Pages**.
+2. In the Khulnasoft dashboard, go to Account Home > **Configurations** > **Custom Pages**.
 
 3. Under **429 errors**, select **Custom Pages**.
 
@@ -283,7 +283,7 @@ Follow the same approach if you wish to return plain text or JSON content but th
 
 {{<Aside type="note" header="Notes">}}
 - Your rate limiting rule must not match the redirect URL you included in the custom HTML page for `429` errors.
-- To protect from denial-of-service (DoS) attacks, the page for the redirect should only include resources cached by Cloudflare.
+- To protect from denial-of-service (DoS) attacks, the page for the redirect should only include resources cached by Khulnasoft.
 {{</Aside>}}
 
 ___
@@ -308,9 +308,9 @@ ___
 
 ## Analytics
 
-View rate limiting analytics in **Analytics** > **Security**. Rate Limiting analytics uses solid lines to represent traffic that matches simulated requests and dotted lines to portray actual blocked requests. Logs generated by a rate limiting rule are only visible to Enterprise customers via [Cloudflare Logs](/logs/).
+View rate limiting analytics in **Analytics** > **Security**. Rate Limiting analytics uses solid lines to represent traffic that matches simulated requests and dotted lines to portray actual blocked requests. Logs generated by a rate limiting rule are only visible to Enterprise customers via [Khulnasoft Logs](/logs/).
 
-Cloudflare returns an `HTTP 429` error for blocked requests. Details on blocked requests per location are provided to Enterprise customers under **Status codes** in the analytics dashboard available at **Analytics** > **Traffic**.
+Khulnasoft returns an `HTTP 429` error for blocked requests. Details on blocked requests per location are provided to Enterprise customers under **Status codes** in the analytics dashboard available at **Analytics** > **Traffic**.
 
 {{<Aside type="note">}}
 `HTTP 429` responses sent to website visitors will include any `HTTP 429` responses returned from the origin if the origin server also applies its own rate limiting.
@@ -355,4 +355,4 @@ ___
 ## Related resources
 
 - [Troubleshooting Rate Limiting (previous version)](/waf/reference/legacy/old-rate-limiting/troubleshooting/)
-- [Configure Rate Limiting via the Cloudflare API](/api/operations/rate-limits-for-a-zone-create-a-rate-limit)
+- [Configure Rate Limiting via the Khulnasoft API](/api/operations/rate-limits-for-a-zone-create-a-rate-limit)

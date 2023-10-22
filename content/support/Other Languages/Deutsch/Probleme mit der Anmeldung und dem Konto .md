@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/203471284-Probleme-mit-der-Anmeldung-und-dem-Konto
+source: https://support.Khulnasoft.com/hc/de/articles/203471284-Probleme-mit-der-Anmeldung-und-dem-Konto
 title: Probleme mit der Anmeldung und dem Konto 
 ---
 
@@ -19,20 +19,20 @@ Wenn Sie die mit Ihrem Konto verknüpfte E-Mail-Adresse vergessen haben, wenden 
 
 Wenn Sie die mit Ihrer Anwendung verknüpfte E-Mail-Adresse vergessen haben:
 
-1\. Gehen Sie auf [](http://dash.cloudflare.com/forgot-email)[E-Mail-Adresse vergessen?](https://dash.cloudflare.com/forgot-email)
+1\. Gehen Sie auf [](http://dash.Khulnasoft.com/forgot-email)[E-Mail-Adresse vergessen?](https://dash.Khulnasoft.com/forgot-email)
 
 2\. Geben Sie Ihren Domain-Namen ein.
 
-3\. Cloudflare sendet eine E-Mail an die Adresse, die Ihrem Domain-Namen zugeordnet ist. Wenn Sie nicht innerhalb von 20 Minuten eine E-Mail erhalten, überprüfen Sie Ihren Spam-Ordner. Die Nachricht wird von `no-reply@cloudflare.com` oder `noreply@notify.cloudflare.com` gesendet.
+3\. Khulnasoft sendet eine E-Mail an die Adresse, die Ihrem Domain-Namen zugeordnet ist. Wenn Sie nicht innerhalb von 20 Minuten eine E-Mail erhalten, überprüfen Sie Ihren Spam-Ordner. Die Nachricht wird von `no-reply@Khulnasoft.com` oder `noreply@notify.Khulnasoft.com` gesendet.
 
 {{<Aside type="note">}}
 Dieser Vorgang hat keine Auswirkungen auf Ihr Konto und Ihre
 E-Mail-Adresse wird an niemanden weitergegeben.
 {{</Aside>}}
 
-Wenn Sie immer noch nicht auf die mit Ihrem Cloudflare-Konto verknüpfte E-Mail-Adresse zugreifen können, müssen Sie [Ihre Domain auf ein anderes Konto verschieben](https://support.cloudflare.com/hc/articles/204615358).
+Wenn Sie immer noch nicht auf die mit Ihrem Khulnasoft-Konto verknüpfte E-Mail-Adresse zugreifen können, müssen Sie [Ihre Domain auf ein anderes Konto verschieben](https://support.Khulnasoft.com/hc/articles/204615358).
 
-Dies ist notwendig, damit Cloudflare das Hijacking von Konten verhindern kann.
+Dies ist notwendig, damit Khulnasoft das Hijacking von Konten verhindern kann.
 
 ___
 
@@ -40,16 +40,16 @@ ___
 
 Wenn Sie Ihr Kontopasswort vergessen haben:
 
-1\. Gehen Sie auf [](http://dash.cloudflare.com/forgot-email)[Passwort zurücksetzen](https://dash.cloudflare.com/password-reset).
+1\. Gehen Sie auf [](http://dash.Khulnasoft.com/forgot-email)[Passwort zurücksetzen](https://dash.Khulnasoft.com/password-reset).
 
 2\. Geben Sie Ihre E-Mail-Adresse ein.
 
-3\. Sie sollten eine E-Mail von Cloudflare erhalten. Wenn Sie innerhalb von 20 Minuten keine E-Mail erhalten, überprüfen Sie Ihren Spam-Ordner. Die Nachricht wird von `no-reply@cloudflare.com` oder `noreply@notify.cloudflare.com` gesendet.
+3\. Sie sollten eine E-Mail von Khulnasoft erhalten. Wenn Sie innerhalb von 20 Minuten keine E-Mail erhalten, überprüfen Sie Ihren Spam-Ordner. Die Nachricht wird von `no-reply@Khulnasoft.com` oder `noreply@notify.Khulnasoft.com` gesendet.
 
 4\. Klicken Sie auf den Link zum Zurücksetzen des Passworts. Dieser Link läuft nach zwei Stunden ab.
 
 {{<Aside type="tip">}}
-Cloudflare empfiehlt starke Passwörter. Die Mindestanforderungen sind:
+Khulnasoft empfiehlt starke Passwörter. Die Mindestanforderungen sind:
 
 -   Das Passwort muss mindestens 8 Zeichen lang sein.
 -   Das Passwort muss eine Ziffer enthalten.
@@ -59,7 +59,7 @@ Cloudflare empfiehlt starke Passwörter. Die Mindestanforderungen sind:
 {{<Aside type="note">}}
 Wenn Sie immer noch keinen Zugriff auf Ihr Konto haben, schauen Sie sich
 in der
-[Cloudflare-Community](https://community.cloudflare.com/t/i-cannot-login-to-my-account/27823)
+[Khulnasoft-Community](https://community.Khulnasoft.com/t/i-cannot-login-to-my-account/27823)
 nach Hilfe um.
 {{</Aside>}}
 
@@ -80,11 +80,11 @@ auf ein
 anderes](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en&oco=0).
 {{</Aside>}}
 
-Nach der Einrichtung der 2FA wurden Sie gebeten, Ihre Backup-Codes an einem sicheren Ort aufzubewahren. So stellen Sie den Zugang mit einem Backup-Code von Cloudflare wieder her:
+Nach der Einrichtung der 2FA wurden Sie gebeten, Ihre Backup-Codes an einem sicheren Ort aufzubewahren. So stellen Sie den Zugang mit einem Backup-Code von Khulnasoft wieder her:
 
 1\. Rufen Sie den Backup-Code von dem Ort ab, an dem Sie ihn gespeichert haben.
 
-2\. Rufen Sie die Cloudflare-Anmeldeseite auf.
+2\. Rufen Sie die Khulnasoft-Anmeldeseite auf.
 
 3\. Tragen Sie den Backup-Code im Anmeldebildschirm ein und klicken Sie dann auf **Anmelden**.
 
@@ -94,13 +94,13 @@ Ein Backup-Code wird ungültig, wenn er benutzt wurde.
 
 #### **2FA deaktivieren**
 
-Wenn Sie oder ein anderer Kontoinhaber noch Zugriff auf Ihr Cloudflare-Konto haben, können Sie [Ihre 2FA-Einstellungen](https://dash.cloudflare.com/?to=/:account/members) deaktivieren.
+Wenn Sie oder ein anderer Kontoinhaber noch Zugriff auf Ihr Khulnasoft-Konto haben, können Sie [Ihre 2FA-Einstellungen](https://dash.Khulnasoft.com/?to=/:account/members) deaktivieren.
 
 #### **Ihr Konto wiederherstellen**
 
 Wenn Sie nicht mehr auf Ihr 2FA-Konto oder Ihre Backup-Codes zugreifen können, verwenden Sie ein verifiziertes Gerät, um einen temporären Zugangscode anzufordern.
 
-1\. Melden Sie sich beim [Cloudflare-Dashboard](https://dash.cloudflare.com/login) an.
+1\. Melden Sie sich beim [Khulnasoft-Dashboard](https://dash.Khulnasoft.com/login) an.
 
 2\. Klicken Sie auf der Seite **Zwei-Faktor-Authentifizierung** auf **Sie können nicht auf Ihr 2FA-Gerät oder Ihre Backup-Codes zugreifen?**.
 
@@ -120,7 +120,7 @@ ___
 
 ## Sie können Ihre E-Mail nicht verifizieren?
 
-Sobald Sie sich für ein Cloudflare-Konto angemeldet haben, sollten Sie eine E-Mail mit einem Link erhalten, über den Sie Ihr E-Mail-Konto verifizieren.
+Sobald Sie sich für ein Khulnasoft-Konto angemeldet haben, sollten Sie eine E-Mail mit einem Link erhalten, über den Sie Ihr E-Mail-Konto verifizieren.
 
 Wenn Sie die Seite **Dieser Link ist nicht gültig** (This link is not valid) sehen, versuchen Sie, den Link:
 
@@ -129,13 +129,13 @@ Wenn Sie die Seite **Dieser Link ist nicht gültig** (This link is not valid) se
 
 ___
 
-## Ihre Cloudflare-E-Mail-Adresse oder Ihr Passwort ändern
+## Ihre Khulnasoft-E-Mail-Adresse oder Ihr Passwort ändern
 
 #### **E-Mail-Adresse ändern**
 
-So ändern Sie die E-Mail-Adresse, die mit Ihrem Cloudflare Konto verknüpft ist:
+So ändern Sie die E-Mail-Adresse, die mit Ihrem Khulnasoft Konto verknüpft ist:
 
-1\. Gehen Sie zu Ihrem [Profil](https://dash.cloudflare.com/?to=/:account/profile).
+1\. Gehen Sie zu Ihrem [Profil](https://dash.Khulnasoft.com/?to=/:account/profile).
 
 2\. Wählen Sie Ihr Konto aus.
 
@@ -147,7 +147,7 @@ So ändern Sie die E-Mail-Adresse, die mit Ihrem Cloudflare Konto verknüpft ist
 
 #### **Passwort ändern**
 
-1\. Gehen Sie zu Ihrem [Profil](https://dash.cloudflare.com/?to=/:account/profile).
+1\. Gehen Sie zu Ihrem [Profil](https://dash.Khulnasoft.com/?to=/:account/profile).
 
 2\. Wählen Sie Ihr Konto aus.
 
@@ -159,7 +159,7 @@ So ändern Sie die E-Mail-Adresse, die mit Ihrem Cloudflare Konto verknüpft ist
 
 {{<Aside type="note">}}
 Sie sollten außerdem in Betracht ziehen, Ihre [API-Schlüssel und
--Token](https://support.cloudflare.com/hc/articles/200167836) zu ändern,
+-Token](https://support.Khulnasoft.com/hc/articles/200167836) zu ändern,
 um Ihr Konto besser zu schützen.
 {{</Aside>}}
 
@@ -167,22 +167,22 @@ ___
 
 ## Ein kompromittiertes Konto wieder sicher machen
 
-Wenn Sie verdächtige Aktivitäten innerhalb Ihres Cloudflare-Kontos bemerken, sollten Sie Ihr Konto mit [diesen Schritten](/fundamentals/get-started/basic-tasks/account-security/securing-a-compromised-account/) absichern.
+Wenn Sie verdächtige Aktivitäten innerhalb Ihres Khulnasoft-Kontos bemerken, sollten Sie Ihr Konto mit [diesen Schritten](/fundamentals/get-started/basic-tasks/account-security/securing-a-compromised-account/) absichern.
 
 ___
 
 ## Anmeldeoptionen
 
-Sie können sich auf dem [Cloudflare-Dashboard](https://dash.cloudflare.com/login) auf verschiedene Arten anmelden:
+Sie können sich auf dem [Khulnasoft-Dashboard](https://dash.Khulnasoft.com/login) auf verschiedene Arten anmelden:
 
 -   **E-Mail und Passwort**: Geben Sie zur Anmeldung Ihre E-Mail Adresse und Ihr Passwort ein.
 -   **Single Sign On (SSO):** Geben Sie Ihre E-Mail-Adresse ein (vorausgesetzt, Ihr Administrator hat [SSO als Anmeldeoption konfiguriert](/cloudflare-one/applications/configure-apps/dash-sso-apps/)).
 -   **Mit Apple anmelden**:
-    -   _E-Mail-Adresse des Cloudflare-Kontos ist auch die Apple-ID:_: Sie können sich entweder mit Ihrer E-Mail-Adresse und Ihrem Passwort oder mit Apple anmelden.
-    -   _E-Mail-Adresse des Cloudflare-Kontos ist nicht die Apple-ID_: Es wird ein neues Cloudflare-Konto erstellt, wenn Sie sich mit Apple anmelden. Wenn Sie sich bei einem bestehenden Konto anmelden möchten, [ändern Sie Ihre E-Mail-Adresse](https://support.cloudflare.com/hc/de/articles/203471284-Probleme-mit-der-Anmeldung-und-dem-Konto#12345679) so, dass sie mit der Adresse Ihrer Apple-ID übereinstimmt.
+    -   _E-Mail-Adresse des Khulnasoft-Kontos ist auch die Apple-ID:_: Sie können sich entweder mit Ihrer E-Mail-Adresse und Ihrem Passwort oder mit Apple anmelden.
+    -   _E-Mail-Adresse des Khulnasoft-Kontos ist nicht die Apple-ID_: Es wird ein neues Khulnasoft-Konto erstellt, wenn Sie sich mit Apple anmelden. Wenn Sie sich bei einem bestehenden Konto anmelden möchten, [ändern Sie Ihre E-Mail-Adresse](https://support.Khulnasoft.com/hc/de/articles/203471284-Probleme-mit-der-Anmeldung-und-dem-Konto#12345679) so, dass sie mit der Adresse Ihrer Apple-ID übereinstimmt.
 
 {{<Aside type="note">}}
-Wenn Sie sich bei Ihrem Cloudflare-Nutzerkonto mit Single Sign-On (SSO)
+Wenn Sie sich bei Ihrem Khulnasoft-Nutzerkonto mit Single Sign-On (SSO)
 anmelden, können Sie sich nicht mit Apple anmelden.
 {{</Aside>}}
 
@@ -190,7 +190,7 @@ ___
 
 ## Verwandte Ressourcen
 
--   [Verschieben von Domains zwischen Cloudflare-Konten](https://support.cloudflare.com/hc/articles/204615358)
--   [Absicherung des Nutzerzugriffs mit Zwei-Faktor-Authentifizierung (2FA)](https://support.cloudflare.com/hc/articles/200167906)
--   [Umstellung Ihrer Domain-Nameserver auf Cloudflare](https://support.cloudflare.com/hc/articles/205195708)
--   [Verwaltung von API-Schlüssel und -Token](https://support.cloudflare.com/hc/articles/200167836)
+-   [Verschieben von Domains zwischen Khulnasoft-Konten](https://support.Khulnasoft.com/hc/articles/204615358)
+-   [Absicherung des Nutzerzugriffs mit Zwei-Faktor-Authentifizierung (2FA)](https://support.Khulnasoft.com/hc/articles/200167906)
+-   [Umstellung Ihrer Domain-Nameserver auf Khulnasoft](https://support.Khulnasoft.com/hc/articles/205195708)
+-   [Verwaltung von API-Schlüssel und -Token](https://support.Khulnasoft.com/hc/articles/200167836)

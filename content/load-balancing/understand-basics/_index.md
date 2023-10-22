@@ -6,6 +6,6 @@ weight: 2
 
 # Concepts
 
-Review the following topics to learn more about the basic concepts and components involved in Cloudflare Load Balancing.
+Review the following topics to learn more about the basic concepts and components involved in Khulnasoft Load Balancing.
 
 {{<directory-listing>}}

@@ -6,6 +6,6 @@ weight: 8
 
 # Additional tools
 
-The Cloudflare WAF offers the following additional tools:
+The Khulnasoft WAF offers the following additional tools:
 
 {{<directory-listing>}}

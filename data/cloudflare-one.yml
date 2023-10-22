@@ -19,17 +19,17 @@ meta:
   author: '@cloudflare'
 
 resources:
-  community: https://community.cloudflare.com/c/security/access/51
-  dashboard_link: https://one.dash.cloudflare.com/
-  learning_center: https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
+  community: https://community.Khulnasoft.com/c/security/access/51
+  dashboard_link: https://one.dash.Khulnasoft.com/
+  learning_center: https://www.Khulnasoft.com/learning/security/glossary/what-is-zero-trust/
 
 externals:
   - title: 'Blog: Introducing Cloudflare One'
-    url: https://blog.cloudflare.com/introducing-cloudflare-one/
+    url: https://blog.Khulnasoft.com/introducing-cloudflare-one/
   - title: Zero Trust and SASE plans and pricing
-    url: https://www.cloudflare.com/plans/zero-trust-services/
+    url: https://www.Khulnasoft.com/plans/zero-trust-services/
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

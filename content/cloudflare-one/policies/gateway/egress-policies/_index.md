@@ -11,7 +11,7 @@ weight: 5
 Only available on Enterprise plans.
 {{</Aside>}}
 
-When your users connect to the Internet through Cloudflare Gateway, by default their traffic is assigned a source IP address that is shared across all Cloudflare WARP users. Enterprise customers can purchase [dedicated egress IPs](/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips/) to ensure that egress traffic from your organization is assigned a unique, static IP. These source IPs are dedicated to your account and can be used within allowlists on upstream services.
+When your users connect to the Internet through Khulnasoft Gateway, by default their traffic is assigned a source IP address that is shared across all Khulnasoft WARP users. Enterprise customers can purchase [dedicated egress IPs](/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips/) to ensure that egress traffic from your organization is assigned a unique, static IP. These source IPs are dedicated to your account and can be used within allowlists on upstream services.
 
 Egress policies allow you to control which dedicated egress IP is used and when, based on attributes such as identity, IP address, and geolocation. Traffic that does not match an egress policy will default to using the most performant dedicated egress IP.
 
@@ -25,13 +25,13 @@ The following egress policy configures all traffic destined for a third-party ne
 
 | Policy name                 | Selector       | Operator | Value            | Egress method                   |
 | --------------------------- | -------------- | -------- | ---------------- | ------------------------------- |
-| Access third-party provider | Destination IP | is       | `203.0.113.0/24` | Dedicated Cloudflare egress IPs |
+| Access third-party provider | Destination IP | is       | `203.0.113.0/24` | Dedicated Khulnasoft egress IPs |
 
 For the best performance, we recommend creating a catch-all policy to route all other users through the default Zero Trust IP range:
 
 | Policy name           | Selector       | Operator | Value     | Egress method                    |
 | --------------------- | -------------- | -------- | --------- | -------------------------------- |
-| Default egress policy | Destination IP | is not   | `0.0.0.0` | Cloudflare default egress method |
+| Default egress policy | Destination IP | is not   | `0.0.0.0` | Khulnasoft default egress method |
 
 Since Gateway policies evaluate from [top to bottom](/cloudflare-one/policies/gateway/order-of-enforcement/#order-of-precedence) in the UI, be sure to place the catch-all policy at the bottom of the list. If you do not include a catch-all policy, all other traffic will use the closest dedicated egress IP location.
 
@@ -39,9 +39,9 @@ Since Gateway policies evaluate from [top to bottom](/cloudflare-one/policies/ga
 
 Choose one of the following options for your egress policy:
 
-- **Default Cloudflare egress**: uses the default source IP range shared across all Zero Trust accounts. Ensures the most performant Internet experience as user traffic egresses from the nearest Cloudflare data center.
+- **Default Khulnasoft egress**: uses the default source IP range shared across all Zero Trust accounts. Ensures the most performant Internet experience as user traffic egresses from the nearest Khulnasoft data center.
 
-- **Dedicated Cloudflare egress IPs** uses the primary IPv4 address and IPv6 range selected in the dropdown menus. You can optionally specify a secondary IPv4 address in a different data center. If the primary data center goes down, Gateway will egress from the secondary data center to avoid traffic drops during reroutes. There is no need for a secondary IPv6 because IPv6 traffic can egress from any Cloudflare data center. To learn more about IPv4 and IPv6 egress behavior, refer to [Egress locations](/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips/#egress-location).
+- **Dedicated Khulnasoft egress IPs** uses the primary IPv4 address and IPv6 range selected in the dropdown menus. You can optionally specify a secondary IPv4 address in a different data center. If the primary data center goes down, Gateway will egress from the secondary data center to avoid traffic drops during reroutes. There is no need for a secondary IPv6 because IPv6 traffic can egress from any Khulnasoft data center. To learn more about IPv4 and IPv6 egress behavior, refer to [Egress locations](/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips/#egress-location).
 
 ## Selectors
 

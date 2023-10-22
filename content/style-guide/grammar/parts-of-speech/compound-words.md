@@ -18,7 +18,7 @@ Whitespace is used in our blog posts and product content. For the sake of consis
   <tr>
     <td>nameserver</td>
     <td>name servers</td>
-    <td>Change your nameservers to Cloudflare's.</td>
+    <td>Change your nameservers to Khulnasoft's.</td>
   </tr>
   <tr>
     <td>hostname</td>
@@ -28,7 +28,7 @@ Whitespace is used in our blog posts and product content. For the sake of consis
   <tr>
     <td>data center</td>
     <td>datacenter</td>
-    <td>Cloudflare updates the new setting across all of our data centers around the world.</td>
+    <td>Khulnasoft updates the new setting across all of our data centers around the world.</td>
   </tr>
   <tr>
     <td>checkbox</td>
@@ -43,9 +43,9 @@ See these examples:
 
 ### Verbs
 
-Now you can **set up** Centrify, OneLogin, and other identity providers with Cloudflare Access.
+Now you can **set up** Centrify, OneLogin, and other identity providers with Khulnasoft Access.
 
-Learn how to start using SSO to **log in** to the Cloudflare dashboard.
+Learn how to start using SSO to **log in** to the Khulnasoft dashboard.
 
 Make sure to **back up** your data.
 

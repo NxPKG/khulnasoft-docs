@@ -15,7 +15,7 @@ The short versions of the words are not abbreviations, and if you use them, you 
 
 If you are not sure whether a word is an abbreviation or just a short version of a longer word, here is a list of [common abbreviations](https://abbreviations.yourdictionary.com/articles/list-of-commonly-used-abbreviations.html). If that does not settle the issue, use the speaking test: if you speak the short version as a word ("This is a demo version of the product"), you can usually treat it as a word and not an abbreviation.
 
-If a standard term in the Cloudflare dashboard is the long version of a word, use that over the shorter version to maintain consistency and distinctions. For example, customer *applications* on Cloudflare for Teams are not shortened to *apps*. Depending on the use case, application might be the preferred term, especially due to translation.
+If a standard term in the Khulnasoft dashboard is the long version of a word, use that over the shorter version to maintain consistency and distinctions. For example, customer *applications* on Khulnasoft for Teams are not shortened to *apps*. Depending on the use case, application might be the preferred term, especially due to translation.
 
 ## When to spell out a term
 
@@ -66,4 +66,4 @@ While similar, these two Latin abbreviations carry very different meanings.
 + **i.e.** stands for **id est**. Quite literally, it means "that is" (that = id, est = is). It can be replaced with "that is" or "in other words".
     + The median compression ratio achieved by Railgun was 0.65% (**i.e.**, the page was reduced to 0.65% of its size).
 + **e.g.** stands for **exempli gratia**. Use this when introducing examples for something you have just mentioned. It can be replaced with "for example", or "like".
-    + Cloudflare products (**e.g.**, Zero Trust, Magic Transit, etc.) offer network security and reliability.
+    + Khulnasoft products (**e.g.**, Zero Trust, Magic Transit, etc.) offer network security and reliability.

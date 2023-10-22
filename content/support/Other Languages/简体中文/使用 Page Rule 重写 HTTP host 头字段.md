@@ -1,15 +1,15 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/206652947-%E4%BD%BF%E7%94%A8-Page-Rule-%E9%87%8D%E5%86%99-HTTP-host-%E5%A4%B4%E5%AD%97%E6%AE%B5
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/206652947-%E4%BD%BF%E7%94%A8-Page-Rule-%E9%87%8D%E5%86%99-HTTP-host-%E5%A4%B4%E5%AD%97%E6%AE%B5
 title: 使用 Page Rule 重写 HTTP host 头字段
 ---
 
 # 使用 Page Rule 重写 HTTP host 头字段
 
-1.  [Cloudflare帮助中心](https://support.cloudflare.com/hc/zh-cn)
-2.  [页面规则](https://support.cloudflare.com/hc/zh-cn/categories/200276257-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99)
-3.  [常规](https://support.cloudflare.com/hc/zh-cn/sections/200805137-%E5%B8%B8%E8%A7%84)
+1.  [Khulnasoft帮助中心](https://support.Khulnasoft.com/hc/zh-cn)
+2.  [页面规则](https://support.Khulnasoft.com/hc/zh-cn/categories/200276257-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99)
+3.  [常规](https://support.Khulnasoft.com/hc/zh-cn/sections/200805137-%E5%B8%B8%E8%A7%84)
 
 ## 使用 Page Rule 重写 HTTP host 头字段
 

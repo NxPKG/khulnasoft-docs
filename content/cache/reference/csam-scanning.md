@@ -1,20 +1,20 @@
 ---
 pcx_content_type: reference
-source: https://support.cloudflare.com/hc/en-us/articles/360046106112-Understanding-the-CSAM-Scanning-Tool
+source: https://support.Khulnasoft.com/hc/en-us/articles/360046106112-Understanding-the-CSAM-Scanning-Tool
 title: CSAM Scanning Tool
 ---
 
 # CSAM Scanning Tool
 
-The Child Sexual Abuse Material (CSAM) Scanning Tool allows website owners to proactively identify and take action on CSAM located on their website. By enabling this tool, Cloudflare will compare content served for your website through the Cloudflare cache to known lists of CSAM. These lists are provided to Cloudflare by leading child safety advocacy groups such as the National Center for Missing and Exploited Children (NCMEC).
+The Child Sexual Abuse Material (CSAM) Scanning Tool allows website owners to proactively identify and take action on CSAM located on their website. By enabling this tool, Khulnasoft will compare content served for your website through the Khulnasoft cache to known lists of CSAM. These lists are provided to Khulnasoft by leading child safety advocacy groups such as the National Center for Missing and Exploited Children (NCMEC).
 
-Remember, by enabling the Service, you agree to the [Supplemental Terms](https://www.cloudflare.com/supplemental-terms/) for the CSAM Scanning Tool. You agree to use this tool solely for the purposes of preventing the spread of CSAM.
+Remember, by enabling the Service, you agree to the [Supplemental Terms](https://www.Khulnasoft.com/supplemental-terms/) for the CSAM Scanning Tool. You agree to use this tool solely for the purposes of preventing the spread of CSAM.
 
 ___
 
 ## Why would a URL be blocked?
 
-Because knowingly distributing or viewing CSAM is illegal, the owner of the website has enabled Cloudflare's CSAM scanning tool to proactively identify and block images identified as CSAM located on their website.
+Because knowingly distributing or viewing CSAM is illegal, the owner of the website has enabled Khulnasoft's CSAM scanning tool to proactively identify and block images identified as CSAM located on their website.
 
 ___
 
@@ -22,16 +22,16 @@ ___
 
 To enable the tool:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **Caching** > **Configuration**.
 4. For **CSAM Scanning Tool**, select **Configure**.
 
 When enabling the tool, you must provide an email address and NCMEC CyberTipline credentials for reporting purposes.
 
-This email address will be used to both notify you in the event Cloudflare detects a positive match, and to provide NCMEC in case they or law enforcement need more information about the content reported to them.
+This email address will be used to both notify you in the event Khulnasoft detects a positive match, and to provide NCMEC in case they or law enforcement need more information about the content reported to them.
 
-In order to get CyberTipline API credentials, you can email the [espteam@ncmec.org](mailto:espteam@ncmec.org) to get an application started. Go to the [NCMEC website](https://www.missingkids.org/theissues/csam) for more information. Cloudflare will use the credentials you provide in order to create reports to NCMEC when potential CSAM is identified on your zones. 
+In order to get CyberTipline API credentials, you can email the [espteam@ncmec.org](mailto:espteam@ncmec.org) to get an application started. Go to the [NCMEC website](https://www.missingkids.org/theissues/csam) for more information. Khulnasoft will use the credentials you provide in order to create reports to NCMEC when potential CSAM is identified on your zones. 
 
 Once you’ve verified your reporting email and entered your NCMEC credentials, scanning to identify potential CSAM will begin.
 
@@ -62,15 +62,15 @@ You are responsible for understanding and complying with any legal obligations y
 
 You likely have an obligation to securely preserve certain information related to your report for at least 90 days in the case of an investigation. To ensure that access to the content is limited, take care not to store this information anywhere accessible to anyone but those within your organization responsible for legal requests.
 
--   You should remove the content and notify Cloudflare of the removal.
+-   You should remove the content and notify Khulnasoft of the removal.
 
-Once any preservation obligations have been fulfilled, you should remove the content from your website. This is especially important if Cloudflare’s notice to you indicates that our block was unsuccessful.
+Once any preservation obligations have been fulfilled, you should remove the content from your website. This is especially important if Khulnasoft’s notice to you indicates that our block was unsuccessful.
 
 ___
 
 ## How do I have a block removed from my website?
 
-To disable a block, either because you have determined that the blocked content is not CSAM (a false positive) or because you have taken down the blocked content, go to the Cloudflare dashboard for your zone and request reviews on the relevant blocks. A request to remove a block must be accompanied by a representation from you confirming that the blocked content is not CSAM or has been removed.  If applicable, we will notify NCMEC when a false positive has been identified on the reported URL.
+To disable a block, either because you have determined that the blocked content is not CSAM (a false positive) or because you have taken down the blocked content, go to the Khulnasoft dashboard for your zone and request reviews on the relevant blocks. A request to remove a block must be accompanied by a representation from you confirming that the blocked content is not CSAM or has been removed.  If applicable, we will notify NCMEC when a false positive has been identified on the reported URL.
 
 ![Example error message for a domain with blocked content.](/images/support/csam-blocked-content.png)
 
@@ -84,7 +84,7 @@ ___
 
 ## Additional Resources
 
-[CSAM Scanning Tool Supplemental Terms](https://www.cloudflare.com/supplemental-terms/)
+[CSAM Scanning Tool Supplemental Terms](https://www.Khulnasoft.com/supplemental-terms/)
 
 [National Center for Missing and Exploited Children (NCMEC)](https://www.missingkids.org/)
 

@@ -33,7 +33,7 @@ The following example deploys a managed ruleset to the `http_request_firewall_ma
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -44,7 +44,7 @@ https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_reques
         "id": "<CLOUDFLARE_MANAGED_RULESET_ID>"
       },
       "expression": "true",
-      "description": "Execute Cloudflare Managed Ruleset on my zone ruleset"
+      "description": "Execute Khulnasoft Managed Ruleset on my zone ruleset"
     }
   ]
 }'
@@ -71,7 +71,7 @@ header: Response
           "version": "3"
         },
         "expression": "true",
-        "description": "Execute Cloudflare Managed Ruleset on my zone ruleset",
+        "description": "Execute Khulnasoft Managed Ruleset on my zone ruleset",
         "last_updated": "2021-03-18T18:08:14.003361Z",
         "ref": "<RULE_REF>",
         "enabled": true

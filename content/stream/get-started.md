@@ -4,11 +4,11 @@ title: Get started
 weight: 2
 ---
 
-# Get started with Cloudflare Stream
+# Get started with Khulnasoft Stream
 
 {{<Aside type="note" header="Before you get started:">}}
 
-You must first [create a Cloudflare account](/fundamentals/setup/account-setup/create-account/) and [create an API token](/fundamentals/api/get-started/create-token/) to begin using Stream.
+You must first [create a Khulnasoft account](/fundamentals/setup/account-setup/create-account/) and [create an API token](/fundamentals/api/get-started/create-token/) to begin using Stream.
 
 {{</Aside>}}
 
@@ -19,7 +19,7 @@ You must first [create a Cloudflare account](/fundamentals/setup/account-setup/c
 
 ### Step 1: Upload an example video from a public URL
 
-You can upload videos directly from the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/stream) or using the API.
+You can upload videos directly from the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?to=/:account/stream) or using the API.
 
 To use the API, replace the `API_TOKEN` and `ACCOUNT_ID` values with your credentials in the example below.
 
@@ -31,7 +31,7 @@ curl \
 -X POST \
 -d '{"url":"https://storage.googleapis.com/stream-example-bucket/video.mp4","meta":{"name":"My First Stream Video"}}' \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/copy
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/copy
 ```
 
 ### Step 2: Wait until the video is ready to stream
@@ -46,7 +46,7 @@ header: Request
 ---
 curl \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>
 ```
 
 ```json
@@ -93,7 +93,7 @@ To play video on your website with the [Stream Player](/stream/viewing-videos/us
 </iframe>
 ```
 
-The embed code above can also be found in the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/stream).
+The embed code above can also be found in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?to=/:account/stream).
 
 <figure data-type="stream">
   <div class="AspectRatio" style="--aspect-ratio: calc(16 / 9)">
@@ -115,7 +115,7 @@ The embed code above can also be found in the [Cloudflare dashboard](https://das
 
 ### Step 1: Create a live input
 
-You can create a live input via the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/stream/inputs/create) or using the API.
+You can create a live input via the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/inputs/create) or using the API.
  
 To use the API, replace the `API_TOKEN` and `ACCOUNT_ID` values with your credentials in the example below.
 
@@ -126,7 +126,7 @@ header: Request
 curl -X POST \
 -H "Authorization: Bearer <API_TOKEN>" \
 -D '{"meta": {"name":"test stream"},"recording": { "mode": "automatic" }}' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs
 ```
 
 ```json
@@ -136,7 +136,7 @@ header: Response
 {
   "uid": "f256e6ea9341d51eea64c9454659e576",
   "rtmps": {
-    "url": "rtmps://live.cloudflare.com:443/live/",
+    "url": "rtmps://live.Khulnasoft.com:443/live/",
     "streamKey": "MTQ0MTcjM3MjI1NDE3ODIyNTI1MjYyMjE4NTI2ODI1NDcxMzUyMzcf256e6ea9351d51eea64c9454659e576"
   },
   "created": "2021-09-23T05:05:53.451415Z",
@@ -173,7 +173,7 @@ To play the live stream you just started on your website with the [Stream Player
 </iframe>
 ```
 
-The embed code above can also be found in the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/stream).
+The embed code above can also be found in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?to=/:account/stream).
 
 ### Next steps
 

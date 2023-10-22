@@ -9,7 +9,7 @@ layout: single
 
 # Network-layer DDoS Attack Protection managed ruleset
 
-The Cloudflare Network-layer DDoS Attack Protection managed ruleset is a set of pre-configured rules used to match [known DDoS attack vectors](/ddos-protection/about/attack-coverage/) at levels 3 and 4 of the OSI model. Cloudflare updates the list of rules in the managed ruleset on a regular basis.
+The Khulnasoft Network-layer DDoS Attack Protection managed ruleset is a set of pre-configured rules used to match [known DDoS attack vectors](/ddos-protection/about/attack-coverage/) at levels 3 and 4 of the OSI model. Khulnasoft updates the list of rules in the managed ruleset on a regular basis.
 
 The Network-layer DDoS Attack Protection managed ruleset is always enabled — you can only customize its behavior.
 
@@ -33,9 +33,9 @@ Overrides can apply to all packets or to a subset of incoming packets, depending
 
 ## Availability
 
-The Network-layer DDoS Attack Protection managed ruleset protects Cloudflare customers on all plans. However, only Magic Transit and Spectrum customers on an Enterprise plan can customize the managed ruleset.
+The Network-layer DDoS Attack Protection managed ruleset protects Khulnasoft customers on all plans. However, only Magic Transit and Spectrum customers on an Enterprise plan can customize the managed ruleset.
 
-## Related Cloudflare products
+## Related Khulnasoft products
 
 Magic Transit customers can configure the following additional products:
 

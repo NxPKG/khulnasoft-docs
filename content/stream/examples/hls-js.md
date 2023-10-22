@@ -1,6 +1,6 @@
 ---
 type: example
-summary: Example of video playback with Cloudflare Stream and the HLS reference player (hls.js)
+summary: Example of video playback with Khulnasoft Stream and the HLS reference player (hls.js)
 tags:
   - Playback
 pcx_content_type: configuration

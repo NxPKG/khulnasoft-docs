@@ -2,10 +2,10 @@
 pcx_content_type: reference
 title: Content Security Policies (CSPs)
 meta:
-  title: Content Security Policies (CSPs) and Cloudflare
+  title: Content Security Policies (CSPs) and Khulnasoft
 ---
 
-# Content Security Policies (CSPs) and Cloudflare
+# Content Security Policies (CSPs) and Khulnasoft
 
 A **Content Security Policy (CSP)** is an added layer of security that helps detect and mitigate certain types of attacks, including:
 
@@ -16,11 +16,11 @@ A **Content Security Policy (CSP)** is an added layer of security that helps det
 
 To learn more about configuring a CSP in general, refer to the [Mozilla documentation](https://developer.mozilla.org/docs/web/http/csp).
 
-## Using a CSP with Cloudflare
+## Using a CSP with Khulnasoft
 
-Cloudflare’s [CDN](/cache/) is compatible with CSP.
+Khulnasoft’s [CDN](/cache/) is compatible with CSP.
 
-Cloudflare does not:
+Khulnasoft does not:
 
 * Modify CSP headers from the origin web server.
 * Require changes to acceptable sources for first or third-party content.
@@ -29,14 +29,14 @@ Cloudflare does not:
 
 ### Product requirements
 
-To use certain Cloudflare features, however, you may need to update the headers in your CSP:
+To use certain Khulnasoft features, however, you may need to update the headers in your CSP:
 
 | Feature(s) | Updated headers |
 | --- | --- |
-| [Rocket Loader](/speed/optimization/content/rocket-loader/), [Mirage](/speed/optimization/images/mirage/) | `script-src 'self' ajax.cloudflare.com;` |
-| [Cloudflare Apps](https://support.cloudflare.com/hc/articles/115000304631), [Scrape Shield](https://support.cloudflare.com/hc/articles/200171036) | `script-src 'self' 'unsafe-inline'`|
+| [Rocket Loader](/speed/optimization/content/rocket-loader/), [Mirage](/speed/optimization/images/mirage/) | `script-src 'self' ajax.Khulnasoft.com;` |
+| [Khulnasoft Apps](https://support.Khulnasoft.com/hc/articles/115000304631), [Scrape Shield](https://support.Khulnasoft.com/hc/articles/200171036) | `script-src 'self' 'unsafe-inline'`|
 | [Web Analytics](/analytics/web-analytics) | `script-src static.cloudflareinsights.com; connect-src cloudflareinsights.com` |
 | [Bot products](/bots/) | Refer to [JavaScript detections and CSPs](/bots/reference/javascript-detections/#if-you-have-a-content-security-policy-csp).|
 | [Page Shield](/page-shield/) | Refer to [Page Shield CSP Header format](/page-shield/reference/csp-header/). |
-| [Zaraz](/zaraz/) | No updates required ([details](https://blog.cloudflare.com/cloudflare-zaraz-supports-csp/)).|
+| [Zaraz](/zaraz/) | No updates required ([details](https://blog.Khulnasoft.com/cloudflare-zaraz-supports-csp/)).|
 | [Turnstile](/turnstile/) | Refer to [Turnstile FAQ](/turnstile/frequently-asked-questions/#how-does-content-security-policy-need-to-be-configured-for-turnstile).|

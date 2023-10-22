@@ -5,7 +5,7 @@ title: Hubspot
 
 # Configure a Hubspot account for Access for SaaS
 
-This guide covers how to set up Cloudflare as the SSO provider for Hubspot.
+This guide covers how to set up Khulnasoft as the SSO provider for Hubspot.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ This guide covers how to set up Cloudflare as the SSO provider for Hubspot.
 1.  Select _Single Sign-on_.
 1.  Copy the values for _Audience URI_ and _Sign on URL_.
 
-## 2. Configure Cloudflare Access
+## 2. Configure Khulnasoft Access
 
 1.  In Zero Trust, go to **Access** > **Applications** and create a SaaS application.
 
@@ -25,7 +25,7 @@ This guide covers how to set up Cloudflare as the SSO provider for Hubspot.
 
 1.  Use the following Hubspot field mappings:
 
-    | Hubspot values | Cloudflare values              |
+    | Hubspot values | Khulnasoft values              |
     | -------------- | ------------------------------ |
     | Audience URI   | EntityID                       |
     | Sign On URL    | Assertion Consumer Service URL |
@@ -45,7 +45,7 @@ This guide covers how to set up Cloudflare as the SSO provider for Hubspot.
 
 1.  Use the following field mappings:
 
-    | Cloudflare value | Hubspot value                        |
+    | Khulnasoft value | Hubspot value                        |
     | ---------------- | ------------------------------------ |
     | SSO endpoint     | Identity Provider Single Sign-on URL |
     | Entity ID        | Identity Provider Identifier         |

@@ -10,7 +10,7 @@ meta:
 
 {{<content-column>}}
 
-The Cloudflare Ruleset Engine allows you to create and deploy rules and rulesets. The engine syntax, inspired by the Wireshark Display Filter language, is defined by the [Rules language](/ruleset-engine/rules-language/). Cloudflare uses the Ruleset Engine in different products, allowing you to configure several products using the same basic syntax.
+The Khulnasoft Ruleset Engine allows you to create and deploy rules and rulesets. The engine syntax, inspired by the Wireshark Display Filter language, is defined by the [Rules language](/ruleset-engine/rules-language/). Khulnasoft uses the Ruleset Engine in different products, allowing you to configure several products using the same basic syntax.
 
 There are several elements involved in the configuration and use of the Ruleset Engine. These elements are:
 

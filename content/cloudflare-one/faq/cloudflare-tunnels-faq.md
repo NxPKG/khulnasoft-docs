@@ -3,7 +3,7 @@ pcx_content_type: faq
 title: Tunnels
 weight: 4
 meta:
-  description: Review frequently asked questions about tunnels in Cloudflare Zero Trust.
+  description: Review frequently asked questions about tunnels in Khulnasoft Zero Trust.
 structured_data: true
 ---
 
@@ -16,27 +16,27 @@ structured_data: true
 
 {{<faq-answer>}}
 
-Yes. With [Named Tunnels](https://blog.cloudflare.com/argo-tunnels-that-live-forever/) you can create a CNAME at the apex that points to the named tunnel.
+Yes. With [Named Tunnels](https://blog.Khulnasoft.com/argo-tunnels-that-live-forever/) you can create a CNAME at the apex that points to the named tunnel.
 
 {{</faq-answer>}}
 {{</faq-item>}}
 
 {{<faq-item>}}
-{{<faq-question level=2 text="​Does Cloudflare Tunnel support Websockets?" >}}
+{{<faq-question level=2 text="​Does Khulnasoft Tunnel support Websockets?" >}}
 
 {{<faq-answer>}}
 
-Yes. Cloudflare Tunnel has full support for Websockets.
+Yes. Khulnasoft Tunnel has full support for Websockets.
 
 {{</faq-answer>}}
 {{</faq-item>}}
 
 {{<faq-item>}}
-{{<faq-question level=2 text="​Does Cloudflare Tunnel support gRPC?" >}}
+{{<faq-question level=2 text="​Does Khulnasoft Tunnel support gRPC?" >}}
 
 {{<faq-answer>}}
 
-Yes. Cloudflare Tunnel supports gRPC for services within a [private network](/cloudflare-one/connections/connect-networks/private-net/). Public hostname deployments are not supported at this time.
+Yes. Khulnasoft Tunnel supports gRPC for services within a [private network](/cloudflare-one/connections/connect-networks/private-net/). Public hostname deployments are not supported at this time.
 
 {{</faq-answer>}}
 {{</faq-item>}}
@@ -46,11 +46,11 @@ Yes. Cloudflare Tunnel supports gRPC for services within a [private network](/cl
 
 {{<faq-answer>}}
 
-Cloudflare offers two modes of setup: [Full Setup](/dns/zone-setups/full-setup/), in which the domain uses Cloudflare DNS nameservers, and [Partial Setup](/dns/zone-setups/partial-setup/) (also known as CNAME setup) in which the domain uses non-Cloudflare DNS servers.
+Khulnasoft offers two modes of setup: [Full Setup](/dns/zone-setups/full-setup/), in which the domain uses Khulnasoft DNS nameservers, and [Partial Setup](/dns/zone-setups/partial-setup/) (also known as CNAME setup) in which the domain uses non-Khulnasoft DNS servers.
 
-The best experience with Cloudflare Tunnel is using Full Setup because Cloudflare manages DNS for the domain and can automatically configure DNS records for newly started Tunnels.
+The best experience with Khulnasoft Tunnel is using Full Setup because Khulnasoft manages DNS for the domain and can automatically configure DNS records for newly started Tunnels.
 
-You can still use Tunnel with Partial Setup. You will need to create a new DNS record with your current DNS provider for each new hostname connected through Cloudflare Tunnel. The DNS record should be of type CNAME or ALIAS if it is on the root of the domain. The name of the record should be the subdomain it corresponds to (e.g. `example.com` or `tunnel.example.com`) and the value of the record should be `subdomain.domain.tld.cdn.cloudflare.net`. (e.g. `example.com.cdn.cloudflare.net` or `tunnel.example.com.cdn.cloudflare.net`)
+You can still use Tunnel with Partial Setup. You will need to create a new DNS record with your current DNS provider for each new hostname connected through Khulnasoft Tunnel. The DNS record should be of type CNAME or ALIAS if it is on the root of the domain. The name of the record should be the subdomain it corresponds to (e.g. `example.com` or `tunnel.example.com`) and the value of the record should be `subdomain.domain.tld.cdn.cloudflare.net`. (e.g. `example.com.cdn.cloudflare.net` or `tunnel.example.com.cdn.cloudflare.net`)
 
 {{</faq-answer>}}
 {{</faq-item>}}
@@ -60,7 +60,7 @@ You can still use Tunnel with Partial Setup. You will need to create a new DNS r
 
 {{<faq-answer>}}
 
-Tunnel can expose web applications to the Internet that sit behind a NAT or firewall. Thus, you can keep your web server otherwise completely locked down. To double check that your origin web server is not responding to requests outside Cloudflare while Tunnel is running you can run netcat in the command line:
+Tunnel can expose web applications to the Internet that sit behind a NAT or firewall. Thus, you can keep your web server otherwise completely locked down. To double check that your origin web server is not responding to requests outside Khulnasoft while Tunnel is running you can run netcat in the command line:
 
 ```sh
 $ netcat -zv [your-server’s-ip-address] 80
@@ -93,11 +93,11 @@ Named Tunnels can be routed via DNS records, in which case we use CNAME records 
 {{</faq-item>}}
 
 {{<faq-item>}}
-{{<faq-question level=2 text="Does Cloudflare Tunnel send visitor IPs to my origin?" >}}
+{{<faq-question level=2 text="Does Khulnasoft Tunnel send visitor IPs to my origin?" >}}
 
 {{<faq-answer>}}
 
-No. When using Cloudflare Tunnel, all requests to the origin are made internally between `cloudflared` and the origin.
+No. When using Khulnasoft Tunnel, all requests to the origin are made internally between `cloudflared` and the origin.
 
 To log external visitor IPs, you will need to [configure an alternative method](/support/troubleshooting/restoring-visitor-ips/restoring-original-visitor-ips/).
 
@@ -109,7 +109,7 @@ To log external visitor IPs, you will need to [configure an alternative method](
 
 {{<faq-answer>}}
 
-Cloudflare Tunnel was previously named Warp during the beta phase. As Warp was added to the Argo product family, we changed the name to Argo Tunnel to match. Once we no longer required users to purchase Argo to create Tunnels, we renamed Argo Tunnel to Cloudflare Tunnel.
+Khulnasoft Tunnel was previously named Warp during the beta phase. As Warp was added to the Argo product family, we changed the name to Argo Tunnel to match. Once we no longer required users to purchase Argo to create Tunnels, we renamed Argo Tunnel to Khulnasoft Tunnel.
 
 {{</faq-answer>}}
 {{</faq-item>}}
@@ -125,7 +125,7 @@ If you are unable to create a Tunnel using the installation script ("cloudflared
 
 ### Check your DNS records
 
-If you are unable to save your Tunnel's public hostname ("An A, AAAA, or CNAME record with that host already exists"), choose a different hostname or delete the existing DNS record. [Check the DNS records](/dns/manage-dns-records/how-to/create-dns-records/) for your domain from the [Cloudflare dashboard](https://dash.cloudflare.com).
+If you are unable to save your Tunnel's public hostname ("An A, AAAA, or CNAME record with that host already exists"), choose a different hostname or delete the existing DNS record. [Check the DNS records](/dns/manage-dns-records/how-to/create-dns-records/) for your domain from the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 
 ### View debug logs
 
@@ -145,7 +145,7 @@ Refer to [Tunnel logs](/cloudflare-one/connections/connect-networks/monitor-tunn
 
 ### Check SSL/TLS encryption mode
 
-1.  On the Cloudflare dashboard for your zone, go to **SSL/TLS** > **Overview**.
+1.  On the Khulnasoft dashboard for your zone, go to **SSL/TLS** > **Overview**.
 1.  If your SSL/TLS encryption mode is **Off (not secure)**, make sure that it is set to **Flexible**, **Full** or **Full (strict)**.
 
 When the encryption mode is set to **Off (not secure)**, you may encounter connection issues when running a Tunnel.
@@ -170,15 +170,15 @@ Tunnel credentials file '/root/.cloudflared/928655cc-7f95-43f2-8539-2aba6cf3592d
 
 ### I am having an issue with a locally-managed tunnel.
 
-Before contacting the Cloudflare support team:
+Before contacting the Khulnasoft support team:
 
 - Take note of any specific error messages and/or problematic behaviors.
 
 - Take note of any options you specified, either on the command line or in your configuration file, when starting your tunnel.
 
-- Set [`log-level`](/cloudflare-one/connections/connect-networks/configure-tunnels/tunnel-run-parameters/) to `debug`, so the Cloudflare support team can get more info from the `cloudflared.log` file.
+- Set [`log-level`](/cloudflare-one/connections/connect-networks/configure-tunnels/tunnel-run-parameters/) to `debug`, so the Khulnasoft support team can get more info from the `cloudflared.log` file.
 
-- Include your Cloudflare Tunnel logs file (`cloudflared.log`). If you did not specify a log file when starting your tunnel, you can do so using the [`logfile` option](/cloudflare-one/connections/connect-networks/configure-tunnels/tunnel-run-parameters/#logfile) either on the command line or in your configuration file.
+- Include your Khulnasoft Tunnel logs file (`cloudflared.log`). If you did not specify a log file when starting your tunnel, you can do so using the [`logfile` option](/cloudflare-one/connections/connect-networks/configure-tunnels/tunnel-run-parameters/#logfile) either on the command line or in your configuration file.
 
 - Include your full `config.yml` file for the affected tunnel.
 

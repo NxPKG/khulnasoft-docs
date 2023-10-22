@@ -8,11 +8,11 @@ layout: list
 
 # API Discovery
 
-Most development teams struggle to keep track of their APIs. Cloudflare API Discovery helps you map out and understand your attack surface area.
+Most development teams struggle to keep track of their APIs. Khulnasoft API Discovery helps you map out and understand your attack surface area.
 
 ## Process
 
-Cloudflare produces a simple, trustworthy map of API endpoints through a process of path normalization.
+Khulnasoft produces a simple, trustworthy map of API endpoints through a process of path normalization.
 
 For example, you might have thousands of APIs, but a lot of the calls look similar, such as:
 
@@ -46,14 +46,14 @@ To restore any errantly ignored endpoints, you can filter by **Ignored** and sel
 Check back regularly for new API Discovery results. A badge with the number of endpoints needing review will show in the API Shield dashboard.
 
 {{<Aside type="note">}}
-Cloudflare will use your feedback on the ignored endpoints to better train the API Discovery Machine Learning model in a future release.
+Khulnasoft will use your feedback on the ignored endpoints to better train the API Discovery Machine Learning model in a future release.
 {{</Aside>}}
 
 ### Machine Learning-based Discovery
 
 Your API endpoints are discovered with both the Session Identifier-based Discovery and the Machine Learning-based Discovery.
 
-To access Machine Learning-based Discovery, log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain. Go to **API Shield** > **Discovery**. You may filter the source results by `Session Identifier` or `Machine Learning` to view results from each Discovery method.
+To access Machine Learning-based Discovery, log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain. Go to **API Shield** > **Discovery**. You may filter the source results by `Session Identifier` or `Machine Learning` to view results from each Discovery method.
 
 If all of your zone’s API traffic contains the session identifier that you have configured, both sources may deliver the same results due to similarities between their underlying methodology. We expect Machine Learning-based Discovery to excel in discovering API traffic regardless of whether your API uses a session identifier.
 

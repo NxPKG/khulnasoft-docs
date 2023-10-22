@@ -20,7 +20,7 @@ meta:
 
 ## Integration permissions
 
-For the Salesforce integration to function, Cloudflare CASB requires the following Salesforce permissions via a Connected App:
+For the Salesforce integration to function, Khulnasoft CASB requires the following Salesforce permissions via a Connected App:
 
 - `Manage user data via APIs (api)`
 - `Manage user data via Web browsers (web)`

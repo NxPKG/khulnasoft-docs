@@ -10,7 +10,7 @@ After [enabling Security Insights](/security-center/get-started/) and letting th
 
 For each detected insight, you can resolve it or archive it, after understanding its risks.
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2.  Go to Account Home > **Security Center** > **Security Insights**.
 3.  Next to the insight you wish to address, select **Resolve**.
 

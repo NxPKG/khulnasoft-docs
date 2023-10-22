@@ -6,7 +6,7 @@ weight: 6
 
 # Get JSON response for mobile and other non-browser traffic
 
-If you need to manage traffic in a non-browser environment such as a mobile app or web app, Cloudflare provides a JSON-friendly waiting room that can be consumed via your API endpoints:
+If you need to manage traffic in a non-browser environment such as a mobile app or web app, Khulnasoft provides a JSON-friendly waiting room that can be consumed via your API endpoints:
 
 1. When a user is queued, we return our own JSON response.
 2. When a user leaves the waiting room, we forward the request to your origin server and return the response from your origin server (be it JSON, XML, an HTML page, etc.).
@@ -62,12 +62,12 @@ In a browser environment, the page automatically refreshes every `refreshInterva
 These are some of the places where the JSON-friendly response can be consumed (this list is not exhaustive):
 
 1. In a mobile app traffic
-    - **Integrate Waiting Room variables** – Create a new template in your mobile app to receive the JSON response. For a full list of these variables, refer to the `json_response_enabled` parameter in the [Cloudflare API docs](/api/operations/waiting-room-create-waiting-room).
+    - **Integrate Waiting Room variables** – Create a new template in your mobile app to receive the JSON response. For a full list of these variables, refer to the `json_response_enabled` parameter in the [Khulnasoft API docs](/api/operations/waiting-room-create-waiting-room).
     - **Allow cookies** – As mentioned above, a waiting room [requires cookies](/waiting-room/reference/waiting-room-cookie/), and your mobile app will need to support cookies. For ease of use, consider using a cookie manager like [CookieJar](https://pkg.go.dev/net/http#CookieJar).
     - **Consume JSON data** - Make a request to the Waiting Room endpoint with the `Accept: application/json` header.
 
-2. Inside Cloudflare Workers (or in your own backend service)
-    - **Integrate Waiting Room variables** – Expect a JSON response in your backend API. For a full list of these variables, refer to the `json_response_enabled` parameter in the [Cloudflare API docs](/api/operations/waiting-room-create-waiting-room).
+2. Inside Khulnasoft Workers (or in your own backend service)
+    - **Integrate Waiting Room variables** – Expect a JSON response in your backend API. For a full list of these variables, refer to the `json_response_enabled` parameter in the [Khulnasoft API docs](/api/operations/waiting-room-create-waiting-room).
     - **Include cookies in the request header** – As mentioned above, a waiting room [requires cookies](/waiting-room/reference/waiting-room-cookie/), and your backend API will need to support cookies. For ease of use, consider using a cookie manager like [CookieJar](https://pkg.go.dev/net/http#CookieJar).
     - **Enable JSON response** - Via the dashboard or via the API.
     - **Consume JSON data** - Make a request to the Waiting Room endpoint with the `Accept: application/json` header.

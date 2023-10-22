@@ -14,7 +14,7 @@ meta:
 
 To enable Page Shield:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Security** > **Page Shield**.
 3. Select **Enable Page Shield**.
 

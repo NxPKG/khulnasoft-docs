@@ -14,11 +14,11 @@ There are two reasons to set up email records for your domain: to make sure emai
 
 {{<Aside type="note">}}
 
-If you are using [Email Routing](/email-routing/), you cannot modify the MX records for your Cloudflare zone without [disabling Email Routing](/email-routing/setup/disable-email-routing/).
+If you are using [Email Routing](/email-routing/), you cannot modify the MX records for your Khulnasoft zone without [disabling Email Routing](/email-routing/setup/disable-email-routing/).
 
 {{</Aside>}}
 
-To route emails to your mail server, you need to [create two DNS records](/dns/manage-dns-records/how-to/create-dns-records/) within Cloudflare:
+To route emails to your mail server, you need to [create two DNS records](/dns/manage-dns-records/how-to/create-dns-records/) within Khulnasoft:
 
 1. An **A** or **AAAA** record for your mail subdomain that points to the IP address of your mail server.
 
@@ -32,7 +32,7 @@ To route emails to your mail server, you need to [create two DNS records](/dns/m
       ---
       header: Request
       ---
-      curl -sX POST "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records" \
+      curl -sX POST "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/dns_records" \
       -H "x-auth-email: <EMAIL>" \
       -H "x-auth-key: <API_KEY>" \
       -H "Content-Type: application/json" \
@@ -92,7 +92,7 @@ To route emails to your mail server, you need to [create two DNS records](/dns/m
       ---
       header: Request
       ---
-      curl -sX POST "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records" \
+      curl -sX POST "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/dns_records" \
       -H 'x-auth-email: <EMAIL>' \
       -H 'x-auth-key: <API_KEY>' \
       -H "Content-Type: application/json" \

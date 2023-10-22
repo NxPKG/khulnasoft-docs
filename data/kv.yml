@@ -14,12 +14,12 @@ meta:
   author: '@cloudflare'
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/workers
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/workers
   discord: https://discord.com/invite/cloudflaredev
 
 externals:
   - title: Workers home
-    url: https://workers.cloudflare.com
+    url: https://workers.Khulnasoft.com
   - title: Discord
     url: https://discord.gg/cloudflaredev
 

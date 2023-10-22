@@ -8,13 +8,13 @@ meta:
 
 # DNS records for load balancing
 
-When you [create a load balancer](/load-balancing/load-balancers/create-load-balancer/), Cloudflare automatically creates an LB DNS record for the specified **Hostname**. This functionality allows you to use a hostname with or without an existing DNS record.
+When you [create a load balancer](/load-balancing/load-balancers/create-load-balancer/), Khulnasoft automatically creates an LB DNS record for the specified **Hostname**. This functionality allows you to use a hostname with or without an existing DNS record.
 
 ## Supported records
 
-For customers on non-Enterprise plans, Cloudflare supports load balancing for `A`, `AAAA`, and `CNAME` records.
+For customers on non-Enterprise plans, Khulnasoft supports load balancing for `A`, `AAAA`, and `CNAME` records.
 
-For customers on Enterprise plans, Cloudflare supports load balancing for `A`, `AAAA`, `CNAME`, **MX**, and **SRV** records.
+For customers on Enterprise plans, Khulnasoft supports load balancing for `A`, `AAAA`, `CNAME`, **MX**, and **SRV** records.
 
 ## Priority order
 
@@ -59,7 +59,7 @@ If you already have an existing `A`, `AAAA`, or `CNAME` record, be aware that th
 
 ## SSL/TLS coverage
 
-Due to internal limitations, Cloudflare [Universal SSL certificates](/ssl/edge-certificates/universal-ssl/) do not cover load balancing hostnames by default. This behavior will be corrected in the future.
+Due to internal limitations, Khulnasoft [Universal SSL certificates](/ssl/edge-certificates/universal-ssl/) do not cover load balancing hostnames by default. This behavior will be corrected in the future.
 
 As a current workaround for a domain or first-level subdomain (`lb.example.com`), create a [proxied `CNAME`/`A`/`AAAA` record](/dns/manage-dns-records/how-to/create-dns-records/) for that hostname.
 

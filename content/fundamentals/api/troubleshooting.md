@@ -11,7 +11,7 @@ weight: 5
 Ensure the token has been verified by running the following `curl` command and confirming that the response returns `"status": "active"`.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+curl "https://api.Khulnasoft.com/client/v4/user/tokens/verify" \
 -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -30,7 +30,7 @@ curl "https://api.cloudflare.com/client/v4/user/tokens/verify" \
 ```
 
 ## The token has incorrect permissions
-Review the permissions groups for your token in the [Cloudflare dashboard](https://dash.cloudflare.com/profile/api-tokens). Refer to [API token permissions](/fundamentals/api/reference/permissions/) for more information.
+Review the permissions groups for your token in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/profile/api-tokens). Refer to [API token permissions](/fundamentals/api/reference/permissions/) for more information.
 
 ## The incorrect syntax is used
 Occasionally customers will attempt to use an API token with an API key syntax. Ensure you are using the Bearer option rather than the email and API key pair.

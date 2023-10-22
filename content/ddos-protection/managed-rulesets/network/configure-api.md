@@ -8,7 +8,7 @@ meta:
 
 # Configure Network-layer DDoS Attack Protection via API
 
-Configure the Cloudflare Network-layer DDoS Attack Protection managed ruleset by defining overrides at the account level using the [Rulesets API](/ruleset-engine/rulesets-api/).
+Configure the Khulnasoft Network-layer DDoS Attack Protection managed ruleset by defining overrides at the account level using the [Rulesets API](/ruleset-engine/rulesets-api/).
 
 Each account has the Network-layer DDoS Attack Protection managed ruleset enabled by default. This means that you do not need to deploy the managed ruleset to the `ddos_l4` phase entry point ruleset explicitly. You only have to create a rule in the phase entry point to deploy the managed ruleset if you need to configure overrides.
 
@@ -40,7 +40,7 @@ The overrides apply to all packets matching the rule expression: `ip.dst in { 1.
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/ddos_l4/entrypoint \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/phases/ddos_l4/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

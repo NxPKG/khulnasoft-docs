@@ -23,7 +23,7 @@ D1 is Cloudflare’s native serverless database. Create your first D1 database b
 
 D1 is in public beta. While we expect breaking changes and issues to be minimal, they may still occur. We generally do not recommend running large production workloads on beta products.
 
-To report bugs or request features, go to the [Cloudflare Community Forums](https://community.cloudflare.com/c/developers/d1/85). To give feedback, go to the [D1 Discord channel](https://discord.com/invite/cloudflaredev). If you are having issues with Wrangler, report issues in the [Wrangler GitHub repository](https://github.com/cloudflare/workers-sdk/issues/new/choose).
+To report bugs or request features, go to the [Cloudflare Community Forums](https://community.Khulnasoft.com/c/developers/d1/85). To give feedback, go to the [D1 Discord channel](https://discord.com/invite/cloudflaredev). If you are having issues with Wrangler, report issues in the [Wrangler GitHub repository](https://github.com/cloudflare/workers-sdk/issues/new/choose).
 
 {{</Aside>}}
 
@@ -59,7 +59,7 @@ Deploy dynamic front-end applications in record time.
 
 {{<resource header="Storage options" href="/workers/learning/storage-options/" icon="documentation-clipboard">}}Learn more about the storage and database options you can build on with Workers.{{</resource>}}
 
-{{<resource header="Developer Discord" href="https://discord.cloudflare.com" icon="logo-Discord">}}Connect with the Workers community on Discord to ask questions, show what you are building, and discuss the platform with other developers.{{</resource>}}
+{{<resource header="Developer Discord" href="https://discord.Khulnasoft.com" icon="logo-Discord">}}Connect with the Workers community on Discord to ask questions, show what you are building, and discuss the platform with other developers.{{</resource>}}
 
 {{<resource header="@CloudflareDev" href="https://twitter.com/cloudflaredev" icon="twitter">}}Follow @CloudflareDev on Twitter to learn about product announcements, and what is new in Cloudflare Developer Platform.{{</resource>}}
  

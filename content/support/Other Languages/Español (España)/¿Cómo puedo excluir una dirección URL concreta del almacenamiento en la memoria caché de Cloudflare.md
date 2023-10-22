@@ -1,20 +1,20 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/200172316--C%C3%B3mo-puedo-excluir-una-direcci%C3%B3n-URL-concreta-del-almacenamiento-en-la-memoria-cach%C3%A9-de-Cloudflare-
-title: ¿Cómo puedo excluir una dirección URL concreta del almacenamiento en la memoria caché de Cloudflare
+source: https://support.Khulnasoft.com/hc/es-es/articles/200172316--C%C3%B3mo-puedo-excluir-una-direcci%C3%B3n-URL-concreta-del-almacenamiento-en-la-memoria-cach%C3%A9-de-Khulnasoft-
+title: ¿Cómo puedo excluir una dirección URL concreta del almacenamiento en la memoria caché de Khulnasoft
 ---
 
-# ¿Cómo puedo excluir una dirección URL concreta del almacenamiento en la memoria caché de Cloudflare?
+# ¿Cómo puedo excluir una dirección URL concreta del almacenamiento en la memoria caché de Khulnasoft?
 
-Puede excluir ciertas direcciones URL del almacenamiento en la memoria caché de Cloudflare mediante la aplicación **Page Rules** situada en el panel de Cloudflare.
+Puede excluir ciertas direcciones URL del almacenamiento en la memoria caché de Khulnasoft mediante la aplicación **Page Rules** situada en el panel de Khulnasoft.
 
 El primer paso para usar **Page Rules** consiste en establecer un patrón que defina cuándo se activa la regla. Estos patrones pueden ser simples, como una sola dirección URL, o complicados, con varios comodines. Imagine que tiene un sistema de gestión de contenido con una sola dirección URL administrativa:
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">https://www.ejemplo.com/admin.php</span></div></span></span></span></code></pre>{{</raw>}}
 
-Si desea desactivar las opciones de optimizaci\[on y almacenamiento en la memoria caché de Cloudflare para esta dirección URL, debe desactivarlas con los menús o los menús desplegables para las diversas funciones de Cloudflare.
+Si desea desactivar las opciones de optimizaci\[on y almacenamiento en la memoria caché de Khulnasoft para esta dirección URL, debe desactivarlas con los menús o los menús desplegables para las diversas funciones de Khulnasoft.
 
 ### Coincidencia de comodines y patrones avanzados
 
@@ -72,4 +72,4 @@ cambiar la posición de una Page Rule, puede moverla con el icono de la
 parte izquierda.
 {{</Aside>}}
 
-Para acceder a un tutorial completo de Page Rule, [visite este artículo.](https://support.cloudflare.com/entries/22576178-Is-there-a-tutorial-for-PageRules-)
+Para acceder a un tutorial completo de Page Rule, [visite este artículo.](https://support.Khulnasoft.com/entries/22576178-Is-there-a-tutorial-for-PageRules-)

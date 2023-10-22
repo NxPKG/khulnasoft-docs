@@ -6,6 +6,6 @@ weight: 5
 
 # Reference
 
-Review reference information related to Cloudflare Radar:
+Review reference information related to Khulnasoft Radar:
 
 {{<directory-listing showDescriptions="true">}}

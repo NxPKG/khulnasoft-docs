@@ -5,13 +5,13 @@ weight: 4
 updated: 2023-09-26
 ---
 
-# Provision Cloudflare with SCIM
+# Provision Khulnasoft with SCIM
 
-By connecting a System for Cross-domain Identity Management (SCIM) provider, you can provision access to the Cloudflare dashboard on a per-user basis.
+By connecting a System for Cross-domain Identity Management (SCIM) provider, you can provision access to the Khulnasoft dashboard on a per-user basis.
 
 Currently, we only provide SCIM support for Azure Active Directory and Okta in Self-Hosted Access applications.
 
-For more information about SCIM support, refer to the [Announcing SCIM support for Cloudflare Access & Gateway](https://blog.cloudflare.com/access-and-gateway-with-scim/) blog post.
+For more information about SCIM support, refer to the [Announcing SCIM support for Khulnasoft Access & Gateway](https://blog.Khulnasoft.com/access-and-gateway-with-scim/) blog post.
 
 This guide will use Okta as the SCIM provider.
 
@@ -26,7 +26,7 @@ This guide will use Okta as the SCIM provider.
 
 {{<tutorial-prereqs>}}
 
-- In Cloudflare, [Super Administrator](/fundamentals/setup/manage-members/roles/) access on the account that maintains [your SSO](/cloudflare-one/applications/configure-apps/dash-sso-apps/).
+- In Khulnasoft, [Super Administrator](/fundamentals/setup/manage-members/roles/) access on the account that maintains [your SSO](/cloudflare-one/applications/configure-apps/dash-sso-apps/).
 - In Okta, access to the `Create groups` and `Manage applications` [permissions](https://help.okta.com/en-us/Content/Topics/Security/custom-admin-role/about-role-permissions.htm).
 
 {{</tutorial-prereqs>}}
@@ -52,7 +52,7 @@ This guide will use Okta as the SCIM provider.
 
 {{</tutorial-step>}}
 
-{{<tutorial-step title="Assign Cloudflare users to an Okta group">}}
+{{<tutorial-step title="Assign Khulnasoft users to an Okta group">}}
 
 1. In the Okta dashboard, go to **Directory** > **Groups**.
 2. Select **Add a group** and enter a name. Select **Save**.
@@ -78,11 +78,11 @@ This guide will use Okta as the SCIM provider.
    6. Disable **Automatically log in when user lands on login page**.
    7. Select **Next**, then select **Done**.
 
-2. Integrate the Cloudflare API.
+2. Integrate the Khulnasoft API.
 
    1. In your integration page, go to **Provisioning** > **Configure API Integration**.
    2. Enable **Enable API Integration**.
-   3. In SCIM 2.0 Base Url, enter `https://api.cloudflare.com/client/v4/accounts/<your_account_ID>/scim/v2`.
+   3. In SCIM 2.0 Base Url, enter `https://api.Khulnasoft.com/client/v4/accounts/<your_account_ID>/scim/v2`.
    4. In OAuth Bearer Token, enter your API token value.
    5. Disable **Import Groups**.
    6. Select **Save**.
@@ -92,7 +92,7 @@ This guide will use Okta as the SCIM provider.
    1. In **Provisioning to App**, select **Edit**.
    2. Enable **Create Users** and **Deactivate Users**. Select **Save**.
    3. In the integration page, go to **Assignments** > **Assign** > **Assign to Groups**.
-   4. Assign users to your Cloudflare group.
+   4. Assign users to your Khulnasoft group.
    5. Select **Done**.
 
 {{</tutorial-step>}}

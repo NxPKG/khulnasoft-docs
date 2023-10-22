@@ -8,7 +8,7 @@ weight: 4
 
 Configure exposed credentials checks using the [Rulesets API](/ruleset-engine/rulesets-api/). You can do the following:
 
-*   [Deploy the Cloudflare Exposed Credentials Check Managed Ruleset](/waf/managed-rules/reference/exposed-credentials-check/#configure-via-api).
+*   [Deploy the Khulnasoft Exposed Credentials Check Managed Ruleset](/waf/managed-rules/reference/exposed-credentials-check/#configure-via-api).
 *   Create custom rules that check for exposed credentials.
 
 ## Create a custom rule checking for exposed credentials
@@ -35,16 +35,16 @@ These properties have additional requirements:
 
 {{</Aside>}}
 
-You can use the `exposed_credential_check` object in rules with one of the following actions: `rewrite`, `log`, `block`, `challenge`, or `js_challenge`. Cloudflare recommends that you only use exposed credential checks with the following actions: `rewrite` and `log`.
+You can use the `exposed_credential_check` object in rules with one of the following actions: `rewrite`, `log`, `block`, `challenge`, or `js_challenge`. Khulnasoft recommends that you only use exposed credential checks with the following actions: `rewrite` and `log`.
 
 To create and deploy a custom ruleset, follow the workflow described in [Work with custom rulesets](/ruleset-engine/custom-rulesets/).
 
 ### Example A
 
-This example creates a new custom ruleset with a rule that checks for exposed credentials. The rule has a match if both the rule expression and the `exposed_credential_check` result are `true`. When there is a match, the rule will log the request with exposed credentials in the Cloudflare logs.
+This example creates a new custom ruleset with a rule that checks for exposed credentials. The rule has a match if both the rule expression and the `exposed_credential_check` result are `true`. When there is a match, the rule will log the request with exposed credentials in the Khulnasoft logs.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --data '{
   "name": "Custom Ruleset A",
@@ -112,7 +112,7 @@ After creating a custom ruleset, deploy it to a phase so that it executes. Refer
 This example creates a new custom ruleset with a rule that checks for exposed credentials in JSON responses. The rule has a match if both the rule expression and the `exposed_credential_check` result are `true`. When there is a match, the rule will add an `Exposed-Credential-Check` HTTP header to the request with value `1`.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --data '{
   "name": "Custom Ruleset B",

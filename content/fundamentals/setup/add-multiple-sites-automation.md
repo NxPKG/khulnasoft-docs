@@ -1,18 +1,18 @@
 ---
 pcx_content_type: tutorial
-source: https://support.cloudflare.com/hc/articles/360000841472
+source: https://support.Khulnasoft.com/hc/articles/360000841472
 title: Add Multiple Sites via automation
 ---
 
 # Add multiple sites via automation
 
-To add multiple sites to Cloudflare at once and more efficiently, you can do so via the Cloudflare API.
+To add multiple sites to Khulnasoft at once and more efficiently, you can do so via the Khulnasoft API.
 
 Adding multiple sites can be useful when you:
 
-- Have multiple domains mapping back to a single, canonical domain (common for domains in different countries - such as `.com.au`, `.co.uk` - that you want protected by Cloudflare).
-- Are a [partner](https://www.cloudflare.com/partners/), agency, or IT consultancy, and manage multiple domains on behalf of your customers.
-- Are moving an existing set of sites over to Cloudflare.
+- Have multiple domains mapping back to a single, canonical domain (common for domains in different countries - such as `.com.au`, `.co.uk` - that you want protected by Khulnasoft).
+- Are a [partner](https://www.Khulnasoft.com/partners/), agency, or IT consultancy, and manage multiple domains on behalf of your customers.
+- Are moving an existing set of sites over to Khulnasoft.
 
 Using the API will allow you to add multiple sites quickly and efficiently, especially if you are already familiar with [how to change your name-servers](/dns/zone-setups/full-setup/setup/) or [add a DNS record](/dns/manage-dns-records/how-to/create-dns-records/).
 
@@ -21,11 +21,11 @@ ___
 
 ## Prerequisites
 
-To add multiple sites to Cloudflare via automation, you need:
+To add multiple sites to Khulnasoft via automation, you need:
 
-- An existing [Cloudflare account](/fundamentals/setup/account-setup/create-account/).
+- An existing [Khulnasoft account](/fundamentals/setup/account-setup/create-account/).
 - Command line with `curl`
-- A Cloudflare [API token](/fundamentals/api/get-started/create-token/) with one of the following permissions:
+- A Khulnasoft [API token](/fundamentals/api/get-started/create-token/) with one of the following permissions:
   - Zone-level `Administrator`
   - Zone-level `Zone: Edit` and `DNS: Edit`
   - Account-level `Domain Administrator`
@@ -47,7 +47,7 @@ ___
   for domain in $(cat domains.txt); do
     printf "Adding ${domain}:\n"
 
-    curl https://api.cloudflare.com/client/v4/zones \
+    curl https://api.Khulnasoft.com/client/v4/zones \
       -H 'Content-Type: application/json' \
       -H 'X-Auth-Email: <CLOUDFLARE_EMAIL>' \
       -H 'X-Auth-Key: <CLOUDFLARE_API_KEY>' \
@@ -97,7 +97,7 @@ Refer to `jq` [documentation](https://jqlang.github.io/jq/manual/#basic-filters)
 
 ### Quick scan
 
-Cloudflare offers a [quick scan](/dns/zone-setups/reference/dns-quick-scan/) that helps populate a zone's DNS records. This scan is a best effort attempt based on a predefined list of commonly used record names and types.
+Khulnasoft offers a [quick scan](/dns/zone-setups/reference/dns-quick-scan/) that helps populate a zone's DNS records. This scan is a best effort attempt based on a predefined list of commonly used record names and types.
 
 This API call requires the domain `ID`. This can be found in the following locations:
 - [Create Zone](/api/operations/zones-post#Request)
@@ -109,7 +109,7 @@ Using `jq` with the first option above, modify your script `add-multiple-zones.s
   for domain in $(cat domains.txt); do
     printf "Adding ${domain}:\n"
 
-    add_output=`curl https://api.cloudflare.com/client/v4/zones \
+    add_output=`curl https://api.Khulnasoft.com/client/v4/zones \
       -H 'Content-Type: application/json' \
       -H 'X-Auth-Email: <CLOUDFLARE_EMAIL>' \
       -H 'X-Auth-Key: <API_KEY>' \
@@ -128,7 +128,7 @@ Using `jq` with the first option above, modify your script `add-multiple-zones.s
     printf "\n\n"
     printf "DNS quick scanning ${domain}:\n"
 
-    scan_output=`curl -X POST https://api.cloudflare.com/client/v4/zones/$domain_id/dns_records/scan \
+    scan_output=`curl -X POST https://api.Khulnasoft.com/client/v4/zones/$domain_id/dns_records/scan \
       -H 'Content-Type: application/json' \
       -H 'X-Auth-Email: <CLOUDFLARE_EMAIL>' \
       -H 'X-Auth-Key: <API_KEY>'`
@@ -140,7 +140,7 @@ Using `jq` with the first option above, modify your script `add-multiple-zones.s
 
 ## Update nameservers
 
-For each domain to become active on Cloudflare, it must be activated in either [Full setup](/dns/zone-setups/full-setup/setup/) or [Partial setup](/dns/zone-setups/partial-setup/setup/). The following script will output a list containing the nameservers associated with each domain.
+For each domain to become active on Khulnasoft, it must be activated in either [Full setup](/dns/zone-setups/full-setup/setup/) or [Partial setup](/dns/zone-setups/partial-setup/setup/). The following script will output a list containing the nameservers associated with each domain.
 
 You can find your zones nameservers in the following locations:
 - [Create Zone](/api/operations/zones-post#Request)
@@ -152,7 +152,7 @@ You can find your zones nameservers in the following locations:
   for domain in $(cat domains.txt); do
     printf "Adding ${domain}:\n"
 
-    add_output=`curl https://api.cloudflare.com/client/v4/zones \
+    add_output=`curl https://api.Khulnasoft.com/client/v4/zones \
       -H 'Content-Type: application/json' \
       -H 'X-Auth-Email: <CLOUDFLARE_EMAIL>' \
       -H 'X-Auth-Key: <API_KEY>' \
@@ -173,7 +173,7 @@ You can find your zones nameservers in the following locations:
     printf "\n\n"
     printf "DNS quick scanning ${domain}:\n"
 
-    scan_output=`curl -X POST https://api.cloudflare.com/client/v4/zones/$domain_id/dns_records/scan \
+    scan_output=`curl -X POST https://api.Khulnasoft.com/client/v4/zones/$domain_id/dns_records/scan \
       -H 'Content-Type: application/json' \
       -H 'X-Auth-Email: <CLOUDFLARE_EMAIL>' \
       -H 'X-Auth-Key: <API_KEY>'`
@@ -188,7 +188,7 @@ You can find your zones nameservers in the following locations:
 
   | ID | ZONE | NAME SERVERS | 
   | --- | --- | --- |
-  | <ZONE_ID> | `example.com` | `arya.ns.cloudflare.com`, `tim.ns.cloudflare.com` |
+  | <ZONE_ID> | `example.com` | `arya.ns.Khulnasoft.com`, `tim.ns.Khulnasoft.com` |
 
 
 
@@ -201,7 +201,7 @@ ___
 {{<render file="_automation-number-limitations.md">}}
 <br/>
 
-After that, you cannot have more pending sites than active sites associated with your Cloudflare account. We recommend waiting until your pending sites have been [activated](/dns/zone-setups/reference/domain-status/) before adding additional domains.
+After that, you cannot have more pending sites than active sites associated with your Khulnasoft account. We recommend waiting until your pending sites have been [activated](/dns/zone-setups/reference/domain-status/) before adding additional domains.
 
 ## Common issues
 

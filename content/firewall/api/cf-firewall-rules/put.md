@@ -19,7 +19,7 @@ You can include up to 25 rules in the JSON object array (`-d` flag) to update as
 header: Request
 ---
 curl --request PUT \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/firewall/rules" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \
@@ -91,7 +91,7 @@ All other fields are optional.
 header: Request
 ---
 curl --request PUT \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules/{rule_id}" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/firewall/rules/{rule_id}" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \

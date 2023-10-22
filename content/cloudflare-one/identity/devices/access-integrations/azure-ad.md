@@ -8,13 +8,13 @@ weight: 1
 
 {{<details header="Feature availability">}}
 
-| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.cloudflare.com/teams-pricing/) |
+| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.Khulnasoft.com/teams-pricing/) |
 | ----------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | macOS, Windows           | WARP not required                                                                 | All plans                                                     |
 
 {{</details>}}
 
-Cloudflare Access can integrate with Azure AD's Conditional Access feature to require that users connect to certain applications from managed devices. To enable, you must integrate Azure AD with Cloudflare Access as a cloud app that requires managed device connections. You can configure [per-app identity providers](/cloudflare-one/identity/idp-integration/) to segment which Access applications require Azure AD with managed devices and which only require Azure AD logins.
+Khulnasoft Access can integrate with Azure AD's Conditional Access feature to require that users connect to certain applications from managed devices. To enable, you must integrate Azure AD with Khulnasoft Access as a cloud app that requires managed device connections. You can configure [per-app identity providers](/cloudflare-one/identity/idp-integration/) to segment which Access applications require Azure AD with managed devices and which only require Azure AD logins.
 
 ## Enforce Azure AD device posture in Access
 
@@ -27,7 +27,7 @@ Cloudflare Access can integrate with Azure AD's Conditional Access feature to re
 4. In Azure AD, apply your Conditional Access policy to the `Azure AD (device posture)` integration.
 
 5. You can now enable the Conditional Access policy for an Access application:
-   1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Applications**.
+   1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Applications**.
    2. Select **Edit** for the application that requires managed device connections.
    3. Open the **Authentication** tab.
    4. Enable the `Azure AD (device posture)` identity provider.

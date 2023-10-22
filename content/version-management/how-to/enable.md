@@ -35,7 +35,7 @@ To disable Zone Versioning:
 2. Send a `GET` request to the `/zones/{zone_id}/environments` endpoint.
 
     ```bash
-    curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/environments" \
+    curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/environments" \
     --header "X-Auth-Email: <EMAIL>" \
     --header "X-Auth-Key: <API_KEY>"
     ```
@@ -47,7 +47,7 @@ To disable Zone Versioning:
 3. Using the `ref` of those environments, send a `DELETE` request to the `/zones/{zone_id}/environments/{ref}` endpoint for each environment.
 
     ```bash
-    curl -X 'DELETE' "https://api.cloudflare.com/client/v4/zones/{zone_id}/environments/{ref}" \
+    curl -X 'DELETE' "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/environments/{ref}" \
     --header "X-Auth-Email: <EMAIL>" \
     --header "X-Auth-Key: <API_KEY>"
     ```
@@ -55,7 +55,7 @@ To disable Zone Versioning:
 4. Then, send a `GET` request to find all HTTP applications (or versions of your zone).
 
     ```bash
-    curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/http_applications" \
+    curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/http_applications" \
     --header "X-Auth-Email: <EMAIL>" \
     --header "X-Auth-Key: <API_KEY>"
     ```
@@ -65,7 +65,7 @@ To disable Zone Versioning:
 5. Using the `id` of those HTTP applications, send [`DELETE` requests](/api/operations/deleteAccountRulesetRule) for every application.
 
     ```bash
-    curl --request DELETE "https://api.cloudflare.com/client/v4/zones/{zone_id}/http_applications/{http_application_id}" \
+    curl --request DELETE "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/http_applications/{http_application_id}" \
     --header "X-Auth-Email: <EMAIL>" \
     --header "X-Auth-Key: <API_KEY>"
     ```

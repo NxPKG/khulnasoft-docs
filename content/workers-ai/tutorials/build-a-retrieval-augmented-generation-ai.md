@@ -9,11 +9,11 @@ layout: single
 
 # Build a Retrieval Augmented Generation (RAG) AI
 
-This guide will instruct you through setting up and deploying your first application with Cloudflare AI. You will build a fully-featured AI-powered application, using tools like Workers AI, Vectorize, D1, and Cloudflare Workers. At the end of this tutorial, you will have built an AI tool that allows you to store information and query it using a Large Language Model. This pattern, known as Retrieval Augmented Generation, or RAG, is a useful project you can build by combining multiple aspects of Cloudflare's AI toolkit. You do not need to have experience working with AI tools to build this application.
+This guide will instruct you through setting up and deploying your first application with Khulnasoft AI. You will build a fully-featured AI-powered application, using tools like Workers AI, Vectorize, D1, and Khulnasoft Workers. At the end of this tutorial, you will have built an AI tool that allows you to store information and query it using a Large Language Model. This pattern, known as Retrieval Augmented Generation, or RAG, is a useful project you can build by combining multiple aspects of Khulnasoft's AI toolkit. You do not need to have experience working with AI tools to build this application.
 
 ## 1. Create a new Worker project
 
-C3 (create-cloudflare-cli) is a command-line tool designed to help you setup and deploy Workers to Cloudflare as fast as possible.
+C3 (create-cloudflare-cli) is a command-line tool designed to help you setup and deploy Workers to Khulnasoft as fast as possible.
 
 Open a terminal window and run C3 to create your Worker project:
 
@@ -42,9 +42,9 @@ For this guide, set up a basic Worker:
 2. Select `"Hello World" script` as the type of application you want to create.
 3. Answer `no` to using TypeScript.
 
-You will be asked if you would like to deploy the project to Cloudflare.
+You will be asked if you would like to deploy the project to Khulnasoft.
 
-* If you choose to deploy, you will be asked to authenticate (if not logged in already), and your project will be deployed to the Cloudflare global network.
+* If you choose to deploy, you will be asked to authenticate (if not logged in already), and your project will be deployed to the Khulnasoft global network.
 * If you choose not to deploy, go to the newly created project directory to begin writing code. Deploy your project by following the instructions in [step 4](/workers/get-started/guide/#4-deploy-your-project).
 
 In your project directory, C3 has generated the following:
@@ -67,7 +67,7 @@ $ npx wrangler dev --remote
 
 {{<Aside type="note">}}
 
-If you have not used Wrangler before, it will try to open your web browser to login with your Cloudflare account.
+If you have not used Wrangler before, it will try to open your web browser to login with your Khulnasoft account.
 
 If you have issues with this step or you do not have access to a browser interface, refer to the [`wrangler login`](/workers/wrangler/commands/#login) documentation for more information.
 
@@ -77,7 +77,7 @@ You will now be able to go to [http://localhost:8787](http://localhost:8787) to 
 
 ## 3. Adding the AI package
 
-To begin using Cloudflare's AI products, you can add the `@cloudflare/ai` package to your application, and enable the `AI` binding in your application configuration. This will allow you to query a large language model from directly inside your code.
+To begin using Khulnasoft's AI products, you can add the `@cloudflare/ai` package to your application, and enable the `AI` binding in your application configuration. This will allow you to query a large language model from directly inside your code.
 
 First, install the `@cloudflare/ai` package:
 
@@ -85,7 +85,7 @@ First, install the `@cloudflare/ai` package:
 $ npm install @cloudflare/ai
 ```
 
-Next, add the `ai` block to `wrangler.toml`. This will set up a binding to Cloudflare's AI models in your code that you can use to interact with the available AI models on the platform:
+Next, add the `ai` block to `wrangler.toml`. This will set up a binding to Khulnasoft's AI models in your code that you can use to interact with the available AI models on the platform:
 
 ```toml
 ---
@@ -122,7 +122,7 @@ export default {
 }
 ```
 
-By querying the LLM binding, we can interact directly with the Cloudflare AI large language model directly in our code.
+By querying the LLM binding, we can interact directly with the Khulnasoft AI large language model directly in our code.
 
 You can deploy your Worker using `wrangler`:
 
@@ -137,9 +137,9 @@ $ curl https://example.username.workers.dev
 {"response":"Answer: The square root of 9 is 3."}
 ```
 
-## 4. Adding embeddings using Cloudflare D1 and Vectorize
+## 4. Adding embeddings using Khulnasoft D1 and Vectorize
 
-Embeddings allow you to add additional capabilities to the language models you can use in your Cloudflare AI projects. This is done via **Vectorize**, Cloudflare's vector database.
+Embeddings allow you to add additional capabilities to the language models you can use in your Khulnasoft AI projects. This is done via **Vectorize**, Khulnasoft's vector database.
 
 To begin using Vectorize, create a new embeddings index using `wrangler`. This index will store vectors with 768 dimensions, and will use cosine similarity to determine which vectors are most similar to each other:
 
@@ -159,7 +159,7 @@ index_name = "vector-index"
 
 A vector index allows you to store a collection of dimensions, which are floating point numbers used to represent your data. When you want to query the vector database, you can also convert your query into dimensions. **Vectorize** is designed to efficiently determine which stored vectors are most similar to your query.
 
-To implement the searching feature, you must set up a D1 database from Cloudflare. In D1, you can store your app's data. Then, you change this data into a vector format. When someone searches and it matches the vector, you can show them the matching data.
+To implement the searching feature, you must set up a D1 database from Khulnasoft. In D1, you can store your app's data. Then, you change this data into a vector format. When someone searches and it matches the vector, you can show them the matching data.
 
 Create a new D1 database using `wrangler`:
 
@@ -373,7 +373,7 @@ When pushing to your `*.workers.dev` subdomain for the first time, you may see [
 
 To do more:
 
-* Review Cloudflare's [AI documentation](/workers-ai).
+* Review Khulnasoft's [AI documentation](/workers-ai).
 * Review [Tutorials](/workers/tutorials/) to build projects on Workers.
 * Explore [Examples](/workers/examples/) to experiment with copy and paste Worker code.
 * Understand how Workers works in [Learning](/workers/learning/).

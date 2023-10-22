@@ -8,9 +8,9 @@ meta:
 
 # Get started with Cache
 
-Cloudflare makes customer websites faster by storing a copy of the website’s content on the servers of our globally distributed data centers. Content can be either static or dynamic: static content is “cacheable” or eligible for caching, and dynamic content is “uncacheable” or ineligible for caching. The cached copies of content are stored physically closer to users, optimized to be fast, and do not require recomputing.
+Khulnasoft makes customer websites faster by storing a copy of the website’s content on the servers of our globally distributed data centers. Content can be either static or dynamic: static content is “cacheable” or eligible for caching, and dynamic content is “uncacheable” or ineligible for caching. The cached copies of content are stored physically closer to users, optimized to be fast, and do not require recomputing.
 
-Cloudflare caches static content based on the following factors:
+Khulnasoft caches static content based on the following factors:
 
 * Cache level set at a zone or [page rule](/cache/how-to/edge-browser-cache-ttl/create-page-rules/)
 * [File extension](/cache/concepts/default-cache-behavior/#default-cached-file-extensions)
@@ -19,21 +19,21 @@ Cloudflare caches static content based on the following factors:
 * Origin headers that indicate [dynamic content](/logs/reference/glossary/#dynamic-content)
 * Page rules that [bypass cache on cookie](/support/third-party-software/content-management-system-cms/caching-html-with-drupal/#set-bypass-cache-on-cookie)
 
-Cloudflare only caches resources within the Cloudflare data center that serve the request. Cloudflare does not cache off-site or third-party resources, such as Facebook or Flickr, or content hosted on [unproxied (grey-clouded)](/dns/manage-dns-records/reference/proxied-dns-records/) DNS records.
+Khulnasoft only caches resources within the Khulnasoft data center that serve the request. Khulnasoft does not cache off-site or third-party resources, such as Facebook or Flickr, or content hosted on [unproxied (grey-clouded)](/dns/manage-dns-records/reference/proxied-dns-records/) DNS records.
 
 ## Learn the basics
 
-Discover the benefits of caching with Cloudflare’s CDN and understand the default cache behavior.
+Discover the benefits of caching with Khulnasoft’s CDN and understand the default cache behavior.
 
-- [Understand what is a CDN](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/)
+- [Understand what is a CDN](https://www.Khulnasoft.com/learning/cdn/what-is-a-cdn/)
 - [Understand default cache behavior](/cache/concepts/default-cache-behavior/)
-- [Understand the default file types Cloudflare caches](/cache/concepts/default-cache-behavior/#default-cached-file-extensions)
+- [Understand the default file types Khulnasoft caches](/cache/concepts/default-cache-behavior/#default-cached-file-extensions)
 
 ## Make more resources cacheable
 
 Configure your settings to cache static HTML or cache anonymous page views of dynamic content.
 
-- [Customize Caching with Cloudflare Rules](/cache/troubleshooting/customize-caching/)
+- [Customize Caching with Khulnasoft Rules](/cache/troubleshooting/customize-caching/)
 - [Specify which resources to cache](/cache/concepts/customize-cache/)
 - [Understand Origin Cache Control](/cache/concepts/cache-control/)
 - [Cache by device type (Enterprise only)](/cache/how-to/edge-browser-cache-ttl/create-page-rules/#cache-by-device-type-enterprise-only)
@@ -55,13 +55,13 @@ Control resources a client is allowed to load and set access permissions to allo
 - [Configure Cross-Origin Resource Sharing (CORS)](/cache/cache-security/cors/)
 - [Enable Cache Deception Armor](/cache/cache-security/cache-deception-armor/#enable-cache-deception-armor)
 
-## Cloudflare features that can alter your HTML and cacheable objects
+## Khulnasoft features that can alter your HTML and cacheable objects
 
-To provide Cloudflare services to our customers, we may need to alter your HTML or cached objects to enable the feature or provide optimization.
+To provide Khulnasoft services to our customers, we may need to alter your HTML or cached objects to enable the feature or provide optimization.
 
-These code alterations only occur on the cacheable objects found at Cloudflare's edge and do not affect the original source. The changes will also be removed if the specific feature is disabled and the cache is purged.
+These code alterations only occur on the cacheable objects found at Khulnasoft's edge and do not affect the original source. The changes will also be removed if the specific feature is disabled and the cache is purged.
 
-Review the list of Cloudflare features that function in this manner:
+Review the list of Khulnasoft features that function in this manner:
 
 - [Auto Minify](/speed/optimization/content/auto-minify/)
 - [Rocket Loader](/speed/optimization/content/rocket-loader/)
@@ -77,6 +77,6 @@ organise
 
 Resolve common caching concerns.
 
-- [Learn about Cloudflare's cache response statuses](/cache/concepts/default-cache-behavior/#cloudflare-cache-responses)
-- [Investigate Cloudflare's cache response with cURL](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#troubleshoot-requests-with-curl)
+- [Learn about Khulnasoft's cache response statuses](/cache/concepts/default-cache-behavior/#cloudflare-cache-responses)
+- [Investigate Khulnasoft's cache response with cURL](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#troubleshoot-requests-with-curl)
 - [Diagnose Always Online issues](/cache/troubleshooting/always-online/)

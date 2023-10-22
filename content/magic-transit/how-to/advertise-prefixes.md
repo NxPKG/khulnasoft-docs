@@ -6,15 +6,15 @@ weight: 3
 
 # Advertise prefixes
 
-Cloudflare measures the Magic Transit prefix count based on the number of prefixes a customer announces through Cloudflare. The size of the prefix does not matter; there is no commercial or technical restriction. However, prefixes can only be announced exactly as they were provisioned. For example, a `/20` prefix onboarded to Magic Transit can only be announced as a `/20`. Smaller subnets that constitute the `/20` cannot be announced individually. To announce the 16x `/24s` within the `/20`, for example, requires onboarding all 16 prefixes individually. If this disaggregated setup is desired, the total Magic Transit prefix count will increase.
+Khulnasoft measures the Magic Transit prefix count based on the number of prefixes a customer announces through Khulnasoft. The size of the prefix does not matter; there is no commercial or technical restriction. However, prefixes can only be announced exactly as they were provisioned. For example, a `/20` prefix onboarded to Magic Transit can only be announced as a `/20`. Smaller subnets that constitute the `/20` cannot be announced individually. To announce the 16x `/24s` within the `/20`, for example, requires onboarding all 16 prefixes individually. If this disaggregated setup is desired, the total Magic Transit prefix count will increase.
 
 List all prefixes and the ASNs where they should originate. When specifying prefixes, observe these guidelines:
 
 - Prefixes must support at least 256 hosts (`/24` in classless inter-domain routing CIDR notation).
-- Internet Routing Registry entries and Letters of Authorization must match the prefixes and originating prefixes you submit to Cloudflare.
+- Internet Routing Registry entries and Letters of Authorization must match the prefixes and originating prefixes you submit to Khulnasoft.
 - When using contiguous prefixes, specify aggregate prefixes where possible.
 - When using Route Origin Authorizations (ROAs) to sign routes for [resource public key infrastructure (RPKI)](https://tools.ietf.org/html/rfc8210), the prefix and originating ASN must match the onboarding submission.
-- If you do not own an ASN, you can use the Cloudflare Customer ASN (AS209242).
+- If you do not own an ASN, you can use the Khulnasoft Customer ASN (AS209242).
 - Prefixes using BGP-controlled advertisements cannot be used in conjunction with dynamic advertisement (via dashboard/API). Please specify your preferred on-demand advertisement method during the prefix onboarding.
 
 {{<details header="Prefix configuration example">}}
@@ -29,15 +29,15 @@ List all prefixes and the ASNs where they should originate. When specifying pref
 
 {{<Aside type="note" header="Note">}}
 
-When customers supply their own ASN, Cloudflare prepends the main Cloudflare ASN (AS13335) to the BGP `AS_PATH`. For example, if the customer ASN is AS64496, anyone directly peering with Cloudflare sees the path as `13335 64496`.
+When customers supply their own ASN, Khulnasoft prepends the main Khulnasoft ASN (AS13335) to the BGP `AS_PATH`. For example, if the customer ASN is AS64496, anyone directly peering with Khulnasoft sees the path as `13335 64496`.
 
-If you do not have an ASN or do not want to bring your ASN to Cloudflare, you can use the Cloudflare Customer ASN (AS209242). In this case, the path becomes `13335 209242`.
+If you do not have an ASN or do not want to bring your ASN to Khulnasoft, you can use the Khulnasoft Customer ASN (AS209242). In this case, the path becomes `13335 209242`.
 
 {{</Aside>}}
 
 ## Add an IP prefix
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Magic Transit** > **Configuration**.
 3. From the **IP Prefixes** tab, select **Create**.
 4. Fill out the information for your prefix and select **Add IP Prefix**.
@@ -53,7 +53,7 @@ After you add the prefix, you can edit its status.
 
 {{<Aside type="note" header="Note:">}}
 
-To avoid latency and potentially dropped routes, enable prefix advertisement from Cloudflare before withdrawing the advertisement from your data center.
+To avoid latency and potentially dropped routes, enable prefix advertisement from Khulnasoft before withdrawing the advertisement from your data center.
 
 {{</Aside>}}
 
@@ -66,9 +66,9 @@ You can only delete a prefix with an **Unapproved** status. To delete prefixes w
 
 ## Border Gateway Protocol (BGP) control for advertisements
 
-Use BGP to control the advertisement status of your prefix — advertised or withdrawn — from Cloudflare’s global network for on-demand deployment scenarios. BGP Control works by establishing BGP sessions to Cloudflare’s globally distributed Route Reflectors, which will initiate propagation of your prefix advertisement across Cloudflare's global network.
+Use BGP to control the advertisement status of your prefix — advertised or withdrawn — from Khulnasoft’s global network for on-demand deployment scenarios. BGP Control works by establishing BGP sessions to Khulnasoft’s globally distributed Route Reflectors, which will initiate propagation of your prefix advertisement across Khulnasoft's global network.
 
-Prefixes can be advertised from Cloudflare’s network in a supported on-demand method such as BGP Control, or dynamically via the UI, API, or [Magic Network Monitoring](/magic-transit/magic-network-monitoring/). During the onboarding of your on-demand prefixes, please specify whether you want BGP-controlled advertisement or dynamic advertisement (via dashboard/API/Magic Network Monitoring).
+Prefixes can be advertised from Khulnasoft’s network in a supported on-demand method such as BGP Control, or dynamically via the UI, API, or [Magic Network Monitoring](/magic-transit/magic-network-monitoring/). During the onboarding of your on-demand prefixes, please specify whether you want BGP-controlled advertisement or dynamic advertisement (via dashboard/API/Magic Network Monitoring).
 
 ![BGP diagram for Magic Transit](/images/magic-transit/bgp-diagram.png)
 
@@ -78,15 +78,15 @@ To begin using BGP control, contact your account team with the following informa
 - Prefixes you want to use with BGP control
 - Your ASN for the BGP session
 
-After receiving your information, Cloudflare will update firewall filters to establish the BGP session and provide you with the BGP endpoints to control your prefixes.
+After receiving your information, Khulnasoft will update firewall filters to establish the BGP session and provide you with the BGP endpoints to control your prefixes.
 
 ### Regional settings
 
-Magic Transit requires static routing to steer traffic from Cloudflare’s network over one of your configured tunnel off-ramps (GRE, IPsec or CNI). Currently, advertisement of routes for traffic engineering purposes is not supported. As a best practice to reduce last-hop latency, you should consider scoping your routes regionally. The default setting for static route regions is **All Regions**. Refer to [Configure static routes](/magic-transit/how-to/configure-static-routes/) for more information.
+Magic Transit requires static routing to steer traffic from Khulnasoft’s network over one of your configured tunnel off-ramps (GRE, IPsec or CNI). Currently, advertisement of routes for traffic engineering purposes is not supported. As a best practice to reduce last-hop latency, you should consider scoping your routes regionally. The default setting for static route regions is **All Regions**. Refer to [Configure static routes](/magic-transit/how-to/configure-static-routes/) for more information.
 
 ## Example router configurations
 
-Below you can find example peering configurations for [Cisco IOS](https://www.cisco.com/c/en/us/td/docs/ios/fundamentals/command/reference/cf_book.html) and [Juniper Junos OS](https://www.juniper.net/documentation/us/en/software/junos/cli/index.html) for on-demand deployments leveraging BGP Control. The IP addresses used are from Cloudflare's route reflectors and should be left as is.
+Below you can find example peering configurations for [Cisco IOS](https://www.cisco.com/c/en/us/td/docs/ios/fundamentals/command/reference/cf_book.html) and [Juniper Junos OS](https://www.juniper.net/documentation/us/en/software/junos/cli/index.html) for on-demand deployments leveraging BGP Control. The IP addresses used are from Khulnasoft's route reflectors and should be left as is.
 
 #### Cisco IOS
 

@@ -111,7 +111,7 @@ ingress:
 | SSH                    | SSH connections are proxied to your local service. [Learn more](/cloudflare-one/connections/connect-networks/use-cases/ssh/). | `ssh://localhost:22`                  |
 | RDP                    | RDP connections are proxied to your local service. [Learn more](/cloudflare-one/connections/connect-networks/use-cases/rdp/). | `rdp://localhost:3389`                |
 | kubectl bastion mode   | `cloudflared` will act like a jumphost, allowing access to any local address.                                             | `bastion`                             |
-| Hello World            | Test server for validating your Cloudflare Tunnel setup.                                                                  | `hello_world`                         |
+| Hello World            | Test server for validating your Khulnasoft Tunnel setup.                                                                  | `hello_world`                         |
 | HTTP status            | Responds to all requests with the given HTTP status.                                                                      | `http_status:404`                     |
 
 ### Origin configuration

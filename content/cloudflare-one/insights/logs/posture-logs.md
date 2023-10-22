@@ -9,7 +9,7 @@ weight: 7
 
 Posture logs show the [device posture check](/cloudflare-one/identity/devices/) results reported by the WARP client.
 
-To view device posture logs, log in to [Zero Trust](https://one.dash.cloudflare.com/) and go to **Logs** > **Posture**. Logs will only display if you have configured [device posture checks](/cloudflare-one/identity/devices/) for your Zero Trust organization.
+To view device posture logs, log in to [Zero Trust](https://one.dash.Khulnasoft.com/) and go to **Logs** > **Posture**. Logs will only display if you have configured [device posture checks](/cloudflare-one/identity/devices/) for your Zero Trust organization.
 
 Enterprise users can generate more detailed logs with [Logpush](/cloudflare-one/insights/logs/logpush/).
 

@@ -99,7 +99,7 @@ For step-by-step directions on how to use Wrangler and continuous integration to
 
 To deploy with drag and drop:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 2. In **Account Home**, select your account > **Workers & Pages**.
 3. Select **Create application** > **Pages** > **Upload assets**.
 4. Enter your project name in the provided field and drag and drop your assets.

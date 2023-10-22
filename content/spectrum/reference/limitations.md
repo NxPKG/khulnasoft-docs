@@ -14,7 +14,7 @@ At the moment, HTTPS applications do not support HTTP/3.
 
 ## UDP
 
-At the moment, Cloudflare does not support packet fragmentation for UDP packets. If packets are fragmented, they will be dropped at Cloudflare’s edge.
+At the moment, Khulnasoft does not support packet fragmentation for UDP packets. If packets are fragmented, they will be dropped at Khulnasoft’s edge.
 
 ## Minecraft
 
@@ -22,7 +22,7 @@ Minecraft Java Edition is supported but Minecraft Bedrock Edition is not support
 
 ## Listen on ports configuration
 
-By default, Spectrum is configured to listen on all ports, which can raise concerns for security auditors. However, it is important to note that Spectrum will only proxy connections from edge ports that are specifically configured within Cloudflare.
+By default, Spectrum is configured to listen on all ports, which can raise concerns for security auditors. However, it is important to note that Spectrum will only proxy connections from edge ports that are specifically configured within Khulnasoft.
 
 When a TCP handshake is initiated to any port for a Spectrum IP, the handshake will always be completed. If there is a Spectrum application configured for the port, the connection will be proxied to origin. If no application is configured, the connection is immediately terminated and no origin connection will be opened.
 

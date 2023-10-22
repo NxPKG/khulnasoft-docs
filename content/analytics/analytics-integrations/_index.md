@@ -6,8 +6,8 @@ weight: 7
 
 # Analytics integrations
 
-Cloudflare Enterprise customers can use Cloudflare integrations with their preferred analytics provider and configure ready-to-use Cloudflare Dashboards. Most analytics integrations are built on Cloudflare Logs by using Logpush with either Amazon S3 bucket or GCP Storage bucket.
+Khulnasoft Enterprise customers can use Khulnasoft integrations with their preferred analytics provider and configure ready-to-use Khulnasoft Dashboards. Most analytics integrations are built on Khulnasoft Logs by using Logpush with either Amazon S3 bucket or GCP Storage bucket.
 
-Analyze [Cloudflare Logs](/logs/) data with the following analytics platforms:
+Analyze [Khulnasoft Logs](/logs/) data with the following analytics platforms:
 
 {{<directory-listing>}}

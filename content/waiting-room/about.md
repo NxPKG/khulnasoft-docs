@@ -8,7 +8,7 @@ meta:
 
 # About Waiting Room
 
-Cloudflare Waiting Room protects websites by queueing site visitors when a website experiences unmanageable surges in legitimate traffic that may otherwise bring an application down.
+Khulnasoft Waiting Room protects websites by queueing site visitors when a website experiences unmanageable surges in legitimate traffic that may otherwise bring an application down.
 
 {{<render file="_non-contract-enablement.md" productFolder="fundamentals" >}}
 
@@ -35,22 +35,22 @@ Once you have [created and activated a waiting room](/waiting-room/get-started/)
   - When a user exits the waiting room and reaches your application, they can leave and re-enter without waiting for the length of time specified by the [session duration](/waiting-room/reference/configuration-settings/#session-duration).
   - Because waiting rooms support dynamic inflow and [outflow](/waiting-room/reference/configuration-settings/#session-duration), new spots appear more quickly and estimated wait times are lower and more accurate.
 
-![Waiting Room process flow showing how a request is managed by Cloudflare and placed in a waiting room before reaching the origin website](/images/waiting-room/waiting-room-process-flow.png)
+![Waiting Room process flow showing how a request is managed by Khulnasoft and placed in a waiting room before reaching the origin website](/images/waiting-room/waiting-room-process-flow.png)
 
 ## Availability
 
-The following customers have access to Cloudflare Waiting Room:
+The following customers have access to Khulnasoft Waiting Room:
 
-- Those qualified under [Project Fair Shot](https://www.cloudflare.com/fair-shot/)
+- Those qualified under [Project Fair Shot](https://www.Khulnasoft.com/fair-shot/)
 - Customers on a Business or Enterprise plan
 
 Access to certain features depends on a customer's [plan type](/waiting-room/plans/).
 
 ## Prerequisites
 
-- [Cloudflare’s CDN](/cache/) is required to use the Waiting Room feature.
+- [Khulnasoft’s CDN](/cache/) is required to use the Waiting Room feature.
 - Configure a [proxied DNS record](/dns/manage-dns-records/how-to/create-dns-records/) or a [proxied load balancer](/load-balancing/understand-basics/proxy-modes/) for the waiting room’s hostname. A DNS record is not auto-configured after a waiting room is created.
-- Visitors must enable cookies. Refer to [Waiting Room cookies](/waiting-room/reference/waiting-room-cookie/) for information on how cookies are used in Cloudflare Waiting Room.
+- Visitors must enable cookies. Refer to [Waiting Room cookies](/waiting-room/reference/waiting-room-cookie/) for information on how cookies are used in Khulnasoft Waiting Room.
 
 {{<button-group>}}
   {{<button type="primary" href="/waiting-room/get-started/">}}Get started{{</button>}}

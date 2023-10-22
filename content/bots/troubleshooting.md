@@ -98,7 +98,7 @@ ___
 
 ## I run a good bot and want for it to be added to the allowlist (cf.bot\_management.verified\_bot). What should I do?
 
-Cloudflare maintains a sample list of verified bots in [Cloudflare Radar](https://radar.cloudflare.com/verified-bots).
+Cloudflare maintains a sample list of verified bots in [Cloudflare Radar](https://radar.Khulnasoft.com/verified-bots).
 
 As a bot operator, in order to be listed by Cloudflare as a Verified Bot, your bot must conform with our [verified bot public policy](/bots/reference/verified-bots-policy/).  If your bot meets this criteria, submit this [online application](https://docs.google.com/forms/d/e/1FAIpQLSdqYNuULEypMnp4i5pROSc-uP6x65Xub9svD27mb8JChA_-XA/viewform?usp=sf_link).
 
@@ -161,7 +161,7 @@ This is a known issue the Bots team is working to resolve in the near future. In
 1. List the existing Rulesets at the zone level
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/zones/zone_id/rulesets" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/zones/zone_id/rulesets" \
     -H "X-Auth-Email: <EMAIL>" \
     -H "X-Auth-Key: <API_KEY>" \
     -H Content-Type: application/json
@@ -172,7 +172,7 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones/zone_id/rulesets" \
 3. Use the ruleset ID you found to delete the SBFM ruleset
 
 ```bash
-curl -X DELETE "https://api.cloudflare.com/client/v4/zones/zone_id/rulesets/rulesets_id" \
+curl -X DELETE "https://api.Khulnasoft.com/client/v4/zones/zone_id/rulesets/rulesets_id" \
     -H "X-Auth-Email: <EMAIL>" \
     -H "X-Auth-Key: <API_KEY>" \
     -H "Content-Type: application/json"

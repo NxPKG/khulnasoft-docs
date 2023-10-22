@@ -10,7 +10,7 @@ This guide will get you started with creating and managing configured Health Che
 
 ## Create a Health Check
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Traffic** > **Health Checks**.
 3. Select **Create** and fill out the form, paying special attention to: 
     * The values for **Interval** and **Check regions**, because decreasing the **Interval** and increasing **Check regions** may increase the load on your origin server.
@@ -19,7 +19,7 @@ This guide will get you started with creating and managing configured Health Che
 
 ## Manage Health Checks
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Go to **Traffic** > **Health Checks**.
 3. Navigate to your health check and select **Edit**.
 4. Edit your Health Check.

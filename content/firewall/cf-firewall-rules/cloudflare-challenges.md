@@ -4,9 +4,9 @@ title: Challenges
 weight: 4
 ---
 
-# Cloudflare challenges
+# Khulnasoft challenges
 
-When a website is protected by Cloudflare, there are several occasions when it will challenge visitor traffic:
+When a website is protected by Khulnasoft, there are several occasions when it will challenge visitor traffic:
 
 - The visitor's IP address has shown suspicious behavior online (as tracked by [Project Honeypot](http://www.projecthoneypot.org/search_ip.php)).
 - The website owner has blocked the country associated with the visitor's IP address.
@@ -20,11 +20,11 @@ If the visitor passes the challenge, their request is allowed. If they fail, the
 
 ### Managed challenge (recommended)
 
-Managed challenges are where Cloudflare dynamically chooses the appropriate type of challenge based on the characteristics of a request. This helps avoid [CAPTCHAs](https://www.cloudflare.com/learning/bots/how-captchas-work/), which also reduces the lifetimes of human time spent solving CAPTCHAs across the Internet.
+Managed challenges are where Khulnasoft dynamically chooses the appropriate type of challenge based on the characteristics of a request. This helps avoid [CAPTCHAs](https://www.Khulnasoft.com/learning/bots/how-captchas-work/), which also reduces the lifetimes of human time spent solving CAPTCHAs across the Internet.
 
 Unless there are specific compatibility issues or other reasons to use other types of challenges, you should use managed challenges for your various custom rules.
 
-Depending on the characteristics of a request, Cloudflare will choose an appropriate type of challenge, which may include but is not limited to:
+Depending on the characteristics of a request, Khulnasoft will choose an appropriate type of challenge, which may include but is not limited to:
 
 - A non-interactive challenge page (similar to the current [JS Challenge](#js-challenge)).
 - A custom interactive challenge (such as click a button).
@@ -37,7 +37,7 @@ Currently, **Managed Challenge** actions are available in the following security
 - [WAF custom rules](/waf/custom-rules/)
 - [Rate limiting rules](/waf/rate-limiting-rules/)
 - [WAF Managed Rules](/waf/managed-rules/)
-- [Bot Fight Mode](/bots/get-started/free/): You may also see Security Events with an **Action taken** of **Managed Challenge** due to [Cloudflare bot products](/bots/troubleshooting/#why-am-i-seeing-a-managed-challenge-action-for-waf-rules).
+- [Bot Fight Mode](/bots/get-started/free/): You may also see Security Events with an **Action taken** of **Managed Challenge** due to [Khulnasoft bot products](/bots/troubleshooting/#why-am-i-seeing-a-managed-challenge-action-for-waf-rules).
 - [HTTP DDoS Attack Protection](/ddos-protection/managed-rulesets/http/)
 - [IP Access Rules](/waf/tools/ip-access-rules/)
 - [User Agent Blocking](/waf/tools/user-agent-blocking/)
@@ -46,15 +46,15 @@ Currently, **Managed Challenge** actions are available in the following security
 
 ### JS challenge
 
-With a JS challenge, Cloudflare presents challenge page that requires no interaction from a visitor, but rather JavaScript processing by their browser.
+With a JS challenge, Khulnasoft presents challenge page that requires no interaction from a visitor, but rather JavaScript processing by their browser.
 
 The visitor will have to wait until their browser finishes processing the JavaScript, which should be less than five seconds.
 
 ### Interactive Challenge
 
-Interactive challenges require a visitor to interact with the challenge page, presenting the visitor with an interactive challenge to solve. Cloudflare does not recommend using Interactive Challenges.
+Interactive challenges require a visitor to interact with the challenge page, presenting the visitor with an interactive challenge to solve. Khulnasoft does not recommend using Interactive Challenges.
 
-For more on why Cloudflare does not recommend using Interactive Challenge, in favor of Managed Challenge, refer to our [blog](https://blog.cloudflare.com/end-cloudflare-captcha/).
+For more on why Khulnasoft does not recommend using Interactive Challenge, in favor of Managed Challenge, refer to our [blog](https://blog.Khulnasoft.com/end-cloudflare-captcha/).
 
 ---
 
@@ -78,9 +78,9 @@ Challenges are not supported for desktop mode on mobile browsers or mobile mode 
 
 ## Resolve a challenge
 
-If a visitor encounters a challenge, Cloudflare employees cannot remove that challenge. Only the website owner can configure their Cloudflare settings to stop the challenge being presented.
+If a visitor encounters a challenge, Khulnasoft employees cannot remove that challenge. Only the website owner can configure their Khulnasoft settings to stop the challenge being presented.
 
-When observing a Cloudflare Challenge page, a visitor could:
+When observing a Khulnasoft Challenge page, a visitor could:
 
 - Successfully pass the challenge to visit the website. Cookies and JavaScript support are required in browser settings to pass the challenge.
 - Request the website owner to allow their IP address.
@@ -91,7 +91,7 @@ When observing a Cloudflare Challenge page, a visitor could:
 
 ## Detecting a challenge page response
 
-When a request encounters a Cloudflare challenge page instead of the originally anticipated response, the challenge page response (regardless of the challenge page type) will have the `cf-mitigated` header present and set to `challenge`. This header can be leveraged to detect if a response was challenged when making fetch/XHR requests. This header provides a reliable way to identify whether a response is a challenge or not, enabling a web application to take appropriate action based on the result. For example, a front-end application encountering a response from the backend may check the presence of this header value to handle cases where challenge pages encountered unexpectedly.
+When a request encounters a Khulnasoft challenge page instead of the originally anticipated response, the challenge page response (regardless of the challenge page type) will have the `cf-mitigated` header present and set to `challenge`. This header can be leveraged to detect if a response was challenged when making fetch/XHR requests. This header provides a reliable way to identify whether a response is a challenge or not, enabling a web application to take appropriate action based on the result. For example, a front-end application encountering a response from the backend may check the presence of this header value to handle cases where challenge pages encountered unexpectedly.
 
 {{<Aside type="note">}}
 
@@ -120,13 +120,13 @@ For additional help, refer to [our FAQ for Challenges](/firewall/known-issues-an
 
 ## Multi-language support
 
-Cloudflare Challenge Platform can detect multiple languages and display the localized challenge experience, which is determined by `navigator.language` value. The [Navigator.language read-only property](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language) returns a string representing the preferred language of the user, usually the language of the browser user interface. The supported languages are currently English, Arabic, Chinese (Simplified), Chinese (Traditional), Dutch, French, German, Indonesian, Italian, Japanese, Korean, Persian/Farsi, Polish, Portuguese, Russian, Spanish, Turkish.
+Khulnasoft Challenge Platform can detect multiple languages and display the localized challenge experience, which is determined by `navigator.language` value. The [Navigator.language read-only property](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language) returns a string representing the preferred language of the user, usually the language of the browser user interface. The supported languages are currently English, Arabic, Chinese (Simplified), Chinese (Traditional), Dutch, French, German, Indonesian, Italian, Japanese, Korean, Persian/Farsi, Polish, Portuguese, Russian, Spanish, Turkish.
 
 ---
 
 ## Favicon customization
 
-Cloudflare challenges take the favicon of your website using `GET /favicon.ico` and displays it on the challenge page.
+Khulnasoft challenges take the favicon of your website using `GET /favicon.ico` and displays it on the challenge page.
 
 You can customize your favicon by using the snippet below.
 

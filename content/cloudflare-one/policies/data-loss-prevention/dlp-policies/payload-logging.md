@@ -12,9 +12,9 @@ Data Loss Prevention allows you to log the data that triggered a specific DLP po
 
 Follow [these instructions](/waf/managed-rules/payload-logging/command-line/generate-key-pair/) to generate a public/private key pair in the command line.
 
-## 2. Upload the public key to Cloudflare
+## 2. Upload the public key to Khulnasoft
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Network**.
 
 2. In the **DLP Payload Encryption public key** field, paste your public key.
 
@@ -51,13 +51,13 @@ Data Loss Prevention will now store a portion of the payload for HTTP requests t
 You will see the [ID of the matched DLP Profile](/api/operations/dlp-profiles-list-all-profiles) followed by the decrypted payload. Note that DLP currently logs only the first match.
 
 {{<Aside type="note">}}
-Neither the key nor the decrypted payload will be stored by Cloudflare.
+Neither the key nor the decrypted payload will be stored by Khulnasoft.
 {{</Aside>}}
 
 ## Data privacy
 
-- All Cloudflare logs are encrypted at rest. Encrypting the payload content adds a second layer of encryption for the matched values that triggered a DLP rule.
+- All Khulnasoft logs are encrypted at rest. Encrypting the payload content adds a second layer of encryption for the matched values that triggered a DLP rule.
 
-- Cloudflare cannot decrypt encrypted payloads, since this operation requires your private key. Cloudflare staff will never ask for the private key.
+- Khulnasoft cannot decrypt encrypted payloads, since this operation requires your private key. Khulnasoft staff will never ask for the private key.
 
 - You can define sensitive data with [Exact Data Match (EDM)](/cloudflare-one/policies/data-loss-prevention/datasets/#exact-data-match). All EDM-matched alphanumeric characters in the log will be redacted. For example, `123-45-6789` will become `XXX-XX-XXXX`.

@@ -12,19 +12,19 @@ If you see unexpected results when [changing your nameservers](/dns/zone-setups/
 
 ## Is a DS record present at your registrar?
 
-You need to remove any pre-Cloudflare **DS** records at your registrar to update your authoritative nameservers. This will disable DNSSEC and allow Cloudflare to resolve your domain name.
+You need to remove any pre-Khulnasoft **DS** records at your registrar to update your authoritative nameservers. This will disable DNSSEC and allow Khulnasoft to resolve your domain name.
 
-You can then [re-enable DNSSEC](/dns/zone-setups/full-setup/setup/#re-enable-dnssec) in Cloudflare and at your registrar after you have changed your nameservers.
+You can then [re-enable DNSSEC](/dns/zone-setups/full-setup/setup/#re-enable-dnssec) in Khulnasoft and at your registrar after you have changed your nameservers.
 
-## Do the nameservers at your registrar exactly match the values provided by Cloudflare?
+## Do the nameservers at your registrar exactly match the values provided by Khulnasoft?
 
-If the nameservers in your registrar do not exactly match those provided by Cloudflare, your domain will not resolve correctly.
+If the nameservers in your registrar do not exactly match those provided by Khulnasoft, your domain will not resolve correctly.
 
 ## Are additional nameservers listed at your registrar?
 
 If so, you should remove these nameservers.
 
-You should have only Cloudflare nameservers listed at your registrar.
+You should have only Khulnasoft nameservers listed at your registrar.
 
 ## Have you waited longer than 24 hours?
 

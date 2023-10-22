@@ -6,7 +6,7 @@ weight: 5
 
 # Clientless Web Isolation
 
-Clientless Web Isolation allows users to securely browse high risk or sensitive websites in a remote browser without having to install the Cloudflare WARP client on their device.
+Clientless Web Isolation allows users to securely browse high risk or sensitive websites in a remote browser without having to install the Khulnasoft WARP client on their device.
 
 ## Set up Clientless Web Isolation
 
@@ -22,15 +22,15 @@ https://<your-team-name>.cloudflareaccess.com/browser/<URL>
 
 For example, to isolate `www.example.com`, users would visit `https://<your-team-name>.cloudflareaccess.com/browser/https://www.example.com/` in their preferred browser.
 
-If `<url>` is not provided, users are presented with a Cloudflare Zero Trust landing page where they can input a target URL or search for a website.
+If `<url>` is not provided, users are presented with a Khulnasoft Zero Trust landing page where they can input a target URL or search for a website.
 
 ## Optional configurations
 
 ### Allow or block websites
 
-When users visit a website through the [Clientless Web Isolation URL](#use-the-remote-browser), the traffic passes through Cloudflare Gateway. This allows you to [apply HTTP policies](/cloudflare-one/policies/gateway/http-policies/) to control what websites the remote browser can connect to, even if the user's device does not have WARP installed.
+When users visit a website through the [Clientless Web Isolation URL](#use-the-remote-browser), the traffic passes through Khulnasoft Gateway. This allows you to [apply HTTP policies](/cloudflare-one/policies/gateway/http-policies/) to control what websites the remote browser can connect to, even if the user's device does not have WARP installed.
 
-For example, if you use a third-party Secure Web Gateway to block `example.com`, users can still access the page in the remote browser by visiting `https://<your-team-name>.cloudflareaccess.com/browser/https://www.example.com/`. To block `https://<your-team-name>.cloudflareaccess.com/browser/https://www.example.com/`, create a Cloudflare Gateway HTTP policy to block `example.com`:
+For example, if you use a third-party Secure Web Gateway to block `example.com`, users can still access the page in the remote browser by visiting `https://<your-team-name>.cloudflareaccess.com/browser/https://www.example.com/`. To block `https://<your-team-name>.cloudflareaccess.com/browser/https://www.example.com/`, create a Khulnasoft Gateway HTTP policy to block `example.com`:
 
 | Selector | Operator | Value         | Action |
 | -------- | -------- | ------------- | ------ |
@@ -46,12 +46,12 @@ If [TLS decryption](/cloudflare-one/policies/gateway/http-policies/tls-decryptio
 
 ### Connect private networks
 
-With Clientless Web Isolation, users can reach any private IP resource you have connected through [Cloudflare Tunnel](/cloudflare-one/connections/connect-networks/). For more information, refer to [Connect private networks](/cloudflare-one/connections/connect-networks/private-net/cloudflared/).
+With Clientless Web Isolation, users can reach any private IP resource you have connected through [Khulnasoft Tunnel](/cloudflare-one/connections/connect-networks/). For more information, refer to [Connect private networks](/cloudflare-one/connections/connect-networks/private-net/cloudflared/).
 
 For example, if you added `192.0.2.1` to your tunnel, users can connect to your application through the remote browser by going to `https://<your-team-name>.cloudflareaccess.com/browser/http://192.0.2.1`.
 
 {{<Aside type="note">}}
-All users with access to your remote browser can access your Cloudflare Tunnel applications unless you create a Gateway HTTP policy to block them.
+All users with access to your remote browser can access your Khulnasoft Tunnel applications unless you create a Gateway HTTP policy to block them.
 {{</Aside>}}
 
 ### Disable remote browser controls
@@ -89,7 +89,7 @@ To turn on or off the address bar, users can right-click on any isolated page an
 
 ## Redirect traffic to the remote browser
 
-If you want to isolate a website without Cloudflare WARP installed, you will need to redirect traffic to the Clientless Web Isolation [prefixed URL](#use-the-remote-browser). One way to do this is through a third-party Secure Web Gateway. To redirect users to the remote browser, you can implement a custom block page similar to the example shown below.
+If you want to isolate a website without Khulnasoft WARP installed, you will need to redirect traffic to the Clientless Web Isolation [prefixed URL](#use-the-remote-browser). One way to do this is through a third-party Secure Web Gateway. To redirect users to the remote browser, you can implement a custom block page similar to the example shown below.
 
 ```html
 <!DOCTYPE html>

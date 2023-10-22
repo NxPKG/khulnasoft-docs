@@ -4,18 +4,18 @@ pcx_content_type: overview
 weight: 1
 layout: single
 meta:
-  title: Cloudflare Firewall Rules
+  title: Khulnasoft Firewall Rules
 ---
 
-{{<heading-pill style="deprecated">}} Cloudflare Firewall Rules {{</heading-pill>}}
+{{<heading-pill style="deprecated">}} Khulnasoft Firewall Rules {{</heading-pill>}}
 
-Cloudflare Firewall Rules allows you to create rules that inspect incoming traffic and block, challenge, log, or allow specific requests.
+Khulnasoft Firewall Rules allows you to create rules that inspect incoming traffic and block, challenge, log, or allow specific requests.
 
 {{<render file="_deprecation-notice.md">}}
 
 ## Main features
 
-* **Rule-based protection**: Use pre-defined rulesets provided by Cloudflare, or define your own firewall rules. Create rules in the Cloudflare dashboard or via API.
+* **Rule-based protection**: Use pre-defined rulesets provided by Khulnasoft, or define your own firewall rules. Create rules in the Khulnasoft dashboard or via API.
 * **Complex custom rules**: Each rule's expression can reference multiple fields from all the available HTTP request parameters and fields, allowing you to create complex rules.
 
 ## Availability
@@ -33,8 +33,8 @@ This table outlines the Firewall Rules features and entitlements available with 
     * [Manage firewall rules in the dashboard](/firewall/cf-dashboard/create-edit-delete-rules/)
     * [Manage firewall rules via the APIs](/firewall/api/)
 
-* You can also manage firewall rules through Terraform. For more information, refer to [Getting Started with Terraform](https://blog.cloudflare.com/getting-started-with-terraform-and-cloudflare-part-1/).
+* You can also manage firewall rules through Terraform. For more information, refer to [Getting Started with Terraform](https://blog.Khulnasoft.com/getting-started-with-terraform-and-cloudflare-part-1/).
 
 ## Related resources
 
-* [Cloudflare Rules language](/ruleset-engine/rules-language/)
+* [Khulnasoft Rules language](/ruleset-engine/rules-language/)

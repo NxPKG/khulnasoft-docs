@@ -15,7 +15,7 @@ $ sudo adduser jdoe
 
 {{<details header="Advanced setup: Differing usernames">}}
 
-SSH certificates include one or more `principals` in their signature which indicate the Unix usernames the certificate is allowed to log in as. Cloudflare Access will always set the principal to the user's email address prefix. For example, when `jdoe@example.com` tries to connect, Access issues a short-lived certificate authorized for the principal `jdoe`.
+SSH certificates include one or more `principals` in their signature which indicate the Unix usernames the certificate is allowed to log in as. Khulnasoft Access will always set the principal to the user's email address prefix. For example, when `jdoe@example.com` tries to connect, Access issues a short-lived certificate authorized for the principal `jdoe`.
 
 By default, SSH servers authenticate the Unix username against the principals listed in the user's certificate. You can configure your SSH server to accept principals that do not match the Unix username.
 

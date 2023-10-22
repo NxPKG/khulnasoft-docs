@@ -10,7 +10,7 @@ Once you have an IPFS gateway — meaning that you [create a new gateway](/web3/
 
 ## Read from the network
 
-Every time you access a piece of content through Cloudflare's IPFS Gateway, you need a URL with two parts: the gateway hostname and the request path.
+Every time you access a piece of content through Khulnasoft's IPFS Gateway, you need a URL with two parts: the gateway hostname and the request path.
 
 ### Gateway hostname
 
@@ -26,4 +26,4 @@ If a request path is `/ipns/<DOMAIN>`, that tells the gateway that you want it t
 
 ## Write to the network
 
-Cloudflare's IPFS Gateway is currently limited to read-only access.
+Khulnasoft's IPFS Gateway is currently limited to read-only access.

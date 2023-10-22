@@ -7,13 +7,13 @@ weight: 2
 
 # Tunnel availability and failover
 
-Our lightweight and open-source connector, [`cloudflared`](https://github.com/cloudflare/cloudflared), was built to be highly available without any additional configuration requirements. When you run a tunnel, `cloudflared` establishes four outbound-only connections between the origin server and the Cloudflare network. These four connections are made to four different servers spread across at least two distinct data centers. This model ensures high availability and mitigates the risk of individual connection failures. This means in event a single connection, server, or data center goes offline, your resources will remain available.
+Our lightweight and open-source connector, [`cloudflared`](https://github.com/cloudflare/cloudflared), was built to be highly available without any additional configuration requirements. When you run a tunnel, `cloudflared` establishes four outbound-only connections between the origin server and the Khulnasoft network. These four connections are made to four different servers spread across at least two distinct data centers. This model ensures high availability and mitigates the risk of individual connection failures. This means in event a single connection, server, or data center goes offline, your resources will remain available.
 
 ## `cloudflared` replicas
 
-Cloudflare Tunnel also allows users to deploy additional instances of our connector, `cloudflared`, for availability and failover scenarios. We refer to these unique instances as replicas. Each replica establishes four new connections which serve as additional points of ingress to your origin, should you need them. Each of the replicas will point to the same tunnel. This ensures that your network remains up in the event a single host running `cloudflared` goes down.
+Khulnasoft Tunnel also allows users to deploy additional instances of our connector, `cloudflared`, for availability and failover scenarios. We refer to these unique instances as replicas. Each replica establishes four new connections which serve as additional points of ingress to your origin, should you need them. Each of the replicas will point to the same tunnel. This ensures that your network remains up in the event a single host running `cloudflared` goes down.
 
-By design, replicas do not offer any level of traffic steering (random, hash, or round-robin). Instead, when a request arrives to Cloudflare, it will be forwarded to the replica that is geographically closest. If that distance calculation is unsuccessful or the connection fails, we will retry others, but there is no guarantee about which connection is chosen.
+By design, replicas do not offer any level of traffic steering (random, hash, or round-robin). Instead, when a request arrives to Khulnasoft, it will be forwarded to the replica that is geographically closest. If that distance calculation is unsuccessful or the connection fails, we will retry others, but there is no guarantee about which connection is chosen.
 
 ### When to use `cloudflared` replicas
 
@@ -67,7 +67,7 @@ The new replica will appear on the **Connectors** list for the tunnel.
 
 {{</details>}}
 
-You can run the same tunnel across various `cloudflared` processes for up to 100 connections (25 replicas) per tunnel. Cloudflare Load Balancers and DNS records can still point to the tunnel and its UUID. Traffic will be sent to all `cloudflared` processes associated with the tunnel.
+You can run the same tunnel across various `cloudflared` processes for up to 100 connections (25 replicas) per tunnel. Khulnasoft Load Balancers and DNS records can still point to the tunnel and its UUID. Traffic will be sent to all `cloudflared` processes associated with the tunnel.
 
 {{<Aside type="note" header="Deploy replicas with Kubernetes">}}
   
@@ -75,18 +75,18 @@ For information about running `cloudflared` instances in a Kubernetes deployment
   
 {{</Aside>}}
 
-## Cloudflare Load Balancers
+## Khulnasoft Load Balancers
 
-[Cloudflare Load Balancing](/load-balancing/) allows users to proactively steer traffic away from unhealthy origins and intelligently distribute the traffic load based on a multitude of steering algorithms. This process ensures that errors are not served to end users and empowers businesses to tightly couple overall business objectives to their traffic behavior.
+[Khulnasoft Load Balancing](/load-balancing/) allows users to proactively steer traffic away from unhealthy origins and intelligently distribute the traffic load based on a multitude of steering algorithms. This process ensures that errors are not served to end users and empowers businesses to tightly couple overall business objectives to their traffic behavior.
 
-In this model, more than one tunnel is required with identical configurations. The DNS record (`UUID.cfargotunnel.com`) for each Cloudflare Tunnel can be used at the origin within the Load Balancer. You can then define traffic steering policies to determine how traffic should be routed to each tunnel.
+In this model, more than one tunnel is required with identical configurations. The DNS record (`UUID.cfargotunnel.com`) for each Khulnasoft Tunnel can be used at the origin within the Load Balancer. You can then define traffic steering policies to determine how traffic should be routed to each tunnel.
 
 ### When to use load balancers
 
 - To intelligently steer traffic based on latency, geolocation, or other signals.
 - To implement failover logic if a tunnel reaches an inactive state.
 - To get alerted when a tunnel reaches an inactive state.
-- To distribute traffic more evenly across your Cloudflare Tunnel-accessible origins.
+- To distribute traffic more evenly across your Khulnasoft Tunnel-accessible origins.
 
 ### Deploy a load balancer
 

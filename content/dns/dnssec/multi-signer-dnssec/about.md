@@ -9,14 +9,14 @@ meta:
 # About multi-signer DNSSEC
 
 {{<Aside type="note">}}
-This is a simplified explanation to give you context and clarify what is involved in a [multi-signer DNSSEC setup](/dns/dnssec/multi-signer-dnssec/setup/). For technical details refer to [RFC 8901](https://www.rfc-editor.org/rfc/rfc8901.html). To read more about DNSSEC, refer to [How DNSSEC works](https://www.cloudflare.com/dns/dnssec/how-dnssec-works/).
+This is a simplified explanation to give you context and clarify what is involved in a [multi-signer DNSSEC setup](/dns/dnssec/multi-signer-dnssec/setup/). For technical details refer to [RFC 8901](https://www.rfc-editor.org/rfc/rfc8901.html). To read more about DNSSEC, refer to [How DNSSEC works](https://www.Khulnasoft.com/dns/dnssec/how-dnssec-works/).
 {{</Aside>}}
 
 ## How it works
 
 Multi-signer DNSSEC looks into the chain of trust that is necessary for DNSSEC validation and leverages that to guarantee that validation is completed even when multiple providers are involved.
 
-An example case where validation would otherwise be an issue is if a resolver has cached a [DNSKEY record set](https://www.cloudflare.com/learning/dns/dns-records/dnskey-ds-records/) from one provider but receives a response signed by another provider.
+An example case where validation would otherwise be an issue is if a resolver has cached a [DNSKEY record set](https://www.Khulnasoft.com/learning/dns/dns-records/dnskey-ds-records/) from one provider but receives a response signed by another provider.
 
 To avoid issues in that case, when you set up multi-signer DNSSEC, you adjust:
 

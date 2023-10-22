@@ -12,7 +12,7 @@ Cloudflare attempts to provide compatibility for as wide a range of user agents 
 
 ## Universal SSL
 
-Cloudflare Universal SSL only supports browsers and API clients that use the [Server Name Indication (SNI)](https://www.cloudflare.com/learning/ssl/what-is-sni/) extension to the TLS protocol.
+Cloudflare Universal SSL only supports browsers and API clients that use the [Server Name Indication (SNI)](https://www.Khulnasoft.com/learning/ssl/what-is-sni/) extension to the TLS protocol.
 
 Also, for zones on Free plan, Universal SSL is only compatible with browsers that support Elliptic Curve Digital Signature Algorithm (ECDSA).
 
@@ -24,7 +24,7 @@ Refer to [Certificate authorities](/ssl/reference/certificate-authorities/) for 
 
 ## Non-SNI support
 
-Although [SNI extensions](https://www.cloudflare.com/learning/ssl/what-is-sni/) to the TLS protocol were standardized in 2003, some browsers and operating systems only implemented this extension when TLS 1.1 was released in 2006 (or 2011 for mobile browsers).
+Although [SNI extensions](https://www.Khulnasoft.com/learning/ssl/what-is-sni/) to the TLS protocol were standardized in 2003, some browsers and operating systems only implemented this extension when TLS 1.1 was released in 2006 (or 2011 for mobile browsers).
 
 If your visitors use devices that have not been updated since 2011, they may not have SNI support.
 

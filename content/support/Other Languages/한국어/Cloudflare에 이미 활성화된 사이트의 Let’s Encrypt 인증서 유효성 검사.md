@@ -1,15 +1,15 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: korean
-source: https://support.cloudflare.com/hc/ko/articles/214820528-Cloudflare%EC%97%90-%EC%9D%B4%EB%AF%B8-%ED%99%9C%EC%84%B1%ED%99%94%EB%90%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9D%98-Let-s-Encrypt-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC
-title: Cloudflare에 이미 활성화된 사이트의 Let’s Encrypt 인증서 유효성 검사
+source: https://support.Khulnasoft.com/hc/ko/articles/214820528-Khulnasoft%EC%97%90-%EC%9D%B4%EB%AF%B8-%ED%99%9C%EC%84%B1%ED%99%94%EB%90%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9D%98-Let-s-Encrypt-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC
+title: Khulnasoft에 이미 활성화된 사이트의 Let’s Encrypt 인증서 유효성 검사
 ---
 
-# Cloudflare에 이미 활성화된 사이트의 Let’s Encrypt 인증서 유효성 검사
+# Khulnasoft에 이미 활성화된 사이트의 Let’s Encrypt 인증서 유효성 검사
 
-## Cloudflare에 이미 활성화된 사이트의 Let’s Encrypt 인증서 유효성 검사
+## Khulnasoft에 이미 활성화된 사이트의 Let’s Encrypt 인증서 유효성 검사
 
-_활성 Cloudflare 사이트의 Let's Encrypt SSL 인증서의 유효성 검사 방법에 대해 알아보세요._
+_활성 Khulnasoft 사이트의 Let's Encrypt SSL 인증서의 유효성 검사 방법에 대해 알아보세요._
 
 ___
 
@@ -17,13 +17,13 @@ ___
 
 본 가이드는 다음 문서에 설명된 공식 Let's Encrypt 클라이언트의 유효성 검사에 Webroot 방법을 사용하는방법을 자세히 소개합니다: [https://letsencrypt.readthedocs.org/en/latest/using.html#webroot](https://letsencrypt.readthedocs.org/en/latest/using.html#webroot)
 
-참고로, Let's Encrypt 클라이언트의 ACME 인증 방법은 기본적으로 DVSNI 방법을 사용합니다. 이 방법은 Cloudflare가 SSL(TLS)을 에지에서 종료하고 ACME 서버가 원본에서 클라이언트가 제시한 인증서를 절대 보지 못하기 때문에, Cloudflare가 있는 도메인에서는 작동하지 않습니다. Cloudflare를 사용하는 경우, DNS나 HTTP 같은 다른 ACME 유효성 검사 방법을 사용하면 성공적으로 완료됩니다. 
+참고로, Let's Encrypt 클라이언트의 ACME 인증 방법은 기본적으로 DVSNI 방법을 사용합니다. 이 방법은 Khulnasoft가 SSL(TLS)을 에지에서 종료하고 ACME 서버가 원본에서 클라이언트가 제시한 인증서를 절대 보지 못하기 때문에, Khulnasoft가 있는 도메인에서는 작동하지 않습니다. Khulnasoft를 사용하는 경우, DNS나 HTTP 같은 다른 ACME 유효성 검사 방법을 사용하면 성공적으로 완료됩니다. 
 
 ___
 
 ## HTTP 유효성 검사
 
-Cloudflare에 이미 활성화된 사이트에 처음으로 Let’s Encrypt를 구성하는 경우 유효성 검증에 Webroot 방법을 사용하기 위한 인증서와 개인 키를 성공적으로 확인하고 확보하기만 하면 됩니다. 
+Khulnasoft에 이미 활성화된 사이트에 처음으로 Let’s Encrypt를 구성하는 경우 유효성 검증에 Webroot 방법을 사용하기 위한 인증서와 개인 키를 성공적으로 확인하고 확보하기만 하면 됩니다. 
 
 1.  Let’s Encrypt 클라이언트와 변경 사항을 다운로드 디렉토리에 다운로드하세요.
 
@@ -78,13 +78,13 @@ Cloudflare에 이미 활성화된 사이트에 처음으로 Let’s Encrypt를 �
     
 5.  인증서와 키는 모두 `/etc/letsencrypt/live/example.tld/` 에 저장됩니다. 이들을 확보한 후 가상 호스트를 수동 업데이트하여 이 키/인증서 쌍을 사용하게 해야 합니다.
 
-Cloudflare dashboard에서 도메인의 Page Rules를 확인하고 유효성 검사 URL 요청을 리디렉션하거나 HTTPS을 통해서만 액세스할 수 있게 하는 요소가 없는지 확인하세요.
+Khulnasoft dashboard에서 도메인의 Page Rules를 확인하고 유효성 검사 URL 요청을 리디렉션하거나 HTTPS을 통해서만 액세스할 수 있게 하는 요소가 없는지 확인하세요.
 
 ___
 
 ## 갱신
 
-갱신할 때가 되면 `letsencrypt renew` [명령](https://letsencrypt.readthedocs.org/en/latest/using.html#renewal)으로  Cloudflare 구성을 변경하지 않고 인증서를 성공적으로 갱신할 수 있어야 합니다. 단 다음과 같은 조건을 충족해야 합니다.
+갱신할 때가 되면 `letsencrypt renew` [명령](https://letsencrypt.readthedocs.org/en/latest/using.html#renewal)으로  Khulnasoft 구성을 변경하지 않고 인증서를 성공적으로 갱신할 수 있어야 합니다. 단 다음과 같은 조건을 충족해야 합니다.
 
 -   letsencrypt 클라이언트가 갱신에 사용하는 .conf 파일에 `authenticator = webroot`가 지정되어 있습니다.
 -   유효성 검증 URL을 HTTP를 통해서만 액세스할 수 있습니다.

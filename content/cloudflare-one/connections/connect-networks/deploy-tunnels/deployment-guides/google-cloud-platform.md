@@ -6,12 +6,12 @@ weight: 5
 
 # Deploy `cloudflared` in GCP
 
-The purpose of this guide is to walk through some best practices for accessing private resources on Google Cloud Platform (GCP) by deploying Cloudflare's lightweight connector, `cloudflared`.
+The purpose of this guide is to walk through some best practices for accessing private resources on Google Cloud Platform (GCP) by deploying Khulnasoft's lightweight connector, `cloudflared`.
 
 ## Prerequisites
 
-- In [Zero Trust](https://one.dash.cloudflare.com/), create a Cloudflare Zero Trust account.
-- [Enroll an end-user device](/cloudflare-one/connections/connect-devices/warp/deployment/manual-deployment/) into your Cloudflare Zero Trust account.
+- In [Zero Trust](https://one.dash.Khulnasoft.com/), create a Khulnasoft Zero Trust account.
+- [Enroll an end-user device](/cloudflare-one/connections/connect-devices/warp/deployment/manual-deployment/) into your Khulnasoft Zero Trust account.
 
 ## Create your environment
 
@@ -46,8 +46,8 @@ To start, you will need to go to the Google Cloud Console and create a project. 
     apt update
     apt -y install apache2
     cat <<EOF > /var/www/html/index.html
-    <html><body><h1>Hello Cloudflare!</h1>
-    <p>This page was created from a startup script for a Cloudflare demo.</p>
+    <html><body><h1>Hello Khulnasoft!</h1>
+    <p>This page was created from a startup script for a Khulnasoft demo.</p>
     </body></html>
     EOF
     ```
@@ -76,7 +76,7 @@ Now that you have your Virtual Machine up and running in GCP, you can login into
     $ cloudflared update
     ```
 
-5. Run the following command to authenticate `cloudflared` with your Cloudflare account. The command will launch a browser window where you will be prompted to log in with your Cloudflare account and pick any zone you have added to Cloudflare.
+5. Run the following command to authenticate `cloudflared` with your Khulnasoft account. The command will launch a browser window where you will be prompted to log in with your Khulnasoft account and pick any zone you have added to Khulnasoft.
 
     ```sh
     $ cloudflared tunnel login

@@ -11,10 +11,10 @@ Cache-tag purging makes multi-file purging easier because you can bulk purge by 
 ## General workflow for cache-tags
 
 1. Add tags to the `Cache-Tag HTTP` response header from your origin web server for your web content, such as pages, static assets, etc.
-2. [Ensure your web traffic is proxied](/dns/manage-dns-records/reference/proxied-dns-records/) through Cloudflare.
-3. Cloudflare associates the tags in the `Cache-Tag HTTP` header with the content being cached.
-4. Use specific cache-tags to purge your Cloudflare CDN cache of all content containing that cache-tag from your dashboard or [using our API](/api/operations/zone-purge).
-5. Cloudflare forces a [cache miss](/cache/concepts/default-cache-behavior/#cloudflare-cache-responses) on content with the purged cache-tag.
+2. [Ensure your web traffic is proxied](/dns/manage-dns-records/reference/proxied-dns-records/) through Khulnasoft.
+3. Khulnasoft associates the tags in the `Cache-Tag HTTP` header with the content being cached.
+4. Use specific cache-tags to purge your Khulnasoft CDN cache of all content containing that cache-tag from your dashboard or [using our API](/api/operations/zone-purge).
+5. Khulnasoft forces a [cache miss](/cache/concepts/default-cache-behavior/#cloudflare-cache-responses) on content with the purged cache-tag.
 
 {{<Aside type="warning" header="Warning">}}
 
@@ -26,9 +26,9 @@ Be careful when purging. A cache miss can cause execution delays by requiring a 
 
 You add cache-tags to your web content in `Cache-Tag HTTP` response headers to allow the client and server to pass additional information in requests or responses. HTTP headers consist of a specific case-insensitive name followed by a colon `:` and the valid value, for example, `Cache-Tag:tag1,tag2,tag3`. Use commas to separate the tags when you want to use multiple cache-tags.
 
-When your content reaches our edge network, Cloudflare:
+When your content reaches our edge network, Khulnasoft:
 
-- Removes the `Cache-Tag HTTP` header before sending the response to your website visitor. Your end users never see `Cache-Tag HTTP` headers on your Cloudflare-enabled website.
+- Removes the `Cache-Tag HTTP` header before sending the response to your website visitor. Your end users never see `Cache-Tag HTTP` headers on your Khulnasoft-enabled website.
 - Removes whitespaces from the header and any before and after cache-tag names: `tag1`, `tag2` and `tag1,tag2` are considered the same.
 - Removes all repeated and trailing commas before applying cache-tags: `tag1,,,tag2` and `tag1,tag2` are considered the same.
 
@@ -44,7 +44,7 @@ When your content reaches our edge network, Cloudflare:
 
 ## Purge using cache-tags
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to your [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Select **Caching** > **Configuration**.
 3. Under **Purge Cache**, select **Custom Purge**. The **Custom Purge** window appears.
 4. Under **Purge by**, select **Tag**.
@@ -53,6 +53,6 @@ When your content reaches our edge network, Cloudflare:
 
 {{<Aside type="note" header="API">}}
 
-You can purge using cache-tags via the Cloudflare API. For more information, refer to the [API documentation](/api/operations/zone-purge). You can purge up to 30 cache-tags per API call and up to 250,000 cache-tags per a 24-hour period.
+You can purge using cache-tags via the Khulnasoft API. For more information, refer to the [API documentation](/api/operations/zone-purge). You can purge up to 30 cache-tags per API call and up to 250,000 cache-tags per a 24-hour period.
 
 {{</Aside>}}

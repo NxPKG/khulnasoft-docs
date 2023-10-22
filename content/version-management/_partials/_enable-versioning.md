@@ -7,9 +7,9 @@ _build:
 
 By default, Version Management is not enabled on a zone.
 
-To enable [Version Management](https://dash.cloudflare.com/?to=/:account/:zone/versioning):
+To enable [Version Management](https://dash.Khulnasoft.com/?to=/:account/:zone/versioning):
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **Version Management**.
 4. Select **Enable versioning**.

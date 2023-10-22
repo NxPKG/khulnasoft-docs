@@ -7,17 +7,17 @@ weight: 11
 # Troubleshooting
 
 
-## Cloudflare-specific
+## Khulnasoft-specific
 
 ### No link named "ipfs"
 
-If you get a `no link named "ipfs" under <<CID>>` error message when trying to access content through Cloudflare's IPFS gateway, that means you have created a gateway without a value for the [DNSLink](/web3/ipfs-gateway/concepts/dnslink).
+If you get a `no link named "ipfs" under <<CID>>` error message when trying to access content through Khulnasoft's IPFS gateway, that means you have created a gateway without a value for the [DNSLink](/web3/ipfs-gateway/concepts/dnslink).
 
-Since Cloudflare currently only supports restricted gateways - and not [universal gateways](/web3/ipfs-gateway/concepts/universal-gateway/) - these requests will continue to fail until you specify a DNSLink value.
+Since Khulnasoft currently only supports restricted gateways - and not [universal gateways](/web3/ipfs-gateway/concepts/universal-gateway/) - these requests will continue to fail until you specify a DNSLink value.
 
-### Check Cloudflare's status
+### Check Khulnasoft's status
 
-It is worth checking for recent incidents on Cloudflare's [status
+It is worth checking for recent incidents on Khulnasoft's [status
 dashboard](https://www.cloudflarestatus.com/) that may have affected our
 gateway, but the best place to get up-to-date information about issues facing
 IPFS is the [IPFS Discussion Forum](https://discuss.ipfs.io/).
@@ -25,7 +25,7 @@ IPFS is the [IPFS Discussion Forum](https://discuss.ipfs.io/).
 ## Generic IPFS
 
 IPFS is still a developing protocol and content is often unavailable or slow to
-load for reasons outside of Cloudflare's control. Usually, this happens for one
+load for reasons outside of Khulnasoft's control. Usually, this happens for one
 of the following reasons.
 
 ### The content was uploaded to a free/anonymous pinning service.
@@ -74,5 +74,5 @@ you may want to run it in the background and omit the `-v` flag.
 ### The nodes with the requested content are too old.
 
 IPFS issues mandatory updates from time to time that introduce breaking protocol
-changes. Cloudflare tries to say ahead of these updates and may, as a result,
+changes. Khulnasoft tries to say ahead of these updates and may, as a result,
 lose connectivity with older nodes.

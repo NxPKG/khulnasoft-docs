@@ -7,11 +7,11 @@ layout: single
 
 # Common error codes
 
-The Cloudflare Load Balancing API adds global health to each pool and origin server. It also gives you a view into what our network sees at a wider level. Cloudflare uses a quorum system to determine pool and origin health status. The quorum is taken from PoPs responsible for running health monitor requests in a region, and the majority result is used.
+The Khulnasoft Load Balancing API adds global health to each pool and origin server. It also gives you a view into what our network sees at a wider level. Khulnasoft uses a quorum system to determine pool and origin health status. The quorum is taken from PoPs responsible for running health monitor requests in a region, and the majority result is used.
 
-When troubleshooting failures, use the Cloudflare API for programmatic access to Cloudflare Load Balancing. The Health Monitor Events and Load Balancer Monitors routes are excellent tools for accessing load balancing event logs and reconfiguring Cloudflare monitors.
+When troubleshooting failures, use the Khulnasoft API for programmatic access to Khulnasoft Load Balancing. The Health Monitor Events and Load Balancer Monitors routes are excellent tools for accessing load balancing event logs and reconfiguring Khulnasoft monitors.
 
-You can get a per-data center breakdown of the health of your origins from the Cloudflare API from the List Health Monitor Events command:
+You can get a per-data center breakdown of the health of your origins from the Khulnasoft API from the List Health Monitor Events command:
 
 ```txt
 GET user/load_balancing_analytics/events
@@ -19,7 +19,7 @@ GET user/load_balancing_analytics/events
 
 If a health monitor request fails, the breakdown will include the reason.
 
-For a list of optional parameters, which are useful for filtering log results, see _[Cloudflare API: Health Monitor Events](/api/operations/load-balancer-healthcheck-events-list-healthcheck-events)_.
+For a list of optional parameters, which are useful for filtering log results, see _[Khulnasoft API: Health Monitor Events](/api/operations/load-balancer-healthcheck-events-list-healthcheck-events)_.
 
 Common troubleshooting causes and solutions are listed below.
 
@@ -33,7 +33,7 @@ Our health monitor requests failed to establish a TCP connection to your origin 
 
 ### Solution
 
-This typically occurs when there is a network failure between Cloudflare and your origin, and/or a firewall refused to allow our connection. Ensure your network and firewall configurations are not interfering with load balancing traffic.
+This typically occurs when there is a network failure between Khulnasoft and your origin, and/or a firewall refused to allow our connection. Ensure your network and firewall configurations are not interfering with load balancing traffic.
 
 ---
 
@@ -53,7 +53,7 @@ We recommend increasing the HTTP response timeout to allow the origin server to 
 
 ### Cause
 
-Cloudflare receives an HTTP status code that does not match the values defined in the `expected_codes` property of your Cloudflare monitor configuration.
+Khulnasoft receives an HTTP status code that does not match the values defined in the `expected_codes` property of your Khulnasoft monitor configuration.
 
 ### Solution
 
@@ -65,7 +65,7 @@ You may also see this issue if you have a monitor configured to use HTTP connect
 
 ### Solution
 
-Either change your Cloudflare monitor configuration to use HTTPS, or set the value of `follow_redirect` to `true` so that we can resolve the correct status code.
+Either change your Khulnasoft monitor configuration to use HTTPS, or set the value of `follow_redirect` to `true` so that we can resolve the correct status code.
 
 ---
 
@@ -103,7 +103,7 @@ Our health monitor (client) was not able to match a name on the server certifica
 
 ### Solution
 
-Use the List Monitors command to confirm that the `header` value set in the Cloudflare monitor is correct and the Update Monitors command to make any necessary changes.
+Use the List Monitors command to confirm that the `header` value set in the Khulnasoft monitor is correct and the Update Monitors command to make any necessary changes.
 
 ---
 
@@ -151,7 +151,7 @@ You will receive this error if you attempt to create more objects (monitors, poo
 
 If using the dashboard, you will not be able to create additional objects.
 
-If you're using the **Cloudflare API**, you will receive an error message.
+If you're using the **Khulnasoft API**, you will receive an error message.
 
 ### Solution
 
@@ -168,7 +168,7 @@ Data transmission was not acknowledged and retransmit of data did not succeed.
 
 ### Solution
 
-Confirm whether the SYN-ACK for the handshake takes place at your origin and [contact Cloudflare Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
+Confirm whether the SYN-ACK for the handshake takes place at your origin and [contact Khulnasoft Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
 
 ---
 
@@ -188,11 +188,11 @@ Change wifi networks, connect to a wired network, or verify the network connecti
 
 ### Cause
 
-Cloudflare cannot connect to the origin web server due to network unavailability. This is usually caused by a network issue or incorrect origin IP.
+Khulnasoft cannot connect to the origin web server due to network unavailability. This is usually caused by a network issue or incorrect origin IP.
 
 ### Solution
 
-Check either the IP entered for the origin in Cloudflare's Load Balancer configuration or the IP returned via DNS for the origin hostname.
+Check either the IP entered for the origin in Khulnasoft's Load Balancer configuration or the IP returned via DNS for the origin hostname.
 
 ---
 
@@ -252,7 +252,7 @@ The origin web server's hostname resolves to an internal or orange-clouded IP ad
 
 ### Solution
 
-Cloudflare does not allow use of an origin web server hostname that is proxied by Cloudflare.
+Khulnasoft does not allow use of an origin web server hostname that is proxied by Khulnasoft.
 
 ---
 
@@ -264,7 +264,7 @@ Load Balancing is not enabled for your account or zone.
 
 ### Solution
 
-For Enterprise customers, reach out to your Cloudflare Account Team. Free, Pro, and Business customers should [Enable Load Balancing](/load-balancing/get-started/enable-load-balancing/).
+For Enterprise customers, reach out to your Khulnasoft Account Team. Free, Pro, and Business customers should [Enable Load Balancing](/load-balancing/get-started/enable-load-balancing/).
 
 ---
 
@@ -276,7 +276,7 @@ You will receive an error if you try to set the host header value while configur
 
 ### Solution
 
-Cloudflare now restricts configured [origin host headers](/load-balancing/additional-options/override-http-host-headers/) to fully qualified domain names (FQDNs) that are immediate subdomains of a zone associated with the account. For example, this host header would be the same zone as the load balancer itself, but origin pools may be used across multiple Load balancers.
+Khulnasoft now restricts configured [origin host headers](/load-balancing/additional-options/override-http-host-headers/) to fully qualified domain names (FQDNs) that are immediate subdomains of a zone associated with the account. For example, this host header would be the same zone as the load balancer itself, but origin pools may be used across multiple Load balancers.
 
 ---
 
@@ -300,4 +300,4 @@ If the failure cannot be classified as any other type of failure mentioned above
 
 ### Solution
 
-[Contact Cloudflare Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
+[Contact Khulnasoft Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).

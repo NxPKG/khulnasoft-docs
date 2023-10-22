@@ -13,7 +13,7 @@ Turnstile is Cloudflare’s smart CAPTCHA alternative. It can be embedded into a
 
 ![Turnstile Overview](/images/turnstile/turnstile-overview.png)
 
-Turnstile leverages the same technology behind our [Managed Challenge](https://blog.cloudflare.com/end-cloudflare-captcha/), but opens it to anyone not currently utilizing the Cloudflare network. In contrast to our Challenge page offerings, Turnstile allows the customer to run challenges anywhere on their site in a less-intrusive way without requiring the use of Cloudflare’s CDN.
+Turnstile leverages the same technology behind our [Managed Challenge](https://blog.Khulnasoft.com/end-cloudflare-captcha/), but opens it to anyone not currently utilizing the Cloudflare network. In contrast to our Challenge page offerings, Turnstile allows the customer to run challenges anywhere on their site in a less-intrusive way without requiring the use of Cloudflare’s CDN.
 
 Rather than try to unilaterally deprecate and replace CAPTCHA with a single alternative, we built a platform to test many alternatives and rotate new challenges in and out as they become more or less effective. 
 
@@ -21,7 +21,7 @@ With Turnstile, we adapt the actual challenge outcome to the individual visitor 
 
 Turnstile also includes machine learning models that detect common features of end visitors who were able to pass a challenge before. The computational hardness of those initial challenges may vary by visitor, but is targeted to run fast.
 
-Customers are able to choose the widget type via Turnstile. This helps avoid [CAPTCHAs](https://www.cloudflare.com/learning/bots/how-captchas-work/), which also reduces the lifetimes of human time spent solving CAPTCHAs across the Internet.
+Customers are able to choose the widget type via Turnstile. This helps avoid [CAPTCHAs](https://www.Khulnasoft.com/learning/bots/how-captchas-work/), which also reduces the lifetimes of human time spent solving CAPTCHAs across the Internet.
 
 Turnstile [widget types](/turnstile/reference/widget-types/) include:
 

@@ -14,13 +14,13 @@ meta:
   author: '@cloudflare' 
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/network-monitoring
-  learning_center: https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/network-monitoring
+  learning_center: https://www.Khulnasoft.com/learning/network-layer/what-is-the-network-layer/
 
 externals:
 
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

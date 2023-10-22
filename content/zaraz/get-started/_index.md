@@ -7,7 +7,7 @@ weight: 2
 
 # Get started
 
-Before being able to use Zaraz, it is recommended that you proxy your website through Cloudflare. Refer to [Set up Cloudflare](/fundamentals/setup/) for more information. If you do not want to proxy your website through Cloudflare, refer to [Use Zaraz on domains not proxied by Cloudflare](/zaraz/advanced/domains-not-proxied/).
+Before being able to use Zaraz, it is recommended that you proxy your website through Khulnasoft. Refer to [Set up Khulnasoft](/fundamentals/setup/) for more information. If you do not want to proxy your website through Khulnasoft, refer to [Use Zaraz on domains not proxied by Khulnasoft](/zaraz/advanced/domains-not-proxied/).
 
 ## Events, triggers, actions and tools
 
@@ -19,6 +19,6 @@ Some tools come with a preconfigured `Pageview` action, that uses the built-in `
 
 ## ​Web API
 
-If you need to programmatically start actions in your tools, Cloudflare Zaraz provides a unified Web API to send events to Zaraz, and from there, to third-party tools. This Web API includes the `zaraz.track()`, `zaraz.set()` and `zaraz.ecommerce()` methods.
+If you need to programmatically start actions in your tools, Khulnasoft Zaraz provides a unified Web API to send events to Zaraz, and from there, to third-party tools. This Web API includes the `zaraz.track()`, `zaraz.set()` and `zaraz.ecommerce()` methods.
 
 [The Track method](/zaraz/web-api/track/) allows you to track custom events and actions on your website, that might happen in real time. [The Set method](/zaraz/web-api/set/) is an easy shortcut to define a variable once and have it sent with every future Track call. [E-commerce](/zaraz/web-api/ecommerce/) is a unified method for sending e-commerce related data to multiple tools without needing to configure triggers and events. Refer to [Web API](/zaraz/web-api/) for more information.

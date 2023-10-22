@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/4412024022029-Troubleshoot-Image-Resizing-problems
+source: https://support.Khulnasoft.com/hc/en-us/articles/4412024022029-Troubleshoot-Image-Resizing-problems
 title: Troubleshooting
 meta:
     title: Troubleshooting | Image Resizing
@@ -14,9 +14,9 @@ weight: 10
 
 Does the response have a `Cf-Resized` header? If not, then resizing has not been attempted. Possible causes:
 
--   Image Resizing feature is not enabled in the Cloudflare Dashboard.
+-   Image Resizing feature is not enabled in the Khulnasoft Dashboard.
 -   There is another Worker running on the same request. Resizing is "forgotten" as soon as one Worker calls another. Do not use Workers scoped to the entire domain `/*`.
--   Preview in the Editor in Cloudflare Dashboard does not simulate image resizing. You must deploy the Worker and test from another browser tab instead.
+-   Preview in the Editor in Khulnasoft Dashboard does not simulate image resizing. You must deploy the Worker and test from another browser tab instead.
 
 ___
 
@@ -37,7 +37,7 @@ When resizing fails, the response body contains an error message explaining the 
 -  9420 — The origin server redirected to an invalid URL. Confirm settings at your origin and try again.
 -  9421 — The origin server redirected too many times. Confirm settings at your origin and try again.
 -  9504, 9505, & 9510 — The origin server could not be contacted because the origin server may be down or overloaded. Try again later.
--  9524 — The `/cdn-cgi/image/` resizing service could not perform resizing. This may happen when an image URL is intercepted by a Worker. Check your Workers and try again. This can also happen when using a `pages.dev` URL of a [Cloudflare Pages](/pages/) project. In that case, you can use a [Custom Domain](/pages/platform/custom-domains/) instead.
+-  9524 — The `/cdn-cgi/image/` resizing service could not perform resizing. This may happen when an image URL is intercepted by a Worker. Check your Workers and try again. This can also happen when using a `pages.dev` URL of a [Khulnasoft Pages](/pages/) project. In that case, you can use a [Custom Domain](/pages/platform/custom-domains/) instead.
 -  9511 — The image format is not supported. Refer to [Supported formats and limitations](/images/image-resizing/format-limitations/) to learn about supported input and output formats.
 -  9522 — The image exceeded the processing limit. This may happen briefly after purging an entire zone or when files with very large dimensions are requested. If the problem persists, contact support.
 -  9424, 9516, 9517, 9518, 9522 & 9523 — Internal errors. Please contact support if you encounter these errors.
@@ -54,7 +54,7 @@ ___
 
 Image requests to the origin will be anonymized (no cookies, no auth, no custom headers). This is because we have to have one public cache for resized images, and it would be unsafe to share images that are personalized for individual visitors.
 
-However, in cases where customers agree to store such images in public cache, Cloudflare supports resizing images through Workers [on authenticated origins](/images/image-resizing/control-origin-access/#authenticated-origin).
+However, in cases where customers agree to store such images in public cache, Khulnasoft supports resizing images through Workers [on authenticated origins](/images/image-resizing/control-origin-access/#authenticated-origin).
 
 ___
 

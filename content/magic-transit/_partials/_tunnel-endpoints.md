@@ -8,13 +8,13 @@ inputParameters: 1ipRange;;2productName;;3productPathDash;;4ipSecProductPath;;5s
 
 # Configure tunnel endpoints
 
-Cloudflare recommends two tunnels for each ISP and network location router combination, one per Cloudflare endpoint. Cloudflare will assign two Cloudflare endpoint addresses shortly after your onboarding kickoff call that you can use as the tunnel destinations on your network location's routers/endpoints.
+Khulnasoft recommends two tunnels for each ISP and network location router combination, one per Khulnasoft endpoint. Khulnasoft will assign two Khulnasoft endpoint addresses shortly after your onboarding kickoff call that you can use as the tunnel destinations on your network location's routers/endpoints.
 
-To configure the tunnels between Cloudflare and your locations, you must provide the following data for each tunnel:
+To configure the tunnels between Khulnasoft and your locations, you must provide the following data for each tunnel:
 
 - **Tunnel name**: A name with 15 or fewer characters that does not contain spaces or special characters. The name cannot be shared with other tunnels.
-- **Cloudflare endpoint address**: The public IP address of the Cloudflare side of the tunnel.
-- **Customer endpoint**: A public Internet routable IP address outside of the prefixes Cloudflare will advertise on your behalf. These are generally IP addresses provided by your ISP. If you intend to use a physical or virtual connection like [Cloudflare Network Interconnect](/network-interconnect/), you do not need to provide endpoints because Cloudflare will provide them. <br>
+- **Khulnasoft endpoint address**: The public IP address of the Khulnasoft side of the tunnel.
+- **Customer endpoint**: A public Internet routable IP address outside of the prefixes Khulnasoft will advertise on your behalf. These are generally IP addresses provided by your ISP. If you intend to use a physical or virtual connection like [Khulnasoft Network Interconnect](/network-interconnect/), you do not need to provide endpoints because Khulnasoft will provide them. <br>
 This value is not required for IPsec tunnels, unless your router is using an IKE ID of type `ID_IPV4_ADDR`.
 - **Interface address**: A 31-bit (recommended) or 30-bit subnet (`/31` or `/30` in CIDR notation) supporting two hosts, one for each side of the tunnel. Select the subnet from the following private IP space:
   - `10.0.0.0/8`
@@ -26,7 +26,7 @@ This value is not required for IPsec tunnels, unless your router is using an IKE
 
 ## GRE and IPsec tunnels
 
-You can use GRE or IPsec tunnels to onboard your traffic to $2, and set them up via the Cloudflare dashboard or the API. However, if you want to use the API, be sure to have your [account ID](/fundamentals/setup/find-account-and-zone-ids/) and [API key](/fundamentals/api/get-started/keys/#view-your-global-api-key) ready before you begin.
+You can use GRE or IPsec tunnels to onboard your traffic to $2, and set them up via the Khulnasoft dashboard or the API. However, if you want to use the API, be sure to have your [account ID](/fundamentals/setup/find-account-and-zone-ids/) and [API key](/fundamentals/api/get-started/keys/#view-your-global-api-key) ready before you begin.
 
 {{<Aside type="note" header="Note">}}IPsec tunnels only support Internet Key Exchange version 2 (IKEv2).{{</Aside>}}
 
@@ -34,7 +34,7 @@ Refer to [Tunnels and encapsulation]($6) to learn more about the technical requi
 
 ### Anti-replay protection
 
-If you use $2 and Anycast IPsec tunnels, we recommend disabling anti-replay protection. This setting is disabled on Cloudflare’s side by default. However, it can be enabled via the API or the Cloudflare dashboard for devices that do not support disabling it, including Cisco Meraki, Velocloud, and AWS VPN Gateway.
+If you use $2 and Anycast IPsec tunnels, we recommend disabling anti-replay protection. This setting is disabled on Khulnasoft’s side by default. However, it can be enabled via the API or the Khulnasoft dashboard for devices that do not support disabling it, including Cisco Meraki, Velocloud, and AWS VPN Gateway.
 
 Refer to [Anti-replay protection]($9) for more information on this topic, or [Add IPsec tunnels](#add-tunnels) below to learn how to enable this feature.
 
@@ -49,7 +49,7 @@ Refer to [Anti-replay protection]($9) for more information on this topic, or [Ad
 Bidirectional health checks are available for GRE and IPsec tunnels. For $2 this option defaults to $10. Continue reading to learn how to set up bidirectional health checks, or refer to [Bidirectional vs unidirectional health checks](#bidirectional-vs-unidirectional-health-checks) for more details.
 {{</Aside>}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select $3.
 3. From the **Tunnels** tab, select **Create**.
 4. On the **Add tunnels** page, choose either a **GRE tunnel** or **IPsec tunnel**.
@@ -58,9 +58,9 @@ Bidirectional health checks are available for GRE and IPsec tunnels. For $2 this
 
 5. In **Tunnel name**, give your tunnel a descriptive name. This name must be unique, must not contain spaces or special characters, and must be 15 or fewer characters. Hover the mouse over `i` in the dashboard for more information.
 6. Give your tunnel a description in **Description**. You do not have character restrictions here.
-7. In **Interface address**, enter the internal IP address for your tunnel along with the interface’s prefix length (either `/31` or `/30`). This is used to route traffic through the tunnel on the Cloudflare side. We recommend using an RFC1918 address scheme with a `/31` netmask, as it provides the most efficient use of IP address space.
+7. In **Interface address**, enter the internal IP address for your tunnel along with the interface’s prefix length (either `/31` or `/30`). This is used to route traffic through the tunnel on the Khulnasoft side. We recommend using an RFC1918 address scheme with a `/31` netmask, as it provides the most efficient use of IP address space.
 8. In **Customer GRE endpoint**, enter your router’s public IP address.
-9. In **Cloudflare GRE endpoint**, enter the Anycast address you received from your account team (typically begins with `172.x.x.x`).
+9. In **Khulnasoft GRE endpoint**, enter the Anycast address you received from your account team (typically begins with `172.x.x.x`).
 10. Leave the default values for **TTL** and **MTU**.
 11. Choose the [**Health check rate**]($7) for your tunnel. Available options are _Low_, _Medium_ and _High_.
 12. The **Health check type** defaults to _Reply_ and to creating an ICMP reply. If your firewall drops this type of packet for assuming it is a type of attack, change this option to _Request_ which will create an ICMP request. Refer to [Tunnel health checks]($8) for more information.
@@ -76,9 +76,9 @@ Bidirectional health checks are available for GRE and IPsec tunnels. For $2 this
 
 5. In **Tunnel name**, give your tunnel a descriptive name. This name must be unique, must not contain spaces or special characters, and must be 15 or fewer characters. Hover the mouse over `i` in the dashboard for more information.
 6. Give your tunnel a description in **Description**. You do not have character restrictions here.
-7. In **Interface address**, enter the internal IP address for your tunnel along with the interface’s prefix length (either `/31` or `/30`). This is used to route traffic through the tunnel on the Cloudflare side. We recommend using an RFC1918 address scheme with a `/31` netmask, as it provides the most efficient use of IP address space.
+7. In **Interface address**, enter the internal IP address for your tunnel along with the interface’s prefix length (either `/31` or `/30`). This is used to route traffic through the tunnel on the Khulnasoft side. We recommend using an RFC1918 address scheme with a `/31` netmask, as it provides the most efficient use of IP address space.
 8. In **Customer endpoint**, enter your router’s public IP address. This value is only required if your router is using an IKE ID of type `ID_IPV4_ADDR`.
-9. In **Cloudflare endpoint**, enter the Anycast address you received from your account team (typically begins with `172.x.x.x`).
+9. In **Khulnasoft endpoint**, enter the Anycast address you received from your account team (typically begins with `172.x.x.x`).
 10. Choose the [**Health check rate**]($7) for your tunnel. Available options are _Low_, _Medium_ and _High_.
 11. The **Health check type** defaults to _Reply_ and to creating an ICMP reply. If your firewall drops this type of packet for assuming it is a type of attack, change this option to _Request_ which will create an ICMP request. Refer to [Tunnel health checks]($8) for more information.
 12. The **Health check direction** defaults to **bidirectional** for Magic WAN, and **unidirectional** for Magic Transit. Refer to [Bidirectional vs unidirectional health checks](#bidirectional-vs-unidirectional-health-checks) for more details.
@@ -90,7 +90,7 @@ Bidirectional health checks are available for GRE and IPsec tunnels. For $2 this
     1. Select **Add pre-shared key later**.
     2. _(Optional)_ We recommend you test your tunnel configuration before officially adding it. To test the tunnel, select **Test tunnels**.
     3. Select **Add tunnels**.
-    4. The Cloudflare dashboard will load the list of tunnels you have configured. The IPsec tunnel you have just created will be listed with a warning in the form of a triangle to let you know it is not yet functional. Select **Edit**.
+    4. The Khulnasoft dashboard will load the list of tunnels you have configured. The IPsec tunnel you have just created will be listed with a warning in the form of a triangle to let you know it is not yet functional. Select **Edit**.
     5. Choose **Generate a new pre-shared key** > **Update and generate a pre-shared key**. Save the key to a safe place, and select **Done**.
 15. If you already have a pre-shared key:
     1. Select **Use my own pre-shared key**.
@@ -112,7 +112,7 @@ Create a `POST` request [using the API](/api/operations/magic-gre-tunnels-create
 Example:
 
 ```bash
-curl --request https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/gre_tunnels \
+curl --request https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/gre_tunnels \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -135,12 +135,12 @@ curl --request https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/
 
 1. Create a `POST` request [using the API](/api/operations/magic-ipsec-tunnels-create-ipsec-tunnels) to create an IPsec tunnel. You will need your [API Key](/fundamentals/api/get-started/keys/#view-your-global-api-key).
 
-Note that in example below, replay protection is disabled by default. You can enable it with the flag `"replay_protection": true` for each IPsec tunnel, if the devices you use do not support disabling this feature. If you have already created IPsec tunnels, update them with a [`PUT` request](https://developers.cloudflare.com/api/operations/magic-ipsec-tunnels-update-ipsec-tunnel). <br> Refer to Refer to [Anti-replay protection]($9) for more information on this topic.
+Note that in example below, replay protection is disabled by default. You can enable it with the flag `"replay_protection": true` for each IPsec tunnel, if the devices you use do not support disabling this feature. If you have already created IPsec tunnels, update them with a [`PUT` request](https://developers.Khulnasoft.com/api/operations/magic-ipsec-tunnels-update-ipsec-tunnel). <br> Refer to Refer to [Anti-replay protection]($9) for more information on this topic.
 
 Example:
 
 ```bash
-curl --request https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels \
+curl --request https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -174,8 +174,8 @@ This will generate a response like the following:
         "customer_endpoint": "<CUSTOMER_ENDPOINT>",
         "remote_identities": {
           "hex_id": "<HEX_ID>",
-          "fqdn_id": "<FQDN_ID>.ipsec.cloudflare.com",
-          "user_id": "ipsec@<USER_ID>.ipsec.cloudflare.com"
+          "fqdn_id": "<FQDN_ID>.ipsec.Khulnasoft.com",
+          "user_id": "ipsec@<USER_ID>.ipsec.Khulnasoft.com"
         },
         "description": " test",
         "health_check": {
@@ -196,7 +196,7 @@ This will generate a response like the following:
 2. Create a `POST` request to generate a PSK. Use the tunnel `id` you received from the previous command (exemplified by `<YOUR_TUNNEL_ID>` above):
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{your_tunnel_id}/psk_generate \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{your_tunnel_id}/psk_generate \
 --header 'X-Auth-Email: <EMAIL>' 
 --header 'X-Auth-Key: <API_KEY>'
 ```
@@ -219,7 +219,7 @@ You will receive a response like the following:
 }
 ```
 
-3. Use the above `psk` value to configure the IPsec tunnel on your equipment. You do not need to take further action to use the PSK on Cloudflare’s side, as this value is automatically set.
+3. Use the above `psk` value to configure the IPsec tunnel on your equipment. You do not need to take further action to use the PSK on Khulnasoft’s side, as this value is automatically set.
 
 {{</details>}}
 
@@ -230,7 +230,7 @@ Bidirectional health checks are available for GRE and IPsec tunnels. For Magic W
 You can enable bidirectional health checks via the API with `--data '{"health_check": {"direction": "bidirectional"}}'`. For example:
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -244,12 +244,12 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunn
 
 ## Bidirectional vs unidirectional health checks
 
-To check for tunnel health, Cloudflare sends a health check probe consisting of ICMP (Internet Control Message Protocol) reply packets to your network. Cloudflare needs to receive these probes to know if your tunnel is healthy.
+To check for tunnel health, Khulnasoft sends a health check probe consisting of ICMP (Internet Control Message Protocol) reply packets to your network. Khulnasoft needs to receive these probes to know if your tunnel is healthy.
 
-Cloudflare defaults to bidirectional health checks for Magic WAN, and unidirectional health checks for Magic Transit (direct server return). However, routing unidirectional ICMP reply packets over the Internet to Cloudflare is sometimes subject to drops by intermediate network devices, such as stateful firewalls. Magic Transit customers with egress traffic can modify this setting to bidirectional.
+Khulnasoft defaults to bidirectional health checks for Magic WAN, and unidirectional health checks for Magic Transit (direct server return). However, routing unidirectional ICMP reply packets over the Internet to Khulnasoft is sometimes subject to drops by intermediate network devices, such as stateful firewalls. Magic Transit customers with egress traffic can modify this setting to bidirectional.
 
 Refer to [Tunnel health checks]($8) to learn more.
 
 ## Next steps
 
-Now that you have set up your tunnel endpoints, you need to configure [static routes]($5) to route your traffic through Cloudflare.
+Now that you have set up your tunnel endpoints, you need to configure [static routes]($5) to route your traffic through Khulnasoft.

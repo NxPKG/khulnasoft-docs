@@ -2,14 +2,14 @@
 title: Recommended client libraries
 pcx_content_type: reference
 type: example
-summary: A list of client libraries vetted by Cloudflare.
+summary: A list of client libraries vetted by Khulnasoft.
 ---
 
 # Recommended client libraries
 
 MQTT is a popular standard, and you can find open-source libraries for many popular programming languages.
 
-The list of client libraries are not formally supported by Cloudflare but have been vetted by the team.
+The list of client libraries are not formally supported by Khulnasoft but have been vetted by the team.
 
 |      Platform/Language          |    Source                                 |
 |---------------------------------|-------------------------------------------|

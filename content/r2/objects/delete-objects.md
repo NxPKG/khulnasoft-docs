@@ -6,11 +6,11 @@ weight: 3
 
 # Delete objects
 
-You can delete objects from your bucket from the Cloudflare dashboard or using the Wrangler.
+You can delete objects from your bucket from the Khulnasoft dashboard or using the Wrangler.
 
-## Delete objects via the Cloudflare dashboard
+## Delete objects via the Khulnasoft dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select **R2**.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select **R2**.
 2. From the **R2** page in the dashboard, locate and select your bucket.
 3. From your bucket's page, locate the object you want to delete. You can select multiple objects to delete at one time.
 4. Select your objects and select **Delete**. 

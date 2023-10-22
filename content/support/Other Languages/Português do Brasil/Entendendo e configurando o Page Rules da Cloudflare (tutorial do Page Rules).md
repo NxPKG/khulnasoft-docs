@@ -1,25 +1,25 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-
-title: Entendendo e configurando o Page Rules da Cloudflare (tutorial do Page Rules)
+source: https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-
+title: Entendendo e configurando o Page Rules da Khulnasoft (tutorial do Page Rules)
 ---
 
-# Entendendo e configurando o Page Rules da Cloudflare (tutorial do Page Rules)
+# Entendendo e configurando o Page Rules da Khulnasoft (tutorial do Page Rules)
 
 _As Page Rules acionam determinadas ações sempre que uma solicitação corresponde a um dos padrões de URL que você configurou. Saiba como criar e editar Page Rules e entenda as diferentes configurações disponíveis._
 
 ### Neste artigo
 
--   [Visão geral](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_5a7SkOsNo5d5LE7e9IRiz)
--   [Antes de começar](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_7rzfw5kI8cqu4VKur6Mnur)
--   [Como criar uma regra de página](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_38Gq7mduJiXIjpVLxp3q19)
--   [Como editar uma regra de página](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_2WLkFHGqwlRgnZg3i0fl9I)
--   [Como entender a equiparação e o uso de referências dos caracteres curinga](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_6N5SySNYCjYUUnCKnC1Ea6)
--   [Resumo das configurações do Page Rules](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_18YTlvNlZET4Poljeih3TJ)
--   [Problemas Conhecidos](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_5lzcszkjqrZ2bZpZOtMQoP)
--   [Detalhes adicionais](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_2VORFoOUImLy7rpTgEWYLM)
--   [Recursos relacionados](https://support.cloudflare.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Cloudflare-tutorial-do-Page-Rules-#h_7hlLS0cORjDJ2NCQqZTp8X)
+-   [Visão geral](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_5a7SkOsNo5d5LE7e9IRiz)
+-   [Antes de começar](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_7rzfw5kI8cqu4VKur6Mnur)
+-   [Como criar uma regra de página](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_38Gq7mduJiXIjpVLxp3q19)
+-   [Como editar uma regra de página](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_2WLkFHGqwlRgnZg3i0fl9I)
+-   [Como entender a equiparação e o uso de referências dos caracteres curinga](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_6N5SySNYCjYUUnCKnC1Ea6)
+-   [Resumo das configurações do Page Rules](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_18YTlvNlZET4Poljeih3TJ)
+-   [Problemas Conhecidos](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_5lzcszkjqrZ2bZpZOtMQoP)
+-   [Detalhes adicionais](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_2VORFoOUImLy7rpTgEWYLM)
+-   [Recursos relacionados](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Entendendo-e-configurando-o-Page-Rules-da-Khulnasoft-tutorial-do-Page-Rules-#h_7hlLS0cORjDJ2NCQqZTp8X)
 
 ___
 
@@ -67,7 +67,7 @@ Empresarial
 
  |
 
-Você pode [adquirir regras adicionais](https://www.cloudflare.com/features-page-rules/) (até um máximo de 100) para domínios nos planos Free, Pro e Business.
+Você pode [adquirir regras adicionais](https://www.Khulnasoft.com/features-page-rules/) (até um máximo de 100) para domínios nos planos Free, Pro e Business.
 
 ___
 
@@ -76,7 +76,7 @@ ___
 É importante entender dois comportamentos básicos do Page Rules:
 
 -   Somente a regra de página de prioridade mais alta entre as equiparadas é aplicada a uma solicitação.
--   As regras de página são priorizadas em ordem decrescente no painel de controle da Cloudflare, com a regra de prioridade mais alta no topo.
+-   As regras de página são priorizadas em ordem decrescente no painel de controle da Khulnasoft, com a regra de prioridade mais alta no topo.
 
 Uma regra de página corresponde a um padrão de URL baseado no seguinte formato (composto por cinco segmentos): <scheme>://<hostname><:port>/<path>?<query\_string>.
 
@@ -95,12 +95,12 @@ ___
 
 As etapas para criar uma regra de página são:
 
-1.  Faça o login no painel de controle da Cloudflare.
+1.  Faça o login no painel de controle da Khulnasoft.
 2.  Selecione o domínio ao qual deseja adicionar a regra de página.
 3.  Clique no aplicativo **Rules** .
 4.  Na guia **Regras de página****,** clique em **Criar regra de páginae**. A caixa de diálogo _Criar regra de página para <seu domínio>_ será aberta.
-5.  Sob **Se a URL corresponder**, insira a URL ou o padrão de URL que deve corresponder à regra. [_Saiba mais sobre a correspondência com caracteres curinga_](https://support.cloudflare.com/hc/pt-br/articles/218411427-Understanding-and-Configuring-Cloudflare-Page-Rules-Page-Rules-Tutorial-#h_6N5SySNYCjYUUnCKnC1Ea6)
-6.  A seguir, em **Então, as configurações são:** , clique em **+ Adicionar uma configuração** e selecione a configuração desejada no menu suspenso. Você pode incluir mais de uma configuração por regra. Saiba mais sobre configurações no [resumo abaixo](https://support.cloudflare.com/hc/pt-br/articles/218411427-Understanding-and-Configuring-Cloudflare-Page-Rules-Page-Rules-Tutorial-#h_18YTlvNlZET4Poljeih3TJ).
+5.  Sob **Se a URL corresponder**, insira a URL ou o padrão de URL que deve corresponder à regra. [_Saiba mais sobre a correspondência com caracteres curinga_](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Understanding-and-Configuring-Khulnasoft-Page-Rules-Page-Rules-Tutorial-#h_6N5SySNYCjYUUnCKnC1Ea6)
+6.  A seguir, em **Então, as configurações são:** , clique em **+ Adicionar uma configuração** e selecione a configuração desejada no menu suspenso. Você pode incluir mais de uma configuração por regra. Saiba mais sobre configurações no [resumo abaixo](https://support.Khulnasoft.com/hc/pt-br/articles/218411427-Understanding-and-Configuring-Khulnasoft-Page-Rules-Page-Rules-Tutorial-#h_18YTlvNlZET4Poljeih3TJ).
 7.  No menu suspenso **Ordem** , especifique a ordem desejada: _Primeira, Última_ ou _Personalizada_.
 8.  Para salvar, clique em uma das opções a seguir:
     -   **Salvar como rascunho** para salvar a regra e deixá-la desativada.
@@ -112,7 +112,7 @@ ___
 
 Para modificar uma regra existente:
 
-1.  Faça o login no painel de controle da Cloudflare.
+1.  Faça o login no painel de controle da Khulnasoft.
 2.  Selecione o domínio para o qual você deseja editar a sua regra de página.
 3.  Clique no aplicativo **Rules** .
 4.  Na guia **Page Rules**, localize a regra para editar.
@@ -176,12 +176,12 @@ ___
 
 ## Resumo das configurações do Page Rules
 
-As configurações controlam a ação que a Cloudflare executa quando uma solicitação é equiparada ao padrão de URL definido em uma regra de página. Você pode usar as configurações para ativar e desativar vários recursos da Cloudflare em vários aplicativos do painel de controle. Observe que:
+As configurações controlam a ação que a Khulnasoft executa quando uma solicitação é equiparada ao padrão de URL definido em uma regra de página. Você pode usar as configurações para ativar e desativar vários recursos da Khulnasoft em vários aplicativos do painel de controle. Observe que:
 
 -   Algumas configurações exigem um plano de domínio Pro, Business ou Enterprise.
 -   Você pode especificar mais de uma configuração a ser aplicada quando a regra for acionada.
 
-Abaixo está a lista completa de configurações disponíveis, apresentadas na ordem em que aparecem na interface do usuário no **Page Rules da Cloudflare** .
+Abaixo está a lista completa de configurações disponíveis, apresentadas na ordem em que aparecem na interface do usuário no **Page Rules da Khulnasoft** .
 
 | 
 **Como configurar**
@@ -202,7 +202,7 @@ Sempre use HTTPS
 
  | 
 
-Ative ou desative o recurso **[Always Use HTTPS](/ssl/edge-certificates/additional-options/always-use-https)** da guia **Certificados de borda** no aplicativo **Cloudflare SSL/TLS** . Se ativado, qualquer URL _http://_ será convertido em _https://_ por meio de um redirecionamento 301.
+Ative ou desative o recurso **[Always Use HTTPS](/ssl/edge-certificates/additional-options/always-use-https)** da guia **Certificados de borda** no aplicativo **Khulnasoft SSL/TLS** . Se ativado, qualquer URL _http://_ será convertido em _https://_ por meio de um redirecionamento 301.
 
 Se essa opção não aparecer, você não possui um **Edge Certificate** ativo.
 
@@ -217,7 +217,7 @@ Minificação Automática
 
  | 
 
-Indique quais extensões de arquivo devem ser minificadas automaticamente. [Saiba mais](https://support.cloudflare.com/hc/articles/200168196).
+Indique quais extensões de arquivo devem ser minificadas automaticamente. [Saiba mais](https://support.Khulnasoft.com/hc/articles/200168196).
 
  | 
 
@@ -230,7 +230,7 @@ Reescrita Automática de HTTPS
 
  | 
 
-Ative ou desative o recurso **Reescrita Automática de HTTPS da Cloudflare** da guia **Certificados de borda** no aplicativo  **Cloudflare SSL/TLS** . [Saiba mais](/ssl/edge-certificates/additional-options/automatic-https-rewrites).
+Ative ou desative o recurso **Reescrita Automática de HTTPS da Khulnasoft** da guia **Certificados de borda** no aplicativo  **Khulnasoft SSL/TLS** . [Saiba mais](/ssl/edge-certificates/additional-options/automatic-https-rewrites).
 
  | 
 
@@ -243,7 +243,7 @@ TTL de cache de navegador
 
  | 
 
-Controle por quanto tempo os recursos armazenados em cache pelos navegadores clientes permanecem válidos. A interface do usuário e a API da Cloudflare proíbem a configuração de **Cache do navegador TTL** como _0_ para domínios que não sejam empresariais. [Saiba mais](/cache/how-to/edge-browser-cache-ttl/).
+Controle por quanto tempo os recursos armazenados em cache pelos navegadores clientes permanecem válidos. A interface do usuário e a API da Khulnasoft proíbem a configuração de **Cache do navegador TTL** como _0_ para domínios que não sejam empresariais. [Saiba mais](/cache/how-to/edge-browser-cache-ttl/).
 
  | 
 
@@ -256,7 +256,7 @@ Veriicação de Integridade do Navegador
 
  | 
 
-Inspecione o navegador do visitante em busca de cabeçalhos geralmente associados a spammers e determinados bots. [Saiba mais](https://support.cloudflare.com/hc/articles/200170086).
+Inspecione o navegador do visitante em busca de cabeçalhos geralmente associados a spammers e determinados bots. [Saiba mais](https://support.Khulnasoft.com/hc/articles/200170086).
 
  | 
 
@@ -330,7 +330,7 @@ Nível de cache
 
 A aplicação do caching personalizado com base na opção selecionada:
 
-**Bypass** \- Cloudflare não armazena em cache.
+**Bypass** \- Khulnasoft não armazena em cache.
 
 **No Query String** — fornece recursos do cache quando não há uma cadeia de consulta.
 
@@ -338,7 +338,7 @@ A aplicação do caching personalizado com base na opção selecionada:
 
 **Standard —** armazena em cache todo o conteúdo estático que possui uma cadeia de consulta.
 
-**Coloque tudo em cache** –  trata todo o conteúdo como estático e armazena em cache todos os tipos de arquivos além do [conteúdo da Cloudflare armazenado em cache por padrão](/cache/concepts/default-cache-behavior#default-cached-file-extensions).  Respeita os cabeçalhos do cache do servidor de origem, a não ser que a **Edge Cache TTL** também esteja configurada na regra de página. Quando combinada com uma **Edge Cache TTL** > _0_, **Cache Everything** remove os cookies da resposta do servidor Web de origem.   
+**Coloque tudo em cache** –  trata todo o conteúdo como estático e armazena em cache todos os tipos de arquivos além do [conteúdo da Khulnasoft armazenado em cache por padrão](/cache/concepts/default-cache-behavior#default-cached-file-extensions).  Respeita os cabeçalhos do cache do servidor de origem, a não ser que a **Edge Cache TTL** também esteja configurada na regra de página. Quando combinada com uma **Edge Cache TTL** > _0_, **Cache Everything** remove os cookies da resposta do servidor Web de origem.   
 
 
  | 
@@ -368,7 +368,7 @@ TTL do cache por código de status
 
  | 
 
-Clientes Enterprise podem definir o tempo até entrar no ar (TTL) do cache com base no status da resposta do servidor web de origem. O TTL do cache é a duração de um recurso na Rede da Cloudflare antes de ser marcado como obsoleto ou descartado do cache. Códigos de status são retornados pela origem do recurso.   Definir o TTL do cache com base no status da resposta substitui o comportamento-padrão do cache (armazenamento em cache padrão) para arquivos estáticos e também substitui as instruções do cache enviadas pelo servidor web de origem. Para armazenar em cache ativos não estáticos, defina o "Nível do cache" como "Colocar tudo em cache" usando uma regra de página. Definir o controle de cache sem armazenamento ou um TTL Baixo (usando max-age/s-maxage) aumenta as solicitações para os servidores web de origem e diminui a performance. [Saiba mais](https://support.cloudflare.com/hc/pt-br/articles/360043842472-Configuring-cache-TTL-by-status-code).
+Clientes Enterprise podem definir o tempo até entrar no ar (TTL) do cache com base no status da resposta do servidor web de origem. O TTL do cache é a duração de um recurso na Rede da Khulnasoft antes de ser marcado como obsoleto ou descartado do cache. Códigos de status são retornados pela origem do recurso.   Definir o TTL do cache com base no status da resposta substitui o comportamento-padrão do cache (armazenamento em cache padrão) para arquivos estáticos e também substitui as instruções do cache enviadas pelo servidor web de origem. Para armazenar em cache ativos não estáticos, defina o "Nível do cache" como "Colocar tudo em cache" usando uma regra de página. Definir o controle de cache sem armazenamento ou um TTL Baixo (usando max-age/s-maxage) aumenta as solicitações para os servidores web de origem e diminui a performance. [Saiba mais](https://support.Khulnasoft.com/hc/pt-br/articles/360043842472-Configuring-cache-TTL-by-status-code).
 
  | 
 
@@ -381,7 +381,7 @@ Desativar aplicativos
 
  | 
 
-Desative todos os **Cloudflare Apps** ativos.
+Desative todos os **Khulnasoft Apps** ativos.
 
  | 
 
@@ -396,10 +396,10 @@ Desativar desempenho
 
 Desligar:
 
--   [Minificação Automática](https://support.cloudflare.com/hc/articles/200168196)
--   [Rocket Loader](https://support.cloudflare.com/hc/articles/200168056)
--   [Mirage](https://support.cloudflare.com/hc/articles/200403554)
--   [Polish](https://support.cloudflare.com/hc/articles/360000607372)
+-   [Minificação Automática](https://support.Khulnasoft.com/hc/articles/200168196)
+-   [Rocket Loader](https://support.Khulnasoft.com/hc/articles/200168056)
+-   [Mirage](https://support.Khulnasoft.com/hc/articles/200403554)
+-   [Polish](https://support.Khulnasoft.com/hc/articles/360000607372)
 
  | 
 
@@ -412,7 +412,7 @@ Desativar o Railgun
 
  | 
 
-Desative o recurso **Railgun** do aplicativo **Speed** da Cloudflare.
+Desative o recurso **Railgun** do aplicativo **Speed** da Khulnasoft.
 
  | 
 
@@ -428,12 +428,12 @@ Desativar a segurança
 
 Desligar:
 
--   [Ofuscação de e-mail](https://support.cloudflare.com/hc/articles/200170016)
--   [Rate Limiting (versão anterior)](https://support.cloudflare.com/hc/articles/115001635128)
--   [Scrape Shield](https://support.cloudflare.com/hc/articles/200171036)
--   [Exclusão pelo servidor](https://support.cloudflare.com/hc/articles/200170036)
+-   [Ofuscação de e-mail](https://support.Khulnasoft.com/hc/articles/200170016)
+-   [Rate Limiting (versão anterior)](https://support.Khulnasoft.com/hc/articles/115001635128)
+-   [Scrape Shield](https://support.Khulnasoft.com/hc/articles/200171036)
+-   [Exclusão pelo servidor](https://support.Khulnasoft.com/hc/articles/200170036)
 -   [Bloqueio de URL (zona)](/waf/tools/zone-lockdown/)
--   [Regras gerenciadas do WAF (versão anterior)](https://support.cloudflare.com/hc/articles/200172016)
+-   [Regras gerenciadas do WAF (versão anterior)](https://support.Khulnasoft.com/hc/articles/200172016)
 
  | 
 
@@ -446,7 +446,7 @@ TTL de cache de borda
 
  | 
 
-Indique por quanto tempo um recurso deve ficar armazenado em cache na Rede de borda da Cloudflare. O _Edge Cache TTL_ não fica visível nos cabeçalhos de resposta.  O _Edge Cache TTL_ mínimo depende do tipo de plano:
+Indique por quanto tempo um recurso deve ficar armazenado em cache na Rede de borda da Khulnasoft. O _Edge Cache TTL_ não fica visível nos cabeçalhos de resposta.  O _Edge Cache TTL_ mínimo depende do tipo de plano:
 
 Gratuito – 2 horas  
 Pro – 1 hora  
@@ -464,7 +464,7 @@ Ofuscação de e-mail
 
  | 
 
-Ative ou desative o recurso **Cloudflare Email Obfuscation** do aplicativo **Cloudflare Scrape Shield** . [Saiba mais.](https://support.cloudflare.com/hc/articles/200170016)
+Ative ou desative o recurso **Khulnasoft Email Obfuscation** do aplicativo **Khulnasoft Scrape Shield** . [Saiba mais.](https://support.Khulnasoft.com/hc/articles/200170016)
 
  | 
 
@@ -477,7 +477,7 @@ Redirecionamento de URL
 
  | 
 
-Redireciona uma URL para outra usando um _redirecionamento HTTP 301/302_. _Consulte [Como entender a correspondência e o uso de referências dos caracteres curinga acima](https://support.cloudflare.com/hc/articles/218411427#h_6N5SySNYCjYUUnCKnC1Ea6)._
+Redireciona uma URL para outra usando um _redirecionamento HTTP 301/302_. _Consulte [Como entender a correspondência e o uso de referências dos caracteres curinga acima](https://support.Khulnasoft.com/hc/articles/218411427#h_6N5SySNYCjYUUnCKnC1Ea6)._
 
  | 
 
@@ -490,7 +490,7 @@ Substituição do Cabeçalho Host
 
  | 
 
-Aplique um cabeçalho de host específico. [Saiba mais](https://support.cloudflare.com/hc/articles/206652947).
+Aplique um cabeçalho de host específico. [Saiba mais](https://support.Khulnasoft.com/hc/articles/206652947).
 
  | 
 
@@ -503,7 +503,7 @@ Cabeçalho de Geolocalização de IP
 
  | 
 
-A Cloudflare adiciona um cabeçalho HTTP _CF-IPCountry_ que contém o código do país que corresponde ao visitante.
+A Khulnasoft adiciona um cabeçalho HTTP _CF-IPCountry_ que contém o código do país que corresponde ao visitante.
 
  | 
 
@@ -516,7 +516,7 @@ Mirage
 
  | 
 
-Ative ou desative o **Mirage da Cloudflare** do aplicativo **Speed da Cloudflare** . [Saiba mais](https://support.cloudflare.com/hc/articles/200403554).
+Ative ou desative o **Mirage da Khulnasoft** do aplicativo **Speed da Khulnasoft** . [Saiba mais](https://support.Khulnasoft.com/hc/articles/200403554).
 
  | 
 
@@ -531,7 +531,7 @@ Criptografia Oportunística
 
  | 
 
-Ative ou desative o recurso **Criptografia Oportunística da Cloudflare** da guia **Certificados de borda** no aplicativo **SSL/TLS da Cloudflare** . [Saiba mais](/ssl/edge-certificates/additional-options/opportunistic-encryption).
+Ative ou desative o recurso **Criptografia Oportunística da Khulnasoft** da guia **Certificados de borda** no aplicativo **SSL/TLS da Khulnasoft** . [Saiba mais](/ssl/edge-certificates/additional-options/opportunistic-encryption).
 
  | 
 
@@ -549,7 +549,7 @@ Passagem liberada de página de erro da origem
 
  | 
 
-Ative ou desative as páginas de erro da Cloudflare geradas a partir de problemas enviados pelo servidor de origem. Se estiver ativada, essa configuração provoca páginas de erro emitidas pela origem.
+Ative ou desative as páginas de erro da Khulnasoft geradas a partir de problemas enviados pelo servidor de origem. Se estiver ativada, essa configuração provoca páginas de erro emitidas pela origem.
 
  | 
 
@@ -562,7 +562,7 @@ Polish
 
  | 
 
-Aplique opções do recurso **Polish** do aplicativo **Speed**  da Cloudflare. [Saiba mais](/images/polish).
+Aplique opções do recurso **Polish** do aplicativo **Speed**  da Khulnasoft. [Saiba mais](/images/polish).
 
  | 
 
@@ -577,7 +577,7 @@ Classificação de Query String
 
  | 
 
-Ative ou desative a reordenação de cadeias de consulta. Quando as cadeias de consulta têm a mesma estrutura, o caching melhora. [Saiba mais](https://support.cloudflare.com/hc/articles/206776797).
+Ative ou desative a reordenação de cadeias de consulta. Quando as cadeias de consulta têm a mesma estrutura, o caching melhora. [Saiba mais](https://support.Khulnasoft.com/hc/articles/206776797).
 
  | 
 
@@ -590,7 +590,7 @@ Substituição de Resolver
 
  | 
 
-Altere o endereço de origem para o valor especificado nessa configuração. [Saiba mais](https://support.cloudflare.com/hc/articles/206190798).
+Altere o endereço de origem para o valor especificado nessa configuração. [Saiba mais](https://support.Khulnasoft.com/hc/articles/206190798).
 
  | 
 
@@ -603,7 +603,7 @@ Respeite as ETags consistentes
 
  | 
 
-Ative ou desative as verificações de equivalência de byte por byte entre o cache da Cloudflare e o servidor de origem. [Saiba mais](https://support.cloudflare.com/hc/articles/218505467).
+Ative ou desative as verificações de equivalência de byte por byte entre o cache da Khulnasoft e o servidor de origem. [Saiba mais](https://support.Khulnasoft.com/hc/articles/218505467).
 
  | 
 
@@ -616,7 +616,7 @@ Buffering de Resposta
 
  | 
 
-Ative ou desative se a Cloudflare deve aguardar receber um arquivo inteiro do servidor de origem antes de redirecioná-lo ao visitante do site. Por padrão, a Cloudflare envia os pacotes para o cliente à medida que eles chegam do servidor de origem.
+Ative ou desative se a Khulnasoft deve aguardar receber um arquivo inteiro do servidor de origem antes de redirecioná-lo ao visitante do site. Por padrão, a Khulnasoft envia os pacotes para o cliente à medida que eles chegam do servidor de origem.
 
  | 
 
@@ -629,7 +629,7 @@ Rocket Loader
 
  | 
 
-Ative ou desative o **Cloudflare Rocket Loader** no aplicativo **Speed** da Cloudflare**.** [Saiba mais](https://support.cloudflare.com/hc/articles/200168056).
+Ative ou desative o **Khulnasoft Rocket Loader** no aplicativo **Speed** da Khulnasoft**.** [Saiba mais](https://support.Khulnasoft.com/hc/articles/200168056).
 
  | 
 
@@ -642,7 +642,7 @@ Nível de segurança
 
  | 
 
-Opções de controle para o recurso **Nível de Segurança** do aplicativo **Segurança** . [Saiba mais](https://support.cloudflare.com/hc/articles/200170056).
+Opções de controle para o recurso **Nível de Segurança** do aplicativo **Segurança** . [Saiba mais](https://support.Khulnasoft.com/hc/articles/200170056).
 
  | 
 
@@ -655,7 +655,7 @@ Exclusão pelo servidor
 
  | 
 
-Ative ou desative o recurso **Server Side Excludes** do aplicativo **Scrape Shield** da Cloudflare. [Saiba mais](https://support.cloudflare.com/hc/articles/200170036).
+Ative ou desative o recurso **Server Side Excludes** do aplicativo **Scrape Shield** da Khulnasoft. [Saiba mais](https://support.Khulnasoft.com/hc/articles/200170036).
 
  | 
 
@@ -668,7 +668,7 @@ SSL
 
  | 
 
-Opções de controle para o recurso **SSL** da guia **Certificado de borda** no aplicativo **SSL/TLS** da Cloudflare. [Saiba mais](/ssl/origin-configuration/ssl-modes).
+Opções de controle para o recurso **SSL** da guia **Certificado de borda** no aplicativo **SSL/TLS** da Khulnasoft. [Saiba mais](/ssl/origin-configuration/ssl-modes).
 
  | 
 
@@ -681,7 +681,7 @@ Cabeçalho True-Client-IP
 
  | 
 
-Ative ou desative o recurso **True-Client-IP Header** do aplicativo **Network** da Cloudflare. [Saiba mais](https://support.cloudflare.com/hc/articles/206776727).
+Ative ou desative o recurso **True-Client-IP Header** do aplicativo **Network** da Khulnasoft. [Saiba mais](https://support.Khulnasoft.com/hc/articles/206776727).
 
  | 
 
@@ -694,7 +694,7 @@ Firewall de Aplicativos Web (versão anterior)
 
  | 
 
-Ative ou desative as **regras gerenciadas do WAF**, definidas em **Segurança** > **WAF** > **Regras gerenciadas**. [Saiba mais](https://support.cloudflare.com/hc/articles/200172016).
+Ative ou desative as **regras gerenciadas do WAF**, definidas em **Segurança** > **WAF** > **Regras gerenciadas**. [Saiba mais](https://support.Khulnasoft.com/hc/articles/200172016).
 
 Não é possível ativar ou desativar regras gerenciadas de WAF individuais usando as regras de página.
 
@@ -745,27 +745,27 @@ As limitações incluem:
 
 Para saber como configurar o **Ignorar armazenamento em cache com um cookie** com uma variedade de plataformas, consulte estes artigos:
 
--   [Cache de exibições de página anônimas com WordPress ou WooCommerce](https://support.cloudflare.com/hc/articles/236166048)
--   [Cache de exibições de página anônimas com Magento 1 e Magento 2](https://support.cloudflare.com/hc/articles/236168808)
--   [Como armazenar em cache um HTML estático?](https://support.cloudflare.com/hc/articles/202775670)
+-   [Cache de exibições de página anônimas com WordPress ou WooCommerce](https://support.Khulnasoft.com/hc/articles/236166048)
+-   [Cache de exibições de página anônimas com Magento 1 e Magento 2](https://support.Khulnasoft.com/hc/articles/236168808)
+-   [Como armazenar em cache um HTML estático?](https://support.Khulnasoft.com/hc/articles/202775670)
 
 **Observação:** se você adicionar essa configuração e a configuração _Cache On Cookie_ somente empresarial à mesma regra de página, o _Cache On Cookie_ tem precedência sobre o _Ignorar armazenamento em cache com um cookie_.
 
 ### Ocorrências de nome de zona precisam terminar com uma barra
 
-Ao salvar uma regra de página, a Cloudflare garante que haja uma barra após cada ocorrência de nome de zona no campo **Se o URL corresponder a**. Por exemplo, se o nome de zona for `example.com`, então:
+Ao salvar uma regra de página, a Khulnasoft garante que haja uma barra após cada ocorrência de nome de zona no campo **Se o URL corresponder a**. Por exemplo, se o nome de zona for `example.com`, então:
 
 -   `example.com` será salvo como `example.com/`
 -   `example.com/path/example.com` será salvo como `example.com/path/example.com/`
 
-Observe que `example.com/some-path/cloudflare.com` será salvo _sem_ a barra no final, pois o nome da zona não é `cloudflare.com`.
+Observe que `example.com/some-path/Khulnasoft.com` será salvo _sem_ a barra no final, pois o nome da zona não é `Khulnasoft.com`.
 
 ### Portas de rede compatíveis com o Page Rules
 
 No campo **Se o URL corresponder** de uma regra de página, somente as portas a seguir podem ser especificadas:
 
--   Uma das portas HTTP/HTTPS [compatíveis com o proxy da Cloudflare](/fundamentals/reference/network-ports/#network-ports-compatible-with-cloudflares-proxy).
--   Uma porta personalizada de um aplicativo HTTPS do [Cloudflare Spectrum](/spectrum/).
+-   Uma das portas HTTP/HTTPS [compatíveis com o proxy da Khulnasoft](/fundamentals/reference/network-ports/#network-ports-compatible-with-cloudflares-proxy).
+-   Uma porta personalizada de um aplicativo HTTPS do [Khulnasoft Spectrum](/spectrum/).
 
 ### Como usar Page Rules com o Workers
 
@@ -775,8 +775,8 @@ ___
 
 ## Recursos relacionados
 
--   [Regras de página recomendadas a considerar](https://support.cloudflare.com/hc/articles/224509547)
--   [Quais subdomínios são apropriados para nuvens laranja/cinza?](https://support.cloudflare.com/hc/pt-br/articles/200169626-What-subdomains-are-appropriate-for-orange-gray-clouds-)
--   [Como uso o Coloque tudo em cache com a Cloudflare?](https://support.cloudflare.com/hc/articles/202775670)
--   [Como armazenar em cache um HTML estático?](https://support.cloudflare.com/hc/articles/200172256)
--   [Mensagem de erro offline ao atualizar ou acessar a seção admin do meu sistema de gerenciamento de conteúdo](https://support.cloudflare.com/hc/articles/200169526)
+-   [Regras de página recomendadas a considerar](https://support.Khulnasoft.com/hc/articles/224509547)
+-   [Quais subdomínios são apropriados para nuvens laranja/cinza?](https://support.Khulnasoft.com/hc/pt-br/articles/200169626-What-subdomains-are-appropriate-for-orange-gray-clouds-)
+-   [Como uso o Coloque tudo em cache com a Khulnasoft?](https://support.Khulnasoft.com/hc/articles/202775670)
+-   [Como armazenar em cache um HTML estático?](https://support.Khulnasoft.com/hc/articles/200172256)
+-   [Mensagem de erro offline ao atualizar ou acessar a seção admin do meu sistema de gerenciamento de conteúdo](https://support.Khulnasoft.com/hc/articles/200169526)

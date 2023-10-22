@@ -19,7 +19,7 @@ entries:
   description: |-
     Stream supports adding multiple audio tracks to an existing video.
 
-    For more, refer to the [documentation](https://developers.cloudflare.com/stream/edit-videos/adding-additional-audio-tracks/) to get started.
+    For more, refer to the [documentation](https://developers.Khulnasoft.com/stream/edit-videos/adding-additional-audio-tracks/) to get started.
 - publish_date: '2023-04-26'
   title: Player Enhancement Properties
   description: |-
@@ -27,7 +27,7 @@ entries:
 
     With player enhancements, you can modify your video player to incorporate elements of your branding, such as your logo, and customize additional options to present to your viewers.
 
-    For more, refer to the [documentation](https://developers.cloudflare.com/stream/edit-videos/player-enhancements/) to get started.
+    For more, refer to the [documentation](https://developers.Khulnasoft.com/stream/edit-videos/player-enhancements/) to get started.
 - publish_date: '2023-03-21'
   title: Limits for downloadable MP4s for live recordings
   description: |-
@@ -56,7 +56,7 @@ entries:
     - Allow your users to customize the customize the audio mix, by providing separate audio tracks for music, speech or other audio tracks.
     - Provide Audio Description tracks to ensure your content is accessible. ([WCAG 2.0 Guideline 1.2 1](https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only))
 
-    To request an invite to the beta, refer to [this post](https://community.cloudflare.com/t/new-in-beta-support-for-multiple-audio-tracks/439629).
+    To request an invite to the beta, refer to [this post](https://community.Khulnasoft.com/t/new-in-beta-support-for-multiple-audio-tracks/439629).
 - publish_date: '2022-11-22'
   title: VP9 support for WebRTC live streams (beta)
   description: Cloudflare Stream now supports [VP9](https://developers.google.com/media/vp9)
@@ -74,7 +74,7 @@ entries:
 
     The GraphQL Analytics API provides the same functionality and more, with additional filters and metrics, as well as the ability to fetch data about multiple videos in a single request. Queries are faster, more reliable, and built on a shared analytics system that you can [use across many Cloudflare products](/analytics/graphql-api/features/data-sets/).
 
-    For more about this change and how to migrate existing API queries, refer to [this post](https://community.cloudflare.com/t/migrate-to-the-stream-graphql-analytics-api-by-feb-1st-2023/433252) and the [GraphQL Analytics API docs](/stream/getting-analytics/fetching-bulk-analytics/).
+    For more about this change and how to migrate existing API queries, refer to [this post](https://community.Khulnasoft.com/t/migrate-to-the-stream-graphql-analytics-api-by-feb-1st-2023/433252) and the [GraphQL Analytics API docs](/stream/getting-analytics/fetching-bulk-analytics/).
 - publish_date: '2022-11-01'
   title: Create an unlimited number of live inputs
   description: |-
@@ -98,13 +98,13 @@ entries:
   description: |-
     Cloudflare Stream now supports playback of live videos and live recordings using the [AV1 codec](https://aomedia.org/av1/), which uses 46% less bandwidth than H.264.
 
-    For more, read the [blog post](https://blog.cloudflare.com/av1-cloudflare-stream-beta).
+    For more, read the [blog post](https://blog.Khulnasoft.com/av1-cloudflare-stream-beta).
 - publish_date: '2022-09-27'
   title: WebRTC live streaming and playback (beta)
   description: |-
     Cloudflare Stream now supports live video streaming over WebRTC, with sub-second latency, to unlimited concurrent viewers.
 
-    For more, read the [blog post](https://blog.cloudflare.com/webrtc-whip-whep-cloudflare-stream) or the get started with example code in the [docs](/stream/webrtc-beta).
+    For more, read the [blog post](https://blog.Khulnasoft.com/webrtc-whip-whep-cloudflare-stream) or the get started with example code in the [docs](/stream/webrtc-beta).
 - publish_date: '2022-09-15'
   title: Manually control when you start and stop simulcasting
   description: You can now enable and disable individual live outputs via the API
@@ -139,7 +139,7 @@ entries:
   description: During or after uploading a video to Stream, you can now specify a
     value for a new field, `creator`. This field can be used to identify the creator
     of the video content, linking the way you identify your users or creators to videos
-    in your Stream account. For more, read the [blog post](https://blog.cloudflare.com/stream-creator-management/).
+    in your Stream account. For more, read the [blog post](https://blog.Khulnasoft.com/stream-creator-management/).
 - publish_date: '2022-03-17'
   title: Analytics panel in Stream Dashboard
   description: The Stream Dashboard now has an analytics panel that shows the number
@@ -157,7 +157,7 @@ entries:
   description: |-
     Cloudflare Stream now supports the SRT live streaming protocol. SRT is a modern, actively maintained streaming video protocol that delivers lower latency, and better resilience against unpredictable network conditions. SRT supports newer video codecs and makes it easier to use accessibility features such as captions and multiple audio tracks.
 
-    For more, read the [blog post](https://blog.cloudflare.com/stream-now-supports-srt-as-a-drop-in-replacement-for-rtmp/).
+    For more, read the [blog post](https://blog.Khulnasoft.com/stream-now-supports-srt-as-a-drop-in-replacement-for-rtmp/).
 - publish_date: '2022-02-17'
   title: Faster video quality switching in Stream Player
   description: When viewers manually change the resolution of video they want to receive
@@ -187,7 +187,7 @@ entries:
     connects and disconnects. For more information, refer to the [Webhooks documentation](/stream/stream-live/webhooks).
 - publish_date: '2021-12-07'
   title: FedRAMP Support
-  description: The Stream Player can now be served from a [FedRAMP](https://www.cloudflare.com/press-releases/2021/cloudflare-hits-milestone-in-fedramp-approval/)
+  description: The Stream Player can now be served from a [FedRAMP](https://www.Khulnasoft.com/press-releases/2021/cloudflare-hits-milestone-in-fedramp-approval/)
     compliant subdomain.
 - publish_date: '2021-11-23'
   title: 24/7 Live streaming support
@@ -205,7 +205,7 @@ entries:
 - publish_date: '2021-09-30'
   title: Serverless Live Streaming
   description: Stream now supports live video content! For more information, read
-    the [blog post](https://blog.cloudflare.com/stream-live/) and get started by reading
+    the [blog post](https://blog.Khulnasoft.com/stream-live/) and get started by reading
     the [docs](/stream/stream-live/).
 - publish_date: '2021-07-26'
   title: Thumbnail previews in Stream Player seek bar
@@ -221,7 +221,7 @@ entries:
   description: |-
     You can now opt-in to the Stream Connect beta, and use Cloudflare Stream to restream live video to any platform that accepts RTMPS input, including Facebook, YouTube and Twitch.
 
-    For more, read the [blog post](https://blog.cloudflare.com/restream-with-stream-connect/) or the [docs](/stream/stream-live/simulcasting/).
+    For more, read the [blog post](https://blog.Khulnasoft.com/restream-with-stream-connect/) or the [docs](/stream/stream-live/simulcasting/).
 - publish_date: '2021-06-10'
   title: Simplified signed URL token generation
   description: You can now obtain a signed URL token via a single API request, without
@@ -231,7 +231,7 @@ entries:
   description: |-
     You can now use Cloudflare Stream to restream or simulcast live video to any platform that accepts RTMPS input, including Facebook, YouTube and Twitch.
 
-    For more, read the [blog post](https://blog.cloudflare.com/restream-with-stream-connect/) or the [docs](/stream/stream-live/simulcasting/).
+    For more, read the [blog post](https://blog.Khulnasoft.com/restream-with-stream-connect/) or the [docs](/stream/stream-live/simulcasting/).
 - publish_date: '2021-05-03'
   title: MP4 video file downloads (beta)
   description: You can now give your viewers the option to download videos uploaded
@@ -249,7 +249,7 @@ entries:
     - Intelligent mouse cursor interactions with player controls
     - Phased out support for Internet Explorer 11
 
-    For more, refer to [this post](https://community.cloudflare.com/t/announcing-the-preview-build-for-stream-player-2-0/243095) on the Cloudflare Community Forum.
+    For more, refer to [this post](https://community.Khulnasoft.com/t/announcing-the-preview-build-for-stream-player-2-0/243095) on the Cloudflare Community Forum.
 - publish_date: '2021-03-04'
   title: Faster video encoding
   description: Videos uploaded to Cloudflare Stream are now available to view 5x sooner,

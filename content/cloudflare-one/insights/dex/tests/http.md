@@ -12,7 +12,7 @@ An HTTP test sends a `GET` request from an end-user device to a specific web app
 
 To set up an HTTP test for an application:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **DEX** > **Tests**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **DEX** > **Tests**.
 2. Select **Add a Test**.
 3. Fill in the following fields:
     - **Name**: Enter any name for the test.

@@ -8,7 +8,7 @@ weight: 3
 
 To create a client certificate in the Cloudflare dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and application.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and application.
 2.  Go to **SSL** > **Client Certificates**.
 3.  Select **Create Certificate**.
 

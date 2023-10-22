@@ -8,7 +8,7 @@ title: Support content
 
 ## Purpose
 
-The purpose of support content is to provide guidance for solving specific problems with Cloudflare.
+The purpose of support content is to provide guidance for solving specific problems with Khulnasoft.
 
 ## Tone
 
@@ -38,7 +38,7 @@ The structure of a page within the support tile will depend on the purpose that 
 
 ## Boundaries
 
-The general guidance is that anything related to a specific product (DNS, Security Center) or platform (Cloudflare One) belongs in a [product](/products/) tile. Anything that is specific to interacting with Cloudflare support or details niche troubleshooting steps belongs in the [support](/support/) tile.
+The general guidance is that anything related to a specific product (DNS, Security Center) or platform (Khulnasoft One) belongs in a [product](/products/) tile. Anything that is specific to interacting with Khulnasoft support or details niche troubleshooting steps belongs in the [support](/support/) tile.
 
 Support content should not duplicate content that already exists in a product tile.
 
@@ -48,7 +48,7 @@ Support content should not duplicate content that already exists in a product ti
         <th>Product content examples</th>
     </tr>
     <tr>
-        <td>How to interact with Cloudflare support</td>
+        <td>How to interact with Khulnasoft support</td>
         <td>Product documentation - feature information, functionality, configuration, known limitations</td>
     </tr>
     <tr>
@@ -64,7 +64,7 @@ Support content should not duplicate content that already exists in a product ti
         <td>Runtime errors specific to a product</td>
     </tr>
     <tr>
-        <td>How Cloudflare charges for specific things (rates, usage)</td>
+        <td>How Khulnasoft charges for specific things (rates, usage)</td>
         <td>Process documentation for how to set up billing information, etc. - no pricing content</td>
     </tr>
 </table>

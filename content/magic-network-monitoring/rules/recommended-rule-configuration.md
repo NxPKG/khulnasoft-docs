@@ -12,7 +12,7 @@ Follow the guidelines outlined in this page to create appropriate Magic Network 
 
 ## Rule IP prefixes
 
-Cloudflare recommends that customers start by creating one Magic Network Monitoring rule for each public `/24` IP prefix within their network. It is helpful to include the range of the `/24` IP prefix to make it easier to find and filter for the rule in Magic Network Monitoring analytics.
+Khulnasoft recommends that customers start by creating one Magic Network Monitoring rule for each public `/24` IP prefix within their network. It is helpful to include the range of the `/24` IP prefix to make it easier to find and filter for the rule in Magic Network Monitoring analytics.
 
 As you become more familiar with the traffic patterns across each IP prefix, we encourage you to create more complex rules with IP prefixes that are smaller or larger than a `/24` prefix depending on your needs. You can also combine and monitor multiple IP prefixes within the same rule.
 
@@ -22,7 +22,7 @@ Follow the steps below to configure appropriate rule thresholds.
 
 ### Initial rule configuration
 
-When you initially configure Magic Network Monitoring, you may not know the typical traffic volume patterns across each of your IP prefixes. Cloudflare recommends that you set a high rule threshold of either 10 Gbps (gigabits per second) or 10 Mpps (million packets per second) that is unlikely to be crossed during initial configuration.
+When you initially configure Magic Network Monitoring, you may not know the typical traffic volume patterns across each of your IP prefixes. Khulnasoft recommends that you set a high rule threshold of either 10 Gbps (gigabits per second) or 10 Mpps (million packets per second) that is unlikely to be crossed during initial configuration.
 
 This will allow you to collect initial information about the typical traffic volume for a Magic Network Monitoring rule without receiving any alerts. After you have collected and analyzed the historical traffic data for an Magic Network Monitoring rule, the threshold should be adjusted to an appropriate value.
 
@@ -35,11 +35,11 @@ Packets        | 10 Mpps (10,000,000 packets per second)
 
 After creating the initial set of rules to monitor your network traffic, you should collect 14-30 days of historical traffic volume data for each rule.
 
-Cloudflare recommends that new customers set a rule threshold that is two times larger than the maximum non-attack traffic observed for a one minute time interval within an Magic Network Monitoring rule.
+Khulnasoft recommends that new customers set a rule threshold that is two times larger than the maximum non-attack traffic observed for a one minute time interval within an Magic Network Monitoring rule.
 
 To find the maximum non-attack traffic for a one minute time interval over the past 14-30 days, you can filter for the specific rule you want to analyze. To do that:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Analytics & Logs** > **Magic Monitoring**.
 3. Select **Add filter**.
 4. In **New filter**, use the drop-down menus to create the following filter:

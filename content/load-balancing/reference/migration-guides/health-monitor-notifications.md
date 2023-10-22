@@ -6,13 +6,13 @@ weight: 2
 
 # Health monitor notifications
 
-Cloudflare is migrating the notifications used by load balancing [health monitors](/load-balancing/monitors/) to use Cloudflare's centralized [Notifications Service](/notifications/).
+Khulnasoft is migrating the notifications used by load balancing [health monitors](/load-balancing/monitors/) to use Khulnasoft's centralized [Notifications Service](/notifications/).
 
 ## What is changing and why?
 
-Cloudflare’s account-level [Notifications Service](/notifications/) is now the centralized location for most Cloudflare services. This change promotes consistency and streamlined administration, as well as gives you more options for notification delivery such as configuring webhooks or associating multiple pools with the same notification. These new notifications will also be managed at the account level instead of the zone level.
+Khulnasoft’s account-level [Notifications Service](/notifications/) is now the centralized location for most Khulnasoft services. This change promotes consistency and streamlined administration, as well as gives you more options for notification delivery such as configuring webhooks or associating multiple pools with the same notification. These new notifications will also be managed at the account level instead of the zone level.
 
-We strongly encourage all customers to migrate existing Health Monitor notifications to Cloudflare’s centralized Notifications Service to avoid lapses in alerts.
+We strongly encourage all customers to migrate existing Health Monitor notifications to Khulnasoft’s centralized Notifications Service to avoid lapses in alerts.
 
 ## Migration guide
 
@@ -20,17 +20,17 @@ You should use this guide to migrate over **all** your existing health monitor n
 
 ### Step 1 - Find existing notifications
 
-First you should determine which pools are using notifications. It's often easier if you use the Cloudflare API to list all your pools and look for the `notification_email` parameter.
+First you should determine which pools are using notifications. It's often easier if you use the Khulnasoft API to list all your pools and look for the `notification_email` parameter.
 
 {{<details header="With code">}}
 
-Use the [Cloudflare API](/api/operations/account-load-balancer-pools-list-pools) to list all your pools and then look for whether each pool has a value for the `notification_email` parameter.
+Use the [Khulnasoft API](/api/operations/account-load-balancer-pools-list-pools) to list all your pools and then look for whether each pool has a value for the `notification_email` parameter.
 
 ```json
 ---
 header: Request
 ---
-curl -X GET "https://api.cloudflare.com/client/v4/accounts/:account_id/load_balancers/pools" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/accounts/:account_id/load_balancers/pools" \
     -H "X-Auth-Email: user@example.com" \
     -H "X-Auth-Key: REDACTED" \
     -H "Content-Type: application/json" \
@@ -67,7 +67,7 @@ header: Response
 
 To find pools with existing notifications in the dashboard:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Go to **Traffic** > **Load Balancing**.
 3. Click **Manage Pools**.
 4. On a pool, click **Edit**.
@@ -81,7 +81,7 @@ In this step, you should create new notifications to replace all of your existin
 
 {{<details header="With code">}}
 
-If using the Cloudflare API, [re-create all your existing notifications](/api/operations/notification-policies-create-a-notification-policy) with the following parameters specified:
+If using the Khulnasoft API, [re-create all your existing notifications](/api/operations/notification-policies-create-a-notification-policy) with the following parameters specified:
 
 ```json
 "alert_type": "load_balancing_health_alert",
@@ -104,17 +104,17 @@ On the pool you located in [Step 1](#step-1---find-existing-notifications), look
 
 As the final step in the migration process, you need to remove all emails from your legacy notifications to ensure that you no longer receive deprecation emails moving forward.
 
-Though you can perform these steps in the dashboard, Cloudflare recommends you use our new API endpoint for added convenience.
+Though you can perform these steps in the dashboard, Khulnasoft recommends you use our new API endpoint for added convenience.
 
 {{<details header="With code">}}
 
-If using the Cloudflare API, we recently added a [`PATCH`](/api/operations/account-load-balancer-pools-patch-pools) endpoint so you can easily remove email notifications from multiple pools at the same time.
+If using the Khulnasoft API, we recently added a [`PATCH`](/api/operations/account-load-balancer-pools-patch-pools) endpoint so you can easily remove email notifications from multiple pools at the same time.
 
 ```json
 ---
 header: Request
 ---
-curl -X PATCH "https://api.cloudflare.com/client/v4/accounts/:account_identifier/load_balancers/pools" \
+curl -X PATCH "https://api.Khulnasoft.com/client/v4/accounts/:account_identifier/load_balancers/pools" \
 -H "X-Auth-Email: user@example.com" \
 -H "X-Auth-Key: REDACTED" \
 -H "Content-Type: application/json" \

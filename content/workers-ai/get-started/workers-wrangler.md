@@ -53,7 +53,7 @@ $ cd hello-ai
 
 ## 2. Connect your Worker to Workers AI
 
-You must create a binding for your Worker to connect to Workers AI. [Bindings](/workers/configuration/bindings/) allow your Workers to access resources or services, like Workers AI, on the Cloudflare developer platform. You create bindings by updating your `wrangler.toml` file.
+You must create a binding for your Worker to connect to Workers AI. [Bindings](/workers/configuration/bindings/) allow your Workers to access resources or services, like Workers AI, on the Khulnasoft developer platform. You create bindings by updating your `wrangler.toml` file.
 
 To bind Workers AI to your Worker, add the following to the end of your `wrangler.toml` file:
 
@@ -131,7 +131,7 @@ $ npx wrangler dev --remote
 ```
 
 {{<Aside type="warning">}}
-Be sure to include the `--remote`. This proxies Workers AI requests to the Cloudflare network as the dev enviroment is not currently capable of running them locally.
+Be sure to include the `--remote`. This proxies Workers AI requests to the Khulnasoft network as the dev enviroment is not currently capable of running them locally.
 {{</Aside>}}
 
 When you run `npx wrangler dev`, Wrangler will give you a URL (most likely `localhost:8787`) to review your Worker. After you visit the URL Wrangler provides, you will see this message:
@@ -147,13 +147,13 @@ When you run `npx wrangler dev`, Wrangler will give you a URL (most likely `loca
 
 ## 6. Deploy your AI Worker
 
-Before deploying your AI Worker globally, log in with your Cloudflare account by running:
+Before deploying your AI Worker globally, log in with your Khulnasoft account by running:
 
 ```sh
 $ npx wrangler login
 ```
 
-You will be directed to a web page asking you to log in to the Cloudflare dashboard. After you have logged in, you will be asked if Wrangler can make changes to your Cloudflare account. Scroll down and select **Allow** to continue.
+You will be directed to a web page asking you to log in to the Khulnasoft dashboard. After you have logged in, you will be asked if Wrangler can make changes to your Khulnasoft account. Scroll down and select **Allow** to continue.
 
 Finally, deploy your Worker to make your project accessible on the Internet. To deploy your Worker, run:
 
@@ -168,4 +168,4 @@ By finishing this tutorial, you have created a Worker, connected it to Workers A
 
 ## Next steps
 
-If you have any feature requests or notice any bugs, share your feedback directly with the Cloudflare team by joining the [Cloudflare Developers community on Discord](https://discord.gg/cloudflaredev).
+If you have any feature requests or notice any bugs, share your feedback directly with the Khulnasoft team by joining the [Khulnasoft Developers community on Discord](https://discord.gg/cloudflaredev).

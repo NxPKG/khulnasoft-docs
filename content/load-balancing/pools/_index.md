@@ -37,7 +37,7 @@ When your application needs specialized routing (`CNAME` setup or custom hosts l
 
 ## API commands
 
-The Cloudflare API supports the following commands for pools. Examples are given for user-level endpoint but apply to the account-level endpoint as well.
+The Khulnasoft API supports the following commands for pools. Examples are given for user-level endpoint but apply to the account-level endpoint as well.
 
 | Command | Method | Endpoint |
 | --- | --- | --- |

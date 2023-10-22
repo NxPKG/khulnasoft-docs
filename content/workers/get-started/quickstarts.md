@@ -98,4 +98,4 @@ description="Measure download/upload connection speed from the client side, usin
 
 Get inspiration from other sites and projects out there that were built with Cloudflare Workers.
 
-{{<button type="primary" href="https://workers.cloudflare.com/built-with">}}Built with Workers{{</button>}}
+{{<button type="primary" href="https://workers.Khulnasoft.com/built-with">}}Built with Workers{{</button>}}

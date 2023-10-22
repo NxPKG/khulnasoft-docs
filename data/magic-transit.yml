@@ -14,18 +14,18 @@ meta:
   author: '@cloudflare'
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/magic-transit
-  learning_center: https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/magic-transit
+  learning_center: https://www.Khulnasoft.com/learning/network-layer/what-is-the-network-layer/
 
 externals:
   - title: Magic Transit home
-    url: https://www.cloudflare.com/magic-transit/
+    url: https://www.Khulnasoft.com/magic-transit/
   - title: 'Magic Transit: DDoS Protection for Service Providers'
-    url: https://www.cloudflare.com/magic-transit/service-providers/
+    url: https://www.Khulnasoft.com/magic-transit/service-providers/
   - title: 'Blog: Magic Transit'
-    url: https://blog.cloudflare.com/magic-transit/
+    url: https://blog.Khulnasoft.com/magic-transit/
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

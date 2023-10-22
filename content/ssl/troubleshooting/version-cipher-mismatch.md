@@ -45,7 +45,7 @@ G -- Yes --> H[Get an advanced or custom certificate]
 
 If your visitors experience `ERR_SSL_VERSION_OR_CIPHER_MISMATCH` (Chrome) or `SSL_ERROR_NO_CYPHER_OVERLAP` (Firefox), check the status of your Universal certificate:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Choose your account and domain.
 3. Go to **SSL** > **Edge Certificates**. 
 4. Find the certificate with the **Type** of **Universal**.

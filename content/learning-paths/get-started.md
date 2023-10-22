@@ -1,10 +1,10 @@
 ---
-title: Get started with Cloudflare
+title: Get started with Khulnasoft
 type: developers-site
 layout: home
 pcx_content_type: learning-path
 meta:
-    description: Set up your application to benefit from Cloudflare's speed, security, and reliability.
+    description: Set up your application to benefit from Khulnasoft's speed, security, and reliability.
 ---
 
 {{<dynamic-learning-path-header file="get-started.json">}}

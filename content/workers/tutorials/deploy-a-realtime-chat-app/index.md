@@ -14,7 +14,7 @@ In this tutorial, you will deploy a serverless, real-time chat application that 
 
 This chat application uses a Durable Object to control each chat room. Users connect to the Object using WebSockets. Messages from one user are broadcast to all the other users. The chat history is also stored in durable storage. Real-time messages are relayed directly from one user to others without going through the storage layer.
 
-To continue with this tutorial, you must purchase the [Workers Paid plan](/workers/platform/pricing/#workers) and enable Durable Objects by logging into the [Cloudflare dashboard](https://dash.cloudflare.com) > **Workers & Pages** > select your Worker > **Durable Objects**.
+To continue with this tutorial, you must purchase the [Workers Paid plan](/workers/platform/pricing/#workers) and enable Durable Objects by logging into the [Cloudflare dashboard](https://dash.Khulnasoft.com) > **Workers & Pages** > select your Worker > **Durable Objects**.
 
 ## Clone the chat application repository
 
@@ -66,7 +66,7 @@ routes = [
 
 To test your live application:
 
-1. Open your `edge-chat-demo.<SUBDOMAIN>.workers.dev` subdomain. Your subdomain can be found in the [Cloudflare dashboard](https://dash.cloudflare.com) > **Workers & Pages** > your Worker > **Triggers** >  **Routes** > select the `edge-chat-demo.<SUBDOMAIN>.workers.dev` route.
+1. Open your `edge-chat-demo.<SUBDOMAIN>.workers.dev` subdomain. Your subdomain can be found in the [Cloudflare dashboard](https://dash.Khulnasoft.com) > **Workers & Pages** > your Worker > **Triggers** >  **Routes** > select the `edge-chat-demo.<SUBDOMAIN>.workers.dev` route.
 2. Enter a name in the **your name** field.
 3. Choose whether to enter a public room or create a private room.
 4. Send the link to other participants. You will be able to view room participants on the right side of the screen.
@@ -94,7 +94,7 @@ Then run `npx wrangler deploy`.
 
 To delete your Worker:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Worker.
 4. Select **Manage Service** > **Delete**. For complete instructions on set up and deletion, refer to the `README.md` in your cloned repository.

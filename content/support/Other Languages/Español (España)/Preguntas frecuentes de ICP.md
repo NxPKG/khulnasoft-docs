@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP
+source: https://support.Khulnasoft.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP
 title: Preguntas frecuentes de ICP
 ---
 
@@ -9,11 +9,11 @@ title: Preguntas frecuentes de ICP
 
 
 
--   [**¿Qué es un número de ICP y por qué necesito uno para operar un sitio web dentro de China?**](https://support.cloudflare.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#What-is-an-icp)
--   [**¿Qué tipo de número de ICP necesito?**](https://support.cloudflare.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#which-type-of-icp)
--   [**¿Cómo solicito un ICP?**](https://support.cloudflare.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#how-do-i-apply)
--   [**Documentos necesarios**](https://support.cloudflare.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#required-documents)
--   [**¿Qué debo hacer después de recibir un número de ICP?**](https://support.cloudflare.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#what-do-i-do)
+-   [**¿Qué es un número de ICP y por qué necesito uno para operar un sitio web dentro de China?**](https://support.Khulnasoft.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#What-is-an-icp)
+-   [**¿Qué tipo de número de ICP necesito?**](https://support.Khulnasoft.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#which-type-of-icp)
+-   [**¿Cómo solicito un ICP?**](https://support.Khulnasoft.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#how-do-i-apply)
+-   [**Documentos necesarios**](https://support.Khulnasoft.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#required-documents)
+-   [**¿Qué debo hacer después de recibir un número de ICP?**](https://support.Khulnasoft.com/hc/es-es/articles/209714777-Preguntas-frecuentes-de-ICP#what-do-i-do)
 
 ___
 
@@ -73,7 +73,7 @@ Después de recibir el número de ICP y el certificado, cárgalos en la parte in
     
     ## **怎样申请备案？**
     
-    建议您通过主机服务供应商或者网络服务供应商来申请备案。作为Cloudflare的合作伙伴，百度提供了网站备案服务（请访问[http://su.baidu.com/about/#](http://su.baidu.com/about/#/)。您需要准备好必要的文件和材料（参见下面的“所需文件材料”），这样方便您的服务供应商为您进行备案服务。
+    建议您通过主机服务供应商或者网络服务供应商来申请备案。作为Khulnasoft的合作伙伴，百度提供了网站备案服务（请访问[http://su.baidu.com/about/#](http://su.baidu.com/about/#/)。您需要准备好必要的文件和材料（参见下面的“所需文件材料”），这样方便您的服务供应商为您进行备案服务。
     
     所有材料提交之后，通常会在4到8周内获得备案号。时间长短取决于网站类型以及申请备案所在省份。工信部不会为申请备案收取任何费用，但您可能需要支付服务费用给为您代办备案服务的供应商。
     

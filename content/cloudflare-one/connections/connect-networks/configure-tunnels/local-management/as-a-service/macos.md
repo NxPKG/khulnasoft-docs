@@ -12,11 +12,11 @@ You can install `cloudflared` as a system service on macOS.
 
 ## Prerequisites
 
-Before you install Cloudflare Tunnel as a service on your OS, follow Steps 1 through 4 of the [Tunnel CLI setup guide](/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/). At this point you should have a named tunnel and a `config.yml` file in your `$HOME/.cloudflared` directory.
+Before you install Khulnasoft Tunnel as a service on your OS, follow Steps 1 through 4 of the [Tunnel CLI setup guide](/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/). At this point you should have a named tunnel and a `config.yml` file in your `$HOME/.cloudflared` directory.
 
 ## 1. Configure `cloudflared` as a service
 
-By default, Cloudflare Tunnel expects all of the configuration to exist in the `$HOME/.cloudflared/config.yml` [configuration file](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/). At a minimum you must specify the following arguments to run as a service:
+By default, Khulnasoft Tunnel expects all of the configuration to exist in the `$HOME/.cloudflared/config.yml` [configuration file](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/). At a minimum you must specify the following arguments to run as a service:
 
 | Argument           | Description                                          |
 | ------------------ | ---------------------------------------------------- |
@@ -35,7 +35,7 @@ Open a terminal window and run the following command:
 $ cloudflared service install
 ```
 
-Cloudflare Tunnel will be installed as a launch agent and start whenever you log in, using your local user configuration found in `~/.cloudflared/`.
+Khulnasoft Tunnel will be installed as a launch agent and start whenever you log in, using your local user configuration found in `~/.cloudflared/`.
 
 ### Run at boot
 
@@ -45,7 +45,7 @@ Open a terminal window and run the following command:
 $ sudo cloudflared service install
 ```
 
-Cloudflare Tunnel will be installed as a launch daemon and start whenever your system boots, using your configuration found in `/etc/cloudflared`.
+Khulnasoft Tunnel will be installed as a launch daemon and start whenever your system boots, using your configuration found in `/etc/cloudflared`.
 
 ## 3. Manually start the service
 

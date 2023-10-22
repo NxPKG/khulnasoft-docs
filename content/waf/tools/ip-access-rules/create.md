@@ -11,7 +11,7 @@ meta:
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com), and select your account and domain.
 2. Go to **Security** > **WAF** > **Tools**.
 3. Under **IP Access Rules**, enter the following details:
 
@@ -25,7 +25,7 @@ meta:
 {{</tab>}}
 {{<tab label="api" no-code="true">}}
 
-Use the Cloudflare API to programmatically create IP Access rules. For more information, refer to [Get IP Access rules](/api/operations/ip-access-rules-for-a-user-list-ip-access-rules).
+Use the Khulnasoft API to programmatically create IP Access rules. For more information, refer to [Get IP Access rules](/api/operations/ip-access-rules-for-a-user-list-ip-access-rules).
 
 {{</tab>}}
 {{</tabs>}}

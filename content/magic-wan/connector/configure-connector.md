@@ -24,7 +24,7 @@ Sites represent the local network where you have installed your Magic WAN Connec
 
 To add a site:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Sites**.
 3. Select **Create** to create a new site and start the configuration wizard.
 4. Add a name and description for your new site. 
@@ -32,7 +32,7 @@ To add a site:
 6. Choose from the list the Connector corresponding to the site you are creating. Connectors are identified by a serial number, also known as a service tag. Select **Add Connector** when you are ready to proceed.
 7. The Connector will be added to your site with an **Interrupt service window** defined. This is the time period when the Magic WAN Connector software can update, which may result in interruption to existing connections. You can change this later. Refer to [Device activation](#device-activation) for more details.
 8. Select **Next** to proceed.
-9. Create one or more [wide area network (WAN)](https://www.cloudflare.com/learning/network-layer/what-is-a-wan/) under **WAN configuration**. Configuring multiple WANs will create multiple IPsec tunnels. This allows the Connector to failover between circuits according to their [health](/magic-wan/reference/traffic-steering/). Select **Create**, and define the following settings:
+9. Create one or more [wide area network (WAN)](https://www.Khulnasoft.com/learning/network-layer/what-is-a-wan/) under **WAN configuration**. Configuring multiple WANs will create multiple IPsec tunnels. This allows the Connector to failover between circuits according to their [health](/magic-wan/reference/traffic-steering/). Select **Create**, and define the following settings:
     1. **Network name**: Enter a descriptive name for your WAN.
     2. **(Optional) VLAN ID**: Specify a VLAN ID and port for your WAN.
     3. **Physical port**: This refers to the physical Magic WAN Connector port that you are using for your WAN.
@@ -92,7 +92,7 @@ When the Connector is first activated, one of the ports must be connected to the
 
 When you are ready to connect your Magic WAN Connector to the Cloudflare network:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Configuration** > **Connectors**.
 3. Find the Connector you want to activate, select the three dots next to it > **Edit**. Make sure you verify the serial number to choose the right connector you want to activate.
 4. In the new window, the **Status** dropdown will show as **Deactivated**. Select it to change the status to **Activated**.
@@ -117,7 +117,7 @@ Magic WAN Connector automatically creates [IPsec tunnels](/magic-wan/get-started
 
 To check the IPsec tunnels and static routes created by your Magic Wan Connector:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Sites**.
 3. Select the name of the site for which you want to check the Connector's IPsec tunnels and static routes, and select **Edit**.
 4. Select **Tunnels** to check IPsec tunnels, and **Routes** for the static routes.
@@ -128,11 +128,11 @@ To check the IPsec tunnels and static routes created by your Magic Wan Connector
 
 After setting up your Magic WAN Connector, there are a few settings you can change in the Cloudflare dashboard. You can also check your Magic WAN [Connector's heartbeat](/magic-wan/connector/device-information/#heartbeat).
 
-{{<Aside type="note">}}[ICMP traffic](https://www.cloudflare.com/learning/ddos/glossary/internet-control-message-protocol-icmp/) is routed through the Internet and bypasses [Cloudflare Gateway](/cloudflare-one/policies/gateway/). This enables you to ping resources on the Internet from the Magic WAN connector directly, which can be useful for debugging.{{</Aside>}}
+{{<Aside type="note">}}[ICMP traffic](https://www.Khulnasoft.com/learning/ddos/glossary/internet-control-message-protocol-icmp/) is routed through the Internet and bypasses [Cloudflare Gateway](/cloudflare-one/policies/gateway/). This enables you to ping resources on the Internet from the Magic WAN connector directly, which can be useful for debugging.{{</Aside>}}
 
 ### Deactivate Magic WAN Connector
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Configuration** > **Connectors**.
 3. Find the Connector you want to deactivate, select the three dots next to it > **Edit**.
 4. In Status, select _Deactivated_ from the dropdown.
@@ -142,7 +142,7 @@ After setting up your Magic WAN Connector, there are a few settings you can chan
 
 The interrupt service window defines when Magic WAN Connector can update its systems. When Magic WAN Connector is updating, this may result in an interruption to existing connections. Set up a time window that minimizes disruption to your sites.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Configuration** > **Connectors**.
 3. Find the Connector you want to deactivate, select the three dots next to it > **Edit**.
 4. In **Interrupt service window**, select the most appropriate time for the Connector to update its systems.

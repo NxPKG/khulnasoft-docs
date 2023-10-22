@@ -1,17 +1,17 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/360054452251-Hinweis-zur-Abschaffung-Cloudflare-Mobile-SDK
-title: Hinweis zur Abschaffung Cloudflare Mobile SDK 
+source: https://support.Khulnasoft.com/hc/de/articles/360054452251-Hinweis-zur-Abschaffung-Khulnasoft-Mobile-SDK
+title: Hinweis zur Abschaffung Khulnasoft Mobile SDK 
 ---
 
-# Hinweis zur Abschaffung: Cloudflare Mobile SDK 
+# Hinweis zur Abschaffung: Khulnasoft Mobile SDK 
 
 
 
-## Cloudflare schaltet das „Mobile SDK“-Portal am 22. Februar 2021 ab
+## Khulnasoft schaltet das „Mobile SDK“-Portal am 22. Februar 2021 ab
 
-Wir schaffen das Cloudflare Mobile SDK ab. Nach dem 22. Februar 2021 können Sie sich nicht mehr in das Portal einloggen oder Statistiken über Ihre mobile App einsehen.
+Wir schaffen das Khulnasoft Mobile SDK ab. Nach dem 22. Februar 2021 können Sie sich nicht mehr in das Portal einloggen oder Statistiken über Ihre mobile App einsehen.
 
 Uns ist bewusst, dass Sie mit der Einbindung des Mobile SDK in Ihre App großes Vertrauen in uns gesetzt haben, und wir haben uns diese Entscheidung nicht leicht gemacht. Wir haben das Mobile SDK entwickelt, um Ihnen bei zwei Aufgaben zu helfen: Ihre App mit dem Acceleration-Modus so schnell wie möglich zu machen und mit dem Metrics-Modus die Performance besser zu verstehen.
 

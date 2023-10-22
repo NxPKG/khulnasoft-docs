@@ -8,15 +8,15 @@ title: MongoDB SSH
 
 # MongoDB SSH
 
-You can build Zero Trust rules to secure connections to MongoDB deployments using Cloudflare Access and Cloudflare Tunnel. Cloudflare Tunnel requires a lightweight daemon, `cloudflared`, running alongisde the deployment and as on the client side.
+You can build Zero Trust rules to secure connections to MongoDB deployments using Khulnasoft Access and Khulnasoft Tunnel. Khulnasoft Tunnel requires a lightweight daemon, `cloudflared`, running alongisde the deployment and as on the client side.
 
 In this tutorial, a client running `cloudflared` connects over SSH to a MongoDB deployment running on Kubernetes. The deployment example is structured to connect [Compass](https://www.mongodb.com/products/compass) to the MongoDB instance. The MongoDB Kubernetes deployment runs both the MongoDB database service and `cloudflared` as a ingress service that operates like a jump host.
 
 **This tutorial covers how to:**
 
-- Create a Cloudflare Access rule to secure a MongoDB deployment
+- Create a Khulnasoft Access rule to secure a MongoDB deployment
 - Configure a StatefulSet and service definition for the deployment
-- Configure an Cloudflare Tunnel connection to Cloudflare's edge
+- Configure an Khulnasoft Tunnel connection to Khulnasoft's edge
 - Create an SSH configuration file for the client
 
 **Time to complete:**
@@ -25,13 +25,13 @@ In this tutorial, a client running `cloudflared` connects over SSH to a MongoDB 
 
 ---
 
-## Configure Cloudflare Access
+## Configure Khulnasoft Access
 
-You can build a rule in Cloudflare Access to control who can connect to your MongoDB deployment. Cloudflare Access rules are built around a hostname; even though this deployment will be accessible over SSH, the resource will be represented in Cloudflare as a hostname. For example, if you have the website `app.com` in your Cloudflare account, you can build a rule to secure `mongodb.app.com`.
+You can build a rule in Khulnasoft Access to control who can connect to your MongoDB deployment. Khulnasoft Access rules are built around a hostname; even though this deployment will be accessible over SSH, the resource will be represented in Khulnasoft as a hostname. For example, if you have the website `app.com` in your Khulnasoft account, you can build a rule to secure `mongodb.app.com`.
 
-1. Follow [these instructions](/cloudflare-one/setup/) to set up Cloudflare Access in your account.
+1. Follow [these instructions](/cloudflare-one/setup/) to set up Khulnasoft Access in your account.
 
-2. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Applications**.
+2. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Applications**.
 
 3. Select **Add an application** and choose `Self-hosted`.
 
@@ -196,47 +196,47 @@ do sleep 30;
 done;
 ```
 
-## Configure Cloudflare Tunnel
+## Configure Khulnasoft Tunnel
 
-Next, you can use `cloudflared` to connect to Cloudflare's Edge using Cloudflare Tunnel. Start by [downloading and installing](/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/) the Cloudflare Tunnel daemon, `cloudflared`.
+Next, you can use `cloudflared` to connect to Khulnasoft's Edge using Khulnasoft Tunnel. Start by [downloading and installing](/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/) the Khulnasoft Tunnel daemon, `cloudflared`.
 
-Once installed, run the following command to authenticate the instance of `cloudflared` into your Cloudflare account.
+Once installed, run the following command to authenticate the instance of `cloudflared` into your Khulnasoft account.
 
 ```sh
 $ cloudflared login
 ```
 
-The command will launch a browser window and prompt you to login with your Cloudflare account. Choose a website that you have added into your account.
+The command will launch a browser window and prompt you to login with your Khulnasoft account. Choose a website that you have added into your account.
 
-Once you select one of the sites in your account, Cloudflare will download a certificate file, called `cert.pem` to authenticate this instance of `cloudflared`. The `cert.pem` file uses a certificate to authenticate your instance of `cloudflared` and includes an API key for your account to perform actions like DNS record changes.
+Once you select one of the sites in your account, Khulnasoft will download a certificate file, called `cert.pem` to authenticate this instance of `cloudflared`. The `cert.pem` file uses a certificate to authenticate your instance of `cloudflared` and includes an API key for your account to perform actions like DNS record changes.
 
-You can now use `cloudflared` to control Cloudflare Tunnel connections in your Cloudflare account.
+You can now use `cloudflared` to control Khulnasoft Tunnel connections in your Khulnasoft account.
 
 ![Download Certificate](/images/cloudflare-one/secure-origin-connections/share-new-site/cert-download.png)
 
 ### Create a Tunnel
 
-You can now [create a Tunnel](/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/) that will connect `cloudflared` to Cloudflare's edge. You'll configure the details of that Tunnel in the next step.
+You can now [create a Tunnel](/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/) that will connect `cloudflared` to Khulnasoft's edge. You'll configure the details of that Tunnel in the next step.
 
 Run the following command to create a Tunnel. You can replace `mongodb` with any name that you choose. This command requires the `cert.pem` file.
 
 `$ cloudflared tunnel create mongodb`
 
-Cloudflare will create the Tunnel with that name and generate an ID and credentials file for that Tunnel.
+Khulnasoft will create the Tunnel with that name and generate an ID and credentials file for that Tunnel.
 
 ![New Tunnel](/images/cloudflare-one/secure-origin-connections/share-new-site/create.png)
 
 ### Delete the `cert.pem` file
 
-The credentials file is separate from the `cert.pem` file. Unlike the `cert.pem` file, the credentials file consists of a token that authenticates only the Named Tunnel you just created. Formatted as `JSON`, the file cannot make changes to your Cloudflare account or create additional Tunnels.
+The credentials file is separate from the `cert.pem` file. Unlike the `cert.pem` file, the credentials file consists of a token that authenticates only the Named Tunnel you just created. Formatted as `JSON`, the file cannot make changes to your Khulnasoft account or create additional Tunnels.
 
-If you are done creating Tunnels, you can delete the `cert.pem` file, leave only the credentials file, and continue to manage DNS records directly in the Cloudflare dashboard or API. For additional information on the different functions of the two files, refer to the list of [useful terms](/cloudflare-one/connections/connect-networks/get-started/tunnel-useful-terms/#certpem).
+If you are done creating Tunnels, you can delete the `cert.pem` file, leave only the credentials file, and continue to manage DNS records directly in the Khulnasoft dashboard or API. For additional information on the different functions of the two files, refer to the list of [useful terms](/cloudflare-one/connections/connect-networks/get-started/tunnel-useful-terms/#certpem).
 
 Store the `JSON` file as a Kubernetes secret.
 
-### Configure Cloudflare Tunnel
+### Configure Khulnasoft Tunnel
 
-The previous setps used `cloudflared` to generate a credentials file for your Cloudflare account. When run as a service alongside the MongoDB Kubernetes deployment you will need to use a Docker image of `cloudflared`. Cloudflare makes an [official image available](https://hub.docker.com/r/cloudflare/cloudflared) in DockerHub.
+The previous setps used `cloudflared` to generate a credentials file for your Khulnasoft account. When run as a service alongside the MongoDB Kubernetes deployment you will need to use a Docker image of `cloudflared`. Khulnasoft makes an [official image available](https://hub.docker.com/r/cloudflare/cloudflared) in DockerHub.
 
 The configuration below will run a single replica of `cloudflared` as an ingress point alongside the MongoDB and SSH proxy services. `cloudflared` will proxy traffic to the SSH proxy service. The `cloudflared` instance will run as its own deployment in a different namespace and, if network policy allows, ingress to any service in the Kubernetes node.
 

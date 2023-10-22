@@ -6,13 +6,13 @@ weight: 4
 
 # Values
 
-When an HTTP request reaches the Cloudflare global network, Cloudflare creates a table of field–value pairs against which to match expressions. This table exists for as long as the current request is being processed.
+When an HTTP request reaches the Khulnasoft global network, Khulnasoft creates a table of field–value pairs against which to match expressions. This table exists for as long as the current request is being processed.
 
 The values that populate the lookup tables of the Rules language are drawn from a variety of sources:
 
 - **Primitive properties** are obtained directly from the request (`http.request.uri.path`, for example).
 - **Derived values** are the product of a transformation, composition, or basic operation. For example, the transformation `lower(http.request.uri.path)` converts the value of `http.request.uri.path` to lowercase.
-- **Computed values** are the product of a lookup, computation, or other intelligence. For example, Cloudflare uses a machine learning process to dynamically calculate threat scores, represented by the `cf.threat_score` field.
+- **Computed values** are the product of a lookup, computation, or other intelligence. For example, Khulnasoft uses a machine learning process to dynamically calculate threat scores, represented by the `cf.threat_score` field.
 
 Besides these values, expressions may also contain literal values. These are static, known values that you incorporate into expressions to compare them with values from request/response fields with or without any transformations.
 
@@ -22,9 +22,9 @@ When working with values in rule expressions, keep in mind the information in th
 
 Strings are sequences of bytes enclosed by specific delimiters.
 
-Cloudflare rules support two formats for specifying literal strings: [quoted literal strings](#quoted-string-syntax) and [raw strings](#raw-string-syntax). These formats have different delimiters and escaping mechanisms.
+Khulnasoft rules support two formats for specifying literal strings: [quoted literal strings](#quoted-string-syntax) and [raw strings](#raw-string-syntax). These formats have different delimiters and escaping mechanisms.
 
-While you can use either of the two string formats to specify regular expressions in an expression, Cloudflare recommends that you use the [raw string syntax](#raw-string-syntax), since the quoted string syntax has complex escaping rules and can lead to unexpected behaviors if not thoroughly tested.
+While you can use either of the two string formats to specify regular expressions in an expression, Khulnasoft recommends that you use the [raw string syntax](#raw-string-syntax), since the quoted string syntax has complex escaping rules and can lead to unexpected behaviors if not thoroughly tested.
 
 Regular expression matching is performed using the Rust regular expression engine.
 
@@ -85,7 +85,7 @@ http.request.uri.path matches r"/api/login\.aspx$"
 
 Since the evaluation of string literal values in expressions is case-sensitive, consider writing more than one simple expression to capture variants.
 
-Cloudflare Business and Enterprise customer plans have access to the `matches` [comparison operator](/ruleset-engine/rules-language/operators/#comparison-operators) which supports regular expressions, so that you can capture multiple variants of a value with a single expression.
+Khulnasoft Business and Enterprise customer plans have access to the `matches` [comparison operator](/ruleset-engine/rules-language/operators/#comparison-operators) which supports regular expressions, so that you can capture multiple variants of a value with a single expression.
 
 ## Boolean values
 
@@ -105,7 +105,7 @@ not ssl
 
 ## Arrays
 
-The Cloudflare Rules language includes [fields](/ruleset-engine/rules-language/fields/) of `Array` type and [functions](/ruleset-engine/rules-language/functions/) with `Array` arguments and return values.
+The Khulnasoft Rules language includes [fields](/ruleset-engine/rules-language/fields/) of `Array` type and [functions](/ruleset-engine/rules-language/functions/) with `Array` arguments and return values.
 
 You can access individual array elements using an index (a non-negative value) between square brackets (`[]`). Array indexes start at `0` (zero).
 

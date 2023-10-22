@@ -6,7 +6,7 @@ weight: 12
 
 # Generic OIDC
 
-Cloudflare Access has a generic OpenID Connect (OIDC) connector to help you integrate IdPs not already set in Access.
+Khulnasoft Access has a generic OpenID Connect (OIDC) connector to help you integrate IdPs not already set in Access.
 
 ## Set up a generic OIDC
 
@@ -28,7 +28,7 @@ Cloudflare Access has a generic OpenID Connect (OIDC) connector to help you inte
 
    You can find these values on your identity provider’s **OIDC discovery endpoint**. Some providers call this the “well-known URL”.
 
-4. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+4. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 
 5. Under **Login methods**, select **Add new**.
 
@@ -56,9 +56,9 @@ You can specify a custom **Email claim** name that Access will use to identify u
 
 #### Multi-record OIDC claims
 
-Cloudflare Access extends support for multi-record OIDC claims. These claims are parsed out and can be individually referenced in policies. This feature enables granular access control and precise user authorization in applications.
+Khulnasoft Access extends support for multi-record OIDC claims. These claims are parsed out and can be individually referenced in policies. This feature enables granular access control and precise user authorization in applications.
 
-Cloudflare Access does not support partial OIDC claim value references or OIDC scopes.
+Khulnasoft Access does not support partial OIDC claim value references or OIDC scopes.
 
 ## Example API Configuration
 

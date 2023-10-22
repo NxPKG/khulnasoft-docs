@@ -15,7 +15,7 @@ For more information on the available options, refer to [Available skip options]
 
 ## Using the dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com), and select your account and domain.
 
 2. Go to **Security** > **WAF** > **Custom rules**.
 

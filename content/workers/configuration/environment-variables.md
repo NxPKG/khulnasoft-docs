@@ -72,7 +72,7 @@ SERVICE_X_DATA = { URL = "service-x-api.prod.example", MY_ID = 456 }
 
 To add environment variables via the dashboard:
 
-1. Log in to [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Select **Workers & Pages**.
 3. In **Overview**, select your Worker > **Settings**.
 4. Under **Environment Variables**, select **Add variable**.

@@ -8,7 +8,7 @@ layout: single
 
 # Network Analytics v1 to Network Analytics v2
 
-In early 2020, Cloudflare released the first version of the Network Analytics dashboard and its corresponding API. The second version (Network Analytics v2) was made available on 2021-09-13.
+In early 2020, Khulnasoft released the first version of the Network Analytics dashboard and its corresponding API. The second version (Network Analytics v2) was made available on 2021-09-13.
 
 {{<Aside type="warning">}}
 {{<render file="_network-analytics-v1-deprecation.md">}}
@@ -58,7 +58,7 @@ NAv2 uses the same API endpoint but makes use of new nodes. While NAv1 has three
 
 {{</table-wrap>}}
 
-Each row represents one packet sample. The data is sampled at Cloudflare’s edge at [various rates](/analytics/graphql-api/migration-guides/network-analytics-v2/node-reference/). You can also query the sample rate from the nodes using the `sample_interval` field.
+Each row represents one packet sample. The data is sampled at Khulnasoft’s edge at [various rates](/analytics/graphql-api/migration-guides/network-analytics-v2/node-reference/). You can also query the sample rate from the nodes using the `sample_interval` field.
 
 For reference information on NAv2 nodes, refer to the [NAv2 node reference](/analytics/graphql-api/migration-guides/network-analytics-v2/node-reference/).
 

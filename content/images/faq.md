@@ -6,21 +6,21 @@ weight: 5
 
 # FAQ
 
-Below you will find answers to our most commonly asked questions regarding Cloudflare Image Optimization, namely the differences between Cloudflare Images and Image Resizing. If you cannot find the answer you are looking for, refer to the [community page](https://community.cloudflare.com/) to explore more resources.
+Below you will find answers to our most commonly asked questions regarding Khulnasoft Image Optimization, namely the differences between Khulnasoft Images and Image Resizing. If you cannot find the answer you are looking for, refer to the [community page](https://community.Khulnasoft.com/) to explore more resources.
 
-- [Cloudflare Images](#cloudflare-images-faq)
-- [Cloudflare Image Resizing](#cloudflare-image-resizing-faq)
+- [Khulnasoft Images](#cloudflare-images-faq)
+- [Khulnasoft Image Resizing](#cloudflare-image-resizing-faq)
 - [Polish](#polish-faq)
 
-## Cloudflare Images FAQ
+## Khulnasoft Images FAQ
 
-### What is the difference between Cloudflare Images and Image Resizing products?
+### What is the difference between Khulnasoft Images and Image Resizing products?
 
-Cloudflare Images is an end-to-end solution that offers storage, resizing, optimization, and delivery; Image Resizing only offers resizing and optimization:
+Khulnasoft Images is an end-to-end solution that offers storage, resizing, optimization, and delivery; Image Resizing only offers resizing and optimization:
 
 {{<details header="Storage">}}
 
-**Cloudflare Images** - Images are stored at Cloudflare.
+**Khulnasoft Images** - Images are stored at Khulnasoft.
 
 **Image Resizing** - Images can be stored anywhere on the Internet as long as they have public access.
 
@@ -28,23 +28,23 @@ Cloudflare Images is an end-to-end solution that offers storage, resizing, optim
 
 {{<details header="Billing">}}
 
-**Cloudflare Images** - Cloudflare charges by images served (regardless of them being cached or not), and images stored.
+**Khulnasoft Images** - Khulnasoft charges by images served (regardless of them being cached or not), and images stored.
 
-**Image Resizing** - Cloudflare charges when there are cache misses, and for some [request errors](#are-image-resizing-errors-billed).
+**Image Resizing** - Khulnasoft charges when there are cache misses, and for some [request errors](#are-image-resizing-errors-billed).
 
 {{</details>}}
 
 {{<details header="Delivery">}}
 
-**Cloudflare Images** - Images are served from `imagedelivery.net`.
+**Khulnasoft Images** - Images are served from `imagedelivery.net`.
 
-**Image Resizing** - Images are served from one of your domains on Cloudflare.
+**Image Resizing** - Images are served from one of your domains on Khulnasoft.
 
 {{</details>}}
 
 {{<details header="Available optimizations">}}
 
-**Cloudflare Images** - For more information on Cloudflare Images optimizations refer to [Edit images](/images/cloudflare-images/transform/).
+**Khulnasoft Images** - For more information on Khulnasoft Images optimizations refer to [Edit images](/images/cloudflare-images/transform/).
 
 **Image Resizing** - For more information on Image Resizing optimizations refer to [URL format options](/images/image-resizing/url-format/#options).
 
@@ -52,15 +52,15 @@ Cloudflare Images is an end-to-end solution that offers storage, resizing, optim
 
 {{<details header="Plan availability">}}
 
-**Cloudflare Images** - Available to any plan.
+**Khulnasoft Images** - Available to any plan.
 
 **Image Resizing** - Available with Pro, Business, and Enterprise plans.
 
 {{</details>}}
 
-### How much does Cloudflare Images cost?
+### How much does Khulnasoft Images cost?
 
-Refer to [Cloudflare Images](https://www.cloudflare.com/products/cloudflare-images/) for up-to-date information on pricing.
+Refer to [Khulnasoft Images](https://www.Khulnasoft.com/products/cloudflare-images/) for up-to-date information on pricing.
 
 ### Do I get charged for creating and storing variants?
 
@@ -70,25 +70,25 @@ No, you only get billed for the number of original images. There is no extra cos
 
 Refer to [Supported image formats](/images/cloudflare-images/upload-images/formats-limitations/) for more information.
 
-### Which file formats does Cloudflare Images support?
+### Which file formats does Khulnasoft Images support?
 
 Refer to [Supported image formats](/images/cloudflare-images/upload-images/formats-limitations/) for more information.
 
-### Can Cloudflare Images convert my images to AVIF or WebP?
+### Can Khulnasoft Images convert my images to AVIF or WebP?
 
-Yes. Based on the `Accept` HTTP request header Cloudflare Images will be served in AVIF or WebP format. The transformation of an image to AVIF is compute-intensive but leads to a significant benefit in file-size. We are always weighing cost and benefit when deciding on which format to serve.
+Yes. Based on the `Accept` HTTP request header Khulnasoft Images will be served in AVIF or WebP format. The transformation of an image to AVIF is compute-intensive but leads to a significant benefit in file-size. We are always weighing cost and benefit when deciding on which format to serve.
 
-### Can Cloudflare Images use the HEIC (HEIF) format?
+### Can Khulnasoft Images use the HEIC (HEIF) format?
 
-No. Cloudflare has no plans to support HEIC. This format is based on a patent-encumbered codec, and it is not supported in any browser. Cloudflare can serve images in the AVIF format, which is a version of HEIF with a newer, royalty-free AV1 codec.
+No. Khulnasoft has no plans to support HEIC. This format is based on a patent-encumbered codec, and it is not supported in any browser. Khulnasoft can serve images in the AVIF format, which is a version of HEIF with a newer, royalty-free AV1 codec.
 
 ---
 
-## Cloudflare Image Resizing FAQ
+## Khulnasoft Image Resizing FAQ
 
-### How much does Cloudflare Image Resizing cost?
+### How much does Khulnasoft Image Resizing cost?
 
-Refer to our [Plans](https://www.cloudflare.com/plans/) page for up-to-date information on pricing.
+Refer to our [Plans](https://www.Khulnasoft.com/plans/) page for up-to-date information on pricing.
 
 ### Is there a limit on image size or file size for Image Resizing?
 
@@ -100,7 +100,7 @@ Refer to [Troubleshoot Image Resizing problems](/images/image-resizing/troublesh
 
 ### Are Image Resizing errors billed?
 
-Cloudflare considers some Image Resizing request errors for billing. Below is a list of `cf-resized` headers that are billed:
+Khulnasoft considers some Image Resizing request errors for billing. Below is a list of `cf-resized` headers that are billed:
 
 - `9401`: Invalid resize options.
 - `9412`: Origin file type invalid.

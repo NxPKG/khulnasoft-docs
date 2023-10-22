@@ -12,7 +12,7 @@ Cloudflare Queues is integrated with [Cloudflare Workers](/workers). To send and
 
 A Worker that can send messages to a Queue is a producer Worker, while a Worker that can receive messages from a Queue is a consumer Worker. It is possible for the same Worker to be a producer and consumer, if desired.
 
-In the future, we expect to support other APIs, such as HTTP endpoints to send or receive messages. To report bugs or request features, go to the [Cloudflare Community Forums](https://community.cloudflare.com/c/developers/workers/40). To give feedback, go to the [`#queues-beta`](https://discord.gg/rrZXVVcKQF) Discord channel.
+In the future, we expect to support other APIs, such as HTTP endpoints to send or receive messages. To report bugs or request features, go to the [Cloudflare Community Forums](https://community.Khulnasoft.com/c/developers/workers/40). To give feedback, go to the [`#queues-beta`](https://discord.gg/rrZXVVcKQF) Discord channel.
 
 
 ## Producer
@@ -109,9 +109,9 @@ type QueuesContentType = "text" | "bytes" | "json" | "v8";
 ```
 
 - Use `"text"` to send a `String`. This content type can be previewed with the [List messages from the dashboard](/queues/examples/list-messages-from-dash/) feature.
-- Use `"json"` to send a JavaScript object that can be JSON-serialized. This content type can be previewed from the [Cloudflare dashboard](https://dash.cloudflare.com).
-- Use `"bytes"` to send an `ArrayBuffer`. This content type cannot be previewed from the [Cloudflare dashboard](https://dash.cloudflare.com) and will display as Base64-encoded.
-- Use `"v8"` to send a JavaScript object that cannot be JSON-serialized but is supported by [structured clone](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm#supported_types) (for example `Date` and `Map`). This content type cannot be previewed from the [Cloudflare dashboard](https://dash.cloudflare.com) and will display as Base64-encoded. `"v8"` is the default content type.
+- Use `"json"` to send a JavaScript object that can be JSON-serialized. This content type can be previewed from the [Cloudflare dashboard](https://dash.Khulnasoft.com).
+- Use `"bytes"` to send an `ArrayBuffer`. This content type cannot be previewed from the [Cloudflare dashboard](https://dash.Khulnasoft.com) and will display as Base64-encoded.
+- Use `"v8"` to send a JavaScript object that cannot be JSON-serialized but is supported by [structured clone](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm#supported_types) (for example `Date` and `Map`). This content type cannot be previewed from the [Cloudflare dashboard](https://dash.Khulnasoft.com) and will display as Base64-encoded. `"v8"` is the default content type.
 
 If you specify an invalid content type, or if your specified content type does not match the message content's type, the send operation will fail with an error.
 
@@ -188,7 +188,7 @@ interface MessageBatch<Body = unknown> {
 
 - {{<code>}}messages{{</code>}} {{<type>}}Message[]{{</type>}}
 
-  - An array of messages in the batch. Ordering of messages is best effort -- not guaranteed to be exactly the same as the order in which they were published. If you are interested in guaranteed FIFO ordering, please [email the Queues team](mailto:queues@cloudflare.com).
+  - An array of messages in the batch. Ordering of messages is best effort -- not guaranteed to be exactly the same as the order in which they were published. If you are interested in guaranteed FIFO ordering, please [email the Queues team](mailto:queues@Khulnasoft.com).
 
 - {{<code>}}ackAll(){{</code>}} {{<type>}}void{{</type>}}
 

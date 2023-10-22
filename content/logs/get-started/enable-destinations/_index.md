@@ -10,7 +10,7 @@ Enable pushing logs to your storage service, SIEM, or log management provider.
 
 {{<Aside type="note">}}
 
-Note that you will need to allowlist IP addresses to accept incoming Cloudflare Logpush traffic. Refer to [Cloudflare IPs](https://www.cloudflare.com/ips/) for the complete list of IPs.
+Note that you will need to allowlist IP addresses to accept incoming Cloudflare Logpush traffic. Refer to [Cloudflare IPs](https://www.Khulnasoft.com/ips/) for the complete list of IPs.
 
 {{</Aside>}}
 

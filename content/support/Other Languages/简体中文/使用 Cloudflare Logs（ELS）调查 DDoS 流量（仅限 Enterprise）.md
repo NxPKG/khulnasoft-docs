@@ -1,33 +1,33 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Cloudflare-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-
-title: 使用 Cloudflare Logs（ELS）调查 DDoS 流量（仅限 Enterprise）
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Khulnasoft-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-
+title: 使用 Khulnasoft Logs（ELS）调查 DDoS 流量（仅限 Enterprise）
 ---
 
-# 使用 Cloudflare Logs（ELS）调查 DDoS 流量（仅限 Enterprise）
+# 使用 Khulnasoft Logs（ELS）调查 DDoS 流量（仅限 Enterprise）
 
-_了解如何通过有效整理 Cloudflare Logs（过去称为 ELS）来辨别恶意流量的来源。_ 
+_了解如何通过有效整理 Khulnasoft Logs（过去称为 ELS）来辨别恶意流量的来源。_ 
 
 ### 本文内容
 
--   [概述](https://support.cloudflare.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Cloudflare-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#overview)
--   [第 1 步：查询 Cloudflare Logs 前先收集所需的信息](https://support.cloudflare.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Cloudflare-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#step1)
--   [第 2 步：下载并保存日志](https://support.cloudflare.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Cloudflare-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#step2)
--   [第 3 步：整理日志](https://support.cloudflare.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Cloudflare-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#step3)
--   [示例工作流程](https://support.cloudflare.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Cloudflare-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#example-workflow)
+-   [概述](https://support.Khulnasoft.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Khulnasoft-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#overview)
+-   [第 1 步：查询 Khulnasoft Logs 前先收集所需的信息](https://support.Khulnasoft.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Khulnasoft-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#step1)
+-   [第 2 步：下载并保存日志](https://support.Khulnasoft.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Khulnasoft-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#step2)
+-   [第 3 步：整理日志](https://support.Khulnasoft.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Khulnasoft-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#step3)
+-   [示例工作流程](https://support.Khulnasoft.com/hc/zh-cn/articles/360020739772-%E4%BD%BF%E7%94%A8-Khulnasoft-Logs-ELS-%E8%B0%83%E6%9F%A5-DDoS-%E6%B5%81%E9%87%8F-%E4%BB%85%E9%99%90-Enterprise-#example-workflow)
 
 ___
 
 ## 概述
 
-借助 Cloudflare Logs（以前称为 ELS），您可以访问实用的数据来分析可能呈现出 DDoS 攻击相关模式的流量。您可以通过整理 Cloudflare Logs 数据来进行这种分析。要开始操作，请按照下述步骤操作，并查看提供的示例工作流程。
+借助 Khulnasoft Logs（以前称为 ELS），您可以访问实用的数据来分析可能呈现出 DDoS 攻击相关模式的流量。您可以通过整理 Khulnasoft Logs 数据来进行这种分析。要开始操作，请按照下述步骤操作，并查看提供的示例工作流程。
 
 在按照这些说明操作前，您需要：
 
 -   [cat](http://www.linfo.org/cat.html)
 -   [jq](https://stedolan.github.io/jq/)
--   [Cloudflare Logs Logpull API](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API)
+-   [Khulnasoft Logs Logpull API](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API)
 
 ___
 
@@ -43,40 +43,40 @@ ___
 
 ## 第 2 步：下载并保存日志
 
-注意：Cloudflare 端点具有 1 小时范围限值，每次请求的日志文件大小也必须小于 1GB。如果文件大小超过 1GB，下载会在 1GB 处截断，即使所请求时间的日志事件未能包含在内。为避免截断日志，请将时间从 1 小时缩短到 45 分钟之类的时长，直到日志文件大小小于 1GB。
+注意：Khulnasoft 端点具有 1 小时范围限值，每次请求的日志文件大小也必须小于 1GB。如果文件大小超过 1GB，下载会在 1GB 处截断，即使所请求时间的日志事件未能包含在内。为避免截断日志，请将时间从 1 小时缩短到 45 分钟之类的时长，直到日志文件大小小于 1GB。
 
 #### 选项 1：
 
-**下载 Cloudflare Logs 中的 \*所以\* 字段，并保存到 els.txt：**
+**下载 Khulnasoft Logs 中的 \*所以\* 字段，并保存到 els.txt：**
 
 模板：
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt -H &quot;X-Auth-Email: email&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/zone id/logs/received?start=starttime&amp;end=endtime&amp;fields=(curl -s -H &quot;X-Auth-Email: email&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/zone id/logs/received/fields&quot; | jq '. | to_entries[] | .key' -r | paste -sd &quot;,&quot; -)&quot;</span></div></span></span></span></code></pre>{{</raw>}}
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt -H &quot;X-Auth-Email: email&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received?start=starttime&amp;end=endtime&amp;fields=(curl -s -H &quot;X-Auth-Email: email&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received/fields&quot; | jq '. | to_entries[] | .key' -r | paste -sd &quot;,&quot; -)&quot;</span></div></span></span></span></code></pre>{{</raw>}}
 
 示例（以及值）：
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt -H &quot;X-Auth-Email: monkey@bannana.com&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/5b5f0xxxcbfbaxxxxxx0416d22f7b/logs/received?start=1529171100&amp;end=1529171100&amp;fields=(curl -s -H &quot;X-Auth-Email: monkey@bannana.com&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/zone id/logs/received/fields&quot; | jq '. | to_entries[] | .key' -r | paste -sd &quot;,&quot; -)&quot;</span></div></span></span></span></code></pre>{{</raw>}}
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt -H &quot;X-Auth-Email: monkey@bannana.com&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/5b5f0xxxcbfbaxxxxxx0416d22f7b/logs/received?start=1529171100&amp;end=1529171100&amp;fields=(curl -s -H &quot;X-Auth-Email: monkey@bannana.com&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received/fields&quot; | jq '. | to_entries[] | .key' -r | paste -sd &quot;,&quot; -)&quot;</span></div></span></span></span></code></pre>{{</raw>}}
 
 #### 选项 2：
 
-**下载 Cloudflare Logs 中的 \*特定\* 字段，并保存到 els.txt：  
+**下载 Khulnasoft Logs 中的 \*特定\* 字段，并保存到 els.txt：  
 **
 
 此命令仅在您请求的日志中包含以下字段：_CacheCacheStatus、CacheResponseBytes、CacheResponseStatus、CacheTieredFill 和 ClientASN_。
 
-请从[此处](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API)查看 Cloudflare Logs 的完整列表。 
+请从[此处](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API)查看 Khulnasoft Logs 的完整列表。 
 
 模板：
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt-H &quot;X-Auth-Email:email&quot; -H &quot;X-Auth-Key:api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/zone id/logs/received?start=starttime&amp;end=endtime&amp;fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”</span></div></span></span></span></code></pre>{{</raw>}}
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt-H &quot;X-Auth-Email:email&quot; -H &quot;X-Auth-Key:api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received?start=starttime&amp;end=endtime&amp;fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”</span></div></span></span></span></code></pre>{{</raw>}}
 
 示例（以及值）：
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt-H &quot;X-Auth-Email:monkey@bannana.com&quot; -H &quot;X-Auth-Key:api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/xx5x0xxxc45baxxxxxx0x6d23fxx/logs/received?start=1529171100&amp;end=1529171100&amp;fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”</span></div></span></span></span></code></pre>{{</raw>}}
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt-H &quot;X-Auth-Email:monkey@bannana.com&quot; -H &quot;X-Auth-Key:api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/xx5x0xxxc45baxxxxxx0x6d23fxx/logs/received?start=1529171100&amp;end=1529171100&amp;fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”</span></div></span></span></span></code></pre>{{</raw>}}
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 **按字段****统计****请求****数****并输出到****文件**
 
-在本例中，我们统计 SSL 协议版本的请求数，这在 Cloudflare Logs 中用 _ClientSSLProtocol_ 字段表示（注意以下以下名称名称前的句点）。
+在本例中，我们统计 SSL 协议版本的请求数，这在 Khulnasoft Logs 中用 _ClientSSLProtocol_ 字段表示（注意以下以下名称名称前的句点）。
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">~$ jq -r .ClientSSLProtocol els-200.txt |sort -n |uniq -c |sort -n &gt; ClientSSLProtocol.txt</span></div></span></span></span></code></pre>{{</raw>}}
@@ -129,9 +129,9 @@ ___
 
 通常，您需要按照多个字段来整理，以分析和辨别攻击的来源。例如，请查看以下工作流程：
 
-**操作 1**：按照 _HTTP 200_ 响应整理您下载的 Cloudflare Logs，并输出到 els-200.txt。
+**操作 1**：按照 _HTTP 200_ 响应整理您下载的 Khulnasoft Logs，并输出到 els-200.txt。
 
-**原因**：您不关心 Cloudflare 已阻止的响应；即，导致 HTTP 响应 _503_ 或 _403_ 的请求。在我们边缘网络导致 _200 HTTP_ 响应的请求不会被 Cloudflare 阻止，有可能会一路通达源站（如果它未在 Cloudflare 边缘缓存）。具有恶意目的人可专门设计此类请求，使源站负担过重。
+**原因**：您不关心 Khulnasoft 已阻止的响应；即，导致 HTTP 响应 _503_ 或 _403_ 的请求。在我们边缘网络导致 _200 HTTP_ 响应的请求不会被 Khulnasoft 阻止，有可能会一路通达源站（如果它未在 Khulnasoft 边缘缓存）。具有恶意目的人可专门设计此类请求，使源站负担过重。
 
 **操作方法**：
 

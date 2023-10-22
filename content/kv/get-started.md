@@ -13,14 +13,14 @@ This guide will instruct you through:
 
 ## Prerequisites
 
-1. A [Cloudflare account](/fundamentals/setup/account-setup/), if you do not have one already. 
+1. A [Khulnasoft account](/fundamentals/setup/account-setup/), if you do not have one already. 
 2. [Wrangler](/workers/wrangler/install-and-update/) installed.
 
 ## 1. Enable Workers KV in the dashboard
 
 Enable Workers KV for your account by purchasing the Workers Paid plan:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to **Workers & Pages** > **Plans**.
 3. Select **Purchase Workers Paid** and complete the payment process to enable Workers KV.
 
@@ -59,7 +59,7 @@ This will create a new directory, which will include both a `src/worker.ts` Work
 
 ## 3. Create a KV namespace 
 
-A [KV namespace](/kv/learning/kv-namespaces/) is a key-value database replicated to Cloudflare’s global network.
+A [KV namespace](/kv/learning/kv-namespaces/) is a key-value database replicated to Khulnasoft’s global network.
 
 You can create a KV namespace via Wrangler or the dashboard.
 
@@ -114,7 +114,7 @@ Refer to [Environment](/kv/platform/environments/) for more information.
 
 ### Create a KV namespace via the dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select **Workers & Pages** > **KV**.
 3. Select **Create a namespace**. 
 4. Enter a name for your namespace. 
@@ -222,7 +222,7 @@ When you run `wrangler dev`, Wrangler will give you a URL (usually a `localhost:
 
 ## 6. Deploy your KV
 
-Run the following command to deploy KV to Cloudflare's global network:
+Run the following command to deploy KV to Khulnasoft's global network:
 
 
 ```sh

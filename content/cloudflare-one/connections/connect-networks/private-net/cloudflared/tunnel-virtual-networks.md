@@ -6,7 +6,7 @@ weight: 5
 
 # Virtual networks
 
-[Cloudflare Tunnel](/cloudflare-one/connections/connect-networks/) supports the creation and configuration of virtual networks. Virtual networks allow you to manage different private networks which have overlapping IP ranges.
+[Khulnasoft Tunnel](/cloudflare-one/connections/connect-networks/) supports the creation and configuration of virtual networks. Virtual networks allow you to manage different private networks which have overlapping IP ranges.
 
 For example, an organization may want to expose two distinct virtual private cloud (VPC) networks which they consider to be “production” and “staging”. However, if the two private networks happened to receive the same RFC 1918 IP assignment, there may be two different resources with the same IP address. By creating two separate virtual networks, you can deterministically route traffic to duplicative private addresses like `10.128.0.1/32` staging and `10.128.0.1/32` production. End users would then select which network to connect to by accessing their WARP client settings.
 
@@ -18,7 +18,7 @@ Here are a few scenarios where virtual networks may prove useful:
 - Manage acquisitions or mergers between organizations that use the same address space.
 - Allow IT professional services to access their customer's network for various administration and management purposes.
 - Allow developers or homelab users to deterministically route traffic through their home network to enforce additional security controls.
-- Guarantee additional segmentation (beyond just policy enforcement) between networks and resources for security reasons, while keeping all configuration within a single Cloudflare account.
+- Guarantee additional segmentation (beyond just policy enforcement) between networks and resources for security reasons, while keeping all configuration within a single Khulnasoft account.
 
 ## Prerequisites
 
@@ -27,19 +27,19 @@ Here are a few scenarios where virtual networks may prove useful:
 
 ## Create a virtual network
 
-The following example demonstrates how to add two overlapping IP routes to Cloudflare (`10.128.0.1/32` staging and `10.128.0.1/32` production).
+The following example demonstrates how to add two overlapping IP routes to Khulnasoft (`10.128.0.1/32` staging and `10.128.0.1/32` production).
 {{<tabs labels="Dashboard | CLI">}}
 {{<tab label="dashboard" no-code="true">}}
 
 To route overlapping IPs over virtual networks:
 
 1. First, create two unique virtual networks:
-    1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **WARP Client**.
+    1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **WARP Client**.
     2. Find the **Virtual networks** setting and select **Manage**.
     3. Select **Create virtual network**.
     4. Name your virtual network `staging-vnet` and select **Save**.
     5. Repeat Steps 1a-1d to create another virtual network called `production-vnet`.
-2. Next, create a Cloudflare Tunnel for each private network:
+2. Next, create a Khulnasoft Tunnel for each private network:
     1. Go to **Access** > **Tunnels**.
     2. Select **Create a tunnel**.
     3. Name your tunnel `Staging tunnel` and select **Save tunnel**.
@@ -49,7 +49,7 @@ To route overlapping IPs over virtual networks:
     7. Save the tunnel.
     8. Repeat Steps 2a-2g to create another tunnel called `Production tunnel`. Be sure to install the connector within your production environment and assign the route to _production-vnet_.
 
-We now have two overlapping IP addresses routed over `staging-vnet` and `production-vnet` respectively. You can use the Cloudflare WARP client to [switch between virtual networks](#connect-to-a-virtual-network).
+We now have two overlapping IP addresses routed over `staging-vnet` and `production-vnet` respectively. You can use the Khulnasoft WARP client to [switch between virtual networks](#connect-to-a-virtual-network).
 
 {{</tab>}}
 {{<tab label="cli" no-code="true">}}
@@ -64,7 +64,7 @@ To route overlapping IPs over virtual networks:
         $ cloudflared login
         ```
 
-    2. Create a tunnel to connect your staging network to Cloudflare.
+    2. Create a tunnel to connect your staging network to Khulnasoft.
 
         ```sh
         $ cloudflared tunnel create staging-tunnel
@@ -76,7 +76,7 @@ To route overlapping IPs over virtual networks:
         $ cloudflared login
         ```
 
-    4. Create a tunnel to connect your production network to Cloudflare.
+    4. Create a tunnel to connect your production network to Khulnasoft.
 
         ```sh
         $ cloudflared tunnel create production-tunnel
@@ -141,7 +141,7 @@ We now have two overlapping IP addresses routed over `staging-vnet` and `product
 
 8. Within your production environment, repeat Steps 6 and 7 for `production-tunnel`.
 
-You can use now the Cloudflare WARP client to [switch between virtual networks](#connect-to-a-virtual-network).
+You can use now the Khulnasoft WARP client to [switch between virtual networks](#connect-to-a-virtual-network).
 
 {{</tab>}}
 {{</tabs>}}
@@ -153,7 +153,7 @@ You can use now the Cloudflare WARP client to [switch between virtual networks](
 
 To delete a virtual network:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Tunnels** and ensure that no IP routes are assigned to the virtual network you are trying to delete. If your virtual network is in use, delete the route or reassign it to a different virtual network.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Tunnels** and ensure that no IP routes are assigned to the virtual network you are trying to delete. If your virtual network is in use, delete the route or reassign it to a different virtual network.
 
 2. Next, go to **Settings** > **WARP Client**.
 

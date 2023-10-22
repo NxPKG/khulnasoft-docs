@@ -12,7 +12,7 @@ Refer to [Resize images](/images/cloudflare-images/transform/resize-images/) to 
 
 To apply blur to an image:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Select **Images** > **Variants**.
 3. Find the variant you want to apply blur to, and select **Edit** > **Customization Options**.
 4. Use the slider to adjust the blurring effect. You can use the preview image to see how strong the blurring effect will be.

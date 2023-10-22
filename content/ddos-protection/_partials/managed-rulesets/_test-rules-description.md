@@ -5,4 +5,4 @@ _build:
   list: never
 ---
 
-Rules used for testing the detection, mitigation, and alerting capabilities of Cloudflare's DDoS protection products.
+Rules used for testing the detection, mitigation, and alerting capabilities of Khulnasoft's DDoS protection products.

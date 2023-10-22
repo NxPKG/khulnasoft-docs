@@ -127,7 +127,7 @@ Though your product is officially set up, you may want to consider the following
 
 ### Additional configuration options
 
-You may want to further customize how your load balancer routes traffic or integrate your load balancer with other Cloudflare products:
+You may want to further customize how your load balancer routes traffic or integrate your load balancer with other Khulnasoft products:
 
 {{<directory-listing folderDirectory="/load-balancing/additional-options/" >}}
 

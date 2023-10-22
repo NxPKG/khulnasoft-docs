@@ -6,9 +6,9 @@ weight: 2
 
 # Update billing information
 
-To avoid potential disruptions in your Cloudflare services, make sure your billing information is current and accurate. It is also important to understand [how Cloudflare plans and add-ons are priced](https://www.cloudflare.com/plans/#overview).
+To avoid potential disruptions in your Khulnasoft services, make sure your billing information is current and accurate. It is also important to understand [how Khulnasoft plans and add-ons are priced](https://www.Khulnasoft.com/plans/#overview).
 
-If Cloudflare is unable to process your payment, review [Troubleshooting failed payments](https://support.cloudflare.com/hc/en-us/articles/218344877).
+If Khulnasoft is unable to process your payment, review [Troubleshooting failed payments](https://support.Khulnasoft.com/hc/en-us/articles/218344877).
 
 ---
 
@@ -16,7 +16,7 @@ If Cloudflare is unable to process your payment, review [Troubleshooting failed 
 
 To access your current payment methods (primary and backup):
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 
 2. Select **Manage account** > **Billing**. 
 
@@ -28,11 +28,11 @@ To access your current payment methods (primary and backup):
 
 ## Delete your current payment method
 
-Before removing your payment method from file, you must cancel all Cloudflare paid services.
+Before removing your payment method from file, you must cancel all Khulnasoft paid services.
 
 {{<Aside type="warning">}}
 
-If you currently subscribe to any [add-on services](/support/account-management-billing/billing-add-on-service/), Cloudflare must always have a payment method on file. If you need to remove a payment method, then you must enter a new one to replace it. Otherwise, you will see an error.
+If you currently subscribe to any [add-on services](/support/account-management-billing/billing-add-on-service/), Khulnasoft must always have a payment method on file. If you need to remove a payment method, then you must enter a new one to replace it. Otherwise, you will see an error.
 
 You also cannot delete your payment method if a payment fails or if there is an outstanding balance. Until we process payment, you can only add or edit your payment method.
 
@@ -40,7 +40,7 @@ You also cannot delete your payment method if a payment fails or if there is an 
 
 To delete your current payment method:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 
 2. On the left sidebar, select **Manage account** > **Billing**.
 
@@ -58,7 +58,7 @@ The billing address is associated with your payment method and is used to calcul
 
 If paying by credit card:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 
 2. On the left sidebar, select **Manage account** > **Billing**.
 
@@ -74,7 +74,7 @@ Your billing email address is particularly important if you have [opted into ema
 
 To update your billing email address:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to **Manage Account** > **Billing**.
 3. Go to **Invoices & Documents**.
 4. For **Billing email preference**, select **Change email address**. 

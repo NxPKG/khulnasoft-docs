@@ -12,7 +12,7 @@ You can also check activity data in the **Activity last 24hr** section, when you
 
 To use Zaraz Monitoring:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Go to **Zaraz** > **Monitoring**.
 3. Select one of the options (Loads, Tracks, Triggers, Actions). Zaraz Monitoring will show you how the traffic for that section evolved for the time period selected.
 

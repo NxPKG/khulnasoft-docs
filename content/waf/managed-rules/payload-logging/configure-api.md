@@ -8,7 +8,7 @@ meta:
 
 # Configure payload logging for a managed ruleset via API
 
-You can use the [Rulesets API](https://api.cloudflare.com/) to configure payload logging for a managed ruleset.
+You can use the [Rulesets API](https://api.Khulnasoft.com/) to configure payload logging for a managed ruleset.
 
 ## Configure and enable payload logging
 
@@ -34,11 +34,11 @@ To configure:
 
     Replace `<PUBLIC_KEY_VALUE>` with the public key you want to use for payload logging.
 
-You can generate a public key [in the command line](/waf/managed-rules/payload-logging/command-line/generate-key-pair/) or [in the Cloudflare dashboard](/waf/managed-rules/payload-logging/configure/).
+You can generate a public key [in the command line](/waf/managed-rules/payload-logging/command-line/generate-key-pair/) or [in the Khulnasoft dashboard](/waf/managed-rules/payload-logging/configure/).
 
 ### Example
 
-The following example updates rule `{rule_id_1}` that executes the Cloudflare Managed Ruleset for zone `{zone_id}`, configuring payload logging with the provided public key.
+The following example updates rule `{rule_id_1}` that executes the Khulnasoft Managed Ruleset for zone `{zone_id}`, configuring payload logging with the provided public key.
 
 ```bash
 ---
@@ -46,7 +46,7 @@ header: Request
 highlight: 9-11
 ---
 curl --request PATCH \
-"https://api.cloudflare.com/client/v4/zone/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id_1}" \
+"https://api.Khulnasoft.com/client/v4/zone/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id_1}" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --data '{
   "action": "execute",
@@ -57,7 +57,7 @@ curl --request PATCH \
     }
   },
   "expression": "true",
-  "description": "Executes the Cloudflare Managed Ruleset"
+  "description": "Executes the Khulnasoft Managed Ruleset"
 }'
 ```
 
@@ -87,7 +87,7 @@ header: Response
           }
         },
         "expression": "true",
-        "description": "Executes the Cloudflare Managed Ruleset",
+        "description": "Executes the Khulnasoft Managed Ruleset",
         "last_updated": "2021-06-28T18:08:14.003361Z",
         "ref": "<RULE_REF_1>",
         "enabled": true

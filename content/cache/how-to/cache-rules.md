@@ -5,7 +5,7 @@ pcx_content_type: concept
 
 {{<heading-pill style="beta">}} Cache Rules {{</heading-pill>}}
 
-Use Cache Rules to customize cache properties of your HTTP requests. For example, create a rule to specify how long to cache a resource in the Cloudflare global network.
+Use Cache Rules to customize cache properties of your HTTP requests. For example, create a rule to specify how long to cache a resource in the Khulnasoft global network.
 
 ## Availability
 
@@ -21,7 +21,7 @@ Cache rules are unique, unlike Page Rules. This is how they are applied:
 
 2. For conflicting settings (for example, bypass cache versus eligible for cache), the last matching rule wins. For example, if Cache Rule #1 is set to cache everything on `example.com/images` and Cache Rule #2 is set to bypass cache on `example.com`, then cache will be bypassed for all URLs that match `example.com`, since rule #2 is the last matching rule.
 
-3. If you have Page Rules implemented for caching on the same path, Cache Rules will take precedence by design. In the near future, Cloudflare plans on releasing a one-click migration tool for Page Rules.
+3. If you have Page Rules implemented for caching on the same path, Cache Rules will take precedence by design. In the near future, Khulnasoft plans on releasing a one-click migration tool for Page Rules.
 
 ## Execution order of Rules products
 
@@ -31,7 +31,7 @@ Cache rules are unique, unlike Page Rules. This is how they are applied:
 
 To create a new cache rule:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Go to **Caching** > **Cache Rules**.
 3. Select **Create cache rule**.
 4. Enter a descriptive name for the rule in **Rule name**.
@@ -49,7 +49,7 @@ Be aware that when you select **Eligible for cache** in Cache Rules, this is equ
 
 {{<details header="Edge TTL">}}
 
-Select **Respect origin** if matching requests will respect cache headers received from the origin server, or **Override origin**. If you wish to override the Edge TTL value, you need to select how long you want to cache resources in the Cloudflare global network.
+Select **Respect origin** if matching requests will respect cache headers received from the origin server, or **Override origin**. If you wish to override the Edge TTL value, you need to select how long you want to cache resources in the Khulnasoft global network.
 
 - In **Status code TTL** you can define the cache time-to-live (TTL) duration for one or more response status codes received from the origin server. This setting can be applied to a _Single code_ status code, to a _Greater than_ or _Less than_ status code or to a _Range_ of status codes. For more information, refer to [Status code TTL](/cache/how-to/configure-cache-status-code/).
 
@@ -63,7 +63,7 @@ Select if you want to **Respect origin** or **Override origin**. If you wish to 
 
 {{<details header="Cache Key">}}
 
-Define the request components used to define a [custom cache key](/cache/how-to/cache-keys/). A cache key is an identifier that Cloudflare uses for a file stored in the cache. These are the options that you can customize:
+Define the request components used to define a [custom cache key](/cache/how-to/cache-keys/). A cache key is an identifier that Khulnasoft uses for a file stored in the cache. These are the options that you can customize:
 
 - You can switch on or off [Cache by device type](/automatic-platform-optimization/reference/cache-device-type/), [Cache deception armor](/cache/cache-security/cache-deception-armor/), [Ignore query string](/cache/troubleshooting/cache-everything-ignore-query-strings/), and [Enable query string sort](/cache/how-to/cache-keys/#query-string).
 
@@ -79,19 +79,19 @@ Enterprise customers have these additional options for custom cache keys:
 
 {{<details header="Serve stale content">}}
 
-Enable or disable serving stale content while updating from the origin server. If serving stale content is disabled, origin cache-control headers will be used to tell Cloudflare how to handle content from the origin.
+Enable or disable serving stale content while updating from the origin server. If serving stale content is disabled, origin cache-control headers will be used to tell Khulnasoft how to handle content from the origin.
 
 {{</details>}}
 
 {{<details header="Respect Strong ETags">}}
 
-Turn on or off byte-for-byte equivalency checks between the Cloudflare cache and the origin server. When enabled, Cloudflare will use strong ETag header validation to ensure that resources in the Cloudflare cache and on the origin server are byte-by-byte identical. If disabled, Cloudflare converts ETag headers into weak ETag headers.
+Turn on or off byte-for-byte equivalency checks between the Khulnasoft cache and the origin server. When enabled, Khulnasoft will use strong ETag header validation to ensure that resources in the Khulnasoft cache and on the origin server are byte-by-byte identical. If disabled, Khulnasoft converts ETag headers into weak ETag headers.
 
 {{</details>}}
 
 {{<details header="Origin error page pass-thru">}}
 
-Turn on or off Cloudflare error pages generated from issues sent from the origin server. If enabled, this setting triggers error pages issued by the origin.
+Turn on or off Khulnasoft error pages generated from issues sent from the origin server. If enabled, this setting triggers error pages issued by the origin.
 
 {{</details>}}
 
@@ -150,7 +150,7 @@ In this setting, you can choose either to `respect_origin` (first example) or `o
 
 ```json
 curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
     "rules": [
@@ -180,7 +180,7 @@ In this second example, `status_code_ttl` is set to `override_origin` and cache 
 
 ```json
 curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
     "rules": [
@@ -215,7 +215,7 @@ For `set_cache_settings`, you can choose either to `respect_origin` (first examp
 
 ```json
 curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
     "rules": [
@@ -239,7 +239,7 @@ In this second example, `override_origin` is selected, so you need to define how
 
 ```json
 curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
     "rules": [
@@ -268,7 +268,7 @@ In this example, `cache_deception_armor` and `ignore_query_strings_order` parame
 
 ```json
 curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
     "rules": [
@@ -326,7 +326,7 @@ In this example, `serve_stale` is set to not serve stale content while updating 
 
 ```json
 curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
     "rules": [
@@ -350,11 +350,11 @@ curl -X PUT \
 
 {{<details header="Respect strong ETags">}}
 
-In this example, `respect_strong_etags` is set to `true` to ensure that resources in the Cloudflare cache and on the origin server are byte-by-byte identical.
+In this example, `respect_strong_etags` is set to `true` to ensure that resources in the Khulnasoft cache and on the origin server are byte-by-byte identical.
 
 ```json
 curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
     "rules": [
@@ -380,7 +380,7 @@ In this example, `origin_error_page_passthru` is set to `true` to trigger error 
 
 ```json
 curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/phases/http_request_cache_settings/entrypoint" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
     "rules": [
@@ -476,4 +476,4 @@ resource "cloudflare_ruleset" "cache_rules_example" {
 
 {{</details>}}
 
-For additional guidance on using Terraform with Cloudflare, refer to [Terraform](/terraform/).
+For additional guidance on using Terraform with Khulnasoft, refer to [Terraform](/terraform/).

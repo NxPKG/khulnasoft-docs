@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/360060050511-Disruptive-Maintenance-Windows
+source: https://support.Khulnasoft.com/hc/en-us/articles/360060050511-Disruptive-Maintenance-Windows
 title: Disruptive Maintenance Windows
 ---
 
@@ -25,7 +25,7 @@ All dates in the calendar are in UTC Timezone.
 
 ### Notifications
 
-Scheduled maintenances can also be sent out via [Cloudflare Notifications](/notifications/).
+Scheduled maintenances can also be sent out via [Khulnasoft Notifications](/notifications/).
 
 ## Unplanned Maintenance
 

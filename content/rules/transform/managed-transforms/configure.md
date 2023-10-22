@@ -12,13 +12,13 @@ meta:
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and website.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and website.
 
 2. Go to **Rules** > **Transform Rules**.
 
 3. Go to the **Managed Transforms** tab.
 
-4. Enable or disable the [desired Managed Transforms](/rules/transform/managed-transforms/reference/) by selecting the toggle next to each entry. The Cloudflare dashboard will only list available Managed Transforms according to your Cloudflare plan and product subscriptions.
+4. Enable or disable the [desired Managed Transforms](/rules/transform/managed-transforms/reference/) by selecting the toggle next to each entry. The Khulnasoft dashboard will only list available Managed Transforms according to your Khulnasoft plan and product subscriptions.
 
 {{</tab>}}
 {{<tab label="api" no-code="true">}}
@@ -31,13 +31,13 @@ The following example request obtains a list of available Managed Transforms, or
 
 Each Managed Transform item will optionally contain a `conflicts_with` array informing you about any Managed Transforms that will conflict with the current Managed Transform when enabled.
 
-The response will only include available Managed Transforms according to your Cloudflare plan and product subscriptions.
+The response will only include available Managed Transforms according to your Khulnasoft plan and product subscriptions.
 
 ```bash
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/managed_headers \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/managed_headers \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -113,7 +113,7 @@ Make sure you include the Managed Transforms you are updating in the correct JSO
 header: Request
 ---
 curl --request PATCH \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/managed_headers \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/managed_headers \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

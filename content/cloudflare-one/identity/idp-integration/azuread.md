@@ -6,7 +6,7 @@ weight: 4
 
 # Microsoft Azure AD®
 
-You can integrate Microsoft Azure AD® (Active Directory) with Cloudflare Zero Trust and build policies based on user identity and group membership. Users will authenticate to Zero Trust using their Azure AD credentials.
+You can integrate Microsoft Azure AD® (Active Directory) with Khulnasoft Zero Trust and build policies based on user identity and group membership. Users will authenticate to Zero Trust using their Azure AD credentials.
 
 ## Set up Azure AD as an identity provider
 
@@ -77,7 +77,7 @@ To retrieve those values:
    - `GroupMember.Read.All`
 
 {{<Aside type="note">}}
-More narrow permissions may be used, however this is the set of permissions that are tested and supported by Cloudflare.
+More narrow permissions may be used, however this is the set of permissions that are tested and supported by Khulnasoft.
 {{</Aside>}}
 
 5. Once all seven permissions are enabled, select **Add permissions**.
@@ -88,7 +88,7 @@ More narrow permissions may be used, however this is the set of permissions that
 
 ### 3. Add Azure AD as an identity provider
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 
 2. Under **Login methods**, select **Add new**.
 
@@ -108,7 +108,7 @@ To [test](/cloudflare-one/identity/idp-integration#test-idps-in-zero-trust) that
 
 ## Synchronize users and groups
 
-The Azure AD integration supports the [System for Cross-domain Identity Management (SCIM)](https://www.rfc-editor.org/rfc/rfc7642.txt) protocol. With SCIM, Cloudflare Access can automatically deprovision users after they are deactivated in the identity provider and display synchronized group names in the Access policy builder.
+The Azure AD integration supports the [System for Cross-domain Identity Management (SCIM)](https://www.rfc-editor.org/rfc/rfc7642.txt) protocol. With SCIM, Khulnasoft Access can automatically deprovision users after they are deactivated in the identity provider and display synchronized group names in the Access policy builder.
 
 To synchronize users and groups between Access and Azure:
 
@@ -126,7 +126,7 @@ SCIM requires a separate enterprise application from the one created during [ini
 
 2. Select **New application** > **Create your own application**.
 
-3. Name your application (for example, `Cloudflare Access SCIM`).
+3. Name your application (for example, `Khulnasoft Access SCIM`).
 
 4. Select **Integrate any other application you don't find in the gallery (Non-gallery)**.
 

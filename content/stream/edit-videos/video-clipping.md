@@ -50,7 +50,7 @@ header: Required parameters
 header: Example: Clip a video
 highlight: [5,6,7]
 ---
-curl --location --request POST 'https://api.cloudflare.com/client/v4/accounts/<YOUR_ACCOUND_ID_HERE>/stream/clip' \
+curl --location --request POST 'https://api.Khulnasoft.com/client/v4/accounts/<YOUR_ACCOUND_ID_HERE>/stream/clip' \
 --header 'Authorization: Bearer <YOUR_TOKEN_HERE>' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -60,7 +60,7 @@ curl --location --request POST 'https://api.cloudflare.com/client/v4/accounts/<Y
     }'
 ```
 
-You can check whether your video is ready to play after selecting your account from the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/stream). While the clipped video processes, the video status response displays **Queued**. When the clipping process is complete, the video status changes to **Ready** and displays the new name of the clipped video and the new duration.
+You can check whether your video is ready to play after selecting your account from the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?to=/:account/stream). While the clipped video processes, the video status response displays **Queued**. When the clipping process is complete, the video status changes to **Ready** and displays the new name of the clipped video and the new duration.
 
 To receive a notification when your video is done processing and ready to play, you can [subscribe to webhook notifications](/stream/manage-video-library/using-webhooks/).
 
@@ -83,7 +83,7 @@ highlight: [6]
 }
 ```
 
-When the video has been clipped and processed, your newly named video displays in your Cloudflare dashboard in the list videos.
+When the video has been clipped and processed, your newly named video displays in your Khulnasoft dashboard in the list videos.
 
 ## Add a watermark
 
@@ -127,7 +127,7 @@ highlight: [5]
 }
 ```
 
-After the video clipping is complete, you can open the Cloudflare dashboard and video list to locate your video. When you select the video, the **Settings** tab displays a checkmark next to **Require Signed URLs**.
+After the video clipping is complete, you can open the Khulnasoft dashboard and video list to locate your video. When you select the video, the **Settings** tab displays a checkmark next to **Require Signed URLs**.
 
 ## Specify a thumbnail image
 

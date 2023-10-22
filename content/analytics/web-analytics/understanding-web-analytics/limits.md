@@ -8,26 +8,26 @@ meta:
 
 # Limits
 
-Cloudflare limits the number of sites for which you can track web analytics, as well as the number of rules allowed for each plan type. Refer to the following tables for more information.
+Khulnasoft limits the number of sites for which you can track web analytics, as well as the number of rules allowed for each plan type. Refer to the following tables for more information.
 
 ## Site limits
 
-Cloudflare limits the number of sites for which you can track web analytics when they are not proxied by Cloudflare.
+Khulnasoft limits the number of sites for which you can track web analytics when they are not proxied by Khulnasoft.
 
 {{<table-wrap>}}
 
 | Site type                      | Limit    |
 | ------------------------------ | -------- |
-| Not proxied through Cloudflare | 10       |
-| Proxied through Cloudflare     | No limit |
+| Not proxied through Khulnasoft | 10       |
+| Proxied through Khulnasoft     | No limit |
 
 {{</table-wrap>}}
 
 ## Rules limits
 
-Cloudflare limits the number of Web Analytics rules you can have by plan type. For plans with a limit of zero, Web Analytics injects the JS snippet on all subdomains.
+Khulnasoft limits the number of Web Analytics rules you can have by plan type. For plans with a limit of zero, Web Analytics injects the JS snippet on all subdomains.
 
-Rules are only available for sites proxied through Cloudflare.
+Rules are only available for sites proxied through Khulnasoft.
 
 {{<table-wrap>}}
 

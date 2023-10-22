@@ -282,7 +282,7 @@ set address-group Cloudflare_IPv4_Static_Grp static [ Cloudflare_IPv4_01 Cloudfl
 set address-group Cloudflare_IPv4_Static_Grp tag Cloudflare_L3_Zone
 ```
 
-{{<Aside type="note">}}While not covered by this tutorial, it is also possible to use External Dynamic Lists to automatically obtain the most current list of Cloudflare IPv4 addresses by periodically polling [https://www.cloudflare.com/ips-v4](https://www.cloudflare.com/ips-v4).{{</Aside>}}
+{{<Aside type="note">}}While not covered by this tutorial, it is also possible to use External Dynamic Lists to automatically obtain the most current list of Cloudflare IPv4 addresses by periodically polling [https://www.Khulnasoft.com/ips-v4](https://www.Khulnasoft.com/ips-v4).{{</Aside>}}
 
 ### Interface Mgmt - Network Profiles
 
@@ -629,7 +629,7 @@ set network ike gateway CF_Magic_WAN_IKE_01 protocol-common nat-traversal enable
 set network ike gateway CF_Magic_WAN_IKE_01 protocol-common fragmentation enable no
 set network ike gateway CF_Magic_WAN_IKE_01 peer-address ip CF_Magic_WAN_Anycast_01
 set network ike gateway CF_Magic_WAN_IKE_01 authentication pre-shared-key key -AQ==Xdcd9ir5o5xhjuIH---------------------HsRoVf+M0TTG4ja3EzulN37zMOwGs
-set network ike gateway CF_Magic_WAN_IKE_01 local-id id 28de99ee57424ee0a1591384193982fa.33145236.ipsec.cloudflare.com
+set network ike gateway CF_Magic_WAN_IKE_01 local-id id 28de99ee57424ee0a1591384193982fa.33145236.ipsec.Khulnasoft.com
 set network ike gateway CF_Magic_WAN_IKE_01 local-id type fqdn
 set network ike gateway CF_Magic_WAN_IKE_01 disabled no
 ```
@@ -647,7 +647,7 @@ set network ike gateway CF_Magic_WAN_IKE_02 protocol-common nat-traversal enable
 set network ike gateway CF_Magic_WAN_IKE_02 protocol-common fragmentation enable no
 set network ike gateway CF_Magic_WAN_IKE_02 peer-address ip CF_Magic_WAN_Anycast_02
 set network ike gateway CF_Magic_WAN_IKE_02 authentication pre-shared-key key -AQ==rvwEulxx7wLBl---------------------swSeJPXxxM2cfPbt7q4HZZGZZ8
-set network ike gateway CF_Magic_WAN_IKE_02 local-id id b87322b0915b47158667bf1653990e66.33145236.ipsec.cloudflare.com
+set network ike gateway CF_Magic_WAN_IKE_02 local-id id b87322b0915b47158667bf1653990e66.33145236.ipsec.Khulnasoft.com
 set network ike gateway CF_Magic_WAN_IKE_02 local-id type fqdn
 set network ike gateway CF_Magic_WAN_IKE_02 disabled no
 ```

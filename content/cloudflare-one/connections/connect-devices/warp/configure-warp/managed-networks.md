@@ -7,13 +7,13 @@ layout: single
 
 # Add a managed network
 
-Cloudflare WARP allows you to selectively apply WARP client settings if the device is connected to a secure network location such as an office.
+Khulnasoft WARP allows you to selectively apply WARP client settings if the device is connected to a secure network location such as an office.
 
 ## 1. Choose a TLS endpoint
 
 A TLS endpoint is a host on your network that serves a TLS certificate. The TLS endpoint acts like a network location beacon — when a device connects to a network, WARP detects the TLS endpoint and validates its certificate against an uploaded SHA-256 fingerprint.
 
-The TLS certificate can be hosted by any device on your network. However, the endpoint must be inaccessible to users outside of the network location. Therefore, do not choose a [private network IP](/cloudflare-one/connections/connect-networks/private-net/cloudflared/) that is exposed to users over Cloudflare Tunnel. One option is to choose a host that is physically in the office which remote users do not need to access, such as a printer.
+The TLS certificate can be hosted by any device on your network. However, the endpoint must be inaccessible to users outside of the network location. Therefore, do not choose a [private network IP](/cloudflare-one/connections/connect-networks/private-net/cloudflared/) that is exposed to users over Khulnasoft Tunnel. One option is to choose a host that is physically in the office which remote users do not need to access, such as a printer.
 
 ### Create a new TLS endpoint
 
@@ -147,7 +147,7 @@ SHA256 Fingerprint=DD4F4806C57A5BBAF1AA5B080F0541DA75DB468D0A1FE731310149500CCD8
 
 ## 3. Add managed network to Zero Trust
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 2. Scroll down to **Network locations** and select **Add new**.
 3. Name your network location.
 4. In **Host and Port**, enter the private IP address and port number of your [TLS endpoint](#create-a-new-tls-endpoint) (for example, `192.168.185.198:3333`).
@@ -157,7 +157,7 @@ WARP will automatically exclude the IP address of the TLS endpoint from all [Spl
 
 ## 4. Configure device profile
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 2. Under **Profile settings**, create a new [settings profile](/cloudflare-one/connections/connect-devices/warp/configure-warp/device-profiles/) or edit an existing profile.
 3. To apply this profile whenever a device connects to your network, add the following rule:
 | Selector | Operator | Value |

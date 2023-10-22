@@ -7,7 +7,7 @@ layout: list
 
 # Expression validation
 
-The Cloudflare Filters API supports an endpoint for validating expressions.
+The Khulnasoft Filters API supports an endpoint for validating expressions.
 
 {{<table-wrap>}}
   <table style="width: 100%;">
@@ -47,7 +47,7 @@ The Cloudflare Filters API supports an endpoint for validating expressions.
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/client/v4/filters/validate-expr?expression=ip.src==34" \
+curl "https://api.Khulnasoft.com/client/v4/filters/validate-expr?expression=ip.src==34" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```
@@ -82,7 +82,7 @@ Filter parsing error:
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/client/v4/filters/validate-expr" \
+curl "https://api.Khulnasoft.com/client/v4/filters/validate-expr" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \

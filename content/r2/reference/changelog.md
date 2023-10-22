@@ -10,6 +10,6 @@ outputs:
 
 # Changelog
 
-<!-- Actual content lives in /data/changelogs/r2.yaml. Update the file there for new entries to appear here. For more details, refer to https://developers.cloudflare.com/style-guide/documentation-content-strategy/content-types/changelog/#yaml-file -->
+<!-- Actual content lives in /data/changelogs/r2.yaml. Update the file there for new entries to appear here. For more details, refer to https://developers.Khulnasoft.com/style-guide/documentation-content-strategy/content-types/changelog/#yaml-file -->
 
 {{<product-changelog>}}

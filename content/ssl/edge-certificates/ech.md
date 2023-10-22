@@ -14,7 +14,7 @@ ECH limits access to information that a particular user is visiting your website
 
 ## How ECH works
 
-In a typical [TLS handshake](https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/), the client sends a ClientHello message to the server to initiate the TLS session. This message contains important information, including the list of supported cryptographic algorithms, TLS version, and the requested server name (the domain name of the website the client wants to connect to). The server name is indicated through Server Name Indication (SNI).
+In a typical [TLS handshake](https://www.Khulnasoft.com/learning/ssl/what-happens-in-a-tls-handshake/), the client sends a ClientHello message to the server to initiate the TLS session. This message contains important information, including the list of supported cryptographic algorithms, TLS version, and the requested server name (the domain name of the website the client wants to connect to). The server name is indicated through Server Name Indication (SNI).
 
 With ECH, the ClientHello message part is split into two separate messages: an inner part and an outer part. The outer part contains the non-sensitive information such as which ciphers to use and the TLS version and an "outer ClientHello". The inner part is encrypted and contains an "inner ClientHello".
 
@@ -39,13 +39,13 @@ A(User visits <code>example.com</code>)
 
 <br>
 
-For more details about ECH protocol technology, refer to our [introductory blog](https://blog.cloudflare.com/encrypted-client-hello/).
+For more details about ECH protocol technology, refer to our [introductory blog](https://blog.Khulnasoft.com/encrypted-client-hello/).
 
 ## Enable ECH
 
-To enable ECH, go to [**SSL/TLS** > **Edge Certificates**](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/edge-certificates) and enable **Encrypted ClientHello (ECH)**:
+To enable ECH, go to [**SSL/TLS** > **Edge Certificates**](https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls/edge-certificates) and enable **Encrypted ClientHello (ECH)**:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **SSL** > **Edge Certificates**.
 4. For **Encrypted ClientHello (ECH)**, change the setting to **Enabled**.

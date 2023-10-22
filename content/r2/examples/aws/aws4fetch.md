@@ -7,7 +7,7 @@ pcx_content_type: configuration
 
 {{<render file="_keys.md">}}<br>
 
-JavaScript or TypeScript users may continue to use the [`aws4fetch`](https://www.npmjs.com/package/aws4fetch) npm package as per normal. This package uses the `fetch` and `SubtleCrypto` APIs which you will be familiar with when working in browsers or with Cloudflare Workers.
+JavaScript or TypeScript users may continue to use the [`aws4fetch`](https://www.npmjs.com/package/aws4fetch) npm package as per normal. This package uses the `fetch` and `SubtleCrypto` APIs which you will be familiar with when working in browsers or with Khulnasoft Workers.
 
 You must pass in the R2 configuration credentials when instantiating your `S3` service client:
 

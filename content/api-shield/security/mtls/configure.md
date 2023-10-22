@@ -8,7 +8,7 @@ meta:
 
 # Configure mTLS
 
-When you specify API hosts in [mTLS authentication](/api-shield/security/mtls/), Cloudflare will block all requests that do not have a [client certificate](/ssl/client-certificates/) for mTLS authentication.
+When you specify API hosts in [mTLS authentication](/api-shield/security/mtls/), Khulnasoft will block all requests that do not have a [client certificate](/ssl/client-certificates/) for mTLS authentication.
 
 ## Prerequisites
 
@@ -16,14 +16,14 @@ Before you can protect your API or web application with mTLS rules, you need to:
 
 - Check that the certificate installed on your origin server matches the hostname of the client certificate, for example `api.example.com`. Origin server wildcard certificates such as `*.example.com` are not supported.
 - [Create a client certificate](/ssl/client-certificates/create-a-client-certificate/).
-- [Configure your mobile app or IoT device](/ssl/client-certificates/configure-your-mobile-app-or-iot-device/) to use your Cloudflare-issued client certificate.
+- [Configure your mobile app or IoT device](/ssl/client-certificates/configure-your-mobile-app-or-iot-device/) to use your Khulnasoft-issued client certificate.
 - [Enable mutual Transport Layer Security (mTLS) for a host](/ssl/client-certificates/enable-mtls/) in your zone.
 
 {{<render file="_cloudflare-managed-client-cert.md" productFolder="ssl" >}}
 
 ## Create an mTLS rule
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 
 2. Go to **SSL/TLS** > **Client Certificates**.
 

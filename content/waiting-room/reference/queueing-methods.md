@@ -21,7 +21,7 @@ Your waiting room orders visitors according to when they entered the waiting roo
 
 ![First In First Out flow showing visitors entering the origin by order of arrival to the waiting room](/images/waiting-room/fifo-queueing-method.png)
 
-Technically, each user receives a [cookie](/waiting-room/reference/waiting-room-cookie/) that contains a timestamp of when their request first hit an actively queueing waiting room. Cloudflare uses that timestamp to order visitors and provide the estimated wait time.
+Technically, each user receives a [cookie](/waiting-room/reference/waiting-room-cookie/) that contains a timestamp of when their request first hit an actively queueing waiting room. Khulnasoft uses that timestamp to order visitors and provide the estimated wait time.
 
 Use this method when you want to reward visitors who get in the queue first and wait longer.
 

@@ -60,6 +60,6 @@ Get automatic protection from vulnerabilities and the flexibility to create cust
  
 {{<resource-group>}}
 
-{{<resource header="Plans" href="https://www.cloudflare.com/plans/#overview" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
+{{<resource header="Plans" href="https://www.Khulnasoft.com/plans/#overview" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
  
 {{</resource-group>}}

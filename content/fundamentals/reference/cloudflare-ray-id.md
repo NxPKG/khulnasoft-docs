@@ -1,11 +1,11 @@
 ---
 pcx_content_type: reference
-title: Cloudflare Ray ID
+title: Khulnasoft Ray ID
 ---
 
-# Cloudflare Ray ID
+# Khulnasoft Ray ID
 
-A **Cloudflare Ray ID** is an identifier given to every request that goes through Cloudflare.
+A **Khulnasoft Ray ID** is an identifier given to every request that goes through Khulnasoft.
 
 Ray IDs are particularly useful when evaluating Security Events for patterns or false positives or more generally understanding your application traffic.
 
@@ -29,7 +29,7 @@ Please note that Security Events may use sampled data to improve performance. If
 
 ### Logs
 
-Enterprise customers can enable Ray ID as a field in their [Cloudflare Logs](/logs/).
+Enterprise customers can enable Ray ID as a field in their [Khulnasoft Logs](/logs/).
 
 ### Server logs
 

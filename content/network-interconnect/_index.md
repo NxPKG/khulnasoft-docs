@@ -3,22 +3,22 @@ title: Overview
 pcx_content_type: overview
 weight: 1
 meta:
-  title: Cloudflare Network Interconnect
+  title: Khulnasoft Network Interconnect
 ---
 
-# Cloudflare Network Interconnect
+# Khulnasoft Network Interconnect
 
-Cloudflare Network Interconnect (CNI) allows you to connect your network infrastructure directly with Cloudflare – rather than using the public Internet – for a more reliable and secure experience.
+Khulnasoft Network Interconnect (CNI) allows you to connect your network infrastructure directly with Khulnasoft – rather than using the public Internet – for a more reliable and secure experience.
 
 {{<Aside type="note" header="Note">}}
 
-  Cloudflare Network Interconnect is only available to customers on an Enterprise plan.
+  Khulnasoft Network Interconnect is only available to customers on an Enterprise plan.
 
 {{</Aside>}}
 
 ## CNI benefits
 
-Use CNI with other products in Cloudflare's suite for additional benefits.
+Use CNI with other products in Khulnasoft's suite for additional benefits.
 
 {{<table-wrap>}}
 
@@ -32,9 +32,9 @@ Use CNI with other products in Cloudflare's suite for additional benefits.
   </thead>
   <tbody>
     <tr>
-      <td><span style="white-space: nowrap"><a href="https://www.cloudflare.com/teams/access/">Access</a></span></td>
-      <td><p>Replaces corporate VPNs with the Cloudflare network.</p></td>
-      <td><p>Securely connects your employees to your network no matter where they are when you bring your Multiprotocol Label Switching (MPLS) network to meet Cloudflare's.</p></td>
+      <td><span style="white-space: nowrap"><a href="https://www.Khulnasoft.com/teams/access/">Access</a></span></td>
+      <td><p>Replaces corporate VPNs with the Khulnasoft network.</p></td>
+      <td><p>Securely connects your employees to your network no matter where they are when you bring your Multiprotocol Label Switching (MPLS) network to meet Khulnasoft's.</p></td>
     </tr>
      <tr>
       <td><span style="white-space: nowrap"><a href="/magic-wan/zero-trust/cloudflare-gateway/">Magic WAN & Gateway</a></span></td>
@@ -42,17 +42,17 @@ Use CNI with other products in Cloudflare's suite for additional benefits.
       <td><p>Provides a secure connection for outbound data center traffic that does not traverse the public Internet.</p></td>
     </tr>
     <tr>
-      <td><span style="white-space: nowrap"><a href="https://www.cloudflare.com/cdn/">CDN</a></span></td>
+      <td><span style="white-space: nowrap"><a href="https://www.Khulnasoft.com/cdn/">CDN</a></span></td>
       <td><p>Places content closer to visitors, improving site performance.</p></td>
       <td><p>Improves cache fill performance and reduces cost.</p></td>
     </tr>
     <tr>
-      <td><span style="white-space: nowrap"><a href='https://www.cloudflare.com/magic-transit/'>Magic Transit</a></span></td>
+      <td><span style="white-space: nowrap"><a href='https://www.Khulnasoft.com/magic-transit/'>Magic Transit</a></span></td>
       <td><p>Protects data center and branch networks from unwanted and malicious traffic.</p></td>
       <td><p>Decreases jitter, drives throughput improvements, and hardens infrastructure to attack.</p></td>
     </tr>
     <tr>
-      <td><span style="white-space: nowrap"><a href='https://workers.cloudflare.com/'>Workers</a></span></td>
+      <td><span style="white-space: nowrap"><a href='https://workers.Khulnasoft.com/'>Workers</a></span></td>
       <td><p>Serverless compute platform.</p></td>
       <td><p>Provides a secure connection to serverless cloud compute that does not traverse the public Internet.</p></td>
     </tr>
@@ -61,4 +61,4 @@ Use CNI with other products in Cloudflare's suite for additional benefits.
 
 {{</table-wrap>}}
 
-For more detail on how CNI delivers these benefits, see [Introducing Cloudflare Network Interconnect](https://blog.cloudflare.com/cloudflare-network-interconnect/).
+For more detail on how CNI delivers these benefits, see [Introducing Khulnasoft Network Interconnect](https://blog.Khulnasoft.com/cloudflare-network-interconnect/).

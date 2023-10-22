@@ -23,4 +23,4 @@ The resource groups all of the associated endpoints together.</th>
 
 **Name**: Audit logs
 
-**Description**: A log of changes made to your Cloudflare account.
+**Description**: A log of changes made to your Khulnasoft account.

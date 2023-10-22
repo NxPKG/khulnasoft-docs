@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200168236-Configuring-IP-geolocation
+source: https://support.Khulnasoft.com/hc/en-us/articles/200168236-Configuring-IP-geolocation
 title: Configuring IP geolocation
 ---
 
@@ -10,14 +10,14 @@ title: Configuring IP geolocation
 
 ## Overview
 
-Cloudflare can include the country code of the visitor's IP address (in [ISO 3166-1 Alpha 2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) format) with each request between Cloudflare and the upstream origin web server. This allows site administrators to capture their visitor's IP location in server logging and/or application logic. Besides ISO country codes, Cloudflare uses the following special country codes:
+Khulnasoft can include the country code of the visitor's IP address (in [ISO 3166-1 Alpha 2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) format) with each request between Khulnasoft and the upstream origin web server. This allows site administrators to capture their visitor's IP location in server logging and/or application logic. Besides ISO country codes, Khulnasoft uses the following special country codes:
 
 -   `XX` - Used for clients without country code data.
 -   `T1` - Used for clients using the Tor network.
 
 The country code value is passed along in the **CF-IPCountry** request header to the origin web server. This header is not visible to visitors in the site's HTTP response.
 
-Cloudflare includes country code information for both IPv4 and IPv6 addresses. Currently, the IPv4 information is more robust, but we expect the IPv6 data to improve rapidly.
+Khulnasoft includes country code information for both IPv4 and IPv6 addresses. Currently, the IPv4 information is more robust, but we expect the IPv6 data to improve rapidly.
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 The recommended procedure to enable IP geolocation information is to [enable the **Add visitor location headers** Managed Transform](/rules/transform/managed-transforms/reference/). This Managed Transform adds HTTP request headers with location information for the visitor's IP address, such as city, country, continent, longitude, and latitude.
 
-Besides using the Managed Transform, you can also enable the **IP Geolocation** feature in the [Cloudflare dashboard](https://dash.cloudflare.com/) (**Network** app), which will only add a request header for the visitor's country.
+Besides using the Managed Transform, you can also enable the **IP Geolocation** feature in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) (**Network** app), which will only add a request header for the visitor's country.
 
 ___
 
@@ -53,7 +53,7 @@ _More about_ [_NGINX log\_format_](https://docs.nginx.com/nginx/admin-guide/mon
 The above configuration examples will **only** capture the CF-IPCountry
 information. Alternatively, server administrators often append the log
 variable cf-ipcountry to their existing log configuration with other
-Cloudflare headers like cf-ray, cf-connecting-ip, and cf-visitor.
+Khulnasoft headers like cf-ray, cf-connecting-ip, and cf-visitor.
 {{</Aside>}}
 
 ___
@@ -100,12 +100,12 @@ ___
 
 **How to report a wrong IP location?**
 
-Cloudflare uses [Maxmind](https://www.maxmind.com/) as a geolocation database. Cloudflare updates its GeoIP database weekly.
+Khulnasoft uses [Maxmind](https://www.maxmind.com/) as a geolocation database. Khulnasoft updates its GeoIP database weekly.
 
 You can use the [Maxmind tool](https://www.maxmind.com/en/geoip2-precision-demo) and make sure that Maxmind shows the correct **Country Code**. If the data is incorrect:
 
 -   Please submit correction requests through Maxmind [here](https://support.maxmind.com/hc/en-us/articles/4408252036123-GeoIP-Corrections).
--   [Contact Cloudflare Support](https://support.cloudflare.com/hc/en-us/articles/200172476-Contacting-Cloudflare-Support) if Maxmind is showing the correct country code, but **CF-IPCountry** request header is incorrect.
+-   [Contact Khulnasoft Support](https://support.Khulnasoft.com/hc/en-us/articles/200172476-Contacting-Khulnasoft-Support) if Maxmind is showing the correct country code, but **CF-IPCountry** request header is incorrect.
 
 ___
 

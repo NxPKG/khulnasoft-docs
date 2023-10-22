@@ -14,7 +14,7 @@ Instant Logs allows Cloudflare customers to access a live stream of the traffic 
 
 ## Instant Logs on the Cloudflare dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 
 2. Select the domain you want to use with Instant Logs.
 
@@ -78,7 +78,7 @@ Below we have three examples of filters:
 Example request using cURL:
 
 ```bash
-curl -X POST 'https://api.cloudflare.com/client/v4/zones/${ZONE_ID}/logpush/edge/jobs' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/zones/${ZONE_ID}/logpush/edge/jobs' \
 -H 'X-Auth-Key: <KEY>' \
 -H 'X-Auth-Email: <EMAIL>' \
 -H 'Content-Type: application/json' \
@@ -103,7 +103,7 @@ The response will include a new field called **destination_conf**. The value of 
         "fields": "ClientIP,ClientRequestHost,ClientRequestMethod,ClientRequestURI,EdgeEndTimestamp,EdgeResponseBytes,EdgeResponseStatus,EdgeStartTimestamp,RayID",
         "sample": 100,
         "filter": "",
-        "destination_conf": "wss://logs.cloudflare.com/instant-logs/ws/sessions/99d471b1ca3c23cc8e30b6acec5db987",
+        "destination_conf": "wss://logs.Khulnasoft.com/instant-logs/ws/sessions/99d471b1ca3c23cc8e30b6acec5db987",
         "kind": "instant-logs"
     },
     "success": true
@@ -115,7 +115,7 @@ The response will include a new field called **destination_conf**. The value of 
 Using a CLI utility like [Websocat](https://github.com/vi/websocat), you can connect to the WebSocket and start immediately receiving logs.
 
 ```sh
-$ websocat wss://logs.cloudflare.com/instant-logs/ws/sessions/99d471b1ca3c23cc8e30b6acec5db987
+$ websocat wss://logs.Khulnasoft.com/instant-logs/ws/sessions/99d471b1ca3c23cc8e30b6acec5db987
 ```
 
 Response:
@@ -127,7 +127,7 @@ Once connected to the websocket, you will receive messages of line-delimited JSO
 Now that you have a connection to Cloudflare's websocket and are receiving logs from Cloudflare's global network, you can start slicing and dicing the logs. A handy tool for this is [Angle Grinder](https://github.com/rcoh/angle-grinder). Angle Grinder lets you apply filtering, transformations and aggregations on stdin with first class JSON support. For example, to get the number of visitors from each country you can sum the number of events by the `ClientCountry` field.
 
 ```sh
-$ websocat wss://logs.cloudflare.com/instant-logs/ws/sessions/99d471b1ca3c23cc8e30b6acec5db987 | agrind '* | json | sum(sampleInterval) by ClientCountry'
+$ websocat wss://logs.Khulnasoft.com/instant-logs/ws/sessions/99d471b1ca3c23cc8e30b6acec5db987 | agrind '* | json | sum(sampleInterval) by ClientCountry'
 ```
 
 Response:

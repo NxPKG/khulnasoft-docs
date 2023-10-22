@@ -20,13 +20,13 @@ You can use the following endpoint:
 PUT /zones/{zone_id}/rulesets/phases/{phase_name}/entrypoint
 ```
 
-To invoke a Rulesets API operation, append the endpoint to the Cloudflare API base URL:
+To invoke a Rulesets API operation, append the endpoint to the Khulnasoft API base URL:
 
 ```txt
-https://api.cloudflare.com/client/v4
+https://api.Khulnasoft.com/client/v4
 ```
 
-For authentication instructions, refer to [Getting Started: Requests](/fundamentals/api/) in the Cloudflare API documentation.
+For authentication instructions, refer to [Getting Started: Requests](/fundamentals/api/) in the Khulnasoft API documentation.
 
 For help with endpoints and pagination, refer to [Getting Started: Endpoints](/fundamentals/api/).
 
@@ -40,7 +40,7 @@ To retrieve a list of zones you have access to, use the [List Zones](/api/operat
 
 {{</Aside>}}
 
-The Cloudflare Rulesets API supports the operations outlined below. Visit the associated links for API endpoints and examples.
+The Khulnasoft Rulesets API supports the operations outlined below. Visit the associated links for API endpoints and examples.
 
 ## List and view rulesets
 

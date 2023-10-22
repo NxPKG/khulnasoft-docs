@@ -9,7 +9,7 @@ meta:
 
 {{<heading-pill style="beta">}} Single Redirects {{</heading-pill>}}
 
-Single Redirects allow you to create static or dynamic URL redirects [^1]. Dynamic URL redirects support advanced features such as string replacement operations and regular expressions (depending on your Cloudflare plan).
+Single Redirects allow you to create static or dynamic URL redirects [^1]. Dynamic URL redirects support advanced features such as string replacement operations and regular expressions (depending on your Khulnasoft plan).
 
 [^1]: URL redirects navigate the user from a source URL to a target URL using a given HTTP status code. URL redirection is also known as URL forwarding.
 
@@ -17,5 +17,5 @@ Single Redirects allow you to create static or dynamic URL redirects [^1]. Dynam
 
 ## Related resources
 
-* [Availability](/rules/url-forwarding/#availability): Information on the Single Redirects quotas and features per Cloudflare plan.
+* [Availability](/rules/url-forwarding/#availability): Information on the Single Redirects quotas and features per Khulnasoft plan.
 * [Execution order](/rules/url-forwarding/#execution-order): Execution order of the different Rules products.

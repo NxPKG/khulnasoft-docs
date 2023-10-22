@@ -27,7 +27,7 @@ formatted as a JSON object. For example:
       "addresses": [
         {
           "protocol": "udp",
-          "address": "roughtime.cloudflare.com:2002"
+          "address": "roughtime.Khulnasoft.com:2002"
         }
       ]
     }
@@ -133,7 +133,7 @@ This rejects responses whose uncertainty radii exceed 10 seconds. An error will 
 
 ### Auditing Your Sources
 
-Function `roughtime.Do()` chains together valid responses, generating each nonce using the server's response in the last successful query. As we discuss in more detail in the [blog](https://blog.cloudflare.com/roughtime/), linking queries together in this manner results in cryptographic proof that the queries were made in order. To verify that the results have this property, you can do the following:
+Function `roughtime.Do()` chains together valid responses, generating each nonce using the server's response in the last successful query. As we discuss in more detail in the [blog](https://blog.Khulnasoft.com/roughtime/), linking queries together in this manner results in cryptographic proof that the queries were made in order. To verify that the results have this property, you can do the following:
 
 ```go
 chain := roughtime.NewChain(results)

@@ -31,13 +31,13 @@ Follow this workflow to create a custom error response rule for a given zone via
 
 ## Example API calls
 
-### Custom JSON response for all Cloudflare 1xxx errors
+### Custom JSON response for all Khulnasoft 1xxx errors
 
-This example configures a custom JSON error response for all [Cloudflare 1xxx errors](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/) in the zone with ID `{zone_id}`. The HTTP status code of the custom error response will be set to `530`.
+This example configures a custom JSON error response for all [Khulnasoft 1xxx errors](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/) in the zone with ID `{zone_id}`. The HTTP status code of the custom error response will be set to `530`.
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_custom_errors/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_custom_errors/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -60,11 +60,11 @@ Note that this `PUT` request, corresponding to the [Update a zone entry point ru
 
 ### Custom HTML response for 1020 errors
 
-This example configures a custom HTML error response for [Cloudflare error 1020](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/#error-1020-access-denied) (Access Denied).
+This example configures a custom HTML error response for [Khulnasoft error 1020](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/#error-1020-access-denied) (Access Denied).
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_custom_errors/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_custom_errors/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -90,7 +90,7 @@ This example configures a custom HTML error response for responses with a `500` 
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_custom_errors/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_custom_errors/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

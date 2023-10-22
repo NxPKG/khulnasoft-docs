@@ -23,7 +23,7 @@ layout: list
   </thead>
   <tbody>
        <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...6f9bfc13</td>
       <td>100590</td>
       <td>VMware - Remote Code Execution - CVE:CVE-2023-20887</td>

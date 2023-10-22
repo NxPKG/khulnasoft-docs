@@ -10,7 +10,7 @@ You can restrict a Durable Object to a jurisdiction, or provide a location hint.
 
 ## Restrict Durable Objects to a jurisdiction
 
-Durable Objects can be created so that they only run and store data within a specific jurisdiction to comply with local regulations such as the [GDPR](https://gdpr-info.eu/) or [FedRAMP](https://blog.cloudflare.com/cloudflare-achieves-fedramp-authorization/). 
+Durable Objects can be created so that they only run and store data within a specific jurisdiction to comply with local regulations such as the [GDPR](https://gdpr-info.eu/) or [FedRAMP](https://blog.Khulnasoft.com/cloudflare-achieves-fedramp-authorization/). 
 
 {{<Aside type="note">}}
 Jurisdictions are available to all Durable Objects users. 

@@ -12,11 +12,11 @@ meta:
 The Google Workspace IdP integration is not supported if your Google Workspace account is protected by Access.
 {{</Aside>}}
 
-You can integrate a Google Workspace (formerly Google Suite) account with Cloudflare Access. Unlike the instructions for [generic Google authentication](/cloudflare-one/identity/idp-integration/google/), the steps below will allow you to pull group membership information from your Google Workspace account.
+You can integrate a Google Workspace (formerly Google Suite) account with Khulnasoft Access. Unlike the instructions for [generic Google authentication](/cloudflare-one/identity/idp-integration/google/), the steps below will allow you to pull group membership information from your Google Workspace account.
 
-Once integrated, users will log in with their Google Workspace credentials to reach resources protected by Cloudflare Access or to enroll their device into Cloudflare Gateway.
+Once integrated, users will log in with their Google Workspace credentials to reach resources protected by Khulnasoft Access or to enroll their device into Khulnasoft Gateway.
 
-You do not need to be a Google Cloud Platform user to integrate Google Workspace as an identity provider with Cloudflare Zero Trust. You will only need to open the Google Cloud Platform to configure IdP integration settings.
+You do not need to be a Google Cloud Platform user to integrate Google Workspace as an identity provider with Khulnasoft Zero Trust. You will only need to open the Google Cloud Platform to configure IdP integration settings.
 
 ## Set up Google Workspace as an identity provider
 
@@ -66,9 +66,9 @@ You do not need to be a Google Cloud Platform user to integrate Google Workspace
 14. On your [Google Admin console](https://admin.google.com), go to **Security** > **Access and data control** > **API controls**.  
     ![Location of Trust internal apps setting in the Google Admin dashboard](/images/cloudflare-one/identity/gsuite/trust-internal-apps.png)
 
-15. Enable the **Trust internal, domain-owned apps** option. This setting is disabled by default and must be enabled for Cloudflare Access to work correctly.
+15. Enable the **Trust internal, domain-owned apps** option. This setting is disabled by default and must be enabled for Khulnasoft Access to work correctly.
 
-16. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **Authentication**.
+16. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **Authentication**.
 
 17. Under **Login methods**, select **Add new** and choose **Google Workspace**.
 
@@ -80,7 +80,7 @@ You do not need to be a Google Cloud Platform user to integrate Google Workspace
 
 21. Select **Save**. To complete setup, you must visit the generated link. If you are not the Google Workspace administrator, share the link with the administrator.
 
-22. The generated link will prompt you to log in to your Google admin account and to authorize Cloudflare Access to view group information. After allowing permissions, you will see a success page from Cloudflare Access.
+22. The generated link will prompt you to log in to your Google admin account and to authorize Khulnasoft Access to view group information. After allowing permissions, you will see a success page from Khulnasoft Access.
 
 ## Test your connection
 

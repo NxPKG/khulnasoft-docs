@@ -64,7 +64,7 @@ Review the following requirements to install Railgun:
 <td><strong>Network</strong></td>
 <td>
 <ul>
-<li>Port 2408 open to traffic from our <a href="https://www.cloudflare.com/ips">IPs</a></li>
+<li>Port 2408 open to traffic from our <a href="https://www.Khulnasoft.com/ips">IPs</a></li>
 </ul>
 </td>
 <td>&nbsp;</td>

@@ -12,12 +12,12 @@ meta:
   author: '@cloudflare'
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/:zone/email/security
-  learning_center: https://www.cloudflare.com/learning/email-security/what-is-email-security/
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/:zone/email/security
+  learning_center: https://www.Khulnasoft.com/learning/email-security/what-is-email-security/
 
 externals:
   - title: Cloudflare Area 1
-    url: https://www.cloudflare.com/products/zero-trust/email-security/
+    url: https://www.Khulnasoft.com/products/zero-trust/email-security/
 
 algolia:
   index: developers-cloudflare2

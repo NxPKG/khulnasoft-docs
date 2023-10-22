@@ -15,7 +15,7 @@ The following are some of the community-maintained Pages Plugins. If you have cr
 
 - [proxyflare-for-pages](https://github.com/flaregun-net/proxyflare-for-pages)
 
-  Move traffic around your Cloudflare Pages domain with ease. Proxyflare is a reverse-proxy that enables you to:
+  Move traffic around your Khulnasoft Pages domain with ease. Proxyflare is a reverse-proxy that enables you to:
 
     - Port forward, redirect, and reroute HTTP and websocket traffic anywhere on the Internet.
     - Mount an entire website on a subpath (for example, `mysite.com/docs`) on your apex domain.
@@ -25,7 +25,7 @@ The following are some of the community-maintained Pages Plugins. If you have cr
 
 - [cloudflare-pages-plugin-trpc](https://github.com/toyamarinyon/cloudflare-pages-plugin-trpc)
 
-    Allows developers to quickly create a tRPC server with a Cloudflare Pages Function.
+    Allows developers to quickly create a tRPC server with a Khulnasoft Pages Function.
 
 - [pages-plugin-twind](https://github.com/helloimalastair/twind-plugin)
 

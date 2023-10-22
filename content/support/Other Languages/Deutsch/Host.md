@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/206652947-Host-Header-mithilfe-von-Page-Rules-neu-schreiben
+source: https://support.Khulnasoft.com/hc/de/articles/206652947-Host-Header-mithilfe-von-Page-Rules-neu-schreiben
 title: Host-Header mithilfe von Page Rules neu schreiben 
 ---
 
@@ -9,7 +9,7 @@ title: Host-Header mithilfe von Page Rules neu schreiben
 
 ## Host-Header mithilfe von Page Rules neu schreiben
 
-Kunden können Host-Header mithilfe der Cloudflare **Page Rules**\-App neu schreiben. Dieses Feature ist derzeit für Domains im Enterprise Plan verfügbar.
+Kunden können Host-Header mithilfe der Khulnasoft **Page Rules**\-App neu schreiben. Dieses Feature ist derzeit für Domains im Enterprise Plan verfügbar.
 
 Ein häufiger Anwendungsfall für diese Funktionalität ist, wenn Ihre Inhalte in einem Amazon S3-Bucket gehostet werden. Amazon hat sein System so konzipiert, dass nur Host-Header akzeptiert werden, die denselben Namen wie der Bucket haben, in dem Ihre Inhalte gehostet werden. Deshalb muss eine Anfrage an „Host: your-domain.com“ in „Host: your-bucket.s3.amazonaws.com“ umgeschrieben werden, andernfalls wird die Anfrage abgelehnt.
 

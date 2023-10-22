@@ -43,7 +43,7 @@ The example below contains a request for a Managed phase Managed Kind ruleset.
 ---
 header: Example request - Create a Managed phase Managed Kind ruleset
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
 --header "Content-Type:application/json" \
@@ -86,7 +86,7 @@ Building off the example from the previous step, the example below enables a cat
 header: Example request - Patch a Managed phase Managed kind ruleset
 ---
 curl --request PATCH \
-https://api.staging.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{root_kind_ruleset}/rules/{root_kind_rule} \
+https://api.staging.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{root_kind_ruleset}/rules/{root_kind_rule} \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
 --header "Content-Type:application/json" \
@@ -124,7 +124,7 @@ To enable the complete ruleset or enable all rules, send the request below.
 header: Example request to enable all rules
 ---
 curl --request PATCH \
-https://api.staging.cloudflare.com/client/v4/accounts/{account_id}{account_id}/rulesets/{root_kind_ruleset}/rules/{root_kind_rule} \
+https://api.staging.Khulnasoft.com/client/v4/accounts/{account_id}{account_id}/rulesets/{root_kind_ruleset}/rules/{root_kind_rule} \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
 --header "Content-Type:application/json" \
@@ -149,7 +149,7 @@ To delete a ruleset, refer to [Delete a rule in a ruleset](/ruleset-engine/rules
 
 You can also use the dashboard to enable managed rulesets.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Magic Firewall** > **Managed rules**.
 3. Select **Deploy managed ruleset**.
 4. The page will refresh and show you rulesets configured by Cloudflare that are available to your account. Choose the ruleset you want with **Select ruleset**. If you do not see the ruleset you want, contact your account manager to get a list of all Magic Firewall Managed rulesets.
@@ -165,7 +165,7 @@ On the other hand, if you did not apply Cloudflare’s recommendation in the pre
 
 To add rule-level overrides in the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Magic Firewall** > **Managed rules**.
 3. In front of **Magic Firewall Managed ruleset**, select **Manage**.
 4. Select **Browse rules**.
@@ -177,7 +177,7 @@ The Cloudflare dashboard should now show you the rule-level override you have se
 
 ### Delete Magic Firewall managed ruleset.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Magic Firewall** > **Managed rules**.
 3. Select **Manage**.
 4. Select **Delete deployment**.

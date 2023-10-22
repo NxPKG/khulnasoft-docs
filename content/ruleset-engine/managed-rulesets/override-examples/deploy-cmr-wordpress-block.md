@@ -15,14 +15,14 @@ Follow the steps below to create a rule that executes a managed ruleset and defi
 
 The example below uses the [Update ruleset](/ruleset-engine/rulesets-api/update/) operation to perform the two steps in a single `PUT` request.
 
-* Add a rule to the ruleset of the `http_request_firewall_managed` phase that applies the **Cloudflare Managed Ruleset**.
+* Add a rule to the ruleset of the `http_request_firewall_managed` phase that applies the **Khulnasoft Managed Ruleset**.
 * Override rules with the `wordpress` tag to set the action to `block`. All other rules use the default action provided by the ruleset issuer.
 
 {{<details header="Example: Use tag overrides to set WordPress rules to Block at the zone level">}}
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -52,7 +52,7 @@ https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_reques
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

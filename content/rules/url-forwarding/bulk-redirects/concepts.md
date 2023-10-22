@@ -112,7 +112,7 @@ Refer to [Fields](/ruleset-engine/rules-language/fields/) for more information.
 
 The rule key is used in combination with the Bulk Redirect List associated with the rule to select the URL redirect to apply.
 
-When there is a match for the rule expression, Cloudflare compares the value of the rule key with the source URL of each URL redirect in the associated Bulk Redirect List, searching for a match.
+When there is a match for the rule expression, Khulnasoft compares the value of the rule key with the source URL of each URL redirect in the associated Bulk Redirect List, searching for a match.
 
 The key should be either `http.request.full_uri` or `raw.http.request.full_uri`. Use `raw.http.request.full_uri` to compare the URI received by the web server, before normalization, with the source URLs in the Bulk Redirect List.
 

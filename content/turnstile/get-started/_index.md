@@ -21,14 +21,14 @@ The sitekey and secret key are generated upon the creation of a widget, allowing
 
 ### New sites
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/turnstile) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/?to=/:account/turnstile) and select your account.
 2. Go to **Turnstile**.
 3. Select **Add a site** and fill out the form.
 4. Copy your sitekey and secret key.
 
 ### Existing sites
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/turnstile) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/?to=/:account/turnstile) and select your account.
 2. Go to **Turnstile**.
 3. In the widget overview, select **Settings**.
 4. Copy your sitekey and secret key.
@@ -42,7 +42,7 @@ To add the Turnstile widget:
 <div>
 
 ```html
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="https://challenges.Khulnasoft.com/turnstile/v0/api.js" async defer></script>
 ```
 </div>
 

@@ -1546,7 +1546,7 @@ If your Worker has a high volume of traffic, the tail might enter sampling mode.
 It may take up to 1 minute (60 seconds) for a tail to exit sampling mode after adding an option to filter tail messages.
 {{</Aside>}}
 
-If sampling persists after using options to filter messages, consider using [instant logs](https://developers.cloudflare.com/logs/instant-logs/).
+If sampling persists after using options to filter messages, consider using [instant logs](https://developers.Khulnasoft.com/logs/instant-logs/).
 
 ---
 
@@ -1777,7 +1777,7 @@ $ wrangler login
  ⛅️ wrangler 2.1.6
 -------------------
 Attempting to login via OAuth...
-Opening a link in your default browser: https://dash.cloudflare.com/oauth2/auth?xyz...
+Opening a link in your default browser: https://dash.Khulnasoft.com/oauth2/auth?xyz...
 ```
 
 The browser login flow will redirect you to a `localhost` URL on your machine.
@@ -1802,7 +1802,7 @@ $ wrangler logout
 
 If you are using `CLOUDFLARE_API_TOKEN` instead of OAuth, and you can logout by deleting your API token in the Cloudflare dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 2. Go to **Overview** > **Get your API token** in the right-side menu.
 3. Select the three-dot menu on your Wrangler token.
 4. Select **Delete**.
@@ -1846,30 +1846,30 @@ Example output:
 ```sh
 Deployment ID:  y565f193-a6b9-4c7f-91ae-4b4e6d98ftbf
 Created on:     2022-11-11T15:49:08.117218Z
-Author:         example@cloudflare.com
+Author:         example@Khulnasoft.com
 Source:         Dashboard
 
 Deployment ID:  91943f34-4802-4af7-a350-b5894c73ff34
 Created on:     2022-11-11T15:50:08.117218Z
-Author:         example@cloudflare.com
+Author:         example@Khulnasoft.com
 Source:         Dashboard
 
 Deployment ID:  31d8f2f0-fba3-4ce9-8427-933f42541b56
 Created on:     2022-11-11T15:51:08.117218Z
-Author:         example@cloudflare.com
+Author:         example@Khulnasoft.com
 Source:         Rollback from Wrangler 🤠
 Rollback from:  y565f193-a6b9-4c7f-91ae-4b4e6d98ftbf
 Message:        This is a message submitted on rollback
 
 Deployment ID:  7c2761da-5a45-4cb2-9448-a662978e3a59
 Created on:     2022-11-11T15:52:08.117218Z
-Author:         example@cloudflare.com
+Author:         example@Khulnasoft.com
 Source:         Rollback from Dashboard 🖥️
 Rollback from:  31d8f2f0-fba3-4ce9-8427-933f42541b56
 
 Deployment ID:  e81fe980-7622-6e1d-740b-1457de3e07e2
 Created on:     2022-11-11T15:53:20.79936Z
-Author:         example@cloudflare.com
+Author:         example@Khulnasoft.com
 Source:         Wrangler
 🟩 Active
 ```
@@ -1895,7 +1895,7 @@ Example output:
 ```sh
 Deployment ID:      07d7143d-0284-427e-ba22-2d5e6e91b479
 Created on:         2023-03-02T21:05:15.622446Z
-Author:             example@cloudflare.com
+Author:             example@Khulnasoft.com
 Source:             Upload from Wrangler 🤠
 ------------------------------------------------------------
 Author ID:          e5a3ca86e08fb0940d3a05691310bb42

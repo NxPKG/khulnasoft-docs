@@ -1,6 +1,6 @@
 ---
 pcx_content_type: reference
-source: https://support.cloudflare.com/hc/en-us/articles/219178057-Configuring-Cloudflare-Mirage
+source: https://support.Khulnasoft.com/hc/en-us/articles/219178057-Configuring-Cloudflare-Mirage
 title: Cloudflare Mirage
 weight: 3
 ---
@@ -39,13 +39,13 @@ ___
 ## Enable Mirage
 
 {{<Aside type="note">}}
-If you send a CSP (content security policy) header that restricts where scripts can be loaded, you will need to ensure `ajax.cloudflare.com` is enabled. For example, to allow scripts from your own domain and `ajax.cloudflare.com` enter the following:
-`script-src 'self' ajax.cloudflare.com;`
+If you send a CSP (content security policy) header that restricts where scripts can be loaded, you will need to ensure `ajax.Khulnasoft.com` is enabled. For example, to allow scripts from your own domain and `ajax.Khulnasoft.com` enter the following:
+`script-src 'self' ajax.Khulnasoft.com;`
 {{</Aside>}}
 
 To enable Mirage image optimization for your entire domain:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2.  Select your account and zone.
 3.  Go to **Speed** > **Optimization** > **Image Optimization**.
 4.  For **Mirage**, switch the toggle to **On**.

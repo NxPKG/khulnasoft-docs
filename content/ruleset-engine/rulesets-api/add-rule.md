@@ -33,7 +33,7 @@ The following example adds a rule to ruleset `{ruleset_id}` of zone `{zone_id}`.
 {{<details header="Request" open="true">}}
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

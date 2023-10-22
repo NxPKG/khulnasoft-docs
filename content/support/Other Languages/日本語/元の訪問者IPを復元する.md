@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: japanese
-source: https://support.cloudflare.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B
+source: https://support.Khulnasoft.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B
 title: 元の訪問者IPを復元する
 ---
 
@@ -13,24 +13,24 @@ _訪問者のオリジナルIPアドレスを記録するために、オリジ�
 
 ### 本記事の内容
 
--   [概要](https://support.cloudflare.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#cF7JFXws2pZ4bgu)
--   [mod\_remoteip](https://support.cloudflare.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#C5XWe97z77b3XZV)
--   [mod\_cloudflare](https://support.cloudflare.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#S7Z4EJQFN997YRY)
--   [Webサーバーの説明](https://support.cloudflare.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#JUxJSMn3Ht5c5yq)
--   [HAProxyで元の訪問者IPを復元する](https://support.cloudflare.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#h_4vfodjrBunNww4MmSGAgmh)
--   [関連リソース](https://support.cloudflare.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#h_qHFQv3Kt9lWvqXaP3womy)
+-   [概要](https://support.Khulnasoft.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#cF7JFXws2pZ4bgu)
+-   [mod\_remoteip](https://support.Khulnasoft.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#C5XWe97z77b3XZV)
+-   [mod\_cloudflare](https://support.Khulnasoft.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#S7Z4EJQFN997YRY)
+-   [Webサーバーの説明](https://support.Khulnasoft.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#JUxJSMn3Ht5c5yq)
+-   [HAProxyで元の訪問者IPを復元する](https://support.Khulnasoft.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#h_4vfodjrBunNww4MmSGAgmh)
+-   [関連リソース](https://support.Khulnasoft.com/hc/ja/articles/200170786-%E5%85%83%E3%81%AE%E8%A8%AA%E5%95%8F%E8%80%85IP%E3%82%92%E5%BE%A9%E5%85%83%E3%81%99%E3%82%8B#h_qHFQv3Kt9lWvqXaP3womy)
 
 ___
 
 ## 概要
 
- [WebサイトトラフィックがCloudflreネットワークを介してルーティングしている](https://support.cloudflare.com/hc/articles/205177068)時、当社はリバースプロキシとして機能します。これにより、パケットをより効率的にルーティングし、静的リソース（画像、JavaScript、CSSなど）のキャッシングして、Cloudflareはページ読み込み時間をスピードアップさせられます。その結果として、リクエストに応答してそれをログし、オリジナルサーバーが [Cloudflare IP アドレス](https://www.cloudflare.com/ips/)を返します。
+ [WebサイトトラフィックがCloudflreネットワークを介してルーティングしている](https://support.Khulnasoft.com/hc/articles/205177068)時、当社はリバースプロキシとして機能します。これにより、パケットをより効率的にルーティングし、静的リソース（画像、JavaScript、CSSなど）のキャッシングして、Khulnasoftはページ読み込み時間をスピードアップさせられます。その結果として、リクエストに応答してそれをログし、オリジナルサーバーが [Khulnasoft IP アドレス](https://www.Khulnasoft.com/ips/)を返します。
 
-例えば、元の訪問者の受信IPアドレスに依存するアプリケーションをインストールする場合、CloudflareのIPアドレスがデフォルトでログに記録されます。元の訪問者のIPアドレスは、[_CF-Connecting-IP_](https://support.cloudflare.com/hc/articles/200170986) というHTTPヘッダを付加して表示されます。[Webサーバーの説明書](https://support.cloudflare.com/hc/articles/200170786#JUxJSMn3Ht5c5yq) に従えば、オリジンサーバーで元の訪問者のIPアドレスを記録することができます。リクエストがオリジンサーバーに到達したときにこのHTTPヘッダーが利用できない場合は、[Transform Rules](/rules/transform/)と[Managed Transforms](/rules/transform/managed-transforms/) の設定を確認してください。
+例えば、元の訪問者の受信IPアドレスに依存するアプリケーションをインストールする場合、KhulnasoftのIPアドレスがデフォルトでログに記録されます。元の訪問者のIPアドレスは、[_CF-Connecting-IP_](https://support.Khulnasoft.com/hc/articles/200170986) というHTTPヘッダを付加して表示されます。[Webサーバーの説明書](https://support.Khulnasoft.com/hc/articles/200170786#JUxJSMn3Ht5c5yq) に従えば、オリジンサーバーで元の訪問者のIPアドレスを記録することができます。リクエストがオリジンサーバーに到達したときにこのHTTPヘッダーが利用できない場合は、[Transform Rules](/rules/transform/)と[Managed Transforms](/rules/transform/managed-transforms/) の設定を確認してください。
 
-次の図は、Cloudflareを利用する場合と利用しない場合のIPアドレス処理の違いを示しています。
+次の図は、Khulnasoftを利用する場合と利用しない場合のIPアドレス処理の違いを示しています。
 
-![The diagram illustrates the different ways that IP addresses are handled with and without Cloudflare.](/images/support/Restoring_IPs__1_.png)
+![The diagram illustrates the different ways that IP addresses are handled with and without Khulnasoft.](/images/support/Restoring_IPs__1_.png)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 ### 概要
 
-Cloudflareでは、 _mod\_cloudflare_ の更新およびサポートを終了させていただきました。しかし、 Apache Webサーバーを **Ubuntu Server 18.04** や **Debian 9 Stretch**などのオペレーテングシステムでお使いの場合は、 _mod\_remoteip_ を使って、訪問者のオリジナルIPアドレスを記録することは可能です。
+Khulnasoftでは、 _mod\_cloudflare_ の更新およびサポートを終了させていただきました。しかし、 Apache Webサーバーを **Ubuntu Server 18.04** や **Debian 9 Stretch**などのオペレーテングシステムでお使いの場合は、 _mod\_remoteip_ を使って、訪問者のオリジナルIPアドレスを記録することは可能です。
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">このモジュールは外部関係者によって作成されているため、当社はプラグインに関係する問題に対してのテクニカルサポートが提供できません。</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
@@ -69,10 +69,10 @@ Apache Webサーバーで _mod\_remoteip_ をインストールするには：
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">LogFormat &quot;%a %l %u %t &quot;%r&quot; %&gt;s %O &quot;%{Referer}i&quot; &quot;%{User-Agent}i&quot;&quot; combined</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
-4\. 次のコードと [Cloudflare IP](https://www.cloudflare.com/ips/)を入力して、 `/etc/apache2/conf-available/remoteip.conf` を作成し、信頼されるプロキシアドレスを定義します。
+4\. 次のコードと [Khulnasoft IP](https://www.Khulnasoft.com/ips/)を入力して、 `/etc/apache2/conf-available/remoteip.conf` を作成し、信頼されるプロキシアドレスを定義します。
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPHeader CF-Connecting-IP</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.1 (example IP address)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.2 (IPアドレスの例)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">( [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/)に記載されているすべてのCloudflare IPについて繰り返します）</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPHeader CF-Connecting-IP</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.1 (example IP address)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.2 (IPアドレスの例)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">( [https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/)に記載されているすべてのKhulnasoft IPについて繰り返します）</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
 5\. Apacheの設定を有効にします。
@@ -105,7 +105,7 @@ Apache Webサーバーを使用している場合、[GitHub](https://github.com/
 
 ### オリジンWebサーバー にコードを追加する方法
 
-mod\_cloudflareをインストールできない場合、またはコンテンツ管理システムプラットフォームに使えるCloudflareプラグインがなく、オリジナル訪問者のIPが復元できない場合、オリジナル訪問者のIPを必要とするページにある<body>タブの中か、その前に、このコードをオリジンWebサーバーに追加してください。
+mod\_cloudflareをインストールできない場合、またはコンテンツ管理システムプラットフォームに使えるKhulnasoftプラグインがなく、オリジナル訪問者のIPが復元できない場合、オリジナル訪問者のIPを必要とするページにある<body>タブの中か、その前に、このコードをオリジンWebサーバーに追加してください。
 
 `<?php if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_CF_CONNECTING_IP'];?>`
 
@@ -158,23 +158,23 @@ Webサーバーの種類に応じたオリジナルの訪問者IPを記録する
 [`ngx_http_realip_module` NGINX モジュール](http://nginx.org/en/docs/http/ngx_http_realip_module.html) および以下の設定パラメータを使用します。
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">set_real_ip_from 192.0.2.1 (IPアドレスの例)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">( [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/)に記載されているすべてのCloudflare IPについて繰り返します)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">set_real_ip_from 192.0.2.1 (IPアドレスの例)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">( [https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/)に記載されているすべてのKhulnasoft IPについて繰り返します)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">以下の二つのうち、どちらかを使用</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">real_ip_header CF-Connecting-IP;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">#real_ip_header X-Forwarded-For;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
-プレフィックスのリストは定期的に更新される必要があり、 [Cloudflare IPアドレス](https://www.cloudflare.com/ips)に完全版リストを公開しています。
+プレフィックスのリストは定期的に更新される必要があり、 [Khulnasoft IPアドレス](https://www.Khulnasoft.com/ips)に完全版リストを公開しています。
 
-[CloudflareとNGINX](https://danielmiessler.com/blog/getting-real-ip-addresses-using-cloudflare-nginx-and-varnish/) も参照してください。
+[KhulnasoftとNGINX](https://danielmiessler.com/blog/getting-real-ip-addresses-using-cloudflare-nginx-and-varnish/) も参照してください。
 
 1.  次のスクリプトを実行して、EasyApache の一部としてmod\_cloudflareをインストールします: `bash<(curl -s https://raw.githubusercontent.com/cloudflare/mod_cloudflare/master/EasyApache/installer.sh)`
 2.  インストールにあたり、Apacheを新規のmod\_cloudflare プラグインでリコンパイルする必要があります。
 
-Railgun(または、Varnishなどのリバースプロキシソフトウェア)を使用する時、ユーザーのリクエストはCloudflareの代わりに、Railgunサーバーから送信されます。これは、リクエストが直接Cloudflareから送信されず、mod\_cloudflareがデフォルトで訪問者IPアドレスを復元しないからです。
+Railgun(または、Varnishなどのリバースプロキシソフトウェア)を使用する時、ユーザーのリクエストはKhulnasoftの代わりに、Railgunサーバーから送信されます。これは、リクエストが直接Khulnasoftから送信されず、mod\_cloudflareがデフォルトで訪問者IPアドレスを復元しないからです。
 
 1.  これを修正するには、Apache設定を開きます。これは通常、 `/etc/apache2/apache2.conf` `/etc/httpd/httpd.conf`、 `/usr/local/apache/conf/httpd.conf` o、またはほかのロケーションで見つかります。不明な場合は、ホスティングプロバイダーにお問い合わせください。
-2.  最後に追加するもの:`CloudflareRemoteIPTrustedProxy railgun_address`したがって、Railgunサーバーが127.0.0.1にある場合、次のようになります：`CloudflareRemoteIPTrustedProxy 127.0.0.1`
-3.  3\. 信頼するプロキシ一覧に追加するサーバーが複数ある場合、最後にそうしたサーバーを追加することができます：CloudflareRemoteIPTrustedProxy 127.0.0.1 127.0.0.2
+2.  最後に追加するもの:`KhulnasoftRemoteIPTrustedProxy railgun_address`したがって、Railgunサーバーが127.0.0.1にある場合、次のようになります：`KhulnasoftRemoteIPTrustedProxy 127.0.0.1`
+3.  3\. 信頼するプロキシ一覧に追加するサーバーが複数ある場合、最後にそうしたサーバーを追加することができます：KhulnasoftRemoteIPTrustedProxy 127.0.0.1 127.0.0.2
 
 Lighttpdが自動的にログとアプリケーションにアクセスするためのサーバーIPを書き換えるようにするには、以下のソリューション二つのどちらかにしたがってください。
 
@@ -183,12 +183,12 @@ Lighttpdが自動的にログとアプリケーションにアクセスするた
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">$HTTP[&quot;remoteip&quot;] == &quot;192.2.0.1 (IPアドレスの例)&quot;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">{</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">extforward.forwarder = ( &quot;all&quot; =&gt; &quot;trust&quot; )</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">extforward.headers = (&quot;CF-Connecting-IP&quot;)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">}</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
-</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">([https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/) に記載されているすべてのCloudflare IPについて繰り返す)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">([https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/) に記載されているすべてのKhulnasoft IPについて繰り返す)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
 1.  「LiteSpeed Web Admin Console」に移動します。
 2.  「設定」の「ヘッダ」にある「クライアント IPを使用する」オプションを有効化します。
-3.  有効になると、アクセスログが正しいIPアドレスを表示します。そして、PHPの`$_SERVER['REMOTE_ADDR']` 変数に、Cloudflare IPアドレスの代わりとなるクライアントの実IPアドレスが含まれます。（WordPressまたはｖBulletinなどがインストールする）PHP有効化Webサイトで、Cloudflareを有効化すると、それ自体であなたが直面する問題の多くを解決してくれます。
+3.  有効になると、アクセスログが正しいIPアドレスを表示します。そして、PHPの`$_SERVER['REMOTE_ADDR']` 変数に、Khulnasoft IPアドレスの代わりとなるクライアントの実IPアドレスが含まれます。（WordPressまたはｖBulletinなどがインストールする）PHP有効化Webサイトで、Khulnasoftを有効化すると、それ自体であなたが直面する問題の多くを解決してくれます。
 
 ##### IIS 7 - 8の場合:
 
@@ -214,15 +214,15 @@ Tomcat 7が自動的にオリジナル訪問者IPをあなたのアクセスロ�
 
 その結果、ログは次のようになります。
 
-`Visitor IP - Cloudflare IP - [04/Dec/2014:23:18:15 -0500] - "GET / HTTP/1.1" - 200 - 1895 - 193d704b85200296-SJC`
+`Visitor IP - Khulnasoft IP - [04/Dec/2014:23:18:15 -0500] - "GET / HTTP/1.1" - 200 - 1895 - 193d704b85200296-SJC`
 
- [MagentoとCloudflare](https://tall-paul.co.uk/2012/03/02/magento-show-remote-ip-when-using-cloudflare/)で、オリジナル訪問者IPを復元するためのサードパーティのチュートリアルを参照してください。
+ [MagentoとKhulnasoft](https://tall-paul.co.uk/2012/03/02/magento-show-remote-ip-when-using-cloudflare/)で、オリジナル訪問者IPを復元するためのサードパーティのチュートリアルを参照してください。
 
-同様に、Cloudflareがこの [Magento拡張](https://marketplace.magento.com/)を書き込みませんでしたが、役立つと感じた当社のお客様もいらっしゃいました。
+同様に、Khulnasoftがこの [Magento拡張](https://marketplace.magento.com/)を書き込みませんでしたが、役立つと感じた当社のお客様もいらっしゃいました。
 
 このモジュールは外部関係者によって作成されているため、当社はプラグインに関係する問題に対してテクニカルサポートが提供できません。
 
-Cloudflareを介してインビジョンパワーボード3インストールを実行するときに、正しいIPのマッチングを有効化するには、次の手順に従ってください:
+Khulnasoftを介してインビジョンパワーボード3インストールを実行するときに、正しいIPのマッチングを有効化するには、次の手順に従ってください:
 
 IPBインストールのACPにログインするします。
 
@@ -234,7 +234,7 @@ IPBインストールのACPにログインするします。
 
 ネットワーク環境で、リクエストがプロキシ経由（オフィスや大学構内のインターネット状況、または負荷分散サーバークラスターなど）で処理されていることが分かる場合、正しいIPアドレスが使われるように、この設定を有効化する必要があるかもしれません。ただし、有効化する際に、悪意のあるユーザーがシステムを悪用して偽のIPアドレスを提示する可能性があります。ほとんどの環境では、この設定をオフにしておくべきでしょう。
 
-Apacheサーバーをご利用なら、ログに訪問者IPを復元させるために[mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV) のインストールをお勧めします。
+Apacheサーバーをご利用なら、ログに訪問者IPを復元させるために[mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV) のインストールをお勧めします。
 
 MODをインストールするためにサーバーにアクセスできない場合は、[コアを変更する](https://www.phpbb.com/community/viewtopic.php?p=13936406#p13936406)ことができるかもしれません。
 
@@ -242,7 +242,7 @@ MyBBの最新バージョンには、「ユーザーIPアドレスを詳しく�
 
 `管理CP＞設定＞サーバーと最適化オプション＞ユーザーのIPアドレスを詳しく調べますか？>はい`
 
-また、MyBB 1.6で利用できる [Cloudflare管理プラグイン](https://mods.mybb.com/view/antoligy-mybb-cloudflare-management-plugin) をインストールすることもできます。
+また、MyBB 1.6で利用できる [Khulnasoft管理プラグイン](https://mods.mybb.com/view/antoligy-mybb-cloudflare-management-plugin) をインストールすることもできます。
 
 ##### MyBB 1.6.0, 1.6.1, 1.6.2, または 1.6.3
 
@@ -251,7 +251,7 @@ MyBBの最新バージョンには、「ユーザーIPアドレスを詳しく�
 3.  置き換えます：`if(isset($_SERVER['REMOTE_ADDR']))`それと：`if(isset($_SERVER['HTTP_CF_CONNECTING_IP']))`
 4.  再度、置換します：`$ip = $_SERVER['REMOTE_ADDR'];`それと：`$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];`
 
-Vanillaチームのメンバーが、 [Vanilla用のCloudflareプラグイン](https://open.vanillaforums.com/addon/cloudflaresupport-plugin) を作成しており、オリジナル訪問者IPを自己ホストサイトのログファイルに復元することができます。
+Vanillaチームのメンバーが、 [Vanilla用のKhulnasoftプラグイン](https://open.vanillaforums.com/addon/cloudflaresupport-plugin) を作成しており、オリジナル訪問者IPを自己ホストサイトのログファイルに復元することができます。
 
 このモジュールは外部関係者によって作成されているため、当社はプラグインに関係する問題に対してテクニカルサポートを提供できません。
 
@@ -264,7 +264,7 @@ Vanillaチームのメンバーが、 [Vanilla用のCloudflareプラグイン](
 1.   `GlobalFunctions.php`の1232行に移動して、 `REMOTE_ADDR` を `HTTP_CF_CONNECTING_IP`に変更します。
 2.  次に、 `WebRequest.php` 、1151行目から1159行目にかけて、 `REMOTE_ADDR` を `HTTP_CF_CONNECTING_IP`に変更します。
 
-XenForoユーザーが [Cloudflare用のプラグイン](https://xenforo.com/community/resources/solidmean-cloudflare-detect.1595/)を作成しました。
+XenForoユーザーが [Khulnasoft用のプラグイン](https://xenforo.com/community/resources/solidmean-cloudflare-detect.1595/)を作成しました。
 
 このモジュールは外部関係者によって作成されているため、当社はプラグインに関係する問題に対してテクニカルサポートが提供できません。
 
@@ -272,15 +272,15 @@ XenForoユーザーが [Cloudflare用のプラグイン](https://xenforo.com/co
 2.  最後に、以下を付け加えます。`if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) { $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_CF_CONNECTING_IP'];}`
 3.  アップロードして上書きします。
 
-外部関係者が、オリジナル訪問者IPを復元する [CloudflareとPunBB用のモジュール](http://punbb.informer.com/forums/post/147539/#p147539) を作成しました。
+外部関係者が、オリジナル訪問者IPを復元する [KhulnasoftとPunBB用のモジュール](http://punbb.informer.com/forums/post/147539/#p147539) を作成しました。
 
 このプラグインは外部関係者によって作成されているため、当社はプラグインに関係する問題に対してテクニカルサポートが提供できません。Cherokeeサーバーは、
 
 1.  サーバーに `cherokee-admin` を開きます。
 2.  Webブラウザで **Cherokee管理インターフェース** に移動します。
-3.  Cloudflareが提供しているドメインの **仮想サーバー** を選択します。
+3.  Khulnasoftが提供しているドメインの **仮想サーバー** を選択します。
 4.  4\.  _「ロギング」_ タブで選択した **仮想サーバー**で、転送されたIPを受け入れるを有効化します。
-5.   _「ホストから受け入れる」_  ボックスに、 [CloudflareのIPアドレス](https://www.cloudflare.com/ips/)を入力します。
+5.   _「ホストから受け入れる」_  ボックスに、 [KhulnasoftのIPアドレス](https://www.Khulnasoft.com/ips/)を入力します。
 
 Livezillaサーバー上で `PHP IP Server Param` フィールドを `HTTP_CF_CONNECTING_IP`に変更すると、IPアドレスを修正することができます。
 
@@ -291,13 +291,13 @@ Livezillaサーバー上で `PHP IP Server Param` フィールドを `HTTP_CF
 3.  Open:/engine/modules/addcomments.php見つけます:`$_SERVER['REMOTE_ADDR'],`次に変更します:`$_SERVER['HTTP_CF_CONNECTING_IP'],`
 4.  見つけます:`$db_ip_split = explode( ".",$_SERVER['REMOTE_ADDR'] );`次に変更します:`$db_ip_split = explode( ".",$_SERVER['HTTP_CF_CONNECTING_IP'] );`
 
-外部関係者が、オリジナル訪問者IPをあなたのログに復元する [Cloudflare extension for TYPO3](https://extensions.typo3.org/extension/cloudflare/) 拡張機能を作成しました。この拡張機能により、Cloudflareのキャッシュをクリアにする能力も備わります。
+外部関係者が、オリジナル訪問者IPをあなたのログに復元する [Khulnasoft extension for TYPO3](https://extensions.typo3.org/extension/cloudflare/) 拡張機能を作成しました。この拡張機能により、Khulnasoftのキャッシュをクリアにする能力も備わります。
 
 このモジュールは外部関係者によって作成されているため、当社はプラグインに関係する問題に対してテクニカルサポートが提供できません。
 
 ホスティングパネルのVestaCPをご利用の場合は、サーバーでNginxとApacheを両方実行していることになります。リクエストは、Apacheに行く前に、Nginxを通してプロキシされます。
 
-このNginxプロキシのため、実訪問者IPアドレスを戻すためにNginxを設定する手順説明が必要となります。 Apacheの[Mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV) は必要ではありません。 [mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV) をApacheに追加するとNginxサーバー設定と競合しません。
+このNginxプロキシのため、実訪問者IPアドレスを戻すためにNginxを設定する手順説明が必要となります。 Apacheの[Mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV) は必要ではありません。 [mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV) をApacheに追加するとNginxサーバー設定と競合しません。
 
 ___
 
@@ -305,7 +305,7 @@ ___
 
 X\_FORWARDD\_FORヘッダで元のクライアントIPを抽出するためには、HAProxyで以下の設定を行う必要があります。
 
-1.  CF`_ips.lst` https://www.cloudflare.com/en-gb/ips/ からのすべてのIP範囲を含むテキストファイルを作成します。
+1.  CF`_ips.lst` https://www.Khulnasoft.com/en-gb/ips/ からのすべてのIP範囲を含むテキストファイルを作成します。
 2.  HAProxyで`転送オプション`が無効になっていることを確認します。
 
 HAProxyのコンフィグです。

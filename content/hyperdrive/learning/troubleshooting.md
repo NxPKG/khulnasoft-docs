@@ -23,5 +23,5 @@ Hyperdrive will also issue an empty test query, a `;` in PostgreSQL, to validate
 | 2012          | TLS (SSL) not supported by the database. | Hyperdrive requires TLS (SSL) to connect. Configure TLS on your database. |
 | 2013          | Invalid database credentials. | Ensure your username is correct (and exists), and the password is correct (case-sensitive). |
 | 2014          | The specified database name does not exist. | Check that the database (not table) name you provided exists on the database you are asking Hyperdrive to connect to. |
-| 2015          | Generic error.     | Hyperdrive failed to connect and could not determine a reason. Please open a support ticket so Cloudflare can investigate.|
+| 2015          | Generic error.     | Hyperdrive failed to connect and could not determine a reason. Please open a support ticket so Khulnasoft can investigate.|
 | 2016          | Test query failed. | Confirm that the user Hyperdrive is connecting as has permissions to issue read and write queries to the given database. |

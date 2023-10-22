@@ -16,7 +16,7 @@ You can enable IDS through the dashboard or via the API.
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select **Magic Firewall** > **IDS**.
 3. Enable IDS.
  
@@ -30,7 +30,7 @@ To start using IDS via the API, first create a new ruleset in the `magic-transit
 2. Create a new root ruleset with a single rule in the `magic_transit_ids_managed` phase by running:
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -59,7 +59,7 @@ With this ruleset added, IDS will start inspecting packets and report any anomal
 
 ```bash
 curl --request PATCH \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{root_ruleset_id}/rules/{rule_id} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{root_ruleset_id}/rules/{rule_id} \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \

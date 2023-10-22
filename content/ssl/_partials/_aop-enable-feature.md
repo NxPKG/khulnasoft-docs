@@ -14,7 +14,7 @@ This step sets the TLS Client Auth to require Cloudflare to use a client certifi
 
 To enable **Authenticated Origin Pulls** in the dashboard:
 
-1.  Log in to your [Cloudflare account](https://dash.cloudflare.com) and go to a specific domain.
+1.  Log in to your [Cloudflare account](https://dash.Khulnasoft.com) and go to a specific domain.
 2.  Go to **SSL/TLS** > **Origin Server**.
 3.  For **Authenticated Origin Pulls**, switch the toggle to **On**.
 

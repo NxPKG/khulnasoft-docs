@@ -1,11 +1,11 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/360038696631-Cloudflare-Network-Analytics-v1-verstehen
-title: Cloudflare Network Analytics v1 verstehen 
+source: https://support.Khulnasoft.com/hc/de/articles/360038696631-Khulnasoft-Network-Analytics-v1-verstehen
+title: Khulnasoft Network Analytics v1 verstehen 
 ---
 
-# Cloudflare Network Analytics v1 verstehen 
+# Khulnasoft Network Analytics v1 verstehen 
 
 
 
@@ -13,14 +13,14 @@ title: Cloudflare Network Analytics v1 verstehen
 
 Um die Network-Analytics-Ansicht aufzurufen, brauchen Sie:
 
--   einen Cloudflare Enterprise Plan
--   Cloudflare [Magic Transit](/magic-transit/) oder [Spectrum](/spectrum/).
+-   einen Khulnasoft Enterprise Plan
+-   Khulnasoft [Magic Transit](/magic-transit/) oder [Spectrum](/spectrum/).
 
-Die Cloudflare-Ansicht **Network Analytics** bietet nahezu in Echtzeit Einblick in Traffic-Muster der Netzwerk- und Transport-Ebene sowie DDoS-Angriffe. Mit Network Analytics werden Daten auf Paket- und Bitebene visualisiert – dieselben Daten, die über die [GraphQL Analytics API](/analytics/graphql-api/) verfügbar sind.
+Die Khulnasoft-Ansicht **Network Analytics** bietet nahezu in Echtzeit Einblick in Traffic-Muster der Netzwerk- und Transport-Ebene sowie DDoS-Angriffe. Mit Network Analytics werden Daten auf Paket- und Bitebene visualisiert – dieselben Daten, die über die [GraphQL Analytics API](/analytics/graphql-api/) verfügbar sind.
 
 {{<Aside type="note">}}
 -   Hinweise zum neuen Network Analytics v2 (NAv2) Dashboard, das in der
-    Beta-Version verfügbar ist, finden Sie unter [Cloudflare Network
+    Beta-Version verfügbar ist, finden Sie unter [Khulnasoft Network
     Analytics](/analytics/network-analytics/)
     in der Entwicklerdokumentation.
 -   Es gibt auch eine neue Version der Network Analytics GraphQL API.
@@ -33,10 +33,10 @@ Die Cloudflare-Ansicht **Network Analytics** bietet nahezu in Echtzeit Einblick 
 
 Mit Network Analytics wird böswilliger Traffic schneller gemeldet und untersucht. Sie können Daten nach diesen Parametern filtern:
 
--   von Cloudflare ergriffene Abwehrmaßnahmen
+-   von Khulnasoft ergriffene Abwehrmaßnahmen
 -   Quell-IP, Port, ASN
 -   Ziel-IP und Port
--   Stadt und Land des Cloudflare-Rechenzentrums, in dem der Traffic beobachtet wurde
+-   Stadt und Land des Khulnasoft-Rechenzentrums, in dem der Traffic beobachtet wurde
 -   Größe, Typ, Rate und Dauer des Angriffs
 -   TCP-Flag 
 -   IP-Version
@@ -52,11 +52,11 @@ ___
 
 ## Network Analytics betrachten
 
-Sie können die **Network Analytics** über die Startseite Ihres Cloudflare-Kontos aufrufen.
+Sie können die **Network Analytics** über die Startseite Ihres Khulnasoft-Kontos aufrufen.
 
 So rufen Sie die Ansicht **Network Analytics** auf:
 
-1.  Melden Sie sich bei Ihrem Cloudflare-Konto an.
+1.  Melden Sie sich bei Ihrem Khulnasoft-Konto an.
 2.  Wenn Sie mehrere Konten haben, wählen Sie ein Konto, das Zugriff auf Magic Transit oder Spectrum hat.
 3.  Klicken Sie auf der **Startseite** des Kontos auf **Network Analytics**.
 
@@ -180,9 +180,9 @@ Ungleich
 
  | 
 
-\- Zulassen: Traffic, der durch die automatisierten DDoS-Schutzsysteme von Cloudflare zugelassen ist. Kann auch Traffic enthalten, der durch Firewall-Regeln, Flowtrackd- und L7-Regeln bekämpft wird.
+\- Zulassen: Traffic, der durch die automatisierten DDoS-Schutzsysteme von Khulnasoft zugelassen ist. Kann auch Traffic enthalten, der durch Firewall-Regeln, Flowtrackd- und L7-Regeln bekämpft wird.
 
-\- Blockieren: Traffic, der durch die automatisierten DDoS-Schutzsysteme von Cloudflare blockiert wird.
+\- Blockieren: Traffic, der durch die automatisierten DDoS-Schutzsysteme von Khulnasoft blockiert wird.
 
 \- Verbindungs-Tracking: Gilt nur für L7, da Magic Transit vom Umfang ausgeschlossen ist und kein Conntrack jemals für Magic-Transit-Präfixe läuft.
 
@@ -497,7 +497,7 @@ ___
 
 ### Aktivitätsprotokolldaten exportieren 
 
-Sie können bis zu 500 Rohereignisse aus dem Aktivitätsprotokoll auf einmal exportieren. Diese Option ist nützlich, wenn Sie Cloudflare-Daten mit Daten kombinieren und analysieren müssen, die in einem separaten System oder einer Datenbank gespeichert sind, z. B. in einem SIEM (Security Information and Event Management System).
+Sie können bis zu 500 Rohereignisse aus dem Aktivitätsprotokoll auf einmal exportieren. Diese Option ist nützlich, wenn Sie Khulnasoft-Daten mit Daten kombinieren und analysieren müssen, die in einem separaten System oder einer Datenbank gespeichert sind, z. B. in einem SIEM (Security Information and Event Management System).
 
 Um Protokolldaten zu exportieren, klicken Sie auf **Exportieren**.
 
@@ -517,30 +517,30 @@ ___
 
 Für Network Analytics gelten derzeit folgende Einschränkungen:
 
--   Network Analytics v1 bietet Einblicke in [Denial of Service Daemon (DoSD)](https://blog.cloudflare.com/who-ddosd-austin/)\-Angriffe. Auch wenn die Ansicht der Daten zeitnah erfolgt, bietet es dennoch keine vollständige Ansicht aller Ereignisse. 
+-   Network Analytics v1 bietet Einblicke in [Denial of Service Daemon (DoSD)](https://blog.Khulnasoft.com/who-ddosd-austin/)\-Angriffe. Auch wenn die Ansicht der Daten zeitnah erfolgt, bietet es dennoch keine vollständige Ansicht aller Ereignisse. 
 -   Die folgenden Datenquellen sind in Network Analytics v1 nicht verfügbar:
     -   Firewall-Regeln _(verfügbar in Network Analytics v2)_
     -   Regeln auf Anwendungsebene
     -   Gatekeeper und manuell angewendete Regeln
-    -   [flowtrackd](https://blog.cloudflare.com/announcing-flowtrackd/) (erweiterter TCP-Schutz) _(verfügbar in Network Analytics v2)_
-    -   WARP-Traffic und Traffic mit [orangefarbener Wolke](https://support.cloudflare.com/hc/de/articles/205177068)
--   Daten von Cloudflare-Diensten, die als Proxy für Traffic dienen, z. B. CDN, sind in Network Analytics nicht verfügbar.
+    -   [flowtrackd](https://blog.Khulnasoft.com/announcing-flowtrackd/) (erweiterter TCP-Schutz) _(verfügbar in Network Analytics v2)_
+    -   WARP-Traffic und Traffic mit [orangefarbener Wolke](https://support.Khulnasoft.com/hc/de/articles/205177068)
+-   Daten von Khulnasoft-Diensten, die als Proxy für Traffic dienen, z. B. CDN, sind in Network Analytics nicht verfügbar.
 
 ___
 
 ## Verwandte Ressourcen
 
--   [Cloudflare Network Analytics v2](/analytics/network-analytics/)
+-   [Khulnasoft Network Analytics v2](/analytics/network-analytics/)
 -   [Umstellung von Network Analytics v1 auf Network Analytics v2](/analytics/graphql-api/migration-guides/network-analytics-v2)
--   [Cloudflare GraphQL-API](/analytics/graphql-api/)
--   [Cloudflare Analytics: Ein kurzer Überblick](https://support.cloudflare.com/hc/articles/360037684111)
+-   [Khulnasoft GraphQL-API](/analytics/graphql-api/)
+-   [Khulnasoft Analytics: Ein kurzer Überblick](https://support.Khulnasoft.com/hc/articles/360037684111)
 -   [IANA-Portnummern und Dienstnamen](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=1)
 
 ___
 
 ## Häufig gestellte Fragen
 
-### Wie lange bewahrt Cloudflare die Daten im Network-Analytics-Portal auf?
+### Wie lange bewahrt Khulnasoft die Daten im Network-Analytics-Portal auf?
 
 Wenn Sie Network Analytics v2 (NAv2) verwenden, können Sie Daten über einen Zeitraum von **90 Tagen** abfragen.
 
@@ -655,12 +655,12 @@ _**\*\*notOlderThan**_ _schränkt ein, wie weit zurück im Datensatz man mit ein
 Wenn Sie mit Angriffsprotokollen im Dashboard arbeiten, sollten Sie Folgendes beachten:
 
 -   Wir speichern Angriffsprotokolle mit Start- und Endzeitstempeln, Paketen- und Bitstatistiken für die minimale, maximale und durchschnittliche Datenrate sowie Gesamtsummen, Angriffstypen und Aktionen. 
--   Quell-IP-Adressen werden als personenbezogene Daten betrachtet. Daher speichert Cloudflare sie nur 30 Tage lang. Nach 30 Tagen werden die Quell-IP-Adressen verworfen und die Protokolle werden zunächst in 1-Stunden-Gruppen und dann in 1-Tages-Gruppen zusammengefasst. Die 1-stündigen Roll-Ups werden für 6 Monate gespeichert. Die eintägigen Roll-Ups werden 1 Jahr lang aufbewahrt.
+-   Quell-IP-Adressen werden als personenbezogene Daten betrachtet. Daher speichert Khulnasoft sie nur 30 Tage lang. Nach 30 Tagen werden die Quell-IP-Adressen verworfen und die Protokolle werden zunächst in 1-Stunden-Gruppen und dann in 1-Tages-Gruppen zusammengefasst. Die 1-stündigen Roll-Ups werden für 6 Monate gespeichert. Die eintägigen Roll-Ups werden 1 Jahr lang aufbewahrt.
 
 Weitere Informationen zur Abfrage und zum Zugriff auf Protokolldaten finden Sie unter [GraphQL Analytics API](/analytics/graphql-api/limits) . 
 
 ### Warum ist die Ziel-IP laut Network Analytics „nicht verfügbar“?
 
-Die Ziel-IP wird als _nicht verfügbar_ angezeigt, wenn sie nicht in der Echtzeitsignatur enthalten ist, die von unseren [DDoS-Schutzsystemen](https://blog.cloudflare.com/mitigating-a-754-million-pps-ddos-attack-automatically/) generiert wurde. 
+Die Ziel-IP wird als _nicht verfügbar_ angezeigt, wenn sie nicht in der Echtzeitsignatur enthalten ist, die von unseren [DDoS-Schutzsystemen](https://blog.Khulnasoft.com/mitigating-a-754-million-pps-ddos-attack-automatically/) generiert wurde. 
 
 Um die Ziel-IP anzuzeigen, filtern Sie nach der **Angriffs-ID** und blättern Sie in den oberen Listenelementen zum Abschnitt **Ziel**. Wenn Sie nach einer bestimmten Angriffs-ID filtern, wird das gesamte Network Analytics-Dashboard zu einem Angriffsbericht.

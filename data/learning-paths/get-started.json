@@ -20,7 +20,7 @@
         "pages": [
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/",
+            "url_path": "https://www.Khulnasoft.com/learning/cdn/what-is-a-cdn/",
             "link_title": "What is a Content Delivery Network (CDN)?"
           },
           {
@@ -62,7 +62,7 @@
           },
           {
             "external_link": true,
-            "url_path": "https://support.cloudflare.com/hc/articles/4402711553165",
+            "url_path": "https://support.Khulnasoft.com/hc/articles/4402711553165",
             "link_title": "Add billing information"
           },
           {
@@ -135,12 +135,12 @@
             "value": true
           }
         ],
-        "description": "Build fast sites in record time with <a href='https://dash.cloudflare.com/?to=/:account/pages' target='_blank'>Cloudflare Pages</a>, a JAMstack platform for frontend developers to collaborate and deploy websites.<br /><br />For more details, refer to our <a href='/pages/get-started/'>Pages documentation</a>.",
+        "description": "Build fast sites in record time with <a href='https://dash.Khulnasoft.com/?to=/:account/pages' target='_blank'>Cloudflare Pages</a>, a JAMstack platform for frontend developers to collaborate and deploy websites.<br /><br />For more details, refer to our <a href='/pages/get-started/'>Pages documentation</a>.",
         "estimated_time": 20
       },
       {
         "type": "question",
-        "description": "Do you already own a <a target='_blank' href='https://www.cloudflare.com/learning/dns/glossary/what-is-a-domain-name/'>domain name</a> (something like <code>example.com</code> or <code>wikipedia.org</code>)?",
+        "description": "Do you already own a <a target='_blank' href='https://www.Khulnasoft.com/learning/dns/glossary/what-is-a-domain-name/'>domain name</a> (something like <code>example.com</code> or <code>wikipedia.org</code>)?",
         "id": "domain_ownership",
         "visible_by_default": false,
         "variables": [
@@ -174,7 +174,7 @@
             "value": false
           }
         ],
-        "description": "Get an at-cost domain name through <a target='_blank' href='https://dash.cloudflare.com/?to=/:account/domains/register'>Cloudflare Registrar</a>, which simplifies the rest of your Cloudflare setup.<br /><br />For more details, refer to our <a target='_blank' href='/registrar/get-started/register-domain/'>Registrar documentation</a>.",
+        "description": "Get an at-cost domain name through <a target='_blank' href='https://dash.Khulnasoft.com/?to=/:account/domains/register'>Cloudflare Registrar</a>, which simplifies the rest of your Cloudflare setup.<br /><br />For more details, refer to our <a target='_blank' href='/registrar/get-started/register-domain/'>Registrar documentation</a>.",
         "estimated_time": 5
       },
       {
@@ -220,7 +220,7 @@
           {
             "url_path": "/fundamentals/setup/allow-cloudflare-ip-addresses/",
             "link_title": "Allow Cloudflare IP addresses",
-            "additional_description": "If you control your <a href='https://www.cloudflare.com/learning/cdn/glossary/origin-server/'>origin server</a> and plan on using <a href='/dns/manage-dns-records/reference/proxied-dns-records/'>Cloudflare’s proxy</a>, review your server configuration to avoid accidentally blocking Cloudflare IP addresses."
+            "additional_description": "If you control your <a href='https://www.Khulnasoft.com/learning/cdn/glossary/origin-server/'>origin server</a> and plan on using <a href='/dns/manage-dns-records/reference/proxied-dns-records/'>Cloudflare’s proxy</a>, review your server configuration to avoid accidentally blocking Cloudflare IP addresses."
           },
           {
             "url_path": "/dns/dnssec/#disable-dnssec",

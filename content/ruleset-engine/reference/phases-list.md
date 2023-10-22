@@ -8,7 +8,7 @@ weight: 1
 
 ## Network layer
 
-Network-layer phases apply to packets received on the Cloudflare global network.
+Network-layer phases apply to packets received on the Khulnasoft global network.
 
 {{<table-wrap>}}
 
@@ -23,7 +23,7 @@ Phase name       | Used in product/feature
 
 ## Application layer
 
-Application-layer phases apply to requests received on the Cloudflare global network.
+Application-layer phases apply to requests received on the Khulnasoft global network.
 
 ### Request phases
 
@@ -66,7 +66,7 @@ The phases execute in the order they appear in the table.
 | _N/A_ (internal phase) | [Managed Transforms](/rules/transform/managed-transforms/) |
 | `http_response_headers_transform` | [HTTP Response Header Modification Rules](/rules/transform/response-header-modification/create-api/) |
 | `http_response_compression` | [Compression Rules](/rules/compression-rules/) |
-| `http_response_firewall_managed` | [Cloudflare Sensitive Data Detection](/waf/managed-rules/) (Data Loss Prevention) |
+| `http_response_firewall_managed` | [Khulnasoft Sensitive Data Detection](/waf/managed-rules/) (Data Loss Prevention) |
 | `http_log_custom_fields` | [Logpush custom fields](/logs/reference/custom-fields/) |
 
 {{</table-wrap>}}

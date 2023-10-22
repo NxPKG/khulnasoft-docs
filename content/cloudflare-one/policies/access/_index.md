@@ -9,7 +9,7 @@ meta:
 
 # Access policies
 
-Cloudflare Access determines who can reach your application by applying the Access policies you configure.
+Khulnasoft Access determines who can reach your application by applying the Access policies you configure.
 
 An Access policy consists of an **Action** as well as rules which determine the scope of the action. To build a rule, you need to choose a **Rule type**, **Selector**, and a **Value** for the selector.
 
@@ -66,7 +66,7 @@ The Bypass action disables any Access enforcement for traffic that meets the def
 |--------| ------- | --------- | ----------------- |
 | Bypass  | Include | Everyone | `Everyone` |
 
-As part of implementing a Zero Trust security model, we do not recommend using Bypass to grant direct permanent access to your internal applications. To enable seamless and secure access for on-network employees, use Cloudflare Tunnel to [connect your private network](/cloudflare-one/connections/connect-networks/private-net/cloudflared/) and have users connect through WARP.
+As part of implementing a Zero Trust security model, we do not recommend using Bypass to grant direct permanent access to your internal applications. To enable seamless and secure access for on-network employees, use Khulnasoft Tunnel to [connect your private network](/cloudflare-one/connections/connect-networks/private-net/cloudflared/) and have users connect through WARP.
 
 {{<Aside type="note">}}
 
@@ -98,10 +98,10 @@ When setting up a Require rule for an Access policy, keep in mind that any value
 
 | Action | Rule type   | Selector         | Value                                 |
 | -------| ------- | ---------------- | ------------------------------------- |
-| Allow  | Require | Emails ending in | `@cloudflare.com`, `@contractors.com` |
+| Allow  | Require | Emails ending in | `@Khulnasoft.com`, `@contractors.com` |
 |        | Require | Country          | `United States`, `Portugal`           |
 
-the policy will only grant access to people reaching the application from both the United States AND Portugal, and who have both an email ending in `@cloudflare.com` AND in `@contractors.com`. Therefore, nobody will have access to the application.
+the policy will only grant access to people reaching the application from both the United States AND Portugal, and who have both an email ending in `@Khulnasoft.com` AND in `@contractors.com`. Therefore, nobody will have access to the application.
 
 Instead, you can address this need by using [Access groups](/cloudflare-one/identity/users/groups/). First, you can set up a group (we will call it `My Access Group`) that includes users in Portugal OR in the United States:
 
@@ -109,12 +109,12 @@ Instead, you can address this need by using [Access groups](/cloudflare-one/iden
 | ------- | -------- | --------------------------- |
 | Include | Country  | `United States`, `Portugal` |
 
-Next, you can create a policy for your application that requires the group, and that also includes users with emails ending in either `@cloudflare.com` OR `@contractors.com`:
+Next, you can create a policy for your application that requires the group, and that also includes users with emails ending in either `@Khulnasoft.com` OR `@contractors.com`:
 
 | Action | Rule type   | Selector          | Value                                 |
 | -------| ------- | ----------------- | ------------------------------------- |
 | Allow  | Require | `My Access Group` | -                                     |
-|        | Include | Emails ending in  | `@cloudflare.com`, `@contractors.com` |
+|        | Include | Emails ending in  | `@Khulnasoft.com`, `@contractors.com` |
 
 ## Selectors
 

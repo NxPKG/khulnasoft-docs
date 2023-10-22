@@ -2,33 +2,33 @@
 title: Trace a request (beta)
 pcx_content_type: how-to
 meta:
-  title: Trace a request with Cloudflare Trace (beta)
+  title: Trace a request with Khulnasoft Trace (beta)
 ---
 
-{{<heading-pill style="beta">}} Cloudflare Trace {{</heading-pill>}}
+{{<heading-pill style="beta">}} Khulnasoft Trace {{</heading-pill>}}
 
 {{<plan type="all">}}
 
-Cloudflare Trace (beta) follows an HTTP/S request through Cloudflare’s reverse proxy to your origin. Use this tool to understand how different Cloudflare configurations interact with an HTTP/S request for one of your [proxied hostnames](/dns/manage-dns-records/reference/proxied-dns-records/).
+Khulnasoft Trace (beta) follows an HTTP/S request through Khulnasoft’s reverse proxy to your origin. Use this tool to understand how different Khulnasoft configurations interact with an HTTP/S request for one of your [proxied hostnames](/dns/manage-dns-records/reference/proxied-dns-records/).
 
-You can define specific request properties to simulate different conditions for an HTTP/S request. Inactive rules configured in Cloudflare products will not be evaluated.
+You can define specific request properties to simulate different conditions for an HTTP/S request. Inactive rules configured in Khulnasoft products will not be evaluated.
 
-Cloudflare Trace is available to users with an Administrator or Super Administrator role.
+Khulnasoft Trace is available to users with an Administrator or Super Administrator role.
 
 ---
 
 ## Use Trace in the dashboard
 
-### 1. Configure one or more Cloudflare products
+### 1. Configure one or more Khulnasoft products
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com), and select your account.
-2. Set configuration settings at the account level, or select a domain and configure settings for one or more Cloudflare products.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com), and select your account.
+2. Set configuration settings at the account level, or select a domain and configure settings for one or more Khulnasoft products.
 
 ### 2. Build a trace
 
-1. In the [Cloudflare dashboard](https://dash.cloudflare.com), go to Account Home > **Trace**.
+1. In the [Khulnasoft dashboard](https://dash.Khulnasoft.com), go to Account Home > **Trace**.
 
-2. Enter a URL to trace. The URL must include a hostname that is [proxied by Cloudflare](/dns/manage-dns-records/reference/proxied-dns-records/).
+2. Enter a URL to trace. The URL must include a hostname that is [proxied by Khulnasoft](/dns/manage-dns-records/reference/proxied-dns-records/).
 
 3. Select an HTTP method. If you select _POST_, _PUT_, or _PATCH_, you should enter a value in **Request body**.
 
@@ -41,19 +41,19 @@ Cloudflare Trace is available to users with an Administrator or Super Administra
     * [**Bot score**](/bots/concepts/bot-score/)
     * [**Threat score**](/ruleset-engine/rules-language/fields/#field-cf-threat_score)
     * **Request body** (for `POST`, `PUT`, and `PATCH` requests)
-    * **Skip challenge** (skips a Cloudflare-issued [challenge](/firewall/cf-firewall-rules/cloudflare-challenges/), if any, allowing the trace to continue)
+    * **Skip challenge** (skips a Khulnasoft-issued [challenge](/firewall/cf-firewall-rules/cloudflare-challenges/), if any, allowing the trace to continue)
 
 5. Select **Send trace**.
 
 ### 3. Assess results
 
-The **Trace results** page shows all evaluated and executed configurations from different Cloudflare products, in evaluation order. Any inactive rules are not evaluated.
+The **Trace results** page shows all evaluated and executed configurations from different Khulnasoft products, in evaluation order. Any inactive rules are not evaluated.
 
 1. Analyze the different [steps](#steps-in-trace-results) with evaluated and executed configurations for the current trace. Trace results include matches for all active rules and configurations, whether configured at the account level or for a specific domain or subdomain.
 
     To show all configurations, including the ones that did not match the request, select _All configurations_ in the **Results shown** dropdown.
 
-2. (Optional) Update your Cloudflare configuration (at the account or at the domain/subdomain level) and create a new trace to check the impact of your changes.
+2. (Optional) Update your Khulnasoft configuration (at the account or at the domain/subdomain level) and create a new trace to check the impact of your changes.
 
 ### 4. (Optional) Save the trace configuration
 
@@ -64,7 +64,7 @@ To run a trace later with the same configuration:
 
 ## Use Trace via API
 
-Use the [Request Trace](/api/operations/account-request-tracer-request-trace) operation to perform a trace using the Cloudflare API.
+Use the [Request Trace](/api/operations/account-request-tracer-request-trace) operation to perform a trace using the Khulnasoft API.
 
 ---
 
@@ -72,7 +72,7 @@ Use the [Request Trace](/api/operations/account-request-tracer-request-trace) op
 
 For matched configurations in trace results, each step corresponds to one of the following:
 
-* Execution of one or more rules of a Cloudflare product, in the context of a [phase](/ruleset-engine/about/phases/) (for products built on the [Ruleset Engine](/ruleset-engine/))
+* Execution of one or more rules of a Khulnasoft product, in the context of a [phase](/ruleset-engine/about/phases/) (for products built on the [Ruleset Engine](/ruleset-engine/))
 * [Page Rules](/support/page-rules/understanding-and-configuring-cloudflare-page-rules-page-rules-tutorial/) (execution of one or more rules)
 
 The following steps are planned for future additions:

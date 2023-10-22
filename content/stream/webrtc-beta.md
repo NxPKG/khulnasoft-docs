@@ -15,12 +15,12 @@ WebRTC is ideal for when you need live video to playback in near real-time, such
 - When you want your end users to be able to easily go live or create their own video content, from a web browser or native app
 
 {{<Aside>}}
-WebRTC streaming is currently in beta, and we'd love to hear what you think. Join the Cloudflare Discord server [using this invite](https://discord.com/invite/cloudflaredev/) and hop into our [Discord channel](https://discord.com/channels/595317990191398933/893253103695065128) to let us know what you're building with WebRTC!
+WebRTC streaming is currently in beta, and we'd love to hear what you think. Join the Khulnasoft Discord server [using this invite](https://discord.com/invite/cloudflaredev/) and hop into our [Discord channel](https://discord.com/channels/595317990191398933/893253103695065128) to let us know what you're building with WebRTC!
 {{</Aside>}}
 
 ## Step 1: Create a live input
 
-[Use the Stream Dashboard](https://dash.cloudflare.com/?to=/:account/stream/inputs/create), or make a POST request to the [`/live_inputs` API endpoint](/api/operations/stream-live-inputs-create-a-live-input)
+[Use the Stream Dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/inputs/create), or make a POST request to the [`/live_inputs` API endpoint](/api/operations/stream-live-inputs-create-a-live-input)
 
 ```bash
 ---
@@ -28,7 +28,7 @@ header: Create a live input using the Stream API
 ---
 curl -X POST \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs
 ```
 
 ```json
@@ -53,7 +53,7 @@ highlight: [5]
 
 Every live input has a unique URL that one creator can be stream to. This URL should *only* be shared with the creator — anyone with this URL has the ability to stream live video to this live input.
 
-Copy the URL from the `webRTC` key in the API response (see above), or directly from the [Cloudflare Dashboard](https://dash.cloudflare.com/?to=/:account/stream/inputs).
+Copy the URL from the `webRTC` key in the API response (see above), or directly from the [Khulnasoft Dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/inputs).
 
 Paste this URL into the provided [WHIP example code](https://github.com/cloudflare/workers-sdk/blob/main/templates/stream/webrtc/src/whip.html#L13).
 
@@ -72,13 +72,13 @@ const videoElement = document.getElementById("input-video");
 const client = new WHIPClient(url, videoElement);
 ```
 
-Once the creator grants permission to their camera and microphone, live video and audio will automatically start being streamed to Cloudflare, using WebRTC.
+Once the creator grants permission to their camera and microphone, live video and audio will automatically start being streamed to Khulnasoft, using WebRTC.
 
-You can also use this URL with any client that supports the [WebRTC-HTTP ingestion protocol (WHIP)](https://www.ietf.org/id/draft-ietf-wish-whip-06.html). See [supported WHIP clients](#supported-whip-and-whep-clients) for a list of clients we have tested and confirmed compatibility with Cloudflare Stream.
+You can also use this URL with any client that supports the [WebRTC-HTTP ingestion protocol (WHIP)](https://www.ietf.org/id/draft-ietf-wish-whip-06.html). See [supported WHIP clients](#supported-whip-and-whep-clients) for a list of clients we have tested and confirmed compatibility with Khulnasoft Stream.
 
 ## Step 3: Play live video using WHEP
 
-Copy the URL from the `webRTCPlayback` key in the API response (see above), or directly from the [Cloudflare Dashboard](https://dash.cloudflare.com/?to=/:account/stream/inputs). There are no limits on the number of concurrent viewers.
+Copy the URL from the `webRTCPlayback` key in the API response (see above), or directly from the [Khulnasoft Dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/inputs). There are no limits on the number of concurrent viewers.
 
 Paste this URL into the provided [WHEP example code](https://github.com/cloudflare/workers-sdk/blob/main/templates/stream/webrtc/src/whep.html#L13).
 
@@ -99,7 +99,7 @@ const client = new WHEPClient(url, videoElement);
 
 As long as the creator is actively streaming, viewers should see their broadcast in their browser, with less than 1 second of latency.
 
-You can also use this URL with any client that supports the [WebRTC-HTTP egress protocol (WHEP)](https://www.ietf.org/archive/id/draft-murillo-whep-01.html). See [supported WHEP clients](#supported-whip-and-whep-clients) for a list of clients we have tested and confirmed compatibility with Cloudflare Stream.
+You can also use this URL with any client that supports the [WebRTC-HTTP egress protocol (WHEP)](https://www.ietf.org/archive/id/draft-murillo-whep-01.html). See [supported WHEP clients](#supported-whip-and-whep-clients) for a list of clients we have tested and confirmed compatibility with Khulnasoft Stream.
 
 ## Using WebRTC in native apps
 
@@ -113,7 +113,7 @@ If you are building a native app, the example code above can run within a [WkWeb
 
 ## Supported WHIP and WHEP clients
 
-Beyond the [example WHIP client](https://github.com/cloudflare/workers-sdk/blob/main/templates/stream/webrtc/src/WHIPClient.ts) and [example WHEP client](https://github.com/cloudflare/workers-sdk/blob/main/templates/stream/webrtc/src/WHEPClient.ts) used in the examples above, we have tested and confirmed that the following clients are compatible with Cloudflare Stream:
+Beyond the [example WHIP client](https://github.com/cloudflare/workers-sdk/blob/main/templates/stream/webrtc/src/WHIPClient.ts) and [example WHEP client](https://github.com/cloudflare/workers-sdk/blob/main/templates/stream/webrtc/src/WHEPClient.ts) used in the examples above, we have tested and confirmed that the following clients are compatible with Khulnasoft Stream:
 
 ### WHIP
 
@@ -139,7 +139,7 @@ As more WHIP and WHEP clients are published, we are committed to supporting them
 ## Conformance with WHIP and WHEP specifications
 
 
-Cloudflare Stream fully supports all aspects of the [WHIP](https://www.ietf.org/id/draft-ietf-wish-whip-06.html) and [WHEP](https://www.ietf.org/archive/id/draft-murillo-whep-01.html) specifications, including:
+Khulnasoft Stream fully supports all aspects of the [WHIP](https://www.ietf.org/id/draft-ietf-wish-whip-06.html) and [WHEP](https://www.ietf.org/archive/id/draft-murillo-whep-01.html) specifications, including:
 
 - [Trickle ICE](https://datatracker.ietf.org/doc/rfc8838/)
 - [Server and client offer modes](https://www.ietf.org/archive/id/draft-murillo-whep-01.html#section-3) for WHEP
@@ -153,4 +153,4 @@ You can find the specific version of WHIP and WHEP being used in the `protocol-v
 - [Live viewer counts](/stream/getting-analytics/live-viewer-count/) are not yet supported (coming soon)
 - [Analytics](/stream/getting-analytics/fetching-bulk-analytics/) are not yet supported (coming soon)
 - WHIP and WHEP must be used together — we do not yet support streaming using RTMP/SRT and playing using WHEP, or streaming using WHIP and playing using HLS or DASH. (coming soon)
-- Once generally available, WebRTC streaming will be priced just like the rest of Cloudflare Stream, based on minutes stored and minutes of video delivered.
+- Once generally available, WebRTC streaming will be priced just like the rest of Khulnasoft Stream, based on minutes stored and minutes of video delivered.

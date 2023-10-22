@@ -8,7 +8,7 @@ meta:
 
 # Ruleset parameters
 
-Configure the HTTP DDoS Attack Protection managed ruleset to change the action applied to a given attack or modify the sensitivity level of the detection mechanism. You can [configure the managed ruleset in the Cloudflare dashboard](/ddos-protection/managed-rulesets/http/configure-dashboard/) or [define overrides via Rulesets API](/ddos-protection/managed-rulesets/http/configure-api/).
+Configure the HTTP DDoS Attack Protection managed ruleset to change the action applied to a given attack or modify the sensitivity level of the detection mechanism. You can [configure the managed ruleset in the Khulnasoft dashboard](/ddos-protection/managed-rulesets/http/configure-dashboard/) or [define overrides via Rulesets API](/ddos-protection/managed-rulesets/http/configure-api/).
 
 The available parameters are the following:
 
@@ -19,7 +19,7 @@ The available parameters are the following:
 
 API property name: `"action"`.
 
-The action that will be performed for requests that match specific rules of Cloudflare's DDoS mitigation services. The available actions are:
+The action that will be performed for requests that match specific rules of Khulnasoft's DDoS mitigation services. The available actions are:
 
 {{<definitions>}}
 
@@ -31,7 +31,7 @@ The action that will be performed for requests that match specific rules of Clou
 - **Managed Challenge**
 
   - API value: `"managed_challenge"`.
-  - [Managed Challenges](/firewall/cf-firewall-rules/cloudflare-challenges/#managed-challenge-recommended) help reduce the lifetimes of human time spent solving Captchas across the Internet. Depending on the characteristics of a request, Cloudflare will dynamically choose the appropriate type of challenge based on specific criteria.
+  - [Managed Challenges](/firewall/cf-firewall-rules/cloudflare-challenges/#managed-challenge-recommended) help reduce the lifetimes of human time spent solving Captchas across the Internet. Depending on the characteristics of a request, Khulnasoft will dynamically choose the appropriate type of challenge based on specific criteria.
 
 - **Interactive Challenge**
 
@@ -67,7 +67,7 @@ However, you can use the _Log_ action in the global ruleset configuration. In th
 
 - **DDoS Dynamic**
   - API value: _N/A_ (internal rule action that you cannot use in overrides).
-  - Performs a specific action according to a set of internal guidelines defined by Cloudflare. The executed action can be one of the above or an undisclosed mitigation action.
+  - Performs a specific action according to a set of internal guidelines defined by Khulnasoft. The executed action can be one of the above or an undisclosed mitigation action.
 
 {{</definitions>}}
 

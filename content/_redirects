@@ -1,6 +1,6 @@
 # homepage
 /docs/ /products/ 301
-/zero-trust/ /products/?product-group=Cloudflare+One 301
+/zero-trust/ /products/?product-group=Khulnasoft+One 301
 
 # 1dot1_redirect
 /1.1.1.1/1.1.1.1-for-families/ /1.1.1.1/setup/ 301
@@ -268,7 +268,7 @@
 /support/dns/troubleshooting/cloudflare-dns-faq/ /dns/troubleshooting/faq/ 301
 /support/dns/troubleshooting/dns-troubleshooting-faq/ /dns/troubleshooting/faq/ 301
 /support/dns/troubleshooting/email-undeliverable-when-using-cloudflare/ /dns/troubleshooting/email-issues/ 301
-/support/dns/troubleshooting/error-when-adding-secondary-nameservers-nsxxxx.secondary.cloudflare.com-at-registrar/ /dns/zone-setups/zone-transfers/troubleshooting/ 301
+/support/dns/troubleshooting/error-when-adding-secondary-nameservers-nsxxxx.secondary.Khulnasoft.com-at-registrar/ /dns/zone-setups/zone-transfers/troubleshooting/ 301
 /support/dns/troubleshooting/i-cannot-add-my-domain-to-cloudflare/ /dns/zone-setups/troubleshooting/cannot-add-domain/ 301
 /support/dns/troubleshooting/my-dns-doesnt-work/ /dns/troubleshooting/dns-issues/ 301
 /support/dns/troubleshooting/why-was-my-domain-deleted-from-cloudflare/ /dns/zone-setups/troubleshooting/domain-deleted/ 301
@@ -1305,7 +1305,7 @@
 # Support
 # - BYOIP
 /support/network/troubleshooting-for-byoip/ /byoip/troubleshooting/ 301
-# - KB: https://support.cloudflare.com/hc/*/articles/5995821690637
+# - KB: https://support.Khulnasoft.com/hc/*/articles/5995821690637
 /support/firewall/managed-rules-web-application-firewall-waf/migrating-from-waf-managed-rules-to-waf-managed-rulesets/ /waf/reference/migration-guides/waf-managed-rules-migration/ 301
 /support/other-languages/deutsch/migration-von-waf-verwalteten-regeln-zu-waf/ /waf/reference/migration-guides/waf-managed-rules-migration/ 301
 /support/other-languages/español-españa/migración-de-reglas-administradas-del-waf-a-conjuntos-de-reglas-administradas-del-waf/ /waf/reference/migration-guides/waf-managed-rules-migration/ 301
@@ -1314,10 +1314,10 @@
 /support/other-languages/한국어/waf-관리형-규칙으로부터-waf-managed-rulesets로의-마이그레이션/ /waf/reference/migration-guides/waf-managed-rules-migration/ 301
 /support/other-languages/日本語/wafマネージドルールからwafマネージドルールセットに移行する/ /waf/reference/migration-guides/waf-managed-rules-migration/ 301
 /support/other-languages/简体中文/从-waf-托管规则迁移到-waf-托管规则集/ /waf/reference/migration-guides/waf-managed-rules-migration/ 301
-# - KB: https://support.cloudflare.com/hc/*/articles/115001856951
+# - KB: https://support.Khulnasoft.com/hc/*/articles/115001856951
 /support/firewall/tools/understanding-cloudflare-user-agent-blocking/ /waf/tools/user-agent-blocking/ 301
 /support/other-languages/简体中文/如何使用-cloudflare-阻止恶意用户代理/ /waf/tools/user-agent-blocking/ 301
-# - KB: https://support.cloudflare.com/hc/*/articles/115001595131
+# - KB: https://support.Khulnasoft.com/hc/*/articles/115001595131
 /support/firewall/tools/understanding-cloudflare-zone-lockdown/ /waf/tools/zone-lockdown/ 301
 /support/other-languages/简体中文/如何在-cloudflare-对一个-url-限制访问-/ /waf/tools/zone-lockdown/ 301
 
@@ -1343,7 +1343,7 @@
 /distributed-web/* /web3/:splat 301
 /docs-engine/* https://github.com/cloudflare/cloudflare-docs/blob/production/README.md 301
 /fundamentals/internet/* /fundamentals/reference/the-internet/ 301
-/internet/* https://www.cloudflare.com/learning/ 301
+/internet/* https://www.Khulnasoft.com/learning/ 301
 /fundamentals/get-started/basic-tasks/account-maintenance/* /fundamentals/account-and-billing/account-maintenance/:splat 301
 /fundamentals/get-started/setup/troubleshooting/* /fundamentals/setup/account-setup/add-site/ 301
 /fundamentals/get-started/basic-tasks/account-security/* /fundamentals/account-and-billing/account-security/:splat 301
@@ -1354,7 +1354,7 @@
 /fundamentals/speed/signed-exchanges/* /speed/optimization/other/signed-exchanges/:splat 301
 /fundamentals/speed/speed-test/* /speed/speed-test/:splat 301
 /http-applications/* /version-management/:splat 301
-/http3/* https://www.cloudflare.com/learning/performance/what-is-http3/ 301
+/http3/* https://www.Khulnasoft.com/learning/performance/what-is-http3/ 301
 /learning-paths/modules/cybersafe/cybersafe-account-creation/* /learning-paths/cybersafe/account-creation/:splat 301
 /learning-paths/modules/cybersafe/cybersafe-area1-onboarding/* /learning-paths/cybersafe/area1-onboarding/:splat 301
 /learning-paths/modules/cybersafe/cybersafe-concepts/* /learning-paths/cybersafe/concepts/:splat 301
@@ -1383,13 +1383,13 @@
 /rules/bulk-redirects/* /rules/url-forwarding/bulk-redirects/:splat 301
 /rules/url-forwarding/dynamic-redirects/* /rules/url-forwarding/single-redirects/:splat 301
 /ssl/ssl-tls/* /ssl/reference/:splat 301
-/support/account-management-billing/billing-cloudflare-add-on-services/* https://www.cloudflare.com/plans/ 301
+/support/account-management-billing/billing-cloudflare-add-on-services/* https://www.Khulnasoft.com/plans/ 301
 /tenant/tutorial/* /tenant/get-started/ 301
 /waf/managed-rulesets/* /waf/managed-rules/:splat 301
 /firewall/recipes/* /waf/custom-rules/use-cases/:splat 301
 /workers/wrangler-legacy/* /workers/wrangler/migration/v1-to-v2/wrangler-legacy/:splat 301
 
-# Cloudflare for SaaS
+# Khulnasoft for SaaS
 /ssl/ssl-for-saas/common-tasks/* /cloudflare-for-platforms/cloudflare-for-saas/ 301
 /ssl/ssl-for-saas/custom-certificates/* /cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/custom-certificates/ 301
 /ssl/ssl-for-saas/hostname-specific-behavior/* /cloudflare-for-platforms/cloudflare-for-saas/domain-support/:splat

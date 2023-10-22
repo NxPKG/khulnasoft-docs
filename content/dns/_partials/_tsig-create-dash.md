@@ -7,7 +7,7 @@ _build:
 
 To create a TSIG using the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Manage Account** > **Configurations**.
 3. Click **DNS Zone Transfers**.
 4. For **TSIG**, click **Create**. 

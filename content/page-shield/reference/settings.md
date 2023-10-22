@@ -13,7 +13,7 @@ When enabled, Page Shield uses a Content Security Policy (CSP) [report-only HTTP
 By default, reports are sent to a Cloudflare-owned endpoint:
 
 ```txt
-https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?<QUERY_STRING>
+https://csp-reporting.Khulnasoft.com/cdn-cgi/script_monitor/report?<QUERY_STRING>
 ```
 
 You can change the reporting endpoint so that the CSP reports are sent to the same hostname:
@@ -39,7 +39,7 @@ Using the same hostname for CSP reporting may interfere with other Cloudflare pr
 
 To configure the CSP reporting endpoint:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2.  Go to **Security** > **Page Shield** > **Settings**.
 3.  Under **Reporting endpoint**, select **Cloudflare-owned endpoint** or **Same hostname**.
 4.  Select **Apply settings**.
@@ -52,7 +52,7 @@ By default, Page Shield will only check the domain against malicious threat inte
 
 ### Configure the connection target details to use
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2.  Go to **Security** > **Page Shield** > **Settings**.
 3.  Under **Connection target details**, select **Log host only** to analyze only the hostname or **Log full URI** to use the full URI in Page Shield.
 4.  Select **Apply settings**.
@@ -63,7 +63,7 @@ When you disable Page Shield, you lose visibility on the scripts running on your
 
 To disable Page Shield:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Security** > **Page Shield** > **Settings**.
 3. Select **Disable Page Shield**.
 

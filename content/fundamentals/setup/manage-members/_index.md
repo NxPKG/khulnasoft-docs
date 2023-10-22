@@ -8,7 +8,7 @@ meta:
 
 # Account members
 
-With every Cloudflare plan, you can add multiple members to your account and assign them a variety of roles.
+With every Khulnasoft plan, you can add multiple members to your account and assign them a variety of roles.
 
 ## Resources
 

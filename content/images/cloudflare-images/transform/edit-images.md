@@ -14,6 +14,6 @@ The Edit option, available from the main Images screen, is your one-stop locatio
 
 To edit an image:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. In Account Home, select **Images**.
 3. Locate the image you want to edit, and select **Edit**.

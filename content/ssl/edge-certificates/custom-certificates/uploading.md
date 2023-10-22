@@ -40,7 +40,7 @@ Each custom certificate you upload must:
 
 To upload a custom SSL certificate in the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 
 2. Select your application.
 
@@ -89,7 +89,7 @@ EOF
 ))
 ```
 
-You can optionally add [geographic restrictions](https://blog.cloudflare.com/introducing-cloudflare-geo-key-manager/) that specify where your private key can physically be decrypted:
+You can optionally add [geographic restrictions](https://blog.Khulnasoft.com/introducing-cloudflare-geo-key-manager/) that specify where your private key can physically be decrypted:
 
 ```bash
 $ request_body=$(< <(cat <<EOF
@@ -125,7 +125,7 @@ EOF
 Use the [POST](/api/operations/custom-ssl-for-a-zone-create-ssl-configuration) endpoint to upload your certificate and key.
 
 ```bash
-$ curl -sX POST https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_certificates \
+$ curl -sX POST https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_certificates \
      -H "X-Auth-Email: {email}" -H "X-Auth-Key: {key}" \
      -H "Content-Type: application/json" -d "$request_body"
 ```
@@ -143,7 +143,7 @@ For more guidance, refer to [Create a CAA record](/ssl/edge-certificates/caa-rec
 
 ## Update an existing custom certificate
 
-Before you update an existing custom certificate, you might want to consider having active [universal](/ssl/edge-certificates/universal-ssl/) or [advanced](/ssl/edge-certificates/advanced-certificate-manager/) certificates as fallback options. Go to [**SSL/TLS** > **Edge Certificates**](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/edge-certificates) to check a list of hostnames and status of the edge certificates in your zone.
+Before you update an existing custom certificate, you might want to consider having active [universal](/ssl/edge-certificates/universal-ssl/) or [advanced](/ssl/edge-certificates/advanced-certificate-manager/) certificates as fallback options. Go to [**SSL/TLS** > **Edge Certificates**](https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls/edge-certificates) to check a list of hostnames and status of the edge certificates in your zone.
 
 If you are on an Enterprise plan and want to update a custom (modern) certificate, also consider requesting access to [Staging environment (Beta)](/ssl/edge-certificates/staging-environment/).
 
@@ -152,7 +152,7 @@ If you are on an Enterprise plan and want to update a custom (modern) certificat
 
 To update a certificate in the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select your application.
 3. Go to **SSL/TLS**.
 4. In **Edge Certificates**, locate a custom certificate.

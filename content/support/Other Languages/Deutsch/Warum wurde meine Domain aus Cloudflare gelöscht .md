@@ -1,11 +1,11 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/221327488-Warum-wurde-meine-Domain-aus-Cloudflare-gel%C3%B6scht-
-title: Warum wurde meine Domain aus Cloudflare gelöscht 
+source: https://support.Khulnasoft.com/hc/de/articles/221327488-Warum-wurde-meine-Domain-aus-Khulnasoft-gel%C3%B6scht-
+title: Warum wurde meine Domain aus Khulnasoft gelöscht 
 ---
 
-# Warum wurde meine Domain aus Cloudflare gelöscht? 
+# Warum wurde meine Domain aus Khulnasoft gelöscht? 
 
 
 
@@ -14,22 +14,22 @@ title: Warum wurde meine Domain aus Cloudflare gelöscht
 Domains werden in der Regel aus den folgenden Gründen gelöscht:
 
 -   Ein Benutzer mit Zugriff auf die Domain hat sie entfernt.
--   Die Nameserver verweisen nicht mehr auf Cloudflare. Cloudflare überwacht kontinuierlich die Domainregistrierung.
+-   Die Nameserver verweisen nicht mehr auf Khulnasoft. Khulnasoft überwacht kontinuierlich die Domainregistrierung.
 -   Die Domain wurde nicht authentifiziert (seit 60 Tagen ausstehend).
 
 ___
 
-## Schritt 1 Überprüfen Sie die Prüfprotokolle in Ihrem Cloudflare-Konto
+## Schritt 1 Überprüfen Sie die Prüfprotokolle in Ihrem Khulnasoft-Konto
 
-Die Cloudflare-**Prüfprotokolle** enthalten Informationen zum Löschen von Domains.  Überprüfen Sie [mithilfe der Prüfprotokolle](https://support.cloudflare.com/hc/en-us/articles/115002833612-How-do-I-use-Audit-Logs-) weitere Informationen zur Funktion der **Prüfprotokolle**.
+Die Khulnasoft-**Prüfprotokolle** enthalten Informationen zum Löschen von Domains.  Überprüfen Sie [mithilfe der Prüfprotokolle](https://support.Khulnasoft.com/hc/en-us/articles/115002833612-How-do-I-use-Audit-Logs-) weitere Informationen zur Funktion der **Prüfprotokolle**.
 
-1.  Melden Sie sich im Cloudflare Dashboard an.
-2.  Klicken Sie auf das entsprechende Cloudflare-Konto, in dem die gelöschte Domain vorhanden war.
+1.  Melden Sie sich im Khulnasoft Dashboard an.
+2.  Klicken Sie auf das entsprechende Khulnasoft-Konto, in dem die gelöschte Domain vorhanden war.
 3.  Klicken Sie in der zweiten Navigationsleiste von oben auf **Prüfprotokoll**.
 4.  Geben Sie für **Domain** den Domainnamen ein, der gelöscht wurde.
 5.  Klicken Sie auf eine _Delete_\-**Aktion** und stellen Sie sicher, dass bei **Ressource** _Accont_ steht.
 6.  Beachten Sie das **Datum**, die **Benutzer-IP-Adresse** und den **Benutzer**, der die Domain gelöscht hat.
-7.  Wenn die **Benutzer-IP-Adresse**_127.0.0.1_ lautet oder keine Daten enthält, wurde die Löschung automatisch von den Systemen von Cloudflare durchgeführt: Weiter zu Schritt 2 
+7.  Wenn die **Benutzer-IP-Adresse**_127.0.0.1_ lautet oder keine Daten enthält, wurde die Löschung automatisch von den Systemen von Khulnasoft durchgeführt: Weiter zu Schritt 2 
 
 {{<Aside type="note">}}
 *Löschen* ist eine **Aktion** , die das Löschen von Domains
@@ -40,33 +40,33 @@ verwendet wird. Stellen Sie daher sicher, dass die **Ressource** die
 
 ___
 
-## Schritt 2 Überprüfen Sie, ob bei der Domain-Registrierung Cloudflare-Nameserver aufgelistet sind
+## Schritt 2 Überprüfen Sie, ob bei der Domain-Registrierung Khulnasoft-Nameserver aufgelistet sind
 
 {{<Aside type="tip">}}
-Domain-Registrierungen für Domains, die ein Cloudflare-CNAME-Setup
+Domain-Registrierungen für Domains, die ein Khulnasoft-CNAME-Setup
 verwenden, müssen nicht geprüft werden.
 {{</Aside>}}
 
 1\. Verwenden Sie entweder die mit Ihrem Betriebssystem gelieferte kommandozeilenbasierte „whois“-Anwendung oder eine Website wie [whois.icann.org](https://whois.icann.org/en) oder [www.whois.net](https://www.whois.net/).
 
 -   Wenn Sie die Nameserver-Details für Ihre Domain nicht finden können, wenden Sie sich an Ihren Domain-Registrar oder Domain-Provider, um die Domain-Registrierungsinformationen bereitzustellen.
--   Stellen Sie sicher, dass die Nameserver von Cloudflare die einzigen beiden Nameserver sind, die in den Domain-Registrierungsdetails aufgeführt sind.
+-   Stellen Sie sicher, dass die Nameserver von Khulnasoft die einzigen beiden Nameserver sind, die in den Domain-Registrierungsdetails aufgeführt sind.
 -   Stellen Sie sicher, dass die Nameserver in der Domainregistrierung richtig geschrieben sind.
 
-2\. Stellen Sie sicher, dass die Nameserver genau mit den Nameservern übereinstimmen, die im Abschnitt **Cloudflare-Nameserver** der Cloudflare-App **DNS** angegeben sind.
+2\. Stellen Sie sicher, dass die Nameserver genau mit den Nameservern übereinstimmen, die im Abschnitt **Khulnasoft-Nameserver** der Khulnasoft-App **DNS** angegeben sind.
 
 3\. Wenn Sie falsche Informationen feststellen, melden Sie sich beim Portal Ihres Domainanbieters an, um Aktualisierungen vorzunehmen, oder wenden Sie sich an Ihren Domainanbieter, um Unterstützung zu erhalten.
 
 ___
 
-## Schritt 3 Überprüfen Sie, ob die Domainauflösung Cloudflare-Nameserver verwendet
+## Schritt 3 Überprüfen Sie, ob die Domainauflösung Khulnasoft-Nameserver verwendet
 
 {{<Aside type="tip">}}
-Domain-Registrierungen für Domains, die ein Cloudflare-CNAME-Setup
+Domain-Registrierungen für Domains, die ein Khulnasoft-CNAME-Setup
 verwenden, müssen nicht geprüft werden.
 {{</Aside>}}
 
-1\. Verwenden Sie Befehlszeilentools oder Tools von Drittanbietern, um zu überprüfen, ob die Nameserver von Cloudflare konfiguriert sind:
+1\. Verwenden Sie Befehlszeilentools oder Tools von Drittanbietern, um zu überprüfen, ob die Nameserver von Khulnasoft konfiguriert sind:
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">dig NS something.anotherdomain.com</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">dig +trace NS something.anotherdomain.com</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">dig NS something.anotherdomain.com @8.8.8.8</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
@@ -82,9 +82,9 @@ Die Option @8.8.8.8 gibt Ergebnisse vom öffentlichen DNS-Resolver von Google zu
 
 Einige Online-Dienste (wie zum Beispiel [whatsmydns.net](https://www.whatsmydns.net/)) prüfen auf DNS-Auflösung weltweit.
 
--   Stellen Sie sicher, dass die beiden Nameserver von Cloudflare die einzigen Nameserver sind, die in den Abfrageergebnissen zurückgegeben werden.
+-   Stellen Sie sicher, dass die beiden Nameserver von Khulnasoft die einzigen Nameserver sind, die in den Abfrageergebnissen zurückgegeben werden.
 -   Stellen Sie sicher, dass keine falsch geschriebenen Nameserver vorhanden sind.
--   Stellen Sie sicher, dass die Nameserver genau mit den Nameservern übereinstimmen, die im Abschnitt **Cloudflare-Nameserver** der Cloudflare-App **DNS** angegeben sind.
+-   Stellen Sie sicher, dass die Nameserver genau mit den Nameservern übereinstimmen, die im Abschnitt **Khulnasoft-Nameserver** der Khulnasoft-App **DNS** angegeben sind.
 
 2\. Wenn Sie falsche Informationen feststellen, melden Sie sich beim Portal Ihres Domainanbieters an, um Aktualisierungen vorzunehmen, oder wenden Sie sich an Ihren Domainanbieter, um Unterstützung zu erhalten.
 
@@ -92,7 +92,7 @@ Einige Online-Dienste (wie zum Beispiel [whatsmydns.net](https://www.whatsmydns.
 
 {{<Aside type="note">}}
 Einige Registrare stellen mehr als zwei Nameserver bereit. Verwenden Sie
-jedoch nur die beiden in der DNS-App Ihres Cloudflare-Kontos
+jedoch nur die beiden in der DNS-App Ihres Khulnasoft-Kontos
 bereitgestellten.
 {{</Aside>}}
 
@@ -100,10 +100,10 @@ ___
 
 ## Wiederherstellung einer gelöschten Domain
 
-Stellen Sie eine gelöschte Domain über den Link **\+ Site hinzufügen** rechts in der oberen Navigationsleiste im Cloudflare-Dashboard wieder her.Die Domain muss wie eine neue Domain hinzugefügt werden.
+Stellen Sie eine gelöschte Domain über den Link **\+ Site hinzufügen** rechts in der oberen Navigationsleiste im Khulnasoft-Dashboard wieder her.Die Domain muss wie eine neue Domain hinzugefügt werden.
 
 {{<Aside type="warning">}}
-Der Cloudflare-Support kann DNS oder Einstellungen für gelöschte Domains
+Der Khulnasoft-Support kann DNS oder Einstellungen für gelöschte Domains
 nicht wiederherstellen.
 {{</Aside>}}
 
@@ -111,6 +111,6 @@ ___
 
 ## Verwandte Ressourcen
 
--   [Sekundäre Nameserver](https://support.cloudflare.com/hc/en-us/articles/360001356152-How-do-I-setup-and-manage-Secondary-DNS-) (Enterprise-Feature)
+-   [Sekundäre Nameserver](https://support.Khulnasoft.com/hc/en-us/articles/360001356152-How-do-I-setup-and-manage-Secondary-DNS-) (Enterprise-Feature)
 -   [CNAME-Setup](/dns/zone-setups/partial-setup) (Business- und Enterprise-Feature)
--   [So ändern Sie Nameserver auf Cloudflare](/dns/zone-setups/full-setup/setup)
+-   [So ändern Sie Nameserver auf Khulnasoft](/dns/zone-setups/full-setup/setup)

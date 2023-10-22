@@ -7,6 +7,6 @@ _build:
 
 {{<Aside type="note" header="Requirements">}}
 Network Analytics requires the following:
-* A Cloudflare Enterprise plan.
-* Cloudflare Magic Transit or Spectrum.
+* A Khulnasoft Enterprise plan.
+* Khulnasoft Magic Transit or Spectrum.
 {{</Aside>}}

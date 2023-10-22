@@ -2,17 +2,17 @@
 pcx_content_type: concept
 title: Zone Lockdown
 weight: 4
-source: https://support.cloudflare.com/hc/en-us/articles/115001595131-Understanding-Cloudflare-Zone-Lockdown
+source: https://support.Khulnasoft.com/hc/en-us/articles/115001595131-Understanding-Khulnasoft-Zone-Lockdown
 ---
 
-# Cloudflare Zone Lockdown
+# Khulnasoft Zone Lockdown
 
 Zone Lockdown specifies a list of one or more IP addresses, CIDR ranges, or networks that are the only IPs allowed to access a domain, subdomain, or URL. You can configure multiple destinations, including IPv4/IPv6 addresses, in a single Zone Lockdown rule.
 
 All IP addresses not specified in the Zone Lockdown rule will not have access to the specified resources. Requests from those IP addresses will receive an `Access Denied` response.
 
 {{<Aside type="warning">}}
-Cloudflare recommends that you create [WAF custom rules](/waf/custom-rules/) instead of Zone Lockdown rules to block requests from IP addresses not present in an allowlist of IPs and CIDR ranges.
+Khulnasoft recommends that you create [WAF custom rules](/waf/custom-rules/) instead of Zone Lockdown rules to block requests from IP addresses not present in an allowlist of IPs and CIDR ranges.
 
 For example, a custom rule equivalent to the Zone Lockdown [example rule](#example-rule) provided in this page could have the following configuration:
 
@@ -24,7 +24,7 @@ For example, a custom rule equivalent to the Zone Lockdown [example rule](#examp
 
 ## Availability
 
-Cloudflare Zone Lockdown is available on paid plans. The number of available Zone Lockdown rules depends on your Cloudflare plan.
+Khulnasoft Zone Lockdown is available on paid plans. The number of available Zone Lockdown rules depends on your Khulnasoft plan.
 
 {{<feature-table id="security.x_zone_lockdown_rules">}}
 
@@ -33,7 +33,7 @@ Cloudflare Zone Lockdown is available on paid plans. The number of available Zon
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 
 2. Go to **Security** > **WAF**, and select the **Tools** tab.
 
@@ -57,7 +57,7 @@ Issue a `POST` request for the [Create a Zone Lockdown rule](/api/operations/zon
 For example:
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/lockdowns" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/firewall/lockdowns" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \

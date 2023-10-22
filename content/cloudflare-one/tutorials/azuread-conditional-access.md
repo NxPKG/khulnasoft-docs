@@ -2,10 +2,10 @@
 updated: 2023-01-10
 category: 🔐 Access
 pcx_content_type: tutorial
-title: Use Azure AD Conditional Access policies in Cloudflare Access
+title: Use Azure AD Conditional Access policies in Khulnasoft Access
 ---
 
-# Use Azure AD Conditional Access policies in Cloudflare Access
+# Use Azure AD Conditional Access policies in Khulnasoft Access
 
 With Azure Active Directory (AD)'s [Conditional Access](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/overview), administrators can enforce policies on applications and users directly in Azure AD. Conditional Access has a set of checks that are specialized to Windows and are often preferred by organizations with Windows power users.
 
@@ -43,9 +43,9 @@ We suggest naming the IdP integration after the target application, for example 
 
 ## 3. Create an Access application
 
-To enforce your Conditional Access policies on a Cloudflare Access application:
+To enforce your Conditional Access policies on a Khulnasoft Access application:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Create a new [self-hosted application](/cloudflare-one/applications/configure-apps/self-hosted-apps/).
 

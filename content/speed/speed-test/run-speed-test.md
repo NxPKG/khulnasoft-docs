@@ -11,7 +11,7 @@ weight: 2
 
 ## Run Synthetic test
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 
 2. Go to **Speed** > **Observatory**.
 

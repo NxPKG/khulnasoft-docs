@@ -5,17 +5,17 @@ _build:
   list: never
 ---
 
-1. Add Cloudflare's package signing key:
+1. Add Khulnasoft's package signing key:
 
 ```sh
 $ sudo mkdir -p --mode=0755 /usr/share/keyrings
-$ curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+$ curl -fsSL https://pkg.Khulnasoft.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
 ```
 
-2. Add Cloudflare's apt repo to your apt repositories:
+2. Add Khulnasoft's apt repo to your apt repositories:
 
 ```sh
-$ echo "deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
+$ echo "deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.Khulnasoft.com/cloudflared $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
 ```
 
 3. Update repositories and install cloudflared:

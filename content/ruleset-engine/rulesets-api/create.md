@@ -60,7 +60,7 @@ The following parameters are required:
       <td><code>phase</code></td>
       <td>The name of the <a href="/ruleset-engine/about/phases/">phase</a> where the ruleset will be created.</td>
       <td>String</td>
-      <td>Check the specific Cloudflare product documentation for more information on the phases where you can create rulesets for that product.</td>
+      <td>Check the specific Khulnasoft product documentation for more information on the phases where you can create rulesets for that product.</td>
     </tr>
   </tbody>
 </table>
@@ -74,7 +74,7 @@ The following example request creates a custom ruleset in the `http_request_fire
 {{<details header="Request" open="true">}}
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -129,14 +129,14 @@ The following example request creates a zone-level phase entry point ruleset at 
 
 {{<Aside type="note">}}
 
-You do not have to use this method to create a phase entry point ruleset — Cloudflare automatically creates the entry point ruleset when you add a rule to it, if it does not exist. Refer to [Add rules to phase entry point rulesets](/ruleset-engine/basic-operations/add-rule-phase-rulesets/) for more information.
+You do not have to use this method to create a phase entry point ruleset — Khulnasoft automatically creates the entry point ruleset when you add a rule to it, if it does not exist. Refer to [Add rules to phase entry point rulesets](/ruleset-engine/basic-operations/add-rule-phase-rulesets/) for more information.
 
 {{</Aside>}}
 
 {{<details header="Request" open="true">}}
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

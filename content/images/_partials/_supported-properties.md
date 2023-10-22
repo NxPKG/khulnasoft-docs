@@ -400,7 +400,7 @@ Controls amount of invisible metadata (EXIF data) that should be preserved. Colo
 
 {{<Aside type="note">}}
 
-Even when choosing to keep EXIF metadata, Cloudflare will modify JFIF data (potentially invalidating it) to avoid the known incompatibility between the two standards. More information can be found [here](https://en.wikipedia.org/wiki/JPEG_File_Interchange_Format#Compatibility).
+Even when choosing to keep EXIF metadata, Khulnasoft will modify JFIF data (potentially invalidating it) to avoid the known incompatibility between the two standards. More information can be found [here](https://en.wikipedia.org/wiki/JPEG_File_Interchange_Format#Compatibility).
 
 {{</Aside>}}
 
@@ -459,7 +459,7 @@ Options are:
 
 #### `onerror=redirect`
 
-{{<Aside type="note" header="Note">}}At the moment, this setting is ignored by Cloudflare Images.{{</Aside>}}
+{{<Aside type="note" header="Note">}}At the moment, this setting is ignored by Khulnasoft Images.{{</Aside>}}
 
 In case of a fatal error that prevents the image from being resized, redirects to the unresized source image URL. This may be useful in case some images require user authentication and cannot be fetched anonymously via Worker. This option should not be used if there is a chance the source image is very large. This option is ignored if the image is from another domain, but you can use it with subdomains. Example:
 
@@ -479,7 +479,7 @@ cf: {image: {onerror: "redirect"}}
 
 #### `quality`
 
-{{<Aside type="note" header="Note">}}At the moment, this setting is ignored by Cloudflare Images.{{</Aside>}}
+{{<Aside type="note" header="Note">}}At the moment, this setting is ignored by Khulnasoft Images.{{</Aside>}}
 
 Specifies quality for images in JPEG, WebP, and AVIF formats. The quality is in a 1-100 scale, but useful values are between `50` (low quality, small file size) and `90` (high quality, large file size). `85` is the default. When using the PNG format, an explicit quality setting allows use of PNG8 (palette) variant of the format. Example:
 
@@ -542,7 +542,7 @@ cf: {image: {sharpen: 2}}
 
 #### `trim`
 
-Specifies a number of pixels to cut off on each side. Allows removal of borders or cutting out a specific fragment of an image. Trimming is performed before resizing or rotation. Takes `dpr` into account. For Image Resizing and Cloudflare Images, use as four numbers in pixels separated by a semicolon, in the form of `top;right;bottom;left` or via separate values `trim.width`,`trim.height`, `trim.left`,`trim.top`. For the Workers integration, specify an object with properties: `{top, right, bottom, left, width, height}`. Example:
+Specifies a number of pixels to cut off on each side. Allows removal of borders or cutting out a specific fragment of an image. Trimming is performed before resizing or rotation. Takes `dpr` into account. For Image Resizing and Khulnasoft Images, use as four numbers in pixels separated by a semicolon, in the form of `top;right;bottom;left` or via separate values `trim.width`,`trim.height`, `trim.left`,`trim.top`. For the Workers integration, specify an object with properties: `{top, right, bottom, left, width, height}`. Example:
 
 ```js
 ---

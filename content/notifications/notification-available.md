@@ -35,7 +35,7 @@ Purchase of Access.
 
 **What should you do if you receive one?**
 
-Refresh your service token in the [Teams dashboard](https://one.dash.cloudflare.com/) under **Configuration** > **Service Auth**.
+Refresh your service token in the [Teams dashboard](https://one.dash.Khulnasoft.com/) under **Configuration** > **Service Auth**.
 
 {{</details>}}
 
@@ -428,7 +428,7 @@ Enterprise plans.
 
 **What should you do if you receive one?**
 
-In the email for the notification, you can find the destination name for the failing Logpush job. With this destination name, you should be able to figure out which zone this relates to. There can be multiple reasons why a job fails, but it is best to test that the destination endpoint is healthy, and that necessary credentials are still working. You can also check that the destination has allowlisted [Cloudflare IPs](https://www.cloudflare.com/ips/).
+In the email for the notification, you can find the destination name for the failing Logpush job. With this destination name, you should be able to figure out which zone this relates to. There can be multiple reasons why a job fails, but it is best to test that the destination endpoint is healthy, and that necessary credentials are still working. You can also check that the destination has allowlisted [Cloudflare IPs](https://www.Khulnasoft.com/ips/).
 
 {{</details>}}
 
@@ -450,7 +450,7 @@ Purchase of Magic Transit.
 
 **What should you do if you receive one?**
 
-No action is needed. You can [go to the dashboard](https://dash.cloudflare.com/?to=/:account/magic-transit) to review the health and status of your tunnels.
+No action is needed. You can [go to the dashboard](https://dash.Khulnasoft.com/?to=/:account/magic-transit) to review the health and status of your tunnels.
 
 {{</details>}}
 
@@ -967,7 +967,7 @@ All Cloudflare plans.
 
 **What should you do if you receive one?**
 
-Take care of any abuse on your website. Then, go to the [Cloudflare dashboard](https://dash.cloudflare.com/) and request a review.
+Take care of any abuse on your website. Then, go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and request a review.
 
 {{</details>}}
 
@@ -987,7 +987,7 @@ All Cloudflare plans.
 
 **What should you do if you receive one?**
 
-Take care of any abuse on your website. Then, go to the [Cloudflare dashboard](https://dash.cloudflare.com/) and request a review.
+Take care of any abuse on your website. Then, go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and request a review.
 
 {{</details>}}
 
@@ -1120,6 +1120,6 @@ All Cloudflare plans.
 
 **What should you do if you receive one?**
 
-No action required. This notification is a weekly summary with reports from your Web Analytics account. Refer to [Notifications](https://dash.cloudflare.com/?to=/:account/notifications) in the Cloudflare dashboard to refine your notifications settings.
+No action required. This notification is a weekly summary with reports from your Web Analytics account. Refer to [Notifications](https://dash.Khulnasoft.com/?to=/:account/notifications) in the Cloudflare dashboard to refine your notifications settings.
 
 {{</details>}}

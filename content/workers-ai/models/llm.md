@@ -50,7 +50,7 @@ async function run(model, prompt) {
   ];
 
   const response = await fetch(
-    `https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/${model}`,
+    `https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/${model}`,
     {
       headers: { Authorization: "Bearer {API_TOKEN}" },
       method: "POST",
@@ -73,7 +73,7 @@ run('@cf/meta/llama-2-7b-chat-int8', 'Tell me a story').then((response) => {
 ```py
 import requests
 
-API_BASE_URL = "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/"
+API_BASE_URL = "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/ai/run/"
 headers = {"Authorization": "Bearer {API_TOKEN}"}
 
 def run(model, prompt):
@@ -94,7 +94,7 @@ print(output)
 {{<tab label="curl">}}
 
 ```sh
-$ curl https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/meta/llama-2-7b-chat-int8 \
+$ curl https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/meta/llama-2-7b-chat-int8 \
   -X POST \
   -H "Authorization: Bearer {API_TOKEN}" \
   -d '{ "messages": [{ "role": "system", "content": "You are a friendly assistant" }, { "role": "user", "content": "Why is pizza so good" }]}'

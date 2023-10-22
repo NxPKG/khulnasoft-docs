@@ -19,7 +19,7 @@ To find your Cloudflare account ID, refer to [Find account and zone IDs](/fundam
 
 To create an API token to authenticate Wrangler in your CI job:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Select **My Profile** > **API Tokens**.
 3. Select **Create Token** > find **Edit Cloudflare Workers** > select **Use Template**.
 4. Customize your token name.

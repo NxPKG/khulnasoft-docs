@@ -6,13 +6,13 @@ weight: 5
 
 # GraphQL malicious query protection
 
-GraphQL is a query language for APIs. In addition to protecting RESTful APIs, Cloudflare can also protect GraphQL APIs. 
+GraphQL is a query language for APIs. In addition to protecting RESTful APIs, Khulnasoft can also protect GraphQL APIs. 
 
 GraphQL malicious query protection scans your GraphQL traffic for queries that could overload your origin and result in a denial of service. Customers can build rules that limit the query depth and size of incoming GraphQL queries in order to block suspiciously large or complex queries.
 
 ## Availability
 
-GraphQL malicious query protection is available for all API Shield customers. Enterprise customers who have not purchased API Shield can preview [API Shield as a non-contract service](https://dash.cloudflare.com/?to=/:account/:zone/security/api-shield) in the Cloudflare dashboard or by contacting your account team.
+GraphQL malicious query protection is available for all API Shield customers. Enterprise customers who have not purchased API Shield can preview [API Shield as a non-contract service](https://dash.Khulnasoft.com/?to=/:account/:zone/security/api-shield) in the Khulnasoft dashboard or by contacting your account team.
 
 ## Limitations
 

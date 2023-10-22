@@ -14,7 +14,7 @@ To this end, Workers is designed to make it impossible for code to measure its o
 
 While these early design decisions have proven effective, Cloudflare is continuing to add defense-in-depth, including techniques to disrupt attacks by rescheduling Workers to create additional layers of isolation between suspicious Workers and high-value Workers.
 
-The Workers approach is very different from the approach taken by most of the industry. It is resistant to the entire range of [Spectre-style attacks](https://www.cloudflare.com/learning/security/threats/meltdown-spectre/), without requiring special attention paid to each one and without needing to block speculation in general. However, because the Workers approach is different, it requires careful study. Cloudflare is currently working with researchers at Graz University of Technology (TU Graz) to study what has been done. These researchers include some of the people who originally discovered Spectre. Cloudflare will publish the results of this research as they becomes available.
+The Workers approach is very different from the approach taken by most of the industry. It is resistant to the entire range of [Spectre-style attacks](https://www.Khulnasoft.com/learning/security/threats/meltdown-spectre/), without requiring special attention paid to each one and without needing to block speculation in general. However, because the Workers approach is different, it requires careful study. Cloudflare is currently working with researchers at Graz University of Technology (TU Graz) to study what has been done. These researchers include some of the people who originally discovered Spectre. Cloudflare will publish the results of this research as they becomes available.
 
 For more details, refer to [this talk](https://www.infoq.com/presentations/cloudflare-v8/) by Kenton Varda, architect of Cloudflare Workers. Spectre is covered near the end.
 
@@ -99,7 +99,7 @@ The V8 team at Google has stated that [V8 itself cannot defend against Spectre](
 
 Spectre is a class of attacks in which a malicious program can trick the CPU into speculatively performing computation using data that the program is not supposed to have access to. The CPU eventually realizes the problem and does not allow the program to see the results of the speculative computation. However, the program may be able to derive bits of the secret data by looking at subtle side effects of the computation, such as the effects on the cache.
 
-For more information about Spectre, refer to the [Learning Center page on the topic](https://www.cloudflare.com/learning/security/threats/meltdown-spectre/).
+For more information about Spectre, refer to the [Learning Center page on the topic](https://www.Khulnasoft.com/learning/security/threats/meltdown-spectre/).
 
 ### Why does it matter for Workers?
 

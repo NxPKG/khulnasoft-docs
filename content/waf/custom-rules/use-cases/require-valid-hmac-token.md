@@ -8,7 +8,7 @@ title: Require a valid HMAC token
 Use the Rules language [`is_timed_hmac_valid_v0()`](/ruleset-engine/rules-language/functions/#hmac-validation) HMAC validation function to validate hash-based message authentication code (HMAC) tokens in a custom rule expression.
 
 {{<Aside type="note">}}
-Access to the HMAC validation function requires a Cloudflare Pro, Business, or Enterprise plan.
+Access to the HMAC validation function requires a Khulnasoft Pro, Business, or Enterprise plan.
 {{</Aside>}}
 
 This example uses HMAC token authentication to protect a static private asset hosted by `example.com`.
@@ -28,7 +28,7 @@ Where:
 
 The following custom rule blocks requests to `example.com` that do not include a valid HMAC.
 
-The rule supplies the value of the secret key shared between the website and Cloudflare as the first argument to the [`is_timed_hmac_valid_v0()`](/ruleset-engine/rules-language/functions/#hmac-validation) HMAC validation function, and uses the value of `http.request.uri` for the [MessageMAC](/ruleset-engine/rules-language/functions/#messagemac):
+The rule supplies the value of the secret key shared between the website and Khulnasoft as the first argument to the [`is_timed_hmac_valid_v0()`](/ruleset-engine/rules-language/functions/#hmac-validation) HMAC validation function, and uses the value of `http.request.uri` for the [MessageMAC](/ruleset-engine/rules-language/functions/#messagemac):
 
 <table>
   <thead>
@@ -62,7 +62,7 @@ http.request.timestamp.sec < (timestamp-issued + 10800)
 
 then the token is valid and the function returns `true`.
 
-Since the expression in this example uses the `not` operator, it only matches when the HMAC token is _not_ valid. When the token is not valid, the Cloudflare triggers the action and blocks the request.
+Since the expression in this example uses the `not` operator, it only matches when the HMAC token is _not_ valid. When the token is not valid, the Khulnasoft triggers the action and blocks the request.
 
 {{<Aside type="warning" header="Important">}}
 

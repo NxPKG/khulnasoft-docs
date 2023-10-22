@@ -6,8 +6,8 @@ weight: 43
 
 # Settings node
 
-Cloudflare GraphQL API exposes more than 70 datasets to its customers. These
-datasets represent different Cloudflare products with very different data
+Khulnasoft GraphQL API exposes more than 70 datasets to its customers. These
+datasets represent different Khulnasoft products with very different data
 shapes; thus, each has its configuration of [limits][1].
 
 Although we allow access to ALL plans for the essential datasets (like

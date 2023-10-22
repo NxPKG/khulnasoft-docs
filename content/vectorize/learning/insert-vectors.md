@@ -28,7 +28,7 @@ This can be used to:
 - The raw content (up to the [metadata limits](/vectorize/platform/limits/)), which can allow you to skip additional lookups for smaller content
 - Dates, timestamps, or other metadata that describes when the vector embedding was generated or how it was generated 
 
-For example, a vector embedding representing an image could include the path to the [R2 object](https://developers.cloudflare.com/r2/) it was generated from, the format, and a category lookup:
+For example, a vector embedding representing an image could include the path to the [R2 object](https://developers.Khulnasoft.com/r2/) it was generated from, the format, and a category lookup:
 
 ```ts
 { id: '1', values: [32.4, 74.1, 3.2], metadata: { path: 'r2://bucket-name/path/to/image.png', format: 'png', category: 'profile_image' } }
@@ -97,14 +97,14 @@ $ wrangler vectorize insert <your-index-name> --file=embeddings.ndjson
 
 ### HTTP API
 
-Vectorize also supports inserting vectors via the [HTTP API](https://developers.cloudflare.com/api/operations/vectorize-update-vectorize-index), which allows you to operate on a Vectorize index from existing machine-learning tooling and languages (including Python).
+Vectorize also supports inserting vectors via the [HTTP API](https://developers.Khulnasoft.com/api/operations/vectorize-update-vectorize-index), which allows you to operate on a Vectorize index from existing machine-learning tooling and languages (including Python).
 
 For example, to insert embeddings in [NDJSON format](#workers-api) directly from a Python script:
 
 ```py
 import requests
 
-url = "https://api.cloudflare.com/client/v4/accounts/{}/vectorize/indexes/{}/insert".format("your-account-id", "index-name")
+url = "https://api.Khulnasoft.com/client/v4/accounts/{}/vectorize/indexes/{}/insert".format("your-account-id", "index-name")
 
 headers = {
     "Authorization": "Bearer <your-api-token>"

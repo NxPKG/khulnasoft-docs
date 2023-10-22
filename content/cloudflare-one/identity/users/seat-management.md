@@ -6,13 +6,13 @@ weight: 4
 
 # Manage user seats
 
-Cloudflare Zero Trust subscriptions consist of seats that active users in your account consume. Active users are added to Zero Trust through any authentication event.
+Khulnasoft Zero Trust subscriptions consist of seats that active users in your account consume. Active users are added to Zero Trust through any authentication event.
 
 The amount of user seats available in your Zero Trust account depends on the amount of users you purchase. If you want to increase the number of seats available, you will have to purchase more users. Learn more about adding and removing seats from your account in the [Zero Trust FAQ](/cloudflare-one/faq/teams-getting-started-faq/#how-do-i-change-my-subscription-plan).
 
 ## What constitutes an authentication event
 
-For Access, this is any Cloudflare Access authentication event, like a login to the [App Launcher](/cloudflare-one/applications/app-launcher/) or an application. For Gateway, this means any Cloudflare WARP authentication event, like enrolling a device to your ZT organization.
+For Access, this is any Khulnasoft Access authentication event, like a login to the [App Launcher](/cloudflare-one/applications/app-launcher/) or an application. For Gateway, this means any Khulnasoft WARP authentication event, like enrolling a device to your ZT organization.
 
 If either one of these events occurs, that user’s identity is added as an Active user to Zero Trust and consumes one seat.
 
@@ -26,11 +26,11 @@ When you revoke a user, this action will terminate active sessions, but will not
 
 ## Check number of Active Users
 
-You can check for the number of active users in [Zero Trust](https://one.dash.cloudflare.com) home.
+You can check for the number of active users in [Zero Trust](https://one.dash.Khulnasoft.com) home.
 
 ## Remove a user
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **My Team** > **Users**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **My Team** > **Users**.
 2. Select the checkbox next to an **Active** user.
 3. Select **Action** > **Remove users**.
 
@@ -38,11 +38,11 @@ The user will now show as **Inactive** and will no longer occupy a seat. If a us
 
 ## Enable seat expiration
 
-Cloudflare Zero Trust can automatically remove any user who does not log in to an Access application or who does not trigger a device enrollment event within a specified time period (between 2 months and 1 year). These users will no longer count against your seat count.
+Khulnasoft Zero Trust can automatically remove any user who does not log in to an Access application or who does not trigger a device enrollment event within a specified time period (between 2 months and 1 year). These users will no longer count against your seat count.
 
 To enable user seat expiration:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Account**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Account**.
 2. Scroll down to **User Seat Expiration** and select **Edit**.
 3. Select an inactivity time from the dropdown menu.
 4. Select **Save**.

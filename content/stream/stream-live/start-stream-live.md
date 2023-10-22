@@ -6,13 +6,13 @@ weight: 1
 
 # Start a live stream
 
-You can start a live stream using the Stream dashboard or the API. After you subscribe to Stream, you can create Live Inputs and begin sending your live video to Cloudflare Stream using RTMPS or SRT. SRT supports newer video codecs and makes using accessibility features, such as captions and multiple audio tracks, easier.
+You can start a live stream using the Stream dashboard or the API. After you subscribe to Stream, you can create Live Inputs and begin sending your live video to Khulnasoft Stream using RTMPS or SRT. SRT supports newer video codecs and makes using accessibility features, such as captions and multiple audio tracks, easier.
 
 {{<render file="_srt-supported-modes.md">}}
 
 ## Use the dashboard
 
-**Step 1:** [Create a live input via the Stream Dashboard](https://dash.cloudflare.com/?to=/:account/stream/inputs/create).
+**Step 1:** [Create a live input via the Stream Dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/inputs/create).
 
 ![Create live input field from dashboard](/images/stream/create-live-input-from-stream-dashboard.png)
 
@@ -35,7 +35,7 @@ header: Request
 curl -X POST \
 -H "Authorization: Bearer <API_TOKEN>" \
 -D '{"meta": {"name":"test stream"},"recording": { "mode": "automatic" }}' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs
 ```
 
 ```json
@@ -45,7 +45,7 @@ header: Response
 {
   "uid": "f256e6ea9341d51eea64c9454659e576",
   "rtmps": {
-    "url": "rtmps://live.cloudflare.com:443/live/",
+    "url": "rtmps://live.Khulnasoft.com:443/live/",
     "streamKey": "MTQ0MTcjM3MjI1NDE3ODIyNTI1MjYyMjE4NTI2ODI1NDcxMzUyMzcf256e6ea9351d51eea64c9454659e576"
   },
   "created": "2021-09-23T05:05:53.451415Z",
@@ -109,7 +109,7 @@ header: Request
 $ curl -X PUT \
 -H "Authorization: Bearer <API_TOKEN>" \
 -D '{"meta": {"name":"test stream 1"},"recording": { "mode": "automatic", "timeoutSeconds": 10 }}' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/:input_id
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/:input_id
 ```
 
 Delete a live input by making a `DELETE` request:
@@ -120,7 +120,7 @@ header: Request
 ---
 $ curl -X DELETE \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/:input_id
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/:input_id
 ```
 
 ## Recommendations, requirements and limitations
@@ -128,7 +128,7 @@ https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/:i
 ### Recommendations
 
 - Your creators should use an appropriate bitrate for their live streams, typically well under 12Mbps (12000Kbps). High motion, high frame rate content typically should use a higher bitrate, while low motion content like slide presentations should use a lower bitrate.
-- Your creators should use a [GOP duration](https://en.wikipedia.org/wiki/Group_of_pictures) (keyframe interval) of between 2 to 8 seconds. The default in most encoding software and hardware, including Open Broadcaster Software (OBS), is within this range. Setting a lower GOP duration will reduce latency for viewers, while also reducing encoding efficiency. Setting a higher GOP duration will improve encoding efficiency, while increasing latency for viewers. This is a tradeoff inherent to video encoding, and not a limitation of Cloudflare Stream.
+- Your creators should use a [GOP duration](https://en.wikipedia.org/wiki/Group_of_pictures) (keyframe interval) of between 2 to 8 seconds. The default in most encoding software and hardware, including Open Broadcaster Software (OBS), is within this range. Setting a lower GOP duration will reduce latency for viewers, while also reducing encoding efficiency. Setting a higher GOP duration will improve encoding efficiency, while increasing latency for viewers. This is a tradeoff inherent to video encoding, and not a limitation of Khulnasoft Stream.
 
 {{<heading-pill heading="h4" style="beta">}}Low-Latency HLS broadcast recommendations{{</heading-pill>}}
 

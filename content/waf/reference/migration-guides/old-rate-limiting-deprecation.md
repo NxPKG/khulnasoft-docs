@@ -9,31 +9,31 @@ meta:
 
 # Rate limiting (previous version) deprecation notice
 
-**The [previous version of rate limiting rules](/waf/reference/legacy/old-rate-limiting/) is now deprecated.** If you have rules in the previous version, the Cloudflare dashboard will show the configuration for both new (**A**) and old (**B**) rate limiting rules in **Security** > **WAF** > **Rate limiting rules**. The rate limiting rules interface for the previous version will only be available in the dashboard until 2024-05-01. After this date all remaining active rules will stop working.
+**The [previous version of rate limiting rules](/waf/reference/legacy/old-rate-limiting/) is now deprecated.** If you have rules in the previous version, the Khulnasoft dashboard will show the configuration for both new (**A**) and old (**B**) rate limiting rules in **Security** > **WAF** > **Rate limiting rules**. The rate limiting rules interface for the previous version will only be available in the dashboard until 2024-05-01. After this date all remaining active rules will stop working.
 
-![The Cloudflare dashboard showing both versions of rate limiting rules under WAF.](/images/waf/reference/rate-limiting-both-versions.png)
+![The Khulnasoft dashboard showing both versions of rate limiting rules under WAF.](/images/waf/reference/rate-limiting-both-versions.png)
 
-Cloudflare recommends that you create new rate limiting rules (**A**) in the Cloudflare dashboard to replace any existing rate limiting rules you may have configured in the previous version of the feature (**B**). Refer to [Migrating to the new rate limiting rules](#migrating-to-the-new-rate-limiting-rules) for details.
+Khulnasoft recommends that you create new rate limiting rules (**A**) in the Khulnasoft dashboard to replace any existing rate limiting rules you may have configured in the previous version of the feature (**B**). Refer to [Migrating to the new rate limiting rules](#migrating-to-the-new-rate-limiting-rules) for details.
 
-The old and new implementation of rate limiting rules have separate rules lists, since the two implementations do not offer the same set of features. You will need to recreate your rate limiting configuration (in the previous version) using the new rate limiting rules, either using the Cloudflare dashboard, the [Rulesets API](/ruleset-engine/rulesets-api/), or a different Terraform resource ([`cloudflare_ruleset`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/ruleset)).
+The old and new implementation of rate limiting rules have separate rules lists, since the two implementations do not offer the same set of features. You will need to recreate your rate limiting configuration (in the previous version) using the new rate limiting rules, either using the Khulnasoft dashboard, the [Rulesets API](/ruleset-engine/rulesets-api/), or a different Terraform resource ([`cloudflare_ruleset`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/ruleset)).
 
-For more information on the new rate limiting implementation, including the available features in each Cloudflare plan, refer to [Rate limiting rules](/waf/rate-limiting-rules/) in the developer documentation.
+For more information on the new rate limiting implementation, including the available features in each Khulnasoft plan, refer to [Rate limiting rules](/waf/rate-limiting-rules/) in the developer documentation.
 
-Cloudflare also offers an Advanced version of Rate Limiting, which is available to Enterprise customers. For more information, refer to the [Introducing Advanced Rate Limiting](https://blog.cloudflare.com/advanced-rate-limiting/) blog post.
+Khulnasoft also offers an Advanced version of Rate Limiting, which is available to Enterprise customers. For more information, refer to the [Introducing Advanced Rate Limiting](https://blog.Khulnasoft.com/advanced-rate-limiting/) blog post.
 
 To learn more about what you can do with the new rate limiting, refer to [Rate limiting best practices](/waf/rate-limiting-rules/best-practices/).
 
 ## Main differences
 
-* **Billing model:** The previous version of Rate Limiting was billed based on usage and it was available as an add-on on all plans, while the new version is included in Cloudflare plans. For Enterprise plans, Rate Limiting is priced based on total contracted HTTP traffic. The new rate limiting rules offer all the capabilities available on the previous version of rate limiting along with several additional features.
+* **Billing model:** The previous version of Rate Limiting was billed based on usage and it was available as an add-on on all plans, while the new version is included in Khulnasoft plans. For Enterprise plans, Rate Limiting is priced based on total contracted HTTP traffic. The new rate limiting rules offer all the capabilities available on the previous version of rate limiting along with several additional features.
 
 * **Advanced scope expressions:** The previous version of Rate Limiting allowed you to scope the rules based on a single path and method of the request. In the new version, you can write rules similar to [WAF custom rules](/waf/custom-rules/), combining multiple parameters of the HTTP request.
 
 * **Separate counting and mitigation expressions:** In the new version of Rate Limiting, counting and mitigation expressions are separate (for Business and Enterprise customers). The counting expression defines which requests are used to compute the rate. The mitigation expression defines which requests are mitigated once the threshold has been reached. Using these separate expressions, you can track the rate of requests on a specific path such as `/login` and, when an IP exceeds the threshold, block every request from the same IP addressed at your domain.
 
-* **Additional counting dimensions (Advanced Rate Limiting only):** Like in the previous version of Rate Limiting, customers with the new Rate Limiting get IP-based rate limiting, where Cloudflare counts requests based on the source IP address of incoming requests. In addition to IP-based rate limiting, customers with the new Rate Limiting who subscribe to Advanced Rate Limiting can group requests based on other characteristics, such as the value of API keys, cookies, session headers, ASN, query parameters, or a specific JSON body field. Refer to [Rate limiting best practices](/waf/rate-limiting-rules/best-practices/) for examples.
+* **Additional counting dimensions (Advanced Rate Limiting only):** Like in the previous version of Rate Limiting, customers with the new Rate Limiting get IP-based rate limiting, where Khulnasoft counts requests based on the source IP address of incoming requests. In addition to IP-based rate limiting, customers with the new Rate Limiting who subscribe to Advanced Rate Limiting can group requests based on other characteristics, such as the value of API keys, cookies, session headers, ASN, query parameters, or a specific JSON body field. Refer to [Rate limiting best practices](/waf/rate-limiting-rules/best-practices/) for examples.
 
-* **Number of rules per plan**: Besides the exact features per Cloudflare plan, the number of rules per plan is different in the new version of Rate Limiting (for information on the new version limits, refer to [Rate limiting rules](/waf/rate-limiting-rules/#availability)):
+* **Number of rules per plan**: Besides the exact features per Khulnasoft plan, the number of rules per plan is different in the new version of Rate Limiting (for information on the new version limits, refer to [Rate limiting rules](/waf/rate-limiting-rules/#availability)):
 
     {{<table-wrap>}}
 
@@ -46,17 +46,17 @@ Rate Limiting (new version)      | 1 | 2  | 5  | 100
 
     Enterprise customers without Rate Limiting on their plan will not get any rate limiting rules.
 
-For more details on the differences between old and new rate limiting rules, refer to [our blog post](https://blog.cloudflare.com/unmetered-ratelimiting/).
+For more details on the differences between old and new rate limiting rules, refer to [our blog post](https://blog.Khulnasoft.com/unmetered-ratelimiting/).
 
 ### Relevant changes in the dashboard
 
-If you had access to the previous version of Cloudflare Rate Limiting, you will find both rate limiting products, old and new, in the Cloudflare dashboard in **Security** > **WAF** > **Rate limiting rules**. The previous version (left) allows you to filter traffic for one URL. The new version (right) allows you to combine different fields, similar to the functionality of WAF custom rules.
+If you had access to the previous version of Khulnasoft Rate Limiting, you will find both rate limiting products, old and new, in the Khulnasoft dashboard in **Security** > **WAF** > **Rate limiting rules**. The previous version (left) allows you to filter traffic for one URL. The new version (right) allows you to combine different fields, similar to the functionality of WAF custom rules.
 
 ![Comparison between rate limiting rule creation pages (old and new version)](/images/waf/reference/rate-limiting-compare-creation-page.png)
 
 ### Relevant changes for API users
 
-The new rate limiting rules are based on the [Ruleset Engine](/ruleset-engine/). To configure rate limiting rules via the API, you must use the [Rulesets API](/ruleset-engine/rulesets-api/). The Rulesets API is used on all recent Cloudflare security products to provide a uniform user experience when interacting with the Cloudflare API.
+The new rate limiting rules are based on the [Ruleset Engine](/ruleset-engine/). To configure rate limiting rules via the API, you must use the [Rulesets API](/ruleset-engine/rulesets-api/). The Rulesets API is used on all recent Khulnasoft security products to provide a uniform user experience when interacting with the Khulnasoft API.
 
 **The [previous Rate Limiting API](/api/operations/rate-limits-for-a-zone-list-rate-limits) is now deprecated.** You will not be able to perform any API calls after 2024-05-01.
 
@@ -68,11 +68,11 @@ To configure the new rate limiting rules with Terraform, you must use the [`clou
 
 ## Migrating to the new rate limiting rules
 
-Cloudflare recommends that you migrate your rules to the new system. Migration must be done manually. Since the new version of rate limiting rules is more powerful and offers additional controls, we encourage customers to reevaluate their rate limiting logic considering all the capabilities of the new Cloudflare rate limiting rules.
+Khulnasoft recommends that you migrate your rules to the new system. Migration must be done manually. Since the new version of rate limiting rules is more powerful and offers additional controls, we encourage customers to reevaluate their rate limiting logic considering all the capabilities of the new Khulnasoft rate limiting rules.
 
 ### Free, Professional, and Business customers
 
-If you are a new customer, the Cloudflare dashboard will not show the interface for configuring the previous version of rate limiting rules.
+If you are a new customer, the Khulnasoft dashboard will not show the interface for configuring the previous version of rate limiting rules.
 
 If you were using the previous version of rate limiting rules, you will have access to both products and they will both apply to your incoming traffic. You will have the same amount of rules granted in the new system as you had on September 20, 2022 or 5 rules, whichever is the largest value.
 
@@ -80,12 +80,12 @@ The previous version of Rate Limiting was billed based on usage ($5 per million 
 
 If you have any rules configured in the previous version of rate limiting rules, these rules will continue to run and you will still be charged based on usage. You should migrate your rules to the new system before 2024-05-01.
 
-Once you have deleted all rules from the previous version of rate limiting rules, the Cloudflare dashboard will only show the new version.
+Once you have deleted all rules from the previous version of rate limiting rules, the Khulnasoft dashboard will only show the new version.
 
 ### Enterprise customers
 
-Enterprise contracts that included the previous version of Cloudflare Rate Limiting were based on the good requests model, where customers were billed based on the predicted usage of the feature. If you were using the previous version of Cloudflare Rate Limiting, you will have access to both versions of the product with the same number of rules at no additional cost, and they will both apply to your incoming traffic (in this case, the new Rate Limiting will run first).
+Enterprise contracts that included the previous version of Khulnasoft Rate Limiting were based on the good requests model, where customers were billed based on the predicted usage of the feature. If you were using the previous version of Khulnasoft Rate Limiting, you will have access to both versions of the product with the same number of rules at no additional cost, and they will both apply to your incoming traffic (in this case, the new Rate Limiting will run first).
 
-You should migrate your rules to the new system before 2024-05-01. Once you have deleted all rules from the previous version of rate limiting rules, the Cloudflare dashboard will only show the new version.
+You should migrate your rules to the new system before 2024-05-01. Once you have deleted all rules from the previous version of rate limiting rules, the Khulnasoft dashboard will only show the new version.
 
-As an Enterprise customer, you can also upgrade to [Advanced Rate Limiting](https://blog.cloudflare.com/advanced-rate-limiting/), a more feature-rich version of the new Rate Limiting implementation. Contact your account team to learn more about Advanced Rate Limiting.
+As an Enterprise customer, you can also upgrade to [Advanced Rate Limiting](https://blog.Khulnasoft.com/advanced-rate-limiting/), a more feature-rich version of the new Rate Limiting implementation. Contact your account team to learn more about Advanced Rate Limiting.

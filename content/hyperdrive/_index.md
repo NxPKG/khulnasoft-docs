@@ -51,9 +51,9 @@ Deploy dynamic front-end applications in record time.
 
 {{<resource header="Storage options" href="/workers/learning/storage-options/" icon="documentation-clipboard">}}Learn more about the storage and database options you can build on with Workers.{{</resource>}}
 
-{{<resource header="Developer Discord" href="https://discord.cloudflare.com" icon="logo-Discord">}}Connect with the Workers community on Discord to ask questions, show what you are building, and discuss the platform with other developers.{{</resource>}}
+{{<resource header="Developer Discord" href="https://discord.Khulnasoft.com" icon="logo-Discord">}}Connect with the Workers community on Discord to ask questions, show what you are building, and discuss the platform with other developers.{{</resource>}}
 
-{{<resource header="@CloudflareDev" href="https://twitter.com/cloudflaredev" icon="twitter">}}Follow @CloudflareDev on Twitter to learn about product announcements, and what is new in Cloudflare Developer Platform.{{</resource>}}
+{{<resource header="@KhulnasoftDev" href="https://twitter.com/cloudflaredev" icon="twitter">}}Follow @KhulnasoftDev on Twitter to learn about product announcements, and what is new in Khulnasoft Developer Platform.{{</resource>}}
  
 {{</resource-group>}}
 

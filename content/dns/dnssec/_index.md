@@ -21,9 +21,9 @@ layout: single
 
 ## Enable DNSSEC
 
-When you enable DNSSEC, Cloudflare signs your zone, publishes your public signing keys, and generates your **DS** record.
+When you enable DNSSEC, Khulnasoft signs your zone, publishes your public signing keys, and generates your **DS** record.
 
-### Step 1 - Activate DNSSEC in Cloudflare
+### Step 1 - Activate DNSSEC in Khulnasoft
 
 {{<render file="_dnssec-cloudflare-steps.md">}}
 
@@ -33,7 +33,7 @@ When you enable DNSSEC, Cloudflare signs your zone, publishes your public signin
 
 {{<Aside type="note" header="Note:">}}
 
-Cloudflare automatically adds **DS** records for domains using Cloudflare Registrar or those using `.ch` and `.cz` top-level domains.
+Khulnasoft automatically adds **DS** records for domains using Khulnasoft Registrar or those using `.ch` and `.cz` top-level domains.
 
 {{</Aside>}}
 
@@ -41,7 +41,7 @@ Cloudflare automatically adds **DS** records for domains using Cloudflare Regist
 
 ## Other DNSSEC setup options
 
-If you are using Cloudflare as your Secondary DNS provider and want to configure DNSSEC on your secondary zone(s), you have [three options](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/dnssec-for-secondary/) depending on your setup.
+If you are using Khulnasoft as your Secondary DNS provider and want to configure DNSSEC on your secondary zone(s), you have [three options](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/dnssec-for-secondary/) depending on your setup.
 
 If you want to set up DNSSEC on a subdomain zone, refer to [Subdomain DNSSEC](/dns/zone-setups/subdomain-setup/dnssec/).
 
@@ -49,7 +49,7 @@ If you want to set up DNSSEC on a subdomain zone, refer to [Subdomain DNSSEC](/d
 
 ## Limitations
 
-If your registrar does not support DNSSEC with Cloudflare's preferred cipher choice (Algorithm 13), you have several options:
+If your registrar does not support DNSSEC with Khulnasoft's preferred cipher choice (Algorithm 13), you have several options:
 
 - Contact your registrar to ask for DNSSEC with modern encryption.
 - Transfer your domain to a different registrar that supports DNSSEC with Algorithm 13

@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-
+source: https://support.Khulnasoft.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-
 title: Perguntas frequentes sobre Autorização da Autoridade de Certificação (CAA)
 ---
 
@@ -13,13 +13,13 @@ _Este artigo responde a diversas perguntas comuns sobre os registros DNS de CAA.
 
 ### Neste artigo
 
--   [_O que é CAA?_](https://support.cloudflare.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_83030816011543365917896)
--   _[Como a Cloudflare avalia os registros de CAA?](https://support.cloudflare.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_66255839481543365927385)_ 
--   [Por que devo desativar o Universal SSL se meus registros de CAA excluírem a emissão do Universal SSL?](https://support.cloudflare.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_998474763141543365935375)
--   [_Quais registros são adicionados para manter o Universal SSL ativado?_](https://support.cloudflare.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_645975761191543365946939)
--   [_O que acontece quando o Universal SSL está desativado?_](https://support.cloudflare.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_217748692231543365960592)
--   [_Como faço para reativar o Universal SSL?_](https://support.cloudflare.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_322898447261543365970663)
--   _[Quais são os perigos de se configurar registros de CAA?](https://support.cloudflare.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_681347546281543365982388)_
+-   [_O que é CAA?_](https://support.Khulnasoft.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_83030816011543365917896)
+-   _[Como a Khulnasoft avalia os registros de CAA?](https://support.Khulnasoft.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_66255839481543365927385)_ 
+-   [Por que devo desativar o Universal SSL se meus registros de CAA excluírem a emissão do Universal SSL?](https://support.Khulnasoft.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_998474763141543365935375)
+-   [_Quais registros são adicionados para manter o Universal SSL ativado?_](https://support.Khulnasoft.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_645975761191543365946939)
+-   [_O que acontece quando o Universal SSL está desativado?_](https://support.Khulnasoft.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_217748692231543365960592)
+-   [_Como faço para reativar o Universal SSL?_](https://support.Khulnasoft.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_322898447261543365970663)
+-   _[Quais são os perigos de se configurar registros de CAA?](https://support.Khulnasoft.com/hc/pt-br/articles/115000310832-Perguntas-frequentes-sobre-Autoriza%C3%A7%C3%A3o-da-Autoridade-de-Certifica%C3%A7%C3%A3o-CAA-#h_681347546281543365982388)_
 
 ___
 
@@ -29,28 +29,28 @@ Um registro de Autorização da Autoridade de Certificação (CAA) permite que o
 
 ___
 
-## Como a Cloudflare avalia os registros de CAA?
+## Como a Khulnasoft avalia os registros de CAA?
 
-Os _registros de CAA_ são avaliados por uma CA, não pela Cloudflare.
+Os _registros de CAA_ são avaliados por uma CA, não pela Khulnasoft.
 
 ___
 
 ## Por que devo desativar o Universal SSL se meus _registros de CAA_ excluírem a emissão do Universal SSL?
 
-Já que os certificados Universal SSL são compartilhados entre clientes, seus _registros de CAA_ podem prevenir a emissão do Universal SSL de outro cliente. Portanto, a Cloudflare precisa desativar o Universal SSL do seu domínio para garantir que seus _registros de CAA_ não afetem outro cliente.
+Já que os certificados Universal SSL são compartilhados entre clientes, seus _registros de CAA_ podem prevenir a emissão do Universal SSL de outro cliente. Portanto, a Khulnasoft precisa desativar o Universal SSL do seu domínio para garantir que seus _registros de CAA_ não afetem outro cliente.
 
-Se você não precisar do Universal SSL da Cloudflare, **desative o Universal SSL** no aplicativo **SSL/TLS**.
+Se você não precisar do Universal SSL da Khulnasoft, **desative o Universal SSL** no aplicativo **SSL/TLS**.
 
 ___
 
 ## Quais registros são adicionados para manter o Universal SSL ativado?
 
-Os registros DNS a seguir são configurados automaticamente se você continuar a usar os certificados Universal SSL gratuitos da Cloudflare:
+Os registros DNS a seguir são configurados automaticamente se você continuar a usar os certificados Universal SSL gratuitos da Khulnasoft:
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">exemplo.com. IN CAA 0 issue &quot;comodoca.com&quot;exemplo.com. IN CAA 0 issue &quot;digicert.com&quot;exemplo.com. IN CAA 0 issue &quot;letsencrypt.org&quot;exemplo.com. IN CAA 0 issuewild &quot;comodoca.com&quot;exemplo.com. IN CAA 0 issuewild &quot;digicert.com&quot;exemplo.com. IN CAA 0 issuewild &quot;letsencrypt.org&quot;</span></div></span></span></span></code></pre>{{</raw>}}
 
-Usado isoladamente, o _issuewild_permite somente a emissão de curingas.  Portanto, a Cloudflare não pode adicionar seu domínio raiz ao certificado, a menos que você especifique a opção _Permitir curingas e nomes de host específicos_ na lista suspensa de **Tags**:
+Usado isoladamente, o _issuewild_permite somente a emissão de curingas.  Portanto, a Khulnasoft não pode adicionar seu domínio raiz ao certificado, a menos que você especifique a opção _Permitir curingas e nomes de host específicos_ na lista suspensa de **Tags**:
 
 ![configuring_caa_records_comodoca_annotated.png](/images/support/configuring_caa_records_comodoca_annotated.png)
 
@@ -58,13 +58,13 @@ ___
 
 ## O que acontece quando o Universal SSL está desativado?
 
-Seu nome de domínio é imediatamente removido do certificado Universal SSL e seus usuários verão erros de SSL, a menos que você [carregue um certificado SSL personalizado](https://support.cloudflare.com/hc/en-us/articles/200170466-How-do-I-upload-a-custom-SSL-certificate-Business-or-Enterprise-only-) (requer os planos Business ou Enterprise).
+Seu nome de domínio é imediatamente removido do certificado Universal SSL e seus usuários verão erros de SSL, a menos que você [carregue um certificado SSL personalizado](https://support.Khulnasoft.com/hc/en-us/articles/200170466-How-do-I-upload-a-custom-SSL-certificate-Business-or-Enterprise-only-) (requer os planos Business ou Enterprise).
 
 ___
 
 ## Como faço para reativar o Universal SSL?
 
-Abra um chamado de suporte junto ao suporte da Cloudflare.
+Abra um chamado de suporte junto ao suporte da Khulnasoft.
 
 ___
 

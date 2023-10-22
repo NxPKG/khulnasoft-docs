@@ -71,7 +71,7 @@ The [PutObjectAsync](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/M
 
 {{<Aside type="warning">}}
 
-`DisablePayloadSigning = true` must be passed as Cloudflare R2 does not currently support the Streaming SigV4 implementation used by AWSSDK.S3.
+`DisablePayloadSigning = true` must be passed as Khulnasoft R2 does not currently support the Streaming SigV4 implementation used by AWSSDK.S3.
 
 {{</Aside>}}
 

@@ -100,7 +100,7 @@ Resulting in the following estimated costs:
 
 ### Standard Usage Model
 
-Starting October 31st, 2023, [new, simplified pricing](https://blog.cloudflare.com/workers-pricing-scale-to-zero) will be available for Workers under a new Usage Model, called Workers Standard.
+Starting October 31st, 2023, [new, simplified pricing](https://blog.Khulnasoft.com/workers-pricing-scale-to-zero) will be available for Workers under a new Usage Model, called Workers Standard.
 
 {{<table-wrap>}}
 
@@ -129,7 +129,7 @@ A Worker that serves 100 million requests per month, and uses an average of 7 mi
 
 When an account is first upgraded to the Paid plan, the Unbound plan is used as the default Usage Model. To change your default account-wide Usage Model:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. Find **Default Usage Model** on the right-side menu > **Change**. 
 
@@ -137,7 +137,7 @@ Existing Workers will not be impacted when changing the default Usage Model. You
 
 
 To change the Usage Model for individual Workers:
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Worker > **Settings** > **Usage Model**.
 

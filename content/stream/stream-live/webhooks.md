@@ -9,7 +9,7 @@ Stream Live supports webhooks that notify your service when an Input connects or
 
 ## Subscribe to Stream Live Webhooks
 
-1.  Log in to your Cloudflare account and click **Notifications**.
+1.  Log in to your Khulnasoft account and click **Notifications**.
 2.  From the **Notifications** page, click the **Destinations** tab.
 3.  On the **Destinations** page under **Webhooks**, click **Create**.
 4.  Enter the information for your webhook and click **Save and Test**.

@@ -20,4 +20,4 @@ The available sensitivity levels are:
 
 The default sensitivity level is _High_.
 
-In most cases, when you select the _Essentially Off_ sensitivity level the rule will not trigger for any of the selected actions, including _Log_. However, if the attack is extremely large, Cloudflare's protection systems will still trigger the rule's mitigation action to protect Cloudflare's network.
+In most cases, when you select the _Essentially Off_ sensitivity level the rule will not trigger for any of the selected actions, including _Log_. However, if the attack is extremely large, Khulnasoft's protection systems will still trigger the rule's mitigation action to protect Khulnasoft's network.

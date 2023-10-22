@@ -8,9 +8,9 @@ inputParameters: productName;;greURL;;staticRoutesURL;;ipsecURL
 
 # Traffic steering
 
-$1 uses a static configuration to route traffic through Anycast tunnels using the [Generic Routing Encapsulation (GRE)]($2) and [Internet Protocol Security (IPsec)]($4) protocols from Cloudflare’s global network to your network, and from your network to Cloudflare’s global network.
+$1 uses a static configuration to route traffic through Anycast tunnels using the [Generic Routing Encapsulation (GRE)]($2) and [Internet Protocol Security (IPsec)]($4) protocols from Khulnasoft’s global network to your network, and from your network to Khulnasoft’s global network.
 
-$1 steers traffic along tunnel routes based on priorities you define in the Cloudflare dashboard or via API.
+$1 steers traffic along tunnel routes based on priorities you define in the Khulnasoft dashboard or via API.
 
 The example in this diagram has three tunnel routes. Tunnels 1 and 2 have the top priority routes, and Tunnel 3 has a secondary priority route.
 
@@ -19,21 +19,21 @@ flowchart LR
 accTitle: Tunnels diagram
 accDescr: The example in this diagram has three tunnel routes. Tunnels 1 and 2 have top priority and Tunnel 3 is secondary.
 
-subgraph Cloudflare
+subgraph Khulnasoft
 direction LR
-B[Cloudflare <br> data center]
-C[Cloudflare <br> data center]
-D[Cloudflare <br> data center]
+B[Khulnasoft <br> data center]
+C[Khulnasoft <br> data center]
+D[Khulnasoft <br> data center]
 end
 
-A((User)) --> Cloudflare --- E[Anycast IP]
+A((User)) --> Khulnasoft --- E[Anycast IP]
 E[Anycast IP] --> F[/Tunnel 1 / <br> priority 1/] --> I{{Customer <br> data center/ <br> network 1}}
 E[Anycast IP] --> G[/Tunnel 2 / <br> priority 1/] --> J{{Customer <br> data center/ <br> network 2}}
 E[Anycast IP] --> H[/Tunnel 3 / <br> priority 2/] --> K{{Customer <br> data center/ <br> network 3}}
 ```
 <br />
 
-When there are multiple routes to the same prefix with equal priority and different next-hops, Cloudflare uses equal-cost multi-path (ECMP) routing. An example of multiple routes with equal priority would be Tunnel 1 and Tunnel 2.
+When there are multiple routes to the same prefix with equal priority and different next-hops, Khulnasoft uses equal-cost multi-path (ECMP) routing. An example of multiple routes with equal priority would be Tunnel 1 and Tunnel 2.
 
 The use of ECMP routing provides load balancing across tunnels with routes of the same priority.
 
@@ -63,15 +63,15 @@ flowchart LR
 accTitle: Tunnels diagram
 accDescr: This example has three tunnel routes, with traffic equally distributed across two paths.
 
-subgraph Cloudflare
+subgraph Khulnasoft
 direction LR
-B[Cloudflare <br> data center]
-C[Cloudflare <br> data center]
-D[Cloudflare <br> data center]
+B[Khulnasoft <br> data center]
+C[Khulnasoft <br> data center]
+D[Khulnasoft <br> data center]
 end
 
-Z("Load balancing for some <br> priority tunnels uses ECMP <br> (hashing on src IP, dst IP, <br> scr port, dst port)") --- Cloudflare
-A((User)) --> Cloudflare --- E[Anycast IP]
+Z("Load balancing for some <br> priority tunnels uses ECMP <br> (hashing on src IP, dst IP, <br> scr port, dst port)") --- Khulnasoft
+A((User)) --> Khulnasoft --- E[Anycast IP]
 E[Anycast IP] --> F[/"GRE Tunnel 1 / <br> priority 1 / <br> ~50% of flows"/] --> I{{Customer <br> data center/ <br> network 1}}
 E[Anycast IP] --> G[/"GRE Tunnel 2 / <br> priority 1 / <br> ~50% of flows"/] --> J{{Customer <br> data center/ <br> network 2}}
 E[Anycast IP] --> H[/GRE Tunnel 3 / <br> priority 2 / <br> 0% of flows/] --o K{{Customer <br> data center/ <br> network 3}}
@@ -89,15 +89,15 @@ flowchart LR
 accTitle: Tunnels diagram
 accDescr: This example has Tunnel 2 unhealthy, and all traffic prioritized to Tunnel 1.
 
-subgraph Cloudflare
+subgraph Khulnasoft
 direction LR
-B[Cloudflare <br> data center]
-C[Cloudflare <br> data center]
-D[Cloudflare <br> data center]
+B[Khulnasoft <br> data center]
+C[Khulnasoft <br> data center]
+D[Khulnasoft <br> data center]
 end
 
-Z(Tunnel health is <br> determined by <br> health checks that <br> run from all Cloudflare <br> data centers) --- Cloudflare
-A((User)) --> Cloudflare --- E[Anycast IP]
+Z(Tunnel health is <br> determined by <br> health checks that <br> run from all Khulnasoft <br> data centers) --- Khulnasoft
+A((User)) --> Khulnasoft --- E[Anycast IP]
 E[Anycast IP] --> F[/"Tunnel 1 / <br> priority 1 / <br> ~100% of flows"/]:::green --> I{{Customer <br> data center/ <br> network 1}}
 E[Anycast IP] --> G[/Tunnel 2 / <br> priority 3 / <br> unhealthy / 0% of flows/]:::red --x J{{Customer <br> data center/ <br> network 2}}
 E[Anycast IP] --> H[/Tunnel 3 / <br> priority 2 / <br> 0% of flows/] --o K{{Customer <br> data center/ <br> network 3}}
@@ -117,15 +117,15 @@ flowchart LR
 accTitle: Tunnels diagram
 accDescr: This example has Tunnel 1 and 2 unhealthy, and all traffic prioritized to Tunnel 3.
 
-subgraph Cloudflare
+subgraph Khulnasoft
 direction LR
-B[Cloudflare <br> data center]
-C[Cloudflare <br> data center]
-D[Cloudflare <br> data center]
+B[Khulnasoft <br> data center]
+C[Khulnasoft <br> data center]
+D[Khulnasoft <br> data center]
 end
 
-Z(Lower-priority tunnels <br> are used when <br> higher-priority tunnels <br> are unhealthy) --- Cloudflare
-A((User)) --> Cloudflare --- E[Anycast IP]
+Z(Lower-priority tunnels <br> are used when <br> higher-priority tunnels <br> are unhealthy) --- Khulnasoft
+A((User)) --> Khulnasoft --- E[Anycast IP]
 E[Anycast IP]  -- Intermediary <br> network issue -->  F[/Tunnel 1 / <br> priority 3 / <br> unhealthy / 0% of flows/]:::red --x I{{Customer <br> data center/ <br> network 1}}
 E[Anycast IP]  -- Intermediary <br> network issue -->  G[/Tunnel 2 / <br> priority 3 / <br> unhealthy / 0% of flows/]:::red --x J{{Customer <br> data center/ <br> network 2}}
 E[Anycast IP] -->  H[/Tunnel 3 / <br> priority 2 / <br> 100% of flows/]:::green --> K{{Customer <br> data center/ <br> network 3}}
@@ -150,6 +150,6 @@ For example, in a scenario where you want to route 70% of your traffic through I
 
 Note that because ECMP balances flows probabilistically, the use of weights is only approximate.
 
-For more on $1 tunnel weights, contact your Cloudflare customer service manager.
+For more on $1 tunnel weights, contact your Khulnasoft customer service manager.
 
 {{</Aside>}}

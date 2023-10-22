@@ -8,7 +8,7 @@ weight: 2
 
 The Shadow IT Discovery page provides visibility into the SaaS applications and private network origins your end users are visiting. This information enables you to create identity and device-driven Zero Trust policies to secure your users and data.
 
-Shadow IT Discovery is located in [Zero Trust](https://one.dash.cloudflare.com) under **Analytics** > **Access**.
+Shadow IT Discovery is located in [Zero Trust](https://one.dash.Khulnasoft.com) under **Analytics** > **Access**.
 
 ## SaaS applications
 
@@ -33,9 +33,9 @@ You can view a list of all discovered SaaS applications and mark them as approve
 | Field | Description |
 | ------------| ----------- |
 | Application | SaaS application's name and logo. |
-| Application type |[Application type](/cloudflare-one/policies/gateway/application-app-types/#app-types) assigned by Cloudflare Zero Trust. |
+| Application type |[Application type](/cloudflare-one/policies/gateway/application-app-types/#app-types) assigned by Khulnasoft Zero Trust. |
 | Status | Application's [approval status](#approval-status). |
-| Secured | Whether the application is currently secured behind Cloudflare Access. |
+| Secured | Whether the application is currently secured behind Khulnasoft Access. |
 | Users | Number of users who connected to the application over the period of time specified on the Shadow IT Discovery overview page. |
 {{</table-wrap>}}
 

@@ -6,27 +6,27 @@ weight: 1
 
 # Migrating to the new WAF Managed Rules
 
-On 2022-05-04, Cloudflare started the WAF migration from the [previous version of WAF managed rules](/waf/reference/legacy/old-waf-managed-rules/) to the new [WAF Managed Rules](/waf/managed-rules/), allowing a first set of eligible zones to migrate. Currently, all zones can migrate to WAF Managed Rules, including partner accounts.
+On 2022-05-04, Khulnasoft started the WAF migration from the [previous version of WAF managed rules](/waf/reference/legacy/old-waf-managed-rules/) to the new [WAF Managed Rules](/waf/managed-rules/), allowing a first set of eligible zones to migrate. Currently, all zones can migrate to WAF Managed Rules, including partner accounts.
 
-You can start the update process for a zone in the Cloudflare dashboard or via API. Currently, the update process is always started by you. **The migration is irreversible** — once you update to the new WAF Managed Rules, you cannot go back to using WAF managed rules.
+You can start the update process for a zone in the Khulnasoft dashboard or via API. Currently, the update process is always started by you. **The migration is irreversible** — once you update to the new WAF Managed Rules, you cannot go back to using WAF managed rules.
 
-Once the migration finishes, the **Managed rules** tab in the Cloudflare dashboard (available in **Security** > **WAF** > **Managed rules**) will display a new interface, and the WAF managed rules APIs will stop working.
+Once the migration finishes, the **Managed rules** tab in the Khulnasoft dashboard (available in **Security** > **WAF** > **Managed rules**) will display a new interface, and the WAF managed rules APIs will stop working.
 
 ## Main benefits
 
 The new version of WAF Managed Rules provides the following benefits over the previous version:
 
-- **New matching engine** – WAF Managed Rules are powered by the Ruleset Engine, which allows faster managed rule deployments and the ability to check even more traffic without scaling issues. The rules follow the same syntax used in other Cloudflare security products like WAF custom rules.
+- **New matching engine** – WAF Managed Rules are powered by the Ruleset Engine, which allows faster managed rule deployments and the ability to check even more traffic without scaling issues. The rules follow the same syntax used in other Khulnasoft security products like WAF custom rules.
 
-- **Updated Managed Rulesets** – The Cloudflare OWASP Core Ruleset, one of WAF's Managed Rulesets, is based on the latest version of the OWASP Core Ruleset (v3.x), which adds paranoia levels and improves false positives rates compared to the version used in WAF managed rules (2.x). You also have more control over the sensitivity score, with a clear indication of how much each rule contributes to the score and what was the total score of a triggered request.
+- **Updated Managed Rulesets** – The Khulnasoft OWASP Core Ruleset, one of WAF's Managed Rulesets, is based on the latest version of the OWASP Core Ruleset (v3.x), which adds paranoia levels and improves false positives rates compared to the version used in WAF managed rules (2.x). You also have more control over the sensitivity score, with a clear indication of how much each rule contributes to the score and what was the total score of a triggered request.
 
 - **Better rule browsing and configuration** – Deploy Managed Rulesets with a single click to get immediate protection. Override the behavior of entire rulesets, or customize a single rule. Apply overrides to all rules with a specific tag to adjust rules applicable to a given software or attack vector. You can deploy configurations like the following:
 
-    - Deploy the Cloudflare Managed Ruleset across all my zones.
-    - Deploy the Cloudflare OWASP Core Ruleset on all traffic that does not contain `/api/*` in the path.
+    - Deploy the Khulnasoft Managed Ruleset across all my zones.
+    - Deploy the Khulnasoft OWASP Core Ruleset on all traffic that does not contain `/api/*` in the path.
     - Disable Managed Rulesets across my account for traffic coming from my IP.
 
-For more information on the benefits of WAF Managed Rules, refer to our [blog post](https://blog.cloudflare.com/new-cloudflare-waf/).
+For more information on the benefits of WAF Managed Rules, refer to our [blog post](https://blog.Khulnasoft.com/new-cloudflare-waf/).
 
 ___
 
@@ -51,7 +51,7 @@ The update process will create an equivalent configuration for the following set
 
 The update process will not migrate specific settings at the rule or group level of the OWASP ModSecurity Core Rule Set, available in WAF managed rules.
 
-The OWASP version supporting WAF managed rules and WAF Managed Rules is quite different, and there is no direct equivalence between rules in the two versions. You will need to configure specific OWASP rules again in the Cloudflare OWASP Core Ruleset, available in WAF Managed Rules. For more information on configuring this Managed Ruleset, refer to [Cloudflare OWASP Core Ruleset](/waf/managed-rules/reference/owasp-core-ruleset/).
+The OWASP version supporting WAF managed rules and WAF Managed Rules is quite different, and there is no direct equivalence between rules in the two versions. You will need to configure specific OWASP rules again in the Khulnasoft OWASP Core Ruleset, available in WAF Managed Rules. For more information on configuring this Managed Ruleset, refer to [Khulnasoft OWASP Core Ruleset](/waf/managed-rules/reference/owasp-core-ruleset/).
 
 ### Configurations that will prevent you from updating
 
@@ -60,11 +60,11 @@ If a zone has [URI-based WAF overrides](/api/operations/waf-overrides-list-waf-o
 1. Delete any existing URI-based WAF overrides using the [Delete a WAF override](/api/operations/waf-overrides-delete-a-waf-override) operation.
 2. Follow the update process described below.
 
-### Cloudflare dashboard changes
+### Khulnasoft dashboard changes
 
-After the update process is complete, the Cloudflare dashboard will display the new WAF Managed Rules interface in **Security** > **WAF** > **Managed rules**, where you can deploy managed rulesets and adjust their configuration.
+After the update process is complete, the Khulnasoft dashboard will display the new WAF Managed Rules interface in **Security** > **WAF** > **Managed rules**, where you can deploy managed rulesets and adjust their configuration.
 
-![After migrating to WAF Managed Rules, the Cloudflare dashboard will display a new interface where you can deploy managed rulesets to your zone.](/images/waf/reference/waf-migration-dashboard-differences.png)
+![After migrating to WAF Managed Rules, the Khulnasoft dashboard will display a new interface where you can deploy managed rulesets to your zone.](/images/waf/reference/waf-migration-dashboard-differences.png)
 
 Unlike the WAF managed rules, there is no global on/off setting to enable the WAF in the new interface. Instead, you deploy each managed ruleset individually in your zone.
 
@@ -92,7 +92,7 @@ Once the migration is complete, the following Terraform resources for configurin
 - [`cloudflare_waf_group`](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/waf_group)
 - [`cloudflare_waf_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/waf_rule)
 
-These resources were only supported in the Terraform Cloudflare provider up to version 3.35. Version 4.x [no longer supports these resources](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/guides/version-4-upgrade#resources-1).
+These resources were only supported in the Terraform Khulnasoft provider up to version 3.35. Version 4.x [no longer supports these resources](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/guides/version-4-upgrade#resources-1).
 
 To manage the configuration of the new WAF Managed Rules using Terraform, you must use [`cloudflare_ruleset`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/ruleset) resources.
 
@@ -103,12 +103,12 @@ ___
 ### Phase 2 (since 2022-09-19)
 
 {{<Aside type="note" header="Update notice">}}
-On 2023-08-18, Cloudflare added support for migrating partner accounts to the new WAF Managed Rules.
+On 2023-08-18, Khulnasoft added support for migrating partner accounts to the new WAF Managed Rules.
 {{</Aside>}}
 
-In phase 2 all zones are eligible for migration. The exact migration procedure varies according to your Cloudflare plan.
+In phase 2 all zones are eligible for migration. The exact migration procedure varies according to your Khulnasoft plan.
 
-- **Pro** and **Business** customers can update to the new WAF Managed Rules in the Cloudflare dashboard or via API. Once the new version is enabled, the previous version of WAF managed rules will be automatically disabled.
+- **Pro** and **Business** customers can update to the new WAF Managed Rules in the Khulnasoft dashboard or via API. Once the new version is enabled, the previous version of WAF managed rules will be automatically disabled.
 
 - **Enterprise** customers can enable the new WAF Managed Rules configuration while keeping the previous version of WAF managed rules enabled, allowing them to check the impact of the new WAF configuration. After reviewing the behavior of the new configuration and making any required adjustments to specific managed rules, Enterprise users can then finish the migration, which will disable the previous version of WAF managed rules.
 
@@ -121,7 +121,7 @@ In phase 1 the migration became available to a subset of eligible zones, which h
 - The zone has:
 
     - WAF disabled, or
-    - WAF enabled and only the Cloudflare Managed Ruleset is enabled (the OWASP ModSecurity Core Rule Set must be disabled).
+    - WAF enabled and only the Khulnasoft Managed Ruleset is enabled (the OWASP ModSecurity Core Rule Set must be disabled).
 
 - The zone has no [firewall rules](/firewall/cf-dashboard/) or [Page Rules](/support/page-rules/understanding-and-configuring-cloudflare-page-rules-page-rules-tutorial/) bypassing, enabling, or disabling WAF managed rules:
 
@@ -135,11 +135,11 @@ ___
 
 ## Starting the migration
 
-You can start the WAF update in the Cloudflare dashboard or via API.
+You can start the WAF update in the Khulnasoft dashboard or via API.
 
 ### Using the dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and zone.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and zone.
 
 2. Go to **Security** > **WAF** > **Managed rules**.
 
@@ -157,13 +157,13 @@ You can start the WAF update in the Cloudflare dashboard or via API.
 
 5. When you are done reviewing, select **Deploy** to deploy the new WAF Managed Rules configuration.
 
-    If you are a Professional/Business customer, Cloudflare will deploy the new WAF configuration and then disable the previous WAF version. The migration process may take a couple of minutes. When the migration finishes, the dashboard will display the new WAF Managed Rules interface in **Security** > **WAF** > **Managed rules**. To check if the migration has finished, refresh the dashboard.
+    If you are a Professional/Business customer, Khulnasoft will deploy the new WAF configuration and then disable the previous WAF version. The migration process may take a couple of minutes. When the migration finishes, the dashboard will display the new WAF Managed Rules interface in **Security** > **WAF** > **Managed rules**. To check if the migration has finished, refresh the dashboard.
 
     If you are an Enterprise customer, both WAF implementations will be enabled simultaneously when you select Deploy, so that you can validate your new configuration. Refer to the steps in the next section for additional guidance.
 
 #### Validate your new WAF configuration and finish the upgrade (Enterprise customers only)
 
-If you are an Enterprise customer, after deploying your new WAF configuration both WAF implementations will be enabled simultaneously. During this stage (called validation mode), the Cloudflare dashboard will display both WAF Managed Rules, old and new, in the **Managed rules** tab. The new WAF Managed Rules will run before the previous version.
+If you are an Enterprise customer, after deploying your new WAF configuration both WAF implementations will be enabled simultaneously. During this stage (called validation mode), the Khulnasoft dashboard will display both WAF Managed Rules, old and new, in the **Managed rules** tab. The new WAF Managed Rules will run before the previous version.
 
 1. Use the current validation mode to check the behavior of the new WAF configuration in Security Events (**Security** > **Events**). For more information, refer to [Analyzing the new WAF behavior in Security Events](#analyzing-the-new-waf-behavior-in-security-events).
 
@@ -180,7 +180,7 @@ The update process can take up to an hour. During this period you may observe se
 1. Use the [Check WAF update compatibility](#api-operations) operation to determine if the zone can update to the new WAF, given its current configuration:
 
     ```bash
-    curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/waf_migration/check?phase_two=1" \
+    curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/waf_migration/check?phase_two=1" \
     --header "Authorization: Bearer <API_TOKEN>"
     ```
 
@@ -206,7 +206,7 @@ The update process can take up to an hour. During this period you may observe se
 2. To get the new WAF configuration corresponding to your current configuration, use the [Get new WAF configuration](#api-operations) operation:
 
     ```bash
-    curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/waf_migration/config?phase_two=1" \
+    curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/waf_migration/config?phase_two=1" \
     --header "Authorization: Bearer <API_TOKEN>"
     ```
 
@@ -249,14 +249,14 @@ The update process can take up to an hour. During this period you may observe se
 
 The returned configuration in the example above, which would match the existing configuration for the previous WAF version, contains:
 
-- A rule that executes the Cloudflare Managed Ruleset (ruleset with ID `efb7b8c949ac4650a09736fc376e9aee`).
+- A rule that executes the Khulnasoft Managed Ruleset (ruleset with ID `efb7b8c949ac4650a09736fc376e9aee`).
 - A single override for the rule "Apache Struts - Open Redirect - CVE:CVE-2013-2248" (rule with ID `23ee7cebe6e8443e99ecf932ab579455`) in the same ruleset, setting the action to `log` and disabling the rule.
 
 3. (Optional, for Enterprise customers only) If you are migrating an Enterprise zone to WAF Managed Rules, you can enter validation mode before finishing the migration. In this mode, both WAF implementations will be enabled. Use the [Update a zone entry point ruleset](/api/operations/updateZoneEntrypointRuleset) operation, making sure you include the `waf_migration=validation&phase_two=1` query string parameters:
 
     ```bash
     curl --request PUT \
-    "https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint?waf_migration=validation&phase_two=1" \
+    "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint?waf_migration=validation&phase_two=1" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --data '{
       "name": "default",
@@ -290,7 +290,7 @@ The returned configuration in the example above, which would match the existing 
 
     ```bash
     curl --request PUT \
-    "https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint?waf_migration=pending&phase_two=1" \
+    "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint?waf_migration=pending&phase_two=1" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --data '{
       "name": "default",
@@ -332,7 +332,7 @@ ___
 
 ### For Enterprise customers
 
-If you are an Enterprise customer, use the **validation mode** of the WAF migration process to check the behavior of the new WAF Managed Rules configuration. Cloudflare enables validation mode after you deploy the new WAF configuration. In this mode, the previous WAF version is still enabled, so that you can validate the behavior of your new configuration during the migration process. The new WAF Managed Rules will run before the previous version.
+If you are an Enterprise customer, use the **validation mode** of the WAF migration process to check the behavior of the new WAF Managed Rules configuration. Khulnasoft enables validation mode after you deploy the new WAF configuration. In this mode, the previous WAF version is still enabled, so that you can validate the behavior of your new configuration during the migration process. The new WAF Managed Rules will run before the previous version.
 
 Go to the [Activity log](/waf/security-events/paid-plans/#activity-log) in Security Events during validation mode and check the following:
 
@@ -365,15 +365,15 @@ Updating to the new WAF Managed Rules via API requires invoking the following AP
 
 {{</table-wrap>}}
 
-You must prepend the Cloudflare API base URL to the endpoints listed above to obtain the full endpoint:
+You must prepend the Khulnasoft API base URL to the endpoints listed above to obtain the full endpoint:
 
-`https://api.cloudflare.com/client/v4`
+`https://api.Khulnasoft.com/client/v4`
 
 ___
 
 ## Possible migration errors
 
-Contact Cloudflare Support to get help with the following errors:
+Contact Khulnasoft Support to get help with the following errors:
 
 - The number of firewall rules to migrate exceeds 200.
 - The length of a firewall rule expression is longer than 4 KB.
@@ -382,7 +382,7 @@ Contact Cloudflare Support to get help with the following errors:
 
 ## Additional resources
 
-### Configuring the new WAF Managed Rules using the Cloudflare API
+### Configuring the new WAF Managed Rules using the Khulnasoft API
 
 Instead of using the previous APIs for managing WAF packages, rule groups, and rules, you must now use the [Rulesets API](/ruleset-engine/rulesets-api/) to programmatically configure WAF Managed Rules.
 
@@ -424,7 +424,7 @@ The recommended steps for replacing your old WAF managed rules configuration in 
     [...]
     ```
 
-2. The previous command may return additional ruleset configurations for other Cloudflare products also based on the [Ruleset Engine](/ruleset-engine/). Since you are looking for the WAF Managed Rules configuration, keep only the Terraform resource for the `http_request_firewall_managed` phase and save it to a `.tf` configuration file. You will need the full resource name in the next step.
+2. The previous command may return additional ruleset configurations for other Khulnasoft products also based on the [Ruleset Engine](/ruleset-engine/). Since you are looking for the WAF Managed Rules configuration, keep only the Terraform resource for the `http_request_firewall_managed` phase and save it to a `.tf` configuration file. You will need the full resource name in the next step.
 
 3. Import the `cloudflare_ruleset` resource you previously identified into Terraform state using the `terraform import` command. For example:
 
@@ -503,15 +503,15 @@ You must remove WAF packages, groups, and rules from Terraform state before dele
     Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
     ```
 
-For details on importing Cloudflare resources to Terraform and using the `cf-terraforming` tool, refer to the following resources:
+For details on importing Khulnasoft resources to Terraform and using the `cf-terraforming` tool, refer to the following resources:
 
-* [Import Cloudflare resources](/terraform/advanced-topics/import-cloudflare-resources/)
+* [Import Khulnasoft resources](/terraform/advanced-topics/import-cloudflare-resources/)
 * [`cf-terraforming` GitHub repository](https://github.com/cloudflare/cf-terraforming)
 
 ___
 
 ## Final remarks
 
-The concept of paranoia level did not exist in the OWASP version (2.x) used in WAF managed rules. Based on the OWASP guide recommendations, the WAF migration process will set the paranoia level of the Cloudflare OWASP Core Ruleset to _PL2_.
+The concept of paranoia level did not exist in the OWASP version (2.x) used in WAF managed rules. Based on the OWASP guide recommendations, the WAF migration process will set the paranoia level of the Khulnasoft OWASP Core Ruleset to _PL2_.
 
 You cannot disable the new version of WAF Managed Rules using [Page Rules](/support/page-rules/understanding-and-configuring-cloudflare-page-rules-page-rules-tutorial/), since the _Web Application Firewall: Off_ setting in Page Rules only applies to the previous version of WAF managed rules. To disable the new WAF Managed Rules you must [configure WAF exceptions](/waf/managed-rules/waf-exceptions/) (also known as skip rules).

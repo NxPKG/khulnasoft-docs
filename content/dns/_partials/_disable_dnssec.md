@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-If you are onboarding an existing domain to Cloudflare, make sure DNSSEC **is disabled** at your registrar (where you purchased your domain name). Otherwise, your domain will experience connectivity errors when you change your nameservers.
+If you are onboarding an existing domain to Khulnasoft, make sure DNSSEC **is disabled** at your registrar (where you purchased your domain name). Otherwise, your domain will experience connectivity errors when you change your nameservers.
 
 {{<render file="_dnssec-providers.md">}}
 

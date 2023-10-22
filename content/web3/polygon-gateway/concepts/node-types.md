@@ -8,8 +8,8 @@ title:
 
 # Types of Polygon Nodes
 
-## Nodes at Cloudflare
+## Nodes at Khulnasoft
 
-Cloudflare's Polygon Gateway provides access to full nodes.
+Khulnasoft's Polygon Gateway provides access to full nodes.
 
 Please refer to [Ethereum node types](/web3/ethereum-gateway/concepts/node-types/) for more information.

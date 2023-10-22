@@ -9,7 +9,7 @@ It is important that you keep your contact details accurate and up-to-date. [ICA
 
 To update your registrant contacts:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select **Domain Registration** > **Manage domains**.
 3. Find **Default contact** and select **Edit**.
 4. Update the relevant information, and select **Save**.

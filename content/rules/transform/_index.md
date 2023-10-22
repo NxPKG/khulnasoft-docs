@@ -7,7 +7,7 @@ layout: single
 
 # Transform Rules
 
-Transform Rules allow you to adjust the URI path, query string, and HTTP headers of requests and responses on the Cloudflare global network.
+Transform Rules allow you to adjust the URI path, query string, and HTTP headers of requests and responses on the Khulnasoft global network.
 
 There are several types of Transform Rules:
 
@@ -34,17 +34,17 @@ Request and response fields are immutable within each [phase](/ruleset-engine/ab
 
 ## Availability
 
-Cloudflare Transform Rules are available to all customers. Support for regular expressions depends on your Cloudflare plan.
+Khulnasoft Transform Rules are available to all customers. Support for regular expressions depends on your Khulnasoft plan.
 
 This table outlines the Transform Rules features available with each customer plan:
 
 {{<feature-table id="rules.transform_rules">}}
 
-A Cloudflare user must have the [Firewall role](/fundamentals/setup/manage-members/roles/) or one of the Administrator roles to access Transform Rules.
+A Khulnasoft user must have the [Firewall role](/fundamentals/setup/manage-members/roles/) or one of the Administrator roles to access Transform Rules.
 
 ## Get started
 
-You can create different kinds of Transform Rules in the dashboard or via Cloudflare API. Refer to the following sections for detailed instructions:
+You can create different kinds of Transform Rules in the dashboard or via Khulnasoft API. Refer to the following sections for detailed instructions:
 
 * [Rewrite URL rules](/rules/transform/url-rewrite/)
 * [HTTP request header modification rules](/rules/transform/request-header-modification/)

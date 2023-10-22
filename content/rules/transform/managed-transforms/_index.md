@@ -16,12 +16,12 @@ Managed Transforms allow you to perform common adjustments to HTTP request and r
 
 For a complete list, refer to [Available Managed Transforms](/rules/transform/managed-transforms/reference/).
 
-When you enable a Managed Transform, Cloudflare internally deploys one or more Transform Rules to handle the common configuration you selected. These generated rules will not count against the maximum number of Transform Rules available in your Cloudflare plan.
+When you enable a Managed Transform, Khulnasoft internally deploys one or more Transform Rules to handle the common configuration you selected. These generated rules will not count against the maximum number of Transform Rules available in your Khulnasoft plan.
 
 Enabled Managed Transforms will apply to all inbound requests for the zone.
 
 {{<Aside type="note">}}
-The generated internal Transform Rules will not appear in the Transform Rules list in the Cloudflare dashboard.
+The generated internal Transform Rules will not appear in the Transform Rules list in the Khulnasoft dashboard.
 {{</Aside>}}
 
 ## Next steps

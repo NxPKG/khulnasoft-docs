@@ -7,7 +7,7 @@ title: Metrics and analytics
 
 R2 exposes analytics that allow you to inspect the requests and storage of the buckets in your account.
 
-The metrics displayed for a bucket in the [Cloudflare dashboard](https://dash.cloudflare.com/) are queried from Cloudflare’s [GraphQL Analytics API](/analytics/graphql-api/). You can access the metrics [programmatically](#query-via-the-graphql-api) via GraphQL or HTTP client.
+The metrics displayed for a bucket in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) are queried from Khulnasoft’s [GraphQL Analytics API](/analytics/graphql-api/). You can access the metrics [programmatically](#query-via-the-graphql-api) via GraphQL or HTTP client.
 
 ## Metrics
 
@@ -35,7 +35,7 @@ R2 currently has two datasets:
 
 | <div style="width:175px"> Field </div>        | Description |
 | ------------- | ----------- |
-| bucketName    | The bucket this storage value is for. For buckets with a jurisdiction specified, you must include the [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) followed by an underscore before the bucket name. For example: `eu_your-bucket-name` |
+| bucketName    | The bucket this storage value is for. For buckets with a jurisdiction specified, you must include the [jurisdiction](https://developers.Khulnasoft.com/r2/reference/data-location/#jurisdictional-restrictions) followed by an underscore before the bucket name. For example: `eu_your-bucket-name` |
 | payloadSize   | The size of the objects in the bucket. |
 | metadataSize  | The size of the metadata of the objects in the bucket. |
 | objectCount   | The number of objects in the bucket. |
@@ -43,21 +43,21 @@ R2 currently has two datasets:
 | datetime      | The time that this storage value represents. |
 
 
-Metrics can be queried (and are retained) for the past 31 days. These datasets require an `accountTag` filter with your Cloudflare account ID.
+Metrics can be queried (and are retained) for the past 31 days. These datasets require an `accountTag` filter with your Khulnasoft account ID.
 
 ## View via the dashboard
 
-Per-database analytics for R2 are available in the Cloudflare dashboard. To view current and historical metrics for a database:
+Per-database analytics for R2 are available in the Khulnasoft dashboard. To view current and historical metrics for a database:
 
-2. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
-3. Go to the [R2 tab](https://dash.cloudflare.com/?to=/:account/workers/r2) and select your bucket. 
+2. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
+3. Go to the [R2 tab](https://dash.Khulnasoft.com/?to=/:account/workers/r2) and select your bucket. 
 5. Select the **Metrics** tab.
 
 You can optionally select a time window to query. This defaults to the last 24 hours.
 
 ## Query via the GraphQL API
 
-You can programmatically query analytics for your R2 databases via the [GraphQL Analytics API](/analytics/graphql-api/). This API queries the same dataset as the Cloudflare dashboard, and supports GraphQL [introspection](/analytics/graphql-api/features/discovery/introspection/).
+You can programmatically query analytics for your R2 databases via the [GraphQL Analytics API](/analytics/graphql-api/). This API queries the same dataset as the Khulnasoft dashboard, and supports GraphQL [introspection](/analytics/graphql-api/features/discovery/introspection/).
 
 ## Examples
 

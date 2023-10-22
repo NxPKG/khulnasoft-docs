@@ -13,12 +13,12 @@ Potential examples include:
 - Sharing brand assets and marketing materials
 
 {{<Aside type="warning">}}
-The example rules in this page can bypass Cloudflare's security features and are generally not recommended. Use with caution.
+The example rules in this page can bypass Khulnasoft's security features and are generally not recommended. Use with caution.
 {{</Aside>}}
 
 ## Use ASN in custom rules
 
-If a customer or partner is large enough, you could set up a custom rule based on an [autonomous system number (ASN)](https://www.cloudflare.com/learning/network-layer/what-is-an-autonomous-system/).
+If a customer or partner is large enough, you could set up a custom rule based on an [autonomous system number (ASN)](https://www.Khulnasoft.com/learning/network-layer/what-is-an-autonomous-system/).
 
 ### Allow traffic by ASN
 
@@ -49,7 +49,7 @@ This example uses:
 
 {{<Aside type="warning" header="Important">}}
 
-Access to [Bot Management](/bots/plans/bm-subscription/) requires a Cloudflare Enterprise plan with Bot Management.
+Access to [Bot Management](/bots/plans/bm-subscription/) requires a Khulnasoft Enterprise plan with Bot Management.
 
 {{</Aside>}}
 

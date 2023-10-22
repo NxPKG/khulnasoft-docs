@@ -8,17 +8,17 @@ meta:
 
 # Concepts
 
-This page defines and articulates key concepts that are relevant to Cloudflare SSL/TLS and are used in this documentation. For more concepts and broader descriptions, check out the [Cloudflare Learning Center](https://www.cloudflare.com/learning/ssl/what-is-ssl/).
+This page defines and articulates key concepts that are relevant to Cloudflare SSL/TLS and are used in this documentation. For more concepts and broader descriptions, check out the [Cloudflare Learning Center](https://www.Khulnasoft.com/learning/ssl/what-is-ssl/).
 
 ## SSL/TLS certificate
 
 An SSL/TLS certificate is what enables websites and applications to establish secure connections. With SSL/TLS, a client - such as a browser - can verify the authenticity and integrity of the server it is connecting with, and use encryption to exchange information.
 
-Since [Cloudflare's global network](https://www.cloudflare.com/network/) is at the core of several products and services that Cloudflare offers, what this implies in terms of SSL/TLS is that, instead of only one certificate, there can actually be two certificates involved in a single request: an edge certificate and an origin certificate.
+Since [Cloudflare's global network](https://www.Khulnasoft.com/network/) is at the core of several products and services that Cloudflare offers, what this implies in terms of SSL/TLS is that, instead of only one certificate, there can actually be two certificates involved in a single request: an edge certificate and an origin certificate.
 
 ### Edge certificate
 
-The [edge certificates](/ssl/edge-certificates/) are the ones that Cloudflare presents to clients visiting your website or application. You can manage edge certificates through the [Cloudflare Dashboard](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/edge-certificates).
+The [edge certificates](/ssl/edge-certificates/) are the ones that Cloudflare presents to clients visiting your website or application. You can manage edge certificates through the [Cloudflare Dashboard](https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls/edge-certificates).
 
 ```mermaid
 flowchart LR
@@ -31,7 +31,7 @@ flowchart LR
 
 [Origin certificates](/ssl/origin-configuration/) guarantee the security and authentication on the other side of the network, between Cloudflare and the origin server of your website or application. Origin certificates are managed on your origin server.
 
-[SSL/TLS encryption modes](/ssl/origin-configuration/ssl-modes/) control whether and how Cloudflare will use both these ceritifcates, and you can choose between different modes on the [SSL/TLS overview page](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls).
+[SSL/TLS encryption modes](/ssl/origin-configuration/ssl-modes/) control whether and how Cloudflare will use both these ceritifcates, and you can choose between different modes on the [SSL/TLS overview page](https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls).
 
 ## Validity period
 
@@ -43,24 +43,24 @@ Different [certificate authorities (CAs)](#certificate-authority-ca) support dif
 
 A [certificate authority (CA)](/ssl/reference/certificate-authorities/) is a trusted third party that generates and gives out SSL/TLS certificates. The CA digitally signs the certificates with their own private key, allowing client devices - such as your visitor's browser - to verify that the certificate is trustworthy.
 
-As explained in the article about [what is an ssl certificate](https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/), this means that, besides not being expired, an SSL/TLS certificate should be issued by a certificate authority (CA) in order to avoid warnings or errors.
+As explained in the article about [what is an ssl certificate](https://www.Khulnasoft.com/learning/ssl/what-is-an-ssl-certificate/), this means that, besides not being expired, an SSL/TLS certificate should be issued by a certificate authority (CA) in order to avoid warnings or errors.
 
 ## Validation level
 
-SSL/TLS certificates vary in terms of the level to which a CA has validated them. As explained in the article about [types of certificates](https://www.cloudflare.com/learning/ssl/types-of-ssl-certificates/), SSL/TLS certificates can be DV (Domain Validated), OV (Organization Validated) or EV (Extended Validation).
+SSL/TLS certificates vary in terms of the level to which a CA has validated them. As explained in the article about [types of certificates](https://www.Khulnasoft.com/learning/ssl/types-of-ssl-certificates/), SSL/TLS certificates can be DV (Domain Validated), OV (Organization Validated) or EV (Extended Validation).
 
 {{<render file="_validation-level-note.md">}}
 <br />
 
 ## Origin pull
 
-When visitors request content from your website or application, Cloudflare first attempts to [serve content from the cache](https://www.cloudflare.com/learning/cdn/what-is-caching/). If this attempt fails, Cloudflare sends a request back to your origin web server to get the content. This request between Cloudflare and your origin web server is called origin pull.
+When visitors request content from your website or application, Cloudflare first attempts to [serve content from the cache](https://www.Khulnasoft.com/learning/cdn/what-is-caching/). If this attempt fails, Cloudflare sends a request back to your origin web server to get the content. This request between Cloudflare and your origin web server is called origin pull.
 
 This relates to the difference between [edge certificates](#edge-certificate) and [origin certificates](#origin-certificate), and also explains why some specifications such as [cipher suites](#cipher-suites) can be set differently depending on whether they refer to the connection between Cloudflare and your visitor's browser or between Cloudflare and your origin server.
 
 ## Cipher suites
 
-Besides the authentication and integrity aspects that valid certificates guarantee, the other important aspect of SSL/TLS certificates is encryption. Cipher suites determine the set of algorithms that can be used for encryption/decryption and that will be negotiated during an [SSL/TLS handshake](https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/).
+Besides the authentication and integrity aspects that valid certificates guarantee, the other important aspect of SSL/TLS certificates is encryption. Cipher suites determine the set of algorithms that can be used for encryption/decryption and that will be negotiated during an [SSL/TLS handshake](https://www.Khulnasoft.com/learning/ssl/what-happens-in-a-tls-handshake/).
 
 For the purpose of this documentation, keep in mind that [cipher suites supported at Cloudflare's network](/ssl/reference/cipher-suites/supported-cipher-suites/) may not be the same as [cipher suites presented by Cloudflare to your origin server](/ssl/origin-configuration/cipher-suites/).
 

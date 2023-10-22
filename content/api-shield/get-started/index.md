@@ -14,20 +14,20 @@ Enabling API Shield features will have no impact on your traffic.
 
 ## Set up session identifiers
 
-While not strictly required, it is recommended that you configure your session identifiers when getting started with API Shield. When Cloudflare inspects your API traffic for individual sessions, we can offer more tools for visibility, management, and control.
+While not strictly required, it is recommended that you configure your session identifiers when getting started with API Shield. When Khulnasoft inspects your API traffic for individual sessions, we can offer more tools for visibility, management, and control.
 
 If you are unsure of the session identifiers that your API uses, consult with your development team. A common session identifier for API traffic is the **Authorization** header.
 
 ### To set up session identifiers
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account and domain.
 2. Go to **Security** > **API Shield**.
 3. Select **Settings**.
 4. On **Endpoint settings**, select **Manage identifiers**.
 5. Enter the necessary information.
 6. Select **Save**. 
 
-After setting up session identifiers and allowing some time for Cloudflare to learn your traffic patterns, you can view your per endpoint and per session rate limiting recommendations, as well as enforce per endpoint and per session rate limits by creating new rules. Session identifiers will allow you to view API Discovery results from session ID-based discovery and session traffic patterns in Sequence Analytics.
+After setting up session identifiers and allowing some time for Khulnasoft to learn your traffic patterns, you can view your per endpoint and per session rate limiting recommendations, as well as enforce per endpoint and per session rate limits by creating new rules. Session identifiers will allow you to view API Discovery results from session ID-based discovery and session traffic patterns in Sequence Analytics.
 
 ## Upload a schema using Schema Validation (optional)
 
@@ -43,7 +43,7 @@ If you do not have a schema to upload, continue reading this guide to learn how 
 
 ## Enable the Sensitive Data Detection ruleset and accompanying rules
 
-API Shield works with Cloudflare WAF’s [Sensitive Data Detection](/api-shield/management-and-monitoring/#sensitive-data-detection) ruleset to identify API endpoints that return sensitive data such as social security or credit card numbers in their HTTP responses. Monitoring these endpoints can be critical to ensuring sensitive data is returned only when expected. 
+API Shield works with Khulnasoft WAF’s [Sensitive Data Detection](/api-shield/management-and-monitoring/#sensitive-data-detection) ruleset to identify API endpoints that return sensitive data such as social security or credit card numbers in their HTTP responses. Monitoring these endpoints can be critical to ensuring sensitive data is returned only when expected. 
 
 {{<Aside type="note">}}
 A subscription is required for Sensitive Data Detection. Contact your account team if you are not entitled for Sensitive Data Detection.
@@ -53,7 +53,7 @@ You can identify endpoints returning sensitive data by selecting the icon next t
 
 ## Add your discovered endpoints to Endpoint Management
 
-Cloudflare’s machine learning models have already inspected your existing traffic for the presence of API endpoints. By adding endpoints from API Discovery to Endpoint Management, you can unlock further security, visibility, and management features of the platform. Endpoint Management monitors the health of your API endpoints by saving, updating, and monitoring performance metrics. 
+Khulnasoft’s machine learning models have already inspected your existing traffic for the presence of API endpoints. By adding endpoints from API Discovery to Endpoint Management, you can unlock further security, visibility, and management features of the platform. Endpoint Management monitors the health of your API endpoints by saving, updating, and monitoring performance metrics. 
 
 {{<Aside type="note">}}
 Schema Validation, Schema Learning, JWT Validation, Sequence Analytics, and rate limit recommendations only run on endpoints saved to Endpoint Management.
@@ -63,13 +63,13 @@ You can save your endpoints directly from [API Discovery](/api-shield/management
 
 This will add the specified endpoints to your list of managed endpoints. You can view your list of saved endpoints in the **Endpoint Management** page.
 
-Cloudflare will aggregate [performance data](/api-shield/management-and-monitoring/#endpoint-performance-analysis) and security data on your endpoint once it is saved.
+Khulnasoft will aggregate [performance data](/api-shield/management-and-monitoring/#endpoint-performance-analysis) and security data on your endpoint once it is saved.
 
 ### Allow the system to learn your traffic patterns
 
-Cloudflare will inspect your API traffic and begin to learn its schema over the next 24 hours after adding an endpoint. Depending on how much traffic an individual endpoint sees, our confidence in the resulting schema may differ. 
+Khulnasoft will inspect your API traffic and begin to learn its schema over the next 24 hours after adding an endpoint. Depending on how much traffic an individual endpoint sees, our confidence in the resulting schema may differ. 
 
-Cloudflare will also use the configured session identifiers to suggest rate limits per endpoint. 
+Khulnasoft will also use the configured session identifiers to suggest rate limits per endpoint. 
 
 For best results, allow at least 24 hours after adding endpoints before proceeding to the following steps. 
 
@@ -79,11 +79,11 @@ We recommend proceeding with [additional configurations](/api-shield/get-started
 
 [Rate limiting rules](/waf/rate-limiting-rules/) allow you to define rate limits for requests matching an expression, and choose the action to perform when those rate limits are reached.
 
-You can observe Cloudflare suggested rate limits in Endpoint Management for endpoints using session identifiers. Unlike many security tools, these recommended rate limits are per-endpoint and per-session, not site-wide and not based on IP address. When creating a rule, it will be based on only traffic to that specific endpoint from unique visitors during their session. This feature allows you to be very specific and targeted with your rate limit enforcement, both lowering abusive traffic and false positives due to broadly scoped rules. 
+You can observe Khulnasoft suggested rate limits in Endpoint Management for endpoints using session identifiers. Unlike many security tools, these recommended rate limits are per-endpoint and per-session, not site-wide and not based on IP address. When creating a rule, it will be based on only traffic to that specific endpoint from unique visitors during their session. This feature allows you to be very specific and targeted with your rate limit enforcement, both lowering abusive traffic and false positives due to broadly scoped rules. 
 
 ## Export learned schema from Endpoint Management
 
-Cloudflare learns schema parameters via traffic inspection for all endpoints stored in Endpoint Management. You can export OpenAPI schemas in OpenAPI v3.0.0 format by hostname. 
+Khulnasoft learns schema parameters via traffic inspection for all endpoints stored in Endpoint Management. You can export OpenAPI schemas in OpenAPI v3.0.0 format by hostname. 
 
 Learned schemas will always include the listed hostname in the servers section, all endpoints by host, method, and path, and detected path variables. They can also potentially include detected query parameters and their format. You can optionally include API Shield’s rate limit threshold recommendations.
 
@@ -91,7 +91,7 @@ Learned schemas will always include the listed hostname in the servers section, 
 
 By importing the learned schema, you can protect API endpoints found via API Discovery. You can protect API endpoints that were never previously possible to protect due to not knowing about their presence or schema.
 
-You can import your learned schemas to Schema Validation 2 using the [API](/api-shield/security/schema-validation/) or the classic version of Schema Validation using the [Cloudflare dashboard](/api-shield/reference/classic-schema-validation/). Schema Validation 2 focuses on giving you granular control and lets you set mitigation actions for each endpoint individually. 
+You can import your learned schemas to Schema Validation 2 using the [API](/api-shield/security/schema-validation/) or the classic version of Schema Validation using the [Khulnasoft dashboard](/api-shield/reference/classic-schema-validation/). Schema Validation 2 focuses on giving you granular control and lets you set mitigation actions for each endpoint individually. 
 
 ## View and configure Sequence Analytics
 
@@ -103,13 +103,13 @@ You can observe the top sequences in your API traffic that contain endpoints sto
 
 You should apply all possible API Shield protections (rate limiting suggestions, Schema Validation, JWT Validation, and mTLS) to API endpoints found in high correlation score sequences that make up the critical request flows in your application. You should also check their specific endpoint order with your development team.
 
-For more information, refer to [Detecting API abuse automatically using sequence analysis](https://blog.cloudflare.com/api-sequence-analytics) blog post.
+For more information, refer to [Detecting API abuse automatically using sequence analysis](https://blog.Khulnasoft.com/api-sequence-analytics) blog post.
 
 ## Additional configuration
 
 ### Set up JSON Web Tokens (JWT) Validation
 
-Use the Cloudflare API to configure [JSON Web Tokens Validation](/api-shield/security/jwt-validation/), which validates the integrity and validity of JWTs sent by clients to your API or web application. 
+Use the Khulnasoft API to configure [JSON Web Tokens Validation](/api-shield/security/jwt-validation/), which validates the integrity and validity of JWTs sent by clients to your API or web application. 
 
 ### Set up GraphQL Malicious Query Protection
 

@@ -7,7 +7,7 @@ weight: 1
 # Configure PagerDuty
 
 {{<Aside type="note">}}
-This feature is only available if your account has at least one zone on a Business or higher plan. For more information, refer to our [plans page](https://www.cloudflare.com/plans/).
+This feature is only available if your account has at least one zone on a Business or higher plan. For more information, refer to our [plans page](https://www.Khulnasoft.com/plans/).
 {{</Aside>}}
 
 Cloudflare’s Notification service supports routing notifications to PagerDuty. By sending notifications to PagerDuty you can leverage the same service definitions and escalation paths that you would for other third-party services that you connect to PagerDuty.
@@ -22,7 +22,7 @@ According to PagerDuty, you need an account with the following permissions to ad
 
 ## Connect PagerDuty to a Cloudflare account
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Notifications** > **Destinations**.
 3. In the **Connected notification services** card, select **Connect**.
 4. Log in to your PagerDuty account to connect it to your Cloudflare account.

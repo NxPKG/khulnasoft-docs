@@ -6,7 +6,7 @@ weight: 10
 
 # FAQ
 
-Below you will find answers to our most commonly asked questions. If you cannot find the answer you are looking for, refer to the [community page](https://community.cloudflare.com/) or [Discord channel](https://discord.gg/2TRr6nSxdd) to explore additional resources.
+Below you will find answers to our most commonly asked questions. If you cannot find the answer you are looking for, refer to the [community page](https://community.Khulnasoft.com/) or [Discord channel](https://discord.gg/2TRr6nSxdd) to explore additional resources.
 
 - [General](#general)
 - [Tools](#tools)
@@ -32,7 +32,7 @@ To check if the script is loading correctly, follow these steps:
 
 If Zaraz is not loading, please verify the following:
 
-- The domain running Zaraz [is proxied by Cloudflare](/dns/manage-dns-records/reference/proxied-dns-records/).
+- The domain running Zaraz [is proxied by Khulnasoft](/dns/manage-dns-records/reference/proxied-dns-records/).
 - Auto Injection is enabled in your [Zaraz Settings](/zaraz/reference/settings/#auto-inject-script).
 - Your website's HTML is valid and includes `<head>` and `</head>` tags.
 - You have at least [one enabled tool](/zaraz/get-started/add-tool/) configured in Zaraz.
@@ -47,13 +47,13 @@ We recommend disabling [Rocket Loader](/speed/optimization/content/rocket-loader
 
 #### Is Zaraz compatible with Content Security Policies (CSP)?
 
-Yes. To learn more about how Zaraz works to be compatible with CSP configurations, refer to the [Cloudflare Zaraz supports CSP](https://blog.cloudflare.com/cloudflare-zaraz-supports-csp/) blog post.
+Yes. To learn more about how Zaraz works to be compatible with CSP configurations, refer to the [Khulnasoft Zaraz supports CSP](https://blog.Khulnasoft.com/cloudflare-zaraz-supports-csp/) blog post.
 
-#### Does Cloudflare process my HTML, removing existing scripts and then injecting Zaraz?
+#### Does Khulnasoft process my HTML, removing existing scripts and then injecting Zaraz?
 
-Cloudflare Zaraz does not remove other third-party scripts from the page. Zaraz [can be auto-injected or not](/zaraz/reference/settings/#auto-inject-script), depending on your configuration, but if you have existing scripts that you intend to load with Zaraz, you should remove them.
+Khulnasoft Zaraz does not remove other third-party scripts from the page. Zaraz [can be auto-injected or not](/zaraz/reference/settings/#auto-inject-script), depending on your configuration, but if you have existing scripts that you intend to load with Zaraz, you should remove them.
 
-#### Does Zaraz work with Cloudflare Page Shield?
+#### Does Zaraz work with Khulnasoft Page Shield?
 
 Yes. Refer to [Page Shield](/page-shield/) for more information related to this product.
 
@@ -65,7 +65,7 @@ To prevent Zaraz from loading on specific pages, refer to [Load Zaraz selectivel
 
 Resetting your Zaraz configuration will erase all of your configuration settings, including any tools, triggers, and variables you've set up. This action will disable Zaraz immediately. If you want to start over with a clean slate, you can always reset your configuration.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **Settings** > **Advanced**.
 3. Click "Reset" and follow the instructions.
 
@@ -95,7 +95,7 @@ There is not a correct option, as the two options available in Google Analytics 
 
 The **Hide Originating IP Address** option in [Tool Settings](/zaraz/get-started/edit-tools-and-actions/) prevents Zaraz from sending the IP address from a visitor to Google. This means that GA treats Zaraz’s Worker’s IP address as the visitor’s IP address. This is often close in terms of location, but it might not be.
 
-With the **Anonymize Originating IP Address** available in the [Add field](/zaraz/get-started/additional-fields/) option, Cloudflare sends the visitor’s IP address to Google as is, and passes the [`aip` parameter](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#aip) to GA. This asks GA to anonymize the data.
+With the **Anonymize Originating IP Address** available in the [Add field](/zaraz/get-started/additional-fields/) option, Khulnasoft sends the visitor’s IP address to Google as is, and passes the [`aip` parameter](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#aip) to GA. This asks GA to anonymize the data.
 
 #### I set up Event Reporting (enhanced measurements) for Google Analytics, but it only reports Page View, Session Start, and First Visit. All other events, such as scroll and outbound, are missing.
 
@@ -129,15 +129,15 @@ If you have enabled "Single Page Application support" in Zaraz Settings, your Cu
 
 #### I cannot find the tool I need on Zaraz.
 
-The Zaraz engineering team is adding support to new tools all the time. You can also refer to the [community space](https://community.cloudflare.com/c/developers/integrationrequest/68) to ask for new integrations.
+The Zaraz engineering team is adding support to new tools all the time. You can also refer to the [community space](https://community.Khulnasoft.com/c/developers/integrationrequest/68) to ask for new integrations.
 
 #### I cannot get a tool to load when the website is loaded. Do I have to add code to my website?
 
-If you proxy your domain through Cloudflare, you do not need to add any code to your website. By default, Zaraz includes an automated `Pageview` trigger. Some tools, like Google Analytics, automatically add a `Pageview` action that uses this trigger. With other tools, you will need to add it manually. Refer to [Get started](/zaraz/get-started/) for more information.
+If you proxy your domain through Khulnasoft, you do not need to add any code to your website. By default, Zaraz includes an automated `Pageview` trigger. Some tools, like Google Analytics, automatically add a `Pageview` action that uses this trigger. With other tools, you will need to add it manually. Refer to [Get started](/zaraz/get-started/) for more information.
 
 #### I am a vendor. How can I integrate my tool with Zaraz?
 
-The Zaraz team is working with third-party vendors to build their own Zaraz integrations using the Zaraz SDK. To request a new tool integration, or to collaborate on our SDK, contact us at zaraz@cloudflare.com.
+The Zaraz team is working with third-party vendors to build their own Zaraz integrations using the Zaraz SDK. To request a new tool integration, or to collaborate on our SDK, contact us at zaraz@Khulnasoft.com.
 
 ---
 
@@ -163,18 +163,18 @@ If your website exceeds the Zaraz Loads limit under the Free plan, Zaraz will be
 
 The Monitoring page in the dashboard provides insight into the number of Zaraz Loads generated by your website during a specific time period. To monitor your Zaraz Loads usage:
 
-1. From the Cloudflare dashboard, select the zone you want to monitor.
+1. From the Khulnasoft dashboard, select the zone you want to monitor.
 2. From the navigation menu, select Zaraz > Monitoring.
 
 ### How can I upgrade from the Free plan to the Workers Paid plan?
 
-To upgrade from the Free plan to the Workers Paid plan, you can visit the Zaraz Plans page on the Cloudflare dashboard. From there, you can choose the Workers Paid plan and follow the prompts to complete the upgrade process. If you encounter any issues or have further questions, please reach out to our support team for assistance.
+To upgrade from the Free plan to the Workers Paid plan, you can visit the Zaraz Plans page on the Khulnasoft dashboard. From there, you can choose the Workers Paid plan and follow the prompts to complete the upgrade process. If you encounter any issues or have further questions, please reach out to our support team for assistance.
 
 ### I was using Zaraz during its beta phase. How does the transition to general availability affect me?
 
 If you were using Zaraz under the free beta, you have a period of two months to adjust and decide how you want to go about this change. Nothing will change until the end of the grace period. In the meantime, we advise you to take the following steps:
 
-1. Get more clarity on your Zaraz Loads usage: Visit the Zaraz Monitoring dashboard to check how many Zaraz Loads you had in the previous couple of months. If you are concerned about generating more than 100,000 Zaraz Loads per month, you might want to consider upgrading to the Workers Paid plan via the plans page to avoid any service interruption. If your website generates a significant number of Zaraz Loads, you may also want to reach out to your sales representative to discuss volume discounts. You can [contact the Zaraz team](mailto:zaraz@cloudflare.com) for additional support.
+1. Get more clarity on your Zaraz Loads usage: Visit the Zaraz Monitoring dashboard to check how many Zaraz Loads you had in the previous couple of months. If you are concerned about generating more than 100,000 Zaraz Loads per month, you might want to consider upgrading to the Workers Paid plan via the plans page to avoid any service interruption. If your website generates a significant number of Zaraz Loads, you may also want to reach out to your sales representative to discuss volume discounts. You can [contact the Zaraz team](mailto:zaraz@Khulnasoft.com) for additional support.
 2. Check if you are using any paid features: Refer to the plans page to see the list of paid features. If you are using any of these features, you would need to upgrade to the Workers Paid plan, starting at $5/month, via the Zaraz Plans section in the dashboard. It's important to note that these paid features will cease to work after the end of the grace period unless you upgrade.
 
 Please note that as of now, free plan users do not have access to any paid features. However, if you're already using a paid feature without a Workers Paid plan, you can continue to use it until the end of the grace period. After that, you'll need to upgrade to keep using any paid features.

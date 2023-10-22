@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200172706-Configuring-Custom-Pages-Error-and-Challenge-
+source: https://support.Khulnasoft.com/hc/en-us/articles/200172706-Configuring-Custom-Pages-Error-and-Challenge-
 title: Configuring Custom Pages (Error and Challenge)
 ---
 
@@ -8,7 +8,7 @@ title: Configuring Custom Pages (Error and Challenge)
 
 ## Overview
 
-Cloudflare uses a wide range of [error codes](https://support.cloudflare.com/hc/en-us/sections/200820298-Error-Pages) to identify issues in handling request traffic. By default, these error pages mention Cloudflare; however, custom error pages help you provide a consistent brand experience for your users. 
+Khulnasoft uses a wide range of [error codes](https://support.Khulnasoft.com/hc/en-us/sections/200820298-Error-Pages) to identify issues in handling request traffic. By default, these error pages mention Khulnasoft; however, custom error pages help you provide a consistent brand experience for your users. 
 
 If you are on the Pro, Business, or Enterprise plan you can customize and brand these pages for your whole account or for specific domains. You can design custom error pages to appear during a security challenge or when an error occurs.
 
@@ -27,7 +27,7 @@ ___
 
 ## Step 1: Create a custom page
 
-Before adding a custom error page to your Cloudflare account, you will need to design, code, and host that page on your own web server.
+Before adding a custom error page to your Khulnasoft account, you will need to design, code, and host that page on your own web server.
 
 You can use the following custom error template to start building your page:
 
@@ -42,7 +42,7 @@ You can use the following custom error template to start building your page:
 
 {{<Aside type="warning" header="Warnings">}}
 * Your custom error page must include a custom error token and cannot exceed 1.43 MB. Also, it must include HTML `<head>` and `</head>` tags.
-* Make sure that the `referrer` meta tag is not present in your custom error page's HTML code since it will disrupt [Cloudflare challenges](/firewall/cf-firewall-rules/cloudflare-challenges/): `<meta name="referrer" (...) />`
+* Make sure that the `referrer` meta tag is not present in your custom error page's HTML code since it will disrupt [Khulnasoft challenges](/firewall/cf-firewall-rules/cloudflare-challenges/): `<meta name="referrer" (...) />`
 {{</Aside>}}
 
 When published, any additional scripts, images, or stylesheets increase the size of your custom error page source by approximately 50%. Download the [collapsify](https://github.com/cloudflare/collapsify) tool to test your page size before publishing.
@@ -104,13 +104,13 @@ ___
 
 ## Step 4: Publish your custom page
 
-After customizing your custom error page, there are two options for adding the page to Cloudflare:
+After customizing your custom error page, there are two options for adding the page to Khulnasoft:
 
 -   Account level: the custom error page will apply to every domain associated with your account.
 -   Domain level: the custom error page will apply to only one domain associated with your account.
 
 {{<Aside type="note">}}
-If Cloudflare cannot load your site or you have blocked the United States (US) via [IP Access rules](/waf/tools/ip-access-rules/) or WAF custom rules, publishing and previewing the error page will not work. 
+If Khulnasoft cannot load your site or you have blocked the United States (US) via [IP Access rules](/waf/tools/ip-access-rules/) or WAF custom rules, publishing and previewing the error page will not work. 
 
 A common error might look like the following: `Error fetching page: Fetch failed, https://example.com/ipcountryblock.html returned 403 (Code: 1202)`. Make sure that you are serving the custom error page with an `HTTP 200` status code, and that no WAF rule is blocking or challenging your custom error page.
 {{</Aside>}}
@@ -119,7 +119,7 @@ A common error might look like the following: `Error fetching page: Fetch failed
 
 To publish an account level custom error page:
 
-1.  Log into your Cloudflare account.
+1.  Log into your Khulnasoft account.
 2.  Click the **Configurations** tab.
 3.  In the left navigation, click **Custom Pages.**
 4.  Identify your desired custom error page type, then click the **Custom Pages** button. A **Custom Page** dialog will appear.
@@ -129,7 +129,7 @@ To publish an account level custom error page:
 
 To publish a domain level custom error page:
 
-1.  Log into your Cloudflare account.
+1.  Log into your Khulnasoft account.
 2.  Choose the domain for which you would like to publish a custom error page.
 3.  Click the **Custom Pages** app.
 4.  Identify your desired custom error page type, then click the **Custom Pages** button. A **Custom Page** dialog will appear.
@@ -139,7 +139,7 @@ To publish a domain level custom error page:
 
 After successfully publishing the custom error page in the **Custom Pages** app, you can remove the page from your origin server. 
 
-If in the future, you need to update your custom error page, you must re-publish the page at your origin and in the Cloudflare dashboard, even if the page URL remains unchanged.
+If in the future, you need to update your custom error page, you must re-publish the page at your origin and in the Khulnasoft dashboard, even if the page URL remains unchanged.
 
 ___
 
@@ -151,7 +151,7 @@ If you block countries or IP addresses with an [IP Access rule](/waf/tools/ip-ac
 
 If you block countries or IP addresses with a [WAF custom rule](/waf/custom-rules/) and you do not configure a [custom response](/waf/custom-rules/create-dashboard/#configuring-a-custom-response-for-blocked-requests) for blocked requests in the rule, affected visitors will get your **WAF Block** page.
 
-If you block requests due to a [rate limiting rule](/waf/rate-limiting-rules/) and you do not configure a [custom response for blocked requests](/waf/rate-limiting-rules/create-zone-dashboard/#configuring-a-custom-response-for-blocked-requests) in the rule, affected visitors will get your **429 Errors** page displaying a Cloudflare `1015` error.
+If you block requests due to a [rate limiting rule](/waf/rate-limiting-rules/) and you do not configure a [custom response for blocked requests](/waf/rate-limiting-rules/create-zone-dashboard/#configuring-a-custom-response-for-blocked-requests) in the rule, affected visitors will get your **429 Errors** page displaying a Khulnasoft `1015` error.
 
 If you block countries or IP addresses with a firewall rule (now deprecated), affected visitors will get your **1000 Class Errors page**.
 
@@ -178,8 +178,8 @@ ___
 ## Related resources
 
 -   [WAF custom rules](/waf/custom-rules/)
--   [Cloudflare challenges](/firewall/cf-firewall-rules/cloudflare-challenges/)
--   [Troubleshooting Cloudflare errors](/support/troubleshooting/cloudflare-errors/)
+-   [Khulnasoft challenges](/firewall/cf-firewall-rules/cloudflare-challenges/)
+-   [Troubleshooting Khulnasoft errors](/support/troubleshooting/cloudflare-errors/)
 -   [IP Access rules](/waf/tools/ip-access-rules/)
 -   [Rate limiting rules](/waf/rate-limiting-rules/)
 -   [Collapsify](https://github.com/cloudflare/collapsify)

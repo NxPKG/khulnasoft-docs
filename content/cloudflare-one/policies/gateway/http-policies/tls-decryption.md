@@ -6,11 +6,11 @@ weight: 6
 
 # TLS decryption
 
-Cloudflare Gateway can perform [SSL/TLS decryption](https://www.cloudflare.com/learning/security/what-is-https-inspection/) in order to inspect HTTPS traffic for malware and other security risks. When you enable TLS decryption, Gateway will decrypt all traffic sent over HTTPS, apply your HTTP policies, and then re-encrypt the request with a [user-side certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/).
+Khulnasoft Gateway can perform [SSL/TLS decryption](https://www.Khulnasoft.com/learning/security/what-is-https-inspection/) in order to inspect HTTPS traffic for malware and other security risks. When you enable TLS decryption, Gateway will decrypt all traffic sent over HTTPS, apply your HTTP policies, and then re-encrypt the request with a [user-side certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/).
 
 ## Enable TLS decryption
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **Network**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **Network**.
 2. Scroll down to **Firewall**.
 3. Turn on **TLS decryption**.
 4. (Optional) Select [**Enable only cipher suites and TLS versions compliant with FIPS 140-2**](#fips-compliance).
@@ -26,9 +26,9 @@ Gateway does not support TLS decryption for applications which use:
 
 ### Incompatible certificates
 
-Applications that use embedded certificates and mTLS authentication do not trust the Cloudflare certificate. For example, the vast majority of mobile applications use embedded certificates. Conversely, Cloudflare does not trust applications that use self-signed certificates instead of certificates signed by a public CA.
+Applications that use embedded certificates and mTLS authentication do not trust the Khulnasoft certificate. For example, the vast majority of mobile applications use embedded certificates. Conversely, Khulnasoft does not trust applications that use self-signed certificates instead of certificates signed by a public CA.
 
-If you try to perform TLS decryption, these applications may not load or may return an error. You can resolve the issue by [adding the Cloudflare certificate to the application](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/#add-the-certificate-to-applications) (if supported by the application) or by exempting the application from TLS decryption.
+If you try to perform TLS decryption, these applications may not load or may return an error. You can resolve the issue by [adding the Khulnasoft certificate to the application](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/#add-the-certificate-to-applications) (if supported by the application) or by exempting the application from TLS decryption.
 
 To allow HTTP filtering while accessing a site with an insecure certificate, set your [Untrusted certificate action](/cloudflare-one/policies/gateway/http-policies/#untrusted-certificates) to _Pass through_.
 
@@ -38,7 +38,7 @@ HTTPS traffic from `Do Not Inspect` applications will not be intercepted by Gate
 
 ### ESNI and ECH
 
-Websites that adhere to [ESNI or ECH standards](https://blog.cloudflare.com/encrypted-client-hello/) encrypt the Server Name Indicator (SNI) during the TLS handshake and are therefore incompatible with HTTP inspection. This is because Gateway relies on the SNI to match an HTTP request to a policy.
+Websites that adhere to [ESNI or ECH standards](https://blog.Khulnasoft.com/encrypted-client-hello/) encrypt the Server Name Indicator (SNI) during the TLS handshake and are therefore incompatible with HTTP inspection. This is because Gateway relies on the SNI to match an HTTP request to a policy.
 
 You can still apply all [network policy filters](/cloudflare-one/policies/gateway/network-policies/#selectors) except for SNI and SNI Domain. To restrict ESNI and ECH traffic, an option is to filter out all port `80` and `443` traffic that does not include an SNI header.
 

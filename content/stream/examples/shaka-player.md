@@ -1,6 +1,6 @@
 ---
 type: example
-summary: Example of video playback with Cloudflare Stream and Shaka Player
+summary: Example of video playback with Khulnasoft Stream and Shaka Player
 tags:
   - Playback
 pcx_content_type: configuration
@@ -9,7 +9,7 @@ weight: 7
 layout: example
 ---
 
-First, create a video element, using the poster attribute to set a preview thumbnail image. Refer to [Display thumbnails](/stream/viewing-videos/displaying-thumbnails/) for instructions on how to generate a thumbnail image using Cloudflare Stream.
+First, create a video element, using the poster attribute to set a preview thumbnail image. Refer to [Display thumbnails](/stream/viewing-videos/displaying-thumbnails/) for instructions on how to generate a thumbnail image using Khulnasoft Stream.
 
 ```html
 <video
@@ -24,7 +24,7 @@ First, create a video element, using the poster attribute to set a preview thumb
 Then listen for `DOMContentLoaded` event, create a new instance of Shaka Player, and load the manifest URI.
 
 ```javascript
-// Replace the manifest URI with an HLS or DASH manifest from Cloudflare Stream
+// Replace the manifest URI with an HLS or DASH manifest from Khulnasoft Stream
 const manifestUri =
 	'https://customer-m033z5x00ks6nunl.cloudflarestream.com/b236bde30eb07b9d01318940e5fc3eda/manifest/video.mpd';
 

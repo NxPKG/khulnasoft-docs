@@ -14,7 +14,7 @@ Use the filter examples below to filter your Magic Firewall traffic to display e
 The example below only displays fields relevant to Magic Firewall, and the filter only displays events for disabled rules.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/logpush/jobs \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/logpush/jobs \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --request POST \
@@ -28,7 +28,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/logpush/jobs \
 The example below only displays fields relevant to Magic Firewall, and the filter only displays events for enabled rules.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/logpush/jobs \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/logpush/jobs \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --request POST \
@@ -46,7 +46,7 @@ Use the filter examples below to filter your Magic Firewall traffic to display e
 The example below only displays fields relevant to Magic Firewall, and the filter only displays events where no explicit action was taken, for example, a packet "fell through" Magic Firewall. This example does not have any rules applied.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/logpush/jobs \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/logpush/jobs \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --request POST \
@@ -60,7 +60,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/logpush/jobs \
 The example below only displays fields relevant to Magic Firewall, and the filter only displays events where explicit action was taken. The example includes both enabled and disabled Magic Firewall rules.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/logpush/jobs \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/logpush/jobs \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --request POST \
@@ -76,7 +76,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/logpush/jobs \
 Use the examples below to filter out fields that are not relevant to traffic flowing through Magic Firewall. The example below only includes Magic Firewall events.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/logpush/jobs \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/logpush/jobs \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --request POST \

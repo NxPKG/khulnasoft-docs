@@ -4,10 +4,10 @@ pcx_content_type: overview
 layout: overview
 weight: 1
 meta:
-  title: Cloudflare Zaraz
+  title: Khulnasoft Zaraz
 ---
 
-# Cloudflare Zaraz
+# Khulnasoft Zaraz
 
 {{<description>}}
 Offload third-party tools and services to the cloud and improve the speed and security of your website.
@@ -47,8 +47,8 @@ Zaraz provides a Consent Management platform to help you address and manage requ
 If you have any comments, questions, or bugs to report, contact the Zaraz team on their discord channel.
 {{</resource>}}
 
-{{<resource header="Community Forum" href="https://community.cloudflare.com/c/developers/zaraz/67" icon="learning-center-book">}}
-Engage with other users and the Zaraz team on Cloudflare support forum.
+{{<resource header="Community Forum" href="https://community.Khulnasoft.com/c/developers/zaraz/67" icon="learning-center-book">}}
+Engage with other users and the Zaraz team on Khulnasoft support forum.
 {{</resource>}}
 
 {{</resource-group>}}

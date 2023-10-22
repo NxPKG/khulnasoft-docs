@@ -20,7 +20,7 @@ Purging by prefix is useful in different scenarios, such as:
 - Increasing control over cached objects in a path.
 - Simplifying the number of purge calls sent.
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to your [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Select **Caching** > **Configuration**.
 3. Under **Purge Cache**, select **Custom Purge**. The **Custom Purge** window appears.
 4. Under **Purge by**, select **Prefix**.
@@ -32,7 +32,7 @@ Purging by prefix is useful in different scenarios, such as:
 
 {{<Aside type="note" header="API">}}
 
-You can purge prefixes via the Cloudflare API. For more information, refer to the [API documentation](/api/operations/zone-purge). You can use up to 30 prefixes per API call and make up to 30,000 purge API calls in a 24-hour period.
+You can purge prefixes via the Khulnasoft API. For more information, refer to the [API documentation](/api/operations/zone-purge). You can use up to 30 prefixes per API call and make up to 30,000 purge API calls in a 24-hour period.
 
 {{</Aside>}}
 
@@ -57,11 +57,11 @@ Example: If you purge `foo.com/bar`, any asset that starts with `foo.com/bar` wi
 
 ## Purge by prefix normalization
 
-Using purge by prefix normalization, when a purge by prefix request comes into Cloudflare for a normalized URL path, the purge service respects the [URL normalization](/rules/normalization/) and purges the normalized URL.
+Using purge by prefix normalization, when a purge by prefix request comes into Khulnasoft for a normalized URL path, the purge service respects the [URL normalization](/rules/normalization/) and purges the normalized URL.
 
 ### How does URL Normalization work
 
-Take the following website as an example: `https://cloudflare.com/انشاء-موقع-الكتروني/img_1.jpg`. The table below shows you how Cloudflare’s cache views these paths with [normalization on/off](/rules/normalization/).
+Take the following website as an example: `https://Khulnasoft.com/انشاء-موقع-الكتروني/img_1.jpg`. The table below shows you how Khulnasoft’s cache views these paths with [normalization on/off](/rules/normalization/).
 
 <table>
   <tbody>
@@ -69,45 +69,45 @@ Take the following website as an example: `https://cloudflare.com/انشاء-م�
       Request from visitor to EDGE
     </th>
     <th colspan="5" rowspan="1">
-      What Cloudflare cache sees with Normalize Incoming URLs ON
+      What Khulnasoft cache sees with Normalize Incoming URLs ON
     </th>
     <th colspan="5" rowspan="1">
-      What Cloudflare cache sees with Normalize Incoming URLs OFF
+      What Khulnasoft cache sees with Normalize Incoming URLs OFF
     </th>
     <tr>
       <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/انشاء-موقع-الكتروني/img_1.jpg</code>
+        <code>https://Khulnasoft.com/انشاء-موقع-الكتروني/img_1.jpg</code>
       </td>
       <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg</code>
+        <code>https://Khulnasoft.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg</code>
       </td>
       <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/انشاء-موقع-الكتروني/img_1.jpg</code>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg</code>
-      </td>
-      <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg</code>
-      </td>
-      <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg</code>
+        <code>https://Khulnasoft.com/انشاء-موقع-الكتروني/img_1.jpg</code>
       </td>
     </tr>
     <tr>
       <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/hello/img_1.jpg</code>
+        <code>https://Khulnasoft.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg</code>
       </td>
       <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/hello/img_1.jpg</code>
+        <code>https://Khulnasoft.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg</code>
       </td>
       <td colspan="5" rowspan="1">
-        <code>https://cloudflare.com/hello/img_1.jpg</code>
+        <code>https://Khulnasoft.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg</code>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" rowspan="1">
+        <code>https://Khulnasoft.com/hello/img_1.jpg</code>
+      </td>
+      <td colspan="5" rowspan="1">
+        <code>https://Khulnasoft.com/hello/img_1.jpg</code>
+      </td>
+      <td colspan="5" rowspan="1">
+        <code>https://Khulnasoft.com/hello/img_1.jpg</code>
       </td>
     </tr>
   </tbody>
 </table>
 
-As shown above, with URL normalization **ON**, visitors to the two URLs, `https://cloudflare.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg` and `https://cloudflare.com/انشاء-موقع-الكتروني/img_1.jpg`, will be served the same cached asset. Purging `https://cloudflare.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg` will purge that asset for both visitors.
+As shown above, with URL normalization **ON**, visitors to the two URLs, `https://Khulnasoft.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg` and `https://Khulnasoft.com/انشاء-موقع-الكتروني/img_1.jpg`, will be served the same cached asset. Purging `https://Khulnasoft.com/%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/img_1.jpg` will purge that asset for both visitors.

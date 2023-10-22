@@ -1,6 +1,6 @@
 ---
 type: example
-summary: Example of video playback with the Cloudflare Stream Player
+summary: Example of video playback with the Khulnasoft Stream Player
 tags:
   - Playback
 pcx_content_type: configuration

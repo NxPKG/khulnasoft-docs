@@ -7,7 +7,7 @@ layout: single
 
 # Troubleshoot CASB integrations
 
-Cloudflare CASB detects when integrations are unhealthy or outdated.
+Khulnasoft CASB detects when integrations are unhealthy or outdated.
 
 Common integration issues include changes to SaaS app configurations, user access, or permission scope. Integrations may need to be updated to support new features or permissions.
 
@@ -22,7 +22,7 @@ You can repair unhealthy CASB integrations through your list of integrations or 
 {{<tabs labels="Integrations | Findings">}}
 {{<tab label="integrations" no-code="true">}}
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **CASB** > **Integrations**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **CASB** > **Integrations**.
 2. Choose your unhealthy integration.
 3. Select **Reauthorize**.
 4. In your SaaS app, reauthorize your account.
@@ -31,7 +31,7 @@ You can repair unhealthy CASB integrations through your list of integrations or 
 
 {{<tab label="findings" no-code="true">}}
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **CASB** > **Findings**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **CASB** > **Findings**.
 2. Choose the finding highlighted in red. CASB will redirect you to the unhealthy integration.
 3. Select **Reauthorize**.
 4. In your SaaS app, reauthorize your account.
@@ -43,7 +43,7 @@ You can repair unhealthy CASB integrations through your list of integrations or 
 
 Upgrading an outdated integration will allow the integration to access new features and permissions.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **CASB** > **Integrations**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **CASB** > **Integrations**.
 2. Choose your outdated integration.
 3. Select **Upgrade integration**.
 4. In your SaaS app, upgrade your app and reauthorize your account.

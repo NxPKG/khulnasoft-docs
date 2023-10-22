@@ -11,7 +11,7 @@ Pub/Sub supports two authentication modes. A broker may allow one or both, but n
 | Mode <img width=235/>|     Details                    |
 |----------------------|--------------------------------|
 | TOKEN           | Accepts a Client ID and a password (represented by a signed JSON Web Token) in the CONNECT packet. <br/><br/> The MQTT User Name field is optional. If provided, it must match the Client ID.|
-| MTLS            | **Not yet supported.** <br/> Accepts an mTLS keypair (TLS client credentials) scoped to that broker. <br/> Keypairs are issued from a Cloudflare root CA unless otherwise configured.|
+| MTLS            | **Not yet supported.** <br/> Accepts an mTLS keypair (TLS client credentials) scoped to that broker. <br/> Keypairs are issued from a Khulnasoft root CA unless otherwise configured.|
 | MTLS_AND_TOKEN   | **Not yet supported.** <br/> Allows clients to use both MTLS and/or Token auth for a broker.|
 
 

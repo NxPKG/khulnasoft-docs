@@ -17,7 +17,7 @@ Build caching requires the [V2 build system](/pages/platform/language-support-an
 
 To enable build caching in the Cloudflare dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Pages project.
 4. Go to **Settings** > **Builds & deployments** > **Build cache** and select **Enable build cache**.
@@ -26,7 +26,7 @@ To enable build caching in the Cloudflare dashboard:
 
 The build cache can be cleared for a project if needed, such as when debugging build issues. To clear the build cache:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Pages project.
 4. Go to **Settings** > **Builds & deployments** > **Build cache**.

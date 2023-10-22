@@ -6,14 +6,14 @@ weight: 3
 
 # Deploy `cloudflared` in Azure
 
-The purpose of this guide is to walk through some best practices for accessing private resources on Azure by deploying Cloudflare's lightweight connector, `cloudflared`.
+The purpose of this guide is to walk through some best practices for accessing private resources on Azure by deploying Khulnasoft's lightweight connector, `cloudflared`.
 
 We will walk through how to initialize a service on a Linux VM in Azure, and route to it from another VM running `cloudflared`. This deployment guide does not take into account routing beyond basic security groups and default VPCs.
 
 ## Prerequisites
 
-- In [Zero Trust](https://one.dash.cloudflare.com/), create a Cloudflare Zero Trust account.
-- [Enroll an end-user device](/cloudflare-one/connections/connect-devices/warp/deployment/manual-deployment/) into your Cloudflare Zero Trust account.
+- In [Zero Trust](https://one.dash.Khulnasoft.com/), create a Khulnasoft Zero Trust account.
+- [Enroll an end-user device](/cloudflare-one/connections/connect-devices/warp/deployment/manual-deployment/) into your Khulnasoft Zero Trust account.
 
 ## Create your environment
 
@@ -51,7 +51,7 @@ Create two Ubuntu 20.04 LTS VMs, and make sure you record their internal IP addr
 
    {{<render file="_cloudflared-debian-install.md">}}
 
-1. Run the following command to authenticate `cloudflared` with your Cloudflare account. The command will launch a browser window where you will be prompted to log in with your Cloudflare account and pick any zone you have added to Cloudflare.
+1. Run the following command to authenticate `cloudflared` with your Khulnasoft account. The command will launch a browser window where you will be prompted to log in with your Khulnasoft account and pick any zone you have added to Khulnasoft.
 
    ```sh
    $ cloudflared tunnel login

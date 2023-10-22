@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: japanese
-source: https://support.cloudflare.com/hc/ja/articles/209714777-ICP%E7%95%AA%E5%8F%B7%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%90%86%E8%A7%A3%E3%81%97%E3%81%A6%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B
+source: https://support.Khulnasoft.com/hc/ja/articles/209714777-ICP%E7%95%AA%E5%8F%B7%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%90%86%E8%A7%A3%E3%81%97%E3%81%A6%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B
 title: ICP番号について理解して設定する
 ---
 
@@ -53,4 +53,4 @@ Webサイトの種類や会社の登録先となる省によっては、すべ�
 
 ICP番号と証明書を受け取ったら、ICP番号をWebサイトのホームページ下部に追加します。 
 
-![旧URL： https://support.cloudflare.com/hc/article_attachments/360040367132/baidu_home_page.png 記事ID：209714777 | ICP番号について理解して設定する](/images/support/hc-import-baidu_home_page.png)
+![旧URL： https://support.Khulnasoft.com/hc/article_attachments/360040367132/baidu_home_page.png 記事ID：209714777 | ICP番号について理解して設定する](/images/support/hc-import-baidu_home_page.png)

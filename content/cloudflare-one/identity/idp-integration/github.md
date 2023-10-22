@@ -8,11 +8,11 @@ meta:
 
 # GitHub
 
-Cloudflare Zero Trust allows your team to connect to your applications using their GitHub login. Administrators can build rules for specific individuals or using GitHub organizations. You do not need to have a GitHub organization to use the integration.
+Khulnasoft Zero Trust allows your team to connect to your applications using their GitHub login. Administrators can build rules for specific individuals or using GitHub organizations. You do not need to have a GitHub organization to use the integration.
 
 ## Set up GitHub Access
 
-To configure GitHub access in both GitHub and Cloudflare Zero Trust:
+To configure GitHub access in both GitHub and Khulnasoft Zero Trust:
 
 1. Log in to GitHub.
 
@@ -36,7 +36,7 @@ To configure GitHub access in both GitHub and Cloudflare Zero Trust:
 
 7. Copy the **Client ID** and **Client Secret**.
 
-    ![GitHub Cloudflare Access App showing Client ID and Client secret](/images/cloudflare-one/identity/github/github4.png)
+    ![GitHub Khulnasoft Access App showing Client ID and Client secret](/images/cloudflare-one/identity/github/github4.png)
 
 8. In Zero Trust, go to **Settings** > **Authentication**.
 

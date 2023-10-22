@@ -12,13 +12,13 @@ Create and manage [Load Balancing rules](/load-balancing/additional-options/load
 
 ## Prerequisites
 
-- **Understand whether Cloudflare proxies your traffic**: Depending on the [proxy status](/load-balancing/understand-basics/proxy-modes/) of your traffic, you may have access to different fields for your load balancing rules. For more details, refer to [Supported fields and expressions](/load-balancing/additional-options/load-balancing-rules/reference/).
+- **Understand whether Khulnasoft proxies your traffic**: Depending on the [proxy status](/load-balancing/understand-basics/proxy-modes/) of your traffic, you may have access to different fields for your load balancing rules. For more details, refer to [Supported fields and expressions](/load-balancing/additional-options/load-balancing-rules/reference/).
 
 ---
 
 ## Workflow
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select an account and application.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select an account and application.
 
 2.  Navigate to **Traffic** > **Load Balancing**.
 

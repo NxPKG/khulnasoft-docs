@@ -11,7 +11,7 @@ Queues support local development workflows using [Wrangler](/workers/wrangler/in
 ## Prerequisites 
 
 To develop locally with Queues, you will need:
-- [Wrangler v3.1.0](https://blog.cloudflare.com/wrangler3/) or later. 
+- [Wrangler v3.1.0](https://blog.Khulnasoft.com/wrangler3/) or later. 
 
 - Node.js version of `18.0.0` or later. Consider using a Node version manager like [Volta](https://volta.sh/) or [nvm](https://github.com/nvm-sh/nvm) to avoid permission issues and change Node versions.
 

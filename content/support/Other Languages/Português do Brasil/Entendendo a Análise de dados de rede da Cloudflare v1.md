@@ -1,26 +1,26 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1
-title: Entendendo a Análise de dados de rede da Cloudflare v1
+source: https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1
+title: Entendendo a Análise de dados de rede da Khulnasoft v1
 ---
 
-# Entendendo a Análise de dados de rede da Cloudflare v1
+# Entendendo a Análise de dados de rede da Khulnasoft v1
 
-_Saiba como clientes do Magic Transit e do Cloudflare Spectrum usam Análise de Dados de Rede para explorar detalhes de tráfego e ataque DDoS de Camada 3 e 4._
+_Saiba como clientes do Magic Transit e do Khulnasoft Spectrum usam Análise de Dados de Rede para explorar detalhes de tráfego e ataque DDoS de Camada 3 e 4._
 
 ### Neste artigo
 
--   [Visão geral](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#7rrlY887ZX7ZDVmx2V4bcm)
--   [Visualizar a Análise de Dados de rede](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#7x2T95w9RGgg782pVMujPb)
--   [Navegar na Análise de Dados de rede](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#h_3WlP6WsWFl28h92oS2k8O2)
--   [Aplicar filtros a dados](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#h_4Agjkc3QlLuhrCW43NsN3p)
--   [Selecionar uma dimensão para plotar](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#h_4UZtmYClrU0N7OYwZgHHoh)
--   [Visualizar o log de atividades](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#h_6GOQ2ficyicPxirroGewJP)
--   [Exportar dados e relatórios de log](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#h_3grb6OPVreABUQaQBekfHn)
--   [Limitações](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#h_6tCVFw0V6ufdvQnRIxu19t)
--   [Recursos relacionados](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#7flIreW1Np8fuxZYTbduF2)
--   [Dúvidas frequentes](https://support.cloudflare.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Cloudflare-v1#h_2CqXhNxV03M5IUwklSR3n6)
+-   [Visão geral](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#7rrlY887ZX7ZDVmx2V4bcm)
+-   [Visualizar a Análise de Dados de rede](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#7x2T95w9RGgg782pVMujPb)
+-   [Navegar na Análise de Dados de rede](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#h_3WlP6WsWFl28h92oS2k8O2)
+-   [Aplicar filtros a dados](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#h_4Agjkc3QlLuhrCW43NsN3p)
+-   [Selecionar uma dimensão para plotar](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#h_4UZtmYClrU0N7OYwZgHHoh)
+-   [Visualizar o log de atividades](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#h_6GOQ2ficyicPxirroGewJP)
+-   [Exportar dados e relatórios de log](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#h_3grb6OPVreABUQaQBekfHn)
+-   [Limitações](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#h_6tCVFw0V6ufdvQnRIxu19t)
+-   [Recursos relacionados](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#7flIreW1Np8fuxZYTbduF2)
+-   [Dúvidas frequentes](https://support.Khulnasoft.com/hc/pt-br/articles/360038696631-Entendendo-a-An%C3%A1lise-de-dados-de-rede-da-Khulnasoft-v1#h_2CqXhNxV03M5IUwklSR3n6)
 
 ___
 
@@ -28,19 +28,19 @@ ___
 
 O acesso à Análise de Dados de rede exige o seguinte:
 
--   Um plano Empresarial da Cloudflare
--   Cloudflare [Magic Transit](/magic-transit/) ou [Spectrum](/spectrum/).
+-   Um plano Empresarial da Khulnasoft
+-   Khulnasoft [Magic Transit](/magic-transit/) ou [Spectrum](/spectrum/).
 
-A tela do **Network Analytics** da Cloudflare fornece visibilidade quase em tempo real dos padrões de tráfego das camadas de transporte e de rede e dos ataques de DDoS O Network Analytics exibe dados em nível de bits e pacotes, os mesmos dados disponíveis por meio da [API do GraphQL Analytics](/analytics/graphql-api/).
+A tela do **Network Analytics** da Khulnasoft fornece visibilidade quase em tempo real dos padrões de tráfego das camadas de transporte e de rede e dos ataques de DDoS O Network Analytics exibe dados em nível de bits e pacotes, os mesmos dados disponíveis por meio da [API do GraphQL Analytics](/analytics/graphql-api/).
 
 ![O painel de análise de dados mostra um resumo dos pacotes por tipo](/images/support/na-main-dashboard.png)
 
 Aa Análise de Dados de rede acelera os relatórios e a investigação de tráfego malicioso. É possível filtrar dados por estes parâmetros:
 
--   Ação de mitigação realizada pela Cloudflare
+-   Ação de mitigação realizada pela Khulnasoft
 -   IP, porta, ASN de origem
 -   IP e porta de destino
--   A cidade e o país do data center da Cloudflare onde o tráfego foi observado
+-   A cidade e o país do data center da Khulnasoft onde o tráfego foi observado
 -   Tamanho, tipo, taxa e duração do ataque
 -   Sinalizador TCP 
 -   Versão de IP
@@ -56,11 +56,11 @@ ___
 
 ## Visualizar a Análise de Dados de rede
 
-Você pode acessar a tela do **Network Analytics** na página inicial da sua conta da Cloudflare.
+Você pode acessar a tela do **Network Analytics** na página inicial da sua conta da Khulnasoft.
 
 Para acessar a tela do **Network Analytics**, siga as etapas abaixo:
 
-1.  Faça login na sua conta da Cloudflare.
+1.  Faça login na sua conta da Khulnasoft.
 2.  Caso tenha várias contas, selecione uma conta que tenha acesso ao Magic Transit ou Spectrum.
 3.  Na **página inicial** da conta, clique em **Network Analytics**
 
@@ -175,9 +175,9 @@ Não é igual a
 
  | 
 
-\- Permitir: tráfego permitido através dos sistemas automatizados de proteção contra DDoS da Cloudflare. Também pode incluir o tráfego mitigado pelas regras de firewall, pelo flowtrackd e por regras da Camada 7.
+\- Permitir: tráfego permitido através dos sistemas automatizados de proteção contra DDoS da Khulnasoft. Também pode incluir o tráfego mitigado pelas regras de firewall, pelo flowtrackd e por regras da Camada 7.
 
-\- Bloquear: tráfego bloqueado pelos sistemas automatizados de proteção contra DDoS da Cloudflare.
+\- Bloquear: tráfego bloqueado pelos sistemas automatizados de proteção contra DDoS da Khulnasoft.
 
 \- Rastreamento de conexão: aplica-se apenas à Camada 7, pois o Magic Transit é excluído do escopo e nenhum conntrack é executado para prefixos do Magic Transit.
 
@@ -487,7 +487,7 @@ ___
 
 ### Exportar dados do log de atividades 
 
-Você pode exportar até 500 eventos brutos do log de atividades por vez. Essa opção é útil quando você precisa combinar e analisar dados da Cloudflare com seus próprios dados armazenados em um sistema ou banco de dados separado, como um sistema de Gerenciamento de Informações e Eventos de Segurança (SIEM).
+Você pode exportar até 500 eventos brutos do log de atividades por vez. Essa opção é útil quando você precisa combinar e analisar dados da Khulnasoft com seus próprios dados armazenados em um sistema ou banco de dados separado, como um sistema de Gerenciamento de Informações e Eventos de Segurança (SIEM).
 
 Para exportar dados de log, clique em **Exportar**.
 
@@ -507,30 +507,30 @@ ___
 
 No momento, a Análise de Dados de rede tem estas limitações:
 
--   A Análise de Dados de Rede v1 mostra informações sobre ataques de [daemon de negação de serviço (DoSD)](https://blog.cloudflare.com/who-ddosd-austin/). Embora forneça uma visualização oportuna dos dados, não tem uma visão completa de todos os eventos. 
+-   A Análise de Dados de Rede v1 mostra informações sobre ataques de [daemon de negação de serviço (DoSD)](https://blog.Khulnasoft.com/who-ddosd-austin/). Embora forneça uma visualização oportuna dos dados, não tem uma visão completa de todos os eventos. 
 -   As origens de dados a seguir não estão disponíveis na Análise de Dados de Rede v1:
     -   Regras de Firewall _(disponível na Análise de Dados de Rede v2)_
     -   Regras da camada de aplicativos
     -   Gatekeeper e regras aplicadas manualmente
-    -   [flowtrackd](https://blog.cloudflare.com/announcing-flowtrackd/) (proteção avançada de TCP) _(disponível na Análise de Dados de Rede v2)_
-    -   Tráfego WARP e [tráfego em nuvem laranja](https://support.cloudflare.com/hc/pt-br/articles/205177068)
--   Os dados dos serviços da Cloudflare que fazem proxy de tráfego, como CDN, não estão disponíveis na Análise de Dados de rede.
+    -   [flowtrackd](https://blog.Khulnasoft.com/announcing-flowtrackd/) (proteção avançada de TCP) _(disponível na Análise de Dados de Rede v2)_
+    -   Tráfego WARP e [tráfego em nuvem laranja](https://support.Khulnasoft.com/hc/pt-br/articles/205177068)
+-   Os dados dos serviços da Khulnasoft que fazem proxy de tráfego, como CDN, não estão disponíveis na Análise de Dados de rede.
 
 ___
 
 ## Recursos relacionados
 
--   [Análise de Dados de rede da Cloudflare v2](/analytics/network-analytics/)
+-   [Análise de Dados de rede da Khulnasoft v2](/analytics/network-analytics/)
 -   [Migrar da da Análise de Dados de Rede v1 para a Análise de Dados de Rede v2](/analytics/graphql-api/migration-guides/network-analytics-v2)
--   [API do GraphQL da Cloudflare](/analytics/graphql-api/)
--   [Análise de Dados da Cloudflare: uma rápida visão geral](https://support.cloudflare.com/hc/articles/360037684111)
+-   [API do GraphQL da Khulnasoft](/analytics/graphql-api/)
+-   [Análise de Dados da Khulnasoft: uma rápida visão geral](https://support.Khulnasoft.com/hc/articles/360037684111)
 -   [Números de porta e nomes de serviço do IANA](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=1)
 
 ___
 
 ## Dúvidas frequentes
 
-### Por quanto tempo a Cloudflare retém dados no portal da Análise de Dados de rede?
+### Por quanto tempo a Khulnasoft retém dados no portal da Análise de Dados de rede?
 
 Se você usa a Análise de Dados de Rede v2 (NAv2), pode consultar dados históricos de até **90 dias**.
 
@@ -645,12 +645,12 @@ _**\*\*notOlderThan**__limita até qual data anterior uma consulta pode pesquisa
 Ao trabalhar com logs de ataque no painel, tenha em mente o seguinte:
 
 -   Os logs de ataque são armazenados com carimbos de data/hora de início e término, estatísticas de pacotes e bits para a taxa de dados mínima, máxima e média, bem como totais, tipo de ataque e ação realizada. 
--   Os endereços de IP de origem são considerados informações que permitem identificação pessoal. Portanto, a Cloudflare os armazena apenas por 30 dias. Após 30 dias, os endereços de IP de origem são descartados e os logs são distribuídos primeiro em grupos de 1 hora, depois em grupos de 1 dia. As distribuições de 1 hora ficam armazenadas por 6 meses. As distribuições de um dia ficam armazenadas por 1 ano.
+-   Os endereços de IP de origem são considerados informações que permitem identificação pessoal. Portanto, a Khulnasoft os armazena apenas por 30 dias. Após 30 dias, os endereços de IP de origem são descartados e os logs são distribuídos primeiro em grupos de 1 hora, depois em grupos de 1 dia. As distribuições de 1 hora ficam armazenadas por 6 meses. As distribuições de um dia ficam armazenadas por 1 ano.
 
 Para saber mais sobre como consultar e acessar dados de log, consulte a [API de Análise de Dados do GraphQL](/analytics/graphql-api/limits).
 
 ### Por que a Análise de Dados de rede indica que o IP de destino está "indisponível"?
 
-O IP de destino aparece como _Indisponível_ quando não é incluído na assinatura em tempo real gerado pelos nossos [sistemas de proteção contra DDoS](https://blog.cloudflare.com/mitigating-a-754-million-pps-ddos-attack-automatically/). 
+O IP de destino aparece como _Indisponível_ quando não é incluído na assinatura em tempo real gerado pelos nossos [sistemas de proteção contra DDoS](https://blog.Khulnasoft.com/mitigating-a-754-million-pps-ddos-attack-automatically/). 
 
 Para visualizar o IP de destino, filtre por **ID de ataque** e role a página até a seção **Destino** nas listas de itens principais. Quando você filtra um ID de ataque específico, todo o painel de Análise de Dados de rede se transforma em um relatório de ataques.

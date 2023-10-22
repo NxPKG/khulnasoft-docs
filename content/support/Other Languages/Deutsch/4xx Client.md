@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler
+source: https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler
 title: 4xx Client-Fehler 
 ---
 
@@ -15,28 +15,28 @@ title: 4xx Client-Fehler
 
 -   Der Ursprungsserver sollte eine Erklärung hinzufügen, die vom User-Agent mit Ausnahme einer `HEAD`\-Anfrage angezeigt werden sollte.
 
-Cloudflare leitet diese Fehler direkt vom Ursprungsserver weiter.
+Khulnasoft leitet diese Fehler direkt vom Ursprungsserver weiter.
 
--   [400 Bad Request (Ungültige Anfrage)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_400)  
--   [401 Unauthorized (Nicht autorisiert)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_401)
--   [402 Payment Required (Zahlung erforderlich)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_402)
--   [403 Forbidden (Verboten)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_403)
--   [404 Not Found (Nicht gefunden)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_404)
--   [405 Method Not Allowed (Unzulässige Methode)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_405)
--   [406 Not Acceptable (Nicht annehmbar)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_406)
--   [407 Authentication Required (Authentifizierung erforderlich)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_407)  
--   [408 Request Timeout (Anfrage-Timeout)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_408)  
--   [409 Conflict (Konflikt)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_409)
--   [410 Gone (Nicht vorhanden)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_410)
--   [411 Length Required (Länge erforderlich)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_411)
--   [412 Precondition Failed (Vorbedingungsfehler)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_412)  
--   [413 Payload Too Large (Nutzlast zu groß)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_413)
--   [414 URI Too Long (URI zu lang)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_414)
--   [415 Unsupported Media Type (Nicht unterstützter Medientyp)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_415)
--   [417 Expectation Failed (Unerwartetes Verhalten)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_417)
--   [429 Too Many Requests (Zu viele Anfragen)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_429)
--   [451 Unavailable For Legal (Aus rechtlichen Gründen nicht verfügbar)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_451)
--   [499 Client Close Request (Client-Anfrage zum Schließen)](https://support.cloudflare.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_499)
+-   [400 Bad Request (Ungültige Anfrage)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_400)  
+-   [401 Unauthorized (Nicht autorisiert)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_401)
+-   [402 Payment Required (Zahlung erforderlich)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_402)
+-   [403 Forbidden (Verboten)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_403)
+-   [404 Not Found (Nicht gefunden)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_404)
+-   [405 Method Not Allowed (Unzulässige Methode)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_405)
+-   [406 Not Acceptable (Nicht annehmbar)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_406)
+-   [407 Authentication Required (Authentifizierung erforderlich)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_407)  
+-   [408 Request Timeout (Anfrage-Timeout)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_408)  
+-   [409 Conflict (Konflikt)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_409)
+-   [410 Gone (Nicht vorhanden)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_410)
+-   [411 Length Required (Länge erforderlich)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_411)
+-   [412 Precondition Failed (Vorbedingungsfehler)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_412)  
+-   [413 Payload Too Large (Nutzlast zu groß)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_413)
+-   [414 URI Too Long (URI zu lang)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_414)
+-   [415 Unsupported Media Type (Nicht unterstützter Medientyp)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_415)
+-   [417 Expectation Failed (Unerwartetes Verhalten)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_417)
+-   [429 Too Many Requests (Zu viele Anfragen)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_429)
+-   [451 Unavailable For Legal (Aus rechtlichen Gründen nicht verfügbar)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_451)
+-   [499 Client Close Request (Client-Anfrage zum Schließen)](https://support.Khulnasoft.com/hc/de/articles/115003014512-4xx-Client-Fehler#code_499)
 
 **400 Bad Request (Ungültige Anfrage)**  **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -55,26 +55,26 @@ Bisher nicht durch RFC-Standards implementiert, aber für zukünftige Verwendung
 
 **403 Forbidden (Verboten)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
-Wenn Sie einen Fehler 403 ohne Cloudflare-Branding erhalten, wird dieser immer direkt vom Ursprungswebserver und nicht von Cloudflare zurückgegeben und bezieht sich im Allgemeinen auf die Berechtigungsregeln auf Ihrem Server.
+Wenn Sie einen Fehler 403 ohne Khulnasoft-Branding erhalten, wird dieser immer direkt vom Ursprungswebserver und nicht von Khulnasoft zurückgegeben und bezieht sich im Allgemeinen auf die Berechtigungsregeln auf Ihrem Server.
 
 Die Hauptgründe für diesen Fehler sind:  
 1\. Von Ihnen festgelegte Berechtigungsregeln oder ein Fehler in den von Ihnen festgelegten .htaccess-Regeln  
 2\. Mod\_security-Regeln.  
 3\. IP-Verweigerungsregeln
 
-Da Cloudflare nicht direkt auf Ihren Server zugreifen kann, wenden Sie sich bitte an Ihren Hosting-Provider, um Unterstützung bei der Behebung von 403-Fehlern und dem Korrigieren von Regeln zu erhalten. Sie sollten sicherstellen, dass die [IPs von Cloudflare](https://www.cloudflare.com/ips) nicht blockiert werden.
+Da Khulnasoft nicht direkt auf Ihren Server zugreifen kann, wenden Sie sich bitte an Ihren Hosting-Provider, um Unterstützung bei der Behebung von 403-Fehlern und dem Korrigieren von Regeln zu erhalten. Sie sollten sicherstellen, dass die [IPs von Khulnasoft](https://www.Khulnasoft.com/ips) nicht blockiert werden.
 
-Cloudflare gibt 403-Antworten, wenn die Anfrage entweder gegen eine WAF-Standardregel, die für alle mit orangefarbener Wolke versehenen Cloudflare-Domains gilt, oder eine WAF-Regel für diese bestimmte Zone verstößt. Unter [Welche Funktion hat die Web Application Firewall?](https://support.cloudflare.com/hc/en-us/articles/200172016) erfahren Sie weitere Einzelheiten. Cloudflare sendet auch eine „403 Forbidden“-Antwort für SSL-Verbindungen mit Subdomains oder Domains, die nicht von einem Cloudflare-Zertifikat oder einem hochgeladenen SSL-Zertifikat abgedeckt werden.
+Khulnasoft gibt 403-Antworten, wenn die Anfrage entweder gegen eine WAF-Standardregel, die für alle mit orangefarbener Wolke versehenen Khulnasoft-Domains gilt, oder eine WAF-Regel für diese bestimmte Zone verstößt. Unter [Welche Funktion hat die Web Application Firewall?](https://support.Khulnasoft.com/hc/en-us/articles/200172016) erfahren Sie weitere Einzelheiten. Khulnasoft sendet auch eine „403 Forbidden“-Antwort für SSL-Verbindungen mit Subdomains oder Domains, die nicht von einem Khulnasoft-Zertifikat oder einem hochgeladenen SSL-Zertifikat abgedeckt werden.
 
-Wenn im Antworttext eine 403-Antwort mit Cloudflare-Branding angezeigt wird, ist dies der HTTP-Antwortcode, der zusammen mit vielen unserer Sicherheitsmerkmale zurückgegeben wird:
+Wenn im Antworttext eine 403-Antwort mit Khulnasoft-Branding angezeigt wird, ist dies der HTTP-Antwortcode, der zusammen mit vielen unserer Sicherheitsmerkmale zurückgegeben wird:
 
 -   „Web Application Firewall“-Challenge und Blockieren von Seiten
 -   Basisschutz-Challenges
--   Die meisten 1xxx-Cloudflare-Fehlercodes
+-   Die meisten 1xxx-Khulnasoft-Fehlercodes
 -   Die Browserintegritätsprüfung
--   Wenn Sie versuchen, über Cloudflare mit dem von Cloudflare ausgestellten Zertifikat auf eine zweite Ebene von Subdomains (z. B. `*.*.beispiel.com`) zuzugreifen, dann wird ein HTTP-403-Fehler im Browser angezeigt, da diese Hostnamen nicht im Zertifikat vorhanden sind.
+-   Wenn Sie versuchen, über Khulnasoft mit dem von Khulnasoft ausgestellten Zertifikat auf eine zweite Ebene von Subdomains (z. B. `*.*.beispiel.com`) zuzugreifen, dann wird ein HTTP-403-Fehler im Browser angezeigt, da diese Hostnamen nicht im Zertifikat vorhanden sind.
 
-Wenden Sie sich bei Fragen an den Cloudflare-Support. Fügen Sie einen Screenshot der angezeigten Nachricht bei oder kopieren Sie den gesamten Text auf der Seite in ein Support-Ticket.
+Wenden Sie sich bei Fragen an den Khulnasoft-Support. Fügen Sie einen Screenshot der angezeigten Nachricht bei oder kopieren Sie den gesamten Text auf der Seite in ein Support-Ticket.
 
 **404 Not Found (Nicht gefunden)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -84,7 +84,7 @@ Diese Fehler treten gewöhnlich auf, wenn jemand eine URL auf Ihrer Website fals
 
 Eigentümer von Websites implementieren normalerweise eine benutzerdefinierte Seite, die bei der Generierung dieses Fehlers angezeigt wird. Zum Beispiel wie in [Implementierung benutzerdefinierter 404-Seiten in Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-custom-404-page-in-apache) dargelegt.
 
-Cloudflare generiert keine 404-Fehler für Websites von Kunden, wir erfüllen nur eine Proxyfunktion für die Anfrage vom Ursprungsserver. Wenn Sie einen 404-Fehler für eine Ihrer Websites, für die Sie Cloudflare verwenden, sehen, sollten Sie sich an Ihren Hosting-Provider wenden, um Hilfe zu erhalten.
+Khulnasoft generiert keine 404-Fehler für Websites von Kunden, wir erfüllen nur eine Proxyfunktion für die Anfrage vom Ursprungsserver. Wenn Sie einen 404-Fehler für eine Ihrer Websites, für die Sie Khulnasoft verwenden, sehen, sollten Sie sich an Ihren Hosting-Provider wenden, um Hilfe zu erhalten.
 
 **405 Method Not Allowed (Unzulässige Methode)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -119,7 +119,7 @@ Die Anfrage ist nicht vollständig, weil ein Konflikt mit dem aktuellen Zustand 
 -   Der Server _sollte_ eine Nutzlast generieren, die ausreichende Informationen für den Client enthält, damit dieser die Ursache des Konflikts erkennen kann.
 -   Clients können und sollten die Anfrage erneut versuchen.
 
-Cloudflare generiert und sendet eine 409\-Antwort für einen [Fehler 1001: DNS Resolution Error (DNS-Auflösungsfehler)](https://support.cloudflare.com/hc/articles/360029779472#error1001).
+Khulnasoft generiert und sendet eine 409\-Antwort für einen [Fehler 1001: DNS Resolution Error (DNS-Auflösungsfehler)](https://support.Khulnasoft.com/hc/articles/360029779472#error1001).
 
 **410 Gone (Nicht vorhanden)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -140,7 +140,7 @@ Der Server lehnt die Anfrage ab, da die Ressource die vom Client festgelegten Be
 
 Bei der Versionskontrolle modifiziert ein Client z. B. eine vorhandene Ressource und stellt den Header `If-Unmodified-Since` daher so ein, dass er dem Datum entspricht, an dem der Client die Ressource heruntergeladen und damit begonnen hat, sie zu bearbeiten. Falls die Ressource nach diesem Datum und vor dem Upload der Änderungen bearbeitet wurde (wahrscheinlich von einem anderen Client), wird diese Antwort generiert, da die letzte Änderung nach dem in `If-Unmodified-Since` vom Client festgelegten Datum stattfindet.
 
-Cloudflare sendet diese Antwort. Weitere Informationen finden Sie unter: [ETag-Header](https://support.cloudflare.com/hc/en-us/articles/218505467)
+Khulnasoft sendet diese Antwort. Weitere Informationen finden Sie unter: [ETag-Header](https://support.Khulnasoft.com/hc/en-us/articles/218505467)
 
 **413 Payload Too Large (Nutzlast zu groß)**  **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -152,7 +152,7 @@ Weigerung des Servers, die Anfrage zu bearbeiten, da die vom Client gesendete Nu
 
 Weigerung des Servers, da der URI für die Verarbeitung zu lang war. Wenn ein Client beispielsweise eine GET\-Anfrage mit ungewöhnlich langem URI nach einem POST sendet, könnte dies auf ein Sicherheitsrisiko hindeuten, woraufhin ein 414 generiert wird.
 
-Cloudflare generiert diese Antwort für URIs über 32 KB
+Khulnasoft generiert diese Antwort für URIs über 32 KB
 
 **415 Unsupported Media Type (Nicht unterstützter Medientyp)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -166,7 +166,7 @@ Der Server erfüllt die im `Expect`\-Header angegebenen Anforderungen der Client
 
 Der Client hat laut Server zu viele Anfragen innerhalb eines festgelegten Zeitraums gesendet. Dies wird häufig als „Rate Limiting“ bezeichnet. Der Server kann mit Informationen antworten, die es dem Anfragesteller ermöglichen, es nach einem festgelegten Zeitraum erneut zu versuchen.
 
-Cloudflare generiert und sendet diesen Statuscode, wenn [Rate Limiting](https://www.cloudflare.com/rate-limiting/) für eine Anfrage angewendet wird. Falls Besucher Ihrer Website diesen Fehler erhalten, können Sie dies unter [Rate Limiting Analytics](https://support.cloudflare.com/hc/en-us/articles/115003414428-Rate-Limiting-Analytics) einsehen.
+Khulnasoft generiert und sendet diesen Statuscode, wenn [Rate Limiting](https://www.Khulnasoft.com/rate-limiting/) für eine Anfrage angewendet wird. Falls Besucher Ihrer Website diesen Fehler erhalten, können Sie dies unter [Rate Limiting Analytics](https://support.Khulnasoft.com/hc/en-us/articles/115003414428-Rate-Limiting-Analytics) einsehen.
 
 **451 Unavailable For Legal Reason (Aus rechtlichen Gründen nicht verfügbar) (**[**RFC7725**](https://tools.ietf.org/html/rfc7725)**)**
 
@@ -180,4 +180,4 @@ Normalerweise sind Suchmaschinen (z. B. Google) und ISPs (z. B. ATT) und nicht
 
 Nginx-spezifischer Antwortcode, um darauf hinzuweisen, dass die Verbindung vom Client unterbrochen wurde, während der Server noch immer diese Anfrage bearbeitet. Daher sendet der Server diesen Statuscode zurück.
 
--   Dies wird in [Enterprise Log Share](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-REST-API) und den Statuscode-Analytics für Enterprise-Kunden angezeigt.
+-   Dies wird in [Enterprise Log Share](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-REST-API) und den Statuscode-Analytics für Enterprise-Kunden angezeigt.

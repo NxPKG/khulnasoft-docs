@@ -1,9 +1,9 @@
 ---
 pcx_content_type: navigation
-title: Understanding Cloudflare Web Analytics
+title: Understanding Khulnasoft Web Analytics
 weight: 4
 ---
 
-# Understanding Cloudflare Web Analytics
+# Understanding Khulnasoft Web Analytics
 
 {{<directory-listing>}}

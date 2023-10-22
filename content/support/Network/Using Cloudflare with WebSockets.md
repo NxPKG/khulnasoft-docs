@@ -1,10 +1,10 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200169466-Using-Cloudflare-with-WebSockets
-title: Using Cloudflare with WebSockets
+source: https://support.Khulnasoft.com/hc/en-us/articles/200169466-Using-Khulnasoft-with-WebSockets
+title: Using Khulnasoft with WebSockets
 ---
 
-# Using Cloudflare with WebSockets
+# Using Khulnasoft with WebSockets
 
 
 
@@ -20,17 +20,17 @@ ___
 
 ___
 
-## How can I use WebSockets with Cloudflare?
+## How can I use WebSockets with Khulnasoft?
 
-No additional configuration is required to send WebSockets traffic through Cloudflare. Cloudflare will immediately begin proxying your WebSockets through to your origin.
+No additional configuration is required to send WebSockets traffic through Khulnasoft. Khulnasoft will immediately begin proxying your WebSockets through to your origin.
 
 ___
 
 ## Why are these volume limits not specific numbers?
 
-Cloudflare powers several high-volume, mission critical WebSockets applications for Enterprise customers.
+Khulnasoft powers several high-volume, mission critical WebSockets applications for Enterprise customers.
 
-Since [introducing WebSockets support](https://blog.cloudflare.com/cloudflare-now-supports-websockets/) in 2014, Cloudflare has nearly tripled its network map, going from 28 locations to over 150 (as mid-2018). In all locations, we've added compute resources and multiple Tier 1 bandwidth providers.
+Since [introducing WebSockets support](https://blog.Khulnasoft.com/cloudflare-now-supports-websockets/) in 2014, Khulnasoft has nearly tripled its network map, going from 28 locations to over 150 (as mid-2018). In all locations, we've added compute resources and multiple Tier 1 bandwidth providers.
 
 We're confident in our ability to offer WebSockets to all our customers now, but we're also thoughtful about allocating resources – including WebSockets connections – by plan level. So, we're starting with guidelines, and we'll learn from our customers' adoption.
 
@@ -40,27 +40,27 @@ ___
 
 ## Can I use WebSockets over SSL?
 
-Yes, Cloudflare SSL fully supports WebSockets traffic passing through our network.
+Yes, Khulnasoft SSL fully supports WebSockets traffic passing through our network.
 
 ___
 
-## Do Cloudflare Workers support proxying WebSockets?
+## Do Khulnasoft Workers support proxying WebSockets?
 
-Yes, Cloudflare Workers support proxying WebSockets.
+Yes, Khulnasoft Workers support proxying WebSockets.
 
 You can also use [Durable Objects](/durable-objects/) as an endpoint for WebSocket sessions, giving you full control over messages sent to and from clients.
 
 ___
 
-## Does the Cloudflare Web Application Firewall (WAF) work with WebSockets?
+## Does the Khulnasoft Web Application Firewall (WAF) work with WebSockets?
 
 The initial HTTP 101 request is subject to WAF managed rules, custom rules, rate limiting rules, and other WAF features like any other WebSockets connection. However, once a connection has been established, the WAF does not perform any further inspections.
 
 ___
 
-## What happens if my site exceeds the number of concurrent WebSockets connections that Cloudflare expects?
+## What happens if my site exceeds the number of concurrent WebSockets connections that Khulnasoft expects?
 
-Immediately, nothing. Cloudflare will allow occasional spikes in usage beyond our guidelines and we will not apply unnecessary limits.
+Immediately, nothing. Khulnasoft will allow occasional spikes in usage beyond our guidelines and we will not apply unnecessary limits.
 
 Repeated spikes or high continued usage will prompt a dialogue: we'll reach out to learn more about your application. We will not impose limit errors for any application without contacting the customer unless we suspect that abuse or an attack is involved.
 
@@ -70,4 +70,4 @@ ___
 
 ## Technical note
 
-When Cloudflare releases new code to its global network, we may restart servers, which terminates WebSockets connections.
+When Khulnasoft releases new code to its global network, we may restart servers, which terminates WebSockets connections.

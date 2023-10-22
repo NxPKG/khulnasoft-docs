@@ -8,12 +8,12 @@ inputParameters: productName;;anycastURL;;trafficSteering;;trafficRoutesAPI
 
 # Configure static routes
 
-$1 uses a static configuration to route your traffic through [Anycast tunnels]($2) from Cloudflare’s global network to your locations.
+$1 uses a static configuration to route your traffic through [Anycast tunnels]($2) from Khulnasoft’s global network to your locations.
 
 You must assign a route priority to each tunnel–subnet pair in your configuration, as follows:
 
 - Lower values have greater priority.
-- When the priority values for prefix entries match, Cloudflare uses equal-cost multi-path (ECMP) packet forwarding to route traffic. For more on how Cloudflare uses ECMP packet forwarding, refer to [Traffic steering]($3).
+- When the priority values for prefix entries match, Khulnasoft uses equal-cost multi-path (ECMP) packet forwarding to route traffic. For more on how Khulnasoft uses ECMP packet forwarding, refer to [Traffic steering]($3).
 
 $4
 

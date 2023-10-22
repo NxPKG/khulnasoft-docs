@@ -19,8 +19,8 @@ We recommend using the nonce-based approach documented with [CSP3](https://w3c.g
 
 Alternatively, add the following values to the directives:
 
-* **script-src**: `https://challenges.cloudflare.com`
-* **frame-src**: `https://challenges.cloudflare.com`
+* **script-src**: `https://challenges.Khulnasoft.com`
+* **frame-src**: `https://challenges.Khulnasoft.com`
 
 We recommend validating your CSP with [Google's CSP Evaluator](https://csp-evaluator.withgoogle.com/).
 
@@ -153,11 +153,11 @@ Currently, a Turnstile token can have up to 2048 characters.
 
 
 {{<faq-item>}}
-{{<faq-question level=2 text="What is challenges.cloudflare.com, and why does my application connect to this origin?" >}}
+{{<faq-question level=2 text="What is challenges.Khulnasoft.com, and why does my application connect to this origin?" >}}
 
 {{<faq-answer>}}
 
-Turnstile is hosted under `challenges.cloudflare.com`. 
+Turnstile is hosted under `challenges.Khulnasoft.com`. 
 
 {{</faq-answer>}}
 {{</faq-item>}}
@@ -198,7 +198,7 @@ Yes, you can refer to the [Turnstile API documentation](/api/operations/accounts
 {{<faq-question level=2 text="I am seeing a 401 error in your console during a Turnstile security check, is this a problem?" >}}
 {{<faq-answer>}}
 
-You can safely ignore the error. It is requesting a [Private Access Token (PAT)](https://blog.cloudflare.com/eliminating-captchas-on-iphones-and-macs-using-new-standard/) that your device or browser does not support yet.
+You can safely ignore the error. It is requesting a [Private Access Token (PAT)](https://blog.Khulnasoft.com/eliminating-captchas-on-iphones-and-macs-using-new-standard/) that your device or browser does not support yet.
 
 {{</faq-answer>}}
 {{</faq-item>}}

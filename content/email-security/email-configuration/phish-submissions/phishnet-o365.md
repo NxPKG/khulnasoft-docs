@@ -86,4 +86,4 @@ If you cannot find the PhishNet icon, select the **More actions** menu (the thre
 
 4. Select **Submit Report**.
 
-Once the email has been successfully submitted to Cloudflare Area 1 for review, PhishNet will show you a **Submission Complete** message.
+Once the email has been successfully submitted to Khulnasoft Area 1 for review, PhishNet will show you a **Submission Complete** message.

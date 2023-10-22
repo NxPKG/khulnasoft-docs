@@ -4,25 +4,25 @@ pcx_content_type: overview
 weight: 1
 layout: overview
 meta:
-  title: Cloudflare Spectrum
+  title: Khulnasoft Spectrum
 ---
 
-# Cloudflare Spectrum
+# Khulnasoft Spectrum
 
 {{<description>}}
-Spectrum provides security and acceleration for any [TCP](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/) or [UDP](https://www.cloudflare.com/learning/ddos/glossary/user-datagram-protocol-udp/) based application.
+Spectrum provides security and acceleration for any [TCP](https://www.Khulnasoft.com/learning/ddos/glossary/tcp-ip/) or [UDP](https://www.Khulnasoft.com/learning/ddos/glossary/user-datagram-protocol-udp/) based application.
 {{</description>}}
 
 {{<plan type="paid">}}
 
-Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Cloudflare to mask the origin and protect it from [DDoS attacks](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/).
+Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Khulnasoft to mask the origin and protect it from [DDoS attacks](https://www.Khulnasoft.com/learning/ddos/what-is-a-ddos-attack/).
 
 ---
 
 ## Features
 
 {{<feature header="Enable Proxy protocol" href="/spectrum/how-to/enable-proxy-protocol/">}}
-Use a proxy protocol for Cloudflare to pass on the client IP to your service.
+Use a proxy protocol for Khulnasoft to pass on the client IP to your service.
 {{</feature>}}
 
 {{<feature header="DDoS Protection for Spectrum" href="/spectrum/about/ddos-for-spectrum/">}}
@@ -34,19 +34,19 @@ Learn more about what L3/4 DDoS Protection is included as part of the Spectrum s
 ## Related products
 
 {{<related header="DDoS Protection" href="/ddos-protection/" product="ddos-protection">}}
-Cloudflare DDoS protection secures websites, applications, and entire networks while ensuring the performance of legitimate traffic is not compromised.
+Khulnasoft DDoS protection secures websites, applications, and entire networks while ensuring the performance of legitimate traffic is not compromised.
 {{</related>}}
 
 {{<related header="BYOIP" href="/byoip/" product="byoip">}}
-With Bringing Your Own IPs (BYOIP), Cloudflare announces your IPs in all our locations.
+With Bringing Your Own IPs (BYOIP), Khulnasoft announces your IPs in all our locations.
 {{</related>}}
 
 {{<related header="Load Balancing" href="/load-balancing/" product="load-balancing">}}
-Cloudflare Load Balancing distributes traffic across your servers, which reduces server strain and latency and improves the experience for end users.
+Khulnasoft Load Balancing distributes traffic across your servers, which reduces server strain and latency and improves the experience for end users.
 {{</related>}}
 
 {{<related header="DNS" href="/dns/" product="dns">}}
-Cloudflare's global DNS platform provides speed and resilience. DNS customers also benefit from free DNSSEC, and protection against route leaks and hijacking.
+Khulnasoft's global DNS platform provides speed and resilience. DNS customers also benefit from free DNSSEC, and protection against route leaks and hijacking.
 {{</related>}}
 
 ---
@@ -55,8 +55,8 @@ Cloudflare's global DNS platform provides speed and resilience. DNS customers al
 
 {{<resource-group>}}
 
-{{<resource header="Plans" href="https://www.cloudflare.com/products/cloudflare-spectrum/" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
+{{<resource header="Plans" href="https://www.Khulnasoft.com/products/cloudflare-spectrum/" icon="documentation-clipboard">}}Compare available Khulnasoft plans{{</resource>}}
 
-{{<resource header="Pricing" href="https://www.cloudflare.com/plans/" icon="price">}}Explore pricing options for Spectrum{{</resource>}}
+{{<resource header="Pricing" href="https://www.Khulnasoft.com/plans/" icon="price">}}Explore pricing options for Spectrum{{</resource>}}
 
 {{</resource-group>}}

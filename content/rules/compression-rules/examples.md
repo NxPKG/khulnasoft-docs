@@ -33,7 +33,7 @@ The following example sets the rules of an existing [entry point ruleset](/rules
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -55,7 +55,7 @@ https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 
 ## Use GZIP compression for CSV files or other algorithm if not available
 
-The following example rule will configure GZIP compression as the preferred compression method for CSV files. If the visitor does not support this algorithm, Cloudflare will try to compress the response using a different algorithm supported by the visitor.
+The following example rule will configure GZIP compression as the preferred compression method for CSV files. If the visitor does not support this algorithm, Khulnasoft will try to compress the response using a different algorithm supported by the visitor.
 
 {{<example>}}
 
@@ -75,7 +75,7 @@ The following example sets the rules of an existing [entry point ruleset](/rules
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -120,7 +120,7 @@ The following example sets the rules of an existing [entry point ruleset](/rules
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

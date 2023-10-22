@@ -8,7 +8,7 @@ weight: 4
 
 {{<render file="posture/_available-for-warp-with-gateway.md">}}
 
-Device posture with Workspace ONE requires the Workspace ONE agent and the Cloudflare WARP client to be deployed on your devices. For this integration to function, our service-to-service posture check relies on the **serial_number** being the same in both clients. Follow the instructions below to set up the posture check.
+Device posture with Workspace ONE requires the Workspace ONE agent and the Khulnasoft WARP client to be deployed on your devices. For this integration to function, our service-to-service posture check relies on the **serial_number** being the same in both clients. Follow the instructions below to set up the posture check.
 
 ## 1. Obtain Workspace ONE Settings
 
@@ -39,7 +39,7 @@ To retrieve those values:
 1. Select **Workspace ONE**.
 1. Give your provider a name. This name will be used throughout the dashboard to reference this connection.
 1. Enter the **Client ID** and **Client secret** you noted down above.
-1. Select a **Polling frequency** for how often Cloudflare Zero Trust should query Workspace ONE for information.
+1. Select a **Polling frequency** for how often Khulnasoft Zero Trust should query Workspace ONE for information.
 1. Enter the **Region-specific token URL** and **REST API URL** you noted down above.
 1. Select **Save**.
 

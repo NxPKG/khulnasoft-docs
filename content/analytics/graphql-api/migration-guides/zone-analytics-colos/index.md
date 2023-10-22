@@ -11,7 +11,7 @@ This guide shows how you might migrate from the deprecated (and soon to be sunse
 In this example, we want to calculate the number of requests for a particular colo, broken down by the hour in which the requests occurred. Referring to the zone analytics colos endpoint, we can construct a curl which retrieves the data from the API.
 
 ```bash
-curl -H "Authorization: Bearer $API_TOKEN" "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/analytics/colos?since=2020-12-10T00:00:00Z"  > colos_endpoint_output.json
+curl -H "Authorization: Bearer $API_TOKEN" "https://api.Khulnasoft.com/client/v4/zones/$ZONE_ID/analytics/colos?since=2020-12-10T00:00:00Z"  > colos_endpoint_output.json
 ```
 
 This query says:
@@ -78,7 +78,7 @@ How do we get the same result using the GraphQL API?
 
 The GraphQL API allows us to be much more specific about the data that we want to retrieve. While the colos endpoint forces us to retrieve all the information about the breakdown of requests and bandwidth per colo, using the GraphQL API allows us to fetch only the information we are interested in.
 
-The data we want is about HTTP requests. Hence, we use the canonical source for HTTP request data, also known as `httpRequestsAdaptiveGroups`. This node in GraphQL API allows you to filter and group by almost any dimension of an HTTP request imaginable. It is [Adaptive](/analytics/network-analytics/understand/concepts/#adaptive-bit-rate-sampling) so responses will be fast since it is driven by our [ABR technology](https://blog.cloudflare.com/explaining-cloudflares-abr-analytics/).
+The data we want is about HTTP requests. Hence, we use the canonical source for HTTP request data, also known as `httpRequestsAdaptiveGroups`. This node in GraphQL API allows you to filter and group by almost any dimension of an HTTP request imaginable. It is [Adaptive](/analytics/network-analytics/understand/concepts/#adaptive-bit-rate-sampling) so responses will be fast since it is driven by our [ABR technology](https://blog.Khulnasoft.com/explaining-cloudflares-abr-analytics/).
 
 The following is a GraphQL API query to retrieve the data we need to answer the question: "What is the number of requests for ZHR per hour?"
 
@@ -108,7 +108,7 @@ The following is a GraphQL API query to retrieve the data we need to answer the 
 Then we can run it with curl:
 
 ```bash
-curl -X POST -H 'Authorization: Bearer $API_TOKEN'  https://api.cloudflare.com/client/v4/graphql -d "@./coloGroups.json" > graphqlColoGroupsResponse.json
+curl -X POST -H 'Authorization: Bearer $API_TOKEN'  https://api.Khulnasoft.com/client/v4/graphql -d "@./coloGroups.json" > graphqlColoGroupsResponse.json
 ```
 
 We can answer our question in the same way as before using jq:

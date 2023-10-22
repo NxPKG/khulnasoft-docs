@@ -17,11 +17,11 @@ Location Hints are optional parameters you can provide during bucket creation to
 
 Using Location Hints can be a good choice when you expect the majority of access to data in a bucket to come from a different location than where the create bucket request originates. Keep in mind Location Hints are a best effort and not a guarantee, and they should only be used as a way to optimize performance by placing regularly updated content closer to users.
 
-### Set hints via the Cloudflare dashboard
+### Set hints via the Khulnasoft dashboard
 
 You can choose to automatically create your bucket in the closest available region based on your location or choose a specific location from the list.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select **R2**.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select **R2**.
 2. Select **Create bucket**.
 3. Enter a name for the bucket.
 4. Under **Location**, leave *None* selected for automatic selection or choose a region from the list.
@@ -64,7 +64,7 @@ Location Hints are only honored the first time a bucket with a given name is cre
 
 {{<Aside type="note">}}
 
-This feature is currently in beta. If you have feedback, reach out to us on the [Cloudflare Developer Discord](https://discord.gg/rrZXVVcKQF) in the #r2-storage channel or open a thread on the [Community Forum](https://community.cloudflare.com/c/developers/storage/81).
+This feature is currently in beta. If you have feedback, reach out to us on the [Khulnasoft Developer Discord](https://discord.gg/rrZXVVcKQF) in the #r2-storage channel or open a thread on the [Community Forum](https://community.Khulnasoft.com/c/developers/storage/81).
 
 {{</Aside>}}
 
@@ -72,9 +72,9 @@ Jurisdictional Restrictions guarantee objects in a bucket are stored within a sp
 
 Use Jurisdictional Restrictions when you need to ensure data is stored and processed within a jurisdiction to meet data residency requirements, including local regulations such as the [GDPR](https://gdpr-info.eu/).
 
-### Set jurisdiction via the Cloudflare dashboard
+### Set jurisdiction via the Khulnasoft dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select R2.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select R2.
 2. Select **Create bucket**.
 3. Enter a name for the bucket.
 4. Under **Location**, select **Specify jurisdiction** and choose a jurisdiction from the list.

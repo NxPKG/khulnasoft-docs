@@ -1,26 +1,26 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: japanese
-source: https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B
-title: Cloudflareネットワーク分析 v1を理解する
+source: https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B
+title: Khulnasoftネットワーク分析 v1を理解する
 ---
 
-# Cloudflareネットワーク分析 v1を理解する
+# Khulnasoftネットワーク分析 v1を理解する
 
-_Magic TransitとCloudflare Spectrumのお客様がアカウントレベルのネットワーク分析を使って、レイヤー3とレイヤー4トラフィックと攻撃の詳細を調べる方法をご紹介します。_
+_Magic TransitとKhulnasoft Spectrumのお客様がアカウントレベルのネットワーク分析を使って、レイヤー3とレイヤー4トラフィックと攻撃の詳細を調べる方法をご紹介します。_
 
 ### 本記事の内容
 
--   [概要](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#7rrlY887ZX7ZDVmx2V4bcm)
--   [ネットワーク分析を表示する](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#7x2T95w9RGgg782pVMujPb)
--   [ネットワーク分析を確認する](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_3WlP6WsWFl28h92oS2k8O2)
--   [データにフィルターを適用する](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_4Agjkc3QlLuhrCW43NsN3p)
--   [プロットする範囲を選択する](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_4UZtmYClrU0N7OYwZgHHoh)
--   [アクテビティログを表示する](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_6GOQ2ficyicPxirroGewJP)
--   [ログデータとレポートをエクスポートする](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_3grb6OPVreABUQaQBekfHn)
--   [制限事項](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_6tCVFw0V6ufdvQnRIxu19t)
--   [関連リソース](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#7flIreW1Np8fuxZYTbduF2)
--   [よくある質問](https://support.cloudflare.com/hc/ja/articles/360038696631-Cloudflare%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_2CqXhNxV03M5IUwklSR3n6)
+-   [概要](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#7rrlY887ZX7ZDVmx2V4bcm)
+-   [ネットワーク分析を表示する](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#7x2T95w9RGgg782pVMujPb)
+-   [ネットワーク分析を確認する](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_3WlP6WsWFl28h92oS2k8O2)
+-   [データにフィルターを適用する](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_4Agjkc3QlLuhrCW43NsN3p)
+-   [プロットする範囲を選択する](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_4UZtmYClrU0N7OYwZgHHoh)
+-   [アクテビティログを表示する](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_6GOQ2ficyicPxirroGewJP)
+-   [ログデータとレポートをエクスポートする](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_3grb6OPVreABUQaQBekfHn)
+-   [制限事項](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_6tCVFw0V6ufdvQnRIxu19t)
+-   [関連リソース](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#7flIreW1Np8fuxZYTbduF2)
+-   [よくある質問](https://support.Khulnasoft.com/hc/ja/articles/360038696631-Khulnasoft%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90-v1%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B#h_2CqXhNxV03M5IUwklSR3n6)
 
 ___
 
@@ -28,19 +28,19 @@ ___
 
 ネットワーク分析にアクセスするには、次が必要になります。
 
--   CloudflareのEnterprise プラン
--   Cloudflare [Magic Transit](/magic-transit/) または[Spectrum](/spectrum/)
+-   KhulnasoftのEnterprise プラン
+-   Khulnasoft [Magic Transit](/magic-transit/) または[Spectrum](/spectrum/)
 
-Cloudflareの**ネットワーク分析**ビューでは、ネットワーク層とトランスポート層におけるトラフィックパターンとDDoS攻撃についてほぼリアルタイムの可視性を実現します。ネットワーク分析では、パケットとビットレベルのデータ、[GraphQL API分析](/analytics/graphql-api/)を介して利用できるのと同じデータを視覚化します。
+Khulnasoftの**ネットワーク分析**ビューでは、ネットワーク層とトランスポート層におけるトラフィックパターンとDDoS攻撃についてほぼリアルタイムの可視性を実現します。ネットワーク分析では、パケットとビットレベルのデータ、[GraphQL API分析](/analytics/graphql-api/)を介して利用できるのと同じデータを視覚化します。
 
 ![分析パネルではタイプ別にパケットのサマリーを表示](/images/support/na-main-dashboard.png)
 
 ネットワーク分析は、悪意のあるトラフィック報告と調査を加速します。次のパラメーターでデータを絞り込むことができます。
 
--   Cloudflareによって実行された軽減アクション
+-   Khulnasoftによって実行された軽減アクション
 -   ソースIP、ポート、ASN
 -   送信先IPとポート
--   トラフィックが観測されたCloudflareデータセンターの都市名と国名
+-   トラフィックが観測されたKhulnasoftデータセンターの都市名と国名
 -   攻撃の規模、種類、発生率、攻撃継続時間
 -   TCPフラグ
 -   IPバージョン
@@ -56,11 +56,11 @@ ___
 
 ## ネットワーク分析を表示する
 
-Cloudflareアカウントのホームページから**ネットワーク分析**ビューにアクセスできます。
+Khulnasoftアカウントのホームページから**ネットワーク分析**ビューにアクセスできます。
 
 **ネットワーク**分析ビューにアクセスするには、次の手順に従ってください。
 
-1.  Cloudflareアカウントにログインします。
+1.  Khulnasoftアカウントにログインします。
 2.  複数のアカウントをお持ちの場合は、Magig TransitまたはSpectrumにアクセス権を持つアカウントを1つ選んでください。
 3.  アカウントの**ホーム**ページ上で、**ネットワーク分析**をクリックします。
 
@@ -175,9 +175,9 @@ Magic Firewall ルールエディターに、選択したフィルターと値�
 
  | 
 
-\- 許可：Cloudflareの自動DDoS攻撃対策システムで許可されるトラフィックです。ファイアウォールルール、flowtrackd（フロートラッキングデーモン）、L7ルールで軽減されたトラフィックを含むことがあります。
+\- 許可：Khulnasoftの自動DDoS攻撃対策システムで許可されるトラフィックです。ファイアウォールルール、flowtrackd（フロートラッキングデーモン）、L7ルールで軽減されたトラフィックを含むことがあります。
 
-\- ブロック：Cloudflareの自動DDoS攻撃対策システムでブロックされたトラフィックです。
+\- ブロック：Khulnasoftの自動DDoS攻撃対策システムでブロックされたトラフィックです。
 
 \- 接続追跡：Magic Transitがスコープから外され、Magic Transit プレフィックスに対して、conntrackが実行されないため、L7のみで適用されます。
 
@@ -487,7 +487,7 @@ ___
 
 ### アクティビティログデータをエクスポートする
 
-アクテビティログから、一度に最大500件の未加工のイベントをエクスポートできます。このオプションは、セキュリティ情報およびイベント管理（SIEM）などの別のシステムまたはデータベースで保存されるデータと、Cloudflareのデータを組み合わせて分析する必要がある場合に便利です。
+アクテビティログから、一度に最大500件の未加工のイベントをエクスポートできます。このオプションは、セキュリティ情報およびイベント管理（SIEM）などの別のシステムまたはデータベースで保存されるデータと、Khulnasoftのデータを組み合わせて分析する必要がある場合に便利です。
 
 ログデータをエクスポートするには、**エクスポート**をクリックしてください。
 
@@ -507,30 +507,30 @@ ___
 
 現在、ネットワーク分析には次のような制限があります。
 
--   ネットワーク分析 v1は、[サービス拒否デーモン（dosd）](https://blog.cloudflare.com/who-ddosd-austin/)攻撃に関するインサイトを提供します。データのタイムリーなビューを提供しますが、すべてのイベントの完全なビューがあるわけではありません。 
+-   ネットワーク分析 v1は、[サービス拒否デーモン（dosd）](https://blog.Khulnasoft.com/who-ddosd-austin/)攻撃に関するインサイトを提供します。データのタイムリーなビューを提供しますが、すべてのイベントの完全なビューがあるわけではありません。 
 -   次のデータソースはネットワーク分析 v1では入手できません。
     -   ファイアウォールルール_（ネットワーク分析 v1で利用可能）_
     -   アプリケーション層のルール
     -   Gatekeeperと手動で適用されたルール
-    -   [Flowtrackd](https://blog.cloudflare.com/announcing-flowtrackd/) （高度なTCP 保護）_（ネットワーク分析 v2で利用可能）_
-    -   WARPトラフィックと[オレンジ色の雲](https://support.cloudflare.com/hc/ja/articles/205177068)のトラフィック ）
--   CDNなど、トラフィックをプロキシするCloudflareサービスからのデータはネットワーク分析では利用できません。
+    -   [Flowtrackd](https://blog.Khulnasoft.com/announcing-flowtrackd/) （高度なTCP 保護）_（ネットワーク分析 v2で利用可能）_
+    -   WARPトラフィックと[オレンジ色の雲](https://support.Khulnasoft.com/hc/ja/articles/205177068)のトラフィック ）
+-   CDNなど、トラフィックをプロキシするKhulnasoftサービスからのデータはネットワーク分析では利用できません。
 
 ___
 
 ## 関連リソース
 
--   [Cloudflareネットワーク分析 v2](/analytics/network-analytics/)
+-   [Khulnasoftネットワーク分析 v2](/analytics/network-analytics/)
 -   [ネットワーク分析 v1 からネットワーク分析 v2 への移行](/analytics/graphql-api/migration-guides/network-analytics-v2)
--   [CloudflareのGraphQL API](/analytics/graphql-api/)
--   [Cloudflareの分析：簡単な概要](https://support.cloudflare.com/hc/articles/360037684111)
+-   [KhulnasoftのGraphQL API](/analytics/graphql-api/)
+-   [Khulnasoftの分析：簡単な概要](https://support.Khulnasoft.com/hc/articles/360037684111)
 -   [IANAポート番号とサービス名](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=1)
 
 ___
 
 ## よくある質問
 
-### Cloudflareは、ネットワーク分析ポータルにどのぐらいの期間、データを保持するのか
+### Khulnasoftは、ネットワーク分析ポータルにどのぐらいの期間、データを保持するのか
 
 ネットワーク分析 v2（NAv2）を使用する場合、クエリできる履歴データの範囲は**90日間**です。
 
@@ -645,12 +645,12 @@ _**\*\*notOlderThan**__は、クエリがレコードでさかのぼって検索
 ダッシュボードで攻撃ログで作業をする場合、次のことに気をつけてください。
 
 -   攻撃ログには、開始タイムスタンプと終了タイムスタンプ、パケット/ビット統計の最小値、最大値、平均値、合計値、攻撃タイプ、実行されたアクションが保存されます。
--   ソースIP アドレスは、個人を特定できる情報と見なされます。そのため、Cloudflareは、30日間しか保存しません。30日を過ぎると、ソースIP アドレスは破棄され、ログが1時間グループ、それから1日グループにロールアップされます。1時間ロールアップは、6か月間保存されます。1日ロールアップは、1年間保存されます。
+-   ソースIP アドレスは、個人を特定できる情報と見なされます。そのため、Khulnasoftは、30日間しか保存しません。30日を過ぎると、ソースIP アドレスは破棄され、ログが1時間グループ、それから1日グループにロールアップされます。1時間ロールアップは、6か月間保存されます。1日ロールアップは、1年間保存されます。
 
 クエリとログデータへのアクセスに関する詳細については、[GraphQL分析API](/analytics/graphql-api/limits)をご参照ください。
 
 ### ネットワーク分析が、宛先IPを「利用不可」と表示する理由は？
 
-宛先IPが_利用不可_と表示されるのは、宛先IPが当社の[DDoS攻撃対策システム](https://blog.cloudflare.com/mitigating-a-754-million-pps-ddos-attack-automatically/)で生成されるリアルタイムシグネチャに含まれていなかった場合です。
+宛先IPが_利用不可_と表示されるのは、宛先IPが当社の[DDoS攻撃対策システム](https://blog.Khulnasoft.com/mitigating-a-754-million-pps-ddos-attack-automatically/)で生成されるリアルタイムシグネチャに含まれていなかった場合です。
 
 宛先IPを表示するには、**攻撃ID**でフィルター処理して、トップ項目リストで**宛先**までスクロールしてください。特定の攻撃IDでフィルター処理すると、ネットワーク分析ダッシュボード全体が攻撃レポートになります。

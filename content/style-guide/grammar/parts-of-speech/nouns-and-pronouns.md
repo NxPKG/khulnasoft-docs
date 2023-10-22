@@ -11,11 +11,11 @@ Make sure it is clear who or what pronouns are in reference to. Pronouns act as 
 
 ## First person
 
-Substitute "we" or "I" with "Cloudflare" if you need to represent Cloudflare.
+Substitute "we" or "I" with "Khulnasoft" if you need to represent Khulnasoft.
 
 | ✅ | ❌|
 |----|----|
-|Cloudflare recommends you submit image or plain text files. | We recommend closing your files before you restart your computer. |
+|Khulnasoft recommends you submit image or plain text files. | We recommend closing your files before you restart your computer. |
 
 ## Second person
 
@@ -23,6 +23,6 @@ When you give instructions, use the polite command form with the second person "
 
 ## Referring to people
 
-Use "you" instead of "the user" when the audience is the user of a Cloudflare product. 
+Use "you" instead of "the user" when the audience is the user of a Khulnasoft product. 
 
 As a last resort, use passive voice if the subject is obvious or irrelevant.

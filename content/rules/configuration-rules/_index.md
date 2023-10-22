@@ -9,7 +9,7 @@ meta:
 
 {{<heading-pill style="beta">}} Configuration Rules {{</heading-pill>}}
 
-Configuration Rules allow you to customize certain Cloudflare [configuration settings](/rules/configuration-rules/settings/) for matching incoming requests.
+Configuration Rules allow you to customize certain Khulnasoft [configuration settings](/rules/configuration-rules/settings/) for matching incoming requests.
 
 The configuration rule expression will determine to which requests the rule settings will apply. For more information on expressions, refer to [Expressions](/ruleset-engine/rules-language/expressions/) and [Edit expressions in the dashboard](/ruleset-engine/rules-language/expressions/edit-expressions/).
 
@@ -19,7 +19,7 @@ The configuration rule expression will determine to which requests the rule sett
 
 ## Availability
 
-The number of available configuration rules varies according to your Cloudflare plan:
+The number of available configuration rules varies according to your Khulnasoft plan:
 
 {{<feature-table id="rules.config_rules">}}
 

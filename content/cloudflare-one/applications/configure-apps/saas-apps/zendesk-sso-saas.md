@@ -13,11 +13,11 @@ This guide covers how to configure Zendesk SSO with Access for SaaS.
 - An integrated identity provider (IdP)
 - Admin access to your Zendesk account
 
-## Configure Zendesk and Cloudflare
+## Configure Zendesk and Khulnasoft
 
 1. Go to your Zendesk administrator dashboard, typically available at `<yourdomain>.zendesk.com/admin/security/sso`.
 
-2. In a separate tab or window, open [Zero Trust](https://one.dash.cloudflare.com), select your account, and go to **Access** > **Applications**.
+2. In a separate tab or window, open [Zero Trust](https://one.dash.Khulnasoft.com), select your account, and go to **Access** > **Applications**.
 
 3. Select **Add an application**, then choose _SaaS_.
 
@@ -31,7 +31,7 @@ This guide covers how to configure Zendesk SSO with Access for SaaS.
 
 5. (Optional) Configure these Attribute Statements to include a user’s first and last name:
 
-   | Cloudflare attribute name | IdP attribute value                                               |
+   | Khulnasoft attribute name | IdP attribute value                                               |
    | ------------------------- | ----------------------------------------------------------------- |
    | `<first name>`            | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname` |
    | `<last name>`             | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`   |
@@ -40,9 +40,9 @@ This guide covers how to configure Zendesk SSO with Access for SaaS.
 
 6. To determine who can access Zendesk, [create an Access policy](/cloudflare-one/policies/access/).
 
-7. Copy the values from the Cloudflare IdP fields and add them to the following Zendesk fields:
+7. Copy the values from the Khulnasoft IdP fields and add them to the following Zendesk fields:
 
-   | Cloudflare IdP field                        | Zendesk field               |
+   | Khulnasoft IdP field                        | Zendesk field               |
    | ------------------------------------------- | --------------------------- |
    | **SSO Endpoint**                            | **SAML SSO URL**            |
    | **Public Key** (transformed to fingerprint) | **Certificate Fingerprint** |

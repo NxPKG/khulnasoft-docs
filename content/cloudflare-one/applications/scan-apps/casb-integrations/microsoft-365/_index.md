@@ -18,7 +18,7 @@ This integration covers the following Microsoft 365 products:
 
 ## Integration permissions
 
-For the Microsoft 365 integration to function, Cloudflare CASB requires the following delegated Microsoft Graph API permissions:
+For the Microsoft 365 integration to function, Khulnasoft CASB requires the following delegated Microsoft Graph API permissions:
 
 - `Application.Read.All`
 - `Calendars.Read`
@@ -118,8 +118,8 @@ Get alerted when users set their email to be forwarded externally. This can eith
 
 {{<Aside type="note">}}
 
-Requires [Cloudflare DLP](/cloudflare-one/policies/data-loss-prevention/).
+Requires [Khulnasoft DLP](/cloudflare-one/policies/data-loss-prevention/).
 
 {{</Aside>}}
 
-Microsoft provides [MIP sensitivity labels](https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) to classify and protect sensitive data. When you add the CASB Microsoft 365 integration, Cloudflare will automatically retrieve the labels from your Microsoft account and populate them in a [DLP Profile](/cloudflare-one/policies/data-loss-prevention/dlp-profiles/integration-profiles/).
+Microsoft provides [MIP sensitivity labels](https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) to classify and protect sensitive data. When you add the CASB Microsoft 365 integration, Khulnasoft will automatically retrieve the labels from your Microsoft account and populate them in a [DLP Profile](/cloudflare-one/policies/data-loss-prevention/dlp-profiles/integration-profiles/).

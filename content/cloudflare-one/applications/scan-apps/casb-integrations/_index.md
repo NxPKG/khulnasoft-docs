@@ -6,7 +6,7 @@ weight: 3
 
 # CASB integrations
 
-You can integrate the following SaaS applications with Cloudflare CASB:
+You can integrate the following SaaS applications with Khulnasoft CASB:
 
 - [Atlassian Confluence](atlassian-confluence/)
 - [Atlassian Jira](atlassian-jira/)

@@ -1,14 +1,14 @@
 ---
 pcx_content_type: configuration
-title: Cloudflare OWASP Core Ruleset
+title: Khulnasoft OWASP Core Ruleset
 weight: 3
 ---
 
-# Cloudflare OWASP Core Ruleset
+# Khulnasoft OWASP Core Ruleset
 
-The Cloudflare OWASP Core Ruleset is Cloudflare's implementation of the [OWASP ModSecurity Core Rule Set](https://owasp.org/www-project-modsecurity-core-rule-set/) (CRS). Cloudflare routinely monitors for updates from OWASP based on the latest version available from the official code repository.
+The Khulnasoft OWASP Core Ruleset is Khulnasoft's implementation of the [OWASP ModSecurity Core Rule Set](https://owasp.org/www-project-modsecurity-core-rule-set/) (CRS). Khulnasoft routinely monitors for updates from OWASP based on the latest version available from the official code repository.
 
-The Cloudflare OWASP Core Ruleset is designed to work as a single entity to calculate a threat score and execute an action based on that score. When a rule in the ruleset matches a request, the threat score increases according to the rule score. If the final threat score is greater than the configured score threshold, Cloudflare executes the action configured in the last rule of the ruleset.
+The Khulnasoft OWASP Core Ruleset is designed to work as a single entity to calculate a threat score and execute an action based on that score. When a rule in the ruleset matches a request, the threat score increases according to the rule score. If the final threat score is greater than the configured score threshold, Khulnasoft executes the action configured in the last rule of the ruleset.
 
 Configuring a *Low* threshold means having a high threshold value (60 or higher). This means that, when using a *Low* threshold, more rules have to match the current request for the managed ruleset to perform the configured action (the request threat score is the sum of the individual scores of rules that match).
 
@@ -16,22 +16,22 @@ Each rule in the managed ruleset is associated with a certain paranoia level (PL
 
 ## Configure in the dashboard
 
-You can configure the following settings of the Cloudflare OWASP Core Ruleset in the dashboard:
+You can configure the following settings of the Khulnasoft OWASP Core Ruleset in the dashboard:
 
 * **Set the paranoia level.** The available levels are *PL1* (default), *PL2*, *PL3*, and *PL4*.
 * **Define the score threshold.** The available thresholds are: *Low* (60 and higher), *Medium* (40 and higher – default), or *High* (25 and higher).
 * **Set the action to perform.** The action is executed when the calculated threat score is greater than the score threshold. The available actions are: *Block* (default), *Managed Challenge*, *JS Challenge*, *Log*, and *Interactive Challenge*.
 * **Disable specific rules or rules with specific tags.**
-* **Customize the filter expression.** With a custom expression, the Cloudflare OWASP Core Ruleset applies only to a subset of the incoming requests.
+* **Customize the filter expression.** With a custom expression, the Khulnasoft OWASP Core Ruleset applies only to a subset of the incoming requests.
 * **Configure [payload logging](/waf/managed-rules/payload-logging/configure/)**.
 
 For details on configuring a managed ruleset in the dashboard, refer to [Configure a managed ruleset](/waf/managed-rules/deploy-zone-dashboard/#configure-a-managed-ruleset).
 
 ## Configure via API
 
-To enable the Cloudflare OWASP Core Ruleset for a given zone via API, create a rule with `execute` action in the entry point ruleset for the `http_request_firewall_managed` phase. For more information on deploying a managed ruleset, refer to [Deploy a managed ruleset](/ruleset-engine/managed-rulesets/deploy-managed-ruleset/).
+To enable the Khulnasoft OWASP Core Ruleset for a given zone via API, create a rule with `execute` action in the entry point ruleset for the `http_request_firewall_managed` phase. For more information on deploying a managed ruleset, refer to [Deploy a managed ruleset](/ruleset-engine/managed-rulesets/deploy-managed-ruleset/).
 
-To configure the Cloudflare OWASP Core Ruleset via API, create [overrides](/ruleset-engine/managed-rulesets/override-managed-ruleset/) using the Rulesets API. You can perform the following configurations:
+To configure the Khulnasoft OWASP Core Ruleset via API, create [overrides](/ruleset-engine/managed-rulesets/override-managed-ruleset/) using the Rulesets API. You can perform the following configurations:
 
 * [Set the paranoia level](#setting-the-paranoia-level).
 * [Configure the score threshold](#configuring-the-score-threshold-and-the-action).
@@ -45,14 +45,14 @@ To enable all the rules up to a specific paranoia level, create tag overrides th
 
 #### Example
 
-This example sets the Cloudflare OWASP Core Ruleset's paranoia level for a zone to PL2. To perform this configuration, you must disable the tags associated with levels PL3 and PL4 (`paranoia-level-3` and `paranoia-level-4`) using tag overrides.
+This example sets the Khulnasoft OWASP Core Ruleset's paranoia level for a zone to PL2. To perform this configuration, you must disable the tags associated with levels PL3 and PL4 (`paranoia-level-3` and `paranoia-level-4`) using tag overrides.
 
-1. Get the ID of the Cloudflare OWASP Core Ruleset using the [List account rulesets](/api/operations/listAccountRulesets) method, since WAF's managed rulesets exist at the account level. Alternatively, use the following ruleset ID directly: `4814384a9e5d4991b9815dcfc25d2f1f`.
+1. Get the ID of the Khulnasoft OWASP Core Ruleset using the [List account rulesets](/api/operations/listAccountRulesets) method, since WAF's managed rulesets exist at the account level. Alternatively, use the following ruleset ID directly: `4814384a9e5d4991b9815dcfc25d2f1f`.
 
 {{<details header="Request">}}
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -68,8 +68,8 @@ highlight: 4-5
   "result": [
     {
       "id": "4814384a9e5d4991b9815dcfc25d2f1f",
-      "name": "Cloudflare OWASP Core Ruleset",
-      "description": "Cloudflare's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
+      "name": "Khulnasoft OWASP Core Ruleset",
+      "description": "Khulnasoft's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
       "source": "firewall_managed",
       "kind": "managed",
       "version": "35",
@@ -91,7 +91,7 @@ highlight: 4-5
 {{<details header="Request">}}
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -148,7 +148,7 @@ highlight: 12,14-16
 highlight: 9-20
 ---
 curl --request PATCH \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{entry_point_ruleset_id}/rules/{execute_rule_id}" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{entry_point_ruleset_id}/rules/{execute_rule_id}" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --data '{
   "action": "execute",
@@ -188,12 +188,12 @@ To define the score threshold value, or to specify the action to perform when th
 
 This example configures the managed ruleset score threshold and the performed action by creating a rule override for the last rule of the managed ruleset.
 
-1. Get the ID of the Cloudflare OWASP Core Ruleset using the [List account rulesets](/api/operations/listAccountRulesets) method, since WAF's managed rulesets exist at the account level. Alternatively, use the following ruleset ID directly: `4814384a9e5d4991b9815dcfc25d2f1f`.
+1. Get the ID of the Khulnasoft OWASP Core Ruleset using the [List account rulesets](/api/operations/listAccountRulesets) method, since WAF's managed rulesets exist at the account level. Alternatively, use the following ruleset ID directly: `4814384a9e5d4991b9815dcfc25d2f1f`.
 
 {{<details header="Request">}}
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -209,8 +209,8 @@ highlight: 4-5
   "result": [
     {
       "id": "4814384a9e5d4991b9815dcfc25d2f1f",
-      "name": "Cloudflare OWASP Core Ruleset",
-      "description": "Cloudflare's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
+      "name": "Khulnasoft OWASP Core Ruleset",
+      "description": "Khulnasoft's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
       "source": "firewall_managed",
       "kind": "managed",
       "version": "35",
@@ -227,12 +227,12 @@ highlight: 4-5
 
 {{</details>}}
 
-2. Get the ID of the **last rule** in the Cloudflare OWASP Core Ruleset. Use the [Get an account ruleset](/api/operations/getAccountRuleset) method to obtain the list of rules in the ruleset. Alternatively, use the following rule ID directly: `6179ae15870a4bb7b2d480d4843b323c`.
+2. Get the ID of the **last rule** in the Khulnasoft OWASP Core Ruleset. Use the [Get an account ruleset](/api/operations/getAccountRuleset) method to obtain the list of rules in the ruleset. Alternatively, use the following rule ID directly: `6179ae15870a4bb7b2d480d4843b323c`.
 
 {{<details header="Request">}}
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{owasp_ruleset_id}" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{owasp_ruleset_id}" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -247,8 +247,8 @@ highlight: 12
 {
   "result": {
     "id": "4814384a9e5d4991b9815dcfc25d2f1f",
-    "name": "Cloudflare OWASP Core Ruleset",
-    "description": "Cloudflare's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
+    "name": "Khulnasoft OWASP Core Ruleset",
+    "description": "Khulnasoft's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
     "source": "firewall_managed",
     "kind": "managed",
     "version": "36",
@@ -281,7 +281,7 @@ highlight: 12
 {{<details header="Request">}}
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -341,7 +341,7 @@ highlight: 12,14-16
 highlight: 9-17
 ---
 curl --request PATCH \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{entry_point_ruleset_id}/rules/{execute_rule_id}" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{entry_point_ruleset_id}/rules/{execute_rule_id}" \
 --header "Authorization: Bearer <API_TOKEN>" \
 --data '{
   "action": "execute",

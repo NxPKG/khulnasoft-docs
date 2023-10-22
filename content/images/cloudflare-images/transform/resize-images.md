@@ -6,20 +6,20 @@ weight: 1
 
 # Resize images
 
-Resizing images in Cloudflare Images works by creating variants of your image. Variants let you specify how images should be resized for different use cases. Cloudflare Images ships with a default `public` variant, but you can create up to 100 variants to fit your needs.
+Resizing images in Khulnasoft Images works by creating variants of your image. Variants let you specify how images should be resized for different use cases. Khulnasoft Images ships with a default `public` variant, but you can create up to 100 variants to fit your needs.
 
 Each variant has several properties, including the width and height of resized images.
 
-![Configure variants in Cloudflare Images](/images/images/variants.png)
+![Configure variants in Khulnasoft Images](/images/images/variants.png)
 
 ## How to resize an image
 
-{{<Aside type="note">}}Cloudflare Images does not resize SVGs. Refer to [SVG files](/images/cloudflare-images/upload-images/formats-limitations/#svg-files) for more information.{{</Aside>}}
+{{<Aside type="note">}}Khulnasoft Images does not resize SVGs. Refer to [SVG files](/images/cloudflare-images/upload-images/formats-limitations/#svg-files) for more information.{{</Aside>}}
 
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Select **Images** > **Variants**.
 3. Name your variant and select **Add New Variant**.
 4. Define variables for your new variant, such as resizing options, type of fit, and what do to with metadata.
@@ -28,7 +28,7 @@ Each variant has several properties, including the width and height of resized i
 {{<tab label="api" no-code="true">}}
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/images/v1/variants" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/images/v1/variants" \
   -H "Authorization: Bearer <API_TOKEN>" \     
   -H "Content-Type: application/json" \
   --data '{"id":"<NAME_OF_THE_VARIANT>","options":{"fit":"scale-down","metadata":"none","width":1366,"height":768},"neverRequireSignedURLs":true}

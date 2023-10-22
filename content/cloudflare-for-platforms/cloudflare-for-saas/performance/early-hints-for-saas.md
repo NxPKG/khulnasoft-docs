@@ -25,7 +25,7 @@ Before you can employ Early Hints for SaaS, you need to create a custom hostname
 3. If you are [creating a new custom hostname](/api/operations/custom-hostname-for-a-zone-create-custom-hostname), make an API call such as the example below, specifying `"early_hints": "on"`:
 
 ```json
-$ curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostnames" \
+$ curl -X POST "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_hostnames" \
     -H "X-Auth-Email: {email}" \
     -H "X-Auth-Key: {key}" \
     -H "Content-Type: application/json" \
@@ -49,7 +49,7 @@ $ curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_host
 4. For an existing custom hostname, locate the `id` of that hostname via a `GET` call:
 
 ```json
-$ curl -X GET "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostnames?hostname={hostname}" \
+$ curl -X GET "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_hostnames?hostname={hostname}" \
     -H "X-Auth-Email: {email}" \
     -H "X-Auth-Key: {key}" \
     -H "Content-Type: application/json"
@@ -58,7 +58,7 @@ $ curl -X GET "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostn
 5. Then make an API call such as the example below, specifying `"early_hints": "on"`:
 
 ```json
-$ curl -X PATCH "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostnames/{id}" \
+$ curl -X PATCH "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_hostnames/{id}" \
     -H "X-Auth-Email: {email}" \
     -H "X-Auth-Key: {key}" \
     -H "Content-Type: application/json" \

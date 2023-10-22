@@ -11,7 +11,7 @@ layout: list
 
 {{<content-column>}}
 
-The action of a firewall rule tells Cloudflare how to handle HTTP requests that have matched the rule expression.
+The action of a firewall rule tells Khulnasoft how to handle HTTP requests that have matched the rule expression.
 
 {{<render file="_deprecation-notice.md">}}
 
@@ -19,13 +19,13 @@ The action of a firewall rule tells Cloudflare how to handle HTTP requests that 
 
 The table below lists the actions available in firewall rules. These actions are listed in order of precedence. If the same request matches two different rules which have the same priority, precedence determines the action to take.
 
-For example, the _Allow_ action takes precedence over the _Block_ action. In a case where a request matches a rule with the _Allow_ action and another with the _Block_ action, precedence resolves the tie, and Cloudflare allows the request.
+For example, the _Allow_ action takes precedence over the _Block_ action. In a case where a request matches a rule with the _Allow_ action and another with the _Block_ action, precedence resolves the tie, and Khulnasoft allows the request.
 
 There are two exceptions to this behavior: the _Log_ and _Bypass_ actions. Unlike other actions, _Log_ and _Bypass_ do not terminate further evaluation within firewall rules. This means that if a request matches two different rules and one of those rules specifies the _Log_ or _Bypass_ action, the second action will be triggered instead, even though _Log_/_Bypass_ has precedence.
 
 {{<Aside type="note">}}
 
-For reference information on rule actions available for Cloudflare products powered by the Ruleset Engine, refer to [Rules language: Actions reference](/ruleset-engine/rules-language/actions/).
+For reference information on rule actions available for Khulnasoft products powered by the Ruleset Engine, refer to [Rules language: Actions reference](/ruleset-engine/rules-language/actions/).
 
 {{</Aside>}}
 
@@ -51,7 +51,7 @@ For reference information on rule actions available for Cloudflare products powe
         </td>
         <td>
           <ul>
-            <li>Records matching requests in the Cloudflare Logs.</li>
+            <li>Records matching requests in the Khulnasoft Logs.</li>
             <li>Only available for Enterprise plans.</li>
             <li>Recommended for validating rules before committing to a more severe action.</li>
           </ul>
@@ -66,10 +66,10 @@ For reference information on rule actions available for Cloudflare products powe
         </td>
         <td>
           <ul>
-            <li>Allows user to dynamically disable Cloudflare security features for a request.</li>
+            <li>Allows user to dynamically disable Khulnasoft security features for a request.</li>
             <li>Available to all plans.</li>
             <li>
-              <p>Matching requests exempt from evaluation by a user-defined list containing one or more of the following Cloudflare security features:</p>
+              <p>Matching requests exempt from evaluation by a user-defined list containing one or more of the following Khulnasoft security features:</p>
               <ul>
                 <li><a href="/waf/tools/user-agent-blocking/">User Agent Blocking</a></li>
                 <li><a href="/waf/tools/browser-integrity-check/">Browser Integrity Check</a></li>
@@ -81,7 +81,7 @@ For reference information on rule actions available for Cloudflare products powe
               </ul>
               <p><strong>Notes:</strong></p>
               <ul>
-                <li>Currently, you cannot bypass Bot Fight Mode or Super Bot Fight Mode. For more information on these products, refer to <a href="/bots/">Cloudflare bot solutions</a>.</li>
+                <li>Currently, you cannot bypass Bot Fight Mode or Super Bot Fight Mode. For more information on these products, refer to <a href="/bots/">Khulnasoft bot solutions</a>.</li>
                 <li>You cannot bypass the new <a href="/waf/managed-rules/">WAF managed rules</a> using this action, only the previous version of WAF managed rules. To skip one or more managed rules in the new WAF for specific requests, <a href="/waf/managed-rules/waf-exceptions/">create a WAF exception</a>.</li>
               </ul>
               <p></p>
@@ -106,7 +106,7 @@ For reference information on rule actions available for Cloudflare products powe
             <li>
               The scope of the <em>Allow</em> action is limited to firewall
               rules; matching requests are <strong>not</strong> exempt from
-              action by other Cloudflare security products such as Bot Fight Mode, IP Access
+              action by other Khulnasoft security products such as Bot Fight Mode, IP Access
               Rules, and WAF Managed Rules.
             </li>
             <li>
@@ -132,7 +132,7 @@ For reference information on rule actions available for Cloudflare products powe
               The client that made the request must pass an interactive challenge.
             </li>
             <li>
-              If successful, Cloudflare accepts the matched request; otherwise,
+              If successful, Khulnasoft accepts the matched request; otherwise,
               it is blocked.
             </li>
             <li>For additional information, refer to <a href="#notes-about-challenge-actions">Notes about challenge actions</a>.</li>
@@ -152,7 +152,7 @@ For reference information on rule actions available for Cloudflare products powe
               Helps reduce the lifetimes of human time spent solving interactive challenges across the Internet.
             </li>
             <li>
-              Depending on the characteristics of a request, Cloudflare will dynamically choose the appropriate type of challenge from the following actions based on specific criteria:
+              Depending on the characteristics of a request, Khulnasoft will dynamically choose the appropriate type of challenge from the following actions based on specific criteria:
               <ul>
                 <li>
                   Show a non-interactive challenge page (similar to the current JS Challenge).
@@ -181,11 +181,11 @@ For reference information on rule actions available for Cloudflare products powe
               automatically.
             </li>
             <li>
-              The client that made the request must pass a Cloudflare JavaScript
+              The client that made the request must pass a Khulnasoft JavaScript
               Challenge before proceeding.
             </li>
             <li>
-              If successful, Cloudflare accepts the matched request; otherwise,
+              If successful, Khulnasoft accepts the matched request; otherwise,
               it is blocked.
             </li>
             <li>For additional information, refer to <a href="#notes-about-challenge-actions">Notes about challenge actions</a>.</li>

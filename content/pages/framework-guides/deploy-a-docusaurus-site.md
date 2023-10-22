@@ -29,7 +29,7 @@ $ npm create cloudflare@latest my-docusaurus-app -- --framework=docusaurus
 
 ### Deploy via the Cloudflare dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. In Account Home, select **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
 3. Select the new GitHub repository that you created and, in the **Set up builds and deployments** section, select *Docusaurus* as your **Framework preset**. Your selection will provide the following information.
 

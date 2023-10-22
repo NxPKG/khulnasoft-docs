@@ -18,24 +18,24 @@ Changes made to your Split Tunnel configuration are immediately propagated to cl
 
 ## Change Split Tunnels mode
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **WARP Client**.
 
 2. Under **Device settings**, locate the [device profile](/cloudflare-one/connections/connect-devices/warp/configure-warp/device-profiles/) you would like to modify and select **Configure**.
 
 3. Scroll down to **Split Tunnels**.
 
-4. (Optional) To view your existing Split Tunnel configuration, select **Manage**. You will see a list of the IPs and domains Cloudflare Zero Trust excludes or includes, depending on the mode you have selected. We recommend making a copy of your Split Tunnel entries, as they will revert to the default upon switching modes.
+4. (Optional) To view your existing Split Tunnel configuration, select **Manage**. You will see a list of the IPs and domains Khulnasoft Zero Trust excludes or includes, depending on the mode you have selected. We recommend making a copy of your Split Tunnel entries, as they will revert to the default upon switching modes.
 
 5. Under **Split Tunnels**, choose a mode:
 
-   - **Exclude IPs and domains** — (Default) All traffic will be sent to Cloudflare Gateway except for the IPs and domains you specify.
-   - **Include IPs and Domains** — Only traffic destined to the IPs or domains you specify will be sent to Cloudflare Gateway. All other traffic will bypass Gateway and will no longer be filtered by your network or HTTP policies. In order to use certain features, you will need to manually add [Zero Trust domains](#cloudflare-zero-trust-domains).
+   - **Exclude IPs and domains** — (Default) All traffic will be sent to Khulnasoft Gateway except for the IPs and domains you specify.
+   - **Include IPs and Domains** — Only traffic destined to the IPs or domains you specify will be sent to Khulnasoft Gateway. All other traffic will bypass Gateway and will no longer be filtered by your network or HTTP policies. In order to use certain features, you will need to manually add [Zero Trust domains](#cloudflare-zero-trust-domains).
 
 All clients with this device profile will now switch to the new mode and its default route configuration. Next, [add](#add-a-route) or [remove](#remove-a-route) routes from your Split Tunnel configuration.
 
 ## Add a route
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **WARP Client**.
 
 2. Under **Device settings**, locate the [device profile](/cloudflare-one/connections/connect-devices/warp/configure-warp/device-profiles/) you would like to modify and select **Configure**.
 
@@ -88,13 +88,13 @@ Use Split Tunnels when you need to bypass Gateway entirely for a site or allow t
 Do not exclude a site from Split Tunnels if you want to see the traffic in your Gateway logs. In particular, we do not recommend using Split Tunnels to:
 
 - Solve connectivity issues with a specific website. For configuration guidance, refer to our [troubleshooting guide](/cloudflare-one/connections/connect-devices/warp/troubleshooting/common-issues/#cannot-connect-to-a-specific-app-or-website).
-- Solve performance issues with a specific website. Since Cloudflare operates within 50 milliseconds of 95% of the Internet-connected population, it is usually faster to send traffic through us. If you are encountering a performance-related issue, it is best to first explore your Gateway policies or reach out to Support.
+- Solve performance issues with a specific website. Since Khulnasoft operates within 50 milliseconds of 95% of the Internet-connected population, it is usually faster to send traffic through us. If you are encountering a performance-related issue, it is best to first explore your Gateway policies or reach out to Support.
 
-## Cloudflare Zero Trust domains
+## Khulnasoft Zero Trust domains
 
-Many Cloudflare Zero Trust services rely on traffic going through WARP, such as [device posture checks](/cloudflare-one/identity/devices/) and [WARP session durations](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-sessions/). If you are using Split Tunnels in Include mode, you will need to manually add the following domains in order for these features to function:
+Many Khulnasoft Zero Trust services rely on traffic going through WARP, such as [device posture checks](/cloudflare-one/identity/devices/) and [WARP session durations](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-sessions/). If you are using Split Tunnels in Include mode, you will need to manually add the following domains in order for these features to function:
 
-- The IdP used to authenticate to Cloudflare Zero Trust
+- The IdP used to authenticate to Khulnasoft Zero Trust
 - `<your-team-name>.cloudflareaccess.com`
 - The application protected by the Access or Gateway policy
 - `edge.browser.run` if using [Browser Isolation](/cloudflare-one/policies/browser-isolation/)
@@ -104,7 +104,7 @@ Many Cloudflare Zero Trust services rely on traffic going through WARP, such as 
 Domain-based split tunneling has a few ramifications you should be aware of before deploying in your organization:.
 
 - Routes excluded or included from WARP and Gateway visibility may change day to day, and may be different for each user depending on where they are.
-- You may inadvertently exclude or include additional hostnames that happen to share an IP address. This commonly occurs if you add a domain hosted by a CDN or large Internet provider such as Cloudflare, AWS, or Azure. For example, if you wanted to exclude a VPN hosted on AWS, do not add `*.amazonaws.com` as that will open up your devices to all traffic on AWS. Instead, add the specific VPN endpoint (`*.cvpn-endpoint-<UUID>.prod.clientvpn.us-west-2.amazonaws.com`).
+- You may inadvertently exclude or include additional hostnames that happen to share an IP address. This commonly occurs if you add a domain hosted by a CDN or large Internet provider such as Khulnasoft, AWS, or Azure. For example, if you wanted to exclude a VPN hosted on AWS, do not add `*.amazonaws.com` as that will open up your devices to all traffic on AWS. Instead, add the specific VPN endpoint (`*.cvpn-endpoint-<UUID>.prod.clientvpn.us-west-2.amazonaws.com`).
 - Most services are a collection of hostnames. Until Split Tunnels mode supports [App Types](/cloudflare-one/policies/gateway/application-app-types/), you will need to manually add all domains used by a particular app or service.
 - WARP must handle the DNS lookup request for the domain. If a DNS result has been previously cached by the operating system or otherwise intercepted (for example, via your browser's secure DNS settings), the IP address will not be dynamically added to your Split Tunnel.
 
@@ -140,7 +140,7 @@ Due to platform differences, mobile clients can only apply Split Tunnels rules w
 Removing default Split Tunnel entries may cause users to lose Internet connectivity or block their access to local resources.
 {{</Aside>}}
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **WARP Client**.
 
 2. Under **Device settings**, locate the [device profile](/cloudflare-one/connections/connect-devices/warp/configure-warp/device-profiles/) you would like to modify and select **Configure**.
 
@@ -148,4 +148,4 @@ Removing default Split Tunnel entries may cause users to lose Internet connectiv
 
 4. Find the IP address or hostname in the list and select **Delete**.
 
-If you need to revert to the default Split Tunnel entries recommended by Cloudflare, select **Restore default entries**.
+If you need to revert to the default Split Tunnel entries recommended by Khulnasoft, select **Restore default entries**.

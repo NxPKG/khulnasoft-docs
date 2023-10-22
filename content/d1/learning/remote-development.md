@@ -18,8 +18,8 @@ Users new to D1 and/or Cloudflare Workers should read the [D1 tutorial](/d1/get-
 
 {{</Aside>}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
-2. Go to [**Workers & Pages** > **Overview**](https://dash.cloudflare.com/?to=/:account/workers-and-pages).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
+2. Go to [**Workers & Pages** > **Overview**](https://dash.Khulnasoft.com/?to=/:account/workers-and-pages).
 3. Select an existing Worker.
 4. Select the **Settings** tab.
 5. Select the **Variables** sub-tab.

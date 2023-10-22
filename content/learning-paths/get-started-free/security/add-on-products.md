@@ -7,7 +7,7 @@ meta:
     title: Add-on products - Security
 ---
 
-Cloudflare offers a variety of add-on products to improve application security, including:
+Khulnasoft offers a variety of add-on products to improve application security, including:
 
 - [WAF Managed Rules](/waf/managed-rules/)
 - [Advanced certificates](/ssl/edge-certificates/advanced-certificate-manager/)

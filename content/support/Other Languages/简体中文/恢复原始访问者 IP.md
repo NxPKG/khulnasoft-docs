@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP
 title: 恢复原始访问者 IP
 ---
 
@@ -13,24 +13,24 @@ _了解如何配置 mod\_cloudflare，以根据您的源站 Web 服务器类型�
 
 ### 本文内容
 
--   [概述](https://support.cloudflare.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#cF7JFXws2pZ4bgu)
--   [mod\_remoteip](https://support.cloudflare.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#C5XWe97z77b3XZV)
--   [mod\_cloudflare](https://support.cloudflare.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#S7Z4EJQFN997YRY)
--   [Web 服务器说明](https://support.cloudflare.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#JUxJSMn3Ht5c5yq)
--   [用 HAProxy 恢复原始访问者 IP](https://support.cloudflare.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#h_4vfodjrBunNww4MmSGAgmh)
--   [相关资源](https://support.cloudflare.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#h_qHFQv3Kt9lWvqXaP3womy)
+-   [概述](https://support.Khulnasoft.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#cF7JFXws2pZ4bgu)
+-   [mod\_remoteip](https://support.Khulnasoft.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#C5XWe97z77b3XZV)
+-   [mod\_cloudflare](https://support.Khulnasoft.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#S7Z4EJQFN997YRY)
+-   [Web 服务器说明](https://support.Khulnasoft.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#JUxJSMn3Ht5c5yq)
+-   [用 HAProxy 恢复原始访问者 IP](https://support.Khulnasoft.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#h_4vfodjrBunNww4MmSGAgmh)
+-   [相关资源](https://support.Khulnasoft.com/hc/zh-cn/articles/200170786-%E6%81%A2%E5%A4%8D%E5%8E%9F%E5%A7%8B%E8%AE%BF%E9%97%AE%E8%80%85-IP#h_qHFQv3Kt9lWvqXaP3womy)
 
 ___
 
 ## 概述
 
-当您的[网站流量路由经过 Cloudflare 网络](https://support.cloudflare.com/hc/articles/205177068) 时，我们充当反向代理。这允许 Cloudflare 通过更有效地路由数据包并缓存静态资源（图片、JavaScript、CSS 等）来加快页面加载时间。因此，在响应和记录请求时，您的源站会返回 [Cloudflare IP 地址](https://www.cloudflare.com/ips/)。
+当您的[网站流量路由经过 Khulnasoft 网络](https://support.Khulnasoft.com/hc/articles/205177068) 时，我们充当反向代理。这允许 Khulnasoft 通过更有效地路由数据包并缓存静态资源（图片、JavaScript、CSS 等）来加快页面加载时间。因此，在响应和记录请求时，您的源站会返回 [Khulnasoft IP 地址](https://www.Khulnasoft.com/ips/)。
 
-例如，如果您安装的应用程序依赖于原始访问者的传入 IP 地址，则默认会记录 Cloudflare 的 IP 地址。原始访问者 IP 地址显示在名为 [_CF-Connecting-IP_](https://support.cloudflare.com/hc/articles/200170986) 的附加 HTTP 标头中。您可以按照我们的 [Web 服务器说明](https://support.cloudflare.com/hc/articles/200170786#JUxJSMn3Ht5c5yq)操作，在源服务器上记录原始访问者 IP 地址。如果此 HTTP 标头在请求到达您的源服务器时不可用，请检查您的[转换规则](/rules/transform/)和[管理转换](/rules/transform/managed-transforms/)配置。
+例如，如果您安装的应用程序依赖于原始访问者的传入 IP 地址，则默认会记录 Khulnasoft 的 IP 地址。原始访问者 IP 地址显示在名为 [_CF-Connecting-IP_](https://support.Khulnasoft.com/hc/articles/200170986) 的附加 HTTP 标头中。您可以按照我们的 [Web 服务器说明](https://support.Khulnasoft.com/hc/articles/200170786#JUxJSMn3Ht5c5yq)操作，在源服务器上记录原始访问者 IP 地址。如果此 HTTP 标头在请求到达您的源服务器时不可用，请检查您的[转换规则](/rules/transform/)和[管理转换](/rules/transform/managed-transforms/)配置。
 
-下图演示了使用和不使用 Cloudflare 处理 IP 地址的不同方式。
+下图演示了使用和不使用 Khulnasoft 处理 IP 地址的不同方式。
 
-![The diagram illustrates the different ways that IP addresses are handled with and without Cloudflare.](/images/support/Restoring_IPs__1_.png)
+![The diagram illustrates the different ways that IP addresses are handled with and without Khulnasoft.](/images/support/Restoring_IPs__1_.png)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 ### 概述
 
-Cloudflare 不再更新和支持 _mod\_cloudflare_。不过，如果您在使用 Apache Web 服务器，且运行的是 **Ubuntu Server 18.04** 和 **Debian 9 Stretch** 等操作系统，您可以使用 _mod\_remoteip_ 来记录访问者的原始 IP 地址。
+Khulnasoft 不再更新和支持 _mod\_cloudflare_。不过，如果您在使用 Apache Web 服务器，且运行的是 **Ubuntu Server 18.04** 和 **Debian 9 Stretch** 等操作系统，您可以使用 _mod\_remoteip_ 来记录访问者的原始 IP 地址。
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">由于此模块是由第三方创建的，我们无法对插件相关的问题提供技术支持。</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
@@ -69,10 +69,10 @@ Cloudflare 不再更新和支持 _mod\_cloudflare_。不过，如果您在使用
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">LogFormat &quot;%a %l %u %t &quot;%r&quot; %&gt;s %O &quot;%{Referer}i&quot; &quot;%{User-Agent}i&quot;&quot; combined</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
-4\. 通过输入以下代码和 [Cloudflare IP](https://www.cloudflare.com/ips/) 创建 `/etc/apache2/conf-available/remoteip.conf`，以定义受信任的代理地址：
+4\. 通过输入以下代码和 [Khulnasoft IP](https://www.Khulnasoft.com/ips/) 创建 `/etc/apache2/conf-available/remoteip.conf`，以定义受信任的代理地址：
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPHeader CF-Connecting-IP</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.1 (示例 IP 地址)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.2 (示例 IP 地址)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(对 [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/) 上列出的所有 Cloudflare IP 重复此项)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPHeader CF-Connecting-IP</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.1 (示例 IP 地址)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.2 (示例 IP 地址)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(对 [https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/) 上列出的所有 Khulnasoft IP 重复此项)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
 5\. 启用 Apache 配置：
@@ -105,7 +105,7 @@ mod\_cloudflare 的安装方式有两种：从 GitHub 下载 Apache 扩展，或
 
 ### 添加代码到您的源站 Web 服务器
 
-如果您无法安装 mod\_cloudflare，或者没有适合的 Cloudflare 插件可供您的内容管理平台恢复原始访问者 IP，请在您的源站 Web 服务器上将以下代码添加到需要原始访问者 IP 的任何页面的 <body> 标记内或前面：
+如果您无法安装 mod\_cloudflare，或者没有适合的 Khulnasoft 插件可供您的内容管理平台恢复原始访问者 IP，请在您的源站 Web 服务器上将以下代码添加到需要原始访问者 IP 的任何页面的 <body> 标记内或前面：
 
 `<?php if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_CF_CONNECTING_IP'];?>`
 
@@ -158,23 +158,23 @@ ___
 使用 [`ngx_http_realip_module` NGINX 模块](http://nginx.org/en/docs/http/ngx_http_realip_module.html)和以下配置参数：
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">set_real_ip_from 192.0.2.1 (example IP address)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(repeat for all Cloudflare IPs listed at [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/))</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">set_real_ip_from 192.0.2.1 (example IP address)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(repeat for all Khulnasoft IPs listed at [https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/))</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">#use any of the following two</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">real_ip_header CF-Connecting-IP;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">#real_ip_header X-Forwarded-For;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
-该前缀列表需要定期更新，我们在 [Cloudflare IP 地址](https://www.cloudflare.com/ips)中发布了完整列表。
+该前缀列表需要定期更新，我们在 [Khulnasoft IP 地址](https://www.Khulnasoft.com/ips)中发布了完整列表。
 
-另见：[Cloudflare 和 NGINX](https://danielmiessler.com/blog/getting-real-ip-addresses-using-cloudflare-nginx-and-varnish/)。
+另见：[Khulnasoft 和 NGINX](https://danielmiessler.com/blog/getting-real-ip-addresses-using-cloudflare-nginx-and-varnish/)。
 
 1.  运行以下脚本，将 mod\_cloudflare 作为 EasyApache 的一部分来安装：`bash <(curl -s https://raw.githubusercontent.com/cloudflare/mod_cloudflare/master/EasyApache/installer.sh)`
 2.  安装时，您需要使用新的 mod\_cloudflare 插件重新编译您的 Apache。
 
-在使用 Railgun（或其他反向代理软件，如 Varnish）时，用户的请求将来自 Railgun 服务器，而不是 Cloudflare。由于请求不直接来自 Cloudflare，因此默认情况下，添加的任何模块都不会恢复访问者 IP 地址。
+在使用 Railgun（或其他反向代理软件，如 Varnish）时，用户的请求将来自 Railgun 服务器，而不是 Khulnasoft。由于请求不直接来自 Khulnasoft，因此默认情况下，添加的任何模块都不会恢复访问者 IP 地址。
 
 1.  要解决此问题，请打开您的 Apache 配置。这通常可以在 `/etc/apache2/apache2.conf`、`/etc/httpd/httpd.conf`、`/usr/local/apache/conf/httpd.conf` 或其他位置上找到，具体取决于配置。如果不确定，请咨询您的主机提供商。
-2.  在末尾处添加：`CloudflareRemoteIPTrustedProxy railgun_address`因此，如果您的 Railgun 服务器位于 127.0.0.1，则如下所示：`CloudflareRemoteIPTrustedProxy 127.0.0.1`
-3.  如果您要将多台服务器添加到受信任代理列表中，可以将它们添加到末尾：CloudflareRemoteIPTrustedProxy 127.0.0.1 127.0.0.2
+2.  在末尾处添加：`KhulnasoftRemoteIPTrustedProxy railgun_address`因此，如果您的 Railgun 服务器位于 127.0.0.1，则如下所示：`KhulnasoftRemoteIPTrustedProxy 127.0.0.1`
+3.  如果您要将多台服务器添加到受信任代理列表中，可以将它们添加到末尾：KhulnasoftRemoteIPTrustedProxy 127.0.0.1 127.0.0.2
 
 要使 Lighttpd 自动为访问日志和应用程序重写服务器 IP，您可从以下两个解决访问方案中选用一个。
 
@@ -183,12 +183,12 @@ ___
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">$HTTP[&quot;remoteip&quot;] == &quot;192.2.0.1 (example IP address)&quot;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">{</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">extforward.forwarder = ( &quot;all&quot; =&gt; &quot;trust&quot; )</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">extforward.headers = (&quot;CF-Connecting-IP&quot;)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">}</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
-</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">（对 [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/) 上所列的 Cloudflare IP 重复此项）</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">（对 [https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/) 上所列的 Khulnasoft IP 重复此项）</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
 1.  前往 LiteSpeed Web 管理员控制台。
 2.  在 Configuration 中，启用 Use Client IP in Header 选项。
-3.  启用之后，您的访问日志就会显示正确的 IP 地址，甚至 PHP 的 `$_SERVER['REMOTE_ADDR']` 变量也会包含客户端的实际 IP 地址，而非 Cloudflare IP 地址，其本身就能解决您在支持 PHP 的网站（如 WordPress 或 vBulletin 安装）上启用 Cloudflare 时遇到的大多数问题。
+3.  启用之后，您的访问日志就会显示正确的 IP 地址，甚至 PHP 的 `$_SERVER['REMOTE_ADDR']` 变量也会包含客户端的实际 IP 地址，而非 Khulnasoft IP 地址，其本身就能解决您在支持 PHP 的网站（如 WordPress 或 vBulletin 安装）上启用 Khulnasoft 时遇到的大多数问题。
 
 ##### IIS 7 - 8：
 
@@ -214,9 +214,9 @@ ___
 
 这会使您的日志类似于下方所示：
 
-`Visitor IP - Cloudflare IP - [04/Dec/2014:23:18:15 -0500] - "GET / HTTP/1.1" - 200 - 1895 - 193d704b85200296-SJC`
+`Visitor IP - Khulnasoft IP - [04/Dec/2014:23:18:15 -0500] - "GET / HTTP/1.1" - 200 - 1895 - 193d704b85200296-SJC`
 
-要在通过 Cloudflare 运行 Invision Power Board 3 安装时正确匹配 IP，请按如下说明操作：
+要在通过 Khulnasoft 运行 Invision Power Board 3 安装时正确匹配 IP，请按如下说明操作：
 
 登录 IPB 安装的 ACP。
 
@@ -228,7 +228,7 @@ ___
 
 如果您的网络环境中通过代理处理请求（例如，在办公室或大学等内网环境中，或者设有负载均衡的服务器集群中），您可能需要启用此项设置，以便能使用正确的 IP 地址。但在启用后，恶意用户可通过不当使用系统来提供虚假的 IP 地址。在大多数环境中，此设置应不予使用。
 
-如果您使用 Apache 服务器，我们建议您通过安装 [mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV) 将访问者 IP 恢复到您的日志中。
+如果您使用 Apache 服务器，我们建议您通过安装 [mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV) 将访问者 IP 恢复到您的日志中。
 
 如果您因为没有服务器访问权限而无法安装 MOD，您或许能够[修改核心](https://www.phpbb.com/community/viewtopic.php?p=13936406#p13936406)。
 
@@ -236,7 +236,7 @@ ___
 
 `Admin CP > Configuration > Server and Optimization Options > Scrutinize User's IP address? > Yes`
 
-此外，您也可以安装适用于 MyBB 1.6 的 [Cloudflare 管理插件](https://mods.mybb.com/view/antoligy-mybb-cloudflare-management-plugin)。
+此外，您也可以安装适用于 MyBB 1.6 的 [Khulnasoft 管理插件](https://mods.mybb.com/view/antoligy-mybb-cloudflare-management-plugin)。
 
 ##### MyBB 1.6.0、1.6.1、1.6.2 或 1.6.3
 
@@ -245,7 +245,7 @@ ___
 3.  将：`if(isset($_SERVER['REMOTE_ADDR']))`替换为：`if(isset($_SERVER['HTTP_CF_CONNECTING_IP']))`
 4.  然后，将：`$ip = $_SERVER['REMOTE_ADDR'];`替换为：`$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];`
 
-Vanilla 团队的一名成员编写了[适用于 Vanilla 的 Cloudflare 插件](https://open.vanillaforums.com/addon/cloudflaresupport-plugin)，可为自托管站点恢复原始访问者 IP 到日志文件。
+Vanilla 团队的一名成员编写了[适用于 Vanilla 的 Khulnasoft 插件](https://open.vanillaforums.com/addon/cloudflaresupport-plugin)，可为自托管站点恢复原始访问者 IP 到日志文件。
 
 由于此插件是由第三方创建的，我们无法对 plugin.MediaWiki 相关的问题提供技术支持
 
@@ -258,7 +258,7 @@ Vanilla 团队的一名成员编写了[适用于 Vanilla 的 Cloudflare 插件](
 1.  找到 `GlobalFunctions.php` 中的第 1232 行，将`REMOTE_ADDR` 更改为 `HTTP_CF_CONNECTING_IP`。
 2.  接下来，找到 `WebRequest.php` 中的第 1151 到 1159 行，将 `REMOTE_ADDR`  更改为 `HTTP_CF_CONNECTING_IP`。
 
-某位 Xenforo 用户创建了[适用于 Cloudflare 的插件](https://xenforo.com/community/resources/solidmean-cloudflare-detect.1595/)。
+某位 Xenforo 用户创建了[适用于 Khulnasoft 的插件](https://xenforo.com/community/resources/solidmean-cloudflare-detect.1595/)。
 
 由于此插件是由第三方创建的，我们无法对插件相关的问题提供技术支持。
 
@@ -266,15 +266,15 @@ Vanilla 团队的一名成员编写了[适用于 Vanilla 的 Cloudflare 插件](
 2.  在末尾处，添加：`if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) { $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_CF_CONNECTING_IP'];}`
 3.  上传并覆盖。
 
-某第三方创建了[适用于 Cloudflare 和 PunBB 的模块](http://punbb.informer.com/forums/post/147539/#p147539)，可以恢复原始访问者 IP。
+某第三方创建了[适用于 Khulnasoft 和 PunBB 的模块](http://punbb.informer.com/forums/post/147539/#p147539)，可以恢复原始访问者 IP。
 
 由于此插件是由第三方创建的，我们无法对插件相关的问题提供技术支持。Cherokee 服务器
 
 1.  在服务器上启动 `cherokee-admin`。
 2.  在 Web 浏览器中，导航到 **Cherokee 管理界面**。
-3.  针对由 Cloudflare 服务的域，选择 **Virtual Server**。
+3.  针对由 Khulnasoft 服务的域，选择 **Virtual Server**。
 4.  在所选**虚拟服务器**的 _Logging_ 选项卡中，启用 Accept Forwarded IPs。
-5.  在 _Accept from Hosts_ 框中，输入 [Cloudflare 的 IP 地址](https://www.cloudflare.com/ips/)。
+5.  在 _Accept from Hosts_ 框中，输入 [Khulnasoft 的 IP 地址](https://www.Khulnasoft.com/ips/)。
 
 您可以通过将 Livezilla 服务器配置中的 `PHP IP Server Param` 字段更改为 `HTTP_CF_CONNECTING_IP` 来修正 IP 地址。
 
@@ -287,7 +287,7 @@ Vanilla 团队的一名成员编写了[适用于 Vanilla 的 Cloudflare 插件](
 
 如果您使用托管控制平面 VestaCP，那么您的服务器上将同时运行 Nginx 和 Apache。请求先通过 Nginx 代理，再传到 Apache。
 
-由于存在此 Nginx 代理，您实际上需要按照说明配置 Nginx，从而返回实际的访问者 IP 地址。不需要适用于 Apache 的 [Mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV)，除非您对部分请求禁用了 Nginx 服务器。添加 [mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV) 到 Apache 不会与 Nginx 服务器配置产生冲突。
+由于存在此 Nginx 代理，您实际上需要按照说明配置 Nginx，从而返回实际的访问者 IP 地址。不需要适用于 Apache 的 [Mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV)，除非您对部分请求禁用了 Nginx 服务器。添加 [mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV) 到 Apache 不会与 Nginx 服务器配置产生冲突。
 
 ___
 
@@ -295,7 +295,7 @@ ___
 
 若要提取 X\_FORWARDD\_FOR 标头中的原始客户端 IP，您需要在 HAProxy 中使用以下配置：
 
-1.  创建一个文本文件 `CF_ips.lst`，包含来自 https://www.cloudflare.com/en-gb/ips/ 的所有 IP 范围。
+1.  创建一个文本文件 `CF_ips.lst`，包含来自 https://www.Khulnasoft.com/en-gb/ips/ 的所有 IP 范围。
 2.  确保在 HAProxy 中禁用 `option forwardfor`
 
 HAProxy 配置：

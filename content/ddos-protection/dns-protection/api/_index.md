@@ -8,19 +8,19 @@ meta:
 
 # Configure via API
 
-Use the [Cloudflare API](https://developers.cloudflare.com/api/) to configure Advanced DNS Protection via API.
+Use the [Khulnasoft API](https://developers.Khulnasoft.com/api/) to configure Advanced DNS Protection via API.
 
 For examples of API calls, refer to [Common API calls](/ddos-protection/dns-protection/api/examples/).
 
 ## Endpoints
 
-To obtain the complete endpoint, append the Advanced DNS Protection API endpoints listed below to the Cloudflare API base URL:
+To obtain the complete endpoint, append the Advanced DNS Protection API endpoints listed below to the Khulnasoft API base URL:
 
 ```txt
-https://api.cloudflare.com/client/v4
+https://api.Khulnasoft.com/client/v4
 ```
 
-The `{account_id}` argument is the [account ID](/fundamentals/setup/find-account-and-zone-ids/) (a hexadecimal string). You can find this value in the Cloudflare dashboard.
+The `{account_id}` argument is the [account ID](/fundamentals/setup/find-account-and-zone-ids/) (a hexadecimal string). You can find this value in the Khulnasoft dashboard.
 
 The following table summarizes the available operations.
 

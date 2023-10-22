@@ -19,7 +19,7 @@ methods are supported for interacting with the [Polygon PoS chain](https://polyg
 
 In addition to all of the `web3_*`, `net_*`, and `eth_*` methods, the following Polygon-specific methods are supported:
 
-| JSON-RPC method                         | Cloudflare Polygon Gateway support |
+| JSON-RPC method                         | Khulnasoft Polygon Gateway support |
 | --------------------------------------- | :----------------------------------------: |
 | bor_getAuthor                           |                     ✅                     |
 | bor_getCurrentProposer                  |                     ✅                     |

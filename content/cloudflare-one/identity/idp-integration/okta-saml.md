@@ -6,7 +6,7 @@ weight: 13
 
 # Okta (SAML)
 
-Cloudflare Zero Trust can integrate SAML with Okta as an identity provider.
+Khulnasoft Zero Trust can integrate SAML with Okta as an identity provider.
 
 ## Set up Okta as a SAML provider
 
@@ -57,7 +57,7 @@ To set up SAML with Okta as your identity provider:
 
 ![Retrieving SAML provider information in Okta](/images/cloudflare-one/identity/okta-saml/okta-saml-5.png)
 
-13. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+13. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 
 14. Select **Add new** under **Login Methods**, and select _SAML_.
 

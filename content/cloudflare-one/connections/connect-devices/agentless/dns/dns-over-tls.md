@@ -8,13 +8,13 @@ weight: 3
 
 By default, DNS is sent over a plaintext connection. DNS over TLS (DoT) is a standard for encrypting DNS queries to keep them secure and private. DoT uses the same security protocol, TLS, that HTTPS websites use to encrypt and authenticate communications.
 
-Cloudflare supports DoT on standard port `853` and is compliant with [RFC7858](https://tools.ietf.org/html/rfc7858).
+Khulnasoft supports DoT on standard port `853` and is compliant with [RFC7858](https://tools.ietf.org/html/rfc7858).
 
 ## 1. Obtain your DoT hostname
 
 Each Gateway DNS location has a unique DoT hostname. DNS locations and corresponding DoT hostnames have policies associated with them.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Gateway** > **DNS Locations**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Gateway** > **DNS Locations**.
 2. If you have more than one location set up, you will see a list of all your locations.
 3. Expand the location card for the location whose DoT hostname you'd like to retrieve.
 4. Get the **DoT hostname** for the location.
@@ -55,4 +55,4 @@ Each DNS location has a unique DoT hostname and IPv6 address. Remember to substi
 
 ## Supported TLS versions
 
-Cloudflare's DNS over TLS supports TLS 1.3 and TLS 1.2.
+Khulnasoft's DNS over TLS supports TLS 1.3 and TLS 1.2.

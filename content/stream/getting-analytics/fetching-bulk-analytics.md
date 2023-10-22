@@ -6,13 +6,13 @@ weight: 1
 
 # GraphQL Analytics API
 
-Stream provides analytics about both live video and video uploaded to Stream, via the GraphQL API described below, as well as in the [Stream dashboard](https://dash.cloudflare.com/?to=/:account/stream/analytics).
+Stream provides analytics about both live video and video uploaded to Stream, via the GraphQL API described below, as well as in the [Stream dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/analytics).
 
-The Stream Analytics API uses the Cloudflare GraphQL Analytics API, which can be used across many Cloudflare products. For more about GraphQL, rate limits, filters, and sorting, refer to the [Cloudflare GraphQL Analytics API docs](/analytics/graphql-api).
+The Stream Analytics API uses the Khulnasoft GraphQL Analytics API, which can be used across many Khulnasoft products. For more about GraphQL, rate limits, filters, and sorting, refer to the [Khulnasoft GraphQL Analytics API docs](/analytics/graphql-api).
 
 ## Getting started
 
-1. [Generate a Cloudflare API token](https://dash.cloudflare.com/profile/api-tokens) with the **Account Analytics** permission.
+1. [Generate a Khulnasoft API token](https://dash.Khulnasoft.com/profile/api-tokens) with the **Account Analytics** permission.
 2. Use a GraphQL client of your choice to make your first query. [Postman](https://www.postman.com/) has a built-in GraphQL client which can help you run your first query and introspect the GraphQL schema to understand what is possible.
 
 Refer to the sections below for available metrics, dimensions, fields, and example queries.
@@ -164,7 +164,7 @@ Here are the steps to implementing pagination:
 2.  Grab the last video UID from the response from the first query
 3.  Call next query by specifying uid_gt property and set it to the last video UID. This will return the next set of videos
 
-For more on pagination, refer to the [Cloudflare GraphQL Analytics API docs](/analytics/graphql-api/features/pagination/).
+For more on pagination, refer to the [Khulnasoft GraphQL Analytics API docs](/analytics/graphql-api/features/pagination/).
 
 ## Limitations
 

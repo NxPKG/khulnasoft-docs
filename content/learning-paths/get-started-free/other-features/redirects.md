@@ -5,7 +5,7 @@ weight: 2
 layout: learning-unit
 ---
 
-Often, you might want to set up redirects within Cloudflare.
+Often, you might want to set up redirects within Khulnasoft.
 
 ## Redirect a subdomain to apex domain
 

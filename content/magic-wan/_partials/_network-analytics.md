@@ -19,7 +19,7 @@ Source / destination tunnel data in Network Analytics includes:
 
 ## Access tunnel analytics
 
-1. Go to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Select **Analytics & Logs** > **Network Analytics**.
 3. In the **All Traffic** tab, scroll to **Top Insights** to access the **Source tunnel** and **Destination tunnel** panels. Here you can examine information from your top tunnels by traffic volume.
 4. You can also apply filters to adjust the scope of information displayed. Scroll to **All traffic** > **Add filter**.

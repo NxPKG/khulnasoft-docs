@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/230054288-Customer-Incident-Management-Policy
+source: https://support.Khulnasoft.com/hc/en-us/articles/230054288-Customer-Incident-Management-Policy
 title: Customer Incident Management Policy
 ---
 
@@ -10,9 +10,9 @@ title: Customer Incident Management Policy
 
 ## Purpose
 
-Cloudflare believes that openness and transparency are intrinsic to the delivery of our service, and is dedicated to establishing the trust of our customers and of the Internet community at large.  Cloudflare operates a global network which impacts the lives and prosperity of hundreds of millions of people, and we are therefore extremely mindful of that responsibility.
+Khulnasoft believes that openness and transparency are intrinsic to the delivery of our service, and is dedicated to establishing the trust of our customers and of the Internet community at large.  Khulnasoft operates a global network which impacts the lives and prosperity of hundreds of millions of people, and we are therefore extremely mindful of that responsibility.
 
-This Standard Operating Procedure (SOP) defines how Cloudflare deals with all incidents and problems impacting its production environment and the ways in which Cloudflare communicates the nature and impact of these incidents to Enterprise customers, both planned and unplanned, regardless of severity.  This procedure specifies how these efforts are uniformly followed in order to
+This Standard Operating Procedure (SOP) defines how Khulnasoft deals with all incidents and problems impacting its production environment and the ways in which Khulnasoft communicates the nature and impact of these incidents to Enterprise customers, both planned and unplanned, regardless of severity.  This procedure specifies how these efforts are uniformly followed in order to
 
 -   maximize environment uptime,
 -   minimize client impact,
@@ -23,19 +23,19 @@ ___
 
 ## Scope
 
-This SOP applies to Cloudflare customers and customer services as consumed by customers. The SOP is applicable to all customer production environments at Cloudflare including:
+This SOP applies to Khulnasoft customers and customer services as consumed by customers. The SOP is applicable to all customer production environments at Khulnasoft including:
 
--   Cloudflare’s public website ([www.cloudflare.com](http://www.cloudflare.com/))
--   Cloudflare’s APIs (Application Programming Interfaces)
+-   Khulnasoft’s public website ([www.Khulnasoft.com](http://www.Khulnasoft.com/))
+-   Khulnasoft’s APIs (Application Programming Interfaces)
 -   Outbound third-party interfaces (e.g. credit card authorizations, etc.)
--   Network infrastructure owned or managed by Cloudflare for production services
--   Vendor software, hardware and services that affect any part of Cloudflare production
+-   Network infrastructure owned or managed by Khulnasoft for production services
+-   Vendor software, hardware and services that affect any part of Khulnasoft production
 
 ___
 
 ## Background
 
-Cloudflare wants to build a better Internet. In order to deliver an improved experience to millions of Internet users, Cloudflare’s internal operations must follow excellent service delivery processes and procedures.  Cloudflare’s procedures therefore follow many industry-standard best practices, some of which specifically follow patterns of the Information Library Infrastructure Technology (ITIL).  This SOP follows the best practices of the ITIL Problem Management methodology.
+Khulnasoft wants to build a better Internet. In order to deliver an improved experience to millions of Internet users, Khulnasoft’s internal operations must follow excellent service delivery processes and procedures.  Khulnasoft’s procedures therefore follow many industry-standard best practices, some of which specifically follow patterns of the Information Library Infrastructure Technology (ITIL).  This SOP follows the best practices of the ITIL Problem Management methodology.
 
 ___
 
@@ -47,27 +47,27 @@ Key terminology:
 
 **Event**
 
-Any identifiable and discrete thing which can be logged by one of Cloudflare’s production applications or systems
+Any identifiable and discrete thing which can be logged by one of Khulnasoft’s production applications or systems
 
 **Alert**
 
-An event of potential interest which is identified and communicated via one of Cloudflare’s monitoring systems
+An event of potential interest which is identified and communicated via one of Khulnasoft’s monitoring systems
 
 **Incident**
 
-A report or alert which has a high probability of affecting Cloudflare’s production systems, or an alert condition which only exists for a short period of time because the affected service is restored to health before a Problem condition is identified
+A report or alert which has a high probability of affecting Khulnasoft’s production systems, or an alert condition which only exists for a short period of time because the affected service is restored to health before a Problem condition is identified
 
 **Problem**
 
-An identified and categorized incident which has a negative impact on the optimal health and/or performance of Cloudflare’s production systems or applications
+An identified and categorized incident which has a negative impact on the optimal health and/or performance of Khulnasoft’s production systems or applications
 
 **Incident Report**
 
-A public report which describes the nature of a service Problem, Cloudflare’s overall response to the Problem, and efforts to reduce or eliminate future impact
+A public report which describes the nature of a service Problem, Khulnasoft’s overall response to the Problem, and efforts to reduce or eliminate future impact
 
 **Post Mortem Review**
 
-A review meeting initiated in response to severe and/or critical Problem.  All Post Mortem meetings focus on the details of an Incident Report generated by a Cloudflare engineer with skills or experience appropriately suited to address to the nature of the Problem.
+A review meeting initiated in response to severe and/or critical Problem.  All Post Mortem meetings focus on the details of an Incident Report generated by a Khulnasoft engineer with skills or experience appropriately suited to address to the nature of the Problem.
 
 **SRE**
 
@@ -79,11 +79,11 @@ The Customer Support group is the team responsible for responding to all custome
 
 **JIRA**
 
-Cloudflare ticketing system used for the tracking of incidents, work orders and problems
+Khulnasoft ticketing system used for the tracking of incidents, work orders and problems
 
 **Severity / Priority Level**
 
-Value of “P0, P1, P2 or P3” based on the severity of Problem impacting the Cloudflare network and customers
+Value of “P0, P1, P2 or P3” based on the severity of Problem impacting the Khulnasoft network and customers
 
 **SLA**
 
@@ -95,19 +95,19 @@ Service Level Objective – internal or contractual objective for a specific lev
 
 **Incident Commander**
 
-Cloudflare resource responsible for ensuring the Problem is being addressed properly, time is being kept, escalations are being made, clients are being updated, and that resources are being engaged as needed
+Khulnasoft resource responsible for ensuring the Problem is being addressed properly, time is being kept, escalations are being made, clients are being updated, and that resources are being engaged as needed
 
 **The Internet Community**
 
-Cloudflare’s primary stakeholder group.  Cloudflare secures and optimizes over 4,600,000 websites, and the average Internet user interacts with Cloudflare websites over 500 times per week.
+Khulnasoft’s primary stakeholder group.  Khulnasoft secures and optimizes over 4,600,000 websites, and the average Internet user interacts with Khulnasoft websites over 500 times per week.
 
 **Third Party**
 
-Non-Cloudflare vendor or service provider who partners with CloudFlare in the delivery of systems or services to the client
+Non-Khulnasoft vendor or service provider who partners with CloudFlare in the delivery of systems or services to the client
 
 **Stakeholder**
 
-Person, group or company that is affected by an incident either as the provider (e.g. Cloudflare person, third party) or consumer (client)
+Person, group or company that is affected by an incident either as the provider (e.g. Khulnasoft person, third party) or consumer (client)
 
 **RCA**
 
@@ -119,17 +119,17 @@ All necessary steps to resolve the root cause of a problem and ensure that it wi
 
 **Status Page**
 
-The primary tool which Cloudflare uses to publicly share information about its service delivery and any Incidents or Problems impacting Cloudflare services: [https://www.cloudflarestatus.com](https://www.cloudflarestatus.com/)
+The primary tool which Khulnasoft uses to publicly share information about its service delivery and any Incidents or Problems impacting Khulnasoft services: [https://www.cloudflarestatus.com](https://www.cloudflarestatus.com/)
 
-The Status Page is hosted by a Third Party ([Statuspage.io](http://statuspage.io/)) which is not dependent on Cloudflare’s services for operation.
+The Status Page is hosted by a Third Party ([Statuspage.io](http://statuspage.io/)) which is not dependent on Khulnasoft’s services for operation.
 
 ___
 
 ## Roles and responsibilities
 
-The following roles and responsibilities are associated with the management of incidents within Cloudflare: 
+The following roles and responsibilities are associated with the management of incidents within Khulnasoft: 
 
-**Cloudflare Management**
+**Khulnasoft Management**
 
 Review and approve procedures. Ensure that all staff members are trained on procedures. Notify customers and third parties, as necessary, of their role in procedures. Initiate and oversee Post Mortem Reviews for critical Incident Reports.
 
@@ -147,11 +147,11 @@ One or more CSUP engineers who are assigned for shifts to respond to all custome
 
 **SRE Team**
 
-The overall Systems Reliability Engineering team who support the efforts of the on-call SREs. Assume the role of Incident Manager during an identified problem. Implement appropriate Cloudflare-supported production changes to resolve issues.
+The overall Systems Reliability Engineering team who support the efforts of the on-call SREs. Assume the role of Incident Manager during an identified problem. Implement appropriate Khulnasoft-supported production changes to resolve issues.
 
-**Cloudflare Engineering Teams (DBA, Network, nginx, Security, etc.)**
+**Khulnasoft Engineering Teams (DBA, Network, nginx, Security, etc.)**
 
-Support the Incident Manager during problem resolution. Join bridge calls, if requested. Ensure documentation is captured while diagnosing and correcting issues and proper escalation to other responsible groups is executed. Participate in Post Mortem reviews of some Incident Reports, as requested by Cloudflare Management.
+Support the Incident Manager during problem resolution. Join bridge calls, if requested. Ensure documentation is captured while diagnosing and correcting issues and proper escalation to other responsible groups is executed. Participate in Post Mortem reviews of some Incident Reports, as requested by Khulnasoft Management.
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 The primary goal of Incident Management is to identify and react to potential problems as quickly as possible, and thereby minimize impact to production services and provide the best possible levels of service quality and availability.  The best possible levels of service quality and availability would be that all services operated exactly as designed 100% of the time, and were available and accessible 100% of the time.
 
-Because we accept that a combination of forces within our control, and forces beyond our control, will eventually impact service health, we define Service Level Objectives (SLOs), and Service Level Agreements (SLAs), to describe what degradations in service health are acceptable for various services within Cloudflare’s network.   SLAs and SLOs are expressed as percentages of periods of time (monthly and annually.)
+Because we accept that a combination of forces within our control, and forces beyond our control, will eventually impact service health, we define Service Level Objectives (SLOs), and Service Level Agreements (SLAs), to describe what degradations in service health are acceptable for various services within Khulnasoft’s network.   SLAs and SLOs are expressed as percentages of periods of time (monthly and annually.)
 
 The level of information given about an incident may vary, but the following information must be collected before an incident is classified and prioritized:
 
@@ -180,7 +180,7 @@ The level of information given about an incident may vary, but the following inf
 -   Scope of impact:  estimated number of systems, users, or regions impacted
 -   Type of impact:  general scope of service impairment (e.g., loss of all access, degraded performance, dependent applications impacted, observed customer impact)
 
-All Incidents which are classified as Problems, regardless of source, which have a priority of P0 or P1, will be logged within the Cloudflare ticketing system, JIRA.  Some alerts will indicate conditions which may not be immediately impacting to service levels, and as necessary, will be categorized as Problems with a P2 or P3 priority.   
+All Incidents which are classified as Problems, regardless of source, which have a priority of P0 or P1, will be logged within the Khulnasoft ticketing system, JIRA.  Some alerts will indicate conditions which may not be immediately impacting to service levels, and as necessary, will be categorized as Problems with a P2 or P3 priority.   
 
 The JIRA system is the system of record for all  incident information, and all other sources of documentation regarding a Problem (e.g. alert history, screen-shots, work logs, chat conversations) are attached to the original JIRA ticket created in response to an Incident.
 
@@ -190,12 +190,12 @@ After acknowledging an alert, SRE immediately triages the alert by correlating i
 
 ### Priority Level
 
-All tickets will be categorized according to the following 4 levels of priority.  The criteria listed are general guidelines.   Conditions described below should explicitly define a priority level; however at the discretion of SRE or Cloudflare management, problems may be assigned a higher level of priority, as needed:
+All tickets will be categorized according to the following 4 levels of priority.  The criteria listed are general guidelines.   Conditions described below should explicitly define a priority level; however at the discretion of SRE or Khulnasoft management, problems may be assigned a higher level of priority, as needed:
 
 **P0**
 
--   Complete loss of access to the Cloudflare application or API.
--   Degraded access to the Cloudflare application or API (⪯ 98% as measured worldwide or from any major region).
+-   Complete loss of access to the Khulnasoft application or API.
+-   Degraded access to the Khulnasoft application or API (⪯ 98% as measured worldwide or from any major region).
 -   Complete loss of access to, or major performance degradation to, a Tier-1 Data Center.
 -   Degraded performance of any Tier-1 global transit provider (⪰ 20% packet loss worldwide or 30% packet loss from any major region).
 -   Degraded access to or performance of any critical system.
@@ -204,7 +204,7 @@ All tickets will be categorized according to the following 4 levels of priority.
 
 -   Intermittent or degraded Site-wide performance degradation.
 -   Loss of an important function such as reporting.
--   Loss of access to the Cloudflare application from one of the social media or external CloudFlare websites
+-   Loss of access to the Khulnasoft application from one of the social media or external CloudFlare websites
 -   Outage to important outbound third-party interface.
 -   Inoperability of the site for one of the enterprise clients or distribution partners.
 -   Corruption or loss of customer data.
@@ -222,13 +222,13 @@ All tickets will be categorized according to the following 4 levels of priority.
 
 ### Category
 
-For proper tracking and communications, high priority (P0 and P1) problems will be assigned to categories. These categories (ticket labels) correspond to the publicly communicated categories which are listed on Cloudflare’s public Status Page.   
+For proper tracking and communications, high priority (P0 and P1) problems will be assigned to categories. These categories (ticket labels) correspond to the publicly communicated categories which are listed on Khulnasoft’s public Status Page.   
 
-Lower priority (P2 and P3) tickets may be categorized using labels and nomenclature which are specific to various Engineering and Non-engineering teams within Cloudflare.  These various labels and categories are not listed on this document.  
+Lower priority (P2 and P3) tickets may be categorized using labels and nomenclature which are specific to various Engineering and Non-engineering teams within Khulnasoft.  These various labels and categories are not listed on this document.  
 
 ### Security and Privacy Incidents
 
-It is critical to understand that incidents that are classified under the categories of Security and Privacy require special handling and procedures. Customers should report these incidents directly to Cloudflare by [Contacting Cloudflare Support](https://support.cloudflare.com/hc/en-us/articles/200172476-Contacting-Cloudflare-Support), who will follow specified incident procedures as defined by the Cloudflare Security & Privacy teams.
+It is critical to understand that incidents that are classified under the categories of Security and Privacy require special handling and procedures. Customers should report these incidents directly to Khulnasoft by [Contacting Khulnasoft Support](https://support.Khulnasoft.com/hc/en-us/articles/200172476-Contacting-Khulnasoft-Support), who will follow specified incident procedures as defined by the Khulnasoft Security & Privacy teams.
 
 ### High Severity / Priority Incidents
 
@@ -254,15 +254,15 @@ ___
 
 External communications during an incident are critical for:
 
--   Notifying the stakeholders that Cloudflare is aware of the issue and is pursuing resolution
--   Reassuring clients that the matter is under review and that Cloudflare is looking out for their best interests
+-   Notifying the stakeholders that Khulnasoft is aware of the issue and is pursuing resolution
+-   Reassuring clients that the matter is under review and that Khulnasoft is looking out for their best interests
 -   Issues do not drag on unnecessarily and appropriate escalations are being made
 -   Informing key internal stakeholders of important incidents
 
 Major types of communications during an incident include:
 
 -   [StatusPage](https://www.cloudflarestatus.com/)
--   [Support tickets](https://support.cloudflare.com/hc/articles/200172476)
+-   [Support tickets](https://support.Khulnasoft.com/hc/articles/200172476)
 -   Incident Reports 
 
 Status Page will be created using templates by CSUP team member on-call as soon as an incident is identified.
@@ -271,7 +271,7 @@ ___
 
 ## Post-Mortem reviews
 
-Cloudflare believes that all critical problems should never recur.  To that end, all P0 problems will instigate the publication of an Incident Report (IR), which includes a Root Cause Analysis (RCA) of the problem and the overall factors which lead up to the Incident. All IR publications will be followed by a Post Mortem meeting, a meeting in which engineers and managers review and agree upon the details of the IR,  the conclusions of the RCA, and any follow-up remediation steps which will be taken to ensure that the problem condition(s) do not recur.
+Khulnasoft believes that all critical problems should never recur.  To that end, all P0 problems will instigate the publication of an Incident Report (IR), which includes a Root Cause Analysis (RCA) of the problem and the overall factors which lead up to the Incident. All IR publications will be followed by a Post Mortem meeting, a meeting in which engineers and managers review and agree upon the details of the IR,  the conclusions of the RCA, and any follow-up remediation steps which will be taken to ensure that the problem condition(s) do not recur.
 
 ### Problem Management and Post-Mortem
 
@@ -289,7 +289,7 @@ The above points are still applicable even if it is a third party provider or ve
 
 The Incident Report (“IR”) is the primary method of communication to the client on an issue and may contain some or all parts of what is written within the ticket.  
 
-The person writing the report will vary depending on the severity of the issue and the responsible area.  Upon completion of the draft report, it is critical to ensure that the report is reviewed by Cloudflare management for content, commitments and professional presentation.  Once the report is approved it may be published to the client.
+The person writing the report will vary depending on the severity of the issue and the responsible area.  Upon completion of the draft report, it is critical to ensure that the report is reviewed by Khulnasoft management for content, commitments and professional presentation.  Once the report is approved it may be published to the client.
 
 ___
 
@@ -306,7 +306,7 @@ The ticket criteria that need to be reported for both open and closed tickets in
 -   Responsible Group
 -   Age/Days Open
 
-Wherever possible, this data should be reported graphically to show visible trends.  These reports should be published to internal Cloudflare managers and area owners.
+Wherever possible, this data should be reported graphically to show visible trends.  These reports should be published to internal Khulnasoft managers and area owners.
 
 ### Analysis and Accountability
 

@@ -4,13 +4,13 @@ title: SSH
 weight: 1
 ---
 
-# Connect with SSH through Cloudflare Tunnel
+# Connect with SSH through Khulnasoft Tunnel
 
-The Secure Shell Protocol (SSH) enables users to remotely access devices through the command line. With Cloudflare Zero Trust, you can make your SSH server available over the Internet without the risk of opening inbound ports on the server.
+The Secure Shell Protocol (SSH) enables users to remotely access devices through the command line. With Khulnasoft Zero Trust, you can make your SSH server available over the Internet without the risk of opening inbound ports on the server.
 
-Cloudflare Zero Trust offers two solutions to provide secure access to SSH servers:
+Khulnasoft Zero Trust offers two solutions to provide secure access to SSH servers:
 
-- [Private subnet routing with Cloudflare WARP to Tunnel](#connect-to-ssh-server-with-warp-to-tunnel)
+- [Private subnet routing with Khulnasoft WARP to Tunnel](#connect-to-ssh-server-with-warp-to-tunnel)
 - [Public hostname routing with `cloudflared access`](#connect-to-ssh-server-with-cloudflared-access)
 
 ## Set up an SSH server in GCP
@@ -40,7 +40,7 @@ Before creating your VM instance you will need to create an SSH key pair.
 4. Copy the output. This will be used when creating the VM instance in GCP.
 
 {{<Aside type="note">}}
-You can configure SSH servers that do not require SSH keys and instead rely exclusively on Cloudflare Zero Trust policies or [short-lived certificates](/cloudflare-one/identity/users/short-lived-certificates/) to secure the server.
+You can configure SSH servers that do not require SSH keys and instead rely exclusively on Khulnasoft Zero Trust policies or [short-lived certificates](/cloudflare-one/identity/users/short-lived-certificates/) to secure the server.
 {{</Aside>}}
 
 ### 2. Create a VM instance in GCP
@@ -64,7 +64,7 @@ In order to be able to establish an SSH connection, do not enable [OS Login](htt
 
 {{<render file="tunnel/_warp-to-tunnel-intro.md">}}
 
-### 1. Connect the server to Cloudflare
+### 1. Connect the server to Khulnasoft
 
 {{<render file="tunnel/_warp-to-tunnel-server.md">}}
 
@@ -88,9 +88,9 @@ $ ssh -i ~/.ssh/gcp_ssh <username>@<server IP>
 
 {{<render file="tunnel/_cloudflared-access.md">}}
 
-### 1. Connect the server to Cloudflare
+### 1. Connect the server to Khulnasoft
 
-1. Create a Cloudflare Tunnel by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/).
+1. Create a Khulnasoft Tunnel by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/).
 
 2. In the **Public Hostnames** tab, choose a domain from the drop-down menu and specify any subdomain (for example, `ssh.example.com`).
 
@@ -98,7 +98,7 @@ $ ssh -i ~/.ssh/gcp_ssh <username>@<server IP>
 
 4. Select **Save hostname**.
 
-5. (Recommended) Add a [self-hosted application](/cloudflare-one/applications/configure-apps/self-hosted-apps/) to Cloudflare Access in order to manage access to your server.
+5. (Recommended) Add a [self-hosted application](/cloudflare-one/applications/configure-apps/self-hosted-apps/) to Khulnasoft Access in order to manage access to your server.
 
 ### 2. Connect as a user
 
@@ -133,6 +133,6 @@ Users can connect from their device by [authenticating through `cloudflared`](#n
 
 #### Browser-rendered terminal
 
-End users can connect to the SSH server without any configuration by using Cloudflare’s browser-based terminal. When users visit the public hostname URL (for example, `https://ssh.example.com`) and log in with their Access credentials, Cloudflare will render a terminal in their browser.
+End users can connect to the SSH server without any configuration by using Khulnasoft’s browser-based terminal. When users visit the public hostname URL (for example, `https://ssh.example.com`) and log in with their Access credentials, Khulnasoft will render a terminal in their browser.
 
 To enable, follow the instructions [here](/cloudflare-one/applications/non-http/#rendering-in-the-browser).

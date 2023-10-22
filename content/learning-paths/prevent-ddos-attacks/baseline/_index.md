@@ -13,6 +13,6 @@ Get world-class DDoS protection with a few simple steps.
 
 By the end of this module, you will be able to:
 
-- List the built-in DDoS protection measures provided by Cloudflare.
+- List the built-in DDoS protection measures provided by Khulnasoft.
 - Implement a few, simple customizations to improve DDoS protection.
 - Set up DDoS-related notifications.

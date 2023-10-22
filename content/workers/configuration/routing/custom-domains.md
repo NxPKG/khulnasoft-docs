@@ -38,7 +38,7 @@ You cannot create a Custom Domain on a hostname with an existing CNAME DNS recor
 
 To set up a Custom Domain in the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages** and in **Overview**, select your Worker.
 3. Go to **Triggers** > **Custom Domains** > **Add Custom Domain**.
 4. Enter the domain you want to configure for your Worker.
@@ -142,7 +142,7 @@ If you are currently invoking a Worker using a [route](/workers/configuration/ro
 
 To migrate the route `example.com/*`:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to **DNS** and delete the CNAME record for `example.com`.
 3. Go to **Account Home** > **Workers & Pages**.
 4. In **Overview**, select your Worker > **Triggers**.
@@ -153,7 +153,7 @@ To migrate the route `example.com/*`:
 
 To migrate the route `example.com/*` in your `wrangler.toml`:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to **DNS** and delete the CNAME record for `example.com`.
 3. Add the following to your `wrangler.toml` file:
 

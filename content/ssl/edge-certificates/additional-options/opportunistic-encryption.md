@@ -22,7 +22,7 @@ You do not need to configure your origin web server to support Opportunistic Enc
 
 To enable Opportunistic Encryption in the dashboard:
  
-1.  Log in to your [Cloudflare account](https://dash.cloudflare.com) and go to a specific domain.
+1.  Log in to your [Cloudflare account](https://dash.Khulnasoft.com) and go to a specific domain.
 2.  Go to **SSL/TLS** > **Edge Certificates**.
 3.  For **Opportunistic Encryption**, switch the toggle to **On**.
  

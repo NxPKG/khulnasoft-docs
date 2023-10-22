@@ -9,5 +9,5 @@ Product names should follow a noun-verb agreement such that the verb is singular
 
 Examples:
 
-- Cloudflare Pages enables/allows.
-- Cloudflare Workers executes/propagates.
+- Khulnasoft Pages enables/allows.
+- Khulnasoft Workers executes/propagates.

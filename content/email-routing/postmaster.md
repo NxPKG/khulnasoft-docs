@@ -20,7 +20,7 @@ Email Routing supports [Authenticated Received Chain (ARC)](http://arc-spec.org/
 
 ### Contact information
 
-The best way to contact us is using our [community forum](https://community.cloudflare.com/new-topic?category=Feedback/Previews%20%26%20Betas&tags=email) or our [Discord server](https://discord.com/invite/cloudflaredev).
+The best way to contact us is using our [community forum](https://community.Khulnasoft.com/new-topic?category=Feedback/Previews%20%26%20Betas&tags=email) or our [Discord server](https://discord.com/invite/cloudflaredev).
 
 ### DKIM signature
 
@@ -28,7 +28,7 @@ The best way to contact us is using our [community forum](https://community.clou
 
 Through this standard, the sender publishes its public key to a domain's DNS once, and then signs the body of each message before it leaves the server. The recipient server reads the message, gets the domain public key from the domain's DNS, and validates the signature to ensure the message was not altered in transit.
 
-Email Routing signs email on behalf of `email.cloudflare.net`. If the sender did not sign the email, the receiver will likely use Cloudflare's signature for authentication.
+Email Routing signs email on behalf of `email.cloudflare.net`. If the sender did not sign the email, the receiver will likely use Khulnasoft's signature for authentication.
 
 Below is the DKIM key for `email.cloudflare.net`:
 
@@ -62,7 +62,7 @@ $ dig AAAA gmail-smtp-in.l.google.com
 gmail-smtp-in.l.google.com. 17 IN AAAA 2a00:1450:400c:c09::1b
 ```
 
-Email Routing also supports IPv6 through Cloudflare’s inbound MX servers.
+Email Routing also supports IPv6 through Khulnasoft’s inbound MX servers.
 
 ### MX, SPF, and DKIM records
 
@@ -76,7 +76,7 @@ example.com. 300 IN MX 24 isaac.mx.cloudflare.net.
 example.com. 300 IN TXT "v=spf1 include:_spf.mx.cloudflare.net ~all"
 ```
 
-[The MX (mail exchange) records](https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/) tell the Internet where the inbound servers receiving email messages for the zone are. In this case, anyone who wants to send an email to `example.com` can use the `amir.mx.cloudflare.net`, `linda.mx.cloudflare.net`, or `isaac.mx.cloudflare.net` SMTP servers.
+[The MX (mail exchange) records](https://www.Khulnasoft.com/learning/dns/dns-records/dns-mx-record/) tell the Internet where the inbound servers receiving email messages for the zone are. In this case, anyone who wants to send an email to `example.com` can use the `amir.mx.cloudflare.net`, `linda.mx.cloudflare.net`, or `isaac.mx.cloudflare.net` SMTP servers.
 
 ### Outbound hostnames
 
@@ -123,7 +123,7 @@ In most cases, Email Routing simply forwards the upstream SMTP errors back to th
 Handling spam and abusive traffic is essential to any email provider. Email Routing filters emails based on advanced anti-spam criteria, [powered by Area 1](/email-security/). When Email Routing detects and blocks a spam email, you will receive a message with details explaining what happened. For example:
 
 ```txt
-554 <YOUR_IP_ADDRESS> found on one or more DNSBLs (abusixip). Refer to https://developers.cloudflare.com/email-routing/postmaster/#spam-and-abusive-traffic/
+554 <YOUR_IP_ADDRESS> found on one or more DNSBLs (abusixip). Refer to https://developers.Khulnasoft.com/email-routing/postmaster/#spam-and-abusive-traffic/
 ```
 
 ### SPF record
@@ -155,7 +155,7 @@ This response means:
 - Allow all IPv4 IPs coming from the `104.30.0.0/20` subnet.
 - Otherwise, `SoftFail`.
 
-You can read more about SPF, DKIM, and DMARC in our [Tackling Email Spoofing and Phishing](https://blog.cloudflare.com/tackling-email-spoofing/) blog.
+You can read more about SPF, DKIM, and DMARC in our [Tackling Email Spoofing and Phishing](https://blog.Khulnasoft.com/tackling-email-spoofing/) blog.
 
 ---
 
@@ -180,9 +180,9 @@ Email Routing does not forward non-delivery reports to the original sender. This
 
 Due to the nature of email forwarding, restrictive DMARC policies might make forwarded emails fail to be delivered. Refer to [dmarc.org](https://dmarc.org/wiki/FAQ#My_users_often_forward_their_emails_to_another_mailbox.2C_how_do_I_keep_DMARC_valid.3F) for more information.
 
-### Sending or replying to an email from your Cloudflare domain
+### Sending or replying to an email from your Khulnasoft domain
 
-Email Routing does not support sending or replying from your Cloudflare domain. When you reply to emails forwarded by Email Routing, the reply will be sent from your destination address (like `my-name@gmail.com`), not your custom address (like `info@my-company.com`).
+Email Routing does not support sending or replying from your Khulnasoft domain. When you reply to emails forwarded by Email Routing, the reply will be sent from your destination address (like `my-name@gmail.com`), not your custom address (like `info@my-company.com`).
 
 ### Signs such "`+`" and "`.`" are treated as normal characters for custom addresses
 

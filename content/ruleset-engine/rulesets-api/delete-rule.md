@@ -30,7 +30,7 @@ The following example deletes rule `{rule_id_1}` belonging to ruleset `{ruleset_
 
 ```bash
 curl --request DELETE \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/rules/{rule_id_1} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/rules/{rule_id_1} \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 

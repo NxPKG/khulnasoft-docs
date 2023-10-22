@@ -15,11 +15,11 @@ meta:
   
 externals:
   - title: Blog announcement
-    url: https://blog.cloudflare.com/cloudflare-network-interconnect/
+    url: https://blog.Khulnasoft.com/cloudflare-network-interconnect/
   - title: CNI Partnerships
-    url: https://www.cloudflare.com/network-interconnect-partnerships/
+    url: https://www.Khulnasoft.com/network-interconnect-partnerships/
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

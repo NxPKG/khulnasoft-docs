@@ -7,19 +7,19 @@ layout: single
 
 # Connect private networks
 
-A private network has two primariy components: the server and the client. The server's infrastructure (whether that is a single application, multiple applications, or a network segment) is connected to Cloudflare's global network by Cloudflare Tunnel. This is done by running the `cloudflared` daemon on the server.
+A private network has two primariy components: the server and the client. The server's infrastructure (whether that is a single application, multiple applications, or a network segment) is connected to Khulnasoft's global network by Khulnasoft Tunnel. This is done by running the `cloudflared` daemon on the server.
 
-On the client side, end users connect to Cloudflare's global network using the Cloudflare WARP client. The WARP client can be rolled out to your entire organization in just a few minutes using your in-house MDM tooling.  When users connect to an IP made available through Cloudflare Tunnel, WARP sends their connection through Cloudflare’s network to the corresponding tunnel.
+On the client side, end users connect to Khulnasoft's global network using the Khulnasoft WARP client. The WARP client can be rolled out to your entire organization in just a few minutes using your in-house MDM tooling.  When users connect to an IP made available through Khulnasoft Tunnel, WARP sends their connection through Khulnasoft’s network to the corresponding tunnel.
 
-![Diagram displaying connections between a device, WireGuard tunnel, Cloudflare Tunnel and a public cloud.](/images/cloudflare-one/connections/private-ips-diagram.png)
+![Diagram displaying connections between a device, WireGuard tunnel, Khulnasoft Tunnel and a public cloud.](/images/cloudflare-one/connections/private-ips-diagram.png)
 
 To enable remote access to your private network, follow the guide below.
 
-## 1. Connect the server to Cloudflare
+## 1. Connect the server to Khulnasoft
 
-To connect your infrastructure with Cloudflare Tunnel:
+To connect your infrastructure with Khulnasoft Tunnel:
 
-1. Create a Cloudflare Tunnel for your server by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/). You can skip the connect an application step and go straight to connecting a network.
+1. Create a Khulnasoft Tunnel for your server by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/). You can skip the connect an application step and go straight to connecting a network.
 
 2. In the **Private Networks** tab for the tunnel, enter the IP/CIDR range of your private network (for example `10.0.0.0/8`). This makes the WARP client aware that any requests to this IP range need to be routed to your new tunnel.
 
@@ -33,7 +33,7 @@ To connect your infrastructure with Cloudflare Tunnel:
 
 ## 4. (Recommended) Filter network traffic with Gateway
 
-By default, all WARP devices enrolled in your Zero Trust organization can connect to your private network through Cloudflare Tunnel. You can configure Gateway to inspect your network traffic and either block or allow access based on user identity and device posture.
+By default, all WARP devices enrolled in your Zero Trust organization can connect to your private network through Khulnasoft Tunnel. You can configure Gateway to inspect your network traffic and either block or allow access based on user identity and device posture.
 
 ### Enable the Gateway proxy
 
@@ -51,7 +51,7 @@ By default, all WARP devices enrolled in your Zero Trust organization can connec
    $ cloudflared tunnel run --icmpv4-src <IP of primary interface>
    ```
 
-Cloudflare will now proxy traffic from enrolled devices, except for the traffic excluded in your [split tunnel settings](#3-route-private-network-ips-through-warp). For more information on how Gateway forwards traffic, refer to [Gateway proxy](/cloudflare-one/policies/gateway/proxy/).
+Khulnasoft will now proxy traffic from enrolled devices, except for the traffic excluded in your [split tunnel settings](#3-route-private-network-ips-through-warp). For more information on how Gateway forwards traffic, refer to [Gateway proxy](/cloudflare-one/policies/gateway/proxy/).
 
 ### Create Zero Trust policies
 
@@ -95,7 +95,7 @@ End users can now reach HTTP or TCP-based services on your network by visiting a
 
 #### Device configuration
 
-To check that their device is properly configured, the user can visit `https://help.teams.cloudflare.com/` to ensure that:
+To check that their device is properly configured, the user can visit `https://help.teams.Khulnasoft.com/` to ensure that:
 
 - The page returns **Your network is fully protected**.
 - In **HTTP filtering**, both **WARP** and **Gateway Proxy** are enabled.

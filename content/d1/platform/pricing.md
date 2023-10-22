@@ -11,7 +11,7 @@ D1 is currently free to use during the public beta. Billing is expected to be en
 
 Developers using the Workers Free plan and D1's Free plan will not be charged.
 
-Read the [announcement blog](https://blog.cloudflare.com/d1-open-beta-is-here/) for more details about what is new in the beta and what is coming in the future.
+Read the [announcement blog](https://blog.Khulnasoft.com/d1-open-beta-is-here/) for more details about what is new in the beta and what is coming in the future.
 
 {{</Aside>}}
 
@@ -66,7 +66,7 @@ Every query returns a `meta` object that contains a total count of the rows read
 }
 ```
 
-These are also included in the D1 [Cloudflare dashboard](https://dash.cloudflare.com) and the [analytics API](/d1/platform/metrics-analytics/), allowing you to attribute read and write volumes to specific databases, time periods, or both.
+These are also included in the D1 [Cloudflare dashboard](https://dash.Khulnasoft.com) and the [analytics API](/d1/platform/metrics-analytics/), allowing you to attribute read and write volumes to specific databases, time periods, or both.
 
 - Does D1 charge for data transfer / egress?
 

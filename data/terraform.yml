@@ -25,7 +25,7 @@ externals:
   - title: Terraform homepage
     url: https://www.terraform.io/
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

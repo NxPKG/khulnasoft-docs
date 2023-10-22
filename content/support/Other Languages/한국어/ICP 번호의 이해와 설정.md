@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: korean
-source: https://support.cloudflare.com/hc/ko/articles/209714777-ICP-%EB%B2%88%ED%98%B8%EC%9D%98-%EC%9D%B4%ED%95%B4%EC%99%80-%EC%84%A4%EC%A0%95
+source: https://support.Khulnasoft.com/hc/ko/articles/209714777-ICP-%EB%B2%88%ED%98%B8%EC%9D%98-%EC%9D%B4%ED%95%B4%EC%99%80-%EC%84%A4%EC%A0%95
 title: ICP 번호의 이해와 설정
 ---
 
@@ -53,6 +53,6 @@ ICP 라이선스는 호스팅 공급자나 클라우드 서비스 공급자를 �
 
 ICP 번호와 인증서가 발급됐다면 웹 사이트 홈페이지의 하단에 ICP 번호를 추가하세요.
 
-![이전 URL: https://support.cloudflare.com/hc/article_attachments/360040367132/baidu_home_page.png
+![이전 URL: https://support.Khulnasoft.com/hc/article_attachments/360040367132/baidu_home_page.png
 문서 ID: 209714777 | ICP 번호의 이해와 설정
 ](/images/support/hc-import-baidu_home_page.png)

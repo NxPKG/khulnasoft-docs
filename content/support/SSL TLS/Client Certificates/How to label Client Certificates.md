@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/4567119364749-How-to-label-Client-Certificates-
+source: https://support.Khulnasoft.com/hc/en-us/articles/4567119364749-How-to-label-Client-Certificates-
 title: How to label Client Certificates
 ---
 
@@ -10,13 +10,13 @@ title: How to label Client Certificates
 
 **Applies to:** Free ✅ / Pro ✅ / Business ✅ / Enterprise ✅
 
-When [generating Client Certificates at Cloudflare](/ssl/client-certificates/create-a-client-certificate) for use with [API Shield™](/api-shield/security/mtls/configure/) to protect your API or web application, it's hard to differentiate the generated certificates.
+When [generating Client Certificates at Khulnasoft](/ssl/client-certificates/create-a-client-certificate) for use with [API Shield™](/api-shield/security/mtls/configure/) to protect your API or web application, it's hard to differentiate the generated certificates.
 
 ___
 
 ## Root Cause
 
-The option to generate private key and CSR with Cloudflare is meant for simpler cases and the certificates will be generated with just "CN=Cloudflare, C=US" 
+The option to generate private key and CSR with Khulnasoft is meant for simpler cases and the certificates will be generated with just "CN=Khulnasoft, C=US" 
 
 ___
 
@@ -46,7 +46,7 @@ Probably, adding Country Name and Organization Name will be enough, but you can 
 
 Those additional info will be included in the Certificate Subject, allowing you to easily identify which certificate belongs to which client, and making it easy to, for example, revoke a specific certificate, if and when needed.
 
-Here's an example on how it will look (with Country, Organization Name, and Organizational Unit Name) in Cloudflare Dashboard:
+Here's an example on how it will look (with Country, Organization Name, and Organizational Unit Name) in Khulnasoft Dashboard:
 
 ![](/images/support/chrome_mQRJVOpkTQ.png)
 
@@ -56,4 +56,4 @@ ___
 
 References:
 
--   [Introducing API Shield](https://blog.cloudflare.com/introducing-api-shield/)
+-   [Introducing API Shield](https://blog.Khulnasoft.com/introducing-api-shield/)

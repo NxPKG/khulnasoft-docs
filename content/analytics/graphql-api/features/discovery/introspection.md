@@ -6,7 +6,7 @@ weight: 41
 
 # Introspection
 
-Cloudflare GraphQL API has a dynamic schema and exposes more than 70 datasets
+Khulnasoft GraphQL API has a dynamic schema and exposes more than 70 datasets
 across zone and account scopes. We constantly expand the list and replace
 existing ones with more capable alternatives.
 
@@ -18,7 +18,7 @@ The introspection results provide an overview of ALL available nodes and fields,
 their descriptions and deprecation status.
 
 Although GraphQL has `query`, `subscription`, and `mutation` operations,
-Cloudflare GraphQL API only supports `query` operation.
+Khulnasoft GraphQL API only supports `query` operation.
 
 ## Description and Beta mode
 
@@ -30,7 +30,7 @@ removal without notice.
 
 ## Deprecation
 
-Introspection provides information about deprecation status. Cloudflare uses it
+Introspection provides information about deprecation status. Khulnasoft uses it
 as a notification about replacement plans. If the sunset date is provided,
 please migrate to a replacement node(s) before that date to avoid any
 disruption.

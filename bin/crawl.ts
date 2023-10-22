@@ -26,7 +26,7 @@ const LEARNING_PATH_DIR = join(ROOT, "data/learning-paths");
 const REDIRECT_FILE = join(ROOT, "content/_redirects");
 const VERBOSE = process.argv.includes("--verbose");
 const EXTERNALS = process.argv.includes("--externals");
-const DEV_DOCS_HOSTNAME = "developers.cloudflare.com";
+const DEV_DOCS_HOSTNAME = "developers.Khulnasoft.com";
 
 async function walk(dir: string) {
   let files = await fs.readdir(dir);

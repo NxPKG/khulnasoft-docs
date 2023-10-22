@@ -3,12 +3,12 @@ updated: 2022-08-30
 category: 🔐 Access
 difficulty: Intermediate
 pcx_content_type: tutorial
-title: Integrate Cloudflare Area 1 with Access for SaaS
+title: Integrate Khulnasoft Area 1 with Access for SaaS
 ---
 
-# Integrate Cloudflare Area 1 with Access for SaaS
+# Integrate Khulnasoft Area 1 with Access for SaaS
 
-[Cloudflare Area 1](https://www.cloudflare.com/products/zero-trust/email-security/) is an email security platform that protects your organization's inbox from phishing, spam, and other malicious messages. You can set up Cloudflare Access as a single sign-on provider for your Cloudflare Area 1 portal.
+[Khulnasoft Area 1](https://www.Khulnasoft.com/products/zero-trust/email-security/) is an email security platform that protects your organization's inbox from phishing, spam, and other malicious messages. You can set up Khulnasoft Access as a single sign-on provider for your Khulnasoft Area 1 portal.
 
 **Time to complete:**
 
@@ -21,7 +21,7 @@ title: Integrate Cloudflare Area 1 with Access for SaaS
 
 ## 1. Add Area 1 to Zero Trust
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Select **Add an application**.
 
@@ -52,7 +52,7 @@ title: Integrate Cloudflare Area 1 with Access for SaaS
 
 ## 3. Configure SSO for Area 1
 
-Finally, you will need to configure Area 1 to allow users to log in through Cloudflare Access.
+Finally, you will need to configure Area 1 to allow users to log in through Khulnasoft Access.
 
 1. In your [Area 1 portal](https://horizon.area1security.com/), go to **Settings** > **SSO**.
 

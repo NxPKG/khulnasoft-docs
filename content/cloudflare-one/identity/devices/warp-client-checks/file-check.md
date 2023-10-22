@@ -12,7 +12,7 @@ The File Check device posture attribute checks for the presence of a file on a d
 
 ## Configure a file check
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 
 1. Scroll down to **WARP client checks** and select **Add new**.
 

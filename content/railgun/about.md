@@ -8,15 +8,15 @@ weight: 2
 
 {{<render file="_railgun-deprecation-notice.md">}}
 
-One of the major advantages of using Cloudflare is that cacheable content (such as images, JavaScript, CSS, and HTML) is both cached by Cloudflare and delivered from our data centers around the world. Because Cloudflare has data centers covering the entire globe, cached content gets delivered quickly to web surfers wherever they are (and overcomes latency problems).
+One of the major advantages of using Khulnasoft is that cacheable content (such as images, JavaScript, CSS, and HTML) is both cached by Khulnasoft and delivered from our data centers around the world. Because Khulnasoft has data centers covering the entire globe, cached content gets delivered quickly to web surfers wherever they are (and overcomes latency problems).
 
 But only about 66% of content is cacheable. The other 34% must be obtained from the real origin web server. Railgun overcomes this problem by using a scheme that is able to cache dynamically generated or personalized web pages dramatically reducing bandwidth used and improving download times.
 
 Railgun is a single daemon that runs on a 64-bit system which uses alternative compression techniques to dramatically speed up WAN performance.
 
-It proxies traffic through a special protocol that would normally travel between Cloudflare and your origin server over HTTP.
+It proxies traffic through a special protocol that would normally travel between Khulnasoft and your origin server over HTTP.
 
-Typically, the markup of websites, or the body of a JSON API response, does not change that frequently from one request to the next. Instead of transferring the entire request between Cloudflare and your environment, Railgun will transfer only the changes in markup from one request to the next. This cuts down on bandwidth, transfer time, and overall page load times. Railgun caches these differences in memory to make page processing as fast as possible.
+Typically, the markup of websites, or the body of a JSON API response, does not change that frequently from one request to the next. Instead of transferring the entire request between Khulnasoft and your environment, Railgun will transfer only the changes in markup from one request to the next. This cuts down on bandwidth, transfer time, and overall page load times. Railgun caches these differences in memory to make page processing as fast as possible.
 
 ## Implementation details
 
@@ -26,11 +26,11 @@ CNN sets the caching on this page to 60 seconds. After one minute it is necessar
 
 ![Binary code that makes CNN homepage](/images/railgun/cnn.webp)
 
-Experiments at Cloudflare have revealed similar change values across the web. For example, Reddit changes by about 2.15% over five minutes and 3.16% over an hour. The New York Times home page changes by about 0.6% over five minutes and 3% over an hour. BBC News changes by about 0.4% over five minutes and 2% over an hour.
+Experiments at Khulnasoft have revealed similar change values across the web. For example, Reddit changes by about 2.15% over five minutes and 3.16% over an hour. The New York Times home page changes by about 0.6% over five minutes and 3% over an hour. BBC News changes by about 0.4% over five minutes and 2% over an hour.
 
 Although the dynamic web is not cacheable, it is also not changing quickly. That means that from moment to moment there is only a small change between versions of a page. Railgun uses this fact to achieve very high rates of compression. This is very similar to how video compression looks for changes from frame to frame; Railgun looks for changes on a page from download to download.
 
-Railgun consists of two components: the sender and the listener. The sender is installed at every Cloudflare data center around the world. The listener is a software component that premium customers install on their network.
+Railgun consists of two components: the sender and the listener. The sender is installed at every Khulnasoft data center around the world. The listener is a software component that premium customers install on their network.
 
 The sender and listener establish a permanent TCP connection that is secured by TLS. This TCP connection is used for the Railgun protocol. It is an all binary multiplexing protocol that allows multiple HTTP requests to be run simultaneously and asynchronously across the link.
 

@@ -53,7 +53,7 @@ When a load balancer runs health monitor requests, headers set on an origin over
 
 ## API commands
 
-The Cloudflare API supports the following commands for monitors. Examples are given for user-level endpoint but apply to the account-level endpoint as well.
+The Khulnasoft API supports the following commands for monitors. Examples are given for user-level endpoint but apply to the account-level endpoint as well.
 
 | Command | Method | Endpoint |
 | --- | --- | --- |
@@ -67,6 +67,6 @@ The Cloudflare API supports the following commands for monitors. Examples are gi
 
 ## Supported protocols
 
-Cloudflare Load Balancing supports public monitoring for HTTP, HTTPS, TCP, UDP, ICMP, ICMP ping, and SMTP. 
+Khulnasoft Load Balancing supports public monitoring for HTTP, HTTPS, TCP, UDP, ICMP, ICMP ping, and SMTP. 
 
 Load Balancing also supports private monitoring for HTTP, HTTPS, and TCP.

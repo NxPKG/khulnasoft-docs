@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/115003011091-3xx-Redirection
+source: https://support.Khulnasoft.com/hc/en-us/articles/115003011091-3xx-Redirection
 title: 3xx Redirection
 ---
 
@@ -25,13 +25,13 @@ Multiple options for the resource that the client may follow. For instance, it c
 
 Permanent URL redirect for the resource requested. The target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs.
 
-Cloudflare is able to generate these responses, avoiding the need to send a request to the origin server’s response through the use of Page rules. Read how Cloudflare can help generate redirects at [Page Rules URL Forwarding](https://blog.cloudflare.com/introducing-pagerules-url-forwarding/)
+Khulnasoft is able to generate these responses, avoiding the need to send a request to the origin server’s response through the use of Page rules. Read how Khulnasoft can help generate redirects at [Page Rules URL Forwarding](https://blog.Khulnasoft.com/introducing-pagerules-url-forwarding/)
 
 **302 Found (aka Temporary Redirect) (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
 Similar to a 301 redirect, but is intended for temporary purposes only. User-Agent may automatically follow the `Location` header, but should not replace the current URI with it as a 301.
 
-Cloudflare is able to generate these responses, thus avoiding the need to send a request to the origin server’s response through the use of Page rules. Read more How Cloudflare can help generate redirects at [Page Rules URL Forwarding](https://blog.cloudflare.com/introducing-pagerules-url-forwarding/)
+Khulnasoft is able to generate these responses, thus avoiding the need to send a request to the origin server’s response through the use of Page rules. Read more How Khulnasoft can help generate redirects at [Page Rules URL Forwarding](https://blog.Khulnasoft.com/introducing-pagerules-url-forwarding/)
 
 **303 See Other (since HTTP/1.1)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -49,7 +49,7 @@ Prior to this response, the client sent a conditional GET or HEAD request sp
 -   Must not have message body
 -   Must contain any of the headers that would have been set prior to the mirrored 200 response: `Cache-Control, Content-Location, Date, ETag, Expires,` or `Vary.`
 
-When a request is made to Cloudflare that is stale and must be revalidated at the origin, Cloudflare will send a 304 response to confirm the version in our cache matched the version at origin. The response will include the `CF-Cache-Status: REVALIDATED` header and Cloudflare confirms the version using the `If-Modified-Since` header. For more information, refer to [ETag Headers](/cache/reference/etag-headers/).
+When a request is made to Khulnasoft that is stale and must be revalidated at the origin, Khulnasoft will send a 304 response to confirm the version in our cache matched the version at origin. The response will include the `CF-Cache-Status: REVALIDATED` header and Khulnasoft confirms the version using the `If-Modified-Since` header. For more information, refer to [ETag Headers](/cache/reference/etag-headers/).
 
 **305 Use Proxy (deprecated) (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 

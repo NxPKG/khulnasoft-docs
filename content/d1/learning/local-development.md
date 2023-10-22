@@ -12,7 +12,7 @@ D1 has fully-featured support for local development, running the same version of
 
 {{<Aside type="note">}}
 
-This guide assumes you are using [Wrangler v3.0](https://blog.cloudflare.com/wrangler3/) or later.
+This guide assumes you are using [Wrangler v3.0](https://blog.Khulnasoft.com/wrangler3/) or later.
 
 Users new to D1 and/or Cloudflare Workers should visit the [D1 tutorial](/d1/get-started/) to install `wrangler` and deploy their first database.
 

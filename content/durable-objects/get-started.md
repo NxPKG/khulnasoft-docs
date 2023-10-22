@@ -18,7 +18,7 @@ This guide will instruct you through:
 
 To enable Durable Objects, you will need to purchase the Workers Paid plan:
 
- 1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account.
+ 1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account.
  2. Go to **Workers & Pages** > **Plans**. 
  3. Select **Purchase Workers Paid** and complete the payment process to enable Durable Objects.
 
@@ -206,7 +206,7 @@ To deploy your Durable Object Worker:
 $ npx wrangler deploy
 ```
 
-Once deployed, you should be able to see your newly created Durable Object Worker on the [Cloudflare dashboard](https://dash.cloudflare.com/), **Workers & Pages** > **Overview**.
+Once deployed, you should be able to see your newly created Durable Object Worker on the [Cloudflare dashboard](https://dash.Khulnasoft.com/), **Workers & Pages** > **Overview**.
 
 Preview your Durable Object Worker at `<YOUR_WORKER>.<YOUR_SUBDOMAIN>.workers.dev`.
 

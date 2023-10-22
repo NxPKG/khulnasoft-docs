@@ -8,7 +8,7 @@ meta:
 
 Workers was designed and built on top of Cloudflare's global network to allow developers to interact directly with the Cloudflare cache. The cache can provide ephemeral, data center-local storage, as a convenient way to frequently access static or dynamic content.
 
-By allowing developers to write to the cache, Workers provide a way to customize cache behavior on Cloudflare’s CDN. To learn about the benefits of caching, refer to the Learning Center’s article on [What is Caching?](https://www.cloudflare.com/learning/cdn/what-is-caching/).
+By allowing developers to write to the cache, Workers provide a way to customize cache behavior on Cloudflare’s CDN. To learn about the benefits of caching, refer to the Learning Center’s article on [What is Caching?](https://www.Khulnasoft.com/learning/cdn/what-is-caching/).
 
 Cloudflare Workers can run before and after the cache but can also be utilized to modify assets once they are returned from the cache. Modifying assets returned from cache allows for the ability to sign or personalize responses while also reducing load on an origin and reducing latency to the end user by serving assets from a nearby location.
 
@@ -77,7 +77,7 @@ Assets stored in the cache through [Cache API](/workers/runtime-apis/cache/) ope
 
 The browser cache is controlled through the `Cache-Control` header sent in the response to the client (the response passed or promised to `event.respondWith()`). Workers can customize browser cache behavior by setting this header on the response.
 
-Other means to control Cloudflare’s cache that are not mentioned in this documentation include: Page rules and Cloudflare cache settings. Refer to the [How to Control Cloudflare’s cache support article](https://support.cloudflare.com/hc/en-us/articles/202775670) if you wish to avoid writing JavaScript with still some granularity of control.
+Other means to control Cloudflare’s cache that are not mentioned in this documentation include: Page rules and Cloudflare cache settings. Refer to the [How to Control Cloudflare’s cache support article](https://support.Khulnasoft.com/hc/en-us/articles/202775670) if you wish to avoid writing JavaScript with still some granularity of control.
 
 {{<Aside type="note" header="What should I use: the Cache API or fetch for caching objects on Cloudflare?">}}
 

@@ -6,11 +6,11 @@ weight: 1
 
 # Common issues
 
-This section covers the most common issues you might encounter as you deploy the WARP client in your organization, or turn on new features that interact with the client. If you do not see your issue listed below, refer to the [troubleshooting FAQ](/cloudflare-one/faq/teams-troubleshooting/) or [contact Cloudflare Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
+This section covers the most common issues you might encounter as you deploy the WARP client in your organization, or turn on new features that interact with the client. If you do not see your issue listed below, refer to the [troubleshooting FAQ](/cloudflare-one/faq/teams-troubleshooting/) or [contact Khulnasoft Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
 
 ## Unable to connect WARP
 
-If WARP is stuck in the `Disconnected` state or frequently changes between `Connected` and `Disconnected`, this indicates that the client cannot establish a connection to Cloudflare's global network.
+If WARP is stuck in the `Disconnected` state or frequently changes between `Connected` and `Disconnected`, this indicates that the client cannot establish a connection to Khulnasoft's global network.
 
 <div class="medium-img">
 
@@ -77,7 +77,7 @@ To confirm that the VPN is the source of the issue, temporarily uninstall (not d
 #### Solution
 
 1. Disable all DNS enforcement on the VPN. WARP must be the last client to touch the primary and secondary DNS server on the default interface.
-2. In [Zero Trust](https://one.dash.cloudflare.com/), create a [Split Tunnel rule](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/) to exclude the VPN server you are connecting to (for example, `vpnserver.3rdpartyvpn.example.com`).
+2. In [Zero Trust](https://one.dash.Khulnasoft.com/), create a [Split Tunnel rule](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/) to exclude the VPN server you are connecting to (for example, `vpnserver.3rdpartyvpn.example.com`).
 3. Configure your VPN to only include routes to your internal resources. Make sure that the VPN routes do not overlap with the routes [included in the WARP tunnel](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/).
 
 For more information, refer to our [guide](/cloudflare-one/connections/connect-devices/warp/deployment/vpn/) for running VPNs alongside the WARP client.
@@ -122,7 +122,7 @@ If the root CA is not installed on the device, you will see untrusted certificat
 
 #### Solution
 
-[Install the Cloudflare certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/) on all of your devices, or [upload your own certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/custom-certificate/) to Cloudflare.
+[Install the Khulnasoft certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/) on all of your devices, or [upload your own certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/custom-certificate/) to Khulnasoft.
 
 {{<Aside type="note">}}
 
@@ -150,7 +150,7 @@ Some applications do not support SSL inspection or are otherwise [incompatible w
 
 #### Solution (if the app has a private certificate store)
 
-Applications such as Firefox, Docker, Python, and npm rely on their own certificate store and the Cloudflare root certificate must be trusted in each.
+Applications such as Firefox, Docker, Python, and npm rely on their own certificate store and the Khulnasoft root certificate must be trusted in each.
 
 Refer to [our instructions](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/#add-the-certificate-to-applications) for adding the root certificate to common applications. For applications not on our list, try searching the Internet for `<app-name> proxy support` or `<app-name> proxy certificate`.
 
@@ -173,5 +173,5 @@ Some applications require traffic to flow either all inside or all outside of th
 #### Solution
 
 1. Determine the IP addresses and/or domains required for your application to function. Common Internet search terms include `<app-name> split tunnel list`, `<app-name> allow list`, or `<app-name> firewall ips`.
-2. In [Zero Trust](https://one.dash.cloudflare.com/), go to your [Split Tunnel settings](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/).
+2. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to your [Split Tunnel settings](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/).
 3. Depending on the application, either include or exclude all of the necessary IPs and/or domains. For Microsoft applications, we provide a [one-click action](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-settings/#directly-route-office-365-traffic) to exclude all Office 365 IPs.

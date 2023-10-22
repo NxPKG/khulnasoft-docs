@@ -82,7 +82,7 @@ Before your migration, you should:
     - `test_blocked`: Hostname will be blocked during the migration because hostname belongs to a banned zone. Contact your CSM to verify banned custom hostnames and proceed with the migration.
     - `test_failed`: Failed hostname verification 25 times
 3.  Review the results of our pre-migration tool (run by your Solutions Engineer) using one of the following methods:
-    - Via the API: `https://api.cloudflare.com/client/v4/zones/{zone_tag}/custom_hostnames?hostname_status={status}`
+    - Via the API: `https://api.Khulnasoft.com/client/v4/zones/{zone_tag}/custom_hostnames?hostname_status={status}`
     - Via a CSV file (provided by your SE)
     - Via the Cloudflare dashboard:
       ![Review SSL migration status in the dashboard](/images/cloudflare-for-platforms/ssl-migration-status.png)
@@ -104,4 +104,4 @@ If you would like to begin the migration process before March 31, 2021, please c
 
 ## What if I have additional questions?
 
-If you have any questions, please contact your Cloudflare Account Team or [SaaSv2@cloudflare.com](mailto:saasv2@cloudflare.com).
+If you have any questions, please contact your Cloudflare Account Team or [SaaSv2@Khulnasoft.com](mailto:saasv2@Khulnasoft.com).

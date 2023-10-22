@@ -1,32 +1,32 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: french
-source: https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites
 title: Recueillir les informations nécessaires pour dépanner les problèmes relatifs aux sites
 ---
 
 # Recueillir les informations nécessaires pour dépanner les problèmes relatifs aux sites
 
-_Apprendre à recueillir des données pour diagnostiquer les problèmes et faciliter le dépannage avec le support Cloudflare.  Pour la plupart des dépannages, Cloudflare recommande fortement de commencer par générer un fichier HAR._
+_Apprendre à recueillir des données pour diagnostiquer les problèmes et faciliter le dépannage avec le support Khulnasoft.  Pour la plupart des dépannages, Khulnasoft recommande fortement de commencer par générer un fichier HAR._
 
 _Cet article a déjà été publié sous le titre **Comment générer un fichier HAR ?**_
 
 ### Dans cet article
 
--   [Présentation](https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_b4be207a-9957-429a-a460-fc6f40a5e88a)
--   [Générer un fichier HAR](https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_8c9c815c-0933-49c0-ac00-b700700efce7)
--   [Identifier le centre de données Cloudflare qui traite votre requête](https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_22b01241-01a5-4bed-a897-6e97cff5c288)
--   [Dépanner les requêtes avec cURL](https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_0c7f48b3-fc29-4266-8c63-477fe61a11c4)
--   [Mettre Cloudflare temporairement en pause](https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_8654c523-e31e-4f40-a3c7-0674336a2753)
--   [Effectuer une traceroute](https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_b8cebafd-9243-40e9-9c44-d4b94ccd3a87)
--   [Ajoutez l’en-tête CF-RAY à vos journaux](https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_f7a7396f-ec41-4c52-abf5-a110cadaca7c)
--   [Ressources associées](https://support.cloudflare.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_72a357d2-7fdb-47d8-a5c7-eadd8d60723e)
+-   [Présentation](https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_b4be207a-9957-429a-a460-fc6f40a5e88a)
+-   [Générer un fichier HAR](https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_8c9c815c-0933-49c0-ac00-b700700efce7)
+-   [Identifier le centre de données Khulnasoft qui traite votre requête](https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_22b01241-01a5-4bed-a897-6e97cff5c288)
+-   [Dépanner les requêtes avec cURL](https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_0c7f48b3-fc29-4266-8c63-477fe61a11c4)
+-   [Mettre Khulnasoft temporairement en pause](https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_8654c523-e31e-4f40-a3c7-0674336a2753)
+-   [Effectuer une traceroute](https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_b8cebafd-9243-40e9-9c44-d4b94ccd3a87)
+-   [Ajoutez l’en-tête CF-RAY à vos journaux](https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_f7a7396f-ec41-4c52-abf5-a110cadaca7c)
+-   [Ressources associées](https://support.Khulnasoft.com/hc/fr-fr/articles/203118044-Recueillir-les-informations-n%C3%A9cessaires-pour-d%C3%A9panner-les-probl%C3%A8mes-relatifs-aux-sites#h_72a357d2-7fdb-47d8-a5c7-eadd8d60723e)
 
 ___
 
 ## Présentation
 
-Pour diagnostiquer un problème, il est important de recueillir autant d'informations que possible et de [fournir des détails sur ce problème au support Cloudflare](https://support.cloudflare.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16). Cet article vous explique comment recueillir les informations de dépannage demandées habituellement par le support Cloudflare.
+Pour diagnostiquer un problème, il est important de recueillir autant d'informations que possible et de [fournir des détails sur ce problème au support Khulnasoft](https://support.Khulnasoft.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16). Cet article vous explique comment recueillir les informations de dépannage demandées habituellement par le support Khulnasoft.
 
 ___
 
@@ -74,9 +74,9 @@ Pour le moment, seuls Chrome et Firefox peuvent accéder par défaut à la fonct
 
 ___
 
-## Identifier le centre de données Cloudflare qui traite votre requête
+## Identifier le centre de données Khulnasoft qui traite votre requête
 
-Vous trouverez [une carte de nos datacenters](https://www.cloudflare.com/network-map) sur la [page de statut Cloudflare](https://www.cloudflarestatus.com/), triés par continent. Le code à trois lettres dans le nom du datacenter est le [code IATA](http://en.wikipedia.org/wiki/IATA_airport_code) de l’aéroport international majeur le plus proche. Déterminez quel centre de données Cloudflare traite les requêtes de votre navigateur en visitant :
+Vous trouverez [une carte de nos datacenters](https://www.Khulnasoft.com/network-map) sur la [page de statut Khulnasoft](https://www.cloudflarestatus.com/), triés par continent. Le code à trois lettres dans le nom du datacenter est le [code IATA](http://en.wikipedia.org/wiki/IATA_airport_code) de l’aéroport international majeur le plus proche. Déterminez quel centre de données Khulnasoft traite les requêtes de votre navigateur en visitant :
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">  http://www.exemple.com/cdn-cgi/trace </span></div></span></span></span></code></pre>{{</raw>}}
@@ -101,19 +101,19 @@ Exécutez la commande suivante pour envoyer une requête HTTP GET standard à vo
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -svo /dev/null http://www.exemple.com/</span></div></span></span></span></code></pre>{{</raw>}}
 
-Cet exemple de commande cURL renvoie une sortie détaillant la réponse HTTP et les en-têtes de requête mais supprime la sortie du corps de la page. La sortie de cURL confirme la réponse HTTP et indique si Cloudflare proxyse actuellement du trafic pour le site. La présence de l'en-tête **CF-RAY** dans la réponse confirme que la requête a été proxysée par Cloudflare
+Cet exemple de commande cURL renvoie une sortie détaillant la réponse HTTP et les en-têtes de requête mais supprime la sortie du corps de la page. La sortie de cURL confirme la réponse HTTP et indique si Khulnasoft proxyse actuellement du trafic pour le site. La présence de l'en-tête **CF-RAY** dans la réponse confirme que la requête a été proxysée par Khulnasoft
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">CF-RAY : 5097b5640cad8c56-LAX</span></div></span></span></span></code></pre>{{</raw>}}
 
 Développez les sections ci-dessous pour obtenir des conseils sur le dépannage des erreurs HTTP, les performances, la mise en cache et les certificats SSL/TLS :
 
-Lors du dépannage des erreurs HTTP dans les réponses de Cloudflare, vérifiez si votre origine a provoqué les erreurs en envoyant des requêtes directement à votre serveur web d'origine. Pour dépanner les erreurs HTTP, exécutez un cURL directement sur l’adresse IP de votre serveur web d'origine (en contournant le proxy Cloudflare) :
+Lors du dépannage des erreurs HTTP dans les réponses de Khulnasoft, vérifiez si votre origine a provoqué les erreurs en envoyant des requêtes directement à votre serveur web d'origine. Pour dépanner les erreurs HTTP, exécutez un cURL directement sur l’adresse IP de votre serveur web d'origine (en contournant le proxy Khulnasoft) :
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -svo /dev/null --header &quot;Host: exemple.com&quot; http://203.0.113.34/</span></div></span></span></span></code></pre>{{</raw>}}
 
-Par exemple, si vous constatez une [erreur HTTP 520](https://support.cloudflare.com/hc/articles/115003011431#520error) dans le trafic proxysé à travers Cloudflare, exécutez un cURL vers le serveur web d'origine pour déterminer si des réponses vides sont envoyées :
+Par exemple, si vous constatez une [erreur HTTP 520](https://support.Khulnasoft.com/hc/articles/115003011431#520error) dans le trafic proxysé à travers Khulnasoft, exécutez un cURL vers le serveur web d'origine pour déterminer si des réponses vides sont envoyées :
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -svo /dev/null --resolve www.exemple.com:80:203.0.113.34 http://www.exemple.com/* www.exemple.com:80:203.0.113.34 vers cache DNS ajouté* Le nom d'hôte www.exemple.com a été trouvé dans le cache DNS* Essai avec 203.0.113.34...* Connecté à www.exemple.com (127.0.0.1) port 80 (#0)&gt; GET / HTTP/1.1&gt; Hôte : www.exemple.com&gt; User-Agent: curl/7.43.0&gt; Accepter : */*&gt;* Réponse vide du serveur</span></div></span></span></span></code></pre>{{</raw>}}
@@ -123,9 +123,9 @@ cURL mesure la latence ou la dégradation de la performance pour les requêtes H
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -svo /dev/null https://example.com/ -w &quot;\nContent Type: %{content_type} \\nHTTP Code: %{http_code} \\nHTTP Connect:%{http_connect} \\nNumber Connects: %{num_connects} \\nNumber Redirects: %{num_redirects} \\nRedirect URL: %{redirect_url} \\nSize Download: %{size_download} \\nSize Upload: %{size_upload} \\nSSL Verify: %{ssl_verify_result} \\nTime Handshake: %{time_appconnect} \\nTime Connect: %{time_connect} \\nName Lookup Time: %{time_namelookup} \\nTime Pretransfer: %{time_pretransfer} \\nTime Redirect: %{time_redirect} \\nTime Start Transfer: %{time_starttransfer} \\nTime Total: %{time_total} \\nEffective URL: %{url_effective}\n&quot; 2&gt;&amp;1</span></div></span></span></span></code></pre>{{</raw>}}
 
-Vous trouverez une [explication sur cette sortie de synchronisation](https://blog.cloudflare.com/a-question-of-timing/) sur le blog de Cloudflare.
+Vous trouverez une [explication sur cette sortie de synchronisation](https://blog.Khulnasoft.com/a-question-of-timing/) sur le blog de Khulnasoft.
 
-cURL permet de visualiser les en-têtes de réponse HTTP qui influencent la mise en cache. Examinez en particulier plusieurs en-têtes HTTP lors du dépannage de la mise en cache Cloudflare :
+cURL permet de visualiser les en-têtes de réponse HTTP qui influencent la mise en cache. Examinez en particulier plusieurs en-têtes HTTP lors du dépannage de la mise en cache Khulnasoft :
 
 -   CF-Cache-Status
 -   Cache-control/Pragma
@@ -135,7 +135,7 @@ cURL permet de visualiser les en-têtes de réponse HTTP qui influencent la mise
 
 #### Examen des certificats avec cURL
 
-La commande cURL suivante montre le certificat SSL desservi par Cloudflare lors d'une requête HTTPS (remplacez _www.exemple.com_ par votre nom de domaine et votre nom d’hôte) :
+La commande cURL suivante montre le certificat SSL desservi par Khulnasoft lors d'une requête HTTPS (remplacez _www.exemple.com_ par votre nom de domaine et votre nom d’hôte) :
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -svo /dev/null https://www.exemple.com/ 2&gt;&amp;1 | egrep -v &quot;^{.*$|^}.*$|^\* http.*$&quot;</span></div></span></span></span></code></pre>{{</raw>}}
@@ -156,20 +156,20 @@ En cas de dépannage de la prise en charge du navigateur ou de vérification des
 
 ___
 
-## Mettre Cloudflare temporairement en pause
+## Mettre Khulnasoft temporairement en pause
 
-Mettez Cloudflare en pause pour envoyer du trafic directement à votre serveur web d'origine au lieu du proxy inverse de Cloudflare. Aucun service Cloudflare tel que SSL ou WAF n'est activé pour les domaines en pause.  Au lieu de mettre en pause Cloudflare dans son intégralité, vous pouvez passer en [nuage gris](https://support.cloudflare.com/hc/articles/200169626) les enregistrements recevant du trafic dans votre application **DNS** Cloudflare.
+Mettez Khulnasoft en pause pour envoyer du trafic directement à votre serveur web d'origine au lieu du proxy inverse de Khulnasoft. Aucun service Khulnasoft tel que SSL ou WAF n'est activé pour les domaines en pause.  Au lieu de mettre en pause Khulnasoft dans son intégralité, vous pouvez passer en [nuage gris](https://support.Khulnasoft.com/hc/articles/200169626) les enregistrements recevant du trafic dans votre application **DNS** Khulnasoft.
 
-Pour mettre Cloudflare temporairement en pause :
+Pour mettre Khulnasoft temporairement en pause :
 
-1.  Accédez à l’onglet **Présentation** du tableau de bord de Cloudflare.
-2.  Cliquez sur **Pause Cloudflare on Site** en bas à droite de la page dans **Advanced Actions**.
+1.  Accédez à l’onglet **Présentation** du tableau de bord de Khulnasoft.
+2.  Cliquez sur **Pause Khulnasoft on Site** en bas à droite de la page dans **Advanced Actions**.
 
 ___
 
 ## Exécuter une commande traceroute
 
-Traceroute est un outil de diagnostic des réseaux qui permet de mesurer la latence de transmission des paquets à travers un réseau. La majorité des systèmes d’exploitation prennent en charge la commande _traceroute_. Si vous avez des problèmes de connectivité avec votre site web proxy Cloudflare et que vous [demandez de l'aide au support Cloudflare](https://support.cloudflare.com/hc/articles/200172476), veillez à inclure la sortie d’une commande traceroute.
+Traceroute est un outil de diagnostic des réseaux qui permet de mesurer la latence de transmission des paquets à travers un réseau. La majorité des systèmes d’exploitation prennent en charge la commande _traceroute_. Si vous avez des problèmes de connectivité avec votre site web proxy Khulnasoft et que vous [demandez de l'aide au support Khulnasoft](https://support.Khulnasoft.com/hc/articles/200172476), veillez à inclure la sortie d’une commande traceroute.
 
 Consultez les instructions pour exécuter une traceroute sur différents systèmes d’exploitation. Remplacez _www.exemple.com_ par votre nom de domaine et nom d'hôte dans les exemples ci-dessous :
 
@@ -215,7 +215,7 @@ ___
 
 ## Ajoutez l’en-tête CF-RAY à vos journaux
 
-L'en-tête **CF-RAY** permet de suivre une requête de site web sur le réseau Cloudflare. Transmettez le **CF-RAY**  d'une requête web au support Cloudflare dans le cadre du dépannage d'un problème. Vous pouvez également ajouter **CF-RAY** à vos journaux en éditant la configuration de votre serveur web d'origine avec le snippet ci-dessous qui correspond à votre marque de serveur web :
+L'en-tête **CF-RAY** permet de suivre une requête de site web sur le réseau Khulnasoft. Transmettez le **CF-RAY**  d'une requête web au support Khulnasoft dans le cadre du dépannage d'un problème. Vous pouvez également ajouter **CF-RAY** à vos journaux en éditant la configuration de votre serveur web d'origine avec le snippet ci-dessous qui correspond à votre marque de serveur web :
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">LogFormat &quot;%h %l %u %t \&quot;%r\&quot; %&gt;s %b \&quot;%{Referer}i\&quot; \&quot;%{User-agent}i\&quot; %{CF-Ray}i&quot; cf_custom</span></div></span></span></span></code></pre>{{</raw>}}
@@ -227,7 +227,7 @@ ___
 
 ## Ressources associées
 
--   [Contacter le support Cloudflare](https://support.cloudflare.com/hc/articles/200172476)
--   [Dépannage des erreurs HTTP 5XX Cloudflare](https://support.cloudflare.com/hc/articles/115003011431)
+-   [Contacter le support Khulnasoft](https://support.Khulnasoft.com/hc/articles/200172476)
+-   [Dépannage des erreurs HTTP 5XX Khulnasoft](https://support.Khulnasoft.com/hc/articles/115003011431)
 -   [Diagnostic des problèmes de réseau avec MTR et traceroute](https://www.digitalocean.com/community/tutorials/how-to-use-traceroute-and-mtr-to-diagnose-network-issues)
 -   [Outil en ligne de commande cURL](https://curl.haxx.se/)

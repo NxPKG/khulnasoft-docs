@@ -8,9 +8,9 @@ weight: 3
 
 To make your first request to the Images API, you must obtain these pieces of information:
 
-{{<details header="Your Cloudflare Account ID">}}
+{{<details header="Your Khulnasoft Account ID">}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your
 account and website.
 2. In **Overview**, scroll down to find your [Account ID](/fundamentals/setup/find-account-and-zone-ids/).
 
@@ -18,31 +18,31 @@ account and website.
 
 {{<details header="Your Global API Key or API Token">}}
 
-To use Cloudflare Images you need to create a custom token with the correct `Read` and `Update` permissions:
+To use Khulnasoft Images you need to create a custom token with the correct `Read` and `Update` permissions:
 
-1. In the Cloudflare dashboard, locate [API Tokens](https://dash.cloudflare.com/profile/api-tokens) under **My Profile** > **API Tokens**.
+1. In the Khulnasoft dashboard, locate [API Tokens](https://dash.Khulnasoft.com/profile/api-tokens) under **My Profile** > **API Tokens**.
 2. Select **Create Token**.
 3. In Custom token, select **Get started**.
 4. Give your custom token a name.
 5. Scroll to **Permissions**.
-6. On the _Select item..._ drop-down menu, choose _Cloudflare Images_.
+6. On the _Select item..._ drop-down menu, choose _Khulnasoft Images_.
 7. In the next drop-down menu, choose _Edit_.
 
-![How to create a custom token for Cloudflare images](/images/images/tutorials/integrate-cloudflare-images/step-02-custom-token-setup.jpg)
+![How to create a custom token for Khulnasoft images](/images/images/tutorials/integrate-cloudflare-images/step-02-custom-token-setup.jpg)
 
 8. Select **Continue to summary** > **Create Token**.
 
-Your token for Cloudflare Images is now created. Copy it and keep it in a safe place. It grants access to your Cloudflare Images account.
+Your token for Khulnasoft Images is now created. Copy it and keep it in a safe place. It grants access to your Khulnasoft Images account.
 
 Refer to [Creating API tokens](/fundamentals/api/get-started/create-token/) for more details about API tokens.
 
 {{</details>}}
 
-Once you have this information, you are ready to upload your first image to Cloudflare Images using the API. In the following example, the `-F` flag is used to upload images from your local computer:
+Once you have this information, you are ready to upload your first image to Khulnasoft Images using the API. In the following example, the `-F` flag is used to upload images from your local computer:
 
 ```bash
 curl -X POST \
-  "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/images/v1" \
+  "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/images/v1" \
   -H "Authorization: Bearer <API_TOKEN>" \
   -F file=@./<YOUR_IMAGE.IMG>
 ```
@@ -93,4 +93,4 @@ After you [set up other variants](/images/cloudflare-images/transform/resize-ima
 }
 ```
 
-You can use the URLs in the `"variants"` property of the response to [serve images](/images/cloudflare-images/serve-images/) from your Cloudflare Images account.
+You can use the URLs in the `"variants"` property of the response to [serve images](/images/cloudflare-images/serve-images/) from your Khulnasoft Images account.

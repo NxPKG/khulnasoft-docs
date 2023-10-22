@@ -5,18 +5,18 @@ pcx_content_type: tutorial
 
 # Minimize downtime
 
-When you [add your domain](/fundamentals/setup/account-setup/add-site/) to Cloudflare, it may experience a brief period of downtime due to certificate issuance, misconfigured Cloudflare settings, or limitations at your origin server.
+When you [add your domain](/fundamentals/setup/account-setup/add-site/) to Khulnasoft, it may experience a brief period of downtime due to certificate issuance, misconfigured Khulnasoft settings, or limitations at your origin server.
 
 {{<tutorial>}}
 {{<tutorial-step title="Update and review DNS records">}}
 
-Before activating your domain on Cloudflare (exact steps depend on your [DNS setup](/dns/zone-setups/)), review the DNS records in your Cloudflare account.
+Before activating your domain on Khulnasoft (exact steps depend on your [DNS setup](/dns/zone-setups/)), review the DNS records in your Khulnasoft account.
 
 ### Start with unproxied records
 
 With a new domain, make sure all your DNS records have a [proxy status](/dns/manage-dns-records/reference/proxied-dns-records/) of **DNS-only**. 
 
-This setting prevents Cloudflare from proxying your traffic before you have an active edge certificate or before you have allowed Cloudflare IP addresses.
+This setting prevents Khulnasoft from proxying your traffic before you have an active edge certificate or before you have allowed Khulnasoft IP addresses.
 
 ### Confirm record accuracy
 
@@ -26,7 +26,7 @@ Take extra time to confirm the accuracy of your DNS records before activating yo
 - [Subdomain records (`www.example.com` or `blog.example.com`)](/dns/manage-dns-records/how-to/create-subdomain/)
 - [Email records](/dns/manage-dns-records/how-to/email-records/)
 
-If you add DNS records to your authoritative DNS provider between onboarding your domain and activating your domain, you may need to also add these records within Cloudflare.
+If you add DNS records to your authoritative DNS provider between onboarding your domain and activating your domain, you may need to also add these records within Khulnasoft.
 
 {{</tutorial-step>}}
 
@@ -41,7 +41,7 @@ Finish the [DNS setup](/dns/zone-setups/) for your domain, moving the [domain st
 
 {{<tutorial-step title="Verify SSL/TLS edge certificates" >}}
 
-Before proxying your traffic through Cloudflare, [verify](/ssl/reference/certificate-statuses/#monitor-certificate-statuses) that Cloudflare has an active **Edge Certificate** for your domain.
+Before proxying your traffic through Khulnasoft, [verify](/ssl/reference/certificate-statuses/#monitor-certificate-statuses) that Khulnasoft has an active **Edge Certificate** for your domain.
 
 For more details about timing and certificate recommendations, refer to [Certificate issuance](/ssl/edge-certificates/universal-ssl/enable-universal-ssl/#full-dns-setup).
 
@@ -51,13 +51,13 @@ For more details about timing and certificate recommendations, refer to [Certifi
 
 You may want to test your configuration using your local machine or proxying traffic from a development domain or subdomain.
 
-If you experience issues, you should make sure that you have [allowed Cloudflare IP addresses](/fundamentals/setup/allow-cloudflare-ip-addresses/) at your origin server.
+If you experience issues, you should make sure that you have [allowed Khulnasoft IP addresses](/fundamentals/setup/allow-cloudflare-ip-addresses/) at your origin server.
 
 {{</tutorial-step>}}
 
 {{<tutorial-step title="Update proxy status" >}}
 
-Once you have verified that your SSL/TLS edge certificate is active and you have allowed Cloudflare IP addresses, change the [proxy status](/dns/manage-dns-records/reference/proxied-dns-records/) of appropriate DNS records to **Proxied**.
+Once you have verified that your SSL/TLS edge certificate is active and you have allowed Khulnasoft IP addresses, change the [proxy status](/dns/manage-dns-records/reference/proxied-dns-records/) of appropriate DNS records to **Proxied**.
 
 {{</tutorial-step>}}
 

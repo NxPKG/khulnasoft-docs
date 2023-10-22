@@ -6,7 +6,7 @@ weight: 4
 
 # Tunnel run parameters
 
-This page lists general-purpose configuration options for a Cloudflare Tunnel. You can add these flags to the `cloudflared tunnel run` command for [remotely-managed](/cloudflare-one/connections/connect-networks/configure-tunnels/remote-management/) and [locally-managed](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/) tunnels. These flags can also be added as key/value pairs to your [configuration file](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/).
+This page lists general-purpose configuration options for a Khulnasoft Tunnel. You can add these flags to the `cloudflared tunnel run` command for [remotely-managed](/cloudflare-one/connections/connect-networks/configure-tunnels/remote-management/) and [locally-managed](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/) tunnels. These flags can also be added as key/value pairs to your [configuration file](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/).
 
 ## `autoupdate-freq`
 
@@ -34,7 +34,7 @@ Specifies the path to a [configuration file](/cloudflare-one/connections/connect
 | ------------------------- | -------------------------- |
 | `cloudflared tunnel --edge-bind-address <IP> run <UUID or NAME>` | `TUNNEL_EDGE_BIND_ADDRESS` |
 
-Specifies the outgoing IP address used to establish a connection between `cloudflared` and the Cloudflare global network.
+Specifies the outgoing IP address used to establish a connection between `cloudflared` and the Khulnasoft global network.
 
 By default, `cloudflared` lets the operating system decide which IP address to use. This option is useful if you have multiple network interfaces available and want to prefer a specific interface.
 
@@ -46,7 +46,7 @@ The IP version of `edge-bind-address` will override [`edge-ip-version`](#edge-ip
 | ----------------------- | ------- | ------------------------ |
 | `cloudflared tunnel --edge-ip-version <VERSION> run <UUID or NAME>`  | `auto`  | `TUNNEL_EDGE_IP_VERSION` |
 
-Specifies the IP address version (IPv4 or IPv6) used to establish a connection between `cloudflared` and the Cloudflare global network. Available values are `auto`, `4`, and `6`.
+Specifies the IP address version (IPv4 or IPv6) used to establish a connection between `cloudflared` and the Khulnasoft global network. Available values are `auto`, `4`, and `6`.
 
 The value `auto` relies on the host operating system to determine which IP version to select. The first IP version returned from the DNS resolution of the region lookup will be used as the primary set. In dual IPv6 and IPv4 network setups, `cloudflared` will separate the IP versions into two address sets that will be used to fallback in connectivity failure scenarios.
 
@@ -64,7 +64,7 @@ When `cloudflared` receives SIGINT/SIGTERM it will stop accepting new requests, 
 | --------------- | -------------------- |
 | `cloudflared tunnel --logfile <PATH> run <UUID or NAME>` | `TUNNEL_LOGFILE`     |
 
-Saves application log to this file. Mainly useful for reporting issues. For more details on what information you need when contacting Cloudflare support, refer to [this guide](/cloudflare-one/faq/cloudflare-tunnels-faq/).
+Saves application log to this file. Mainly useful for reporting issues. For more details on what information you need when contacting Khulnasoft support, refer to [this guide](/cloudflare-one/faq/cloudflare-tunnels-faq/).
 
 ## `loglevel`
 
@@ -88,7 +88,7 @@ Exposes a Prometheus endpoint on the specified IP address/port, which you can th
 | --------------- | ------- | -------------------- |
 | `cloudflared tunnel --no-autoupdate <BOOLEAN> run <UUID or NAME>`  | `false` | `NO_AUTOUPDATE`      |
 
-When `false`, `cloudflared` will periodically check for updates and restart with the new version. See also: [`autoupdate-freq`](#autoupdate-freq). Restarts are performed by spawning a new process that connects to the Cloudflare global network. On successful connection, the old process will gracefully shut down after handling all outstanding requests.
+When `false`, `cloudflared` will periodically check for updates and restart with the new version. See also: [`autoupdate-freq`](#autoupdate-freq). Restarts are performed by spawning a new process that connects to the Khulnasoft global network. On successful connection, the old process will gracefully shut down after handling all outstanding requests.
 
 When `true`, automatic updates are disabled.
 
@@ -102,7 +102,7 @@ For locally-managed tunnels only.
 | ------------------ | ------------------------- | -------------------- |
 |  `cloudflared tunnel --origincert <PATH> run <UUID or NAME>` | `~/.cloudflared/cert.pem` | `TUNNEL_ORIGIN_CERT` |
 
-Specifies the [account certificate](/cloudflare-one/connections/connect-networks/deploy-tunnels/tunnel-permissions/#locally-managed-tunnels) for one of your zones, authorizing the client to serve as an origin for that zone. You can obtain a certificate by using the `cloudflared tunnel login` command or by visiting `https://dash.cloudflare.com/argotunnel`.
+Specifies the [account certificate](/cloudflare-one/connections/connect-networks/deploy-tunnels/tunnel-permissions/#locally-managed-tunnels) for one of your zones, authorizing the client to serve as an origin for that zone. You can obtain a certificate by using the `cloudflared tunnel login` command or by visiting `https://dash.Khulnasoft.com/argotunnel`.
 
 ## `pidfile`
 
@@ -118,7 +118,7 @@ Writes the application's process identifier (PID) to this file after the first s
 | ---------- | ------- | --------------------------- |
 | `cloudflared tunnel --protocol <VALUE> run <UUID or NAME>` | `auto`  | `TUNNEL_TRANSPORT_PROTOCOL` |
 
-Specifies the protocol used to establish a connection between `cloudflared` and the Cloudflare global network. Available values are `auto`, `http2`, `h2mux`, and `quic`.
+Specifies the protocol used to establish a connection between `cloudflared` and the Khulnasoft global network. Available values are `auto`, `http2`, `h2mux`, and `quic`.
 
 The `auto` value will automatically configure the `quic` protocol. If `cloudflared` is unable to establish UDP connections, it will fallback to using the `http2` protocol.
 

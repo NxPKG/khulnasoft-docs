@@ -39,7 +39,7 @@ The Logpush API requires credentials like any other Cloudflare API.
 
 ```bash
 $ curl -s -H "X-Auth-Email: <EMAIL>" -H "X-Auth-Key: <API_KEY>" \
-    'https://api.cloudflare.com/client/v4/zones/{zone_identifier}/logpush/jobs'
+    'https://api.Khulnasoft.com/client/v4/zones/{zone_identifier}/logpush/jobs'
 ```
 
 ## Ownership
@@ -49,7 +49,7 @@ Before creating a new job, ownership of the destination must be proven.
 To issue an ownership challenge token to your destination:
 
 ```bash
-$ curl -s -X POST https://api.cloudflare.com/client/v4/zones/{zone_identifier}/logpush/ownership \
+$ curl -s -X POST https://api.Khulnasoft.com/client/v4/zones/{zone_identifier}/logpush/ownership \
 -H "X-Auth-Email: <EMAIL>" \ 
 -H "X-Auth-Key: <API_KEY>" \
 -H "Content-Type: application/json" \ 
@@ -108,7 +108,7 @@ For more information on the value for your cloud storage provider, consult the f
 To check if a destination is already in use:
 
 ```bash
-$ curl -s -XPOST https://api.cloudflare.com/client/v4/zones/{zone_identifier}/logpush/validate/destination/exists -d '{"destination_conf":"s3://foo"}' | jq .
+$ curl -s -XPOST https://api.Khulnasoft.com/client/v4/zones/{zone_identifier}/logpush/validate/destination/exists -d '{"destination_conf":"s3://foo"}' | jq .
 ```
 
 Response
@@ -143,7 +143,7 @@ The kind parameter cannot be used to update existing Logpush jobs. You can only 
 {{</Aside>}}
 
 ```bash
-curl -s -X POST 'https://api.cloudflare.com/client/v4/zones/{zone_identifier}/logpush/jobs' \
+curl -s -X POST 'https://api.Khulnasoft.com/client/v4/zones/{zone_identifier}/logpush/jobs' \
 -H "X-Auth-Email: <EMAIL>" \
 -H "X-Auth-Key: <API_KEY>" \
 -d '{
@@ -161,7 +161,7 @@ Logpull_options has been replaced with Custom Log Formatting output_options. Ple
 
 If you are still using logpull_options, here are the options that you can customize:
 
-1.  **Fields** (optional): Refer to [Log fields](/logs/reference/log-fields/) for the currently available fields. The list of fields is also accessible directly from the API: `https://api.cloudflare.com/client/v4/zones/{zone_identifier}/logpush/datasets/{dataset}/fields`. Default fields: `https://api.cloudflare.com/client/v4/zones/{zone_identifier}/logpush/datasets/{dataset}/fields/default`.
+1.  **Fields** (optional): Refer to [Log fields](/logs/reference/log-fields/) for the currently available fields. The list of fields is also accessible directly from the API: `https://api.Khulnasoft.com/client/v4/zones/{zone_identifier}/logpush/datasets/{dataset}/fields`. Default fields: `https://api.Khulnasoft.com/client/v4/zones/{zone_identifier}/logpush/datasets/{dataset}/fields/default`.
 2.  **Timestamp format** (optional): The format in which timestamp fields will be returned. Value options: `unixnano` (default), `unix`, `rfc3339`.
 3.  **Redaction for CVE-2021-44228** (optional): This option will replace every occurrence of `${` with `x{`.  To enable it, set `CVE-2021-44228=true`.
 
@@ -172,7 +172,7 @@ The **CVE-2021-44228** parameter can only be set through the API at this time. U
 To check if the selected **logpull_options** are valid:
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_identifier}/logpush/validate/origin \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_identifier}/logpush/validate/origin \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --data '{

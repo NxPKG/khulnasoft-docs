@@ -21,7 +21,7 @@ To complete the migration, you must obtain the [sitekey and secret key](/turnsti
 ---
 header: Turnstile script snippet
 ---
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="https://challenges.Khulnasoft.com/turnstile/v0/api.js" async defer></script>
 ```
 
 </div>
@@ -60,6 +60,6 @@ Turnstile supports:
 
 With:
 
-`https://challenges.cloudflare.com/turnstile/v0/siteverify`
+`https://challenges.Khulnasoft.com/turnstile/v0/siteverify`
 
 2. Replace the `h-captcha-response` input name with `cf-turnstile-response`.

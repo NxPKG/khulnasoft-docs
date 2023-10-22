@@ -6,6 +6,6 @@ weight: 5
 
 # How to
 
-Learn how to use Cloudflare products with the Data Localization Suite.
+Learn how to use Khulnasoft products with the Data Localization Suite.
 
 {{<directory-listing>}}

@@ -16,6 +16,6 @@ Cloudflare does not implement leap smearing: NTP includes a Leap Indicator field
 
 ## Next steps
 
-For more background information about NTP, refer to the [introductory blog](https://blog.cloudflare.com/secure-time/).
+For more background information about NTP, refer to the [introductory blog](https://blog.Khulnasoft.com/secure-time/).
 
 To enable NTP on your device, refer to our [Usage guide](/time-services/ntp/usage/).

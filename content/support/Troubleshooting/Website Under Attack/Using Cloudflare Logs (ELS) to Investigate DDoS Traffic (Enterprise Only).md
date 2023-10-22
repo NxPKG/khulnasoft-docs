@@ -1,26 +1,26 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/360020739772-Using-Cloudflare-Logs-ELS-to-Investigate-DDoS-Traffic-Enterprise-Only-
-title: Using Cloudflare Logs (ELS) to Investigate DDoS Traffic (Enterprise Only)
+source: https://support.Khulnasoft.com/hc/en-us/articles/360020739772-Using-Khulnasoft-Logs-ELS-to-Investigate-DDoS-Traffic-Enterprise-Only-
+title: Using Khulnasoft Logs (ELS) to Investigate DDoS Traffic (Enterprise Only)
 ---
 
-# Using Cloudflare Logs (ELS) to Investigate DDoS Traffic (Enterprise Only)
+# Using Khulnasoft Logs (ELS) to Investigate DDoS Traffic (Enterprise Only)
 
 
 
 ## Overview
 
-With Cloudflare Logs (formerly ELS) you have access to useful data for analyzing traffic that might show patterns associated with a DDoS attack. You can perform this type of analysis by sorting your Cloudflare Logs data. To get started, follow the steps outlined below and review the example workflow provided.
+With Khulnasoft Logs (formerly ELS) you have access to useful data for analyzing traffic that might show patterns associated with a DDoS attack. You can perform this type of analysis by sorting your Khulnasoft Logs data. To get started, follow the steps outlined below and review the example workflow provided.
 
 Before following these instructions, you need:
 
 -   [cat](http://www.linfo.org/cat.html)
 -   [jq](https://stedolan.github.io/jq/)
--   [Cloudflare Logs Logpull API](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API)
+-   [Khulnasoft Logs Logpull API](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API)
 
 ___
 
-## Step 1: Gather the information you need before querying Cloudflare Logs
+## Step 1: Gather the information you need before querying Khulnasoft Logs
 
 Gather the following information:
 
@@ -39,40 +39,40 @@ ___
 
 ## Step 2: Download and save the logs
 
-The Cloudflare endpoint has a 1 hour time swath limit and the logs file size must be under 1GB per request. If the file size exceeds 1GB, the download will cut off at 1GB even if logged events from the time requested are not included. To avoid truncating your logs, decrease the time from 1 hour to 45 minutes and so on until the log file size is under 1GB.
+The Khulnasoft endpoint has a 1 hour time swath limit and the logs file size must be under 1GB per request. If the file size exceeds 1GB, the download will cut off at 1GB even if logged events from the time requested are not included. To avoid truncating your logs, decrease the time from 1 hour to 45 minutes and so on until the log file size is under 1GB.
 
 ### Option 1: Download all fields
 
-Download **all** fields from Cloudflare Logs, save to els.txt:
+Download **all** fields from Khulnasoft Logs, save to els.txt:
 
 Template:
 
 ```sh
-$ curl -sv -o els.txt -H "X-Auth-Email: email" -H "X-Auth-Key: api key" "https://api.cloudflare.com/client/v4/zones/zone id/logs/received?start=starttime&end=endtime&fields=(curl -s -H "X-Auth-Email: email" -H "X-Auth-Key: api key" "https://api.cloudflare.com/client/v4/zones/zone id/logs/received/fields" | jq '. | to_entries[] | .key' -r | paste -sd "," -)"
+$ curl -sv -o els.txt -H "X-Auth-Email: email" -H "X-Auth-Key: api key" "https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received?start=starttime&end=endtime&fields=(curl -s -H "X-Auth-Email: email" -H "X-Auth-Key: api key" "https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received/fields" | jq '. | to_entries[] | .key' -r | paste -sd "," -)"
 ```
 
 Example (with values):
 
 ```sh
-$ curl -sv -o els.txt -H "X-Auth-Email: monkey@bannana.com" -H "X-Auth-Key: api key" "https://api.cloudflare.com/client/v4/zones/5b5f0xxxcbfbaxxxxxx0416d22f7b/logs/received?start=1529171100&end=1529171100&fields=(curl -s -H "X-Auth-Email: monkey@bannana.com" -H "X-Auth-Key: api key" "https://api.cloudflare.com/client/v4/zones/zone id/logs/received/fields" | jq '. | to_entries[] | .key' -r | paste -sd "," -)"
+$ curl -sv -o els.txt -H "X-Auth-Email: monkey@bannana.com" -H "X-Auth-Key: api key" "https://api.Khulnasoft.com/client/v4/zones/5b5f0xxxcbfbaxxxxxx0416d22f7b/logs/received?start=1529171100&end=1529171100&fields=(curl -s -H "X-Auth-Email: monkey@bannana.com" -H "X-Auth-Key: api key" "https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received/fields" | jq '. | to_entries[] | .key' -r | paste -sd "," -)"
 ```
 
 ### Option 2: Download specific fields
 
-Download **specific** fields from Cloudflare Logs, save to els.txt:
+Download **specific** fields from Khulnasoft Logs, save to els.txt:
 
 This command will include only the following fields in the logs you requested: _CacheCacheStatus, CacheResponseBytes, CacheResponseStatus, CacheTieredFill, ClientASN_.
 
-Refer to the full list of Cloudflare Logs fields [here](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API).  Template:
+Refer to the full list of Khulnasoft Logs fields [here](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API).  Template:
 
 ```sh
-$ curl -sv -o els.txt-H "X-Auth-Email:email" -H "X-Auth-Key:api key" "https://api.cloudflare.com/client/v4/zones/zone id/logs/received?start=starttime&end=endtime&fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”
+$ curl -sv -o els.txt-H "X-Auth-Email:email" -H "X-Auth-Key:api key" "https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received?start=starttime&end=endtime&fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”
 ```
 
 Example (with values):
 
 ```sh
-$ curl -sv -o els.txt-H "X-Auth-Email:monkey@bannana.com" -H "X-Auth-Key:api key" "https://api.cloudflare.com/client/v4/zones/xx5x0xxxc45baxxxxxx0x6d23fxx/logs/received?start=1529171100&end=1529171100&fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”
+$ curl -sv -o els.txt-H "X-Auth-Email:monkey@bannana.com" -H "X-Auth-Key:api key" "https://api.Khulnasoft.com/client/v4/zones/xx5x0xxxc45baxxxxxx0x6d23fxx/logs/received?start=1529171100&end=1529171100&fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”
 ```
 
 ___
@@ -108,7 +108,7 @@ $ cat els-525.txt | jq '.'
 
 ### Count the requests by field and output them to a file
 
-In this example, we count requests by SSL protocol version, which is denoted by the _ClientSSLProtocol_ field in Cloudflare Logs (note the period before the field name below).
+In this example, we count requests by SSL protocol version, which is denoted by the _ClientSSLProtocol_ field in Khulnasoft Logs (note the period before the field name below).
 
 ```sh
 $ jq -r .ClientSSLProtocol els-200.txt |sort -n |uniq -c |sort -n > ClientSSLProtocol.txt
@@ -135,9 +135,9 @@ ___
 
 Often, you’ll need to sort by many fields to analyze and identify the source of an attack. For example, take a look at the following workflow:
 
-**Action 1**: Sort your downloaded Cloudflare Logs by _HTTP 200_ response, output to els-200.txt.
+**Action 1**: Sort your downloaded Khulnasoft Logs by _HTTP 200_ response, output to els-200.txt.
 
-**Reason**: You’re not interested in responses that are being blocked by Cloudflare already; that is, requests which result in a HTTP response _503_ or _403_. A request that results in a _200 HTTP_ response at our edge is not blocked by Cloudflare and is likely going all the way through to the origin if the asset is not cached on Cloudflare's edge. Such requests, when malicious, are designed specifically to overburden the origin.
+**Reason**: You’re not interested in responses that are being blocked by Khulnasoft already; that is, requests which result in a HTTP response _503_ or _403_. A request that results in a _200 HTTP_ response at our edge is not blocked by Khulnasoft and is likely going all the way through to the origin if the asset is not cached on Khulnasoft's edge. Such requests, when malicious, are designed specifically to overburden the origin.
 
 **How to**:
 

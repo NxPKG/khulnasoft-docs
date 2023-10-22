@@ -32,7 +32,7 @@ Samsung Internet 5+
 
 To enable Cloudflare Fonts for your entire domain:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Go to **Speed** > **Optimization** > **Content Optimization**.
 3. For **Cloudflare Fonts**, switch the toggle to **On**.
 

@@ -8906,7 +8906,7 @@ All license text:
 
   - [boringtun](https://github.com/cloudflare/boringtun)
 
-  Copyright (c) 2019 Cloudflare, Inc. All rights reserved.
+  Copyright (c) 2019 Khulnasoft, Inc. All rights reserved.
 
   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -8992,7 +8992,7 @@ All license text:
 
   - [nel](https://crates.io/crates/nel/0.1.4)
 
-  Copyright 2021 Cloudflare, Inc. All rights reserved.
+  Copyright 2021 Khulnasoft, Inc. All rights reserved.
 
   Redistribution and use in source and binary forms, with or without modification,
   are permitted provided that the following conditions are met:

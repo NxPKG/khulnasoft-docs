@@ -76,7 +76,7 @@ Use the `GET` command to list rules.
 ---
 header: cURL command
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/seqrules"
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/seqrules"
 ```
 
 ### Add a single sequence rule
@@ -91,7 +91,7 @@ The response will reflect the rule that has been written with its ID. In case so
 ---
 header: Example using cURL
 ---
-curl POST "https://api.cloudflare.com/client/v4/zones/{zoneID}/api_gateway/seqrules/rules" \
+curl POST "https://api.Khulnasoft.com/client/v4/zones/{zoneID}/api_gateway/seqrules/rules" \
 --header "Content-Type: application/json" \
 --data '{
   "title": "string",
@@ -117,7 +117,7 @@ The response will reflect the rules that have been written with their IDs in cas
 ---
 header: Example using cURL
 ---
-curl --request PUT "https://api.cloudflare.com/client/v4/zones/{zoneID}/api_gateway/seqrules" \
+curl --request PUT "https://api.Khulnasoft.com/client/v4/zones/{zoneID}/api_gateway/seqrules" \
 --header "Content-Type: application/json" \
 --data '{
   "rules": [
@@ -143,5 +143,5 @@ Use the `DELETE` command with its rule ID to delete a rule.
 ---
 header: cURL command
 ---
-curl --request DELETE "https://api.cloudflare.com/client/v4/zones/{zone_id}/api_gateway/seqrules/rules/d4909253-390f-4956-89fd-92a5b0cd86d8"
+curl --request DELETE "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/api_gateway/seqrules/rules/d4909253-390f-4956-89fd-92a5b0cd86d8"
 ```

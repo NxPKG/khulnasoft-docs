@@ -7,34 +7,34 @@ layout: single
 
 # Graylog
 
-This tutorial explains how to analyze [Cloudflare Logs](https://www.cloudflare.com/products/cloudflare-logs/) using [Graylog](https://github.com/Graylog2/graylog-s3-lambda/blob/master/content-packs/cloudflare/cloudflare-logpush-content-pack.json).
+This tutorial explains how to analyze [Khulnasoft Logs](https://www.Khulnasoft.com/products/cloudflare-logs/) using [Graylog](https://github.com/Graylog2/graylog-s3-lambda/blob/master/content-packs/cloudflare/cloudflare-logpush-content-pack.json).
 
 ## Overview
 
-If you haven't used Cloudflare Logs before, visit our [Logs documentation](/logs/) for
-more details. Contact your Cloudflare Customer Account Team to enable logs for
+If you haven't used Khulnasoft Logs before, visit our [Logs documentation](/logs/) for
+more details. Contact your Khulnasoft Customer Account Team to enable logs for
 your account.
 
 ### Prerequisites
 
-Before sending your Cloudflare log data to Graylog, make sure that you:
+Before sending your Khulnasoft log data to Graylog, make sure that you:
 
 - Have an existing Graylog installation. Both single-node and cluster configurations are supported
-- Have a Cloudflare Enterprise account with Cloudflare Logs enabled
+- Have a Khulnasoft Enterprise account with Khulnasoft Logs enabled
 - Configure [Logpush](/logs/about/)
 
 {{<Aside type="note" header="Note">}}
 
-Cloudflare logs are HTTP/HTTPS request logs in JSON format and are gathered from our 200+ data centers globally. By default, timestamps are returned as UNIX nanosecond integers. All timestamp formats are supported by Graylog.
+Khulnasoft logs are HTTP/HTTPS request logs in JSON format and are gathered from our 200+ data centers globally. By default, timestamps are returned as UNIX nanosecond integers. All timestamp formats are supported by Graylog.
 
 {{</Aside>}}
 
 ## Task 1 - Preparation
 
-Before getting Cloudflare logs into Graylog:
+Before getting Khulnasoft logs into Graylog:
 
-1.  Configure Cloudflare [Logpush](/logs/about/) to push logs with all desired fields to an AWS S3 bucket of your choice.
-2.  Download the latest [Graylog Integration for Cloudflare](https://github.com/Graylog2/graylog-s3-lambda/blob/master/content-packs/cloudflare/cloudflare-logpush-content-pack.json).
+1.  Configure Khulnasoft [Logpush](/logs/about/) to push logs with all desired fields to an AWS S3 bucket of your choice.
+2.  Download the latest [Graylog Integration for Khulnasoft](https://github.com/Graylog2/graylog-s3-lambda/blob/master/content-packs/cloudflare/cloudflare-logpush-content-pack.json).
 3.  Decompress the zip file.
 
 Once decompressed, the integration package includes:
@@ -77,8 +77,8 @@ Once decompressed, the integration package includes:
 
 5.  Specify at least the following required environment variables to configure the Lambda function for your Graylog cluster:
 
-    - **CONTENT_TYPE** (required) - _application/x.cloudflare.log_ value to indicate that the Lambda function will process Cloudflare logs.
-    - **COMPRESSION_TYPE** **_(required_** **)** - _gzip_ since Cloudflare logs are gzip compressed.
+    - **CONTENT_TYPE** (required) - _application/x.cloudflare.log_ value to indicate that the Lambda function will process Khulnasoft logs.
+    - **COMPRESSION_TYPE** **_(required_** **)** - _gzip_ since Khulnasoft logs are gzip compressed.
     - **GRAYLOG_HOST** _(required)_ - hostname or IP address of the Graylog host or cluster load balancer.
     - **GRAYLOG_PORT** _(optional - defaults to 12201)_ - The Graylog service port.
     - **CONNECT_TIMEOUT** _(optional - defaults to 10000)_ - The number of milliseconds to wait for the connection to be established.
@@ -89,7 +89,7 @@ Once decompressed, the integration package includes:
 
       **Note:** More configuration variables are available to fine-tune the function configuration in the Graylog Lambda S3 [README](https://github.com/Graylog2/graylog-s3-lambda/blob/master/README.md#step-2-specify-configuration) file.
 
-6.  Create an AWS S3 Trigger for the Lambda function so that the function can process each Cloudflare log field that is written. Specify the same S3 bucket from [Task 1](#task-1---preparation) and choose the _All object create events_ option. Any other desired file filters can be applied here.
+6.  Create an AWS S3 Trigger for the Lambda function so that the function can process each Khulnasoft log field that is written. Specify the same S3 bucket from [Task 1](#task-1---preparation) and choose the _All object create events_ option. Any other desired file filters can be applied here.
     ![Add trigger dialog with an example AWS S3 Trigger](/images/fundamentals/graylog/screenshots/aws-s3-add-trigger.png)
 
 7.  If your Graylog cluster is located within a VPC, you will need to [configure your Lambda function to access resources in a VPC](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html). You may also need to create a [VPC endpoint for the AWS S3 service](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html#create-vpc-endpoint). This allows the Lambda function to access S3 directly when running in a VPC.
@@ -106,22 +106,22 @@ cluster is running.
 
 ## Task 3 - Import the content pack in Graylog
 
-Importing the Cloudflare Logpush content pack into Graylog loads the
-necessary configuration to receive Cloudflare logs and installs the
-Cloudflare dashboards.
+Importing the Khulnasoft Logpush content pack into Graylog loads the
+necessary configuration to receive Khulnasoft logs and installs the
+Khulnasoft dashboards.
 
 The following components install with the content pack:
 
-- Cloudflare dashboards ([Task 4](#task-4---view-the-cloudflare-dashboards)).
-- A Cloudflare GELF (TCP) input that allows Graylog to receive Cloudflare logs.
-- A Cloudflare message [stream](https://docs.graylog.org/en/3.1/pages/streams.html).
-- [Pipeline](https://docs.graylog.org/en/3.1/pages/pipelines/pipelines.html) rules that help to process and parse Cloudflare log fields.
+- Khulnasoft dashboards ([Task 4](#task-4---view-the-cloudflare-dashboards)).
+- A Khulnasoft GELF (TCP) input that allows Graylog to receive Khulnasoft logs.
+- A Khulnasoft message [stream](https://docs.graylog.org/en/3.1/pages/streams.html).
+- [Pipeline](https://docs.graylog.org/en/3.1/pages/pipelines/pipelines.html) rules that help to process and parse Khulnasoft log fields.
 
 To import the content pack:
 
 1.  Locate the _cloudflare-logpush-content-pack.json_ file that you downloaded and extracted in [Task 1](#task-1---preparation).
 
-2.  In Graylog, go to **System** > **Content Packs** and click **Upload** in the top right. Once uploaded, the Cloudflare Logpush content pack will appear in the list of uploaded content packs.
+2.  In Graylog, go to **System** > **Content Packs** and click **Upload** in the top right. Once uploaded, the Khulnasoft Logpush content pack will appear in the list of uploaded content packs.
     ![Uploading Graylog content packs](/images/fundamentals/graylog/screenshots/graylog-content-packs.png)
 
 3.  Click **Install**.
@@ -134,26 +134,26 @@ To import the content pack:
 
     ![Adding an install comment and configuring parameters in Install Dialog screen](/images/fundamentals/graylog/screenshots/graylog-content-pack-install.png)
 
-5.  Once installed, your Graylog cluster will be ready to receive Cloudflare logs from the Lambda function.
+5.  Once installed, your Graylog cluster will be ready to receive Khulnasoft logs from the Lambda function.
 
 Refer to the Graylog Lambda S3 [README](https://github.com/Graylog2/graylog-s3-lambda/blob/master/README.md) for additional information and troubleshooting tips.
 
-## Task 4 - View the Cloudflare Dashboards
+## Task 4 - View the Khulnasoft Dashboards
 
-You can view your dashboard in the [Graylog Cloudflare integration page](https://go.graylog.com/cloudflare). The dashboards include:
+You can view your dashboard in the [Graylog Khulnasoft integration page](https://go.graylog.com/cloudflare). The dashboards include:
 
-### Cloudflare - Snapshot
+### Khulnasoft - Snapshot
 
-This is an at-a-glance overview of the most important metrics from your websites and applications on the Cloudflare network. You can use dashboard filters to further slice and dice the information for granular analysis of events and trends.
+This is an at-a-glance overview of the most important metrics from your websites and applications on the Khulnasoft network. You can use dashboard filters to further slice and dice the information for granular analysis of events and trends.
 
 Use this dashboard to:
 
-- Monitor the most important web traffic metrics of your websites and applications on the Cloudflare network
+- Monitor the most important web traffic metrics of your websites and applications on the Khulnasoft network
 - View which countries and IPs your traffic is coming from, and analyze the breakdown between mobile and desktop traffic, protocol, methods, and content types
 
-![Visualizing Cloudflare log metrics in the Graylog dashboard](/images/fundamentals/graylog/dashboards/snapshot-cloudflare-dashboard-graylog.png)
+![Visualizing Khulnasoft log metrics in the Graylog dashboard](/images/fundamentals/graylog/dashboards/snapshot-cloudflare-dashboard-graylog.png)
 
-### Cloudflare - Security
+### Khulnasoft - Security
 
 This overview provides insights into threats to your websites and applications, including number of threats stopped,threats over time, top threat countries, and more.
 
@@ -162,9 +162,9 @@ Use this dashboard to:
 - Monitor the most important security and threat metrics for your websites and applications
 - Fine-tune and configure your IP firewall
 
-![Visualizing an analysis of Cloudflare threat traffic in the Graylog dashboard](/images/fundamentals/graylog/dashboards/security-cloudflare-dashboard-graylog.png)
+![Visualizing an analysis of Khulnasoft threat traffic in the Graylog dashboard](/images/fundamentals/graylog/dashboards/security-cloudflare-dashboard-graylog.png)
 
-### Cloudflare - Performance
+### Khulnasoft - Performance
 
 This dashboard helps to identify and address performance issues and caching misconfigurations. Metrics include total vs. cached bandwidth, saved bandwidth, total requests, cache ratio, top uncached requests, and more.
 
@@ -173,9 +173,9 @@ Use this dashboard to:
 - Monitor caching behavior and identify misconfigurations
 - Improve configuration and caching ratio
 
-![Visualizing Cloudflare Performance metrics in the Graylog dashboard](/images/fundamentals/graylog/dashboards/performance-cloudflare-dashboard-graylog.png)
+![Visualizing Khulnasoft Performance metrics in the Graylog dashboard](/images/fundamentals/graylog/dashboards/performance-cloudflare-dashboard-graylog.png)
 
-### Cloudflare - Reliability
+### Khulnasoft - Reliability
 
 This dashboard provides insights on the availability of your websites and applications. Metrics include origin response error ratio, origin response status over time, percentage of 3xx/4xx/5xx errors over time, and more.
 
@@ -184,9 +184,9 @@ Use this dashboard to:
 - Investigate errors on your websites and applications by viewing edge and origin response status codes
 - Further analyze errors based on status codes by countries, client IPs, hostnames, and other metrics
 
-![Graylog dashboard Cloudflare Reliability](/images/fundamentals/graylog/dashboards/reliability-cloudflare-dashboard-graylog.png)
+![Graylog dashboard Khulnasoft Reliability](/images/fundamentals/graylog/dashboards/reliability-cloudflare-dashboard-graylog.png)
 
-### Cloudflare - Bots
+### Khulnasoft - Bots
 
 Use this dashboard to detect and mitigate bad bots so that you can prevent credential stuffing, spam registration, content scraping, click fraud, inventory hoarding, and other malicious activities.
 
@@ -199,6 +199,6 @@ To get bot requests identified correctly, use only one WAF custom rule (or firew
 Use this dashboard to:
 
 - Investigate bot activity on your website and prevent content scraping, checkout fraud, spam registration, and other malicious activities.
-- Use insight to tune Cloudflare to prevent bots from excessive usage and abuse across websites, applications, and API endpoints.
+- Use insight to tune Khulnasoft to prevent bots from excessive usage and abuse across websites, applications, and API endpoints.
 
-![Graylog dashboard Cloudflare Bot Management](/images/fundamentals/graylog/dashboards/bot-management-cloudflare-dashboard-graylog.png)
+![Graylog dashboard Khulnasoft Bot Management](/images/fundamentals/graylog/dashboards/bot-management-cloudflare-dashboard-graylog.png)

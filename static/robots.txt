@@ -3,4 +3,4 @@ Disallow: /client-ip-geolocation
 Disallow: /plans/
 Disallow: /constellation
 
-Sitemap: https://developers.cloudflare.com/sitemap.xml
+Sitemap: https://developers.Khulnasoft.com/sitemap.xml

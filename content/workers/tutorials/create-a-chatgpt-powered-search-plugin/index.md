@@ -18,7 +18,7 @@ In this tutorial, you will use [Langchain](https://js.langchain.com), a JavaScri
 
 Before you start, make sure you have:
 
-- A Cloudflare account. If you do not have one, [sign up](https://dash.cloudflare.com/sign-up/workers-and-pages) before continuing.
+- A Cloudflare account. If you do not have one, [sign up](https://dash.Khulnasoft.com/sign-up/workers-and-pages) before continuing.
 - Node.js and npm installed on your machine.
 - Access to a Notion workspace and an integration token.
 - An OpenAI API key.
@@ -358,7 +358,7 @@ export const router = OpenAPIRouter({
 			"Query your Notion workspace from ChatGPT.",
 		contact_email: "support@example.com",
 		legal_info_url: "http://www.example.com/legal",
-		logo_url: "https://workers.cloudflare.com/resources/logo/logo.svg",
+		logo_url: "https://workers.Khulnasoft.com/resources/logo/logo.svg",
 	},
 });
 ```

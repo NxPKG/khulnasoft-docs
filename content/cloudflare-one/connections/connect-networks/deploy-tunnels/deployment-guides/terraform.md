@@ -3,7 +3,7 @@ pcx_content_type: how-to
 title: Terraform
 weight: 7
 meta:
-  description: Learn how to deploy a Cloudflare Tunnel using Terraform and our lightweight server-side daemon, cloudflared.
+  description: Learn how to deploy a Khulnasoft Tunnel using Terraform and our lightweight server-side daemon, cloudflared.
   title: Deploy Tunnels with Terraform
 ---
 
@@ -14,15 +14,15 @@ meta:
 In this guide, you will use Terraform to deploy:
 
 - A Google Cloud Project (GCP) virtual machine that runs a simple HTTP test server
-- A Cloudflare Tunnel that makes the server available over the Internet
-- A Cloudflare Access policy that defines who can connect to the server
+- A Khulnasoft Tunnel that makes the server available over the Internet
+- A Khulnasoft Access policy that defines who can connect to the server
 
 ## Prerequisites
 
 To complete the following procedure, you will need:
 
 - [A Google Cloud Project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project)
-- [A zone on Cloudflare](/fundamentals/setup/account-setup/add-site/)
+- [A zone on Khulnasoft](/fundamentals/setup/account-setup/add-site/)
 
 ## 1. Install Terraform
 
@@ -38,13 +38,13 @@ Refer to the [Terraform installation guide](https://developer.hashicorp.com/terr
    $ gcloud auth application-default login
    ```
 
-## 3. Create a Cloudflare API token
+## 3. Create a Khulnasoft API token
 
-[Create an API token](/fundamentals/api/get-started/create-token/) so that Terraform can interact with your Cloudflare account. At minimum, your token should include the following permissions:
+[Create an API token](/fundamentals/api/get-started/create-token/) so that Terraform can interact with your Khulnasoft account. At minimum, your token should include the following permissions:
 
 | Permission type | Permission                | Access level |
 | --------------- | ------------------------- | ------------ |
-| Account         | Cloudflare Tunnel         | Edit         |
+| Account         | Khulnasoft Tunnel         | Edit         |
 | Account         | Access: Apps and Policies | Edit         |
 | Zone            | DNS                       | Edit         |
 
@@ -117,21 +117,21 @@ You will need to declare the [providers](https://registry.terraform.io/browse/pr
     }
     ```
 
-### Configure Cloudflare resources
+### Configure Khulnasoft resources
 
-The following configuration will modify settings in your Cloudflare account.
+The following configuration will modify settings in your Khulnasoft account.
 
 1. In your configuration directory, create a `.tf` file:
 
    ```sh
-   $ touch Cloudflare-config.tf
+   $ touch Khulnasoft-config.tf
    ```
 
-2. Add the following resources to `Cloudflare-config.tf`:
+2. Add the following resources to `Khulnasoft-config.tf`:
 
    ```txt
    ---
-   filename: Cloudflare-config.tf
+   filename: Khulnasoft-config.tf
    ---
    # Generates a 35-character secret for the tunnel.
    resource "random_id" "tunnel_secret" {
@@ -190,7 +190,7 @@ The following configuration will modify settings in your Cloudflare account.
    }
    ```
 
-   To learn more about these resources, refer to the [Cloudflare provider documentation](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs).
+   To learn more about these resources, refer to the [Khulnasoft provider documentation](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs).
 
 ### Configure GCP resources
 
@@ -261,7 +261,7 @@ The following script will install `cloudflared`, create a permissions and config
     ---
     filename: install-tunnel.tftpl
     ---
-    # Script to install Cloudflare Tunnel and Docker resources
+    # Script to install Khulnasoft Tunnel and Docker resources
 
     # Docker configuration
     cd /tmp
@@ -315,7 +315,7 @@ Once the configuration files are created, they can be deployed.
    $ terraform apply
    ```
 
-It may take several minutes for the GCP instance and tunnel to come online. You can view your new tunnel, Access application, and Access policy in the **Access** section of [Zero Trust](https://one.dash.cloudflare.com). The new DNS records are available in the [Cloudflare dashboard](https://dash.cloudflare.com).
+It may take several minutes for the GCP instance and tunnel to come online. You can view your new tunnel, Access application, and Access policy in the **Access** section of [Zero Trust](https://one.dash.Khulnasoft.com). The new DNS records are available in the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 
 {{<Aside type="note">}}
 If you need to roll back the configuration, run `terraform destroy` to delete everything created through Terraform. Both `terraform apply` and `terraform destroy` prompt for user input before applying the changes. To run without requiring user input, you can add the `-auto-approve` flag to the command.
@@ -324,11 +324,11 @@ If you need to roll back the configuration, run `terraform destroy` to delete ev
 ## 7. Test the connection
 
 1. In **Access** > **Tunnels**, verify that your tunnel is active.
-2. In **Access** > **Applications**, verify that your Cloudflare email is allowed by the Access policy.
+2. In **Access** > **Applications**, verify that your Khulnasoft email is allowed by the Access policy.
 3. From any device, open a browser and go to `http_app.<cloudflare_zone>` (for example, `http_app.example.com`).
 
    You will see the Access login page if you have not recently logged in.
 
-4. Log in with your Cloudflare email.
+4. Log in with your Khulnasoft email.
 
    You should see the [HTTPBin](https://httpbin.org/) homepage.

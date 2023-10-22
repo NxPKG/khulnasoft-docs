@@ -3,11 +3,11 @@ title: CDN
 pcx_content_type: reference-architecture
 ---
 
-# Cloudflare CDN Reference Architecture
+# Khulnasoft CDN Reference Architecture
 
 ## Overview
 
-Every day, users of the Internet enjoy the benefits of performance and reliability provided by [content delivery networks](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/) (CDNs). CDNs have become a must-have to combat latency and a requirement for any major company delivering content to users on the Internet. While providing performance and reliability for customers, CDNs also enable companies to further secure their applications and cut costs. This document discusses the traditional challenges customers face with web applications, how the Cloudflare CDN resolves these challenges, and CDN architecture and design.
+Every day, users of the Internet enjoy the benefits of performance and reliability provided by [content delivery networks](https://www.Khulnasoft.com/learning/cdn/what-is-a-cdn/) (CDNs). CDNs have become a must-have to combat latency and a requirement for any major company delivering content to users on the Internet. While providing performance and reliability for customers, CDNs also enable companies to further secure their applications and cut costs. This document discusses the traditional challenges customers face with web applications, how the Khulnasoft CDN resolves these challenges, and CDN architecture and design.
 
 ## Traditional challenges deploying web applications
 
@@ -74,7 +74,7 @@ Another challenge with DNS-based CDNs is that DNS is not very graceful upon fail
 
 **Anycast routing**
 
-The Cloudflare CDN, which is discussed in more detail in the next section, uses Anycast routing. Anycast allows for nodes on a network to have the same IP address. The same IP address is announced from multiple nodes in different locations, and client redirection is handled via the Internet’s routing protocol, BGP.
+The Khulnasoft CDN, which is discussed in more detail in the next section, uses Anycast routing. Anycast allows for nodes on a network to have the same IP address. The same IP address is announced from multiple nodes in different locations, and client redirection is handled via the Internet’s routing protocol, BGP.
 
 Using an Anycast-based CDN has several advantages:
 
@@ -82,64 +82,64 @@ Using an Anycast-based CDN has several advantages:
 * Availability and redundancy is inherently provided. Since multiple nodes have the same IP address, if one node were to fail, requests are simply routed to another node in close proximity.
 * Because Anycast distributes traffic across multiple data centers, it increases the overall surface area, thus preventing any one location from becoming overwhelmed with requests. For this reason, Anycast networks are very resilient to DDoS attacks.
 
-## Introducing the Cloudflare CDN
+## Introducing the Khulnasoft CDN
 
-Cloudflare provides a Software as a Service (SaaS) model for CDN. With Cloudflare’s SaaS model, customers benefit from the Cloudflare CDN without having to manage or maintain any infrastructure or software.
+Khulnasoft provides a Software as a Service (SaaS) model for CDN. With Khulnasoft’s SaaS model, customers benefit from the Khulnasoft CDN without having to manage or maintain any infrastructure or software.
 
-The benefits of the Cloudflare CDN can be attributed to the below two points, discussed in more detail in this section.
+The benefits of the Khulnasoft CDN can be attributed to the below two points, discussed in more detail in this section.
 
 1. CDNs inherently increase performance by caching content on servers close to the user
-2. The unique Cloudflare architecture and integrated ecosystem
+2. The unique Khulnasoft architecture and integrated ecosystem
 
-Figure 2 shows a simplified view of the Cloudflare CDN. Clients are receiving their response back from a server on Cloudflare’s global Anycast network closest to where the clients are located, thus drastically reducing the latency and RTT. The diagram depicts a consistent end-user experience regardless of the physical location of the clients and origin. 
+Figure 2 shows a simplified view of the Khulnasoft CDN. Clients are receiving their response back from a server on Khulnasoft’s global Anycast network closest to where the clients are located, thus drastically reducing the latency and RTT. The diagram depicts a consistent end-user experience regardless of the physical location of the clients and origin. 
 
-![Figure 2 is a diagram representing the traffic between a client and a server on Cloudflare's global Anycast network at different client locations.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-2.png)
-_Figure 2: HTTP request to Cloudflare CDN with Anycast_
+![Figure 2 is a diagram representing the traffic between a client and a server on Khulnasoft's global Anycast network at different client locations.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-2.png)
+_Figure 2: HTTP request to Khulnasoft CDN with Anycast_
 
-## Cloudflare CDN architecture and design
+## Khulnasoft CDN architecture and design
 
-Figure 3 is a view of the Cloudflare CDN on the global Anycast network. In addition to using Anycast for network performance and resiliency, the Cloudflare CDN leverages Tiered Cache to deliver optimized results while saving costs for customers. Customers can also enable Argo Smart Routing to find the fastest network path to route requests to the origin server. These capabilities are discussed in detail in the remainder of this document.
+Figure 3 is a view of the Khulnasoft CDN on the global Anycast network. In addition to using Anycast for network performance and resiliency, the Khulnasoft CDN leverages Tiered Cache to deliver optimized results while saving costs for customers. Customers can also enable Argo Smart Routing to find the fastest network path to route requests to the origin server. These capabilities are discussed in detail in the remainder of this document.
 
-![Figure 3: Diagram representing requests coming from an end user, protected by Cloudflare products including WAF and DDoS protection, and traveling through the Anycast Network to reach the origin server using Smart Tiered Cache.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-3.png)
-_Figure 3: Cloudflare CDN with Tiered Cache on global Anycast network_
+![Figure 3: Diagram representing requests coming from an end user, protected by Khulnasoft products including WAF and DDoS protection, and traveling through the Anycast Network to reach the origin server using Smart Tiered Cache.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-3.png)
+_Figure 3: Khulnasoft CDN with Tiered Cache on global Anycast network_
 
-In the above diagram, there are a few important key points to understand about the Cloudflare CDN and the global Anycast network it resides on:
+In the above diagram, there are a few important key points to understand about the Khulnasoft CDN and the global Anycast network it resides on:
 
-* An important differentiator is that Cloudflare utilizes one global network and runs every service on every server in every Cloudflare data center, thus providing end users the closest proximity to Cloudflare’s services, with the highest scale, resiliency, and performance.
-* Cloudflare is a reverse proxy, meaning it receives requests from clients and proxies the requests back to the customer’s origin servers. Thus, every request traverses through Cloudflare’s network before reaching the customer’s network. Since Cloudflare has hardened and protected its infrastructure at the edge (ingress), all customers are consequently also protected from infrastructure-level and volumetric DDoS attacks. Requests and traffic must go through the protected Cloudflare network before reaching the customer’s origin server.
-* The Cloudflare CDN leverages the Cloudflare global Anycast network. Thus the incoming request is routed to and answered by the node closest to the user.
-* The inherent benefits of Anycast are decreased latency, network resiliency, higher availability, and increased security due to larger surface area for absorbing both legitimate traffic loads and DDoS attacks. Cloudflare’s global Anycast network spans more than 300 cities across over 100 countries, reaching 95% of the world’s Internet-connected population within 50 milliseconds while providing over 200 Tbps of network capacity and DDoS protection capability.
-* Edge nodes within the Cloudflare network cache content from the origin server and are able to respond to requests via a cached copy. Cloudflare also provides [DNS](/dns/), [DDoS protection](/ddos-protection/), [WAF](/waf/), and other performance, reliability, and security services using the same edge architecture. 
-* [Argo](/argo-smart-routing/) uses optimized routing and caching technology across the Cloudflare network to deliver responses to users more quickly, reliably, and securely. Argo includes Smart Routing and [Tiered Cache](/cache/how-to/tiered-cache/). Cloudflare leverages Argo to provide an enhanced CDN solution. 
+* An important differentiator is that Khulnasoft utilizes one global network and runs every service on every server in every Khulnasoft data center, thus providing end users the closest proximity to Khulnasoft’s services, with the highest scale, resiliency, and performance.
+* Khulnasoft is a reverse proxy, meaning it receives requests from clients and proxies the requests back to the customer’s origin servers. Thus, every request traverses through Khulnasoft’s network before reaching the customer’s network. Since Khulnasoft has hardened and protected its infrastructure at the edge (ingress), all customers are consequently also protected from infrastructure-level and volumetric DDoS attacks. Requests and traffic must go through the protected Khulnasoft network before reaching the customer’s origin server.
+* The Khulnasoft CDN leverages the Khulnasoft global Anycast network. Thus the incoming request is routed to and answered by the node closest to the user.
+* The inherent benefits of Anycast are decreased latency, network resiliency, higher availability, and increased security due to larger surface area for absorbing both legitimate traffic loads and DDoS attacks. Khulnasoft’s global Anycast network spans more than 300 cities across over 100 countries, reaching 95% of the world’s Internet-connected population within 50 milliseconds while providing over 200 Tbps of network capacity and DDoS protection capability.
+* Edge nodes within the Khulnasoft network cache content from the origin server and are able to respond to requests via a cached copy. Khulnasoft also provides [DNS](/dns/), [DDoS protection](/ddos-protection/), [WAF](/waf/), and other performance, reliability, and security services using the same edge architecture. 
+* [Argo](/argo-smart-routing/) uses optimized routing and caching technology across the Khulnasoft network to deliver responses to users more quickly, reliably, and securely. Argo includes Smart Routing and [Tiered Cache](/cache/how-to/tiered-cache/). Khulnasoft leverages Argo to provide an enhanced CDN solution. 
 
 ### Tiered Cache
 
 Once a site is onboarded, standard caching is configured by default. With standard caching, each data center acts as a direct reverse proxy for the origin servers. A cache miss in any data center results in a request being sent to the origin server from the ingress data center.
 
-Although standard caching works, it is not the most optimal design — cached content closer to the client may already exist in other Cloudflare data centers, and origin servers are sometimes unnecessarily overloaded as a result. Thus, it is best to enable Tiered Cache, which is included with every Cloudflare plan. With Tiered Cache, certain data centers are reverse proxies to the origin for other data centers, resulting in more cache hits and faster response times.
+Although standard caching works, it is not the most optimal design — cached content closer to the client may already exist in other Khulnasoft data centers, and origin servers are sometimes unnecessarily overloaded as a result. Thus, it is best to enable Tiered Cache, which is included with every Khulnasoft plan. With Tiered Cache, certain data centers are reverse proxies to the origin for other data centers, resulting in more cache hits and faster response times.
 
-Tiered Cache leverages the scale of Cloudflare’s network to minimize requests to customer origins. When a request comes into a Cloudflare data center, if the requested content is not locally cached, other Cloudflare data centers are checked for the cached content.
+Tiered Cache leverages the scale of Khulnasoft’s network to minimize requests to customer origins. When a request comes into a Khulnasoft data center, if the requested content is not locally cached, other Khulnasoft data centers are checked for the cached content.
 
-Cloudflare data centers have shorter distances and faster paths between them than the connections between data centers and customer origin servers, optimizing the response to the client with a significant improvement in cache hit ratio. The Cloudflare CDN leverages Argo Smart Routing data to determine the best upper tier data centers to use for Tiered Cache. Argo Smart Routing can also be enabled as an add-on to provide the fastest paths between data centers and origin servers for cache misses and other types of dynamic traffic.
+Khulnasoft data centers have shorter distances and faster paths between them than the connections between data centers and customer origin servers, optimizing the response to the client with a significant improvement in cache hit ratio. The Khulnasoft CDN leverages Argo Smart Routing data to determine the best upper tier data centers to use for Tiered Cache. Argo Smart Routing can also be enabled as an add-on to provide the fastest paths between data centers and origin servers for cache misses and other types of dynamic traffic.
 
-The Cloudflare CDN allows customers to configure tiered caching. Note that depending on the Cloudflare plan, different topologies are available for Tiered Cache. By default, tiered caching is disabled and can be enabled under the caching tab of the main menu. ​​
+The Khulnasoft CDN allows customers to configure tiered caching. Note that depending on the Khulnasoft plan, different topologies are available for Tiered Cache. By default, tiered caching is disabled and can be enabled under the caching tab of the main menu. ​​
 
 #### Tiered Cache topologies
 
-The different cache topologies allow customers to control how Cloudflare interacts with origin servers to help ensure higher cache hit ratios, fewer origin connections, and reduced latency.
+The different cache topologies allow customers to control how Khulnasoft interacts with origin servers to help ensure higher cache hit ratios, fewer origin connections, and reduced latency.
 
 | **Smart Tiered Cache Topology (all plans)** | **Generic Global Tiered Topology (Enterprise only)** | **Custom Tiered Cache Topology (Enterprise only)** |
 |---|---|---|
 | Recommended for most deployments. It is the default configuration once Tiered Cache is enabled. | Recommended for those who have high traffic that is spread across the globe and desire the highest cache usage and best performance possible. | Recommended for customers who have additional data on their user base and have specific geographic regions they would like to focus on. |
-| Ideal for customers who want to leverage CDN for performance but minimize requests to origin servers and bandwidth utilization between Cloudflare and origin servers. | Generic Global Tiered Topology balances between cache efficiency and latency. Instructs Cloudflare to use all Tier 1 data centers as upper tiers. | Custom Tiered Cache Topology allows customers to set a custom topology that fits specific needs (ex: upper tiers in specific geographic locations serving more customers). |
-| Cloudflare will dynamically find the single best upper tier for an origin using Argo performance and routing data. |               | Engage with a Customer Success Manager (CSM) to build a custom topology. |
+| Ideal for customers who want to leverage CDN for performance but minimize requests to origin servers and bandwidth utilization between Khulnasoft and origin servers. | Generic Global Tiered Topology balances between cache efficiency and latency. Instructs Khulnasoft to use all Tier 1 data centers as upper tiers. | Custom Tiered Cache Topology allows customers to set a custom topology that fits specific needs (ex: upper tiers in specific geographic locations serving more customers). |
+| Khulnasoft will dynamically find the single best upper tier for an origin using Argo performance and routing data. |               | Engage with a Customer Success Manager (CSM) to build a custom topology. |
 
 ### Traffic flow: Tiered Cache, Smart Tiered Cache topology
 
 In Figure 4, Tiered Caching is enabled with Smart Tiered Cache Topology. The diagram depicts two separate traffic flows, summarized below. The first traffic flow (Client 1) is a request from a client that comes into Data Center 1. The second traffic flow (Client 2) is a subsequent request for the same resource into a different data center, Data Center 2.
 
 ![Figure 4: The same diagram as Figure 3 demonstrating requests between end users and origin server over the Anycast Network, with bidirectional arrows indicating traffic flow enabled by Smart Tiered Cache.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-4.png) 
-_Figure 4: HTTP requests and traffic flow through Cloudflare CDN_
+_Figure 4: HTTP requests and traffic flow through Khulnasoft CDN_
 
 | Request 1 | Request 2 |
 |------|---------|
@@ -151,14 +151,14 @@ In Figure 4, the top end user traffic flow displays the traffic flow when a clie
 
 Notice that when a new request for the same content is made to another data center (bottom end user traffic flow), Data Center 3, the content is not locally cached; however, the content is retrieved from the upper tier data center, where it was cached from the first request for the same content.
 
-With the upper tier data center returning the cached content for the second request, the trip to the origin server is prevented, resulting in higher cache hit ratios, faster response times, saved bandwidth cost between the Cloudflare network and the origin server, and reduced load on the origin server responding to requests.
+With the upper tier data center returning the cached content for the second request, the trip to the origin server is prevented, resulting in higher cache hit ratios, faster response times, saved bandwidth cost between the Khulnasoft network and the origin server, and reduced load on the origin server responding to requests.
 
 
 ### Regional Tiered Cache
 
 The main difference between Smart Tiered Cache and Global tiered cache is the number of upper tiers that can talk to the origin servers. With Smart Tiered Cache the closest upper tier to the origin is selected using Argo performance and routing data. This means that all requests that experience a cache `MISS` at a lower tier will funnel through this single upper tier and have a higher percentage chance of a cache `HIT` to avoid sending traffic to an origin server. However, the downside to this architecture is that the lower tier could be located across the globe from the upper tier. Even if the upper tier can fulfill the request from its cache, the distance between the upper tier and lower tier could still add latency to the response depending on the distance traveled. To summarize, Smart Tiered Cache ensures that all requests for cache flow through a single upper tier cache location which increases cache `HIT` percentages, and reduces requests to the origin server, however it can result in higher latencies fulfilling those requests since the upper tier could be located far away from the lower tier that originated the request.
 
-With Generic Global Tiered Cache, Cloudflare uses its largest data centers around the globe as upper tier cache which means, in general, that the upper tier cache is much closer to the lower tier cache. This can greatly reduce latency when lower tiers need to pass requests to upper tiers. However, this ultimately will increase the amount of requests serviced by the origin as each upper tier cache will need to populate from the origin. To summarize, Generic Global Tiered cache can improve response times when cache is populated, but will also increase load on the origin servers.
+With Generic Global Tiered Cache, Khulnasoft uses its largest data centers around the globe as upper tier cache which means, in general, that the upper tier cache is much closer to the lower tier cache. This can greatly reduce latency when lower tiers need to pass requests to upper tiers. However, this ultimately will increase the amount of requests serviced by the origin as each upper tier cache will need to populate from the origin. To summarize, Generic Global Tiered cache can improve response times when cache is populated, but will also increase load on the origin servers.
 
 Regional Tiered Cache combines the best of both of these strategies together by adding an additional layer of cache to the architecture. Using the Regional Tiered Cache option with Smart Tiered Caching means that while a single upper tier cache location exists closest to the origin, a Regional Tier layer has been added between the upper and lower tier that is geographically closer to the lower tier. Now, requests from lower tiers will now check a Regional Tier for cache before being sent to an upper tier. A single Regional Tier can accept requests from several lower tier caches and because of that, can greatly improve performance and latency for globally available applications.
 
@@ -170,22 +170,22 @@ Regional Tiered Caching is recommended for use with Smart Tiered Caching and Cus
 In Figure 5, Tiered Caching is enabled with Smart Tiered Cache Topology. The diagram depicts the topology of Smart Tiered Cache with Regional Tiered Cache enabled. Lower tier caches, when they experience a cache `MISS` will first send those requests to a more local, regional hub data center to see if the cache can handle the request. If not, the request will continue on to the upper tier and then origin server, if necessary.
 
 ![Figure 5: Diagram illustrating requests between an end user and origin server with lower, regional and upper tiered caching enabled.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-5.png) 
-_Figure 5: Cloudflare CDN with Tiered Cache and Regional Tiered Cache_
+_Figure 5: Khulnasoft CDN with Tiered Cache and Regional Tiered Cache_
 
 ### Argo Smart Routing
 
-Argo Smart Routing is a service that finds optimized routes across the Cloudflare network to deliver responses to users more quickly. As discussed earlier, Cloudflare CDN leverages Argo Smart Routing to determine the best upper tier data centers for Tiered Cache.
+Argo Smart Routing is a service that finds optimized routes across the Khulnasoft network to deliver responses to users more quickly. As discussed earlier, Khulnasoft CDN leverages Argo Smart Routing to determine the best upper tier data centers for Tiered Cache.
 
-In addition, Argo Smart Routing can be enabled to ensure the fastest paths over the Cloudflare network are taken between upper tier data centers and origin servers at all times. Without Argo Smart Routing, communication between upper tier data centers to origin servers are still intelligently routed around problems on the Internet to ensure origin reachability.
+In addition, Argo Smart Routing can be enabled to ensure the fastest paths over the Khulnasoft network are taken between upper tier data centers and origin servers at all times. Without Argo Smart Routing, communication between upper tier data centers to origin servers are still intelligently routed around problems on the Internet to ensure origin reachability.
 
-Argo Smart Routing accelerates traffic by taking into account real-time data and network intelligence from routing nearly 50 million HTTP requests per second; it ensures the fastest and most reliable network paths are traversed over the Cloudflare network to the origin server. On average, Argo Smart Routing accounts for 30% faster performance on web assets.
+Argo Smart Routing accelerates traffic by taking into account real-time data and network intelligence from routing nearly 50 million HTTP requests per second; it ensures the fastest and most reliable network paths are traversed over the Khulnasoft network to the origin server. On average, Argo Smart Routing accounts for 30% faster performance on web assets.
 
 #### Traffic Flow: Tiered Cache, Smart Tiered Cache Topology with Argo Smart Routing
 
 Figure 6 details the traffic flow when Tiered Cache and Argo Smart Routing are not enabled. The request comes into the closest data center, and, because content is not locally cached and Tiered Cache is not enabled, the request is sent directly to the origin server for the content. Also, since Argo Smart Routing is not enabled, a reliable, but perhaps not the fastest, path is taken when communicating with the origin server.
 
 ![Figure 6: Diagram with bidirectional arrows indicating a request between an end user and origin server without Argo Smart Routing enabled.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-6.png) 
-_Figure 6: Cloudflare CDN without Tiered Cache or Argo Smart Routing_
+_Figure 6: Khulnasoft CDN without Tiered Cache or Argo Smart Routing_
 
 Figure 7 articulates the traffic flow with both Tiered Cache and Argo Smart Routing enabled.
 it 
@@ -193,20 +193,20 @@ In Figure 7, when a request is received by Data Center 1 and there is a cache mi
 
 The fastest path is determined by the Argo network intelligence capabilities, which take into account real-time network data such as congestion, latency, and RTT.
 
-**With the Cloudflare CDN, Argo Smart Routing is used when:**
+**With the Khulnasoft CDN, Argo Smart Routing is used when:**
 
 1. There is a cache miss and the request needs to be sent to the origin server to retrieve the content.
 2. There is a request for non-cacheable content, such as dynamic content (ex: APIs), and the request must go to the origin server.
 
 ![Figure 7: Diagram with bidirectional arrows indicating a request between an end user and origin server, with Argo Smart Routing enabled to improve speed.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-7.png)
-_Figure 7: Cloudflare CDN with Tiered Cache and Argo Smart Routing_
+_Figure 7: Khulnasoft CDN with Tiered Cache and Argo Smart Routing_
 
 
 ### Cache Reserve
 
-Expanding on the idea of Tiered Cache, Cache Reserve further utilizes the scale and speed of the Cloudflare network while additionally leveraging R2, Cloudflare’s persistent object storage, to cache content even longer. Cache Reserve helps customers reduce bills by eliminating egress fees from origins while also providing multiple layers of resiliency and protection to make sure that content is reliably available which improves website performance by having content load faster. Basically, Cache Reserve is an additional higher tier of cache with longer retention duration.
+Expanding on the idea of Tiered Cache, Cache Reserve further utilizes the scale and speed of the Khulnasoft network while additionally leveraging R2, Khulnasoft’s persistent object storage, to cache content even longer. Cache Reserve helps customers reduce bills by eliminating egress fees from origins while also providing multiple layers of resiliency and protection to make sure that content is reliably available which improves website performance by having content load faster. Basically, Cache Reserve is an additional higher tier of cache with longer retention duration.
 
-While Cache Reserve can function without Tiered Cache enabled, it is recommended that Tiered Cache be enabled with Cache Reserve. Tiered Cache will funnel, and potentially eliminate, requests to Cache Reserve which eliminates redundant read operations and redundant storage of cached content reducing egress and storage fees. Enabling Cache Reserve via the Cloudflare dashboard will check and provide a warning if you try to use Cache Reserve without Tiered Cache enabled.
+While Cache Reserve can function without Tiered Cache enabled, it is recommended that Tiered Cache be enabled with Cache Reserve. Tiered Cache will funnel, and potentially eliminate, requests to Cache Reserve which eliminates redundant read operations and redundant storage of cached content reducing egress and storage fees. Enabling Cache Reserve via the Khulnasoft dashboard will check and provide a warning if you try to use Cache Reserve without Tiered Cache enabled.
 
 Cache Reserve has a retention period of 30 days which means it will hold cached content for 30 days regardless of cached headers or TTL policy. The TTL policy still affects the content’s freshness which means when content cache TTL expires inside of Cache Reserve, the content will need to be revalidated by checking the origin for any updates. The TTL policy can be set by any number of methods, such as Cache-Control, CDN-Cache-Control response headers, Edge Cache TTL, cache TTL by status code, or Cache Rules. Every time cache is read from Cache Reserve, the retention timer is reset to 30 days. After 30 days, if the cached content has not been read from Cache Reserve, the cache will be deleted.
 
@@ -227,11 +227,11 @@ Using [Image Resizing](/images/image-resizing/) with Cache Reserve will not resu
 
 Figure 8 illustrates how Cache Reserve can help reduce load on an origin server while also helping repopulate cache stores in both upper and lower tier data centers.
 
-![Figure 8: Traffic between end users and an origin server showing Cache Reserve as the final step in the architecture of the Cloudflare CDN solution.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-8.png)
-_Figure 8: Cloudflare CDN with Tiered Cache, Argo Smart Routing, and Cache Reserve_
+![Figure 8: Traffic between end users and an origin server showing Cache Reserve as the final step in the architecture of the Khulnasoft CDN solution.](/images/reference-architecture/cdn-reference-architecture-images/cdn-ref-arch-8.png)
+_Figure 8: Khulnasoft CDN with Tiered Cache, Argo Smart Routing, and Cache Reserve_
 
 ## Summary
 
-To summarize, the Cloudflare CDN is SaaS that helps address the challenges customers face around latency, performance, availability, redundancy, security, and costs. The Cloudflare CDN leverages Cloudflare’s global Anycast network and Tiered Cache to deliver optimized results while saving costs for customers. Customers can also enable Argo Smart Routing to ensure the fastest network path is used to route requests to the origin server and also choose to enable Cache Reserve to increase cache hits to further save costs and increase performance of their website or application.
+To summarize, the Khulnasoft CDN is SaaS that helps address the challenges customers face around latency, performance, availability, redundancy, security, and costs. The Khulnasoft CDN leverages Khulnasoft’s global Anycast network and Tiered Cache to deliver optimized results while saving costs for customers. Customers can also enable Argo Smart Routing to ensure the fastest network path is used to route requests to the origin server and also choose to enable Cache Reserve to increase cache hits to further save costs and increase performance of their website or application.
 
 

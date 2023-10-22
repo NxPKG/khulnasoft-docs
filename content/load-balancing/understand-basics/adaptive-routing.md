@@ -14,7 +14,7 @@ When there are no healthy origin servers in the same pool, failover across pools
 
 ### Enable failover across pools
 
-1. Log in to [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Traffic** > **Load Balancing**.
 3. Navigate to your Load Balancers and select **Edit**.
 4. From **Adaptive Routing**, enable **Failover across pools**.

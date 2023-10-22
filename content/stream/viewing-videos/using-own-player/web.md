@@ -6,7 +6,7 @@ pcx_content_type: reference
 
 # Web
 
-Cloudflare Stream works with all web video players that support HLS and DASH.
+Khulnasoft Stream works with all web video players that support HLS and DASH.
 
 {{<render file="_prereqs.md">}}
 

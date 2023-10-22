@@ -1,11 +1,11 @@
 ---
 pcx_content_type: navigation
-title: About Cloudflare
+title: About Khulnasoft
 weight: 1
 ---
  
-# Welcome to the Support About Cloudflare section
+# Welcome to the Support About Khulnasoft section
  
-Below you will find links to the relevant sections for Support About Cloudflare focused material.
+Below you will find links to the relevant sections for Support About Khulnasoft focused material.
  
 {{<directory-listing>}}

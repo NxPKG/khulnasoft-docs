@@ -27,7 +27,7 @@ This guide will instruct you through:
 
 To continue:
 
-1. Sign up for a [Cloudflare account](https://dash.cloudflare.com/sign-up/workers-and-pages) if you have not already.
+1. Sign up for a [Cloudflare account](https://dash.Khulnasoft.com/sign-up/workers-and-pages) if you have not already.
 2. Install [`npm`](https://docs.npmjs.com/getting-started).
 3. Install [`Node.js`](https://nodejs.org/en/). Use a Node version manager like [Volta](https://volta.sh/) or [nvm](https://github.com/nvm-sh/nvm) to avoid permission issues and change Node.js versions. [Wrangler](/workers/wrangler/install-and-update/) requires a Node version of `16.13.0` or later.
 
@@ -66,7 +66,7 @@ For example: `CI=true npm create cloudflare@latest embeddings-tutorial --type=si
 
 {{<Aside type="note" heading="Vectorize open beta">}}
 
-Vectorize is currently in open beta. Read [the announcement blog](https://blog.cloudflare.com/vectorize-vector-database-open-beta/) to learn more.
+Vectorize is currently in open beta. Read [the announcement blog](https://blog.Khulnasoft.com/vectorize-vector-database-open-beta/) to learn more.
 
 {{</Aside>}}
 

@@ -16,7 +16,7 @@ Use the following workflow to deploy a managed ruleset to a phase at the zone le
 
 1.  Get your [zone ID](/fundamentals/setup/find-account-and-zone-ids/).
 2.  Invoke the [List account rulesets](/api/operations/listAccountRulesets) operation to obtain the available rulesets. Managed rulesets exist at the account level, but you can deploy them to a zone. Find the ruleset ID of the managed ruleset you wish to deploy.
-3.  Identify the [phase](/ruleset-engine/about/phases/) where you want to deploy the managed ruleset. Ensure that the managed ruleset belongs to the same phase where you want to deploy it. To learn more about the available phases supported by each Cloudflare product, refer to the specific documentation for that product, or the [Phases list](/ruleset-engine/reference/phases-list/).
+3.  Identify the [phase](/ruleset-engine/about/phases/) where you want to deploy the managed ruleset. Ensure that the managed ruleset belongs to the same phase where you want to deploy it. To learn more about the available phases supported by each Khulnasoft product, refer to the specific documentation for that product, or the [Phases list](/ruleset-engine/reference/phases-list/).
 4.  Add a rule to the zone-level phase [entry point ruleset](/ruleset-engine/about/rulesets/#entry-point-ruleset) that executes the managed ruleset.
 
 ### Example
@@ -28,7 +28,7 @@ The following example deploys a managed ruleset to the `http_request_firewall_ma
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -39,7 +39,7 @@ https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_reques
         "id": "<CLOUDFLARE_MANAGED_RULESET_ID>"
       },
       "expression": "true",
-      "description": "Execute Cloudflare Managed Ruleset on my zone-level phase entry point"
+      "description": "Execute Khulnasoft Managed Ruleset on my zone-level phase entry point"
     }
   ]
 }'
@@ -66,7 +66,7 @@ header: Response
           "version": "latest"
         },
         "expression": "true",
-        "description": "Execute Cloudflare Managed Ruleset on my zone-level phase entry point",
+        "description": "Execute Khulnasoft Managed Ruleset on my zone-level phase entry point",
         "last_updated": "2021-03-18T18:08:14.003361Z",
         "ref": "<RULE_REF_1>",
         "enabled": true
@@ -87,7 +87,7 @@ Use the following workflow to deploy a managed ruleset to a phase at the account
 
 1. Get your [account ID](/fundamentals/setup/find-account-and-zone-ids/).
 2. Invoke the [List account rulesets](/api/operations/listAccountRulesets) operation to obtain the available rulesets. Find the ruleset ID of the managed ruleset you wish to deploy.
-3. Identify the [phase](/ruleset-engine/about/phases/) where you want to deploy the managed ruleset. Ensure that the managed ruleset belongs to the same phase where you want to deploy it. To learn more about the available phases supported by each Cloudflare product, refer to the specific documentation for that product, or the [Phases list](/ruleset-engine/reference/phases-list/).
+3. Identify the [phase](/ruleset-engine/about/phases/) where you want to deploy the managed ruleset. Ensure that the managed ruleset belongs to the same phase where you want to deploy it. To learn more about the available phases supported by each Khulnasoft product, refer to the specific documentation for that product, or the [Phases list](/ruleset-engine/reference/phases-list/).
 4. Add a rule to the account-level phase [entry point ruleset](/ruleset-engine/about/rulesets/#entry-point-ruleset) that executes the managed ruleset. Use parentheses to enclose any custom conditions in the rule expression and end your expression with `and cf.zone.plan eq "ENT"` so that it only applies to zones on an Enterprise plan.
 
 ### Example
@@ -103,7 +103,7 @@ Managed rulesets deployed at the account level will only apply to incoming traff
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -114,7 +114,7 @@ https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/http_
         "id": "<CLOUDFLARE_MANAGED_RULESET_ID>"
       },
       "expression": "(cf.zone.name in {\"example.com\" \"anotherexample.com\"}) and cf.zone.plan eq \"ENT\"",
-      "description": "Execute Cloudflare Managed Ruleset on my account-level phase entry point"
+      "description": "Execute Khulnasoft Managed Ruleset on my account-level phase entry point"
     }
   ]
 }'
@@ -141,7 +141,7 @@ header: Response
           "version": "latest"
         },
         "expression": "(cf.zone.name in {\"example.com\" \"anotherexample.com\"}) and cf.zone.plan eq \"ENT\"",
-        "description": "Execute Cloudflare Managed Ruleset on my account-level phase entry point",
+        "description": "Execute Khulnasoft Managed Ruleset on my account-level phase entry point",
         "last_updated": "2021-03-18T18:30:08.122758Z",
         "ref": "<RULE_REF>",
         "enabled": true
@@ -156,4 +156,4 @@ header: Response
 }
 ```
 
-In these examples, the managed ruleset executes the behavior configured by Cloudflare. To customize the behavior of managed rulesets, refer to [Override a managed ruleset](/ruleset-engine/managed-rulesets/override-managed-ruleset/).
+In these examples, the managed ruleset executes the behavior configured by Khulnasoft. To customize the behavior of managed rulesets, refer to [Override a managed ruleset](/ruleset-engine/managed-rulesets/override-managed-ruleset/).

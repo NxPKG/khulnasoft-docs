@@ -1,11 +1,11 @@
 ---
-title: Customize Cloudflare security
+title: Customize Khulnasoft security
 pcx_content_type: learning-unit
 weight: 3
 layout: learning-unit
 ---
 
-Another way of reducing origin traffic is customizing the Cloudflare WAF and other security features. The fewer malicious requests that reach your application, the fewer that could reach (and overwhelm) your origin.
+Another way of reducing origin traffic is customizing the Khulnasoft WAF and other security features. The fewer malicious requests that reach your application, the fewer that could reach (and overwhelm) your origin.
 
 To reduce incoming malicious requests, you could:
 
@@ -15,4 +15,4 @@ To reduce incoming malicious requests, you could:
 - Enable [bot protection](/bots/get-started/) or set up [Bot Management for Enterprise](/bots/get-started/bm-subscription/) to protect against automated abuse.
 - Explore [network-layer DDoS attack protection](/ddos-protection/managed-rulesets/network/).
 - Configure your zone's [Security Level](/waf/tools/security-level/) globally or selectively (depending on your needs).
-- Review the rest of Cloudflare's [security options](/learning-paths/application-security/).
+- Review the rest of Khulnasoft's [security options](/learning-paths/application-security/).

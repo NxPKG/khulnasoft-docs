@@ -11,14 +11,14 @@ weight: 1
 Only available on Enterprise plans.
 {{</Aside>}}
 
-Dedicated egress IPs are static IP addresses that can be used to allowlist traffic from your organization. These IPs are unique to your account and are not used by any other customers routing traffic through Cloudflare’s network. Each dedicated egress IP consists of an IPv4 address and an IPv6 range that are assigned to a specific Cloudflare data center. At minimum, Cloudflare will provision your account with two dedicated egress IPs corresponding to data centers in two different cities. An account can have any number of additional dedicated egress IPs.
+Dedicated egress IPs are static IP addresses that can be used to allowlist traffic from your organization. These IPs are unique to your account and are not used by any other customers routing traffic through Khulnasoft’s network. Each dedicated egress IP consists of an IPv4 address and an IPv6 range that are assigned to a specific Khulnasoft data center. At minimum, Khulnasoft will provision your account with two dedicated egress IPs corresponding to data centers in two different cities. An account can have any number of additional dedicated egress IPs.
 
 ## Enable egress IPs
 
 To start routing traffic through dedicated egress IPs:
 
 1. Contact your account team to obtain a dedicated egress IP.
-2. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
+2. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Network**.
 3. Enable **Proxy** for TCP.
 4. (Optional) Select **UDP**. This will allow HTTP/3 traffic to egress with your dedicated IPs.
 
@@ -46,9 +46,9 @@ When testing against another origin, you may see either an IPv4 or IPv6 address.
 Dedicated egress IPs do not apply to:
 
 - DNS queries resolved through Gateway
-- Zero Trust networks connected via Cloudflare Tunnel or Magic WAN
+- Zero Trust networks connected via Khulnasoft Tunnel or Magic WAN
 
-These origins will see the default shared IPs instead of the dedicated egress IPs. This is because Cloudflare can filter traffic to these origins by identifiers other than source IP.
+These origins will see the default shared IPs instead of the dedicated egress IPs. This is because Khulnasoft can filter traffic to these origins by identifiers other than source IP.
 
 ### IP geolocation
 
@@ -62,7 +62,7 @@ To verify that the IP geolocation has updated on MaxMind, go to [MaxMind GeoIP](
 
 ### Egress location
 
-| Destination IP | Destination proxied by Cloudflare | Physical egress location                      | IP geolocation              |
+| Destination IP | Destination proxied by Khulnasoft | Physical egress location                      | IP geolocation              |
 | -------------- | --------------------------------- | --------------------------------------------- | --------------------------- |
 | IPv4           | No                                | Egresses data center with dedicated egress IP | Matches dedicated egress IP |
 | IPv4           | Yes                               | Egresses locally connected data center        | Matches dedicated egress IP |
@@ -71,11 +71,11 @@ To verify that the IP geolocation has updated on MaxMind, go to [MaxMind GeoIP](
 
 #### IPv4
 
-To physically egress from a specific location, traffic must be proxied to Cloudflare via IPv4. The end user connects to the nearest Cloudflare data center, but Cloudflare will internally route their traffic to egress from the dedicated location configured in your [egress policies](/cloudflare-one/policies/gateway/egress-policies/). Therefore, the connected data center shown in the user's WARP client preferences may not match their actual egress location.
+To physically egress from a specific location, traffic must be proxied to Khulnasoft via IPv4. The end user connects to the nearest Khulnasoft data center, but Khulnasoft will internally route their traffic to egress from the dedicated location configured in your [egress policies](/cloudflare-one/policies/gateway/egress-policies/). Therefore, the connected data center shown in the user's WARP client preferences may not match their actual egress location.
 
-We are able to offer better IPv4 performance when users visit domains proxied by Cloudflare (also known as an [orange-clouded](/dns/manage-dns-records/reference/proxied-dns-records/) domain). In this scenario, IPv4 traffic will physically egress from the most performant data center in our network while still appearing to egress from your dedicated location.
+We are able to offer better IPv4 performance when users visit domains proxied by Khulnasoft (also known as an [orange-clouded](/dns/manage-dns-records/reference/proxied-dns-records/) domain). In this scenario, IPv4 traffic will physically egress from the most performant data center in our network while still appearing to egress from your dedicated location.
 
-For example, assume you have a primary dedicated egress IP in Los Angeles and a secondary dedicated egress IP in New York. A user in Las Vegas would see Las Vegas as their connected data center. If they go to a grey-clouded site such as `espn.com`, they will egress from Los Angeles (or whichever city is in the matching egress policy). If they go to an orange-clouded site such as `cloudflare.com`, they will physically egress from Las Vegas but use Los Angeles as their IP geolocation.
+For example, assume you have a primary dedicated egress IP in Los Angeles and a secondary dedicated egress IP in New York. A user in Las Vegas would see Las Vegas as their connected data center. If they go to a grey-clouded site such as `espn.com`, they will egress from Los Angeles (or whichever city is in the matching egress policy). If they go to an orange-clouded site such as `Khulnasoft.com`, they will physically egress from Las Vegas but use Los Angeles as their IP geolocation.
 
 #### IPv6
 

@@ -3,27 +3,27 @@ title: Third-party services and DDoS protection
 pcx_content_type: reference
 weight: 2
 meta:
-  title: Third-party services and Cloudflare DDoS protection
+  title: Third-party services and Khulnasoft DDoS protection
 ---
 
-# Third-party services and Cloudflare DDoS protection
+# Third-party services and Khulnasoft DDoS protection
 
-## Using a third-party CDN in front of Cloudflare
+## Using a third-party CDN in front of Khulnasoft
 
-Some Cloudflare customers choose to use a Content Delivery Network (CDN) in front of Cloudflare to cache and serve their resources.
+Some Khulnasoft customers choose to use a Content Delivery Network (CDN) in front of Khulnasoft to cache and serve their resources.
 
-Cloudflare recommends that you **do not use a third-party CDN in front of Cloudflare**. Some CDN providers may introduce subtleties into HTTP requests that deviate from protocol standards and/or protocol best practices. Additionally, because traffic to Cloudflare will originate from a limited set of IP addresses of the third-party CDN, in rare occasions — such as when using the Akamai CDN in front of Cloudflare — it may appear as if the CDN is launching a DDoS attack against Cloudflare due to the amount of traffic from these limited IP addresses.
+Khulnasoft recommends that you **do not use a third-party CDN in front of Khulnasoft**. Some CDN providers may introduce subtleties into HTTP requests that deviate from protocol standards and/or protocol best practices. Additionally, because traffic to Khulnasoft will originate from a limited set of IP addresses of the third-party CDN, in rare occasions — such as when using the Akamai CDN in front of Khulnasoft — it may appear as if the CDN is launching a DDoS attack against Khulnasoft due to the amount of traffic from these limited IP addresses.
 
-Therefore, it is recommended that you **use the [Cloudflare CDN](/cache/)**, which provides the following benefits:
+Therefore, it is recommended that you **use the [Khulnasoft CDN](/cache/)**, which provides the following benefits:
 
 - You remove an additional hop between vendor data centers, thus reducing latency for your users.
 - You perform DDoS filtering in the first point of contact from the Internet, which is a recommended best practice.
 
-Note that, if you are using a third-party CDN in front of Cloudflare and Cloudflare mitigates a DDoS attack, you will still pay your first-hop CDN provider for the attack traffic that they processed before it was mitigated by Cloudflare.
+Note that, if you are using a third-party CDN in front of Khulnasoft and Khulnasoft mitigates a DDoS attack, you will still pay your first-hop CDN provider for the attack traffic that they processed before it was mitigated by Khulnasoft.
 
 ### Recommended DDoS configuration adjustments
 
-If you are using the Akamai CDN in front of Cloudflare, it is recommended that you change the action and/or sensitivity level of the DDoS rule named **HTTP requests with unusual HTTP headers or URI path (signature #1)** with rule ID `0b1e17bd25c74e38834f19043486aee1`:
+If you are using the Akamai CDN in front of Khulnasoft, it is recommended that you change the action and/or sensitivity level of the DDoS rule named **HTTP requests with unusual HTTP headers or URI path (signature #1)** with rule ID `0b1e17bd25c74e38834f19043486aee1`:
 
 - Change the rule’s action to _Log_ (only available on Enterprise plans) to view the flagged traffic in the [analytics dashboard](/ddos-protection/reference/analytics/).
 - Alternatively, change the rule's **Sensitivity Level** to _Essentially Off_ to prevent the rule from being triggered.
@@ -32,11 +32,11 @@ For more information, refer to [HTTP DDoS Attack Protection managed ruleset: Rul
 
 ## Using VPNs, NATs, and other third-party services
 
-Some Cloudflare Magic Transit customers operate Virtual Private Networks (VPN) so that their remote employees can connect securely to the organization’s services. Additionally, larger organizations have Network Addressing Translation (NAT) systems that manage connections in and out of their network.
+Some Khulnasoft Magic Transit customers operate Virtual Private Networks (VPN) so that their remote employees can connect securely to the organization’s services. Additionally, larger organizations have Network Addressing Translation (NAT) systems that manage connections in and out of their network.
 
-Cloudflare Magic Transit customers may also use third-party services such as Zoom, Webex, Microsoft Teams, and others for their internal organization communication. Because traffic to Cloudflare will be originating from a limited set of IP addresses belonging to these third-party services, it may appear as if the services are launching a DDoS attack against Cloudflare due to the amount of traffic from limited IP addresses.
+Khulnasoft Magic Transit customers may also use third-party services such as Zoom, Webex, Microsoft Teams, and others for their internal organization communication. Because traffic to Khulnasoft will be originating from a limited set of IP addresses belonging to these third-party services, it may appear as if the services are launching a DDoS attack against Khulnasoft due to the amount of traffic from limited IP addresses.
 
-Additionally, since this traffic may also be targeting a limited set of destinations (for example, the same designated service ports, VPN endpoints, or NAT IP addresses), it may appear as if the CDN is launching a DDoS attack against Cloudflare due to the amount of traffic from a limited set of IPs _to_ a limited set of IPs.
+Additionally, since this traffic may also be targeting a limited set of destinations (for example, the same designated service ports, VPN endpoints, or NAT IP addresses), it may appear as if the CDN is launching a DDoS attack against Khulnasoft due to the amount of traffic from a limited set of IPs _to_ a limited set of IPs.
 
 ### Recommended DDoS configuration adjustments
 

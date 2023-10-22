@@ -5,19 +5,19 @@ title: API commands
 
 # API commands
 
-Cloudflare Waiting Room redirect visitors to virtual waiting rooms when they are trying to access web pages that have high volumes of traffic.
+Khulnasoft Waiting Room redirect visitors to virtual waiting rooms when they are trying to access web pages that have high volumes of traffic.
 
-The [Cloudflare Waiting Room API](/api/operations/waiting-room-list-waiting-rooms) provides an interface for programmatically managing waiting rooms.
+The [Khulnasoft Waiting Room API](/api/operations/waiting-room-list-waiting-rooms) provides an interface for programmatically managing waiting rooms.
 
 ## Request URL format
 
-To invoke a [Cloudflare Waiting Room API](/api/operations/waiting-room-list-waiting-rooms) operation, append the endpoint to the Cloudflare API base URL:
+To invoke a [Khulnasoft Waiting Room API](/api/operations/waiting-room-list-waiting-rooms) operation, append the endpoint to the Khulnasoft API base URL:
 
 ```shell
-https://api.cloudflare.com/client/v4
+https://api.Khulnasoft.com/client/v4
 ```
 
-For authentication instructions, refer to [Getting Started: Requests](/fundamentals/api/) in the Cloudflare API documentation.
+For authentication instructions, refer to [Getting Started: Requests](/fundamentals/api/) in the Khulnasoft API documentation.
 
 For help with endpoints and pagination, refer to [Getting Started: Endpoints](/fundamentals/api/).
 

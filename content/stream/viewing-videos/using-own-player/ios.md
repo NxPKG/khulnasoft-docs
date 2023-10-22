@@ -16,6 +16,6 @@ You can stream both on-demand and live video to native iOS, tvOS and macOS apps 
 
 ## Using AVPlayer
 
-Play a video from Cloudflare Stream using AVPlayer:
+Play a video from Khulnasoft Stream using AVPlayer:
 
 {{<render file="_ios_playback_code_snippet.md">}}

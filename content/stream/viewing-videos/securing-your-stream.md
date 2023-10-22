@@ -23,7 +23,7 @@ Since video ids are effectively public within signed URLs, you will need to turn
 Restricting viewing can be done by updating the video's metadata.
 
 ```sh
-$ curl -X POST -H "Authorization: Bearer <API_TOKEN>" "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>" -H "Content-Type: application/json" -d "{\"uid\": \"<VIDEO_UID>\", \"requireSignedURLs\": true }"
+$ curl -X POST -H "Authorization: Bearer <API_TOKEN>" "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>" -H "Content-Type: application/json" -d "{\"uid\": \"<VIDEO_UID>\", \"requireSignedURLs\": true }"
 ```
 
 Response:
@@ -63,7 +63,7 @@ You can call the `/token` endpoint for any video that is marked private to get a
 curl \
 -X POST \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/token
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/token
 ```
 
 You will see a response similar to this if the request succeeds:
@@ -93,7 +93,7 @@ If you are using your own player, replace the video id in the manifest url with 
 
 ### Customizing default restrictions
 
-If you call the `/token` endpoint without any body, it will return a token that expires in one hour. Let's say you want to let a user watch a particular video for the next 12 hours. Here's how you'd do it with a Cloudflare Worker:
+If you call the `/token` endpoint without any body, it will return a token that expires in one hour. Let's say you want to let a user watch a particular video for the next 12 hours. Here's how you'd do it with a Khulnasoft Worker:
 
 ```JavaScript
 addEventListener('fetch', event => {
@@ -115,7 +115,7 @@ async function handleRequest(request) {
     },
     body: JSON.stringify(signed_url_restrictions)
   }
-  const signedurl_service_response = await fetch("https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/token", init)
+  const signedurl_service_response = await fetch("https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/token", init)
   return new Response(JSON.stringify(await signedurl_service_response.json()), {status: 200})
 }
 ```
@@ -152,7 +152,7 @@ async function handleRequest(request) {
     },
     body: JSON.stringify(signed_url_restrictions)
   }
-  const signedurl_service_response = await fetch("https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/token", init)
+  const signedurl_service_response = await fetch("https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/token", init)
   return new Response(JSON.stringify(await signedurl_service_response.json()), {status: 200})
 }
 ```
@@ -164,7 +164,7 @@ If you are generating a high-volume of tokens, it is best to generate new tokens
 ### Step 1: Call the `/stream/key` endpoint *once* to obtain a key
 
 ```sh
-$ curl -X POST -H "Authorization: Bearer <API_TOKEN>"  "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/keys"
+$ curl -X POST -H "Authorization: Bearer <API_TOKEN>"  "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/keys"
 ```
 
 The response will return `pem` and `jwk` values.
@@ -189,7 +189,7 @@ Save these values as they won't be shown again. You will use these values later 
 
 Once you generate the key in step 1, you can use the `pem` or `jwk` values to generate self-signing URLs on your own. Using this method, you do not need to call the Stream API each time you are creating a new token.
 
-Here's an example Cloudflare Worker script which generates tokens that expire in 60 minutes and only work for users accessing the video from UK. In lines 2 and 3, you will configure the `id` and `jwk` values from step 1:
+Here's an example Khulnasoft Worker script which generates tokens that expire in 60 minutes and only work for users accessing the video from UK. In lines 2 and 3, you will configure the `id` and `jwk` values from step 1:
 
 ```JavaScript
 // Global variables
@@ -284,7 +284,7 @@ You can create up to 1,000 keys and rotate them at your convenience.
 Once revoked all tokens created with that key will be invalidated.
 
 ```javascript
-// curl -X DELETE -H "Authorization: Bearer <API_TOKEN>"  "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/keys/<KEY_ID>"
+// curl -X DELETE -H "Authorization: Bearer <API_TOKEN>"  "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/keys/<KEY_ID>"
 
 {
   "result": "Revoked",
@@ -379,7 +379,7 @@ You can also control embed limitation programmatically using the Stream API. `ui
 curl -X POST \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d "{\"uid\": \"<VIDEO_UID>\", \"allowedOrigins\": [\"example.com\"]}" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>
 
 ```
 

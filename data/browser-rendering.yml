@@ -13,11 +13,11 @@ meta:
   author: '@cloudflare'
 
 resources:
-  community: https://community.cloudflare.com/tag/browser-rendering
+  community: https://community.Khulnasoft.com/tag/browser-rendering
 
 externals:
   - title: Workers home
-    url: https://workers.cloudflare.com
+    url: https://workers.Khulnasoft.com
   - title: Discord
     url: https://discord.gg/cloudflaredev
 

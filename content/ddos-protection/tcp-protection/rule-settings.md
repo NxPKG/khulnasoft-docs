@@ -16,7 +16,7 @@ Advanced TCP Protection rules can have one of the following scopes:
 
 * **Global**: The rule will apply to all incoming packets.
 * **Region**: The rule will apply to incoming packets in a selected region.
-* **Data center**: The rule will apply to incoming packets in the selected Cloudflare data center.
+* **Data center**: The rule will apply to incoming packets in the selected Khulnasoft data center.
 
 The rule scope allows you to adjust the system's tolerance for out-of-state packets in locations where you may have more or less traffic than usual, or due to any other networking reasons.
 

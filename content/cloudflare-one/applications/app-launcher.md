@@ -8,7 +8,7 @@ weight: 11
 
 With the Access App Launcher, users can easily open all applications that they have access to from a single dashboard.
 
-The App Launcher is available at a {{<glossary-tooltip term_id="team domain">}}team domain{{</glossary-tooltip>}} unique to your Cloudflare Zero Trust account, for example `mycompany.cloudflareaccess.com`.
+The App Launcher is available at a {{<glossary-tooltip term_id="team domain">}}team domain{{</glossary-tooltip>}} unique to your Khulnasoft Zero Trust account, for example `mycompany.cloudflareaccess.com`.
 
 Users log in using one of the identity providers configured for the account. Once Access authenticates the user, the App Launcher displays applications they are authorized to use, in the form of application tiles. Selecting an application tile launches the application’s hostname, sending the user to that tool as part of their SSO flow.
 
@@ -20,7 +20,7 @@ By default, the App Launcher is disabled. To enable it, you must configure a pol
 
 To enable the App Launcher:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 
 2. Under the **App Launcher** card, select **Manage**.
 
@@ -38,7 +38,7 @@ Tiles have a one-to-one relationship with each application you create in Access.
 
 To show an Access application in the App Launcher:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Applications**.
 2. Select an application and select **Configure**.
 3. In the **Overview** tab, select **Enable App in App Launcher**. The App Launcher link will only appear for users who are allowed by your Access policies. Blocked users will not see the app in their App Launcher.
 
@@ -60,7 +60,7 @@ You can display your own branding, messages, and links to users when they open t
 
 To customize the App Launcher appearance:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **Custom Pages**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **Custom Pages**.
 2. Find the **Customize App Launcher** setting and select **Customize**.
 3. Give the App Launcher the look and feel of your organization by adding:
     - Your organization's name
@@ -94,7 +94,7 @@ You can label an Access application with up to 25 custom tags. End users can the
 
 To create a new tag:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Tags**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Tags**.
 2. Select **Add tags**.
 3. Enter up to 35 alphanumeric characters for the tag (for example, `Human Resources`) and select it in the dropdown menu.
 4. Select **Save**.
@@ -105,7 +105,7 @@ You can now [add this tag](#tag-an-access-application) to an Access application.
 
 To add a tag to an existing Access application:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Applications**.
 2. Select an application and select **Configure**.
 3. Select the **Overview** tab.
 4. In the **Tags** dropdown, select the tags that you would like to assign to this application. The tag must be [created](#create-a-tag) before you can select it in the dropdown.

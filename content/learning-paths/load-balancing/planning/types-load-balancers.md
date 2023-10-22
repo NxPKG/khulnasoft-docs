@@ -5,7 +5,7 @@ weight: 1
 layout: learning-unit
 ---
 
-With Cloudflare, you can choose between three types of load balancers:
+With Khulnasoft, you can choose between three types of load balancers:
 
 - [Layer 7 (HTTP/HTTPS)](#layer-7-load-balancing) (most common)
 - [DNS-only](#dns-only-load-balancing)

@@ -25,13 +25,13 @@ Assign a Railgun to a domain.
 
 ```txt
 POST /api/v2/railgun/user_get_all HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example form parameters
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 ```
 
@@ -124,13 +124,13 @@ Assign a Railgun to a domain.
 
 ```txt
 GET /api/v2/railgun/user_get_all?email=&tkn= HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example query string parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 ```
 
@@ -223,13 +223,13 @@ List all active Railgun connections for a domain.
 
 ```txt
 POST /api/v2/railgun/zone_conn_get_active HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example form parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 z=example.com
 ```
@@ -277,13 +277,13 @@ List all active Railgun connections for a domain.
 
 ```txt
 GET /api/v2/railgun/zone_conn_get_active?email=&tkn=&z= HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example query string parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 z=example.com
 ```

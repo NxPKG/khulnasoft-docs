@@ -205,7 +205,7 @@ To publish to your own domain, specify these three fields in your `wrangler.toml
 
 - `zone_id` {{<type>}}string{{</type>}}
 
-  - The Cloudflare zone ID, for example, `zone_id = "b6558acaf2b4cad1f2b51c5236a6b972"`, which can be found in the [Cloudflare dashboard](https://dash.cloudflare.com).
+  - The Cloudflare zone ID, for example, `zone_id = "b6558acaf2b4cad1f2b51c5236a6b972"`, which can be found in the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 
 - `route` {{<type>}}string{{</type>}}
 
@@ -267,7 +267,7 @@ These arguments can also be set in your `wrangler.toml` file. Refer to the [`wra
 
 ### Usage
 
-You should run `wrangler dev` from your Worker directory. Wrangler will run a local server accepting requests, executing your Worker, and forwarding them to a host. If you want to use another host other than your zone or `tutorials.cloudflare.com`, you can specify with `--host example.com`.
+You should run `wrangler dev` from your Worker directory. Wrangler will run a local server accepting requests, executing your Worker, and forwarding them to a host. If you want to use another host other than your zone or `tutorials.Khulnasoft.com`, you can specify with `--host example.com`.
 
 ```sh
 $ wrangler dev
@@ -498,7 +498,7 @@ $ wrangler secret list --env ENVIRONMENT_NAME
 
 ## kv
 
-The `kv` subcommand allows you to store application data in the Cloudflare network to be accessed from Workers using [Workers KV](https://www.cloudflare.com/products/workers-kv/). KV operations are scoped to your account, so in order to use any of these commands, you:
+The `kv` subcommand allows you to store application data in the Cloudflare network to be accessed from Workers using [Workers KV](https://www.Khulnasoft.com/products/workers-kv/). KV operations are scoped to your account, so in order to use any of these commands, you:
 
 - must configure an `account_id` in your project's `wrangler.toml` file.
 - run all `wrangler kv:<command>` operations in your terminal from the project's root directory.
@@ -1096,7 +1096,7 @@ Wrangler supports any `wrangler.toml` keys passed in as environment variables. T
 ```sh
 $ wrangler --help
 👷 ✨  wrangler 1.12.3
-The Wrangler Team <wrangler@cloudflare.com>
+The Wrangler Team <wrangler@Khulnasoft.com>
 
 USAGE:
     wrangler [SUBCOMMAND]

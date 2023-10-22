@@ -15,12 +15,12 @@ meta:
   author: '@cloudflare'
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/workers
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/workers
   discord: https://discord.gg/2TRr6nSxdd
 
 externals:
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

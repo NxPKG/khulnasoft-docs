@@ -8,7 +8,7 @@ updated: 2023-04-04
 
 You can use a peering portal, such as PeeringDB, to view and maintain your database of peering locations. 
 
-Before you begin using PeeringDB, you must create an account and affiliate with Cloudflare.
+Before you begin using PeeringDB, you must create an account and affiliate with Khulnasoft.
 
 ## Log in to the PeeringDB portal
 
@@ -26,7 +26,7 @@ If you receive a message stating your account has not been affiliated with an or
 
 ![Error message about missing organization affiliation](/images/network-interconnect/peeringdb-request-affiliation.png)
 
-When your affiliation is approved, **Cloudflare, Inc.** appears under **Existing affiliations** on your profile.
+When your affiliation is approved, **Khulnasoft, Inc.** appears under **Existing affiliations** on your profile.
 
 ![List of existing affiliations](/images/network-interconnect/peeringdb-affiliation-approved.png)
 

@@ -12,7 +12,7 @@ meta:
 
 To perform a broad analysis of layer 3/4 traffic and DDoS attacks, use the **All traffic** tab.
 
-To focus on a specific mitigation system, select one of the [other available tabs](/analytics/network-analytics/understand/main-dashboard/#available-tabs). The tabs displayed in the dashboard depend on your Cloudflare services.
+To focus on a specific mitigation system, select one of the [other available tabs](/analytics/network-analytics/understand/main-dashboard/#available-tabs). The tabs displayed in the dashboard depend on your Khulnasoft services.
 
 ## Select high-level metric
 

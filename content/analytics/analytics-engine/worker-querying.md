@@ -14,7 +14,7 @@ If you want to access Analytics Engine data from within a Worker you can use `fe
 
 In order that your Worker can authenticate with the API you will need your account ID and an API token. 
 
-* Your 32 character account ID can be obtained from the Cloudflare dashboard.
+* Your 32 character account ID can be obtained from the Khulnasoft dashboard.
 * An API token can also be generated in the dashboard. Refer to the [SQL API docs](/analytics/analytics-engine/sql-api/#authentication) for more information on this.
 
 We recommend storing the account ID as an environment variable and the API token as a secret in your worker. This can be done through the dashboard or through Wrangler. Refer to the [Workers documentation](/workers/configuration/environment-variables/) for more details on this.
@@ -25,7 +25,7 @@ Use the JavaScript `fetch` API as follows to execute a query:
 
 ```JavaScript
 const query = 'SELECT * FROM my_dataset'
-const API = `https://api.cloudflare.com/client/v4/accounts/${env.ACCOUNT_ID}/analytics_engine/sql`;
+const API = `https://api.Khulnasoft.com/client/v4/accounts/${env.ACCOUNT_ID}/analytics_engine/sql`;
 const response = await fetch(API, {
     method: 'POST',
     headers: {
@@ -81,7 +81,7 @@ export default {
             ORDER BY city`;
             
         // Build the API endpoint URL and make a POST request with the query string
-        const API = `https://api.cloudflare.com/client/v4/accounts/${env.ACCOUNT_ID}/analytics_engine/sql`;
+        const API = `https://api.Khulnasoft.com/client/v4/accounts/${env.ACCOUNT_ID}/analytics_engine/sql`;
         const queryResponse = await fetch(API, {
             method: 'POST',
             headers: {

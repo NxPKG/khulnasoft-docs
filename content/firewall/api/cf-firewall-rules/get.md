@@ -16,7 +16,7 @@ This example returns all the firewall rules in the zone with ID `{zone_id}`.
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/firewall/rules" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```
@@ -101,7 +101,7 @@ This example returns the firewall rule with ID `{rule_id}`.
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules/{rule_id}" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/firewall/rules/{rule_id}" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```

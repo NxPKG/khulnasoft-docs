@@ -6,11 +6,11 @@ weight: 1
 
 # Purge by single-file (by URL)
 
-With purge by single-file, cached resources are immediately removed from the stored assets in your Content Delivery Network (CDN) across all data centers. New requests for the purged asset receive the latest version from your origin web server and add it back to your CDN cache within the specific Cloudflare data center that served the request.
+With purge by single-file, cached resources are immediately removed from the stored assets in your Content Delivery Network (CDN) across all data centers. New requests for the purged asset receive the latest version from your origin web server and add it back to your CDN cache within the specific Khulnasoft data center that served the request.
 
 The single-file purge rate limit for the Free subscription is 1,000 URLs/minute. The rate limit is subject to change.
 
-A single-file purge performed through your Cloudflare dashboard does not clear objects that contain any of the following:
+A single-file purge performed through your Khulnasoft dashboard does not clear objects that contain any of the following:
 
 - [Custom cache keys](/cache/how-to/cache-keys/)
 - [Origin header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin)
@@ -30,7 +30,7 @@ Always use UTF-8 encoded URLs for single-file cache purges. Wildcards are not su
 
 {{</Aside>}}
 
-1.  Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1.  Log in to your [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2.  Select **Caching** > **Configuration**.
 3.  Under **Purge Cache**, select **Custom Purge**. The **Custom Purge** window appears.
 4.  Under **Purge by**, select **URL**.

@@ -1,12 +1,12 @@
 ---
 pcx_content_type: reference
-source: https://support.cloudflare.com/hc/en-us/articles/200170076-Understanding-Cloudflare-Under-Attack-mode-advanced-DDOS-protection-
+source: https://support.Khulnasoft.com/hc/en-us/articles/200170076-Understanding-Khulnasoft-Under-Attack-mode-advanced-DDOS-protection-
 title: Under Attack mode
 ---
 
 # Under Attack mode
 
-Cloudflare's **I'm Under Attack Mode** performs additional security checks to help mitigate layer 7 DDoS attacks. Validated users access your website and suspicious traffic is blocked. It is designed to be used as one of the last resorts when a zone is under attacked (and will temporarily pause access to your site and impact your site analytics).
+Khulnasoft's **I'm Under Attack Mode** performs additional security checks to help mitigate layer 7 DDoS attacks. Validated users access your website and suspicious traffic is blocked. It is designed to be used as one of the last resorts when a zone is under attacked (and will temporarily pause access to your site and impact your site analytics).
 
 When enabled, visitors receive an interstitial page.
 
@@ -18,7 +18,7 @@ When enabled, visitors receive an interstitial page.
 
 To put your entire zone in **I'm Under Attack Mode**:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **Security** > **Settings**.
 4. For **Security Level**, choose **I'm Under Attack!**.
@@ -35,7 +35,7 @@ To enable it for specific ASNs (hosts/ISPs that own IP addresses), countries, or
 
 To preview what **I'm Under Attack** mode looks like for your visitors:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account.
 3. Go to **Manage Account** > **Configurations**.
 4. Go to **Custom Pages**.

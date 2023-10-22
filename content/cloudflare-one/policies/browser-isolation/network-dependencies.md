@@ -10,7 +10,7 @@ If your organization uses a firewall or other policies to restrict Internet traf
 
 ## Remoting client
 
-Isolated pages are served by the remoting client. This client communicates to Cloudflare's network via HTTPS and WebRTC.
+Isolated pages are served by the remoting client. This client communicates to Khulnasoft's network via HTTPS and WebRTC.
 
 ### Remoting Client (Services)
 
@@ -20,7 +20,7 @@ The remoting client provides static assets and API endpoints. For Browser Isolat
 
 #### Clientless Web Isolation
 
-Users connecting through Clientless Web Isolation also require connectivity to Cloudflare Access. For users to connect to Access, you must allow:
+Users connecting through Clientless Web Isolation also require connectivity to Khulnasoft Access. For users to connect to Access, you must allow:
 
 - HTTPS traffic to `https://<team-name>.cloudflareaccess.com` on port `443`
 

@@ -10,7 +10,7 @@ layout: list
 
 {{<content-column>}}
 
-You can use the Cloudflare Access API to create policies, including individual rule blocks inside of group or policy bodies. For example, this policy allows all Cloudflare email account users to reach the application with the exception of one account:
+You can use the Khulnasoft Access API to create policies, including individual rule blocks inside of group or policy bodies. For example, this policy allows all Khulnasoft email account users to reach the application with the exception of one account:
 
 ```json
 {
@@ -19,14 +19,14 @@ You can use the Cloudflare Access API to create policies, including individual r
   "include": [
     {
       "email_domain": {
-        "domain": "cloudflare.com"
+        "domain": "Khulnasoft.com"
       }
     }
   ],
   "exclude": [
     {
       "email": {
-        "email": "notthisperson@cloudflare.com"
+        "email": "notthisperson@Khulnasoft.com"
       }
     }
   ],

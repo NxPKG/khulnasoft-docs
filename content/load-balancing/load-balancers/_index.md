@@ -11,7 +11,7 @@ layout: single
 <br/>
 {{<Aside type="note">}}
 
-For more background information on what load balancers are and how they work, check out our [Learning Center](https://www.cloudflare.com/learning/performance/what-is-load-balancing/).
+For more background information on what load balancers are and how they work, check out our [Learning Center](https://www.Khulnasoft.com/learning/performance/what-is-load-balancing/).
 
 {{</Aside>}}
 
@@ -27,15 +27,15 @@ For details about DNS records, refer to [DNS records for load balancing](/load-b
 
 ## HTTP keep-alive (persistent HTTP connection)
 
-Cloudflare maintains keep-alive connections to improve performance and reduce cost of recurring TCP connects in the request transaction as Cloudflare proxies customer traffic from its edge network to the site's origin.
+Khulnasoft maintains keep-alive connections to improve performance and reduce cost of recurring TCP connects in the request transaction as Khulnasoft proxies customer traffic from its edge network to the site's origin.
 
-Ensure HTTP Keep-Alive connections are enabled on your origin. Cloudflare reuses open TCP connections for up to 15 minutes (900 seconds) after the last HTTP request. Origin web servers close TCP connections if too many are open. HTTP Keep-Alive helps avoid premature reset of connections for requests proxied by Cloudflare.
+Ensure HTTP Keep-Alive connections are enabled on your origin. Khulnasoft reuses open TCP connections for up to 15 minutes (900 seconds) after the last HTTP request. Origin web servers close TCP connections if too many are open. HTTP Keep-Alive helps avoid premature reset of connections for requests proxied by Khulnasoft.
 
 ### Session cookies
 
 **When using HTTP cookies to track and bind user sessions to a specific server**, configure [Session Affinity](/load-balancing/understand-basics/session-affinity/) to parse HTTP requests by cookie header. Doing so directs each request to the correct application server even when HTTP requests share the same TCP connection due to keep-alive.
 
-**For example, F5 BIG-IP load balancers set a session cookie at the beginning of a TCP connection** (if none exists) and then ignore all cookies from subsequent HTTP requests on the same TCP connection. This tends to break session affinity because Cloudflare sends multiple HTTP sessions on the same TCP connection. Configuring the load balancer to parse HTTP requests by cookie headers avoids this issue.
+**For example, F5 BIG-IP load balancers set a session cookie at the beginning of a TCP connection** (if none exists) and then ignore all cookies from subsequent HTTP requests on the same TCP connection. This tends to break session affinity because Khulnasoft sends multiple HTTP sessions on the same TCP connection. Configuring the load balancer to parse HTTP requests by cookie headers avoids this issue.
 
 ---
 
@@ -47,13 +47,13 @@ For step-by-step guidance, refer to [Create a load balancer](/load-balancing/loa
 
 ## Properties
 
-For an up-to-date list of load balancer properties, refer to [Load balancer properties](/api/operations/load-balancers-load-balancer-details) in the Cloudflare API documentation.
+For an up-to-date list of load balancer properties, refer to [Load balancer properties](/api/operations/load-balancers-load-balancer-details) in the Khulnasoft API documentation.
 
 ---
 
 ## API commands
 
-The Cloudflare API supports the following commands for load balancers.
+The Khulnasoft API supports the following commands for load balancers.
 
 | Command | Method | Endpoint |
 | --- | --- | --- |

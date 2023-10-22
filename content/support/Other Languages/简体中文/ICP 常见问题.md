@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98
 title: ICP 常见问题
 ---
 
@@ -13,11 +13,11 @@ title: ICP 常见问题
 
 ___
 
--   [**什么是 ICP 号？为什么需要一个 ICP 才能在中国境内运营网站？**](https://support.cloudflare.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#What-is-an-icp)
--   [**我需要哪种类型的 ICP 号？**](https://support.cloudflare.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#which-type-of-icp)
--   [**如何申请 ICP？**](https://support.cloudflare.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#how-do-i-apply)
--   [**必需的文档**](https://support.cloudflare.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#required-documents)
--   [**拿到 ICP 号后该怎么办？**](https://support.cloudflare.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#what-do-i-do)
+-   [**什么是 ICP 号？为什么需要一个 ICP 才能在中国境内运营网站？**](https://support.Khulnasoft.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#What-is-an-icp)
+-   [**我需要哪种类型的 ICP 号？**](https://support.Khulnasoft.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#which-type-of-icp)
+-   [**如何申请 ICP？**](https://support.Khulnasoft.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#how-do-i-apply)
+-   [**必需的文档**](https://support.Khulnasoft.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#required-documents)
+-   [**拿到 ICP 号后该怎么办？**](https://support.Khulnasoft.com/hc/zh-cn/articles/209714777-ICP-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#what-do-i-do)
 
 ___
 
@@ -71,7 +71,7 @@ ICP（互联网内容提供商）号是国家发行的注册号码，允许您�
     
     ## **怎样申请备案？**
     
-    建议您通过主机服务供应商或者网络服务供应商来申请备案。作为 Cloudflare 的合作伙伴，百度提供了网站备案服务（请访问[http://su.baidu.com/about/#](http://su.baidu.com/about/#/)。您需要准备好必要的文件和材料（参见下面的“所需文件材料”），这样方便您的服务供应商为您进行备案服务。
+    建议您通过主机服务供应商或者网络服务供应商来申请备案。作为 Khulnasoft 的合作伙伴，百度提供了网站备案服务（请访问[http://su.baidu.com/about/#](http://su.baidu.com/about/#/)。您需要准备好必要的文件和材料（参见下面的“所需文件材料”），这样方便您的服务供应商为您进行备案服务。
     
     所有材料提交之后，通常会在4到8周内获得备案号。时间长短取决于网站类型以及申请备案所在省份。工信部不会为申请备案收取任何费用，但您可能需要支付服务费用给为您代办备案服务的供应商。
     

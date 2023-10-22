@@ -14,7 +14,7 @@ This example comprises two rules:
 - The first rule targets requests to `dev.www.example.com` that have a specific cookie key, `devaccess`. As long as the value of the cookie key contains one of three authorized users — `james`, `matt`, or `michael` — the expression matches and the request is allowed, skipping all other custom rules.
 - The second rule blocks all access to `dev.www.example.com`.
 
-Since custom rules are evaluated in order, Cloudflare grants access to requests that satisfy rule 1 and blocks all other requests to `dev.www.example.com`:
+Since custom rules are evaluated in order, Khulnasoft grants access to requests that satisfy rule 1 and blocks all other requests to `dev.www.example.com`:
 
 <table>
   <thead>

@@ -1,28 +1,28 @@
 ---
 pcx_content_type: troubleshooting
 tags: []
-source: https://support.cloudflare.com/hc/en-us/articles/360029779472
-title: Troubleshooting Cloudflare 1XXX errors
+source: https://support.Khulnasoft.com/hc/en-us/articles/360029779472
+title: Troubleshooting Khulnasoft 1XXX errors
 ---
 
-# Troubleshooting Cloudflare 1XXX errors
+# Troubleshooting Khulnasoft 1XXX errors
 ___
 
 ## Overview
 
-The errors described in this document might occur when visiting a website proxied by Cloudflare. For Cloudflare API or dashboard errors, review our [Cloudflare API documentation](https://api.cloudflare.com/). HTTP 409, 530, 403, 429 errors are the HTTP error codes returned in the HTTP status header for a response. 1XXX errors appear in the HTML body of the response.
+The errors described in this document might occur when visiting a website proxied by Khulnasoft. For Khulnasoft API or dashboard errors, review our [Khulnasoft API documentation](https://api.Khulnasoft.com/). HTTP 409, 530, 403, 429 errors are the HTTP error codes returned in the HTTP status header for a response. 1XXX errors appear in the HTML body of the response.
 
 {{<Aside type="note">}}
-Cloudflare **[Custom Error
-Pages](https://support.cloudflare.com/hc/articles/200172706)** allows
+Khulnasoft **[Custom Error
+Pages](https://support.Khulnasoft.com/hc/articles/200172706)** allows
 customers to change the appearance of the default error pages discussed
 in this article.
 {{</Aside>}}
 
-If the resolutions within each error description below do not resolve the error, [contact Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476).
+If the resolutions within each error description below do not resolve the error, [contact Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476).
 
 {{<Aside type="note">}}
-Only the site owner may contact Cloudflare for technical support. Lookup
+Only the site owner may contact Khulnasoft for technical support. Lookup
 contact information for a domain via the [Whois
 database](https://whois.icann.org/en/lookup).
 {{</Aside>}}
@@ -31,7 +31,7 @@ database](https://whois.icann.org/en/lookup).
 Dedicated email support is available for all Pro, Business, and
 Enterprise Plan users. Business and Enterprise plan users also have
 access to chat support. If you require additional support, explore [our
-plans](https://www.cloudflare.com/plans/).
+plans](https://www.Khulnasoft.com/plans/).
 {{</Aside>}}
 
 ___
@@ -40,10 +40,10 @@ ___
 
 ### Common causes
 
-Cloudflare halted the request for one of the following reasons:
+Khulnasoft halted the request for one of the following reasons:
 
--   An A record within your Cloudflare DNS app points to a [Cloudflare IP address](https://www.cloudflare.com/ips/), or a Load Balancer Origin points to a proxied record.
--   Your Cloudflare DNS A or CNAME record references another reverse proxy (such as an nginx web server that uses the proxy\_pass function) that then proxies the request to Cloudflare a second time.
+-   An A record within your Khulnasoft DNS app points to a [Khulnasoft IP address](https://www.Khulnasoft.com/ips/), or a Load Balancer Origin points to a proxied record.
+-   Your Khulnasoft DNS A or CNAME record references another reverse proxy (such as an nginx web server that uses the proxy\_pass function) that then proxies the request to Khulnasoft a second time.
 -   The request X-Forwarded-For header is longer than 100 characters.
 -   The request includes two X-Forwarded-For headers.
 -   The request includes a CF-Connecting-IP header.
@@ -51,8 +51,8 @@ Cloudflare halted the request for one of the following reasons:
 
 ### Resolution
 
--   If an A record within your Cloudflare DNS app points to a [Cloudflare IP address](https://www.cloudflare.com/ips/), update the IP address to your origin web server IP address.
--   There is a reverse-proxy at your origin that sends the request back through the Cloudflare proxy. Instead of using a reverse-proxy, contact your hosting provider or site administrator to configure an HTTP redirect at your origin.
+-   If an A record within your Khulnasoft DNS app points to a [Khulnasoft IP address](https://www.Khulnasoft.com/ips/), update the IP address to your origin web server IP address.
+-   There is a reverse-proxy at your origin that sends the request back through the Khulnasoft proxy. Instead of using a reverse-proxy, contact your hosting provider or site administrator to configure an HTTP redirect at your origin.
 
 ___
 
@@ -60,19 +60,19 @@ ___
 
 ### Common causes
 
--   A web request was sent to a Cloudflare IP address for a non-existent Cloudflare domain.
--   An external domain that is not on using Cloudflare has a CNAME record to a domain active on Cloudflare
+-   A web request was sent to a Khulnasoft IP address for a non-existent Khulnasoft domain.
+-   An external domain that is not on using Khulnasoft has a CNAME record to a domain active on Khulnasoft
 -   The target of the DNS CNAME record does not resolve.
--   A CNAME record in your Cloudflare DNS app requires resolution via a DNS provider that is currently offline.
--   [Always Online](/cache/how-to/always-online/) is enabled for a [Custom Hostname (Cloudflare for SaaS](/cloudflare-for-platforms/cloudflare-for-saas/)) domain.
+-   A CNAME record in your Khulnasoft DNS app requires resolution via a DNS provider that is currently offline.
+-   [Always Online](/cache/how-to/always-online/) is enabled for a [Custom Hostname (Khulnasoft for SaaS](/cloudflare-for-platforms/cloudflare-for-saas/)) domain.
 
 ### Resolution
 
-A non-Cloudflare domain cannot CNAME to a Cloudflare domain unless the non-Cloudflare domain is added to a Cloudflare account.
+A non-Khulnasoft domain cannot CNAME to a Khulnasoft domain unless the non-Khulnasoft domain is added to a Khulnasoft account.
 
-Attempting to directly access DNS records used for [Cloudflare CNAME setups](/dns/zone-setups/partial-setup) also causes error 1001 (For example: _www.example.com.cdn.cloudflare.net_).
+Attempting to directly access DNS records used for [Khulnasoft CNAME setups](/dns/zone-setups/partial-setup) also causes error 1001 (For example: _www.example.com.cdn.cloudflare.net_).
 
-Disable [Always Online](/cache/how-to/always-online/#enable-always-online) if using [Custom Hostname (Cloudflare for SaaS](/cloudflare-for-platforms/cloudflare-for-saas/)) domain.
+Disable [Always Online](/cache/how-to/always-online/#enable-always-online) if using [Custom Hostname (Khulnasoft for SaaS](/cloudflare-for-platforms/cloudflare-for-saas/)) domain.
 
 ___
 
@@ -80,22 +80,22 @@ ___
 
 ### Common causes
 
--   A DNS record in your Cloudflare DNS app points to one of [Cloudflare's IP addresses](https://www.cloudflare.com/ips/).
--   An incorrect target is specified for a CNAME record in your Cloudflare DNS app.
--   Your domain is not on Cloudflare but has a CNAME that refers to a Cloudflare domain.
+-   A DNS record in your Khulnasoft DNS app points to one of [Khulnasoft's IP addresses](https://www.Khulnasoft.com/ips/).
+-   An incorrect target is specified for a CNAME record in your Khulnasoft DNS app.
+-   Your domain is not on Khulnasoft but has a CNAME that refers to a Khulnasoft domain.
 
 ### Resolution
 
-Update your Cloudflare _A_ or _CNAME record_ to point to your origin IP address instead of a Cloudflare IP address:
+Update your Khulnasoft _A_ or _CNAME record_ to point to your origin IP address instead of a Khulnasoft IP address:
 
 1.  Contact your hosting provider to confirm your origin IP address or CNAME record target.
-2.  Log in to your Cloudflare account.
+2.  Log in to your Khulnasoft account.
 3.  Select the domain that generates error 1002.
 4.  Select the **DNS** app.
 5.  Click **Value** for the _A_ record to update.
 6.  Update the _A_ record.
 
-To ensure your origin web server doesn’t proxy its own requests through Cloudflare, configure your origin webserver to resolve your Cloudflare domain to:
+To ensure your origin web server doesn’t proxy its own requests through Khulnasoft, configure your origin webserver to resolve your Khulnasoft domain to:
 
 -   The internal NAT’d IP address, or
 -   The public IP address of the origin web server.
@@ -106,15 +106,15 @@ ___
 
 ### Common cause
 
-The Cloudflare domain resolves to a local or disallowed IP address or an IP address not associated with the domain.
+The Khulnasoft domain resolves to a local or disallowed IP address or an IP address not associated with the domain.
 
 ### Resolution
 
 If you own the website:
 
 1.  Confirm your origin web server IP addresses with your hosting provider,
-2.  Log in to your Cloudflare account, and
-3.  Update the A records in the Cloudflare DNS app to the IP address confirmed by your hosting provider.
+2.  Log in to your Khulnasoft account, and
+3.  Update the A records in the Khulnasoft DNS app to the IP address confirmed by your hosting provider.
 
 ___
 
@@ -122,11 +122,11 @@ ___
 
 ### Common cause
 
-A client or browser directly accesses a [Cloudflare IP address](https://www.cloudflare.com/ips).
+A client or browser directly accesses a [Khulnasoft IP address](https://www.Khulnasoft.com/ips).
 
 ### Resolution
 
-Browse to the website domain name in your URL instead of the Cloudflare IP address.
+Browse to the website domain name in your URL instead of the Khulnasoft IP address.
 
 ___
 
@@ -134,12 +134,12 @@ ___
 
 ### Common causes
 
--   Cloudflare staff disabled proxying for the domain due to abuse or terms of service violations.
--   DNS changes have not yet propagated or the site owner’s DNS _A records_ point to [Cloudflare IP addresses](https://www.cloudflare.com/ips).
+-   Khulnasoft staff disabled proxying for the domain due to abuse or terms of service violations.
+-   DNS changes have not yet propagated or the site owner’s DNS _A records_ point to [Khulnasoft IP addresses](https://www.Khulnasoft.com/ips).
 
 ### Resolution
 
-If the issue persists beyond 5 minutes, [contact Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476).
+If the issue persists beyond 5 minutes, [contact Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476).
 
 ___
 
@@ -163,7 +163,7 @@ Convert the UTC timestamp of the 1005 error to your local timezone when
 searching in the **Security Events log**.
 {{</Aside>}}
 
-3\. Assess the cause of the block and ensure the ASN is allowed under the [IP Access Rules](https://support.cloudflare.com/hc/en-us/articles/217074967-Configuring-IP-Access-Rules) security feature.
+3\. Assess the cause of the block and ensure the ASN is allowed under the [IP Access Rules](https://support.Khulnasoft.com/hc/en-us/articles/217074967-Configuring-IP-Access-Rules) security feature.
 
 ___
 
@@ -171,15 +171,15 @@ ___
 
 ### Common causes
 
-A Cloudflare customer blocked traffic from your client or browser.
+A Khulnasoft customer blocked traffic from your client or browser.
 
 {{<Aside type="note">}}
-Error 1006 also occurs in the Cloudflare **Workers** app under the **Preview** tab when a customer uses **[Zone Lockdown](/waf/tools/zone-lockdown/)** or any other Cloudflare security feature to block the Google Cloud Platform IPs that the **Preview** tab relies upon.
+Error 1006 also occurs in the Khulnasoft **Workers** app under the **Preview** tab when a customer uses **[Zone Lockdown](/waf/tools/zone-lockdown/)** or any other Khulnasoft security feature to block the Google Cloud Platform IPs that the **Preview** tab relies upon.
 {{</Aside>}}
 
 ### Resolution
 
-Request the website owner to investigate their Cloudflare security settings or allow your client IP address. Since the website owner blocked your request, Cloudflare support cannot override a customer’s security settings.
+Request the website owner to investigate their Khulnasoft security settings or allow your client IP address. Since the website owner blocked your request, Khulnasoft support cannot override a customer’s security settings.
 
 ___
 
@@ -191,7 +191,7 @@ The owner of the website (e.g. example.com) has banned the country or region you
 
 ### Resolution
 
-Ensure your IP address is allowed under the [IP Access Rules](https://support.cloudflare.com/hc/en-us/articles/217074967) security feature.
+Ensure your IP address is allowed under the [IP Access Rules](https://support.Khulnasoft.com/hc/en-us/articles/217074967) security feature.
 
 ___
 
@@ -206,7 +206,7 @@ A website owner blocked your request based on your client's web browser.
 Notify the website owner of the blocking. If you cannot determine how to contact the website owner, lookup contact information for the domain via the [Whois database](https://whois.icann.org/en/lookup). Site owners disable **Browser** **Integrity Check** via the **Settings** tab of the **Security** app.
 
 {{<Aside type="note">}}
-Since the website owner performed the blocking, Cloudflare support
+Since the website owner performed the blocking, Khulnasoft support
 cannot override a customer's security settings.
 {{</Aside>}}
 
@@ -216,14 +216,14 @@ ___
 
 ### Common cause
 
-A request is made for a resource that uses [Cloudflare hotlink protection](https://support.cloudflare.com/hc/articles/200170026).
+A request is made for a resource that uses [Khulnasoft hotlink protection](https://support.Khulnasoft.com/hc/articles/200170026).
 
 ### Resolution
 
-Notify the website owner of the blocking. If you cannot determine how to contact the website owner, lookup contact information for the domain via the [Whois database](https://whois.icann.org/en/lookup).  **Hotlink Protection** is managed via the Cloudflare **Scrape Shield** app.
+Notify the website owner of the blocking. If you cannot determine how to contact the website owner, lookup contact information for the domain via the [Whois database](https://whois.icann.org/en/lookup).  **Hotlink Protection** is managed via the Khulnasoft **Scrape Shield** app.
 
 {{<Aside type="note">}}
-Since the website owner performed the blocking, Cloudflare support
+Since the website owner performed the blocking, Khulnasoft support
 cannot override a customer's security settings.
 {{</Aside>}}
 
@@ -237,10 +237,10 @@ A website owner forbids access based on malicious activity detected from the vi
 
 ### Resolution
 
-Update your antivirus software and run a full system scan. Cloudflare can not override the security settings the site owner has set for the domain. To request website access, contact the site owner to allow your IP address. If you cannot determine how to contact the website owner, lookup contact information for the domain via the [Whois database](https://whois.icann.org/en/lookup).
+Update your antivirus software and run a full system scan. Khulnasoft can not override the security settings the site owner has set for the domain. To request website access, contact the site owner to allow your IP address. If you cannot determine how to contact the website owner, lookup contact information for the domain via the [Whois database](https://whois.icann.org/en/lookup).
 
 {{<Aside type="note">}}
-Since the website owner performed the blocking, Cloudflare support
+Since the website owner performed the blocking, Khulnasoft support
 cannot override a customer's security settings.
 {{</Aside>}}
 
@@ -261,9 +261,9 @@ Error 1013 is commonly caused by the following:
 
 Test for an SNI mismatch via an online tool such as: [SSL Shopper](https://www.sslshopper.com/ssl-checker.html).
 
-Provide Cloudflare Support the following information:
+Provide Khulnasoft Support the following information:
 
-1.  A [HAR file](https://support.cloudflare.com/hc/articles/203118044) captured while duplicating the error.
+1.  A [HAR file](https://support.Khulnasoft.com/hc/articles/203118044) captured while duplicating the error.
 
 ___
 
@@ -271,11 +271,11 @@ ___
 
 ### Common cause
 
-By default, Cloudflare prohibits a DNS _CNAME record_ between domains in different Cloudflare accounts. _CNAME records_ are permitted within a domain (_www.example.com_ CNAME to _api.example.com_) and across zones within the same user account (_www.example.com_ CNAME to _www.example.net_) or using our [Cloudflare for SaaS](https://www.cloudflare.com/saas/) solution.
+By default, Khulnasoft prohibits a DNS _CNAME record_ between domains in different Khulnasoft accounts. _CNAME records_ are permitted within a domain (_www.example.com_ CNAME to _api.example.com_) and across zones within the same user account (_www.example.com_ CNAME to _www.example.net_) or using our [Khulnasoft for SaaS](https://www.Khulnasoft.com/saas/) solution.
 
 {{<Aside type="warning">}}
-[Cloudflare Apps](https://www.cloudflare.com/apps/) are not currently
-supported by [Cloudflare for
+[Khulnasoft Apps](https://www.Khulnasoft.com/apps/) are not currently
+supported by [Khulnasoft for
 SaaS](/cloudflare-for-platforms/cloudflare-for-saas/), therefore
 any app using a domain configured on our SaaS solution may produce 1014
 errors.
@@ -283,7 +283,7 @@ errors.
 
 ### Resolution
 
-To allow CNAME record resolution to a domain in a different Cloudflare account, the domain owner of the CNAME target must use [Cloudflare for SaaS](/cloudflare-for-platforms/cloudflare-for-saas/).
+To allow CNAME record resolution to a domain in a different Khulnasoft account, the domain owner of the CNAME target must use [Khulnasoft for SaaS](/cloudflare-for-platforms/cloudflare-for-saas/).
 
 ___
 
@@ -294,22 +294,22 @@ ___
 The site owner implemented [Rate Limiting](/waf/reference/legacy/old-rate-limiting/) that affects your visitor traffic.
 
 {{<Aside type="note">}}
-*Unable to purge* is another 1015 error code relating to [Cloudflare
+*Unable to purge* is another 1015 error code relating to [Khulnasoft
 cache
 purge](/cache/how-to/purge-cache).
-Retry the cache purge and contact [Cloudflare
-support](https://support.cloudflare.com/hc/articles/200172476) if errors
+Retry the cache purge and contact [Khulnasoft
+support](https://support.Khulnasoft.com/hc/articles/200172476) if errors
 persist.
 {{</Aside>}}
 
 ### Resolution
 
 -   If you are a site visitor, contact the site owner to request exclusion of your IP from rate limiting.
--   If you are the site owner, review [Cloudflare Rate Limiting thresholds](/waf/reference/legacy/old-rate-limiting/) and adjust your Rate Limiting configuration.
+-   If you are the site owner, review [Khulnasoft Rate Limiting thresholds](/waf/reference/legacy/old-rate-limiting/) and adjust your Rate Limiting configuration.
 -   If your Rate Limiting blocks requests in a short time period (i.e. 1 second) try increasing the time period to 10 seconds.
 
 {{<Aside type="tip">}}
-If you expect a new Cloudflare Worker to exceed rate limits, refer to
+If you expect a new Khulnasoft Worker to exceed rate limits, refer to
 the [Workers
 documentation](/workers/platform/limits)
 for guidance.
@@ -321,21 +321,21 @@ ___
 
 ### Common cause
 
-Cloudflare cannot resolve the origin web server’s IP address.
+Khulnasoft cannot resolve the origin web server’s IP address.
 
 Common causes for Error 1016 are:
 
 -   A missing DNS _A record_ that mentions origin IP address.
--   A _CNAME record_ in the Cloudflare DNS points to an unresolvable external domain.
--   The origin hostnames (CNAMEs) in your Cloudflare [Load Balancer](/load-balancing/) default, region, and fallback pools are unresolvable. Use a fallback pool configured with an origin IP as a backup in case all other pools are unavailable.
--   When creating a Spectrum app with a CNAME origin, you need first to create a CNAME on the Cloudflare DNS side that points to the origin. Please see [Spectrum CNAME origins](/spectrum/get-started/#create-a-spectrum-application-using-a-cname-record) for more details
--   There is no DNS record for the hostname in the Cloudflare for SaaS target zone
+-   A _CNAME record_ in the Khulnasoft DNS points to an unresolvable external domain.
+-   The origin hostnames (CNAMEs) in your Khulnasoft [Load Balancer](/load-balancing/) default, region, and fallback pools are unresolvable. Use a fallback pool configured with an origin IP as a backup in case all other pools are unavailable.
+-   When creating a Spectrum app with a CNAME origin, you need first to create a CNAME on the Khulnasoft DNS side that points to the origin. Please see [Spectrum CNAME origins](/spectrum/get-started/#create-a-spectrum-application-using-a-cname-record) for more details
+-   There is no DNS record for the hostname in the Khulnasoft for SaaS target zone
 
 ### Resolution
 
 To resolve error 1016:
 
-1.  Verify your Cloudflare DNS settings include an _A record_ that points to a valid IP address that resolves via a [DNS lookup tool](https://dnschecker.org/).
+1.  Verify your Khulnasoft DNS settings include an _A record_ that points to a valid IP address that resolves via a [DNS lookup tool](https://dnschecker.org/).
 2.  For a CNAME record pointing to a different domain, ensure that the target domain resolves via a [DNS lookup tool](https://dnschecker.org/).
 
 ___
@@ -344,8 +344,8 @@ ___
 
 ### Common causes
 
--   The Cloudflare domain was recently activated and there is a delay propagating the domain’s settings to the Cloudflare edge network.
--   The Cloudflare domain was created via a Cloudflare partner (e.g., a hosting provider) and the provider's DNS failed.
+-   The Khulnasoft domain was recently activated and there is a delay propagating the domain’s settings to the Khulnasoft edge network.
+-   The Khulnasoft domain was created via a Khulnasoft partner (e.g., a hosting provider) and the provider's DNS failed.
 
 {{<Aside type="note">}}
 Error 1018 is returned via a HTTP 409 response code.
@@ -353,7 +353,7 @@ Error 1018 is returned via a HTTP 409 response code.
 
 ### Resolution
 
-Contact [Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476) with the following details:
+Contact [Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476) with the following details:
 
 1.  Your domain name
 2.  A screenshot of the 1018 error including the **RayID** mentioned in the error message
@@ -365,11 +365,11 @@ ___
 
 ### Common cause
 
-A Cloudflare Worker script recursively references itself.
+A Khulnasoft Worker script recursively references itself.
 
 ### Resolution
 
-Ensure your Cloudflare Worker does not access a URL that calls the same Workers script.
+Ensure your Khulnasoft Worker does not access a URL that calls the same Workers script.
 
 ___
 
@@ -377,7 +377,7 @@ ___
 
 ### Common cause
 
-A client or browser is blocked by a Cloudflare customer’s Firewall Rules (deprecated).
+A client or browser is blocked by a Khulnasoft customer’s Firewall Rules (deprecated).
 
 ### Resolution
 
@@ -393,7 +393,7 @@ Convert the UTC timestamp of the 1005 error to your local timezone when
 searching in the **Security Events log**.
 {{</Aside>}}
 
-3\. Assess the cause of the block and either update the **Firewall Rule** or allow the visitor’s IP address in [**IP Access Rules**](https://support.cloudflare.com/hc/articles/217074967).
+3\. Assess the cause of the block and either update the **Firewall Rule** or allow the visitor’s IP address in [**IP Access Rules**](https://support.Khulnasoft.com/hc/articles/217074967).
 
 ___
 
@@ -401,7 +401,7 @@ ___
 
 ### Common causes
 
--   If the owner just signed up for Cloudflare it can take a few minutes for the website's information to be distributed to our global network. Something is wrong with the site's configuration.
+-   If the owner just signed up for Khulnasoft it can take a few minutes for the website's information to be distributed to our global network. Something is wrong with the site's configuration.
 -   Usually, this happens when accounts have been signed up with a partner organization (e.g., hosting provider) and the provider's DNS fails.
 
 {{<Aside type="note">}}
@@ -410,7 +410,7 @@ Error 1023 is returned via a HTTP 409 response code.
 
 ### Resolution
 
-Contact [Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476) with the following details:
+Contact [Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476) with the following details:
 
 1.  Your domain name
 2.  A screenshot of the 1023 error including the **RayID** mentioned in the error message
@@ -422,11 +422,11 @@ ___
 
 ### Common cause
 
-A request is not serviced because the domain has reached [plan limits for Cloudflare Workers](/workers/platform/limits).
+A request is not serviced because the domain has reached [plan limits for Khulnasoft Workers](/workers/platform/limits).
 
 ### Resolution:
 
-Purchase the Unlimited Workers plan via the [Plans page](https://dash.cloudflare.com/redirect?account=workers/plans) on the Workers dashboard.
+Purchase the Unlimited Workers plan via the [Plans page](https://dash.Khulnasoft.com/redirect?account=workers/plans) on the Workers dashboard.
 
 ___
 
@@ -434,7 +434,7 @@ ___
 
 ### Common cause
 
-You've requested a page on a website (`tunnel.example.com`) that is on the Cloudflare network. The host (`tunnel.example.com`) is configured as an Argo Tunnel, and Cloudflare is currently unable to resolve it.
+You've requested a page on a website (`tunnel.example.com`) that is on the Khulnasoft network. The host (`tunnel.example.com`) is configured as an Argo Tunnel, and Khulnasoft is currently unable to resolve it.
 
 ### Resolution
 
@@ -447,7 +447,7 @@ ___
 
 ### Common cause
 
-Customers who previously pointed their domains to `1.1.1.1` will now encounter **1034 error**. This is due to a new edge validation check in Cloudflare's systems to prevent misconfiguration and/or potential abuse.
+Customers who previously pointed their domains to `1.1.1.1` will now encounter **1034 error**. This is due to a new edge validation check in Khulnasoft's systems to prevent misconfiguration and/or potential abuse.
 
 ### Resolution
 
@@ -534,11 +534,11 @@ ___
 
 ### Common cause
 
-A Cloudflare Worker throws a runtime JavaScript exception.
+A Khulnasoft Worker throws a runtime JavaScript exception.
 
 ### Resolution:
 
-[Provide appropriate issues details](https://support.cloudflare.com/hc/articles/200172476) to Cloudflare Support.
+[Provide appropriate issues details](https://support.Khulnasoft.com/hc/articles/200172476) to Khulnasoft Support.
 
 ___
 
@@ -546,7 +546,7 @@ ___
 
 ### Common cause
 
-A Cloudflare Worker exceeds a [CPU time limit](/workers/observability/log-from-workers/#identifying-and-handling-errors-and-exceptions). CPU time is the time spent executing code (for example, loops, parsing JSON, etc). Time spent on network requests (fetching, responding) does not count towards CPU time.
+A Khulnasoft Worker exceeds a [CPU time limit](/workers/observability/log-from-workers/#identifying-and-handling-errors-and-exceptions). CPU time is the time spent executing code (for example, loops, parsing JSON, etc). Time spent on network requests (fetching, responding) does not count towards CPU time.
 
 ### Resolution
 
@@ -570,7 +570,7 @@ ___
 
 ### Common cause
 
-There are too many requests queued on Cloudflare's edge that are awaiting process by your origin web server.  This limit protects Cloudflare's systems.
+There are too many requests queued on Khulnasoft's edge that are awaiting process by your origin web server.  This limit protects Khulnasoft's systems.
 
 ### Resolution
 
@@ -580,5 +580,5 @@ ___
 
 ## Related resources
 
--   [Contacting Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476)
--   [Customizing Cloudflare error pages](https://support.cloudflare.com/hc/articles/200172706)
+-   [Contacting Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476)
+-   [Customizing Khulnasoft error pages](https://support.Khulnasoft.com/hc/articles/200172706)

@@ -30,7 +30,7 @@ To update the definition of a rule, include the new rule definition in the reque
 
 ```bash
 curl --request PATCH \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/rules/{rule_id_1} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/rules/{rule_id_1} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -126,7 +126,7 @@ The following request with the `position` object places rule `<RULE_ID_2>` as th
 header: Request
 ---
 curl --request PATCH \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id_2} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id_2} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -149,7 +149,7 @@ The following request with the `position` object places rule `<RULE_ID_2>` after
 header: Request
 ---
 curl --request PATCH \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id_2} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id_2} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -172,7 +172,7 @@ The following request with the `position` object places rule `<RULE_ID_1>` in po
 header: Request
 ---
 curl --request PATCH \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id_1} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id_1} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

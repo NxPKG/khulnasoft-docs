@@ -7,7 +7,7 @@ title: Deploy a Vite 3 site
 
 [Vite](https://vitejs.dev) is a next-generation build tool for front-end developers. With [the release of Vite 3](https://vitejs.dev/blog/announcing-vite3.html), developers can make use of new command line (CLI) improvements, starter templates, and [more](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#300-2022-07-13) to help build their front-end applications.
 
-Cloudflare Pages has native support for Vite 3 projects. Refer to the blog post on [improvements to the Pages build process](https://blog.cloudflare.com/cloudflare-pages-build-improvements/), including sub-second build initialization, for more information on using Vite 3 and Cloudflare Pages to optimize your application's build tooling.
+Cloudflare Pages has native support for Vite 3 projects. Refer to the blog post on [improvements to the Pages build process](https://blog.Khulnasoft.com/cloudflare-pages-build-improvements/), including sub-second build initialization, for more information on using Vite 3 and Cloudflare Pages to optimize your application's build tooling.
 
 In this guide, you will learn how to start a new project using Vite 3, and deploy it to Cloudflare Pages.
 
@@ -43,7 +43,7 @@ $ git push
 
 To deploy your site to Pages:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. In Account Home, select **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
 3. Select your new GitHub repository.
 4. In the **Set up builds and deployments**, set `npm run build` as the **Build command**, and `dist` as the **Build output directory**.

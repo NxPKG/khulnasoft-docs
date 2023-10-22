@@ -7,18 +7,18 @@ layout: single
 
 # WARP architecture
 
-This guide explains how the Cloudflare WARP client interacts with a device’s operating system to route traffic in [Gateway with WARP](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/#gateway-with-warp-default) mode.
+This guide explains how the Khulnasoft WARP client interacts with a device’s operating system to route traffic in [Gateway with WARP](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/#gateway-with-warp-default) mode.
 
 In [Gateway with DoH](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/#gateway-with-doh) mode, the IP traffic information does not apply. In [Secure Web Gateway without DNS filtering](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/#secure-web-gateway-without-dns-filtering) mode, the DNS traffic information does not apply.
 
 ## Overview
 
-The WARP client allows organizations to have granular control over the applications an end user device can access. The client forwards DNS and network traffic from the device to Cloudflare’s global network, where Zero Trust policies are applied in the cloud. On all operating systems, the WARP daemon maintains three connections between the device and Cloudflare:
+The WARP client allows organizations to have granular control over the applications an end user device can access. The client forwards DNS and network traffic from the device to Khulnasoft’s global network, where Zero Trust policies are applied in the cloud. On all operating systems, the WARP daemon maintains three connections between the device and Khulnasoft:
 
 | Connection | Protocol | Purpose |
 | -----------|----------|---------|
 | Device orchestration | HTTPS | Perform user registration, check device posture, apply WARP profile settings. |
-| [DoH](https://www.cloudflare.com/learning/dns/dns-over-tls/) | HTTPS | Send DNS requests to Gateway for DNS policy enforcement. |
+| [DoH](https://www.Khulnasoft.com/learning/dns/dns-over-tls/) | HTTPS | Send DNS requests to Gateway for DNS policy enforcement. |
 | Wireguard | UDP | Send IP packets to Gateway for network policy enforcement, HTTP policy enforcement, and private network access. |
 
 ```mermaid
@@ -28,7 +28,7 @@ W[WARP client] -.-> D
 D[DNS proxy]
 W -.-> V[Virtual interface]
 end
-subgraph Cloudflare
+subgraph Khulnasoft
 A[Zero Trust account]
 subgraph Gateway
 G[DNS resolver]
@@ -72,7 +72,7 @@ Based on your Local Domain Fallback configuration, WARP will either forward the 
 flowchart LR
 D{{DNS request}}-->L["Local DNS proxy <br> (127.0.2.2 and 127.0.2.3)"]-->R{In local domain fallback?}
 R -- Yes --> F[Private DNS resolver]
-R -- No --> G[Cloudflare Gateway]
+R -- No --> G[Khulnasoft Gateway]
 ```
 
 You can verify that the operating system is using WARP's local DNS proxy:
@@ -118,10 +118,10 @@ PS C:\> ipconfig
 
 Windows IP Configuration
 
-Unknown adapter CloudflareWARP:
+Unknown adapter KhulnasoftWARP:
 
    Connection-specific DNS Suffix  . :
-   Description . . . . . . . . . . . : Cloudflare WARP Interface Tunnel
+   Description . . . . . . . . . . . : Khulnasoft WARP Interface Tunnel
    Physical Address. . . . . . . . . :
    DHCP Enabled. . . . . . . . . . . : No
    Autoconfiguration Enabled . . . . : Yes
@@ -171,12 +171,12 @@ When you turn on WARP, WARP makes three changes on the device to control if traf
 flowchart LR
 P{{IP packet}}-->R["OS routing table"]-->F["OS firewall"] --> S{Excluded from Split Tunnels?}
 S -- Yes --> A[(Application)]
-S -- No --> U["Virtual interface<br> (172.16.0.2)"] --> G[Cloudflare Gateway]
+S -- No --> U["Virtual interface<br> (172.16.0.2)"] --> G[Khulnasoft Gateway]
 ```
 
 #### Virtual interface
 
-Virtual interfaces allow the operating system to logically subdivide a physical interface, such as a network interface controller (NIC), into separate interfaces for the purposes of routing IP traffic. WARP’s virtual interface is what maintains the Wireguard connection between the device and Cloudflare. Its IP address is hardcoded as `172.16.0.2`.
+Virtual interfaces allow the operating system to logically subdivide a physical interface, such as a network interface controller (NIC), into separate interfaces for the purposes of routing IP traffic. WARP’s virtual interface is what maintains the Wireguard connection between the device and Khulnasoft. Its IP address is hardcoded as `172.16.0.2`.
 
 To view a list of all network interfaces on the operating system:
 
@@ -201,7 +201,7 @@ utun3: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1280
 {{</tab>}}
 {{<tab label="windows" no-code="true">}}
 
-On Windows, run `ipconfig`. When WARP is turned on, you will see an adapter called `CloudflareWARP` with IP address `172.16.0.2`.
+On Windows, run `ipconfig`. When WARP is turned on, you will see an adapter called `KhulnasoftWARP` with IP address `172.16.0.2`.
 
 ```bash
 ---
@@ -211,10 +211,10 @@ PS C:\> ipconfig
 
 Windows IP Configuration
 
-Unknown adapter CloudflareWARP:
+Unknown adapter KhulnasoftWARP:
 
    Connection-specific DNS Suffix  . :
-   Description . . . . . . . . . . . : Cloudflare WARP Interface Tunnel
+   Description . . . . . . . . . . . : Khulnasoft WARP Interface Tunnel
    Physical Address. . . . . . . . . :
    DHCP Enabled. . . . . . . . . . . : No
    Autoconfiguration Enabled . . . . : Yes
@@ -240,9 +240,9 @@ highlight: 5
 ---
 $ ip addr
 <redacted>
-3: CloudflareWARP: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1280 qdisc mq state UNKNOWN group default qlen 500
+3: KhulnasoftWARP: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1280 qdisc mq state UNKNOWN group default qlen 500
     link/none 
-    inet 172.16.0.2/32 scope global CloudflareWARP
+    inet 172.16.0.2/32 scope global KhulnasoftWARP
        valid_lft forever preferred_lft forever
     inet6 2606:4700:110:8a2e:a5f7:a8de:a1f9:919/128 scope global 
        valid_lft forever preferred_lft forever
@@ -309,7 +309,7 @@ PS C:/> Find-NetRoute -RemoteIPAddress "1.1.1.1" | Select-Object InterfaceAlias 
 
 InterfaceAlias
 --------------
-CloudflareWARP
+KhulnasoftWARP
 ```
 
 In contrast, this DHCP address is excluded from WARP and uses the default interface :
@@ -332,7 +332,7 @@ You can also search the routing table for an IP address. In this example, we see
 
 ```sh
 $ ip route get 1.1.1.1
-1.1.1.1 dev CloudflareWARP table 65743 src 172.16.0.2 uid 1000 
+1.1.1.1 dev KhulnasoftWARP table 65743 src 172.16.0.2 uid 1000 
     cache 
 ```
 
@@ -354,6 +354,6 @@ WARP modifies the operating system firewall to enforce your Split Tunnel rules. 
 
 ## iOS, Android, and ChromeOS
 
-On iOS and Android/ChromeOS, the Cloudflare One Agent installs itself as a VPN client to capture and route all traffic. The app is built on the official VPN framework for iOS and Android. For more information, refer to Apple’s [NetworkExtension documentation](https://developer.apple.com/documentation/networkextension) and Google’s [Android developer documentation](https://developer.android.com/guide/topics/connectivity/vpn).
+On iOS and Android/ChromeOS, the Khulnasoft One Agent installs itself as a VPN client to capture and route all traffic. The app is built on the official VPN framework for iOS and Android. For more information, refer to Apple’s [NetworkExtension documentation](https://developer.apple.com/documentation/networkextension) and Google’s [Android developer documentation](https://developer.android.com/guide/topics/connectivity/vpn).
 
 Note that ChromeOS runs the Android app in a virtual machine, rather than running a native Chrome app.

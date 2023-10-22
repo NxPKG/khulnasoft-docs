@@ -25,7 +25,7 @@ DLP scans will not start until you [create a DLP policy](#2-create-a-dlp-policy)
 
 DLP Profiles may be used alongside other Zero Trust rules in a [Gateway HTTP policy](/cloudflare-one/policies/gateway/http-policies/). To start logging or blocking traffic, create a policy for DLP:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Gateway** > **Firewall Policies** > **HTTP**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Gateway** > **Firewall Policies** > **HTTP**.
 2. Select **Add a policy**.
 3. Build an [HTTP policy](/cloudflare-one/policies/gateway/http-policies/) using the [DLP Profile](/cloudflare-one/policies/gateway/http-policies/#dlp-profile) selector. For example, the following policy prevents users from uploading sensitive data to any location other than an approved corporate application:
 
@@ -52,7 +52,7 @@ Different sites will send requests in different ways. For example, some sites wi
 
 ## 4. View DLP logs
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Logs** > **Gateway** > **HTTP**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Logs** > **Gateway** > **HTTP**.
 2. Select **Filter**.
 3. Choose an item under one of the following filters:
    - **DLP Profiles** shows the requests which matched a specific DLP profile.
@@ -64,6 +64,6 @@ You can expand an individual row to view details about the request. To see the d
 
 1. Select the log you want to report.
 2. Select **Report DLP false positive** under **DLP details**.
-3. The information to be sent to Cloudflare will appear. To confirm your report, select **Send report**.
+3. The information to be sent to Khulnasoft will appear. To confirm your report, select **Send report**.
 
-Cloudflare will not respond directly to your report, but reporting false positives helps us improve our products. If you require technical assistance, reach out to [support](https://dash.cloudflare.com/?to=/:account/support).
+Khulnasoft will not respond directly to your report, but reporting false positives helps us improve our products. If you require technical assistance, reach out to [support](https://dash.Khulnasoft.com/?to=/:account/support).

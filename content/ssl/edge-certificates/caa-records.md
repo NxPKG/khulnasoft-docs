@@ -13,7 +13,7 @@ For additional security, set up [Certificate Transparency Monitoring](/ssl/edge-
 
 {{<Aside type="note" header="Note">}}
 
-For more technical details about CAA records, refer to the [introductory blog post](https://blog.cloudflare.com/caa-of-the-wild/).
+For more technical details about CAA records, refer to the [introductory blog post](https://blog.Khulnasoft.com/caa-of-the-wild/).
 
 {{</Aside>}}
 
@@ -39,7 +39,7 @@ Create a CAA record for each Certificate Authority (CA) that you plan to use for
  
 To add a CAA record in the dashboard, 
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and application.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and application.
 2.  Go to **DNS** > **Records**.
 3.  Select **Add record**.
 4.  For **Type**, select **CAA**.

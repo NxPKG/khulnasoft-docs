@@ -1,27 +1,27 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-
-title: 了解和配置 Cloudflare Page Rules（页面规则教程）
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-
+title: 了解和配置 Khulnasoft Page Rules（页面规则教程）
 ---
 
-# 了解和配置 Cloudflare Page Rules（页面规则教程）
+# 了解和配置 Khulnasoft Page Rules（页面规则教程）
 
-## 了解和配置 Cloudflare Page Rules（页面规则教程）
+## 了解和配置 Khulnasoft Page Rules（页面规则教程）
 
 _每当请求与您定义的某个 URL 模式匹配时，页面规则就会触发特定操作。学习创建和编辑页面规则，并了解可用的不同设置。_
 
 ### 本文内容
 
--   [概述](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_5a7SkOsNo5d5LE7e9IRiz)
--   [开始前须知](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_7rzfw5kI8cqu4VKur6Mnur)
--   [创建页面规则](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_38Gq7mduJiXIjpVLxp3q19)
--   [编辑页面规则](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_2WLkFHGqwlRgnZg3i0fl9I)
--   [了解通配符匹配和引用](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_6N5SySNYCjYUUnCKnC1Ea6)
--   [页面规则设置摘要](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_18YTlvNlZET4Poljeih3TJ)
--   [已知问题](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_5lzcszkjqrZ2bZpZOtMQoP)
--   [其他详情](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_2VORFoOUImLy7rpTgEWYLM)
--   [相关资源](https://support.cloudflare.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Cloudflare-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_7hlLS0cORjDJ2NCQqZTp8X)
+-   [概述](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_5a7SkOsNo5d5LE7e9IRiz)
+-   [开始前须知](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_7rzfw5kI8cqu4VKur6Mnur)
+-   [创建页面规则](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_38Gq7mduJiXIjpVLxp3q19)
+-   [编辑页面规则](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_2WLkFHGqwlRgnZg3i0fl9I)
+-   [了解通配符匹配和引用](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_6N5SySNYCjYUUnCKnC1Ea6)
+-   [页面规则设置摘要](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_18YTlvNlZET4Poljeih3TJ)
+-   [已知问题](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_5lzcszkjqrZ2bZpZOtMQoP)
+-   [其他详情](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_2VORFoOUImLy7rpTgEWYLM)
+-   [相关资源](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-%E4%BA%86%E8%A7%A3%E5%92%8C%E9%85%8D%E7%BD%AE-Khulnasoft-Page-Rules-%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B-#h_7hlLS0cORjDJ2NCQqZTp8X)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 | Business | 50                 |
 | 企业     | 125                |
 
-对于 Free、Pro 和 Business 计划中的域名，您可以[购买额外的规则](https://www.cloudflare.com/features-page-rules/) （最多 100 条）。
+对于 Free、Pro 和 Business 计划中的域名，您可以[购买额外的规则](https://www.Khulnasoft.com/features-page-rules/) （最多 100 条）。
 
 ___
 
@@ -47,7 +47,7 @@ ___
 务必要了解两种基本的页面规则行为：
 
 -   只有优先级最高的匹配页面规则才会对请求起作用。
--   页面规则在 Cloudflare 仪表板中以降序方式排列，优先级最高的规则排在最前面。
+-   页面规则在 Khulnasoft 仪表板中以降序方式排列，优先级最高的规则排在最前面。
 
 页面规则根据以下格式（由五个段组成）来与 URL 模式匹配：<scheme>://<hostname><:port>/<path>?<query\_string>
 
@@ -66,12 +66,12 @@ ___
 
 创建页面规则的步骤如下：
 
-1.  登录 Cloudflare 仪表板。
+1.  登录 Khulnasoft 仪表板。
 2.  选择您要添加页面规则的域。
 3.  单击 **Rules** 应用。
 4.  在**页面规则**选项卡下，单击**创建页面规则**。这时会开_为 <您的域> 创建页面规则_对话框。
-5.  在**如果 URL 匹配**下，输入应该与规则匹配的 URL 或 URL 模式。[_了解有关通配符匹配的更多信息_](https://support.cloudflare.com/hc/zh-cn/articles/218411427-Understanding-and-Configuring-Cloudflare-Page-Rules-Page-Rules-Tutorial-#h_6N5SySNYCjYUUnCKnC1Ea6)
-6.  接下来，在**则设置为：**下，单击 **+ 添加设置**，再从下拉列表中选择所需的设置。每条规则可以包含多项设置。[下方摘要](https://support.cloudflare.com/hc/zh-cn/articles/218411427-Understanding-and-Configuring-Cloudflare-Page-Rules-Page-Rules-Tutorial-#h_18YTlvNlZET4Poljeih3TJ)中提供了有关设置的更多信息。
+5.  在**如果 URL 匹配**下，输入应该与规则匹配的 URL 或 URL 模式。[_了解有关通配符匹配的更多信息_](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-Understanding-and-Configuring-Khulnasoft-Page-Rules-Page-Rules-Tutorial-#h_6N5SySNYCjYUUnCKnC1Ea6)
+6.  接下来，在**则设置为：**下，单击 **+ 添加设置**，再从下拉列表中选择所需的设置。每条规则可以包含多项设置。[下方摘要](https://support.Khulnasoft.com/hc/zh-cn/articles/218411427-Understanding-and-Configuring-Khulnasoft-Page-Rules-Page-Rules-Tutorial-#h_18YTlvNlZET4Poljeih3TJ)中提供了有关设置的更多信息。
 7.  在**顺序**下拉列表中，指定所需的顺序：_最前、最后_或_自定义_。
 8.  若要保存，请单击以下选项之一：
     -   **保存为草稿**，保存规则并使其保持禁用状态。
@@ -83,7 +83,7 @@ ___
 
 要修改现有的规则，请执行以下操作：
 
-1.  登录 Cloudflare 仪表板。
+1.  登录 Khulnasoft 仪表板。
 2.  选择您要编辑页面规则的域。
 3.  单击 **Rules** 应用。
 4.  在**页面规则**选项卡下，找到您要编辑的规则。
@@ -147,12 +147,12 @@ ___
 
 ## 页面规则设置摘要
 
-设置控制了请求与页面规则中定义的 URL 模式匹配时 Cloudflare 会采取的操作。您可以使用设置来跨仪表板应用启用和禁用多个 Cloudflare 功能。请注意：
+设置控制了请求与页面规则中定义的 URL 模式匹配时 Khulnasoft 会采取的操作。您可以使用设置来跨仪表板应用启用和禁用多个 Khulnasoft 功能。请注意：
 
 -   某些设置需要 Pro、Business 或 Enterprise 域计划。
 -   您可以指定在规则触发时应用多项设置。
 
-下方列出了可用设置的完整列表，按照它们在 **Cloudflare Page Rules** UI 中出现的顺序显示。
+下方列出了可用设置的完整列表，按照它们在 **Khulnasoft Page Rules** UI 中出现的顺序显示。
 
 | 
 **设置**
@@ -173,7 +173,7 @@ ___
 
  | 
 
-打开或关闭 **Cloudflare SSL/TLS** 应用中**边缘证书**选项卡的**[始终使用 HTTPS](/ssl/edge-certificates/additional-options/always-use-https)** 功能。启用后，任何 _http://_ URL 都会通过 301 重定向转换为 _https://_。
+打开或关闭 **Khulnasoft SSL/TLS** 应用中**边缘证书**选项卡的**[始终使用 HTTPS](/ssl/edge-certificates/additional-options/always-use-https)** 功能。启用后，任何 _http://_ URL 都会通过 301 重定向转换为 _https://_。
 
 如果此选项没有出现，这表示您没有生效的**边缘证书**。
 
@@ -188,7 +188,7 @@ ___
 
  | 
 
-指出哪些文件扩展名要自动缩小。[了解更多](https://support.cloudflare.com/hc/articles/200168196)。
+指出哪些文件扩展名要自动缩小。[了解更多](https://support.Khulnasoft.com/hc/articles/200168196)。
 
  | 
 
@@ -201,7 +201,7 @@ Automatic HTTPS Rewrites
 
  | 
 
-打开或关闭 **Cloudflare SSL/TLS** 应用中**边缘证书**选项卡的 **Cloudflare 自动 HTTPS 重写**功能。[了解更多](/ssl/edge-certificates/additional-options/automatic-https-rewrites)。
+打开或关闭 **Khulnasoft SSL/TLS** 应用中**边缘证书**选项卡的 **Khulnasoft 自动 HTTPS 重写**功能。[了解更多](/ssl/edge-certificates/additional-options/automatic-https-rewrites)。
 
  | 
 
@@ -214,7 +214,7 @@ Automatic HTTPS Rewrites
 
  | 
 
-控制客户端浏览器缓存的资源在多久时间内保持有效。对于非 Enterprise 域，Cloudflare UI 和 API 都会禁止将**浏览器缓存 TTL** 设置为 _0_。[了解更多](/cache/how-to/edge-browser-cache-ttl/)。
+控制客户端浏览器缓存的资源在多久时间内保持有效。对于非 Enterprise 域，Khulnasoft UI 和 API 都会禁止将**浏览器缓存 TTL** 设置为 _0_。[了解更多](/cache/how-to/edge-browser-cache-ttl/)。
 
  | 
 
@@ -227,7 +227,7 @@ Automatic HTTPS Rewrites
 
  | 
 
-检查访问者的浏览器中通常与垃圾邮件发送者和某些机器人相关的标头。[了解更多](https://support.cloudflare.com/hc/articles/200170086)。
+检查访问者的浏览器中通常与垃圾邮件发送者和某些机器人相关的标头。[了解更多](https://support.Khulnasoft.com/hc/articles/200170086)。
 
  | 
 
@@ -301,7 +301,7 @@ Web 缓存欺骗防护
 
 根据所选的选项应用自定义缓存：
 
-**绕过** \- Cloudflare 不进行缓存。
+**绕过** \- Khulnasoft 不进行缓存。
 
 **无查询字符串** - 只有在无查询字符串时才从缓存中提供资源。
 
@@ -309,7 +309,7 @@ Web 缓存欺骗防护
 
 **标准 -** 缓存具有查询字符串的所有静态内容。
 
-**全部缓存** \-  将所有内容视为静态内容，并缓存 [Cloudflare 默认缓存内容](/cache/concepts/default-cache-behavior#default-cached-file-extensions)之外的所有内容类型。尊重来自源 Web 服务器的缓存标头，除非页面规则中也设置了**边缘缓存 TTL**。与**边缘缓存 TTL** > _0_ 组合使用时，**全部缓存**会移除来自源 Web 服务器响应的 Cookie。  
+**全部缓存** \-  将所有内容视为静态内容，并缓存 [Khulnasoft 默认缓存内容](/cache/concepts/default-cache-behavior#default-cached-file-extensions)之外的所有内容类型。尊重来自源 Web 服务器的缓存标头，除非页面规则中也设置了**边缘缓存 TTL**。与**边缘缓存 TTL** > _0_ 组合使用时，**全部缓存**会移除来自源 Web 服务器响应的 Cookie。  
 
 
  | 
@@ -339,7 +339,7 @@ Cookie 上的缓存
 
  | 
 
-企业客户可以根据源站 Web 服务器的响应状态来设置缓存生存时间（TTL）。缓存 TTL 指的是资源在 Cloudflare 网络中的持续时间（在被标记为过时或从缓存中丢弃之前）。状态代码是由资源的源站返回的。   如果根据响应状态设置缓存 TTL，会覆盖静态文件的默认缓存行为（标准缓存），并覆盖源站 Web 服务器发送的缓存指令。要缓存非静态资产，请使用 Page Rule 将缓存级别设置为“全部缓存”。如果设置无存储 Cache-Control 或低 TTL（使用max-age/s-maxage），会增加对源站 Web 服务器的请求并降低性能。[了解更多](https://support.cloudflare.com/hc/zh-cn/articles/360043842472-Configuring-cache-TTL-by-status-code)。
+企业客户可以根据源站 Web 服务器的响应状态来设置缓存生存时间（TTL）。缓存 TTL 指的是资源在 Khulnasoft 网络中的持续时间（在被标记为过时或从缓存中丢弃之前）。状态代码是由资源的源站返回的。   如果根据响应状态设置缓存 TTL，会覆盖静态文件的默认缓存行为（标准缓存），并覆盖源站 Web 服务器发送的缓存指令。要缓存非静态资产，请使用 Page Rule 将缓存级别设置为“全部缓存”。如果设置无存储 Cache-Control 或低 TTL（使用max-age/s-maxage），会增加对源站 Web 服务器的请求并降低性能。[了解更多](https://support.Khulnasoft.com/hc/zh-cn/articles/360043842472-Configuring-cache-TTL-by-status-code)。
 
  | 
 
@@ -352,7 +352,7 @@ Cookie 上的缓存
 
  | 
 
-关闭所有生效的 **Cloudflare 应用**。
+关闭所有生效的 **Khulnasoft 应用**。
 
  | 
 
@@ -367,10 +367,10 @@ Cookie 上的缓存
 
 关闭：
 
--   [自动缩小](https://support.cloudflare.com/hc/articles/200168196)
--   [Rocket Loader](https://support.cloudflare.com/hc/articles/200168056)
--   [Mirage](https://support.cloudflare.com/hc/articles/200403554)
--   [Polish](https://support.cloudflare.com/hc/articles/360000607372)
+-   [自动缩小](https://support.Khulnasoft.com/hc/articles/200168196)
+-   [Rocket Loader](https://support.Khulnasoft.com/hc/articles/200168056)
+-   [Mirage](https://support.Khulnasoft.com/hc/articles/200403554)
+-   [Polish](https://support.Khulnasoft.com/hc/articles/360000607372)
 
  | 
 
@@ -383,7 +383,7 @@ Cookie 上的缓存
 
  | 
 
-关闭 **Cloudflare Speed** 应用的 **Railgun** 功能。
+关闭 **Khulnasoft Speed** 应用的 **Railgun** 功能。
 
  | 
 
@@ -399,12 +399,12 @@ Cookie 上的缓存
 
 关闭：
 
--   [电子邮件混淆](https://support.cloudflare.com/hc/articles/200170016)
--   [速率限制（旧版）](https://support.cloudflare.com/hc/articles/115001635128)
--   [Scrape Shield](https://support.cloudflare.com/hc/articles/200171036)
--   [服务器端排除](https://support.cloudflare.com/hc/articles/200170036)
+-   [电子邮件混淆](https://support.Khulnasoft.com/hc/articles/200170016)
+-   [速率限制（旧版）](https://support.Khulnasoft.com/hc/articles/115001635128)
+-   [Scrape Shield](https://support.Khulnasoft.com/hc/articles/200171036)
+-   [服务器端排除](https://support.Khulnasoft.com/hc/articles/200170036)
 -   [URL（区域）锁定](/waf/tools/zone-lockdown/)
--   [WAF 托管规则（旧版）](https://support.cloudflare.com/hc/articles/200172016)
+-   [WAF 托管规则（旧版）](https://support.Khulnasoft.com/hc/articles/200172016)
 
  | 
 
@@ -417,7 +417,7 @@ Cookie 上的缓存
 
  | 
 
-指定资源在 Cloudflare 边缘网络中缓存多久时间。_边缘缓存 TTL_ 不显示在响应标头中。_边缘缓存 TTL_ 最小值取决于计划类型：
+指定资源在 Khulnasoft 边缘网络中缓存多久时间。_边缘缓存 TTL_ 不显示在响应标头中。_边缘缓存 TTL_ 最小值取决于计划类型：
 
 Free - 2 小时  
 Pro - 1 小时  
@@ -435,7 +435,7 @@ Enterprise - 1 秒钟
 
  | 
 
-打开或关闭 **Cloudflare Scrape Shield** 应用的 **Cloudflare 电子邮件混淆**功能。[了解更多](https://support.cloudflare.com/hc/articles/200170016)。
+打开或关闭 **Khulnasoft Scrape Shield** 应用的 **Khulnasoft 电子邮件混淆**功能。[了解更多](https://support.Khulnasoft.com/hc/articles/200170016)。
 
  | 
 
@@ -448,7 +448,7 @@ Enterprise - 1 秒钟
 
  | 
 
-使用 _HTTP 301/302 重定向_将一个 URL 重定向到另一个 URL。_参见上文中的[了解通配符匹配和引用](https://support.cloudflare.com/hc/articles/218411427#h_6N5SySNYCjYUUnCKnC1Ea6)。_
+使用 _HTTP 301/302 重定向_将一个 URL 重定向到另一个 URL。_参见上文中的[了解通配符匹配和引用](https://support.Khulnasoft.com/hc/articles/218411427#h_6N5SySNYCjYUUnCKnC1Ea6)。_
 
  | 
 
@@ -461,7 +461,7 @@ Enterprise - 1 秒钟
 
  | 
 
-应用特定的主机标头。[了解更多](https://support.cloudflare.com/hc/articles/206652947)。
+应用特定的主机标头。[了解更多](https://support.Khulnasoft.com/hc/articles/206652947)。
 
  | 
 
@@ -474,7 +474,7 @@ IP 地理位置标头
 
  | 
 
-Cloudflare 会添加 _CF-IPCountry_ HTTP 标头，其包含与访问者对应的国家/地区代码。
+Khulnasoft 会添加 _CF-IPCountry_ HTTP 标头，其包含与访问者对应的国家/地区代码。
 
  | 
 
@@ -487,7 +487,7 @@ Mirage
 
  | 
 
-打开或关闭 **Cloudflare Speed** 应用的 **Cloudflare Mirage** 功能。[了解更多](https://support.cloudflare.com/hc/articles/200403554)。
+打开或关闭 **Khulnasoft Speed** 应用的 **Khulnasoft Mirage** 功能。[了解更多](https://support.Khulnasoft.com/hc/articles/200403554)。
 
  | 
 
@@ -502,7 +502,7 @@ Mirage
 
  | 
 
-打开或关闭 **Cloudflare SSL/TLS** 应用中**边缘证书**选项卡的 **Cloudflare 随机加密**功能。[了解更多](/ssl/edge-certificates/additional-options/opportunistic-encryption)。
+打开或关闭 **Khulnasoft SSL/TLS** 应用中**边缘证书**选项卡的 **Khulnasoft 随机加密**功能。[了解更多](/ssl/edge-certificates/additional-options/opportunistic-encryption)。
 
  | 
 
@@ -520,7 +520,7 @@ Mirage
 
  | 
 
-打开或关闭从发送自源服务器的问题生成的 Cloudflare 错误页面。如果启用，此设置将触发由源服务器发出的错误页面。
+打开或关闭从发送自源服务器的问题生成的 Khulnasoft 错误页面。如果启用，此设置将触发由源服务器发出的错误页面。
 
  | 
 
@@ -533,7 +533,7 @@ Polish
 
  | 
 
-应用来自 **Cloudflare Speed** 应用的 **Polish** 功能的选项。[了解更多](/images/polish)。
+应用来自 **Khulnasoft Speed** 应用的 **Polish** 功能的选项。[了解更多](/images/polish)。
 
  | 
 
@@ -548,7 +548,7 @@ Polish
 
  | 
 
-打开或关闭对查询字符串重新排序。当查询字符串具有相同的结构时，缓存功能会改善。[了解更多](https://support.cloudflare.com/hc/articles/206776797)。
+打开或关闭对查询字符串重新排序。当查询字符串具有相同的结构时，缓存功能会改善。[了解更多](https://support.Khulnasoft.com/hc/articles/206776797)。
 
  | 
 
@@ -561,7 +561,7 @@ Polish
 
  | 
 
-将源地址更改为此设置中指定的值。[了解更多](https://support.cloudflare.com/hc/articles/206190798)。
+将源地址更改为此设置中指定的值。[了解更多](https://support.Khulnasoft.com/hc/articles/206190798)。
 
  | 
 
@@ -574,7 +574,7 @@ Polish
 
  | 
 
-打开或关闭 Cloudflare 缓存和源服务器之间的逐字节等效性检查。[了解更多](https://support.cloudflare.com/hc/articles/218505467)。
+打开或关闭 Khulnasoft 缓存和源服务器之间的逐字节等效性检查。[了解更多](https://support.Khulnasoft.com/hc/articles/218505467)。
 
  | 
 
@@ -587,7 +587,7 @@ Polish
 
  | 
 
-打开或关闭 Cloudflare 是否应先等待源服务器发来整个文件后再转发给站点访问者。默认情况下，Cloudflare 在数据包从源服务器到达时将其发送到客户端。
+打开或关闭 Khulnasoft 是否应先等待源服务器发来整个文件后再转发给站点访问者。默认情况下，Khulnasoft 在数据包从源服务器到达时将其发送到客户端。
 
  | 
 
@@ -600,7 +600,7 @@ Rocket Loader
 
  | 
 
-打开或关闭 Cloudflare **Speed** 应用中的 **Cloudflare Rocket Loader** 功能**。**[了解更多](https://support.cloudflare.com/hc/articles/200168056)。
+打开或关闭 Khulnasoft **Speed** 应用中的 **Khulnasoft Rocket Loader** 功能**。**[了解更多](https://support.Khulnasoft.com/hc/articles/200168056)。
 
  | 
 
@@ -613,7 +613,7 @@ Rocket Loader
 
  | 
 
-控制**安全性**应用的**安全性级别**功能的各个选项。[了解更多](https://support.cloudflare.com/hc/articles/200170056)。
+控制**安全性**应用的**安全性级别**功能的各个选项。[了解更多](https://support.Khulnasoft.com/hc/articles/200170056)。
 
  | 
 
@@ -626,7 +626,7 @@ Rocket Loader
 
  | 
 
-打开或关闭 **Cloudflare Scrape Shield** 应用的**服务器端排除**功能。[了解更多](https://support.cloudflare.com/hc/articles/200170036)。
+打开或关闭 **Khulnasoft Scrape Shield** 应用的**服务器端排除**功能。[了解更多](https://support.Khulnasoft.com/hc/articles/200170036)。
 
  | 
 
@@ -639,7 +639,7 @@ SSL
 
  | 
 
-控制 **Cloudflare SSL/TLS** 应用中**边缘证书**选项卡的 **SSL** 功能的各个选项。[了解更多](/ssl/origin-configuration/ssl-modes)。
+控制 **Khulnasoft SSL/TLS** 应用中**边缘证书**选项卡的 **SSL** 功能的各个选项。[了解更多](/ssl/origin-configuration/ssl-modes)。
 
  | 
 
@@ -652,7 +652,7 @@ SSL
 
  | 
 
-打开或关闭 **Cloudflare Caching** 应用的 **True-Client-IP 标头**功能。[了解更多](https://support.cloudflare.com/hc/articles/206776727)。
+打开或关闭 **Khulnasoft Caching** 应用的 **True-Client-IP 标头**功能。[了解更多](https://support.Khulnasoft.com/hc/articles/206776727)。
 
  | 
 
@@ -665,7 +665,7 @@ Web 应用程序防火墙（旧版）
 
  | 
 
-打开或关闭 **WAF 托管规则**（在**安全性** > **WAF** > **托管规则**中定义）。[了解更多](https://support.cloudflare.com/hc/articles/200172016)。
+打开或关闭 **WAF 托管规则**（在**安全性** > **WAF** > **托管规则**中定义）。[了解更多](https://support.Khulnasoft.com/hc/articles/200172016)。
 
 无法通过页面规则启用或禁用各个 WAF 托管规则。
 
@@ -716,27 +716,27 @@ ___
 
 要了解如何针对不同平台陪住**绕过 Cookie 上的缓存**，请参阅以下文章：
 
--   [使用 WordPress 或 WooCommerce 缓存匿名页面访问量](https://support.cloudflare.com/hc/articles/236166048)
--   [使用 Magento 1 和 Magento 2 缓存匿名页面访问量](https://support.cloudflare.com/hc/articles/236168808)
--   [如何缓存静态 HTML？](https://support.cloudflare.com/hc/articles/202775670)
+-   [使用 WordPress 或 WooCommerce 缓存匿名页面访问量](https://support.Khulnasoft.com/hc/articles/236166048)
+-   [使用 Magento 1 和 Magento 2 缓存匿名页面访问量](https://support.Khulnasoft.com/hc/articles/236168808)
+-   [如何缓存静态 HTML？](https://support.Khulnasoft.com/hc/articles/202775670)
 
 **注意：**如果您同时将此设置与仅限 Enterprise 的 _Cookie 上的缓存_设置一同添加到同一页面规则，则 _Cookie 上的缓存_的优先级将高于_绕过 Cookie 上的缓存_。
 
 ### 区域名称出现时必须以斜杠结尾
 
-保存页面规则时，Cloudflare 将确保**如果 URL 匹配**字段中的当前区域名称每次出现时，后面都有一个斜杠。例如，如果当前区域名称是 `example.com`，则：
+保存页面规则时，Khulnasoft 将确保**如果 URL 匹配**字段中的当前区域名称每次出现时，后面都有一个斜杠。例如，如果当前区域名称是 `example.com`，则：
 
 -   `example.com` 将保存为 `example.com/`
 -   `example.com/path/example.com` 将保存为 `example.com/path/example.com/`
 
-请注意，`example.com/some-path/cloudflare.com` 保存时将_不带_ 最终斜杠，因为区域名称不是 `cloudflare.com`。
+请注意，`example.com/some-path/Khulnasoft.com` 保存时将_不带_ 最终斜杠，因为区域名称不是 `Khulnasoft.com`。
 
 ### Page Rules 支持的网络端口
 
 如果您在 Page Rule 的**如果 URL 匹配**字段中指定一个端口，则它必须是下列端口之一：
 
--   [与 Cloudflare 的代理兼容的](/fundamentals/reference/network-ports/#network-ports-compatible-with-cloudflares-proxy) HTTP/HTTPS 端口之一。
--   [Cloudflare Spectrum](/spectrum/) HTTPS 应用程序的自定义端口。
+-   [与 Khulnasoft 的代理兼容的](/fundamentals/reference/network-ports/#network-ports-compatible-with-cloudflares-proxy) HTTP/HTTPS 端口之一。
+-   [Khulnasoft Spectrum](/spectrum/) HTTPS 应用程序的自定义端口。
 
 ### 将页面规则用于 Workers
 
@@ -746,8 +746,8 @@ ___
 
 ## 相关资源
 
--   [要考虑的建议页面规则](https://support.cloudflare.com/hc/articles/224509547)
--   [哪些子域适用于橙色云/灰色云？](https://support.cloudflare.com/hc/zh-cn/articles/200169626-What-subdomains-are-appropriate-for-orange-gray-clouds-)
--   [如何缓存对 Cloudflare 使用“全部缓存”？](https://support.cloudflare.com/hc/articles/202775670)
--   [如何缓存静态 HTML？](https://support.cloudflare.com/hc/articles/200172256)
--   [更新或访问我的内容管理系统的管理部分时显示脱机错误消息](https://support.cloudflare.com/hc/articles/200169526)
+-   [要考虑的建议页面规则](https://support.Khulnasoft.com/hc/articles/224509547)
+-   [哪些子域适用于橙色云/灰色云？](https://support.Khulnasoft.com/hc/zh-cn/articles/200169626-What-subdomains-are-appropriate-for-orange-gray-clouds-)
+-   [如何缓存对 Khulnasoft 使用“全部缓存”？](https://support.Khulnasoft.com/hc/articles/202775670)
+-   [如何缓存静态 HTML？](https://support.Khulnasoft.com/hc/articles/200172256)
+-   [更新或访问我的内容管理系统的管理部分时显示脱机错误消息](https://support.Khulnasoft.com/hc/articles/200169526)

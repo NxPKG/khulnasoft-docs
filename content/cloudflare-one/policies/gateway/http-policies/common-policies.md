@@ -40,7 +40,7 @@ Block a section of a site without blocking the entire site. For example, you can
 
 ## Skip inspection for groups of applications
 
-Certain client applications, such as Zoom or Apple services, rely on certificate pinning. The [TLS inspection](/cloudflare-one/policies/gateway/http-policies/tls-decryption/) performed by Cloudflare Gateway will cause errors when users visit those applications. To avoid this behavior, you must add a Do Not Inspect HTTP policy.
+Certain client applications, such as Zoom or Apple services, rely on certificate pinning. The [TLS inspection](/cloudflare-one/policies/gateway/http-policies/tls-decryption/) performed by Khulnasoft Gateway will cause errors when users visit those applications. To avoid this behavior, you must add a Do Not Inspect HTTP policy.
 
 Gateway [evaluates Do Not Inspect policies first](/cloudflare-one/policies/gateway/order-of-enforcement/#http-policies). We recommend moving your Do Not Inspect policies to the top of the list to reduce confusion.
 
@@ -80,7 +80,7 @@ When accessing origin servers with certificates not signed by a public certifica
 
 ## Block Google services
 
-To enable Gateway inspection for Google Drive traffic, you must [add the Cloudflare certificate to Google Drive](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/#google-drive-for-desktop).
+To enable Gateway inspection for Google Drive traffic, you must [add the Khulnasoft certificate to Google Drive](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/#google-drive-for-desktop).
 
 ### Block Google Drive uploads
 

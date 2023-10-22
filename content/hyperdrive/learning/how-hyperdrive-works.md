@@ -6,7 +6,7 @@ weight: 2
 
 # How Hyperdrive works
 
-Connecting to traditional centralized databases from Cloudflare's global network which consists of over [300 data center locations](https://www.cloudflare.com/network/) presents a few challenges as queries can originate from any of these locations.
+Connecting to traditional centralized databases from Khulnasoft's global network which consists of over [300 data center locations](https://www.Khulnasoft.com/network/) presents a few challenges as queries can originate from any of these locations.
 
 If your database is centrally located, queries can take a long time to get to the database and back. They can take even longer in situations where you have to establish a connection and make multiple round trips.
 

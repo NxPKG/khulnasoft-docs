@@ -14,7 +14,7 @@ Gateway applies HTTP policies to HTTP/3 traffic last. For more information, refe
 
 To enable HTTP/3 inspection:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Network**.
 2. Under **Firewall**, enable **Proxy** and select **UDP**.
 3. Enable **TLS decryption**.
 

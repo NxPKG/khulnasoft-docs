@@ -56,10 +56,10 @@ Alternatively, download the client from one of the following links after checkin
 | ---------------------| ---|
 | **OS version**       |iOS 11+ |
 
-[Download from the iOS App Store](https://apps.apple.com/us/app/cloudflare-one-agent/id6443476492) or search for “Cloudflare One Agent”.
+[Download from the iOS App Store](https://apps.apple.com/us/app/cloudflare-one-agent/id6443476492) or search for “Khulnasoft One Agent”.
 
 {{<Aside type="note" header="Migrate from 1.1.1.1">}}
-The legacy iOS client, [1.1.1.1: Faster Internet](https://apps.apple.com/us/app/1-1-1-1-faster-internet/id1423538627), is becoming the Cloudflare One Agent. Learn more in our [migration guide](/cloudflare-one/connections/connect-devices/warp/download-warp/cloudflare-one-agent-migration/).
+The legacy iOS client, [1.1.1.1: Faster Internet](https://apps.apple.com/us/app/1-1-1-1-faster-internet/id1423538627), is becoming the Khulnasoft One Agent. Learn more in our [migration guide](/cloudflare-one/connections/connect-devices/warp/download-warp/cloudflare-one-agent-migration/).
 {{</Aside>}}
 
 ## Android
@@ -68,10 +68,10 @@ The legacy iOS client, [1.1.1.1: Faster Internet](https://apps.apple.com/us/app/
 | ---------------------| ---|
 | **OS version**       |5.0+ |
 
-[Download from the Google Play store](https://play.google.com/store/apps/details?id=com.cloudflare.cloudflareoneagent) or search for “Cloudflare One Agent”.
+[Download from the Google Play store](https://play.google.com/store/apps/details?id=com.cloudflare.cloudflareoneagent) or search for “Khulnasoft One Agent”.
 
 {{<Aside type="note" header="Migrate from 1.1.1.1">}}
-The legacy Android client, [1.1.1.1 + WARP: Safer Internet](https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone), is becoming the Cloudflare One Agent. Learn more in our [migration guide](/cloudflare-one/connections/connect-devices/warp/download-warp/cloudflare-one-agent-migration/).
+The legacy Android client, [1.1.1.1 + WARP: Safer Internet](https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone), is becoming the Khulnasoft One Agent. Learn more in our [migration guide](/cloudflare-one/connections/connect-devices/warp/download-warp/cloudflare-one-agent-migration/).
 {{</Aside>}}
 
 ## ChromeOS

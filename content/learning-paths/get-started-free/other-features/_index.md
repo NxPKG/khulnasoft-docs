@@ -7,16 +7,16 @@ layout: learning-module
 
 # Other features
 
-Learn about other features and resources Cloudflare provides for free.
+Learn about other features and resources Khulnasoft provides for free.
 
 ## Objectives
 
 By the end of this module, you will be able to:
 
-- Explain how to use Cloudflare Rules to customize requests, responses, and Cloudflare settings.
+- Explain how to use Khulnasoft Rules to customize requests, responses, and Khulnasoft settings.
 - Set up redirects from a root domain to a subdomain (or vice versa).
-- Review Cloudflare Analytics to learn more about your application traffic, security, and performance.
+- Review Khulnasoft Analytics to learn more about your application traffic, security, and performance.
 - Set up Email Routing.
 - Customize your account and profile.
-- Navigate Cloudflare resources.
-- Explore other Cloudflare product lines.
+- Navigate Khulnasoft resources.
+- Explore other Khulnasoft product lines.

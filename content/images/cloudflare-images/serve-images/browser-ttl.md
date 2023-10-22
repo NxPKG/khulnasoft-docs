@@ -24,7 +24,7 @@ Setting the Browser TTL per account overrides the default TTL.
 ---
 header: Example
 ---
-curl --request PATCH 'https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_TAG>/images/v1/config' \
+curl --request PATCH 'https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_TAG>/images/v1/config' \
 --header 'Authorization: Bearer <BEARER_TOKEN>' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -42,7 +42,7 @@ Setting the Browser TTL for a named variant is a more granular option that overr
 ---
 header: Example
 ---
-curl --request POST 'https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_TAG>/images/v1/variants' \
+curl --request POST 'https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_TAG>/images/v1/variants' \
 --header 'Authorization: Bearer <BEARER_TOKEN>' \
 --header 'Content-Type: application/json' \
 -d @config.json

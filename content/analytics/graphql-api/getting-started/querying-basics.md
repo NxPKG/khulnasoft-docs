@@ -21,9 +21,9 @@ A field can be another node where the appropriate query would contain nested
 elements. Some nodes look like functions that can take on arguments to limit the
 scope of what they can act on. You can apply filters at each node.
 
-## Cloudflare GraphQL schema
+## Khulnasoft GraphQL schema
 
-A typical query against the Cloudflare GraphQL schema is made up of four main
+A typical query against the Khulnasoft GraphQL schema is made up of four main
 components:
 
 * `viewer` - is the root node,
@@ -35,7 +35,7 @@ components:
   discovering nodes, please refer to [introspection][1],
 * **fieldset** - a set of fields or nested fields of the **dataset**.
 
-The query to Cloudflare GraphQL API must be sent over HTTP POST request with
+The query to Khulnasoft GraphQL API must be sent over HTTP POST request with
 payload in JSON format that consists of these fields:
 
 ```json
@@ -97,7 +97,7 @@ header: A set of variables
 }
 ```
 
-There are multiple ways to send your query to Cloudflare GraphQL API. You can
+There are multiple ways to send your query to Khulnasoft GraphQL API. You can
 use you favourite GraphQL client or CLI to send a request via curl. We have a
 [how-to guide][2] about using GraphiQL client, also check a guide on how to
 execute a query with a curl [here][3].
@@ -260,9 +260,9 @@ header: A sample response for the query with variables above
 
 ## Helpful Resources
 
-Here are some helpful articles about working with the Cloudflare Analytics API and GraphQL.
+Here are some helpful articles about working with the Khulnasoft Analytics API and GraphQL.
 
-### Cloudflare specific
+### Khulnasoft specific
 
 * [How to find your zoneTag using the API][5]
 

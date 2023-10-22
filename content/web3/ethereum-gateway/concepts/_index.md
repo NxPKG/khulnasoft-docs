@@ -8,7 +8,7 @@ meta:
 
 # Concepts
 
-As you get started with Cloudflare's Ethereum Gateway, you may want to read through the following concepts.
+As you get started with Khulnasoft's Ethereum Gateway, you may want to read through the following concepts.
 
 {{<directory-listing>}}
 

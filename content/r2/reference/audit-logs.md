@@ -5,7 +5,7 @@ title: Audit Logs
 
 # Audit Logs
 
-Audit logs for configuration actions performed on an R2 bucket are available in the [Cloudflare dashboard](https://dash.cloudflare.com/?account=audit-log). The following actions are logged:
+Audit logs for configuration actions performed on an R2 bucket are available in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?account=audit-log). The following actions are logged:
 
 - CreateBucket
 - DeleteBucket

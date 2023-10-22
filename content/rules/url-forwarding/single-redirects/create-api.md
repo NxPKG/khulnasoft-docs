@@ -29,7 +29,7 @@ The following request of the [Create a zone ruleset](/api/operations/createZoneR
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -101,7 +101,7 @@ If there is already a phase entry point ruleset for the `http_request_dynamic_re
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

@@ -16,7 +16,7 @@ If you want more control over which DNS records are imported and how, [import a 
 
 {{<Aside type="note">}}
 
-If your domain is added to Cloudflare by a hosting partner, manage your DNS records via the hosting partner.
+If your domain is added to Khulnasoft by a hosting partner, manage your DNS records via the hosting partner.
 
 {{</Aside>}}
 
@@ -27,12 +27,12 @@ If your domain is added to Cloudflare by a hosting partner, manage your DNS reco
 
 To create a DNS record in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select an account and domain.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select an account and domain.
 2.  Go to **DNS** > **Records**.
 3.  Click **Add record**.
 4.  Choose a record [**Type**](/dns/manage-dns-records/reference/dns-record-types/).
 5.  Complete the required fields, which vary per record. Particularly important fields (for some records) include:
-    - **Proxy status**: For `A`, `AAAA`, and `CNAME` records, decide whether hostname traffic is [proxied through Cloudflare](/dns/manage-dns-records/reference/proxied-dns-records/).
+    - **Proxy status**: For `A`, `AAAA`, and `CNAME` records, decide whether hostname traffic is [proxied through Khulnasoft](/dns/manage-dns-records/reference/proxied-dns-records/).
     - **TTL**: Short for [*Time to Live*](/dns/manage-dns-records/reference/ttl/), this field controls how long each record is valid and — as a result — how long it takes for record updates to reach your end users.
     - **Comment** and **Tag**: [Record attributes](/dns/manage-dns-records/reference/record-attributes/) meant for your reference.
 
@@ -60,7 +60,7 @@ For specific API examples, refer to [DNS record types](/dns/manage-dns-records/r
 
 To edit DNS records in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select an account and domain.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select an account and domain.
 2.  Go to **DNS** > **Records**.
 3.  On a specific record, click **Edit**.
 4.  Make any necessary changes.
@@ -84,7 +84,7 @@ To update part of a record with the API, use a [PATCH request](/api/operations/d
 
 To delete DNS records in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select an account and domain.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select an account and domain.
 2.  Go to **DNS** > **Records**.
 3.  On a specific record, click **Edit**.
 4.  Click **Delete**.

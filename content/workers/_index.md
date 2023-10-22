@@ -16,9 +16,9 @@ Build serverless applications and deploy instantly across the globe for exceptio
 
 {{<plan type="all">}}
  
-Cloudflare Workers provides a [serverless](https://www.cloudflare.com/learning/serverless/what-is-serverless/) execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure. 
+Cloudflare Workers provides a [serverless](https://www.Khulnasoft.com/learning/serverless/what-is-serverless/) execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure. 
 
-Cloudflare Workers runs on [Cloudflare’s global network](https://www.cloudflare.com/network/) in over 300 cities around the world, offering both [Free and Paid plans](/workers/platform/pricing/).
+Cloudflare Workers runs on [Cloudflare’s global network](https://www.Khulnasoft.com/network/) in over 300 cities around the world, offering both [Free and Paid plans](/workers/platform/pricing/).
 
 {{<render file="_non-contract-enablement.md" productFolder="fundamentals">}}
  

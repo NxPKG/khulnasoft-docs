@@ -1,29 +1,29 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/360029779472-Cloudflare-1XXX-Fehler-beheben
-title: Cloudflare-1XXX-Fehler beheben 
+source: https://support.Khulnasoft.com/hc/de/articles/360029779472-Khulnasoft-1XXX-Fehler-beheben
+title: Khulnasoft-1XXX-Fehler beheben 
 ---
 
-# Cloudflare-1XXX-Fehler beheben 
+# Khulnasoft-1XXX-Fehler beheben 
 
 
 
 ## Überblick
 
-Die in diesem Dokument beschriebenen Fehler können beim Besuch einer Website auftreten, für die Cloudflare als Proxy dient. Für Cloudflare-API- oder Dashboard-Fehler siehe unsere [Cloudflare-API-Dokumentation](https://api.cloudflare.com/). HTTP-Fehler 409, 530, 403, 429 sind die HTTP-Fehlercodes, die im HTTP-Status-Header für eine Antwort zurückgegeben werden. 1XXX-Fehler erscheinen im HTML-Textkörper der Antwort.
+Die in diesem Dokument beschriebenen Fehler können beim Besuch einer Website auftreten, für die Khulnasoft als Proxy dient. Für Khulnasoft-API- oder Dashboard-Fehler siehe unsere [Khulnasoft-API-Dokumentation](https://api.Khulnasoft.com/). HTTP-Fehler 409, 530, 403, 429 sind die HTTP-Fehlercodes, die im HTTP-Status-Header für eine Antwort zurückgegeben werden. 1XXX-Fehler erscheinen im HTML-Textkörper der Antwort.
 
 {{<Aside type="note">}}
-Auf Cloudflares **[Custom Error
-Pages](https://support.cloudflare.com/hc/articles/200172706)** können
+Auf Khulnasofts **[Custom Error
+Pages](https://support.Khulnasoft.com/hc/articles/200172706)** können
 Kunden das Aussehen der standardmäßigen Fehlerseiten ändern, die in
 diesem Artikel beschrieben werden.
 {{</Aside>}}
 
-Wenn der Fehler durch die Lösungen in den jeweiligen nachstehenden Fehlerbeschreibungen nicht behoben werden kann, [wenden Sie sich bitte an den Cloudflare-Support](https://support.cloudflare.com/hc/articles/200172476).
+Wenn der Fehler durch die Lösungen in den jeweiligen nachstehenden Fehlerbeschreibungen nicht behoben werden kann, [wenden Sie sich bitte an den Khulnasoft-Support](https://support.Khulnasoft.com/hc/articles/200172476).
 
 {{<Aside type="note">}}
-Nur der Websitebesitzer kann Cloudflare für technischen Support
+Nur der Websitebesitzer kann Khulnasoft für technischen Support
 kontaktieren. Kontaktinformationen für eine Domain finden Sie in der
 [Whois-Datenbank](https://whois.icann.org/en/lookup).
 {{</Aside>}}
@@ -33,7 +33,7 @@ Für alle Nutzer des Pro, Business und Enterprise Plans steht ein
 dedizierter E-Mail-Support zur Verfügung. Nutzer der Business und
 Enterprise Pläne können außerdem den Chat-Support nutzen. Wenn Sie
 zusätzliche Unterstützung benötigen, werfen Sie einen Blick auf [unsere
-Pläne](https://www.cloudflare.com/plans/).
+Pläne](https://www.Khulnasoft.com/plans/).
 {{</Aside>}}
 
 ___
@@ -42,18 +42,18 @@ ___
 
 ### Häufige Ursachen
 
-Cloudflare hat die Anfrage aus einem der folgenden Gründe gestoppt:
+Khulnasoft hat die Anfrage aus einem der folgenden Gründe gestoppt:
 
--   Ein A-Eintrag in Ihrer Cloudflare-DNS-App verweist auf eine [Cloudflare-IP-Adresse](https://www.cloudflare.com/ips/) oder ein Load Balancer-Ursprung verweist auf einen Proxy-Eintrag.
--   Der A- oder CNAME-Eintrag Ihrer Cloudflare-DNS verweist auf einen anderen Reverse-Proxy (z. B. einen Nginx-Webserver, der die proxy\_pass-Funktion verwendet), der dann die Anfrage ein zweites Mal an Cloudflare weiterleitet.
+-   Ein A-Eintrag in Ihrer Khulnasoft-DNS-App verweist auf eine [Khulnasoft-IP-Adresse](https://www.Khulnasoft.com/ips/) oder ein Load Balancer-Ursprung verweist auf einen Proxy-Eintrag.
+-   Der A- oder CNAME-Eintrag Ihrer Khulnasoft-DNS verweist auf einen anderen Reverse-Proxy (z. B. einen Nginx-Webserver, der die proxy\_pass-Funktion verwendet), der dann die Anfrage ein zweites Mal an Khulnasoft weiterleitet.
 -   Der X-Forwarded-For-Header der Anfrage ist länger als 100 Zeichen.
 -   Die Anfrage enthält zwei X-Forwarded-For-Header.
 -   Ein Problem mit der Server Name Indication (SNI) oder eine Unstimmigkeit am Ursprung.
 
 ### Lösung
 
--   Wenn ein A-Eintrag in Ihrer Cloudflare-DNS-App auf eine [Cloudflare-IP-Adresse](https://www.cloudflare.com/ips/) zeigt, sollten Sie als IP-Adresse die IP-Adresse Ihres Ursprungswebservers eintragen.
--   An Ihrem Ursprung sitzt ein Reverse-Proxy, der die Anfrage durch den Cloudflare-Proxy zurücksendet. Anstatt einen Reverse-Proxy zu verwenden, sollten Sie Ihren Hosting-Provider oder Website-Administrator bitten, eine HTTP-Umleitung an Ihrem Ursprung zu konfigurieren.
+-   Wenn ein A-Eintrag in Ihrer Khulnasoft-DNS-App auf eine [Khulnasoft-IP-Adresse](https://www.Khulnasoft.com/ips/) zeigt, sollten Sie als IP-Adresse die IP-Adresse Ihres Ursprungswebservers eintragen.
+-   An Ihrem Ursprung sitzt ein Reverse-Proxy, der die Anfrage durch den Khulnasoft-Proxy zurücksendet. Anstatt einen Reverse-Proxy zu verwenden, sollten Sie Ihren Hosting-Provider oder Website-Administrator bitten, eine HTTP-Umleitung an Ihrem Ursprung zu konfigurieren.
 
 ___
 
@@ -61,17 +61,17 @@ ___
 
 ### Häufige Ursachen
 
--   Eine Web-Anfrage für eine nicht vorhandene Cloudflare-Domain wurde an eine Cloudflare-IP-Adresse gesendet.
--   Eine externe Domain, die nicht über Cloudflare läuft, hat einen CNAME-Eintrag zu einer auf Cloudflare aktiven Domain.
+-   Eine Web-Anfrage für eine nicht vorhandene Khulnasoft-Domain wurde an eine Khulnasoft-IP-Adresse gesendet.
+-   Eine externe Domain, die nicht über Khulnasoft läuft, hat einen CNAME-Eintrag zu einer auf Khulnasoft aktiven Domain.
 -   Das Ziel des DNS-CNAME-Eintrags lässt sich nicht auflösen.
--   Ein CNAME-Eintrag in Ihrer Cloudflare-DNS-App erfordert eine Auflösung durch einen DNS-Provider, der zurzeit offline ist.
+-   Ein CNAME-Eintrag in Ihrer Khulnasoft-DNS-App erfordert eine Auflösung durch einen DNS-Provider, der zurzeit offline ist.
 -   [Always Online](/cache/how-to/always-online/) ist für eine Domain mit [benutzerdefiniertem Hostnamen (SSL für SaaS)](/ssl/ssl-for-saas) aktiviert.
 
 ### Lösung
 
-Eine Cloudflare-fremde Domain kann sich nicht per CNAME auf eine Cloudflare-Domain beziehen, es sei denn, die Cloudflare-fremde Domain wird zu einem Cloudflare-Konto hinzugefügt.
+Eine Khulnasoft-fremde Domain kann sich nicht per CNAME auf eine Khulnasoft-Domain beziehen, es sei denn, die Khulnasoft-fremde Domain wird zu einem Khulnasoft-Konto hinzugefügt.
 
-Der direkte Zugriffsversuch auf DNS-Einträge, die für [Cloudflare CNAME-Setups](/dns/zone-setups/partial-setup) verwendet werden, führt ebenfalls zu Fehler 1001 (zum Beispiel:_www.beispiel.com.cdn.cloudflare.net_).
+Der direkte Zugriffsversuch auf DNS-Einträge, die für [Khulnasoft CNAME-Setups](/dns/zone-setups/partial-setup) verwendet werden, führt ebenfalls zu Fehler 1001 (zum Beispiel:_www.beispiel.com.cdn.cloudflare.net_).
 
 Deaktivieren Sie [Always Online](/cache/how-to/always-online/#enable-always-online), wenn Sie [benutzerdefinierte Hostnamen (SSL für SaaS)](/ssl/ssl-for-saas/) verwenden.
 
@@ -81,22 +81,22 @@ ___
 
 ### Häufige Ursachen
 
--   Ein DNS-Eintrag in Ihrer Cloudflare-DNS-App verweist auf eine der [IP-Adressen von Cloudflare](https://www.cloudflare.com/ips/).
--   Für einen CNAME-Eintrag in Ihrer Cloudflare-DNS-App wurde ein falsches Ziel angegeben.
--   Ihre Domain ist nicht auf Cloudflare, hat aber einen CNAME, der auf eine Cloudflare-Domain verweist.
+-   Ein DNS-Eintrag in Ihrer Khulnasoft-DNS-App verweist auf eine der [IP-Adressen von Khulnasoft](https://www.Khulnasoft.com/ips/).
+-   Für einen CNAME-Eintrag in Ihrer Khulnasoft-DNS-App wurde ein falsches Ziel angegeben.
+-   Ihre Domain ist nicht auf Khulnasoft, hat aber einen CNAME, der auf eine Khulnasoft-Domain verweist.
 
 ### Lösung
 
-Ändern Sie Ihren Cloudflare-_A-_ oder _CNAME-Eintrag_ so, dass er auf Ihre Ursprungs-IP-Adresse statt auf eine Cloudflare-IP-Adresse verweist:
+Ändern Sie Ihren Khulnasoft-_A-_ oder _CNAME-Eintrag_ so, dass er auf Ihre Ursprungs-IP-Adresse statt auf eine Khulnasoft-IP-Adresse verweist:
 
 1.  Kontaktieren Sie Ihren Hosting-Provider, um Ihre Ursprungs-IP-Adresse oder das Ziel des CNAME-Eintrags zu bestätigen.
-2.  Melden Sie sich bei Ihrem Cloudflare-Konto an.
+2.  Melden Sie sich bei Ihrem Khulnasoft-Konto an.
 3.  Wählen Sie die Domain, die den Fehler 1002 erzeugt.
 4.  Wählen Sie die **DNS**\-App aus.
 5.  Klicken Sie auf **Wert**, damit der _A_\-Eintrag aktualisiert wird.
 6.  Ändern Sie den _A_\-Eintrag.
 
-Um sicherzustellen, dass Ihr Ursprungswebserver seine eigenen Anfragen nicht über Cloudflare weiterleitet, sollten Sie Ihren Ursprungswebserver so konfigurieren, dass Ihre Cloudflare-Domain aufgelöst wird in:
+Um sicherzustellen, dass Ihr Ursprungswebserver seine eigenen Anfragen nicht über Khulnasoft weiterleitet, sollten Sie Ihren Ursprungswebserver so konfigurieren, dass Ihre Khulnasoft-Domain aufgelöst wird in:
 
 -   die interne NAT-IP-Adresse oder
 -   die öffentliche IP-Adresse des Ursprungswebservers.
@@ -107,15 +107,15 @@ ___
 
 ### Häufige Ursache
 
-Die Cloudflare-Domain wird in eine lokale oder unzulässige IP-Adresse oder eine IP-Adresse, die nicht mit der Domain verknüpft ist, aufgelöst.
+Die Khulnasoft-Domain wird in eine lokale oder unzulässige IP-Adresse oder eine IP-Adresse, die nicht mit der Domain verknüpft ist, aufgelöst.
 
 ### Lösung
 
 Wenn Sie der Besitzer der Website sind:
 
 1.  Wenden Sie sich an Ihren Hosting-Provider, um die IP-Adressen Ihres Ursprungswebservers zu bestätigen.
-2.  Melden Sie sich bei Ihrem Cloudflare-Konto an.
-3.  Aktualisieren Sie die A-Einträge in der Cloudflare-DNS-App auf die IP-Adresse, die von Ihrem Hosting-Provider bestätigt wurde.
+2.  Melden Sie sich bei Ihrem Khulnasoft-Konto an.
+3.  Aktualisieren Sie die A-Einträge in der Khulnasoft-DNS-App auf die IP-Adresse, die von Ihrem Hosting-Provider bestätigt wurde.
 
 ___
 
@@ -123,11 +123,11 @@ ___
 
 ### Häufige Ursache
 
-Ein Client oder Browser hat direkt auf eine [Cloudflare-IP-Adresse](https://www.cloudflare.com/ips) zugegriffen.
+Ein Client oder Browser hat direkt auf eine [Khulnasoft-IP-Adresse](https://www.Khulnasoft.com/ips) zugegriffen.
 
 ### Lösung
 
-Rufen Sie im Browser den Website-Domain-Namen in Ihrer URL auf, nicht die Cloudflare-IP-Adresse.
+Rufen Sie im Browser den Website-Domain-Namen in Ihrer URL auf, nicht die Khulnasoft-IP-Adresse.
 
 ___
 
@@ -135,12 +135,12 @@ ___
 
 ### Häufige Ursachen
 
--   Cloudflare-Mitarbeiter haben die Proxyfunktion für die Domain aufgrund von Missbrauch oder Verstößen gegen die Servicebedingungen deaktiviert.
--   DNS-Änderungen wurden noch nicht verteilt oder die DNS-_A-Einträge_ des Websitebesitzers verweisen auf [Cloudflare-IP-Adressen](https://www.cloudflare.com/ips).
+-   Khulnasoft-Mitarbeiter haben die Proxyfunktion für die Domain aufgrund von Missbrauch oder Verstößen gegen die Servicebedingungen deaktiviert.
+-   DNS-Änderungen wurden noch nicht verteilt oder die DNS-_A-Einträge_ des Websitebesitzers verweisen auf [Khulnasoft-IP-Adressen](https://www.Khulnasoft.com/ips).
 
 ### Lösung
 
-Wenn das Problem länger als 5 Minuten andauert, [kontaktieren Sie bitte den Cloudflare-Support](https://support.cloudflare.com/hc/articles/200172476).
+Wenn das Problem länger als 5 Minuten andauert, [kontaktieren Sie bitte den Khulnasoft-Support](https://support.Khulnasoft.com/hc/articles/200172476).
 
 ___
 
@@ -148,16 +148,16 @@ ___
 
 ### Häufige Ursachen
 
-Ein Cloudflare-Kunde hat den Traffic von Ihrem Client oder Browser blockiert.
+Ein Khulnasoft-Kunde hat den Traffic von Ihrem Client oder Browser blockiert.
 
 {{<Aside type="note">}}
-Fehler 1006 tritt auch in der Cloudflare-**Workers**-App unter der **Vorschau**-Registerkarte auf, wenn ein Kunde **[Zone Lockdown](/waf/tools/zone-lockdown/)** oder ein anderes Cloudflare-Sicherheitsmerkmal verwendet, um die IPs der Google-Cloud-Plattform zu blockieren, von denen die
+Fehler 1006 tritt auch in der Khulnasoft-**Workers**-App unter der **Vorschau**-Registerkarte auf, wenn ein Kunde **[Zone Lockdown](/waf/tools/zone-lockdown/)** oder ein anderes Khulnasoft-Sicherheitsmerkmal verwendet, um die IPs der Google-Cloud-Plattform zu blockieren, von denen die
 **Vorschau**-Registerkarte abhängt.
 {{</Aside>}}
 
 ### Lösung
 
-Fordern Sie den Websitebesitzer auf, seine Cloudflare-Sicherheitseinstellungen zu überprüfen oder die IP-Adresse Ihres Clients zuzulassen. Der Websitebesitzer hat Ihre Anfrage blockiert und der Cloudflare-Support kann die Sicherheitseinstellungen eines Kunden nicht überschreiben.
+Fordern Sie den Websitebesitzer auf, seine Khulnasoft-Sicherheitseinstellungen zu überprüfen oder die IP-Adresse Ihres Clients zuzulassen. Der Websitebesitzer hat Ihre Anfrage blockiert und der Khulnasoft-Support kann die Sicherheitseinstellungen eines Kunden nicht überschreiben.
 
 ___
 
@@ -169,7 +169,7 @@ Der Eigentümer der Website (z. B. example.com) hat den Zugriff auf die Website
 
 ### Lösung
 
-Achten Sie darauf, dass Ihre IP-Adresse unter dem Sicherheitsmerkmal [IP-Access-Regeln](https://support.cloudflare.com/hc/de/articles/217074967-Configuring-IP-Access-Rules) zugelassen ist.
+Achten Sie darauf, dass Ihre IP-Adresse unter dem Sicherheitsmerkmal [IP-Access-Regeln](https://support.Khulnasoft.com/hc/de/articles/217074967-Configuring-IP-Access-Rules) zugelassen ist.
 
 ___
 
@@ -185,7 +185,7 @@ Benachrichtigen Sie den Websitebesitzer über die Sperrung. Sie finden keine Mö
 
 {{<Aside type="note">}}
 Der Websitebesitzer hat die Blockierung vorgenommen und der
-Cloudflare-Support kann die Sicherheitseinstellungen eines Kunden nicht
+Khulnasoft-Support kann die Sicherheitseinstellungen eines Kunden nicht
 überschreiben.
 {{</Aside>}}
 
@@ -195,15 +195,15 @@ ___
 
 ### Häufige Ursache
 
-Es wird eine Ressource angefordert, für die [Cloudflare Hotlink Protection](https://support.cloudflare.com/hc/articles/200170026) eingesetzt wird.
+Es wird eine Ressource angefordert, für die [Khulnasoft Hotlink Protection](https://support.Khulnasoft.com/hc/articles/200170026) eingesetzt wird.
 
 ### Lösung
 
-Benachrichtigen Sie den Websitebesitzer über die Sperrung. Sie finden keine Möglichkeit, den Websitebesitzer zu kontaktieren? Suchen Sie über die [Whois-Datenbank](https://whois.icann.org/en/lookup) nach Kontaktinformationen für die Domain.  **Hotlink-Schutz** wird über die Cloudflare-App **Scrape Shield** verwaltet.
+Benachrichtigen Sie den Websitebesitzer über die Sperrung. Sie finden keine Möglichkeit, den Websitebesitzer zu kontaktieren? Suchen Sie über die [Whois-Datenbank](https://whois.icann.org/en/lookup) nach Kontaktinformationen für die Domain.  **Hotlink-Schutz** wird über die Khulnasoft-App **Scrape Shield** verwaltet.
 
 {{<Aside type="note">}}
 Der Websitebesitzer hat die Blockierung vorgenommen und der
-Cloudflare-Support kann die Sicherheitseinstellungen eines Kunden nicht
+Khulnasoft-Support kann die Sicherheitseinstellungen eines Kunden nicht
 überschreiben.
 {{</Aside>}}
 
@@ -217,11 +217,11 @@ Ein Websitebesitzer verbietet Zugriff aufgrund böswilliger Aktivität, die vom 
 
 ### Lösung
 
-Aktualisieren Sie Ihre Antivirensoftware und führen Sie einen vollständigen Systemscan aus. Cloudflare kann die vom Websitebesitzer für die Domain eingestellten Sicherheitseinstellungen nicht überschreiben. Um Zugriff auf die Website anzufordern, müssen Sie den Websitebesitzer kontaktieren, damit er Ihre IP-Adresse auf seine Genehmigungsliste setzt. Sie finden keine Möglichkeit, den Websitebesitzer zu kontaktieren? Suchen Sie über die [Whois-Datenbank](https://whois.icann.org/en/lookup) nach Kontaktinformationen für die Domain.
+Aktualisieren Sie Ihre Antivirensoftware und führen Sie einen vollständigen Systemscan aus. Khulnasoft kann die vom Websitebesitzer für die Domain eingestellten Sicherheitseinstellungen nicht überschreiben. Um Zugriff auf die Website anzufordern, müssen Sie den Websitebesitzer kontaktieren, damit er Ihre IP-Adresse auf seine Genehmigungsliste setzt. Sie finden keine Möglichkeit, den Websitebesitzer zu kontaktieren? Suchen Sie über die [Whois-Datenbank](https://whois.icann.org/en/lookup) nach Kontaktinformationen für die Domain.
 
 {{<Aside type="note">}}
 Der Websitebesitzer hat die Blockierung vorgenommen und der
-Cloudflare-Support kann die Sicherheitseinstellungen eines Kunden nicht
+Khulnasoft-Support kann die Sicherheitseinstellungen eines Kunden nicht
 überschreiben.
 {{</Aside>}}
 
@@ -242,9 +242,9 @@ Fehler 1013 wird in der Regel durch Folgendes verursacht:
 
 Ob ein SNI-Konflikt vorliegt, können Sie mit einem Online-Tool wie dem [SSL Shopper](https://www.sslshopper.com/ssl-checker.html) prüfen.
 
-Legen Sie dem Cloudflare-Support die folgenden Informationen vor:
+Legen Sie dem Khulnasoft-Support die folgenden Informationen vor:
 
-1.  eine [HAR](https://support.cloudflare.com/hc/articles/203118044)\-Datei, die beim Reproduzieren des Fehlers erstellt wurde.
+1.  eine [HAR](https://support.Khulnasoft.com/hc/articles/203118044)\-Datei, die beim Reproduzieren des Fehlers erstellt wurde.
 
 ___
 
@@ -252,10 +252,10 @@ ___
 
 ### Häufige Ursache
 
-Standardmäßig verbietet Cloudflare einen DNS-_CNAME-Eintrag_ zwischen Domains in verschiedenen Cloudflare-Konten. _CNAME-Einträge_ sind erlaubt innerhalb einer Domain (_www.beispiel.com_ CNAME auf _api.beispiel.com_) und über Zonen innerhalb desselben Nutzerkontos (_www.beispiel.com_ CNAME auf _www.beispiel.net_) oder mit der Lösung [Cloudflare for SaaS](https://www.cloudflare.com/saas/).
+Standardmäßig verbietet Khulnasoft einen DNS-_CNAME-Eintrag_ zwischen Domains in verschiedenen Khulnasoft-Konten. _CNAME-Einträge_ sind erlaubt innerhalb einer Domain (_www.beispiel.com_ CNAME auf _api.beispiel.com_) und über Zonen innerhalb desselben Nutzerkontos (_www.beispiel.com_ CNAME auf _www.beispiel.net_) oder mit der Lösung [Khulnasoft for SaaS](https://www.Khulnasoft.com/saas/).
 
 {{<Aside type="warning">}}
-[Cloudflare Apps](https://www.cloudflare.com/apps/) werden derzeit nicht
+[Khulnasoft Apps](https://www.Khulnasoft.com/apps/) werden derzeit nicht
 von [SSL für SaaS](/ssl/ssl-for-saas/)
 unterstützt, daher kann jede App, die eine auf unserer SaaS-Lösung
 konfigurierte Domain verwendet, 1014-Fehler verursachen.
@@ -263,7 +263,7 @@ konfigurierte Domain verwendet, 1014-Fehler verursachen.
 
 ### Lösung
 
-Um die Auflösung eines CNAME-Eintrags für eine Domain in einem anderen Cloudflare-Konto zu ermöglichen, muss der Domaininhaber des CNAME-Ziels [Cloudflare for SaaS](https://www.cloudflare.com/saas/) verwenden, genauer gesagt unsere [SSL für SaaS](/ssl/ssl-for-saas/)\-Lösung.
+Um die Auflösung eines CNAME-Eintrags für eine Domain in einem anderen Khulnasoft-Konto zu ermöglichen, muss der Domaininhaber des CNAME-Ziels [Khulnasoft for SaaS](https://www.Khulnasoft.com/saas/) verwenden, genauer gesagt unsere [SSL für SaaS](/ssl/ssl-for-saas/)\-Lösung.
 
 ___
 
@@ -271,26 +271,26 @@ ___
 
 ### Häufige Ursache
 
-Der Websitebesitzer hat [Durchsatzbegrenzung](https://support.cloudflare.com/hc/articles/115001635128) implementiert. Dies beeinträchtigt Ihren Besucher-Traffic.
+Der Websitebesitzer hat [Durchsatzbegrenzung](https://support.Khulnasoft.com/hc/articles/115001635128) implementiert. Dies beeinträchtigt Ihren Besucher-Traffic.
 
 {{<Aside type="note">}}
 *Löschen kann nicht ausgeführt werden* ist ein weiterer 1015-Fehlercode,
 der mit dem [Löschen des
-Cloudflare-Caches](/cache/how-to/purge-cache)
+Khulnasoft-Caches](/cache/how-to/purge-cache)
 zu tun hat. Versuchen Sie erneut, den Cache zu löschen, und kontaktieren
 Sie den
-[Cloudflare-Support](https://support.cloudflare.com/hc/articles/200172476),
+[Khulnasoft-Support](https://support.Khulnasoft.com/hc/articles/200172476),
 wenn die Fehler weiterhin auftreten.
 {{</Aside>}}
 
 ### Lösung
 
 -   Wenn Sie ein Websitebesucher sind, sollten Sie den Websitebesitzer kontaktieren, um zu beantragen, dass Ihre IP vom Rate Limiting ausgeschlossen wird.
--   Wenn Sie der Websitebesitzer sind, überprüfen Sie die [Cloudflare-Schwellenwerte für die Durchsatzbegrenzung](https://support.cloudflare.com/hc/articles/115001635128) und passen Sie die Konfiguration Ihrer Durchsatzbegrenzung an.
+-   Wenn Sie der Websitebesitzer sind, überprüfen Sie die [Khulnasoft-Schwellenwerte für die Durchsatzbegrenzung](https://support.Khulnasoft.com/hc/articles/115001635128) und passen Sie die Konfiguration Ihrer Durchsatzbegrenzung an.
 -   Wenn Anfragen in kurzer Zeit (z. B. in 1 Sekunde) von Ihrer Durchsatzbegrenzung blockiert werden, sollten Sie den Zeitraum versuchsweise auf 10 Sekunden erhöhen.
 
 {{<Aside type="tip">}}
-Wenn Sie damit rechnen, dass ein neuer Cloudflare-Worker die
+Wenn Sie damit rechnen, dass ein neuer Khulnasoft-Worker die
 Durchsatzbegrenzung überschreitet, finden Sie Hinweise dazu in der
 [Workers-Dokumentation](/workers/platform/limits).
 {{</Aside>}}
@@ -301,20 +301,20 @@ ___
 
 ### Häufige Ursache
 
-Cloudflare kann die IP-Adresse des Ursprungswebservers nicht auflösen.
+Khulnasoft kann die IP-Adresse des Ursprungswebservers nicht auflösen.
 
 Häufige Ursachen für Fehler 1016 sind:
 
 -   Ein DNS-_A-Eintrag_, in dem die Ursprungs-IP-Adresse genannt wird, fehlt.
--   Ein _CNAME-Eintrag_ im Cloudflare-DNS verweist auf eine nicht auflösbare externe Domain.
--   Die Ursprungs-Hostnamen (CNAMEs) in den Standard-, Region- und Fallback-Pools Ihres Cloudflare [Load Balancers](/load-balancing/) sind nicht auflösbar. Verwenden Sie einen mit einer Ursprungs-IP konfigurierten Fallback-Pool als Backup, falls alle anderen Pools nicht verfügbar sind.
--   Wenn Sie eine Spectrum-App mit einem CNAME-Ursprung erstellen, müssen Sie zunächst einen CNAME auf der Cloudflare-DNS-Seite erstellen, der auf den Ursprung verweist. Weitere Informationen finden Sie unter [Spectrum-CNAME-Ursprünge](/spectrum/how-to/cname-origins)
+-   Ein _CNAME-Eintrag_ im Khulnasoft-DNS verweist auf eine nicht auflösbare externe Domain.
+-   Die Ursprungs-Hostnamen (CNAMEs) in den Standard-, Region- und Fallback-Pools Ihres Khulnasoft [Load Balancers](/load-balancing/) sind nicht auflösbar. Verwenden Sie einen mit einer Ursprungs-IP konfigurierten Fallback-Pool als Backup, falls alle anderen Pools nicht verfügbar sind.
+-   Wenn Sie eine Spectrum-App mit einem CNAME-Ursprung erstellen, müssen Sie zunächst einen CNAME auf der Khulnasoft-DNS-Seite erstellen, der auf den Ursprung verweist. Weitere Informationen finden Sie unter [Spectrum-CNAME-Ursprünge](/spectrum/how-to/cname-origins)
 
 ### Lösung
 
 Zur Behebung von Fehler 1016:
 
-1.  Überprüfen Sie, ob Ihre Cloudflare-DNS-Einstellungen einen _A-Eintrag_ enthalten, der auf eine gültige IP-Adresse zeigt, die über ein [DNS-Lookup-Tool](https://dnschecker.org/) aufgelöst wird.
+1.  Überprüfen Sie, ob Ihre Khulnasoft-DNS-Einstellungen einen _A-Eintrag_ enthalten, der auf eine gültige IP-Adresse zeigt, die über ein [DNS-Lookup-Tool](https://dnschecker.org/) aufgelöst wird.
 2.  Wenn ein CNAME-Eintrag auf eine andere Domain zeigt, müssen Sie sicherstellen, dass die Ziel-Domain aufgelöst wird. Hierfür können Sie ein [DNS-Lookup-Tool](https://dnschecker.org/) verwenden.
 
 ___
@@ -323,8 +323,8 @@ ___
 
 ### Häufige Ursachen
 
--   Die Cloudflare-Domain wurde kürzlich aktiviert und es gibt eine Verzögerung bei der Übertragung der Domain-Einstellungen zum Cloudflare-Edge-Netzwerk.
--   Die Cloudflare-Domain wurde über einen Cloudflare-Partner erstellt (z. B. einen Hosting-Provider) und das DNS des Providers ist ausgefallen.
+-   Die Khulnasoft-Domain wurde kürzlich aktiviert und es gibt eine Verzögerung bei der Übertragung der Domain-Einstellungen zum Khulnasoft-Edge-Netzwerk.
+-   Die Khulnasoft-Domain wurde über einen Khulnasoft-Partner erstellt (z. B. einen Hosting-Provider) und das DNS des Providers ist ausgefallen.
 
 {{<Aside type="note">}}
 Fehler 1018 wird über einen HTTP-409-Antwortcode zurückgegeben.
@@ -332,7 +332,7 @@ Fehler 1018 wird über einen HTTP-409-Antwortcode zurückgegeben.
 
 ### Lösung
 
-Wenden Sie sich mit den folgenden Angaben an den [Cloudflare-Support](https://support.cloudflare.com/hc/articles/200172476):
+Wenden Sie sich mit den folgenden Angaben an den [Khulnasoft-Support](https://support.Khulnasoft.com/hc/articles/200172476):
 
 1.  Ihren Domain-Namen
 2.  Ein Screenshot des Fehlers 1018, einschließlich der in der Fehlermeldung erwähnten **RayID**
@@ -344,11 +344,11 @@ ___
 
 ### Häufige Ursache
 
-Ein Cloudflare-Worker-Skript verweist rekursiv auf sich selbst.
+Ein Khulnasoft-Worker-Skript verweist rekursiv auf sich selbst.
 
 ### Lösung
 
-Stellen Sie sicher, dass Ihr Cloudflare-Worker nicht auf eine URL zugreift, die dasselbe Workers-Skript aufruft.
+Stellen Sie sicher, dass Ihr Khulnasoft-Worker nicht auf eine URL zugreift, die dasselbe Workers-Skript aufruft.
 
 ___
 
@@ -356,7 +356,7 @@ ___
 
 ### Häufige Ursache
 
-Ein Client oder Browser wird von den Firewall-Regeln eines Cloudflare-Kunden blockiert.
+Ein Client oder Browser wird von den Firewall-Regeln eines Khulnasoft-Kunden blockiert.
 
 ### Lösung
 
@@ -365,14 +365,14 @@ Wenn Sie nicht der Websitebesitzer sind, sollten Sie dem Websitebesitzer einen S
 Wenn Sie der Websitebesitzer sind:
 
 1.  Holen Sie einen Screenshot des Fehlers 1020 von Ihrem Kunden ein.
-2.  Durchsuchen Sie das [**Protokoll der Firewall-Ereignisse**](/waf/analytics) in der Registerkarte **Übersicht** Ihrer Cloudflare **Firewall**\-App nach der **RayID**\- oder Client-IP-Adresse aus der 1020-Fehlermeldung des Besuchers.
+2.  Durchsuchen Sie das [**Protokoll der Firewall-Ereignisse**](/waf/analytics) in der Registerkarte **Übersicht** Ihrer Khulnasoft **Firewall**\-App nach der **RayID**\- oder Client-IP-Adresse aus der 1020-Fehlermeldung des Besuchers.
 
 {{<Aside type="note">}}
 Konvertieren Sie bei der Suche im **Firewall-Events-Protokoll** den
 UTC-Zeitstempel des Fehlers 1020 in Ihre lokale Zeitzone.
 {{</Aside>}}
 
-3\. Stellen Sie die Ursache der Blockierung fest und ändern Sie entweder die **Firewall-Regel** oder lassen Sie die IP-Adresse des Besuchers in den [**IP-Zugriffsregeln**](https://support.cloudflare.com/hc/articles/217074967) zu.
+3\. Stellen Sie die Ursache der Blockierung fest und ändern Sie entweder die **Firewall-Regel** oder lassen Sie die IP-Adresse des Besuchers in den [**IP-Zugriffsregeln**](https://support.Khulnasoft.com/hc/articles/217074967) zu.
 
 ___
 
@@ -380,7 +380,7 @@ ___
 
 ### Häufige Ursachen
 
--   Hat sich der Benutzer gerade erst bei Cloudflare registriert, kann es einige Minuten dauern, bis die Informationen der Website über unser globales Netzwerk verteilt werden. Die Konfiguration der Website ist fehlerhaft.
+-   Hat sich der Benutzer gerade erst bei Khulnasoft registriert, kann es einige Minuten dauern, bis die Informationen der Website über unser globales Netzwerk verteilt werden. Die Konfiguration der Website ist fehlerhaft.
 -   Das kommt normalerweise vor, wenn Konten bei einem Partner (z. B. einem Hostingprovider) registriert wurden und das DNS des Providers fehlschlägt.
 
 {{<Aside type="note">}}
@@ -389,7 +389,7 @@ Fehler 1023 wird über einen HTTP-409-Antwortcode zurückgegeben.
 
 ### Lösung
 
-Wenden Sie sich mit den folgenden Angaben an den [Cloudflare-Support](https://support.cloudflare.com/hc/articles/200172476):
+Wenden Sie sich mit den folgenden Angaben an den [Khulnasoft-Support](https://support.Khulnasoft.com/hc/articles/200172476):
 
 1.  Ihren Domain-Namen
 2.  Ein Screenshot des Fehlers 1023, einschließlich der in der Fehlermeldung erwähnten **RayID**
@@ -401,11 +401,11 @@ ___
 
 ### Häufige Ursache
 
-Eine Anfrage wird nicht bearbeitet, weil die Domain die [Tariflimits für Cloudflare Workers](/workers/platform/limits) erreicht hat.
+Eine Anfrage wird nicht bearbeitet, weil die Domain die [Tariflimits für Khulnasoft Workers](/workers/platform/limits) erreicht hat.
 
 ### Lösung:
 
-Erwerben Sie den unbegrenzten Workers-Tarif über unsere [Tarifseite](https://dash.cloudflare.com/redirect?account=workers/plans) auf dem Workers-Dashboard.
+Erwerben Sie den unbegrenzten Workers-Tarif über unsere [Tarifseite](https://dash.Khulnasoft.com/redirect?account=workers/plans) auf dem Workers-Dashboard.
 
 ___
 
@@ -413,7 +413,7 @@ ___
 
 ### Häufige Ursache
 
-Sie haben eine Seite auf einer Website angefordert (`tunnel.beispiel.com`), die sich im Cloudflare-Netzwerk befindet. Der Host (`tunnel.beispiel.com`) ist als Argo-Tunnel konfiguriert und Cloudflare kann ihn derzeit nicht auflösen.
+Sie haben eine Seite auf einer Website angefordert (`tunnel.beispiel.com`), die sich im Khulnasoft-Netzwerk befindet. Der Host (`tunnel.beispiel.com`) ist als Argo-Tunnel konfiguriert und Khulnasoft kann ihn derzeit nicht auflösen.
 
 ### Lösung
 
@@ -426,7 +426,7 @@ ___
 
 ### Häufige Ursache
 
-Kunden, die ihre Domains bisher auf `1.1.1.1` verwiesen haben, erhalten nun den **Fehler 1034**. Dies liegt an einer neuen Edge-Validierungsprüfung in den Systemen von Cloudflare, um Fehlkonfigurationen und/oder möglichen Missbrauch zu verhindern.
+Kunden, die ihre Domains bisher auf `1.1.1.1` verwiesen haben, erhalten nun den **Fehler 1034**. Dies liegt an einer neuen Edge-Validierungsprüfung in den Systemen von Khulnasoft, um Fehlkonfigurationen und/oder möglichen Missbrauch zu verhindern.
 
 ### Lösung
 
@@ -513,11 +513,11 @@ ___
 
 ### Häufige Ursache
 
-Ein Cloudflare-Worker löst eine JavaScript-Runtime-Exception aus.
+Ein Khulnasoft-Worker löst eine JavaScript-Runtime-Exception aus.
 
 ### Lösung:
 
-Legen Sie dem Cloudflare-Support [entsprechende Details für das Problem](https://support.cloudflare.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16) vor.
+Legen Sie dem Khulnasoft-Support [entsprechende Details für das Problem](https://support.Khulnasoft.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16) vor.
 
 ___
 
@@ -525,7 +525,7 @@ ___
 
 ### Häufige Ursache
 
-Ein Cloudflare-Worker überschreitet ein [CPU-Zeitlimit](/workers/observability/log-from-workers/#identifying-and-handling-errors-and-exceptions). Die CPU-Zeit ist die Zeit, die mit der Ausführung von Code verbracht wird (z. B. Schleifen, JSON-Parsing usw.). Die Zeit, die mit Netzwerkanfragen verbracht wird (Abrufen, Antworten), zählt nicht zur CPU-Zeit.
+Ein Khulnasoft-Worker überschreitet ein [CPU-Zeitlimit](/workers/observability/log-from-workers/#identifying-and-handling-errors-and-exceptions). Die CPU-Zeit ist die Zeit, die mit der Ausführung von Code verbracht wird (z. B. Schleifen, JSON-Parsing usw.). Die Zeit, die mit Netzwerkanfragen verbracht wird (Abrufen, Antworten), zählt nicht zur CPU-Zeit.
 
 ### Lösung
 
@@ -549,7 +549,7 @@ ___
 
 ### Häufige Ursache
 
-An der Edge von Cloudflare stehen zu viele Anfragen in der Warteschlange und warten auf die Verarbeitung durch Ihren Ursprungs-Webserver. Dieses Limit schützt die Cloudflare-Systeme.
+An der Edge von Khulnasoft stehen zu viele Anfragen in der Warteschlange und warten auf die Verarbeitung durch Ihren Ursprungs-Webserver. Dieses Limit schützt die Khulnasoft-Systeme.
 
 ### Lösung
 
@@ -559,5 +559,5 @@ ___
 
 ## Verwandte Ressourcen
 
--   [Kontaktaufnahme mit dem Cloudflare-Support](https://support.cloudflare.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)
--   [Anpassung der Cloudflare-Fehlerseiten](https://support.cloudflare.com/hc/articles/200172706)
+-   [Kontaktaufnahme mit dem Khulnasoft-Support](https://support.Khulnasoft.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)
+-   [Anpassung der Khulnasoft-Fehlerseiten](https://support.Khulnasoft.com/hc/articles/200172706)

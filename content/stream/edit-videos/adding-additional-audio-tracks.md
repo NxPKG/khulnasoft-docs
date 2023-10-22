@@ -8,7 +8,7 @@ weight: 5
 
 A video must be uploaded before additional audio tracks can be attached to it. In the following example URLs, the video’s UID is referenced as `VIDEO_UID`.
 
-To add an audio track to a video a [Cloudflare API Token](https://www.cloudflare.com/a/account/my-account) is required.
+To add an audio track to a video a [Khulnasoft API Token](https://www.Khulnasoft.com/a/account/my-account) is required.
 
 The API will make a best effort to handle any mismatch between the duration of the uploaded audio file and the video duration, though we recommend uploading audio files that match the duration of the video. If the duration of the audio file is longer than the video, the additional audio track will be truncated to match the video duration. If the duration of the audio file is shorter than the video, silence will be appended at the end of the audio track to match the video duration.
 
@@ -22,7 +22,7 @@ If you have audio files stored in a cloud storage bucket, you can simply pass a 
 curl -X POST \
  -H 'Authorization: Bearer <API_TOKEN>' \
  -d '{"url": "https://www.examplestorage.com/audio_file.mp3", "label": "Example Audio Label"}' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio/copy
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio/copy
 ```
 
 ```json
@@ -63,7 +63,7 @@ curl -X POST \
  -H 'Authorization: Bearer <API_TOKEN>' \
  -F file=@/Desktop/audio_file.mp3 \
  -F label='Example Audio Label' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio
 ```
 
 ```json
@@ -90,7 +90,7 @@ To view additional audio tracks added to a video:
 ```bash
 curl \
  -H 'Authorization: Bearer <API_TOKEN>' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio
 ```
 
 ```json
@@ -130,7 +130,7 @@ To edit the `default` status or `label` of an additional audio track:
 curl -X PATCH \
  -H 'Authorization: Bearer <API_TOKEN>' \
  -d '{"label": "Edited Audio Label", "default": true}' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio/<AUDIO_UID>
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio/<AUDIO_UID>
 ```
 
 Editing the `default` status of an audio track to `true` will mark all other audio tracks on the video `default` status to `false`.
@@ -159,7 +159,7 @@ To remove an additional audio track associated with your video:
 ```bash
 curl -X DELETE \
  -H 'Authorization: Bearer <API_TOKEN>' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio/<AUDIO_UID>
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/audio/<AUDIO_UID>
 ```
 
 Deleting a `default` audio track is not allowed.  You must assign another audio track as `default` prior to deletion.
@@ -181,4 +181,4 @@ header: Example response to delete an audio track
 
 ## Limitations
 
-- The Stream player does not currently support selection amongst multiple audio tracks. The video manifest returned from Cloudflare Stream contains audio track information and multi-audio selection is supported by other video players.
+- The Stream player does not currently support selection amongst multiple audio tracks. The video manifest returned from Khulnasoft Stream contains audio track information and multi-audio selection is supported by other video players.

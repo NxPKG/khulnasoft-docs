@@ -23,7 +23,7 @@ layout: list
   </thead>
   <tbody>
        <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...e09c1a1e</td>
       <td>100551</td>
       <td>Microsoft Exchange SSRF and RCE vulnerability - CVE:CVE-2022-41040, CVE:CVE-2022-41082</td>

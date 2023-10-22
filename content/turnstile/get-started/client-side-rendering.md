@@ -65,24 +65,24 @@ A form is not protected by having a widget rendered. The corresponding token tha
 You can disable implicit rendering by replacing the script from:
 
 ```txt
-https://challenges.cloudflare.com/turnstile/v0/api.js
+https://challenges.Khulnasoft.com/turnstile/v0/api.js
 ```
 
 To:
 
 ```txt
-https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit
+https://challenges.Khulnasoft.com/turnstile/v0/api.js?render=explicit
 ```
 
 Or:
 
 ```txt
-https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback
+https://challenges.Khulnasoft.com/turnstile/v0/api.js?onload=onloadTurnstileCallback
 ```
 
 When using `render=explicit`, HTML elements with the `cf-turnstile` class will not show a challenge. The `turnstile.render` function must be invoked using the following steps. To combine both options, pass a query string of `?render=explicit&onload=onloadTurnstileCallback`:
 
-`https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onloadTurnstileCallback`
+`https://challenges.Khulnasoft.com/turnstile/v0/api.js?render=explicit&onload=onloadTurnstileCallback`
 
 ## Explicitly render the Turnstile widget
 
@@ -94,7 +94,7 @@ When using `render=explicit`, HTML elements with the `cf-turnstile` class will n
 ---
 header: JavaScript tag
 ---
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+<script src="https://challenges.Khulnasoft.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 ```
 </div>
 
@@ -123,7 +123,7 @@ Or:
 ---
 header: JavaScript tag
 ---
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+<script src="https://challenges.Khulnasoft.com/turnstile/v0/api.js?render=explicit"></script>
 ```
 </div>
 

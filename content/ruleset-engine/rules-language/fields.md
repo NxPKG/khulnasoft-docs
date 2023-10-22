@@ -8,10 +8,10 @@ meta:
 
 # Fields reference
 
-The Cloudflare Rules language supports a range of field types:
+The Khulnasoft Rules language supports a range of field types:
 
 - [Standard fields](#standard-fields) represent common, typically static properties of an HTTP request.
-- [Dynamic fields](#dynamic-fields) represent computed or derived values, typically related to Cloudflare threat intelligence about the request.
+- [Dynamic fields](#dynamic-fields) represent computed or derived values, typically related to Khulnasoft threat intelligence about the request.
 - [URI argument and value fields](#uri-argument-and-value-fields) are extracted from the request.
 - [HTTP request header fields](#http-request-header-fields) represent the names and values associated with HTTP request headers.
 - [HTTP request body fields](#http-request-body-fields) represent the properties of an HTTP request body, including forms, for example.
@@ -19,25 +19,25 @@ The Cloudflare Rules language supports a range of field types:
 
 ## Standard fields
 
-Most standard fields use the same naming conventions as [Wireshark display fields](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html). However, there are some subtle differences between Cloudflare and Wireshark:
+Most standard fields use the same naming conventions as [Wireshark display fields](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html). However, there are some subtle differences between Khulnasoft and Wireshark:
 
-- Wireshark supports [CIDR (Classless Inter-Domain Routing) notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) for expressing IP address ranges in equality comparisons (`ip.src == 1.2.3.0/24`, for example). Cloudflare does not.
+- Wireshark supports [CIDR (Classless Inter-Domain Routing) notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) for expressing IP address ranges in equality comparisons (`ip.src == 1.2.3.0/24`, for example). Khulnasoft does not.
 
   To evaluate a range of addresses using CIDR notation, use the `in` [comparison operator](/ruleset-engine/rules-language/operators/#comparison-operators) as in this example: `ip.src in {1.2.3.0/24 4.5.6.0/24}`.
 
-- In Wireshark, `ssl` is a protocol field containing hundreds of other fields of various types that are available for comparison in multiple ways. However, in the Rules language `ssl` is a single Boolean field that indicates whether the connection from the client to Cloudflare is encrypted.
+- In Wireshark, `ssl` is a protocol field containing hundreds of other fields of various types that are available for comparison in multiple ways. However, in the Rules language `ssl` is a single Boolean field that indicates whether the connection from the client to Khulnasoft is encrypted.
 
-- The Cloudflare Rules language does not support the `slice` operator.
+- The Khulnasoft Rules language does not support the `slice` operator.
 
 {{<Aside type="note" header="Availability notes">}}
 
-- Access to `ip.src.is_in_european_union`, `ip.src.subdivision_1_iso_code`, and `ip.src.subdivision_2_iso_code` fields requires a Cloudflare Business or Enterprise plan.
+- Access to `ip.src.is_in_european_union`, `ip.src.subdivision_1_iso_code`, and `ip.src.subdivision_2_iso_code` fields requires a Khulnasoft Business or Enterprise plan.
 
-- Access to `http.request.cookies` field requires a Cloudflare Pro, Business, or Enterprise plan.
+- Access to `http.request.cookies` field requires a Khulnasoft Pro, Business, or Enterprise plan.
 
 {{</Aside>}}
 
-The Cloudflare Rules language supports these standard fields:
+The Khulnasoft Rules language supports these standard fields:
 
 <table>
   <thead>
@@ -115,7 +115,7 @@ The Cloudflare Rules language supports these standard fields:
    <tr id="field-http-request-timestamp-sec">
       <td valign="top"><code>http.request.timestamp.sec</code><br />{{<type>}}Integer{{</type>}}</td>
       <td>
-         <p>Represents the timestamp when Cloudflare received the request, expressed as Unix time in seconds. This value is 10 digits long.
+         <p>Represents the timestamp when Khulnasoft received the request, expressed as Unix time in seconds. This value is 10 digits long.
          </p>
          <p>To obtain the timestamp milliseconds, use the <code class="InlineCode">http.request.timestamp.msec</code> field.
          </p>
@@ -129,7 +129,7 @@ The Cloudflare Rules language supports these standard fields:
    <tr id="field-http-request-timestamp-msec">
       <td valign="top"><code>http.request.timestamp.msec</code><br />{{<type>}}Integer{{</type>}}</td>
       <td>
-         <p>Represents the millisecond when Cloudflare received the request, between 0 and 999.
+         <p>Represents the millisecond when Khulnasoft received the request, between 0 and 999.
          </p>
          <p>To obtain the complete timestamp, use both <code class="InlineCode">http.request.timestamp.sec</code> and <code class="InlineCode">http.request.timestamp.msec</code> fields.
          </p>
@@ -416,7 +416,7 @@ The Cloudflare Rules language supports these standard fields:
     <td>
       <p>Similar to the <a href="#field-http-request-full-uri"><code>http.request.full_uri</code></a> non-raw field. Represents the full URI as received by the web server without the URI fragment (if any) and without any transformation.
       </p>
-      <p>Note: This raw field may include some basic normalization done by Cloudflare's HTTP server. However, this can change in the future.
+      <p>Note: This raw field may include some basic normalization done by Khulnasoft's HTTP server. However, this can change in the future.
       </p>
   </td>
   </tr>
@@ -425,7 +425,7 @@ The Cloudflare Rules language supports these standard fields:
     <td>
       <p>Similar to the <a href="#field-http-request-uri"><code>http.request.uri</code></a> non-raw field. Represents the URI path and query string of the request without any transformation.
       </p>
-      <p>Note: This raw field may include some basic normalization done by Cloudflare's HTTP server. However, this can change in the future.
+      <p>Note: This raw field may include some basic normalization done by Khulnasoft's HTTP server. However, this can change in the future.
       </p>
     </td>
   </tr>
@@ -434,7 +434,7 @@ The Cloudflare Rules language supports these standard fields:
     <td>
       <p>Similar to the <a href="#field-http-request-uri-path"><code>http.request.uri.path</code></a> non-raw field. Represents the URI path of the request without any transformation.
       </p>
-      <p>Note: This raw field may include some basic normalization done by Cloudflare's HTTP server. However, this can change in the future.
+      <p>Note: This raw field may include some basic normalization done by Khulnasoft's HTTP server. However, this can change in the future.
       </p>
     </td>
   </tr>
@@ -450,7 +450,7 @@ The Cloudflare Rules language supports these standard fields:
     <td>
       <p>Similar to the <a href="#field-http-request-uri-query"><code>http.request.uri.query</code></a> non-raw field. Represents the entire query string without the <code class="InlineCode">?</code> delimiter and without any transformation.
       </p>
-      <p>Note: This raw field may include some basic normalization done by Cloudflare's HTTP server. However, this can change in the future.
+      <p>Note: This raw field may include some basic normalization done by Khulnasoft's HTTP server. However, this can change in the future.
       </p>
     </td>
   </tr>
@@ -470,13 +470,13 @@ Dynamic fields represent computed or derived values, typically related to threat
 
 {{<Aside type="note" header="Notes">}}
 
-* Access to `cf.bot_management.*` fields requires a Cloudflare Enterprise plan with [Bot Management](/bots/plans/bm-subscription/) enabled.
+* Access to `cf.bot_management.*` fields requires a Khulnasoft Enterprise plan with [Bot Management](/bots/plans/bm-subscription/) enabled.
 
 * The `cf.tls_client_auth.*` string fields are only filled in if the request includes a client certificate for [mTLS authentication](/ssl/client-certificates/enable-mtls/).
 
 {{</Aside>}}
 
-The Cloudflare Rules language supports these dynamic fields:
+The Khulnasoft Rules language supports these dynamic fields:
 
 <table>
   <thead>
@@ -573,7 +573,7 @@ The Cloudflare Rules language supports these dynamic fields:
     <tr id="field-cf-edge-server_port">
         <td><code>cf.edge.server_port</code><br />{{<type>}}Number{{</type>}}</td>
         <td>
-          <p>Represents the port number at which the Cloudflare global network received the request.
+          <p>Represents the port number at which the Khulnasoft global network received the request.
           </p>
           <p>Use this field to filter traffic on a specific port. The value is a port number in the range 1â€“65535.</p>
         </td>
@@ -595,7 +595,7 @@ The Cloudflare Rules language supports these dynamic fields:
     <tr id="field-cf-threat_score">
         <td><code>cf.threat_score</code><br />{{<type>}}Number{{</type>}}</td>
         <td>
-          <p>Represents a Cloudflare threat score from 0&#8211;100, where 0 indicates low risk. Values above 10 may represent spammers or bots, and values above 40 identify bad actors on the Internet.
+          <p>Represents a Khulnasoft threat score from 0&#8211;100, where 0 indicates low risk. Values above 10 may represent spammers or bots, and values above 40 identify bad actors on the Internet.
           </p>
           <p>It is rare to see values above 60. A common recommendation is to challenge requests with a score above 10 and to block those above 50.
           </p>
@@ -1070,9 +1070,9 @@ The Cloudflare Rules language supports these dynamic fields:
 
 ## URI argument and value fields
 
-The Cloudflare Rules language includes URI argument and value fields associated with HTTP requests. Many of these fields return [arrays](/ruleset-engine/rules-language/values/#arrays) containing the respective values.
+The Khulnasoft Rules language includes URI argument and value fields associated with HTTP requests. Many of these fields return [arrays](/ruleset-engine/rules-language/values/#arrays) containing the respective values.
 
-The Cloudflare Rules language supports these URI argument and value fields:
+The Khulnasoft Rules language supports these URI argument and value fields:
 
 <table>
   <thead>
@@ -1165,7 +1165,7 @@ The Cloudflare Rules language supports these URI argument and value fields:
 
 The Rules language includes fields that represent properties of HTTP request headers. Many of these return [arrays](/ruleset-engine/rules-language/values/#arrays) containing the respective values.
 
-The Cloudflare Rules language supports these HTTP header fields:
+The Khulnasoft Rules language supports these HTTP header fields:
 
 <table>
   <thead>
@@ -1282,7 +1282,7 @@ The Cloudflare Rules language supports these HTTP header fields:
 
 {{<Aside type="note">}}
 
-Access to HTTP request body fields requires a Cloudflare Enterprise plan with a paid add-on, except for the `http.request.body.mime` field.
+Access to HTTP request body fields requires a Khulnasoft Enterprise plan with a paid add-on, except for the `http.request.body.mime` field.
 
 {{</Aside>}}
 
@@ -1296,7 +1296,7 @@ The maximum body size of 128 KB applies only to the values of HTTP body fields â
 
 {{</Aside>}}
 
-The Cloudflare Rules language supports these HTTP body fields:
+The Khulnasoft Rules language supports these HTTP body fields:
 
 <table>
   <thead>
@@ -1415,7 +1415,7 @@ The Cloudflare Rules language supports these HTTP body fields:
         <p>Example:
         <br /><code class="InlineCode">image/jpeg</code>
         </p>
-        <p>This field is available on all Cloudflare plans.
+        <p>This field is available on all Khulnasoft plans.
         </p>
       </td>
     </tr>
@@ -1434,13 +1434,13 @@ You can only use HTTP response fields in:
 * [Compression Rules](/rules/compression-rules/)
 * [Custom error responses](/rules/custom-error-responses/)
 * [Rate limiting rules](/waf/rate-limiting-rules/)
-* Filter expressions of the [Cloudflare Sensitive Data Detection](/waf/managed-rules/) ruleset
+* Filter expressions of the [Khulnasoft Sensitive Data Detection](/waf/managed-rules/) ruleset
 
 Specific fields may have additional limitations.
 
 {{</Aside>}}
 
-The Cloudflare Rules language supports these HTTP response fields:
+The Khulnasoft Rules language supports these HTTP response fields:
 
 <table>
   <thead>
@@ -1453,7 +1453,7 @@ The Cloudflare Rules language supports these HTTP response fields:
    <tr id="field-http-response-code">
       <td valign="top"><code>http.response.code</code><br />{{<type>}}Integer{{</type>}}</td>
       <td>
-         <p>Represents the HTTP status code returned to the client, either set by a Cloudflare product or returned by the origin server.
+         <p>Represents the HTTP status code returned to the client, either set by a Khulnasoft product or returned by the origin server.
          </p>
          <p>Example value:
          <br /><code class="InlineCode">403</code>
@@ -1577,7 +1577,7 @@ The Cloudflare Rules language supports these HTTP response fields:
    <tr id="field-cf-response-1xxx_code">
       <td valign="top"><code>cf.response.1xxx_code</code><br />{{<type>}}Integer{{</type>}}</td>
       <td>
-         <p>Contains the specific code for 1xxx Cloudflare errors. Use this field to differentiate between 1xxx errors associated with the same HTTP status code. The default value is <code>0</code>. For a list of 1xxx errors, refer to <a href="/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/">Troubleshooting Cloudflare 1XXX errors</a>.
+         <p>Contains the specific code for 1xxx Khulnasoft errors. Use this field to differentiate between 1xxx errors associated with the same HTTP status code. The default value is <code>0</code>. For a list of 1xxx errors, refer to <a href="/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/">Troubleshooting Khulnasoft 1XXX errors</a>.
          </p>
          <p>Example value:
          <br /><code class="InlineCode">1020</code>

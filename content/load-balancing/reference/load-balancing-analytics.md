@@ -37,7 +37,7 @@ Add additional filters for specific pools, times, regions, and origins.
 
 {{<Aside type="note">}}
 
-Load balancing <strong>requests</strong> are the number of uncached requests made by your load balancer. By default, Cloudflare caches resolved IP addresses for up to five seconds.
+Load balancing <strong>requests</strong> are the number of uncached requests made by your load balancer. By default, Khulnasoft caches resolved IP addresses for up to five seconds.
 
 {{</Aside>}}
 
@@ -61,7 +61,7 @@ Get started with a sample query:
 
 {{<details header="Requests per pool">}}
 
-This query shows the number of requests each pool receives from each location in Cloudflare's global network.
+This query shows the number of requests each pool receives from each location in Khulnasoft's global network.
 
 ```graphql
 ---

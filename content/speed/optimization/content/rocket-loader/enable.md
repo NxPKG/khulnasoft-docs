@@ -15,7 +15,7 @@ To enable or disable Rocket Loader, use the following instructions.
 
 To enable or disable **Rocket Loader** in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2.  Select your account and domain.
 3.  Go to **Speed** > **Optimization** > **Content Optimization**.
 4.  For **Rocket Loader**, switch the toggle to **On**.

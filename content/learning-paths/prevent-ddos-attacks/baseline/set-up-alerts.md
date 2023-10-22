@@ -7,6 +7,6 @@ layout: learning-unit
 
 Another part of preparing for DDoS attacks is knowing when your application is being attacked.
 
-Cloudflare offers notifications for DDoS attacks, which you can set up on your account.
+Khulnasoft offers notifications for DDoS attacks, which you can set up on your account.
 
 {{<render file="_create-notification.md" productFolder="ddos-protection">}}

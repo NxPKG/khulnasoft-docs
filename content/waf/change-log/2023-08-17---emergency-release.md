@@ -24,7 +24,7 @@ layout: list
   </thead>
   <tbody>
        <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...cac42ce2</td>
       <td>100596</td>
       <td>Citrix Content Collaboration ShareFile - Remote Code Execution - CVE:CVE-2023-24489</td>

@@ -14,7 +14,7 @@ Worker Variables are a special type of variable that generates value dynamically
 
 ## Create a new variable
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Go to **Zaraz** > **Tools Configuration** > **Variables**.
 3. Select **Create variable**, and give it a name.
 4. In **Variable type** select between `String`, `Secret` or `Worker` from the drop-down menu. Use `Secret` when you have a private value that you do not want to share, such as an API token.

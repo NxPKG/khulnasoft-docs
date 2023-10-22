@@ -20,7 +20,7 @@ FTP leverages two different sockets, one for issuing commands and the other for 
 
 There are two ways in which client and server can establish a data socket: active and passive. In active mode, the server connects _back_ to the client on a port that they have specified, which can create issues where clients are behind an NAT. The alternative is passive mode, where the server opens an extra port that the client then connects to. For an overview of active versus passive FTP, refer to [Active FTP vs. Passive FTP, a Definitive Explanation](http://slacksite.com/other/ftp.html).
 
-In passive mode, the FTP server communicates a port that the client should connect to, which is done on the control socket via a PASV command. By default, the FTP server responds with the IP address that it is listening on. This scenario is fine for servers running directly on a public-facing IP but creates issues when a server is behind an NAT, firewall, or Cloudflare Spectrum.
+In passive mode, the FTP server communicates a port that the client should connect to, which is done on the control socket via a PASV command. By default, the FTP server responds with the IP address that it is listening on. This scenario is fine for servers running directly on a public-facing IP but creates issues when a server is behind an NAT, firewall, or Khulnasoft Spectrum.
 
 Alternatively, more modern FTP server software supports [FTP extensions](https://tools.ietf.org/html/rfc2428), which introduces the EPSV command that omits the IP address that the client should connect on. Instead, the client connects to the same IP that it connected to for the control pane.
 

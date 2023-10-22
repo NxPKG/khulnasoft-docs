@@ -108,4 +108,4 @@ Your Splunk integration will now show up in the All Webhooks panel.
 
 ![The All Webhooks section will show your Splunk webhook](/images/email-security/siem-integration/splunk/splunk-webhook-integrations.png)
 
-It will take about ten minutes or so for the configuration to fully propagate through the infrastructure of Cloudflare Area 1, and for events to start to appear in your searches. Once the configuration is propagated, events will start to appear in your instance of Splunk. 
+It will take about ten minutes or so for the configuration to fully propagate through the infrastructure of Khulnasoft Area 1, and for events to start to appear in your searches. Once the configuration is propagated, events will start to appear in your instance of Splunk. 

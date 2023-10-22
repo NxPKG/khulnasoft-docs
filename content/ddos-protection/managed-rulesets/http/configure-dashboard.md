@@ -8,7 +8,7 @@ meta:
 
 # Configure HTTP DDoS Attack Protection in the dashboard
 
-Configure the HTTP DDoS Attack Protection managed ruleset by defining [overrides](/ruleset-engine/managed-rulesets/override-managed-ruleset/) in the Cloudflare dashboard. DDoS overrides allow you to customize the **action** and **sensitivity** of one or more rules in the managed ruleset.
+Configure the HTTP DDoS Attack Protection managed ruleset by defining [overrides](/ruleset-engine/managed-rulesets/override-managed-ruleset/) in the Khulnasoft dashboard. DDoS overrides allow you to customize the **action** and **sensitivity** of one or more rules in the managed ruleset.
 
 For more information on the available parameters and allowed values, refer to [Ruleset parameters](/ddos-protection/managed-rulesets/http/override-parameters/).
 
@@ -20,7 +20,7 @@ If you cannot deploy any additional overrides, consider editing an existing over
 
 ## Create a DDoS override
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and website.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and website.
 
 2. Go to **Security** > **DDoS**.
 

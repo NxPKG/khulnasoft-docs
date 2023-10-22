@@ -7,7 +7,7 @@ layout: learning-module
 
 # Load balancing concepts
 
-Learn the concepts behind load balancing, whether you are using Cloudflare or another provider.
+Learn the concepts behind load balancing, whether you are using Khulnasoft or another provider.
 
 ## Objectives
 

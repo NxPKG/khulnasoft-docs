@@ -79,7 +79,7 @@ header: API configuration example
 
 ## Disable Apps
 
-Disable all active [Cloudflare Apps](https://www.cloudflare.com/apps/developer/docs/getting-started) [^4] for matching requests.
+Disable all active [Khulnasoft Apps](https://www.Khulnasoft.com/apps/developer/docs/getting-started) [^4] for matching requests.
 
 {{<details header="API information">}}
 
@@ -104,7 +104,7 @@ This setting will not disable [Apps with Workers](https://cloudflareapps.com/app
 
 ## Disable Railgun (deprecated)
 
-Disable [Cloudflare Railgun](/railgun/) [^5] for matching requests.
+Disable [Khulnasoft Railgun](/railgun/) [^5] for matching requests.
 
 {{<details header="API information">}}
 
@@ -125,7 +125,7 @@ header: API configuration example
 
 ## Disable Zaraz
 
-Disable [Cloudflare Zaraz](/zaraz/) [^6] for matching requests.
+Disable [Khulnasoft Zaraz](/zaraz/) [^6] for matching requests.
 
 {{<details header="API information">}}
 
@@ -167,7 +167,7 @@ header: API configuration example
 
 ## Email Obfuscation
 
-Enable or disable [Email Obfuscation](https://support.cloudflare.com/hc/articles/200170016) [^8] for matching requests.
+Enable or disable [Email Obfuscation](https://support.Khulnasoft.com/hc/articles/200170016) [^8] for matching requests.
 
 {{<details header="API information">}}
 
@@ -297,7 +297,7 @@ header: API configuration example
 
 ## Server Side Excludes
 
-Enable or disable [Server Side Excludes](https://support.cloudflare.com/hc/articles/200170036) [^14] for matching requests.
+Enable or disable [Server Side Excludes](https://support.Khulnasoft.com/hc/articles/200170036) [^14] for matching requests.
 
 {{<details header="API information">}}
 
@@ -366,11 +366,11 @@ header: API configuration example
 
 [^3]: Browser Integrity Check blocks access to pages based on specific HTTP headers commonly abused by spammers.
 
-[^4]: Cloudflare Apps is a platform for sharing high-quality apps that anyone with a website can use.
+[^4]: Khulnasoft Apps is a platform for sharing high-quality apps that anyone with a website can use.
 
 [^5]: Railgun (deprecated) is a WAN optimization technology that compresses previously unreachable web objects using techniques similar to those used in high-quality video compression.
 
-[^6]: Zaraz gives you complete control over third-party tools and services for your website, and allows you to offload them to the Cloudflare global network.
+[^6]: Zaraz gives you complete control over third-party tools and services for your website, and allows you to offload them to the Khulnasoft global network.
 
 [^7]: Hotlink Protection prevents your images from being used by other sites, potentially reducing the bandwidth consumed by your origin server.
 
@@ -380,7 +380,7 @@ header: API configuration example
 
 [^10]: Opportunistic Encryption allows browsers to access HTTP URIs over an encrypted TLS channel.
 
-[^11]: Cloudflare Polish is a one-click image optimization product that automatically optimizes images in your site.
+[^11]: Khulnasoft Polish is a one-click image optimization product that automatically optimizes images in your site.
 
 [^12]: Rocket Loader prioritizes your website's content (such as text, images, and fonts) by deferring the loading of all your JavaScript code until after rendering.
 
@@ -388,6 +388,6 @@ header: API configuration example
 
 [^14]: Server Side Excludes allow you to provide specific pieces of content to real website visitors while hiding that content from suspicious visitors.
 
-[^15]: Encryption modes control the scheme (`http://` or `https://`) that Cloudflare uses to connect to your origin web server and how SSL certificates presented by your origin will be validated.
+[^15]: Encryption modes control the scheme (`http://` or `https://`) that Khulnasoft uses to connect to your origin web server and how SSL certificates presented by your origin will be validated.
 
 [^16]: Signed exchanges (SXG) is an open standard that makes it possible to cryptographically authenticate the origin of a resource independently of how it is delivered.

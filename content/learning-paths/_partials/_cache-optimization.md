@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-A few ways to optimize Cloudflare caching include:
+A few ways to optimize Khulnasoft caching include:
 
 - Creating [cache rules](/cache/how-to/cache-rules/) to customize the cache properties of specific HTTP requests.
 - Enabling the [Tiered Cache](/cache/how-to/tiered-cache/) feature, which dramatically increases cache hit ratios.

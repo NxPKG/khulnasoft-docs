@@ -7,7 +7,7 @@ layout: single
 
 # Enforce device posture
 
-With Cloudflare Zero Trust, you can configure Zero Trust policies that rely on additional signals from the WARP client or from third-party endpoint security providers. When device posture checks are configured, users can only connect to a protected application or network resource if they have a managed or healthy device.
+With Khulnasoft Zero Trust, you can configure Zero Trust policies that rely on additional signals from the WARP client or from third-party endpoint security providers. When device posture checks are configured, users can only connect to a protected application or network resource if they have a managed or healthy device.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ The WARP client must be [deployed](/cloudflare-one/connections/connect-devices/w
 
 Setup instructions vary depending on the device posture attribute. Refer to the links below to view the setup guide for your provider.
 
-- [WARP client checks](/cloudflare-one/identity/devices/warp-client-checks/) are performed by the Cloudflare WARP client.
+- [WARP client checks](/cloudflare-one/identity/devices/warp-client-checks/) are performed by the Khulnasoft WARP client.
 - [Service-to-service checks](/cloudflare-one/identity/devices/service-providers/) are performed by third-party device posture providers.
 - [Access integration checks](/cloudflare-one/identity/devices/access-integrations/) are only configurable for Access applications. These attributes cannot be used in Gateway policies.
 
@@ -33,7 +33,7 @@ You can now use your device posture check in an [Access policy](/cloudflare-one/
 
 [WARP client](/cloudflare-one/identity/devices/warp-client-checks/) and [service-to-service](/cloudflare-one/identity/devices/service-providers/) posture checks rely on traffic going through WARP to detect posture information for a device. In your [Split Tunnel configuration](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/), ensure that the following domains are included in WARP:
 
-- The IdP used to authenticate to Cloudflare Zero Trust if posture check is part of an Access policy.
+- The IdP used to authenticate to Khulnasoft Zero Trust if posture check is part of an Access policy.
 - `<your-team-name>.cloudflareaccess.com` if posture check is part of an Access policy.
 - The application protected by the Access or Gateway policy.
 
@@ -46,14 +46,14 @@ Because Gateway evaluates network and HTTP policies on every request, it maintai
 ```mermaid
 flowchart LR
 accTitle: Device posture policy enforcement
-A[Device] --schedule--> B[WARP client]--> C((Cloudflare)) --> D[Access policy]
+A[Device] --schedule--> B[WARP client]--> C((Khulnasoft)) --> D[Access policy]
 C --5 min--> E[Cache] --> F[Gateway policy]
 A --> G[Service provider] --interval--> C
 ```
 
 ### Expiration
 
-By default, the posture result on Cloudflare remains valid until it is overwritten by new data. You can specify an `expiration` time using our [API](/api/operations/device-posture-rules-update-device-posture-rule). We recommend setting the expiration to be longer than the [polling frequency](#polling-frequency).
+By default, the posture result on Khulnasoft remains valid until it is overwritten by new data. You can specify an `expiration` time using our [API](/api/operations/device-posture-rules-update-device-posture-rule). We recommend setting the expiration to be longer than the [polling frequency](#polling-frequency).
 
 ### Polling frequency
 
@@ -63,4 +63,4 @@ By default, the WARP client polls the device for status changes every five minut
 
 #### Service provider checks
 
-When setting up a [service-to-service integration](/cloudflare-one/identity/devices/service-providers/), you will choose a polling frequency to determine how often Cloudflare will query the third-party API. To set the polling frequency via the API, use the [`interval`](/api/operations/device-posture-integrations-update-device-posture-integration) parameter.
+When setting up a [service-to-service integration](/cloudflare-one/identity/devices/service-providers/), you will choose a polling frequency to determine how often Khulnasoft will query the third-party API. To set the polling frequency via the API, use the [`interval`](/api/operations/device-posture-integrations-update-device-posture-integration) parameter.

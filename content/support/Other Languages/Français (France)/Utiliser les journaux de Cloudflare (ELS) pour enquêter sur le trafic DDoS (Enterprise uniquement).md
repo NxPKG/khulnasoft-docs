@@ -1,37 +1,37 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: french
-source: https://support.cloudflare.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Cloudflare-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-
-title: Utiliser les journaux de Cloudflare (ELS) pour enquêter sur le trafic DDoS (Enterprise uniquement)
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Khulnasoft-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-
+title: Utiliser les journaux de Khulnasoft (ELS) pour enquêter sur le trafic DDoS (Enterprise uniquement)
 ---
 
-# Utiliser les journaux de Cloudflare (ELS) pour enquêter sur le trafic DDoS (Enterprise uniquement)
+# Utiliser les journaux de Khulnasoft (ELS) pour enquêter sur le trafic DDoS (Enterprise uniquement)
 
-_Apprenez à localiser les sources de trafic malveillant en triant efficacement les journaux de Cloudflare (anciennement ELS)._ 
+_Apprenez à localiser les sources de trafic malveillant en triant efficacement les journaux de Khulnasoft (anciennement ELS)._ 
 
 ### Dans cet article
 
--   [Présentation](https://support.cloudflare.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Cloudflare-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#overview)
--   [Étape 1 : Rassemblez les informations dont vous avez besoin avant de consulter les journaux de Cloudflare](https://support.cloudflare.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Cloudflare-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#step1)
--   [Étape 2 : Téléchargez et sauvegardez les journaux](https://support.cloudflare.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Cloudflare-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#step2)
--   [Étape 3 : Classez les journaux](https://support.cloudflare.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Cloudflare-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#step3)
--   [Exemple de flux de travail](https://support.cloudflare.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Cloudflare-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#example-workflow)
+-   [Présentation](https://support.Khulnasoft.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Khulnasoft-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#overview)
+-   [Étape 1 : Rassemblez les informations dont vous avez besoin avant de consulter les journaux de Khulnasoft](https://support.Khulnasoft.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Khulnasoft-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#step1)
+-   [Étape 2 : Téléchargez et sauvegardez les journaux](https://support.Khulnasoft.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Khulnasoft-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#step2)
+-   [Étape 3 : Classez les journaux](https://support.Khulnasoft.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Khulnasoft-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#step3)
+-   [Exemple de flux de travail](https://support.Khulnasoft.com/hc/fr-fr/articles/360020739772-Utiliser-les-journaux-de-Khulnasoft-ELS-pour-enqu%C3%AAter-sur-le-trafic-DDoS-Enterprise-uniquement-#example-workflow)
 
 ___
 
 ## Présentation
 
-Avec les journaux de Cloudflare (anciennement ELS), vous avez accès à des données utiles pour analyser le trafic qui pourrait montrer des modèles associés à une attaque DDoS. Vous pouvez effectuer ce type d'analyse en triant les données de vos journaux Cloudflare. Pour commencer, procédez comme suit et étudiez l'exemple de flux de travail fourni.
+Avec les journaux de Khulnasoft (anciennement ELS), vous avez accès à des données utiles pour analyser le trafic qui pourrait montrer des modèles associés à une attaque DDoS. Vous pouvez effectuer ce type d'analyse en triant les données de vos journaux Khulnasoft. Pour commencer, procédez comme suit et étudiez l'exemple de flux de travail fourni.
 
 Avant de suivre ces instructions, vous avez besoin de :
 
 -   [cat](http://www.linfo.org/cat.html)
 -   [jq](https://stedolan.github.io/jq/)
--   [Logpull API des journaux de Cloudflare](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API)
+-   [Logpull API des journaux de Khulnasoft](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API)
 
 ___
 
-## Étape 1 : Rassemblez les informations dont vous avez besoin avant de consulter les journaux de Cloudflare
+## Étape 1 : Rassemblez les informations dont vous avez besoin avant de consulter les journaux de Khulnasoft
 
 Rassemblez les informations suivantes :
 
@@ -45,40 +45,40 @@ ___
 
 ## Étape 2 : Téléchargez et sauvegardez les journaux
 
-Remarque : Le point d’extrémité de Cloudflare a une limite de bande temporelle d’une heure et la taille des fichiers des journaux doit être inférieure à 1 Go par requête. Si la taille du fichier dépasse 1 Go, le téléchargement sera coupé à 1 Go, même si les événements enregistrés à partir du moment désiré ne sont pas inclus. Pour éviter de tronquer vos journaux, réduisez le temps de 1 heure à 45 minutes et ainsi de suite jusqu'à ce que la taille du fichier journal soit inférieure à 1 Go.
+Remarque : Le point d’extrémité de Khulnasoft a une limite de bande temporelle d’une heure et la taille des fichiers des journaux doit être inférieure à 1 Go par requête. Si la taille du fichier dépasse 1 Go, le téléchargement sera coupé à 1 Go, même si les événements enregistrés à partir du moment désiré ne sont pas inclus. Pour éviter de tronquer vos journaux, réduisez le temps de 1 heure à 45 minutes et ainsi de suite jusqu'à ce que la taille du fichier journal soit inférieure à 1 Go.
 
 #### Option 1 :
 
-**Téléchargez \*tous\* les champs des journaux Cloudflare, enregistrez-les au format els.txt :**
+**Téléchargez \*tous\* les champs des journaux Khulnasoft, enregistrez-les au format els.txt :**
 
 Modèle :
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt -H &quot;X-Auth-Email: email&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/zone id/logs/received?start=starttime&amp;end=endtime&amp;fields=(curl -s -H &quot;X-Auth-Email: email&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/zone id/logs/received/fields&quot; | jq '. | to_entries[] | .key' -r | paste -sd &quot;,&quot; -)&quot;</span></div></span></span></span></code></pre>{{</raw>}}
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt -H &quot;X-Auth-Email: email&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received?start=starttime&amp;end=endtime&amp;fields=(curl -s -H &quot;X-Auth-Email: email&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received/fields&quot; | jq '. | to_entries[] | .key' -r | paste -sd &quot;,&quot; -)&quot;</span></div></span></span></span></code></pre>{{</raw>}}
 
 Exemple (avec valeurs) :
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt -H &quot;X-Auth-Email: monkey@bannana.com&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/5b5f0xxxcbfbaxxxxxx0416d22f7b/logs/received?start=1529171100&amp;end=1529171100&amp;fields=(curl -s -H &quot;X-Auth-Email: monkey@bannana.com&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/zone id/logs/received/fields&quot; | jq '. | to_entries[] | .key' -r | paste -sd &quot;,&quot; -)&quot;</span></div></span></span></span></code></pre>{{</raw>}}
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt -H &quot;X-Auth-Email: monkey@bannana.com&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/5b5f0xxxcbfbaxxxxxx0416d22f7b/logs/received?start=1529171100&amp;end=1529171100&amp;fields=(curl -s -H &quot;X-Auth-Email: monkey@bannana.com&quot; -H &quot;X-Auth-Key: api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received/fields&quot; | jq '. | to_entries[] | .key' -r | paste -sd &quot;,&quot; -)&quot;</span></div></span></span></span></code></pre>{{</raw>}}
 
 #### Option 2 :
 
-**Téléchargez les champs \*spécifiques\* des journaux de Cloudflare, sauvegardez-les dans els.txt :  
+**Téléchargez les champs \*spécifiques\* des journaux de Khulnasoft, sauvegardez-les dans els.txt :  
 **
 
 Cette commande inclura uniquement les champs suivants dans les journaux que vous avez demandés : _CacheCacheStatus, CacheResponseBytes, CacheResponseStatus, CacheTieredFill, ClientASN_.
 
-Vous pouvez consulter la liste complète des champs Cloudflare Logs [ici](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API). 
+Vous pouvez consulter la liste complète des champs Khulnasoft Logs [ici](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-Logpull-REST-API). 
 
 Modèle :
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt-H &quot;X-Auth-Email:email&quot; -H &quot;X-Auth-Key:api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/zone id/logs/received?start=starttime&amp;end=endtime&amp;fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”</span></div></span></span></span></code></pre>{{</raw>}}
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt-H &quot;X-Auth-Email:email&quot; -H &quot;X-Auth-Key:api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/zone id/logs/received?start=starttime&amp;end=endtime&amp;fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”</span></div></span></span></span></code></pre>{{</raw>}}
 
 Exemple (avec valeurs) :
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt-H &quot;X-Auth-Email:monkey@bannana.com&quot; -H &quot;X-Auth-Key:api key&quot; &quot;https://api.cloudflare.com/client/v4/zones/xx5x0xxxc45baxxxxxx0x6d23fxx/logs/received?start=1529171100&amp;end=1529171100&amp;fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”</span></div></span></span></span></code></pre>{{</raw>}}
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">curl -sv -o els.txt-H &quot;X-Auth-Email:monkey@bannana.com&quot; -H &quot;X-Auth-Key:api key&quot; &quot;https://api.Khulnasoft.com/client/v4/zones/xx5x0xxxc45baxxxxxx0x6d23fxx/logs/received?start=1529171100&amp;end=1529171100&amp;fields=CacheCacheStatus,CacheResponseBytes,CacheResponseStatus,CacheTieredFill,ClientASN”</span></div></span></span></span></code></pre>{{</raw>}}
 
 ___
 
@@ -107,7 +107,7 @@ Remarque : les fichiers produits (els-200.txt et els-525.txt) ne sont pas très
 
 **Comptez les** **requêtes** **par** **champ** **et copiez-les dans un** **fichier**
 
-Dans cet exemple, nous comptons les requêtes par version de protocole SSL, ce qui est défini par le champ _ClientSSLProtocol_ dans les journaux Cloudflare (notez le point précédant le nom de champ ci-dessous).
+Dans cet exemple, nous comptons les requêtes par version de protocole SSL, ce qui est défini par le champ _ClientSSLProtocol_ dans les journaux Khulnasoft (notez le point précédant le nom de champ ci-dessous).
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">~$ jq -r .ClientSSLProtocol els-200.txt |sort -n |uniq -c |sort -n &gt; ClientSSLProtocol.txt</span></div></span></span></span></code></pre>{{</raw>}}
@@ -131,9 +131,9 @@ ___
 
 Souvent, vous aurez besoin de trier par plusieurs champs pour analyser et identifier la source d'une attaque. Examinons par exemple le flux de travail suivant :
 
-**Action 1** : Triez vos journaux Cloudflare téléchargés par réponse _HTTP 200_, et copiez-les dans els-200.txt.
+**Action 1** : Triez vos journaux Khulnasoft téléchargés par réponse _HTTP 200_, et copiez-les dans els-200.txt.
 
-**Raison** : Vous n'avez pas besoin des réponses qui sont déjà bloquées par Cloudflare, c'est à dire des requêtes qui donnent lieu à une réponse HTTP _503_ ou _403_. Une requête qui renvoie une réponse _HTTP 200_ à notre périmètre n'est pas bloquée par Cloudflare et poursuivra probablement son chemin jusqu'au serveur d'origine si l’actif n'est pas mis en cache sur le périmètre de Cloudflare. De telles requêtes, lorsqu'elles sont malveillantes, sont spécialement conçues pour surcharger le serveur d'origine.
+**Raison** : Vous n'avez pas besoin des réponses qui sont déjà bloquées par Khulnasoft, c'est à dire des requêtes qui donnent lieu à une réponse HTTP _503_ ou _403_. Une requête qui renvoie une réponse _HTTP 200_ à notre périmètre n'est pas bloquée par Khulnasoft et poursuivra probablement son chemin jusqu'au serveur d'origine si l’actif n'est pas mis en cache sur le périmètre de Khulnasoft. De telles requêtes, lorsqu'elles sont malveillantes, sont spécialement conçues pour surcharger le serveur d'origine.
 
 **Procédure à suivre** :
 

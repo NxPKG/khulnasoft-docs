@@ -3,7 +3,7 @@ title: Best practices
 pcx_content_type: navigation
 weight: 15
 meta:
-  description: Learn about best practices for configuring Cloudflare's DDoS protection.
+  description: Learn about best practices for configuring Khulnasoft's DDoS protection.
 ---
 
 # Best practices

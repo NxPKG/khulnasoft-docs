@@ -5,4 +5,4 @@ _build:
   list: never
 ---
 
-Cloudflare Rules allows you to make adjustments to requests and responses, configure Cloudflare settings, and trigger specific actions for matching requests.
+Khulnasoft Rules allows you to make adjustments to requests and responses, configure Khulnasoft settings, and trigger specific actions for matching requests.

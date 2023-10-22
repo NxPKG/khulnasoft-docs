@@ -3,7 +3,7 @@ pcx_content_type: faq
 title: Policies
 weight: 5
 meta:
-    description: Review frequently asked questions about policies in Cloudflare Zero Trust.
+    description: Review frequently asked questions about policies in Khulnasoft Zero Trust.
     title: Policies FAQ
 ---
 
@@ -17,15 +17,15 @@ Gateway and Access policies generally trigger from top to bottom based on their 
 
 ## **How can I bypass the L7 firewall for a website?**
 
-Cloudflare Gateway uses the hostname in the HTTP `CONNECT` header to identify the destination of the request. Administrators who wish to bypass a site must create a [Do Not Inspect](/cloudflare-one/policies/gateway/http-policies/#do-not-inspect) policy in order to prevent HTTP inspection from occurring on both encrypted and plaintext traffic.
+Khulnasoft Gateway uses the hostname in the HTTP `CONNECT` header to identify the destination of the request. Administrators who wish to bypass a site must create a [Do Not Inspect](/cloudflare-one/policies/gateway/http-policies/#do-not-inspect) policy in order to prevent HTTP inspection from occurring on both encrypted and plaintext traffic.
 
 Bypassing the L7 firewall results in no HTTP traffic inspection, and logging is disabled for that HTTP session.
 
 ## Can I secure applications with a second-level subdomain URL?
 
-Yes. Ensure that your SSL certificates cover the first- and second-level subdomain. Most certificates only cover the first-level subdomain and not the second. This is true for most Cloudflare certificates. To cover a second-level subdomain with a CF certificate, create an [advanced certificate](/ssl/edge-certificates/advanced-certificate-manager/manage-certificates/).
+Yes. Ensure that your SSL certificates cover the first- and second-level subdomain. Most certificates only cover the first-level subdomain and not the second. This is true for most Khulnasoft certificates. To cover a second-level subdomain with a CF certificate, create an [advanced certificate](/ssl/edge-certificates/advanced-certificate-manager/manage-certificates/).
 
-Wildcard-based policies in Cloudflare Access only cover the level where they are applied. Add the wildcard policy to the left-most subdomain to be covered.
+Wildcard-based policies in Khulnasoft Access only cover the level where they are applied. Add the wildcard policy to the left-most subdomain to be covered.
 
 ## How do isolation policies work together with HTTP policies?
 
@@ -37,13 +37,13 @@ Isolation policies are applied to requests that include Accept: `text/html*`. Th
 
 ## Can Access enforce policies on a specific nonstandard port?
 
-No. Cloudflare Access cannot enforce a policy that would contain a port appended to the URL. However, you can use Cloudflare Tunnel to point traffic to non-standard ports. For example, if Jira is available at port `8443` on your origin, you can proxy traffic to that port via Cloudflare Tunnel.
+No. Khulnasoft Access cannot enforce a policy that would contain a port appended to the URL. However, you can use Khulnasoft Tunnel to point traffic to non-standard ports. For example, if Jira is available at port `8443` on your origin, you can proxy traffic to that port via Khulnasoft Tunnel.
 
 ## Why can I still reach domains blocked by a DNS policy?
 
 Here is a list of possible causes:
 
-- **Your policy is still being updated.** After you edit or create a policy, Cloudflare updates the new setting across all of our data centers around the world. It takes about 60 seconds for the change to propagate.
+- **Your policy is still being updated.** After you edit or create a policy, Khulnasoft updates the new setting across all of our data centers around the world. It takes about 60 seconds for the change to propagate.
 
 - **Your device is using another DNS resolver.** If you have other DNS resolvers in your DNS settings, your device could be using IP addresses for resolvers that are not part of Gateway. As a result, the domain you are trying to block is still accessible from your device. Make sure to remove all other IP addresses from your DNS settings and only include Gateway's DNS resolver IP addresses.
 

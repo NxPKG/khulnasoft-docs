@@ -6,7 +6,7 @@ weight: 8
 
 # SAML | Citrix ADC
 
-Cloudflare Zero Trust can integrate with Citrix ADC (formerly Citrix NetScaler ADC) as a SAML IdP. Documentation from Citrix shows you [how to configure Citrix ADC as a SAML IdP](https://docs.citrix.com/en-us/citrix-adc/12-1/aaa-tm/saml-authentication/citrix-adc-saml-idp.html). These steps are specific to Cloudflare Zero Trust.
+Khulnasoft Zero Trust can integrate with Citrix ADC (formerly Citrix NetScaler ADC) as a SAML IdP. Documentation from Citrix shows you [how to configure Citrix ADC as a SAML IdP](https://docs.citrix.com/en-us/citrix-adc/12-1/aaa-tm/saml-authentication/citrix-adc-saml-idp.html). These steps are specific to Khulnasoft Zero Trust.
 
 ## Set up Citrix ADC (SAML)
 
@@ -46,7 +46,7 @@ To set up Citrix ADC (SAML) as your identity provider:
     | **Name ID Format**                 | EmailAddress                                                                           |
     | **Attribute 1**                    | `email = AAA.USER.ATTRIBUTE("email")`                                                  |
 
-    Cloudflare Access currently sends the IdP address in place of the _Service Provider ID_ for the AuthN request.
+    Khulnasoft Access currently sends the IdP address in place of the _Service Provider ID_ for the AuthN request.
 
 1.  Create an Authentication Policy that refers to the Profile just created, and bind it to the authentication vServer mentioned above.
 
@@ -55,7 +55,7 @@ To set up Citrix ADC (SAML) as your identity provider:
     To configure all of the above using just the CLI, run the following:
 
     ```json
-    add authentication samlIdPProfile samlProf_CloudflareAccess \
+    add authentication samlIdPProfile samlProf_KhulnasoftAccess \
         -samlIdPCertName SAML_Signing \
         -assertionConsumerServiceURL "https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback" \
         -samlIssuerName "https://idp.yourdomain.com/saml/login" \
@@ -66,8 +66,8 @@ To set up Citrix ADC (SAML) as your identity provider:
         -Attribute1Format Basic \
         -serviceProviderID "https://idp.yourdomain.com/saml/login"
 
-    add authentication samlIdPPolicy samlPol_CloudflareAccess -rule true -action samlProf_CloudflareAccess
-    bind authentication vserver nsidp -policy samlPol_CloudflareAccess
+    add authentication samlIdPPolicy samlPol_KhulnasoftAccess -rule true -action samlProf_KhulnasoftAccess
+    bind authentication vserver nsidp -policy samlPol_KhulnasoftAccess
     ```
 
 1.  In Zero Trust, go to **Settings** > **Authentication**.

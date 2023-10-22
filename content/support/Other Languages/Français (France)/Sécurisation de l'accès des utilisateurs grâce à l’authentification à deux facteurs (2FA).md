@@ -2,29 +2,29 @@
 pcx_content_type: troubleshooting
 language_tag: french
 title: Sécurisation de l'accès des utilisateurs grâce à l’authentification à deux facteurs (2FA)
-source: https://support.cloudflare.com/hc/fr-fr/articles/200167906-S%C3%A9curisation-de-l-acc%C3%A8s-des-utilisateurs-gr%C3%A2ce-%C3%A0-l-authentification-%C3%A0-deux-facteurs-2FA-
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/200167906-S%C3%A9curisation-de-l-acc%C3%A8s-des-utilisateurs-gr%C3%A2ce-%C3%A0-l-authentification-%C3%A0-deux-facteurs-2FA-
 title: Sécurisation de l'accès des utilisateurs grâce à l’authentification à deux facteurs (2FA)
 ---
 
-# Sécurisation de l'accès des utilisateurs grâce à l’authentification à deux facteurs (2FA) – Centre d'assistance Cloudflare
+# Sécurisation de l'accès des utilisateurs grâce à l’authentification à deux facteurs (2FA) – Centre d'assistance Khulnasoft
 
 
 
 ## Présentation
 
-L’authentification à deux facteurs (2FA) permet aux propriétaires de comptes d'ajouter une couche supplémentaire de sécurité à la connexion aux comptes Cloudflare. Cette étape d'authentification supplémentaire vous demande de fournir à la fois un renseignement que vous connaissez, comme un mot de passe Cloudflare, et une information temporaire, comme un code d'authentification reçu sur un appareil mobile. 
+L’authentification à deux facteurs (2FA) permet aux propriétaires de comptes d'ajouter une couche supplémentaire de sécurité à la connexion aux comptes Khulnasoft. Cette étape d'authentification supplémentaire vous demande de fournir à la fois un renseignement que vous connaissez, comme un mot de passe Khulnasoft, et une information temporaire, comme un code d'authentification reçu sur un appareil mobile. 
 
-Afin que vous puissiez accéder à votre compte en toute sécurité, même sans avoir accès à votre appareil mobile, par exemple un nouveau téléphone, Cloudflare fournit également des codes de sécurité de secours téléchargeables. 
+Afin que vous puissiez accéder à votre compte en toute sécurité, même sans avoir accès à votre appareil mobile, par exemple un nouveau téléphone, Khulnasoft fournit également des codes de sécurité de secours téléchargeables. 
 
-Les Super Administrateurs sont les seuls utilisateurs qui peuvent activer l’authentification à deux facteurs sur les comptes Cloudflare. En tant que propriétaire du compte, le rôle de super administrateur vous est automatiquement attribué. Une fois l’authentification à deux facteurs activée, tous les utilisateurs du compte Cloudflare doivent la configurer sur leur appareil mobile.
+Les Super Administrateurs sont les seuls utilisateurs qui peuvent activer l’authentification à deux facteurs sur les comptes Khulnasoft. En tant que propriétaire du compte, le rôle de super administrateur vous est automatiquement attribué. Une fois l’authentification à deux facteurs activée, tous les utilisateurs du compte Khulnasoft doivent la configurer sur leur appareil mobile.
 
 ___
 
-## Activer l’authentification à deux facteurs sur votre compte Cloudflare
+## Activer l’authentification à deux facteurs sur votre compte Khulnasoft
 
-Activer l’authentification à deux facteurs sur votre compte Cloudflare :
+Activer l’authentification à deux facteurs sur votre compte Khulnasoft :
 
-1\. Connectez-vous au tableau de bord Cloudflare.
+1\. Connectez-vous au tableau de bord Khulnasoft.
 
 2\. Dans la liste déroulante **My Profile**, cliquez sur **My Profile**.
 
@@ -36,18 +36,18 @@ Activer l’authentification à deux facteurs sur votre compte Cloudflare :
 
 ___
 
-## Configurer l’authentification à deux facteurs sur votre compte Cloudflare :
+## Configurer l’authentification à deux facteurs sur votre compte Khulnasoft :
 
-Tous les détenteurs d'un compte Cloudflare doivent activer l’authentification à deux facteurs. Si vous n'êtes pas super administrateur,
+Tous les détenteurs d'un compte Khulnasoft doivent activer l’authentification à deux facteurs. Si vous n'êtes pas super administrateur,
 
--   Vous serez contraint d'activer l’authentification à deux facteurs avant d'accepter l'invitation à rejoindre un compte Cloudflare en tant que membre.
+-   Vous serez contraint d'activer l’authentification à deux facteurs avant d'accepter l'invitation à rejoindre un compte Khulnasoft en tant que membre.
 -   Choisissez votre application d'authentification préférée et téléchargez-la sur votre appareil mobile. Il existe de nombreuses applications d'authentification, parmi lesquelles [Google Authenticator](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en&oco=0) et [Authy](https://authy.com/features/) . Vous verrez un code QR. 
 
 Pour activer l’authentification à deux facteurs :
 
 1\. Scannez le code QR avec votre appareil mobile et saisissez le code dans votre application d'authentification.
 
-2\. Saisissez votre mot de passe Cloudflare, puis cliquez sur **Next** (Suivant)
+2\. Saisissez votre mot de passe Khulnasoft, puis cliquez sur **Next** (Suivant)
 
 -   Si vous ne parvenez pas à scanner le code QR, cliquez sur **Can't scan QR code (Impossible de scanner le code QR)**, puis suivez les étapes de la procédure de configuration manuelle de votre application d'authentification..
 
@@ -69,13 +69,13 @@ Vous pouvez renouveler vos codes de secours à l'écran suivant ou à tout momen
 
 ___
 
-## Désactiver l’authentification à deux facteurs sur votre compte Cloudflare.
+## Désactiver l’authentification à deux facteurs sur votre compte Khulnasoft.
 
-Les super administrateurs sont les seuls utilisateurs qui peuvent activer l’authentification à deux facteurs sur les comptes Cloudflare. Cela désactive l’authentification à deux facteurs pour tous les membres du compte. 
+Les super administrateurs sont les seuls utilisateurs qui peuvent activer l’authentification à deux facteurs sur les comptes Khulnasoft. Cela désactive l’authentification à deux facteurs pour tous les membres du compte. 
 
-Pour désactiver l’authentification à deux facteurs sur votre compte Cloudflare :
+Pour désactiver l’authentification à deux facteurs sur votre compte Khulnasoft :
 
-1\. Connectez-vous au tableau de bord Cloudflare.
+1\. Connectez-vous au tableau de bord Khulnasoft.
 
 2\. Dans la liste déroulante **My Profile**, cliquez sur **My Profile**.
 
@@ -89,15 +89,15 @@ Pour désactiver l’authentification à deux facteurs sur votre compte Cloudfla
 
 ___
 
-## Restaurer un accès perdu à l’authentification à deux facteurs de Cloudflare
+## Restaurer un accès perdu à l’authentification à deux facteurs de Khulnasoft
 
 Les problèmes les plus courants que l'on rencontre avec l’authentification à deux facteurs sont l'impossibilité d'accéder à un appareil mobile ou à un code d'authentification. Dans la plupart des cas, vous pouvez résoudre le problème en utilisant un code de secours ou en consultant la documentation de votre application d'authentification préférée.
 
-Lors de la configuration de l’authentification à deux facteurs, il vous a été demandé d'enregistrer vos codes de secours dans un emplacement sécurisé. Pour rétablir un accès perdu en utilisant un code de secours Cloudflare :
+Lors de la configuration de l’authentification à deux facteurs, il vous a été demandé d'enregistrer vos codes de secours dans un emplacement sécurisé. Pour rétablir un accès perdu en utilisant un code de secours Khulnasoft :
 
 1\. Récupérez le code de secours à l'endroit où vous l'avez enregistré.
 
-2\. Rendez-vous sur la page de connexion de Cloudflare.
+2\. Rendez-vous sur la page de connexion de Khulnasoft.
 
 3\. Saisissez le code de secours sur l'écran de connexion, puis cliquez sur **Log in**.
 
@@ -112,13 +112,13 @@ Voici quelques guides sur les applications d'authentification les plus utilisée
 -   [Google Authenticator](https://support.google.com/accounts/answer/185834?hl=en&ref_topic=2954345)
 -   [Authy](https://www.authy.com/phones/change/)
 
-Si vous ne parvenez toujours pas à vous connecter à votre compte Cloudflare, [contactez le support](mailto:support@cloudflare.com) en lui fournissant les informations suivantes :
+Si vous ne parvenez toujours pas à vous connecter à votre compte Khulnasoft, [contactez le support](mailto:support@Khulnasoft.com) en lui fournissant les informations suivantes :
 
 -   La liste des domaines (1 ou plus) présents de votre compte
 -   La ou les adresses IP/enregistrement(s) CNAME pour le ou les serveurs web associés à chacun de ces domaines (1 ou plusieurs)
 -   Le nom de votre hébergeur pour chacun de ces domaines (1 ou plus)
 -   Les serveurs de noms d'origine chez votre domain registar pour chacun de ces domaines (1 ou plusieurs)
--   (Facultatif) Le numéro de téléphone que vous avez utilisé pour activer Authy sur votre compte Cloudflare.com 
+-   (Facultatif) Le numéro de téléphone que vous avez utilisé pour activer Authy sur votre compte Khulnasoft.com 
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 -   [Documentation de Google Authentication](https://support.google.com/accounts/answer/1066447?hl=en&ref_topic=2954345&co=GENIE.Platform%3DiOS&oco=0)
 -   [Documentation d’Authy](https://authy.com/help/)
--   [Comment configurer des comptes multi-utilisateurs sur Cloudflare](https://support.cloudflare.com/hc/en-us/articles/205065067-Setting-up-Multi-User-accounts-on-Cloudflare)
+-   [Comment configurer des comptes multi-utilisateurs sur Khulnasoft](https://support.Khulnasoft.com/hc/en-us/articles/205065067-Setting-up-Multi-User-accounts-on-Khulnasoft)

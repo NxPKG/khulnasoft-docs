@@ -6,19 +6,19 @@ weight: 1
 
 # HTTP requests
 
-While in [Netflows](/radar/investigate/netflows/) we can inspect bytes and packets reaching Cloudflare's edge routers, in HTTP requests we are a layer above in the [OSI model](https://en.wikipedia.org/wiki/OSI_model). HTTP requests examines complete HTTP requests from end users that reach websites served by Cloudflare's [CDN](https://www.cloudflare.com/en-gb/learning/cdn/what-is-a-cdn/).
+While in [Netflows](/radar/investigate/netflows/) we can inspect bytes and packets reaching Khulnasoft's edge routers, in HTTP requests we are a layer above in the [OSI model](https://en.wikipedia.org/wiki/OSI_model). HTTP requests examines complete HTTP requests from end users that reach websites served by Khulnasoft's [CDN](https://www.Khulnasoft.com/en-gb/learning/cdn/what-is-a-cdn/).
 
 {{<Aside type="note">}}
 HTTP traffic includes both HTTP and HTTPS traffic coming from end users.
 {{</Aside>}}
 
-Most of the charts in the [Adoption and Usage](https://radar.cloudflare.com/adoption-and-usage) section on Radar come from this data source.
+Most of the charts in the [Adoption and Usage](https://radar.Khulnasoft.com/adoption-and-usage) section on Radar come from this data source.
 
 These endpoints can be broadly split into:
 
 - `timeseries`: A time series of a group of metrics. For example, when looking at IP version, displays an IPv4 time series and an IPv6 time series.
 - `summary`: Displays a summary of a group of metrics over the specified time range. For example, IPv4 traffic percentage out of the total HTTP traffic during that time period.
-- `top`: A list of the top locations or [Autonomous Systems](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-an-autonomous-system/) (ASes) ranked by adoption of a specific metric. For example, top locations by mobile device traffic (like which locations have a higher percentage of mobile traffic out of the total traffic for that location).
+- `top`: A list of the top locations or [Autonomous Systems](https://www.Khulnasoft.com/en-gb/learning/network-layer/what-is-an-autonomous-system/) (ASes) ranked by adoption of a specific metric. For example, top locations by mobile device traffic (like which locations have a higher percentage of mobile traffic out of the total traffic for that location).
 
 ## List of endpoints
 
@@ -29,7 +29,7 @@ These endpoints can be broadly split into:
 In this example, we will request traffic by device type globally, with and without [bot traffic](/radar/concepts/bot-classes/). Parameters for the `human` series are `name=human&botClass=LIKELY_HUMAN&dateRange=1d`. For the `bot` series, the parameters are `name=bot&botClass=LIKELY_AUTOMATED&dateRange=1d`:
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/http/timeseries/device_type?name=human&botClass=LIKELY_HUMAN&dateRange=1d&name=bot&botClass=LIKELY_AUTOMATED&dateRange=1d&format=json&aggInterval=1h" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/http/timeseries/device_type?name=human&botClass=LIKELY_HUMAN&dateRange=1d&name=bot&botClass=LIKELY_AUTOMATED&dateRange=1d&format=json&aggInterval=1h" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -78,7 +78,7 @@ For more information refer to [Get device types time series](/api/operations/rad
 We can also look at the same information asking for a summary of the device type breakdown over the entire period, instead of a per hour breakdown like in the example before.
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/http/summary/device_type?name=human&botClass=LIKELY_HUMAN&dateRange=1d&name=bot&botClass=LIKELY_AUTOMATED&dateRange=1d&format=json&aggInterval=1h" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/http/summary/device_type?name=human&botClass=LIKELY_HUMAN&dateRange=1d&name=bot&botClass=LIKELY_AUTOMATED&dateRange=1d&format=json&aggInterval=1h" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -104,7 +104,7 @@ For more information refer to the [API reference](/api/operations/radar-get-http
 In the following example, we will examine global breakdown of traffic by IP version, with and without bots:
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/http/summary/ip_version?name=human&botClass=LIKELY_HUMAN&dateRange=1d&name=bot&botClass=LIKELY_AUTOMATED&dateRange=1d&format=json&aggInterval=1h" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/http/summary/ip_version?name=human&botClass=LIKELY_HUMAN&dateRange=1d&name=bot&botClass=LIKELY_AUTOMATED&dateRange=1d&format=json&aggInterval=1h" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -125,7 +125,7 @@ Bots tend to use more IPv4 addresses.
 
 It is also interesting to know how your ISP fares in IPv6 adoption. If you know your ISP’s autonomous system number (ASN), you can use the `asn` parameter to query for this information. Refer to the [API reference](/api/operations/radar-get-http-summary-by-ip-version) for other parameters.
 
-If you do not know your ISP’s ASN, you can use [Radar](https://radar.cloudflare.com/ip) to find what it is.
+If you do not know your ISP’s ASN, you can use [Radar](https://radar.Khulnasoft.com/ip) to find what it is.
 
 ### Top
 
@@ -134,7 +134,7 @@ If you do not know your ISP’s ASN, you can use [Radar](https://radar.cloudflar
 In the following example, we will find which locations had a higher adoption of [IPv6](https://en.wikipedia.org/wiki/IPv6) in the last 28 days.
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/http/top/locations/ip_version/IPv6?name=ipv6&botClass=LIKELY_HUMAN&dateRange=28d&format=json&limit=5" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/http/top/locations/ip_version/IPv6?name=ipv6&botClass=LIKELY_HUMAN&dateRange=28d&format=json&limit=5" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 

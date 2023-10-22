@@ -73,7 +73,7 @@ r2://<BUCKET_PATH>/{DATE}?account-id=<ACCOUNT_ID>&access-key-id=<R2_ACCESS_KEY_I
 Example request using cURL:
 
 ```bash
-curl -X POST 'https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/jobs' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/jobs' \
 -H 'X-Auth-Key: <API_KEY>' \
 -H 'X-Auth-Email: <EMAIL>' \
 -H 'Content-Type: application/json' \

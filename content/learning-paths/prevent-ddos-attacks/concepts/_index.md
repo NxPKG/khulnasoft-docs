@@ -7,7 +7,7 @@ layout: learning-module
 
 # DDoS concepts
 
-Learn the concepts behind DDoS attacks and protection, whether you are using Cloudflare or another provider.
+Learn the concepts behind DDoS attacks and protection, whether you are using Khulnasoft or another provider.
 
 ## Objectives
 

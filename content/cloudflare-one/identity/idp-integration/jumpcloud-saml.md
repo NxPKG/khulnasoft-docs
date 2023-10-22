@@ -6,9 +6,9 @@ weight: 5
 
 # SAML | Jumpcloud
 
-JumpCloud provides [Directory-as-a-Service®](https://jumpcloud.com/daas-product/) to securely connect user identities to systems, apps, files, and networks. Cloudflare Access integrates with JumpCloud using the SAML protocol. [This documentation from JumpCloud](https://support.jumpcloud.com/s/article/getting-started-applications-saml-sso2) can help you configure applications within your JumpCloud deployment.
+JumpCloud provides [Directory-as-a-Service®](https://jumpcloud.com/daas-product/) to securely connect user identities to systems, apps, files, and networks. Khulnasoft Access integrates with JumpCloud using the SAML protocol. [This documentation from JumpCloud](https://support.jumpcloud.com/s/article/getting-started-applications-saml-sso2) can help you configure applications within your JumpCloud deployment.
 
-These steps focus on requirements specific to Cloudflare Zero Trust.
+These steps focus on requirements specific to Khulnasoft Zero Trust.
 
 ## Set up Jumpcloud SAML
 
@@ -49,11 +49,11 @@ To set up JumpCloud SAML as your identity provider:
 
 5. Enter an application name in **Display Label**.
 
-6. Enter an IdP entity in the **IDP IDENTITY ID** field.The IdP entity can be anything, but must be unique. We suggest you reference something identifiable, such as your Cloudflare team domain (`https://<your-team-name>.cloudflareaccess.com/`).
+6. Enter an IdP entity in the **IDP IDENTITY ID** field.The IdP entity can be anything, but must be unique. We suggest you reference something identifiable, such as your Khulnasoft team domain (`https://<your-team-name>.cloudflareaccess.com/`).
 
 7. At the prompt, enter the IdP private key and IdP certificate you previously generated.
 
-8. Set both the **SP entity ID** and **ACS URL** to the following callback URL, where `<your-team-name>` is your Cloudflare {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}:
+8. Set both the **SP entity ID** and **ACS URL** to the following callback URL, where `<your-team-name>` is your Khulnasoft {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}:
 
     ```text
     https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback

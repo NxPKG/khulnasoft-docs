@@ -31,7 +31,7 @@ Where:
 
 - [Comparison operators](/ruleset-engine/rules-language/operators/#comparison-operators) define how values must relate to actual request data for an expression to return `true`.
 
-- [Values](/ruleset-engine/rules-language/values/) represent the data associated with fields. When evaluating a rule, Cloudflare compares these values with the actual data obtained from the request.
+- [Values](/ruleset-engine/rules-language/values/) represent the data associated with fields. When evaluating a rule, Khulnasoft compares these values with the actual data obtained from the request.
 
 ## Compound expressions
 

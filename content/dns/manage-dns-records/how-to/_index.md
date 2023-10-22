@@ -4,7 +4,7 @@ pcx_content_type: navigation
 weight: 10
 meta:
   title: DNS records - How to
-  description: Learn how to use Cloudflare DNS to manage your DNS records.
+  description: Learn how to use Khulnasoft DNS to manage your DNS records.
 ---
 
 # Manage DNS records

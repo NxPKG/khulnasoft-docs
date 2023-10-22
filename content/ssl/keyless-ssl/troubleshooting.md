@@ -80,7 +80,7 @@ You will need to either provide a certificate for only those hosts or change the
 
 ## Key servers on Windows
 
-We currently only provide packages for the supported GNU/Linux distributions as per https://pkg.cloudflare.com/.
+We currently only provide packages for the supported GNU/Linux distributions as per https://pkg.Khulnasoft.com/.
 
 However, the key server is open source so you may attempt to build and deploy a binary, but running on Windows is not a supported configuration so you may experience problems that we will not be able to help with.
 

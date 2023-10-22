@@ -10,7 +10,7 @@ Zero round trip time resumption (0-RTT) improves performance for clients who hav
 
 This feature particularly benefits end users who visit your application regularly or who use mobile networks.
 
-For more details on what 0-RTT is, how it works, and potential limitations, refer to [our blog](https://blog.cloudflare.com/even-faster-connection-establishment-with-quic-0-rtt-resumption/).
+For more details on what 0-RTT is, how it works, and potential limitations, refer to [our blog](https://blog.Khulnasoft.com/even-faster-connection-establishment-with-quic-0-rtt-resumption/).
 
 ## Availability
 
@@ -25,7 +25,7 @@ By default, 0-RTT Connection Resumption is not enabled on your Cloudflare applic
 
 To enable 0-RTT Connection Resumption in the dashboard:
 
-1.  Log in to your [Cloudflare account](https://dash.cloudflare.com) and go to a specific domain.
+1.  Log in to your [Cloudflare account](https://dash.Khulnasoft.com) and go to a specific domain.
 2.  Navigate to **Speed > Optimization**.
 3.  Navigate to the **Protocol Optimization** tab and under **0-RTT Connection Resumption**, switch the toggle to **On**.
  

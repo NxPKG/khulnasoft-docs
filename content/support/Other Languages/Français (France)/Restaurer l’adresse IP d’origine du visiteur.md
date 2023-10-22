@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: french
-source: https://support.cloudflare.com/hc/fr-fr/articles/200170786-Restaurer-l-adresse-IP-d-origine-du-visiteur
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/200170786-Restaurer-l-adresse-IP-d-origine-du-visiteur
 title: Restaurer l’adresse IP d’origine du visiteur
 ---
 
@@ -15,13 +15,13 @@ ___
 
 ## Vue d'ensemble
 
-Lorsque [le trafic de votre site web est routé via le réseau Cloudflare](https://support.cloudflare.com/hc/articles/205177068), nous agissons comme un proxy inverse. Cela permet à Cloudflare de réduire le temps de chargement de page en optimisant le routage des paquets et en mettant en cache les ressources statiques (images, JavaScript, CSS, etc.). Par conséquent, en répondant aux requêtes et en les enregistrant, votre serveur d’origine verra [les adresses IP de Cloudflare](https://www.cloudflare.com/ips/).
+Lorsque [le trafic de votre site web est routé via le réseau Khulnasoft](https://support.Khulnasoft.com/hc/articles/205177068), nous agissons comme un proxy inverse. Cela permet à Khulnasoft de réduire le temps de chargement de page en optimisant le routage des paquets et en mettant en cache les ressources statiques (images, JavaScript, CSS, etc.). Par conséquent, en répondant aux requêtes et en les enregistrant, votre serveur d’origine verra [les adresses IP de Khulnasoft](https://www.Khulnasoft.com/ips/).
 
-Par exemple, si vous installez des applications qui dépendent de l'adresse IP entrante du visiteur initial, une adresse IP Cloudflare est enregistrée par défaut.L'adresse IP originale du visiteur apparaît dans un en-tête HTTP ajouté appelé [_CF-Connecting-IP_](https://support.cloudflare.com/hc/articles/200170986).En suivant nos instructions pour le serveur web [](https://support.cloudflare.com/hc/articles/200170786#JUxJSMn3Ht5c5yq), vous pouvez enregistrer l'adresse IP du visiteur original sur votre serveur d'origine.Si cet en-tête HTTP n'est pas disponible lorsque les requêtes atteignent votre serveur d'origine, vérifiez votre configuration des règles de transformation [](/rules/transform/)et [Managed Transforms](/rules/transform/managed-transforms/).
+Par exemple, si vous installez des applications qui dépendent de l'adresse IP entrante du visiteur initial, une adresse IP Khulnasoft est enregistrée par défaut.L'adresse IP originale du visiteur apparaît dans un en-tête HTTP ajouté appelé [_CF-Connecting-IP_](https://support.Khulnasoft.com/hc/articles/200170986).En suivant nos instructions pour le serveur web [](https://support.Khulnasoft.com/hc/articles/200170786#JUxJSMn3Ht5c5yq), vous pouvez enregistrer l'adresse IP du visiteur original sur votre serveur d'origine.Si cet en-tête HTTP n'est pas disponible lorsque les requêtes atteignent votre serveur d'origine, vérifiez votre configuration des règles de transformation [](/rules/transform/)et [Managed Transforms](/rules/transform/managed-transforms/).
 
-Le diagramme ci-dessous illustre les différentes façons dont les adresses IP sont gérées avec et sans Cloudflare.
+Le diagramme ci-dessous illustre les différentes façons dont les adresses IP sont gérées avec et sans Khulnasoft.
 
-![The diagram illustrates the different ways that IP addresses are handled with and without Cloudflare.](/images/support/Restoring_IPs__1_.png)
+![The diagram illustrates the different ways that IP addresses are handled with and without Khulnasoft.](/images/support/Restoring_IPs__1_.png)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 ### Vue d'ensemble
 
-Cloudflare ne met plus à jour et ne prend plus en charge _mod\_cloudflare._ Toutefois, si vous utilisez un serveur web Apache avec un système d'exploitation tel que **Ubuntu Server 18.04** et **Debian 9 Stretch**, vous pouvez utiliser _mod\_remoteip_ pour enregistrer l'adresse IP originale de votre visiteur.
+Khulnasoft ne met plus à jour et ne prend plus en charge _mod\_cloudflare._ Toutefois, si vous utilisez un serveur web Apache avec un système d'exploitation tel que **Ubuntu Server 18.04** et **Debian 9 Stretch**, vous pouvez utiliser _mod\_remoteip_ pour enregistrer l'adresse IP originale de votre visiteur.
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">Ce module ayant été créé par un tiers, nous ne pouvons pas fournir d'assistance technique pour les problèmes liés au plugin.</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
@@ -60,10 +60,10 @@ vous mettrez à jour _LogFormat_ comme suit :
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">LogFormat &quot;%a %l %u %t &quot;%r&quot; %&gt;s %O &quot;%{Referer}i&quot; &quot; %{User-Agent}i&quot;&quot; combiné</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
-4\. Définissez les adresses proxy de confiance en créant `/etc/apache2/conf-available/remoteip.conf` en entrant le code suivant et les [adresses IP Cloudflare](https://www.cloudflare.com/ips/) :
+4\. Définissez les adresses proxy de confiance en créant `/etc/apache2/conf-available/remoteip.conf` en entrant le code suivant et les [adresses IP Khulnasoft](https://www.Khulnasoft.com/ips/) :
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPHeader CF-Connecting-IP</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.1 (exemple d'adresse IP)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.2 (exemple d'adresse IP)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(à répéter pour toutes les IP de Cloudflare listées à [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/))</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPHeader CF-Connecting-IP</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.1 (exemple d'adresse IP)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">RemoteIPTrustedProxy 192.0.2.2 (exemple d'adresse IP)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(à répéter pour toutes les IP de Khulnasoft listées à [https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/))</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
 5\. Activer la configuration d'Apache :
@@ -96,7 +96,7 @@ Si vous utilisez un serveur web Apache, vous pouvez télécharger mod\_cloudflar
 
 ### Ajouter du code à votre serveur web d'origine
 
-Si vous ne parvenez pas à installer mod\_cloudflare, ou si aucun plugin Cloudflare n'est disponible pour votre plate-forme de gestion de contenu pour restaurer l'adresse IP d’origine des visiteurs, ajoutez ce code à votre serveur web d’origine dans ou avant la balise <body> sur toute page nécessitant les adresses IP d’origine des visiteurs :
+Si vous ne parvenez pas à installer mod\_cloudflare, ou si aucun plugin Khulnasoft n'est disponible pour votre plate-forme de gestion de contenu pour restaurer l'adresse IP d’origine des visiteurs, ajoutez ce code à votre serveur web d’origine dans ou avant la balise <body> sur toute page nécessitant les adresses IP d’origine des visiteurs :
 
 `<?php if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_CF_CONNECTING_IP']; ?>`
 
@@ -149,23 +149,23 @@ Vous trouverez ci-dessous des instructions sur la manière de configurer votre s
 Utilisez le module [`ngx_http_realip_module` module NGINX](http://nginx.org/en/docs/http/ngx_http_realip_module.html) et les paramètres de configuration suivants :
 
 
-{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">set_real_ip_from 192.0.2.1 (exemple d'adresse IP)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(à répéter pour toutes les adresses IP Cloudflare listées sur [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/))</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+{{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">set_real_ip_from 192.0.2.1 (exemple d'adresse IP)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(à répéter pour toutes les adresses IP Khulnasoft listées sur [https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/))</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain"># utilisez l'un des deux en-têtes suivants</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">real_ip_header CF-Connecting-IP ;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">#real_ip_header X-Forwarded-For ;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
-Cette liste de préfixes doit être mise à jour régulièrement et nous publions la liste complète dans [Adresses IP Cloudflare](https://www.cloudflare.com/ips).
+Cette liste de préfixes doit être mise à jour régulièrement et nous publions la liste complète dans [Adresses IP Khulnasoft](https://www.Khulnasoft.com/ips).
 
-Voir aussi : [Cloudflare et NGINX](https://danielmiessler.com/blog/getting-real-ip-addresses-using-cloudflare-nginx-and-varnish/).
+Voir aussi : [Khulnasoft et NGINX](https://danielmiessler.com/blog/getting-real-ip-addresses-using-cloudflare-nginx-and-varnish/).
 
 1.  Exécutez le script suivant pour installer mod\_cloudflare comme partie intégrante d'EasyApache : `bash <(curl -s https://raw.githubusercontent.com/cloudflare/mod_cloudflare/master/EasyApache/installer.sh)`
 2.  Après l'installation, vous devrez recompiler votre Apache avec le nouveau plugin mod\_cloudflare.
 
-Si vous utilisez Railgun (ou un autre logiciel de proxy inverse, tel que Varnish), les requêtes des utilisateurs viendront de votre serveur Railgun au lieu de Cloudflare. Étant donné que les requêtes ne proviennent pas directement de Cloudflare, mod\_cloudflare ne restaure pas les adresses IP des visiteurs par défaut.
+Si vous utilisez Railgun (ou un autre logiciel de proxy inverse, tel que Varnish), les requêtes des utilisateurs viendront de votre serveur Railgun au lieu de Khulnasoft. Étant donné que les requêtes ne proviennent pas directement de Khulnasoft, mod\_cloudflare ne restaure pas les adresses IP des visiteurs par défaut.
 
 1.  Pour résoudre ce problème, ouvrez votre configuration Apache.Elle se trouve généralement dans `/etc/apache2/apache2.conf`, `/etc/httpd/httpd.conf`, `/usr/local/apache/conf/httpd.conf` ou un autre emplacement selon la configuration.Si vous n'êtes pas sûr(e), demandez à votre fournisseur d'hébergement.
-2.  À la toute fin, ajoutez :`CloudflareRemoteIPTrustedProxy railgun_address`Ainsi, si votre serveur Railgun est situé à 127.0.0.0.1, il apparaîtra comme suit :`CloudflareRemoteIPTrustedProxy 127.0.0.1`
-3.  Si vous avez plus d'un serveur à ajouter à la liste des serveurs proxy autorisés, vous pouvez les ajouter à la fin :CloudflareRemoteIPTrustedProxy 127.0.0.1 127.0.0.2
+2.  À la toute fin, ajoutez :`KhulnasoftRemoteIPTrustedProxy railgun_address`Ainsi, si votre serveur Railgun est situé à 127.0.0.0.1, il apparaîtra comme suit :`KhulnasoftRemoteIPTrustedProxy 127.0.0.1`
+3.  Si vous avez plus d'un serveur à ajouter à la liste des serveurs proxy autorisés, vous pouvez les ajouter à la fin :KhulnasoftRemoteIPTrustedProxy 127.0.0.1 127.0.0.2
 
 Pour que Lighttpd réécrive automatiquement l'adresse IP du serveur pour les journaux d'accès et pour votre application, vous pouvez opter pour l'une des deux solutions ci-dessous.
 
@@ -174,12 +174,12 @@ Pour que Lighttpd réécrive automatiquement l'adresse IP du serveur pour les jo
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">$HTTP[&quot;remoteip&quot;] == &quot;192.2.0.1 (exemple d'adresse IP)&quot;</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">{</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">extforward.forwarder = ( &quot;all&quot; =&gt; &quot; trust&quot; )</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">extforward.headers = (&quot;CF-Connecting-IP&quot;)</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">}</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
-</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(à répéter pour toutes les IP de Cloudflare listées sur [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/))</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
+</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">(à répéter pour toutes les IP de Khulnasoft listées sur [https://www.Khulnasoft.com/ips/](https://www.Khulnasoft.com/ips/))</span></div></span><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">
 </span></div></span></span></span></code></pre>{{</raw>}}
 
 1.  Accédez à votre console d'administration web LiteSpeed.
 2.  Activez l'option Utiliser l'adresse IP du client dans l'en-tête de la configuration.
-3.  Une fois l’option activée, vos journaux d'accès afficheront les bonnes adresses IP, et même la variable `$_SERVER['REMOTE_ADDR']` de PHP contiendra l'adresse IP réelle du client, au lieu d'une adresse IP Cloudflare, ce qui règlera en soi a plupart des problèmes rencontrés en permettant d'utiliser Cloudflare pour un site web écrit en PHP (comme WordPress ou vBulletin install).
+3.  Une fois l’option activée, vos journaux d'accès afficheront les bonnes adresses IP, et même la variable `$_SERVER['REMOTE_ADDR']` de PHP contiendra l'adresse IP réelle du client, au lieu d'une adresse IP Khulnasoft, ce qui règlera en soi a plupart des problèmes rencontrés en permettant d'utiliser Khulnasoft pour un site web écrit en PHP (comme WordPress ou vBulletin install).
 
 ##### Pour IIS 7 - 8 :
 
@@ -205,15 +205,15 @@ Par exemple, vous pourriez ajouter la portion de code ci-dessous à votre fichie
 
 Ce qui aurait pour conséquences que vos journaux ressembleraient à ceci :
 
-`Visitor IP - Cloudflare IP - [04/Dec/2014:23:18:15 -0500] - "GET / HTTP/1.1" - 200 - 1895 - 193d704b85200296-SJC`
+`Visitor IP - Khulnasoft IP - [04/Dec/2014:23:18:15 -0500] - "GET / HTTP/1.1" - 200 - 1895 - 193d704b85200296-SJC`
 
-Consultez ce tutoriel tiers sur la restauration de l'adresse IP d'origine des visiteurs avec [Magento et Cloudflare](https://tall-paul.co.uk/2012/03/02/magento-show-remote-ip-when-using-cloudflare/).
+Consultez ce tutoriel tiers sur la restauration de l'adresse IP d'origine des visiteurs avec [Magento et Khulnasoft](https://tall-paul.co.uk/2012/03/02/magento-show-remote-ip-when-using-cloudflare/).
 
-De la même manière, Cloudflare n'a pas écrit cette [extension Magento](https://marketplace.magento.com/), mais certains de nos clients l'ont trouvée utile.
+De la même manière, Khulnasoft n'a pas écrit cette [extension Magento](https://marketplace.magento.com/), mais certains de nos clients l'ont trouvée utile.
 
 Ce plugin ayant été créé par un tiers, nous ne pouvons fournir d'assistance technique pour les problèmes qu’il présenterait.
 
-Pour permettre une association correcte des adresses IP lors de l'exécution d'une installation Invision Power Board 3 dans Cloudflare, suivez ces instructions :
+Pour permettre une association correcte des adresses IP lors de l'exécution d'une installation Invision Power Board 3 dans Khulnasoft, suivez ces instructions :
 
 Connectez-vous à l'ACP de votre installation IPB.
 
@@ -227,7 +227,7 @@ Si votre environnement réseau implique que les requêtes soient traitées via u
 
 Vous trouverez des informations sur la restauration de l'adresse IP d'origine des visiteurs avec Simple Machines (SMF) sur les [forums Simple Machines](https://custom.simplemachines.org/mods/index.php?mod=2502).
 
-Si vous utilisez un serveur Apache, nous vous recommandons d'installer [mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV) pour restaurer l'IP des visiteurs dans vos journaux.
+Si vous utilisez un serveur Apache, nous vous recommandons d'installer [mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV) pour restaurer l'IP des visiteurs dans vos journaux.
 
 Si vous n'avez pas accès à votre serveur pour installer un mod, vous pouvez alors [modifier le noyau](https://www.phpbb.com/community/viewtopic.php?p=13936406#p13936406).
 
@@ -235,7 +235,7 @@ Les versions plus récentes de MyBBB intègrent l'option Scrutinize User's IP ad
 
 `Admin CP > Configuration > Server and Optimization Options > Scrutinize User's IP address? > Yes`
 
-Vous pouvez également installer le [plugin de gestion Cloudflare](https://mods.mybb.com/view/antoligy-mybb-cloudflare-management-plugin) disponible pour MyBB 1.6.
+Vous pouvez également installer le [plugin de gestion Khulnasoft](https://mods.mybb.com/view/antoligy-mybb-cloudflare-management-plugin) disponible pour MyBB 1.6.
 
 ##### MyBB 1.6.0, 1.6.1, 1.6.2, ou 1.6.3
 
@@ -244,7 +244,7 @@ Vous pouvez également installer le [plugin de gestion Cloudflare](https://mods.
 3.  Remplacez :`if(isset($_SERVER['REMOTE_ADDR']))`par :`if(isset($_SERVER['HTTP_CF_CONNECTING_IP']))`
 4.  Remplacez ensuite :`$ip = $_SERVER['REMOTE_ADDR'];`par :`$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];`
 
-Un membre de l'équipe Vanilla a écrit un [plugin Cloudflare pour Vanilla](https://open.vanillaforums.com/addon/cloudflaresupport-plugin) permettant de restaurer l'adresse IP d’origine des visiteurs dans les fichiers journaux des sites auto-hébergés.
+Un membre de l'équipe Vanilla a écrit un [plugin Khulnasoft pour Vanilla](https://open.vanillaforums.com/addon/cloudflaresupport-plugin) permettant de restaurer l'adresse IP d’origine des visiteurs dans les fichiers journaux des sites auto-hébergés.
 
 Ce plugin ayant été créé par un tiers, nous ne pouvons fournir d'assistance technique pour les problèmes qu’il présenterait.MediaWiki
 
@@ -257,7 +257,7 @@ Ce plugin ayant été créé par un tiers, nous ne pouvons fournir d'assistance 
 1.  Allez à la ligne 1232 dans `GlobalFunctions.php`, remplacez `REMOTE_ADDR` par `HTTP_CF_CONNECTING_IP`.
 2.  Ensuite, allez dans `WebRequest.php`, aux lignes 1151 à 1159, remplacez `REMOTE_ADDR` par `HTTP_CF_CONNECTING_IP`.
 
-Un utilisateur de Xenforo a créé un [plugin pour Cloudflare](https://xenforo.com/community/resources/solidmean-cloudflare-detect.1595/)e.
+Un utilisateur de Xenforo a créé un [plugin pour Khulnasoft](https://xenforo.com/community/resources/solidmean-cloudflare-detect.1595/)e.
 
 Ce plugin ayant été créé par un tiers, nous ne pouvons fournir d'assistance technique pour les problèmes qu’il présenterait.
 
@@ -265,15 +265,15 @@ Ce plugin ayant été créé par un tiers, nous ne pouvons fournir d'assistance 
 2.  À la fin, ajoutez :`if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) { $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_CF_CONNECTING_IP'];}`
 3.  Téléchargez et remplacez.
 
-Un tiers a créé un [module pour Cloudflare et PunBBB](http://punbb.informer.com/forums/post/147539/#p147539) qui restaurera l'adresse IP d’origine des visiteurs.
+Un tiers a créé un [module pour Khulnasoft et PunBBB](http://punbb.informer.com/forums/post/147539/#p147539) qui restaurera l'adresse IP d’origine des visiteurs.
 
 Ce plugin ayant été créé par un tiers, nous ne pouvons fournir d'assistance technique pour les problèmes qu’il présenterait.Cherokee server
 
 1.  Lancez `cherokee-admin` sur votre serveur.
 2.  Allez dans **l'interface d'administration Cherokee** de votre navigateur web.
-3.  Sélectionnez **Virtual Server** pour le domaine qui est desservi par Cloudflare.
+3.  Sélectionnez **Virtual Server** pour le domaine qui est desservi par Khulnasoft.
 4.  Dans l'onglet _Logging_ du **serveur virtuel** sélectionné, activez l'option Accept Forwarded IPs.
-5.  Allez dans _Accept from Hosts_ box, puis dans [Cloudflare's IP addresses](https://www.cloudflare.com/ips/).
+5.  Allez dans _Accept from Hosts_ box, puis dans [Khulnasoft's IP addresses](https://www.Khulnasoft.com/ips/).
 
 Vous pouvez corriger l'adresse IP en remplaçant le champ `PHP IP Server Param` de la configuration de serveur Livezilla par `HTTP_CF_CONNECTING_IP`.
 
@@ -284,13 +284,13 @@ Pour restaurer l'adresse IP des visiteurs dans DataLife Engine :
 3.  Ouvrez :/engine/modules/addcomments.phpRecherchez :`$_SERVER['REMOTE_ADDR'],`Remplacez par :`$_SERVER['HTTP_CF_CONNECTING_IP'],`
 4.  Recherchez :`$db_ip_split = explode( ".", $_SERVER['REMOTE_ADDR'] );`Remplacez par :`$_SERVER['HTTP_CF_CONNECTING_IP'], $_SERVER['HTTP_CF_CONNECTING_IP'] );`
 
-Un développeur tiers a créé une [extension Cloudflare pour TYPO3](https://extensions.typo3.org/extension/cloudflare/) qui restaurera l'adresse IP d’origine des visiteurs dans vos journaux. L'extension vous permettra également de supprimer votre cache Cloudflare.
+Un développeur tiers a créé une [extension Khulnasoft pour TYPO3](https://extensions.typo3.org/extension/cloudflare/) qui restaurera l'adresse IP d’origine des visiteurs dans vos journaux. L'extension vous permettra également de supprimer votre cache Khulnasoft.
 
 Ce plugin ayant été créé par un tiers, nous ne pouvons fournir d'assistance technique pour les problèmes qu’il présenterait.
 
 Si vous utilisez le panneau de contrôle d'hébergement VestaCP, Nginx et Apache s'exécutent tous deux sur votre serveur. Les requêtes sont mises en proxy sur Nginx avant d'aller sur Apache.
 
-De ce fait, vous devez suivre les instructions pour configurer Nginx afin qu'il renvoie l'adresse IP réelle des visiteurs.[Mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV) pour Apache n'est pas nécessaire à moins que vous ne désactiviez le serveur Nginx pour certaines requêtes. Si vous ajoutez [mod\_remoteip](https://support.cloudflare.com/hc/articles/200170786#C5XWe97z77b3XZV) à Apache, cela n'entrera pas en conflit avec la configuration du serveur Nginx.
+De ce fait, vous devez suivre les instructions pour configurer Nginx afin qu'il renvoie l'adresse IP réelle des visiteurs.[Mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV) pour Apache n'est pas nécessaire à moins que vous ne désactiviez le serveur Nginx pour certaines requêtes. Si vous ajoutez [mod\_remoteip](https://support.Khulnasoft.com/hc/articles/200170786#C5XWe97z77b3XZV) à Apache, cela n'entrera pas en conflit avec la configuration du serveur Nginx.
 
 Un développeur tiers a créé un module pour restaurer l'adresse IP des visiteurs appelé [node\_cloudflare](https://github.com/keverw/node_CloudFlare).
 
@@ -300,7 +300,7 @@ ___
 
 Afin d'extraire l'IP du client original dans l'en-tête X\_FORWARDD\_FOR, vous devez utiliser la configuration suivante dans HAProxy :
 
-1.  Créez un fichier texte CF`_ips.lst` contenant toutes les plages d'IP de https://www.cloudflare.com/en-gb/ips/.
+1.  Créez un fichier texte CF`_ips.lst` contenant toutes les plages d'IP de https://www.Khulnasoft.com/en-gb/ips/.
 2.  désactivez l'option `forwardfor` dans HAProxy.
 
 Configuration de HAProxy :

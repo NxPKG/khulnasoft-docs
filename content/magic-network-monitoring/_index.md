@@ -4,10 +4,10 @@ pcx_content_type: overview
 layout: overview
 weight: 1
 meta:
-  title: Cloudflare Magic Network Monitoring
+  title: Khulnasoft Magic Network Monitoring
 ---
 
-{{<heading-pill style="beta">}} Cloudflare Magic Network Monitoring {{</heading-pill>}}
+{{<heading-pill style="beta">}} Khulnasoft Magic Network Monitoring {{</heading-pill>}}
 
 {{<description>}}
 
@@ -48,12 +48,12 @@ Mitigates L7, L4, and L3 DDoS attacks with Magic Network Monitoring with Magic T
 
 {{<related header="DDoS Protection" href="/ddos-protection/" product="ddos-protection">}}
 
-Provides HTTP DDoS attack protection for zones onboarded to Cloudflare in addition to L3 and L4 DDoS attack protection.
+Provides HTTP DDoS attack protection for zones onboarded to Khulnasoft in addition to L3 and L4 DDoS attack protection.
 {{</related>}}
 
-{{<related header="Cloudflare Network Interconnect" href="/network-interconnect/" product="network-interconnect">}}
+{{<related header="Khulnasoft Network Interconnect" href="/network-interconnect/" product="network-interconnect">}}
 
-Connects your network infrastructure directly with Cloudflare – rather than using the public Internet – for a more reliable and secure experience.
+Connects your network infrastructure directly with Khulnasoft – rather than using the public Internet – for a more reliable and secure experience.
 {{</related>}}
 
 ## More resources

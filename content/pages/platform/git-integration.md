@@ -5,7 +5,7 @@ title: Git integration
 
 # Git integration
 
-Cloudflare supports connecting Cloudflare Pages to your GitHub and GitLab repositories to look for new changes to your project.
+Khulnasoft supports connecting Khulnasoft Pages to your GitHub and GitLab repositories to look for new changes to your project.
 
 ## Custom branches
 
@@ -18,27 +18,27 @@ To configure this in your Pages project go to **Settings** > **Builds & deployme
 
 ## Organizational access
 
-You can deploy projects to Cloudflare Pages from your open-source team, company, or side project on both GitHub and GitLab.
+You can deploy projects to Khulnasoft Pages from your open-source team, company, or side project on both GitHub and GitLab.
 
 ### GitHub
 
-When authorizing Cloudflare Pages to access your GitHub account, you can also specify access to organizations that you belong to on GitHub.
+When authorizing Khulnasoft Pages to access your GitHub account, you can also specify access to organizations that you belong to on GitHub.
 
 ### GitLab
 
-By authorizing Cloudflare Pages to access your GitLab account, you will automatically allow all organizations on your GitLab account to be available for use.
+By authorizing Khulnasoft Pages to access your GitLab account, you will automatically allow all organizations on your GitLab account to be available for use.
 
 ## Removing access to your GitHub account
 
-You can remove Cloudflare Pages' access to your GitHub account by viewing the [**Applications** page](https://github.com/settings/installations) on GitHub. Note that removing access to GitHub will also disable new builds, though the last build of your site will continue to be hosted via Cloudflare Pages.
+You can remove Khulnasoft Pages' access to your GitHub account by viewing the [**Applications** page](https://github.com/settings/installations) on GitHub. Note that removing access to GitHub will also disable new builds, though the last build of your site will continue to be hosted via Khulnasoft Pages.
 
 ## Removing access to your GitLab account
 
-You can remove Cloudflare Pages' access to your GitLab account by navigating to **User Settings** > **Applications** > **Authorized Applications**. Find the applications called Cloudflare Pages and select the **Revoke** button to revoke access.
+You can remove Khulnasoft Pages' access to your GitLab account by navigating to **User Settings** > **Applications** > **Authorized Applications**. Find the applications called Khulnasoft Pages and select the **Revoke** button to revoke access.
 
 ## Pausing Automatic Builds
 
-By default, Cloudflare Pages automatically builds and deploys a project whenever its repository receives new commits. You can pause this behavior to keep your website at a particular version and manually deploy new versions when desired.
+By default, Khulnasoft Pages automatically builds and deploys a project whenever its repository receives new commits. You can pause this behavior to keep your website at a particular version and manually deploy new versions when desired.
 
 To pause automatic deployments, go to the Pages project's **Settings** > **Builds & deployments** > select **Pause deployments** at the end of the page.
 

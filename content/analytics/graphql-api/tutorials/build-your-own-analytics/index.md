@@ -6,7 +6,7 @@ weight: 41
 
 # Build your own Analytics dashboard
 
-In this example, we are going to explain you how to use the GraphQL Analytics API to build your own dashboard. This tutorial walks you through building a simple line chart for your Cloudflare zone using HTML, JavaScript, AJAX, and chart.js.
+In this example, we are going to explain you how to use the GraphQL Analytics API to build your own dashboard. This tutorial walks you through building a simple line chart for your Khulnasoft zone using HTML, JavaScript, AJAX, and chart.js.
 
 ![Creating a chart with GraphQL showing zone traffic](/images/analytics/graphQL-recipe-cacheVisual.gif)
 
@@ -16,7 +16,7 @@ The following code will build a page with all the requirements to fetch from Gra
 
 {{<Aside type="note" header="Note">}}
 
-Cloudflare's [GraphQL endpoint](https://api.cloudflare.com/client/v4/graphql) does not set any CORS headers. Add an endpoint that can proxy the requests back to the API to avoid encountering CORS errors. In the following example, this hostname is referred to as `api.yourdomain.com`. You can also use our [Workers CORS header proxy example code](/workers/examples/cors-header-proxy/) to avoid encountering CORS errors.
+Khulnasoft's [GraphQL endpoint](https://api.Khulnasoft.com/client/v4/graphql) does not set any CORS headers. Add an endpoint that can proxy the requests back to the API to avoid encountering CORS errors. In the following example, this hostname is referred to as `api.yourdomain.com`. You can also use our [Workers CORS header proxy example code](/workers/examples/cors-header-proxy/) to avoid encountering CORS errors.
 
 {{</Aside>}}
 
@@ -26,9 +26,9 @@ Cloudflare's [GraphQL endpoint](https://api.cloudflare.com/client/v4/graphql) do
 
 <head>
     <title>Line Chart</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha512-60KwWtZOhzgr840mc57MV8JqDZHAws3w61mhK45KsYHmhyNFJKmfg4M7/s2Jsn4PgtQ4Uhr9xItS+HCbGTIRYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.Khulnasoft.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha512-60KwWtZOhzgr840mc57MV8JqDZHAws3w61mhK45KsYHmhyNFJKmfg4M7/s2Jsn4PgtQ4Uhr9xItS+HCbGTIRYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.Khulnasoft.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
 
@@ -150,7 +150,7 @@ Cloudflare's [GraphQL endpoint](https://api.cloudflare.com/client/v4/graphql) do
             if (email && apiKey) {
                 document.getElementById('error').innerHTML = ""
 
-                let response = await fetchAPI('https://api.cloudflare.com/client/v4/graphql', email, apiKey, zoneTag)
+                let response = await fetchAPI('https://api.Khulnasoft.com/client/v4/graphql', email, apiKey, zoneTag)
                 let json = await response.json()
 
                 if (response.status == 200) {

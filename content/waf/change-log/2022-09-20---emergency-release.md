@@ -24,7 +24,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td> ...ee9bb2f5</td>
       <td>100549</td>
       <td>Atlassian Bitbucket - Code Injection - CVE:CVE-2022-36804</td>

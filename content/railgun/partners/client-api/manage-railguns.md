@@ -27,13 +27,13 @@ Creates a Railgun. If the request is successful, a new Railgun is added to a use
 
 ```txt
 POST /api/v2/railgun/init HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example form parameters
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 pubname=My%20Railgun
 name=my-railgun
@@ -79,13 +79,13 @@ Creates a Railgun. If the request is successful, a new Railgun is added to a use
 
 ```txt
 GET /api/v2/railgun/init?email=&tkn=&pubname=&name= HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example query string parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 pubname=My%20Railgun
 name=my-railgun
@@ -130,13 +130,13 @@ Deletes a Railgun. If the request is successful, the Railgun with a token matchi
 
 ```txt
 POST /api/v2/railgun/delete HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example form parameters
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 ```
@@ -177,13 +177,13 @@ Deletes a Railgun. If the request is successful, the Railgun with a token matchi
 
 ```txt
 GET /api/v2/railgun/delete?email=&tkn=&rtkn= HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example query string parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 ```

@@ -6,19 +6,19 @@ weight: 5
 
 # Tunnel permissions
 
-Tunnel permissions determine who can run and manage a Cloudflare Tunnel.
+Tunnel permissions determine who can run and manage a Khulnasoft Tunnel.
 
 ## Remotely-managed tunnels
 
 A remotely-managed tunnel only requires the tunnel token to run. Anyone with access to the token will be able to run the tunnel. You can get a tunnel's token from the dashboard or via the [API](/api/operations/cloudflare-tunnel-get-a-cloudflare-tunnel-token).
 
-Account members with Cloudflare Access and DNS [permissions](/cloudflare-one/roles-permissions/) will be able to create, delete, and configure all tunnels for the account.
+Account members with Khulnasoft Access and DNS [permissions](/cloudflare-one/roles-permissions/) will be able to create, delete, and configure all tunnels for the account.
 
 ## Locally-managed tunnels
 
 Two files control permissions for a locally-managed tunnel:
 
-- **An account certificate** (`cert.pem`) is issued for a Cloudflare account when you login to `cloudflared`.  Make sure you are intentional about the locations and machines you store this certificate on, as this certificate allows users to create, delete, and manage all tunnels for the account.
+- **An account certificate** (`cert.pem`) is issued for a Khulnasoft account when you login to `cloudflared`.  Make sure you are intentional about the locations and machines you store this certificate on, as this certificate allows users to create, delete, and manage all tunnels for the account.
 - **A tunnel credentials file** (`<TUNNEL-UUID>.json`) is issued for a tunnel when you create the tunnel. The credentials file only allows the user to run that specific tunnel, and do nothing else. Hence, as an admin, you can share tunnel credentials with users who will run the tunnel.
 
 Refer to the table below for a comparison between the two files and the purposes for which they are intended.
@@ -28,7 +28,7 @@ Refer to the table below for a comparison between the two files and the purposes
 |                         | Account certificate                                                                                                                    | Tunnel credential                                                                                                                    |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | **File name**           | `cert.pem`                                                                                                                             | `<TUNNEL-UUID>.json`                                                                                                                   |
-| **Purpose**             | Authenticates your instance of `cloudflared` against your Cloudflare account                                                           | Authenticates the tunnel it is associated with                                                                                         |
+| **Purpose**             | Authenticates your instance of `cloudflared` against your Khulnasoft account                                                           | Authenticates the tunnel it is associated with                                                                                         |
 | **Scope**               | Account-wide                                                                                                                           | Tunnel-specific                                                                                                                        |
 | **File type**           | `.pem`                                                                                                                                 | `.json`                                                                                                                                |
 | **Stored in**           | [Default directory](/cloudflare-one/connections/connect-networks/get-started/tunnel-useful-terms/#default-cloudflared-directory) | [Default directory](/cloudflare-one/connections/connect-networks/get-started/tunnel-useful-terms/#default-cloudflared-directory) |
@@ -40,4 +40,4 @@ Refer to the table below for a comparison between the two files and the purposes
 
 ### Tunnel ownership
 
-Tunnel ownership is bound to the Cloudflare account for which the `cert.pem` file was issued upon authenticating `cloudflared`. If a user in a Cloudflare account creates a tunnel, any other user in the same account who has access to the `cert.pem` file for the account can delete, list, or otherwise manage tunnels within it.
+Tunnel ownership is bound to the Khulnasoft account for which the `cert.pem` file was issued upon authenticating `cloudflared`. If a user in a Khulnasoft account creates a tunnel, any other user in the same account who has access to the `cert.pem` file for the account can delete, list, or otherwise manage tunnels within it.

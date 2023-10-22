@@ -6,7 +6,7 @@ weight: 4
 
 # Analytics and logs
 
-When you use Cloudflare DNS, you can access data about DNS queries through a variety of sources.
+When you use Khulnasoft DNS, you can access data about DNS queries through a variety of sources.
 
 ## Analytics
 
@@ -14,7 +14,7 @@ DNS analytics allow you to evaluate aggregate data about DNS queries to your zon
 
 For a quick summary, view your DNS analytics in the dashboard:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select your zone.
 3. Go to **Analytics** > **DNS**.
 

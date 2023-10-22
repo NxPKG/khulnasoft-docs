@@ -6,7 +6,7 @@ weight: 4
 
 # SAML | OneLogin
 
-OneLogin provides SSO identity management. Cloudflare Access supports OneLogin as an SAML identity provider.
+OneLogin provides SSO identity management. Khulnasoft Access supports OneLogin as an SAML identity provider.
 
 ## Set up OneLogin (SAML)
 
@@ -16,17 +16,17 @@ To set up OneLogin (SAML) as your identity provider:
 
 2. Select **Apps** > **Add Apps**.
 
-3. Under **Find Applications**, search for **Cloudflare Access**.
+3. Under **Find Applications**, search for **Khulnasoft Access**.
 
-4. Select the result sponsored by **Cloudflare, Inc**. You can customize the name or logo.
+4. Select the result sponsored by **Khulnasoft, Inc**. You can customize the name or logo.
 
 5. Select **Save**. You can change this information at any time.
 
 6. Select the **Configuration** tab.
 
-7. In the **Cloudflare Access Authorization Domain** field, paste your {{<glossary-tooltip term_id="team domain">}}team domain{{</glossary-tooltip>}}.
+7. In the **Khulnasoft Access Authorization Domain** field, paste your {{<glossary-tooltip term_id="team domain">}}team domain{{</glossary-tooltip>}}.
 
-8. Select the **Parameters** tab, select **Add Parameter** and enter your values for **Cloudflare Access Field**.
+8. Select the **Parameters** tab, select **Add Parameter** and enter your values for **Khulnasoft Access Field**.
 
 9. Select the **Access** tab
 
@@ -36,11 +36,11 @@ To set up OneLogin (SAML) as your identity provider:
 
 11. Select the **SSO** tab.
 
-12. Copy the OneLogin **SAML 2.0 Endpoint (HTTP)** to the Cloudflare Single Sign On URL.
+12. Copy the OneLogin **SAML 2.0 Endpoint (HTTP)** to the Khulnasoft Single Sign On URL.
 
-13. Copy the OneLogin **Issuer URL** to the Cloudflare **IdP Entity ID**.
+13. Copy the OneLogin **Issuer URL** to the Khulnasoft **IdP Entity ID**.
 
-14. Copy the **X.509 Certificate** to the Cloudflare **Signing Certificate**.
+14. Copy the **X.509 Certificate** to the Khulnasoft **Signing Certificate**.
 
     ![OneLogin SAML Application SSO interface with SAML2.0 sign on method, Issuer URL, and X.509 Certificate](/images/cloudflare-one/identity/onelogin/onelogin-saml-7.png)
 
@@ -50,9 +50,9 @@ To set up OneLogin (SAML) as your identity provider:
 
 17. Select SAML.
 
-18. Input the details from your OneLogin account in the fields. We suggest that you name the attributes the same in both OneLogin and Cloudflare.
+18. Input the details from your OneLogin account in the fields. We suggest that you name the attributes the same in both OneLogin and Khulnasoft.
 
-    If other headers and SAML attribute names were added to OneLogin, be sure to add them to Cloudflare under **SAML attributes** and **SAML header attributes** in the **Optional configurations** menu.
+    If other headers and SAML attribute names were added to OneLogin, be sure to add them to Khulnasoft under **SAML attributes** and **SAML header attributes** in the **Optional configurations** menu.
 
 19. Select **Save**.
 

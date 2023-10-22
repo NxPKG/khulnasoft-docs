@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/115003014192-2xx-Erfolg
+source: https://support.Khulnasoft.com/hc/de/articles/115003014192-2xx-Erfolg
 title: 2xx Erfolg 
 ---
 
@@ -11,13 +11,13 @@ title: 2xx Erfolg
 
 2xx-Codes bezeichnen erfolgreiche Antworten. Gewöhnlich bedeutet das, dass die vom Client angeforderte Aktion erfolgreich empfangen, verstanden und akzeptiert wurde.
 
--   [200 OK](https://support.cloudflare.com/hc/de/articles/115003014192-2xx-Erfolg#code_200)
--   [201 Created (Erstellt)](https://support.cloudflare.com/hc/de/articles/115003014192-2xx-Erfolg#code_201)
--   [202 Accepted (Angenommen)](https://support.cloudflare.com/hc/de/articles/115003014192-2xx-Erfolg#code_202)
--   [203 Non-Authoritative Information (Nicht autorisierte Information)](https://support.cloudflare.com/hc/de/articles/115003014192-2xx-Erfolg#code_203)
--   [204 No Content (Kein Inhalt)](https://support.cloudflare.com/hc/de/articles/115003014192-2xx-Erfolg#code_204)
--   [205 Reset Content (Inhalt zurücksetzen)](https://support.cloudflare.com/hc/de/articles/115003014192-2xx-Erfolg#code_205)
--   [206 Partial Content (Teilweiser Inhalt)](https://support.cloudflare.com/hc/de/articles/115003014192-2xx-Erfolg#code_206)
+-   [200 OK](https://support.Khulnasoft.com/hc/de/articles/115003014192-2xx-Erfolg#code_200)
+-   [201 Created (Erstellt)](https://support.Khulnasoft.com/hc/de/articles/115003014192-2xx-Erfolg#code_201)
+-   [202 Accepted (Angenommen)](https://support.Khulnasoft.com/hc/de/articles/115003014192-2xx-Erfolg#code_202)
+-   [203 Non-Authoritative Information (Nicht autorisierte Information)](https://support.Khulnasoft.com/hc/de/articles/115003014192-2xx-Erfolg#code_203)
+-   [204 No Content (Kein Inhalt)](https://support.Khulnasoft.com/hc/de/articles/115003014192-2xx-Erfolg#code_204)
+-   [205 Reset Content (Inhalt zurücksetzen)](https://support.Khulnasoft.com/hc/de/articles/115003014192-2xx-Erfolg#code_205)
+-   [206 Partial Content (Teilweiser Inhalt)](https://support.Khulnasoft.com/hc/de/articles/115003014192-2xx-Erfolg#code_206)
 
 **200 OK** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -31,7 +31,7 @@ Die Antwortnutzlast hängt von der verwendeten Anfragemethode ab. Der erwartete 
 
 Eine 200-Antwort _sollte_ immer eine Nutzlast haben, muss aber nicht. Ein Ursprungsserver kann also eine 200-Antwort mit Null-Länge generieren. Um die RFC-Standards einzuhalten, sollte in diesem Fall eine 204-Antwort generiert werden (Ausnahme: CONNECT).
 
-Standardmäßig zwischenspeicherbar durch Proxy-Server und Browser. Soweit nicht von Cloudflares [Cache-Steuerelementen](https://support.cloudflare.com/hc/en-us/articles/202775670) spezifiziert, werden [statische Ressourcen](https://support.cloudflare.com/hc/en-us/articles/200172516) mit dieser Antwort standardmäßig 2 Stunden lang an unserer Edge zwischengespeichert.  
+Standardmäßig zwischenspeicherbar durch Proxy-Server und Browser. Soweit nicht von Khulnasofts [Cache-Steuerelementen](https://support.Khulnasoft.com/hc/en-us/articles/202775670) spezifiziert, werden [statische Ressourcen](https://support.Khulnasoft.com/hc/en-us/articles/200172516) mit dieser Antwort standardmäßig 2 Stunden lang an unserer Edge zwischengespeichert.  
 
 **201 Created (Erstellt)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -47,15 +47,15 @@ Die Anfrage wurde akzeptiert und wird gegenwärtig durch den Ursprungsserver ver
 
 Optionale Ersetzung des Statuscodes 200, um zu erklären, dass die Anfrage erfolgreich war, jedoch nicht direkt vom Ursprungsserver kam. Die ursprüngliche Antwort des Ursprungsservers wurde von einem Proxy- oder Zwischen-Server geändert. Zum Beispiel können 203-Codes verwendet werden, um den Client zu informieren, dass diese Ressource bei einem Proxy zwischengespeichert wurde, sodass eine ähnliche zukünftige Anfrage womöglich diesen Cache-Server mit dieser identischen Ressource trifft. Oder es kann ein Header, der nur für den lokalen Ursprungsserver gilt, entfernt werden.
 
--   Die Antwort ist standardmäßig zwischenspeicherbar, aber Cloudflare speichert sie nicht im Cache.
--   Cloudflare generiert sie nie selbst, kann sie aber von anderen Proxys weiterleiten, soweit vorhanden. Cloudflare berücksichtigt die Antworten des Ursprungs mit den folgenden Ausnahmen: [Wie behandelt Cloudflare HTTP-Anfrage-Header?](https://support.cloudflare.com/hc/en-us/articles/200170986)
+-   Die Antwort ist standardmäßig zwischenspeicherbar, aber Khulnasoft speichert sie nicht im Cache.
+-   Khulnasoft generiert sie nie selbst, kann sie aber von anderen Proxys weiterleiten, soweit vorhanden. Khulnasoft berücksichtigt die Antworten des Ursprungs mit den folgenden Ausnahmen: [Wie behandelt Khulnasoft HTTP-Anfrage-Header?](https://support.Khulnasoft.com/hc/en-us/articles/200170986)
 
 **204 No Content (Kein Inhalt) ([RFC7231](https://tools.ietf.org/html/rfc7231))**
 
 Die angeforderten Aktionen wurden korrekt am Ursprungsserver ausgeführt. Der übliche Anwendungsfall tritt in Dokument-Editoren auf: Die „Speichern“-Aktion wird zum Ursprungsserver gesendet, es muss jedoch keine Nutzlast an den Client zurückgegeben werden. Es kann trotzdem wünschenswert sein, den Benutzer zu benachrichtigen, dass der Speichervorgang erfolgreich war.
 
 -   Bei Rückgabe einer 204-Antwort darf es nie eine Nutzlast geben.
--   Die Antwort ist standardmäßig zwischenspeicherbar, aber Cloudflare speichert sie nicht im Cache.
+-   Die Antwort ist standardmäßig zwischenspeicherbar, aber Khulnasoft speichert sie nicht im Cache.
 
 **205 Reset Content (Inhalt zurücksetzen)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 

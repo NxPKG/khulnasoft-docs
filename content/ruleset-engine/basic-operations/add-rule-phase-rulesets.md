@@ -29,7 +29,7 @@ The following example sets the rules of a phase entry point ruleset at the zone 
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -104,7 +104,7 @@ The following example adds a single rule to a phase entry point ruleset (with ID
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/zone/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zone/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

@@ -12,7 +12,7 @@ You can customize your waiting room from the dashboard or via API.
 
 To design and preview the appearance of a waiting room, select the **Customization** tab in the **Create waiting room** page.
 
-Cloudflare offers options to customize the appearance of your waiting room:
+Khulnasoft offers options to customize the appearance of your waiting room:
 
 - [Default waiting room](#default-waiting-room): An unbranded waiting room that displays an estimated waiting time to visitors.
   - Select a language for your default waiting room page. You can choose from the following languages: English, Arabic, German, Spanish, French, Indonesian, Italian, Japanese, Korean, Dutch, Polish, Portuguese (Brazilian), Turkish and Chinese (Simplified and Traditional).
@@ -96,7 +96,7 @@ The following script within the `<body>` section after `<main>` fetches the wait
 
 #### Available variables
 
-When you create a waiting room with custom HTML, you can have access to several variables to customize your response. For a full list of variables, refer to the `json_response_enabled` parameter in the [Cloudflare API docs](/api/operations/waiting-room-create-waiting-room).
+When you create a waiting room with custom HTML, you can have access to several variables to customize your response. For a full list of variables, refer to the `json_response_enabled` parameter in the [Khulnasoft API docs](/api/operations/waiting-room-create-waiting-room).
 
 #### Multiple-language support
 
@@ -137,7 +137,7 @@ You can use the Waiting Room API to customize the web page served to visitors wh
 In the following `PATCH` request, the `custom_page_html` field contains the HTML code for the [customized waiting room](/waiting-room/how-to/customize-waiting-room/):
 
 ```bash
-curl -X PATCH "https://api.cloudflare.com/client/v4/zones/{zone-id}/waiting_rooms/{waiting-room-id}"
+curl -X PATCH "https://api.Khulnasoft.com/client/v4/zones/{zone-id}/waiting_rooms/{waiting-room-id}"
      -H "X-Auth-Email: user@example.com"
      -H "X-Auth-Key: xxxxxxxx"
      -H "Content-Type: application/json"
@@ -181,7 +181,7 @@ curl -X PATCH "https://api.cloudflare.com/client/v4/zones/{zone-id}/waiting_room
 Before making an API request to configure a waiting room web page with customized HTML, you can preview your custom HTML by uploading it to a preview endpoint:
 
 ```txt
-POST https://api.cloudflare.com/client/v4/zones/<zone_id>/waiting_rooms/preview
+POST https://api.Khulnasoft.com/client/v4/zones/<zone_id>/waiting_rooms/preview
 ```
 
 In the request body, include the customized HTML content in the `custom_html` field:
@@ -197,7 +197,7 @@ Note that you pass HTML content to the preview endpoint in the `custom_html` fie
 Example request:
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone-id}/waiting_rooms/preview"
+curl -X POST "https://api.Khulnasoft.com/client/v4/zones/{zone-id}/waiting_rooms/preview"
      -H "X-Auth-Email: user@example.com"
      -H "X-Auth-Key: xxxxxxxx"
      -H "Content-Type: application/json"
@@ -217,7 +217,7 @@ The preview endpoint returns a temporary URL in the response body where you can 
 }
 ```
 
-You do not have to have a Cloudflare account to access the preview link, so you can validate the waiting room webpage on multiple devices.
+You do not have to have a Khulnasoft account to access the preview link, so you can validate the waiting room webpage on multiple devices.
 
 ### Preview the default or current waiting room web page
 

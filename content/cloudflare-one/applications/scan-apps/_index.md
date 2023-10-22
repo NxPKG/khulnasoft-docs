@@ -8,12 +8,12 @@ weight: 3
 # Scan SaaS applications
 
 {{<Aside type="note">}}
-Cloudflare CASB is only available on Enterprise plans.
+Khulnasoft CASB is only available on Enterprise plans.
 {{</Aside>}}
 
-Cloudflare’s API-driven Cloud Access Security Broker (CASB) scans SaaS applications for misconfigurations, unauthorized user activity, shadow IT, and other data security issues that can occur after a user has successfully logged in.
+Khulnasoft’s API-driven Cloud Access Security Broker (CASB) scans SaaS applications for misconfigurations, unauthorized user activity, shadow IT, and other data security issues that can occur after a user has successfully logged in.
 
-When you integrate a third-party SaaS application with Cloudflare CASB, you allow CASB to make API calls to the application and read relevant data on your behalf. The CASB integration permissions are read-only and follow the least privileged model. In other words, only the minimum access required to perform a scan is granted.
+When you integrate a third-party SaaS application with Khulnasoft CASB, you allow CASB to make API calls to the application and read relevant data on your behalf. The CASB integration permissions are read-only and follow the least privileged model. In other words, only the minimum access required to perform a scan is granted.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Before you can integrate a SaaS application with CASB, your SaaS account must me
 
 ## Add an integration
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **CASB** > **Integrations**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **CASB** > **Integrations**.
 2. Select **Add integration**.
 3. Browse the available SaaS integrations and select the application you would like to add.
 4. Follow the step-by-step integration instructions in the UI.
@@ -31,7 +31,7 @@ After the first scan, CASB will automatically scan your application on a frequen
 
 ## Pause an integration
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **CASB** > **Integrations**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **CASB** > **Integrations**.
 2. Find the integration you would like to pause and select **Manage**.
 3. To stop scanning the application, turn off **Scan findings**.
 
@@ -45,6 +45,6 @@ When you delete an integration, all keys and OAuth data will be deleted. This me
 
 {{</Aside>}}
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **CASB** > **Integrations**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **CASB** > **Integrations**.
 2. Find the integration you would like to delete and select **Manage**.
 3. Select **Delete**.

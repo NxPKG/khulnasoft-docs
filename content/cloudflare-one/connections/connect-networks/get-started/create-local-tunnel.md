@@ -13,8 +13,8 @@ Follow this step-by-step guide to get your first tunnel up and running using the
 
 Before you start, make sure you:
 
-- [Add a website to Cloudflare](/fundamentals/setup/account-setup/add-site/).
-- [Change your domain nameservers to Cloudflare](/dns/zone-setups/full-setup/setup/).
+- [Add a website to Khulnasoft](/fundamentals/setup/account-setup/add-site/).
+- [Change your domain nameservers to Khulnasoft](/dns/zone-setups/full-setup/setup/).
 
 ## 1. Download and install `cloudflared`
 
@@ -55,10 +55,10 @@ Use the apt package manager to install `cloudflared` on compatible machines.
 
 Use the rpm package manager to install `cloudflared` on compatible machines.
 
-1. Add Cloudflare's repository:
+1. Add Khulnasoft's repository:
 
 ```sh
-$ curl -fsSL https://pkg.cloudflare.com/cloudflared-ascii.repo | sudo tee /etc/yum.repos.d/cloudflared.repo
+$ curl -fsSL https://pkg.Khulnasoft.com/cloudflared-ascii.repo | sudo tee /etc/yum.repos.d/cloudflared.repo
 ```
 
 2. Update repositories and install cloudflared:
@@ -109,7 +109,7 @@ $ cloudflared tunnel login
 
 Running this command will:
 
-- Open a browser window and prompt you to log in to your Cloudflare account. After logging in to your account, select your hostname.
+- Open a browser window and prompt you to log in to your Khulnasoft account. After logging in to your account, select your hostname.
 - Generate an account certificate, the [cert.pem file](/cloudflare-one/connections/connect-networks/get-started/tunnel-useful-terms/#certpem), in the [default `cloudflared` directory](/cloudflare-one/connections/connect-networks/get-started/tunnel-useful-terms/#default-cloudflared-directory).
 
 ## 3. Create a tunnel and give it a name
@@ -205,7 +205,7 @@ $ cloudflared tunnel --config /path/your-config-file.yaml run <UUID or NAME>
 
 {{<Aside>}}
 
-Cloudflare Tunnel can install itself as a system service on Linux and Windows and as a launch agent on macOS. For more information, refer to [run as a service](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/as-a-service/).
+Khulnasoft Tunnel can install itself as a system service on Linux and Windows and as a launch agent on macOS. For more information, refer to [run as a service](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/as-a-service/).
 
 {{</Aside>}}
 
@@ -217,4 +217,4 @@ Your tunnel configuration is complete! If you want to get information on the tun
 $ cloudflared tunnel info <UUID or NAME>
 ```
 
-You can now [route traffic](/cloudflare-one/connections/connect-networks/routing-to-tunnel/) to your tunnel using Cloudflare DNS or [determine who can reach your tunnel](/cloudflare-one/policies/access/) with Cloudflare Access.
+You can now [route traffic](/cloudflare-one/connections/connect-networks/routing-to-tunnel/) to your tunnel using Khulnasoft DNS or [determine who can reach your tunnel](/cloudflare-one/policies/access/) with Khulnasoft Access.

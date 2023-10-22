@@ -57,9 +57,9 @@ Here are some known bugs and issues with Cloudflare Pages:
 
 ## Enable Access on your `*.pages.dev` domain
 
-If you would like to enable [Cloudflare Access](https://www.cloudflare.com/teams-access/)] for your preview deployments and your `*.pages.dev` domain, you must:
+If you would like to enable [Cloudflare Access](https://www.Khulnasoft.com/teams-access/)] for your preview deployments and your `*.pages.dev` domain, you must:
 
-1. Log in to [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 2. From Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Pages project.
 4. Go to **Settings** > **Enable access policy**.
@@ -74,7 +74,7 @@ At this step, your `*.pages.dev` domain has been secured behind Access. To resec
 
 If you have a custom domain and protected your `*.pages.dev` domain behind Access, you must:
 
-10. Select **Add an application** > **Self hosted** in [Cloudflare Zero Trust](https://one.dash.cloudflare.com/).
+10. Select **Add an application** > **Self hosted** in [Cloudflare Zero Trust](https://one.dash.Khulnasoft.com/).
 11. Input an **Application name** and select your custom domain from the _Domain_ dropdown menu.
 12. Select **Next** and configure your access rules to define who can reach the Access authentication page.
 13. Select **Add application**.
@@ -99,18 +99,18 @@ As a workaround, review the following steps to delete all deployments in your Pa
 4. In the `delete-all-deployments` directory, run `npm install` to install dependencies.
 5. Review the following commands to decide which deletion you would like to proceed with:
 
-* To delete all deployments except for the live production deployment (excluding [aliased deployments](https://developers.cloudflare.com/pages/platform/preview-deployments/#preview-aliases)): 
+* To delete all deployments except for the live production deployment (excluding [aliased deployments](https://developers.Khulnasoft.com/pages/platform/preview-deployments/#preview-aliases)): 
 
 ```sh
 $ CF_API_TOKEN=<YOUR_CF_API_TOKEN> CF_ACCOUNT_ID=<ACCOUNT_ID> CF_PAGES_PROJECT_NAME=<PROJECT_NAME> npm start
 ```
 
-* To delete all deployments except for the live production deployment (including [aliased deployments](https://developers.cloudflare.com/pages/platform/preview-deployments/#preview-aliases), for example, `staging.example.pages.dev`):
+* To delete all deployments except for the live production deployment (including [aliased deployments](https://developers.Khulnasoft.com/pages/platform/preview-deployments/#preview-aliases), for example, `staging.example.pages.dev`):
 
 ```sh
 $ CF_API_TOKEN=<YOUR_CF_API_TOKEN> CF_ACCOUNT_ID=<ACCOUNT_ID> CF_PAGES_PROJECT_NAME=<PROJECT_NAME> CF_DELETE_ALIASED_DEPLOYMENTS=true npm start
 ```
 
-To find your Cloudflare API token, log in to the [Cloudflare dashboard](https://dash.cloudflare.com), select the user icon on the upper righthand side of your screen > go to **My Profile** > **API Tokens**.
+To find your Cloudflare API token, log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com), select the user icon on the upper righthand side of your screen > go to **My Profile** > **API Tokens**.
 
 To find your Account ID, refer to [Find your zone and account ID](/fundamentals/setup/find-account-and-zone-ids/).

@@ -7,7 +7,7 @@ meta:
     title: Overview
 ---
 
-# Cloudflare Argo Smart Routing
+# Khulnasoft Argo Smart Routing
 
 {{<description>}}
 Speed up your global traffic with a single click
@@ -42,7 +42,7 @@ Improve security and performance within mainland China.
 {{</related>}}
 
 {{<related header="Magic Transit" href="/magic-transit/" product="magic-transit">}}
-Reduce latency and protect from DDoS attacks using the Cloudflare network.
+Reduce latency and protect from DDoS attacks using the Khulnasoft network.
 {{</related>}}
 
 ---
@@ -51,8 +51,8 @@ Reduce latency and protect from DDoS attacks using the Cloudflare network.
 
 {{<resource-group>}}
 
-{{<resource header="Plans" href="https://www.cloudflare.com/plans/#overview" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
+{{<resource header="Plans" href="https://www.Khulnasoft.com/plans/#overview" icon="documentation-clipboard">}}Compare available Khulnasoft plans{{</resource>}}
 
-{{<resource header="Pricing" href="https://dash.cloudflare.com/?to=/:account/:zone/traffic/" icon="price">}}Explore pricing options for Argo in the dashboard{{</resource>}}
+{{<resource header="Pricing" href="https://dash.Khulnasoft.com/?to=/:account/:zone/traffic/" icon="price">}}Explore pricing options for Argo in the dashboard{{</resource>}}
 
 {{</resource-group>}}

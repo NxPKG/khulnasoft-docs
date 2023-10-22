@@ -10,13 +10,13 @@ Webhooks notify your service when videos successfully finish processing and are 
 
 ## Subscribe to webhook notifications
 
-To subscribe to receive webhook notifications on your service or modify an existing subscription, you will need a [Cloudflare API token](https://dash.cloudflare.com/profile/api-tokens).
+To subscribe to receive webhook notifications on your service or modify an existing subscription, you will need a [Khulnasoft API token](https://dash.Khulnasoft.com/profile/api-tokens).
 
 The webhook notification URL must include the protocol. Only `http://` or `https://` is supported.
 
 ```bash
 curl -X PUT --header 'Authorization: Bearer <API_TOKEN>' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/webhook \
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/webhook \
 --data '{"notificationUrl":"<WEBHOOK_NOTIFICATION_URL>"}'
 ```
 
@@ -144,7 +144,7 @@ highlight: [2, 4, 7]
 
 ## Verify webhook authenticity
 
-Cloudflare Stream will sign the webhook requests sent to your notification URLs and include the signature of each request in the `Webhook-Signature` HTTP header. This allows your application to verify the webhook requests are sent by Stream.
+Khulnasoft Stream will sign the webhook requests sent to your notification URLs and include the signature of each request in the `Webhook-Signature` HTTP header. This allows your application to verify the webhook requests are sent by Stream.
 
 To verify a signature, you need to retrieve your webhook signing secret. This value is returned in the API response when you create or retrieve the webhook.
 
@@ -179,13 +179,13 @@ Every byte in the request body must remain unaltered for successful signature ve
 Compute an HMAC with the SHA256 function (HMAC-SHA256) using your webhook secret and the source string from step 2.
 This step depends on the programming language used by your application.
 
-Cloudflare's signature will be encoded to hex.
+Khulnasoft's signature will be encoded to hex.
 
 ### 4. Compare expected and actual signatures
 
 Compare the signature in the request header to the expected signature. Preferably, use a constant-time comparison function to compare the signatures.
 
-If the signatures match, you can trust that Cloudflare sent the webhook.
+If the signatures match, you can trust that Khulnasoft sent the webhook.
 
 ## Limitations
 
@@ -209,7 +209,7 @@ import (
 )
 
 func main() {
- secret := []byte("secret from the Cloudflare API")
+ secret := []byte("secret from the Khulnasoft API")
  message := []byte("string from step 2")
 
  hash := hmac.New(sha256.New, secret)
@@ -228,7 +228,7 @@ func main() {
 
     var crypto = require('crypto');
 
-    var key = 'secret from the Cloudflare API';
+    var key = 'secret from the Khulnasoft API';
     var message = 'string from step 2';
 
     var hash = crypto.createHmac('sha256', key).update(message);
@@ -241,16 +241,16 @@ func main() {
 ```ruby
     require 'openssl'
 
-    key = 'secret from the Cloudflare API'
+    key = 'secret from the Khulnasoft API'
     message = 'string from step 2'
 
     OpenSSL::HMAC.hexdigest('sha256', key, message)
 ```
 
-**In JavaScript (for example, to use in Cloudflare Workers)**
+**In JavaScript (for example, to use in Khulnasoft Workers)**
 
 ```javascript
-    const key = 'secret from the Cloudflare API';
+    const key = 'secret from the Khulnasoft API';
     const message = 'string from step 2';
 
     const getUtf8Bytes = str =>

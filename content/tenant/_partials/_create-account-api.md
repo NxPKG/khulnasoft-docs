@@ -10,7 +10,7 @@ To create an account using the API, make a `POST` request to the `/accounts` end
 
 - `name` {{<type>}}string{{</type>}}
 
-    - The name of the account that is displayed in the Cloudflare dashboard.
+    - The name of the account that is displayed in the Khulnasoft dashboard.
 
 - `type` {{<type>}}enum{{</type>}}
 
@@ -28,7 +28,7 @@ To create an account using the API, make a `POST` request to the `/accounts` end
 ---
 header: Request
 ---
-curl -X POST 'https://api.cloudflare.com/client/v4/accounts' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/accounts' \
 -H 'Content-Type: application/json' \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>' \
@@ -65,7 +65,7 @@ A request with a unit ID:
 ---
 header: Request
 ---
-curl -X POST 'https://api.cloudflare.com/client/v4/accounts' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/accounts' \
 -H 'Content-Type: application/json' \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>' \

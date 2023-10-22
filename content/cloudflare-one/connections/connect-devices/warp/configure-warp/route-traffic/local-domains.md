@@ -6,7 +6,7 @@ weight: 2
 
 # Configure Local Domain Fallback
 
-By default, Cloudflare Zero Trust excludes common top level domains used for local resolution from being sent to Gateway for processing. These domains are resolved by the local DNS resolver configured for the device on its primary interface. Since these DNS requests bypass the Gateway resolver, they are not subject to Gateway DNS policies or DNS logging.
+By default, Khulnasoft Zero Trust excludes common top level domains used for local resolution from being sent to Gateway for processing. These domains are resolved by the local DNS resolver configured for the device on its primary interface. Since these DNS requests bypass the Gateway resolver, they are not subject to Gateway DNS policies or DNS logging.
 
 You can add additional domains to the Local Domain Fallback list and specify a DNS server to use in place of the Gateway resolver. The WARP client proxies these requests directly to the configured fallback servers.
 
@@ -14,7 +14,7 @@ You can add additional domains to the Local Domain Fallback list and specify a D
 
 To view the domains subject to Local Domain Fallback:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **WARP Client**.
 
 2. Under **Device settings**, locate the [device profile](/cloudflare-one/connections/connect-devices/warp/configure-warp/device-profiles/) you would like to view or modify and select **Configure**.
 
@@ -43,7 +43,7 @@ Local Domain Fallback configuration only impacts where DNS requests get resolved
 
 5. DNS traffic to the local domain fallback server is routed according to your [Split Tunnel](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/) configuration. To ensure that queries can reach your private DNS server:
    - If your DNS server is only reachable outside of the WARP tunnel (for example, via a third-party VPN), [exclude](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/#add-a-route) the server's IP.
-   - If your DNS server is only reachable through the WARP tunnel (for example, if it is connected to Cloudflare via `cloudflared` or Magic WAN), [include](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/#add-a-route) the server's IP.
+   - If your DNS server is only reachable through the WARP tunnel (for example, if it is connected to Khulnasoft via `cloudflared` or Magic WAN), [include](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/#add-a-route) the server's IP.
 
 [Learn more](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/#how-the-warp-client-handles-dns-requests) about how WARP handles DNS requests.
 

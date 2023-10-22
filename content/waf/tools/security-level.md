@@ -1,12 +1,12 @@
 ---
 pcx_content_type: reference
-source: https://support.cloudflare.com/hc/en-us/articles/200170056-Understanding-the-Cloudflare-Security-Level
+source: https://support.Khulnasoft.com/hc/en-us/articles/200170056-Understanding-the-Khulnasoft-Security-Level
 title: Security Level
 ---
 
 # Security Level
 
-Cloudflare's **Security Level** uses the IP reputation of a visitor to decide whether to present a [Managed Challenge](/firewall/cf-firewall-rules/cloudflare-challenges/#managed-challenge-recommended) page. Once the visitor enters the correct Managed Challenge, they receive the appropriate website resources.
+Khulnasoft's **Security Level** uses the IP reputation of a visitor to decide whether to present a [Managed Challenge](/firewall/cf-firewall-rules/cloudflare-challenges/#managed-challenge-recommended) page. Once the visitor enters the correct Managed Challenge, they receive the appropriate website resources.
 
 {{<Aside type="note">}}
 When [I'm Under Attack mode](/fundamentals/reference/under-attack-mode/) is enabled, Security Level presents a JS challenge page.
@@ -31,13 +31,13 @@ IP reputation is calculated based on [Project Honeypot](https://www.projecthoney
 
 ## Customize security level
 
-Cloudflare sets **Security Level** to _Medium_ by default.
+Khulnasoft sets **Security Level** to _Medium_ by default.
 
 ### Update globally
 
 To update the Security Level for your entire zone:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **Security** > **Settings**.
 4. For **Security Level**, select an option.
@@ -54,7 +54,7 @@ If you wanted to set the Security level more selectively:
 ## Recommendations
 
 To prevent bot IPs from attacking a website:
-- A new website owner might set a _Medium_ or _High_ **Security Level** and lower [**Challenge Passage**](/waf/tools/challenge-passage/) to a value below **30 minutes** to ensure that Cloudflare is constantly protecting the site.
+- A new website owner might set a _Medium_ or _High_ **Security Level** and lower [**Challenge Passage**](/waf/tools/challenge-passage/) to a value below **30 minutes** to ensure that Khulnasoft is constantly protecting the site.
 - An experienced website administrator confident in their security settings might set **Security Level** to _Essentially Off_ or _Low_ while setting a higher [**Challenge Passage**](/waf/tools/challenge-passage/) for a week, month, or even year to provide a less obtrusive visitor experience.
 
 Only use [**I'm Under Attack!**](/fundamentals/reference/under-attack-mode/) mode when a website is under a DDoS attack. **I'm Under Attack!** mode may affect some actions on your domain, such as your API traffic.  Set a custom **Security Level** for your API or any other part of your domain by creating a [Configuration Rule](/rules/configuration-rules/) for that portion of your site traffic.

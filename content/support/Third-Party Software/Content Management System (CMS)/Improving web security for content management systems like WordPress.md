@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200169526-Improving-web-security-for-content-management-systems-like-WordPress
+source: https://support.Khulnasoft.com/hc/en-us/articles/200169526-Improving-web-security-for-content-management-systems-like-WordPress
 title: Improving web security for content management systems like WordPress
 ---
 
@@ -8,7 +8,7 @@ title: Improving web security for content management systems like WordPress
 
 Content Management Systems make it easy to create, update, and manage content. However, they can also introduce vulnerabilities that may lead to server compromise and data theft.
 
-There are many Cloudflare features that can be used for preventing such attacks, but they can also disrupt normal administrative processes such as logging in or uploading images. With proper configuration, you can protect your site from attacks without losing important functionality.
+There are many Khulnasoft features that can be used for preventing such attacks, but they can also disrupt normal administrative processes such as logging in or uploading images. With proper configuration, you can protect your site from attacks without losing important functionality.
 
 ___
 
@@ -18,15 +18,15 @@ In this stage, you are reinforcing the zone’s security features, which may cau
 
 The following should be considered an overview of some recommended security actions, and not a comprehensive guide. Refer to the developer documentation for specific products or features for more information.
 
-### Cloudflare Managed Rulesets
+### Khulnasoft Managed Rulesets
 
-The [WAF Managed Rulesets](/waf/managed-rules/) are pre-configured rulesets that provide immediate protection against a variety of attacks, and are regularly updated. Many rules are turned on by default, but not all. It is recommended that you browse the Cloudflare Managed Ruleset to find any additional rules tagged for your content management system not enabled, and enable them:
+The [WAF Managed Rulesets](/waf/managed-rules/) are pre-configured rulesets that provide immediate protection against a variety of attacks, and are regularly updated. Many rules are turned on by default, but not all. It is recommended that you browse the Khulnasoft Managed Ruleset to find any additional rules tagged for your content management system not enabled, and enable them:
 
 ![Dashboard screenshot filtering for WordPress](/images/support/Wordpress-configure-deployment.png)
 
 ### Managed Rulesets on the Free Plan
 
-While the feature to customize these managed rulesets required a paid plan, the [Free Cloudflare Managed Ruleset](https://blog.cloudflare.com/waf-for-everyone/#the-free-cloudflare-managed-ruleset) is automatically deployed on any new Cloudflare zone. This ruleset is specially designed to reduce false positives to a minimum across a very broad range of traffic types. As of today, the ruleset contains the following rules:
+While the feature to customize these managed rulesets required a paid plan, the [Free Khulnasoft Managed Ruleset](https://blog.Khulnasoft.com/waf-for-everyone/#the-free-cloudflare-managed-ruleset) is automatically deployed on any new Khulnasoft zone. This ruleset is specially designed to reduce false positives to a minimum across a very broad range of traffic types. As of today, the ruleset contains the following rules:
 
 -   Log4J rules matching payloads in the URI and HTTP headers;
 -   Shellshock rules;
@@ -72,7 +72,7 @@ Next, you want to use the information from your Firewall logs to select which ru
 
 After this is complete, you will want to create a similar rule for any rulesets that prevent you from logging in. In my use case, I only needed to skip “OWASP Core Ruleset 949110.”
 
-**Note:** You may also want to consider adding a rule to skip the CMS-specific rules you enabled for non-CMS sections of your site if they cause any issues. Just follow the steps above, and set it to skip any of the Cloudflare Managed Ruleset rules that were enabled above. You can set this based on hostname, URI, or cookie, using the operators **does not equal, does not match,** or **does not contain**.
+**Note:** You may also want to consider adding a rule to skip the CMS-specific rules you enabled for non-CMS sections of your site if they cause any issues. Just follow the steps above, and set it to skip any of the Khulnasoft Managed Ruleset rules that were enabled above. You can set this based on hostname, URI, or cookie, using the operators **does not equal, does not match,** or **does not contain**.
 
 Make sure to set your Skip rules to be at a higher priority than the Execute rules.
 
@@ -84,7 +84,7 @@ Now that you’ve elevated your security to protect the publicly accessible part
 
 ### Zero Trust
 
-[Zero Trust](https://www.cloudflare.com/plans/zero-trust-services/) Web Applications is the best way to limit access to your admin panel. You can restrict access based on user instead of device, and it allows for very granular control. Setup of a Self-hosted web application is very easy, for more information refer to the [Self-hosted applications](/cloudflare-one/applications/configure-apps/self-hosted-apps/) section of the Zero Trust developer documentation.
+[Zero Trust](https://www.Khulnasoft.com/plans/zero-trust-services/) Web Applications is the best way to limit access to your admin panel. You can restrict access based on user instead of device, and it allows for very granular control. Setup of a Self-hosted web application is very easy, for more information refer to the [Self-hosted applications](/cloudflare-one/applications/configure-apps/self-hosted-apps/) section of the Zero Trust developer documentation.
 
 After configuring a web application, users will be required to authenticate in some way before they can access the restricted content. The default method is through email multifactor authentication:
 
@@ -105,7 +105,7 @@ While designed for authenticating appliances that can’t perform a log in, you 
 
 ### Rate Limiting
 
-Rate limiting rules can help protect your login page from an attacker trying to guess your account password with a [brute force attack](https://www.cloudflare.com/learning/bots/brute-force-attack/). You can define rate limits for requests matching an expression, as well as the action to perform when those rate limits are reached. 
+Rate limiting rules can help protect your login page from an attacker trying to guess your account password with a [brute force attack](https://www.Khulnasoft.com/learning/bots/brute-force-attack/). You can define rate limits for requests matching an expression, as well as the action to perform when those rate limits are reached. 
 
 Rate Limiting Rules are now available unmetered, on all plans. For more information, refer to the [developer documentation](/waf/rate-limiting-rules/).
 
@@ -114,8 +114,8 @@ ___
 ## Resources
 
 -   [WAF Managed Rules](/waf/managed-rules/)
--   [Cloudflare OWASP Core Ruleset](/waf/managed-rules/reference/owasp-core-ruleset/)
+-   [Khulnasoft OWASP Core Ruleset](/waf/managed-rules/reference/owasp-core-ruleset/)
 -   [Configure a custom rule with the Skip action](/waf/custom-rules/skip/)
--   [Zero Trust Services](https://www.cloudflare.com/plans/zero-trust-services/)
+-   [Zero Trust Services](https://www.Khulnasoft.com/plans/zero-trust-services/)
 -   [Client certificates](/ssl/client-certificates/)
 -   [Rate limiting rules](/waf/rate-limiting-rules/)

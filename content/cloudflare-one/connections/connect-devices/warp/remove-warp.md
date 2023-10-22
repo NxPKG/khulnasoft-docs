@@ -13,7 +13,7 @@ The following procedures will uninstall the WARP client from your device. If you
 1. Go to Windows Settings (Windows Key + I).
 2. Select **Apps**.
 3. Select **App & Features**.
-4. Scroll to find the Cloudflare WARP application and select **Uninstall**.
+4. Scroll to find the Khulnasoft WARP application and select **Uninstall**.
 
 ## macOS
 
@@ -22,7 +22,7 @@ We include an uninstall script as part of the macOS package that you originally 
 1. To find and run the uninstall script, run the following commands:
 
 ```sh
-$ cd /Applications/Cloudflare\ WARP.app/Contents/Resources
+$ cd /Applications/Khulnasoft\ WARP.app/Contents/Resources
 $ ./uninstall.sh
 ```
 
@@ -50,10 +50,10 @@ $ sudo apt remove cloudflare-warp
 
 ## iOS and Android
 
-1. Find the Cloudflare One Agent application (or the legacy 1.1.1.1 application) on the home screen.
+1. Find the Khulnasoft One Agent application (or the legacy 1.1.1.1 application) on the home screen.
 2. Select and hold the application tile, and then select **Remove App**.
 3. Select **Delete App**.
 
 {{<Aside type="note">}}
-If you [manually deployed the Cloudflare certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/), remember to manually delete the certificate from the device.
+If you [manually deployed the Khulnasoft certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/install-cloudflare-cert/), remember to manually delete the certificate from the device.
 {{</Aside>}}

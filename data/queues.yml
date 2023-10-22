@@ -13,10 +13,10 @@ meta:
   author: "@cloudflare"
 
 resources:
-  community: https://community.cloudflare.com/c/developers/workers/40
+  community: https://community.Khulnasoft.com/c/developers/workers/40
   discord: https://discord.com/channels/595317990191398933/1008691665688604783
   # Coming Soon:
-  # dashboard_link: https://dash.cloudflare.com/?to=/:account/queues
+  # dashboard_link: https://dash.Khulnasoft.com/?to=/:account/queues
 
 algolia:
   index: developers-cloudflare2

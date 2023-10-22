@@ -20,19 +20,19 @@ A common use case for this functionality is when your content is hosted on a thi
 
 * An origin rule performing a Host header override will also update the Server Name Indication (SNI) value of the original request to the same value. To set an SNI value different from the Host header value, add an [SNI override](#server-name-indication-sni) in the same origin rule or create a separate origin rule for this purpose.
 
-* If you have configured load balancing through Cloudflare and you wish to override the HTTP `Host` header per origin or for a given monitor, refer to [Override HTTP Host headers](/load-balancing/additional-options/override-http-host-headers/) in the Load Balancing documentation for more information.
+* If you have configured load balancing through Khulnasoft and you wish to override the HTTP `Host` header per origin or for a given monitor, refer to [Override HTTP Host headers](/load-balancing/additional-options/override-http-host-headers/) in the Load Balancing documentation for more information.
 
 {{</Aside>}}
 
 ## Server Name Indication (SNI)
 
-Allows you to override the Server Name Indication (SNI) [^1] value of a request. For more information, refer to [What is SNI (Server Name Indication)?](https://www.cloudflare.com/learning/ssl/what-is-sni/) in the Learning Center.
+Allows you to override the Server Name Indication (SNI) [^1] value of a request. For more information, refer to [What is SNI (Server Name Indication)?](https://www.Khulnasoft.com/learning/ssl/what-is-sni/) in the Learning Center.
 
-The new SNI value must be a valid hostname on the same Cloudflare account (possibly on a different zone).
+The new SNI value must be a valid hostname on the same Khulnasoft account (possibly on a different zone).
 
 {{<Aside type="note" header="Notes">}}
 * Currently, you can only use a static value when overriding SNI.
-* An SNI override will take precedence over [SNI rewrites of custom origins](/cloudflare-for-platforms/cloudflare-for-saas/start/advanced-settings/custom-origin/#sni-rewrites) when using Cloudflare for SaaS.
+* An SNI override will take precedence over [SNI rewrites of custom origins](/cloudflare-for-platforms/cloudflare-for-saas/start/advanced-settings/custom-origin/#sni-rewrites) when using Khulnasoft for SaaS.
 {{</Aside>}}
 
 [^1]: SNI allows a server to host multiple TLS Certificates for multiple websites using a single IP address. SNI adds the website hostname in the TLS handshake to inform the server which website to present when using shared IPs.
@@ -43,9 +43,9 @@ Allows you to override the resolved hostname of incoming requests. This function
 
 A common use case is when you are serving an application from the URI (for example, `mydomain.com/app`). In this case, the `app` may be hosted on a different server or by a third party. A DNS record override allows you to redirect requests to this endpoint to the server for that third-party application.
 
-You must specify a valid hostname in a DNS record override that is a hostname on the same Cloudflare account (possibly on a different zone).
+You must specify a valid hostname in a DNS record override that is a hostname on the same Khulnasoft account (possibly on a different zone).
 
-You can [configure a DNS record](/dns/manage-dns-records/how-to/create-dns-records#create-dns-records) (a `CNAME`, `A`, or `AAAA` record) with a hostname pointing to a third-party hostname/IP address, either proxied by Cloudflare or not.
+You can [configure a DNS record](/dns/manage-dns-records/how-to/create-dns-records#create-dns-records) (a `CNAME`, `A`, or `AAAA` record) with a hostname pointing to a third-party hostname/IP address, either proxied by Khulnasoft or not.
 
 The following example DNS records configure a `resolve.example.com` hostname pointing to an external hostname and IP address using a `CNAME` record and an `A` record, respectively:
 

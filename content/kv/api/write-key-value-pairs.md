@@ -47,7 +47,7 @@ Write more than one key-value pair at a time with Wrangler or [via the API](/api
 
 The bulk API can accept up to 10,000 KV pairs at once.
 
-A `key` and a `value` are required for each KV pair. The entire request size must be less than 100 megabytes. As of January 2022, Cloudflare does not support bulk writes from within a Worker.
+A `key` and a `value` are required for each KV pair. The entire request size must be less than 100 megabytes. As of January 2022, Khulnasoft does not support bulk writes from within a Worker.
 
 ## Expiring keys
 

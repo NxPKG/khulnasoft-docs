@@ -1,6 +1,6 @@
 ---
 pcx_content_type: reference
-source: https://support.cloudflare.com/hc/en-us/articles/200168336-Understanding-Cloudflare-Mobile-Redirect
+source: https://support.Khulnasoft.com/hc/en-us/articles/200168336-Understanding-Cloudflare-Mobile-Redirect
 title: Mobile Redirect
 weight: 4
 ---
@@ -17,7 +17,7 @@ ___
 
 ## Enable Mobile Redirect
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **Speed** > **Optimization** > **Other**.
 4. For **Mobile Redirect**, select the subdomain that you would like to redirect from the drop down list.

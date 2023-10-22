@@ -11,7 +11,7 @@ When setting up your Pages project, you may encounter various errors that preven
 
 You can review build errors in your Pages build log. To access your build log:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. In **Account Home**, go to **Workers & Pages**.
 3. In **Overview**, select your Pages project > **View build**.
 
@@ -76,7 +76,7 @@ If you are not using Functions or have reviewed that your Functions configuratio
 
 If your custom domain is proxied (orange-clouded) through Cloudflare, your zone's settings such as Auto Minify and caching will apply.
 
-If you are experiencing issues with a framework, like Nuxt.js, only on the custom domain, review if Auto Minify is enabled (log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) > **Speed** > **Optimization** > **Content Optimization** > **Auto Minify**) for HTML and disable it.
+If you are experiencing issues with a framework, like Nuxt.js, only on the custom domain, review if Auto Minify is enabled (log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) > **Speed** > **Optimization** > **Content Optimization** > **Auto Minify**) for HTML and disable it.
 
 If you are experiencing issues with new content not being shown, go to **Rules** > **Page Rules** in the Cloudflare dashboard and check for a Page Rule with **Cache Everything** enabled. If present, remove this rule as Pages handles its own cache.
 
@@ -152,7 +152,7 @@ example.com.            300     IN      CAA     0 issuewild "pki.goog; cansignht
 
 {{<Aside type="warning" header="Still having issues">}}
 
-If you have done the steps above and your domain is still verifying after 15 minutes, join our [Discord](https://discord.cloudflare.com) for support or contact our support team through the [Support Portal](https://dash.cloudflare.com/?to=/:account/support).
+If you have done the steps above and your domain is still verifying after 15 minutes, join our [Discord](https://discord.Khulnasoft.com) for support or contact our support team through the [Support Portal](https://dash.Khulnasoft.com/?to=/:account/support).
 
 {{</Aside>}}
 

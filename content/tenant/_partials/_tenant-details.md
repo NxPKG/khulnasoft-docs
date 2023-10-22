@@ -15,7 +15,7 @@ To retrieve tenant details, send a `GET` request to the `/user/tenants` endpoint
 ---
 header: Request
 ---
-curl -X GET 'https://api.cloudflare.com/client/v4/user/tenants' \
+curl -X GET 'https://api.Khulnasoft.com/client/v4/user/tenants' \
 -H 'Content-Type: application/json' \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>'

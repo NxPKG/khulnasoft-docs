@@ -6,7 +6,7 @@ weight: 1
 
 # Manage gateways
 
-A Cloudflare Web3 gateway provides HTTP-accessible interfaces to various Web3 networks. You can interact with a gateway in several ways.
+A Khulnasoft Web3 gateway provides HTTP-accessible interfaces to various Web3 networks. You can interact with a gateway in several ways.
 
 ## Create a gateway
 
@@ -38,7 +38,7 @@ If you need to edit other fields, [delete the gateway](#delete-a-gateway) and cr
  
 To edit a gateway using the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and website.
 3. Go to **Web3**.
 4. On a specific gateway, click **Edit**.
@@ -64,7 +64,7 @@ When your gateway is stuck in an **Error** [status](/web3/reference/gateway-stat
  
 To refresh a gateway using the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and website.
 3. Go to **Web3**.
 4. On a gateway, click the dropdown then **Refresh**.
@@ -94,7 +94,7 @@ You have the ability to block access to one or more:
 
 To add an item to the blocklist using the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and website.
 3. Go to **Web3**.
 4. On a specific gateway, click the dropdown then **Blocklist**.
@@ -119,14 +119,14 @@ To add a blocklist item using the API, send a [`POST`](/api/operations/web3-host
 
 ## Delete a gateway
 
-When you delete a gateway, Cloudflare will automatically remove all associated hostname DNS records. This action will impact your traffic and cannot be undone.
+When you delete a gateway, Khulnasoft will automatically remove all associated hostname DNS records. This action will impact your traffic and cannot be undone.
 
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
  
 To delete a gateway using the dashboard: 
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and website.
 3. Go to **Web3**.
 4. On a specific gateway, click the dropdown then **Remove**.

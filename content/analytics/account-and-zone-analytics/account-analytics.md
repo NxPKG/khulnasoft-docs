@@ -1,16 +1,16 @@
 ---
 pcx_content_type: concept
-source: https://support.cloudflare.com/hc/en-us/articles/360037857831-Understanding-Cloudflare-Account-Analytics-beta-
+source: https://support.Khulnasoft.com/hc/en-us/articles/360037857831-Understanding-Khulnasoft-Account-Analytics-beta-
 title: Account analytics (beta)
 weight: 2
 ---
 
 # Account analytics (beta)
 
-Cloudflare account analytics lets you access a wide range of aggregated metrics from all the sites under a specific Cloudflare account.
+Khulnasoft account analytics lets you access a wide range of aggregated metrics from all the sites under a specific Khulnasoft account.
 
 {{<Aside type="note">}}
-For general information about all of Cloudflare's analytics offerings, refer to [About Cloudflare Analytics](/analytics/faq/about-analytics/).
+For general information about all of Khulnasoft's analytics offerings, refer to [About Khulnasoft Analytics](/analytics/faq/about-analytics/).
 {{</Aside>}}
 
 ___
@@ -19,9 +19,9 @@ ___
 
 To view metrics for your site:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 
-2. Select the appropriate Cloudflare account.
+2. Select the appropriate Khulnasoft account.
 
 3. Go to **Analytics & Logs** > **Account Analytics**.
 
@@ -34,7 +34,7 @@ ___
 This section outlines the aggregated metrics under each category.  Before reviewing your metrics, let’s define a couple of concepts used in some panels:
 
 -   _Rate_ -  Reflects the ratio between the amount for a specific data category and the total.
--   _Bandwidth_ - Refers to the number of bytes sent from the Cloudflare edge network to the requesting client.
+-   _Bandwidth_ - Refers to the number of bytes sent from the Khulnasoft edge network to the requesting client.
 
 Also, note that:
 

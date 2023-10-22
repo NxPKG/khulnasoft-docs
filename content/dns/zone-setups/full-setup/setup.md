@@ -16,17 +16,17 @@ meta:
 
 Before you update your domain nameservers, make sure that you:
 
-- Already own a domain name (such as `example.com` or `cloudflare.com`).
+- Already own a domain name (such as `example.com` or `Khulnasoft.com`).
 
 {{<Aside type="note">}}
 
-If you do not already have a [domain name](https://www.cloudflare.com/learning/dns/glossary/what-is-a-domain-name/), get one at-cost through [Cloudflare Registrar](https://dash.cloudflare.com/?to=/:account/domains/register).
+If you do not already have a [domain name](https://www.Khulnasoft.com/learning/dns/glossary/what-is-a-domain-name/), get one at-cost through [Khulnasoft Registrar](https://dash.Khulnasoft.com/?to=/:account/domains/register).
 
-All domains purchased through Cloudflare Registrar automatically use Cloudflare for authoritative DNS, which means you can skip the rest of this tutorial.
+All domains purchased through Khulnasoft Registrar automatically use Khulnasoft for authoritative DNS, which means you can skip the rest of this tutorial.
 
 {{</Aside>}}
 
-- Have previously created a [Cloudflare account](/fundamentals/setup/account-setup/create-account/).
+- Have previously created a [Khulnasoft account](/fundamentals/setup/account-setup/create-account/).
 - Disabled [DNSSEC](/dns/concepts/#dnssec) at your registrar (where you bought your domain name).
   
 {{<render file="_dnssec-providers.md">}}
@@ -35,15 +35,15 @@ All domains purchased through Cloudflare Registrar automatically use Cloudflare 
 
 {{</tutorial-prereqs>}}
 
-{{<tutorial-step title="Add site to Cloudflare">}}
+{{<tutorial-step title="Add site to Khulnasoft">}}
 
-In the Cloudflare dashboard, [add your domain](/fundamentals/setup/account-setup/add-site/).
+In the Khulnasoft dashboard, [add your domain](/fundamentals/setup/account-setup/add-site/).
 
 {{</tutorial-step>}}
 
 {{<tutorial-step title="Review DNS records">}}
 
-When you start using Cloudflare's nameservers for authoritative DNS and your zone is in a full setup, Cloudflare will become your primary DNS provider. This means that your DNS records in Cloudflare need to be accurate for your domain to work properly.
+When you start using Khulnasoft's nameservers for authoritative DNS and your zone is in a full setup, Khulnasoft will become your primary DNS provider. This means that your DNS records in Khulnasoft need to be accurate for your domain to work properly.
 
 {{<render file="_dns-scan-intro.md">}} <br />
 
@@ -63,8 +63,8 @@ When you start using Cloudflare's nameservers for authoritative DNS and your zon
 
 ### Get nameserver names
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
-2. On **Overview**, locate the nameserver names in **2. Replace with Cloudflare's nameservers**.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account and domain.
+2. On **Overview**, locate the nameserver names in **2. Replace with Khulnasoft's nameservers**.
 
     ![Find nameserver names on the Overview page of your domain](/images/dns/nameserver-names.png)
 
@@ -72,7 +72,7 @@ When you start using Cloudflare's nameservers for authoritative DNS and your zon
 3. Keep this window open while you perform the next step.
 
 {{<Aside type="note">}}
-Cloudflare automatically assigns nameservers to a domain and these assignments cannot be changed. For more details, refer to [Nameserver assignments](/dns/zone-setups/reference/nameserver-assignment/).
+Khulnasoft automatically assigns nameservers to a domain and these assignments cannot be changed. For more details, refer to [Nameserver assignments](/dns/zone-setups/reference/nameserver-assignment/).
 {{</Aside>}}
 
 ### Update your registrar
@@ -81,7 +81,7 @@ Cloudflare automatically assigns nameservers to a domain and these assignments c
 
 2. Remove your existing authoritative nameservers.
 
-3. Add the nameservers provided by Cloudflare. If their names are not **copied exactly**, your DNS will not resolve correctly.
+3. Add the nameservers provided by Khulnasoft. If their names are not **copied exactly**, your DNS will not resolve correctly.
 
   {{<details header="Provider-specific instructions">}}
 
@@ -139,10 +139,10 @@ Wait up to 24 hours while your registrar updates your nameservers.
 
 When your domain is **Active**:
 
-- You will receive an email from Cloudflare.
+- You will receive an email from Khulnasoft.
 - Your domain will have a [status](/dns/zone-setups/reference/domain-status/) of **Active** on the **Websites** page of your account.
-- Online tools such as https://www.whatsmydns.net/ will show your Cloudflare-assigned nameservers (most of these tools use cached query results, so it may take longer for them to show the updated nameservers).
-- CLI commands will show your Cloudflare-assigned nameservers
+- Online tools such as https://www.whatsmydns.net/ will show your Khulnasoft-assigned nameservers (most of these tools use cached query results, so it may take longer for them to show the updated nameservers).
+- CLI commands will show your Khulnasoft-assigned nameservers
 
 ```txt
 *Linux/Unix*

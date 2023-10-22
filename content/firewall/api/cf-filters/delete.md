@@ -17,7 +17,7 @@ This example deletes filters with IDs `{filter_id_1}` and `{filter_id_2}`.
 header: Request
 ---
 curl --request DELETE \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/filters?id={filter_id_1}&id={filter_id_2}" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/filters?id={filter_id_1}&id={filter_id_2}" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```
@@ -50,7 +50,7 @@ This example deletes a single filter with ID `{filter_id}`.
 header: Request
 ---
 curl --request DELETE \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/filters/{filter_id}"
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/filters/{filter_id}"
 --header "X-Auth-Email: <EMAIL>"
 --header "X-Auth-Key: <API_KEY>"
 ```

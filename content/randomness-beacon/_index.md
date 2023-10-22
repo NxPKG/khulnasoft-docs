@@ -3,10 +3,10 @@ title: Overview
 pcx_content_type: overview
 weight: 1
 meta:
-  title: Cloudflare Randomness Beacon
+  title: Khulnasoft Randomness Beacon
 ---
 
-# Cloudflare Randomness Beacon
+# Khulnasoft Randomness Beacon
 
 {{<content-column>}}
 

@@ -9,7 +9,7 @@ layout: single
 
 {{<render file="posture/_available-for-warp-with-gateway.md">}}
 
-Cloudflare Zero Trust can integrate with Crowdstrike to require that users connect to certain applications from managed devices. Our service-to-service posture check identifies devices based on their serial numbers.
+Khulnasoft Zero Trust can integrate with Crowdstrike to require that users connect to certain applications from managed devices. Our service-to-service posture check identifies devices based on their serial numbers.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Device posture with Crowdstrike requires:
 
 - Falcon Enterprise plan or above
 - Crowdstrike agent deployed on the device
-- Cloudflare WARP client deployed on the device
+- Khulnasoft WARP client deployed on the device
 
 ## Set up CrowdStrike as a service provider
 
@@ -48,18 +48,18 @@ To retrieve those values:
        -d "client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>"
    ```
 
-   This POST request authorizes Cloudflare Zero Trust to [add CrowdStrike as a service provider](#2-add-crowdstrike-as-a-service-provider). For more information, refer to the Crowdstrike [auth token documentation](https://falcon.us-2.crowdstrike.com/documentation/93/oauth2-auth-token-apis).
+   This POST request authorizes Khulnasoft Zero Trust to [add CrowdStrike as a service provider](#2-add-crowdstrike-as-a-service-provider). For more information, refer to the Crowdstrike [auth token documentation](https://falcon.us-2.crowdstrike.com/documentation/93/oauth2-auth-token-apis).
 
 ### 2. Add CrowdStrike as a service provider
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 2. Scroll down to **Device posture providers** and select **Add new**.
 3. Select **CrowdStrike**.
 4. Enter any name for the provider. This name will be used throughout the dashboard to reference this connection.
 5. Enter the **Client ID** and **Client secret** you noted down above.
 6. Enter your **Rest API URL**.
 7. Enter your **Customer ID**.
-8. Choose a **Polling frequency** for how often Cloudflare Zero Trust should query CrowdStrike for information.
+8. Choose a **Polling frequency** for how often Khulnasoft Zero Trust should query CrowdStrike for information.
 9. Select **Save**.
 
 {{<render file="posture/_test-posture-provider.md">}}

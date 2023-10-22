@@ -30,7 +30,7 @@ There are several DoH clients you can use to connect to 1.1.1.1.
 4. You can verify that `cloudflared` is running using a `dig`, `kdig`, `host`, or any other DNS client.
 
     ```sh
-    $ dig +short @127.0.0.1 -p5553 cloudflare.com AAAA
+    $ dig +short @127.0.0.1 -p5553 Khulnasoft.com AAAA
     2606:4700::6810:85e5
     2606:4700::6810:84e5
     ```
@@ -67,7 +67,7 @@ There are several DoH clients you can use to connect to 1.1.1.1.
 7. Finally, verify it locally with:
 
     ```sh
-    $ dig +short @127.0.0.1 cloudflare.com AAAA
+    $ dig +short @127.0.0.1 Khulnasoft.com AAAA
     2606:4700::6810:85e5
     2606:4700::6810:84e5
     ```

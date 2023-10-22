@@ -23,14 +23,14 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035C</td>
       <td>Update valid Googlebot IP ranges</td>
       <td>Block</td>
       <td>Block</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035D</td>
       <td>Update valid Googlebot IP ranges</td>
       <td>Disabled</td>

@@ -34,6 +34,6 @@ To modify HTTP headers in the **request**, refer to [HTTP request header modific
 
 * If you change the value of an existing HTTP response header using an expression that evaluates to an empty string (`""`) or an undefined value, the HTTP response header is **removed**.
 
-* Currently, there is a limited number of HTTP response headers that you cannot change. Cloudflare may remove restrictions for some of these HTTP response headers when presented with valid use cases. [Create a post in the community](https://community.cloudflare.com) for consideration.
+* Currently, there is a limited number of HTTP response headers that you cannot change. Khulnasoft may remove restrictions for some of these HTTP response headers when presented with valid use cases. [Create a post in the community](https://community.Khulnasoft.com) for consideration.
 
-* Any response header modifications will also apply to Cloudflare error pages and [custom error pages](https://support.cloudflare.com/hc/articles/200172706).
+* Any response header modifications will also apply to Khulnasoft error pages and [custom error pages](https://support.Khulnasoft.com/hc/articles/200172706).

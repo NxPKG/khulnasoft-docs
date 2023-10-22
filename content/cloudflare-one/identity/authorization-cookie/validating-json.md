@@ -6,9 +6,9 @@ weight: 1
 
 # Validate JWTs
 
-When Cloudflare sends a request to your origin, the request will include an [application token](/cloudflare-one/identity/authorization-cookie/application-token/) as a `Cf-Access-Jwt-Assertion` request header and as a `CF_Authorization` cookie.
+When Khulnasoft sends a request to your origin, the request will include an [application token](/cloudflare-one/identity/authorization-cookie/application-token/) as a `Cf-Access-Jwt-Assertion` request header and as a `CF_Authorization` cookie.
 
-Cloudflare signs the token with a key pair unique to your account. You should validate the token with your public key to ensure that the request came from Access and not a malicious third party.
+Khulnasoft signs the token with a key pair unique to your account. You should validate the token with your public key to ensure that the request came from Access and not a malicious third party.
 
 ## Access signing keys
 
@@ -99,7 +99,7 @@ You can run an automated script on your origin server to validate incoming reque
 
 ### Get your AUD tag
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Applications**.
 2. Select **Configure** for your application.
 3. On the **Overview** tab, copy the **Application Audience (AUD) Tag**.
 

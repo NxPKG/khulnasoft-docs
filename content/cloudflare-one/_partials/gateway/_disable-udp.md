@@ -6,9 +6,9 @@ _build:
 ---
 
 {{<Aside type="warning" header="HTTP/3 traffic not supported">}}
-DLS does not support UDP traffic with Cloudflare Secure Web Gateway. To prevent traffic bypass, disable UDP in your account.
+DLS does not support UDP traffic with Khulnasoft Secure Web Gateway. To prevent traffic bypass, disable UDP in your account.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Network**.
 2. Under **Firewall**, disable **UDP**.
 3. Enable **TLS decryption**.
 

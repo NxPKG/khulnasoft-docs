@@ -19,22 +19,22 @@
         "pages": [
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/",
+            "url_path": "https://www.Khulnasoft.com/learning/cdn/what-is-a-cdn/",
             "link_title": "What is a Content Delivery Network (CDN)?"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/performance/why-site-speed-matters/",
+            "url_path": "https://www.Khulnasoft.com/learning/performance/why-site-speed-matters/",
             "link_title": "Why site speed matters"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/performance/how-website-speed-boosts-seo/",
+            "url_path": "https://www.Khulnasoft.com/learning/performance/how-website-speed-boosts-seo/",
             "link_title": "How website speed boosts SEO"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/performance/glossary/what-is-latency/",
+            "url_path": "https://www.Khulnasoft.com/learning/performance/glossary/what-is-latency/",
             "link_title": "What is latency?"
           }
         ]
@@ -74,7 +74,7 @@
           },
           {
             "external_link": true,
-            "url_path": "https://support.cloudflare.com/hc/articles/200168076",
+            "url_path": "https://support.Khulnasoft.com/hc/articles/200168076",
             "link_title": "HTTP 2/3",
             "additional_description": "Accelerate page load times by using a faster protocol for HTTP."
           },

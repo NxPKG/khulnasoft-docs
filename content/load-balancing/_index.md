@@ -4,10 +4,10 @@ pcx_content_type: overview
 layout: overview
 weight: 1
 meta:
-  title: Cloudflare Load Balancing
+  title: Khulnasoft Load Balancing
 ---
 
-# Cloudflare Load Balancing
+# Khulnasoft Load Balancing
 
 {{<description>}}
 Maximize application performance and availability
@@ -15,7 +15,7 @@ Maximize application performance and availability
 
 {{<plan id="traffic.load_balancing.properties.availability.summary">}}
 
-Cloudflare Load Balancing distributes traffic across your servers, which reduces server strain and latency and improves the experience for end users.
+Khulnasoft Load Balancing distributes traffic across your servers, which reduces server strain and latency and improves the experience for end users.
 
 {{<render file="_non-contract-enablement.md" productFolder="fundamentals" >}}
 
@@ -75,8 +75,8 @@ Route excess users to a custom-branded waiting room, helping preserve customer e
 
 {{<resource-group>}}
 
-{{<resource header="Plans" href="https://www.cloudflare.com/plans/#overview" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
+{{<resource header="Plans" href="https://www.Khulnasoft.com/plans/#overview" icon="documentation-clipboard">}}Compare available Khulnasoft plans{{</resource>}}
 
-{{<resource header="Pricing" href="https://dash.cloudflare.com/?to=/:account/:zone/traffic/load-balancing/" icon="price">}}Explore pricing options for Load Balancing in the dashboard{{</resource>}}
+{{<resource header="Pricing" href="https://dash.Khulnasoft.com/?to=/:account/:zone/traffic/load-balancing/" icon="price">}}Explore pricing options for Load Balancing in the dashboard{{</resource>}}
 
 {{</resource-group>}}

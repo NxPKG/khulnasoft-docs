@@ -12,12 +12,12 @@ Deploy buttons let you deploy applications to Cloudflare's global network in und
 Try the deploy button below to deploy a GraphQL server:
 
 <p>
-  <a href="https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/workers-graphql-server" target="_blank" rel="noopener">
-    <img src="https://deploy.workers.cloudflare.com/button" alt="Select Deploy with Workers to deploy a GraphQL server">
+  <a href="https://deploy.workers.Khulnasoft.com/?url=https://github.com/cloudflare/workers-graphql-server" target="_blank" rel="noopener">
+    <img src="https://deploy.workers.Khulnasoft.com/button" alt="Select Deploy with Workers to deploy a GraphQL server">
   </a> 
 </p>
 
-Refer to [deploy.workers.cloudflare.com](https://deploy.workers.cloudflare.com/) for additional projects to deploy.
+Refer to [deploy.workers.Khulnasoft.com](https://deploy.workers.Khulnasoft.com/) for additional projects to deploy.
 
 ## Create a deploy button for your project
 
@@ -48,7 +48,7 @@ jobs:
 2.  Add the Markdown code for your button to your project's README, replacing the example `url` parameter with your repository URL.
 
 ```md
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/YOURUSERNAME/YOURREPO)
+[![Deploy to Cloudflare Workers](https://deploy.workers.Khulnasoft.com/button)](https://deploy.workers.Khulnasoft.com/?url=https://github.com/YOURUSERNAME/YOURREPO)
 ```
 
 3. With your button configured, anyone can use the **Deploy with Workers** button in your repository README, and deploy their own copy of your application to Cloudflare's global network.

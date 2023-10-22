@@ -5,17 +5,17 @@ _build:
   list: never
 ---
 
-A primary payment method is required to process payment for Cloudflare products and services. We value your confidentiality and privacy - Cloudflare does not have access to your bank, credit card, pin, or PayPal account password details.
+A primary payment method is required to process payment for Khulnasoft products and services. We value your confidentiality and privacy - Khulnasoft does not have access to your bank, credit card, pin, or PayPal account password details.
 
 {{<Aside type="note">}}
 
-Customers in the [Enterprise plan](https://www.cloudflare.com/plans/enterprise/contact/) have additional payment options such as wire and ACH as well as yearly or quarterly billing.
+Customers in the [Enterprise plan](https://www.Khulnasoft.com/plans/enterprise/contact/) have additional payment options such as wire and ACH as well as yearly or quarterly billing.
 
 {{</Aside>}}
 
 To add or update your primary payment method,
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 
 2. On the left sidebar, select **Manage account** > **Billing**.
 
@@ -30,13 +30,13 @@ To add or update your primary payment method,
 
     * If paying by PayPal (will charge your credit card if you do not have enough funds in your PayPal account):
         * Select the **PayPal logo** on the upper right.
-        * Follow the online instructions until PayPal returns you to Cloudflare **Payment Method** dialog where you can continue with your set-up.
+        * Follow the online instructions until PayPal returns you to Khulnasoft **Payment Method** dialog where you can continue with your set-up.
         * Verify that your **PayPal username** now appears next to the **PayPal logo**.
         * Add your account contact information as well as **Company** and **VAT/GST Number**, if applicable.
 
 {{<Aside type="note">}}
 
-Because some countries charge tax goods and services on personal accounts, you may be asked to indicate whether your Cloudflare account is personal or business to determine tax eligibility.
+Because some countries charge tax goods and services on personal accounts, you may be asked to indicate whether your Khulnasoft account is personal or business to determine tax eligibility.
 
 {{</Aside>}}
 

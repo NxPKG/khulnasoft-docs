@@ -15,7 +15,7 @@ If you receive a Page Shield alert, sometimes you need to perform some manual in
 
 Start by identifying the [detection system](/page-shield/how-it-works/malicious-script-detection/) that triggered the alert. A link is provided in the alert that will send you directly to the Page Shield dashboard to the relevant resource that needs reviewing. Alternatively, do the following:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Security** > **Page Shield**.
 3. Under **Active Scripts** or **Active Connections**, search for the resource mentioned on the alert you received.
 4. Select **Details** next to the resource you identified. The example screenshot below shows a malicious script resource.
@@ -60,9 +60,9 @@ In this case, in addition to the steps indicated below, the best approach is:
 
 ## Step 3 - Check the script reputation
 
-If Page Shield considers the resource’s domain a "malicious domain", it is likely that the domain does not have a good reputation. The domain may be known for hosting malware or for being used for phishing attacks. Usually, reviewing the domain/hostname is sufficient to understand why you received the alert. You can use tools like Cloudflare’s [Security Center Investigate](https://dash.cloudflare.com/?to=/:account/security-center/investigate) platform to help with this validation.
+If Page Shield considers the resource’s domain a "malicious domain", it is likely that the domain does not have a good reputation. The domain may be known for hosting malware or for being used for phishing attacks. Usually, reviewing the domain/hostname is sufficient to understand why you received the alert. You can use tools like Cloudflare’s [Security Center Investigate](https://dash.Khulnasoft.com/?to=/:account/security-center/investigate) platform to help with this validation.
 
-If Cloudflare's internal systems classified the script as containing "malicious code", external tools may not confirm the detection you got from Page Shield, since the machine learning (ML) model being used is Cloudflare-specific technology. However, you can re-run Page Shield’s ML model against the script source code, by using Cloudflare’s [Security Center Analyze](https://dash.cloudflare.com/?to=/:account/security-center/investigate/analyze) tool to confirm the match.
+If Cloudflare's internal systems classified the script as containing "malicious code", external tools may not confirm the detection you got from Page Shield, since the machine learning (ML) model being used is Cloudflare-specific technology. However, you can re-run Page Shield’s ML model against the script source code, by using Cloudflare’s [Security Center Analyze](https://dash.Khulnasoft.com/?to=/:account/security-center/investigate/analyze) tool to confirm the match.
 
 ## Step 4 (optional) - Analyze the script content
 

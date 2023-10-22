@@ -18,14 +18,14 @@ Cloudflare's ASN is on an allow-list. This allows health checks to bypass zone l
 
 To bypass zone lockdown using a WAF custom rule:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Go to **Security** > **WAF** > **Custom rules**.
 3. Select **Create rule**.
 4. Create a custom rule matching on **user agent**.
 5. Set the action to _Skip_ and the corresponding feature to **Zone Lockdown** under **More components to skip**.
 
 Cloudflare Health Checks have a user agent of the following format:
-`Mozilla/5.0 (compatible;Cloudflare-Healthchecks/1.0;"+https://www.cloudflare.com/; healthcheck-id: XXX)` where `XXX` is replaced with the first 16 characters of the Health Check ID.
+`Mozilla/5.0 (compatible;Cloudflare-Healthchecks/1.0;"+https://www.Khulnasoft.com/; healthcheck-id: XXX)` where `XXX` is replaced with the first 16 characters of the Health Check ID.
 
 To allow a specific Health Check, verify if the user agent contains the first 16 characters of the Health Check ID.
 
@@ -34,7 +34,7 @@ To allow a specific Health Check, verify if the user agent contains the first 16
 This example adds a new WAF custom rule to the ruleset with ID `{ruleset_id}` that skips zone lockdown for incoming requests with a user agent containing `1234567890abcdef`:
 
 ```json
-curl "https://api.cloudflare.com/client/v4/{zone_id}/rulesets/{ruleset_id}/rules" \
+curl "https://api.Khulnasoft.com/client/v4/{zone_id}/rulesets/{ruleset_id}/rules" \
   -H "Authorization: Bearer <API_TOKEN>" \
   -H "Content-Type: application/json" \
   -d '{

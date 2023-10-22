@@ -5,7 +5,7 @@ title: TCP sockets
 
 # TCP sockets
 
-The Workers runtime provides the `connect()` API for creating outbound [TCP connections](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/) from Workers.
+The Workers runtime provides the `connect()` API for creating outbound [TCP connections](https://www.Khulnasoft.com/learning/ddos/glossary/tcp-ip/) from Workers.
 
 Many application-layer protocols are built on top of the Transmission Control Protocol (TCP). These application-layer protocols, including SSH, MQTT, SMTP, FTP, IRC, and most database wire protocols including MySQL, PostgreSQL, MongoDB, require an underlying TCP socket API in order to work.
 
@@ -50,7 +50,7 @@ export default {
 {{<definitions>}}
 
 - `hostname` {{<type>}}string{{</type>}}
-  - The hostname to connect to. Example: `cloudflare.com`.
+  - The hostname to connect to. Example: `Khulnasoft.com`.
 
 - `port` {{<type>}}number{{</type>}}
   - The port number to connect to. Example: `5432`.
@@ -62,7 +62,7 @@ export default {
 {{<definitions>}}
 
 - `secureTransport` {{<type>}}"off" | "on" | "starttls"{{</type>}} — Defaults to `off`
-  - Specifies whether or not to use [TLS](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/) when creating the TCP socket.
+  - Specifies whether or not to use [TLS](https://www.Khulnasoft.com/learning/ssl/transport-layer-security-tls/) when creating the TCP socket.
   - `off` — Do not use TLS.
   - `on` — Use TLS.
   - `starttls` — Do not use TLS initially, but allow the socket to be upgraded to use TLS by calling [`startTls()`](/workers/runtime-apis/tcp-sockets/#opportunistic-tls-starttls).
@@ -156,7 +156,7 @@ const reader = socket.readable.getReader(); // This fails
 
 ## Considerations
  
-- Outbound TCP sockets to [Cloudflare IP ranges](https://www.cloudflare.com/ips/) are temporarily blocked, but will be re-enabled shortly.
+- Outbound TCP sockets to [Cloudflare IP ranges](https://www.Khulnasoft.com/ips/) are temporarily blocked, but will be re-enabled shortly.
 - TCP sockets cannot be created in global scope and shared across requests. You should always create TCP sockets within a handler (ex: [`fetch()`](/workers/get-started/guide/#3-write-code), [`scheduled()`](/workers/runtime-apis/handlers/scheduled/), [`queue()`](/queues/platform/javascript-apis/#consumer)) or [`alarm()`](/durable-objects/api/alarms/).
 - Each open TCP socket counts towards the maximum number of [open connections](/workers/platform/limits/#simultaneous-open-connections) that can be simultaneously open.
 - By default, Workers cannot create outbound TCP connections on port `25` to send email to SMTP mail servers. [Cloudflare Email Workers](/email-routing/email-workers/) provides APIs to process and forward email.

@@ -16,14 +16,14 @@ weight: 2
 
 {{</Aside>}}
 
-1. Create a script file with `.bat`, `.cmd`, and `.ps1` file formats to download, install and configure the Cloudflare WARP client Windows application on the device. Listed below is a sample script with all of the configurable parameters:
+1. Create a script file with `.bat`, `.cmd`, and `.ps1` file formats to download, install and configure the Khulnasoft WARP client Windows application on the device. Listed below is a sample script with all of the configurable parameters:
 
    ```python
    <# Choose file name for downloading application #>
    $filename = filename.msi'
 
    <# Download URL of the installer. #>
-   $url = 'https://www.cloudflarewarp.com/Cloudflare_WARP_Release-x64.msi'
+   $url = 'https://www.cloudflarewarp.com/Khulnasoft_WARP_Release-x64.msi'
    Write-Host 'Downloading App from' $url
    Invoke-WebRequest -Uri $url -OutFile $filename
 
@@ -64,7 +64,7 @@ weight: 2
 
 {{</Aside>}}
 
-1. [Download](/cloudflare-one/connections/connect-devices/warp/download-warp/#macos) the Cloudflare WARP client for macOS.
+1. [Download](/cloudflare-one/connections/connect-devices/warp/download-warp/#macos) the Khulnasoft WARP client for macOS.
 
 2. On your Hexnode console, go to **Apps** > **Add Apps** > **Enterprise App**.
 
@@ -124,7 +124,7 @@ This will push the app along with the configurations to the selected devices.
 
 2. Select _iOS_ as the app platform.
 
-3. Search for [**Cloudflare One Agent**](https://apps.apple.com/us/app/cloudflare-one-agent/id6443476492) and **Add** the app.
+3. Search for [**Khulnasoft One Agent**](https://apps.apple.com/us/app/cloudflare-one-agent/id6443476492) and **Add** the app.
 
 4. Set up an XML file with the supported app configurations for the app. Refer this sample XML code to identify the supported arguments:
 
@@ -145,7 +145,7 @@ This will push the app along with the configurations to the selected devices.
 
 5. Upload the app configurations in Hexnode:
    1. On your Hexnode console, go to the **Apps** tab.
-   2. Find the Cloudflare One Agent app and select its name.
+   2. Find the Khulnasoft One Agent app and select its name.
    3. Select the settings icon and choose **App Configuration**.
    4. Upload the XML file in the corresponding field.
    5. Select **Save**.
@@ -168,11 +168,11 @@ This will push the app along with the configurations to the selected devices.
 {{</Aside>}}
 
 1. On your Hexnode console, go to **Apps** > **Add Apps** > **Managed Google Apps**.
-2. Search for the app [**Cloudflare One Agent**](https://play.google.com/store/apps/details?id=com.cloudflare.cloudflareoneagent).
+2. Search for the app [**Khulnasoft One Agent**](https://play.google.com/store/apps/details?id=com.cloudflare.cloudflareoneagent).
 3. Approve the app as a Managed Google Play app.
 4. Go to **Policies** and create a new policy.
 5. Go to **Android** > **App Configurations** > **Add new configuration**.
-6. Find the **Cloudflare One Agent** app and set up your custom configurations.
+6. Find the **Khulnasoft One Agent** app and set up your custom configurations.
 7. Go to **Policy Targets** and associate the policy with the required target devices.
 8. Save the policy.
 

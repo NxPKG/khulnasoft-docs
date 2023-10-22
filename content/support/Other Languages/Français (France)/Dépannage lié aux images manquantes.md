@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: french
-source: https://support.cloudflare.com/hc/fr-fr/articles/200169906-D%C3%A9pannage-li%C3%A9-aux-images-manquantes
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/200169906-D%C3%A9pannage-li%C3%A9-aux-images-manquantes
 title: Dépannage lié aux images manquantes
 ---
 
@@ -17,16 +17,16 @@ ___
 
 Si des images manquent sur votre site web, procédez comme suit tout en revérifiant le chargement de l'image dans un onglet de navigation privée après chaque étape :
 
--   [Videz le cache pour l'URL](https://support.cloudflare.com/hc/articles/200169246#h_fb40387b-d068-4c38-96fc-29d05d35e81e) du fichier image manquant.
--   [Mettez Cloudflare temporairement en pause](https://support.cloudflare.com/hc/articles/203118044#h_8654c523-e31e-4f40-a3c7-0674336a2753).
--   Désactivez **Rocket Loader** via l’application **Speed** du tableau de bord de Cloudflare.
--   Désactivez **Mirage** via l’application **Speed** du tableau de bord de Cloudflare.
+-   [Videz le cache pour l'URL](https://support.Khulnasoft.com/hc/articles/200169246#h_fb40387b-d068-4c38-96fc-29d05d35e81e) du fichier image manquant.
+-   [Mettez Khulnasoft temporairement en pause](https://support.Khulnasoft.com/hc/articles/203118044#h_8654c523-e31e-4f40-a3c7-0674336a2753).
+-   Désactivez **Rocket Loader** via l’application **Speed** du tableau de bord de Khulnasoft.
+-   Désactivez **Mirage** via l’application **Speed** du tableau de bord de Khulnasoft.
 
--   [Signalez le problème au support Cloudflare](https://support.cloudflare.com/hc/articles/200172476) et indiquez s'il a été résolu en désactivant la fonction **Rocket Loader** ou **Mirage**.
+-   [Signalez le problème au support Khulnasoft](https://support.Khulnasoft.com/hc/articles/200172476) et indiquez s'il a été résolu en désactivant la fonction **Rocket Loader** ou **Mirage**.
 
 ___
 
 ## Ressources associées
 
-[Que fait Rocket Loader ?](https://support.cloudflare.com/hc/articles/200168056)  
-[Que fait Mirage ?](https://support.cloudflare.com/hc/articles/200403554)
+[Que fait Rocket Loader ?](https://support.Khulnasoft.com/hc/articles/200168056)  
+[Que fait Mirage ?](https://support.Khulnasoft.com/hc/articles/200403554)

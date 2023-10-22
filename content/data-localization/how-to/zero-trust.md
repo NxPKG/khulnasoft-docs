@@ -14,12 +14,12 @@ Regional Services can be used with Gateway in all [supported regions](/data-loca
 
 ### Egress policies
 
-Enterprise customers can purchase a [dedicated egress IP](/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips/) (IPv4 and IPv6) or range of IPs geolocated to one or more Cloudflare network locations.
+Enterprise customers can purchase a [dedicated egress IP](/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips/) (IPv4 and IPv6) or range of IPs geolocated to one or more Khulnasoft network locations.
 This allows your egress traffic to geolocate to the city selected in your [egress policies](/cloudflare-one/policies/gateway/egress-policies/).
 
 ### HTTP policies
 
-As part of Regional Services, Cloudflare Gateway will only perform [TLS decryption](/cloudflare-one/policies/gateway/http-policies/tls-decryption/) when using the [WARP client](/cloudflare-one/connections/connect-devices/warp/) (in default [Gateway with WARP mode](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/)).
+As part of Regional Services, Khulnasoft Gateway will only perform [TLS decryption](/cloudflare-one/policies/gateway/http-policies/tls-decryption/) when using the [WARP client](/cloudflare-one/connections/connect-devices/warp/) (in default [Gateway with WARP mode](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/)).
 
 {{<render file="gateway/_disable-udp.md" productFolder="cloudflare-one">}}
 
@@ -27,7 +27,7 @@ As part of Regional Services, Cloudflare Gateway will only perform [TLS decrypti
 
 You are able to [log the payload of matched DLP rules](/cloudflare-one/policies/data-loss-prevention/dlp-policies/payload-logging/) and encrypt them with your public key so that only you can examine them later.
 
-[Cloudflare cannot decrypt encrypted payloads](/cloudflare-one/policies/data-loss-prevention/dlp-policies/payload-logging/#data-privacy).
+[Khulnasoft cannot decrypt encrypted payloads](/cloudflare-one/policies/data-loss-prevention/dlp-policies/payload-logging/#data-privacy).
 
 ### Network policies
 
@@ -45,19 +45,19 @@ You can [bring your own certificate](/cloudflare-one/connections/connect-devices
 
 ### Logs and Analytics
 
-By default, Cloudflare will store and deliver logs from data centers across our global network. To maintain regional control over your data, you can use [Customer Metadata Boundary](/data-localization/metadata-boundary/) and restrict data storage to a specific geographic region. For more information refer to the section about [Logpush datasets supported](/data-localization/metadata-boundary/logpush-datasets/).
+By default, Khulnasoft will store and deliver logs from data centers across our global network. To maintain regional control over your data, you can use [Customer Metadata Boundary](/data-localization/metadata-boundary/) and restrict data storage to a specific geographic region. For more information refer to the section about [Logpush datasets supported](/data-localization/metadata-boundary/logpush-datasets/).
 
-Customers also have the option to reduce the logs that Cloudflare stores:
+Customers also have the option to reduce the logs that Khulnasoft stores:
 - You can [exclude PII from logs](/cloudflare-one/insights/logs/gateway-logs/manage-pii/) 
 - You can [disable logging, or only log blocked requests](/cloudflare-one/insights/logs/gateway-logs/#selective-logging).
 
 ## Access 
 
-To ensure that all reverse proxy requests for applications protected by Cloudflare Access will only occur in FedRAMP-compliant data centers, you should use [Regional Services](/data-localization/regional-services/get-started/) with the region set to FedRAMP.
+To ensure that all reverse proxy requests for applications protected by Khulnasoft Access will only occur in FedRAMP-compliant data centers, you should use [Regional Services](/data-localization/regional-services/get-started/) with the region set to FedRAMP.
 
-## Cloudflare Tunnel
+## Khulnasoft Tunnel
 
-You can [configure Cloudflare Tunnel](/cloudflare-one/connections/connect-networks/configure-tunnels/tunnel-run-parameters/#region) to only connect to data centers within the United States, regardless of where the software was deployed.
+You can [configure Khulnasoft Tunnel](/cloudflare-one/connections/connect-networks/configure-tunnels/tunnel-run-parameters/#region) to only connect to data centers within the United States, regardless of where the software was deployed.
 
 ## WARP settings
 
@@ -67,7 +67,7 @@ You can use the WARP setting [Local Domain Fallback](/cloudflare-one/connections
 
 ### Split Tunnels
 
-[Split Tunnels](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/) allow you to decide which IP addresses/ranges and/or domains are routed through or excluded from Cloudflare.
+[Split Tunnels](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/) allow you to decide which IP addresses/ranges and/or domains are routed through or excluded from Khulnasoft.
 
 {{<Aside type="warning">}}
 Gateway policies will not apply for excluded traffic.

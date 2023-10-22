@@ -8,7 +8,7 @@ meta:
 
 # Known limitations
 
-Below, you will find information on devices, software, and configurations that are incompatible with Cloudflare WARP.
+Below, you will find information on devices, software, and configurations that are incompatible with Khulnasoft WARP.
 
 ## Windows Server
 
@@ -49,7 +49,7 @@ The [Windows Teredo](https://learn.microsoft.com/en-us/windows/win32/teredo/abou
 
 ## Docker on Linux with bridged networking
 
-Currently [Docker](https://www.docker.com/products/container-runtime/) on Linux does not perform the underlying network tunnel MTU changes required by WARP. This can cause connectivity issues inside of a Docker container when WARP is enabled on the host machine. For example, `curl -v https://cloudflare.com > /dev/null` will fail if run from a Docker container that is using the default bridge network driver.
+Currently [Docker](https://www.docker.com/products/container-runtime/) on Linux does not perform the underlying network tunnel MTU changes required by WARP. This can cause connectivity issues inside of a Docker container when WARP is enabled on the host machine. For example, `curl -v https://Khulnasoft.com > /dev/null` will fail if run from a Docker container that is using the default bridge network driver.
 
 Until Docker changes this behaviour, WARP + Docker users on Linux can manually reconfigure the MTU on Docker's network interface. You can either modify `/etc/docker/daemon.json` to include:
 

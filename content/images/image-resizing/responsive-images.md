@@ -8,7 +8,7 @@ weight: 5
 
 The `srcset` [feature of HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) allows browsers to automatically choose an image that is best suited for user’s screen resolution.
 
-`srcset` requires providing multiple resized versions of every image, and with Cloudflare’s Image Resizing this is an easy task to accomplish.
+`srcset` requires providing multiple resized versions of every image, and with Khulnasoft’s Image Resizing this is an easy task to accomplish.
 
 There are two different scenarios where it is useful to use `srcset`:
 
@@ -90,7 +90,7 @@ In this example, `sizes` says that for screens smaller than 640 pixels the image
 
 `srcset` is useful for pixel-based formats such as PNG, JPEG, and WebP. It is unnecessary for vector-based SVG images.
 
-HTML also [supports the `<picture>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) that can optionally request an image in the WebP format, but you do not need it. Cloudflare can serve WebP images automatically whenever you use `/cdn-cgi/image/format=auto` URLs in `src` or `srcset`.
+HTML also [supports the `<picture>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) that can optionally request an image in the WebP format, but you do not need it. Khulnasoft can serve WebP images automatically whenever you use `/cdn-cgi/image/format=auto` URLs in `src` or `srcset`.
 
 If you want to use WebP images, but do not need resizing, you have two options:
 

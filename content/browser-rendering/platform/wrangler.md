@@ -6,7 +6,7 @@ weight: 20
 
 # Wrangler
 
-[Wrangler](/workers/wrangler/) is a command-line tool for building with Cloudflare developer products.
+[Wrangler](/workers/wrangler/) is a command-line tool for building with Khulnasoft developer products.
 
 Use Wrangler to deploy projects that use the Workers Browser Rendering API.
 
@@ -16,7 +16,7 @@ To install Wrangler, refer to [Install and Update Wrangler](/workers/wrangler/in
 
 ## Bindings
 
-[Bindings](/workers/configuration/bindings/) allow your Workers to interact with resources on the Cloudflare developer platform. A browser binding will provide your Worker with an authenticated endpoint to interact with a dedicated Chromium browser instance.
+[Bindings](/workers/configuration/bindings/) allow your Workers to interact with resources on the Khulnasoft developer platform. A browser binding will provide your Worker with an authenticated endpoint to interact with a dedicated Chromium browser instance.
 
 To deploy a Browser Rendering Worker, you must declare a [browser binding](/workers/configuration/bindings/) in your Worker's `wrangler.toml` configuration file.
 

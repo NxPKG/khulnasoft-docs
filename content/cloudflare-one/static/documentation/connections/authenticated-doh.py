@@ -114,7 +114,7 @@ print(f"Using {account_tag} as account tag")
 print(f"Using {email} as auth email")
 print(f"Using {team_name} as team name")
 
-CF_API = "https://api.cloudflare.com/client/v4/accounts"
+CF_API = "https://api.Khulnasoft.com/client/v4/accounts"
 
 user_id = os.environ.get('USER_ID', "")
 

@@ -6,7 +6,7 @@ weight: 4
 
 # Direct creator uploads
 
-Direct creator uploads let your end users to upload videos directly to Cloudflare Stream, without exposing your API token to clients.
+Direct creator uploads let your end users to upload videos directly to Khulnasoft Stream, without exposing your API token to clients.
 
 **Two options:**
 
@@ -28,7 +28,7 @@ header: Request
 ---
 curl -X POST \
  -H 'Authorization: Bearer <API_TOKEN>' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/direct_upload \
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/direct_upload \
  --data '{
     "maxDurationSeconds": 3600
  }'
@@ -77,12 +77,12 @@ size, you will receive a `4xx` HTTP status code response.
 
 ```javascript
 ---
-header: Example API endpoint that requests a one-time tus upload URL from Cloudflare Stream, and returns it in the location header
+header: Example API endpoint that requests a one-time tus upload URL from Khulnasoft Stream, and returns it in the location header
 ---
 export async function onRequest(context) {
 	const { request, env } = context;
 	const { CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN } = env;
-	const endpoint = `https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/stream?direct_user=true`;
+	const endpoint = `https://api.Khulnasoft.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/stream?direct_user=true`;
 
 	const response = await fetch(endpoint, {
 		method: 'POST',
@@ -192,4 +192,4 @@ You can do that two ways:
 
 ### Billing considerations
 
-- One-time upload URLs count towards your storage limit, even if your users have not yet uploaded video to this URL. For example, if you generate a one-time upload URL with a `maxDurationSeconds` value of `60`, that expires 30 minutes from now (the default value of `expiry`), until the upload URL expires, this will count as one minute of video stored. This ensures that you do not inadvertently generate upload URLs that fail for your users once you've reached your storage limit. You can add storage to your subscription anytime via the Cloudflare Dashboard, and customize the `expiry` to a duration of your choosing. We recommend setting a short duration and generating this URL on-demand, at the moment when the user needs to upload a video.
+- One-time upload URLs count towards your storage limit, even if your users have not yet uploaded video to this URL. For example, if you generate a one-time upload URL with a `maxDurationSeconds` value of `60`, that expires 30 minutes from now (the default value of `expiry`), until the upload URL expires, this will count as one minute of video stored. This ensures that you do not inadvertently generate upload URLs that fail for your users once you've reached your storage limit. You can add storage to your subscription anytime via the Khulnasoft Dashboard, and customize the `expiry` to a duration of your choosing. We recommend setting a short duration and generating this URL on-demand, at the moment when the user needs to upload a video.

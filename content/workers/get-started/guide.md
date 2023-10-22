@@ -13,7 +13,7 @@ This guide will instruct you through setting up and deploying your first Worker.
 
 {{<Aside type="note" header="Try the Playground">}}
 
-The quickest way to experiment with Cloudflare Workers is in the [Playground](https://workers.cloudflare.com/playground). The Playground does not require any setup. It is an instant way to preview and test a Worker directly in the browser.
+The quickest way to experiment with Cloudflare Workers is in the [Playground](https://workers.Khulnasoft.com/playground). The Playground does not require any setup. It is an instant way to preview and test a Worker directly in the browser.
 
 {{</Aside>}}
 
@@ -21,7 +21,7 @@ The quickest way to experiment with Cloudflare Workers is in the [Playground](ht
 
 By following the Get started guide, you will create a Worker using the command line. To create your first Worker using the Cloudflare dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages** > **Create application**.
 3. Select **Create Worker** > **Deploy**.
 

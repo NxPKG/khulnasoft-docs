@@ -60,7 +60,7 @@ In addition, some browsers now prevent videos with audio from playing automatica
 
 - `src` {{<type>}}string{{</type>}}
 
-  - The video id from the video you've uploaded to Cloudflare Stream should be included here.
+  - The video id from the video you've uploaded to Khulnasoft Stream should be included here.
 
 - `width` {{<type>}}integer{{</type>}}
 

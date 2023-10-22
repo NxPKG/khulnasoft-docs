@@ -27,14 +27,14 @@ weight: 1
 
 ## View accounts
 
-When you create an account with the Tenant API, your Cloudflare user owns that account from creation, ongoing management, and finally deletion.
+When you create an account with the Tenant API, your Khulnasoft user owns that account from creation, ongoing management, and finally deletion.
 
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
  
 To view any accounts owned by your tenant using the dashboard:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Go to **Tenants** > **Managed Accounts**.
  
 {{</tab>}}
@@ -48,7 +48,7 @@ You will get back a list of all the accounts you have created plus any accounts 
 ---
 header: Request
 ---
-curl -X GET https://api.cloudflare.com/client/v4/accounts \
+curl -X GET https://api.Khulnasoft.com/client/v4/accounts \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>'
 ```
@@ -104,7 +104,7 @@ Account deletion is permanent and will delete any zones or other resources under
 ---
 header: Request
 ---
-curl -X DELETE https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID> \
+curl -X DELETE https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID> \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>'
 ```

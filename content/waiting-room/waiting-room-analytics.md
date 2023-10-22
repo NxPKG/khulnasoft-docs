@@ -18,7 +18,7 @@ Using Waiting Room Analytics, you can:
 
 To access your waiting room’s analytics in the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Traffic** > **Waiting Room**.
 3. Expand the waiting room you would like to review metrics for, to display a preview of your waiting room analytics. The preview gives you insights into peak traffic through your waiting room over the last 24 hours including: Maximum active users, Maximum queued users and Typical time in queue for queued users.
 4. Select **View More** under the Waiting Room Analytics section to get more historical analytics for your waiting room.

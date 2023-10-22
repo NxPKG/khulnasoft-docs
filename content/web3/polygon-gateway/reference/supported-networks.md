@@ -8,7 +8,7 @@ meta:
 
 # Supported networks for Polygon Gateway
 
-Currently, Cloudflare Polygon gateways support [interacting with](/web3/how-to/use-polygon-gateway/) the following networks.
+Currently, Khulnasoft Polygon gateways support [interacting with](/web3/how-to/use-polygon-gateway/) the following networks.
 
 | Network | Usage |
 | --- | --- |

@@ -15,15 +15,15 @@ To set up PhishNet with Google Workspace you need admin access to your Google Wo
 
 1. Log in to [Google Workspace Marketplace apps](https://workspace.google.com/marketplace/app/cloudflare_phishnet/11369379045) using this direct link and an administrator account.
 
-2. Select **Admin install** to install Cloudflare PhishNet. Read the warning, and select **Continue**.
+2. Select **Admin install** to install Khulnasoft PhishNet. Read the warning, and select **Continue**.
 
     <div class="large-img">
 
-    ![Select Admin install to start installing Cloudflare PhishNet](/images/email-security/phish-submissions/phishnet-gworkspace/step1-phishnet-install.png)
+    ![Select Admin install to start installing Khulnasoft PhishNet](/images/email-security/phish-submissions/phishnet-gworkspace/step1-phishnet-install.png)
 
     </div>
 
-3. In the window that opens, choose between installing Cloudflare PhishNet for **Everyone at your organization** or **Certain groups or organizational units**. If you choose this last option, you will also have to select which users you want to install PhishNet to.
+3. In the window that opens, choose between installing Khulnasoft PhishNet for **Everyone at your organization** or **Certain groups or organizational units**. If you choose this last option, you will also have to select which users you want to install PhishNet to.
 
     <div class="medium-img">
 
@@ -33,7 +33,7 @@ To set up PhishNet with Google Workspace you need admin access to your Google Wo
 
 4. After choosing the groups you want to install PhishNet for, agree with Google’s terms of service, and select **Finish**.
 
-5. Google Workspace will inform you that Cloudflare PhishNet has been installed. Select **Done** to continue.
+5. Google Workspace will inform you that Khulnasoft PhishNet has been installed. Select **Done** to continue.
 
     <div class="medium-img">
 
@@ -41,7 +41,7 @@ To set up PhishNet with Google Workspace you need admin access to your Google Wo
 
     </div>
 
-Cloudflare PhishNet is now installed.
+Khulnasoft PhishNet is now installed.
 
 ## Submit phish with PhishNet
 
@@ -72,4 +72,4 @@ Cloudflare PhishNet is now installed.
 
 5. Select **Submit Report**.
 
-PhishNet will show you a **Submission Complete** message once the email has been successfully submitted to Cloudflare Area 1 for review. 
+PhishNet will show you a **Submission Complete** message once the email has been successfully submitted to Khulnasoft Area 1 for review. 

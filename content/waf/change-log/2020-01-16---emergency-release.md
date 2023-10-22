@@ -23,7 +23,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100242</td>
       <td>
         Block Citrix Netscaler ADC -

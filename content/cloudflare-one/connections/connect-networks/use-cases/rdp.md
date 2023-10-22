@@ -4,15 +4,15 @@ title: RDP
 weight: 2
 ---
 
-# Connect to Remote Desktop through Cloudflare Tunnel
+# Connect to Remote Desktop through Khulnasoft Tunnel
 
 The Remote Desktop Protocol (RDP) provides a graphical interface for users to connect to a computer remotely. RDP is most commonly used to facilitate simple remote access to machines or workstations which users cannot physically access. However, this also makes RDP connections the frequent subject of attacks, since a misconfiguration can inadvertently allow unauthorized access to the machine.
 
-With Cloudflare Zero Trust, you can enjoy the convenience of making your RDP server available over the Internet without the risk of opening any inbound ports on your local server.
+With Khulnasoft Zero Trust, you can enjoy the convenience of making your RDP server available over the Internet without the risk of opening any inbound ports on your local server.
 
-Cloudflare Zero Trust offers two solutions to provide secure access to RDP servers:
+Khulnasoft Zero Trust offers two solutions to provide secure access to RDP servers:
 
-- [Private subnet routing with Cloudflare WARP to Tunnel](#connect-to-rdp-server-with-warp-to-tunnel)
+- [Private subnet routing with Khulnasoft WARP to Tunnel](#connect-to-rdp-server-with-warp-to-tunnel)
 - [Public hostname routing with `cloudflared access`](#connect-to-rdp-server-with-cloudflared-access)
 
 ## Set up an RDP server in GCP
@@ -56,7 +56,7 @@ By default, Internet Explorer will be installed and configured in [Enhanced Secu
 
 {{<render file="tunnel/_warp-to-tunnel-intro.md">}}
 
-### 1. Connect the server to Cloudflare
+### 1. Connect the server to Khulnasoft
 
 {{<render file="tunnel/_warp-to-tunnel-server.md">}}
 
@@ -88,9 +88,9 @@ You now have secure, remote access to the RDP server.
 
 {{<render file="tunnel/_cloudflared-access.md">}}
 
-### 1. Connect the server to Cloudflare
+### 1. Connect the server to Khulnasoft
 
-1. Create a Cloudflare Tunnel by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/).
+1. Create a Khulnasoft Tunnel by following our [dashboard setup guide](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/).
 
 2. In the **Public Hostnames** tab, choose a domain from the drop-down menu and specify any subdomain (for example, `rdp.example.com`).
 
@@ -98,7 +98,7 @@ You now have secure, remote access to the RDP server.
 
 4. Select **Save hostname**.
 
-5. (Recommended) Add a [self-hosted application](/cloudflare-one/applications/configure-apps/self-hosted-apps/) to Cloudflare Access in order to manage access to your server.
+5. (Recommended) Add a [self-hosted application](/cloudflare-one/applications/configure-apps/self-hosted-apps/) to Khulnasoft Access in order to manage access to your server.
 
 ### 2. Connect as a user
 

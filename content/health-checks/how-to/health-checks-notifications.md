@@ -12,7 +12,7 @@ The email provides information to determine what caused the health status change
 	
 ## Configure notifications 
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Navigate to **Traffic** > **Health Checks**.
 3. Select **Configure an alert**.
 4. Fill out the **Notification name** and **Description**. 

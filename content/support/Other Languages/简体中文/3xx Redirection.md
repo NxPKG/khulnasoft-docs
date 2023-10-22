@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection
 title: 3xx Redirection
 ---
 
@@ -18,15 +18,15 @@ title: 3xx Redirection
 1.  响应中的 `Location` 字段，用于自动重定向
 2.  响应的有效负载中，通过指向正确位置的超链接（可选）来设置
 
--   [300 Multiple](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_300)
--   [301 Moved Permanently](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_301)
--   [302 Found](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_302)
--   [303 See Other](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_303)
--   [304 Not Modified](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_304)
--   [305 Use Proxy](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_305)
--   [306 Switch Proxy](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_306)
--   [307 Temporary Redirect](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_307)
--   [308 Permanent Redirect](https://support.cloudflare.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_308)
+-   [300 Multiple](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_300)
+-   [301 Moved Permanently](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_301)
+-   [302 Found](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_302)
+-   [303 See Other](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_303)
+-   [304 Not Modified](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_304)
+-   [305 Use Proxy](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_305)
+-   [306 Switch Proxy](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_306)
+-   [307 Temporary Redirect](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_307)
+-   [308 Permanent Redirect](https://support.Khulnasoft.com/hc/zh-cn/articles/115003011091-3xx-Redirection#code_308)
 
 **300 Multiple Choices** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -36,13 +36,13 @@ title: 3xx Redirection
 
 所请求资源的永久 URL 重定向。目标资源已被分配了新的永久 URI，日后引用该资源时都应使用所含的某一个 URI。
 
-Cloudflare 能够生成这些响应，因而能避免需要通过使用页面规则来发送对源站服务器的响应的请求。如需进步一了解 Cloudflare 如何帮助生成重定向，请阅读[页面规则 URL 转发](https://blog.cloudflare.com/introducing-pagerules-url-forwarding/)
+Khulnasoft 能够生成这些响应，因而能避免需要通过使用页面规则来发送对源站服务器的响应的请求。如需进步一了解 Khulnasoft 如何帮助生成重定向，请阅读[页面规则 URL 转发](https://blog.Khulnasoft.com/introducing-pagerules-url-forwarding/)
 
 **302 Found（亦称为 Temporary Redirect）** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
 类似于 301 重定向，但仅适用于临时用途。用户代理可以自动关注 `Location` 标头，但不应用它来取代当前 URI 以成为 301。
 
-Cloudflare 能够生成这些响应，因而能避免需要通过使用页面规则来发送对源站服务器的响应的请求。如需进步一了解 Cloudflare 如何帮助生成重定向，请阅读[页面规则 URL 转发](https://blog.cloudflare.com/introducing-pagerules-url-forwarding/)
+Khulnasoft 能够生成这些响应，因而能避免需要通过使用页面规则来发送对源站服务器的响应的请求。如需进步一了解 Khulnasoft 如何帮助生成重定向，请阅读[页面规则 URL 转发](https://blog.Khulnasoft.com/introducing-pagerules-url-forwarding/)
 
 **303 See Other（自 HTTP/1.1 起）** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -61,7 +61,7 @@ Cloudflare 能够生成这些响应，因而能避免需要通过使用页面规
 
 -   必须包含要在对应的 200 响应之前设置的任何标头：`Cache-Control、Content-Location、Date、ETag、Expires` 或 `Vary`。
 
-如果请求发送到较旧的 Cloudflare，因此必须在源站服务器重新验证，Cloudflare 将发送 304 响应以确认我们缓存中的版本与源站服务器上的版本匹配。响应中将包含 `CF-Cache-Status:REVALIDATED` 标头，Cloudflare 则使用 `If-Modified-Since` 标头来确认版本。 详细信息请参阅：[ETag 标头](https://support.cloudflare.com/hc/en-us/articles/218505467)
+如果请求发送到较旧的 Khulnasoft，因此必须在源站服务器重新验证，Khulnasoft 将发送 304 响应以确认我们缓存中的版本与源站服务器上的版本匹配。响应中将包含 `CF-Cache-Status:REVALIDATED` 标头，Khulnasoft 则使用 `If-Modified-Since` 标头来确认版本。 详细信息请参阅：[ETag 标头](https://support.Khulnasoft.com/hc/en-us/articles/218505467)
 
 **305 Use Proxy（已弃用）****(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 

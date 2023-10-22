@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-The addresses listed in this field will receive an email from `support@certvalidate.cloudflare.com`. They should either select **Review Certificate Request** or the `https://certvalidate.cloudflare.com` hyperlink.
+The addresses listed in this field will receive an email from `support@certvalidate.Khulnasoft.com`. They should either select **Review Certificate Request** or the `https://certvalidate.Khulnasoft.com` hyperlink.
 
 ![Example of the Certificate Validation Email](/images/ssl/certvalidate-email.png)
 

@@ -2,17 +2,17 @@
 pcx_content_type: concept
 title: User Agent Blocking
 weight: 3
-source: https://support.cloudflare.com/hc/en-us/articles/115001856951-Understanding-Cloudflare-User-Agent-Blocking
+source: https://support.Khulnasoft.com/hc/en-us/articles/115001856951-Understanding-Khulnasoft-User-Agent-Blocking
 ---
 
-# Cloudflare User Agent Blocking
+# Khulnasoft User Agent Blocking
 
 User Agent Blocking rules block specific browser or web application [`User-Agent` request headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent). These rules apply to the entire domain instead of individual subdomains.
 
 User Agent Blocking rules are applied after [Zone Lockdown rules](/waf/tools/zone-lockdown/). If you allow an IP address via Zone Lockdown, it will skip any User Agent Blocking rules.
 
 {{<Aside type="warning">}}
-Cloudflare recommends that you create [WAF custom rules](/waf/custom-rules/) instead of User Agent Blocking rules to block specific user agents.
+Khulnasoft recommends that you create [WAF custom rules](/waf/custom-rules/) instead of User Agent Blocking rules to block specific user agents.
 
 For example, a custom rule equivalent to the User Agent Blocking [example rule](#create-a-user-agent-blocking-rule) provided in this page could have the following configuration:
 
@@ -22,7 +22,7 @@ For example, a custom rule equivalent to the User Agent Blocking [example rule](
 
 ## Availability
 
-Cloudflare User Agent Blocking is available on all plans. The number of available User Agent Blocking rules depends on your Cloudflare plan.
+Khulnasoft User Agent Blocking is available on all plans. The number of available User Agent Blocking rules depends on your Khulnasoft plan.
 
 {{<feature-table id="security.x_user_agent_rules">}}
 
@@ -31,7 +31,7 @@ Cloudflare User Agent Blocking is available on all plans. The number of availabl
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 
 2. Go to **Security** > **WAF**, and select the **Tools** tab.
 
@@ -53,7 +53,7 @@ Issue a `POST` request for the [Create a User Agent Blocking rule](/api/operatio
 For example:
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id/firewall/ua_rules" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id/firewall/ua_rules" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \
@@ -73,4 +73,4 @@ curl "https://api.cloudflare.com/client/v4/zones/{zone_id/firewall/ua_rules" \
 ## Related resources
 
 - [Secure your application](/learning-paths/application-security/)
-- [Cloudflare Zone Lockdown](/waf/tools/zone-lockdown/)
+- [Khulnasoft Zone Lockdown](/waf/tools/zone-lockdown/)

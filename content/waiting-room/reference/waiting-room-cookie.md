@@ -9,7 +9,7 @@ A waiting room only uses the `__cfwaitingroom` cookie when a visitor requests ac
 
 {{<Aside type="warning" header="Important:">}}
 
-Cloudflare Waiting Room requires the `__cfwaitingroom` cookie. When a waiting room is actively queueing, users cannot visit that host and path combination without enabling cookies.
+Khulnasoft Waiting Room requires the `__cfwaitingroom` cookie. When a waiting room is actively queueing, users cannot visit that host and path combination without enabling cookies.
 
 {{</Aside>}}
 
@@ -44,4 +44,4 @@ visitorsAhead ÷ activeUsersToWebApplication = estimatedWaitTime
 
 We combine these pieces of information to calculate estimated wait time for each group of visitors.
 
-For more details about the technical implementation of Cloudflare Waiting Room, refer to the [blog post](https://blog.cloudflare.com/building-waiting-room-on-workers-and-durable-objects/).
+For more details about the technical implementation of Khulnasoft Waiting Room, refer to the [blog post](https://blog.Khulnasoft.com/building-waiting-room-on-workers-and-durable-objects/).

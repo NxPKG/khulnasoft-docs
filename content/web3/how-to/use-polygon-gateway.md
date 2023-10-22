@@ -10,7 +10,7 @@ Once you have a Polygon gateway — meaning that you [create a new gateway](/web
 
 ## Read from the network
 
-The Cloudflare Polygon Gateway allows HTTP requests where the body of the request is set to be the JSON body of the request you would like to make. For example, if you would like to read the latest block, then your JSON blob takes the form:
+The Khulnasoft Polygon Gateway allows HTTP requests where the body of the request is set to be the JSON body of the request you would like to make. For example, if you would like to read the latest block, then your JSON blob takes the form:
 
 ```json
 { "jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["latest", false], "id": 1 }
@@ -120,7 +120,7 @@ The response in both cases will be a JSON blob of the form:
 
 Currently, the Polygon Gateway allows you to write to the network using the `eth_sendRawTransaction` RPC method. This creates a new message call transaction or a contract creation for signed transactions. The transactions are signed using a secret key corresponding to your own wallet.
 
-Once you have a wallet set up and a method of signing your own transactions, you can write that transaction to the Polygon network via the [Cloudflare Polygon Gateway](/web3/polygon-gateway/reference/supported-api-methods/). Signed transactions use hexadecimal strings of the form:
+Once you have a wallet set up and a method of signing your own transactions, you can write that transaction to the Polygon network via the [Khulnasoft Polygon Gateway](/web3/polygon-gateway/reference/supported-api-methods/). Signed transactions use hexadecimal strings of the form:
 
 ```json
 "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"

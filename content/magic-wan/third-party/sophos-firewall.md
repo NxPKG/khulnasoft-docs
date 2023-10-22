@@ -193,7 +193,7 @@ system gre route add net <IP_ADDRESS> tunnelname <TUNNEL_NAME>
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{tunnel_id} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{tunnel_id} \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL> ' \
 --header "X-Auth-Key: <API_KEY>" \

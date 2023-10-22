@@ -6,6 +6,6 @@ weight: 5
 
 # Connections
 
-Learn how you can connect your applications, devices, and networks to Cloudflare.
+Learn how you can connect your applications, devices, and networks to Khulnasoft.
 
 {{<directory-listing>}}

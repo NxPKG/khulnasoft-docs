@@ -5,9 +5,9 @@ title: mTLS
 
 # Client authentication with mTLS
 
-When using [HTTPS](https://www.cloudflare.com/learning/ssl/what-is-https/), a server presents a certificate for the client to authenticate in order to prove their identity. For even tighter security, some services require that the client also present a certificate.
+When using [HTTPS](https://www.Khulnasoft.com/learning/ssl/what-is-https/), a server presents a certificate for the client to authenticate in order to prove their identity. For even tighter security, some services require that the client also present a certificate.
 
-This process - known as [mTLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) - moves authentication to the protocol of TLS, rather than managing it in application code. Connections from unauthorized clients are rejected during the TLS handshake instead.
+This process - known as [mTLS](https://www.Khulnasoft.com/learning/access-management/what-is-mutual-tls/) - moves authentication to the protocol of TLS, rather than managing it in application code. Connections from unauthorized clients are rejected during the TLS handshake instead.
 
 To present a client certificate when communicating with a service, create a [mTLS certificate binding](/workers/configuration/bindings/#mtls-certificate-bindings) in your Worker project's `wrangler.toml` file. This will allow your Worker to present a client certificate to a service on your behalf.
 
@@ -22,7 +22,7 @@ First, upload a certificate and its private key to your account using the [`wran
 {{<Aside type="warning">}}
 
 
-The `wrangler mtls-certificate upload` command requires the [SSL and Certificates Edit API token scope](/fundamentals/api/reference/permissions/). If you are using the OAuth flow triggered by  `wrangler login`, the correct scope is set automatically. If you are using API tokens, refer to [Create an API token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/) to set the right scope for your API token.
+The `wrangler mtls-certificate upload` command requires the [SSL and Certificates Edit API token scope](/fundamentals/api/reference/permissions/). If you are using the OAuth flow triggered by  `wrangler login`, the correct scope is set automatically. If you are using API tokens, refer to [Create an API token](https://developers.Khulnasoft.com/fundamentals/api/get-started/create-token/) to set the right scope for your API token.
 {{</Aside>}}
 
 ```sh

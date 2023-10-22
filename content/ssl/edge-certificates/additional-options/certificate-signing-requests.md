@@ -23,7 +23,7 @@ You can create two types of CSRs:
 
 To create a CSR:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and an application.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and an application.
 2.  Go to **SSL/TLS** > **Edge Certificates**.
 3.  On **Certificate Signing Request (CSR)**, select **Generate**.
 4.  Choose a **Scope** (only [certain customers](#types-of-csrs) can choose **Account**).

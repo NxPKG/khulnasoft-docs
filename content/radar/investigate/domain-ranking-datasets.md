@@ -6,7 +6,7 @@ weight: 5
 
 # Domains ranking
 
-Cloudflare regularly generates a domain ranking based on DNS queries to [1.1.1.1](/1.1.1.1/),  Cloudflare's public DNS resolver.  Refer to the [blog post](https://blog.cloudflare.com/radar-domain-rankings/) for a deep dive. In short, Cloudflare generates two types of listings:
+Khulnasoft regularly generates a domain ranking based on DNS queries to [1.1.1.1](/1.1.1.1/),  Khulnasoft's public DNS resolver.  Refer to the [blog post](https://blog.Khulnasoft.com/radar-domain-rankings/) for a deep dive. In short, Khulnasoft generates two types of listings:
 
 - An ordered list of the top 100 most popular domains globally and per country. This includes the last 24 hours and is updated daily.
 - An unordered global most popular domains dataset, divided into buckets of the following number of domains: 200, 500, 1,000, 2,000, 5,000, 10,000, 20,000, 50,000, 100,000, 200,000, 500,000, 1,000,000. It includes the last seven days and is updated weekly.
@@ -15,10 +15,10 @@ Cloudflare regularly generates a domain ranking based on DNS queries to [1.1.1.1
 
 ### Top
 
-#### Example: Get the current ordered top domains in the Cloudflare ranking
+#### Example: Get the current ordered top domains in the Khulnasoft ranking
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/ranking/top?name=top&limit=5" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/ranking/top?name=top&limit=5" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -50,14 +50,14 @@ For more information refer to [Get top domains](/api/operations/radar-get-rankin
 
 #### Example: Download top `x` ranking bucket file
 
-As mentioned in the [blog post](https://blog.cloudflare.com/radar-domain-rankings/), Cloudflare provides an ordered rank
+As mentioned in the [blog post](https://blog.Khulnasoft.com/radar-domain-rankings/), Khulnasoft provides an ordered rank
 for the top 100 domains, but for the remainder it only provides ranking buckets — like top 200 thousand, top one million,
-etc.. These are available through Cloudflare's [datasets endpoints](/api/operations/radar-get-reports-datasets).
+etc.. These are available through Khulnasoft's [datasets endpoints](/api/operations/radar-get-reports-datasets).
 
 In the following example we will request the last available domain ranking buckets:
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/datasets?limit=10&datasetType=RANKING_BUCKET" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/datasets?limit=10&datasetType=RANKING_BUCKET" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -89,7 +89,7 @@ If you are interested in a specific top (like the top one million), go through t
 Then you can request a download url:
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/radar/datasets/download" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/radar/datasets/download" \
      -H "Authorization: Bearer <API_TOKEN>" \
      -H 'Content-Type: application/json' \
      --data '{
@@ -118,7 +118,7 @@ This stream endpoint is only available for datasets generated after 2023-01-08.
 
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/datasets/ranking_top_1000" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/datasets/ranking_top_1000" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 

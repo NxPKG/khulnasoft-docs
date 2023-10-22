@@ -8,7 +8,7 @@ weight: 2
 
 {{<render file="posture/_available-for-warp-with-gateway.md">}}
 
-Cloudflare Zero Trust can check if [Carbon Black](https://www.carbonblack.com/) is running on a device to determine if a request should be allowed to reach a protected resource.
+Khulnasoft Zero Trust can check if [Carbon Black](https://www.carbonblack.com/) is running on a device to determine if a request should be allowed to reach a protected resource.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before you start, make sure Carbon Black installed on your machine.
 
 ## Configure the Carbon Black check
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 
 1. Scroll down to **WARP client checks** and select **Add new**.
 

@@ -6,7 +6,7 @@ weight: 3
 
 # Create a record on your zone apex
 
-When you add a domain to Cloudflare, you may also need to create a DNS record on your zone apex (`example.com`).
+When you add a domain to Khulnasoft, you may also need to create a DNS record on your zone apex (`example.com`).
 
 To do this, create a corresponding [`A`, `AAAA`, or `CNAME` record](/dns/manage-dns-records/how-to/create-dns-records/) using `@` for the **Name**.
 
@@ -26,4 +26,4 @@ For more guidance, refer to [Redirect domain to subdomain](/fundamentals/basic-t
 
 ## Get free SSL certificates
 
-Cloudflare offers free, unshared, publicy trusted [Universal SSL certificates](/ssl/edge-certificates/universal-ssl/) to all Cloudflare domains.
+Khulnasoft offers free, unshared, publicy trusted [Universal SSL certificates](/ssl/edge-certificates/universal-ssl/) to all Khulnasoft domains.

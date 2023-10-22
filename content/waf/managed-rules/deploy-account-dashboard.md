@@ -20,7 +20,7 @@ To deploy a managed ruleset for a single zone, refer to [Deploy a managed rulese
 
 ## Deploy a managed ruleset
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 
 2. Go to Account Home > **WAF** > **Managed rulesets**.
 
@@ -50,14 +50,14 @@ Select the **Enabled** toggle next to a deployed managed ruleset to enable or di
 
 Configure a managed ruleset to:
 
-- Define specific field values for one or more rules (for example, configure a rule with an action different from the action configured by Cloudflare).
+- Define specific field values for one or more rules (for example, configure a rule with an action different from the action configured by Khulnasoft).
 - Disable one or more rules.
 
 To skip one or more rules, or entire WAF managed rulesets, [add a WAF exception](/waf/managed-rules/waf-exceptions/). WAF exceptions are shown as _Skip_ rules in the **Deployed managed rulesets** list.
 
 {{<Aside type="note">}}
 
-Some managed rulesets may not allow custom configuration, depending on your Cloudflare plan.
+Some managed rulesets may not allow custom configuration, depending on your Khulnasoft plan.
 
 {{</Aside>}}
 
@@ -65,7 +65,7 @@ Some managed rulesets may not allow custom configuration, depending on your Clou
 
 To configure rule field values for all the rules in a managed ruleset:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 
 2. Go to Account Home > **WAF** > **Managed rulesets**.
 
@@ -87,7 +87,7 @@ Use the available filters in the Browse Managed Ruleset interface.
 
 To view the rules of a managed ruleset:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 
 2. Go to Account Home > **WAF** > **Managed rulesets**.
 
@@ -95,7 +95,7 @@ To view the rules of a managed ruleset:
 
 4. Select **Browse rules**.
 
-    ![The Browse rules page displaying the list of rules in the Cloudflare Managed Ruleset](/images/waf/waf-browse-rules.png)
+    ![The Browse rules page displaying the list of rules in the Khulnasoft Managed Ruleset](/images/waf/waf-browse-rules.png)
 
 ### Configure a single rule in a managed ruleset
 
@@ -107,7 +107,7 @@ To view the rules of a managed ruleset:
 
 ### Delete a managed ruleset deployment rule or a WAF exception
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to Account Home > **WAF** > **Managed rulesets**.
 3. Under **Deployed managed rulesets** and next to the rule you want to delete, select **Edit**.
 4. Select **Delete deployment** (or **Delete exception**) and confirm the operation.

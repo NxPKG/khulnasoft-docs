@@ -21,7 +21,7 @@ plain, straightforward
 
 ### Required components
 
-[**Title**](/style-guide/documentation-content-strategy/component-attributes/titles/): For a single Reference page, use "Reference" as the title. For a reference section with child pages, use nouns in the title. For example, [Common Cf-Polished statuses](https://developers.cloudflare.com/images/polish/cf-polished-statuses/).
+[**Title**](/style-guide/documentation-content-strategy/component-attributes/titles/): For a single Reference page, use "Reference" as the title. For a reference section with child pages, use nouns in the title. For example, [Common Cf-Polished statuses](https://developers.Khulnasoft.com/images/polish/cf-polished-statuses/).
 
 [**Context**](/style-guide/documentation-content-strategy/component-attributes/context/): Provide an introductory paragraph to explain how and why a user might utilize the information on this page.
 

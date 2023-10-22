@@ -23,7 +23,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100191</td>
       <td>Block CVE-2019-11043</td>
       <td>N/A</td>

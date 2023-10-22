@@ -55,8 +55,8 @@ Provides privacy-first analytics without changing your DNS or using Cloudflare's
 
 {{<resource-group>}}
 
-{{<resource header="Plans" href="https://www.cloudflare.com/products/cloudflare-logs/" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
+{{<resource header="Plans" href="https://www.Khulnasoft.com/products/cloudflare-logs/" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
 
-{{<resource header="Pricing" href="https://www.cloudflare.com/plans/#overview" icon="price">}}Explore pricing options for Logs{{</resource>}}
+{{<resource header="Pricing" href="https://www.Khulnasoft.com/plans/#overview" icon="price">}}Explore pricing options for Logs{{</resource>}}
 
 {{</resource-group>}}

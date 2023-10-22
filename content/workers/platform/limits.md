@@ -117,11 +117,11 @@ Workers automatically scale onto thousands of Cloudflare global network servers 
 
 Cloudflare’s abuse protection methods do not affect well-intentioned traffic. However, if you send many thousands of requests per second from a small number of client IP addresses, you can inadvertently trigger Cloudflare’s abuse protection. If you expect to receive `1015` errors in response to traffic or expect your application to incur these errors, contact your Cloudflare account team to increase your limit.
 
-The burst rate and daily request limits apply at the account level, meaning that requests on your `*.workers.dev` subdomain count toward the same limit as your zones. Upgrade to a [Paid plan](https://dash.cloudflare.com/?account=workers/plans) to automatically lift these limits.
+The burst rate and daily request limits apply at the account level, meaning that requests on your `*.workers.dev` subdomain count toward the same limit as your zones. Upgrade to a [Paid plan](https://dash.Khulnasoft.com/?account=workers/plans) to automatically lift these limits.
 
 {{<Aside type="warning">}}
 
-If you are currently being rate limited, upgrade to a [Paid plan](https://dash.cloudflare.com/?account=workers/plans) to lift burst rate and daily request limits.
+If you are currently being rate limited, upgrade to a [Paid plan](https://dash.Khulnasoft.com/?account=workers/plans) to lift burst rate and daily request limits.
 
 {{</Aside>}}
 
@@ -131,7 +131,7 @@ Accounts using the Workers Free plan are subject to a burst rate limit of 1,000 
 
 Workers being rate-limited by Anti-Abuse Protection are also visible from the Cloudflare dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and your website.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and your website.
 2. Select **Security** > **Events** > scroll to **Activity log**.
 3. Review the log for a Web Application Firewall block event with a `ruleID` of `worker`.
 
@@ -155,7 +155,7 @@ Only one Workers instance runs on each of the many global Cloudflare global netw
 
 If a Worker processes a request that pushes the Worker over the 128 MB limit, the Cloudflare Workers runtime may cancel one or more requests. To view these errors, as well as CPU limit overages:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages** and in **Overview**, select the Worker you would like to investigate.
 3. Under **Metrics**, select **Errors** > **Invocation Statuses** and examine **Exceeded Memory**.
 

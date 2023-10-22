@@ -68,7 +68,7 @@ To create a job, make a `POST` request to the Logpush jobs endpoint with the fol
 Example request using cURL:
 
 ```bash
-curl -s https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/jobs -X POST -d '
+curl -s https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/jobs -X POST -d '
 {
   "name": "<DOMAIN_NAME>",
   "logpull_options": "fields=ClientIP,ClientRequestHost,ClientRequestMethod,ClientRequestURI,EdgeEndTimestamp,EdgeResponseBytes,EdgeResponseStatus,EdgeStartTimestamp,RayID&timestamps=unix",
@@ -114,7 +114,7 @@ Example request using cURL:
 
 ```bash
 curl -s -X PUT \
-https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/jobs/100 -d'{"enabled":true}' \
+https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/jobs/100 -d'{"enabled":true}' \
 -H "X-Auth-Email: <EMAIL>" \
 -H "X-Auth-Key: <API_KEY>" | jq .
 ```

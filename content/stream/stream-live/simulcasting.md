@@ -21,7 +21,7 @@ header: Request
 curl -X POST \
 --data '{"url": "rtmp://a.rtmp.youtube.com/live2","streamKey": "<redacted>"}' \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/<INPUT_UID>/outputs
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/<INPUT_UID>/outputs
 ```
 
 ```json
@@ -42,7 +42,7 @@ header: Response
 
 ## Control when you start and stop simulcasting
 
-You can enable and disable individual live outputs via the [API](/api/operations/stream-live-inputs-update-an-output) or [Stream dashboard](https://dash.cloudflare.com/?to=/:account/stream/inputs), allowing you to:
+You can enable and disable individual live outputs via the [API](/api/operations/stream-live-inputs-update-an-output) or [Stream dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/inputs), allowing you to:
 
 - Start a live stream, but wait to start simulcasting to YouTube and Twitch until right before the content begins.
 - Stop simulcasting before the live stream ends, to encourage viewers to transition from a third-party service like YouTube or Twitch to a direct live stream.
@@ -54,7 +54,7 @@ By default, all live outputs are enabled.
 
 ### Enable outputs from the dashboard:
 
-1. From Live Inputs in the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/stream/inputs), select an input from the list.
+1. From Live Inputs in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/inputs), select an input from the list.
 2. Under **Outputs** > **Enabled**, set the toggle to enabled or disabled.
 
 

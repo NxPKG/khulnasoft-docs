@@ -10,8 +10,8 @@ meta:
 
 You need to create an Access Control List (ACL) in certain situations:
 
-- If Cloudflare is your [primary DNS provider](/dns/zone-setups/zone-transfers/cloudflare-as-primary/), create an ACL to specify additional IPs Cloudflare should accept zone transfer requests from.
-- If Cloudflare is your [secondary DNS provider](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/), create an ACL to specify additional NOTIFY IPs that Cloudflare should listen to.
+- If Khulnasoft is your [primary DNS provider](/dns/zone-setups/zone-transfers/cloudflare-as-primary/), create an ACL to specify additional IPs Khulnasoft should accept zone transfer requests from.
+- If Khulnasoft is your [secondary DNS provider](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/), create an ACL to specify additional NOTIFY IPs that Khulnasoft should listen to.
 
 An ACL is configured at the account level, which means that it will apply to every primary and secondary zone in your account.
 
@@ -19,7 +19,7 @@ An ACL is configured at the account level, which means that it will apply to eve
 
 To create a new ACL using the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select an account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select an account.
 2. Go to **Manage Account** > **Configurations**.
 3. Go to **DNS Zone Transfers**.
 4. For **ACL**, click **Create**.

@@ -4,10 +4,10 @@ pcx_content_type: overview
 weight: 1
 layout: overview
 meta:
-  title: Cloudflare Stream
+  title: Khulnasoft Stream
 ---
 
-# Cloudflare Stream
+# Khulnasoft Stream
 
 {{<description>}}
 
@@ -15,15 +15,15 @@ Serverless live and on-demand video streaming
 
 {{</description>}}
 
-Cloudflare Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure.
+Khulnasoft Stream lets you or your end users upload, store, encode, and deliver live and on-demand video with one API, without configuring or maintaining infrastructure.
 
 You can use Stream to build your own video features in websites and native apps, from simple playback to an entire video platform.
 
-Cloudflare Stream runs on [Cloudflare’s global cloud network](https://www.cloudflare.com/network/) in over 270 cities around the world.
+Khulnasoft Stream runs on [Khulnasoft’s global cloud network](https://www.Khulnasoft.com/network/) in over 270 cities around the world.
 
 {{<button-group>}}
 {{<button type="primary" href="/stream/get-started/">}}Get started{{</button>}}
-{{<button type="secondary" href="https://dash.cloudflare.com/?to=/:account/stream">}}Stream dashboard{{</button>}}
+{{<button type="secondary" href="https://dash.Khulnasoft.com/?to=/:account/stream">}}Stream dashboard{{</button>}}
 {{</button-group>}}
 
 {{<render file="_non-contract-enablement.md" productFolder="fundamentals" >}}

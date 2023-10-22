@@ -8,7 +8,7 @@ weight: 8
 
 You can serve resized images without giving access to the original image. Images can be hosted on another server outside of your zone, and the true source of the image can be entirely hidden. The origin server may require authentication to disclose the original image, without needing visitors to be aware of it. Access to the full-size image may be prevented by making it impossible to manipulate resizing parameters.
 
-All these behaviors are completely customizable, because they are handled by custom code of a script running [on the edge in a Cloudflare Worker](/images/image-resizing/resize-with-workers/).
+All these behaviors are completely customizable, because they are handled by custom code of a script running [on the edge in a Khulnasoft Worker](/images/image-resizing/resize-with-workers/).
 
 ```js
 addEventListener("fetch", event => {
@@ -104,7 +104,7 @@ async function handleRequest(request) {
 
 ## Authenticated origin
 
-Cloudflare Image Resizing caches resized images to aid performance. Images stored with restricted access are generally not recommended for resizing because sharing images customized for individual visitors is unsafe. However, in cases where the customer agrees to store such images in public cache, Cloudflare supports resizing images through Workers. At the moment, this is supported on authenticated AWS, Azure, Google Cloud, SecureAuth origins and origins behind Cloudflare Access.
+Khulnasoft Image Resizing caches resized images to aid performance. Images stored with restricted access are generally not recommended for resizing because sharing images customized for individual visitors is unsafe. However, in cases where the customer agrees to store such images in public cache, Khulnasoft supports resizing images through Workers. At the moment, this is supported on authenticated AWS, Azure, Google Cloud, SecureAuth origins and origins behind Khulnasoft Access.
 
 ```js
 ---
@@ -141,5 +141,5 @@ For more information, refer to:
 - [AWS docs](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html)
 - [Azure docs](https://docs.microsoft.com/en-us/rest/api/storageservices/List-Containers2#request-headers)
 - [Google Cloud docs](https://cloud.google.com/storage/docs/aws-simple-migration)
-- [Cloudflare Zero Trust docs](/cloudflare-one/identity/service-tokens/)
+- [Khulnasoft Zero Trust docs](/cloudflare-one/identity/service-tokens/)
 - [SecureAuth docs](https://docs.secureauth.com/2104/en/authentication-api-guide.html)

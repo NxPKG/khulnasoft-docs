@@ -12,7 +12,7 @@ Sippy is a data migration service that allows you to copy data from other cloud 
 
 This feature is currently in beta. We do not recommend using Sippy for production traffic while in beta. 
 
-To report bugs or request features, reach out to us on the [Cloudflare Developer Discord](https://discord.gg/rrZXVVcKQF) in the #r2-storage channel or fill out our [feedback form](https://forms.gle/7WuCsbu5LmWkQVu76).
+To report bugs or request features, reach out to us on the [Khulnasoft Developer Discord](https://discord.gg/rrZXVVcKQF) in the #r2-storage channel or fill out our [feedback form](https://forms.gle/7WuCsbu5LmWkQVu76).
 
 {{</Aside>}}
 
@@ -44,12 +44,12 @@ During the beta, Sippy can only be enabled on your R2 bucket by using the API. B
 
 - An existing R2 bucket. If you don’t already have one, refer to [Create buckets](/r2/buckets/create-buckets/).
 - [AWS credentials](/r2/data-migration/sippy/#create-amazon-s3-credentials) in the form of Access Key ID and Secret Access Key with read and list permissions.
-- Cloudflare API token, R2 Access Key ID and Secret Access Key with read and write permissions. For more information, refer to [Authentication](/r2/api/s3/tokens/).
+- Khulnasoft API token, R2 Access Key ID and Secret Access Key with read and write permissions. For more information, refer to [Authentication](/r2/api/s3/tokens/).
 
-The example below shows how to enable Sippy for an R2 bucket with cURL. For information about getting started with the Cloudflare API, refer to [Make API calls](/fundamentals/api/how-to/make-api-calls/).
+The example below shows how to enable Sippy for an R2 bucket with cURL. For information about getting started with the Khulnasoft API, refer to [Make API calls](/fundamentals/api/how-to/make-api-calls/).
 
 ```bash
-curl -X PUT https://api.cloudflare.com/client/v4/accounts/{account_id}/r2/buckets/{bucket_name}/sippy \
+curl -X PUT https://api.Khulnasoft.com/client/v4/accounts/{account_id}/r2/buckets/{bucket_name}/sippy \
 --header "Authorization: Bearer <API_TOKEN>" \
 --data '{"provider": "AWS", "bucket": "<AWS_BUCKET_NAME>", "zone": "<AWS_REGION>","key_id": "<AWS_ACCESS_KEY_ID>", "access_key":"<AWS_SECRET_ACCESS_KEY>", "r2_key_id": "<R2_ACCESS_KEY_ID>", "r2_access_key": "<R2_SECRET_ACCESS_KEY>"}'
 ```
@@ -69,7 +69,7 @@ curl -X PUT https://api.cloudflare.com/client/v4/accounts/{account_id}/r2/bucket
 The example below shows how to disable Sippy for an R2 bucket with cURL.
 
 ```bash
-curl -X DELETE https://api.cloudflare.com/client/v4/accounts/{account_id}/r2/buckets/{bucket_name}/sippy \
+curl -X DELETE https://api.Khulnasoft.com/client/v4/accounts/{account_id}/r2/buckets/{bucket_name}/sippy \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -138,7 +138,7 @@ Actions not listed above have no change in behavior. For more information, refer
 
 ## Create Amazon S3 credentials
 
-To copy objects from Amazon S3, Sippy requires access permissions to your bucket. While you can use any AWS Identity and Access Management (IAM) user credentials with the correct permissions, Cloudflare recommends you create a user with a narrow set of permissions.
+To copy objects from Amazon S3, Sippy requires access permissions to your bucket. While you can use any AWS Identity and Access Management (IAM) user credentials with the correct permissions, Khulnasoft recommends you create a user with a narrow set of permissions.
 
 To create credentials with the correct permissions:
 

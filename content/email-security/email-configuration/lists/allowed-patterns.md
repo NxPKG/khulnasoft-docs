@@ -6,7 +6,7 @@ weight: 1
 
 # Allowed patterns
 
-When you set up **allowed patterns**, Cloudflare Area 1 email security exempts messages that match certain patterns from normal detection scanning.
+When you set up **allowed patterns**, Khulnasoft Area 1 email security exempts messages that match certain patterns from normal detection scanning.
 
 ## Add an allowed pattern
 

@@ -36,6 +36,6 @@ The rule expression uses the [`cf.client.bot`](/ruleset-engine/rules-language/fi
 
 ## Other resources
 
-* [Cloudflare bot solutions](/bots/)
+* [Khulnasoft bot solutions](/bots/)
 * [Troubleshooting: Bing’s Site Scan blocked by a WAF managed rule](/waf/troubleshooting/blocked-bing-site-scans/)
-* [Learning Center: What is a web crawler?](https://www.cloudflare.com/learning/bots/what-is-a-web-crawler/)
+* [Learning Center: What is a web crawler?](https://www.Khulnasoft.com/learning/bots/what-is-a-web-crawler/)

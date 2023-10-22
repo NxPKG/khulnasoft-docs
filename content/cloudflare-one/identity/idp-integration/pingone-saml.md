@@ -6,7 +6,7 @@ weight: 7
 
 # PingOne®
 
-The PingOne® cloud platform from PingIdentity provides SSO identity management. Cloudflare Access supports PingOne as a SAML identity provider.
+The PingOne® cloud platform from PingIdentity provides SSO identity management. Khulnasoft Access supports PingOne as a SAML identity provider.
 
 ## Set up PingOne as a SAML provider
 
@@ -15,7 +15,7 @@ The PingOne® cloud platform from PingIdentity provides SSO identity management.
 3. Enter an **Application Name**.
 4. Select **SAML Application**.
 5. Select **Configure**.
-6. To fill in your Cloudflare Access metadata:
+6. To fill in your Khulnasoft Access metadata:
 
    1. Select **Import from URL**.
    2. Set the **Import URL** to:
@@ -24,7 +24,7 @@ The PingOne® cloud platform from PingIdentity provides SSO identity management.
    https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/saml-metadata
    ```
 
-   where `<your-team-name>` is your Cloudflare Zero Trust {{<glossary-tooltip term_id="team domain">}}team name{{</glossary-tooltip>}}.
+   where `<your-team-name>` is your Khulnasoft Zero Trust {{<glossary-tooltip term_id="team domain">}}team name{{</glossary-tooltip>}}.
 
    3. Select **Import**.
    4. **Save** the configuration.
@@ -38,10 +38,10 @@ The PingOne® cloud platform from PingIdentity provides SSO identity management.
    | `givenName`           | Given Name     |
    | `surName`             | Family Name    |
 
-   These [SAML attributes](/cloudflare-one/identity/idp-integration/generic-saml/#saml-attributes) tell Cloudflare Access who the user is.
+   These [SAML attributes](/cloudflare-one/identity/idp-integration/generic-saml/#saml-attributes) tell Khulnasoft Access who the user is.
 
 9. Set the application to **Active**.
-10. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **Authentication**.
+10. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **Authentication**.
 11. Under **Login methods**, select **Add new**.
 12. Select **SAML**.
 13. Upload your PingOne XML metadata file from Step 7.

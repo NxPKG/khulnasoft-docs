@@ -8,4 +8,4 @@ product:
   preview_tryout: true
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/:zone/security/waf/rate-limiting-rules
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/:zone/security/waf/rate-limiting-rules

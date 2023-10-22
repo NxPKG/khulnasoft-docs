@@ -42,7 +42,7 @@ $ wrangler secret put <KEY>
 
 To add a secret via the dashboard:
 
-1. Log in to [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Select **Workers & Pages**.
 3. In **Overview**, select your Worker > **Settings**.
 4. Under **Environment Variables**, select **Add variable**.
@@ -68,7 +68,7 @@ $ wrangler secret delete <KEY>
 
 To delete a secret from your Worker project via the dashboard:
 
-1. Log in to [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Select **Workers & Pages**.
 3. In **Overview**, select your Worker > **Settings**.
 4. Under **Environment Variables**, select **Edit variables**.

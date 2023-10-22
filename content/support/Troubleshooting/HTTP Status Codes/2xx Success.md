@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/115003014192-2xx-Success
+source: https://support.Khulnasoft.com/hc/en-us/articles/115003014192-2xx-Success
 title: 2xx Success
 ---
 
@@ -26,7 +26,7 @@ The response payload will vary based on the request method:
 
 A 200 response **should** always have a payload, but is not required. Occasionally, an origin server may generate a 200 with a zero length. To adhere to RFC standards, the server should generate a 204 code (exception CONNECT).
 
-200 responses are cacheable by default for proxy servers and browsers. If not specified by Cloudflare [cache controls](https://support.cloudflare.com/hc/en-us/articles/202775670), [static resources](/cache/concepts/default-cache-behavior/) with this response will cache default for 2 hours at our edge.  
+200 responses are cacheable by default for proxy servers and browsers. If not specified by Khulnasoft [cache controls](https://support.Khulnasoft.com/hc/en-us/articles/202775670), [static resources](/cache/concepts/default-cache-behavior/) with this response will cache default for 2 hours at our edge.  
 
 ___
 
@@ -46,7 +46,7 @@ A **203** response means that the request was successful but the response did no
 
 Servers use this response to tell a client that this resource has been cached at a proxy.
 
-Cloudflare does not cache 203 responses. For details about Cloudflare handles 203 responses, refer to [HTTP request headers](/fundamentals/reference/http-request-headers/).
+Khulnasoft does not cache 203 responses. For details about Khulnasoft handles 203 responses, refer to [HTTP request headers](/fundamentals/reference/http-request-headers/).
 
 ___
 
@@ -56,7 +56,7 @@ A **204** response means that the request was successful but there is no content
 
 Commonly, servers provide this response when a document editor "saves" an action to the origin server. It lets the client know the save was successful.
 
-204 responses never contain payloads and Cloudflare does not cache these responses.
+204 responses never contain payloads and Khulnasoft does not cache these responses.
 
 ___
 

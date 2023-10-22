@@ -11,7 +11,7 @@ Once endpoints are saved into Endpoint Management, API Shield doubles as an API 
 
 ## Process
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Security** > **API Shield** > **Settings**.
 3. Under **Create a developer portal**, select **Create site**.
 4. Upload an OpenAPI v3.0 schema file or choose to select an existing schema from API Shield. 
@@ -22,7 +22,7 @@ If you do not have a schema to upload or to select from a pre-existing schema, e
 Only API schemas uploaded to Schema Validation 2.0 are available when selecting existing schemas
     {{</Aside>}}
 
-5. Select **Download project files** to save a local copy of the files that will be uploaded to Cloudflare Pages. Downloading the project files can be helpful if you wish to modify the project in any way and then upload the new version manually to Pages.
+5. Select **Download project files** to save a local copy of the files that will be uploaded to Khulnasoft Pages. Downloading the project files can be helpful if you wish to modify the project in any way and then upload the new version manually to Pages.
 6. Select **Create pages project** to begin project creation. A new Pages project will be automatically created and your API schema will be automatically uploaded to the project along with other supporting static content.
 7. Select **Deploy site**. 
 
@@ -32,7 +32,7 @@ To create a vanity domain instead of using the pages.dev domain, refer to the [P
 
 ## Availability
 
-Building developer portals is available to all API Shield subscribers. This feature uses Cloudflare Pages to host the resulting portal. Refer to [Pages](/pages/) for any limitations of your current subscription plan.
+Building developer portals is available to all API Shield subscribers. This feature uses Khulnasoft Pages to host the resulting portal. Refer to [Pages](/pages/) for any limitations of your current subscription plan.
 
 ## Limitations
 

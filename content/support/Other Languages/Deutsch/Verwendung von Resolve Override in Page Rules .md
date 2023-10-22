@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/206190798-Verwendung-von-Resolve-Override-in-Page-Rules
+source: https://support.Khulnasoft.com/hc/de/articles/206190798-Verwendung-von-Resolve-Override-in-Page-Rules
 title: Verwendung von Resolve Override in Page Rules 
 ---
 
@@ -13,7 +13,7 @@ Es ist jetzt mit Page Rules möglich, die URL oder IP zu überschreiben, zu der 
 
 Ein häufiger Anwendungsfall für diese Funktionalität ist, wenn Sie eine Anwendung über den URI bereitstellen (z. B. mydomain.com/app). In diesem Fall befindet sich die „App“ möglicherweise auf einem anderen Server und kann sogar von einer dritten Partei gehostet werden. Anfragen an diesen Endpunkt müssen an den Server für diese Anwendung des Drittanbieters gerichtet werden. Sie können einen CNAME-Host angeben.
 
-**Wichtig: Der CNAME-Eintrag muss innerhalb des Cloudflare-DNS existieren**.
+**Wichtig: Der CNAME-Eintrag muss innerhalb des Khulnasoft-DNS existieren**.
 
 Um sicherzustellen, dass Sie die vollständige Kontrolle über diese Einträge haben, wird empfohlen, das Resolve Override innerhalb desselben Zonennamens zu setzen.
 

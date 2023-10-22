@@ -18,16 +18,16 @@ To address a false negative:
 
 ## Incomplete mitigations
 
-An incomplete mitigation is a case when the DDoS protection systems have applied mitigation, but not all the attack was mitigated. This can happen when Cloudflare's systems apply a mitigation action that is less strict than what the attack requires.
+An incomplete mitigation is a case when the DDoS protection systems have applied mitigation, but not all the attack was mitigated. This can happen when Khulnasoft's systems apply a mitigation action that is less strict than what the attack requires.
 
 The system chooses the mitigation action based on the logic and the DDoS protection system's confidence that the traffic is indeed part of an attack:
 
 - For high-confidence rules, the system will apply a strict mitigation action such as the _Block_ action.
 - For low-confidence rules, the system will apply a less strict mitigation rule such as _Challenge_ or _Force Connection Close_.
 
-If you are experiencing a DDoS attack detected by Cloudflare and the applied mitigation action is not sufficiently strict, change the rule action to _Block_:
+If you are experiencing a DDoS attack detected by Khulnasoft and the applied mitigation action is not sufficiently strict, change the rule action to _Block_:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 
 2. Go to the analytics dashboard and apply filters to the displayed data.
 
@@ -65,7 +65,7 @@ Once saved, the rule takes effect within one or two minutes. The rule adjustment
 
 ### Alternate procedure
 
-If you cannot stop an attack from overloading your origin web server using the above steps, [contact Cloudflare Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/) for assistance, providing the following details:
+If you cannot stop an attack from overloading your origin web server using the above steps, [contact Khulnasoft Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/) for assistance, providing the following details:
 
 - Time period of the attack (UTC timestamp)
 - Domain/path being targeted (zone name/ID)

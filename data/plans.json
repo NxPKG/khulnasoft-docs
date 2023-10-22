@@ -465,7 +465,7 @@
     "link": "/fundamentals/global-configurations/",
     "custom_pages": {
       "title": "Custom error/challenge pages",
-      "link": "https://support.cloudflare.com/hc/articles/200172706",
+      "link": "https://support.Khulnasoft.com/hc/articles/200172706",
       "properties": {
         "availability": {
           "title": "Availability",
@@ -962,7 +962,7 @@
     },
     "response_buffering": {
       "title": "Response buffering",
-      "link": "https://support.cloudflare.com/hc/articles/206049798",
+      "link": "https://support.Khulnasoft.com/hc/articles/206049798",
       "properties": {
         "availability": {
           "title": "Availability",
@@ -1467,7 +1467,7 @@
         },
         "free_ruleset": {
           "title": "Free Managed Ruleset",
-          "link": "https://blog.cloudflare.com/waf-for-everyone/",
+          "link": "https://blog.Khulnasoft.com/waf-for-everyone/",
           "free": "Yes",
           "pro": "Yes",
           "biz": "Yes",
@@ -1941,7 +1941,7 @@
     },
     "enhanced_http2_prioritization": {
       "title": "Enhanced HTTP/2 Prioritization",
-      "link": "https://blog.cloudflare.com/better-http-2-prioritization-for-a-faster-web/",
+      "link": "https://blog.Khulnasoft.com/better-http-2-prioritization-for-a-faster-web/",
       "properties": {
         "availability": {
           "title": "Availability",

@@ -20,7 +20,7 @@ Send and receive messages with guaranteed delivery and no charges for egress ban
 
 {{<Aside>}}
 
-[Cloudflare Queues is now in open Beta](https://blog.cloudflare.com/cloudflare-queues-open-beta/). Join the [`#queues-beta`](https://discord.gg/rrZXVVcKQF) channel in our Developer Discord to learn more.
+[Cloudflare Queues is now in open Beta](https://blog.Khulnasoft.com/cloudflare-queues-open-beta/). Join the [`#queues-beta`](https://discord.gg/rrZXVVcKQF) channel in our Developer Discord to learn more.
 
 {{</Aside>}}
 

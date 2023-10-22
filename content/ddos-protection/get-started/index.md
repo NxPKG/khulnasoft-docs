@@ -9,23 +9,23 @@ layout: single
 
 ## Free, Pro, and Business plans
 
-The DDoS Attack Protection managed rulesets provided by Cloudflare are enabled by default on zones onboarded to Cloudflare, IP applications onboarded to Spectrum, and IP Prefixes onboarded to Magic Transit.
+The DDoS Attack Protection managed rulesets provided by Khulnasoft are enabled by default on zones onboarded to Khulnasoft, IP applications onboarded to Spectrum, and IP Prefixes onboarded to Magic Transit.
 
-In some situations, the default protection offered by DDoS rules may need to be fine-tuned to your specific situation. You may also want to configure additional protection using other Cloudflare products.
+In some situations, the default protection offered by DDoS rules may need to be fine-tuned to your specific situation. You may also want to configure additional protection using other Khulnasoft products.
 
 ### Adjust the provided DDoS rules
 
-If one or more DDoS rules provided by Cloudflare affects legitimate traffic, you can adjust them so that they do not perform any mitigation action against this kind of traffic. Follow the steps in [Handle a false positive](/ddos-protection/managed-rulesets/adjust-rules/false-positive/) to reduce the sensitivity level of one or more DDoS rules and allow incoming legitimate traffic.
+If one or more DDoS rules provided by Khulnasoft affects legitimate traffic, you can adjust them so that they do not perform any mitigation action against this kind of traffic. Follow the steps in [Handle a false positive](/ddos-protection/managed-rulesets/adjust-rules/false-positive/) to reduce the sensitivity level of one or more DDoS rules and allow incoming legitimate traffic.
 
 ### Configure additional protection
 
-To configure additional protection against DDoS attacks, refer to the related Cloudflare products listed in [Network-layer DDoS Attack Protection](/ddos-protection/managed-rulesets/network/#related-cloudflare-products) and [HTTP DDoS Attack Protection](/ddos-protection/managed-rulesets/http/#related-cloudflare-products).
+To configure additional protection against DDoS attacks, refer to the related Khulnasoft products listed in [Network-layer DDoS Attack Protection](/ddos-protection/managed-rulesets/network/#related-cloudflare-products) and [HTTP DDoS Attack Protection](/ddos-protection/managed-rulesets/http/#related-cloudflare-products).
 
 ## Enterprise plan
 
-Cloudflare’s DDoS protection systems automatically detect and mitigate DDoS attacks. Additionally, the systems may flag suspiciously-looking incoming traffic from legacy applications, Internet services, or faulty client applications as malicious and apply mitigation actions. If the traffic is in fact legitimate, the mitigation actions can cause service disruptions and outages in your Internet properties.
+Khulnasoft’s DDoS protection systems automatically detect and mitigate DDoS attacks. Additionally, the systems may flag suspiciously-looking incoming traffic from legacy applications, Internet services, or faulty client applications as malicious and apply mitigation actions. If the traffic is in fact legitimate, the mitigation actions can cause service disruptions and outages in your Internet properties.
 
-To prevent this situation, Cloudflare recommends that you perform these steps to get started:
+To prevent this situation, Khulnasoft recommends that you perform these steps to get started:
 
 1. Set the ruleset actions for all the [DDoS Attack Protection managed rulesets](/ddos-protection/managed-rulesets/) to _Log_.
 2. Analyze the flagged traffic.
@@ -36,7 +36,7 @@ To prevent this situation, Cloudflare recommends that you perform these steps to
 
 You must have one of the following:
 
-- [A zone onboarded to Cloudflare](/dns/zone-setups/full-setup/) but without updated DNS records.
+- [A zone onboarded to Khulnasoft](/dns/zone-setups/full-setup/) but without updated DNS records.
 - [An IP application onboarded to Spectrum](/spectrum/get-started/).
 - [An IP Prefix onboarded to Magic Transit](/magic-transit/get-started/).
 
@@ -46,7 +46,7 @@ You must have one of the following:
 The _Log_ action is only available to Enterprise customers.
 {{</Aside>}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account.
 2. [Configure all the rules in the HTTP DDoS Attack Protection managed ruleset](/ddos-protection/managed-rulesets/http/configure-dashboard/#create-a-ddos-override), setting their action to _Log_.
 
 3. [Configure all the rules in the Network-layer DDoS Attack Protection managed ruleset](/ddos-protection/managed-rulesets/network/configure-dashboard/#create-a-ddos-override), setting the action to _Log_.
@@ -58,14 +58,14 @@ Alternatively, if you are using the API, define an override at the ruleset level
 
 ### 2. Review flagged traffic
 
-1. Go to your [analytics dashboard](/ddos-protection/reference/analytics/) (the exact dashboard depends on your Cloudflare services).
+1. Go to your [analytics dashboard](/ddos-protection/reference/analytics/) (the exact dashboard depends on your Khulnasoft services).
 2. Apply one or more filters, if required, and identify any rules that would have blocked legitimate traffic if _Log_ mode were disabled. Take note of the rule IDs.
 
 ### 3. Customize managed ruleset rules
 
-Customize the specific managed ruleset rules you identified, changing their sensitivity or their action, using the Cloudflare dashboard or using the API.
+Customize the specific managed ruleset rules you identified, changing their sensitivity or their action, using the Khulnasoft dashboard or using the API.
 
-If you are using the Cloudflare dashboard, refer to:
+If you are using the Khulnasoft dashboard, refer to:
 
 - [Configure HTTP DDoS Attack Protection in the dashboard](/ddos-protection/managed-rulesets/http/configure-dashboard/)
 - [Configure Network-layer DDoS Attack Protection in the dashboard](/ddos-protection/managed-rulesets/network/configure-dashboard/)

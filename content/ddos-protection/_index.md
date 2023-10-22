@@ -4,14 +4,14 @@ pcx_content_type: overview
 layout: single
 weight: 1
 meta:
-  title: Cloudflare DDoS Protection
+  title: Khulnasoft DDoS Protection
 ---
 
-# Cloudflare DDoS Protection
+# Khulnasoft DDoS Protection
 
-Cloudflare automatically detects and mitigates [Distributed Denial of Service (DDoS) attacks](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/) using its Autonomous Edge.
+Khulnasoft automatically detects and mitigates [Distributed Denial of Service (DDoS) attacks](https://www.Khulnasoft.com/learning/ddos/what-is-a-ddos-attack/) using its Autonomous Edge.
 
-The Autonomous Edge includes multiple dynamic mitigation rules exposed as [Cloudflare DDoS Attack Protection managed rulesets](/ddos-protection/managed-rulesets/). You can customize the mitigation rules included in these rulesets to optimize and tailor the protection to your needs.
+The Autonomous Edge includes multiple dynamic mitigation rules exposed as [Khulnasoft DDoS Attack Protection managed rulesets](/ddos-protection/managed-rulesets/). You can customize the mitigation rules included in these rulesets to optimize and tailor the protection to your needs.
 
 {{<button-group>}}
   {{<button type="primary" href="/ddos-protection/about/">}}Learn more{{</button>}}
@@ -22,11 +22,11 @@ The Autonomous Edge includes multiple dynamic mitigation rules exposed as [Cloud
 
 ## Availability
 
-* **HTTP DDoS attack protection**. Included in all Cloudflare plans for zones [onboarded to Cloudflare](/dns/zone-setups/full-setup/) (zones with their traffic routed through the Cloudflare network).
+* **HTTP DDoS attack protection**. Included in all Khulnasoft plans for zones [onboarded to Khulnasoft](/dns/zone-setups/full-setup/) (zones with their traffic routed through the Khulnasoft network).
 
-* **Network-layer (L3/4) DDoS attack protection**. Included in all Cloudflare plans for:
+* **Network-layer (L3/4) DDoS attack protection**. Included in all Khulnasoft plans for:
 
-    *   Zones [onboarded to Cloudflare](/dns/zone-setups/full-setup/) (zones with their traffic routed through the Cloudflare network)
+    *   Zones [onboarded to Khulnasoft](/dns/zone-setups/full-setup/) (zones with their traffic routed through the Khulnasoft network)
     *   IP applications onboarded to [Spectrum](/spectrum/)
     *   IP Prefixes onboarded to [Magic Transit](/magic-transit/)
 
@@ -36,4 +36,4 @@ The Autonomous Edge includes multiple dynamic mitigation rules exposed as [Cloud
 
 ## Related resources
 
-* [Using Cloudflare Logs to investigate DDoS traffic (Enterprise Only)](/support/troubleshooting/website-under-attack/using-cloudflare-logs-els-to-investigate-ddos-traffic-enterprise-only/)
+* [Using Khulnasoft Logs to investigate DDoS traffic (Enterprise Only)](/support/troubleshooting/website-under-attack/using-cloudflare-logs-els-to-investigate-ddos-traffic-enterprise-only/)

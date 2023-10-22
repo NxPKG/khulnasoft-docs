@@ -1,12 +1,12 @@
 ---
 pcx_content_type: concept
-title: Cloudflare Access
+title: Khulnasoft Access
 weight: 1
 ---
 
-# Cloudflare Access Pages Plugin
+# Khulnasoft Access Pages Plugin
 
-The Cloudflare Access Pages Plugin is a middleware to validate Cloudflare Access JWT assertions. It also includes an API to lookup additional information about a given user's JWT.
+The Khulnasoft Access Pages Plugin is a middleware to validate Khulnasoft Access JWT assertions. It also includes an API to lookup additional information about a given user's JWT.
 
 ## Installation
 
@@ -28,7 +28,7 @@ export const onRequest: PagesFunction = cloudflareAccessPlugin({
 });
 ```
 
-The Plugin takes an object with two properties: the `domain` of your Cloudflare Access account, and the policy `aud` (audience) to validate against. Any requests which fail validation will be returned a `403` status code.
+The Plugin takes an object with two properties: the `domain` of your Khulnasoft Access account, and the policy `aud` (audience) to validate against. Any requests which fail validation will be returned a `403` status code.
 
 ### Access the JWT payload
 

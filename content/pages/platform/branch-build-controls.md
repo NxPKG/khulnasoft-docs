@@ -29,7 +29,7 @@ When configuring automatic builds for preview deployments, there are three optio
 * **None**: Turns off automatic builds for all preview branches.
 * **Custom branches**: Customize the automatic deployments of certain preview branches.
 
-![Choose what kind of preview deployment you need for your Pages project in the Cloudflare dashboard](/images/pages/platform/include-preview-brances.png)
+![Choose what kind of preview deployment you need for your Pages project in the Khulnasoft dashboard](/images/pages/platform/include-preview-brances.png)
 
 ### Custom preview branch control  
 

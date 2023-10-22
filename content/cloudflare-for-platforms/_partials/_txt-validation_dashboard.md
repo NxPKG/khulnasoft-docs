@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select your Cloudflare for SaaS application.
 3. Navigate to **SSL/TLS** > **Custom Hostnames**.
 4. Select a hostname.

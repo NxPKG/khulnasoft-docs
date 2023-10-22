@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-The following variables will be passed into your GCP and Cloudflare configuration.
+The following variables will be passed into your GCP and Khulnasoft configuration.
 
 1. In your configuration directory, create a `.tf` file:
 
@@ -35,7 +35,7 @@ The following variables will be passed into your GCP and Cloudflare configuratio
       type        = string
     }
 
-    # Cloudflare variables
+    # Khulnasoft variables
     variable "cloudflare_zone" {
       description = "Domain used to expose the GCP VM instance to the Internet"
       type        = string
@@ -47,19 +47,19 @@ The following variables will be passed into your GCP and Cloudflare configuratio
     }
 
     variable "cloudflare_account_id" {
-      description = "Account ID for your Cloudflare account"
+      description = "Account ID for your Khulnasoft account"
       type        = string
       sensitive   = true
     }
 
     variable "cloudflare_email" {
-      description = "Email address for your Cloudflare account"
+      description = "Email address for your Khulnasoft account"
       type        = string
       sensitive   = true
     }
 
     variable "cloudflare_token" {
-      description = "Cloudflare API token created at https://dash.cloudflare.com/profile/api-tokens"
+      description = "Khulnasoft API token created at https://dash.Khulnasoft.com/profile/api-tokens"
       type        = string
       sensitive   = true
     }

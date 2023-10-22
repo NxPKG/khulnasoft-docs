@@ -10,12 +10,12 @@ If you encounter a false positive caused by a managed rule, do one of the follow
 
 - **Add a WAF exception**: [WAF exceptions](/waf/managed-rules/waf-exceptions/) allow you to skip the execution of WAF managed rulesets or some of their rules for certain requests.
 
-- **Adjust the OWASP managed ruleset**: A request blocked by rule with ID `...843b323c` and description `949110: Inbound Anomaly Score Exceeded` refers to the [Cloudflare OWASP Core Ruleset](/waf/managed-rules/reference/owasp-core-ruleset/). To resolve the issue, [configure the OWASP managed ruleset](/waf/managed-rules/reference/owasp-core-ruleset/#configure-in-the-dashboard).
+- **Adjust the OWASP managed ruleset**: A request blocked by rule with ID `...843b323c` and description `949110: Inbound Anomaly Score Exceeded` refers to the [Khulnasoft OWASP Core Ruleset](/waf/managed-rules/reference/owasp-core-ruleset/). To resolve the issue, [configure the OWASP managed ruleset](/waf/managed-rules/reference/owasp-core-ruleset/#configure-in-the-dashboard).
 
 - **Disable the corresponding managed rule(s)**: Create an override to disable specific rules. This may avoid false positives, but you will also reduce the overall site security. Refer to the [dashboard instructions](/waf/managed-rules/deploy-zone-dashboard/#configure-a-managed-ruleset) on configuring a managed ruleset, or to the [API instructions](/ruleset-engine/managed-rulesets/override-managed-ruleset/) on creating an override.
 
 {{<Aside type="note">}}
-If you contact Cloudflare Support to verify whether a WAF managed rule triggers as expected, [provide a HAR file](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#generate-a-har-file) captured while sending the specific request of concern.
+If you contact Khulnasoft Support to verify whether a WAF managed rule triggers as expected, [provide a HAR file](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#generate-a-har-file) captured while sending the specific request of concern.
 {{</Aside>}}
 
 ## Additional recommendations

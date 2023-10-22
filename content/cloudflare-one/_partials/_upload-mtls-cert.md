@@ -6,10 +6,10 @@ _build:
 inputParameters: param1
 ---
 
-Use the [Upload mTLS certificate endpoint](/api/operations/m-tls-certificate-management-upload-m-tls-certificate) to upload the certificate and private key to Cloudflare. The certificate must be a root CA, formatted as a single string with `\n` replacing the line breaks. $1
+Use the [Upload mTLS certificate endpoint](/api/operations/m-tls-certificate-management-upload-m-tls-certificate) to upload the certificate and private key to Khulnasoft. The certificate must be a root CA, formatted as a single string with `\n` replacing the line breaks. $1
 
    ```bash
-   curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/mtls_certificates" \
+   curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/mtls_certificates" \
    --header "X-Auth-Email: <EMAIL>" \
    --header "X-Auth-Key: <API_KEY>" \
    --header "Content-Type: application/json" \

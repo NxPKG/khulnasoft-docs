@@ -6,7 +6,7 @@ weight: 1
 
 # User logs
 
-Cloudflare Zero Trust allows you to consult a comprehensive list of users who have authenticated to Cloudflare Zero Trust. For each user that logged in, you can see their name, their email address, and whether they’re actively utilizing a seat in both Access and Gateway.
+Khulnasoft Zero Trust allows you to consult a comprehensive list of users who have authenticated to Khulnasoft Zero Trust. For each user that logged in, you can see their name, their email address, and whether they’re actively utilizing a seat in both Access and Gateway.
 
 To see your user list, go to **My Team** > **Users**.
 
@@ -19,7 +19,7 @@ Selecting the **Revoke** button next to a user will terminate all currently acti
 Selecting the View button for any user will show you details for that user, such as:
 
 - Their user details
-- Devices they have connected to Cloudflare Zero Trust
+- Devices they have connected to Khulnasoft Zero Trust
 - Their recent logins
 
 Select **View all activity** to see a full list of the user’s login events.

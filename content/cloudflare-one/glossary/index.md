@@ -7,6 +7,6 @@ layout: list
 
 # Glossary
 
-Review definitions for Cloudflare Zero Trust terms.
+Review definitions for Khulnasoft Zero Trust terms.
 
-{{<glossary product="Cloudflare One">}}
+{{<glossary product="Khulnasoft One">}}

@@ -6,9 +6,9 @@ weight: 4
 
 # Redirect one domain to another
 
-If you have an alias domain that only forwards traffic to another domain, you can set up redirects directly within Cloudflare.
+If you have an alias domain that only forwards traffic to another domain, you can set up redirects directly within Khulnasoft.
 
-1. [Add](/fundamentals/setup/manage-domains/#add-a-domain-to-cloudflare) your alias domain (for example, `previous.com`) to Cloudflare.
+1. [Add](/fundamentals/setup/manage-domains/#add-a-domain-to-cloudflare) your alias domain (for example, `previous.com`) to Khulnasoft.
 
 2. Make sure that your alias domain has a proxied [DNS A or CNAME record](/dns/manage-dns-records/how-to/create-dns-records/) that properly resolves DNS queries. You may also want to include a record for the `www` subdomain.
 

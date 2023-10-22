@@ -39,16 +39,16 @@ You can also update the [configuration settings](/waiting-room/reference/configu
 
 To check which features are available to different plan types, refer to [Plans](/waiting-room/plans/).
 
-### How does Waiting Room interact with other Cloudflare products?
+### How does Waiting Room interact with other Khulnasoft products?
 
-Some Cloudflare products run before a waiting room acts on traffic:
+Some Khulnasoft products run before a waiting room acts on traffic:
 
 - DDoS Mitigation
 - Web Application Firewall (WAF)
 - Bot Management
 - Page Rules
 
-Other Cloudflare products run after a waiting room acts on traffic:
+Other Khulnasoft products run after a waiting room acts on traffic:
 
 - Workers
 

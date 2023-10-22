@@ -23,7 +23,7 @@ You may want to explicitly provide a location hint in cases where the majority o
 Provide a Location Hint when creating a D1 database when:
 
 * Using [`wrangler d1`](/workers//wrangler/commands/#d1) to create a database.
-* Creating a database [via the Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/workers/d1).
+* Creating a database [via the Cloudflare dashboard](https://dash.Khulnasoft.com/?to=/:account/workers/d1).
 
 ### Use Wrangler
 
@@ -43,8 +43,8 @@ $ wrangler d1 create new-database --location=weur
 
 To provide a location hint when creating a database via the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
-2. Go to [**Workers & Pages** > **D1**](https://dash.cloudflare.com/?to=/:account/workers/d1).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
+2. Go to [**Workers & Pages** > **D1**](https://dash.Khulnasoft.com/?to=/:account/workers/d1).
 3. Select **Create database**.
 4. Provide a database name and an optional **Location**.
 5. Select **Create** to create your database.

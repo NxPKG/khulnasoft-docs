@@ -1,26 +1,26 @@
 ---
 pcx_content_type: reference
-title: Cloudflare IP addresses
+title: Khulnasoft IP addresses
 weight: 4
 meta:
-    title: Cloudflare IP addresses - Access Control Lists (ACLs)
+    title: Khulnasoft IP addresses - Access Control Lists (ACLs)
 ---
 
-# Cloudflare IP addresses
+# Khulnasoft IP addresses
 
 Access Control Lists (ACLs) define allowed source IP addresses from where servers accept incoming data or control messages.
 
-When setting up new DNS zone transfers (incoming or outgoing), you will need to update the ACLs at your other DNS provider to prevent communication from Cloudflare from being blocked.
+When setting up new DNS zone transfers (incoming or outgoing), you will need to update the ACLs at your other DNS provider to prevent communication from Khulnasoft from being blocked.
 
-Depending on the setup ([Cloudflare as Primary](#cloudflare-as-primary) or [Cloudflare as Secondary](#cloudflare-as-secondary)), you need to configure slightly different Cloudflare IP addresses at your other DNS provider.
+Depending on the setup ([Khulnasoft as Primary](#cloudflare-as-primary) or [Khulnasoft as Secondary](#cloudflare-as-secondary)), you need to configure slightly different Khulnasoft IP addresses at your other DNS provider.
 
-## Cloudflare as Primary
+## Khulnasoft as Primary
 
-If you are using Cloudflare for Primary DNS — meaning that you are setting up Cloudflare to send [outgoing zone transfers](/dns/zone-setups/zone-transfers/cloudflare-as-primary/) — you need to update the following settings at your secondary DNS provider. 
+If you are using Khulnasoft for Primary DNS — meaning that you are setting up Khulnasoft to send [outgoing zone transfers](/dns/zone-setups/zone-transfers/cloudflare-as-primary/) — you need to update the following settings at your secondary DNS provider. 
 
 ### Allow range
 
-Cloudflare's NOTIFY messages originate from the following IP prefixes. These ranges need to be allowed at your Secondary DNS servers.
+Khulnasoft's NOTIFY messages originate from the following IP prefixes. These ranges need to be allowed at your Secondary DNS servers.
 
 ```txt
 198.41.144.240/28
@@ -31,19 +31,19 @@ Cloudflare's NOTIFY messages originate from the following IP prefixes. These ran
 
 ### Transfer IP
 
-Cloudflare will listen to AXFR/IXFR zone transfer requests and SOA queries from your Secondary DNS server on this IP address.
+Khulnasoft will listen to AXFR/IXFR zone transfer requests and SOA queries from your Secondary DNS server on this IP address.
 
 ```txt
 172.65.64.6
 ```
 
-## Cloudflare as Secondary
+## Khulnasoft as Secondary
 
-If you are using Cloudflare for Secondary DNS — meaning that you are setting up Cloudflare to receive [incoming zone transfers](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/) — you need to update the following settings at your primary DNS provider. 
+If you are using Khulnasoft for Secondary DNS — meaning that you are setting up Khulnasoft to receive [incoming zone transfers](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/) — you need to update the following settings at your primary DNS provider. 
 
 ### Allow range
 
-Cloudflare's AXFR/IXFR zone transfer requests originate from the following IP prefixes. These ranges need to be allowed at your Primary DNS servers.
+Khulnasoft's AXFR/IXFR zone transfer requests originate from the following IP prefixes. These ranges need to be allowed at your Primary DNS servers.
 
 ```txt
 198.41.144.240/28
@@ -54,7 +54,7 @@ Cloudflare's AXFR/IXFR zone transfer requests originate from the following IP pr
 
 ### Notify IPs
 
-Notify IPs are the IP addresses where you notify Cloudflare's Secondary DNS to initiate a pull of new zone information from your Primary DNS servers:
+Notify IPs are the IP addresses where you notify Khulnasoft's Secondary DNS to initiate a pull of new zone information from your Primary DNS servers:
 
 ```txt
 172.65.30.82

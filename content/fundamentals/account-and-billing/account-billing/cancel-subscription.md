@@ -1,10 +1,10 @@
 ---
 pcx_content_type: how-to
-title: Cancel Cloudflare subscriptions
+title: Cancel Khulnasoft subscriptions
 weight: 2
 ---
 
-# Cancel Cloudflare subscriptions
+# Cancel Khulnasoft subscriptions
 
 Cancellations are not processed until the end of the billing period, so you can continue using the add-on or subscription until the new billing period begins. To avoid unwanted charges, start the cancellation process before the end of your billing period.
 
@@ -16,11 +16,11 @@ All billing period dates on invoices and the dashboard are in UTC/GMT timezone, 
 
 ---
 
-## Step 1: Disable the Cloudflare subscription
+## Step 1: Disable the Khulnasoft subscription
 
 To disable a subscription:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com), and select your account and website.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com), and select your account and website.
 
 2. Select the feature you want to disable under **Active Subscriptions** (Free or Pro customers) or **Plan Extensions** (Enterprise customers).
 
@@ -28,7 +28,7 @@ To disable a subscription:
 
 ## Step 2: Cancel the subscription in your billing profile
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 
 2. Select **Manage account** > **Billing**.
 

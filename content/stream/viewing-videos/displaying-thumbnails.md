@@ -54,7 +54,7 @@ By default, the Stream Player sets the thumbnail to the first frame of the video
 curl -X POST \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{"thumbnailTimestampPct": 0.5}' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>
 ```
 
 `thumbnailTimestampPct` is a value between 0.0 (the first frame of the video) and 1.0 (the last frame of the video). For example, you wanted the thumbnail to be the frame at the half way point of your videos, you can simply set the `thumbnailTimestampPct` value to 0.5. Using relative values in this way allows you to set the default thumbnail even if you or your users' videos vary in duration.
@@ -69,7 +69,7 @@ Stream supports animated GIFs as thumbnails. Viewing animated thumbnails does no
  https://customer-m033z5x00ks6nunl.cloudflarestream.com/b236bde30eb07b9d01318940e5fc3eda/thumbnails/thumbnail.gif?time=1s&height=200&duration=4s
 `
 
-<img src="https://customer-m033z5x00ks6nunl.cloudflarestream.com/b236bde30eb07b9d01318940e5fc3eda/thumbnails/thumbnail.gif?time=1s&height=200&duration=4s" alt="Animated gif example, generated on-demand from Cloudflare Stream" />
+<img src="https://customer-m033z5x00ks6nunl.cloudflarestream.com/b236bde30eb07b9d01318940e5fc3eda/thumbnails/thumbnail.gif?time=1s&height=200&duration=4s" alt="Animated gif example, generated on-demand from Khulnasoft Stream" />
 
 Supported URL attributes for animated thumbnails are:
 

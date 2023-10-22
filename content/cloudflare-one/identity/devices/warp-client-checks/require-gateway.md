@@ -10,17 +10,17 @@ meta:
 
 {{<details header="Feature availability">}}
 
-| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.cloudflare.com/teams-pricing/) |
+| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.Khulnasoft.com/teams-pricing/) |
 | ----------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | All systems       | WARP with Gateway                                                                                 | All plans                                                     |
 
 {{</details>}}
 
-With Require Gateway, you can allow access to your applications only to devices enrolled in your organization's instance of Gateway. Unlike [Require WARP](/cloudflare-one/identity/devices/warp-client-checks/require-warp/), which will check for any WARP instance (including the consumer version), Require Gateway will only allow requests coming from devices whose traffic is filtered by your organization's Cloudflare Gateway configuration. This policy is best used when you want to protect company-owned assets by only allowing access to employees.
+With Require Gateway, you can allow access to your applications only to devices enrolled in your organization's instance of Gateway. Unlike [Require WARP](/cloudflare-one/identity/devices/warp-client-checks/require-warp/), which will check for any WARP instance (including the consumer version), Require Gateway will only allow requests coming from devices whose traffic is filtered by your organization's Khulnasoft Gateway configuration. This policy is best used when you want to protect company-owned assets by only allowing access to employees.
 
 ## Enable the Gateway check
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 
 2. In **WARP client checks**, select **Add new**.
 
@@ -28,7 +28,7 @@ With Require Gateway, you can allow access to your applications only to devices 
 
 ## Add the check to an Access policy
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Select the application for which you want to require Gateway, then select **Configure**.
 

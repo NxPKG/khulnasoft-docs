@@ -16,11 +16,11 @@ meta:
 
 externals:
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
   - title: 'Blog: Introducing APO'
-    url: https://blog.cloudflare.com/automatic-platform-optimizations-starting-with-wordpress/
+    url: https://blog.Khulnasoft.com/automatic-platform-optimizations-starting-with-wordpress/
   - title: 'Blog: APO Post-launch report'
-    url: https://blog.cloudflare.com/apo-post-launch-report/
+    url: https://blog.Khulnasoft.com/apo-post-launch-report/
 
 algolia:
   index: developers-cloudflare2

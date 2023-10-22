@@ -17,7 +17,7 @@ Cloudflare Pages offers a one-click setup for Web Analytics:
 
 To view the metrics associated with your Pages project:
 
-1. Log in to [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 2. From Account Home, select **Analytics & Logs** > **Web Analytics**.
 3. Select the analytics associated with your Pages project.
 

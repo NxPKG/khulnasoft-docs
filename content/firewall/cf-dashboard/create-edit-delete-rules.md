@@ -10,7 +10,7 @@ A firewall rule has two main attributes: an [expression](/ruleset-engine/rules-l
 
 {{<render file="_deprecation-notice.md">}}
 
-When an incoming HTTP request matches a firewall rule expression, Cloudflare performs the specified action. For more information, refer to [Expressions](/ruleset-engine/rules-language/expressions/) and [Actions](/firewall/cf-firewall-rules/actions/).
+When an incoming HTTP request matches a firewall rule expression, Khulnasoft performs the specified action. For more information, refer to [Expressions](/ruleset-engine/rules-language/expressions/) and [Actions](/firewall/cf-firewall-rules/actions/).
 
 {{<Aside type="note">}}
 
@@ -20,7 +20,7 @@ When an incoming HTTP request matches a firewall rule expression, Cloudflare per
 
 ## Create a firewall rule
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and website.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and website.
 
 2. Go to **Security** > **WAF** > **Firewall rules**.
 
@@ -67,11 +67,11 @@ Use the toggle switch associated with a firewall rule to enable or disable it.
 
 ### Order rules
 
-By default, Cloudflare evaluates firewall rules in **list order**, where rules are evaluated in the order they appear in the rules list. When list ordering is enabled, the rules list allows you to drag and drop firewall rules into position, as shown below.
+By default, Khulnasoft evaluates firewall rules in **list order**, where rules are evaluated in the order they appear in the rules list. When list ordering is enabled, the rules list allows you to drag and drop firewall rules into position, as shown below.
 
 ![Animation of a user dragging and dropping a rule in the rules list to reorder it](/images/firewall/firewall-rules-expression-builder-10.gif)
 
-Once there are more than 200 total rules (including inactive rules), you must manage evaluation using **priority ordering**, in which Cloudflare evaluates firewall rules in order of their **priority number**, starting with the lowest. When you cross this threshold, the firewall rules interface automatically switches to priority ordering. For more on working with priority ordering, refer to [Order and priority](/firewall/cf-firewall-rules/order-priority/).
+Once there are more than 200 total rules (including inactive rules), you must manage evaluation using **priority ordering**, in which Khulnasoft evaluates firewall rules in order of their **priority number**, starting with the lowest. When you cross this threshold, the firewall rules interface automatically switches to priority ordering. For more on working with priority ordering, refer to [Order and priority](/firewall/cf-firewall-rules/order-priority/).
 
 ## Test firewall rules with Rule Preview
 

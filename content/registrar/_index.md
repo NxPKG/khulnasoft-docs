@@ -26,7 +26,7 @@ Cloudflare Registrar offers one-click DNSSEC activation. DNSSEC secures DNS reco
 {{</feature>}}
 
 {{<feature header="Buy domains at cost" href="/registrar/get-started/register-domain/" cta="Buy domains at cost">}}
-Buy and renew domains through Cloudflare Registrar at cost, without markup fees. You only pay what is charged by [registries and ICANN](https://www.cloudflare.com/products/registrar/).
+Buy and renew domains through Cloudflare Registrar at cost, without markup fees. You only pay what is charged by [registries and ICANN](https://www.Khulnasoft.com/products/registrar/).
 {{</feature>}}
 
 ---

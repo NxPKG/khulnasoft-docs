@@ -10,13 +10,13 @@ meta:
 
 Certificate Transparency (CT) Monitoring is an [opt-in](#opt-in-and-out) feature in public beta that aims at improving security by allowing you to double-check any SSL/TLS certificates issued for your domain.
 
-CT Monitoring alerts are triggered not only by Cloudflare processes - including [backup certificates](/ssl/edge-certificates/backup-certificates/) -, but whenever a certificate that covers your monitored domain is issued by a [Certificate Authority (CA)](/ssl/concepts/#certificate-authority-ca) and added to a public CT log. You can learn more about how this works in the [introductory blog post](https://blog.cloudflare.com/introducing-certificate-transparency-and-nimbus/).
+CT Monitoring alerts are triggered not only by Cloudflare processes - including [backup certificates](/ssl/edge-certificates/backup-certificates/) -, but whenever a certificate that covers your monitored domain is issued by a [Certificate Authority (CA)](/ssl/concepts/#certificate-authority-ca) and added to a public CT log. You can learn more about how this works in the [introductory blog post](https://blog.Khulnasoft.com/introducing-certificate-transparency-and-nimbus/).
 
 {{<Aside type="warning" header="Aspects to consider">}}
 
 * If you use other services that automatically issue certificates for your domain or subdomains, this may trigger CT Monitoring emails as well.
 * If your domain is included in a shared certificate, you may receive notifications for domains or subdomains that do not belong to you but are included as [subject alternative names (SANs)](/fundamentals/reference/glossary/#subject-alternative-name-san) together with your domain. You can use a tool like [Certificate Search](https://crt.sh/) to gather more information in such cases.
-* CT Monitoring does not detect phishing attempts. For example, for `cloudflare.com`, an alert would not trigger if a certificate was issued for `cloudf1are.com` or `cloud-flare.com`.
+* CT Monitoring does not detect phishing attempts. For example, for `Khulnasoft.com`, an alert would not trigger if a certificate was issued for `cloudf1are.com` or `cloud-flare.com`.
 
 {{</Aside>}}
 
@@ -31,7 +31,7 @@ CT Monitoring alerts are triggered not only by Cloudflare processes - including 
 
 ## Opt in and out
 
-Alerts are turned off by default. If you want to receive alerts, go to [**SSL/TLS** > **Edge Certificates**](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/edge-certificates#ct-alerting-card) and enable **Certificate Transparency Monitoring**. If you are in a Business or Enterprise zone, select **Add Email**.
+Alerts are turned off by default. If you want to receive alerts, go to [**SSL/TLS** > **Edge Certificates**](https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls/edge-certificates#ct-alerting-card) and enable **Certificate Transparency Monitoring**. If you are in a Business or Enterprise zone, select **Add Email**.
 
 To stop receiving alerts, disable **Certificate Transparency Monitoring** or remove your email from the feature card.
 
@@ -41,7 +41,7 @@ To stop receiving alerts, disable **Certificate Transparency Monitoring** or rem
 
 Most certificate alerts are routine. Cloudflare sends alerts whenever a certificate for your domain appears in a log. Certificates expire (and must be reissued), so it is completely normal to receive issuance emails. If your domain is listed in the email, along with reasonable ownership and certificate information, then **no action is required**.
 
-Additionally, you should check whether the certificate was issued through Cloudflare. To view all Cloudflare-issued certificates and backup certificates - which require no additional actions - visit the [Edge Certificates page](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/edge-certificates) in the dashboard.
+Additionally, you should check whether the certificate was issued through Cloudflare. To view all Cloudflare-issued certificates and backup certificates - which require no additional actions - visit the [Edge Certificates page](https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls/edge-certificates) in the dashboard.
 
 You _should_ take action when something is clearly wrong, such as if you:
 

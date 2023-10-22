@@ -36,7 +36,7 @@ Attackers often try to impersonate executives within an organization when sendin
 ## Related products
  
 {{<related header="Email Routing" href="/email-routing/" product="email-routing">}}
-Email Routing simplifies the way you create and manage custom email addresses. Cloudflare Area 1 helps secure your mail infrastructure from phishing attacks.
+Email Routing simplifies the way you create and manage custom email addresses. Khulnasoft Area 1 helps secure your mail infrastructure from phishing attacks.
 {{</related>}}
 
 {{<related header="DMARC Management" href="/dmarc-management/" product="dmarc-management">}}
@@ -49,8 +49,8 @@ Stop brand impersonation. Track and manage every source that is sending emails f
 
 {{<resource-group>}}
  
-{{<resource header="Pricing" href="https://www.cloudflare.com/products/zero-trust/email-security/" icon="price">}}
-Cloudflare Area 1 Email Security is available as a standalone product purchase.
+{{<resource header="Pricing" href="https://www.Khulnasoft.com/products/zero-trust/email-security/" icon="price">}}
+Khulnasoft Area 1 Email Security is available as a standalone product purchase.
 {{</resource>}}
  
 {{</resource-group>}}

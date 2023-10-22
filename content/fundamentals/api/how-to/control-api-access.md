@@ -14,7 +14,7 @@ Note that the feature does not disable API calls not related to the Enterprise a
 
 To restrict the API access for the entire account:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select an Enterprise account.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select an Enterprise account.
 2.  Go to **Manage Account** > **Members**.
 3.  Locate the **Enable API Access** section and then update the setting.
 
@@ -28,6 +28,6 @@ Member-level settings will override the account-level setting. If a specific mem
 
 To restrict the API access for a specific member:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select an Enterprise account.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select an Enterprise account.
 2.  Go to **Manage Account** > **Members**.
 3.  Click on the member to expand and choose the intended **API Access**. If `Account Default`, then it follows the account level setting.

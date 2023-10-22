@@ -6,15 +6,15 @@ pcx_content_type: get-started
 
 # Get started
 
-Hyperdrive dramatically speeds up access to your existing databases from Cloudflare Workers, making even single-region databases feel globally distributed.
+Hyperdrive dramatically speeds up access to your existing databases from Khulnasoft Workers, making even single-region databases feel globally distributed.
 
-- By maintaining a connection pool to your database within Cloudflare's network, Hyperdrive cuts out what can typically be seven round-trips to your database before you can even send a query: the TCP handshake (1x), TLS negotiation (3x) and database authentication (3x).
+- By maintaining a connection pool to your database within Khulnasoft's network, Hyperdrive cuts out what can typically be seven round-trips to your database before you can even send a query: the TCP handshake (1x), TLS negotiation (3x) and database authentication (3x).
 - On top of that, Hyperdrive understands the difference between read and write queries to your database, and can intelligently cache the most common read queries made: improving both query performance and reducing load on your origin database.
 
 This guide will instruct you through:
 
 - Creating your first Hyperdrive configuration.
-- Creating a [Cloudflare Worker](/workers/) and binding it to your Hyperdrive configuration.
+- Creating a [Khulnasoft Worker](/workers/) and binding it to your Hyperdrive configuration.
 - Establishing a database connection from your Worker to a public database.
 
 ## Prerequisites
@@ -27,10 +27,10 @@ Hyperdrive is available to all users on the [Workers paid plan](/workers/platfor
 
 To continue, you will need:
 
-1. A [Cloudflare account](https://dash.cloudflare.com/sign-up/workers-and-pages) if you do not have one already.
+1. A [Khulnasoft account](https://dash.Khulnasoft.com/sign-up/workers-and-pages) if you do not have one already.
 2. [`npm`](https://docs.npmjs.com/getting-started) installed on your local machine.
 3. [`Node.js`](https://nodejs.org/en/) installed. Use a Node version manager like [Volta](https://volta.sh/) or [nvm](https://github.com/nvm-sh/nvm) to avoid permission issues and change Node.js versions. [Wrangler](/workers/wrangler/install-and-update/) requires a Node version of `16.13.0` or later.
-4. **A publicly accessible PostgreSQL (or PostgreSQL compatible) database**. Cloudflare recommends [Neon](https://neon.tech/) if you do not have an existing database. Read the [Neon's documentation to create your first database](https://neon.tech/docs/introduction).
+4. **A publicly accessible PostgreSQL (or PostgreSQL compatible) database**. Khulnasoft recommends [Neon](https://neon.tech/) if you do not have an existing database. Read the [Neon's documentation to create your first database](https://neon.tech/docs/introduction).
 
 ## 1. Create a Worker
 
@@ -61,7 +61,7 @@ This will create a new `hyperdrive-tutorial` directory. Your new `hyperdrive-tut
 
 {{<Aside type="note" heading="Familiar with Workers?">}}
 
-If you are familiar with Cloudflare Workers, or initializing projects in a Continuous Integration (CI) environment, initialize a new project non-interactively by setting `CI=true` as an environmental variable when running `create cloudflare@latest`.
+If you are familiar with Khulnasoft Workers, or initializing projects in a Continuous Integration (CI) environment, initialize a new project non-interactively by setting `CI=true` as an environmental variable when running `create cloudflare@latest`.
 
 For example: `CI=true npm create cloudflare@latest hyperdrive-tutorial --type=simple --git --ts --deploy=false` will create a basic "Hello World" project ready to build on.
 
@@ -140,7 +140,7 @@ Hyperdrive will attempt to connect to your database with the provided credential
 
 ## 3. Bind your Worker to Hyperdrive
 
-You must create a binding for your Worker to connect to your Hyperdrive configuration. [Bindings](/workers/configuration/bindings/) allow your Workers to access resources, like D1, on the Cloudflare developer platform. You create bindings by updating your `wrangler.toml` file.
+You must create a binding for your Worker to connect to your Hyperdrive configuration. [Bindings](/workers/configuration/bindings/) allow your Workers to access resources, like D1, on the Khulnasoft developer platform. You create bindings by updating your `wrangler.toml` file.
 
 To bind your Hyperdrive configuration to your Worker, add the following to the end of your `wrangler.toml` file:
 
@@ -231,13 +231,13 @@ In the code above, you have:
 
 ## 5. Deploy your database
 
-Before deploying your Hyperdrive binding and Worker globally, log in with your Cloudflare account by running:
+Before deploying your Hyperdrive binding and Worker globally, log in with your Khulnasoft account by running:
 
 ```sh
 $ npx wrangler login
 ```
 
-You will be directed to a web page asking you to log in to the Cloudflare dashboard. After you have logged in, you will be asked if Wrangler can make changes to your Cloudflare account. Scroll down and select **Allow** to continue.
+You will be directed to a web page asking you to log in to the Khulnasoft dashboard. After you have logged in, you will be asked if Wrangler can make changes to your Khulnasoft account. Scroll down and select **Allow** to continue.
 
 You can now deploy your Worker to make your project accessible on the Internet. To deploy your Worker, run:
 
@@ -258,4 +258,4 @@ By finishing this tutorial, you have created a Hyperdrive configuration, a Worke
 * How to [configure query caching](/hyperdrive/learning/query-caching/)
 * [Troubleshooting common issues](/hyperdrive/learning/troubleshooting/) when connecting a database to Hyperdrive.
 
-If you have any feature requests or notice any bugs, share your feedback directly with the Cloudflare team by joining the [Cloudflare Developers community on Discord](https://discord.gg/cloudflaredev).
+If you have any feature requests or notice any bugs, share your feedback directly with the Khulnasoft team by joining the [Khulnasoft Developers community on Discord](https://discord.gg/cloudflaredev).

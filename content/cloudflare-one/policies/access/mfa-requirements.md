@@ -37,16 +37,16 @@ To enforce an MFA requirement to an application:
 
 **What happens if the user fails to present the required MFA method?**
 
-Cloudflare Access will reject the user, even if they successfully login to the identity provider with an alternative method.
+Khulnasoft Access will reject the user, even if they successfully login to the identity provider with an alternative method.
 
 {{</Aside>}}
 
 ## Adding authentication methods into the JWT
 
-When users authenticate with their identity provider, the identity provider then shares their username with Cloudflare Access. Cloudflare Access then writes that value into the {{<glossary-tooltip term_id="JSON web token">}}JSON Web Token (JWT){{</glossary-tooltip>}} generated for the user.
+When users authenticate with their identity provider, the identity provider then shares their username with Khulnasoft Access. Khulnasoft Access then writes that value into the {{<glossary-tooltip term_id="JSON web token">}}JSON Web Token (JWT){{</glossary-tooltip>}} generated for the user.
 
-Certain identity providers can also share the multifactor authentication (MFA) method presented by the user to login. Cloudflare Access can add these values into the JWT and force. For example, if the user authenticated with their password and a physical hard key, the identity provider can send a confirmation to Cloudflare Access.
+Certain identity providers can also share the multifactor authentication (MFA) method presented by the user to login. Khulnasoft Access can add these values into the JWT and force. For example, if the user authenticated with their password and a physical hard key, the identity provider can send a confirmation to Khulnasoft Access.
 
-Cloudflare Access then stores that method into the same JWT issued to the user.
+Khulnasoft Access then stores that method into the same JWT issued to the user.
 
-Cloudflare Access follows [RFC 8176](https://tools.ietf.org/html/rfc8176), Authentication Method Reference Values, to define authentication methods.
+Khulnasoft Access follows [RFC 8176](https://tools.ietf.org/html/rfc8176), Authentication Method Reference Values, to define authentication methods.

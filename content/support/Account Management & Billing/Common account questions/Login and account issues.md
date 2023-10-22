@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/203471284-Login-and-account-issues
+source: https://support.Khulnasoft.com/hc/en-us/articles/203471284-Login-and-account-issues
 title: Login and account issues
 ---
 
@@ -16,20 +16,20 @@ If you forget the email address associated with your account, contact your Custo
 
 If you forget the email address associated with your application:
 
-1\. Go to [](http://dash.cloudflare.com/forgot-email)[Forgot Email?](https://dash.cloudflare.com/forgot-email)
+1\. Go to [](http://dash.Khulnasoft.com/forgot-email)[Forgot Email?](https://dash.Khulnasoft.com/forgot-email)
 
 2\. Enter your domain name.
 
-3\. Cloudflare will send an email to the address associated with your domain name. If you do not receive an email within 20 minutes, check your spam folder. The message will be sent from `no-reply@cloudflare.com` or `noreply@notify.cloudflare.com`.
+3\. Khulnasoft will send an email to the address associated with your domain name. If you do not receive an email within 20 minutes, check your spam folder. The message will be sent from `no-reply@Khulnasoft.com` or `noreply@notify.Khulnasoft.com`.
 
 {{<Aside type="note">}}
 This process does not affect your account or share your email address
 with anyone.
 {{</Aside>}}
 
-If you still cannot access the email address associated with your Cloudflare account, you need to [move your domain to another account](https://support.cloudflare.com/hc/articles/204615358).
+If you still cannot access the email address associated with your Khulnasoft account, you need to [move your domain to another account](https://support.Khulnasoft.com/hc/articles/204615358).
 
-Cloudflare requires these steps to prevent account hijacking.
+Khulnasoft requires these steps to prevent account hijacking.
 
 ___
 
@@ -37,16 +37,16 @@ ___
 
 If you forget your account password:
 
-1\. Go to [](http://dash.cloudflare.com/forgot-email)[Password Reset](https://dash.cloudflare.com/forgot-password).
+1\. Go to [](http://dash.Khulnasoft.com/forgot-email)[Password Reset](https://dash.Khulnasoft.com/forgot-password).
 
 2\. Enter your email address.
 
-3\. You should receive an email from Cloudflare. If you do not receive it within 20 minutes, check your spam folder. The message will be sent from `no-reply@cloudflare.com` or `noreply@notify.cloudflare.com`.
+3\. You should receive an email from Khulnasoft. If you do not receive it within 20 minutes, check your spam folder. The message will be sent from `no-reply@Khulnasoft.com` or `noreply@notify.Khulnasoft.com`.
 
 4\. Select the password reset link. This link will expire after two hours.
 
 {{<Aside type="tip">}}
-Cloudflare recommends strong passwords. Minimum requirements are:
+Khulnasoft recommends strong passwords. Minimum requirements are:
 
 -   Password must be at least 8 characters.
 -   Password must contain a digit.
@@ -55,8 +55,8 @@ Cloudflare recommends strong passwords. Minimum requirements are:
 
 {{<Aside type="note">}}
 If you still cannot access your account, look for help in the
-[Cloudflare
-Community](https://community.cloudflare.com/t/i-cannot-login-to-my-account/27823).
+[Khulnasoft
+Community](https://community.Khulnasoft.com/t/i-cannot-login-to-my-account/27823).
 {{</Aside>}}
 
 ___
@@ -75,11 +75,11 @@ codes from one Android device to
 another](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en&oco=0).
 {{</Aside>}}
 
-When setting up 2FA, you should have saved your backup codes in a secure location. To restore lost access using a Cloudflare backup code:
+When setting up 2FA, you should have saved your backup codes in a secure location. To restore lost access using a Khulnasoft backup code:
 
 1\. Retrieve the backup code from where you stored it.
 
-2\. Navigate to the Cloudflare login page.
+2\. Navigate to the Khulnasoft login page.
 
 3\. Enter the backup code in the login screen, then click **Log in**.
 
@@ -89,13 +89,13 @@ Once you use a backup code, it becomes invalid.
 
 #### **Disable 2FA**
 
-If you or another account owner still has access to your Cloudflare account, you could disable [your 2FA settings](https://dash.cloudflare.com/?to=/:account/members).
+If you or another account owner still has access to your Khulnasoft account, you could disable [your 2FA settings](https://dash.Khulnasoft.com/?to=/:account/members).
 
 #### **Recover your account**
 
 If you do not have access to your 2FA account or backup codes, use a verified device to request a temporary access code.
 
-1\. Log into the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1\. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 
 2\. On the **Two-Factor Authentication** page, click **Can't access your 2FA device or backup codes?**.
 
@@ -119,7 +119,7 @@ For more help with email verification, refer to [Verify email address](/fundamen
 
 ___
 
-## Change your Cloudflare email address or password
+## Change your Khulnasoft email address or password
 
 For more help, refer to [Change password or email address](/fundamentals/account-and-billing/account-billing/change-password-or-email/).
 
@@ -127,22 +127,22 @@ ___
 
 ## Secure a compromised account
 
-If you observe suspicious activity within your Cloudflare account, secure your account via [these steps](/fundamentals/account-and-billing/account-security/securing-a-compromised-account/).
+If you observe suspicious activity within your Khulnasoft account, secure your account via [these steps](/fundamentals/account-and-billing/account-security/securing-a-compromised-account/).
 
 ___
 
 ## Sign-in options
 
-You have several sign-in options for the [Cloudflare dashboard](https://dash.cloudflare.com/login):
+You have several sign-in options for the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login):
 
 -   **Email and password**: Enter your email address and password to log in.
 -   **Single sign on (SSO)**: Enter your email address (so long as your admin has [configured SSO](/cloudflare-one/applications/configure-apps/dash-sso-apps/) as a sign in option).
 -   **Sign in with Apple**:
-    -   _Same Cloudflare account email as Apple ID_: You can either sign in with your email and password or sign in with Apple.
-    -   _Different Cloudflare account email as Apple ID_: Will create a new Cloudflare account if you sign in with Apple. If you want to log into an existing account, [change your email address](https://support.cloudflare.com/hc/en-us/articles/203471284-Login-and-account-issues#12345679) to match the one used for your Apple ID.
+    -   _Same Khulnasoft account email as Apple ID_: You can either sign in with your email and password or sign in with Apple.
+    -   _Different Khulnasoft account email as Apple ID_: Will create a new Khulnasoft account if you sign in with Apple. If you want to log into an existing account, [change your email address](https://support.Khulnasoft.com/hc/en-us/articles/203471284-Login-and-account-issues#12345679) to match the one used for your Apple ID.
 
 {{<Aside type="note">}}
-If you login to your Cloudflare user account with Single Sign-On (SSO),
+If you login to your Khulnasoft user account with Single Sign-On (SSO),
 you will not be able to sign in with Apple.
 {{</Aside>}}
 
@@ -150,7 +150,7 @@ ___
 
 ## Related resources
 
--   [Moving domains between Cloudflare accounts](https://support.cloudflare.com/hc/articles/204615358)
--   [Securing user access with two-factor authentication (2FA)](https://support.cloudflare.com/hc/articles/200167906)
--   [Changing your domain nameservers to Cloudflare](https://support.cloudflare.com/hc/articles/205195708)
--   [Managing API keys and tokens](https://support.cloudflare.com/hc/articles/200167836)
+-   [Moving domains between Khulnasoft accounts](https://support.Khulnasoft.com/hc/articles/204615358)
+-   [Securing user access with two-factor authentication (2FA)](https://support.Khulnasoft.com/hc/articles/200167906)
+-   [Changing your domain nameservers to Khulnasoft](https://support.Khulnasoft.com/hc/articles/205195708)
+-   [Managing API keys and tokens](https://support.Khulnasoft.com/hc/articles/200167836)

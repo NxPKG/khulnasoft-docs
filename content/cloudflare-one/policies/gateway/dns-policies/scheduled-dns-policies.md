@@ -6,7 +6,7 @@ weight: 3
 
 # Scheduled DNS policies
 
-Cloudflare Gateway allows you to configure any DNS policy to activate or deactivate on a regular time interval.
+Khulnasoft Gateway allows you to configure any DNS policy to activate or deactivate on a regular time interval.
 
 By default, Gateway policies are unscheduled and apply at all times. You can use the [Gateway Rules API](/api/operations/zero-trust-gateway-rules-create-zero-trust-gateway-rule) to create a new DNS policy with a schedule or add a schedule to an existing policy. To schedule a policy, send a [`POST`](/api/operations/zero-trust-gateway-rules-create-zero-trust-gateway-rule) or [`PUT`](/api/operations/zero-trust-gateway-rules-update-zero-trust-gateway-rule) request with the `schedule` parameter set to your desired days of the week, times of day, and an optional time zone. The schedule will appear in Zero Trust under **Gateway** > **Firewall Policies** > **DNS** when you expand the row for the policy.
 
@@ -21,7 +21,7 @@ If you [do not specify a time zone](#example-users-time-zone), Gateway will enab
 The following command creates a DNS policy to block `facebook.com` only on weekdays from 8:00 AM - 12:30 PM and 1:30 PM - 5:00 PM in the Chicago, USA time zone.
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/gateway/rules" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/gateway/rules" \
      -H "X-Auth-Email: <EMAIL>" \
      -H "X-Auth-Key: <API_KEY>" \
      -H "Content-Type: application/json" \
@@ -48,7 +48,7 @@ Refer to [this table](https://en.wikipedia.org/wiki/List_of_tz_database_time_zon
 The following command creates a DNS policy to block `clockin.com` only on weekends, in the time zone where the user is currently located.
 
 ```bash
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/gateway/rules" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/gateway/rules" \
      -H "X-Auth-Email: <EMAIL>" \
      -H "X-Auth-Key: <API_KEY>" \
      -H "Content-Type: application/json" \

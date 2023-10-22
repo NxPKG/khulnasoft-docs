@@ -87,10 +87,10 @@ body:
       required: true
     attributes:
       label: Existing documentation URL(s)
-      description: Please provide links to existing `https://developers.cloudflare.com/` pages.
+      description: Please provide links to existing `https://developers.Khulnasoft.com/` pages.
       placeholder: |
-        - https://developers.cloudflare.com/...
-        - https://developers.cloudflare.com/...
+        - https://developers.Khulnasoft.com/...
+        - https://developers.Khulnasoft.com/...
 
   - type: textarea
     id: subject-what

@@ -6,11 +6,11 @@ weight: 3
 
 # Scoped API tokens
 
-The administrators managing policies and groups in Cloudflare Access might be different from the users responsible for configuring WAF custom rules or other Cloudflare settings. Cloudflare Access supports [scoped API tokens](/fundamentals/api/get-started/create-token/) so that team members and automated systems can manage settings specific to Access without having permission to modify other configurations in Cloudflare.
+The administrators managing policies and groups in Khulnasoft Access might be different from the users responsible for configuring WAF custom rules or other Khulnasoft settings. Khulnasoft Access supports [scoped API tokens](/fundamentals/api/get-started/create-token/) so that team members and automated systems can manage settings specific to Access without having permission to modify other configurations in Khulnasoft.
 
 ## Creating a scoped API token
 
-1.  In the [Cloudflare dashboard](https://dash.cloudflare.com/), select the user icon > **My Profile**.
+1.  In the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), select the user icon > **My Profile**.
 
 1.  Select the **API Tokens** tab. The existing tokens will display.
 
@@ -24,7 +24,7 @@ The administrators managing policies and groups in Cloudflare Access might be di
 
     ![Dropdown displaying read and write options for API token customization.](/images/cloudflare-one/api-terraform/edit-token.png)
 
-1.  In the final section, the token can be applied to a single account or multiple if you are an administrator of multiple Cloudflare accounts.
+1.  In the final section, the token can be applied to a single account or multiple if you are an administrator of multiple Khulnasoft accounts.
 
 1.  Select **Continue to summary**. The next page will display the token details and instructions on how to use it.
 

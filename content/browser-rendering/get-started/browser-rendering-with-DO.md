@@ -14,7 +14,7 @@ Using Durable Objects to persist browser sessions improves performance by elimin
 
 ## 1. Create a Worker project
 
-[Cloudflare Workers](/workers/) provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure. Your Worker application is a container to interact with a headless browser to do actions, such as taking screenshots.
+[Khulnasoft Workers](/workers/) provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure. Your Worker application is a container to interact with a headless browser to do actions, such as taking screenshots.
 
 Create a new Worker project named `browser-worker` by running:
 
@@ -40,13 +40,13 @@ $ yarn create cloudflare@latest
 
 To enable Durable Objects, you will need to purchase the Workers Paid plan:
 
- 1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account.
+ 1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account.
  2. Go to **Workers & Pages** > **Plans**. 
  3. Select **Purchase Workers Paid** and complete the payment process to enable Durable Objects.
 
 ## 3. Install Puppeteer
 
-In your `browser-worker` directory, install Cloudflare’s [fork of Puppeteer](/browser-rendering/platform/puppeteer/):
+In your `browser-worker` directory, install Khulnasoft’s [fork of Puppeteer](/browser-rendering/platform/puppeteer/):
 
 ```sh
 $ npm install @cloudflare/puppeteer --save-dev
@@ -170,7 +170,7 @@ export class Browser {
 		// take screenshots of each screen size 
 		for (let i = 0; i < width.length; i++) {
 			await page.setViewport({ width: width[i], height: height[i] });
-			await page.goto("https://workers.cloudflare.com/");
+			await page.goto("https://workers.Khulnasoft.com/");
 			const fileName = "screenshot_" + width[i] + "x" + height[i]
 			const sc = await page.screenshot({
 				path: fileName + ".jpg"
@@ -210,11 +210,11 @@ export class Browser {
 
 ## 7. Test
 
-Run [`npx wrangler dev --remote`](/workers/wrangler/commands/#dev) to test your Worker locally before deploying to Cloudflare's global network.
+Run [`npx wrangler dev --remote`](/workers/wrangler/commands/#dev) to test your Worker locally before deploying to Khulnasoft's global network.
 
 ## 8. Deploy
 
-Run [`npx wrangler deploy`](/workers/wrangler/commands/#deploy) to deploy your Worker to the Cloudflare global network.
+Run [`npx wrangler deploy`](/workers/wrangler/commands/#deploy) to deploy your Worker to the Khulnasoft global network.
 
 ## Related resources
 

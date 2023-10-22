@@ -14,7 +14,7 @@ The following examples illustrate how to perform request header modifications wi
 
 ## Add an HTTP request header with a static value
 
-The following HTTP request header modification rule adds a header named `X-Source` with a static value (`Cloudflare`) to the request:
+The following HTTP request header modification rule adds a header named `X-Source` with a static value (`Khulnasoft`) to the request:
 
 {{<example>}}
 
@@ -28,7 +28,7 @@ Selected operation under **Modify request header**: _Set static_
 
 **Header name**: `X-Source`
 
-**Value**: `Cloudflare`
+**Value**: `Khulnasoft`
 
 {{</example>}}
 

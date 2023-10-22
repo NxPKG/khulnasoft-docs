@@ -34,7 +34,7 @@ This IPv6 address is how Gateway will match DNS queries to locations and apply t
 
 ### DNS resolver IP
 
-For queries over IPv4, the default DNS resolver IP addresses are anycast IP addresses, and they are shared across every Cloudflare Zero Trust account.
+For queries over IPv4, the default DNS resolver IP addresses are anycast IP addresses, and they are shared across every Khulnasoft Zero Trust account.
 
 If you are on the Enterprise plan, you can request a dedicated DNS resolver IPv4 address to be provisioned for a DNS location in lieu of the default anycast addresses. Like IPv6, queries forwarded to that address will be identified using the dedicated DNS resolver IPv4 address.
 
@@ -56,7 +56,7 @@ Each DNS location is assigned a unique hostname for DNS over HTTPS (DoH). Gatewa
 
 ### DoH subdomain
 
-Each DNS location in Cloudflare Zero Trust has a unique DoH subdomain (previously known as unique ID). If your organization uses DNS policies, you can enter your location's DoH subdomain as part of the WARP client settings.
+Each DNS location in Khulnasoft Zero Trust has a unique DoH subdomain (previously known as unique ID). If your organization uses DNS policies, you can enter your location's DoH subdomain as part of the WARP client settings.
 
 In the example below, the DoH subdomain is: `65y9p2vm1u`.
 

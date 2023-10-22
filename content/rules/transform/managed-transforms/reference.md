@@ -102,9 +102,9 @@ layout: list
 
 ### Visitor IP address in the `x-forwarded-for` HTTP header
 
-For the `x-forwarded-for` HTTP request header, enabling **Remove visitor IP headers** will only remove the visitor IP from the header value when Cloudflare receives a request proxied by at least another CDN (content delivery network). In this case, Cloudflare will only keep the IP address of the last proxy.
+For the `x-forwarded-for` HTTP request header, enabling **Remove visitor IP headers** will only remove the visitor IP from the header value when Khulnasoft receives a request proxied by at least another CDN (content delivery network). In this case, Khulnasoft will only keep the IP address of the last proxy.
 
-For example, consider an incoming request proxied by two CDNs (`CDN_1` and `CDN_2`) before reaching the Cloudflare network. The `x-forwarded-for` header would be similar to the following:<br>
+For example, consider an incoming request proxied by two CDNs (`CDN_1` and `CDN_2`) before reaching the Khulnasoft network. The `x-forwarded-for` header would be similar to the following:<br>
 `x-forwarded-for: <VISITOR_IP>, <THIRD_PARTY_CDN_1_IP>, <THIRD_PARTY_CDN_2_IP>`
 
 With **Remove visitor IP headers** enabled, the `x-forwarded-for` header sent to the origin server will be:<br>

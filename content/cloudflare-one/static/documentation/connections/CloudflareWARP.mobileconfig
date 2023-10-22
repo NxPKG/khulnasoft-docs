@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>PayloadDisplayName</key>
-	<string>Cloudflare WARP</string>
+	<string>Khulnasoft WARP</string>
 	<key>PayloadIdentifier</key>
 	<string>cloudflare_warp</string>
 	<key>PayloadOrganization</key>
-	<string>Cloudflare, Ltd.</string>
+	<string>Khulnasoft, Ltd.</string>
 	<key>PayloadRemovalDisallowed</key>
 	<false/>
 	<key>PayloadType</key>
@@ -32,7 +32,7 @@
 			<key>PayloadIdentifier</key>
 			<string>com.cloudflare.warp.5A31FA24-FF8C-41EA-989E-F070820F2A80</string>
 			<key>PayloadOrganization</key>
-			<string>Cloudflare Ltd.</string>
+			<string>Khulnasoft Ltd.</string>
 			<key>PayloadType</key>
 			<string>com.cloudflare.warp</string>
 			<key>PayloadUUID</key>

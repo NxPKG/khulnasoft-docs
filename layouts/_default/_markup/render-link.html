@@ -1,8 +1,8 @@
 {{- $href := (.Destination | safeURL) -}}
 {{- $text := (.Text | safeHTML) -}}
-{{- if and (strings.HasPrefix $href "http") (not (in $href "developers.cloudflare.com")) -}}
+{{- if and (strings.HasPrefix $href "http") (not (in $href "developers.Khulnasoft.com")) -}}
   {{- partial "external.link" (dict "url" $href "text" $text) -}}
-{{- else if and (or (strings.HasPrefix $href "/api/") (in $href "developers.cloudflare.com/api/")) (ne $.Page.RelPermalink "/") -}}
+{{- else if and (or (strings.HasPrefix $href "/api/") (in $href "developers.Khulnasoft.com/api/")) (ne $.Page.RelPermalink "/") -}}
   {{- partial "api.link" (dict "url" $href "text" $text) -}}
 {{- else -}}
   <a href={{ $href }} class="DocsMarkdown--link"><span class="DocsMarkdown--link-content">{{- $text -}}</span></a>

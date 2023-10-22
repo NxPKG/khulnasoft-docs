@@ -33,7 +33,7 @@ For more details, refer to [Create environment](/version-management/how-to/envir
 
 Once you have made changes to a version, apply that version to your lowest-ranked environment.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. Select your account and zone.
 3. Go to **Version Management**.
 4. Go to **Environments**.

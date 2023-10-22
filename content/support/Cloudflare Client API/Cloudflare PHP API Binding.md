@@ -1,10 +1,10 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/115001661191-Cloudflare-PHP-API-Binding
-title: Cloudflare PHP API Binding
+source: https://support.Khulnasoft.com/hc/en-us/articles/115001661191-Khulnasoft-PHP-API-Binding
+title: Khulnasoft PHP API Binding
 ---
 
-# Cloudflare PHP API Binding
+# Khulnasoft PHP API Binding
 
 {{<Aside type="warning">}}
 
@@ -14,19 +14,19 @@ This PHP API binding has been deprecated. You should refer to the [REST API docu
 
 ## Overview
 
-Cloudflare offers a PHP API binding for those using PHP 7.0 or greater; this binding supports the latest version 4 of the Cloudflare API. You can use this SDK for a variety of purposes, including:
+Khulnasoft offers a PHP API binding for those using PHP 7.0 or greater; this binding supports the latest version 4 of the Khulnasoft API. You can use this SDK for a variety of purposes, including:
 
--   Manage and automate changes to your DNS records within Cloudflare
+-   Manage and automate changes to your DNS records within Khulnasoft
 -   Programmatically add zones to your account
 -   Version and change control for Page Rules
 -   Automatically blocking IPs and User Agents using Zone Lockdown and UserAgent Rules
--   Fetch Cloudflare's IP ranges for automating your firewall allowlist
+-   Fetch Khulnasoft's IP ranges for automating your firewall allowlist
 
 ___
 
 ## Supported Features
 
-This article explains a few common examples of using Cloudflare's PHP API Binding; we currently support the following endpoints and authentication methods: 
+This article explains a few common examples of using Khulnasoft's PHP API Binding; we currently support the following endpoints and authentication methods: 
 
 ### V4 Endpoints
 
@@ -47,7 +47,7 @@ ___
 
 ## Installation
 
-The [Cloudflare PHP API Binding](https://packagist.org/packages/cloudflare/sdk) is available on Packagist as [cloudflare/sdk](https://packagist.org/packages/cloudflare/sdk) and can be installed using Composer by running _composer require cloudflare/sdk:_
+The [Khulnasoft PHP API Binding](https://packagist.org/packages/cloudflare/sdk) is available on Packagist as [cloudflare/sdk](https://packagist.org/packages/cloudflare/sdk) and can be installed using Composer by running _composer require cloudflare/sdk:_
 
 ![Code - composer require cloudflare/sdk](/images/support/cmd-composer_require_cloudflare_sdk.png)
 
@@ -106,17 +106,17 @@ ___
 
 ## Creating Page Rules
 
-The SDK can also be used for Programmatically adding Page Rules to a Cloudflare Zone, here's a simple example of adding a Cache Bypass rule:
+The SDK can also be used for Programmatically adding Page Rules to a Khulnasoft Zone, here's a simple example of adding a Cache Bypass rule:
 
 ```php
 getZoneID("junade.com");
 
-$pageRulesTarget = new \Cloudflare\API\Configurations\PageRulesTargets('https://junade.com/noCache/*');
+$pageRulesTarget = new \Khulnasoft\API\Configurations\PageRulesTargets('https://junade.com/noCache/*');
 
-$pageRulesConfig = new \Cloudflare\API\Configurations\PageRulesActions();
+$pageRulesConfig = new \Khulnasoft\API\Configurations\PageRulesActions();
 $pageRulesConfig->setCacheLevel('bypass');
 
-$pageRules = new \Cloudflare\API\Endpoints\PageRules($adapter);
+$pageRules = new \Khulnasoft\API\Endpoints\PageRules($adapter);
 $pageRules->createPageRule($zoneID, $pageRulesTarget, $pageRulesConfig, true, 6);
 ```
 
@@ -133,7 +133,7 @@ The SDK can also be used for Programmatically adding records, here's an example 
 ```php
 getZoneID("junade.com");
 
-$dns = new \Cloudflare\API\Endpoints\DNS($adapter);
+$dns = new \Khulnasoft\API\Endpoints\DNS($adapter);
 if ($dns->addRecord($zoneID, "A", 'example', '8.8.8.8', 0, true) === true) {
     echo "DNS record created.". PHP_EOL;
 }
@@ -144,7 +144,7 @@ Further, we can also delete, list and view details of DNS records through this S
 ```php
 getZoneID("icyapril.com");
 
-$dns = new \Cloudflare\API\Endpoints\DNS($adapter);
+$dns = new \Khulnasoft\API\Endpoints\DNS($adapter);
 foreach ($dns->listRecords($zoneID)->result as $record) {
     echo $record->type." ".$record->name.PHP_EOL;
 }

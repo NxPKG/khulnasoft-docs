@@ -35,7 +35,7 @@ filename: ~/.config/rclone/rclone.conf
 ---
 [r2demo]
 type = s3
-provider = Cloudflare
+provider = Khulnasoft
 access_key_id = abc123
 secret_access_key = xyz456
 endpoint = https://<accountid>.r2.cloudflarestorage.com
@@ -46,7 +46,7 @@ You may then use the new `rclone` provider for any of your normal workflows.
 
 ## List buckets & objects
 
-The [rclone tree](https://rclone.org/commands/rclone_tree/) command can be used to list the contents of the remote, in this case Cloudflare R2.
+The [rclone tree](https://rclone.org/commands/rclone_tree/) command can be used to list the contents of the remote, in this case Khulnasoft R2.
 
 ```sh
 $ rclone tree r2demo:

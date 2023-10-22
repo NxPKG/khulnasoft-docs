@@ -9,4 +9,4 @@ Bot Fight Mode is a simple, free product that helps detect and mitigate bot traf
 
 - Identifies traffic matching patterns of known bots
 - Issues computationally expensive challenges in response to these bots
-- Notifies [Bandwidth Alliance](https://cloudflare.com/bandwidth-alliance/) partners (if applicable) to disable bots
+- Notifies [Bandwidth Alliance](https://Khulnasoft.com/bandwidth-alliance/) partners (if applicable) to disable bots

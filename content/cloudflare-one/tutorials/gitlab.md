@@ -8,14 +8,14 @@ title: Zero Trust GitLab SSH & HTTP
 
 # Zero Trust GitLab SSH & HTTP
 
-You can use Cloudflare Access to add Zero Trust rules to a self-hosted instance of GitLab. Combined with Cloudflare Tunnel, users can connect through HTTP and SSH and authenticate with your team's identity provider.
+You can use Khulnasoft Access to add Zero Trust rules to a self-hosted instance of GitLab. Combined with Khulnasoft Tunnel, users can connect through HTTP and SSH and authenticate with your team's identity provider.
 
 **This walkthrough covers how to:**
 
 - Deploy an instance of GitLab
-- Lock down all inbound connections to that instance and use Cloudflare Tunnel to set outbound connections to Cloudflare
-- Build policies with Cloudflare Access to control who can reach GitLab
-- Connect over HTTP and SSH through Cloudflare
+- Lock down all inbound connections to that instance and use Khulnasoft Tunnel to set outbound connections to Khulnasoft
+- Build policies with Khulnasoft Access to control who can reach GitLab
+- Connect over HTTP and SSH through Khulnasoft
 
 **Time to complete:**
 
@@ -118,23 +118,23 @@ tcp     LISTEN   0        128                 [::]:22               [::]:*      
 tcp     LISTEN   0        4096                   *:9094                *:*
 ```
 
-Users connect to GitLab over SSH (port 22 here) and HTTP for the web app (port 80). In the next step, you will make it possible for users to try both through Cloudflare Access. I'll leave this running and head over to the Cloudflare dashboard.
+Users connect to GitLab over SSH (port 22 here) and HTTP for the web app (port 80). In the next step, you will make it possible for users to try both through Khulnasoft Access. I'll leave this running and head over to the Khulnasoft dashboard.
 
 ## Securing GitLab with Zero Trust rules
 
 ### Building Zero Trust policies
 
-You can use Cloudflare Access to build Zero Trust rules to determine who can connect to both the web application of GitLab (HTTP) and who can connect over SSH.
+You can use Khulnasoft Access to build Zero Trust rules to determine who can connect to both the web application of GitLab (HTTP) and who can connect over SSH.
 
-When a user makes a request to a site protected by Access, that request hits Cloudflare's network first. Access can then check if the user is allowed to reach the application. When integrated with Cloudflare Tunnel, the Zero Trust architecture looks like this:
+When a user makes a request to a site protected by Access, that request hits Khulnasoft's network first. Access can then check if the user is allowed to reach the application. When integrated with Khulnasoft Tunnel, the Zero Trust architecture looks like this:
 
 ![GitLab Services](/images/cloudflare-one/zero-trust-security/gitlab/teams-diagram.png)
 
-To determine who can reach the application, Cloudflare Access relies on integration with identity providers like Okta or AzureAD or Google to issue the identity cards that get checked at the door. While a VPN allows users free range on a private network unless someone builds an active rule to stop them, Access enforces that identity check on every request (and at any granularity configured).
+To determine who can reach the application, Khulnasoft Access relies on integration with identity providers like Okta or AzureAD or Google to issue the identity cards that get checked at the door. While a VPN allows users free range on a private network unless someone builds an active rule to stop them, Access enforces that identity check on every request (and at any granularity configured).
 
 For GitLab, start by building two policies. Users will connect to GitLab in a couple of methods: in the web app and over SSH. Create policies to secure a subdomain for each. First, the web app.
 
-Before you build the rule, you'll need to follow [these instructions](/cloudflare-one/setup/) to set up Cloudflare Access in your account.
+Before you build the rule, you'll need to follow [these instructions](/cloudflare-one/setup/) to set up Khulnasoft Access in your account.
 
 Once enabled, go to the **Applications** page in Zero Trust. Select **Add an application**.
 
@@ -142,7 +142,7 @@ Choose self-hosted from the options presented.
 
 ![Self Hosted](/images/cloudflare-one/zero-trust-security/gitlab/policy.png)
 
-In the policy builder, you will be prompted to add a subdomain that will represent the resource. This must be a subdomain of a domain in your Cloudflare account. You will need separate subdomains for the web application and SSH flows.
+In the policy builder, you will be prompted to add a subdomain that will represent the resource. This must be a subdomain of a domain in your Khulnasoft account. You will need separate subdomains for the web application and SSH flows.
 
 This example uses `gitlab.widgetcorp.tech` for the web application and `gitlab-ssh.widgetcorp.tech` for SSH connectivity.
 
@@ -152,11 +152,11 @@ You can then add rules to determine who can reach the site.
 
 Select **Next** and **Next** again on the **Setup** page - this example does not require advanced CORS configuration. Repeat these steps for the second application, `gitlab-ssh.widgetcorp.tech`.
 
-## Cloudflare Tunnel
+## Khulnasoft Tunnel
 
-Cloudflare Tunnel creates a secure, outbound-only, connection between this machine and Cloudflare's network. With an outbound-only model, you can prevent any direct access to this machine and lock down any externally exposed points of ingress. And with that, no open firewall ports.
+Khulnasoft Tunnel creates a secure, outbound-only, connection between this machine and Khulnasoft's network. With an outbound-only model, you can prevent any direct access to this machine and lock down any externally exposed points of ingress. And with that, no open firewall ports.
 
-Cloudflare Tunnel is made possible through a lightweight daemon from Cloudflare called `cloudflared`. Download and install `cloudflared` on the DigitalOcean machine by following the instructions listed on the [Downloads](/cloudflare-one/connections/connect-networks/downloads/) page.
+Khulnasoft Tunnel is made possible through a lightweight daemon from Khulnasoft called `cloudflared`. Download and install `cloudflared` on the DigitalOcean machine by following the instructions listed on the [Downloads](/cloudflare-one/connections/connect-networks/downloads/) page.
 
 Once installed, authenticate the instance of `cloudflared` with the following command.
 
@@ -164,17 +164,17 @@ Once installed, authenticate the instance of `cloudflared` with the following co
 $ cloudflared login
 ```
 
-The command will print a URL that you must visit to login with your Cloudflare account.
+The command will print a URL that you must visit to login with your Khulnasoft account.
 
 Choose a website that you have added into your account.
 
-Once you select one of the sites in your account, Cloudflare will download a certificate file to authenticate this instance of `cloudflared`. You can now use `cloudflared` to control Cloudflare Tunnel connections in your Cloudflare account.
+Once you select one of the sites in your account, Khulnasoft will download a certificate file to authenticate this instance of `cloudflared`. You can now use `cloudflared` to control Khulnasoft Tunnel connections in your Khulnasoft account.
 
 ![Download Cert](/images/cloudflare-one/secure-origin-connections/share-new-site/cert-download.png)
 
-### Connecting to Cloudflare
+### Connecting to Khulnasoft
 
-You can now connect GitLab to Cloudflare using Cloudflare Tunnel.
+You can now connect GitLab to Khulnasoft using Khulnasoft Tunnel.
 
 1. Create a new Tunnel by running the following command.
 
@@ -184,7 +184,7 @@ $ cloudflared tunnel create gitlab
 
 `cloudflared` will generate a unique ID for this Tunnel, for example `6ff42ae2-765d-4adf-8112-31c55c1551ef`. You can use this Tunnel both for SSH and HTTP traffic.
 
-2. You will need to configure Cloudflare Tunnel to proxy traffic to both destinations. The configuration below will take traffic bound for the DNS record that will be created for the web app and the DNS record to represent SSH traffic to the right port.
+2. You will need to configure Khulnasoft Tunnel to proxy traffic to both destinations. The configuration below will take traffic bound for the DNS record that will be created for the web app and the DNS record to represent SSH traffic to the right port.
 
 You use the text editor of your choice to edit the configuration file. The example relies on `Vi`.
 
@@ -232,7 +232,7 @@ This command should be run as a `systemd` service for long-term use; if it termi
 
 ### Configure DNS records
 
-You can now create DNS records for GitLab in the Cloudflare dashboard. Remember, you will still need two records - one for the web application and one for SSH traffic.
+You can now create DNS records for GitLab in the Khulnasoft dashboard. Remember, you will still need two records - one for the web application and one for SSH traffic.
 
 In the **DNS** tab, choose the website where you built your [Access policies](/cloudflare-one/policies/access/). Select **Add record** and select `CNAME` from type. In the **Name** field, input `gitlab`. In the **Target** field, input the ID of the Tunnel created followed by `cfargotunnel.com`. In this example, that value is:
 
@@ -246,7 +246,7 @@ Select **Save**. Repeat the process again by creating a second `CNAME` record, w
 
 ### Connecting to the web application
 
-You can now test the end-to-end configuration for the web application. Visit the subdomain created for the web application. Cloudflare Access will prompt you to authenticate. Login with your provider.
+You can now test the end-to-end configuration for the web application. Visit the subdomain created for the web application. Khulnasoft Access will prompt you to authenticate. Login with your provider.
 
 Once authenticated, you should see the GitLab web application.
 
@@ -301,7 +301,7 @@ You can now configure your DigitalOcean firewall with a single rule, block any i
 
 ![Set Rules](/images/cloudflare-one/zero-trust-security/gitlab/disable-ingress.png)
 
-Cloudflare Tunnel will continue to run outbound-only connections and I can avoid this machine getting caught up in a crypto mining operation, or something worse.
+Khulnasoft Tunnel will continue to run outbound-only connections and I can avoid this machine getting caught up in a crypto mining operation, or something worse.
 
 ## View logs
 

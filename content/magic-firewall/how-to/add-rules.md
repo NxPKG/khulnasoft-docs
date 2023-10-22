@@ -12,7 +12,7 @@ By default, you can create a maximum of 100 rules. We recommend you create lists
 
 ## Add a rule
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select **Magic Firewall**.
 3. In the **Custom rules** tab, select **Add a Rule**.
 4. Fill out the information for your new rule.
@@ -28,7 +28,7 @@ To disable an existing rule, from the **Magic Firewall Rules** page, set the **E
 
 ## Update a rule
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select **Magic Firewall** > **Custom rules**.
 3. Locate the rule you want to edit, and select **Edit**.
 4. Update the rule with your changes and select **Edit rule**.

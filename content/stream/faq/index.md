@@ -3,16 +3,16 @@ title: FAQ
 pcx_content_type: faq
 weight: 12
 meta:
-  title: Frequently asked questions about Cloudflare Stream
+  title: Frequently asked questions about Khulnasoft Stream
 ---
 
-# Frequently asked questions about Cloudflare Stream
+# Frequently asked questions about Khulnasoft Stream
 
 ## Stream
 
-### What formats and quality levels are delivered through Cloudflare Stream?
+### What formats and quality levels are delivered through Khulnasoft Stream?
 
-Cloudflare decides on which bitrate, resolution, and codec is best for you. We deliver all videos to industry standard H264 codec. We use a few different adaptive streaming levels from 360p to 1080p to ensure smooth streaming for your audience watching on different devices and bandwidth constraints.
+Khulnasoft decides on which bitrate, resolution, and codec is best for you. We deliver all videos to industry standard H264 codec. We use a few different adaptive streaming levels from 360p to 1080p to ensure smooth streaming for your audience watching on different devices and bandwidth constraints.
 
 ### Does Stream support multi-audio tracks?
 
@@ -26,11 +26,11 @@ You cannot download the _exact_ input file that you uploaded. However, depending
 
 - By default, a video upload can be at most 30 GB.
 
-- By default, you can have up to 120 videos in the `inprogress`, `queued` or `downloading` state at the same time. Videos in the `error`, `ready` or `pendingupload` state do not count toward this limit. If you need the concurrency limit raised, please [contact Cloudflare support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/) explaining your use case and why you would like the limit raised.
+- By default, you can have up to 120 videos in the `inprogress`, `queued` or `downloading` state at the same time. Videos in the `error`, `ready` or `pendingupload` state do not count toward this limit. If you need the concurrency limit raised, please [contact Khulnasoft support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/) explaining your use case and why you would like the limit raised.
 
 {{<Aside type="note">}}
 
-The limit to the number of videos only applies to videos being uploaded to Cloudflare Stream. This limit is not related to the number of end users streaming videos.
+The limit to the number of videos only applies to videos being uploaded to Khulnasoft Stream. This limit is not related to the number of end users streaming videos.
 
 {{</Aside>}}
 
@@ -38,11 +38,11 @@ The limit to the number of videos only applies to videos being uploaded to Cloud
 
 Limits apply to Direct Creator Uploads at the time of upload URL creation.
 
-Uploads over these limits will receive a 429 (Too Many Requests) or 413 (Payload too large) HTTP status codes with more information in the response body. Please write to Cloudflare support or your customer success manager for higher limits.
+Uploads over these limits will receive a 429 (Too Many Requests) or 413 (Payload too large) HTTP status codes with more information in the response body. Please write to Khulnasoft support or your customer success manager for higher limits.
 
-### Can I embed videos on Stream even if my domain is not on Cloudflare?
+### Can I embed videos on Stream even if my domain is not on Khulnasoft?
 
-Yes. Stream videos can be embedded on any domain, even domains not on Cloudflare.
+Yes. Stream videos can be embedded on any domain, even domains not on Khulnasoft.
 
 ### What input file formats are supported?
 
@@ -56,7 +56,7 @@ When HDR videos are uploaded to Stream, they are re-encoded and delivered in SDR
 
 ### What frame rates (FPS) are supported?
 
-Cloudflare Stream supports video file uploads for any FPS, however videos will be re-encoded for 70 FPS playback. If the original video file has a frame rate lower than 70 FPS, Stream will re-encode at the original frame rate.
+Khulnasoft Stream supports video file uploads for any FPS, however videos will be re-encoded for 70 FPS playback. If the original video file has a frame rate lower than 70 FPS, Stream will re-encode at the original frame rate.
 
 If the frame rate is variable we will drop frames (e.g. if there are more than 1 frames within 1/30 seconds, we will drop the extra frames within that period).
 
@@ -78,7 +78,7 @@ You can embed the Stream player on the following platforms:
 
 {{<Aside type="note" header="Note">}}
 
-Cloudflare Stream is not available on Chromium, as Chromium does not support H.264 videos.
+Khulnasoft Stream is not available on Chromium, as Chromium does not support H.264 videos.
 
 {{</Aside>}}
 
@@ -95,7 +95,7 @@ Cloudflare Stream is not available on Chromium, as Chromium does not support H.2
 
 ### What are the recommended upload settings for video uploads?
 
-If you are producing a brand new file for Cloudflare Stream, we recommend you use the following settings:
+If you are producing a brand new file for Khulnasoft Stream, we recommend you use the following settings:
 
 - MP4 containers, AAC audio codec, H264 video codec, 30 or below frames per second
 - moov atom should be at the front of the file (Fast Start)
@@ -124,7 +124,7 @@ Videos are removed if the subscription is not renewed within 30 days.
 
 ### I use Content Security Policy (CSP) on my website. What domains do I need to add to which directives?
 
-If your website uses [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) directives, depending on your configuration, you may need to add Cloudflare Stream's domains to particular directives, in order to allow videos to be viewed or uploaded by your users.
+If your website uses [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) directives, depending on your configuration, you may need to add Khulnasoft Stream's domains to particular directives, in order to allow videos to be viewed or uploaded by your users.
 
 If you use the provided [Stream Player](/stream/viewing-videos/using-the-stream-player/), `videodelivery.net` and `*.cloudflarestream.com` must be included in the `frame-src` or `default-src` directive to allow the player's `<iframe>` element to load.
 
@@ -138,10 +138,10 @@ If you use your **own** Player, add `*.videodelivery.net` and `*.cloudflarestrea
 Content-Security-Policy: media-src 'self' videodelivery.net *.cloudflarestream.com; img-src 'self' *.videodelivery.net *.cloudflarestream.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com
 ```
 
-If you allow users to upload their own videos directly to Cloudflare Stream, add `*.videodelivery.net` and `*.cloudflarestream.com` to the `connect-src` CSP directive.
+If you allow users to upload their own videos directly to Khulnasoft Stream, add `*.videodelivery.net` and `*.cloudflarestream.com` to the `connect-src` CSP directive.
 
 ```http
 Content-Security-Policy: connect-src 'self' *.videodelivery.net *.cloudflarestream.com
 ```
 
-To ensure **only** videos from **your** Cloudflare Stream account can be played on your website, replace `*` in `*.cloudflarestream.com` and `*.videodelivery.net` in the examples above with `customer-<CODE>`, replacing `<CODE>` with your unique customer code, which can be found in the Stream Dashboard [here](https://dash.cloudflare.com/?to=/:account/stream). This code is unique to your Cloudflare Account.
+To ensure **only** videos from **your** Khulnasoft Stream account can be played on your website, replace `*` in `*.cloudflarestream.com` and `*.videodelivery.net` in the examples above with `customer-<CODE>`, replacing `<CODE>` with your unique customer code, which can be found in the Stream Dashboard [here](https://dash.Khulnasoft.com/?to=/:account/stream). This code is unique to your Khulnasoft Account.

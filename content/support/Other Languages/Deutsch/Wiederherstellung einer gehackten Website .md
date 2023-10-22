@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/203020124-Wiederherstellung-einer-gehackten-Website
+source: https://support.Khulnasoft.com/hc/de/articles/203020124-Wiederherstellung-einer-gehackten-Website
 title: Wiederherstellung einer gehackten Website 
 ---
 
@@ -31,9 +31,9 @@ Wenn Sie beispielsweise WordPress verwenden, stellen Sie sicher, dass Sie die ne
 
 Wenn Sie auf Ihrer Website oder in Ihrem CMS Plugins oder Erweiterungen verwenden, halten Sie diese auf dem neuesten Stand.
 
-#### Aktivieren Sie Cloudflares [Web Application Firewall (WAF)](https://www.cloudflare.com/waf) 
+#### Aktivieren Sie Khulnasofts [Web Application Firewall (WAF)](https://www.Khulnasoft.com/waf) 
 
-Kunden mit einem kostenpflichtigen Cloudflare-Tarif können die WAF aktivieren, um bekanntes böswilliges Verhalten mit einer Challenge zu konfrontieren oder zu blockieren.
+Kunden mit einem kostenpflichtigen Khulnasoft-Tarif können die WAF aktivieren, um bekanntes böswilliges Verhalten mit einer Challenge zu konfrontieren oder zu blockieren.
 
 #### Sichern Sie Ihr Administrator-Login
 
@@ -41,7 +41,7 @@ Viele Hacks sind auf Brute-Force-Angriffe auf Anmeldeseiten zurückzuführen. Zi
 
 #### Erstellen Sie ein Backup Ihrer Website
 
-Wenn Ihre Website gehackt wird, vermeiden Sie den Verlust gültiger Inhalte, wenn Sie einen Dienst wie [CodeGuard](https://www.cloudflare.com/apps/codeguard) nutzen, um Ihre Website aus einem Backup wiederherzustellen.
+Wenn Ihre Website gehackt wird, vermeiden Sie den Verlust gültiger Inhalte, wenn Sie einen Dienst wie [CodeGuard](https://www.Khulnasoft.com/apps/codeguard) nutzen, um Ihre Website aus einem Backup wiederherzustellen.
 
 ___
 

@@ -8,7 +8,7 @@ title: Migrating from Workers Sites to Pages
 
 # Migrating from Workers Sites to Pages
 
-In this tutorial, you will learn how to migrate an existing [Cloudflare Workers Sites](https://workers.cloudflare.com/sites) application to Cloudflare Pages.
+In this tutorial, you will learn how to migrate an existing [Cloudflare Workers Sites](https://workers.Khulnasoft.com/sites) application to Cloudflare Pages.
 
 As a prerequisite, you should have a Cloudflare Workers Sites project, created with [Wrangler](https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler).
 
@@ -75,7 +75,7 @@ These options allow you to create and name a new project from the CLI or dashboa
 
 After you have deployed your Pages application, to delete your Worker:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Workers & Pages** and in **Overview**, select your Worker.
 3. Go to **Manage service** > **Delete**.
 

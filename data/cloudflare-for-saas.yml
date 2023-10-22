@@ -9,4 +9,4 @@ product:
   preview_tryout: true
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/custom-hostnames
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls/custom-hostnames

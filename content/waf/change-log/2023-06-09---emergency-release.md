@@ -23,7 +23,7 @@ layout: list
   </thead>
   <tbody>
        <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...3ff033f6</td>
       <td>100588</td>
       <td>MoveIT - SSRF</td>

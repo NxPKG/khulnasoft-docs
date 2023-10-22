@@ -36,7 +36,7 @@ The user’s consent preferences are stored within a first-party cookie. This co
 
 
 {{<Aside type="warning" header="Important">}}
-Cloudflare cannot recommend nor assign by default any specific purpose for your tools. It is your responsibility to properly assign tools to purposes if you need to comply with GDPR.
+Khulnasoft cannot recommend nor assign by default any specific purpose for your tools. It is your responsibility to properly assign tools to purposes if you need to comply with GDPR.
 {{</Aside>}}
 
 ## Important things to note

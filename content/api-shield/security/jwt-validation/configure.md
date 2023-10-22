@@ -9,11 +9,11 @@ meta:
 
 # Configure JWT Validation
 
-Use the Cloudflare API to configure [JWT Validation](/api-shield/security/jwt-validation/), which validates the integrity and validity of JWTs sent by clients to your API or web application.
+Use the Khulnasoft API to configure [JWT Validation](/api-shield/security/jwt-validation/), which validates the integrity and validity of JWTs sent by clients to your API or web application.
 
 1. Gather the information on the JWT issuer you want to verify tokens from.
 2. Create a Token Validation Configuration JSON object.
-3. `POST` the JSON object to the Cloudflare API to create a new security policy.
+3. `POST` the JSON object to the Khulnasoft API to create a new security policy.
 4. Observe requests that may be failing the new security policy.
 
 ## Required information
@@ -64,15 +64,15 @@ Refer to the example below to view the configuration using information required 
 }
 ```
 
-## Send the configuration to Cloudflare's API
+## Send the configuration to Khulnasoft's API
 
-Use cURL or any other API client tool to send the new configuration to Cloudflare’s API to enable JWT Validation. Make sure to replace `{zoneID}` with the relevant zone ID and add your [authentication credentials](/fundamentals/api/get-started/create-token/) header.
+Use cURL or any other API client tool to send the new configuration to Khulnasoft’s API to enable JWT Validation. Make sure to replace `{zoneID}` with the relevant zone ID and add your [authentication credentials](/fundamentals/api/get-started/create-token/) header.
 
 ```bash
 ---
 header: Example using cURL
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zoneID}/api_gateway/token_validation" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zoneID}/api_gateway/token_validation" \
 --header "Content-Type: application/json" \
 --data '{
     "token_type": "jwt",
@@ -100,24 +100,24 @@ curl "https://api.cloudflare.com/client/v4/zones/{zoneID}/api_gateway/token_vali
 }'
 ```
 
-The response will be in a Cloudflare `v4` response envelope and the result contains the created configuration. Note the rule ID in the response in order to view any requests failing the policy.
+The response will be in a Khulnasoft `v4` response envelope and the result contains the created configuration. Note the rule ID in the response in order to view any requests failing the policy.
 
 ## Observe requests matching the policy
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Security** > **Events** to view the Firewall Events.
-3. Filter for a specific rule ID. The rule ID used for filtering can be obtained from the response of a `GET` (`GET https://api.cloudflare.com/client/v4/zones/{zoneID}/api_gateway/token_validation`) request after having created a token configuration using the `POST` request. The rule ID will be present as soon as the rule has been correctly set up.
+3. Filter for a specific rule ID. The rule ID used for filtering can be obtained from the response of a `GET` (`GET https://api.Khulnasoft.com/client/v4/zones/{zoneID}/api_gateway/token_validation`) request after having created a token configuration using the `POST` request. The rule ID will be present as soon as the rule has been correctly set up.
 
 ## Maintenance
 
 ### Update the keys
 
-It is best practice to rotate keys after some time. To support updating the keys, Cloudflare allows up to 4 keys per configuration. This allows you to add a second, new key to an already existing key. You can start issuing JWTs with the new key only and remove the old key after some time. Additionally, this feature allows the deployment of testing or development keys next to production keys.
+It is best practice to rotate keys after some time. To support updating the keys, Khulnasoft allows up to 4 keys per configuration. This allows you to add a second, new key to an already existing key. You can start issuing JWTs with the new key only and remove the old key after some time. Additionally, this feature allows the deployment of testing or development keys next to production keys.
 
 The input to updating the keys is the same as when creating a configuration where you supplied the initial keys using the credentials key and needs to be a JWK.
 
 {{<Aside type="note">}}
-Cloudflare will remove any fields that are unnecessary from each key and will drop keys that we do not support.
+Khulnasoft will remove any fields that are unnecessary from each key and will drop keys that we do not support.
 
 It is highly recommended to validate the output of the API call to check that the resulting keys appear as intended.
 {{</Aside>}}
@@ -128,7 +128,7 @@ Use the `PUT` command to update keys.
 ---
 header: Example using cURL
 ---
-curl --request PUT 'https://api.cloudflare.com/client/v4/zones/{zoneID}/api_gateway/token_validation/{configID}/credentials' \
+curl --request PUT 'https://api.Khulnasoft.com/client/v4/zones/{zoneID}/api_gateway/token_validation/{configID}/credentials' \
 --header 'Content-Type: application/json' \
 --data '{
         "keys": [
@@ -168,7 +168,7 @@ You can only modify the following fields with `PATCH`: `title`, `description`, `
 ---
 header: Example using cURL
 ---
-curl --request PATCH "https://api.cloudflare.com/client/v4/zones/{zoneID}/api_gateway/token_validation/{configID}" \
+curl --request PATCH "https://api.Khulnasoft.com/client/v4/zones/{zoneID}/api_gateway/token_validation/{configID}" \
 --header "Content-Type: application/json" \
 --data '{
     "description": "example description",
@@ -181,7 +181,7 @@ Make sure to replace `{zoneID}` with the relevant zone ID and add your [authenti
 
 ### Acting on JWT Validation
 
-JWT Validation manages the Cloudflare Web Application Firewall (WAF) on your behalf. There is no need to manually create custom rules with JWT validation properties. Your token validation configuration applies to the entire zone.
+JWT Validation manages the Khulnasoft Web Application Firewall (WAF) on your behalf. There is no need to manually create custom rules with JWT validation properties. Your token validation configuration applies to the entire zone.
 
 There are three properties in a token validation configuration that control how the WAF is configured: `enabled`, `action`, and `allow_absent_token`. Refer to the [required information for setup](/api-shield/security/jwt-validation/configure/#required-information) for example values of these fields.
 
@@ -207,7 +207,7 @@ Here is an overview of how JWT Validation processes incoming requests:
 5. Should the JWT contain an EXP claim (expiration time), we validate that the JWT is not expired.
 
   {{<Aside type="note">}}
-  We allow a mismatch of up to 60 seconds to account for clock drifts between the Cloudflare network and the JWT issuer. A token may still be regarded as valid one minute after it was supposed to expire when both clocks are perfectly in sync.
+  We allow a mismatch of up to 60 seconds to account for clock drifts between the Khulnasoft network and the JWT issuer. A token may still be regarded as valid one minute after it was supposed to expire when both clocks are perfectly in sync.
   {{</Aside>}}
 
 6. Should the JWT contain a NBF claim (not before time), we validate that the JWT is already valid.

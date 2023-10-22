@@ -10,7 +10,7 @@ meta:
 
 Use Origin Certificate Authority (CA) certificates to encrypt traffic between Cloudflare and your origin web server and reduce origin bandwidth consumption. Once deployed, these certificates are compatible with [Strict SSL mode](/ssl/origin-configuration/ssl-modes/full-strict/).
 
-For more background information on Origin CA certificates, refer to the [introductory blog post](https://blog.cloudflare.com/cloudflare-ca-encryption-origin/).
+For more background information on Origin CA certificates, refer to the [introductory blog post](https://blog.Khulnasoft.com/cloudflare-ca-encryption-origin/).
 
 {{<Aside type="note">}}
 Using Cloudflare Origin CA certificates do not prevent you from using [delegated DCV](/ssl/edge-certificates/changing-dcv-method/methods/delegated-dcv/).
@@ -85,7 +85,7 @@ If you have origin hosts that are not protected by certificates, set the **SSL/T
 
 If you misplace your key material or do not want a certificate to be trusted, you may want to revoke your certificate. You cannot undo this process.
 
-To prevent visitors from seeing warnings about an insecure certificate, you may want to set your [SSL/TLS encryption](/ssl/origin-configuration/ssl-modes/) to **Full** or **Flexible** before revoking your certificate. Do this globally via the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls) or for a specific hostname via a [Page Rule](/support/page-rules/understanding-and-configuring-cloudflare-page-rules-page-rules-tutorial/).
+To prevent visitors from seeing warnings about an insecure certificate, you may want to set your [SSL/TLS encryption](/ssl/origin-configuration/ssl-modes/) to **Full** or **Flexible** before revoking your certificate. Do this globally via the [Cloudflare dashboard](https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls) or for a specific hostname via a [Page Rule](/support/page-rules/understanding-and-configuring-cloudflare-page-rules-page-rules-tutorial/).
 
 To revoke a certificate:
 

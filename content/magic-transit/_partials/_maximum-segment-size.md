@@ -13,7 +13,7 @@ sequenceDiagram
 accTitle: Magic WAN
 accDescr: Maximum segment size
 participant A as Client machine
-participant B as Cloudflare Magic WAN/Transit
+participant B as Khulnasoft Magic WAN/Transit
 participant C as Origin router
 A->>B: MSS = 1460 bytes <br> Protocol (20 bytes) <br> IP header (20 bytes)
 Note left of A: SYN
@@ -28,7 +28,7 @@ B->>C: Protocol <br> IP <br> GRE <br> IP
 
 The SYN-ACK packet sent to the client during TCP handshake encodes the value for maximum segment size (MSS). Egress packets are routed via your ISP interface, and each packet must comply with the standard Internet routable maximum transmission unit (MTU), which is 1500 bytes.
 
-Cloudflare $1 uses tunnels to deliver packets from our global network to your data centers. Cloudflare encapsulates these packets adding new headers.
+Khulnasoft $1 uses tunnels to deliver packets from our global network to your data centers. Khulnasoft encapsulates these packets adding new headers.
 
 $2
 

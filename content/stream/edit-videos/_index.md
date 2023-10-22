@@ -6,11 +6,11 @@ weight: 6
 
 # Edit videos
 
-You can edit the details for a video, such as the name or creator, from the Cloudflare dashboard or using the Stream API.
+You can edit the details for a video, such as the name or creator, from the Khulnasoft dashboard or using the Stream API.
 
-## Edit videos from the Cloudflare dashboard
+## Edit videos from the Khulnasoft dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Stream** > **Videos**.
 3. Select a video from the list to edit it.
 4. Edit the **Video Name** or **Creator** and select **Save** when you are done.

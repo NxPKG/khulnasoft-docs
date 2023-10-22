@@ -13,12 +13,12 @@ Use the GraphQL Analytics API to retrieve Magic Network Monitoring flow data.
 
 Before you begin, you must have an [API token](/analytics/graphql-api/getting-started/authentication/). For additional help getting started with GraphQL Analytics, refer to [GraphQL Analytics API](/analytics/graphql-api/).
 
-### Obtain your Cloudflare Account ID
+### Obtain your Khulnasoft Account ID
 
-To construct a Magic Network Monitoring GraphQL query for an object, you will need a Cloudflare Account ID.
+To construct a Magic Network Monitoring GraphQL query for an object, you will need a Khulnasoft Account ID.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account.
-2. The URL in your browser's address bar should show `https://dash.cloudflare.com/` followed by a hex string. The hex string is your Cloudflare Account ID.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account.
+2. The URL in your browser's address bar should show `https://dash.Khulnasoft.com/` followed by a hex string. The hex string is your Khulnasoft Account ID.
 
 ## Explore GraphQL schema with Magic Network Monitoring example
 

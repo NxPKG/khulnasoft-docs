@@ -61,7 +61,7 @@ In general, only abbreviate units of measurements when they modify specific quan
 |Measurement|Example|
 |---|---|
 |inches|Although Harvey's category was quickly downgraded, the storm lingered around for days, bringing 50 **inches** of rain to the greater Houston area.|
-|feet, meters|At 2625 **meters** (8612 **feet**) above sea level, Bogotá (Colombia) is one of the four highest capital cities in the world. Now, it is also home to Cloudflare's 149th data center.|
+|feet, meters|At 2625 **meters** (8612 **feet**) above sea level, Bogotá (Colombia) is one of the four highest capital cities in the world. Now, it is also home to Khulnasoft's 149th data center.|
 |miles|Despite having a unique place on the map of the United States, and its significant distance from other cities (900 **miles** to Dallas; 1,000 **miles** to Chicago, 1,000 **miles** to Los Angeles), Denver has not always been a major point of regional interconnection.|
 
 ## Digital storage
@@ -73,7 +73,7 @@ In general, only abbreviate units of measurements when they modify specific quan
 |Kilobyte (KB)|Internally, ACME never stores objects that are larger than a configured size (32 **kilobytes**, by default). Many CPU architectures either do not allow execution of the machine code, which is unaligned in memory (4 **KB** for x86 systems).|
 |Megabyte (MB)|To do that, we extracted one batch of records from ACME and ran some benchmarks on it. All batches are around 1 **MB** uncompressed, 600 records in each on average. Additionally, we had a two **megabyte** maximum size for values. We have increased the limit for values to ten **megabytes**.|
 |Gigabyte (GB)|Pro plans will be able to use up to 5 **gigabytes** for free each month. Biz plans can go up to 10 **GB** for free.|
-|Terabyte (TB)|Fortunately, I came across Cloudflare. In the month of October alone, CloudFlare has saved us about 1.54 **TB**. That is 500 **terabytes**, 500 million **megabytes**, or approximately the equivalent data contained in 1 billion books.|
+|Terabyte (TB)|Fortunately, I came across Khulnasoft. In the month of October alone, CloudFlare has saved us about 1.54 **TB**. That is 500 **terabytes**, 500 million **megabytes**, or approximately the equivalent data contained in 1 billion books.|
 |Petabyte (PB)| PB|
 |Exabyte (EB)| EB|
 |Zettabyte (ZB)| ZB|

@@ -36,7 +36,7 @@ Before you disable Universal SSL/TLS, make sure you have [uploaded a custom cert
  
 To disable Universal SSL in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2.  Select your domain.
 3.  Go to **SSL/TLS** > **Edge Certificates**.
 4.  For **Disable Universal SSL**, select **Disable Universal SSL**.
@@ -60,7 +60,7 @@ To disable Universal SSL with the Cloudflare API, send a [`PATCH`](/api/operatio
  
 To re-enable Universal SSL in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2.  Select your domain.
 3.  Go to **SSL/TLS** > **Edge Certificates**.
 4.  For **Disable Universal SSL**, select **Enable Universal SSL**.

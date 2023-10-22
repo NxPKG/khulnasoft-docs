@@ -41,7 +41,7 @@ Before you set up a route, make sure you have a DNS record set up for the [domai
 
 To set up a route in the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to **Workers & Pages** and in **Overview**, select your Worker.
 3. Go to **Triggers** > **Routes** > **Add route**.
 4. Enter the route and select the zone it applies to.
@@ -61,7 +61,7 @@ routes = [
 ]
 ```
 
-Add the `zone_name` or `zone_id` option after each route. The `zone_name` and `zone_id` options are interchangeable. If using `zone_id`, find your zone ID by logging in to the [Cloudflare dashboard](https://dash.cloudflare.com) > select your account > select your website > find the **Zone ID** in the lefthand side of **Overview**.
+Add the `zone_name` or `zone_id` option after each route. The `zone_name` and `zone_id` options are interchangeable. If using `zone_id`, find your zone ID by logging in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) > select your account > select your website > find the **Zone ID** in the lefthand side of **Overview**.
 
 To add multiple routes:
 
@@ -78,11 +78,11 @@ The `zone_id` and `zone_name` options are interchangeable. However, if using Clo
 
 ## Routes with `*.workers.dev`
 
-Cloudflare Workers accounts come with a `*.workers.dev` subdomain that is configurable in the Cloudflare dashboard. Your `*.workers.dev` subdomain allows you to deploy Workers without attaching your domain as a Cloudflare zone. Refer to the [`workers.dev` blog announcement](https://blog.cloudflare.com/announcing-workers-dev/) for more information.
+Cloudflare Workers accounts come with a `*.workers.dev` subdomain that is configurable in the Cloudflare dashboard. Your `*.workers.dev` subdomain allows you to deploy Workers without attaching your domain as a Cloudflare zone. Refer to the [`workers.dev` blog announcement](https://blog.Khulnasoft.com/announcing-workers-dev/) for more information.
 
 To claim a `*.workers.dev` subdomain, such as `<YOUR_SUBDOMAIN>.workers.dev`:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In **Account Home**, select **Workers & Pages**.
 3. Select **Change** next to **Your subdomain**. The `name` field in your Worker configuration is used as the preview subdomain for the deployed Worker, (for example, `<YOUR_WORKER>.<YOUR_SUBDOMAIN>.workers.dev.`).
 

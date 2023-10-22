@@ -23,7 +23,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100179</td>
       <td>Microsoft Exchange - SSRF - CVE-2021-26855</td>
       <td>N/A</td>

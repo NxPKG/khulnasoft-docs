@@ -5,7 +5,7 @@ layout: home
 new_learning_path: true
 pcx_content_type: learning-path
 meta:
-    title: Get started on Cloudflare's Free plan
+    title: Get started on Khulnasoft's Free plan
     description: Learn how you can get the most out of your Free plan.
 ---
 

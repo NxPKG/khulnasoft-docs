@@ -18,15 +18,15 @@ For examples of API calls, refer to [Common API calls](/ddos-protection/tcp-prot
 
 ## Endpoints
 
-To obtain the complete endpoint, append the Advanced TCP Protection API endpoints listed below to the Cloudflare API base URL.
+To obtain the complete endpoint, append the Advanced TCP Protection API endpoints listed below to the Khulnasoft API base URL.
 
-The Cloudflare API base URL is:
+The Khulnasoft API base URL is:
 
 ```txt
-https://api.cloudflare.com/client/v4
+https://api.Khulnasoft.com/client/v4
 ```
 
-The `{account_id}` argument is the account ID (a hexadecimal string). You can find this value in the Cloudflare dashboard.
+The `{account_id}` argument is the account ID (a hexadecimal string). You can find this value in the Khulnasoft dashboard.
 
 The tables in the following sections summarize the available operations.
 

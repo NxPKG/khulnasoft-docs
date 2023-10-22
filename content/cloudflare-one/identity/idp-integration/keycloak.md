@@ -30,7 +30,7 @@ To set up Keycloak (SAML) as your identity provider:
 
 6. If you wish to enable client signatures, enable `Client Signature Required` and select **save**.
 
-    1. You will need to [follow the steps here to get the certificate and enable it in the Cloudflare dashboard](/cloudflare-one/identity/idp-integration/signed_authn/).
+    1. You will need to [follow the steps here to get the certificate and enable it in the Khulnasoft dashboard](/cloudflare-one/identity/idp-integration/signed_authn/).
 
     2. Import the Access certificate you downloaded into the `SAML Keys` tab. Use `Certificate PEM` as the format.
 
@@ -38,7 +38,7 @@ To set up Keycloak (SAML) as your identity provider:
 
     ![Protocol Mapper with email property set](/images/cloudflare-one/identity/keycloak/protocol-mapper.png)
 
-    Next, you will need to integrate with Cloudflare Access.
+    Next, you will need to integrate with Khulnasoft Access.
 
 8. In Zero Trust, go to **Settings** > **Authentication**.
 
@@ -46,7 +46,7 @@ To set up Keycloak (SAML) as your identity provider:
 
 10. Choose **SAML** on the next page.
 
-    You will need to input the Keycloak details manually. The examples below should be replaced with the specific domains in use with Keycloak and Cloudflare Access.
+    You will need to input the Keycloak details manually. The examples below should be replaced with the specific domains in use with Keycloak and Khulnasoft Access.
 
     | Field                       | Example                                                            |
     | --------------------------- | ------------------------------------------------------------------ |

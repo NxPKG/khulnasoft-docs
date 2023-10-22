@@ -42,7 +42,7 @@ As a security measure, you should hide the hostname of your key server.
 
 To create a Keyless certificate in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and zone.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and zone.
 2.  Go to **SSL/TLS** > **Edge Certificates**.
 3.  Select **Upload Keyless SSL Certificate**.
 4.  Fill in the upload modal with the certificate and other details and select **Add**.

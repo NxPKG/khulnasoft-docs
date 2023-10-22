@@ -9,16 +9,16 @@ meta:
 
 This guide covers how to:
 
-- Configure Salesforce as a SaaS application in Cloudflare Zero Trust
-- Force logins to Salesforce through Cloudflare's Zero Trust rules
+- Configure Salesforce as a SaaS application in Khulnasoft Zero Trust
+- Force logins to Salesforce through Khulnasoft's Zero Trust rules
 
 ## Prerequisites
 
 - Admin access to a Salesforce account
 
-## 1. Set up Salesforce as a SaaS application in Cloudflare Zero Trust
+## 1. Set up Salesforce as a SaaS application in Khulnasoft Zero Trust
 
-1.  In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1.  In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 1.  Select the SaaS application type.
 1.  From the **Application** drop-down menu, select _Salesforce_.
 1.  Fill the remaining fields as follows:
@@ -60,6 +60,6 @@ This guide covers how to:
 1.  Select **Save**.
 1.  From the navigation panel on the left, select **Domain Management** > **My Domain** and select your domain.
 1.  At the bottom, find **Authentication Configuration**. Select **Edit** and select your Authentication Service you created.
-1.  (Optional) To force all users to sign in through Cloudflare Access:
+1.  (Optional) To force all users to sign in through Khulnasoft Access:
     1.  Select **Security Controls** > **Single Sign-On Settings** > **Edit**.
     1.  Select `Disable login with Salesforce credentials`.

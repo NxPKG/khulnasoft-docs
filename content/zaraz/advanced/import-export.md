@@ -12,7 +12,7 @@ Exporting your Zaraz configuration can be useful if you want to create a local b
 
 To export your Zaraz configuration:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **Settings** > **Advanced**.
 3. Click "Export" to download your configuration.
 
@@ -26,7 +26,7 @@ Importing a Zaraz configuration replaces your existing configuration, meaning th
 
 To import a Zaraz configuration:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **Settings** > **Advanced**.
 3. Click **Browse** to select your configuration file, and **Import** to import it.
 

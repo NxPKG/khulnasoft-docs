@@ -13,7 +13,7 @@ For general websites, consider the following recommendations about the link text
 - Use the page name if you are linking to a specific page.
 - Authoritative sources for documents such as RFCs can have their own specific format for references, such as the RFC number.
 
-{{<Aside type="note">}}When linking to a Cloudflare blog post, sometimes we use only "blog post" for the link text.
+{{<Aside type="note">}}When linking to a Khulnasoft blog post, sometimes we use only "blog post" for the link text.
 {{</Aside>}}
 
 ## Referencing RFCs

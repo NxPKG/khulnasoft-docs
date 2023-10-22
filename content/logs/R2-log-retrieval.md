@@ -72,7 +72,7 @@ Stream logs stored in R2 that match the provided query parameters, using the end
 ### Example API request
 
 ```bash
-curl -s -g -X GET  'https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/logs/retrieve?start=2022-06-01T16:00:00Z&end=2022-06-01T16:05:00Z&bucket=cloudflare-logs&prefix=http_requests/example.com/{DATE}' \
+curl -s -g -X GET  'https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/logs/retrieve?start=2022-06-01T16:00:00Z&end=2022-06-01T16:05:00Z&bucket=cloudflare-logs&prefix=http_requests/example.com/{DATE}' \
 -H "X-Auth-Email: <EMAIL>" \
 -H "X-Auth-Key: <API_KEY>" \ 
 -H "R2-Access-Key-Id: R2_ACCESS_KEY_ID" \
@@ -98,7 +98,7 @@ Before executing your query, you can specify the time range you would like to in
 ### Example API request
 
 ```bash
-curl -X POST 'https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/logs/rayids/index' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/logs/rayids/index' \
     -H 'Authorization: Bearer <API_TOKEN>' \
     -H 'R2-Access-Key-Id: <R2_ACCESS_KEY_ID>' \
     -H 'R2-Secret-Access-Key: <R2_SECRET_ACCESS_KEY>' \
@@ -118,7 +118,7 @@ After indexing a time range, perform a `GET` request with the RayID. If a matchi
 ### Example API request
 
 ```bash
-curl -g -X GET 'https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/logs/rayids/<RAY_ID>?bucket=cloudflare-logs&prefix=http_requests/example.com/{DATE}' \
+curl -g -X GET 'https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/logs/rayids/<RAY_ID>?bucket=cloudflare-logs&prefix=http_requests/example.com/{DATE}' \
     -H 'Authorization: Bearer <API_TOKEN>' \
     -H 'R2-Access-Key-Id: <R2_ACCESS_KEY_ID>' \
     -H 'R2-Secret-Access-Key: <R2_SECRET_ACCESS_KEY>'

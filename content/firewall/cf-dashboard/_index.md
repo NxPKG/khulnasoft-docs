@@ -3,13 +3,13 @@ title: Manage rules in the dashboard
 pcx_content_type: navigation
 weight: 3
 meta:
-  title: Manage firewall rules in the Cloudflare dashboard
+  title: Manage firewall rules in the Khulnasoft dashboard
 layout: single
 ---
 
-# Manage firewall rules in the Cloudflare dashboard
+# Manage firewall rules in the Khulnasoft dashboard
 
-To configure firewall rules in the Cloudflare dashboard, open **Firewall rules** in **Security** > **WAF**.
+To configure firewall rules in the Khulnasoft dashboard, open **Firewall rules** in **Security** > **WAF**.
 
 {{<render file="_deprecation-notice.md">}}
 

@@ -12,7 +12,7 @@ A common use case would be to compare the versions in staging and production to 
 
 To compare versions:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **Version Management** > **Comparisons**.
 4. Select two different versions.

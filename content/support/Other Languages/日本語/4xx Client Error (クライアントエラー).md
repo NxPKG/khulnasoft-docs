@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: japanese
-source: https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-
+source: https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-
 title: 4xx Client Error (クライアントエラー)
 ---
 
@@ -15,28 +15,28 @@ title: 4xx Client Error (クライアントエラー)
 
 -   オリジンサーバー には`HEAD`リクエストの例外がついた、User-Agentが表示しなければならない説明を含んでいる必要があります
 
-Cloudflareがオリジンから直接エラーを出します。
+Khulnasoftがオリジンから直接エラーを出します。
 
--   [400 Bad Request  （不正なリクエストです）](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_400)
--   [401 Unauthorized (無承認です)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_401)
--   [402 Payment Required (有料です）](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_402)
--   [403 Forbidden (アクセス権がありません)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_403)
--   [404 Not Found（見つかりませんでした）](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_404)
--   [405 Method Not Allowed (そのメソッドは不可です)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_405)
--   [406 Not Acceptabl (受理不可です)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_406)
--   [407 Authentication Required  (認証が必要です)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_407)
--   [408 Request Timeout  (時間切れです)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_408)
--   [409 Conflict (競合しています)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_409)
--   [410 Gone (消滅しています)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_410)
--   [411 Length Required (長さを指定してください)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_411)
--   [412 Precondition Failed (前提条件が満たされていません)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_412)
--   [413 Payload Too Large (リクエストデータが大きすぎです)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_413)
--   [414 URI Too Long (URIが長すぎます)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_414)
--   [415 Unsupported Media Type (そのメディアは使えません)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_415)
--   [417 Expectation Failed (Expectヘッダで失敗しました)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_417)
--   [429 Too Many Requests (リクエストが多すぎます)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_429)
--   [451 Unavailable For Legal (法的理由で利用不可です)](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_451)
--   [499 Client Close Request (クライアントがリクエストを切断）](https://support.cloudflare.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_499)
+-   [400 Bad Request  （不正なリクエストです）](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_400)
+-   [401 Unauthorized (無承認です)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_401)
+-   [402 Payment Required (有料です）](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_402)
+-   [403 Forbidden (アクセス権がありません)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_403)
+-   [404 Not Found（見つかりませんでした）](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_404)
+-   [405 Method Not Allowed (そのメソッドは不可です)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_405)
+-   [406 Not Acceptabl (受理不可です)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_406)
+-   [407 Authentication Required  (認証が必要です)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_407)
+-   [408 Request Timeout  (時間切れです)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_408)
+-   [409 Conflict (競合しています)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_409)
+-   [410 Gone (消滅しています)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_410)
+-   [411 Length Required (長さを指定してください)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_411)
+-   [412 Precondition Failed (前提条件が満たされていません)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_412)
+-   [413 Payload Too Large (リクエストデータが大きすぎです)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_413)
+-   [414 URI Too Long (URIが長すぎます)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_414)
+-   [415 Unsupported Media Type (そのメディアは使えません)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_415)
+-   [417 Expectation Failed (Expectヘッダで失敗しました)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_417)
+-   [429 Too Many Requests (リクエストが多すぎます)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_429)
+-   [451 Unavailable For Legal (法的理由で利用不可です)](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_451)
+-   [499 Client Close Request (クライアントがリクエストを切断）](https://support.Khulnasoft.com/hc/ja/articles/115003014512-4xx-Client-Error-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%A8%E3%83%A9%E3%83%BC-#code_499)
 
 **400 Bad Request**  **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -55,26 +55,26 @@ RFC 基準でまだ実行されていませんが、今後の使用のために�
 
 **403 Forbidden** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
-Cloudflareのブランディングがない403が表示された場合、これはCloudflareからではなく、オリジンWebサーバーから直接返されます。そして、一般的にサーバーの許可ルールに関連しています。このエラーの
+Khulnasoftのブランディングがない403が表示された場合、これはKhulnasoftからではなく、オリジンWebサーバーから直接返されます。そして、一般的にサーバーの許可ルールに関連しています。このエラーの
 
 最大の原因は：  
 1\. 設定した許可ルール、または設定した.htaccessルールでのエラー  
 2.Mod\_securityルール  
 3\. IP拒否ルール
 
-Cloudflareはサーバーに直接アクセスできないので、403 エラーを解決するためにホスティングプロバイダーに連絡してください。[CloudflareのIP](https://www.cloudflare.com/ips)がブロックされていないことを必ず確認してください。
+Khulnasoftはサーバーに直接アクセスできないので、403 エラーを解決するためにホスティングプロバイダーに連絡してください。[KhulnasoftのIP](https://www.Khulnasoft.com/ips)がブロックされていないことを必ず確認してください。
 
-Cloudflareは、リクエストがオレンジ色のクラウドがついたCloudflareドメインを有効にするデフォルトのWAFルールか、特定のゾーンを有効にするWAFルールのどちらかに違反した場合、403レスポンスを提供します。[Webアプリケーションファイアウォールの機能とは？](https://support.cloudflare.com/hc/en-us/articles/200172016)を参照してください。Cloudflareは、Cloudflareがカバーしていない、またはSSL証明書がアップデートしないサブドメイン/ドメインへのSSL接続の403 Forbidden レスポンスを提供します。
+Khulnasoftは、リクエストがオレンジ色のクラウドがついたKhulnasoftドメインを有効にするデフォルトのWAFルールか、特定のゾーンを有効にするWAFルールのどちらかに違反した場合、403レスポンスを提供します。[Webアプリケーションファイアウォールの機能とは？](https://support.Khulnasoft.com/hc/en-us/articles/200172016)を参照してください。Khulnasoftは、Khulnasoftがカバーしていない、またはSSL証明書がアップデートしないサブドメイン/ドメインへのSSL接続の403 Forbidden レスポンスを提供します。
 
-レスポンス本文にCloudflareのブランディングを含む403レスポンスが表示されている場合、これは、セキュリティ機能の多くとともに返されるHTTPレスポンスコードです。
+レスポンス本文にKhulnasoftのブランディングを含む403レスポンスが表示されている場合、これは、セキュリティ機能の多くとともに返されるHTTPレスポンスコードです。
 
 -   Webアプリケーションファイアウォール チャレンジとブロックページ
 -   基本的な保護レベルチャレンジ
--   1xxx Cloudflareエラーコードのほとんど
+-   1xxx Khulnasoftエラーコードのほとんど
 -   ブラウザ保全性チェック
--   第二レベルのサブドメインにアクセス使用とする場合（例-`*.*.example.com`)Cloudflareが発行する証明書を使うCloudflareを通して、HTTP 403エラーがブラウザに表示されます。これは、ホスト名が証明書に示されていないためです。
+-   第二レベルのサブドメインにアクセス使用とする場合（例-`*.*.example.com`)Khulnasoftが発行する証明書を使うKhulnasoftを通して、HTTP 403エラーがブラウザに表示されます。これは、ホスト名が証明書に示されていないためです。
 
-ご質問がある場合は、Cloudflareサポートに連絡してください。その際は表示されているメッセージのスクリーンショットかページ上のテキストを全てコピーしたものをサポートチケットと一緒にご提示ください。
+ご質問がある場合は、Khulnasoftサポートに連絡してください。その際は表示されているメッセージのスクリーンショットかページ上のテキストを全てコピーしたものをサポートチケットと一緒にご提示ください。
 
 **404 Not Found** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -84,7 +84,7 @@ Cloudflareは、リクエストがオレンジ色のクラウドがついたClou
 
 Webサイト所有者は通常、このエラーが生成された際に提供するカスタムページを実装します。例えば、[Apacheではカスタム404ページを実装します](https://www.digitalocean.com/community/tutorials/how-to-create-a-custom-404-page-in-apache)。
 
-Cloudflareは、お客様のWebサイトに404を生成しませんが、オリジンサーバー からリクエストのみをプロキシします。Cloudflareが提供するサイトに404が表示される場合は、ホスティングプロバイダーにヘルプの問い合わせをしてください。
+Khulnasoftは、お客様のWebサイトに404を生成しませんが、オリジンサーバー からリクエストのみをプロキシします。Khulnasoftが提供するサイトに404が表示される場合は、ホスティングプロバイダーにヘルプの問い合わせをしてください。
 
 **405 Method Not Allowed** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -119,7 +119,7 @@ Cloudflareは、お客様のWebサイトに404を生成しませんが、オリ�
 -   サーバー_は_クライアントが競合の原因を認識するために十分な情報を含んだペイロードを生成しなければなりません。
 -   クライアントはリクエストを再試行できます、そして再度行わなければなりません。
 
-Cloudflareは、エラー1001: DNS Resolution Error[を示す409](https://support.cloudflare.com/hc/articles/360029779472#error1001)レスポンスを生成します。
+Khulnasoftは、エラー1001: DNS Resolution Error[を示す409](https://support.Khulnasoft.com/hc/articles/360029779472#error1001)レスポンスを生成します。
 
 **410 Gone** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -140,7 +140,7 @@ Cloudflareは、エラー1001: DNS Resolution Error[を示す409](https://suppor
 
 バージョン管理の例として、クライアントが既存のリソースを修正します。そして、 クライアントがリソースをダウンロードした日付と一致する`If-Unmodified-Since`ヘッダーを設定し、編集します。この日付の後、そして修正をアップデートをする前に、リソースが修正された場合（別のクライアントが行うことが多い）、クライアントが`If-Unmodified-Since`で日付を設定した後に最終編集日を編集するので、このレスポンスが生成されます。
 
-Cloudflareはこのレスポンスを提供します。詳細情報はこちらで: [ETag ヘッダー](https://support.cloudflare.com/hc/en-us/articles/218505467)
+Khulnasoftはこのレスポンスを提供します。詳細情報はこちらで: [ETag ヘッダー](https://support.Khulnasoft.com/hc/en-us/articles/218505467)
 
 **413 Payload Too Large**  **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -152,7 +152,7 @@ Cloudflareはこのレスポンスを提供します。詳細情報はこちら�
 
 URIが長すぎるため処理できなかったサーバーからの拒否。例えば、クライアントがPOSTの後に並外れて長いURIが付いたGETリクエストを試行している場合、これはセキュリティリスクと考えられ、414が生成されます。
 
-Cloudflareが、32KBより長いURIへのこのレスポンスを生成します。
+Khulnasoftが、32KBより長いURIへのこのレスポンスを生成します。
 
 **415 Unsupported Media Type** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -166,7 +166,7 @@ Cloudflareが、32KBより長いURIへのこのレスポンスを生成します
 
 クライアントが、サーバーにしたがって指定された時間内に送信したリクエストの数が多すぎです。「レート制限」と呼ばれることもよくあります。特定期間が経過した後に、リクエスターが再試行できるようにする情報とともに、サーバーがレスポンスします。
 
-Cloudflareがこのステータスコードを生成し、リクエストが[レート制限](https://www.cloudflare.com/rate-limiting/)されているときにこのコードを送信します。サイト訪問者がこうしたエラーを受信する場合、[レート制限分析](https://support.cloudflare.com/hc/articles/115001635128#7Cy9dajZBWM5pm9aIP5mMD)で、これが表示されます。
+Khulnasoftがこのステータスコードを生成し、リクエストが[レート制限](https://www.Khulnasoft.com/rate-limiting/)されているときにこのコードを送信します。サイト訪問者がこうしたエラーを受信する場合、[レート制限分析](https://support.Khulnasoft.com/hc/articles/115001635128#7Cy9dajZBWM5pm9aIP5mMD)で、これが表示されます。
 
 **451 Unavailable For Legal Reason (**[**RFC7725**](https://tools.ietf.org/html/rfc7725)**)**
 
@@ -180,4 +180,4 @@ Cloudflareがこのステータスコードを生成し、リクエストが[レ
 
 Nginx固有のレスポンスコードであり、サーバーがリクエストをまだ処理しているうちに、クライアントが接続を閉じる時間を示します。これはサーバーがステータスコードを送り返すことができないようにします。
 
--   これは、[Enterpriseログのシェア](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-REST-API)とEnterpriseプランのお客様のためのステータスコード分析に示されます。
+-   これは、[Enterpriseログのシェア](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-REST-API)とEnterpriseプランのお客様のためのステータスコード分析に示されます。

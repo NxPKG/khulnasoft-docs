@@ -7,12 +7,12 @@ layout: single
 
 # Use the Stream Player
 
-Cloudflare provides a customizable web player that can play both on-demand and live video, and requires zero additional engineering work.
+Khulnasoft provides a customizable web player that can play both on-demand and live video, and requires zero additional engineering work.
 
 To add the Stream Player to a web page, you can either:
 
-- Generate an embed code in the [Stream Dashboard](https://dash.cloudflare.com/?to=/:account/stream) for a specific video or live input.
-- Use the code example below, replacing `<VIDEO_UID>` with the video UID (or [signed token](/stream/viewing-videos/securing-your-stream/) and `<CODE>` with the your unique customer code, which can be found in the [Stream Dashboard](https://dash.cloudflare.com/?to=/:account/stream).
+- Generate an embed code in the [Stream Dashboard](https://dash.Khulnasoft.com/?to=/:account/stream) for a specific video or live input.
+- Use the code example below, replacing `<VIDEO_UID>` with the video UID (or [signed token](/stream/viewing-videos/securing-your-stream/) and `<CODE>` with the your unique customer code, which can be found in the [Stream Dashboard](https://dash.Khulnasoft.com/?to=/:account/stream).
 
 ```html
 <iframe
@@ -140,7 +140,7 @@ The `<video>` element does not force the browser to follow the value of this opt
 
 - `src`
 
-  - The video id from the video you've uploaded to Cloudflare Stream should be included here.
+  - The video id from the video you've uploaded to Khulnasoft Stream should be included here.
 
 - `startTime`
 

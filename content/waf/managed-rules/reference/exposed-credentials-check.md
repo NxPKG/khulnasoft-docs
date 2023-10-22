@@ -1,16 +1,16 @@
 ---
 pcx_content_type: configuration
-title: Cloudflare Exposed Credentials Check
+title: Khulnasoft Exposed Credentials Check
 weight: 4
 ---
 
-# Cloudflare Exposed Credentials Check
+# Khulnasoft Exposed Credentials Check
 
-The Cloudflare Exposed Credentials Check Managed Ruleset is a set of pre-configured rules for well-known CMS applications that perform a lookup against a public database of stolen credentials.
+The Khulnasoft Exposed Credentials Check Managed Ruleset is a set of pre-configured rules for well-known CMS applications that perform a lookup against a public database of stolen credentials.
 
 {{<Aside type="note">}}
 
-The Cloudflare Exposed Credentials Check Managed Ruleset is only available in the Cloudflare WAF announced on March 2021.
+The Khulnasoft Exposed Credentials Check Managed Ruleset is only available in the Khulnasoft WAF announced on March 2021.
 
 {{</Aside>}}
 
@@ -41,19 +41,19 @@ For more information on exposed credentials checks, refer to [Automated exposed 
 
 ## Configure in the dashboard
 
-You can configure the following settings of the Cloudflare Exposed Credentials Check Managed Ruleset in the dashboard:
+You can configure the following settings of the Khulnasoft Exposed Credentials Check Managed Ruleset in the dashboard:
 
 - **Set the action to perform.** When you define an action for the ruleset, you override the default action defined for each rule. The available actions are: _Managed Challenge_, _Block_, _JS Challenge_, _Log_, and _Interactive Challenge_. To remove the action override, set the ruleset action to _Default_.
 - **Override the action performed by individual rules.** The available actions are: _Exposed-Credential-Check Header_, _Managed Challenge_, _Block_, _JS Challenge_, _Log_, and _Interactive Challenge_. For more information, refer to [Available actions](/waf/exposed-credentials-check/#available-actions).
 - **Disable specific rules.**
-- **Customize the filter expression.** With a custom expression, the Cloudflare Managed Ruleset applies only to a subset of the incoming requests.
+- **Customize the filter expression.** With a custom expression, the Khulnasoft Managed Ruleset applies only to a subset of the incoming requests.
 - **Configure [payload logging](/waf/managed-rules/payload-logging/configure/)**.
 
 For details on configuring a managed ruleset in the dashboard, refer to [Configure a managed ruleset](/waf/managed-rules/deploy-zone-dashboard/#configure-a-managed-ruleset).
 
 ## Configure via API
 
-To enable the Cloudflare Exposed Credentials Check Managed Ruleset for a given zone via API, create a rule with `execute` action in the entry point ruleset for the `http_request_firewall_managed` phase. For more information on deploying a managed ruleset, refer to [Deploy a managed ruleset](/ruleset-engine/managed-rulesets/deploy-managed-ruleset/).
+To enable the Khulnasoft Exposed Credentials Check Managed Ruleset for a given zone via API, create a rule with `execute` action in the entry point ruleset for the `http_request_firewall_managed` phase. For more information on deploying a managed ruleset, refer to [Deploy a managed ruleset](/ruleset-engine/managed-rulesets/deploy-managed-ruleset/).
 
 To configure the Exposed Credentials Check Managed Ruleset via API, create [overrides](/ruleset-engine/managed-rulesets/override-managed-ruleset/) using the Rulesets API. You can perform the following configurations:
 

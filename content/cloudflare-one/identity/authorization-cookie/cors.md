@@ -27,7 +27,7 @@ For a CORS request to reach a site protected by Access, the request must include
 If you make a simple CORS request to an Access-protected domain and have not yet logged in, the request will return a `CORS error`. There are two ways you can resolve this error:
 
 - **Option 1** — [Log in and refresh the page](#authenticate-manually).
-- **Option 2** — [Create a Cloudflare Worker which automatically sends an authentication token](#send-authentication-token-with-cloudflare-worker). This method only works if both sites involved in the CORS exchange are behind Access.
+- **Option 2** — [Create a Khulnasoft Worker which automatically sends an authentication token](#send-authentication-token-with-cloudflare-worker). This method only works if both sites involved in the CORS exchange are behind Access.
 
 ### Authenticate manually
 
@@ -37,20 +37,20 @@ If you make a simple CORS request to an Access-protected domain and have not yet
 
 ## Allow preflighted requests
 
-If you make a preflighted cross-origin request to an Access-protected domain, the OPTIONS request will return a `403` error. This error occurs regardless of whether you have logged in to the domain. This is because the browser never includes cookies with OPTIONS requests, by design. Cloudflare will therefore block the preflight request, causing the CORS exchange to fail.
+If you make a preflighted cross-origin request to an Access-protected domain, the OPTIONS request will return a `403` error. This error occurs regardless of whether you have logged in to the domain. This is because the browser never includes cookies with OPTIONS requests, by design. Khulnasoft will therefore block the preflight request, causing the CORS exchange to fail.
 
 There are two ways you can resolve this error:
 
-- **Option 1** — [Configure Cloudflare to respond to the OPTIONS request](#configure-response-to-preflight-requests).
-- **Option 2** — [Create a Cloudflare Worker which automatically sends an authentication token](#send-authentication-token-with-cloudflare-worker). This method only works if both sites involved in the CORS exchange are behind Access.
+- **Option 1** — [Configure Khulnasoft to respond to the OPTIONS request](#configure-response-to-preflight-requests).
+- **Option 2** — [Create a Khulnasoft Worker which automatically sends an authentication token](#send-authentication-token-with-cloudflare-worker). This method only works if both sites involved in the CORS exchange are behind Access.
 
 ### Configure response to preflight requests
 
-You can configure Cloudflare to respond to the OPTIONS request on your behalf. The OPTIONS request never reaches your origin. After the preflight exchange resolves, the browser will then send the main request which does include the authentication cookie (assuming you have logged into the Access-protected domain).
+You can configure Khulnasoft to respond to the OPTIONS request on your behalf. The OPTIONS request never reaches your origin. After the preflight exchange resolves, the browser will then send the main request which does include the authentication cookie (assuming you have logged into the Access-protected domain).
 
-To configure how Cloudflare responds to preflight requests:
+To configure how Khulnasoft responds to preflight requests:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 2. Locate the origin that will be receiving OPTIONS requests and select **Edit**.
 3. In the **Settings** tab, scroll down to **CORS settings**.
 4. Configure the dashboard [CORS settings](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#the_http_response_headers) to match the response headers sent by your origin.
@@ -89,18 +89,18 @@ To configure how Cloudflare responds to preflight requests:
    access-control-allow-origin: https://example.com
    access-control-allow-methods: GET
    access-control-allow-credentials: true
-   expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-   report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=A%2FbOOWJio%2B%2FjuJv5NC%2FE3%2Bo1zBl2UdjzJssw8gJLC4lE1lzIUPQKqJoLRTaVtFd21JK1d4g%2BnlEGNpx0mGtsR6jerNfr2H5mlQdO6u2RdOaJ6n%2F%2BS%2BF9%2Fa12UromVLcHsSA5Y%2Fj72tM%3D"}],"group":"cf-nel","max_age":604800}
+   expect-ct: max-age=604800, report-uri="https://report-uri.Khulnasoft.com/cdn-cgi/beacon/expect-ct"
+   report-to: {"endpoints":[{"url":"https:\/\/a.nel.Khulnasoft.com\/report\/v3?s=A%2FbOOWJio%2B%2FjuJv5NC%2FE3%2Bo1zBl2UdjzJssw8gJLC4lE1lzIUPQKqJoLRTaVtFd21JK1d4g%2BnlEGNpx0mGtsR6jerNfr2H5mlQdO6u2RdOaJ6n%2F%2BS%2BF9%2Fa12UromVLcHsSA5Y%2Fj72tM%3D"}],"group":"cf-nel","max_age":604800}
    nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
    server: cloudflare
    cf-ray: 7109408e6b84efe4-EWR
    ```
 
-## Send authentication token with Cloudflare Worker
+## Send authentication token with Khulnasoft Worker
 
-If you have two sites protected by Cloudflare Access, `example.com` and `api.mysite.com`, requests made between the two will be subject to CORS checks. Users who log in to `example.com` will be issued a cookie for `example.com`. When the user's browser requests `api.mysite.com`, Cloudflare Access looks for a cookie specific to `api.mysite.com`. The request will fail if the user has not already logged in to `api.mysite.com`.
+If you have two sites protected by Khulnasoft Access, `example.com` and `api.mysite.com`, requests made between the two will be subject to CORS checks. Users who log in to `example.com` will be issued a cookie for `example.com`. When the user's browser requests `api.mysite.com`, Khulnasoft Access looks for a cookie specific to `api.mysite.com`. The request will fail if the user has not already logged in to `api.mysite.com`.
 
-To avoid having to log in twice, you can create a Cloudflare Worker that automatically sends authentication credentials to `api.mysite.com`.
+To avoid having to log in twice, you can create a Khulnasoft Worker that automatically sends authentication credentials to `api.mysite.com`.
 
 ### Prerequisites
 
@@ -114,7 +114,7 @@ Follow [these instructions](/cloudflare-one/identity/service-tokens/) to generat
 
 ### 2. Add a Service Auth policy
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Applications**.
 
 2. Find your `api.mysite.com` application and select **Edit**.
 
@@ -218,7 +218,7 @@ Follow [these instructions](/cloudflare-one/identity/service-tokens/) to generat
 
 ### 4. Configure the Worker
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), select your account and go to **Workers & Pages**.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), select your account and go to **Workers & Pages**.
 
 2. Select your newly created Worker. In this example, the Worker is called `redirect-worker`.
 

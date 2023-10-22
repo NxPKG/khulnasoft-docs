@@ -6,9 +6,9 @@ meta:
   title: Overview
 ---
 
-# Cloudflare Tenant
+# Khulnasoft Tenant
 
-The Cloudflare Tenant API is a provisioning mechanism to help Channel and Alliance partners set up and manage Cloudflare accounts and services for their customers. 
+The Khulnasoft Tenant API is a provisioning mechanism to help Channel and Alliance partners set up and manage Khulnasoft accounts and services for their customers. 
 
 These APIs are built into our Client v4 API library to provide a streamlined onboarding and setup experience.
 

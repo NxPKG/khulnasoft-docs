@@ -7,11 +7,11 @@ meta:
 
 # Cache Keys
 
-A Cache Key is an identifier that Cloudflare uses for a file in our cache, and the Cache Key Template defines the identifier for a given HTTP request. For example, consider the following HTTP request on a TLS connection:
+A Cache Key is an identifier that Khulnasoft uses for a file in our cache, and the Cache Key Template defines the identifier for a given HTTP request. For example, consider the following HTTP request on a TLS connection:
 
 ```bash
 GET /logo.jpg HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
 Accept: image/jpg
 ```
@@ -20,7 +20,7 @@ As we can see from the example, the default cache key includes:
 
 1.  Full URL:
     - scheme - not shown above, but could be HTTP or HTTPS.  
-    - host - which in this example is `www.cloudflare.com`
+    - host - which in this example is `www.Khulnasoft.com`
     - URI with query string - in this example is `/logo.jpg`
 2.  Origin header sent by client (for CORS support).
 3.  `x-http-method-override`, `x-http-method`, and `x-method-override` headers.
@@ -34,9 +34,9 @@ Using Custom Cache Keys may result in cache sharding and reduction of your cache
 
 ## Create custom cache keys
 
-A [Cache Key](/cache/how-to/cache-keys/) is an identifier that Cloudflare uses for a file in our cache, and the Cache Key Template defines the identifier for a given HTTP request.
+A [Cache Key](/cache/how-to/cache-keys/) is an identifier that Khulnasoft uses for a file in our cache, and the Cache Key Template defines the identifier for a given HTTP request.
 
-1.  Log in to your Cloudflare account.
+1.  Log in to your Khulnasoft account.
 2.  Select the domain that requires changes to the Cache Key Template.
 3.  Select **Rules** > **Page Rules**.
 4.  Select **Create Page Rule**.
@@ -57,11 +57,11 @@ A [Cache Key](/cache/how-to/cache-keys/) is an identifier that Cloudflare uses f
 There are a couple of common reasons to change the Cache Key Template. You might change the Cache Key Template to:
 
 - Fragment the cache so one URL is stored in multiple files. For example, to store different files based on a specific query string in the URL.
-- Consolidate the cache so different HTTP requests are stored in the same file. For example, to remove the Origin header added to Cloudflare Cache Keys by default.
+- Consolidate the cache so different HTTP requests are stored in the same file. For example, to remove the Origin header added to Khulnasoft Cache Keys by default.
 
 {{<Aside type="note" header="Note">}}
 
-`$scheme` is the protocol (HTTP or HTTPS) sent to your origin web server and not the protocol received from the visitor. Therefore, setting the Cloudflare [SSL option](/ssl/origin-configuration/ssl-modes/) influences caching decisions. For instance, Cloudflare only attempts to connect to your origin web server via HTTP when [Flexible SSL](/ssl/origin-configuration/ssl-modes/flexible/) is utilized. Thus, Cloudflare serves the same cached resource for visitor requests via either HTTP or HTTPS since Flexible SSL instructs Cloudflare to connect to an origin solely over HTTP.
+`$scheme` is the protocol (HTTP or HTTPS) sent to your origin web server and not the protocol received from the visitor. Therefore, setting the Khulnasoft [SSL option](/ssl/origin-configuration/ssl-modes/) influences caching decisions. For instance, Khulnasoft only attempts to connect to your origin web server via HTTP when [Flexible SSL](/ssl/origin-configuration/ssl-modes/flexible/) is utilized. Thus, Khulnasoft serves the same cached resource for visitor requests via either HTTP or HTTPS since Flexible SSL instructs Khulnasoft to connect to an origin solely over HTTP.
 
 {{</Aside>}}
 
@@ -116,15 +116,15 @@ Currently, you can only exclude the `Origin` header. The `Origin` header is alwa
 - Headers that are covered by other Cache Key features
   - `cookie`
   - `host`
-- Headers that are specific to Cloudflare and prefixed with `cf-`, for example, `cf-ray`
+- Headers that are specific to Khulnasoft and prefixed with `cf-`, for example, `cf-ray`
 - Headers that are already included in the custom Cache Key template, for example, `origin`
 
 ### Host
 
 Host determines which host header to include in the Cache Key.
 
-- If `resolved: false`, Cloudflare includes the `Host` header in the HTTP request sent to the origin.
-- If `resolved: true`, Cloudflare includes the `Host` header that was resolved to get the `origin IP` for the request. In this scenario, the `Host` header may be different from the header actually sent if the [Cloudflare Resolve Override](/support/page-rules/using-resolve-override-in-page-rules/) feature is used.
+- If `resolved: false`, Khulnasoft includes the `Host` header in the HTTP request sent to the origin.
+- If `resolved: true`, Khulnasoft includes the `Host` header that was resolved to get the `origin IP` for the request. In this scenario, the `Host` header may be different from the header actually sent if the [Khulnasoft Resolve Override](/support/page-rules/using-resolve-override-in-page-rules/) feature is used.
 
 ### Cookie
 
@@ -132,7 +132,7 @@ Like `query_string` or `header`, `cookie` controls which cookies appear in the C
 
 #### Usage notes
 
-You cannot include cookies specific to Cloudflare. Cloudflare cookies are prefixed with `__cf`, for example, `__cflb`
+You cannot include cookies specific to Khulnasoft. Khulnasoft cookies are prefixed with `__cf`, for example, `__cflb`
 
 #### User features
 

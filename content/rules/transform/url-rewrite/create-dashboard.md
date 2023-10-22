@@ -12,15 +12,15 @@ Refer to [URL rewrite examples](/rules/transform/url-rewrite/examples/) for exam
 
 To create a rule:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and website.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and website.
 
 2. Go to **Rules** > **Transform Rules**.
 
-    ![The Transform Rules page in the Cloudflare dashboard with a tab for each type of Transform Rule you can create.](/images/rules/transform/transform-rules-tab.png)
+    ![The Transform Rules page in the Khulnasoft dashboard with a tab for each type of Transform Rule you can create.](/images/rules/transform/transform-rules-tab.png)
 
 3. In the **Rewrite URL** tab, select **Create rule**.
 
-    ![The rewrite URL rule creation page in the Cloudflare dashboard.](/images/rules/transform/create-url-rewrite-rule.png)
+    ![The rewrite URL rule creation page in the Khulnasoft dashboard.](/images/rules/transform/create-url-rewrite-rule.png)
 
 4. In the rule creation page, enter a descriptive name for the rule in **Rule name**.
 

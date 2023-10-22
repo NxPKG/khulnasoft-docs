@@ -68,5 +68,5 @@ When one or more pools become unhealthy, your load balancer might also show a di
 
 If a load balancer reaches **Critical** health and the pool serving as your fallback pool is also disabled:
 
-- If Cloudflare proxies your hostname, you will see a 530 HTTP/1016 Origin DNS failure.
-- If Cloudflare does not proxy your hostname, you will see the SOA record.
+- If Khulnasoft proxies your hostname, you will see a 530 HTTP/1016 Origin DNS failure.
+- If Khulnasoft does not proxy your hostname, you will see the SOA record.

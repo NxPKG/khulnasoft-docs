@@ -8,7 +8,7 @@ meta:
 
 # Record attributes
 
-Use DNS record comments and tags to categorize and clarify the purpose of DNS records within Cloudflare.
+Use DNS record comments and tags to categorize and clarify the purpose of DNS records within Khulnasoft.
 
 Comments provide a unique descriptions for specific records, whereas tags group similar records into categories.
 

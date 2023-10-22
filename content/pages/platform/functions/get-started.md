@@ -12,7 +12,7 @@ This guide will instruct you on creating and deploying a Pages Function.
 
 ## Prerequisites
 
-You must have a Pages project set up on your local machine or deployed on the Cloudflare dashboard. To create a Pages project, refer to [Get started](/pages/get-started/).
+You must have a Pages project set up on your local machine or deployed on the Khulnasoft dashboard. To create a Pages project, refer to [Get started](/pages/get-started/).
 
 ## Create a Function
 
@@ -47,14 +47,14 @@ Refer to [Routing](/pages/platform/functions/routing/) for more information on r
 
 Workers runtime features, including compatibility with a subset of Node.js APIs and setting a [compatibility date or compatibility flag](/workers/configuration/compatibility-dates/) are configurable on Pages Functions.
 
-Set these configurations by passing an argument to your [Wrangler](/workers/wrangler/commands/#dev-1) command or by setting them in the dashboard. To set Pages compatibility flags in the Cloudflare dashboard:
+Set these configurations by passing an argument to your [Wrangler](/workers/wrangler/commands/#dev-1) command or by setting them in the dashboard. To set Pages compatibility flags in the Khulnasoft dashboard:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages** and select your Pages project.
 3. Select **Settings** > **Functions** > **Compatibility Flags**.
 4. Configure your Production and Preview compatibility flags as needed.
 
-Additionally, use other Cloudflare products such as [D1](/d1/) (serverless DB) and [R2](/r2/) from within your Pages project by configuring [bindings](/pages/platform/functions/bindings/).
+Additionally, use other Khulnasoft products such as [D1](/d1/) (serverless DB) and [R2](/r2/) from within your Pages project by configuring [bindings](/pages/platform/functions/bindings/).
 
 ## Deploy your Function
 

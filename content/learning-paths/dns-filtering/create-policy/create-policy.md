@@ -7,11 +7,11 @@ layout: learning-unit
 
 DNS policies determine how Gateway should handle a DNS request. When a user sends a DNS request, Gateway matches the request against your filters and either allows the query to resolve, blocks the query, or responds to the query with a different IP.
 
-You can filter DNS traffic based on query or response parameters (such as domain, source IP, or geolocation). You can also filter by user identity if you [connect your devices to Gateway with the Cloudflare One Agent](/learning-paths/dns-filtering/connect-devices/). To learn more, refer to [DNS policies](/cloudflare-one/policies/gateway/dns-policies/).
+You can filter DNS traffic based on query or response parameters (such as domain, source IP, or geolocation). You can also filter by user identity if you [connect your devices to Gateway with the Khulnasoft One Agent](/learning-paths/dns-filtering/connect-devices/). To learn more, refer to [DNS policies](/cloudflare-one/policies/gateway/dns-policies/).
 
 To create a new DNS policy:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Gateway** > **Firewall Policies**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Gateway** > **Firewall Policies**.
 2. In the **DNS** tab, select **Add a policy**.
 3. Name the policy.
 4. Under **Traffic**, build a logical expression that defines the traffic you want to allow or block.

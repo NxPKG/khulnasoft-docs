@@ -11,7 +11,7 @@ meta:
 The following example defines a single configuration rule for a zone using Terraform. The rule disables Email Obfuscation and Browser Integrity Check for API requests.
 
 ```tf
-# Disable a couple of Cloudflare settings for API requests
+# Disable a couple of Khulnasoft settings for API requests
 resource "cloudflare_ruleset" "http_config_rules_example" {
   zone_id     = "<ZONE_ID>"
   name        = "Config rules ruleset"

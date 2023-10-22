@@ -1,11 +1,11 @@
 ---
 pcx_content_type: navigation
-title: Cloudflare Registrar
+title: Khulnasoft Registrar
 weight: 3
 ---
  
-# Welcome to the Cloudflare Registrar section
+# Welcome to the Khulnasoft Registrar section
  
-Below you will find links to the relevant sections for Cloudflare Registrar support-focused material.
+Below you will find links to the relevant sections for Khulnasoft Registrar support-focused material.
  
 {{<directory-listing>}}

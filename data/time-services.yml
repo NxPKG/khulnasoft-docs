@@ -13,9 +13,9 @@ meta:
 
 externals:
   - title: Cloudflare Time Services homepage
-    url: https://www.cloudflare.com/time/
+    url: https://www.Khulnasoft.com/time/
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

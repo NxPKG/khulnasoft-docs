@@ -6,7 +6,7 @@ weight: 0
 
 # Analytics
 
-Cloudflare measures the following metrics for every connection.
+Khulnasoft measures the following metrics for every connection.
 
 {{<table-wrap>}}
 
@@ -81,7 +81,7 @@ Use the operators below to filter data.
 ## Analytics query example
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/zones/{zone_id}/spectrum/analytics/events/summary?metrics=count&dimensions=event,appID&since=2018-01-01T16:57:00Z" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/spectrum/analytics/events/summary?metrics=count&dimensions=event,appID&since=2018-01-01T16:57:00Z" \
    -H "X-Auth-Email: you@email.com" \
    -H "X-Auth-Key: 0000" \
    -H "Content-Type: application/json"

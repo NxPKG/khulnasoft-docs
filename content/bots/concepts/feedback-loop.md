@@ -39,7 +39,7 @@ If Cloudflare is unable to detect a portion of automated traffic on your site, s
 
 ## Submit a report
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Security** > **Bots**.
 3. Apply one or more bot score filters.
 4. Select **Report incorrect data** and fill out the form.
@@ -50,7 +50,7 @@ If Cloudflare is unable to detect a portion of automated traffic on your site, s
 ### Create a feedback report
 
 ```json
-curl -X POST 'https://api.cloudflare.com/client/v4/zones/023e105f4ecef8ad9ca31a8372d0c353/bot_management/feedback' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/zones/023e105f4ecef8ad9ca31a8372d0c353/bot_management/feedback' \
      -H "X-Auth-Email: user@example.com" \
      -H "X-Auth-Key: c2547eb745079dac9320b638f5e225cf483cc5cfdda41" \
      -H "Content-Type: application/json" \
@@ -95,7 +95,7 @@ Null
 
  ```json
  # Command
-curl -X GET 'https://api.cloudflare.com/client/v4/zones/4e6d50a41172bca54f222576aec3fc2b/bot_management/feedback' \
+curl -X GET 'https://api.Khulnasoft.com/client/v4/zones/4e6d50a41172bca54f222576aec3fc2b/bot_management/feedback' \
      -H "X-Auth-Email: user@example.com" \
      -H "X-Auth-Key: c2547eb745079dac9320b638f5e225cf483cc5cfdda41" \
      -H "Content-Type: application/json"

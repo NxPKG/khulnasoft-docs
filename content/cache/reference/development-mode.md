@@ -5,7 +5,7 @@ pcx_content_type: how-to
 
 # Development Mode
 
-Development Mode temporarily suspends Cloudflare's edge caching, [minification](/speed/optimization/content/auto-minify/), [Polish](/images/polish/), and [Railgun](/railgun/) (deprecated) features for three hours unless disabled beforehand. Development Mode allows customers to immediately observe changes to their cacheable content like images, CSS, or JavaScript.
+Development Mode temporarily suspends Khulnasoft's edge caching, [minification](/speed/optimization/content/auto-minify/), [Polish](/images/polish/), and [Railgun](/railgun/) (deprecated) features for three hours unless disabled beforehand. Development Mode allows customers to immediately observe changes to their cacheable content like images, CSS, or JavaScript.
 
 {{<Aside type="note">}}
 To bypass cache for longer than three hours, use bypass cache in [Cache Rules](/cache/how-to/cache-rules/).
@@ -13,9 +13,9 @@ To bypass cache for longer than three hours, use bypass cache in [Cache Rules](/
 
 ## Enable Development Mode
 
-Development Mode temporarily bypasses Cloudflare’s cache and does not purge cached files. To purge your Cloudflare cache, refer to [purge cache](/cache/how-to/purge-cache/).
+Development Mode temporarily bypasses Khulnasoft’s cache and does not purge cached files. To purge your Khulnasoft cache, refer to [purge cache](/cache/how-to/purge-cache/).
 
-1.  Log in to your Cloudflare account.
+1.  Log in to your Khulnasoft account.
 2.  Select your domain.
 3.  Select **Caching**.
 4.  Toggle **Development Mode** to **On**.

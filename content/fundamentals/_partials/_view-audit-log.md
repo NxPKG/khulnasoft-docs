@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-To access audit logs in the Cloudflare dashboard:
+To access audit logs in the Khulnasoft dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Manage Account** > **Audit Log**.

@@ -22,7 +22,7 @@ header: Request
 ---
 curl -X GET \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/<LIVE_INPUT_UID>/videos
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/<LIVE_INPUT_UID>/videos
 ```
 
 The response contains the HLS/DASH URL that can be used to play the current live video as well as any previously recorded live videos. In the example below, the state of the live video is `live-inprogress` and the state for previously recorded video is `ready`.
@@ -90,7 +90,7 @@ highlight: [4,7,21,28,32,46]
 
 To get the embed code or HLS Manifest URL for your video:
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to your [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Click **Stream** > **Live Inputs**.
 3. Click a live input from the list to select it. The page for your live input displays.
 4. Locate the **Embed** and **HLS Manifest URL** beneath the video.

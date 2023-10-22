@@ -2,14 +2,14 @@
 pcx_content_type: how-to
 title: Filters
 meta:
-  description: Learn how to use filters in Cloudflare Web Analytics.
+  description: Learn how to use filters in Khulnasoft Web Analytics.
 ---
 
 # Filters
 
 To filter the data shown on Web Analytics:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select the **Analytics & Logs** drop-down and choose **Web Analytics**.
 3. Select the website you want to check.
 4. Select **Add filter**.

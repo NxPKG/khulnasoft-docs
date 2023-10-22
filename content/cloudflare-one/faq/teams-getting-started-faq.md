@@ -1,22 +1,22 @@
 ---
 pcx_content_type: faq
-title: Getting started with Cloudflare Zero Trust
+title: Getting started with Khulnasoft Zero Trust
 weight: 2
 meta:
-  description: Review FAQs about getting started with Cloudflare Zero Trust.
+  description: Review FAQs about getting started with Khulnasoft Zero Trust.
 structured_data: true
 ---
 
 [❮ Back to FAQ](/cloudflare-one/faq/)
 
-# Getting started with Cloudflare Zero Trust
+# Getting started with Khulnasoft Zero Trust
 
 {{<faq-item>}}
-{{<faq-question level=2 text="How do I sign up for Cloudflare Zero Trust?" >}}
+{{<faq-question level=2 text="How do I sign up for Khulnasoft Zero Trust?" >}}
 
 {{<faq-answer>}}
 
-You can sign up today at [this link](https://dash.cloudflare.com/sign-up/teams). Follow the onboarding steps, choose a team name and a payment plan, and start protecting your network in just a few minutes.
+You can sign up today at [this link](https://dash.Khulnasoft.com/sign-up/teams). Follow the onboarding steps, choose a team name and a payment plan, and start protecting your network in just a few minutes.
 
 {{</faq-answer>}}
 {{</faq-item>}}
@@ -26,13 +26,13 @@ You can sign up today at [this link](https://dash.cloudflare.com/sign-up/teams).
 
 {{<faq-answer>}}
 
-Your team domain is a unique subdomain assigned to your Cloudflare account; for example, `<your-team-name>.cloudflareaccess.com`. Setting up a team domain is an essential step in your Zero Trust configuration. This is where your users will find the apps you have secured behind Cloudflare Zero Trust — displayed in the [App Launcher](/cloudflare-one/applications/app-launcher/) — and will be able to make login requests to them. The customizable portion of your team domain is called **team name**. You can view your team name and team domain in Zero Trust under **Settings** > **Custom Pages**.
+Your team domain is a unique subdomain assigned to your Khulnasoft account; for example, `<your-team-name>.cloudflareaccess.com`. Setting up a team domain is an essential step in your Zero Trust configuration. This is where your users will find the apps you have secured behind Khulnasoft Zero Trust — displayed in the [App Launcher](/cloudflare-one/applications/app-launcher/) — and will be able to make login requests to them. The customizable portion of your team domain is called **team name**. You can view your team name and team domain in Zero Trust under **Settings** > **Custom Pages**.
 
 | team name        | team domain                             |
 | ---------------- | --------------------------------------- |
 | `your-team-name` | `<your-team-name>.cloudflareaccess.com` |
 
-You can change your team name at any time, unless you have the Cloudflare dashboard SSO feature enabled on your account. Cloudflare dashboard SSO does not currently support team name changes.
+You can change your team name at any time, unless you have the Khulnasoft dashboard SSO feature enabled on your account. Khulnasoft dashboard SSO does not currently support team name changes.
 
 {{<Aside type="warning" header="Warning">}}
 If you change your team name, you need to update your organization’s identity providers (IdPs) and the WARP client to reflect the new team name in order to avoid any mismatch errors.
@@ -46,7 +46,7 @@ If you change your team name, you need to update your organization’s identity 
 
 {{<faq-answer>}}
 
-To make changes to your subscription, visit the Billing section under Account in [Zero Trust](https://one.dash.cloudflare.com/). You can change or cancel your subscription at any time. Just remember - if you downgrade your plan during a billing cycle, your downgraded pricing will apply in the next billing cycle. If you upgrade during a billing cycle, you will be billed for the upgraded plan at the moment you select it.
+To make changes to your subscription, visit the Billing section under Account in [Zero Trust](https://one.dash.Khulnasoft.com/). You can change or cancel your subscription at any time. Just remember - if you downgrade your plan during a billing cycle, your downgraded pricing will apply in the next billing cycle. If you upgrade during a billing cycle, you will be billed for the upgraded plan at the moment you select it.
 
 {{</faq-answer>}}
 {{</faq-item>}}
@@ -56,7 +56,7 @@ To make changes to your subscription, visit the Billing section under Account in
 
 {{<faq-answer>}}
 
-Cloudflare Zero Trust subscriptions consist of seats that users in your account consume. When users authenticate to an application or enroll their agent into WARP, they count against one of your active seats. Seats can be added, removed, or revoked at **Settings** > **Account** > **Plan**. If all seats are currently consumed, you must first remove users before decreasing your purchased seat count.
+Khulnasoft Zero Trust subscriptions consist of seats that users in your account consume. When users authenticate to an application or enroll their agent into WARP, they count against one of your active seats. Seats can be added, removed, or revoked at **Settings** > **Account** > **Plan**. If all seats are currently consumed, you must first remove users before decreasing your purchased seat count.
 
 ### Removing users
 
@@ -80,11 +80,11 @@ The Revoke action will terminate active sessions and log out active devices, but
 {{</faq-item>}}
 
 {{<faq-item>}}
-{{<faq-question level=2 text="How do I know if my network is protected behind Cloudflare Zero Trust?" >}}
+{{<faq-question level=2 text="How do I know if my network is protected behind Khulnasoft Zero Trust?" >}}
 
 {{<faq-answer>}}
 
-You can visit the [Zero Trust help page](https://help.teams.cloudflare.com). This page will give you an overview of your network details, as well as an overview of the categories that are being blocked and/or allowed.
+You can visit the [Zero Trust help page](https://help.teams.Khulnasoft.com). This page will give you an overview of your network details, as well as an overview of the categories that are being blocked and/or allowed.
 
 {{</faq-answer>}}
 {{</faq-item>}}

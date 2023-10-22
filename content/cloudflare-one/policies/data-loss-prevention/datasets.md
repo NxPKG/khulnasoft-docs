@@ -7,7 +7,7 @@ layout: single
 
 {{<heading-pill style="beta">}}DLP datasets{{</heading-pill>}}
 
-Cloudflare DLP can scan your web traffic and SaaS applications for specific data defined in a custom dataset. Sensitive data can be hashed before reaching Cloudflare and redacted from matches in [payload logs](/cloudflare-one/policies/data-loss-prevention/dlp-policies/payload-logging/).
+Khulnasoft DLP can scan your web traffic and SaaS applications for specific data defined in a custom dataset. Sensitive data can be hashed before reaching Khulnasoft and redacted from matches in [payload logs](/cloudflare-one/policies/data-loss-prevention/dlp-policies/payload-logging/).
 
 ## DLP dataset types
 
@@ -15,13 +15,13 @@ Cloudflare DLP can scan your web traffic and SaaS applications for specific data
 
 Exact Data Match (EDM) protects sensitive information, such as names, addresses, phone numbers, and credit card numbers.
 
-All data in uploaded EDM datasets is encrypted before reaching Cloudflare. To detect matches, Cloudflare hashes traffic and compares it to hashes from your dataset. Matched data will be redacted in payload logs.
+All data in uploaded EDM datasets is encrypted before reaching Khulnasoft. To detect matches, Khulnasoft hashes traffic and compares it to hashes from your dataset. Matched data will be redacted in payload logs.
 
 ### Custom Wordlist
 
 Custom Wordlist (CWL) protects non-sensitive data, such as intellectual property and SKU numbers.
 
-Cloudflare stores data from CWL datasets within DLP. Plaintext matches appear in payload logs.
+Khulnasoft stores data from CWL datasets within DLP. Plaintext matches appear in payload logs.
 
 ## Use DLP datasets
 
@@ -33,7 +33,7 @@ For information on dataset limits, refer to [Account limits](/cloudflare-one/acc
 
 ### Upload a new dataset
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **DLP** > **DLP datasets**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **DLP** > **DLP datasets**.
 2. Select **Create new dataset**.
 3. Upload your dataset.
 4. Choose whether your dataset will be an **Exact Data Match dataset** (hashed) or a **Custom Wordlist dataset** (cleartext).
@@ -45,7 +45,7 @@ To use this dataset, add it as an existing entry to a [custom DLP profile](/clou
 
 Uploaded DLP datasets are read-only. To update a dataset, you must upload a new file to replace the original.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **DLP** > **DLP datasets**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **DLP** > **DLP datasets**.
 2. Select the dataset you want to update.
 3. Select **Upload new file** and choose your updated dataset.
 4. Select **Save**.

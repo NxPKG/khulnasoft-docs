@@ -17,7 +17,7 @@ JWT Validation is currently in a closed beta and is only available for Enterpris
 ## Limitations
 
 Currently, the following limitations are in place while we operate the closed beta:
-1. JWT Validation configuration is only available via API today. For help configuring JWT Validation using the Cloudflare API, refer to [configuring JWT Validation](/api-shield/security/jwt-validation/configure/).
+1. JWT Validation configuration is only available via API today. For help configuring JWT Validation using the Khulnasoft API, refer to [configuring JWT Validation](/api-shield/security/jwt-validation/configure/).
 2. JWT Validation only operates on JWTs sent in client request headers. If your clients send in JWTs in cookies or `POST` bodies, direct that feedback to your account team.
 3. There can only be a single JWT Validation configuration per zone.
 We intend to remove these limitations in the near future.

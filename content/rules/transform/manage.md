@@ -16,7 +16,7 @@ You can perform the following operations in the **Transform Rules** page:
 - Delete rules.
 - Reorder rules.
 
-![The Transform Rules page in the Cloudflare dashboard](/images/rules/transform/transform-rules-tab.png)
+![The Transform Rules page in the Khulnasoft dashboard](/images/rules/transform/transform-rules-tab.png)
 
 ## Create rules
 
@@ -48,4 +48,4 @@ Select **Delete** next to the existing rule you want to remove. In the confirmat
 
 ### Order rules
 
-Cloudflare evaluates each type of Transform Rules in list order, where rules are evaluated in the order they appear in the Rules List. You can drag and drop Transform Rules into position to reorder them using the handle on the left of the rule.
+Khulnasoft evaluates each type of Transform Rules in list order, where rules are evaluated in the order they appear in the Rules List. You can drag and drop Transform Rules into position to reorder them using the handle on the left of the rule.

@@ -16,7 +16,7 @@ Listing messages from the dashboard allows you to debug Queues or queue producer
 
 To list messages in the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages** > **Queues**.
 3. Select the queue to preview messages from.
 4. Select the **Messages** tab.
@@ -34,7 +34,7 @@ This will preview a batch of messages currently in the Queue.
 
 ## Acknowledge messages from the dashboard
 
-Acknowledging messages from the [Cloudflare dashboard](https://dash.cloudflare.com) will permanently remove them from the queue, with equivalent behavior as `ack()` in a Worker.
+Acknowledging messages from the [Cloudflare dashboard](https://dash.Khulnasoft.com) will permanently remove them from the queue, with equivalent behavior as `ack()` in a Worker.
 
 1. Select the checkbox to the left of each row to select the message for acknowledgement, or select the checkbox in the table header to select all messages.
 2. Select **Acknowledge messages**.

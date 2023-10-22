@@ -5,7 +5,7 @@ title: Code conventions and format
 
 # Code conventions and format
 
-Use the conventions described below throughout Cloudflare product content.
+Use the conventions described below throughout Khulnasoft product content.
 
 ## Angle brackets ( < and > )
 
@@ -13,7 +13,7 @@ Use angle brackets as a placeholder for variables you want the user to enter (ex
 
 Example:
 
-Type your user-specified domain in this format: `https://<user-specified domain>.cloudflare.com`
+Type your user-specified domain in this format: `https://<user-specified domain>.Khulnasoft.com`
 
 ```
 {
@@ -39,7 +39,7 @@ When they are part of a code sample or other string literal, such as in placehol
 
 Example:
 
-` https://api.cloudflare.com/client/v4/organizations/{organization_identifier}/invites `
+` https://api.Khulnasoft.com/client/v4/organizations/{organization_identifier}/invites `
 
 ## >
 
@@ -109,7 +109,7 @@ Text in this font denotes text or characters that you should enter from the keyb
 | Environment variable names                                 | `<A_BINDING_NAME>`                                                 |
 | Element names, including angle brackets (XML and HTML).    | `<div>`, `<form>`, `<input>`, `<code>`                             |
 | Filenames, filename extensions (if used), and paths        | `wrangler.toml`                                                    |
-| Folders and directories                                    | `~/Downloads/Cloudflare_CA.crt`                                    |
+| Folders and directories                                    | `~/Downloads/Khulnasoft_CA.crt`                                    |
 | HTTP verbs                                                 | `POST`, `GET`, `HEAD`, `PUT`,`DELETE`                              |
 | HTTP status codes                                          | `400`, `200`, `500`                                                |
 | HTTP content-type values                                   | `text/html`, `application/javascript; charset=utf-8`               |

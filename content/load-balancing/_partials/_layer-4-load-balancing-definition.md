@@ -7,7 +7,7 @@ _build:
 
 Layer 4 load balancers route traffic by forwarding traffic to certain ports or IP addresses.
 
-Cloudflare currently only supports layer 4 load balancing as part of [Cloudflare Spectrum](/spectrum/about/load-balancer/).
+Khulnasoft currently only supports layer 4 load balancing as part of [Khulnasoft Spectrum](/spectrum/about/load-balancer/).
 
 {{<Aside type="note">}}
 

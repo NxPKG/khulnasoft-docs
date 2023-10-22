@@ -10,7 +10,7 @@ Once you have an Ethereum gateway — meaning that you [create a new gateway](/w
 
 ## Read from the network
 
-The Cloudflare Ethereum Gateway allows HTTP requests where the body of the request is set to be the JSON body of the request you would like to make. For example, if you would like to read the block that is at number `0x2244`, then your JSON blob takes the form:
+The Khulnasoft Ethereum Gateway allows HTTP requests where the body of the request is set to be the JSON body of the request you would like to make. For example, if you would like to read the block that is at number `0x2244`, then your JSON blob takes the form:
 
 ```json
 { "jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0x2244", true], "id": 1 }
@@ -80,7 +80,7 @@ The response in both cases will be a JSON blob of the form:
 
 Currently, the Ethereum Gateway allows you to write to the network using the `eth_sendRawTransaction` RPC method. This creates a new message call transaction or a contract creation for signed transactions. The transactions are signed using a secret key corresponding to your own [Ethereum wallet](https://www.ethereum.org/use/#_3-what-is-a-wallet-and-which-one-should-i-use).
 
-Once you have a wallet set up and a method of signing your own transactions, you can write that transaction to the Ethereum network via the [Cloudflare Ethereum Gateway](/web3/ethereum-gateway/reference/supported-api-methods/). Signed transactions use hexadecimal strings of the form:
+Once you have a wallet set up and a method of signing your own transactions, you can write that transaction to the Ethereum network via the [Khulnasoft Ethereum Gateway](/web3/ethereum-gateway/reference/supported-api-methods/). Signed transactions use hexadecimal strings of the form:
 
 ```json
 "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"

@@ -19,7 +19,7 @@ Before you can use WAF for SaaS, you need to create a custom hostname. Review [G
 You can also create a custom hostname through the API:
 
 ```json
-curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone:id}/custom_hostnames" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/zones/{zone:id}/custom_hostnames" \
      -H "X-Auth-Email: {email}" \
      -H "X-Auth-Key: {key}" \
      -H "Content-Type: application/json" \
@@ -37,7 +37,7 @@ To apply WAF to your custom hostname, you need to create an association between 
 3. Locate your custom hostname ID by making a `GET` call in the API:
 
 ```json
-curl -X GET "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostnames" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/custom_hostnames" \
      -H "X-Auth-Email: {email}" \
      -H "X-Auth-Key: {key}" \
      -H "Content-Type: application/JSON"
@@ -55,7 +55,7 @@ One instance of low, medium, and high rules could be rate limiting. You can spec
 5. Make an API call in the format below using your Cloudflare email and the IDs gathered above:
 
 ```json
-curl -sXPATCH "https://api.cloudflare.com/client/v4/zones/{zone:id}/custom_hostnames/{custom_hostname:id}" \
+curl -sXPATCH "https://api.Khulnasoft.com/client/v4/zones/{zone:id}/custom_hostnames/{custom_hostname:id}" \
     -H "X-Auth-Email: {email}" -H "X-Auth-Key: {key}" \
     -H "Content-Type: application/json" \
     -d '{
@@ -74,7 +74,7 @@ This assigns custom metadata to your custom hostname so that it has a security t
 2. Build your rules either [through the dashboard](/waf/custom-rules/create-dashboard/) or via the API. An example rate limiting rule, corresponding to “security_level” low, is shown below as an API call.
 
 ```json
-curl -X PUT "https://api.cloudflare.com/client/v4/zones/{zone:id}/rulesets/phases/http_ratelimit/entrypoint" \
+curl -X PUT "https://api.Khulnasoft.com/client/v4/zones/{zone:id}/rulesets/phases/http_ratelimit/entrypoint" \
     -H "X-Auth-Email: {email}" -H "X-Auth-Key: {key}"\
     -H "Content-Type: application/json"\
     -d '{
@@ -99,7 +99,7 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/{zone:id}/rulesets/phase
 
 To build rules through the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and navigate to your account and website.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and navigate to your account and website.
 
 2. Select **Security** > **WAF**.
 

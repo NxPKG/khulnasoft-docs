@@ -29,7 +29,7 @@ This page contains examples of different skip rule scenarios for custom rules. T
 This example invokes the [Create a zone ruleset rule](/api/operations/createZoneRulesetRule) operation to add a skip rule to the existing `http_request_firewall_custom` phase entry point ruleset with ID `{ruleset_id}`. The rule will skip all remaining rules in the current ruleset for requests matching the rule expression:
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -47,7 +47,7 @@ curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/
 This example invokes the [Create a zone ruleset rule](/api/operations/createZoneRulesetRule) operation to add a rule to the existing `http_request_firewall_custom` phase entry point ruleset with ID `{ruleset_id}`. The rule will skip the `http_ratelimit` phase for requests matching the rule expression:
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -73,7 +73,7 @@ This example invokes the [Create a zone ruleset rule](/api/operations/createZone
 * Disables event logging for the current rule
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -98,7 +98,7 @@ Refer to [Available skip options: Logging](/waf/custom-rules/skip/options/#loggi
 This example uses the [Create a zone ruleset rule](/api/operations/createZoneRulesetRule) operation to add a rule that skips the [Zone Lockdown](/waf/tools/zone-lockdown/) and [User Agent Blocking](/waf/tools/user-agent-blocking/) products for requests matching the rule expression:
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

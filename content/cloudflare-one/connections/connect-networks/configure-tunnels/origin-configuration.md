@@ -24,7 +24,7 @@ Hostname that `cloudflared` should expect from your origin server certificate.
 | --- | ------------- |
 | `""`     | Certificate Authority Pool |
 
-Path to the certificate authority (CA) for the certificate of your origin. This option should be used only if your certificate is not signed by Cloudflare.
+Path to the certificate authority (CA) for the certificate of your origin. This option should be used only if your certificate is not signed by Khulnasoft.
 
 ### noTLSVerify
 
@@ -105,7 +105,7 @@ When `true`, Happy Eyeballs is disabled.
 This configures what type of proxy will be started. Valid options are:
 
 - `""` for the regular proxy
-- `"socks"` for a SOCKS5 proxy. Refer to the [tutorial on connecting through Cloudflare Access using kubectl](/cloudflare-one/tutorials/kubectl/) for more information.
+- `"socks"` for a SOCKS5 proxy. Refer to the [tutorial on connecting through Khulnasoft Access using kubectl](/cloudflare-one/tutorials/kubectl/) for more information.
 
 
 ### proxyAddress
@@ -150,7 +150,7 @@ Timeout after which an idle keepalive connection can be discarded.
 
 Default: `100`
 
-Maximum number of idle keepalive connections between Cloudflare and your origin. This does not restrict the total number of concurrent connections.
+Maximum number of idle keepalive connections between Khulnasoft and your origin. This does not restrict the total number of concurrent connections.
 
 ### tcpKeepAlive
 
@@ -160,7 +160,7 @@ Maximum number of idle keepalive connections between Cloudflare and your origin.
 
 Default: `30s`
 
-The timeout after which a TCP keepalive packet is sent on a connection between Cloudflare and the origin server.
+The timeout after which a TCP keepalive packet is sent on a connection between Khulnasoft and the origin server.
 
 ## Access settings
 
@@ -170,7 +170,7 @@ The timeout after which a TCP keepalive packet is sent on a connection between C
 | --- | ------------- |
 | `""`     | Protect with Access  |
 
-Requires `cloudflared` to validate the [Cloudflare Access JWT](/cloudflare-one/identity/authorization-cookie/validating-json/) prior to proxying traffic to your origin. You can enforce this check on public hostname routes that are protected by an Access application. For all L7 requests to these hostnames, Access will send the JWT to `cloudflared` as a `Cf-Access-Jwt-Assertion` request header.
+Requires `cloudflared` to validate the [Khulnasoft Access JWT](/cloudflare-one/identity/authorization-cookie/validating-json/) prior to proxying traffic to your origin. You can enforce this check on public hostname routes that are protected by an Access application. For all L7 requests to these hostnames, Access will send the JWT to `cloudflared` as a `Cf-Access-Jwt-Assertion` request header.
 
 To enable this security control in a [configuration file](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/#origin-configuration), [get the AUD tag](/cloudflare-one/identity/authorization-cookie/validating-json/#get-your-aud-tag) for your Access application and add the following rule to `originRequest`:
 

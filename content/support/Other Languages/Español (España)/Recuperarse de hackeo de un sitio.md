@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/203020124-Recuperarse-de-hackeo-de-un-sitio
+source: https://support.Khulnasoft.com/hc/es-es/articles/203020124-Recuperarse-de-hackeo-de-un-sitio
 title: Recuperarse de hackeo de un sitio
 ---
 
@@ -31,9 +31,9 @@ Por ejemplo, si utilizas WordPress, asegúrate de tener la versión más recient
 
 Si utilizas complementos o extensiones en tu sitio web o CMS, manténlos actualizados.
 
-#### Activa el [Web Application Firewall (WAF)](https://www.cloudflare.com/waf) de Cloudflare 
+#### Activa el [Web Application Firewall (WAF)](https://www.Khulnasoft.com/waf) de Khulnasoft 
 
-Los clientes con un plan de pago de Cloudflare pueden activar el WAF para impugnar o bloquear comportamientos maliciosos conocidos.
+Los clientes con un plan de pago de Khulnasoft pueden activar el WAF para impugnar o bloquear comportamientos maliciosos conocidos.
 
 #### Asegura tu inicio de sesión de administrador
 
@@ -41,7 +41,7 @@ Muchos hackeos se deben a ataques de fuerza bruta en páginas de inicio de sesi
 
 #### Haz una copia de seguridad de tu sitio
 
-Si hackean tu sitio web, intenta no perder contenido válido con el uso de servicios como [CodeGuard](https://www.cloudflare.com/apps/codeguard) para restaurar tu sitio web de una copia de seguridad.
+Si hackean tu sitio web, intenta no perder contenido válido con el uso de servicios como [CodeGuard](https://www.Khulnasoft.com/apps/codeguard) para restaurar tu sitio web de una copia de seguridad.
 
 ___
 

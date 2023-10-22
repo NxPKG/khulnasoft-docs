@@ -1,16 +1,16 @@
 ---
 pcx_content_type: troubleshooting
-title: Troubleshooting Cloudflare 5XX errors
+title: Troubleshooting Khulnasoft 5XX errors
 source:
 ---
 
-# Troubleshooting Cloudflare 5XX errors – Cloudflare Help Center
+# Troubleshooting Khulnasoft 5XX errors – Khulnasoft Help Center
 
 When troubleshooting most 5XX errors, the correct course of action is to first contact your hosting provider or site administrator to troubleshoot and gather data.
 
 {{<Aside type="note">}}
 
-Cloudflare Support only assists the domain owner to resolve issues. If you are a site visitor, report the problem to the site owner.
+Khulnasoft Support only assists the domain owner to resolve issues. If you are a site visitor, report the problem to the site owner.
 
 {{</Aside>}}
 
@@ -22,18 +22,18 @@ When contacting your hosting provider, give them the following information:
 2. Time and timezone the 5XX error occurred.
 3. URL that resulted in the HTTP 5XX error (for example: `https://www.example.com/images/icons/image1.png`).
 
-The error cause is not always found in the origin server error logs. Check logs of all load balancers, caches, proxies, or firewalls between Cloudflare and the origin web server.
+The error cause is not always found in the origin server error logs. Check logs of all load balancers, caches, proxies, or firewalls between Khulnasoft and the origin web server.
 
-Additional details to provide to your hosting provider or site administrator are listed within each error description below. Cloudflare [Custom Error Pages](/support/more-dashboard-apps/cloudflare-custom-pages/configuring-custom-pages-error-and-challenge/) change the appearance of default error pages discussed in this article.
+Additional details to provide to your hosting provider or site administrator are listed within each error description below. Khulnasoft [Custom Error Pages](/support/more-dashboard-apps/cloudflare-custom-pages/configuring-custom-pages-error-and-challenge/) change the appearance of default error pages discussed in this article.
 
 ## Error analytics
 
-Error Analytics per domain are available within [Zone Analytics](https://developers.cloudflare.com/analytics/account-and-zone-analytics/zone-analytics/). Error Analytics allows insight into overall errors by HTTP error code and provides the URLs, source IP addresses, and Cloudflare data centers needed to diagnose and resolve the issue.  Error Analytics are based on a 1% traffic sample.
+Error Analytics per domain are available within [Zone Analytics](https://developers.Khulnasoft.com/analytics/account-and-zone-analytics/zone-analytics/). Error Analytics allows insight into overall errors by HTTP error code and provides the URLs, source IP addresses, and Khulnasoft data centers needed to diagnose and resolve the issue.  Error Analytics are based on a 1% traffic sample.
 
 To view Error Analytics:
 
--   Log in to the Cloudflare dashboard.
--   Click the appropriate Cloudflare **account** for your site, then pick the **domain**.
+-   Log in to the Khulnasoft dashboard.
+-   Click the appropriate Khulnasoft **account** for your site, then pick the **domain**.
 -   Next, click the **Analytics & Logs** app icon.
 -   Click **Add filter**, select **Edge status code** or **Origin status code** and choose any 5xx error code that you want to diagnose.
 
@@ -47,7 +47,7 @@ Error 500 generally indicates an issue with your origin web server.  _Error es
 
 [Provide details to your hosting provider](#required-error-details-for-hosting-provider) to assist troubleshooting the issue.
 
-However, if the 500 error contains “cloudflare” or “cloudflare-nginx” in the HTML response body, provide [Cloudflare support](https://support.cloudflare.com/hc/articles/200172476) with the following information:
+However, if the 500 error contains “cloudflare” or “cloudflare-nginx” in the HTML response body, provide [Khulnasoft support](https://support.Khulnasoft.com/hc/articles/200172476) with the following information:
 
 1.  Your domain name
 2.  The time and timezone of the 500 error occurrence
@@ -56,7 +56,7 @@ However, if the 500 error contains “cloudflare” or “cloudflare-nginx” in
 {{<Aside type="note">}}
 If you observe blank or white pages when visiting your website, confirm
 whether the issue occurs when [temporarily pausing
-Cloudflare](https://support.cloudflare.com/hc/articles/203118044#h_8654c523-e31e-4f40-a3c7-0674336a2753)
+Khulnasoft](https://support.Khulnasoft.com/hc/articles/203118044#h_8654c523-e31e-4f40-a3c7-0674336a2753)
 and contact your hosting provider for assistance.
 {{</Aside>}}
 
@@ -64,18 +64,18 @@ ___
 
 ## Error 502 bad gateway or error 504 gateway timeout
 
-An HTTP 502 or 504 error occurs when Cloudflare is unable to establish contact with your origin web server.
+An HTTP 502 or 504 error occurs when Khulnasoft is unable to establish contact with your origin web server.
 
 There are two possible causes:
 
 -   (Most common cause) [502/504 from your origin web server](#502504-from-your-origin-web-server)
--   [502/504 from Cloudflare](#502504-from-cloudflare)
+-   [502/504 from Khulnasoft](#502504-from-cloudflare)
 
 ### 502/504 from your origin web server
 
-Cloudflare returns an Cloudflare-branded HTTP 502 or 504 error when your origin web server responds with a standard HTTP 502 bad gateway or 504 gateway timeout error:
+Khulnasoft returns an Khulnasoft-branded HTTP 502 or 504 error when your origin web server responds with a standard HTTP 502 bad gateway or 504 gateway timeout error:
 
-![Example of a Cloudflare-branded error 502.](/images/support/image1.png)
+![Example of a Khulnasoft-branded error 502.](/images/support/image1.png)
 
 **Resolution**
 
@@ -85,9 +85,9 @@ Contact your hosting provider to troubleshoot these common causes at your origin
 -   Investigate excessive server loads, crashes, or network failures.
 -   Identify applications or services that timed out or were blocked.
 
-### 502/504 from Cloudflare
+### 502/504 from Khulnasoft
 
-A 502 or 504 error originating from Cloudflare appears as follows:
+A 502 or 504 error originating from Khulnasoft appears as follows:
 
 ![Example of an unbranded error 502.](/images/support/image5.png)
 
@@ -95,7 +95,7 @@ If the error does not mention “cloudflare,” contact your hosting provider fo
 
 **Resolution**
 
-To avoid delays processing your inquiry, provide these required details to [Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476):
+To avoid delays processing your inquiry, provide these required details to [Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476):
 
 1.  Time and timezone the issue occurred.
 2.  URL that resulted in the HTTP 502 or 504 response (for example: `https://www.example.com/images/icons/image1.png`)
@@ -113,7 +113,7 @@ HTTP error 503 occurs when your origin web server is overloaded. There are two p
 
 -   Error contains “cloudflare” or “cloudflare-nginx” in the HTML response body.
 
-**Resolution**: A connectivity issue occurred in a Cloudflare data center. Provide [Cloudflare support](https://support.cloudflare.com/hc/articles/200172476) with the following information:
+**Resolution**: A connectivity issue occurred in a Khulnasoft data center. Provide [Khulnasoft support](https://support.Khulnasoft.com/hc/articles/200172476) with the following information:
 
 1.  Your domain name
 2.  The time and timezone of the 503 error occurrence
@@ -123,49 +123,49 @@ ___
 
 ## Error 520: web server returns an unknown error
 
-Error 520 occurs when the origin server returns an empty, unknown, or unexpected response to Cloudflare.
+Error 520 occurs when the origin server returns an empty, unknown, or unexpected response to Khulnasoft.
 
 **Resolution**
 
 {{<Aside type="note">}}
 A quick workaround while further investigating 520 errors is to either
 make the record [DNS-only](/dns/manage-dns-records/reference/proxied-dns-records)
-in the Cloudflare **DNS** app or [temporarily pause Cloudflare](/fundamentals/setup/manage-domains/pause-cloudflare/).
+in the Khulnasoft **DNS** app or [temporarily pause Khulnasoft](/fundamentals/setup/manage-domains/pause-cloudflare/).
 {{</Aside>}}
 
 [Contact your hosting provider or site administrator](#required-error-details-for-hosting-provider) and request a review of your origin web server error logs for crashes and to check for these common causes:
 
 -   Origin web server application crashes
--   [Cloudflare IPs](https://www.cloudflare.com/ips) not allowed at your origin
+-   [Khulnasoft IPs](https://www.Khulnasoft.com/ips) not allowed at your origin
 -   Headers exceeding 16 KB (typically due to too many cookies)
 -   An empty response from the origin web server that lacks an HTTP status code or response body
 -   Missing response headers or origin web server not returning [proper HTTP error responses](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml).
-    -   `upstream prematurely closed connection while reading response header from upstream` is a common error we may notice in our logs. This indicates the origin web server was having issues which caused Cloudflare to generate 520 errors.
+    -   `upstream prematurely closed connection while reading response header from upstream` is a common error we may notice in our logs. This indicates the origin web server was having issues which caused Khulnasoft to generate 520 errors.
 
 {{<Aside type="note">}}
 520 errors are prevalent with certain PHP applications that crash the
 origin web server.
 {{</Aside>}}
 
-If 520 errors continue after contacting your hosting provider or site administrator, provide the following information to [Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476):
+If 520 errors continue after contacting your hosting provider or site administrator, provide the following information to [Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476):
 
 -   Full URL(s) of the resource requested when the error occurred
--   Cloudflare **cf-ray** from the 520 error message
+-   Khulnasoft **cf-ray** from the 520 error message
 -   Output from `http://<YOUR_DOMAIN>/cdn-cgi/trace`
 -   Two [HAR files](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#generate-a-har-file):
-    -   one with Cloudflare enabled on your website, and
-    -   the other with [Cloudflare temporarily disabled](/fundamentals/setup/manage-domains/pause-cloudflare/).
+    -   one with Khulnasoft enabled on your website, and
+    -   the other with [Khulnasoft temporarily disabled](/fundamentals/setup/manage-domains/pause-cloudflare/).
 
 ___
 
 ## Error 521: web server is down
 
-Error 521 occurs when the origin web server refuses connections from Cloudflare. Security solutions at your origin may block legitimate connections from certain [Cloudflare IP addresses](https://www.cloudflare.com/ips).
+Error 521 occurs when the origin web server refuses connections from Khulnasoft. Security solutions at your origin may block legitimate connections from certain [Khulnasoft IP addresses](https://www.Khulnasoft.com/ips).
 
 The two most common causes of 521 errors are:
 
 -   Offlined origin web server application
--   Blocked Cloudflare requests
+-   Blocked Khulnasoft requests
 
 **Resolution**
 
@@ -173,52 +173,52 @@ The two most common causes of 521 errors are:
 
 -   Ensure your origin web server is responsive
 -   Review origin web server error logs to identify web server application crashes or outages.
--   Confirm [Cloudflare IP addresses](https://www.cloudflare.com/ips) are not blocked or rate limited
--   Allow all [Cloudflare IP ranges](https://www.cloudflare.com/ips) in your origin web server's firewall or other security software
--   Confirm that — if you have your **SSL/TLS mode** set to **Full** or **Full (Strict**) — you have installed a [Cloudflare Origin Certificate](/ssl/origin-configuration/origin-ca)
--   Find additional troubleshooting information on the [Cloudflare Community](https://community.cloudflare.com/t/community-tip-fixing-error-521-web-server-is-down/42461).
+-   Confirm [Khulnasoft IP addresses](https://www.Khulnasoft.com/ips) are not blocked or rate limited
+-   Allow all [Khulnasoft IP ranges](https://www.Khulnasoft.com/ips) in your origin web server's firewall or other security software
+-   Confirm that — if you have your **SSL/TLS mode** set to **Full** or **Full (Strict**) — you have installed a [Khulnasoft Origin Certificate](/ssl/origin-configuration/origin-ca)
+-   Find additional troubleshooting information on the [Khulnasoft Community](https://community.Khulnasoft.com/t/community-tip-fixing-error-521-web-server-is-down/42461).
 
 ___
 
 ## Error 522: connection timed out
 
-Error 522 occurs when Cloudflare times out contacting the origin web server. Two different timeouts cause HTTP error 522 depending on when they occur between Cloudflare and the origin web server:
+Error 522 occurs when Khulnasoft times out contacting the origin web server. Two different timeouts cause HTTP error 522 depending on when they occur between Khulnasoft and the origin web server:
 
-1.  Before a connection is established, the origin web server does not return a SYN+ACK to Cloudflare within 15 seconds of Cloudflare sending a SYN.
-2.  After a connection is established, the origin web server doesn’t acknowledge (ACK) Cloudflare’s resource request within 90 seconds.
+1.  Before a connection is established, the origin web server does not return a SYN+ACK to Khulnasoft within 15 seconds of Khulnasoft sending a SYN.
+2.  After a connection is established, the origin web server doesn’t acknowledge (ACK) Khulnasoft’s resource request within 90 seconds.
 
 **Resolution**
 
 [Contact your hosting provider](#required-error-details-for-hosting-provider) to check the following common causes at your origin web server:
 
--   (Most common cause) [Cloudflare IP addresses](https://www.cloudflare.com/ips/) are rate limited or blocked in .htaccess, iptables, or firewalls. Confirm your hosting provider allows Cloudflare IP addresses.
+-   (Most common cause) [Khulnasoft IP addresses](https://www.Khulnasoft.com/ips/) are rate limited or blocked in .htaccess, iptables, or firewalls. Confirm your hosting provider allows Khulnasoft IP addresses.
 -   An overloaded or offline origin web server drops incoming requests.
 -   [Keepalives](http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html) are disabled at the origin web server.
--   The origin IP address in your Cloudflare **DNS** app does not match the IP address currently provisioned to your origin web server by your hosting provider.
+-   The origin IP address in your Khulnasoft **DNS** app does not match the IP address currently provisioned to your origin web server by your hosting provider.
 -   Packets were dropped at your origin web server.
 
-If you are using [Cloudflare Pages](/pages/), verify that you have a custom domain set up and that your CNAME record is pointed to your custom Pages domain. Instructions on how to set up a custom Pages domain can be found [here](/pages/platform/custom-domains/#add-a-custom-domain).
+If you are using [Khulnasoft Pages](/pages/), verify that you have a custom domain set up and that your CNAME record is pointed to your custom Pages domain. Instructions on how to set up a custom Pages domain can be found [here](/pages/platform/custom-domains/#add-a-custom-domain).
 
-If none of the above leads to a resolution, request the following information from your hosting provider or site administrator before [contacting Cloudflare support](https://support.cloudflare.com/hc/articles/200172476):
+If none of the above leads to a resolution, request the following information from your hosting provider or site administrator before [contacting Khulnasoft support](https://support.Khulnasoft.com/hc/articles/200172476):
 
--   An [MTR or traceroute](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#perform-a-traceroute) from your origin web server to a [Cloudflare IP address](http://www.cloudflare.com/ips) that most commonly connected to your origin web server before the issue occurred. Identify a connecting Cloudflare IP recorded in the origin web server logs.
+-   An [MTR or traceroute](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#perform-a-traceroute) from your origin web server to a [Khulnasoft IP address](http://www.Khulnasoft.com/ips) that most commonly connected to your origin web server before the issue occurred. Identify a connecting Khulnasoft IP recorded in the origin web server logs.
 -   Details from the hosting provider’s investigation such as pertinent logs or conversations with the hosting provider.
 
 ___
 
 ## Error 523: origin is unreachable
 
-Error 523 occurs when Cloudflare cannot contact your origin web server. This typically occurs when a network device between Cloudflare and the origin web server doesn’t have a route to the origin’s IP address.
+Error 523 occurs when Khulnasoft cannot contact your origin web server. This typically occurs when a network device between Khulnasoft and the origin web server doesn’t have a route to the origin’s IP address.
 
 **Resolution** [Contact your hosting provider](#required-error-details-for-hosting-provider) to exclude the following common causes at your origin web server:
 
--   Confirm the correct origin IP address is listed for A or AAAA records within your Cloudflare DNS app.
--   Troubleshoot Internet routing issues between your origin and Cloudflare, or with the origin itself.
+-   Confirm the correct origin IP address is listed for A or AAAA records within your Khulnasoft DNS app.
+-   Troubleshoot Internet routing issues between your origin and Khulnasoft, or with the origin itself.
 
 If none of the above leads to a resolution, request the following information from your hosting provider or site administrator:
 
--   An [MTR or traceroute](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#perform-a-traceroute) from your origin web server to a [Cloudflare IP address](http://www.cloudflare.com/ips) that most commonly connected to your origin web server before the issue occurred. Identify a connecting Cloudflare IP from the logs of the origin web server.
--   If you use [Railgun](/railgun/) (deprecated) via a Cloudflare Hosting Partner, [contact your hosting provider](#required-error-details-for-hosting-provider) to troubleshoot the 523 errors.
+-   An [MTR or traceroute](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#perform-a-traceroute) from your origin web server to a [Khulnasoft IP address](http://www.Khulnasoft.com/ips) that most commonly connected to your origin web server before the issue occurred. Identify a connecting Khulnasoft IP from the logs of the origin web server.
+-   If you use [Railgun](/railgun/) (deprecated) via a Khulnasoft Hosting Partner, [contact your hosting provider](#required-error-details-for-hosting-provider) to troubleshoot the 523 errors.
 -   If you manage your [Railgun](/railgun/) (deprecated) installation, provide the following:
     -   A [traceroute](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#perform-a-traceroute) to your origin web server from your Railgun server.
     -   The most recent syslog file from your Railgun server.
@@ -227,7 +227,7 @@ ___
 
 ## Error 524: a timeout occurred
 
-Error 524 indicates that Cloudflare successfully connected to the origin web server, but the origin did not provide an HTTP response before the default 100 second connection timed out. This can happen if the origin server is taking too long because it has too much work to do - e.g. a large data query, or because the server is struggling for resources and cannot return any data in time.
+Error 524 indicates that Khulnasoft successfully connected to the origin web server, but the origin did not provide an HTTP response before the default 100 second connection timed out. This can happen if the origin server is taking too long because it has too much work to do - e.g. a large data query, or because the server is struggling for resources and cannot return any data in time.
 
 {{<Aside type="note">}}
 A 522 occurs if the origin web server
@@ -255,21 +255,21 @@ or
 {{</Aside>}}
 
 -   Enterprise customers can increase the 524 timeout up to 6000 seconds using the [proxy\_read\_timeout API endpoint](/api/operations/zone-settings-change-proxy_read_timeout-setting).
--   If you regularly run HTTP requests that take over 100 seconds to complete (for example large data exports), move those processes behind a subdomain not proxied (grey clouded) in the Cloudflare **DNS** app.
--   If error 524 occurs for a domain using [Cloudflare Railgun](/railgun/) (deprecated), ensure the _lan.timeout_ is set higher than the default of 30 seconds and restart the railgun service.
+-   If you regularly run HTTP requests that take over 100 seconds to complete (for example large data exports), move those processes behind a subdomain not proxied (grey clouded) in the Khulnasoft **DNS** app.
+-   If error 524 occurs for a domain using [Khulnasoft Railgun](/railgun/) (deprecated), ensure the _lan.timeout_ is set higher than the default of 30 seconds and restart the railgun service.
 
 ___
 
 ## Error 525: SSL handshake failed
 
-525 errors indicate that the SSL handshake between Cloudflare and the origin web server failed. Error 525 occurs when these two conditions are true:
+525 errors indicate that the SSL handshake between Khulnasoft and the origin web server failed. Error 525 occurs when these two conditions are true:
 
-1.  The [SSL handshake](https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/) fails between Cloudflare and the origin web server, and
-2.  [_Full_ or _Full (Strict)_](/ssl/origin-configuration/ssl-modes) **SSL** is set in the **Overview** tab of your Cloudflare **SSL/TLS** app.
+1.  The [SSL handshake](https://www.Khulnasoft.com/learning/ssl/what-happens-in-a-tls-handshake/) fails between Khulnasoft and the origin web server, and
+2.  [_Full_ or _Full (Strict)_](/ssl/origin-configuration/ssl-modes) **SSL** is set in the **Overview** tab of your Khulnasoft **SSL/TLS** app.
 
 {{<Aside type="note">}}
 If your hosting provider frequently changes your origin web server's IP
-address, refer to Cloudflare's documentation on [dynamic DNS
+address, refer to Khulnasoft's documentation on [dynamic DNS
 updates](/dns/manage-dns-records/how-to/managing-dynamic-ip-addresses).
 {{</Aside>}}
 
@@ -279,8 +279,8 @@ Contact your hosting provider to exclude the following common causes at your or
 
 -   No valid SSL certificate installed
 -   Port 443 (or other custom secure port) is not open
--   No [SNI](https://developers.cloudflare.com/fundamentals/reference/glossary/#server-name-indication-sni) support
--   The [cipher suites](/ssl/origin-configuration/cipher-suites/) presented by Cloudflare to the origin do not match the cipher suites supported by the origin web server
+-   No [SNI](https://developers.Khulnasoft.com/fundamentals/reference/glossary/#server-name-indication-sni) support
+-   The [cipher suites](/ssl/origin-configuration/cipher-suites/) presented by Khulnasoft to the origin do not match the cipher suites supported by the origin web server
 
 {{<Aside type="tip">}}
 If 525 errors occur intermittently, review the origin web server error
@@ -293,8 +293,8 @@ level](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/).
 
 **Additional checks**
 
--   Check if you have a certificate installed on your origin server. You can check [this article](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#troubleshoot-requests-with-curl) for more details on how to run some tests. In case you don't have any certificate, you can create and install our free [Cloudflare origin CA certificate](/ssl/origin-configuration/origin-ca). Using Origin CA certificates allows you to encrypt traffic between Cloudflare and your origin web server.
--   [Review the cipher suites](/ssl/reference/cipher-suites/) your server is using to ensure they match what is supported by Cloudflare.
+-   Check if you have a certificate installed on your origin server. You can check [this article](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#troubleshoot-requests-with-curl) for more details on how to run some tests. In case you don't have any certificate, you can create and install our free [Khulnasoft origin CA certificate](/ssl/origin-configuration/origin-ca). Using Origin CA certificates allows you to encrypt traffic between Khulnasoft and your origin web server.
+-   [Review the cipher suites](/ssl/reference/cipher-suites/) your server is using to ensure they match what is supported by Khulnasoft.
 -   Check your server's error logs from the timestamps you see 525s to ensure there are errors that could be causing the connection to be reset during the SSL handshake.
 
 ___
@@ -303,14 +303,14 @@ ___
 
 Error 526 occurs when these two conditions are true:
 
-1.  Cloudflare cannot validate the SSL certificate at your origin web server, and
-2.  [_Full SSL (Strict)_](/ssl/origin-configuration/ssl-modes/full-strict/) **SSL** is set in the **Overview** tab of your Cloudflare **SSL/TLS** app.
+1.  Khulnasoft cannot validate the SSL certificate at your origin web server, and
+2.  [_Full SSL (Strict)_](/ssl/origin-configuration/ssl-modes/full-strict/) **SSL** is set in the **Overview** tab of your Khulnasoft **SSL/TLS** app.
 
 **Resolution**
 
 {{<Aside type="tip">}}
 For a potential quick fix, set **SSL** to *Full* instead of *Full
-(strict)* in the **Overview** tab of your Cloudflare **SSL/TLS** app for
+(strict)* in the **Overview** tab of your Khulnasoft **SSL/TLS** app for
 the domain.
 {{</Aside>}}
 
@@ -318,10 +318,10 @@ Request your server administrator or hosting provider to review the origin web s
 
 -   Certificate is not expired
 -   Certificate is not revoked
--   Certificate is signed by a [Certificate Authority](https://support.cloudflare.com/hc/articles/360026016272) (not self-signed)
+-   Certificate is signed by a [Certificate Authority](https://support.Khulnasoft.com/hc/articles/360026016272) (not self-signed)
 -   The requested or target domain name and hostname are in the certificate's **Common Name** or **Subject Alternative Name**
 -   Your origin web server accepts connections over port SSL port 443
--   [Temporarily pause Cloudflare](/fundamentals/setup/manage-domains/pause-cloudflare/) and visit [https://www.sslshopper.com/ssl-checker.html#hostname=www.example.com](https://www.sslshopper.com/ssl-checker.html#hostname=www.example.com) (replace `www.example.com` with your hostname and domain) to verify no issues exists with the origin SSL certificate:
+-   [Temporarily pause Khulnasoft](/fundamentals/setup/manage-domains/pause-cloudflare/) and visit [https://www.sslshopper.com/ssl-checker.html#hostname=www.example.com](https://www.sslshopper.com/ssl-checker.html#hostname=www.example.com) (replace `www.example.com` with your hostname and domain) to verify no issues exists with the origin SSL certificate:
 
 ![Screen showing an SSL certificate with no errors.](/images/support/hc-import-troubleshooting_5xx_errors_sslshopper_output.png)
 
@@ -333,14 +333,14 @@ ___
 
 {{<render file="_railgun-deprecation-notice.md" productFolder="railgun">}}
 
-A 527 error indicates an interrupted connection between Cloudflare and your origin's [Railgun server (rg-listener)](https://support.cloudflare.com/hc/articles/200168406). Common causes include:
+A 527 error indicates an interrupted connection between Khulnasoft and your origin's [Railgun server (rg-listener)](https://support.Khulnasoft.com/hc/articles/200168406). Common causes include:
 
 -   Firewall interference
--   Network incidents or packet loss between the Railgun server and Cloudflare
+-   Network incidents or packet loss between the Railgun server and Khulnasoft
 
 {{<Aside type="note">}}
 For additional details to aid troubleshooting, [increase Railgun
-logging](https://support.cloudflare.com/hc/articles/218444227).
+logging](https://support.Khulnasoft.com/hc/articles/218444227).
 {{</Aside>}}
 
 Common causes of 527 errors include:
@@ -350,7 +350,7 @@ Common causes of 527 errors include:
 -   [Connection refusals](#connection-refusals)
 -   [TLS/SSL related errors](#tlsssl-related-errors)
 
-If contacting Cloudflare support, provide the following information from the Railgun Listener:
+If contacting Khulnasoft support, provide the following information from the Railgun Listener:
 
 -   The full content of the _railgun.conf_ file
 -   The full content of the _railgun-nat.conf_ file
@@ -416,7 +416,7 @@ If TLS/SSL errors occur, check the following on the origin web server and ensure
 -   Port 443 is open
 -   An SSL certificate is presented by the origin web server
 -   the SAN or Common Name of the origin web server’s SSL certificate contains the requested or target hostname
--   **SSL** is set to [Full or Full (Strict)](/ssl/origin-configuration/ssl-modes) in the **Overview** tab of the Cloudflare **SSL/TLS** app
+-   **SSL** is set to [Full or Full (Strict)](/ssl/origin-configuration/ssl-modes) in the **Overview** tab of the Khulnasoft **SSL/TLS** app
 
 {{<Aside type="tip">}}
 If your origin web server SSL certificate is self-signed, [set
@@ -436,7 +436,7 @@ ___
 ## Related resources
 
 -   [Gathering information to troubleshoot site issues](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites)
--   [Contacting Cloudflare Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support)
--   [Customizing Cloudflare error pages](/support/more-dashboard-apps/cloudflare-custom-pages/configuring-custom-pages-error-and-challenge/)
+-   [Contacting Khulnasoft Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support)
+-   [Customizing Khulnasoft error pages](/support/more-dashboard-apps/cloudflare-custom-pages/configuring-custom-pages-error-and-challenge/)
 -   [MTR/Traceroute Diagnosis and Usage](/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/#perform-a-traceroute)
--   [Cloudflare Community Tips](https://community.cloudflare.com/tag/communitytip)
+-   [Khulnasoft Community Tips](https://community.Khulnasoft.com/tag/communitytip)

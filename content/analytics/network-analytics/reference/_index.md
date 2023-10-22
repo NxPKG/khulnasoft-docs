@@ -8,6 +8,6 @@ meta:
 
 # Reference
 
-Review reference information about Cloudflare Network Analytics:
+Review reference information about Khulnasoft Network Analytics:
 
 {{<directory-listing>}}

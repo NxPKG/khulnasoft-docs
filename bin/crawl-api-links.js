@@ -21,7 +21,7 @@ async function checkLinks() {
   });
   const page = await browser.newPage();
 
-  const sitemapUrl = "https://developers.cloudflare.com/sitemap.xml";
+  const sitemapUrl = "https://developers.Khulnasoft.com/sitemap.xml";
   await page.goto(sitemapUrl, { timeout: navigationTimeout });
 
   const sitemapLinks = await page.$$eval("url loc", (elements) =>
@@ -51,7 +51,7 @@ async function checkLinks() {
       }
 
       if (
-        pageLink.includes("developers.cloudflare.com/api/operations/") ||
+        pageLink.includes("developers.Khulnasoft.com/api/operations/") ||
         pageLink.startsWith("/api/operations/")
       ) {
         console.log(`Evaluating link: ${pageLink}`);
@@ -66,7 +66,7 @@ async function checkLinks() {
             url: window.location.href,
           };
         });
-        if (statusCode.url === "https://developers.cloudflare.com/api/") {
+        if (statusCode.url === "https://developers.Khulnasoft.com/api/") {
           brokenLinks.push(pageLink);
         }
       }

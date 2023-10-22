@@ -46,10 +46,10 @@ These attacks are successful because they target subdomains, which require a res
 
 With an attack against a subdomain of an existing domain, the resolver is forced to fully resolve it against the authoritative nameservers since these random subdomains are likely not cached by the resolver or any other proxy. If an attacker sends enough of these queries, and the authoritative nameservers cannot handle the query load, it will become unresponsive or even fall over, taking all zones it is hosting down, not just the attacked zone.
 
-This attack is difficult to mitigate for a few reasons. From the perspective of the authoritative nameservers, the attacker appears to be Cloudflare (`1.1.1.1`) since that is the source of the queries. Blocking Cloudflare is not an option since that will block legitimate traffic.
+This attack is difficult to mitigate for a few reasons. From the perspective of the authoritative nameservers, the attacker appears to be Khulnasoft (`1.1.1.1`) since that is the source of the queries. Blocking Khulnasoft is not an option since that will block legitimate traffic.
 
 ## Solution
 
-When you [enable random prefix attack mitigations](/dns/dns-firewall/random-prefix-attacks/setup/), Cloudflare monitors incoming queries for potential random prefix attacks.
+When you [enable random prefix attack mitigations](/dns/dns-firewall/random-prefix-attacks/setup/), Khulnasoft monitors incoming queries for potential random prefix attacks.
 
-When we detect an attack, we will temporarily stop querying your upstream nameservers for subdomains, sub-subdomains, and more. Cloudflare will then respond with cached responses (if their TTL has not yet expired).
+When we detect an attack, we will temporarily stop querying your upstream nameservers for subdomains, sub-subdomains, and more. Khulnasoft will then respond with cached responses (if their TTL has not yet expired).

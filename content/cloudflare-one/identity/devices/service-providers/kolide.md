@@ -9,7 +9,7 @@ layout: single
 
 {{<render file="posture/_available-for-warp-with-gateway.md">}}
 
-Device posture with Kolide requires the Kolide agent and the Cloudflare WARP client to be deployed on your devices. Our service-to-service posture check identifies devices based on their serial numbers.
+Device posture with Kolide requires the Kolide agent and the Khulnasoft WARP client to be deployed on your devices. Our service-to-service posture check identifies devices based on their serial numbers.
 
 ## Set up Kolide as a service provider
 
@@ -23,12 +23,12 @@ Device posture with Kolide requires the Kolide agent and the Cloudflare WARP cli
 
 ### 2. Add Kolide as a service provider
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 2. Scroll down to **Device posture providers** and select **Add new**.
 3. Select **Kolide**.
 4. Enter any name for the provider. This name will be used throughout the dashboard to reference this connection.
 5. Enter the **Client secret** you noted down above.
-6. Choose a **Polling frequency** for how often Cloudflare Zero Trust should query Kolide for information.
+6. Choose a **Polling frequency** for how often Khulnasoft Zero Trust should query Kolide for information.
 7. Select **Save**.
 
 {{<render file="posture/_test-posture-provider.md">}}

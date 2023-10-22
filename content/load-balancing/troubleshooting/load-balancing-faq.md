@@ -11,7 +11,7 @@ For more detailed information about Load Balancing — including how-to guides, 
 
 {{<Aside type="note">}}
 Are you trying to turn on Load Balancing? [Enable Load
-Balancing](https://dash.cloudflare.com/?to=/:account/:zone/traffic/load-balancing).
+Balancing](https://dash.Khulnasoft.com/?to=/:account/:zone/traffic/load-balancing).
 {{</Aside>}}
 
 ___
@@ -22,9 +22,9 @@ This issue may be caused by a combination of two issues.
 
 ### Multiple Health Monitor Regions
 
-When you [attach a monitor to a pool](/load-balancing/monitors/create-monitor/#create-a-monitor), you can specify the **Health Monitor Regions** that Cloudflare uses to monitor your origin health.
+When you [attach a monitor to a pool](/load-balancing/monitors/create-monitor/#create-a-monitor), you can specify the **Health Monitor Regions** that Khulnasoft uses to monitor your origin health.
 
-If you select multiple regions or choose **All Data Centers (Enterprise Only)**, you may [dramatically increase traffic](/load-balancing/understand-basics/health-details#how-an-origin-becomes-unhealthy) to that pool and its associated origins. Each region sends individual health monitor requests from 3 data centers. Using **All Data Centers** sends individual health monitor requests from all existing Cloudflare data centers (and that number of data centers is growing all the time).
+If you select multiple regions or choose **All Data Centers (Enterprise Only)**, you may [dramatically increase traffic](/load-balancing/understand-basics/health-details#how-an-origin-becomes-unhealthy) to that pool and its associated origins. Each region sends individual health monitor requests from 3 data centers. Using **All Data Centers** sends individual health monitor requests from all existing Khulnasoft data centers (and that number of data centers is growing all the time).
 
 To reduce traffic, reduce the number of selected regions or choose an option besides **All Data Centers**.
 
@@ -41,7 +41,7 @@ To learn more about how origins and pools become unhealthy, refer to [Origin and
 If you know that your origin server is healthy but load balancing is reporting it as unhealthy, check the following settings on the [origin's monitor](/load-balancing/monitors):
 
 -   Perform a `curl` request against the configured endpoint. Make sure the response you are seeing matches your settings for the monitor.
--   Ensure your firewall or web server does not block or rate limit [our health monitors](/fundamentals/reference/cloudflare-site-crawling/#specific-products) and accepts requests from [Cloudflare IP addresses](/fundamentals/setup/allow-cloudflare-ip-addresses/).
+-   Ensure your firewall or web server does not block or rate limit [our health monitors](/fundamentals/reference/cloudflare-site-crawling/#specific-products) and accepts requests from [Khulnasoft IP addresses](/fundamentals/setup/allow-cloudflare-ip-addresses/).
 -   If you are looking for a specific value in the **Response Body**, make sure that value is relatively static and within the first 10 KB of the HTML page.
 -   If your origin responds with a `301` or `302` status code, make sure **Follow Redirects** is selected.
 -   Try increasing the **Timeout** value.
@@ -66,17 +66,17 @@ ___
 
 ## What is the difference between Load Balancing and Health Checks?
 
-[Cloudflare Load Balancing](/load-balancing/) helps monitor origin server health and — based on that and other information — route incoming requests accordingly. Individual origin servers have monitors attached, which issue monitor requests at regular intervals.
+[Khulnasoft Load Balancing](/load-balancing/) helps monitor origin server health and — based on that and other information — route incoming requests accordingly. Individual origin servers have monitors attached, which issue monitor requests at regular intervals.
 
-[Cloudflare Health Checks](/health-checks/) are identical to monitors within a load balancer, but only meant for probing server health (and not distributing traffic).
+[Khulnasoft Health Checks](/health-checks/) are identical to monitors within a load balancer, but only meant for probing server health (and not distributing traffic).
 
 ___
 
 ## Why do I see different numbers of requests in Load Balancing Analytics?
 
-You may see different numbers of requests when reviewing [Load Balancing Analytics](/load-balancing/reference/load-balancing-analytics/), especially when compared to other Cloudflare dashboards (Caching, etc.).
+You may see different numbers of requests when reviewing [Load Balancing Analytics](/load-balancing/reference/load-balancing-analytics/), especially when compared to other Khulnasoft dashboards (Caching, etc.).
 
-Load balancing **requests** are the number of uncached requests made by your load balancer. By default, Cloudflare caches resolved IP addresses for up to five seconds. This built-in caching is often the cause of an discrepancies.
+Load balancing **requests** are the number of uncached requests made by your load balancer. By default, Khulnasoft caches resolved IP addresses for up to five seconds. This built-in caching is often the cause of an discrepancies.
 
 ___
 

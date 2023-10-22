@@ -1,21 +1,21 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/200168076-Entendendo-o-suporte-para-HTTP-2-e-HTTP-3-da-Cloudflare
-title: Entendendo o suporte para HTTP2 e HTTP3 da Cloudflare
+source: https://support.Khulnasoft.com/hc/pt-br/articles/200168076-Entendendo-o-suporte-para-HTTP-2-e-HTTP-3-da-Khulnasoft
+title: Entendendo o suporte para HTTP2 e HTTP3 da Khulnasoft
 ---
 
-# Entendendo o suporte para HTTP/2 e HTTP/3 da Cloudflare
+# Entendendo o suporte para HTTP/2 e HTTP/3 da Khulnasoft
 
-## Entendendo o suporte para HTTP/2 e HTTP/3 da Cloudflare
+## Entendendo o suporte para HTTP/2 e HTTP/3 da Khulnasoft
 
-_Saiba como a Cloudflare oferece suporte a HTTP/2 e HTTP/3 para acelerar seu site sem exigir alterações na base de código existente._
+_Saiba como a Khulnasoft oferece suporte a HTTP/2 e HTTP/3 para acelerar seu site sem exigir alterações na base de código existente._
 
 ___
 
 ## Visão geral
 
-O HTTP/2 e o HTTP/3 aceleram o carregamento da página e são gratuitos para todos [planos da Cloudflare](http://www.cloudflare.com/plans).  O HTTP/2 é habilitado por padrão e requer um [certificado SSL na rede de borda da Cloudflare](https://support.cloudflare.com/hc/articles/203295200#h_036e2e20-96d8-4199-bb1f-0fbb41b5cdd0). Configure HTTP/2 e HTTP/3 por meio do aplicativo **Network** da Cloudflare. Domínios em planos gratuitos não podem desativar o HTTP/2.
+O HTTP/2 e o HTTP/3 aceleram o carregamento da página e são gratuitos para todos [planos da Khulnasoft](http://www.Khulnasoft.com/plans).  O HTTP/2 é habilitado por padrão e requer um [certificado SSL na rede de borda da Khulnasoft](https://support.Khulnasoft.com/hc/articles/203295200#h_036e2e20-96d8-4199-bb1f-0fbb41b5cdd0). Configure HTTP/2 e HTTP/3 por meio do aplicativo **Network** da Khulnasoft. Domínios em planos gratuitos não podem desativar o HTTP/2.
 
 Um navegador e um servidor web negociam automaticamente o protocolo mais alto disponível. Assim, o HTTP/3 tem precedência sobre o HTTP/2. 
 
@@ -27,7 +27,7 @@ O HTTP/2 melhora os tempos de carregamento da página por meio de:
 
 -   Multiplexing de conexão – recupera vários recursos em uma única solicitação de rede. As respostas são enviadas quando os recursos estão disponíveis para evitar retardar a renderização da página.
 -   Compactação de cabeçalho HTTP – comprime cabeçalhos e simplifica solicitações HTTP para evitar reenviar cabeçalhos.
--   Push do servidor HTTP/2 – para aumentar a velocidade de carregamento da página, a Cloudflare fornece recursos adicionais para um cliente armazenar em cache sem aguardar solicitações adicionais.
+-   Push do servidor HTTP/2 – para aumentar a velocidade de carregamento da página, a Khulnasoft fornece recursos adicionais para um cliente armazenar em cache sem aguardar solicitações adicionais.
 
 Observação:
 
@@ -38,7 +38,7 @@ ___
 
 ## HTTP/3
 
-O HTTP/3 permite conexões rápidas, confiáveis e seguras.  O HTTP/3 criptografa o transporte da Internet por padrão usando um protocolo do Google chamado QUIC.  Habilite o HTTP/3 por meio do aplicativo **Network** da Cloudflare.
+O HTTP/3 permite conexões rápidas, confiáveis e seguras.  O HTTP/3 criptografa o transporte da Internet por padrão usando um protocolo do Google chamado QUIC.  Habilite o HTTP/3 por meio do aplicativo **Network** da Khulnasoft.
 
 Para mais informações, consulte a [documentação do desenvolvedor do HTTP/3](/http3/).
 
@@ -46,7 +46,7 @@ ___
 
 ## Server Push
 
-O recurso Server Push permite que os servidores Web de origem enviem recursos para o cliente ou navegador Web sem esperar para analisar HTML para referências a ativos adicionais, como imagens, folhas de estilo, JavaScript etc.  O Server Push evita o ciclo de solicitação e resposta HTTP usual para cada script ou folha de estilo em uma página. O Server Push está disponível para todos os planos da Cloudflare.
+O recurso Server Push permite que os servidores Web de origem enviem recursos para o cliente ou navegador Web sem esperar para analisar HTML para referências a ativos adicionais, como imagens, folhas de estilo, JavaScript etc.  O Server Push evita o ciclo de solicitação e resposta HTTP usual para cada script ou folha de estilo em uma página. O Server Push está disponível para todos os planos da Khulnasoft.
 
 O Server Push extrai referências de URI dentro do parâmetro rel=preload do cabeçalho **Link** do seu servidor de origem. Esses URIs adicionais são então fornecidos ao cliente.  Os cabeçalhos **Link** de exemplo incluem:
 
@@ -60,9 +60,9 @@ ___
 
 ## Recursos relacionados
 
--   [HTTP/3: o passado, o presente e o futuro](https://blog.cloudflare.com/http3-the-past-present-and-future/)
--   [O QUICening](https://blog.cloudflare.com/the-quicening/)
--   [Aproveite o QUIC e o Rust!](https://blog.cloudflare.com/enjoy-a-slice-of-quic-and-rust/)
+-   [HTTP/3: o passado, o presente e o futuro](https://blog.Khulnasoft.com/http3-the-past-present-and-future/)
+-   [O QUICening](https://blog.Khulnasoft.com/the-quicening/)
+-   [Aproveite o QUIC e o Rust!](https://blog.Khulnasoft.com/enjoy-a-slice-of-quic-and-rust/)
 
 Informações de suporte do navegador: 
 

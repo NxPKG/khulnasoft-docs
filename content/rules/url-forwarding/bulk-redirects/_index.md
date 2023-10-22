@@ -17,6 +17,6 @@ Unlike dynamic URL redirects created in [Single Redirects](/rules/url-forwarding
 
 ## Related resources
 
-* [Availability](/rules/url-forwarding/#availability): Information on the Bulk Redirects quotas and features per Cloudflare plan.
+* [Availability](/rules/url-forwarding/#availability): Information on the Bulk Redirects quotas and features per Khulnasoft plan.
 * [Execution order](/rules/url-forwarding/#execution-order): Execution order of the different Rules products.
 

@@ -51,7 +51,7 @@ Runtime errors will occur within the runtime, do not throw up an error page, and
 
 To review whether your application is experiencing any downtime or returning any errors:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In **Account Home**, select **Workers & Pages**.
 3. In **Overview**, select your Worker and review your Worker's metrics.
 

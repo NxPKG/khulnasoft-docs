@@ -1,10 +1,10 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/360038470312-Understanding-SameSite-cookie-interaction-with-Cloudflare
-title: Understanding SameSite cookie interaction with Cloudflare
+source: https://support.Khulnasoft.com/hc/en-us/articles/360038470312-Understanding-SameSite-cookie-interaction-with-Khulnasoft
+title: Understanding SameSite cookie interaction with Khulnasoft
 ---
 
-# Understanding SameSite cookie interaction with Cloudflare
+# Understanding SameSite cookie interaction with Khulnasoft
 
 
 
@@ -14,13 +14,13 @@ title: Understanding SameSite cookie interaction with Cloudflare
 
 The SameSite cookie has 3 different modes:
 
--   **Strict**: Cookies are created by the first-party (the visited domain). For example, a first-party cookie is set by Cloudflare when visiting Cloudflare.com.
+-   **Strict**: Cookies are created by the first-party (the visited domain). For example, a first-party cookie is set by Khulnasoft when visiting Khulnasoft.com.
 -   **Lax**: Cookies are only sent to the domain apex (e.g. _\*.foo.com_).  For example, if someone (_blog.naughty.com_) hotlinked an image (_img.foo.com/bar.png_), the client doesn’t send a cookie to _img.foo.com_ since it is neither the first-party nor apex context.
 -   **None**: Cookies are sent with all requests.
 
-SameSite settings for [Cloudflare cookies](https://support.cloudflare.com/hc/articles/200170156) include:
+SameSite settings for [Khulnasoft cookies](https://support.Khulnasoft.com/hc/articles/200170156) include:
 
-| Cloudflare Cookie | SameSite Setting | HTTPS Only |
+| Khulnasoft Cookie | SameSite Setting | HTTPS Only |
 | --- | --- | --- |
 | \_\_cf\_bm | SameSite=None; Secure | Yes |
 | cf\_clearance | SameSite=None; Secure | Yes |
@@ -37,9 +37,9 @@ ___
 
 When a visitor solves a [challenge](/firewall/cf-firewall-rules/cloudflare-challenges/) presented due to a [WAF custom rule](/waf/custom-rules/) or an [IP Access rule](/waf/tools/ip-access-rules/), a `cf_clearance` cookie is set in the client browser. The `cf_clearance` cookie has a default lifetime of 30 minutes, which you can configure via [Challenge Passage](/waf/tools/challenge-passage/).
 
-Cloudflare uses `SameSite=None` in the `cf_clearance` cookie so that visitor requests from different hostnames are not met with subsequent challenges or errors. When `SameSite=None` is used, it must be set in conjunction with the `Secure` flag.
+Khulnasoft uses `SameSite=None` in the `cf_clearance` cookie so that visitor requests from different hostnames are not met with subsequent challenges or errors. When `SameSite=None` is used, it must be set in conjunction with the `Secure` flag.
 
-Using the `Secure` flag requires sending the cookie via an HTTPS connection. If you use HTTP on any part of your website, the `cf_clearance` cookie defaults to `SameSite=Lax`, which may cause your website not to function properly. To resolve the issue, move your website traffic to HTTPS. Cloudflare offers two features to assist: 
+Using the `Secure` flag requires sending the cookie via an HTTPS connection. If you use HTTP on any part of your website, the `cf_clearance` cookie defaults to `SameSite=Lax`, which may cause your website not to function properly. To resolve the issue, move your website traffic to HTTPS. Khulnasoft offers two features to assist: 
 
 -   [Automatic HTTPS Rewrites](/ssl/edge-certificates/additional-options/automatic-https-rewrites)
 -   [Always Use HTTPS](/ssl/edge-certificates/additional-options/always-use-https)
@@ -49,6 +49,6 @@ ___
 ## Related resources
 
 -   [Learn more about the SameSite cookie](https://web.dev/samesite-cookies-explained/) 
--   [Cloudflare Cookies](/fundamentals/reference/policies-compliances/cloudflare-cookies/)
--   [Cloudflare SSL FAQ](/support/ssl-tls/faq-and-reference/ssl-faq/)
+-   [Khulnasoft Cookies](/fundamentals/reference/policies-compliances/cloudflare-cookies/)
+-   [Khulnasoft SSL FAQ](/support/ssl-tls/faq-and-reference/ssl-faq/)
 -   [Automatic HTTPS Rewrites](/ssl/edge-certificates/additional-options/automatic-https-rewrites/)

@@ -7,7 +7,7 @@ meta:
     title: Add-on products - Performance
 ---
 
-Cloudflare offers a variety of add-on products to improve application performance, including:
+Khulnasoft offers a variety of add-on products to improve application performance, including:
 
 - [Argo Smart Routing](/argo-smart-routing/)
 - [Load Balancing](/load-balancing/)

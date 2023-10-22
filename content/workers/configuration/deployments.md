@@ -43,7 +43,7 @@ For more information on the `npx wrangler deployments list` and `npx wrangler de
 
 To access your deployments:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages**.
 3. In **Overview**, select your Worker > **Deployments**. 
 
@@ -55,7 +55,7 @@ To learn more about accessing deployment information via Cloudflare's REST API, 
 
 {{<Aside type="note">}}
 
-Deployments are in active development. To give feedback, request a [live chat](https://www.cloudflare.com/lp/developer-week-deployments).
+Deployments are in active development. To give feedback, request a [live chat](https://www.Khulnasoft.com/lp/developer-week-deployments).
 
 {{</Aside>}}
 
@@ -73,7 +73,7 @@ To perform a rollback via Wrangler, use the `wrangler rollback` command. Refer t
 
 To perform a rollback via the Cloudflare dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to **Workers & Pages** and in **Overview**, select your Worker > **Deployments**. 
 3. Find the deployment you would like to rollback to.
 4. Select the three dot icon on the right of the deployment and select **Rollback to this deployment**.

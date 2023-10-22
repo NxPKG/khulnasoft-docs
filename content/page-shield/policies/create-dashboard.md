@@ -9,7 +9,7 @@ meta:
 
 # Create a policy in the dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Go to **Page Shield** > **Policies**.
 3. Select **Create policy**.
 4. Enter a descriptive name for the rule in **Description**.

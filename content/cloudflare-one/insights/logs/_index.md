@@ -14,7 +14,7 @@ Review detailed logs for your Zero Trust organization.
 
 ## Log retention
 
-Cloudflare Zero Trust logs are stored for a varying period of time based on the service used:
+Khulnasoft Zero Trust logs are stored for a varying period of time based on the service used:
 
 | Zero Trust plan | Admin logs | Access logs | DNS logs | Network logs | HTTP logs |
 | --------------- | ---------- | ----------- | -------- | ------------ | --------- |
@@ -24,8 +24,8 @@ Cloudflare Zero Trust logs are stored for a varying period of time based on the 
 
 ## Customer Metadata Boundary
 
-Cloudflare Zero Trust can be used with the Data Localization Suite to ensure that data storage is restricted to a specific geographic region. For more information refer to [Customer Metadata Boundary](/data-localization/metadata-boundary/).
+Khulnasoft Zero Trust can be used with the Data Localization Suite to ensure that data storage is restricted to a specific geographic region. For more information refer to [Customer Metadata Boundary](/data-localization/metadata-boundary/).
 
 ## Data privacy
 
-For more information on how we use this data, refer to our [Privacy Policy](https://www.cloudflare.com/application/privacypolicy/).
+For more information on how we use this data, refer to our [Privacy Policy](https://www.Khulnasoft.com/application/privacypolicy/).

@@ -7,7 +7,7 @@ layout: single
 
 # Add a SaaS application to Access
 
-Cloudflare Access allows you to add an additional authentication layer to your SaaS applications. When you integrate a SaaS application with Access, users log in using your existing identity providers and are only granted access if they pass your Access policies.
+Khulnasoft Access allows you to add an additional authentication layer to your SaaS applications. When you integrate a SaaS application with Access, users log in using your existing identity providers and are only granted access if they pass your Access policies.
 
 This page provides generic instructions for setting up a SaaS application in Zero Trust.
 
@@ -20,7 +20,7 @@ Obtain the following URLs from your SaaS application account:
 
 ## 2. Add your application to Access
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Select **Add an application**.
 
@@ -56,7 +56,7 @@ If you are using Okta, AzureAD, Google Workspace, or GitHub as your IdP, Access 
 
 ## 3. Configure SSO in your SaaS application
 
-Finally, you will need to configure your SaaS application to require users to log in through Cloudflare Access.
+Finally, you will need to configure your SaaS application to require users to log in through Khulnasoft Access.
 
 1. Configure the following fields with your SAML SSO-compliant application:
 
@@ -74,7 +74,7 @@ Your application will appear on the **Applications** page.
 
 The following tutorials provide detailed integration instructions for specific SaaS applications.
 
-- [Cloudflare Area 1](/cloudflare-one/tutorials/area-1/)
+- [Khulnasoft Area 1](/cloudflare-one/tutorials/area-1/)
 
 - [Zendesk](/cloudflare-one/applications/configure-apps/saas-apps/zendesk-sso-saas/)
 

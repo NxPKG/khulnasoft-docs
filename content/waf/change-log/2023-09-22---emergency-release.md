@@ -23,7 +23,7 @@ layout: list
   </thead>
   <tbody>
       <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...066c0c9a</td>
       <td>100602</td>
       <td>Code Injection - CVE:CVE-2023-36845</td>
@@ -32,7 +32,7 @@ layout: list
       <td>N/A</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...0746d000</td>
       <td>100603</td>
       <td>Information Disclosure - CVE:CVE-2023-28432</td>

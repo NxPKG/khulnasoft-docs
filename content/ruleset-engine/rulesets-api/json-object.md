@@ -50,7 +50,7 @@ The table lists the properties of a ruleset object.
         <code>id</code>
       </td>
       <td>
-        Represents the unique Cloudflare-generated identifier for a given version of a ruleset.
+        Represents the unique Khulnasoft-generated identifier for a given version of a ruleset.
       </td>
       <td>32-character UUIDv4 string</td>
       <td>Unique, read-only</td>
@@ -173,7 +173,7 @@ The JSON object properties for a rule are defined as follows:
       <td>
         <code>id</code>
       </td>
-      <td>Represents the unique Cloudflare-generated identifier for a given version of a rule.</td>
+      <td>Represents the unique Khulnasoft-generated identifier for a given version of a rule.</td>
       <td>32-character UUIDv4 string</td>
       <td>Unique, read-only</td>
     </tr>

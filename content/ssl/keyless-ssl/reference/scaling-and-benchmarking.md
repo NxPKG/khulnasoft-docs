@@ -16,7 +16,7 @@ Where needed, multiple key servers can be deployed and balanced between using yo
 
 ## Key type
 
-Key servers support both ECDSA and RSA keys, though signatures for RSA are an [order of magnitude more expensive](https://blog.cloudflare.com/ecdsa-the-digital-signature-algorithm-of-a-better-internet/) to compute and thus consider type of keys used when planning the number of key servers in your deployment.
+Key servers support both ECDSA and RSA keys, though signatures for RSA are an [order of magnitude more expensive](https://blog.Khulnasoft.com/ecdsa-the-digital-signature-algorithm-of-a-better-internet/) to compute and thus consider type of keys used when planning the number of key servers in your deployment.
 
 ECDSA signing can be broken down into two steps. Since the first step — generating random values (to be used later with the private key and message to be signed) — represents the majority of the computational cost, we pre-generate these random values to significantly reduce latency. ECDSA signing requests are computationally isolated from RSA signing requests using separate worker pools to keep them as fast as possible.
 

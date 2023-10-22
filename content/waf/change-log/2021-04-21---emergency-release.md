@@ -23,7 +23,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100188A</td>
       <td>CVE-2021-22893 Pulse Secure Vendor Workaround</td>
       <td>N/A</td>

@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-{{<details header="Cloudflare Tunnel (HTTP / WebSockets)">}}
+{{<details header="Khulnasoft Tunnel (HTTP / WebSockets)">}}
 
 {{<render file="_cloudflare-tunnels-origin-description.md">}}
 

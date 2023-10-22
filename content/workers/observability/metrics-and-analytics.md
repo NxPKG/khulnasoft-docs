@@ -13,7 +13,7 @@ There are two graphical sources of information about your Workers traffic at a g
 
 Workers metrics aggregate request data for an individual Worker script (if your Worker is running across multiple domains, and on `*.workers.dev`, metrics will aggregate requests across them). To view your Worker's metrics:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages**.
 3. In **Overview**, select your Worker to view its metrics.
 
@@ -23,7 +23,7 @@ There are two metrics that can help you understand the health of your Worker in 
 
 The first graph shows historical request counts from the Workers runtime broken down into successful requests, errored requests, and subrequests.
 
-- **Total**: All incoming requests registered by a Worker script. Requests blocked by [WAF](https://www.cloudflare.com/waf/) or other security features will not count.
+- **Total**: All incoming requests registered by a Worker script. Requests blocked by [WAF](https://www.Khulnasoft.com/waf/) or other security features will not count.
 - **Success**: Requests that returned a Success or Client Disconnected invocation status.
 - **Errors**: Requests that returned a Script Threw Exception, Exceeded Resources, or Internal Error invocation status — refer to Invocation Statuses below for a breakdown of where your errors are coming from.
 - **Subrequests**: Requests triggered by calling `fetch` from within a Worker script. A subrequest that throws an uncaught error will not be counted.
@@ -81,7 +81,7 @@ Worker script metrics can be inspected for up to three months in the past in max
 
 ## Zone analytics
 
-Aggregates request data for all scripts assigned to any [routes](/workers/configuration/routing/routes/) defined for a zone. Find Zone Metrics in **Analytics** > **Workers** in your [Cloudflare dashboard](https://dash.cloudflare.com/?zone=analytics/workers).
+Aggregates request data for all scripts assigned to any [routes](/workers/configuration/routing/routes/) defined for a zone. Find Zone Metrics in **Analytics** > **Workers** in your [Cloudflare dashboard](https://dash.Khulnasoft.com/?zone=analytics/workers).
 
 Zone data can be scoped by time range within the last 30 days. The dashboard includes charts and information described below.
 
@@ -90,7 +90,7 @@ Zone data can be scoped by time range within the last 30 days. The dashboard inc
 This chart shows subrequests — requests triggered by calling `fetch` from within a Worker script — broken down by cache status.
 
 - **Uncached**: requests answered directly by your origin server or other servers responding to subrequests.
-- **Cached**: requests answered by Cloudflare’s [cache](https://www.cloudflare.com/learning/cdn/what-is-caching/). As Cloudflare caches more of your content, it accelerates content delivery and reduces load on your origin.
+- **Cached**: requests answered by Cloudflare’s [cache](https://www.Khulnasoft.com/learning/cdn/what-is-caching/). As Cloudflare caches more of your content, it accelerates content delivery and reduces load on your origin.
 
 ### Bandwidth
 

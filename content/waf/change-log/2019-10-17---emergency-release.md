@@ -23,7 +23,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035D</td>
       <td>
         Improve Fake Google Bot detection. Merge 100035D_BETA into 100035D.
@@ -33,7 +33,7 @@ meta:
       <td>Disable</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035</td>
       <td>
         Improve Fake Google Bot detection. Merge 100035_BETA into 100035. Change
@@ -43,7 +43,7 @@ meta:
       <td>Block</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035C</td>
       <td>
         Improve Fake Google Bot detection. Merge 100035C_BETA into 100035C.
@@ -53,7 +53,7 @@ meta:
       <td>Block</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035B</td>
       <td>
         Improve Fake Bing Bot detection. Merge 100035B_BETA into 100035B. Change
@@ -63,7 +63,7 @@ meta:
       <td>Block</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035Y</td>
       <td>
         Improve Fake Yandex Bot detection. Merge 100035Y_BETA into 100035Y.
@@ -73,7 +73,7 @@ meta:
       <td>Block</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035U</td>
       <td>
         Improve Fake Baidu Bot detection. Merge 100035U_BETA into 100035U.

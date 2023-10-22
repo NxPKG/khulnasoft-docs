@@ -17,7 +17,7 @@ These configurations were tested on FITELnet F220 and F70 series with the follow
 
 ### Magic WAN configuration
 
-1. Go to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Configuration**.
 3. From the **Tunnels** tab, select **Create**.
 4. For the first IPsec tunnel, ensure the following settings are defined (refer to [Add tunnels](/magic-wan/get-started/configure-tunnels/#add-tunnels) for information on settings not mentioned here):
@@ -173,7 +173,7 @@ To configure routes for east-west (branch to branch) connections, refer to the f
 
 ### Magic WAN
 
-1. Go to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Configuration**.
 3. From the **Static Routes** tab, select **Create**.
 4. For the first route, ensure the following settings are defined (refer to [Configure static routes](/magic-wan/get-started/configure-static-routes/) to learn about settings not mentioned here):

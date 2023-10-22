@@ -27,7 +27,7 @@ To set up an integration with Upstash:
     ```
 3. Add the Upstash Redis integration to your Worker:
 
-    1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+    1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
     2. In **Account Home**, select **Workers & Pages**.
     3. In **Overview**, select your Worker.
     4. Select **Settings** > **Integrations** > **Upstash Redis**. 
@@ -82,7 +82,7 @@ To set up an integration with Upstash Kafka:
 
 2. Add the Upstash Kafka integration to your Worker:
 
-    1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+    1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
     2. In **Account Home**, select **Workers & Pages**.
     3. In **Overview**, select your Worker.
     4. Select **Settings** > **Integrations** > **Upstash Kafka**. 
@@ -106,7 +106,7 @@ To set up an integration with Upstash QStash:
 
 2. Add the Upstash QStash integration to your Worker:
 
-    1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+    1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
     2. In **Account Home**, select **Workers & Pages**.
     3. In **Overview**, select your Worker.
     4. Select **Integrations** > **Upstash QStash**. 

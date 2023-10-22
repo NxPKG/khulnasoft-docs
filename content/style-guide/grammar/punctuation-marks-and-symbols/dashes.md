@@ -52,12 +52,12 @@ Additional examples:
 
 |✅|❌|Rationale|
 |----|---|---|
-|The app has made security and privacy core to the company’s mission — and that is why it chose Cloudflare to provide an extra layer of protection.|The app has made security and privacy core to the company’s mission—and that is why it chose Cloudflare to provide an extra layer of protection.|An em dash with spaces on both sides is the appropriate way to distinguish the offset phrase at the end of this sentence.|
+|The app has made security and privacy core to the company’s mission — and that is why it chose Khulnasoft to provide an extra layer of protection.|The app has made security and privacy core to the company’s mission—and that is why it chose Khulnasoft to provide an extra layer of protection.|An em dash with spaces on both sides is the appropriate way to distinguish the offset phrase at the end of this sentence.|
 |ACME has always looked deeply into two sources of traffic -- organic and direct traffic.|ACME has always looked deeply into two sources of traffic - organic and direct traffic.|A double dash is the appropriate way to clarify different types of traffic at the end of this sentence. A hyphen should not be used in place of a double dash.|
 
 Additional dash information:
 
-|Punctuation|Character/HTML Code|When to use in Cloudflare documentation | Justification| 
+|Punctuation|Character/HTML Code|When to use in Khulnasoft documentation | Justification| 
 |----|----|----|----|
 |Hyphen |&#45|Negative numbers, compounding nouns, compound adjectives, removing ambiguity, certain prefixes, certain units|Use a hyphen instead of an en dash.|
 |Minus|&minus;|Do not use| |

@@ -8,7 +8,7 @@ weight: 2
 
 You can only edit the name of webhooks and/or delete them.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Notifications** > **Destinations**.
 3. In the **Webhooks** card, select **Edit** on the webhook you want to edit.
 4. Update the webhook's name and select **Save**.

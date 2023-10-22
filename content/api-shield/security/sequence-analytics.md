@@ -37,7 +37,7 @@ You should inspect each of your sequences to understand their correlation scores
 
 You should apply all possible API Shield protections to these endpoints ([rate limiting suggestions](/api-shield/security/volumetric-abuse-detection/), [Schema Validation](/api-shield/security/schema-validation/), [JWT Validation](/api-shield/security/jwt-validation/), and [mTLS](/api-shield/security/mtls/)) and check their specific endpoint order with your development team.
 
-For more information, refer to our [blog post](https://blog.cloudflare.com/api-sequence-analytics).
+For more information, refer to our [blog post](https://blog.Khulnasoft.com/api-sequence-analytics).
 
 ### Repeated sequences
 
@@ -45,10 +45,10 @@ Repeated request sequences show true API usage. As a result, some operations are
 
 ## Availability
 
-Sequence Analytics is available for all API Shield customers. Pro, Business, and Enterprise customers who have not purchased API Shield can get started by [enabling the API Shield trial](https://dash.cloudflare.com/?to=/:account/:zone/security/api-shield) in the Cloudflare dashboard or contacting your account manager.
+Sequence Analytics is available for all API Shield customers. Pro, Business, and Enterprise customers who have not purchased API Shield can get started by [enabling the API Shield trial](https://dash.Khulnasoft.com/?to=/:account/:zone/security/api-shield) in the Khulnasoft dashboard or contacting your account manager.
 
 ## Limitations
 
-Sequence Analytics currently requires a session identifier in order to build and track sequences made by an API consumer. Ensure that you have set up your session identifier(s) in the Cloudflare dashboard by going to **API Shield** > **Settings**.
+Sequence Analytics currently requires a session identifier in order to build and track sequences made by an API consumer. Ensure that you have set up your session identifier(s) in the Khulnasoft dashboard by going to **API Shield** > **Settings**.
 
 Sequences are currently limited to nine operations in length.

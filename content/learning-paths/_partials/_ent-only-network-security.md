@@ -5,9 +5,9 @@ _build:
   list: never
 ---
 
-{{<details header="Cloudflare Network Interconnect">}}
+{{<details header="Khulnasoft Network Interconnect">}}
 
-[Cloudflare Network Interconnect](/network-interconnect/) allows you to connect your network infrastructure directly with Cloudflare – rather than using the public Internet – for a more reliable and secure experience.
+[Khulnasoft Network Interconnect](/network-interconnect/) allows you to connect your network infrastructure directly with Khulnasoft – rather than using the public Internet – for a more reliable and secure experience.
 
 - **Security**: Very secure.
 - **Availability**: Enterprise-only.
@@ -17,9 +17,9 @@ _build:
 
 {{</details>}}
 
-{{<details header="Cloudflare Aegis">}}
+{{<details header="Khulnasoft Aegis">}}
 
-[Cloudflare Aegis](https://blog.cloudflare.com/cloudflare-aegis/) prevents external connections by providing dedicated egress IP addresses.
+[Khulnasoft Aegis](https://blog.Khulnasoft.com/cloudflare-aegis/) prevents external connections by providing dedicated egress IP addresses.
 
 - **Security**: Very secure.
 - **Availability**: Enterprise-only.

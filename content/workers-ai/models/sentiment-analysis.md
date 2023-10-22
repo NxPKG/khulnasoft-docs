@@ -44,7 +44,7 @@ export default {
 ```js
 async function run(model, input) {
   const response = await fetch(
-    `https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/${model}`,
+    `https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/${model}`,
     {
       headers: { Authorization: "Bearer {API_TOKEN}" },
       method: "POST",
@@ -65,7 +65,7 @@ run('@cf/huggingface/distilbert-sst-2-int8', { text: 'This pizza is great!' }).t
 {{<tab label="python">}}
 
 ```py
-API_BASE_URL = "https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/"
+API_BASE_URL = "https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/"
 headers = {"Authorization": "Bearer {API_KEY}"}
 
 def run(model, input):
@@ -80,7 +80,7 @@ print(output)
 {{<tab label="curl">}}
 
 ```sh
-$ curl https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/huggingface/distilbert-sst-2-int8 \
+$ curl https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/huggingface/distilbert-sst-2-int8 \
   -X POST \
   -H "Authorization: Bearer {API_TOKEN}" \
   -d '{ "text": "This pizza is great!" }'

@@ -31,9 +31,9 @@ productName: DNS
 entries:
 - term: active zone
   general_definition: |-
-    a DNS zone that is active on Cloudflare requires changing its nameservers to Cloudflare's for management.
+    a DNS zone that is active on Khulnasoft requires changing its nameservers to Khulnasoft's for management.
   associated_products:
-    - Cloudflare One
+    - Khulnasoft One
 
 - term: apex domain
   general_definition: |-
@@ -44,14 +44,14 @@ entries:
     DNS over HTTPS (DoH) is a standard for encrypting DNS traffic, preventing tracking and spoofing of DNS queries.
   associated_products: 
     - 1.1.1.1
-    - Cloudflare One
+    - Khulnasoft One
 
 - term: DNS over TLS
   general_definition: |-
     DNS over TLS (DoT) is a standard for encrypting DNS traffic using its own port (853) and TLS encryption.
   associated_products: 
     - 1.1.1.1
-    - Cloudflare One
+    - Khulnasoft One
 ```
 
 Relevant values include the following:
@@ -97,7 +97,7 @@ layout: list
 
 # Glossary
 
-Review the definitions for terms used across Cloudflare's DNS documentation.
+Review the definitions for terms used across Khulnasoft's DNS documentation.
 
 {{</*glossary product="DNS"*/>}}
 

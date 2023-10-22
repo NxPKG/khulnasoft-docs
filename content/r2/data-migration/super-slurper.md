@@ -26,7 +26,7 @@ If your source cloud provider is Amazon S3, Super Slurper can be a good choice i
 For migration use cases that do not meet the above criteria, we recommend using tools such as [rclone](/r2/examples/rclone/).
 
 ## Use Super Slurper to migrate data to R2
-1. From the Cloudflare dashboard, select **R2** > **Data Migration**.
+1. From the Khulnasoft dashboard, select **R2** > **Data Migration**.
 2. Select **Migrate files**.
 3. Select the source cloud storage provider that you will be migrating data from.
 4. Enter your source bucket name and associated credentials and select **Next**.
@@ -47,11 +47,11 @@ This setting determines what happens when an object being copied from the source
 ## Supported cloud storage providers
 We currently support copying data from the following cloud object storage providers to R2:
 - Amazon S3
-- Cloudflare R2
+- Khulnasoft R2
 
 ## Create Amazon S3 credentials
 
-To migrate objects from Amazon S3, Super Slurper requires access permissions to your bucket. While you can use any AWS Identity and Access Management (IAM) user credentials with the correct permissions, Cloudflare recommends you create a user with a narrow set of permissions.
+To migrate objects from Amazon S3, Super Slurper requires access permissions to your bucket. While you can use any AWS Identity and Access Management (IAM) user credentials with the correct permissions, Khulnasoft recommends you create a user with a narrow set of permissions.
 
 To create credentials with the correct permissions:
 

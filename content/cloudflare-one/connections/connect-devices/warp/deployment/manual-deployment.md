@@ -6,7 +6,7 @@ weight: 2
 
 # Manual deployment
 
-If you plan to direct your users to manually download and configure the WARP client, users will need to connect the client to your organization's Cloudflare Zero Trust instance.
+If you plan to direct your users to manually download and configure the WARP client, users will need to connect the client to your organization's Khulnasoft Zero Trust instance.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ To enroll your device using the terminal:
 
 1. [Download](https://pkg.cloudflareclient.com/) and install the WARP package.
 2. Open a terminal window. Ensure that you are logged into the terminal as the current user and not as root.
-3. Enroll into Cloudflare Zero Trust using your organization's {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}:
+3. Enroll into Khulnasoft Zero Trust using your organization's {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}:
 
     ```sh
     $ warp-cli teams-enroll <your-team-name>

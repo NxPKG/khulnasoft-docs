@@ -10,7 +10,7 @@ Adding captions and subtitles to your video library.
 
 ## Add or modify a caption
 
-To create or modify a caption on a video a [Cloudflare API Token](https://www.cloudflare.com/a/account/my-account) is required.
+To create or modify a caption on a video a [Khulnasoft API Token](https://www.Khulnasoft.com/a/account/my-account) is required.
 
 The `<LANGUAGE_TAG>` must adhere to the [BCP 47 format](http://www.unicode.org/reports/tr35/#Unicode_Language_and_Locale_Identifiers). For convenience, the most common
 language codes are provided [at the bottom of this document](#most-common-language-codes).
@@ -40,7 +40,7 @@ be created; if sent `de`, the label `Deutsch` will be created.
 curl -X PUT \
  -H 'Authorization: Bearer <API_TOKEN>' \
  -F file=@/Users/mickie/Desktop/example_caption.vtt \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/captions/<LANGUAGE_TAG>
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/captions/<LANGUAGE_TAG>
 ```
 
 ### Example Response to Add or Modify a Caption
@@ -63,7 +63,7 @@ To view captions associated with a video:
 
 ```bash
 curl -H 'Authorization: Bearer <API_TOKEN>' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/captions
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/captions
 ```
 
 ### Example response to get the captions associated with a video
@@ -99,7 +99,7 @@ To remove a caption associated with your video:
 ```bash
 curl -X DELETE \
  -H 'Authorization: Bearer <API_TOKEN>' \
- https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/captions/<LANGUAGE_TAG>
+ https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/<VIDEO_UID>/captions/<LANGUAGE_TAG>
 ```
 
 If there is an entry in `errors` response field, the caption has not been

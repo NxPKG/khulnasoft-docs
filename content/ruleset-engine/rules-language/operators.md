@@ -10,7 +10,7 @@ meta:
 
 # Rule operators and grouping symbols
 
-The Cloudflare Rules language supports comparison and logical operators:
+The Khulnasoft Rules language supports comparison and logical operators:
 
 - [Comparison operators](#comparison-operators) specify how values defined in an expression must relate to the actual HTTP request value for the expression to return `true`.
 - [Logical operators](#logical-operators) combine two expressions to form a compound expression and use order of precedence to determine how an expression is evaluated.
@@ -153,11 +153,11 @@ The Rules language supports these comparison operators:
 </table>
 {{</table-wrap>}}
 
-\* _Access to the `matches` operator requires a Cloudflare Business or Enterprise plan._
+\* _Access to the `matches` operator requires a Khulnasoft Business or Enterprise plan._
 
-### Additional operators in the Cloudflare dashboard
+### Additional operators in the Khulnasoft dashboard
 
-The Cloudflare dashboard shows the following functions as operators:
+The Khulnasoft dashboard shows the following functions as operators:
 
 * _starts with_ (corresponding to the [`starts_with` function](/ruleset-engine/rules-language/functions/#function-starts_with)): Returns `true` when a string starts with a given substring, and `false` otherwise.
 * _ends with_ (corresponding to the [`ends_with` function](/ruleset-engine/rules-language/functions/#function-ends_with)): Returns `true` when a string ends with a given substring, and `false` otherwise.
@@ -200,7 +200,7 @@ Logical operators combine two or more expressions into a single compound express
 
 ### Supported logical operators
 
-Each logical operator has an [order of precedence](#order-of-precedence). The order of precedence (along with [grouping symbols](#grouping-symbols)) determines the order in which Cloudflare evaluates logical operators in an expression. The `not` operator ranks first in order of precedence.
+Each logical operator has an [order of precedence](#order-of-precedence). The order of precedence (along with [grouping symbols](#grouping-symbols)) determines the order in which Khulnasoft evaluates logical operators in an expression. The `not` operator ranks first in order of precedence.
 
 {{<table-wrap>}}
 
@@ -220,7 +220,7 @@ Each logical operator has an [order of precedence](#order-of-precedence). The or
       <td><code class="InlineCode">not</code></td>
       <td><code class="InlineCode">!</code></td>
       <td>
-         <code class="InlineCode"><strong>not</strong> ( http.host eq "www.cloudflare.com" and ip.src in 203.0.113.0/24 )</code>
+         <code class="InlineCode"><strong>not</strong> ( http.host eq "www.Khulnasoft.com" and ip.src in 203.0.113.0/24 )</code>
       </td>
       <td>1</td>
    </tr>
@@ -229,7 +229,7 @@ Each logical operator has an [order of precedence](#order-of-precedence). The or
       <td><code class="InlineCode">and</code></td>
       <td><code class="InlineCode">&amp;&amp;</code></td>
       <td>
-         <code class="InlineCode">http.host eq "www.cloudflare.com" <strong>and</strong> ip.src in 203.0.113.0/24</code>
+         <code class="InlineCode">http.host eq "www.Khulnasoft.com" <strong>and</strong> ip.src in 203.0.113.0/24</code>
       </td>
       <td>2</td>
    </tr>
@@ -239,7 +239,7 @@ Each logical operator has an [order of precedence](#order-of-precedence). The or
       <td><code class="InlineCode">xor</code></td>
       <td><code class="InlineCode">^^</code></td>
       <td>
-         <code class="InlineCode">http.host eq "www.cloudflare.com" <strong>xor</strong> ip.src in 203.0.113.0/24</code>
+         <code class="InlineCode">http.host eq "www.Khulnasoft.com" <strong>xor</strong> ip.src in 203.0.113.0/24</code>
       </td>
       <td>3</td>
    </tr>
@@ -248,7 +248,7 @@ Each logical operator has an [order of precedence](#order-of-precedence). The or
       <td><code class="InlineCode">or</code></td>
       <td><code class="InlineCode">||</code></td>
       <td>
-         <code class="InlineCode">http.host eq "www.cloudflare.com" <strong>or</strong> ip.src in 203.0.113.0/24</code>
+         <code class="InlineCode">http.host eq "www.Khulnasoft.com" <strong>or</strong> ip.src in 203.0.113.0/24</code>
       </td>
       <td>4</td>
    </tr>
@@ -279,7 +279,7 @@ To avoid ambiguity when working with logical operators, use grouping symbols so 
 
 The Rules language supports parentheses (`(`,`)`) as grouping symbols. Grouping symbols allow you to organize expressions, enforce precedence, and nest expressions.
 
-Only the [Expression Editor](/ruleset-engine/rules-language/expressions/edit-expressions/#expression-editor) and the [Cloudflare API](/api/) support grouping symbols. The [Expression Builder](/ruleset-engine/rules-language/expressions/edit-expressions/#expression-builder) does not.
+Only the [Expression Editor](/ruleset-engine/rules-language/expressions/edit-expressions/#expression-editor) and the [Khulnasoft API](/api/) support grouping symbols. The [Expression Builder](/ruleset-engine/rules-language/expressions/edit-expressions/#expression-builder) does not.
 
 
 ### Group expressions

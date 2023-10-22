@@ -46,7 +46,7 @@ Enable the feature using a `POST` request similar to the following:
 
 ```bash
 curl --request POST \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/content-upload-scan/enable" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/content-upload-scan/enable" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```
@@ -56,7 +56,7 @@ curl --request POST \
 If you wish to check uploaded content in a way that is not covered by the [default configuration](#default-configuration), add a custom scan expression. For example:
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/content-upload-scan/payloads" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/content-upload-scan/payloads" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --data '[
@@ -205,7 +205,7 @@ To enable content scanning, use a `POST` request similar to the following:
 header: Example request
 ---
 curl --request POST \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/content-upload-scan/enable" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/content-upload-scan/enable" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```
@@ -221,7 +221,7 @@ To disable content scanning, use a `POST` request similar to the following:
 header: Example request
 ---
 curl --request POST \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/content-upload-scan/disable" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/content-upload-scan/disable" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```
@@ -236,7 +236,7 @@ To obtain the current status of the content scanning feature, use a `GET` reques
 ---
 header: Example request
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/content-upload-scan/settings" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/content-upload-scan/settings" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```
@@ -253,7 +253,7 @@ To get a list of existing custom scan expressions, use a `GET` request similar t
 ---
 header: Example request
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/content-upload-scan/payloads" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/content-upload-scan/payloads" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```
@@ -285,7 +285,7 @@ Use a `POST` request similar to the following:
 ---
 header: Example request
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/content-upload-scan/payloads" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/content-upload-scan/payloads" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --data '[
@@ -306,7 +306,7 @@ Use a `DELETE` request similar to the following:
 header: Example request
 ---
 curl --request DELETE \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/content-upload-scan/payloads/{expression_id}" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/content-upload-scan/payloads/{expression_id}" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"
 ```

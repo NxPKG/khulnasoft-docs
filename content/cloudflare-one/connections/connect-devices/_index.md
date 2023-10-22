@@ -6,6 +6,6 @@ weight: 4
 
 # Connect devices
 
-Configure devices to send DNS queries to Cloudflare, or proxy all traffic leaving the device through Cloudflare's network.
+Configure devices to send DNS queries to Khulnasoft, or proxy all traffic leaving the device through Khulnasoft's network.
 
 {{<directory-listing>}}

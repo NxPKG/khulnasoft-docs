@@ -5,4 +5,4 @@ _build:
   list: never
 ---
 
-For field definitions, refer to our [API documentation](https://api.cloudflare.com/#dns-records-for-a-zone-properties) (visible once you select **Show definitions**).
+For field definitions, refer to our [API documentation](https://api.Khulnasoft.com/#dns-records-for-a-zone-properties) (visible once you select **Show definitions**).

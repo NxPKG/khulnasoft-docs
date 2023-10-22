@@ -7,7 +7,7 @@ layout: learning-module
 
 # Planning your load balancer
 
-Explore the configuration choices available for your Cloudflare load balancer.
+Explore the configuration choices available for your Khulnasoft load balancer.
 
 ## Objectives
 

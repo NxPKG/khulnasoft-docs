@@ -9,11 +9,11 @@ layout: single
 
 {{<Aside type="note">}}
 
-Requires Cloudflare CASB and Cloudflare DLP.
+Requires Khulnasoft CASB and Khulnasoft DLP.
 
 {{</Aside>}}
 
-You can use [Cloudflare Data Loss Prevention (DLP)](/cloudflare-one/policies/data-loss-prevention/) to discover if files stored in your SaaS application contain sensitive data.
+You can use [Khulnasoft Data Loss Prevention (DLP)](/cloudflare-one/policies/data-loss-prevention/) to discover if files stored in your SaaS application contain sensitive data.
 To perform DLP scans in a SaaS app, first configure a DLP profile with the data patterns you want to detect, then enable those profiles in a CASB integration.
 
 ## Supported integrations
@@ -30,7 +30,7 @@ Refer to the [DLP documentation](/cloudflare-one/policies/data-loss-prevention/d
 
 ### Add a new integration
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **CASB** > **Integrations**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **CASB** > **Integrations**.
 2. Select **Add integration** and choose a [supported integration](#supported-integrations).
 3. During the setup process, you will be prompted to select DLP profiles for the integration.
 4. Select **Save integration**.
@@ -39,7 +39,7 @@ CASB will scan every publicly accessible file in the integration for text that m
 
 ### Modify an existing integration
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **CASB** > **Integrations**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **CASB** > **Integrations**.
 2. Choose a [supported integration](#supported-integrations) and select **Configure**.
 3. Under **DLP profiles**, select the profiles that you want the integration to scan for.
 4. Select **Save integration**.

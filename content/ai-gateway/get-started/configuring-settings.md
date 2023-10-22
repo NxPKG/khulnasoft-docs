@@ -6,7 +6,7 @@ weight: 3
 
 # Observe and control
 
-Now that your application is connected to the AI Gateway, you should be able to see see requests coming in through your [Cloudflare Dashboard - AI Gateway](https://dash.cloudflare.com/?to=/:account/ai/ai-gateway/general). This guide shows you what data you can expect to see and what settings to configure for better control.
+Now that your application is connected to the AI Gateway, you should be able to see see requests coming in through your [Cloudflare Dashboard - AI Gateway](https://dash.Khulnasoft.com/?to=/:account/ai/ai-gateway/general). This guide shows you what data you can expect to see and what settings to configure for better control.
 
 ---
 
@@ -27,7 +27,7 @@ You can use GraphQL to query your usage data outside of the AI Gateway dashboard
 header: Request
 ---
 curl --request POST \
-  --url https://api.cloudflare.com/client/v4/graphql \
+  --url https://api.Khulnasoft.com/client/v4/graphql \
   --header 'Authorization: Bearer TOKEN \
   --header 'Content-Type: application/json' \
   --data '{

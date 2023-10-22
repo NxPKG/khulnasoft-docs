@@ -32,6 +32,6 @@ Affected domains and subdomains will fall back to any other active certificate c
 
 If you no longer want to use your custom certificate but still want your website or application to be covered with SSL/TLS, you can do the following:
 
-1. Go to [**SSL/TLS** > **Edge Certificates**](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/edge-certificates).
+1. Go to [**SSL/TLS** > **Edge Certificates**](https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls/edge-certificates).
 2. Make sure there is already an active [universal](/ssl/edge-certificates/universal-ssl/) or [advanced](/ssl/edge-certificates/advanced-certificate-manager/) certificate covering the same hostnames.
 3. Delete your custom certificate.

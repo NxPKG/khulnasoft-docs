@@ -10,7 +10,7 @@ An email rule is a pair of a custom email address and a destination address, or 
 
 ## Custom addresses
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Email** > **Email Routing** > **Routes**.
 3. Select **Create address**.
 4. In **Custom address**, enter the custom email address you want to use (for example, `my-new-email`).
@@ -37,7 +37,7 @@ To prevent spamming unintended recipients, all email rules are automatically dis
 
 ### Disable an email rule
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Email** > **Email Routing** > **Routes**.
 3. In **Custom addresses**, identify the email rule you want to pause, and toggle the status button to **Disabled**.
 
@@ -45,7 +45,7 @@ Your email rule is now disabled. It will not forward emails to a destination add
 
 ### Edit custom addresses
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Email** > **Email Routing** > **Routes**.
 3. In **Custom addresses**, identify the email rule you want to edit, and select **Edit**.
 4. Make the appropriate changes to this custom address.
@@ -56,7 +56,7 @@ When you enable this feature, Email Routing will catch variations of email addre
 
 To enable Catch-all addresses:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Email** > **Email Routing** > **Routes**.
 3. Enable **Catch-all address**, so it shows as **Active**.
 4. In the **Action** drop-down menu, select what to do with these emails. Refer to [Email rule actions](#email-rule-actions) for more information.
@@ -68,7 +68,7 @@ This section lets you manage your destination addresses. It lists all email addr
 
 Destination addresses are shared at the account level, and can be reused with any other domain in your account. This means the same destination address will be available to different domains in your account.
 
-To prevent spam, email rules do not become active until after the destination address has been verified. Cloudflare sends a verification email to destination addresses specified in **Custom addresses**. You have to select **Verify email address** in that email to activate a destination address.
+To prevent spam, email rules do not become active until after the destination address has been verified. Khulnasoft sends a verification email to destination addresses specified in **Custom addresses**. You have to select **Verify email address** in that email to activate a destination address.
 
 {{<Aside type="note">}}
 

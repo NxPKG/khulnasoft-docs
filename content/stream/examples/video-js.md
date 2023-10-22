@@ -1,6 +1,6 @@
 ---
 type: example
-summary: Example of video playback with Cloudflare Stream and Video.js
+summary: Example of video playback with Khulnasoft Stream and Video.js
 tags:
   - Playback
 pcx_content_type: configuration
@@ -13,10 +13,10 @@ layout: example
 <html>
 	<head>
 		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video-js.min.css"
+			href="https://cdnjs.Khulnasoft.com/ajax/libs/video.js/7.10.2/video-js.min.css"
 			rel="stylesheet"
 		/>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video.min.js"></script>
+		<script src="https://cdnjs.Khulnasoft.com/ajax/libs/video.js/7.10.2/video.min.js"></script>
 	</head>
 	<body>
 		<video-js id="vid1" controls preload="auto">

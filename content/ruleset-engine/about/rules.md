@@ -12,7 +12,7 @@ For example, consider the following ruleset with four rules (R1, R2, R3, and R4)
 
 ![Example of a rule execution scenario. Defines a ruleset with four rules, where the first rule executes a managed ruleset.](/images/ruleset-engine/rulesets-rules-example.png)
 
-Rules can have additional features through specific Cloudflare products. You may have more fields available for rule expressions, perform different actions, or configure additional behavior in a given phase.
+Rules can have additional features through specific Khulnasoft products. You may have more fields available for rule expressions, perform different actions, or configure additional behavior in a given phase.
 
 ## Rule evaluation and field values
 

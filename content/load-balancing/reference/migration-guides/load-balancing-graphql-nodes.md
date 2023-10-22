@@ -6,7 +6,7 @@ weight: 1
 
 # Migrate to new GraphQL nodes
 
-After 30 September 2021, Cloudflare will make the following changes to the Load Balancing GraphQL schema:
+After 30 September 2021, Khulnasoft will make the following changes to the Load Balancing GraphQL schema:
 
 *   Deprecate nodes:
     *   `loadBalancingRequestsGroups` will be deprecated for `loadBalancingRequestsAdaptiveGroups`

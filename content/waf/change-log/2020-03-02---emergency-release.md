@@ -23,21 +23,21 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100201</td>
       <td>Improve Fake Google Bot detection</td>
       <td>Block</td>
       <td>Block</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100005</td>
       <td>Improve File Inclusion detection</td>
       <td>Block</td>
       <td>Block</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100007NS</td>
       <td>Improve Command Injection detection</td>
       <td>Block</td>

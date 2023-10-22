@@ -18,7 +18,7 @@ Page Shield displays scripts and connections considered malicious at the top of 
 
 To review the scripts considered malicious:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 
 2. Go to **Security** > **Page Shield** > **Monitors**.
 
@@ -39,7 +39,7 @@ You can configure alerts for detected malicious scripts. Refer to [Page Shield a
 
 To review the connections considered malicious:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 
 2.  Go to **Security** > **Page Shield** > **Monitors**.
 

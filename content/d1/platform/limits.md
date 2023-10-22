@@ -7,7 +7,7 @@ title: Limits
 
 {{<Aside type="note" heading="D1 is currently in public beta">}}
 
-Many of these limits will increase during D1's [public beta](/workers/platform/betas/). Join the [`#d1-beta`](https://discord.cloudflare.com) channel in the Cloudflare Developer Discord or subscribe to D1's [public changelog](/d1/changelog/) to keep up to date with changes.
+Many of these limits will increase during D1's [public beta](/workers/platform/betas/). Join the [`#d1-beta`](https://discord.Khulnasoft.com) channel in the Cloudflare Developer Discord or subscribe to D1's [public changelog](/d1/changelog/) to keep up to date with changes.
 
 {{</Aside>}}
 

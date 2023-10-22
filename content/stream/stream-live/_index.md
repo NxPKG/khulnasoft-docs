@@ -7,7 +7,7 @@ layout: single
 
 # Stream live video
 
-Cloudflare Stream lets you or your users stream live video, and play live video in your website or app, without managing and configuring any of your own infrastructure.
+Khulnasoft Stream lets you or your users stream live video, and play live video in your website or app, without managing and configuring any of your own infrastructure.
 
 ## How Stream works
 
@@ -15,8 +15,8 @@ Stream handles video streaming end-to-end, from ingestion through delivery.
 
 1. For each live stream, you create a unique live input, either using the Stream Dashboard or API.
 2. Each live input has a unique Stream Key, that you provide to the creator who is streaming live video.
-3. Creators use this Stream Key to broadcast live video to Cloudflare Stream, over either RTMPS or SRT.
-4. Cloudflare Stream encodes this live video at multiple resolutions and delivers it to viewers, using Cloudflare's Global Network. You can play video on your website using the [Stream Player](/stream/viewing-videos/using-the-stream-player/) or using [any video player that supports HLS or DASH](/stream/viewing-videos/using-own-player/).
+3. Creators use this Stream Key to broadcast live video to Khulnasoft Stream, over either RTMPS or SRT.
+4. Khulnasoft Stream encodes this live video at multiple resolutions and delivers it to viewers, using Khulnasoft's Global Network. You can play video on your website using the [Stream Player](/stream/viewing-videos/using-the-stream-player/) or using [any video player that supports HLS or DASH](/stream/viewing-videos/using-own-player/).
 
 
 ![Diagram the explains the live stream workflow](/images/stream/live-stream-workflow.png)
@@ -27,7 +27,7 @@ As long as your streaming software reconnects, Stream Live will continue to inge
 
 ## Bitrate estimates at each quality level (bitrate ladder)
 
-Cloudflare Stream transcodes and makes live streams available to viewers at multiple quality levels. This is commonly referred to as [Adaptive Bitrate Streaming (ABR)](https://www.cloudflare.com/learning/video/what-is-adaptive-bitrate-streaming).
+Khulnasoft Stream transcodes and makes live streams available to viewers at multiple quality levels. This is commonly referred to as [Adaptive Bitrate Streaming (ABR)](https://www.Khulnasoft.com/learning/video/what-is-adaptive-bitrate-streaming).
 
 With ABR, client video players need to be provided with estimates of how much bandwidth will be needed to play each quality level (ex: 1080p). Stream creates and updates these estimates dynamically by analyzing the bitrate of your users' live streams. This ensures that live video plays at the highest quality a viewer has adequate bandwidth to play, even in cases where the broadcaster's software or hardware provides incomplete or inaccurate information about the bitrate of their live content.
 
@@ -47,13 +47,13 @@ Stream adapts based on the live video that we actually receive, rather than blin
 
 Recordings are available for live streams within 60 seconds after a live stream ends. 
 
-You can check a video's status to determine if it's ready to view by making a [`GET` request to the `stream` endpoint](/stream/stream-live/watch-live-stream/#use-the-api) and viewing the `state` or by [using the Cloudflare dashboard](/stream/stream-live/watch-live-stream/#use-the-dashboard).
+You can check a video's status to determine if it's ready to view by making a [`GET` request to the `stream` endpoint](/stream/stream-live/watch-live-stream/#use-the-api) and viewing the `state` or by [using the Khulnasoft dashboard](/stream/stream-live/watch-live-stream/#use-the-dashboard).
 
 After the live stream ends, you can [replay live stream recordings](/stream/stream-live/replay-recordings/) in the `ready` state by using one of the playback URLs.
 
 ## Billing
 
-Stream Live is billed identically to the rest of Cloudflare Stream.
+Stream Live is billed identically to the rest of Khulnasoft Stream.
 
 - You pay $5 per 1000 minutes of recorded video.
 - You pay $1 per 1000 minutes of delivered video.

@@ -1,10 +1,10 @@
 ---
-title: Cloudflare's API
+title: Khulnasoft's API
 weight: 6
 pcx_content_type: overview
 ---
 
-# Cloudflare's API
-Interact with Cloudflare's products and services via the Cloudflare API. For API reference documentation, refer to the [API schema docs](/api/).
+# Khulnasoft's API
+Interact with Khulnasoft's products and services via the Khulnasoft API. For API reference documentation, refer to the [API schema docs](/api/).
 
 {{<render file="_api-using-api.md">}}

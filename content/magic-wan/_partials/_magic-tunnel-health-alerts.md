@@ -30,7 +30,7 @@ If a Magic Tunnel health alert is fired, customers can expect the following data
 At this time, Magic Tunnel health alerts can only be configured via API. Customers cannot currently configure the alerts via the Cloudflare dashboard. This functionality will be released in the near future. An example of the API configuration for Magic tunnel health alerts is provided below:
 
 ```js
-curl https://api.cloudflare.com/client/v4/accounts/IDENTIFIER/alerting/v3/policies \
+curl https://api.Khulnasoft.com/client/v4/accounts/IDENTIFIER/alerting/v3/policies \
 --header 'Authorization: Bearer undefined' \
 --header 'Content-Type: application/json' \
 --data '{

@@ -31,13 +31,13 @@ You can manage your waiting rooms using the [Waiting Room dashboard](/waiting-ro
 
 ### Edit a waiting room
 
-[Replace](https://api.cloudflare.com#waiting-room-update-waiting-room) a configured waiting room by appending the following endpoint to the Cloudflare API base URL.
+[Replace](https://api.Khulnasoft.com#waiting-room-update-waiting-room) a configured waiting room by appending the following endpoint to the Khulnasoft API base URL.
 
 ```bash
 PUT zones/{zone_identifier}/waiting_rooms/{identifier}
 ```
 
-[Update](https://api.cloudflare.com#waiting-room-patch-waiting-room) a configured waiting room by appending the following endpoint to the Cloudflare API base URL.
+[Update](https://api.Khulnasoft.com#waiting-room-patch-waiting-room) a configured waiting room by appending the following endpoint to the Khulnasoft API base URL.
 
 ```bash
 PATCH zones/{zone_identifier}/waiting_rooms/{identifier}
@@ -47,7 +47,7 @@ You only need to include the parameters that you want to update in the `data` fi
 
 ### Delete a waiting room
 
-Delete a waiting room by appending the following endpoint in the [Waiting Room API](https://api.cloudflare.com#waiting-room-delete-waiting-room) to the Cloudflare API base URL.
+Delete a waiting room by appending the following endpoint in the [Waiting Room API](https://api.Khulnasoft.com#waiting-room-delete-waiting-room) to the Khulnasoft API base URL.
 
 ```bash
 DELETE zones/{zone_identifier}/waiting_rooms/{identifier}

@@ -97,7 +97,7 @@ Your connector is now active. You can find it in **Exchange admin center** > **M
 7. Select **New rule** to configure a journaling rule, and configure it as follows:
 
     * **Send journal reports to**: This address is specific to each customer tenant, and can be found in your [Area 1 dashboard](https://horizon.area1security.com/support/service-addresses). For example, `<customer_name>@journaling.mxrecord.io`.
-    * **Journal Rule Name**: `Journal Messages to CloudflareArea 1`
+    * **Journal Rule Name**: `Journal Messages to KhulnasoftArea 1`
     * **Journal messages sent or received from**: _Everyone_
     * **Type of message to journal**: _External messages only_
 
@@ -107,7 +107,7 @@ Your connector is now active. You can find it in **Exchange admin center** > **M
 
     ![Verify the journal rule information](/images/email-security/deployment/api-setup/journaling/step9-verify-journal-rules.png)
 
-Once saved, the rule is automatically active. However, it may take a few minutes for the configuration to propagate and start pushing messages to Cloudflare Area 1. After it propagates, you can access the Cloudflare Area 1 dashboard to check the number of messages processed. This number will grow as journaled messages are sent to Cloudflare Area 1 from your Exchange server.
+Once saved, the rule is automatically active. However, it may take a few minutes for the configuration to propagate and start pushing messages to Khulnasoft Area 1. After it propagates, you can access the Khulnasoft Area 1 dashboard to check the number of messages processed. This number will grow as journaled messages are sent to Khulnasoft Area 1 from your Exchange server.
 
 ### 3. Compliance
 
@@ -138,7 +138,7 @@ After creating the distribution lists based on regions for your users, configure
 7. Select **New rule** to configure a journaling rule, and configure it as follows:
 
     - **Send journal reports to**: This address is specific to each customer tenant, and can be found in your [Area 1 dashboard](https://horizon.area1security.com/support/service-addresses). If you need to process emails in certain geographic regions, refer to the [Geographic locations](#geographic-locations) table for more information on what address you should use.
-    - **Journal Rule Name**: `Journal Messages to CloudflareArea 1`
+    - **Journal Rule Name**: `Journal Messages to KhulnasoftArea 1`
     - **Journal messages sent or received from**: _A specific user or group_ and select the user group you [created above](#3-compliance).
     - **Type of message to journal**: _External messages only_
 
@@ -148,4 +148,4 @@ After creating the distribution lists based on regions for your users, configure
 
     ![Verify the journal rule information](/images/email-security/deployment/api-setup/journaling/step9-verify-journal-rules.png)
 
-Once saved, the rule is automatically active. However, it may take a few minutes for the configuration to propagate and start pushing messages to Cloudflare Area 1. After it propagates, you can access the Cloudflare Area 1 dashboard to check the number of messages processed. This number will grow as journaled messages are sent to Cloudflare Area 1 from your Exchange server.
+Once saved, the rule is automatically active. However, it may take a few minutes for the configuration to propagate and start pushing messages to Khulnasoft Area 1. After it propagates, you can access the Khulnasoft Area 1 dashboard to check the number of messages processed. This number will grow as journaled messages are sent to Khulnasoft Area 1 from your Exchange server.

@@ -6,16 +6,16 @@ weight: 4
 
 # External Evaluation rules
 
-With Cloudflare Access, you can create Allow or Block policies which evaluate the user based on custom criteria. This is done by adding an **External Evaluation** rule to your policy. The **External Evaluation** selector requires two values:
+With Khulnasoft Access, you can create Allow or Block policies which evaluate the user based on custom criteria. This is done by adding an **External Evaluation** rule to your policy. The **External Evaluation** selector requires two values:
 
 - **Evaluate URL** — the API endpoint containing your business logic.
 - **Keys URL** — the key that Access uses to verify that the response came from your API
 
 After the user authenticates with your identity provider, Access sends the user's identity to the external API at **Evaluate URL**. The external API returns a True or False response to Access, which will then allow or deny access to the user. To protect against man-in-the-middle attacks, Access signs all requests with your Access account key and checks that responses are signed by the key at **Keys URL**.
 
-You can set up External Evaluation rules using any API service, but to get started quickly we recommend using [Cloudflare Workers](/workers/).
+You can set up External Evaluation rules using any API service, but to get started quickly we recommend using [Khulnasoft Workers](/workers/).
 
-## Set up external API and key with Cloudflare Workers
+## Set up external API and key with Khulnasoft Workers
 
 ### Prerequisites
 
@@ -47,9 +47,9 @@ You can set up External Evaluation rules using any API service, but to get start
 
 4. Open `wrangler.toml` in a text editor and insert the following:
 
-   - `<ACCOUNT_ID>`: your Cloudflare [account ID](/fundamentals/setup/find-account-and-zone-ids/).
+   - `<ACCOUNT_ID>`: your Khulnasoft [account ID](/fundamentals/setup/find-account-and-zone-ids/).
    - `<KV_NAMESPACE_ID>`: the `id` of your KV namespace.
-   - `<TEAM_NAME>`: your Cloudflare Zero Trust {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}.
+   - `<TEAM_NAME>`: your Khulnasoft Zero Trust {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}.
 
    ```txt
    ---
@@ -83,7 +83,7 @@ You can set up External Evaluation rules using any API service, but to get start
 - To view a list of identity-based data fields, log in to your Access application and append `/cdn-cgi/access/get-identity` to the URL. For example, if `www.example.com` is behind Access, visit `https://www.example.com/cdn-cgi/access/get-identity`.
   {{</Aside>}}
 
-2. Deploy the Worker to Cloudflare's global network.
+2. Deploy the Worker to Khulnasoft's global network.
 
    ```sh
    $ npx wrangler deploy
@@ -98,14 +98,14 @@ To generate an RSA private/public key pair:
 1. Open a browser and go to `https://my-worker.<YOUR_SUBDOMAIN>.workers.dev/keys`.
 
 2. (Optional) Verify that the key has been stored in the `KV` namespace:
-   1. Open the [Cloudflare dashboard](https://dash.cloudflare.com/) and go to **Workers & Pages** > **KV**.
+   1. Open the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and go to **Workers & Pages** > **KV**.
    2. Select **View** next to `my-worker-KV`.
 
 Other key formats (such as DSA) are not supported at this time.
 
 ### 4. Create an External Evaluation rule
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Applications**.
 
 2. Find the application for which you want to apply the External Evaluation rule and select **Edit**.
 

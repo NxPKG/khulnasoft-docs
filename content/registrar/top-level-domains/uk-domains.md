@@ -12,7 +12,7 @@ meta:
 
 Cloudflare currently supports the transfer of `.uk`, `co.uk`, `org.uk`, and `me.uk` domains. To transfer a `.uk` domain to Cloudflare from another registrar follow these steps:
 
-1. Log in go the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in go the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Select **Domain Registration** > **Transfer Domains**. Cloudflare will show you a list of domains that are eligible for transfer (see below for restrictions). If you do not see your domain, [add the domain you want to transfer](/fundamentals/setup/account-setup/add-site/) to your Cloudflare account before you try to transfer your `.uk` domain.
 3. Select the domains you wish to transfer.
 4. Proceed to checkout. Note that there is no fee to transfer a `.uk` domain and an additional year is NOT added during the transfer process.
@@ -29,7 +29,7 @@ For security reasons, domains transferred to Cloudflare Registrar are locked for
 
 ## Transfer a .UK domain to another registrar
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Domain Registration** > **Manage Domains**.
 3. Find the domain you want to transfer, and select **Manage**.
 4. Select **Configuration** > **Unlock**.

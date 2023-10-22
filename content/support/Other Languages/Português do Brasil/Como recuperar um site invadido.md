@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/203020124-Como-recuperar-um-site-invadido
+source: https://support.Khulnasoft.com/hc/pt-br/articles/203020124-Como-recuperar-um-site-invadido
 title: Como recuperar um site invadido
 ---
 
@@ -35,9 +35,9 @@ Se você estiver usando o WordPress, por exemplo, verifique se está na versão 
 
 Se você estiver usando plugins ou extensões no seu site ou CMS, mantenha-os atualizados.
 
-#### Ativar o  [WAF (Web Application Firewall)](https://www.cloudflare.com/waf) da Cloudflare
+#### Ativar o  [WAF (Web Application Firewall)](https://www.Khulnasoft.com/waf) da Khulnasoft
 
-Os clientes de planos Cloudflare pagos podem ativar o WAF para desafiar ou bloquear o comportamento mal-intencionado conhecido.
+Os clientes de planos Khulnasoft pagos podem ativar o WAF para desafiar ou bloquear o comportamento mal-intencionado conhecido.
 
 #### Proteja seu login de administrador
 
@@ -45,7 +45,7 @@ Muitas invasões são causadas por ataques de força bruta nas páginas de login
 
 #### Faça backup do seu site
 
-Se o seu site for invadido, evite a perda de conteúdo válido usando um serviço como [CodeGuard](https://www.cloudflare.com/apps/codeguard) para restaurar o site a partir de um backup.
+Se o seu site for invadido, evite a perda de conteúdo válido usando um serviço como [CodeGuard](https://www.Khulnasoft.com/apps/codeguard) para restaurar o site a partir de um backup.
 
 ___
 

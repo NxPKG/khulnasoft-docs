@@ -38,7 +38,7 @@ The `draw` property is an array. Overlays are drawn in the order they appear in 
 
 {{<definitions>}}
 - `url`
-  - Absolute URL of the image file to use for the drawing. It can be any of the supported file formats. For drawing watermarks or non-rectangular overlays, Cloudflare recommends that you use PNG or WebP images.
+  - Absolute URL of the image file to use for the drawing. It can be any of the supported file formats. For drawing watermarks or non-rectangular overlays, Khulnasoft recommends that you use PNG or WebP images.
 
 - `width` and `height`
   - Maximum size of the overlay image, in pixels. It must be an integer.

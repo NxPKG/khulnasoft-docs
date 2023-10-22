@@ -1,5 +1,5 @@
 ---
-title: Other Cloudflare resources
+title: Other Khulnasoft resources
 pcx_content_type: learning-unit
 weight: 6
 layout: learning-unit

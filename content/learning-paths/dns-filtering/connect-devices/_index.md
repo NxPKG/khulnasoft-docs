@@ -7,7 +7,7 @@ layout: learning-module
 
 # Connect a test device to Gateway
 
-To forward DNS requests to Cloudflare Gateway, you can either change the DNS resolver settings in your router, browser, or OS or install the WARP client on your device.
+To forward DNS requests to Khulnasoft Gateway, you can either change the DNS resolver settings in your router, browser, or OS or install the WARP client on your device.
 
 ## Objectives
 

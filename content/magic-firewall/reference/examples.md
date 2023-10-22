@@ -8,9 +8,9 @@ weight: 6
 
 {{<Aside type="warning" header="Warning">}}
 
-The examples on this page all use the `https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets` endpoint. This endpoint is intended to create rules from scratch and **might overwrite existing rules**.
+The examples on this page all use the `https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets` endpoint. This endpoint is intended to create rules from scratch and **might overwrite existing rules**.
 
-If you have a ruleset already deployed, consider using the `https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/rules` endpoint instead.
+If you have a ruleset already deployed, consider using the `https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/rules` endpoint instead.
 
 Refer to [Add rule to ruleset](/ruleset-engine/rulesets-api/add-rule/) and [Create an account ruleset](/api/operations/createAccountRuleset) for more information.
 
@@ -21,7 +21,7 @@ Refer to [Add rule to ruleset](/ruleset-engine/rulesets-api/add-rule/) and [Crea
 The example below blocks all tcp ports, but allows one port (8080) by using the skip action.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -51,7 +51,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets \
 The example below blocks all packets with a source or destination IP address coming from Brazil by using its 2-letter country code in <a href="https://www.iso.org/obp/ui/#search/code/">ISO 3166-1 Alpha 2</a> format.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -82,7 +82,7 @@ Magic Firewall supports [using lists in expressions](/waf/tools/lists/use-in-exp
 <!---->
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \

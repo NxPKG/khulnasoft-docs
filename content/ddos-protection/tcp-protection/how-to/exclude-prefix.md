@@ -8,7 +8,7 @@ weight: 6
 
 To exclude a prefix or a prefix subset from Advanced TCP Protection:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to Account Home > **L3/4 DDoS** > **Advanced TCP Protection**.
 3. [Add the prefix](/ddos-protection/tcp-protection/how-to/add-prefix/) you previously onboarded to Magic Transit to Advanced TCP Protection.
 4. [Add the prefix](/ddos-protection/tcp-protection/how-to/add-prefix/) (or subset) you wish to exclude as a new, separate prefix in Advanced TCP Protection.

@@ -6,7 +6,7 @@ weight: 5
 
 # FAQ
 
-Below you will find answers to our most commonly asked questions. If you cannot find the answer you are looking for, refer to the [community page](https://community.cloudflare.com/c/website-application-performance/88) to explore more resources.
+Below you will find answers to our most commonly asked questions. If you cannot find the answer you are looking for, refer to the [community page](https://community.Khulnasoft.com/c/website-application-performance/88) to explore more resources.
 
 ## How long does it take for a test to load?
 

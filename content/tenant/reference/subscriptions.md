@@ -8,7 +8,7 @@ weight: 1
 
 When [provisioning services for an account](/tenant/how-to/manage-subscriptions/), you need to include certain values with each API call to specify a particular service.
 
-The subscriptions available to you will vary depending on your current partner program ([Self-Service Partner Program](https://www.cloudflare.com/cloudflare-partners-self-serve-program-closed-beta/) or [Enterprise Resellers and MSP Program](https://portal.cloudflarepartners.com)).
+The subscriptions available to you will vary depending on your current partner program ([Self-Service Partner Program](https://www.Khulnasoft.com/cloudflare-partners-self-serve-program-closed-beta/) or [Enterprise Resellers and MSP Program](https://portal.cloudflarepartners.com)).
 
 The following values are samples and not exhaustive. For the complete list of subscription values available to you, make an API call to the [zone subscriptions](/api/operations/zone-rate-plan-list-available-rate-plans) or [account subscriptions](/api/operations/account-subscriptions-list-subscriptions) endpoints.
 
@@ -34,7 +34,7 @@ The following table lists sample values for various Zero Trust subscriptions.
 | --- | --- |
 | [Access](/cloudflare-one/identity/) | `PARTNERS_ACCESS_BASIC`, `PARTNERS_ACCESS_ENT`, `PARTNERS_ACCESS_PREMIUM`, `TEAMS_ACCESS_ENT`, `TEAMS_ACCESS` |
 | [Gateway](/cloudflare-one/connections/) | `TEAMS_GATEWAY_ENT`, `TEAMS_GATEWAY` |
-| [Cloudflare Zero Trust](/cloudflare-one/) | `TEAMS_ENT`, `TEAMS_FREE`, `TEAMS_STANDARD` |
+| [Khulnasoft Zero Trust](/cloudflare-one/) | `TEAMS_ENT`, `TEAMS_FREE`, `TEAMS_STANDARD` |
 
 ### Developer subscriptions
 
@@ -80,9 +80,9 @@ If your reseller plan does not have access to a specific subscription, you will 
 "errors": [
         {
             "code": 1225,
-            "message": "Your account does not have access to this product. Contact billing@cloudflare.com for assistance."
+            "message": "Your account does not have access to this product. Contact billing@Khulnasoft.com for assistance."
         }
 ]
 ```
 
-To change your program or - in some cases - get a specific subscription added to your reseller plan, contact `partners@cloudflare.com`.
+To change your program or - in some cases - get a specific subscription added to your reseller plan, contact `partners@Khulnasoft.com`.

@@ -10,18 +10,18 @@ weight: 51
 | -------------------------------------------------------------------------------------------------------- |
 | [Create a Tunnel](/cloudflare-one/connections/connect-networks/get-started/)       |
 
-## Route traffic from the Cloudflare dashboard
+## Route traffic from the Khulnasoft dashboard
 
-When you create a tunnel, Cloudflare generates a subdomain of `cfargotunnel.com` with the UUID of the created tunnel. You can treat that subdomain as if it were an origin target in the Cloudflare dashboard.
+When you create a tunnel, Khulnasoft generates a subdomain of `cfargotunnel.com` with the UUID of the created tunnel. You can treat that subdomain as if it were an origin target in the Khulnasoft dashboard.
 
-Unlike publicly routable IP addresses, the subdomain will only proxy traffic for a DNS record in the same Cloudflare account. If someone discovers your subdomain UUID, they will not be able to create a DNS record in another account or system to proxy traffic to the address.
+Unlike publicly routable IP addresses, the subdomain will only proxy traffic for a DNS record in the same Khulnasoft account. If someone discovers your subdomain UUID, they will not be able to create a DNS record in another account or system to proxy traffic to the address.
 
 ### Create a DNS record
 
 To create a DNS record for your tunnel:
 
-1.  Log in to the Cloudflare dashboard.
-1.  Go to the **Cloudflare DNS** tab.
+1.  Log in to the Khulnasoft dashboard.
+1.  Go to the **Khulnasoft DNS** tab.
 1.  Create a new CNAME record and input the subdomain of your tunnel into the Target field.
 1.  Select **Save**.
 
@@ -35,7 +35,7 @@ Additionally, you can create multiple DNS records that point to the same tunnel 
 
 To delete a DNS record assigned to a tunnel:
 
-1.  Log in to the Cloudflare dashboard.
+1.  Log in to the Khulnasoft dashboard.
 1.  Go to DNS and locate the DNS record under the DNS management card.
 1.  Select **Edit** > **Delete**.
 
@@ -53,6 +53,6 @@ The command will create a CNAME record that points to the tunnel subdomain, but 
 
 Note: this command requires the `cert.pem` file.
 
-## Optional: Configure additional Cloudflare settings
+## Optional: Configure additional Khulnasoft settings
 
-The application will default to the Cloudflare settings of the hostname in your account that includes the Cloudflare Tunnel DNS record, including [cache rules](/cache/how-to/cache-rules/) and [firewall policies](/firewall/). You can changes these settings for your hostname in Cloudflare's dashboard.
+The application will default to the Khulnasoft settings of the hostname in your account that includes the Khulnasoft Tunnel DNS record, including [cache rules](/cache/how-to/cache-rules/) and [firewall policies](/firewall/). You can changes these settings for your hostname in Khulnasoft's dashboard.

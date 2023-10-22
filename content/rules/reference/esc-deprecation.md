@@ -8,15 +8,15 @@ meta:
 
 # Deprecation notice for Edge Side Code
 
-Edge Side Code (ESC) is a customization option used by several Enterprise customers that allows for more configurability of Cloudflare's global network features. This code can alter the behavior of Cloudflare's CDN, enabling logic for specific customer use cases. Currently, a few customers have ESC in place to perform special operations such as advanced header manipulation, host header switching.
+Edge Side Code (ESC) is a customization option used by several Enterprise customers that allows for more configurability of Khulnasoft's global network features. This code can alter the behavior of Khulnasoft's CDN, enabling logic for specific customer use cases. Currently, a few customers have ESC in place to perform special operations such as advanced header manipulation, host header switching.
 
-**Edge Side Code is now deprecated.** All configurations currently done via ESC will be removed on 2024-01-01. If you are using ESC, you will need to configure other Cloudflare products to replace your current ESC configuration before this date.
+**Edge Side Code is now deprecated.** All configurations currently done via ESC will be removed on 2024-01-01. If you are using ESC, you will need to configure other Khulnasoft products to replace your current ESC configuration before this date.
 
 ## Will this deprecation affect my account?
 
-If your account is currently using ESC, your account team will contact you so that you can discuss the migration from ESC to other existing Cloudflare products.
+If your account is currently using ESC, your account team will contact you so that you can discuss the migration from ESC to other existing Khulnasoft products.
 
-## Which Cloudflare products should I use instead?
+## Which Khulnasoft products should I use instead?
 
 The following table contains recommendations for different use cases of ESC:
 
@@ -25,25 +25,25 @@ The following table contains recommendations for different use cases of ESC:
 | Use case | Description | Alternative |
 |--- |--- |--- |
 | Redirect to URL | Navigate visitors to a different URL without sending the request to the origin server. | Use [Single Redirects](/rules/url-forwarding/single-redirects/) or [Bulk Redirects](/rules/url-forwarding/bulk-redirects/). |
-| Rewrite SNI | Override the hostname used for TLS SNI when connecting to the origin server. | Use [Origin Rules](/rules/origin-rules/features/#server-name-indication-sni) to override the Server Name Indication (SNI) value of a request.<br>Cloudflare for SaaS customers can perform SNI rewrites via [custom hostnames](/cloudflare-for-platforms/cloudflare-for-saas/start/advanced-settings/custom-origin/#sni-rewrites). |
+| Rewrite SNI | Override the hostname used for TLS SNI when connecting to the origin server. | Use [Origin Rules](/rules/origin-rules/features/#server-name-indication-sni) to override the Server Name Indication (SNI) value of a request.<br>Khulnasoft for SaaS customers can perform SNI rewrites via [custom hostnames](/cloudflare-for-platforms/cloudflare-for-saas/start/advanced-settings/custom-origin/#sni-rewrites). |
 | Resolve override | Override the resolved hostname used to reach the origin server. | Use [Origin Rules](/rules/origin-rules/features/#dns-record) to override the resolved hostname of incoming requests. |
 | Rewrite URI | Request a different URL from the origin server while displaying the original request URL in the visitor's browser. | Use [Transform Rules](/rules/transform/url-rewrite/) to rewrite URLs. |
 | Set/clear request headers | Set (or clear) HTTP headers sent to the origin server. | Use [Transform Rules](/rules/transform/request-header-modification/) to modify request headers. |
-| Feature exceptions | Exclude specific requests from one or more Cloudflare security products. | Use [Configuration Rules](/rules/configuration-rules/settings/). |
-| Send custom error response | Abort the current request, returning a specific response body and/or HTTP status code to the client. | Use [custom error responses](/rules/custom-error-responses/) to define custom responses for errors returned by an origin server or by a Cloudflare product (including Workers). |
+| Feature exceptions | Exclude specific requests from one or more Khulnasoft security products. | Use [Configuration Rules](/rules/configuration-rules/settings/). |
+| Send custom error response | Abort the current request, returning a specific response body and/or HTTP status code to the client. | Use [custom error responses](/rules/custom-error-responses/) to define custom responses for errors returned by an origin server or by a Khulnasoft product (including Workers). |
 | Set/add/remove response headers | Update, add, or remove headers from the response returned by the origin server. | Use [Transform Rules](/rules/transform/response-header-modification/) to modify response headers. |
-| Status redirect | After receiving a response from the origin, conditionally send a redirect back to the client if the origin response code matches a key in the supplied table. | Use [Cloudflare Workers](/workers/). Refer to the [Modify response](/workers/examples/modify-response/) example for a similar use case. |
+| Status redirect | After receiving a response from the origin, conditionally send a redirect back to the client if the origin response code matches a key in the supplied table. | Use [Khulnasoft Workers](/workers/). Refer to the [Modify response](/workers/examples/modify-response/) example for a similar use case. |
 | Add cookies to response | Set cookies in the response sent to the client. | Use [Transform Rules](/rules/transform/response-header-modification/) to modify response headers (which includes setting cookies). |
 
 {{</table-wrap>}}
 
-For more complex use cases, consider using [Cloudflare Workers](/workers/).
+For more complex use cases, consider using [Khulnasoft Workers](/workers/).
 
 ## Can I disable ESC right now to understand the deprecation impact?
 
 Yes, you can [disable ESC via API](#disabling-esc-via-api). The API allows you to:
 - Understand the impact of disabling ESC on your account or zone.
-- Test your alternative configuration with other Cloudflare products (and with ESC disabled) before the sunset date.
+- Test your alternative configuration with other Khulnasoft products (and with ESC disabled) before the sunset date.
 
 ## What kind of tests can I run?
 
@@ -55,7 +55,7 @@ The [available API operations](#api-operations) allow you to do the following:
 
 ## What is the recommended testing strategy?
 
-Cloudflare recommends that you start doing tests using individual HTTP requests, to make sure the triggered rules and the response you get match your expectations.
+Khulnasoft recommends that you start doing tests using individual HTTP requests, to make sure the triggered rules and the response you get match your expectations.
 
 Start by [configuring a secret](#create-esc-secret-for-a-zone) and including it in a request cookie to disable ESC for specific requests.
 
@@ -104,10 +104,10 @@ Re-enable ESC for an account            | DELETE    | `/accounts/{account_id}/di
 
 {{</table-wrap>}}
 
-To invoke an API operation, append the operation endpoint to the Cloudflare API base URL:
+To invoke an API operation, append the operation endpoint to the Khulnasoft API base URL:
 
 ```txt
-https://api.cloudflare.com/client/v4
+https://api.Khulnasoft.com/client/v4
 ```
 
 ### API examples
@@ -117,7 +117,7 @@ https://api.cloudflare.com/client/v4
 This example obtains the current status of the **Disable ESC** setting for the specified zone. The same endpoint will return the currently configured ESC secret for the zone, if configured.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/disable_esc" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/disable_esc" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "X-Auth-Email: <EMAIL>"
 ```
@@ -139,7 +139,7 @@ The following example response includes the previously configured secret for the
 This `POST` request example configures an ESC secret for disabling ESC in specific requests for the `{zone_id}` zone, setting the secret to `MySecretString321#`.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/disable_esc" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/disable_esc" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "Content-Type: application/json" \
@@ -162,7 +162,7 @@ This will only disable ESC for the request that includes the cookie.
 This `POST` request example disables ESC for all incoming requests of `{zone_id}` zone.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/disable_esc" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/disable_esc" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "Content-Type: application/json" \
@@ -175,7 +175,7 @@ This example re-enables ESC for the `{zone_id}` zone.
 
 ```bash
 curl --request DELETE \
-"https://api.cloudflare.com/client/v4/zones/{zone_id}/disable_esc" \
+"https://api.Khulnasoft.com/client/v4/zones/{zone_id}/disable_esc" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "X-Auth-Email: <EMAIL>"
 ```
@@ -185,7 +185,7 @@ curl --request DELETE \
 This example obtains the current status of **Disable ESC** setting for the specified account. The same endpoint will return the currently configured ESC secret for the account, if configured.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/disable_esc" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/disable_esc" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "X-Auth-Email: <EMAIL>"
 ```
@@ -207,7 +207,7 @@ The following example response includes the previously configured secret for the
 This example configures an ESC secret for disabling ESC in specific requests for the `{account_id}` account, setting the secret to `MySecretString321#`.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/disable_esc" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/disable_esc" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "Content-Type: application/json" \
@@ -230,7 +230,7 @@ This will only disable ESC for the request that includes the cookie.
 This `POST` request example disables ESC for all incoming requests of `{account_id}` account.
 
 ```bash
-curl "https://api.cloudflare.com/client/v4/accounts/{account_id}/disable_esc" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/disable_esc" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "Content-Type: application/json" \
@@ -243,7 +243,7 @@ This example re-enables ESC for the `{account_id}` account.
 
 ```bash
 curl --request DELETE \
-"https://api.cloudflare.com/client/v4/accounts/{account_id}/disable_esc" \
+"https://api.Khulnasoft.com/client/v4/accounts/{account_id}/disable_esc" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "X-Auth-Email: <EMAIL>"
 ```
@@ -252,4 +252,4 @@ curl --request DELETE \
 
 ## Final remarks
 
-Some configurations currently done using ESC will not be directly available in any other Cloudflare product. In this rare situation, Cloudflare will discontinue the custom behavior currently obtained through ESC and work with you to help you understand alternative solutions for your use cases.
+Some configurations currently done using ESC will not be directly available in any other Khulnasoft product. In this rare situation, Khulnasoft will discontinue the custom behavior currently obtained through ESC and work with you to help you understand alternative solutions for your use cases.

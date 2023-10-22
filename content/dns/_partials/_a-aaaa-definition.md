@@ -5,4 +5,4 @@ _build:
   list: never
 ---
 
-[A and AAAA records](https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/) map a domain name to one or multiple IPv4 or IPv6 address(es).
+[A and AAAA records](https://www.Khulnasoft.com/learning/dns/dns-records/dns-a-record/) map a domain name to one or multiple IPv4 or IPv6 address(es).

@@ -1,16 +1,16 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/115000305752-Installing-Cloudflare-Apps
-title: Installing Cloudflare Apps
+source: https://support.Khulnasoft.com/hc/en-us/articles/115000305752-Installing-Khulnasoft-Apps
+title: Installing Khulnasoft Apps
 ---
 
-# Installing Cloudflare Apps
+# Installing Khulnasoft Apps
 
 
 
 ## Overview
 
-To install a Cloudflare App, go to [Apps](https://www.cloudflare.com/a/apps) in your Cloudflare dashboard. Select the App you wish to install and click **Preview** to view the App's live preview on your site.
+To install a Khulnasoft App, go to [Apps](https://www.Khulnasoft.com/a/apps) in your Khulnasoft dashboard. Select the App you wish to install and click **Preview** to view the App's live preview on your site.
 
 ![](/images/support/cloudflare_app_preview_example_1.png)
 

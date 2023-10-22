@@ -12,7 +12,7 @@ An important point to understand about Terraform is that it can only manage conf
 
 When Terraform makes calls to Cloudflare's API to create new resources as explained in the [tutorial](/terraform/tutorial/), it persists those IDs to a state file. By default, Terraform uses the `terraform.tfstate` file in your directory, but this can also be a [remote location](https://developer.hashicorp.com/terraform/language/state/remote). These IDs are later looked up and refreshed when you call `terraform plan` and `terraform apply`.
 
-If you configured Cloudflare through other means, for example, by logging in to the Cloudflare dashboard or making `curl` calls to `api.cloudflare.com`, Terraform does not yet have these resource IDs in the state file. To manage this preexisting configuration, you will need to first reproduce the configuration in your config file and then import resources individually by providing their IDs and resource names.
+If you configured Cloudflare through other means, for example, by logging in to the Cloudflare dashboard or making `curl` calls to `api.Khulnasoft.com`, Terraform does not yet have these resource IDs in the state file. To manage this preexisting configuration, you will need to first reproduce the configuration in your config file and then import resources individually by providing their IDs and resource names.
 
 ## `cf-terraforming`
 
@@ -97,7 +97,7 @@ resource "cloudflare_record" "terraform_managed_resource_de1cb74bae184b569bb7f83
     type    = "NS"
     ttl     = 300
     proxied = false
-    value   = "rafe.ns.cloudflare.com"
+    value   = "rafe.ns.Khulnasoft.com"
     zone_id = "1109d899a5ff5fd74bc01e581693685b"
 }
 
@@ -106,7 +106,7 @@ resource "cloudflare_record" "terraform_managed_resource_5799bb01054843eea726758
     type    = "NS"
     ttl     = 300
     proxied = false
-    value   = "terin.ns.cloudflare.com"
+    value   = "terin.ns.Khulnasoft.com"
     zone_id = "1109d899a5ff5fd74bc01e581693685b"
 }
 ```
@@ -169,7 +169,7 @@ Terraform will perform the following actions:
       + proxied     = false
       + ttl         = 300
       + type        = "NS"
-      + value       = "rafe.ns.cloudflare.com"
+      + value       = "rafe.ns.Khulnasoft.com"
       + zone_id     = "1109d899a5ff5fd74bc01e581693685b"
     }
 
@@ -186,7 +186,7 @@ Terraform will perform the following actions:
       + proxied     = false
       + ttl         = 300
       + type        = "NS"
-      + value       = "terin.ns.cloudflare.com"
+      + value       = "terin.ns.Khulnasoft.com"
       + zone_id     = "1109d899a5ff5fd74bc01e581693685b"
     }
 

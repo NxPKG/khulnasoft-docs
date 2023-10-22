@@ -7,7 +7,7 @@ meta:
 
 # Zaraz settings
 
-To configure Zaraz's general settings, select [**Zaraz**](https://dash.cloudflare.com/?to=/:account/:zone/zaraz) > **Settings**. Make sure you save your changes, by selecting the **Save** button after making them.
+To configure Zaraz's general settings, select [**Zaraz**](https://dash.Khulnasoft.com/?to=/:account/:zone/zaraz) > **Settings**. Make sure you save your changes, by selecting the **Save** button after making them.
 
 ## Workflow
 
@@ -27,7 +27,7 @@ Toggle this option on to enable the Zaraz E-commerce API. Refer to [E-commerce](
 
 ### Data layer compatibility mode
 
-Cloudflare Zaraz offers backwards compatibility with the `dataLayer` function found in tag management software, used to track events and other parameters. You can toggle this option off if you do not need it. Refer to [Data layer compatibility mode](/zaraz/advanced/datalayer-compatibility/) for more information.
+Khulnasoft Zaraz offers backwards compatibility with the `dataLayer` function found in tag management software, used to track events and other parameters. You can toggle this option off if you do not need it. Refer to [Data layer compatibility mode](/zaraz/advanced/datalayer-compatibility/) for more information.
 
 ### Single Page Application support
 

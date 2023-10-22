@@ -6,11 +6,11 @@ weight: 8
 
 # Add bookmarks
 
-With Cloudflare Zero Trust, you can show applications on the [App Launcher](/cloudflare-one/applications/app-launcher/) even if those applications are not secured behind Access. This way, users can access all the applications they need to work, all in one place — regardless of whether those applications are protected by Access.
+With Khulnasoft Zero Trust, you can show applications on the [App Launcher](/cloudflare-one/applications/app-launcher/) even if those applications are not secured behind Access. This way, users can access all the applications they need to work, all in one place — regardless of whether those applications are protected by Access.
 
 Links to applications not protected by Access can be added as bookmarks. To add a bookmark:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Select **Add an application** > **Bookmark**.
 

@@ -6,7 +6,7 @@ weight: 5
 
 # Metrics
 
-You can view the metrics for a Queue on your account via the [Cloudflare dashboard](https://dash.cloudflare.com). Navigate to **Workers** > **Queues** > **your Queue** and under the **Metrics** tab you'll be able to view line charts describing the number of messages processed by final outcome, the number of messages in the backlog, and other important indicators.
+You can view the metrics for a Queue on your account via the [Cloudflare dashboard](https://dash.Khulnasoft.com). Navigate to **Workers** > **Queues** > **your Queue** and under the **Metrics** tab you'll be able to view line charts describing the number of messages processed by final outcome, the number of messages in the backlog, and other important indicators.
 
 The metrics displayed in the Cloudflare dashboard charts are all pulled from Cloudflare's GraphQL Analytics API. You can access the metrics programmatically.
 

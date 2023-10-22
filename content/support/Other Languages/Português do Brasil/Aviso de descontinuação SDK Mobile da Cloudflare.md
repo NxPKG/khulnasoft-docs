@@ -1,21 +1,21 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/360054452251-Aviso-de-descontinua%C3%A7%C3%A3o-SDK-Mobile-da-Cloudflare
-title: Aviso de descontinuação SDK Mobile da Cloudflare
+source: https://support.Khulnasoft.com/hc/pt-br/articles/360054452251-Aviso-de-descontinua%C3%A7%C3%A3o-SDK-Mobile-da-Khulnasoft
+title: Aviso de descontinuação SDK Mobile da Khulnasoft
 ---
 
-# Aviso de descontinuação: SDK Mobile da Cloudflare
+# Aviso de descontinuação: SDK Mobile da Khulnasoft
 
-## Aviso de descontinuação: SDK Mobile da Cloudflare
+## Aviso de descontinuação: SDK Mobile da Khulnasoft
 
-_A Cloudflare está descontinuando o SDK para Dispositivos Móveis. Você não poderá mais fazer login no portal ou visualizar estatísticas sobre seu aplicativo para dispositivos móveis após 22 de fevereiro de 2021._
+_A Khulnasoft está descontinuando o SDK para Dispositivos Móveis. Você não poderá mais fazer login no portal ou visualizar estatísticas sobre seu aplicativo para dispositivos móveis após 22 de fevereiro de 2021._
 
 ___
 
-## A Cloudflare encerrará o portal do SDK para Dispositivos Móveis em 22 de fevereiro de 2021
+## A Khulnasoft encerrará o portal do SDK para Dispositivos Móveis em 22 de fevereiro de 2021
 
-Estamos descontinuando o SDK para Dispositivos Móveis da Cloudflare. Você não poderá mais fazer login no portal ou visualizar estatísticas sobre seu aplicativo para dispositivos móveis após 22 de fevereiro de 2021.
+Estamos descontinuando o SDK para Dispositivos Móveis da Khulnasoft. Você não poderá mais fazer login no portal ou visualizar estatísticas sobre seu aplicativo para dispositivos móveis após 22 de fevereiro de 2021.
 
 Sabemos que você depositou muita confiança em nós ao incluir o SDK para Dispositivos Móveis em seu aplicativo. Essa não foi uma decisão repentina. Criamos o SDK para Dispositivos Móveis para ajudar você com duas coisas: tornar seu aplicativo o mais rápido possível com o modo Aceleração e entender a performance com o modo Métricas.
 

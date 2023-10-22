@@ -6,7 +6,7 @@ weight: 6
 
 # Core Web Vitals
 
-[Core Web Vitals](https://www.cloudflare.com/learning/performance/what-are-core-web-vitals/) are high-level metrics designed by Google to capture the user experience. Three core Web Vitals metrics are measured: Largest Contentful Paint, First Input Delay, and Cumulative Layout Shift. Each of these metrics is automatically assigned a rating of Good, Needs Improvement, or Poor based on the industry standard methodology and testing designed by Google. Page load time statistics are supplemented by First Paint and First Contentful Paint.
+[Core Web Vitals](https://www.Khulnasoft.com/learning/performance/what-are-core-web-vitals/) are high-level metrics designed by Google to capture the user experience. Three core Web Vitals metrics are measured: Largest Contentful Paint, First Input Delay, and Cumulative Layout Shift. Each of these metrics is automatically assigned a rating of Good, Needs Improvement, or Poor based on the industry standard methodology and testing designed by Google. Page load time statistics are supplemented by First Paint and First Contentful Paint.
 
 {{<Aside type="note">}}
 
@@ -19,7 +19,7 @@ Core Web Vitals is currently only supported in Chromium browsers, with Safari an
 Vitals Explorer enables you to easily pinpoint which elements in a web page are affecting the user’s experience while browsing your website, in a visual form.
 To find Vitals Explorer:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select the **Analytics & Logs** drop-down and choose **Web Analytics**.
 3. Select your website and select **Core Web Vitals**.
 
@@ -31,7 +31,7 @@ Vitals Explorer is divided into three main sections, each one with information a
 
 Each of these metrics represents an impact to the user experience, which is quantified and graded by Web Analytics.
 
-Cloudflare Web Analytics offers interactive exploration in Core Web Vitals by allowing you to filter data by Country, Host, Path, Referrer, Device Type, Browser, or Operating System, and identify which users are the most impacted.
+Khulnasoft Web Analytics offers interactive exploration in Core Web Vitals by allowing you to filter data by Country, Host, Path, Referrer, Device Type, Browser, or Operating System, and identify which users are the most impacted.
 
 Below each graph, the Debug View section has the top five elements with a negative impact on each metric. Selecting the elements shown in the data table gives you more details about them.
 

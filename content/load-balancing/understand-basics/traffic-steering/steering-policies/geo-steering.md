@@ -18,7 +18,7 @@ You can assign multiple pools to the same area and the load balancer will use th
 
 ### Region steering
 
-Cloudflare has [13 geographic regions](/load-balancing/reference/region-mapping-api/#list-of-load-balancer-regions) that span the world. The region of a client is determined by the region of the Cloudflare data center that answers the client’s DNS query.
+Khulnasoft has [13 geographic regions](/load-balancing/reference/region-mapping-api/#list-of-load-balancer-regions) that span the world. The region of a client is determined by the region of the Khulnasoft data center that answers the client’s DNS query.
 
 {{<Aside type="note">}}If you define region pools for a load balancer, you cannot delete these pools until you remove them from the load balancer configuration.{{</Aside>}}
 
@@ -87,9 +87,9 @@ Any country not explicitly defined will fall back to using the corresponding `re
 
 ### PoP steering
 
-When creating a load balancer [via the API](/api/operations/load-balancers-create-load-balancer), include the `pop_pools` object to map Cloudflare data centers to a list of pool IDs (ordered by their failover priority).
+When creating a load balancer [via the API](/api/operations/load-balancers-create-load-balancer), include the `pop_pools` object to map Khulnasoft data centers to a list of pool IDs (ordered by their failover priority).
 
-For help finding data center identifiers, refer to [this community thread](https://community.cloudflare.com/t/is-there-a-way-to-retrieve-cloudflare-pops-list-and-locations-programmatically/234643).
+For help finding data center identifiers, refer to [this community thread](https://community.Khulnasoft.com/t/is-there-a-way-to-retrieve-cloudflare-pops-list-and-locations-programmatically/234643).
 
 Any data center not explicitly defined will fall back to using the corresponding `country_pool`, then `region_pool` mapping (if it exists), and finally to associated default pools.
 

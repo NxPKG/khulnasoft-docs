@@ -23,7 +23,7 @@ layout: list
   </thead>
   <tbody>
        <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...e0de97a2</td>
       <td>100553</td>
       <td>FortiOS - Authentication Bypass - CVE:CVE-2022-40684</td>

@@ -6,7 +6,7 @@ weight: 13
 
 # Okta
 
-Okta provides cloud software that helps companies manage and secure user authentication to modern applications, and helps developers build identity controls into applications, website web services, and devices. You can integrate Okta with Cloudflare Zero Trust and build rules based on user identity and group membership. Cloudflare Zero Trust supports Okta integrations using either the OIDC (default) or [SAML](/cloudflare-one/identity/idp-integration/okta-saml/) protocol.
+Okta provides cloud software that helps companies manage and secure user authentication to modern applications, and helps developers build identity controls into applications, website web services, and devices. You can integrate Okta with Khulnasoft Zero Trust and build rules based on user identity and group membership. Khulnasoft Zero Trust supports Okta integrations using either the OIDC (default) or [SAML](/cloudflare-one/identity/idp-integration/okta-saml/) protocol.
 
 ## Set up Okta as an OIDC provider
 
@@ -38,7 +38,7 @@ Okta provides cloud software that helps companies manage and secure user authent
 
     ![Finding your Client credentials and Okta domain in Okta](/images/cloudflare-one/identity/okta/okta-3.png)
 
-11. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+11. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 
 12. Under **Login methods**, select **Add new**. Select **Okta** as your identity provider.
 
@@ -73,7 +73,7 @@ If you see the error `Failed to fetch user/group information from the identity`,
 
 ## Synchronize users and groups
 
-The Okta OIDC integration supports the [System for Cross-domain Identity Management (SCIM)](https://www.rfc-editor.org/rfc/rfc7642.txt) protocol. With SCIM, Cloudflare Access can automatically deprovision users after they are deactivated in the identity provider and display synchronized group names in the Access policy builder.
+The Okta OIDC integration supports the [System for Cross-domain Identity Management (SCIM)](https://www.rfc-editor.org/rfc/rfc7642.txt) protocol. With SCIM, Khulnasoft Access can automatically deprovision users after they are deactivated in the identity provider and display synchronized group names in the Access policy builder.
 
 To synchronize users and groups between Access and Okta, you need two separate app integrations in Okta:
 
@@ -120,8 +120,8 @@ To synchronize users and groups between Access and Okta, you need two separate a
 
 13. Select **Save** to complete the configuration.
 
-14. In the **Assignments** tab, add the users you want to synchronize with Cloudflare Access. You can add users in batches by assigning a group.
-15. In the **Push Groups** tab, add the Okta groups you want to synchronize with Cloudflare Access. These groups will display in the Access policy builder.
+14. In the **Assignments** tab, add the users you want to synchronize with Khulnasoft Access. You can add users in batches by assigning a group.
+15. In the **Push Groups** tab, add the Okta groups you want to synchronize with Khulnasoft Access. These groups will display in the Access policy builder.
 
 Provisioning will begin immediately. To verify the integration, select **View Logs** in the Okta SCIM application.
 

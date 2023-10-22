@@ -20,7 +20,7 @@ If you recently activated Page Shield, you may see a delay in reporting.
 
 To review the active connections and scripts monitored by Page Shield:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2.  Go to **Security** > **Page Shield**.
 3.  Under **Monitors**, review the list of active connections and scripts for your domain. To filter scripts or connections, select **Add filter** and use one or more of the available options:
 
@@ -35,7 +35,7 @@ To review the active connections and scripts monitored by Page Shield:
 
 The All Reported Connections and All Reported Scripts dashboards show all the scripts (or connections), including infrequent or inactive ones, reported in the last 30 days. After 30 days without any report, Page Shield will delete information about a previously reported script or connection, and it will no longer appear in any of the dashboards.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Security** > **Page Shield** > **Monitors**.
 3. Select **View all connections** or **View all scripts**.
 4. Review the information displayed in the dashboard.

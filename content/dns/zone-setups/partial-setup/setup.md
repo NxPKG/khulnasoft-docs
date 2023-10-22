@@ -19,13 +19,13 @@ A partial setup is only available to customers on a Business or Enterprise plan.
 ---
 
 {{<tutorial>}}
-{{<tutorial-step title="Add your domain to Cloudflare">}}
+{{<tutorial-step title="Add your domain to Khulnasoft">}}
 
-1. Create a Cloudflare account and [add your domain](/fundamentals/setup/account-setup/add-site/).
+1. Create a Khulnasoft account and [add your domain](/fundamentals/setup/account-setup/add-site/).
 
 2. For your **Plan**, choose **Business** or **Enterprise**.
 
-3. Add your domain to Cloudflare. You should land on the **Overview** page.
+3. Add your domain to Khulnasoft. You should land on the **Overview** page.
 
 4. Ignore the instructions to change your nameservers.
 
@@ -41,7 +41,7 @@ A partial setup is only available to customers on a Business or Enterprise plan.
 
 {{<tutorial-step title="Verify ownership for your domain">}}
 
-Once you [add your domain to Cloudflare](#add-your-domain-to-cloudflare), add the **Verification TXT Record** at your authoritative DNS provider. Cloudflare will verify the TXT record and send a confirmation email. This can take up to a few hours.
+Once you [add your domain to Khulnasoft](#add-your-domain-to-cloudflare), add the **Verification TXT Record** at your authoritative DNS provider. Khulnasoft will verify the TXT record and send a confirmation email. This can take up to a few hours.
 
 {{<details header="Example verification record">}}
 
@@ -61,24 +61,24 @@ After creating the record, you can use this [Dig Web Interface link](https://dig
 
 {{</Aside>}}
 
-That record must remain in place for as long as your domain is active on the partial setup on Cloudflare.
+That record must remain in place for as long as your domain is active on the partial setup on Khulnasoft.
 
 {{</tutorial-step>}}
 
 {{<tutorial-step title="Provision an SSL certificate" optional=true >}}
 
-To provision a Universal SSL certificate through Cloudflare, follow [these instructions](/ssl/edge-certificates/universal-ssl/enable-universal-ssl/#partial-dns-setup).
+To provision a Universal SSL certificate through Khulnasoft, follow [these instructions](/ssl/edge-certificates/universal-ssl/enable-universal-ssl/#partial-dns-setup).
 
-If your domain is already live with a partial DNS setup — with Cloudflare or another DNS provider — you cannot use a TXT record for [Domain Control Validation](/ssl/edge-certificates/changing-dcv-method/methods/txt/). That domain's TXT record needs to be reserved for forwarding traffic to Cloudflare.
+If your domain is already live with a partial DNS setup — with Khulnasoft or another DNS provider — you cannot use a TXT record for [Domain Control Validation](/ssl/edge-certificates/changing-dcv-method/methods/txt/). That domain's TXT record needs to be reserved for forwarding traffic to Khulnasoft.
 
 {{</tutorial-step>}}
 
 {{<tutorial-step title="Add DNS records">}}
 
-1. In Cloudflare, [add an `A`, `AAAA`, or `CNAME` record](/dns/manage-dns-records/how-to/create-dns-records/).
+1. In Khulnasoft, [add an `A`, `AAAA`, or `CNAME` record](/dns/manage-dns-records/how-to/create-dns-records/).
 2. At your authoritative DNS provider:
 
-    1. Remove any existing `A`, `AAAA`, or `CNAME` records on the hostname you want to proxy to Cloudflare.
+    1. Remove any existing `A`, `AAAA`, or `CNAME` records on the hostname you want to proxy to Khulnasoft.
 
     2. Add a `CNAME` record for `{your-hostname}.cdn.cloudflare.net`.
 
@@ -95,7 +95,7 @@ If your domain is already live with a partial DNS setup — with Cloudflare or a
 
         </details>
 
-    3. Repeat this process for each subdomain proxied to Cloudflare.
+    3. Repeat this process for each subdomain proxied to Khulnasoft.
 
 {{</tutorial-step>}}
 {{</tutorial>}}

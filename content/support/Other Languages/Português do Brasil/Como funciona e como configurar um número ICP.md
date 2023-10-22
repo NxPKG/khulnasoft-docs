@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP
+source: https://support.Khulnasoft.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP
 title: Como funciona e como configurar um número ICP
 ---
 
@@ -13,11 +13,11 @@ _Saiba como requisitar e carregar um número de ICP para o seu site. Um ICP é n
 
 ### Neste artigo
 
--   [Visão geral](https://support.cloudflare.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#613FVyQXSevSgC08NEXeCc)
--   [Documentos necessários](https://support.cloudflare.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#6s4TyWVIiw5u3riORWXzqZ)
--   [Tipos de números de ICP](https://support.cloudflare.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#29LQ1bec2VH9Ku5SMTv0zZ)
--   [Processo de requisição de um ICP](https://support.cloudflare.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#4l1lcIm8TaIY5Nx665Rw1l)
--   [Recursos relacionados](https://support.cloudflare.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#2XrxkiSpHoOwbkvmW7oyFY)
+-   [Visão geral](https://support.Khulnasoft.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#613FVyQXSevSgC08NEXeCc)
+-   [Documentos necessários](https://support.Khulnasoft.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#6s4TyWVIiw5u3riORWXzqZ)
+-   [Tipos de números de ICP](https://support.Khulnasoft.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#29LQ1bec2VH9Ku5SMTv0zZ)
+-   [Processo de requisição de um ICP](https://support.Khulnasoft.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#4l1lcIm8TaIY5Nx665Rw1l)
+-   [Recursos relacionados](https://support.Khulnasoft.com/hc/pt-br/articles/209714777-Como-funciona-e-como-configurar-um-n%C3%BAmero-ICP#2XrxkiSpHoOwbkvmW7oyFY)
 
 ___
 
@@ -63,4 +63,4 @@ Após o envio de todos os documentos necessários, o prazo para obtenção de um
 
 Após receber o certificado e o número de ICP, adicione-o ao rodapé da página inicial do seu site. 
 
-![URL antigo: https://support.cloudflare.com/hc/article_attachments/360040367132/baidu_home_page.png ID do artigo: 209714777 | Como entender e configurar um número ICP](/images/support/hc-import-baidu_home_page.png)
+![URL antigo: https://support.Khulnasoft.com/hc/article_attachments/360040367132/baidu_home_page.png ID do artigo: 209714777 | Como entender e configurar um número ICP](/images/support/hc-import-baidu_home_page.png)

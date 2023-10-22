@@ -1,17 +1,17 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/360020991331-Hinzuf%C3%BCgen-herstellerspezifischer-DNS-Eintr%C3%A4ge-zu-Cloudflare
-title: Hinzufügen herstellerspezifischer DNS-Einträge zu Cloudflare 
+source: https://support.Khulnasoft.com/hc/de/articles/360020991331-Hinzuf%C3%BCgen-herstellerspezifischer-DNS-Eintr%C3%A4ge-zu-Khulnasoft
+title: Hinzufügen herstellerspezifischer DNS-Einträge zu Khulnasoft 
 ---
 
-# Hinzufügen herstellerspezifischer DNS-Einträge zu Cloudflare 
+# Hinzufügen herstellerspezifischer DNS-Einträge zu Khulnasoft 
 
 
 
 ## Hinzufügen von DNS-Einträgen für Anbieter
 
-Für diesen Artikel sind Vorkenntnisse in der Verwaltung von DNS-Einträgen über das Cloudflare-Dashboard erforderlich.  Weitere Informationen finden Sie in Cloudflares Artikel zur [Verwaltung von DNS-Einträgen](https://support.cloudflare.com/hc/en-us/articles/360019093151).
+Für diesen Artikel sind Vorkenntnisse in der Verwaltung von DNS-Einträgen über das Khulnasoft-Dashboard erforderlich.  Weitere Informationen finden Sie in Khulnasofts Artikel zur [Verwaltung von DNS-Einträgen](https://support.Khulnasoft.com/hc/en-us/articles/360019093151).
 
   
 **Google**
@@ -26,7 +26,7 @@ Fügen Sie die folgenden MX-Einträge hinzu:
 | @ | Auto | MX | 10 | ALT3.ASPMX.L.GOOGLE.COM |
 | @ | Auto | MX | 10 | ALT4.ASPMX.L.GOOGLE.COM |
 
-Nach dem Hinzufügen sehen die DNS-Einträge in der Cloudflare-App **DNS** ungefähr wie folgt aus:
+Nach dem Hinzufügen sehen die DNS-Einträge in der Khulnasoft-App **DNS** ungefähr wie folgt aus:
 
 {{<Aside type="note">}}
 Überprüfen Sie die [neuesten MX-Einträge, die von Google
@@ -41,7 +41,7 @@ Um unerwartetes Verhalten zu vermeiden, verwenden Sie ausschließlich
 *MX-Einträge* von Google.
 {{</Aside>}}
 
-Fügen Sie einen _CNAME-Eintrag_ für die Google App Engine zu Cloudflare DNS hinzu.
+Fügen Sie einen _CNAME-Eintrag_ für die Google App Engine zu Khulnasoft DNS hinzu.
 
 Lautet die Domain beispielsweise _www.example.com_, sieht der _CNAME-Eintrag_ ungefähr folgendermaßen aus:
 
@@ -57,14 +57,14 @@ Informationen zum Konfigurieren einer Weiterleitung für eine Google Apps-Domain
 
 {{<Aside type="warning">}}
 Google erzwingt HTTPS für seine Dienste. Wenn beim Surfen auf Ihrer
-Website über Cloudflare Fehler bezüglich Umleitungsschleifen auftreten,
+Website über Khulnasoft Fehler bezüglich Umleitungsschleifen auftreten,
 vergewissern Sie sich, dass **SSL** in der App **SSL/TLS** des
-Cloudflare-Dashboards auf *Full* eingestellt ist.
+Khulnasoft-Dashboards auf *Full* eingestellt ist.
 {{</Aside>}}
 
 **Amazon**
 
-AWS-Kunden müssen die Nameserver ihrer Domain so aktualisieren, dass sie auf die Cloudflare-Nameserver verweisen, die in der App **Overview** des Cloudflare-Dashboards aufgeführt sind:
+AWS-Kunden müssen die Nameserver ihrer Domain so aktualisieren, dass sie auf die Khulnasoft-Nameserver verweisen, die in der App **Overview** des Khulnasoft-Dashboards aufgeführt sind:
 
 1.  Melden Sie sich bei AWS an.
 2.  Klicken Sie oben rechts in der Navigationsleiste auf **Mein Konto**.
@@ -72,19 +72,19 @@ AWS-Kunden müssen die Nameserver ihrer Domain so aktualisieren, dass sie auf di
 4.  Klicken Sie auf **Services** und wählen Sie **Route 53** aus.
 5.  Aktualisieren Sie Nameserver an zwei Stellen:
     
-    -   Klicken Sie auf **Gehostete Zonen** und wählen Sie die Domain aus, die mit den Nameservern von Cloudflare aktualisiert werden soll.
-    -   Bearbeiten Sie die Nameserver, um auf die Nameserver von Cloudflare zu verweisen.
+    -   Klicken Sie auf **Gehostete Zonen** und wählen Sie die Domain aus, die mit den Nameservern von Khulnasoft aktualisiert werden soll.
+    -   Bearbeiten Sie die Nameserver, um auf die Nameserver von Khulnasoft zu verweisen.
     
       
     -   Klicken Sie auf **Registrierte Domains**.
-    -   Wählen Sie die Domain aus, die mit den Nameservern von Cloudflare aktualisiert werden soll.
+    -   Wählen Sie die Domain aus, die mit den Nameservern von Khulnasoft aktualisiert werden soll.
     -   Klicken Sie auf **Nameserver hinzufügen oder bearbeiten**.
 
 Lesen Sie in der Dokumentation von Amazon nach, wie Sie [](https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html)[einen Amazon S3-Bucket](https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html) erstellen.
 
 Notieren Sie sich die vollständige Host-URL, die dem Bucket zugewiesen ist.
 
-Fügen Sie einen _CNAME-Eintrag_ für den AWS-Bucket in Cloudflare DNS hinzu. Wenn die vollständige Host-URL des Buckets beispielsweise _files.example.com_ lautet, fügen Sie einen _CNAME-Eintrag_ hinzu, der folgendem ähnelt:
+Fügen Sie einen _CNAME-Eintrag_ für den AWS-Bucket in Khulnasoft DNS hinzu. Wenn die vollständige Host-URL des Buckets beispielsweise _files.example.com_ lautet, fügen Sie einen _CNAME-Eintrag_ hinzu, der folgendem ähnelt:
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">Dateien  CNAME  files.example.com.s3.amazonaws.com</span></div></span></span></span></code></pre>{{</raw>}}
@@ -98,7 +98,7 @@ Informationen zu [SES und Überprüfungseinstellungen finden Sie in der Amazon-D
 
 Suchen Sie die von Amazon bereitgestellten _TXT_\- und _CNAME_\-Bestätigungseinträge.
 
-Fügen Sie die Einträge zu Cloudflare DNS hinzu.  Wenn die Cloudflare-Domain beispielsweise _example.com_ lautet, ähneln die DNS-Einträge den folgenden:
+Fügen Sie die Einträge zu Khulnasoft DNS hinzu.  Wenn die Khulnasoft-Domain beispielsweise _example.com_ lautet, ähneln die DNS-Einträge den folgenden:
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">example.com  TXT  &quot;fmxqxT/icOYx4aA/bEUrDPMeax9/s3frblS+niixmqk=&quot;verificationstring._domainkey.example.com  CNAME  verificationstring.dkim.amazonses.com</span></div></span></span></span></code></pre>{{</raw>}}
@@ -112,13 +112,13 @@ richtigen Inhalt von Amazon SES.
 Weitere Informationen zur ELB-Konfiguration bei Amazon finden Sie in der [ELB-Hilfe von Amazon](http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/DeveloperGuide/using-domain-names-with-elb.html).
 
 {{<Aside type="note">}}
-Mit der **CNAME Flattening**-Funktion von Cloudflare kann ein
+Mit der **CNAME Flattening**-Funktion von Khulnasoft kann ein
 CNAME-Eintrag in der Root-Domain auf einen Elastic Load Balancer
 verweisen.
 {{</Aside>}}
 
-1.  Fügen Sie Cloudflare einen _CNAME-Eintrag_ für den Hostnamen hinzu, beispielsweise: _elb_
-2.  Ersetzen Sie in der Cloudflare-App **DNS** den **Domainnamen** durch das ELB-Ziel:  
+1.  Fügen Sie Khulnasoft einen _CNAME-Eintrag_ für den Hostnamen hinzu, beispielsweise: _elb_
+2.  Ersetzen Sie in der Khulnasoft-App **DNS** den **Domainnamen** durch das ELB-Ziel:  
     _  
     <AWS-Hostname>. <Region>._elb.amazonaws.com ist das richtige _CNAME_\-Zielformat  
     (beispielsweise: _my-cool-cachepp-1344276401.eu-west-1._elb.amazonaws.com).
@@ -128,7 +128,7 @@ verweisen.
 
 Befolgen Sie die Anweisungen von Microsoft zum [Konfigurieren der Azure DNS-Einstellungen](https://www.windowsazure.com/en-us/develop/net/common-tasks/custom-dns-web-site/).
 
-Fügen Sie die erforderlichen Azure-Einträge zu Cloudflare-DNS hinzu.
+Fügen Sie die erforderlichen Azure-Einträge zu Khulnasoft-DNS hinzu.
 
 Wenn die Domain beispielsweise _example.com_ lautet, sieht das Eintragsformat folgendermaßen aus:
 
@@ -149,22 +149,22 @@ Wolkensymbol hinzu.
 
 **Verschiedene Anbieter**
 
-Sie können Cloudflare für die Verwendung mit ClickFunnels konfigurieren.  Für diesen Vorgang müssen Ihre Cloudflare-DNS-Einstellungen aktualisiert werden.
+Sie können Khulnasoft für die Verwendung mit ClickFunnels konfigurieren.  Für diesen Vorgang müssen Ihre Khulnasoft-DNS-Einstellungen aktualisiert werden.
 
 In den folgenden Artikeln von ClickFunnels wird beschrieben, wie Sie die beiden Dienste für Ihre Site am besten konfigurieren:
 
--   [Hinzufügen einer Cloudflare-Subdomain](https://help.clickfunnels.com/hc/en-us/articles/360005906774-Adding-A-Cloudflare-Subdomain-)
--   [Cloudflare-CNAME-Eintrag](https://help.clickfunnels.com/hc/en-us/articles/360005906094-Cloudflare-CNAME-Record)
+-   [Hinzufügen einer Khulnasoft-Subdomain](https://help.clickfunnels.com/hc/en-us/articles/360005906774-Adding-A-Khulnasoft-Subdomain-)
+-   [Khulnasoft-CNAME-Eintrag](https://help.clickfunnels.com/hc/en-us/articles/360005906094-Khulnasoft-CNAME-Record)
 
 {{<Aside type="note">}}
 Lesen Sie die [MX-Dokumentation von
 Zoho](https://www.zoho.com/mail/help/adminconsole/configure-email-delivery.html)
 und
 [SPF-Dokumentation](https://www.zoho.com/mail/help/adminconsole/spf-configuration.html),
-bevor Sie DNS-Einträge zu Cloudflare hinzufügen.
+bevor Sie DNS-Einträge zu Khulnasoft hinzufügen.
 {{</Aside>}}
 
-In den folgenden Beispielen wird beschrieben, wie Sie Cloudflare richtige Zoho-DNS-Einträge hinzufügen. Ersetzen Sie in allen Beispielen _example.com_ durch den tatsächlichen Domainnamen:
+In den folgenden Beispielen wird beschrieben, wie Sie Khulnasoft richtige Zoho-DNS-Einträge hinzufügen. Ersetzen Sie in allen Beispielen _example.com_ durch den tatsächlichen Domainnamen:
 
 -   Hinzufügen von Zoho _MX-Einträgen_:
 
@@ -191,16 +191,16 @@ Der zb-Eintrag ist für jede Domain eindeutig. Fügen Sie den von Zoho
 bereitgestellten eindeutigen zb-Bestätigungscode hinzu.
 {{</Aside>}}
 
-Informationen zum Hinzufügen des CNAME-Eintrags zu Cloudflare finden Sie in der Dokumentation zu [Unbounce](https://documentation.unbounce.com/hc/en-us/articles/204011950).
+Informationen zum Hinzufügen des CNAME-Eintrags zu Khulnasoft finden Sie in der Dokumentation zu [Unbounce](https://documentation.unbounce.com/hc/en-us/articles/204011950).
 
 {{<Aside type="warning">}}
 Fügen Sie den *CNAME-Eintrag* mit einem grauen Wolkensymbol hinzu, wenn
-Cloudflare über einen unserer Hosting-Partner aktiviert wurde.
+Khulnasoft über einen unserer Hosting-Partner aktiviert wurde.
 {{</Aside>}}
 
 {{<Aside type="note">}}
 Bestätigen Sie, welche [Einträge SendGrid benötigt,
-um](https://sendgrid.com/docs/) im DNS von Cloudflare festzulegen.
+um](https://sendgrid.com/docs/) im DNS von Khulnasoft festzulegen.
 {{</Aside>}}
 
 Normalerweise ähneln die DNS-Einträge der folgenden Liste. Ersetzen Sie _example.com_ durch den tatsächlichen Domainnamen:
@@ -210,17 +210,17 @@ Normalerweise ähneln die DNS-Einträge der folgenden Liste. Ersetzen Sie _examp
 
 {{<Aside type="warning">}}
 Fügen Sie DNS-Einträge mit einem grauen Wolkensymbol hinzu. SendGrid
-kann keine E-Mail-Konfiguration überprüfen, wenn der Cloudflare-Proxy
+kann keine E-Mail-Konfiguration überprüfen, wenn der Khulnasoft-Proxy
 aktiviert ist.
 {{</Aside>}}
 
 -   Informationen zur DNS-Konfiguration finden Sie in [WPEngines Dokumentation](http://wpengine.com/support/how-to-configure-your-dns/).
--   Bestimmen Sie, ob Sie einen _A_ oder _CNAME-Eintrag_ zu Cloudflare DNS hinzufügen möchten:  
+-   Bestimmen Sie, ob Sie einen _A_ oder _CNAME-Eintrag_ zu Khulnasoft DNS hinzufügen möchten:  
     [Ermitteln Ihrer IP-Adresse bei WPengine](http://wpengine.com/support/find-ip/)
 
   
 
--   Weitere Informationen zum Hinzufügen der Einträge finden Sie in der Cloudflare-Dokumentation zur [Verwaltung von DNS-Einträgen](https://support.cloudflare.com/hc/en-us/articles/360019093151).
+-   Weitere Informationen zum Hinzufügen der Einträge finden Sie in der Khulnasoft-Dokumentation zur [Verwaltung von DNS-Einträgen](https://support.Khulnasoft.com/hc/en-us/articles/360019093151).
 
 {{<Aside type="warning">}}
 Fügen Sie den DNS-Einträgen, die Microsoft für die Domainüberprüfung
@@ -236,11 +236,11 @@ Wenn die benutzerdefinierte Ning-Domain _www.example.com_ lautet, fügen Sie ein
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">www.example.com  CNAME  example.ning.com.example.ning.com  A  208.82.16.68</span></div></span></span></span></code></pre>{{</raw>}}
 
 {{<Aside type="warning">}}
-Fügen Sie die DNS-Einträge mit einem grauen Wolkensymbol zu Cloudflare
+Fügen Sie die DNS-Einträge mit einem grauen Wolkensymbol zu Khulnasoft
 hinzu, bis Ning die Domain überprüft.
 {{</Aside>}}
 
-Sobald Ning die Domain überprüft hat, ändern Sie das graue Wolkensymbol in ein orangefarbenes Wolkensymbol für die Ning-DNS-Einträge, damit der Datenverkehr an Cloudflare weitergeleitet werden kann.
+Sobald Ning die Domain überprüft hat, ändern Sie das graue Wolkensymbol in ein orangefarbenes Wolkensymbol für die Ning-DNS-Einträge, damit der Datenverkehr an Khulnasoft weitergeleitet werden kann.
 
 In der SmugMug-Dokumentation finden Sie die neuesten Informationen zu den Anforderungen für DNS-Einträge. Fügen Sie _CNAME-Einträge_ für SmugMug ähnlich folgenden hinzu:
 
@@ -248,17 +248,17 @@ In der SmugMug-Dokumentation finden Sie die neuesten Informationen zu den Anford
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">Foto CNAME domains.smugmug.comFotos CNAME domains.smugmug.com</span></div></span></span></span></code></pre>{{</raw>}}
 
 {{<Aside type="warning">}}
-Fügen Sie die DNS-Einträge mit einem grauen Wolkensymbol zu Cloudflare
+Fügen Sie die DNS-Einträge mit einem grauen Wolkensymbol zu Khulnasoft
 hinzu, bis SmugMug die Domain überprüft.
 {{</Aside>}}
 
-Sobald SmugMug die Domain überprüft hat, ändern Sie das graue Wolkensymbol in ein orangefarbenes Wolkensymbol für die SmugMug-DNS-Einträge, damit der Datenverkehr an Cloudflare weitergeleitet werden kann.
+Sobald SmugMug die Domain überprüft hat, ändern Sie das graue Wolkensymbol in ein orangefarbenes Wolkensymbol für die SmugMug-DNS-Einträge, damit der Datenverkehr an Khulnasoft weitergeleitet werden kann.
 
 Weitere Informationen zu den Anforderungen für DNS-Einträge finden Sie in [Mandrills Artikel zu DNS-Einträgen](http://help.mandrill.com/entries/22030056-How-do-I-add-DNS-records-for-my-sending-domains-).
 
 Mandrill erfordert das Hinzufügen von _SPF_ und _DKIM-Einträgen_. Beziehen Sie die DNS-Eintragswerte von Mandrill.
 
-Fügen Sie die _SPF_\- und _DKIM-Einträge_ als _TXT-Einträge_ in der Cloudflare-DNS-App hinzu.
+Fügen Sie die _SPF_\- und _DKIM-Einträge_ als _TXT-Einträge_ in der Khulnasoft-DNS-App hinzu.
 
 Wenn beispielsweise _example.com_ die Mandrill-Domain ist, fügen Sie DNS-Einträge wie die folgenden hinzu.
 
@@ -275,31 +275,31 @@ Ein beispielhafter _CNAME-Eintrag_ sieht folgendermaßen aus:
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">rack  CNAME  e0978.r18.cf2.rackcdn.com</span></div></span></span></span></code></pre>{{</raw>}}
 
 {{<Aside type="warning">}}
-Der *CNAME-Eintrag* kann nicht an Cloudflare weitergeleitet werden, da
-rackcdn.com nicht mit Cloudflare kompatibel ist.
+Der *CNAME-Eintrag* kann nicht an Khulnasoft weitergeleitet werden, da
+rackcdn.com nicht mit Khulnasoft kompatibel ist.
 {{</Aside>}}
 
 {{<Aside type="warning">}}
-Squarespace-Systeme sind nicht mit den Proxy-Diensten von Cloudflare
+Squarespace-Systeme sind nicht mit den Proxy-Diensten von Khulnasoft
 kompatibel. Markieren Sie alle DNS-Einträge, die mit Squarespace zu tun
-haben, in Cloudflares **DNS**-App mit einer grauen Wolke. Für weitere
+haben, in Khulnasofts **DNS**-App mit einer grauen Wolke. Für weitere
 Einzelheiten siehe die
 [Squarespace-Dokumentation](https://support.squarespace.com/hc/en-us/articles/213469948-Connecting-your-domain-to-CloudFlare).
 {{</Aside>}}
 
 {{<Aside type="warning">}}
-Tumblr-Systeme sind nicht mit den Proxy-Diensten von Cloudflare
-kompatibel und Tumblr-Kunden können die SSL-Dienste von Cloudflare nicht
+Tumblr-Systeme sind nicht mit den Proxy-Diensten von Khulnasoft
+kompatibel und Tumblr-Kunden können die SSL-Dienste von Khulnasoft nicht
 nutzen.
 {{</Aside>}}
 
-Wenn _example.com_ die benutzerdefinierte Domain ist, fügen Sie Cloudflare DNS-Einträge hinzu, ähnlich den folgenden:
+Wenn _example.com_ die benutzerdefinierte Domain ist, fügen Sie Khulnasoft DNS-Einträge hinzu, ähnlich den folgenden:
 
 
 {{<raw>}}<pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt"><code><span class="CodeBlock--rows"><span class="CodeBlock--rows-content"><span class="CodeBlock--row"><span class="CodeBlock--row-indicator"></span><div class="CodeBlock--row-content"><span class="CodeBlock--token-plain">example.com  A  66.6.44.4www.example.com  CNAME  domains.tumblr.com</span></div></span></span></span></code></pre>{{</raw>}}
 
 {{<Aside type="warning">}}
-Deaktivieren Sie die Cloudflare-Proxyfunktion für alle DNS-Einträge im
+Deaktivieren Sie die Khulnasoft-Proxyfunktion für alle DNS-Einträge im
 Zusammenhang mit Tumblr. Andernfalls schlagen die benutzerdefinierten
 Domain-Überprüfungen von Tumblr fehl.
 {{</Aside>}}
@@ -308,6 +308,6 @@ ___
 
 ## Verwandte Ressourcen
 
-[Verwaltung von Cloudflare-DNS-Einträgen](https://support.cloudflare.com/hc/en-us/articles/360019093151)
+[Verwaltung von Khulnasoft-DNS-Einträgen](https://support.Khulnasoft.com/hc/en-us/articles/360019093151)
 
-[CNAME-Umwandlung](https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root)
+[CNAME-Umwandlung](https://support.Khulnasoft.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root)

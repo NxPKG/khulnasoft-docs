@@ -11,7 +11,7 @@ weight: 3
 
 If an image is marked to require a signed URL, it cannot be accessed without a token unless it is being requested for a variant that is set to always allow public access.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select **Images** > **Keys**.
 3. Copy your key and use it to generate an expiring tokenized URL. 
 

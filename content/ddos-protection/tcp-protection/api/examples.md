@@ -16,7 +16,7 @@ This example obtains the current status of Advanced TCP Protection (enabled or d
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/tcp_protection_status \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/tcp_protection_status \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -43,7 +43,7 @@ This example enables Advanced TCP Protection.
 header: Request
 ---
 curl --request PATCH \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/tcp_protection_status \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/tcp_protection_status \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -59,7 +59,7 @@ This example fetches all existing prefixes in Advanced TCP Protection.
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/prefixes \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/prefixes \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -89,7 +89,7 @@ This example `POST` request adds two prefixes. The second prefix excludes a subs
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/prefixes/bulk \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/prefixes/bulk \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '[
@@ -143,7 +143,7 @@ This example fetches all the prefixes in the allowlist.
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/allowlist \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/allowlist \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -176,7 +176,7 @@ This example `POST` request adds a prefix to the allowlist of the account.
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/allowlist \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/allowlist \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -213,7 +213,7 @@ This example `POST` request creates a SYN flood rule with a regional scope (West
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/syn_protection/rules \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/syn_protection/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -256,7 +256,7 @@ This example `POST` request creates an out-of-state TCP rule in monitoring mode,
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/tcp_flow_protection/rules \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/tcp_flow_protection/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -299,7 +299,7 @@ This example `POST` request creates a SYN flood [filter](/ddos-protection/tcp-pr
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/syn_protection/filters \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/syn_protection/filters \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -336,7 +336,7 @@ This example `POST` request creates an out-of-state TCP [filter](/ddos-protectio
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/tcp_flow_protection/filters \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/advanced_tcp_protection/configs/tcp_flow_protection/filters \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

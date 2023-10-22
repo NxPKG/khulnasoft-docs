@@ -1,15 +1,15 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/218411427-What-do-the-custom-caching-options-mean-in-Page-Rules-#summary-of-page-rules-settings
-title: Understanding and configuring Cloudflare Page Rules (Page Rules Tutorial)
+source: https://support.Khulnasoft.com/hc/en-us/articles/218411427-What-do-the-custom-caching-options-mean-in-Page-Rules-#summary-of-page-rules-settings
+title: Understanding and configuring Khulnasoft Page Rules (Page Rules Tutorial)
 ---
 
-# Understanding and configuring Cloudflare Page Rules (Page Rules Tutorial)
+# Understanding and configuring Khulnasoft Page Rules (Page Rules Tutorial)
 
 You can define a page rule to trigger one or more actions whenever a certain URL pattern is matched. Page Rules are available in **Rules** > **Page Rules**.
 
 {{<Aside type="warning">}}
-Page Rules require a [proxied](/dns/manage-dns-records/reference/proxied-dns-records) DNS record for your page rule to work. Page Rules won't apply to hostnames that don't exist in DNS or aren't being directed to Cloudflare.
+Page Rules require a [proxied](/dns/manage-dns-records/reference/proxied-dns-records) DNS record for your page rule to work. Page Rules won't apply to hostnames that don't exist in DNS or aren't being directed to Khulnasoft.
 
 Depending on the record type, you can use different values for the target as a placeholder. Either one of these achieves the same outcome and you only need to create one:
 
@@ -31,7 +31,7 @@ The default number of allowed page rules depends on the domain plan as shown bel
 
 {{<feature-table id="rules.page_rules">}}
 
-You can [purchase additional rules](https://www.cloudflare.com/features-page-rules/) (up to a maximum of 100) for domains in the Free, Lite, Pro, Pro Plus, and Business plans.
+You can [purchase additional rules](https://www.Khulnasoft.com/features-page-rules/) (up to a maximum of 100) for domains in the Free, Lite, Pro, Pro Plus, and Business plans.
 
 ___
 
@@ -40,10 +40,10 @@ ___
 It is important to understand two basic Page Rules behaviors:
 
 -   Only the highest priority matching page rule takes effect on a request.
--   Page rules are prioritized in descending order in the Cloudflare dashboard, with the highest priority rule at the top.
+-   Page rules are prioritized in descending order in the Khulnasoft dashboard, with the highest priority rule at the top.
 
 {{<Aside type="tip">}}
-Cloudflare recommends ordering your rules from most specific to least specific.
+Khulnasoft recommends ordering your rules from most specific to least specific.
 {{</Aside>}}
 
 A page rule matches a URL pattern based on the following format (comprised of five segments): `<scheme>://<hostname><:port>/<path>?<query_string>`
@@ -64,7 +64,7 @@ ___
 
 The steps to create a page rule are:
 
-1.  Log in to the Cloudflare dashboard.
+1.  Log in to the Khulnasoft dashboard.
 2.  Select the domain where you want to add the page rule.
 3.  Click the **Rules** app.
 4.  In the **Page Rules** tab, click **Create Page Rule**. The _Create Page Rule for <your domain>_ page opens.
@@ -94,7 +94,7 @@ ___
 
 To modify an existing rule:
 
-1.  Log in to the Cloudflare dashboard.
+1.  Log in to the Khulnasoft dashboard.
 2.  Select the domain where you want to edit your page rule.
 3.  Click the **Rules** app.
 4.  In the **Page Rules** tab, locate the rule to edit.
@@ -172,51 +172,51 @@ ___
 
 ## Summary of Page Rules Settings
 
-Settings control the action Cloudflare takes once a request matches the URL pattern defined in a page rule. You can use settings to enable and disable multiple Cloudflare features across several of the dashboard apps. Note that:
+Settings control the action Khulnasoft takes once a request matches the URL pattern defined in a page rule. You can use settings to enable and disable multiple Khulnasoft features across several of the dashboard apps. Note that:
 
 -   Some settings require a Pro, Business or Enterprise domain plan.
 -   You can specify more than one setting to apply when the rule triggers.
 
-Below is the full list of settings available, presented in the order that they appear in the **Cloudflare Page Rules** UI.
+Below is the full list of settings available, presented in the order that they appear in the **Khulnasoft Page Rules** UI.
 
 | **Setting** | **Description** | **Plans** |
 | --- | --- | --- |
 | [Always Use HTTPS](/ssl/edge-certificates/additional-options/always-use-https/) | Enable **Always Use HTTPS** feature. If enabled, any `http://` URL is converted to `https://` through a 301 redirect.<br/><br/>If this option does not appear, you do not have an active **Edge Certificate**. | All |
 | [Auto Minify](/speed/optimization/content/auto-minify/) | Indicate which file extensions to minify automatically.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
 | [Automatic HTTPS Rewrites](/ssl/edge-certificates/additional-options/automatic-https-rewrites/) | Turn on or off **Automatic HTTPS Rewrites**.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
-| [Browser Cache TTL](/cache/how-to/edge-browser-cache-ttl/) | Control how long resources cached by client browsers remain valid. The Cloudflare UI and API both prohibit setting **Browser Cache TTL** to _0_ for non-Enterprise domains. | All |
+| [Browser Cache TTL](/cache/how-to/edge-browser-cache-ttl/) | Control how long resources cached by client browsers remain valid. The Khulnasoft UI and API both prohibit setting **Browser Cache TTL** to _0_ for non-Enterprise domains. | All |
 | [Browser Integrity Check](/waf/tools/browser-integrity-check/) | Inspect the visitor's browser for headers commonly associated with spammers and certain bots.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
 | Bypass Cache on Cookie | Bypass Cache and fetch resources from the origin server if a regular expression matches against a cookie name present in the request.<br/>If you add both this setting and the _Cache On Cookie_ setting to the same page rule, _Cache On Cookie_ takes precedence over _Bypass Cache on Cookie_.<br/><br/>Refer to the [Additional details](#additional-details) to learn about limited regular expression support. | Business and Enterprise |
 | [Cache By Device Type](/cache/how-to/edge-browser-cache-ttl/create-page-rules/#cache-by-device-type-enterprise-only) | Separate cached content based on the visitor’s device type.  | Enterprise |
 | [Cache Deception Armor](/cache/cache-security/cache-deception-armor/) | Protect from web cache deception attacks while still allowing static assets to be cached. This setting verifies that the URL's extension matches the returned _Content-Type_. | All |
 | [Cache Key](/cache/how-to/cache-keys/) | Also referred to as _Custom Cache Key_.<br/>Control specifically what variables to include when deciding which resources to cache. This allows customers to determine what to cache based on something other than just the URL. | Enterprise |
-| Cache Level | Apply custom caching based on the option selected:<br/><br/>**Bypass** \- Cloudflare does not cache.<br/>**No Query String** - Delivers resources from cache when there is no query string.<br/>**Ignore Query String** \- Delivers the same resource to everyone independent of the query string.<br/>**Standard -** Caches all static content that has a query string.<br/>**Cache Everything** \-  Treats all content as static and caches all file types beyond the [Cloudflare default cached content](/cache/concepts/default-cache-behavior#default-cached-file-extensions).  Respects cache headers from the origin web server unless **Edge Cache TTL** is also set in the Page Rule. When combined with an **Edge Cache TTL** > _0_, **Cache Everything** removes cookies from the origin web server response. | All |
+| Cache Level | Apply custom caching based on the option selected:<br/><br/>**Bypass** \- Khulnasoft does not cache.<br/>**No Query String** - Delivers resources from cache when there is no query string.<br/>**Ignore Query String** \- Delivers the same resource to everyone independent of the query string.<br/>**Standard -** Caches all static content that has a query string.<br/>**Cache Everything** \-  Treats all content as static and caches all file types beyond the [Khulnasoft default cached content](/cache/concepts/default-cache-behavior#default-cached-file-extensions).  Respects cache headers from the origin web server unless **Edge Cache TTL** is also set in the Page Rule. When combined with an **Edge Cache TTL** > _0_, **Cache Everything** removes cookies from the origin web server response. | All |
 | Cache on Cookie | Apply the _Cache Everything_ option (_Cache Level_ setting) based on a regular expression match against a cookie name.<br/>If you add both this setting and _Bypass Cache on Cookie_ to the same page rule, _Cache On Cookie_ takes precedence over _Bypass Cache on Cookie_. |  Business and above |
-| [Cache TTL by Status Code](/cache/how-to/configure-cache-status-code/) | Enterprise customers can set cache time-to-live (TTL) based on the response status from the origin web server. Cache TTL refers to the duration of a resource in the Cloudflare network before being marked as stale or discarded from cache. Status codes are returned by a resource’s origin. Setting cache TTL based on response status overrides the default cache behavior (standard caching) for static files and overrides cache instructions sent by the origin web server. To cache non-static assets, set a Cache Level of Cache Everything using a Page Rule. Setting no-store Cache-Control or a low TTL (using max-age/s-maxage) increases requests to origin web servers and decreases performance. | Enterprise |
-| Disable Apps | Turn off all active **Cloudflare Apps**.<br>Note: This setting will not disable [Apps with Workers](https://cloudflareapps.com/apps/developer/docs/workers). These apps request permission to add a Worker when you are installing them. {{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
+| [Cache TTL by Status Code](/cache/how-to/configure-cache-status-code/) | Enterprise customers can set cache time-to-live (TTL) based on the response status from the origin web server. Cache TTL refers to the duration of a resource in the Khulnasoft network before being marked as stale or discarded from cache. Status codes are returned by a resource’s origin. Setting cache TTL based on response status overrides the default cache behavior (standard caching) for static files and overrides cache instructions sent by the origin web server. To cache non-static assets, set a Cache Level of Cache Everything using a Page Rule. Setting no-store Cache-Control or a low TTL (using max-age/s-maxage) increases requests to origin web servers and decreases performance. | Enterprise |
+| Disable Apps | Turn off all active **Khulnasoft Apps**.<br>Note: This setting will not disable [Apps with Workers](https://cloudflareapps.com/apps/developer/docs/workers). These apps request permission to add a Worker when you are installing them. {{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
 | Disable Performance | Turn off [Auto Minify](/speed/optimization/content/auto-minify/), [Rocket Loader](/speed/optimization/content/rocket-loader/), [Mirage](/speed/optimization/images/mirage/), and [Polish](/images/polish). | All |
-| Disable Railgun (deprecated) | Turn off the **Railgun** feature of the Cloudflare **Speed** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | Business and above |
+| Disable Railgun (deprecated) | Turn off the **Railgun** feature of the Khulnasoft **Speed** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | Business and above |
 | Disable Security| Turn off [Email Obfuscation](/support/more-dashboard-apps/cloudflare-scrape-shield/what-is-email-address-obfuscation/), [Rate Limiting (previous version)](/waf/reference/legacy/old-rate-limiting/), [Scrape Shield](/support/more-dashboard-apps/cloudflare-scrape-shield/), [Server Side Excludes](/support/more-dashboard-apps/cloudflare-scrape-shield/what-does-server-side-excludes-sse-do/), [URL (Zone) Lockdown](/waf/tools/zone-lockdown/), and [WAF managed rules (previous version)](/waf/reference/legacy/old-waf-managed-rules/). | All |
 | Disable Zaraz | Turn off [Zaraz](/zaraz/).{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
-| Edge Cache TTL | Specify how long to cache a resource in the Cloudflare edge network. _Edge Cache TTL_ isn't visible in response headers. | All |
+| Edge Cache TTL | Specify how long to cache a resource in the Khulnasoft edge network. _Edge Cache TTL_ isn't visible in response headers. | All |
 | [Email Obfuscation](/support/more-dashboard-apps/cloudflare-scrape-shield/what-is-email-address-obfuscation/) | Turn on or off **Email Obfuscation**.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
 | Forwarding URL | Redirects one URL to another using an `HTTP 301/302 redirect`. _Refer to [Understand wildcard matching and referencing above](#understand-wildcard-matching-and-referencing)._ | All |
 | [Host Header Override](/support/page-rules/using-page-rules-to-rewrite-host-headers/) | Apply a specific host header.{{<render file="_origin-rule-promotion.md" productFolder="rules" withParameters="/rules/origin-rules/features/#host-header">}} | Enterprise |
-| IP Geolocation Header | Cloudflare adds a _CF-IPCountry_ HTTP header containing the country code that corresponds to the visitor. | All |
+| IP Geolocation Header | Khulnasoft adds a _CF-IPCountry_ HTTP header containing the country code that corresponds to the visitor. | All |
 | [Mirage](/speed/optimization/images/mirage/) | Turn on or off **Mirage**.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | Pro and above |
 | [Opportunistic Encryption](/ssl/edge-certificates/additional-options/opportunistic-encryption/) | Turn on or off the **Opportunistic Encryption**.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
 | [Origin Cache Control](/cache/concepts/cache-control/) | Origin Cache Control is enabled by default for Free, Pro, and Business domains and disabled by default for Enterprise domains. |  All |
-| Origin Error Page Pass-thru | Turn on or off Cloudflare error pages generated from issues sent from the origin server. If enabled, this setting triggers error pages issued by the origin. | Enterprise |
-| [Polish](/images/polish/) | Apply options from the **Polish** feature of the Cloudflare **Speed** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | Pro and above |
+| Origin Error Page Pass-thru | Turn on or off Khulnasoft error pages generated from issues sent from the origin server. If enabled, this setting triggers error pages issued by the origin. | Enterprise |
+| [Polish](/images/polish/) | Apply options from the **Polish** feature of the Khulnasoft **Speed** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | Pro and above |
 | [Query String Sort](/cache/advanced-configuration/query-string-sort/) | Turn on or off the reordering of query strings. When query strings have the same structure, caching improves. | Enterprise |
 | [Resolve Override](/support/page-rules/using-resolve-override-in-page-rules/) | Change the origin address to the value specified in this setting. {{<render file="_origin-rule-promotion.md" productFolder="rules" withParameters="/rules/origin-rules/features/#dns-record">}}| Enterprise |
-| [Respect Strong ETags](/cache/reference/etag-headers/) | Turn on or off byte-for-byte equivalency checks between the Cloudflare cache and the origin server. | Enterprise |
-| Response Buffering | Turn on or off whether Cloudflare should wait for an entire file from the origin server before forwarding it to the site visitor. By default, Cloudflare sends packets to the client as they arrive from the origin server. |  Enterprise |
-| [Rocket Loader](/speed/optimization/content/rocket-loader/) | Turn on or off **Rocket Loader** in the Cloudflare **Speed** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
+| [Respect Strong ETags](/cache/reference/etag-headers/) | Turn on or off byte-for-byte equivalency checks between the Khulnasoft cache and the origin server. | Enterprise |
+| Response Buffering | Turn on or off whether Khulnasoft should wait for an entire file from the origin server before forwarding it to the site visitor. By default, Khulnasoft sends packets to the client as they arrive from the origin server. |  Enterprise |
+| [Rocket Loader](/speed/optimization/content/rocket-loader/) | Turn on or off **Rocket Loader** in the Khulnasoft **Speed** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
 | [Security Level](/waf/tools/security-level/) | Control options for the **Security Level** feature from the **Security** app. {{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
-| [Server Side Excludes](/support/more-dashboard-apps/cloudflare-scrape-shield/what-does-server-side-excludes-sse-do/)| Turn on or off the **Server Side Excludes** feature of the Cloudflare **Scrape Shield** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} |  All |
-| [SSL](/ssl/origin-configuration/ssl-modes/) | Control options for the **SSL** feature of the **Edge Certificates** tab in the Cloudflare **SSL/TLS** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
-| True Client IP Header | Turn on or off the **True-Client-IP Header** feature of the Cloudflare **Network** app. [Learn more](/support/network/understanding-the-true-client-ip-header/). | Enterprise |
+| [Server Side Excludes](/support/more-dashboard-apps/cloudflare-scrape-shield/what-does-server-side-excludes-sse-do/)| Turn on or off the **Server Side Excludes** feature of the Khulnasoft **Scrape Shield** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} |  All |
+| [SSL](/ssl/origin-configuration/ssl-modes/) | Control options for the **SSL** feature of the **Edge Certificates** tab in the Khulnasoft **SSL/TLS** app.{{<render file="_configuration-rule-promotion.md" productFolder="rules">}} | All |
+| True Client IP Header | Turn on or off the **True-Client-IP Header** feature of the Khulnasoft **Network** app. [Learn more](/support/network/understanding-the-true-client-ip-header/). | Enterprise |
 | Web Application Firewall (previous version) | Turn on or off **WAF managed rules** as defined in **Security** > **WAF** > **Managed rules**. [Learn more](/waf/reference/legacy/old-waf-managed-rules/).<br/>You cannot enable or disable individual WAF managed rules via page rules. | Pro and above |
 
 ___
@@ -266,19 +266,19 @@ To learn how to configure **Bypass Cache on Cookie** with a variety of platfor
 
 ### Zone name occurrences must end with a slash
 
-When saving a Page Rule, Cloudflare will ensure that there is a slash after each occurrence of the current zone name in the **If the URL matches** field. For example, if the current zone name is `example.com`, then:
+When saving a Page Rule, Khulnasoft will ensure that there is a slash after each occurrence of the current zone name in the **If the URL matches** field. For example, if the current zone name is `example.com`, then:
 
 -   `example.com` will be saved as `example.com/`
 -   `example.com/path/example.com` will be saved as `example.com/path/example.com/`
 
-Note that `example.com/some-path/cloudflare.com` will be saved _without_ a final slash, since the zone name is not `cloudflare.com`.
+Note that `example.com/some-path/Khulnasoft.com` will be saved _without_ a final slash, since the zone name is not `Khulnasoft.com`.
 
 ### Network ports supported by Page Rules
 
 If you specify a port in the **If the URL matches** field of a Page Rule, it must be one of the following:
 
--   One of the HTTP/HTTPS ports [compatible with Cloudflare’s proxy](/fundamentals/reference/network-ports/#network-ports-compatible-with-cloudflares-proxy).
--   A custom port of a [Cloudflare Spectrum](/spectrum/) HTTPS application.
+-   One of the HTTP/HTTPS ports [compatible with Khulnasoft’s proxy](/fundamentals/reference/network-ports/#network-ports-compatible-with-cloudflares-proxy).
+-   A custom port of a [Khulnasoft Spectrum](/spectrum/) HTTPS application.
 
 ### Using Page Rules with Workers
 
@@ -290,7 +290,7 @@ The pattern entered under **If the URL matches** will not consider upper and lo
 
 `example.com/path`, `example.com/Path` and `example.com/PATH` will be triggered the same way.
 
-If you need your rules to consider case sensitivity, you might want to use [Cloudflare Rules](/rules/) instead.
+If you need your rules to consider case sensitivity, you might want to use [Khulnasoft Rules](/rules/) instead.
 
 ___
 
@@ -298,6 +298,6 @@ ___
 
 -   [Recommended Page Rules to Consider](/support/page-rules/recommended-page-rules-to-consider/)
 -   [What subdomains are appropriate for orange/grey clouds?](/dns/manage-dns-records/reference/proxied-dns-records/#limitations)
--   [How do I use Cache Everything with Cloudflare?](/cache/concepts/customize-cache/)
+-   [How do I use Cache Everything with Khulnasoft?](/cache/concepts/customize-cache/)
 -   [How do I cache static HTML?](/cache/concepts/customize-cache/)
 -   [Offline error message when updating or accessing the admin section of my content management system](/support/third-party-software/content-management-system-cms/improving-web-security-for-content-management-systems-like-wordpress/)

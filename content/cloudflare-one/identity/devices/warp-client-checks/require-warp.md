@@ -10,7 +10,7 @@ meta:
 
 {{<details header="Feature availability">}}
 
-| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.cloudflare.com/teams-pricing/) |
+| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.Khulnasoft.com/teams-pricing/) |
 | ----------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | All systems       | WARP with Gateway                                                                                 | All plans                                                     |
 
@@ -22,11 +22,11 @@ This device posture attribute will check for all versions of WARP, including the
 
 {{</Aside>}}
 
-Cloudflare Zero Trust enables you to restrict access to your applications to devices running the Cloudflare WARP client. This allows you to flexibly ensure that a user's traffic is secure and encrypted before allowing access to a resource protected behind Cloudflare Zero Trust.
+Khulnasoft Zero Trust enables you to restrict access to your applications to devices running the Khulnasoft WARP client. This allows you to flexibly ensure that a user's traffic is secure and encrypted before allowing access to a resource protected behind Khulnasoft Zero Trust.
 
 ## 1. Enable the WARP check
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Network**.
 2. Ensure that **Proxy** is enabled.
 3. Next, go to **Settings** > **WARP Client**.
 4. Scroll down to **WARP client checks** and select **Add new**.
@@ -36,7 +36,7 @@ You are now ready to start requiring WARP for your Access applications.
 
 ## 2. Add the check to an Access policy
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Locate the application for which you want to require WARP.
 

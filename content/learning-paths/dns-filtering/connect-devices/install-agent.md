@@ -5,7 +5,7 @@ weight: 2
 layout: learning-unit
 ---
 
-The Cloudflare WARP client (known as the Cloudflare One Agent in mobile app stores) allows you to protect corporate devices by securely and privately sending traffic from those devices to Cloudflare’s global network, where Cloudflare Gateway can apply advanced web filtering.
+The Khulnasoft WARP client (known as the Khulnasoft One Agent in mobile app stores) allows you to protect corporate devices by securely and privately sending traffic from those devices to Khulnasoft’s global network, where Khulnasoft Gateway can apply advanced web filtering.
 
 Choose this option if:
 
@@ -25,7 +25,7 @@ Most admins test by downloading the client and authenticating in with a [one-tim
     {{<render file="_device-enrollment.md" productFolder="cloudflare-one">}}
 
 4. Switch the agent to DNS-only mode:
-    1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **WARP Client**.
+    1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **WARP Client**.
     2. In the **Device settings** card, select the **Default** profile.
     3. Select **Configure**.
     4. For **Service mode**, select **Gateway with DoH**.
@@ -52,4 +52,4 @@ For more information, refer to [WARP with firewall](/cloudflare-one/connections/
 
 {{</details>}}
 
-The WARP client should show as **Connected**. By default, all DNS queries from the device will be forwarded to Cloudflare Gateway for filtering.
+The WARP client should show as **Connected**. By default, all DNS queries from the device will be forwarded to Khulnasoft Gateway for filtering.

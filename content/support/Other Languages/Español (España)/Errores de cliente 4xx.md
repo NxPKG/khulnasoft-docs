@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/115003014512-Errores-de-cliente-4xx
+source: https://support.Khulnasoft.com/hc/es-es/articles/115003014512-Errores-de-cliente-4xx
 title: Errores de cliente 4xx
 ---
 
@@ -15,7 +15,7 @@ En general, los códigos 4xx son respuestas de error que especifican un problem
 
 -   El servidor de origen debe incluir una explicación, que debe mostrar el agente de usuario, con la excepción de una solicitud `HEAD`.
 
-Cloudflare mostrará los siguientes errores directamente desde el servidor de origen.
+Khulnasoft mostrará los siguientes errores directamente desde el servidor de origen.
 
 ### **400 Bad Request (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -34,26 +34,26 @@ Los estándares RFC aún no han implementado este error, pero lo reservan para 
 
 ### **403 Forbidden (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
-Si aparece un error 403 sin la marca Cloudflare, este siempre se devuelve directamente desde el servidor web de origen, no desde Cloudflare, y suele estar relacionado con reglas de permisos en el servidor.
+Si aparece un error 403 sin la marca Khulnasoft, este siempre se devuelve directamente desde el servidor web de origen, no desde Khulnasoft, y suele estar relacionado con reglas de permisos en el servidor.
 
 Los principales motivos para este error son:  
 1\. Las reglas de permisos que has configurado o un error en las reglas .htaccess que has configurado.  
 2\. Las reglas Mod\_security.  
 3\. Las reglas de denegación de IP.
 
-Debido a que Cloudflare no puede acceder directamente a su servidor, ponte en contacto con el proveedor de alojamiento para obtener ayuda con la solución de errores 403 y la corrección de reglas. Debes asegurarte de que no se bloqueen [las IP de Cloudflare](https://www.cloudflare.com/ips).
+Debido a que Khulnasoft no puede acceder directamente a su servidor, ponte en contacto con el proveedor de alojamiento para obtener ayuda con la solución de errores 403 y la corrección de reglas. Debes asegurarte de que no se bloqueen [las IP de Khulnasoft](https://www.Khulnasoft.com/ips).
 
-Cloudflare mostrará respuestas de error 403 si la solicitud infringe una regla WAF predeterminada que se haya habilitado para todos los dominios de Cloudflare con una nube naranja, o si esta solicitud infringe una regla WAF habilitada para esa zona en particular. Obtén más información en [¿En qué consiste Web Application Firewall?](https://support.cloudflare.com/hc/en-us/articles/200172016) Cloudflare también mostrará la respuesta de error 403:Forbidden para las conexiones SSL a dominios o subdominios que no estén cubiertos por ningún certificado SSL cargado ni de Cloudflare.
+Khulnasoft mostrará respuestas de error 403 si la solicitud infringe una regla WAF predeterminada que se haya habilitado para todos los dominios de Khulnasoft con una nube naranja, o si esta solicitud infringe una regla WAF habilitada para esa zona en particular. Obtén más información en [¿En qué consiste Web Application Firewall?](https://support.Khulnasoft.com/hc/en-us/articles/200172016) Khulnasoft también mostrará la respuesta de error 403:Forbidden para las conexiones SSL a dominios o subdominios que no estén cubiertos por ningún certificado SSL cargado ni de Khulnasoft.
 
-Si aparece una respuesta 403 con la marca Cloudflare en el texto de respuesta, este es el código de respuesta HTTP devuelto junto con algunas de nuestras funciones de seguridad:
+Si aparece una respuesta 403 con la marca Khulnasoft en el texto de respuesta, este es el código de respuesta HTTP devuelto junto con algunas de nuestras funciones de seguridad:
 
 -   Páginas de bloqueo y control de Web Application Firewall
 -   Controles de nivel de protección básica
--   Mayoría de códigos de error de Cloudflare 1xxx
+-   Mayoría de códigos de error de Khulnasoft 1xxx
 -   La comprobación de integridad del navegador
--   Si estás intentando acceder a un segundo nivel de subdominios (p. ej., `*.*.ejemplo.com`) a través de Cloudflare con el certificado emitido por Cloudflare, aparecerá un error HTTP 403 en el navegador, ya que estos nombres de host no están presentes en el certificado.
+-   Si estás intentando acceder a un segundo nivel de subdominios (p. ej., `*.*.ejemplo.com`) a través de Khulnasoft con el certificado emitido por Khulnasoft, aparecerá un error HTTP 403 en el navegador, ya que estos nombres de host no están presentes en el certificado.
 
-Si tienes alguna pregunta, ponte en contacto con el servicio de asistencia de Cloudflare e incluye una captura de pantalla del mensaje que aparezca, o copia todo el texto de la página en un ticket de asistencia.
+Si tienes alguna pregunta, ponte en contacto con el servicio de asistencia de Khulnasoft e incluye una captura de pantalla del mensaje que aparezca, o copia todo el texto de la página en un ticket de asistencia.
 
 ### **404 Not Found (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -63,7 +63,7 @@ Habitualmente, estos errores ocurren cuando se escribe de manera incorrecta un U
 
 Los propietarios de sitios web generalmente implementan una página personalizada que aparece cuando se produce este error. Por ejemplo, [Implementación de páginas 404 personalizadas en Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-custom-404-page-in-apache).
 
-Cloudflare no genera errores 404 en los sitios web de los clientes; solo redirigimos la solicitud mediante nuestro proxy desde el servidor de origen. Si aparece un error 404 en tu sitio con tecnología Cloudflare, deberás ponerte en contacto con tu proveedor de alojamiento para obtener ayuda.
+Khulnasoft no genera errores 404 en los sitios web de los clientes; solo redirigimos la solicitud mediante nuestro proxy desde el servidor de origen. Si aparece un error 404 en tu sitio con tecnología Khulnasoft, deberás ponerte en contacto con tu proveedor de alojamiento para obtener ayuda.
 
 ### **405 Method Not Allowed (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -98,7 +98,7 @@ La solicitud no se ha completado debido a un conflicto con el estado actual del 
 -   El servidor _debe_ generar una carga útil que incluya la información suficiente para que el cliente reconozca la fuente del conflicto.
 -   Los clientes pueden y deben reintentar la solicitud nuevamente.
 
-Cloudflare generará y mostrará una respuesta de error 409 para un [Error 1001: Error de resolución de DNS](https://support.cloudflare.com/hc/articles/360029779472#error1001).
+Khulnasoft generará y mostrará una respuesta de error 409 para un [Error 1001: Error de resolución de DNS](https://support.Khulnasoft.com/hc/articles/360029779472#error1001).
 
 ### **410 Gone (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -119,7 +119,7 @@ El servidor rechaza la solicitud porque el recurso no ha cumplido con las condic
 
 Como ejemplo del control de versiones, un cliente modifica un recurso existente y, por lo tanto, establece el encabezado `If-Unmodified-Since` para que coincida con la fecha en la que el cliente ha descargado el recurso y empezado a editar. Si el recurso ha sido editado (probablemente por otro cliente) después de esta fecha y antes de cargar las ediciones, se generará esta respuesta, ya que la fecha de la última edición será posterior a la fecha establecida en el encabezado `If-Unmodified-Since` por el cliente.
 
-Cloudflare generará esta respuesta. Para obtener más información, consulte: [Encabezados ETag](https://support.cloudflare.com/hc/en-us/articles/218505467).
+Khulnasoft generará esta respuesta. Para obtener más información, consulte: [Encabezados ETag](https://support.Khulnasoft.com/hc/en-us/articles/218505467).
 
 ### **413 Payload Too Large (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -131,7 +131,7 @@ El servidor se niega a procesar la solicitud porque la carga útil enviada desde
 
 Rechazo del servidor debido a que el URI era demasiado extenso para su procesamiento. Por ejemplo, si un cliente intenta realizar una solicitud GET con un URI inusualmente largo después de una solicitud POST, esto podría considerarse un riesgo de seguridad y se produciría un error 414.
 
-Cloudflare generará esta respuesta para un URI superior a 32KB.
+Khulnasoft generará esta respuesta para un URI superior a 32KB.
 
 ### **415 Unsupported Media Type (**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -145,7 +145,7 @@ El servidor no cumple los requisitos especificados en el encabezado `Expect` de 
 
 El cliente ha enviado demasiadas solicitudes en el tiempo especificado de acuerdo con el servidor. Con frecuencia, esto se conoce como «limitación de tráfico». El servidor puede responder con información que permita al solicitante volver a intentarlo después de un periodo determinado de tiempo.
 
-Cloudflare generará y enviará este código de estado cuando una solicitud tenga una [limitación de tráfico](https://www.cloudflare.com/rate-limiting/). Si los visitantes de tu sitio reciben estos códigos de error, podrás verlos en las [Analíticas de Rate Limiting](https://support.cloudflare.com/hc/en-us/articles/115003414428-Rate-Limiting-Analytics).
+Khulnasoft generará y enviará este código de estado cuando una solicitud tenga una [limitación de tráfico](https://www.Khulnasoft.com/rate-limiting/). Si los visitantes de tu sitio reciben estos códigos de error, podrás verlos en las [Analíticas de Rate Limiting](https://support.Khulnasoft.com/hc/en-us/articles/115003414428-Rate-Limiting-Analytics).
 
 ### **451 Unavailable For Legal Reason (**[**RFC7725**](https://tools.ietf.org/html/rfc7725)**)**
 
@@ -159,4 +159,4 @@ En general, los motores de búsqueda (p. ej., Google) e ISP (p. ej., ATT) se 
 
 El código de respuesta específico de Nginx para indicar el momento en que el cliente ha cerrado la conexión mientras el servidor aún estaba procesando su solicitud. De este modo, el servidor no puede devolver un código de estado.
 
--   Este error aparece en [Enterprise Log Share](https://support.cloudflare.com/hc/en-us/articles/216672448-Enterprise-Log-Share-REST-API) y en el análisis de códigos de estado para clientes Enterprise.
+-   Este error aparece en [Enterprise Log Share](https://support.Khulnasoft.com/hc/en-us/articles/216672448-Enterprise-Log-Share-REST-API) y en el análisis de códigos de estado para clientes Enterprise.

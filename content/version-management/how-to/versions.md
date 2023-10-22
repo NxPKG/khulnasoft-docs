@@ -18,7 +18,7 @@ If you need to test out different implementations of configurations at the same 
 
 To create a new version:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. Select your account and zone.
 3. Go to **Version Management**.
 4. On an existing version, select **Clone**. This will copy over all configuration settings from that version.
@@ -62,7 +62,7 @@ Once you begin [sending traffic](/version-management/reference/traffic-filters/)
 
 To view metrics:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. Select your account and zone.
 3. Go to **Version Management**.
 4. On an existing version, select **View Metrics**.

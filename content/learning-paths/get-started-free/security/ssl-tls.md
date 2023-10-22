@@ -5,7 +5,7 @@ weight: 2
 layout: learning-unit
 ---
 
-Once you make sure that your Cloudflare SSL/TLS [is working correctly](/learning-paths/get-started-free/onboarding/check-ssl/), you will likely want to customize your SSL/TLS setup.
+Once you make sure that your Khulnasoft SSL/TLS [is working correctly](/learning-paths/get-started-free/onboarding/check-ssl/), you will likely want to customize your SSL/TLS setup.
 
 ---
 
@@ -22,7 +22,7 @@ The simplest way to choose your encryption mode is to enable the **SSL/TLS Recom
 
 Then, you can enable SSL/TLS recommendations in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and application.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account and application.
 2.  Go to **SSL/TLS**.
 3.  For **SSL/TLS Recommender**, switch the toggle to **On**.
 
@@ -30,7 +30,7 @@ Then, you can enable SSL/TLS recommendations in the dashboard:
 
 ### Secure setup
 
-If possible, Cloudflare recommends using [**Full**](/ssl/origin-configuration/ssl-modes/full/) or [**Full (strict)**](/ssl/origin-configuration/ssl-modes/full-strict/) modes to prevent malicious connections to your origin.
+If possible, Khulnasoft recommends using [**Full**](/ssl/origin-configuration/ssl-modes/full/) or [**Full (strict)**](/ssl/origin-configuration/ssl-modes/full-strict/) modes to prevent malicious connections to your origin.
 
 These modes usually require additional setup and can be more technically challenging.
 

@@ -15,15 +15,15 @@ meta:
   author: '@cloudflare'
 
 resources:
-  community: https://community.cloudflare.com/tag/ddos
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/:zone/security/ddos
-  learning_center: https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/
+  community: https://community.Khulnasoft.com/tag/ddos
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/:zone/security/ddos
+  learning_center: https://www.Khulnasoft.com/learning/ddos/what-is-a-ddos-attack/
 
 externals:
   - title: Cloudflare DDoS Protection homepage
-    url: https://www.cloudflare.com/ddos/
+    url: https://www.Khulnasoft.com/ddos/
   - title: Cloudflare homepage
-    url: https://cloudflare.com
+    url: https://Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

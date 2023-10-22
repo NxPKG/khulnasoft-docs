@@ -5,12 +5,12 @@ pcx_content_type: reference
 
 # Verify IRR entries
 
-Verify your Internet Routing Registry (IRR) entries to ensure that the IP prefixes Cloudflare advertises for you match the correct autonomous system numbers (ASNs).
+Verify your Internet Routing Registry (IRR) entries to ensure that the IP prefixes Khulnasoft advertises for you match the correct autonomous system numbers (ASNs).
 
 Each IRR entry record must include the following information:
 
-- **Route:** Each IP prefix Cloudflare advertises for you.
-- **Origin ASN:** Your ASN, or if you do not have your own ASN, the Cloudflare ASN (AS209242).
+- **Route:** Each IP prefix Khulnasoft advertises for you.
+- **Origin ASN:** Your ASN, or if you do not have your own ASN, the Khulnasoft ASN (AS209242).
 - **Source:** The name of the routing registry, for example, AFRINIC, APNIC, ARIN, RADB, RIPE, or NTT.
 
 ## Add or update IRR entries
@@ -23,7 +23,7 @@ Each IRR entry record must include the following information:
 
 ### Verify IRR entries for exact prefixes
 
-You are strongly encouraged to verify IRR entries for the exact prefixes you'll be onboarding with Cloudflare. However, IRR entries for less specific prefixes are acceptable as long as you understand and accept the following risk: if you modify your IRR entries in the future (for example, by changing your ASN) and the IRR entry for the supernet no longer matches the prefix/origin mapping in your Magic Transit configuration, the prefix will have reduced reachability due to networks Cloudflare peers with automatically filtering the prefix. Having more-specific IRR entries helps minimize (but not entirely remove) this risk.
+You are strongly encouraged to verify IRR entries for the exact prefixes you'll be onboarding with Khulnasoft. However, IRR entries for less specific prefixes are acceptable as long as you understand and accept the following risk: if you modify your IRR entries in the future (for example, by changing your ASN) and the IRR entry for the supernet no longer matches the prefix/origin mapping in your Magic Transit configuration, the prefix will have reduced reachability due to networks Khulnasoft peers with automatically filtering the prefix. Having more-specific IRR entries helps minimize (but not entirely remove) this risk.
 
 ## IRR entry verification methods
 

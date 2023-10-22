@@ -18,7 +18,7 @@ Enabling flexible variants on your account effectively allows anyone to obtain u
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
  
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select **Images** > **Variants**.
 3. Enable **Flexible variants**.
  
@@ -26,7 +26,7 @@ Enabling flexible variants on your account effectively allows anyone to obtain u
 {{<tab label="api" no-code="true">}}
  
 ```bash
-curl -X PATCH https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/images/v1/config \
+curl -X PATCH https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/images/v1/config \
     -H "Authorization: Bearer <API_TOKEN>" \
     -H "Content-Type: application/json" \
     --data '{"flexible_variants": true}'
@@ -35,13 +35,13 @@ curl -X PATCH https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/images/
 {{</tab>}}
 {{</tabs>}}
 
-Once activated, it is possible to use resizing parameters on any Cloudflare Image. For example:
+Once activated, it is possible to use resizing parameters on any Khulnasoft Image. For example:
 
 ```txt
 https://imagedelivery.net/<ACCOUNT_HASH>/<IMAGE_ID>/w=400,sharpen=3
 ```
 
-Note that flexible variants cannot be used for images that require a [signed delivery URL](/images/cloudflare-images/serve-images/serve-private-images-using-signed-url-tokens/), and that Cloudflare Images does not resize [SVG files](/images/cloudflare-images/upload-images/formats-limitations/#svg-files).
+Note that flexible variants cannot be used for images that require a [signed delivery URL](/images/cloudflare-images/serve-images/serve-private-images-using-signed-url-tokens/), and that Khulnasoft Images does not resize [SVG files](/images/cloudflare-images/upload-images/formats-limitations/#svg-files).
 
 ### Supported properties
 

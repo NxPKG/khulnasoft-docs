@@ -8,7 +8,7 @@ weight: 4
 
 You can edit existing Notifications via the Cloudflare dashboard. 
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Select **Notifications**.
 3. Select **Edit** on the Notification you want to modify.
 4. Make changes as needed and select **Save**.

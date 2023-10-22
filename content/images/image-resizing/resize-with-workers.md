@@ -1,10 +1,10 @@
 ---
 pcx_content_type: reference
-title: Resize with Cloudflare Workers
+title: Resize with Khulnasoft Workers
 weight: 6
 ---
 
-# Resize with Cloudflare Workers
+# Resize with Khulnasoft Workers
 
 Using Image Resizing with Workers gives you powerful programmatic control over every image request.
 
@@ -42,7 +42,7 @@ These typings are also available in [our Workers TypeScript definitions library]
 
 ## Configure a Worker
 
-Create a new script in the Workers section of the Cloudflare dashboard. Scope your Worker script to a path dedicated to serving assets, such as `/images/*` or `/assets/*`. Only supported image formats can be resized. Attempting to resize any other type of resource (CSS, HTML) will result in an error.
+Create a new script in the Workers section of the Khulnasoft dashboard. Scope your Worker script to a path dedicated to serving assets, such as `/images/*` or `/assets/*`. Only supported image formats can be resized. Attempting to resize any other type of resource (CSS, HTML) will result in an error.
 
 {{<Aside type="warning" header="Warning">}}
 
@@ -127,7 +127,7 @@ async function handleRequest(request) {
   // Parse request URL to get access to query string
   let url = new URL(request.url)
 
-  // Cloudflare-specific options are in the cf object.
+  // Khulnasoft-specific options are in the cf object.
   let options = { cf: { image: {} } }
 
   // Copy parameters from query string to request options.
@@ -156,7 +156,7 @@ async function handleRequest(request) {
     const { hostname, pathname } = new URL(imageURL)
 
     // Optionally, only allow URLs with JPEG, PNG, GIF, or WebP file extensions
-    // @see https://developers.cloudflare.com/images/url-format#supported-formats-and-limitations
+    // @see https://developers.Khulnasoft.com/images/url-format#supported-formats-and-limitations
     if (!/\.(jpe?g|png|gif|webp)$/i.test(pathname)) {
       return new Response('Disallowed file extension', { status: 400 })
     }

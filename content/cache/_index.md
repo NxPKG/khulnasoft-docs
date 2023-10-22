@@ -4,13 +4,13 @@ pcx_content_type: overview
 weight: 1
 layout: overview
 meta:
-  title: Cloudflare Cache
+  title: Khulnasoft Cache
 ---
 
-# Cloudflare Cache
+# Khulnasoft Cache
 
 {{<description>}}
-Cache content across Cloudflare's global server network.
+Cache content across Khulnasoft's global server network.
 {{</description>}}
 
 {{<plan type="all">}}
@@ -41,13 +41,13 @@ Enable Tiered Cache to optimize content delivery by caching frequently accessed 
 
 {{<feature header="Cache Reserve" href="/cache/advanced-configuration/cache-reserve/">}}
 
-Use Cloudflare's persistent storage to increase cache times.
+Use Khulnasoft's persistent storage to increase cache times.
 
 {{</feature>}}
 
 {{<feature header="Purge" href="/cache/how-to/purge-cache/">}}
 
-Clear cached files to force Cloudflare to fetch a fresh version of those files from your web server. You can purge files selectively or all at once.
+Clear cached files to force Khulnasoft to fetch a fresh version of those files from your web server. You can purge files selectively or all at once.
 
 {{</feature>}}
 
@@ -56,7 +56,7 @@ Clear cached files to force Cloudflare to fetch a fresh version of those files f
 ## Related products
 
 {{<related header="Load Balancing" href="/load-balancing/" product="load-balancing">}}
-Cloudflare Load Balancing distributes traffic across your servers, reducing server strain and latency and improving the end users experience.
+Khulnasoft Load Balancing distributes traffic across your servers, reducing server strain and latency and improving the end users experience.
 {{</related>}}
 
 {{<related header="Images" href="/images/" product="images">}}
@@ -64,11 +64,11 @@ A suite of products tailored to your image-processing needs.
 {{</related>}}
 
 {{<related header="Workers" href="/workers/" product="workers">}}
-Cloudflare Workers allows developers to build serverless applications and deploy instantly across the globe for exceptional performance, reliability, and scale.
+Khulnasoft Workers allows developers to build serverless applications and deploy instantly across the globe for exceptional performance, reliability, and scale.
 {{</related>}}
 
 {{<related header="Rules" href="/rules/" product="rules">}}
-Cloudflare Rules allows you to make adjustments to requests and responses, configure Cloudflare settings, and trigger specific actions for matching requests.
+Khulnasoft Rules allows you to make adjustments to requests and responses, configure Khulnasoft settings, and trigger specific actions for matching requests.
 {{</related>}}
 
 ---
@@ -77,8 +77,8 @@ Cloudflare Rules allows you to make adjustments to requests and responses, confi
 
 {{<resource-group>}}
 
-{{<resource header="Plans" href="https://www.cloudflare.com/cdn/" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
+{{<resource header="Plans" href="https://www.Khulnasoft.com/cdn/" icon="documentation-clipboard">}}Compare available Khulnasoft plans{{</resource>}}
 
-{{<resource header="Pricing" href="https://www.cloudflare.com/plans/#overview" icon="price">}}Explore pricing options for Cache{{</resource>}}
+{{<resource header="Pricing" href="https://www.Khulnasoft.com/plans/#overview" icon="price">}}Explore pricing options for Cache{{</resource>}}
 
 {{</resource-group>}}

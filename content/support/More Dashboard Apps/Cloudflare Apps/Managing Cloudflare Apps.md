@@ -1,10 +1,10 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/115000304631-Managing-Cloudflare-Apps
-title: Managing Cloudflare Apps
+source: https://support.Khulnasoft.com/hc/en-us/articles/115000304631-Managing-Khulnasoft-Apps
+title: Managing Khulnasoft Apps
 ---
 
-# Managing Cloudflare Apps
+# Managing Khulnasoft Apps
 
 
 
@@ -12,7 +12,7 @@ title: Managing Cloudflare Apps
 
 To find and manage Apps:
 
-1.  Log into the [Cloudflare dashboard.](https://dash.cloudflare.com/login)
+1.  Log into the [Khulnasoft dashboard.](https://dash.Khulnasoft.com/login)
 2.  Select your account and website.
 3.  Go to **Apps**.
 

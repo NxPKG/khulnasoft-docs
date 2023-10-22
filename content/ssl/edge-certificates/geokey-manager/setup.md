@@ -38,7 +38,7 @@ You also have access to the `geo_restrictions` parameter, which is mutually excl
 ---
 header: Store private keys in the E.U. and the U.S.
 ---
-curl -X POST "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/custom_certificates" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/custom_certificates" \
      -H "X-Auth-Email: <EMAIL>" \
      -H "X-Auth-Key: <AUTH_KEY>" \
      -H "Content-Type: application/json" \
@@ -55,7 +55,7 @@ curl -X POST "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/custom_certif
 ---
 header: Store private keys in the E.U., but not in France
 ---
-curl -X POST "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/custom_certificates" \
+curl -X POST "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/custom_certificates" \
      -H "X-Auth-Email: <EMAIL>" \
      -H "X-Auth-Key: <AUTH_KEY>" \
      -H "Content-Type: application/json" \

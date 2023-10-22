@@ -20,7 +20,7 @@ If you find that **Bot Fight Mode** is causing problems with your application tr
 
 To disable Bot Fight Mode:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account and domain.
 2. Go to **Security** > **Bots**.
 3. For **Bot Fight Mode**, select **Off**.
 

@@ -7,29 +7,29 @@ layout: single
 
 # Splunk
 
-This tutorial explains how to analyze [Cloudflare Logs](https://www.cloudflare.com/products/cloudflare-logs/) using the [Cloudflare App for Splunk](https://splunkbase.splunk.com/app/4501/).
+This tutorial explains how to analyze [Khulnasoft Logs](https://www.Khulnasoft.com/products/cloudflare-logs/) using the [Khulnasoft App for Splunk](https://splunkbase.splunk.com/app/4501/).
 
 ## Prerequisites
 
-Before sending your Cloudflare log data to Splunk, ensure that you:
+Before sending your Khulnasoft log data to Splunk, ensure that you:
 
 - Have an existing Splunk Enterprise or Cloud account
-- Have a Cloudflare Enterprise account
-- Consult the [Splunk documentation](https://splunkbase.splunk.com/app/4501/) for the Cloudflare App
+- Have a Khulnasoft Enterprise account
+- Consult the [Splunk documentation](https://splunkbase.splunk.com/app/4501/) for the Khulnasoft App
 
-## Task 1 - Install and Configure the Cloudflare App for Splunk
+## Task 1 - Install and Configure the Khulnasoft App for Splunk
 
-To install the [Cloudflare App for Splunk](https://splunkbase.splunk.com/app/4501/):
+To install the [Khulnasoft App for Splunk](https://splunkbase.splunk.com/app/4501/):
 
 1.  Log in to your Splunk instance.
-2.  Under **Apps** > **Find More Apps**, search for _Cloudflare App for Splunk._
+2.  Under **Apps** > **Find More Apps**, search for _Khulnasoft App for Splunk._
 3.  Click **Install**.
 
-![Splunk website with Apps menu expanded and Search & Reporting menu item along with Cloudflare App for Splunk](/images/fundamentals/splunk/screenshots/splunk-cloudflare-app-for-splunk.png)
+![Splunk website with Apps menu expanded and Search & Reporting menu item along with Khulnasoft App for Splunk](/images/fundamentals/splunk/screenshots/splunk-cloudflare-app-for-splunk.png)
 
 4.  Restart and reopen your Splunk instance.
 
-5.  Edit the `cloudflare:json` source type in the Cloudflare App for Splunk. To edit the source type:
+5.  Edit the `cloudflare:json` source type in the Khulnasoft App for Splunk. To edit the source type:
 
     1.  Click the **Settings** dropdown and select **Source types**.
     2.  Uncheck **Show only popular** and search for _cloudflare_.
@@ -40,17 +40,17 @@ To install the [Cloudflare App for Splunk](https://splunkbase.splunk.com/app/450
 
     1.  Open the setup screen by clicking the **Settings** dropdown, then click **Indexes**.
     2.  Select **New Index**. Note that the **Indexes** page also gives you the status of all your existing indexes so that you can see whether you're about to use up your licensed amount of space.
-    3.  Name the index **cloudflare**, which is the default index that the Cloudflare App will use.
+    3.  Name the index **cloudflare**, which is the default index that the Khulnasoft App will use.
 
 7.  Set up the HTTP Event Collector (HEC) on Splunk. To create an HEC:
 
     1.  Click the **Settings** dropdown and select **Data inputs**.
     2.  Click **+Add new** and follow the wizard. When prompted, submit the following responses:
-        - Name: Cloudflare
+        - Name: Khulnasoft
         - Source Type: Select > "cloudflare:json"
-        - App Context: Cloudflare App for Splunk (cloudflare)
+        - App Context: Khulnasoft App for Splunk (cloudflare)
         - Index: cloudflare
-    3.  At the end of the wizard you will see a **Token Value**. This token authorizes the Cloudflare Logpush job to send data to your Splunk instance. If you forget to copy it now, Splunk allows you to get the value at any time.
+    3.  At the end of the wizard you will see a **Token Value**. This token authorizes the Khulnasoft Logpush job to send data to your Splunk instance. If you forget to copy it now, Splunk allows you to get the value at any time.
 
 8.  Verify whether Splunk is using a self-signed certificate. You'll need this information when creating the Logpush job.
 
@@ -72,13 +72,13 @@ For example: `https://prd-p-0qk3h.splunkcloud.com:8088/services/collector/raw`. 
 
 **Post Installation Notes**
 
-You can change the **Index Name** after the initial configuration by clicking on the **Settings** dropdown and navigating to **Advance search**. There you can select **Search macros** and look for the Cloudflare App for Splunk.
+You can change the **Index Name** after the initial configuration by clicking on the **Settings** dropdown and navigating to **Advance search**. There you can select **Search macros** and look for the Khulnasoft App for Splunk.
 
 ![Splunk interface highlighting Apps menu and Manage Apps option along with Enable Acceleration checkbox](/images/fundamentals/splunk/screenshots/splunk-settings-advanced-search-search-macros.png)
 
-The Cloudflare App for Splunk comes with a custom Cloudflare Data Model that has an acceleration time frame of 1 day but is not accelerated by default. If you enable [Data Model acceleration](https://docs.splunk.com/Documentation/Splunk/latest/Knowledge/Acceleratedatamodels), we recommend that the Data Model is only accelerated for 1 or 7 days to ensure there are no adverse effects within your Splunk environment.
+The Khulnasoft App for Splunk comes with a custom Khulnasoft Data Model that has an acceleration time frame of 1 day but is not accelerated by default. If you enable [Data Model acceleration](https://docs.splunk.com/Documentation/Splunk/latest/Knowledge/Acceleratedatamodels), we recommend that the Data Model is only accelerated for 1 or 7 days to ensure there are no adverse effects within your Splunk environment.
 
-Enable or disable acceleration after the initial configuration by accessing the app Set up page by clicking the **Apps** dropdown, then **Manage Apps** > **Cloudflare Set Up**.
+Enable or disable acceleration after the initial configuration by accessing the app Set up page by clicking the **Apps** dropdown, then **Manage Apps** > **Khulnasoft Set Up**.
 
 ![Splunk Advanced Search page highlighted Search macros and Advanced search](/images/fundamentals/splunk/screenshots/splunk-apps-manage-apps-cloudflare-set-up-enable-data-model-acceleration.png)
 
@@ -88,9 +88,9 @@ You can also manually configure Data Models by going to **Settings** > **Data mo
 
 Create the Logpush job by following the instructions on [Enable Logpush to Splunk](/logs/get-started/enable-destinations/splunk/). The API call creates a Logpush job but does not enable it.
 
-Enable the Logpush job through the the Cloudflare dashboard or through the API by following the instructions on [Enable Logpush to Splunk](/logs/get-started/enable-destinations/splunk/). To enable through the dashboard:
+Enable the Logpush job through the the Khulnasoft dashboard or through the API by following the instructions on [Enable Logpush to Splunk](/logs/get-started/enable-destinations/splunk/). To enable through the dashboard:
 
-1.  Navigate to the Cloudflare dashboard and select **Analytics & Logs** > **Logs**.
+1.  Navigate to the Khulnasoft dashboard and select **Analytics & Logs** > **Logs**.
 2.  Select **Edit** and select the fields referenced in the Dashboard section below to fully populate all tables and graphs.
 3.  Enable the Logpush job by toggling on the switch next to the Edit link. Data takes a few minutes to populate.
 
@@ -98,27 +98,27 @@ To validate that you are receiving data, search `index=cloudflare` in Splunk.
 
 ## Task 3 - View the Dashboards
 
-You can analyze Cloudflare logs with the thirteen (13) dashboards listed below.
+You can analyze Khulnasoft logs with the thirteen (13) dashboards listed below.
 
 You can use filters within these dashboards to help narrow the analysis by date and time, device type, country, user agent, client IP, hostname, and more to further help with debugging and tracing.
 
 ### About the Dashboards
 
-The following dashboards outlined below are available as part of the Cloudflare App for Splunk.
+The following dashboards outlined below are available as part of the Khulnasoft App for Splunk.
 
-#### Cloudflare - Snapshot
+#### Khulnasoft - Snapshot
 
-_Web Traffic Overview_ and _Web Traffic Types_: Get an overview of the most important metrics from your websites and applications on the Cloudflare network.
+_Web Traffic Overview_ and _Web Traffic Types_: Get an overview of the most important metrics from your websites and applications on the Khulnasoft network.
 ![Splunk dashboard with Web Traffic Overview metrics](/images/fundamentals/splunk/dashboards/splunk-cloudflare-snapshot-dashboard.png)
 
-#### Cloudflare - Reliability
+#### Khulnasoft - Reliability
 
 _Summary_ and _Detailed_: Get insights on the availability of your websites and applications. Metrics include origin response error ratio, origin response status over time, percentage of 3xx/4xx/5xx errors over time, and more.
 ![Splunk dashboard with a high level summary of Reliability metrics](/images/fundamentals/splunk/dashboards/splunk-cloudflare-reliability-summary-dashboard.png)
 
 ![Splunk dashboard with a detailed summary of Reliability metrics](/images/fundamentals/splunk/dashboards/splunk-cloudflare-reliability-detailed-dashboard.png)
 
-#### Cloudflare - Security
+#### Khulnasoft - Security
 
 _Overview_: Get insights on threats to your websites and applications, including number of threats stopped, threats over time, top threat countries, and more.
 ![Splunk dashboard with an overview of Security metrics](/images/fundamentals/splunk/dashboards/splunk-cloudflare-security-overview.png)
@@ -134,7 +134,7 @@ _Bots Summary_ and _Bots Detailed_: Investigate bot activity on your website to 
 
 ![Splunk dashboard with a detailed summary of Security metrics for Bots](/images/fundamentals/splunk/dashboards/splunk-cloudflare-security-bots-detailed-dashboard.png)
 
-#### Cloudflare - Performance
+#### Khulnasoft - Performance
 
 _Requests and Cache_ and _Bandwidth_: Identify and address performance issues and caching misconfigurations. Metrics include total vs. cached bandwidth, saved bandwidth, total requests, cache ratio, top uncached requests, and more.
 ![Splunk dashboard with Performance metrics for Requests and Cache](/images/fundamentals/splunk/dashboards/splunk-cloudflare-performance-requests-and-cache-dashboard.png)
@@ -143,10 +143,10 @@ _Requests and Cache_ and _Bandwidth_: Identify and address performance issues an
 
 _Hostname, Content Type, Request Methods, Connection Type_: Get insights into your most popular hostnames, most requested content types, breakdown of request methods, and connection type.
 
-![Splunk dashboard with Cloudflare Performance metrics including for Hostname, Content Type, Request Methods, Connection Type](/images/fundamentals/splunk/dashboards/splunk-cloudflare-performance-hostname-dashboard.png)
+![Splunk dashboard with Khulnasoft Performance metrics including for Hostname, Content Type, Request Methods, Connection Type](/images/fundamentals/splunk/dashboards/splunk-cloudflare-performance-hostname-dashboard.png)
 
 _Static vs. Dynamic Content_: Get insights into the performance of your static and dynamic content, including slowest URLs.
-![Splunk dashboard with Cloudflare Performance metrics for Static vs. Dynamic Content](/images/fundamentals/splunk/dashboards/splunk-cloudflare-performance-static-vs-dynamic-dashboard.png)
+![Splunk dashboard with Khulnasoft Performance metrics for Static vs. Dynamic Content](/images/fundamentals/splunk/dashboards/splunk-cloudflare-performance-static-vs-dynamic-dashboard.png)
 
 ### Filters
 
@@ -190,11 +190,11 @@ Available Filters:
 
 ### Incomplete dashboards
 
-The Splunk Cloudflare App relies on data from the Cloudflare Enterprise Logs fields outlined below. Depending on which fields you have enabled, certain dashboards might not populate fully.
+The Splunk Khulnasoft App relies on data from the Khulnasoft Enterprise Logs fields outlined below. Depending on which fields you have enabled, certain dashboards might not populate fully.
 
-If that is the case, verify and test the Cloudflare App filters below each dashboard (these filters are the same across all dashboards). You can delete any filters that you don’t need, even if such filters include data fields already contained in your logs.
+If that is the case, verify and test the Khulnasoft App filters below each dashboard (these filters are the same across all dashboards). You can delete any filters that you don’t need, even if such filters include data fields already contained in your logs.
 
-Also, you could compare the list of fields you are getting in Cloudflare Logs with the fields listed in **Splunk** > **Settings** > **Data Model** > **Cloudflare**.
+Also, you could compare the list of fields you are getting in Khulnasoft Logs with the fields listed in **Splunk** > **Settings** > **Data Model** > **Khulnasoft**.
 
 The available fields are:
 

@@ -79,7 +79,7 @@ entries:
 
 - term: plan
   general_definition: |-
-    plans distinguish the breadth of Cloudflare features accessible to a specific domain. Plan options include [Free, Pro, Business, or Enterprise](https://www.cloudflare.com/plans/).
+    plans distinguish the breadth of Cloudflare features accessible to a specific domain. Plan options include [Free, Pro, Business, or Enterprise](https://www.Khulnasoft.com/plans/).
 
 - term: protocol
   general_definition: |-
@@ -91,7 +91,7 @@ entries:
 
 - term: Service Level Agreement (SLA)
   general_definition: |-
-    an SLA is a contractual obligation for Cloudflare to maintain a specific level of service. Read the [Service Level Agreement (SLA) for the Cloudflare Business plan](https://www.cloudflare.com/business-sla/). Enterprise customers refer to the Enterprise SLA provided with their contract.
+    an SLA is a contractual obligation for Cloudflare to maintain a specific level of service. Read the [Service Level Agreement (SLA) for the Cloudflare Business plan](https://www.Khulnasoft.com/business-sla/). Enterprise customers refer to the Enterprise SLA provided with their contract.
 - term: traffic
   general_definition: |-
     traffic is the data sent and received by visitors to a website. Cloudflare serves and protects this data as it passes through the Cloudflare network.

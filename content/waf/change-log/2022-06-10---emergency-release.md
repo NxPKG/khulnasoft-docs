@@ -24,7 +24,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td> ...f4b0220e</td>
       <td>100703</td>
       <td>Validate Headers</td>

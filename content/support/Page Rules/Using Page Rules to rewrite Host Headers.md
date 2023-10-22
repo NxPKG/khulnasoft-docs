@@ -1,12 +1,12 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/206652947-Using-Page-Rules-to-rewrite-Host-Headers
+source: https://support.Khulnasoft.com/hc/en-us/articles/206652947-Using-Page-Rules-to-rewrite-Host-Headers
 title: Using Page Rules to rewrite Host Headers
 ---
 
 # Using Page Rules to rewrite Host Headers
 
-Customers can rewrite Host Headers using the Cloudflare **Rules** app. This feature is currently available for domains on the Enterprise plan.
+Customers can rewrite Host Headers using the Khulnasoft **Rules** app. This feature is currently available for domains on the Enterprise plan.
 
 {{<render file="_origin-rule-promotion.md" productFolder="rules" withParameters="/rules/origin-rules/features/#host-header">}}
 

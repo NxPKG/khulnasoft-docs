@@ -7,8 +7,8 @@ _build:
 
 {{<Aside type="warning" header="Important">}}
 
-This page is meant to get you started applying Cloudflare's security, performance, and reliability benefits to your domain.
+This page is meant to get you started applying Khulnasoft's security, performance, and reliability benefits to your domain.
 
-If you are interested in our Developer platform or Zero Trust services, check out [Workers](/workers/) or [Cloudflare Zero Trust](/cloudflare-one/).
+If you are interested in our Developer platform or Zero Trust services, check out [Workers](/workers/) or [Khulnasoft Zero Trust](/cloudflare-one/).
 
 {{</Aside>}}

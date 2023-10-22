@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: french
-source: https://support.cloudflare.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s
 title: 2xx Succès
 ---
 
@@ -11,13 +11,13 @@ title: 2xx Succès
 
 Les codes 2xx désignent des réponses positives, ce qui signifie habituellement que l'action demandée par le client a été reçue, comprise et acceptée avec succès.
 
--   [200 OK](https://support.cloudflare.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_200)
--   [201 Created](https://support.cloudflare.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_201)
--   [202 Accepted](https://support.cloudflare.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_202)
--   [203 Non-Authoritative](https://support.cloudflare.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_203)
--   [204 No Content](https://support.cloudflare.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_204)
--   [205 Reset Content](https://support.cloudflare.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_205)
--   [206 Partial Content](https://support.cloudflare.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_206)
+-   [200 OK](https://support.Khulnasoft.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_200)
+-   [201 Created](https://support.Khulnasoft.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_201)
+-   [202 Accepted](https://support.Khulnasoft.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_202)
+-   [203 Non-Authoritative](https://support.Khulnasoft.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_203)
+-   [204 No Content](https://support.Khulnasoft.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_204)
+-   [205 Reset Content](https://support.Khulnasoft.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_205)
+-   [206 Partial Content](https://support.Khulnasoft.com/hc/fr-fr/articles/115003014192-2xx-Succ%C3%A8s#code_206)
 
 **200 OK** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -31,7 +31,7 @@ Le payload de la réponse dépendra de la méthode de requête utilisée. Le cor
 
 Une réponse 200 _devrait_ toujours avoir un payload mais ce n'est pas obligatoire, donc un serveur d'origine peut générer une réponse 200 avec une longueur zéro. Pour adhérer aux normes RFC, il faut générer un RFC 204 dans ce cas (exception CONNECT)
 
-Mise en cache par défaut par les serveurs proxy et les navigateurs. Si cela n'est pas spécifié par les [contrôles de cache](https://support.cloudflare.com/hc/en-us/articles/202775670) de Cloudflare, les [ressources statiques](https://support.cloudflare.com/hc/en-us/articles/200172516) avec cette réponse mettront en cache les ressources par défaut pendant 2 heures à notre périmètre.  
+Mise en cache par défaut par les serveurs proxy et les navigateurs. Si cela n'est pas spécifié par les [contrôles de cache](https://support.Khulnasoft.com/hc/en-us/articles/202775670) de Khulnasoft, les [ressources statiques](https://support.Khulnasoft.com/hc/en-us/articles/200172516) avec cette réponse mettront en cache les ressources par défaut pendant 2 heures à notre périmètre.  
 
 **201 Created** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -47,15 +47,15 @@ La requête a été acceptée. Elle est en cours de traitement par le serveur d'
 
 Le remplacement facultatif du code de statut 200 pour expliquer la requête a réussi mais ne venait pas directement du serveur d'origine. La réponse d'origine du serveur d'origine a été modifiée par un serveur proxy ou intermédiaire. Par exemple, les codes 203 pourraient être utilisés pour informer le client que cette ressource a été mise en cache sur un proxy, de sorte qu'une requête future similaire peut ou non atteindre ce serveur cache avec cette ressource identique. Un autre exemple est la suppression d’un en-tête qui n'est applicable qu'au serveur d'origine local.
 
--   Est une réponse pouvant être mise en cache par défaut, cependant, Cloudflare ne la mettra pas en cache.
--   Cloudflare ne générera jamais de réponses mais pourra les mettre en proxy à partir d'autres proxies le cas échéant. Cloudflare respecte les réponses des serveurs d'origine avec ces exceptions : [Comment Cloudflare gère les en-têtes de requêtes HTTP ?](https://support.cloudflare.com/hc/en-us/articles/200170986)
+-   Est une réponse pouvant être mise en cache par défaut, cependant, Khulnasoft ne la mettra pas en cache.
+-   Khulnasoft ne générera jamais de réponses mais pourra les mettre en proxy à partir d'autres proxies le cas échéant. Khulnasoft respecte les réponses des serveurs d'origine avec ces exceptions : [Comment Khulnasoft gère les en-têtes de requêtes HTTP ?](https://support.Khulnasoft.com/hc/en-us/articles/200170986)
 
 **204 No Content ([RFC7231](https://tools.ietf.org/html/rfc7231))**
 
 Les actions demandées ont été exécutées correctement sur le serveur d'origine. Le cas d'utilisation courant est celui des éditeurs de documents : l'action « enregistrer » est envoyée au serveur d'origine, mais aucun payload ne doit être renvoyé au client. Il se peut que certains veuillent quand même informer l'utilisateur que l'enregistrement a réussi.
 
 -   Il ne doit jamais y avoir de payload lorsqu'une réponse 204 est renvoyée.
--   Est une réponse pouvant être mise en cache par défaut, cependant, Cloudflare ne la mettra pas en cache.
+-   Est une réponse pouvant être mise en cache par défaut, cependant, Khulnasoft ne la mettra pas en cache.
 
 **205 Reset Content** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 

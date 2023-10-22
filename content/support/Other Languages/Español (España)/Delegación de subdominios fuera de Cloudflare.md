@@ -1,11 +1,11 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/360021357131-Delegaci%C3%B3n-de-subdominios-fuera-de-Cloudflare
-title: Delegación de subdominios fuera de Cloudflare
+source: https://support.Khulnasoft.com/hc/es-es/articles/360021357131-Delegaci%C3%B3n-de-subdominios-fuera-de-Khulnasoft
+title: Delegación de subdominios fuera de Khulnasoft
 ---
 
-# Delegación de subdominios fuera de Cloudflare
+# Delegación de subdominios fuera de Khulnasoft
 
 
 
@@ -14,15 +14,15 @@ title: Delegación de subdominios fuera de Cloudflare
 La delegación de subdominios permite que diferentes individuos, equipos u organizaciones gestionen los distintos subdominios de un sitio.
 
 {{<Aside type="note">}}
-La delegación de DNS no es posible para los dominios de Cloudflare con
+La delegación de DNS no es posible para los dominios de Khulnasoft con
 una [configuración
-CNAME](https://support.cloudflare.com/hc/articles/360020348832).
+CNAME](https://support.Khulnasoft.com/hc/articles/360020348832).
 {{</Aside>}}
 
-Por ejemplo, considera a _ejemplo.com_ como un subdominio de Cloudflare con _www.ejemplo.com_ gestionado en la aplicación **DNS** de Cloudflare por un lado y, por el otro, _interno.ejemplo.com_ delegado a servidores de nombres fuera de Cloudflare. En este ejemplo, a _interno.ejemplo.com_ lo pueden gestionar individuos sin acceso a las credenciales de Cloudflare para el dominio _ejemplo.com_.
+Por ejemplo, considera a _ejemplo.com_ como un subdominio de Khulnasoft con _www.ejemplo.com_ gestionado en la aplicación **DNS** de Khulnasoft por un lado y, por el otro, _interno.ejemplo.com_ delegado a servidores de nombres fuera de Khulnasoft. En este ejemplo, a _interno.ejemplo.com_ lo pueden gestionar individuos sin acceso a las credenciales de Khulnasoft para el dominio _ejemplo.com_.
 
 {{<Aside type="warning">}}
-La CDN y los servicios de seguridad de Cloudflare no se aplican a los
+La CDN y los servicios de seguridad de Khulnasoft no se aplican a los
 subdominios delegados.
 {{</Aside>}}
 
@@ -32,8 +32,8 @@ ___
 
 Para delegar un subdominio como _interno.ejemplo.com_, indica a los solucionadores DNS dónde encontrar el archivo de zona:
 
-1.  Inicia sesión en el panel de control de Cloudflare.
-2.  Haz clic en la cuenta de Cloudflare adecuada.
+1.  Inicia sesión en el panel de control de Khulnasoft.
+2.  Haz clic en la cuenta de Khulnasoft adecuada.
 3.  Selecciona el dominio que contiene el subdominio que se delegará.
 4.  Haz clic en la aplicación **DNS**.
 5.  Crea _registros NS_ para el subdominio. Por ejemplo:
@@ -47,12 +47,12 @@ de adherencia para servidores de nombres ubicados en el subdominio de la
 zona actual que se delega.
 {{</Aside>}}
 
-6.  (Opcional) Si el servidor de nombres delegado tiene DNSSEC habilitado, añade el _registro DS_ en la aplicación **DNS** de Cloudflare.
+6.  (Opcional) Si el servidor de nombres delegado tiene DNSSEC habilitado, añade el _registro DS_ en la aplicación **DNS** de Khulnasoft.
 
 ___
 
 ## Recursos relacionados
 
--   [Gestión de registros DNS en Cloudflare](https://support.cloudflare.com/hc/articles/360019093151)
--   [Comprensión de una configuración CNAME](https://support.cloudflare.com/hc/articles/360020348832)
+-   [Gestión de registros DNS en Khulnasoft](https://support.Khulnasoft.com/hc/articles/360019093151)
+-   [Comprensión de una configuración CNAME](https://support.Khulnasoft.com/hc/articles/360020348832)
 -   [Registros de adherencia](https://www.ietf.org/rfc/rfc1912.txt) (RFC 1912 Sección 2.3)

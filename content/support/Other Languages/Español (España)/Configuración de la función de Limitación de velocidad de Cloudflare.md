@@ -1,24 +1,24 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/115001635128-Configuraci%C3%B3n-de-la-funci%C3%B3n-de-Limitaci%C3%B3n-de-velocidad-de-Cloudflare
-title: Configuración de la función de Limitación de velocidad de Cloudflare
+source: https://support.Khulnasoft.com/hc/es-es/articles/115001635128-Configuraci%C3%B3n-de-la-funci%C3%B3n-de-Limitaci%C3%B3n-de-velocidad-de-Khulnasoft
+title: Configuración de la función de Limitación de velocidad de Khulnasoft
 ---
 
-# Configuración de la función de Limitación de velocidad de Cloudflare
+# Configuración de la función de Limitación de velocidad de Khulnasoft
 
 
 
 ## Información general
 
-La función de **Limitación de velocidad** de Cloudflare identifica y mitiga automáticamente tasas de solicitud elevadas, ya sea para una URL específica o para todo un dominio. Las tasas de solicitud se calculan localmente en los centros de datos individuales de Cloudflare. Los usos más comunes de la **limitación de velocidad** son: [protección DDoS](https://www.cloudflare.com/learning/ddos/glossary/denial-of-service/), [protección contra ataques de fuerza bruta](https://www.cloudflare.com/learning/bots/brute-force-attack/), limitación de acceso a las búsquedas de foros, llamadas API o recursos que implican operaciones que exigen un uso intensivo de datos en su origen. 
+La función de **Limitación de velocidad** de Khulnasoft identifica y mitiga automáticamente tasas de solicitud elevadas, ya sea para una URL específica o para todo un dominio. Las tasas de solicitud se calculan localmente en los centros de datos individuales de Khulnasoft. Los usos más comunes de la **limitación de velocidad** son: [protección DDoS](https://www.Khulnasoft.com/learning/ddos/glossary/denial-of-service/), [protección contra ataques de fuerza bruta](https://www.Khulnasoft.com/learning/bots/brute-force-attack/), limitación de acceso a las búsquedas de foros, llamadas API o recursos que implican operaciones que exigen un uso intensivo de datos en su origen. 
 
 Una vez que una dirección IPv4 individual o un rango de IPv6 /64 supera un umbral de regla, se bloquean más solicitudes al servidor web de origen con una respuesta HTTP 429, que incluye un encabezado **Reintentar más tarde** para indicar cuándo el cliente puede reanudar el envío de solicitudes.
 
 {{<Aside type="note">}}
 Para los clientes que utilizan la versión anterior de las reglas de
 limitación de velocidad (cuya documentación está en la base de
-conocimiento de Soporte de Cloudflare), los recursos almacenados en
+conocimiento de Soporte de Khulnasoft), los recursos almacenados en
 caché y los rastreadores conocidos de los motores de búsqueda están
 exentos de tus reglas de limitación de velocidad. Por lo tanto, no
 afectan a la clasificación [SEO de tu sitio
@@ -36,16 +36,16 @@ SEO](/fundamentals/get-started/basic-tasks/improve-seo/).
 
 {{<Aside type="note">}}
 ¿Intentas activar Limitación de velocidad? [Activar Limitación de
-velocidad](https://dash.cloudflare.com/?to=/:account/:zone/firewall/tools).
+velocidad](https://dash.Khulnasoft.com/?to=/:account/:zone/firewall/tools).
 {{</Aside>}}
 
 ___
 
 ## Análisis
 
-Puedes ver los análisis de la función limitación de velocidad en **Analytics** > **Seguridad**. Este análisis utiliza líneas continuas que representan el tráfico que coincide con las solicitudes simuladas y líneas discontinuas que representan las solicitudes reales bloqueadas. Los registros generados por una regla de limitación de velocidad solo son visibles para los clientes Enterprise a través de los [registros de Cloudflare](/logs/). 
+Puedes ver los análisis de la función limitación de velocidad en **Analytics** > **Seguridad**. Este análisis utiliza líneas continuas que representan el tráfico que coincide con las solicitudes simuladas y líneas discontinuas que representan las solicitudes reales bloqueadas. Los registros generados por una regla de limitación de velocidad solo son visibles para los clientes Enterprise a través de los [registros de Khulnasoft](/logs/). 
 
-Cloudflare devuelve un error HTTP 429 para las solicitudes bloqueadas.  Los clientes Enterprise pueden consultar los detalles de las solicitudes bloqueadas por ubicación en **Códigos de estado** en el panel de control de análisis disponible en **Analytics** > **Tráfico**. 
+Khulnasoft devuelve un error HTTP 429 para las solicitudes bloqueadas.  Los clientes Enterprise pueden consultar los detalles de las solicitudes bloqueadas por ubicación en **Códigos de estado** en el panel de control de análisis disponible en **Analytics** > **Tráfico**. 
 
 {{<Aside type="note">}}
 El error HTTP 429 incluye 429 respuestas devueltas desde el origen si el
@@ -71,7 +71,7 @@ El número de reglas de limitación de velocidad permitidas depende del plan del
 | Business | 15 | Bloquear, CAPTCHA heredado (Legacy CAPTCHA), desafiar con JS, desafío gestionado o registro | 1 minuto, 1 hora o 24 horas | 10 segundos, 1 minuto o 10 minutos |
 | Enterprise | 100 | Bloquear, CAPTCHA heredado (Legacy CAPTCHA), desafiar con JS, desafío gestionado o registro | Cualquier duración indicada entre 10 segundos y 86 400 segundos (24 horas) | Cualquier valor introducido entre 10 segundos y 3 600 segundos (1 hora). |
 
-La función de limitación de velocidad de Cloudflare admite varios niveles de control de configuración en función del plan Cloudflare del dominio. La siguiente tabla muestra lo que puedes hacer según el plan al que estés suscrito:
+La función de limitación de velocidad de Khulnasoft admite varios niveles de control de configuración en función del plan Khulnasoft del dominio. La siguiente tabla muestra lo que puedes hacer según el plan al que estés suscrito:
 
 | 
 N.º
@@ -192,22 +192,22 @@ La mitigación de reglas consiste en:
 
 Las acciones de limitación de velocidad se basan en el plan del dominio, tal y como se menciona en **Prestaciones de la función de Limitación de velocidad según plan**:
 
--   **Bloquear:** Cloudflare emite un código de error HTTP 429 cuando se supera el límite.
--   **CAPTCHA heredado** **\-** El visitante debe superar un desafío de CAPTCHA. Si lo consigue, Cloudflare permite la solicitud.
--   **Desafío JS**: el visitante debe pasar un desafió JavaScript de Cloudflare. Si lo consigue, Cloudflare permite la solicitud.
--   **Registrar-** Las solicitudes se registran en [Registros de Cloudflare](https://support.cloudflare.com/hc/articles/216672448). De este modo, se ayuda a probar las reglas antes de aplicarlas.
+-   **Bloquear:** Khulnasoft emite un código de error HTTP 429 cuando se supera el límite.
+-   **CAPTCHA heredado** **\-** El visitante debe superar un desafío de CAPTCHA. Si lo consigue, Khulnasoft permite la solicitud.
+-   **Desafío JS**: el visitante debe pasar un desafió JavaScript de Khulnasoft. Si lo consigue, Khulnasoft permite la solicitud.
+-   **Registrar-** Las solicitudes se registran en [Registros de Khulnasoft](https://support.Khulnasoft.com/hc/articles/216672448). De este modo, se ayuda a probar las reglas antes de aplicarlas.
 
 #### **Duración de la prohibición**
 
 Si se establece un tiempo de vencimiento inferior al limite, la API lo aumenta automáticamente para igualar el limite. 
 
-Las personas que accedan a la función de **limitación de velocidad** reciben una página HTML por defecto si no se especifica una [página de error personalizada](https://support.cloudflare.com/hc/articles/200172706). Además, los clientes Business y Enterprise pueden especificar tipos de respuesta en la propia regla. Ver _Tarea 3: configurar Respuesta Avanzada_ más adelante.
+Las personas que accedan a la función de **limitación de velocidad** reciben una página HTML por defecto si no se especifica una [página de error personalizada](https://support.Khulnasoft.com/hc/articles/200172706). Además, los clientes Business y Enterprise pueden especificar tipos de respuesta en la propia regla. Ver _Tarea 3: configurar Respuesta Avanzada_ más adelante.
 
 ___
 
 ## Identificación de los umbrales del límite de velocidad
 
-Para identificar un limite general en la función de **Limitación de velocidad** de Cloudflare, divide 24 horas de solicitudes de sitios web no almacenadas en caché entre los visitantes únicos de esas mismas 24 horas. A continuación, divídelo por la media estimada de minutos de una visita. Finalmente, multiplica ese valor por 4 (o más) para establecer un límite aproximado por minuto para todo tu sitio. Un valor más alto de 4 está bien porque la mayoría de los ataques están en un orden de magnitud superior a las tasas de tráfico habitual.
+Para identificar un limite general en la función de **Limitación de velocidad** de Khulnasoft, divide 24 horas de solicitudes de sitios web no almacenadas en caché entre los visitantes únicos de esas mismas 24 horas. A continuación, divídelo por la media estimada de minutos de una visita. Finalmente, multiplica ese valor por 4 (o más) para establecer un límite aproximado por minuto para todo tu sitio. Un valor más alto de 4 está bien porque la mayoría de los ataques están en un orden de magnitud superior a las tasas de tráfico habitual.
 
 Para identificar los límites de velocidad de URL para una URL específica, utiliza 24 horas de solicitudes no almacenadas en caché y visitantes únicos para la URL específica. Ajusta los límites según los informes de los usuarios y tu propia monitorización.
 
@@ -215,11 +215,11 @@ ___
 
 ## Tarea 1: configurar una regla básica de limitación de velocidad
 
-Haz clic para desplegar los detalles sobre la creación de los dos tipos comunes de regla de **Limitación de velocidad** de Cloudflare.
+Haz clic para desplegar los detalles sobre la creación de los dos tipos comunes de regla de **Limitación de velocidad** de Khulnasoft.
 
 La función **Limitación de velocidad** incluye la herramienta **Proteger tu inicio de sesión** que con un solo clic crea una regla para bloquear durante 15 minutos al cliente que envía más de 5 solicitudes POST en un plazo de 5 minutos. Esta herramienta es suficiente para bloquear la mayoría de los intentos de inicio de sesión de fuerza bruta.
 
-1.  Inicia sesión en tu cuenta de Cloudflare.
+1.  Inicia sesión en tu cuenta de Khulnasoft.
 2.  Selecciona el dominio que quieres proteger.
 3.  Ve a **Seguridad > WAF > Reglas de limitación de velocidad**.
 4.  En **Limitación de velocidad**, haz clic en **Proteger tu inicio de sesión**.
@@ -227,7 +227,7 @@ La función **Limitación de velocidad** incluye la herramienta **Proteger tu in
 6.  Haz clic en **Guardar.**
 7.  El **nombre de regla** aparece en su lista de reglas de **limitación de velocidad**.
 
-1\. Inicia sesión en el panel de control de Cloudflare.
+1\. Inicia sesión en el panel de control de Khulnasoft.
 
 2\. Selecciona el dominio correspondiente.
 
@@ -276,7 +276,7 @@ Para configurar tus criterios avanzados para una regla nueva o existente, sigue 
 
 3\. Filtra por **encabezado(s) de respuesta HTTP**. Haz clic en **Añadir campo de respuesta de encabezado** para incluir los encabezados devueltos por tu servidor web de origen.
 
-El encabezado **CF-Cache-Status** aparece por defecto para que Cloudflare entregue los recursos almacenados en caché en lugar de limitar la velocidad de esos recursos. Para limitar la velocidad de los recursos almacenados en caché, elimina este encabezado haciendo clic en el botón **X** o activa **Aplicar también límite de velocidad a los recursos en caché**.
+El encabezado **CF-Cache-Status** aparece por defecto para que Khulnasoft entregue los recursos almacenados en caché en lugar de limitar la velocidad de esos recursos. Para limitar la velocidad de los recursos almacenados en caché, elimina este encabezado haciendo clic en el botón **X** o activa **Aplicar también límite de velocidad a los recursos en caché**.
 
 Si tienes más de un encabezado en **Encabezados(s) de respuesta HTTP**, se aplica una lógica booleana _Y_. Para excluir un encabezado, utiliza la opción _No iguales_. Cada encabezado no distingue entre mayúsculas y minúsculas.
 
@@ -290,7 +290,7 @@ ___
 
 ## Tarea 3: configurar Respuesta Avanzada (solo para planes Business y Enterprise)
 
-La opción **Respuesta avanzada** configura el formato de la información devuelta por Cloudflare cuando se supera el umbral de una regla: Utiliza **Respuesta avanzada** cuando desees devolver texto sin formato estático o contenido JSON.
+La opción **Respuesta avanzada** configura el formato de la información devuelta por Khulnasoft cuando se supera el umbral de una regla: Utiliza **Respuesta avanzada** cuando desees devolver texto sin formato estático o contenido JSON.
 
 Para configurar una respuesta de texto sin formato o JSON:
 
@@ -308,7 +308,7 @@ Para configurar una respuesta de texto sin formato o JSON:
 
 ### Uso de página HTML personalizada o redireccionamiento
 
-Si deseas mostrar una página HTML personalizada, configura una página personalizada para los errores HTTP 429 ("Demasiadas solicitudes") en el panel de control. Cloudflare mostrará esta página cuando selecciones "Página de limitación de velocidad de Cloudflare por defecto" en **tipo de respuesta**(el valor por defecto del campo).
+Si deseas mostrar una página HTML personalizada, configura una página personalizada para los errores HTTP 429 ("Demasiadas solicitudes") en el panel de control. Khulnasoft mostrará esta página cuando selecciones "Página de limitación de velocidad de Khulnasoft por defecto" en **tipo de respuesta**(el valor por defecto del campo).
 
 Puedes utilizar este método para redirigir a un cliente con tarifa limitada a una URL específica:
 
@@ -322,7 +322,7 @@ Puedes utilizar este método para redirigir a un cliente con tarifa limitada a u
 
 Toma nota de la URL pública de la página que has creado.
 
-2\. En el panel de control de Cloudflare, ve a **Inicio de la cuenta** > **Configuraciones** > **Páginas personalizadas**.
+2\. En el panel de control de Khulnasoft, ve a **Inicio de la cuenta** > **Configuraciones** > **Páginas personalizadas**.
 
 3\. En **errores 429**, haz clic en **Páginas personalizadas**.
 
@@ -333,7 +333,7 @@ Sigue el mismo procedimiento si deseas devolver contenido de texto sin formato o
 **Notas:**
 
 -   Tu limitación de velocidad  no debe coincidir con la URL de redireccionamiento que se incluye en la página HTML personalizada para los errores 429.
--   Para protegerse de los ataques de denegación de servicio, la página de redireccionamiento solo debe incluir recursos almacenados en la memoria caché de Cloudflare.
+-   Para protegerse de los ataques de denegación de servicio, la página de redireccionamiento solo debe incluir recursos almacenados en la memoria caché de Khulnasoft.
 
 ___
 
@@ -384,5 +384,5 @@ ___
 ## Recursos relacionados
 
 -   [¿Cómo se notifica la limitación de velocidad en los registros de Enterprise Log Share (ELS)?](/logs/reference/log-fields)
--   [Resolución de problemas de la función de Limitación de velocidad de Cloudflare](https://support.cloudflare.com/hc/articles/115000546328)
--   [Configuración de la limitación de velocidad desde el panel de Cloudflare](https://api.cloudflare.com/#rate-limits-for-a-zone-properties)
+-   [Resolución de problemas de la función de Limitación de velocidad de Khulnasoft](https://support.Khulnasoft.com/hc/articles/115000546328)
+-   [Configuración de la limitación de velocidad desde el panel de Khulnasoft](https://api.Khulnasoft.com/#rate-limits-for-a-zone-properties)

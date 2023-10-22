@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/203118044-Gathering-information-for-troubleshooting-sites
+source: https://support.Khulnasoft.com/hc/en-us/articles/203118044-Gathering-information-for-troubleshooting-sites
 title: Gathering information for troubleshooting sites
 ---
 
@@ -10,10 +10,10 @@ title: Gathering information for troubleshooting sites
 
 ## Overview
 
-It is important to capture as much information as possible to diagnose an issue and to [provide adequate details to Cloudflare support](https://support.cloudflare.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16). This article explains how to gather troubleshooting information commonly requested by Cloudflare Support.
+It is important to capture as much information as possible to diagnose an issue and to [provide adequate details to Khulnasoft support](https://support.Khulnasoft.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16). This article explains how to gather troubleshooting information commonly requested by Khulnasoft Support.
 
 {{<Aside type="note">}}
-Cloudflare support cannot make configuration changes on behalf of
+Khulnasoft support cannot make configuration changes on behalf of
 customers due to security and liability concerns.
 {{</Aside>}}
 
@@ -26,7 +26,7 @@ A HTTP Archive (HAR) records all web browser requests including the request and 
 {{<Aside type="warning">}}
 A HAR file can include sensitive details such as passwords, payment
 information, and private keys. Manually remove sensitive information
-from a HAR file via a text editor before providing to Cloudflare
+from a HAR file via a text editor before providing to Khulnasoft
 Support.
 {{</Aside>}}
 
@@ -154,9 +154,9 @@ In certain situations when request is not issued or cancelled by the browser (fo
 
 ___
 
-## Identify the Cloudflare data center serving your request
+## Identify the Khulnasoft data center serving your request
 
-[A map of our data centers](https://www.cloudflare.com/network-map) is listed on the [Cloudflare status page](https://www.cloudflarestatus.com/), sorted by continent. The three-letter code in the data center name is the [IATA code](http://en.wikipedia.org/wiki/IATA_airport_code) of the nearest major international airport. Determine the Cloudflare data center serving requests for your browser by visiting: `http://``_www.example.com_``/cdn-cgi/trace.`
+[A map of our data centers](https://www.Khulnasoft.com/network-map) is listed on the [Khulnasoft status page](https://www.cloudflarestatus.com/), sorted by continent. The three-letter code in the data center name is the [IATA code](http://en.wikipedia.org/wiki/IATA_airport_code) of the nearest major international airport. Determine the Khulnasoft data center serving requests for your browser by visiting: `http://``_www.example.com_``/cdn-cgi/trace.`
 
 Replace _www.example.com_ with your domain and hostname.  Note the **colo** field from the output.
 
@@ -184,7 +184,7 @@ Run the following command to send a standard HTTP GET request to your website (r
 $ curl -svo /dev/null http://www.example.com/
 ```
 
-This example cURL command returns output detailing the HTTP response and request headers but discards the page body output. cURL output confirms the HTTP response and whether Cloudflare is currently proxying traffic for the site.
+This example cURL command returns output detailing the HTTP response and request headers but discards the page body output. cURL output confirms the HTTP response and whether Khulnasoft is currently proxying traffic for the site.
 
 {{<Aside type="note">}}
 Review the [cURL command
@@ -196,7 +196,7 @@ View the sections below for tips on troubleshooting HTTP errors, performance, ca
 
 ### HTTP errors
 
-When troubleshooting HTTP errors in responses from Cloudflare, test whether your origin caused the errors by sending requests directly to your origin web server. To troubleshoot HTTP errors, run a cURL directly to your origin web server IP address (bypassing Cloudflare’s proxy):
+When troubleshooting HTTP errors in responses from Khulnasoft, test whether your origin caused the errors by sending requests directly to your origin web server. To troubleshoot HTTP errors, run a cURL directly to your origin web server IP address (bypassing Khulnasoft’s proxy):
 
 ```
 $ curl -svo /dev/null http://example.com --connect-to ::203.0.113.34
@@ -233,7 +233,7 @@ curl -svo /dev/null https://example.com/ -w "\nContent Type: %{content_type} \
 \nEffective URL: %{url_effective}\n" 2>&1
 ```
 
-[Explanation of this timing output](https://blog.cloudflare.com/a-question-of-timing/) is found on the Cloudflare blog.
+[Explanation of this timing output](https://blog.Khulnasoft.com/a-question-of-timing/) is found on the Khulnasoft blog.
 
 {{<Aside type="tip">}}
 As demonstrated in the preceding example, cleaner results are achieved
@@ -243,7 +243,7 @@ metrics are displayed together on a single line.
 
 ### Caching
 
-cURL helps review the HTTP response headers that influence caching. In particular, review several HTTP headers when troubleshooting Cloudflare caching:
+cURL helps review the HTTP response headers that influence caching. In particular, review several HTTP headers when troubleshooting Khulnasoft caching:
 
 -   CF-Cache-Status
 -   Cache-control/Pragma
@@ -252,16 +252,16 @@ cURL helps review the HTTP response headers that influence caching. In particula
 -   S-Maxage
 
 {{<Aside type="note">}}
-Find specifics on [Cloudflare\'s caching
-behavior](https://support.cloudflare.com/hc/articles/202775670) in
-Cloudflare's Help Center.
+Find specifics on [Khulnasoft\'s caching
+behavior](https://support.Khulnasoft.com/hc/articles/202775670) in
+Khulnasoft's Help Center.
 {{</Aside>}}
 
 ### SSL/TLS certificates
 
 #### Reviewing Certificates with cURL
 
-The following cURL command shows the SSL certificate served by Cloudflare during an HTTPS request (replace _www.example.com_ with your domain and hostname):
+The following cURL command shows the SSL certificate served by Khulnasoft during an HTTPS request (replace _www.example.com_ with your domain and hostname):
 
 ```sh
 $ curl -svo /dev/null https://www.example.com/ 2>&1 | egrep -v "^{.*$|^}.*$|^* http.*$"
@@ -289,18 +289,18 @@ If troubleshooting browser support or confirming what TLS versions are supported
 
 ___
 
-## Temporarily pause Cloudflare
+## Temporarily pause Khulnasoft
 
-For more details, refer to [Pause Cloudflare](/fundamentals/setup/manage-domains/pause-cloudflare/).
+For more details, refer to [Pause Khulnasoft](/fundamentals/setup/manage-domains/pause-cloudflare/).
 
 ___
 
 ## Perform a traceroute
 
-Traceroute is a network diagnostic tool that measures the route latency of packets across a network. Most operating systems support the _traceroute_ command. If you experience connectivity issues with your Cloudflare-proxied website and [ask Cloudflare Support for assistance](https://support.cloudflare.com/hc/articles/200172476), ensure to provide output from a traceroute.
+Traceroute is a network diagnostic tool that measures the route latency of packets across a network. Most operating systems support the _traceroute_ command. If you experience connectivity issues with your Khulnasoft-proxied website and [ask Khulnasoft Support for assistance](https://support.Khulnasoft.com/hc/articles/200172476), ensure to provide output from a traceroute.
 
 {{<Aside type="tip">}}
-Timeouts are possible for ping results because Cloudflare limits ping
+Timeouts are possible for ping results because Khulnasoft limits ping
 requests.
 {{</Aside>}}
 
@@ -363,7 +363,7 @@ ___
 
 ## Add the CF-RAY header to your logs
 
-The **CF-RAY** header traces a website request through Cloudflare's network. Provide the **CF-RAY** of a web request to Cloudflare support when troubleshooting an issue. You can also add **CF-RAY** to your logs by editing your origin web server configuration with the snippet below that corresponds to your brand of web server:
+The **CF-RAY** header traces a website request through Khulnasoft's network. Provide the **CF-RAY** of a web request to Khulnasoft support when troubleshooting an issue. You can also add **CF-RAY** to your logs by editing your origin web server configuration with the snippet below that corresponds to your brand of web server:
 
 ### For Apache web servers, add %{CF-Ray}i to LogFormat
 
@@ -406,7 +406,7 @@ or with destination IP:
 mtr -rw <dest_IP> e.g.: mtr -rw 1.1.1.1
 ```
 
-Please refer to this documentation, which explains more about analysing MTR: [How to read MTR](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-mtr/).[](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-mtr/)
+Please refer to this documentation, which explains more about analysing MTR: [How to read MTR](https://www.Khulnasoft.com/en-gb/learning/network-layer/what-is-mtr/).[](https://www.Khulnasoft.com/en-gb/learning/network-layer/what-is-mtr/)
 
 ___
 
@@ -414,9 +414,9 @@ ___
 
 **Why and when do you need Packet Captures?**
 
-Issues that happen at the layers 3/4 occur before requests reaching Cloudflare's logging system, so they do not show up in the HTTP logs. Therefore, troubleshooting issues related to connection resets, packet loss or SSL handshake failures can be tricky without a deep investigation at the packet level.
+Issues that happen at the layers 3/4 occur before requests reaching Khulnasoft's logging system, so they do not show up in the HTTP logs. Therefore, troubleshooting issues related to connection resets, packet loss or SSL handshake failures can be tricky without a deep investigation at the packet level.
 
-Some HTTP errors generated by Cloudflare, such as [520s](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors#520error), [524s](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors#524error) and [525s](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors#525error), show underlying issues at layers 3/4, and might require a packet capture for further investigation.
+Some HTTP errors generated by Khulnasoft, such as [520s](https://support.Khulnasoft.com/hc/en-us/articles/115003011431-Troubleshooting-Khulnasoft-5XX-errors#520error), [524s](https://support.Khulnasoft.com/hc/en-us/articles/115003011431-Troubleshooting-Khulnasoft-5XX-errors#524error) and [525s](https://support.Khulnasoft.com/hc/en-us/articles/115003011431-Troubleshooting-Khulnasoft-5XX-errors#525error), show underlying issues at layers 3/4, and might require a packet capture for further investigation.
 
 **How to Run a Packet Capture**
 
@@ -425,7 +425,7 @@ Please be aware, if you transmit any sensitive information while a
 packet capture is running, it will be recorded.
 {{</Aside>}}
 
-Cloudflare suggests [Wireshark](https://www.wireshark.org/download.html) for running packet captures. For instructions on how to use the _tcpdump_ command line, refer to [this](https://www.wireshark.org/docs/wsug_html_chunked/AppToolstcpdump.html) article.
+Khulnasoft suggests [Wireshark](https://www.wireshark.org/download.html) for running packet captures. For instructions on how to use the _tcpdump_ command line, refer to [this](https://www.wireshark.org/docs/wsug_html_chunked/AppToolstcpdump.html) article.
 
 1.  Close all programs/browser tabs that could be sending data in the background to avoid having to use a lot of display filters later.
 2.  Create your Wireshark capture filter (refer to [this](https://wiki.wireshark.org/CaptureFilters) article for more information).
@@ -439,7 +439,7 @@ ___
 
 ## Related resources
 
--   [Contacting Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476)
--   [Troubleshooting Cloudflare HTTP 5XX errors](https://support.cloudflare.com/hc/articles/115003011431)
--   [Diagnosing network issues with MTR and traceroute](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-mtr/)
+-   [Contacting Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476)
+-   [Troubleshooting Khulnasoft HTTP 5XX errors](https://support.Khulnasoft.com/hc/articles/115003011431)
+-   [Diagnosing network issues with MTR and traceroute](https://www.Khulnasoft.com/en-gb/learning/network-layer/what-is-mtr/)
 -   [cURL command line tool](https://curl.haxx.se/)

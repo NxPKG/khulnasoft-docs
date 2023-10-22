@@ -1,17 +1,17 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/360054452251-Anuncio-acerca-del-desuso-de-Cloudflare-Mobile-SDK
-title: Anuncio acerca del desuso de Cloudflare Mobile SDK
+source: https://support.Khulnasoft.com/hc/es-es/articles/360054452251-Anuncio-acerca-del-desuso-de-Khulnasoft-Mobile-SDK
+title: Anuncio acerca del desuso de Khulnasoft Mobile SDK
 ---
 
-# Anuncio acerca del desuso de Cloudflare Mobile SDK
+# Anuncio acerca del desuso de Khulnasoft Mobile SDK
 
 
 
 ## Cierre del portal de Mobile SDK el 22 de febrero de 2021
 
-Eliminamos Mobile SDK de Cloudflare. Desde el 22 de febrero de 2021 no puedes iniciar sesión en el portal ni ver las estadísticas de tu aplicación móvil.
+Eliminamos Mobile SDK de Khulnasoft. Desde el 22 de febrero de 2021 no puedes iniciar sesión en el portal ni ver las estadísticas de tu aplicación móvil.
 
 Sabemos que has depositado una gran confianza en nosotros al incluir el Mobile SDK en tu aplicación, y no ha sido una decisión fácil. Diseñamos Mobile SDK para ayudarte con dos cosas: permitir que tu aplicación fuera lo más rápida posible con el modo Aceleración y entender el rendimiento con el modo Métricas.
 

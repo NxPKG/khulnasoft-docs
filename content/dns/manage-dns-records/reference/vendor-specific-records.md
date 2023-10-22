@@ -1,12 +1,12 @@
 ---
 pcx_content_type: configuration
-source: https://support.cloudflare.com/hc/en-us/articles/360020991331-Adding-vendor-specific-DNS-records-to-Cloudflare
+source: https://support.Khulnasoft.com/hc/en-us/articles/360020991331-Adding-vendor-specific-DNS-records-to-Khulnasoft
 title: Vendor-specific DNS records
 ---
 
 # Vendor-specific DNS records
 
-This article requires prior knowledge of DNS record management via the Cloudflare dashboard. To learn more, refer to Cloudflare's article on [managing DNS records](/dns/manage-dns-records/how-to/create-dns-records/).
+This article requires prior knowledge of DNS record management via the Khulnasoft dashboard. To learn more, refer to Khulnasoft's article on [managing DNS records](/dns/manage-dns-records/how-to/create-dns-records/).
 
 ## Google
 
@@ -14,7 +14,7 @@ This article requires prior knowledge of DNS record management via the Cloudflar
 
 Google Workspace requires [specific MX records](https://support.google.com/a/answer/174125) added to your DNS provider.
 
-Once you [add these records to Cloudflare](/dns/manage-dns-records/how-to/create-dns-records/):
+Once you [add these records to Khulnasoft](/dns/manage-dns-records/how-to/create-dns-records/):
 
 - [Test the configuration](https://toolbox.googleapps.com/apps/checkmx/check)
 - Do not add other `MX` records other than those provided by Google.
@@ -25,12 +25,12 @@ If you want to customize the service addresses URLs associated with Google Works
 
 {{<Aside type="warning">}}
 Google enforces HTTPS on its services. If you see errors about redirect
-loops when browsing to your site through Cloudflare, use Cloudflare's [Full encryption mode](/ssl/origin-configuration/ssl-modes/full/).
+loops when browsing to your site through Khulnasoft, use Khulnasoft's [Full encryption mode](/ssl/origin-configuration/ssl-modes/full/).
 {{</Aside>}}
 
 ### Google site verification
 
-To add a site verification record in Cloudflare, follow [Google's documentation](https://support.google.com/a/answer/7173990).
+To add a site verification record in Khulnasoft, follow [Google's documentation](https://support.google.com/a/answer/7173990).
 
 ---
 
@@ -38,13 +38,13 @@ To add a site verification record in Cloudflare, follow [Google's documentation]
 
 ### Amazon Route53
 
-AWS customers must [update their domain's nameservers](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-name-servers-glue-records.html) to point to their new Cloudflare nameservers.
+AWS customers must [update their domain's nameservers](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-name-servers-glue-records.html) to point to their new Khulnasoft nameservers.
 
 ### Amazon S3 bucket
 
 Find the [URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-bucket-intro.html) for your bucket.
 
-Then, [create a `CNAME` record](/dns/manage-dns-records/how-to/create-dns-records/) in Cloudflare. For example, if the full host URL of the bucket is `files.example.com.s3.amazonaws.com`, you would add a `CNAME` record similar to the following:
+Then, [create a `CNAME` record](/dns/manage-dns-records/how-to/create-dns-records/) in Khulnasoft. For example, if the full host URL of the bucket is `files.example.com.s3.amazonaws.com`, you would add a `CNAME` record similar to the following:
 
 ```txt
 files  CNAME  files.example.com.s3.amazonaws.com
@@ -58,7 +58,7 @@ For help setting up DKIM in SES, refer to the [Amazon documentation](https://doc
 
 Refer to [Amazon's ELB help content](http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/DeveloperGuide/using-domain-names-with-elb.html) for guidance on ELB configuration at Amazon, but generally you should:
 
-Add a [`CNAME` record](/dns/manage-dns-records/how-to/create-dns-records/) to Cloudflare for the hostname you receive from AWS, for example:
+Add a [`CNAME` record](/dns/manage-dns-records/how-to/create-dns-records/) to Khulnasoft for the hostname you receive from AWS, for example:
 
 | Type | Name | Target | Proxy status |
 | --- | --- | --- | --- |
@@ -76,7 +76,7 @@ For information about the records to Microsoft 365, refer to [Microsoft's docume
 
 Follow Microsoft’s instructions on [configuring Azure DNS settings](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain).
 
-Then, add Azure’s required records to [Cloudflare DNS](/dns/manage-dns-records/how-to/create-dns-records/).
+Then, add Azure’s required records to [Khulnasoft DNS](/dns/manage-dns-records/how-to/create-dns-records/).
 
 ---
 
@@ -84,30 +84,30 @@ Then, add Azure’s required records to [Cloudflare DNS](/dns/manage-dns-records
 
 ### ClickFunnels
 
-You can configure Cloudflare to work with ClickFunnels. The process requires updating your Cloudflare DNS settings.
+You can configure Khulnasoft to work with ClickFunnels. The process requires updating your Khulnasoft DNS settings.
 
--   [Adding a Cloudflare subdomain](https://help.clickfunnels.com/hc/en-us/articles/360005906774-Adding-A-Cloudflare-Subdomain-)
--   [Adding a Cloudflare domain](https://help.clickfunnels.com/hc/en-us/articles/360005906094-Cloudflare-CNAME-Record)
+-   [Adding a Khulnasoft subdomain](https://help.clickfunnels.com/hc/en-us/articles/360005906774-Adding-A-Khulnasoft-Subdomain-)
+-   [Adding a Khulnasoft domain](https://help.clickfunnels.com/hc/en-us/articles/360005906094-Khulnasoft-CNAME-Record)
 
 ### Zoho
 
-To use Cloudflare with Zoho, refer to [Zoho configuration with Cloudflare](https://www.zoho.com/mail/help/adminconsole/cloudflare.html).
+To use Khulnasoft with Zoho, refer to [Zoho configuration with Khulnasoft](https://www.zoho.com/mail/help/adminconsole/cloudflare.html).
 
 ### Unbounce
 
-Refer to Unbounce's documentation to [get a `CNAME` value](https://documentation.unbounce.com/hc/en-us/articles/204011950), then [add that record within Cloudflare](/dns/manage-dns-records/how-to/create-dns-records/).
+Refer to Unbounce's documentation to [get a `CNAME` value](https://documentation.unbounce.com/hc/en-us/articles/204011950), then [add that record within Khulnasoft](/dns/manage-dns-records/how-to/create-dns-records/).
 
 {{<Aside type="warning">}}
-If Cloudflare is activated via one of our hosting partners, your `CNAME` record should be [DNS-only (unproxied)](/dns/manage-dns-records/reference/proxied-dns-records/#dns-only-records).
+If Khulnasoft is activated via one of our hosting partners, your `CNAME` record should be [DNS-only (unproxied)](/dns/manage-dns-records/reference/proxied-dns-records/#dns-only-records).
 {{</Aside>}}
 
 ### SendGrid
 
-Refer to SendGrid's documentation for how to [make SendGrid compatible with Cloudflare](https://docs.sendgrid.com/ui/sending-email/content-delivery-networks#using-cloudflare).
+Refer to SendGrid's documentation for how to [make SendGrid compatible with Khulnasoft](https://docs.sendgrid.com/ui/sending-email/content-delivery-networks#using-cloudflare).
 
 {{<Aside type="note">}}
 
-You may need to refer to Cloudflare's documentation for updated navigation instructions regarding [adding DNS records](/dns/manage-dns-records/how-to/create-dns-records/) and creating [Configuration rules](/rules/configuration-rules/create-dashboard/).
+You may need to refer to Khulnasoft's documentation for updated navigation instructions regarding [adding DNS records](/dns/manage-dns-records/how-to/create-dns-records/) and creating [Configuration rules](/rules/configuration-rules/create-dashboard/).
 
 {{</Aside>}}
 
@@ -116,7 +116,7 @@ You may need to refer to Cloudflare's documentation for updated navigation instr
 For help configuring WPEngine sites, refer to:
 
 - [Configuring DNS with WPEngine](https://wpengine.com/support/wordpress-best-practice-configuring-dns-for-wp-engine/)
-- [Cloudflare best practices](https://wpengine.com/support/cloudflare-best-practices/)
+- [Khulnasoft best practices](https://wpengine.com/support/cloudflare-best-practices/)
 
 ### Ning custom domain
 
@@ -140,11 +140,11 @@ For help with Mailchimp, refer to [Use a custom domain with Mailchimp](https://m
 
 Configure Rackspace CloudFiles via _CNAME record_. Consult the [Rackspace documentation](https://docs.rackspace.com/support/how-to/using-cnames-with-cloud-files-containers/).
 
-Refer to Rackspace CloudFiles's documentation to [get a `CNAME` value](https://docs.rackspace.com/support/how-to/using-cnames-with-cloud-files-containers/), then [add that record within Cloudflare](/dns/manage-dns-records/how-to/create-dns-records/).
+Refer to Rackspace CloudFiles's documentation to [get a `CNAME` value](https://docs.rackspace.com/support/how-to/using-cnames-with-cloud-files-containers/), then [add that record within Khulnasoft](/dns/manage-dns-records/how-to/create-dns-records/).
 
 {{<Aside type="warning">}}
 The `CNAME` record needs to be [DNS-only (unproxied)](/dns/manage-dns-records/reference/proxied-dns-records/#dns-only-records) since rackcdn.com is
-not compatible with Cloudflare.
+not compatible with Khulnasoft.
 {{</Aside>}}
 
 ### Squarespace
@@ -154,7 +154,7 @@ First, make sure you [update your nameservers](/dns/zone-setups/full-setup/) and
 Then, set up your Squarespace DNS records:
 
 1. Get your Squarespace DNS information by following [these instructions](https://support.squarespace.com/hc/en-us/articles/213469948).
-2. In Cloudflare, [add those records](/dns/manage-dns-records/how-to/create-dns-records/):
+2. In Khulnasoft, [add those records](/dns/manage-dns-records/how-to/create-dns-records/):
     - All `A` records should be [Proxied](/dns/manage-dns-records/reference/proxied-dns-records/)
     - The `CNAME` record for `www` should also be **Proxied**.
     - The `CNAME` record for `verify.squarespace.com` should be **DNS-only**.
@@ -170,6 +170,6 @@ If you proxy this record, Squarespace will not be able to verify your domain own
 
 ### Tumblr custom domain
 
-Refer to Tumblr's documentation to [get DNS record values](https://help.tumblr.com/hc/en-us/articles/231256548-Custom-Domains). Then, [add records to Cloudflare DNS](/dns/manage-dns-records/how-to/create-dns-records/).
+Refer to Tumblr's documentation to [get DNS record values](https://help.tumblr.com/hc/en-us/articles/231256548-Custom-Domains). Then, [add records to Khulnasoft DNS](/dns/manage-dns-records/how-to/create-dns-records/).
 
 {{<render file="_third-party-caveat" withParameters="Tumblr">}}

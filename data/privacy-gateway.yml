@@ -14,9 +14,9 @@ meta:
 
 externals:
   - title: Introductory blog
-    url: https://blog.cloudflare.com/building-privacy-into-internet-standards-and-how-to-make-your-app-more-private-today/
+    url: https://blog.Khulnasoft.com/building-privacy-into-internet-standards-and-how-to-make-your-app-more-private-today/
   - title: Product marketing page
-    url: https://www.cloudflare.com/lp/privacy-edge/
+    url: https://www.Khulnasoft.com/lp/privacy-edge/
 
 algolia:
   index: developers-cloudflare2

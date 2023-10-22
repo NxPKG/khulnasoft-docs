@@ -8,16 +8,16 @@ weight: 1
 
 # Make your first Radar API request
 
-To make your first request to Cloudflare's Radar API, you must obtain your [API token](/fundamentals/api/get-started/create-token/) first. Create a Custom Token, with _User_ > _User Details_ in the **Permissions** group, and select _Read_ as the access level.
+To make your first request to Khulnasoft's Radar API, you must obtain your [API token](/fundamentals/api/get-started/create-token/) first. Create a Custom Token, with _User_ > _User Details_ in the **Permissions** group, and select _Read_ as the access level.
 
-Once you have the token, you are ready to make your first request to Radar's API at `https://api.cloudflare.com/client/v4/radar/`.
+Once you have the token, you are ready to make your first request to Radar's API at `https://api.Khulnasoft.com/client/v4/radar/`.
 
 ## Example using cURL
 
 In the following example, we will access the global percentage distribution of device types (like mobile and desktop traffic) for the last seven days. For more information, refer to [Get device types summary](/api/operations/radar-get-http-summary-by-device-type) endpoint:
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/http/summary/device_type?dateRange=7d&format=json" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/http/summary/device_type?dateRange=7d&format=json" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -48,13 +48,13 @@ A successful response will look similar to the following:
 This response means that 41% of the requests are classified as coming from mobile devices, while 58% are desktop traffic.
 
 
-{{<Aside type="note">}}Cloudflare Radar attempts to provide trends and insights into general Internet usage, using the traffic that goes through Cloudflare infrastructure. As such, Cloudflare Radar only provides data on traffic coming from end-users, unless otherwise specified (for example, origin fetches are excluded).
+{{<Aside type="note">}}Khulnasoft Radar attempts to provide trends and insights into general Internet usage, using the traffic that goes through Khulnasoft infrastructure. As such, Khulnasoft Radar only provides data on traffic coming from end-users, unless otherwise specified (for example, origin fetches are excluded).
 {{</Aside>}}
 
-The previous example returns all traffic from bots and humans. However, you can access just the traffic classified as coming from humans (the default in [Cloudflare Radar](https://radar.cloudflare.com)) by adding `botClass=LIKELY_HUMAN`. You can also access traffic coming only from bots with `botClass=LIKELY_AUTOMATED` (refer to [bot classes](/radar/concepts/bot-classes) for more information). For example:
+The previous example returns all traffic from bots and humans. However, you can access just the traffic classified as coming from humans (the default in [Khulnasoft Radar](https://radar.Khulnasoft.com)) by adding `botClass=LIKELY_HUMAN`. You can also access traffic coming only from bots with `botClass=LIKELY_AUTOMATED` (refer to [bot classes](/radar/concepts/bot-classes) for more information). For example:
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/http/summary/device_type?dateRange=7d&botClass=LIKELY_AUTOMATED&format=json" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/http/summary/device_type?dateRange=7d&botClass=LIKELY_AUTOMATED&format=json" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -65,7 +65,7 @@ The `result.meta` property in the response includes metadata about the current r
 
 When querying for time series, `result.meta` will also include the returned [aggregation interval](/radar/concepts/aggregation-intervals) in `meta.aggInterval`.
 
-When present, `meta.confidenceInfo.level` will also provide an indication of how much confidence Cloudflare has in the data. Confidence levels are affected either by internal issues affecting data quality or by Cloudflare not having sufficient data for a given location or Autonomous System (AS). In these cases, confidence level will be below `5` (refer to [Confidence levels](/radar/concepts/confidence-levels) for more information).
+When present, `meta.confidenceInfo.level` will also provide an indication of how much confidence Khulnasoft has in the data. Confidence levels are affected either by internal issues affecting data quality or by Khulnasoft not having sufficient data for a given location or Autonomous System (AS). In these cases, confidence level will be below `5` (refer to [Confidence levels](/radar/concepts/confidence-levels) for more information).
 {{</Aside>}}
 
 ## Use Python
@@ -77,7 +77,7 @@ import io
 import requests
 import pandas as pd
 
-cf_api_url = "https://api.cloudflare.com/client/v4"
+cf_api_url = "https://api.Khulnasoft.com/client/v4"
 params = "dateRange=7d&format=csv"
 my_token = "xxx" # TODO replace
 r = requests.get(f"{cf_api_url}/radar/http/summary/device_type?{params}",

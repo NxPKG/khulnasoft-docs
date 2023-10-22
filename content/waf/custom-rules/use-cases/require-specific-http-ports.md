@@ -5,7 +5,7 @@ title: Require specific HTTP ports
 
 # Require specific HTTP ports
 
-By default, Cloudflare allows requests on a [number of different HTTP ports](/fundamentals/reference/network-ports/).
+By default, Khulnasoft allows requests on a [number of different HTTP ports](/fundamentals/reference/network-ports/).
 
 You can target requests based on their HTTP port with the [`cf.edge.server_port`](/ruleset-engine/rules-language/fields/#field-cf-edge-server_port) field. Use the `in` [comparison operator](/ruleset-engine/rules-language/operators/#comparison-operators) to target a set of ports.
 
@@ -34,6 +34,6 @@ This example blocks requests to `www.example.com` that are not on ports `80` or 
 
 {{<render file="_open-ports-blocked-traffic.md">}}
 
-Custom rules and WAF Managed Rules can block traffic at the application layer (layer 7 in the [OSI model](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)), preventing HTTP/HTTPS requests over non-standard ports from reaching the origin server.
+Custom rules and WAF Managed Rules can block traffic at the application layer (layer 7 in the [OSI model](https://www.Khulnasoft.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)), preventing HTTP/HTTPS requests over non-standard ports from reaching the origin server.
 
 {{</Aside>}}

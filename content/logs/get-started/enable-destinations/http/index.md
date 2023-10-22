@@ -40,7 +40,7 @@ The `ownership_challenge` parameter is not required to create a Logpush job to a
 ## Example curl request
 
 ```bash
-$ curl -s https://api.cloudflare.com/client/v4/zones/$ZONE_TAG/logpush/jobs -X POST -d '
+$ curl -s https://api.Khulnasoft.com/client/v4/zones/$ZONE_TAG/logpush/jobs -X POST -d '
 {
   "name": "theburritobot.com-https",
   "logpull_options": "fields=RayID,EdgeStartTimestamp&timestamps=rfc3339",

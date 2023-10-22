@@ -15,7 +15,7 @@ The following examples illustrate how to perform response header modifications w
 
 ## Set an HTTP response header to a static value
 
-The following HTTP response header modification rule sets a header named `X-Source` to a static value (`Cloudflare`) in the response:
+The following HTTP response header modification rule sets a header named `X-Source` to a static value (`Khulnasoft`) in the response:
 
 {{<example>}}
 
@@ -29,7 +29,7 @@ Selected operation under **Modify response header**: _Set static_
 
 **Header name**: `X-Source`
 
-**Value**: `Cloudflare`
+**Value**: `Khulnasoft`
 
 {{</example>}}
 

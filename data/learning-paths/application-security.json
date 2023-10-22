@@ -20,22 +20,22 @@
         "pages": [
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/security/what-is-web-application-security/",
+            "url_path": "https://www.Khulnasoft.com/learning/security/what-is-web-application-security/",
             "link_title": "What is web application security?"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/",
+            "url_path": "https://www.Khulnasoft.com/learning/ddos/what-is-a-ddos-attack/",
             "link_title": "What is a DDoS attack?"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/ssl/what-is-ssl/",
+            "url_path": "https://www.Khulnasoft.com/learning/ssl/what-is-ssl/",
             "link_title": "What is SSL/TLS?"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/bots/what-is-a-bot/",
+            "url_path": "https://www.Khulnasoft.com/learning/bots/what-is-a-bot/",
             "link_title": "What is a bot?"
           },
           {
@@ -44,7 +44,7 @@
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/dns/dns-security/",
+            "url_path": "https://www.Khulnasoft.com/learning/dns/dns-security/",
             "link_title": "What is DNS Security?"
           }
         ]
@@ -185,7 +185,7 @@
           },
           {
             "external_link": true,
-            "url_path": "https://support.cloudflare.com/hc/articles/115001992652",
+            "url_path": "https://support.Khulnasoft.com/hc/articles/115001992652",
             "link_title": "Enable Privacy Pass",
             "additional_description": "Reduce the number of challenges presented to visitors using the <strong>Privacy Pass</strong> browser extension."
           },
@@ -196,19 +196,19 @@
           },
           {
             "external_link": true,
-            "url_path": "https://support.cloudflare.com/hc/articles/4729826525965",
+            "url_path": "https://support.Khulnasoft.com/hc/articles/4729826525965",
             "link_title": "Create Forwarding URLs",
             "additional_description": "Prevent access to specific URLs, request schemes, file types, subdomains, or directories by redirecting users to a safe location."
           },
           {
             "external_link": true,
-            "url_path": "https://support.cloudflare.com/hc/articles/115001376488",
+            "url_path": "https://support.Khulnasoft.com/hc/articles/115001376488",
             "link_title": "Token Authentication",
             "additional_description": "Restrict access to documents, files, and media."
           },
           {
             "external_link": true,
-            "url_path": "https://support.cloudflare.com/hc/articles/200170076",
+            "url_path": "https://support.Khulnasoft.com/hc/articles/200170076",
             "link_title": "I'm Under Attack Mode",
             "additional_description": "I'm Under Attack Mode performs additional security checks to help mitigate Layer 7 DDoS attacks. This feature should be used as a last resort when your application is under attack."
           }

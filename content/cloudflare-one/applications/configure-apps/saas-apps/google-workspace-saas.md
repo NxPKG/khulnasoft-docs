@@ -7,11 +7,11 @@ meta:
 
 # Connect to Google Workspace through Access
 
-This guide covers how to configure Cloudflare Access as a single sign-on provider for your Google Workspace account.
+This guide covers how to configure Khulnasoft Access as a single sign-on provider for your Google Workspace account.
 
 ## 1. Create an application in Zero Trust
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Applications**.
 
 2. Select **SaaS application**.
 

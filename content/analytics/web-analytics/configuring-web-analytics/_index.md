@@ -1,10 +1,10 @@
 ---
 pcx_content_type: navigation
-title: Configuring Cloudflare Web Analytics
+title: Configuring Khulnasoft Web Analytics
 weight: 5
 ---
 
-# Configuring Cloudflare Web Analytics
+# Configuring Khulnasoft Web Analytics
 
 Customize your Web Analytics views by using filters.
 

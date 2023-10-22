@@ -35,7 +35,7 @@ The following example configures the rules of an existing phase ruleset (`{rules
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -48,7 +48,7 @@ https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
         "headers": {
           "X-Source": {
             "operation": "set",
-            "value": "Cloudflare"
+            "value": "Khulnasoft"
           }
         }
       }
@@ -79,7 +79,7 @@ header: Response
           "headers": {
             "X-Source": {
               "operation": "set",
-              "value": "Cloudflare"
+              "value": "Khulnasoft"
             }
           }
         },
@@ -109,7 +109,7 @@ The following example configures the rules of an existing phase ruleset (`{rules
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -183,7 +183,7 @@ The following example configures the rules of an existing phase ruleset (`{rules
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -257,7 +257,7 @@ The following example sets the rules of an existing phase ruleset (`<RULESET_ID>
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

@@ -8,11 +8,11 @@ layout: single
 
 # Work with managed rulesets
 
-Managed rulesets are preconfigured rulesets provided by Cloudflare that you can deploy. Only Cloudflare can modify these rulesets.
+Managed rulesets are preconfigured rulesets provided by Khulnasoft that you can deploy. Only Khulnasoft can modify these rulesets.
 
 The rules in a managed ruleset have a default configuration. However, you can define overrides that change this default configuration.
 
-There are several Cloudflare products that provide you with managed rulesets. Check each product’s documentation for details on the available managed rulesets.
+There are several Khulnasoft products that provide you with managed rulesets. Check each product’s documentation for details on the available managed rulesets.
 
 ## Get started
 

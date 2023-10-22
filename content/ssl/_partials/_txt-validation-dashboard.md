@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Choose your account and domain.
 3. Go to **SSL/TLS** > **Edge Certificates**.
 4. Select a certificate.

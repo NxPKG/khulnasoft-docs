@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-Bot Fight Mode and Super Bot Fight Mode use the same underlying technology that powers our [Bot Management](https://www.cloudflare.com/products/bot-management/) product. Specifically, these products:
+Bot Fight Mode and Super Bot Fight Mode use the same underlying technology that powers our [Bot Management](https://www.Khulnasoft.com/products/bot-management/) product. Specifically, these products:
 
 *   Protect entire domains without endpoint restrictions
 *   Cannot be customized, adjusted, or reconfigured via WAF custom rules

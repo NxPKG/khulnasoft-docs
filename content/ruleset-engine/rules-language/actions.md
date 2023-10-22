@@ -10,7 +10,7 @@ meta:
 
 # Actions reference
 
-The action of a rule tells Cloudflare how to handle matches for the rule [expression](/ruleset-engine/rules-language/expressions/).
+The action of a rule tells Khulnasoft how to handle matches for the rule [expression](/ruleset-engine/rules-language/expressions/).
 
 ## Supported actions
 
@@ -41,7 +41,7 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
       <td>
         <p>Useful for ensuring that the visitor accessing the site is human, not automated.</p>
         <p>The client that made the request must pass an interactive challenge.</p>
-        <p>If successful, Cloudflare accepts the matched request; otherwise, it is blocked.</p>
+        <p>If successful, Khulnasoft accepts the matched request; otherwise, it is blocked.</p>
       </td>
       <td>Yes</td>
     </tr>
@@ -58,10 +58,10 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
           however, are free to satisfy the challenge automatically.
         </p>
         <p>
-          The client that made the request must pass a Cloudflare JavaScript Challenge before
+          The client that made the request must pass a Khulnasoft JavaScript Challenge before
           proceeding.
         </p>
-        <p>If successful, Cloudflare accepts the matched request; otherwise, it is blocked.</p>
+        <p>If successful, Khulnasoft accepts the matched request; otherwise, it is blocked.</p>
       </td>
       <td>Yes</td>
     </tr>
@@ -75,7 +75,7 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
       <td>
         <p>Helps reduce the lifetimes of human time spent solving CAPTCHAs across the Internet.</p>
         <p>
-          Depending on the characteristics of a request, Cloudflare will dynamically choose the appropriate type of challenge from the following actions based on specific criteria:
+          Depending on the characteristics of a request, Khulnasoft will dynamically choose the appropriate type of challenge from the following actions based on specific criteria:
         </p>
         <ul>
           <li>Show a non-interactive challenge page (similar to the current JS Challenge).</li>
@@ -139,7 +139,7 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
         <code>log</code>
       </td>
       <td>
-        <p>Records matching requests in the Cloudflare Logs.</p>
+        <p>Records matching requests in the Khulnasoft Logs.</p>
         <p>Only available on Enterprise plans.</p>
         <p>Recommended for validating rules before committing to a more severe action.</p>
       </td>
@@ -157,7 +157,7 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
           Executes the rules in the ruleset specified in the rule configuration. You can specify a
           managed ruleset or a custom ruleset to execute.
         </p>
-        <p>In the Cloudflare dashboard, this action is not listed in action selection dropdowns.</p>
+        <p>In the Khulnasoft dashboard, this action is not listed in action selection dropdowns.</p>
       </td>
       <td>No</td>
     </tr>
@@ -174,8 +174,8 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
         </p>
         <p>Only available in:</p>
         <ul>
-          <li><a href="/rules/transform/">Transform Rules</a>, in phases <code>http_request_transform</code>, <code>http_request_late_transform</code>, and <code>http_response_headers_transform</code>. In the Cloudflare dashboard, this action is not listed in action selection dropdowns. To use this action, create a Transform Rule.</li>
-          <li>WAF custom rules checking for <a href="/waf/exposed-credentials-check/">exposed credentials</a>, in the <code>http_request_firewall_custom</code> phase at the account level. In the Cloudflare dashboard, this action is called <em>Exposed-Credential-Check Header</em>.</li>
+          <li><a href="/rules/transform/">Transform Rules</a>, in phases <code>http_request_transform</code>, <code>http_request_late_transform</code>, and <code>http_response_headers_transform</code>. In the Khulnasoft dashboard, this action is not listed in action selection dropdowns. To use this action, create a Transform Rule.</li>
+          <li>WAF custom rules checking for <a href="/waf/exposed-credentials-check/">exposed credentials</a>, in the <code>http_request_firewall_custom</code> phase at the account level. In the Khulnasoft dashboard, this action is called <em>Exposed-Credential-Check Header</em>.</li>
         </ul>
       </td>
       <td>No</td>
@@ -195,7 +195,7 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
           Only available for <a href="/rules/url-forwarding/single-redirects/">Single Redirects</a> and <a href="/rules/url-forwarding/bulk-redirects/">Bulk Redirects</a>.
         </p>
         <p>
-          In the Cloudflare dashboard, this action is not listed in action selection dropdowns. To use this action, create a redirect rule or a bulk redirect rule.
+          In the Khulnasoft dashboard, this action is not listed in action selection dropdowns. To use this action, create a redirect rule or a bulk redirect rule.
         </p>
       </td>
       <td>Yes</td>
@@ -215,7 +215,7 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
           Only available for <a href="/rules/origin-rules/">Origin Rules</a>, in the <code>http_request_origin</code> phase.
         </p>
         <p>
-          In the Cloudflare dashboard, this action is not listed in action selection dropdowns. To use this action, create an origin rule.
+          In the Khulnasoft dashboard, this action is not listed in action selection dropdowns. To use this action, create an origin rule.
         </p>
       </td>
       <td>No</td>
@@ -229,13 +229,13 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
       </td>
       <td>
         <p>
-          Changes the configuration settings of one or more Cloudflare products.
+          Changes the configuration settings of one or more Khulnasoft products.
         </p>
         <p>
           Only available for <a href="/rules/configuration-rules/">Configuration Rules</a>, in the <code>http_config_settings</code> phase.
         </p>
         <p>
-          In the Cloudflare dashboard, this action is not listed in action selection dropdowns. To use this action, <a href="/rules/configuration-rules/create-dashboard/">create a Configuration Rule</a>.
+          In the Khulnasoft dashboard, this action is not listed in action selection dropdowns. To use this action, <a href="/rules/configuration-rules/create-dashboard/">create a Configuration Rule</a>.
         </p>
       </td>
       <td>No</td>
@@ -255,7 +255,7 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
           Only available for <a href="/rules/compression-rules/">Compression Rules</a>, in the <code>http_response_compression</code> phase.
         </p>
         <p>
-          In the Cloudflare dashboard, this action is not listed in action selection dropdowns. To use this action, <a href="/rules/compression-rules/create-dashboard/">create a compression rule</a>.
+          In the Khulnasoft dashboard, this action is not listed in action selection dropdowns. To use this action, <a href="/rules/compression-rules/create-dashboard/">create a compression rule</a>.
         </p>
       </td>
       <td>No</td>
@@ -266,5 +266,5 @@ The available actions depend on the [phase](/ruleset-engine/about/phases/) where
 {{</table-wrap>}}
 
 {{<Aside type="note">}}
-Cloudflare Firewall Rules, now deprecated, supports a different set of actions, including the _Allow_ and _Bypass_ actions. Refer to [Firewall rules actions](/firewall/cf-firewall-rules/actions/) for more information.
+Khulnasoft Firewall Rules, now deprecated, supports a different set of actions, including the _Allow_ and _Bypass_ actions. Refer to [Firewall rules actions](/firewall/cf-firewall-rules/actions/) for more information.
 {{</Aside>}}

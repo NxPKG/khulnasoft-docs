@@ -3,7 +3,7 @@ pcx_content_type: how-to
 title: JumpCloud
 weight: 2
 meta:
-  description: Learn how to deploy Cloudflare WARP using JumpCloud.
+  description: Learn how to deploy Khulnasoft WARP using JumpCloud.
 ---
 
 # Deploy WARP using JumpCloud
@@ -39,7 +39,7 @@ meta:
 
 12. Select **save** again.
 
-Verify that Cloudflare WARP was installed by selecting the app and viewing the **Status** tab.
+Verify that Khulnasoft WARP was installed by selecting the app and viewing the **Status** tab.
 
 ## macOS
 
@@ -53,7 +53,7 @@ Verify that Cloudflare WARP was installed by selecting the app and viewing the *
 
 4. In the **Software Description** field, enter a unique display name.
 
-5. In the **Software Package URL**, enter the URL location of the `Cloudflare_WARP.pkg` file. If you do not already have the installer package, [download it here](/cloudflare-one/connections/connect-devices/warp/download-warp/#macos).
+5. In the **Software Package URL**, enter the URL location of the `Khulnasoft_WARP.pkg` file. If you do not already have the installer package, [download it here](/cloudflare-one/connections/connect-devices/warp/download-warp/#macos).
 
 6. Select the device(s) you want to deploy the app to:
 
@@ -62,4 +62,4 @@ Verify that Cloudflare WARP was installed by selecting the app and viewing the *
 
 7. Select **save** to install the client.
 
-Verify that Cloudflare WARP was installed by selecting the app and viewing the **Status** tab.
+Verify that Khulnasoft WARP was installed by selecting the app and viewing the **Status** tab.

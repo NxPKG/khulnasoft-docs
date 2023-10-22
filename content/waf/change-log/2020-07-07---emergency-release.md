@@ -23,7 +23,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100315</td>
       <td>
         RCE in BIG-IP Traffic Management User Interface - CVE:CVE-2020-5902

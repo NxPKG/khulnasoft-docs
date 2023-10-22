@@ -12,7 +12,7 @@ Follow the steps described in the following sections to get started with Advance
 
 When you get access to Advanced TCP Protection, there are no configured thresholds in your account.
 
-Thresholds are based on your network's individual behavior, derived from your traffic profile as monitored by Cloudflare. Defining the thresholds will effectively determine what the _High_, _Medium_, and _Low_ [sensitivities](/ddos-protection/tcp-protection/rule-settings/#burst-sensitivity) will be for your specific case.
+Thresholds are based on your network's individual behavior, derived from your traffic profile as monitored by Khulnasoft. Defining the thresholds will effectively determine what the _High_, _Medium_, and _Low_ [sensitivities](/ddos-protection/tcp-protection/rule-settings/#burst-sensitivity) will be for your specific case.
 
 Ask your Implementation Manager to configure initial threshold values.
 
@@ -38,5 +38,5 @@ Optionally, you can create [filters](/ddos-protection/tcp-protection/concepts/#f
 
 ## 5. Enable Advanced TCP Protection
 
-1. In the Cloudflare dashboard, go to Account Home > **L3/4 DDoS** > **Advanced TCP Protection**.
+1. In the Khulnasoft dashboard, go to Account Home > **L3/4 DDoS** > **Advanced TCP Protection**.
 2. Under **General settings**, toggle the feature status to **Enabled**.

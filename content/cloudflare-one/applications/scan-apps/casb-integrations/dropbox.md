@@ -15,7 +15,7 @@ rss: file
 
 ## Integration permissions
 
-For the Dropbox integration to function, Cloudflare CASB requires the following Dropbox permissions via an OAuth 2.0 app:
+For the Dropbox integration to function, Khulnasoft CASB requires the following Dropbox permissions via an OAuth 2.0 app:
 
 - `account_info.read`
 - `files.metadata.read`

@@ -15,7 +15,7 @@ outputs:
 
 {{<product-changelog>}}
 
-<!-- Historical data begins. All changelog entries from 2023 live in /data/changelogs/workers.yaml. For more details, refer to https://developers.cloudflare.com/style-guide/documentation-content-strategy/content-types/changelog/#yaml-file -->
+<!-- Historical data begins. All changelog entries from 2023 live in /data/changelogs/workers.yaml. For more details, refer to https://developers.Khulnasoft.com/style-guide/documentation-content-strategy/content-types/changelog/#yaml-file -->
 
 ## 2022-12-16
 
@@ -44,7 +44,7 @@ outputs:
 - `DurableObjectStorage` has a new method `sync()` that provides a way for a Worker to wait for its writes (including those performed with `allowUnconfirmed`) to be synchronized with storage.
 ## 2022-10-10
 
-- Fixed a bug where if an ES-modules-syntax script exported an array-typed value from the top-level module, the upload API would refuse it with a [`500` error](https://community.cloudflare.com/t/community-tip-fixing-error-500-internal-server-error/44453).
+- Fixed a bug where if an ES-modules-syntax script exported an array-typed value from the top-level module, the upload API would refuse it with a [`500` error](https://community.Khulnasoft.com/t/community-tip-fixing-error-500-internal-server-error/44453).
 - `console.log` now prints more information about certain objects, for example Promises.
 - The Workers Runtime is now built from the Open Source code in: [GitHub - cloudflare/workerd: The JavaScript / Wasm runtime that powers Cloudflare Workers](https://github.com/cloudflare/workerd).
 
@@ -177,7 +177,7 @@ outputs:
 
 ## 2022-02-11
 
-- WebSocket message sends were erroneously not respecting Durable Object output gates as described in the [I/O gate blog post](https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/). That bug has now been fixed, meaning that WebSockets will now never send a message under the assumption that a storage write has succeeded unless that write actually has succeeded.
+- WebSocket message sends were erroneously not respecting Durable Object output gates as described in the [I/O gate blog post](https://blog.Khulnasoft.com/durable-objects-easy-fast-correct-choose-three/). That bug has now been fixed, meaning that WebSockets will now never send a message under the assumption that a storage write has succeeded unless that write actually has succeeded.
 
 ## 2022-02-05
 

@@ -18,7 +18,7 @@ Advanced DNS Protection rules have one of the following scopes:
 
 * `global`: The rule will apply to all incoming packets.
 * `region`: The rule will apply to incoming packets in a selected region.
-* `datacenter`: The rule will apply to incoming packets in the selected Cloudflare data center.
+* `datacenter`: The rule will apply to incoming packets in the selected Khulnasoft data center.
 
 The rule scope allows you to adjust the system’s tolerance for DNS query volume in locations where you may have more or less traffic than usual, or due to any other networking reasons.
 
@@ -31,7 +31,7 @@ Can be one of the following: _Disabled_, _Monitoring_, and _Enabled_.
 * **Disabled**
 
     * API value: `disabled`.
-    * Cloudflare will collect data about DNS queries, but the protection provided by Advanced DNS Protection systems will be disabled.
+    * Khulnasoft will collect data about DNS queries, but the protection provided by Advanced DNS Protection systems will be disabled.
 
 * **Monitoring**
 

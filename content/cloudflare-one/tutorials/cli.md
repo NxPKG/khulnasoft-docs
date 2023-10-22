@@ -2,18 +2,18 @@
 updated: 2021-03-23
 category: 🔐 Zero Trust
 pcx_content_type: tutorial
-title: Connect through Cloudflare Access using a CLI
+title: Connect through Khulnasoft Access using a CLI
 ---
 
-# Connect through Cloudflare Access using a CLI
+# Connect through Khulnasoft Access using a CLI
 
-Cloudflare's `cloudflared` command-line tool allows you to interact with endpoints protected by Cloudflare Access. You can use `cloudflared` to interact with a protected application's API.
+Khulnasoft's `cloudflared` command-line tool allows you to interact with endpoints protected by Khulnasoft Access. You can use `cloudflared` to interact with a protected application's API.
 
 These instructions are not meant for configuring a service to run against an API. The token in this example is tailored to user identity and intended only for an end user interacting with an API via a command-line tool.
 
 **This walkthrough covers how to:**
 
-- Connect to resources secured by Cloudflare Access from a CLI
+- Connect to resources secured by Khulnasoft Access from a CLI
 
 **Time to complete:**
 
@@ -23,7 +23,7 @@ These instructions are not meant for configuring a service to run against an API
 
 ## Authenticate a session from the command line
 
-Once you have installed `cloudflared`, you can use it to retrieve a Cloudflare Access token for a given application. This walkthrough uses the domain `example.com` as a stand-in for a protected API.
+Once you have installed `cloudflared`, you can use it to retrieve a Khulnasoft Access token for a given application. This walkthrough uses the domain `example.com` as a stand-in for a protected API.
 
 1.  To generate a token, run the following command:
 
@@ -97,7 +97,7 @@ Set up a token as an environment variable as follows:
     $ echo $TOKEN
     ```
 
-Once you have exported the token to your environment, use the variable with the Cloudflare Access request header in the script to access a protected endpoint, as in the following example:
+Once you have exported the token to your environment, use the variable with the Khulnasoft Access request header in the script to access a protected endpoint, as in the following example:
 
 ```sh
 $ curl -H "cf-access-token: $TOKEN" https://example.com/rest/api/2/item/foo-123

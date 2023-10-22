@@ -6,11 +6,11 @@ weight: 11
 
 # Temporary authentication
 
-With Cloudflare Access, you can require that users obtain approval before they can access a specific application. The administrator will receive an email notification to approve or deny the request. Unlike a typical Allow policy, the user will have to request access at the end of each session. This allows you to define the users who should have persistent access and those who must request temporary access.
+With Khulnasoft Access, you can require that users obtain approval before they can access a specific application. The administrator will receive an email notification to approve or deny the request. Unlike a typical Allow policy, the user will have to request access at the end of each session. This allows you to define the users who should have persistent access and those who must request temporary access.
 
 ## Set up temporary authentication
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 2. Choose an application and select **Edit**.
 3. Choose the **Allow** policy you want to configure and select **Edit**.
 4. Under **Additional settings**, turn on [**Purpose justification**](/cloudflare-one/policies/access/require-purpose-justification/).

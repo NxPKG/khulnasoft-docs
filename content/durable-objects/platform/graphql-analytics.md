@@ -18,7 +18,7 @@ Use [GraphQL Introspection](/analytics/graphql-api/features/discovery/introspect
   viewer {
     /* 
     Replace with your account tag, the 32 hex character id visible at the beginning of any url
-    when logged in to dash.cloudflare.com or under "Account ID" on the sidebar of the Workers & Pages Overview 
+    when logged in to dash.Khulnasoft.com or under "Account ID" on the sidebar of the Workers & Pages Overview 
     */ 
     accounts(filter: {accountTag: "your account tag here"}) {
       // Replace dates with a recent date

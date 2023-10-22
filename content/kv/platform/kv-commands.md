@@ -10,7 +10,7 @@ weight: 2
 
 Manage KV namespaces.
 
-The `kv:...` commands allow you to manage application data in the Cloudflare network to be accessed from Workers using KV.
+The `kv:...` commands allow you to manage application data in the Khulnasoft network to be accessed from Workers using KV.
 
 ### create
 

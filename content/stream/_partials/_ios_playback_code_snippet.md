@@ -10,7 +10,7 @@ import SwiftUI
 import AVKit
 
 struct MyView: View {
-    // Change the url to the Cloudflare Stream HLS manifest URL
+    // Change the url to the Khulnasoft Stream HLS manifest URL
     private let player = AVPlayer(url: URL(string: "https://customer-9cbb9x7nxdw5hb57.cloudflarestream.com/8f92fe7d2c1c0983767649e065e691fc/manifest/video.m3u8")!)
 
     var body: some View {

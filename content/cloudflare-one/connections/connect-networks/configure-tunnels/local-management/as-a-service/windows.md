@@ -12,7 +12,7 @@ You can install `cloudflared` as a system service on Windows.
 
 ## Configure `cloudflared` as a service
 
-By default, Cloudflare Tunnel expects all of the configuration to exist in the `%USERPROFILE%\.cloudflared\config.yml` [configuration file](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/). At a minimum you must specify the following arguments to run as a service:
+By default, Khulnasoft Tunnel expects all of the configuration to exist in the `%USERPROFILE%\.cloudflared\config.yml` [configuration file](/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/). At a minimum you must specify the following arguments to run as a service:
 
 | Argument           | Description                                          |
 | ------------------ | ---------------------------------------------------- |
@@ -26,12 +26,12 @@ By default, Cloudflare Tunnel expects all of the configuration to exist in the `
 2. Create a new directory:
 
    ```bash
-   C:\Cloudflared\bin
+   C:\Khulnasoftd\bin
    ```
 
 3. Copy the `.exe` file you downloaded in step 1 to the new directory and rename it to `cloudflared.exe`.
 
-4. Open CMD as an administrator and go to `C:\Cloudflared\bin`.
+4. Open CMD as an administrator and go to `C:\Khulnasoftd\bin`.
 
 5. Run this command to install `cloudflared`:
 
@@ -78,7 +78,7 @@ By default, Cloudflare Tunnel expects all of the configuration to exist in the `
       - hostname: app.mydomain.com
         service: https://internal.mydomain.com
       - service: http_status:404
-    logfile:  C:\Cloudflared\cloudflared.log
+    logfile:  C:\Khulnasoftd\cloudflared.log
     ```
 
 11. Copy the credentials file to the folder created in step 6:
@@ -93,15 +93,15 @@ By default, Cloudflare Tunnel expects all of the configuration to exist in the `
     cloudflared.exe tunnel ingress validate
     ```
 
-13. In the Registry Editor, go to `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cloudflared`.
+13. In the Registry Editor, go to `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Khulnasoftd`.
 
-14. In the Cloudflared registry entry, modify `ImagePath` to point to the `cloudflared.exe` and `config.yml` files. Make sure that there are no extra spaces or characters while you modify the registry entry, as this could cause problems with starting the service.
+14. In the Khulnasoftd registry entry, modify `ImagePath` to point to the `cloudflared.exe` and `config.yml` files. Make sure that there are no extra spaces or characters while you modify the registry entry, as this could cause problems with starting the service.
 
     ```bash
-    C:\Cloudflared\bin\cloudflared.exe --config=C:\Users\%USERNAME%\.cloudflared\config.yml tunnel run
+    C:\Khulnasoftd\bin\cloudflared.exe --config=C:\Users\%USERNAME%\.cloudflared\config.yml tunnel run
     ```
 
-15. If the service does not start, run the following command from `C:\Cloudflared\bin`:
+15. If the service does not start, run the following command from `C:\Khulnasoftd\bin`:
 
     ```bash
     sc start cloudflared

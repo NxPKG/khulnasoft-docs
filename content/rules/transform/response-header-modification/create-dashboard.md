@@ -12,7 +12,7 @@ Refer to [Response header modification examples](/rules/transform/response-heade
 
 To create a rule:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and website.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and website.
 
 2. Go to **Rules** > **Transform Rules**.
 
@@ -20,7 +20,7 @@ To create a rule:
 
 4. Select **Create rule**.
 
-    ![The HTTP response header modification rule creation page in the Cloudflare dashboard.](/images/rules/transform/create-response-header-modification-rule.png)
+    ![The HTTP response header modification rule creation page in the Khulnasoft dashboard.](/images/rules/transform/create-response-header-modification-rule.png)
 
 5. In the rule creation page, enter a descriptive name for the rule in **Rule name**.
 

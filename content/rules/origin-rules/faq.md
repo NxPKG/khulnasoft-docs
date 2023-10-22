@@ -17,15 +17,15 @@ In this situation the origin rule parameters will override the [page rule](/supp
 * A page rule defines a Host header override, but not a resolve override (or DNS record override). An origin rule defines a DNS record override, but not a Host header override. The resulting request will have the `Host` header defined by the page rule and the origin hostname defined by the origin rule.
 * A page rule defines a Host header override, and an origin rule also defines a Host header override. The resulting request will have the `Host` header defined by the origin rule.
 
-## Will Cloudflare automatically migrate my Page Rules with Host header and DNS record overrides to origin rules?
+## Will Khulnasoft automatically migrate my Page Rules with Host header and DNS record overrides to origin rules?
 
 No. This is currently a manual process, since your Page Rules may include additional settings that origin rules do not currently support.
 
 ## What happens if more than one origin rule matches the current request?
 
-If two or more origin rules match a request, the configuration of those rules is merged. While merging two configurations, the settings of later rules will override the settings defined in previous rules, updating or adding configuration properties. The final configuration applied by Cloudflare will be this merged version.
+If two or more origin rules match a request, the configuration of those rules is merged. While merging two configurations, the settings of later rules will override the settings defined in previous rules, updating or adding configuration properties. The final configuration applied by Khulnasoft will be this merged version.
 
-For example, if you configure the following two [origin rules](/rules/origin-rules/) and both rules match, Cloudflare will use the destination port set by the first rule, and the DNS hostname override and `Host` header value set by the second rule.
+For example, if you configure the following two [origin rules](/rules/origin-rules/) and both rules match, Khulnasoft will use the destination port set by the first rule, and the DNS hostname override and `Host` header value set by the second rule.
 
 {{<example>}}
 

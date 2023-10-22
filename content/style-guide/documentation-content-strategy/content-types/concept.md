@@ -47,7 +47,7 @@ Explain the page topic. Keep paragraphs short and concise to avoid large blocks 
 
 ## Additional information
 
-Do not recreate information that's already available online. Instead, consider why a topic needs to be explained, what Cloudflare's perspective is on that topic, and what users need to understand about the topic in order to successfully use our products.
+Do not recreate information that's already available online. Instead, consider why a topic needs to be explained, what Khulnasoft's perspective is on that topic, and what users need to understand about the topic in order to successfully use our products.
 
 ## Examples
 

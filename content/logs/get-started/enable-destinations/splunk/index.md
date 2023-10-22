@@ -86,7 +86,7 @@ Example request using cURL:
 
 ```bash
 curl -s -X POST \
-https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/jobs \
+https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/jobs \
 -H "X-Auth-Email: <EMAIL>" \
 -H "X-Auth-Key: <API_KEY>" \
 -d '{"name":"<DOMAIN_NAME>",
@@ -122,7 +122,7 @@ Example request using cURL:
 
 ```bash
 curl -s -X PUT \
-https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/jobs/100 -d'{"enabled":true}' | jq .
+https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/jobs/100 -d'{"enabled":true}' | jq .
 ```
 
 Response:
@@ -152,7 +152,7 @@ Refer to the [Logpush FAQ](/logs/faq/logpush/) for troubleshooting information.
 
 If you have the Cloudflare Web Application Firewall (WAF) turned on, you may get a challenge when Cloudflare makes a request to Splunk HTTP Event Collector (HEC). To make sure this does not happen, you have to create a WAF custom rule that allows Cloudflare to bypass the HEC endpoint.
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account. Go to **Security** > **WAF** > **Custom rules**.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account. Go to **Security** > **WAF** > **Custom rules**.
 2.  Select **Create rule** and enter a descriptive name for it (for example, `Splunk`).
 3.  Under **If incoming requests match**, use the **Field**, **Operator**, and **Value** dropdowns to create a rule. After finishing each row, select **And** to create the next row of rules. Refer to the table below for the values you should input:
 

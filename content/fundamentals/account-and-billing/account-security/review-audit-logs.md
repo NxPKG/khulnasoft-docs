@@ -6,7 +6,7 @@ weight: 3
 
 # Review audit logs
 
-Audit logs summarize the history of changes made within your Cloudflare account. Audit logs include account level actions like login and logout, as well as zone configuration changes.
+Audit logs summarize the history of changes made within your Khulnasoft account. Audit logs include account level actions like login and logout, as well as zone configuration changes.
 
 Audit Logs are available on all plan types and are captured for both individual users and for multi-user organizations.
 
@@ -26,7 +26,7 @@ You can search these audit logs by user email or domain and filter by date range
 
 ### Using the API
 
-To get audit logs from the Cloudflare API, send a [GET request](/api/operations/audit-logs-get-account-audit-logs).
+To get audit logs from the Khulnasoft API, send a [GET request](/api/operations/audit-logs-get-account-audit-logs).
 
 We recommending using the API for downloading historical audit log data.
 

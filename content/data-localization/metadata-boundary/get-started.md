@@ -14,7 +14,7 @@ Currently, this can only be applied at the account-level. If you only want the M
 
 To configure Customer Metadata Boundary in the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Manage Account** > **Configurations**.
 3. In **Customer Metadata Boundary**, select the region you want to use.
 
@@ -27,7 +27,7 @@ You can also configure Customer Metadata Boundary via API. These are some exampl
 Here is an example request using cURL to get current regions (if any):
 
 ```bash
-curl -s -D "/dev/stderr" https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/logs/control/cmb/config -X GET \
+curl -s -D "/dev/stderr" https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/logs/control/cmb/config -X GET \
 -H "X-Auth-Email: <EMAIL>" \
 -H "X-Auth-Key: <KEY>" \
 | jq '.'
@@ -40,7 +40,7 @@ curl -s -D "/dev/stderr" https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_
 Here is an example request using cURL to set regions:
 
 ```bash
-curl -s -D "/dev/stderr" https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/logs/control/cmb/config -X POST -d '
+curl -s -D "/dev/stderr" https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/logs/control/cmb/config -X POST -d '
 {
     "regions": "eu"
 }
@@ -61,7 +61,7 @@ Change will be in effect after several minutes.
 Here is an example request using cURL to delete regions:
 
 ```bash
-curl -s -D "/dev/stderr" https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/logs/control/cmb/config -X DELETE \
+curl -s -D "/dev/stderr" https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/logs/control/cmb/config -X DELETE \
 -H "X-Auth-Email: <EMAIL>" \
 -H "X-Auth-Key: <KEY>" \
 | jq '.'
@@ -73,6 +73,6 @@ curl -s -D "/dev/stderr" https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_
 
 To view or change your Customer Metadata Boundary setting:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to **Manage Account** > **Configurations** > **Preferences**.
 3. Locate the **Customer Metadata Boundary** section.

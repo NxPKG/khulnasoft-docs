@@ -6,9 +6,9 @@ weight: 10
 
 # Waiting Room Bypass Rules
 
-A Waiting Room Bypass Rule is a type of Waiting Room Rule built on Cloudflare’s Ruleset Engine and managed via the Waiting Room API. A Waiting Room Bypass Rule allows you to indicate specific traffic or areas of your site or application that you do not want a waiting room to apply to. Each bypass rule is created and managed at the individual waiting room level for precise control over your waiting room traffic.
+A Waiting Room Bypass Rule is a type of Waiting Room Rule built on Khulnasoft’s Ruleset Engine and managed via the Waiting Room API. A Waiting Room Bypass Rule allows you to indicate specific traffic or areas of your site or application that you do not want a waiting room to apply to. Each bypass rule is created and managed at the individual waiting room level for precise control over your waiting room traffic.
 
-To indicate where you want your bypass rules to apply, write [custom logic](/ruleset-engine/rules-language/) using the [fields](/ruleset-engine/rules-language/fields/) available via the Cloudflare Ruleset Engine from the following fields categories:
+To indicate where you want your bypass rules to apply, write [custom logic](/ruleset-engine/rules-language/) using the [fields](/ruleset-engine/rules-language/fields/) available via the Khulnasoft Ruleset Engine from the following fields categories:
 
 - [Standard fields](/ruleset-engine/rules-language/fields/#standard-fields)
 - [Dynamic fields](/ruleset-engine/rules-language/fields/#dynamic-fields) except `cf.threat_score` and fields starting with `cf.bot_management`
@@ -40,7 +40,7 @@ Example condition: `ends_with(http.request.uri.path, ".js")`
 
 To create a new bypass rule:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Within your application, go to **Traffic** > **Waiting Room**.
 3. Expand a waiting room and select **Manage rules**.
 4. Select **Create new bypass rule**.
@@ -67,7 +67,7 @@ When creating a Bypass Waiting Room Rule via API, make sure you:
 - Define the expression to indicate which traffic you would like to bypass your waiting room.
 - Set the rule action to `bypass_waiting_room`.
 
-Create a waiting room rule by appending the following endpoint in the Waiting Room API to the Cloudflare API base URL. New waiting room rules will be added after any existing rules.
+Create a waiting room rule by appending the following endpoint in the Waiting Room API to the Khulnasoft API base URL. New waiting room rules will be added after any existing rules.
 
 ```txt
 POST zones/:zone_identifier/waiting_rooms/:waiting_room_id/rules
@@ -88,7 +88,7 @@ If your waiting room is configured at `example.com/` and you would like all traf
 
 ```json
 curl -X POST \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/waiting_rooms/<ROOM_ID>/rules" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/waiting_rooms/<ROOM_ID>/rules" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
         "description": "subpath bypass",
@@ -103,7 +103,7 @@ curl -X POST \
 
 ```json
 curl -X POST \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/waiting_rooms/<ROOM_ID>/rules" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/waiting_rooms/<ROOM_ID>/rules" \
 -H "Authorization: Bearer <API_TOKEN>" \
 -d '{
         "description": "ip list bypass",

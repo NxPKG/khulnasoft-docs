@@ -19,7 +19,7 @@ curl \
 -X POST \
 -d '{"url":"https://storage.googleapis.com/zaid-test/Watermarks%20Demo/cf-ad-original.mp4","meta":{"name":"My First Stream Video"}}' \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/copy
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/copy
 ```
 
 ```json

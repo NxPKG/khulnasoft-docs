@@ -17,7 +17,7 @@ If Page Rules or other cache settings are used on your custom domain, that may l
 
 To add a custom domain:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 2. Select your account in **Account Home** > **Workers & Pages**.
 3. Select your Pages project > **Custom domains**.
 4. Select **Set up a domain**.
@@ -108,4 +108,4 @@ example.com.            300     IN      CAA     0 issuewild "letsencrypt.org"
 example.com.            300     IN      CAA     0 issuewild "pki.goog; cansignhttpexchanges=yes"
 ```
 
-Refer to the [Certification Authority Authorization (CAA) FAQ](https://support.cloudflare.com/hc/en-us/articles/115000310832-Certification-Authority-Authorization-CAA-FAQ) for more information.
+Refer to the [Certification Authority Authorization (CAA) FAQ](https://support.Khulnasoft.com/hc/en-us/articles/115000310832-Certification-Authority-Authorization-CAA-FAQ) for more information.

@@ -7,7 +7,7 @@ weight: 9
 
 # Pages Plugins
 
-Cloudflare maintains a number of official Pages Plugins for you to use in your Pages projects:
+Khulnasoft maintains a number of official Pages Plugins for you to use in your Pages projects:
 
 {{<directory-listing>}}
 
@@ -224,7 +224,7 @@ Your plugin should pick up the `data-static-form-name="contact"` attribute, set 
 
 ### 8. Deploy your Pages project
 
-Make sure the new Plugin has been added to your `package.json` and that everything works locally as you would expect. You can then `git commit` and `git push` to trigger a Cloudflare Pages deployment.
+Make sure the new Plugin has been added to your `package.json` and that everything works locally as you would expect. You can then `git commit` and `git push` to trigger a Khulnasoft Pages deployment.
 
 If you experience any problems with any one Plugin, file an issue on that Plugin's bug tracker.
 
@@ -303,7 +303,7 @@ export const onRequest = [
   // Initialize a Sentry Plugin to capture any errors
   sentryPlugin({ dsn: "https://sentry.io/welcome/xyz" }),
 
-  // Initialize a Cloudflare Access Plugin to ensure only administrators can access this protected route
+  // Initialize a Khulnasoft Access Plugin to ensure only administrators can access this protected route
   cloudflareAccessPlugin({
     domain: "https://test.cloudflareaccess.com",
     aud: "4714c1358e65fe4b408ad6d432a5f878f08194bdb4752441fd56faefa9b2b6f2",

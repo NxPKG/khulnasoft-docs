@@ -1,57 +1,57 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: korean
-source: https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors
-title: Troubleshooting Cloudflare 1XXX errors
+source: https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors
+title: Troubleshooting Khulnasoft 1XXX errors
 ---
 
-# Troubleshooting Cloudflare 1XXX errors
+# Troubleshooting Khulnasoft 1XXX errors
 
-_Cloudflare가 프록시 역할을 하는 사이트의 1XXX 오류를 진단하고 해결합니다._
+_Khulnasoft가 프록시 역할을 하는 사이트의 1XXX 오류를 진단하고 해결합니다._
 
 ### 이 문서에서
 
--   [개요](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#h_e6ba4204-ab4f-464b-afdc-e8177e418e34)
--   [Error 1000: DNS points to prohibited IP](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1000)
--   [Error 1001: DNS resolution error](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1001)
--   [Error 1002: DNS points to Prohibited IP](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1002a)
--   [Error 1002: Restricted](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1003)
--   [Error 1003 Access Denied: Direct IP Access Not Allowed](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1003)
--   [Error 1004: Host Not Configured to Serve Web Traffic](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1004)
--   [1006, 1007, 1008, 1106 오류 액세스 거부: 사용자의 IP 주소가 금지되어 있습니다](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error100610071008)
--   [오류 1009 액세스 거부: 금지된 국가 또는 지역](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#h_1FIuVf9XCVpeBz8Cn6B0Fj)
--   [Error 1010: The owner of this website has banned your access based on your browser's signature](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1010)
--   [Error 1011: Access Denied (Hotlinking Denied)](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1011)
--   [Error 1012: Access Denied](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1012)
--   [Error 1013: HTTP hostname and TLS SNI hostname mismatch](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1013)
--   [Error 1014: CNAME Cross-User Banned](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1014)
--   [Error 1015: You are being rate limited](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1015)
--   [Error 1016: Origin DNS error](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1016)
--   [Error 1018: Could not find host](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1018)
--   [Error 1019: Compute server error](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1019)
--   [Error 1020: Access denied](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1020)
--   [오류 1023: 호스트를 찾을 수 없습니다](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1023)
--   [Error 1025: Please check back later](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1025)
--   [오류 1033: Argo Tunnel 오류](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#h_W81O7hTPalZtYqNYkIHgH)
--   [오류 1034: 에지 IP 제한됨](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#h_4eD6Gcxp4zQqS4ciCJaLt0)
--   [오류 1035: 유효하지 않은 요청 재작성(유효하지 않은 URI 경로)](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1035)
--   [오류 1036: 유효하지 않은 요청 재작성(최대 길이 초과됨)](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1036)
--   [오류 1037: 유효하지 않은 재작성 규칙(식을 평가할 수 없음)](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1037)
--   [오류 1040: 유효하지 않은 요청 재작성(헤더 수정이 허용되지 않음)](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1040)
--   [오류 1041: 유효하지 않은 요청 재작성(유효하지 않은 헤더 값)](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1041)
--   [Error 1101: Rendering error](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1101)
--   [Error 1102: Rendering error](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1102)
--   [오류 1104: 이 이메일 주소의 변형이 이미 Cloudflare 시스템에 있습니다. 하나의 변형만이 허용됩니다.](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#error1104)
--   [Error 1200: Cache connection limit](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#h_302a97f3-eba3-4c0a-a589-76ba95f60dcf)
--   [관련 자료](https://support.cloudflare.com/hc/ko/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors#h_80755d09-43f2-4656-b1f9-2989196b30a6)
+-   [개요](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#h_e6ba4204-ab4f-464b-afdc-e8177e418e34)
+-   [Error 1000: DNS points to prohibited IP](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1000)
+-   [Error 1001: DNS resolution error](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1001)
+-   [Error 1002: DNS points to Prohibited IP](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1002a)
+-   [Error 1002: Restricted](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1003)
+-   [Error 1003 Access Denied: Direct IP Access Not Allowed](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1003)
+-   [Error 1004: Host Not Configured to Serve Web Traffic](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1004)
+-   [1006, 1007, 1008, 1106 오류 액세스 거부: 사용자의 IP 주소가 금지되어 있습니다](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error100610071008)
+-   [오류 1009 액세스 거부: 금지된 국가 또는 지역](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#h_1FIuVf9XCVpeBz8Cn6B0Fj)
+-   [Error 1010: The owner of this website has banned your access based on your browser's signature](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1010)
+-   [Error 1011: Access Denied (Hotlinking Denied)](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1011)
+-   [Error 1012: Access Denied](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1012)
+-   [Error 1013: HTTP hostname and TLS SNI hostname mismatch](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1013)
+-   [Error 1014: CNAME Cross-User Banned](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1014)
+-   [Error 1015: You are being rate limited](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1015)
+-   [Error 1016: Origin DNS error](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1016)
+-   [Error 1018: Could not find host](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1018)
+-   [Error 1019: Compute server error](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1019)
+-   [Error 1020: Access denied](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1020)
+-   [오류 1023: 호스트를 찾을 수 없습니다](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1023)
+-   [Error 1025: Please check back later](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1025)
+-   [오류 1033: Argo Tunnel 오류](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#h_W81O7hTPalZtYqNYkIHgH)
+-   [오류 1034: 에지 IP 제한됨](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#h_4eD6Gcxp4zQqS4ciCJaLt0)
+-   [오류 1035: 유효하지 않은 요청 재작성(유효하지 않은 URI 경로)](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1035)
+-   [오류 1036: 유효하지 않은 요청 재작성(최대 길이 초과됨)](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1036)
+-   [오류 1037: 유효하지 않은 재작성 규칙(식을 평가할 수 없음)](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1037)
+-   [오류 1040: 유효하지 않은 요청 재작성(헤더 수정이 허용되지 않음)](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1040)
+-   [오류 1041: 유효하지 않은 요청 재작성(유효하지 않은 헤더 값)](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1041)
+-   [Error 1101: Rendering error](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1101)
+-   [Error 1102: Rendering error](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1102)
+-   [오류 1104: 이 이메일 주소의 변형이 이미 Khulnasoft 시스템에 있습니다. 하나의 변형만이 허용됩니다.](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#error1104)
+-   [Error 1200: Cache connection limit](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#h_302a97f3-eba3-4c0a-a589-76ba95f60dcf)
+-   [관련 자료](https://support.Khulnasoft.com/hc/ko/articles/360029779472-Troubleshooting-Khulnasoft-1XXX-errors#h_80755d09-43f2-4656-b1f9-2989196b30a6)
 
 ___
 
 ## 개요
 
-이 문서에 설명된 오류는 Cloudflare가 프록시 역할을 하는 웹 사이트를 방문할 때 발생할 수 있습니다. Cloudflare API 또는 대시보드 오류는  [Cloudflare API 문서](https://api.cloudflare.com/)를 참조하세요. HTTP 409, 530, 403, 429 오류는 응답으로 HTTP 상태 헤더에 반환된 HTTP 오류 코드를 말합니다. 1XXX 오류는 응답의 HTML 본문에 표시됩니다.
+이 문서에 설명된 오류는 Khulnasoft가 프록시 역할을 하는 웹 사이트를 방문할 때 발생할 수 있습니다. Khulnasoft API 또는 대시보드 오류는  [Khulnasoft API 문서](https://api.Khulnasoft.com/)를 참조하세요. HTTP 409, 530, 403, 429 오류는 응답으로 HTTP 상태 헤더에 반환된 HTTP 오류 코드를 말합니다. 1XXX 오류는 응답의 HTML 본문에 표시됩니다.
 
-각 오류 설명에 있는 해결 방법으로도 오류를 해결할 수 없다면 [Cloudflare 지원팀에 문의](https://support.cloudflare.com/hc/articles/200172476)하시기 바랍니다.
+각 오류 설명에 있는 해결 방법으로도 오류를 해결할 수 없다면 [Khulnasoft 지원팀에 문의](https://support.Khulnasoft.com/hc/articles/200172476)하시기 바랍니다.
 
 ___
 
@@ -59,18 +59,18 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare가 다음의 이유 중 하나 때문에 요청을 중단했습니다.
+Khulnasoft가 다음의 이유 중 하나 때문에 요청을 중단했습니다.
 
--   Cloudflare DNS 앱 내의 A 레코드가 [Cloudflare IP 주소](https://www.cloudflare.com/ips/)를 가리키도록 하지 않으면 Load Balancer 원본이 프록시된 레코드를 가리킵니다.
--   Cloudflare DNS A 레코드 또는 CNAME 레코드가 proxy\_pass 기능을 사용하는 Nginx 웹 서버 등의 다른 리버스 프록시를 조회하며 이 역방향 프록시가 요청을 대신 처리해 Cloudflare로 전송합니다.
+-   Khulnasoft DNS 앱 내의 A 레코드가 [Khulnasoft IP 주소](https://www.Khulnasoft.com/ips/)를 가리키도록 하지 않으면 Load Balancer 원본이 프록시된 레코드를 가리킵니다.
+-   Khulnasoft DNS A 레코드 또는 CNAME 레코드가 proxy\_pass 기능을 사용하는 Nginx 웹 서버 등의 다른 리버스 프록시를 조회하며 이 역방향 프록시가 요청을 대신 처리해 Khulnasoft로 전송합니다.
 -   X-Forwarded-For 요청 헤더가 100자를 초과합니다.
 -   요청에 두 개의 X-Forwarded-For 헤더가 포함되어 있습니다.
 -   원본에서의 서버 이름 지시(SNI: Server Name Indication) 문제 또는 불일치가 발생합니다.
 
 ### 문제 해결
 
--   Cloudflare DNS 앱의 A 레코드가 [Cloudflare IP 주소](https://www.cloudflare.com/ips/)를 가리키는 경우, IP 주소를 원본 웹 서버의 IP 주소로 업데이트하세요.
--   원본 웹 서버에 Cloudflare 프록시를 통해 요청을 반송하는 리버스 프록시가 있습니다. 리버스 프록시를 사용하지 말고, 호스팅 공급자나 사이트 관리자에게 연락해 원본 웹 서버에 HTTP 리디렉션을 설정하세요.
+-   Khulnasoft DNS 앱의 A 레코드가 [Khulnasoft IP 주소](https://www.Khulnasoft.com/ips/)를 가리키는 경우, IP 주소를 원본 웹 서버의 IP 주소로 업데이트하세요.
+-   원본 웹 서버에 Khulnasoft 프록시를 통해 요청을 반송하는 리버스 프록시가 있습니다. 리버스 프록시를 사용하지 말고, 호스팅 공급자나 사이트 관리자에게 연락해 원본 웹 서버에 HTTP 리디렉션을 설정하세요.
 
 ___
 
@@ -78,17 +78,17 @@ ___
 
 ### 일반적인 원인
 
--   존재하지 않는 도메인의 Cloudflare IP 주소로 웹 요청이 전송되었습니다.
--   Cloudflare를 사용하지 않는 외부 도메인에 Cloudflare에서 활성화된 도메인에 대한 CNAME 레코드가 있습니다.
+-   존재하지 않는 도메인의 Khulnasoft IP 주소로 웹 요청이 전송되었습니다.
+-   Khulnasoft를 사용하지 않는 외부 도메인에 Khulnasoft에서 활성화된 도메인에 대한 CNAME 레코드가 있습니다.
 -   DNS CNAME 레코드의 대상이 확인되지 않습니다.
--   Cloudflare DNS 앱의 CNAME 레코드가 DNS 공급자를 통한 확인을 필요로 하는데, 현재 DNS 공급자가 오프라인 상태입니다.
+-   Khulnasoft DNS 앱의 CNAME 레코드가 DNS 공급자를 통한 확인을 필요로 하는데, 현재 DNS 공급자가 오프라인 상태입니다.
 -   [사용자 지정 호스트 이름(SaaS용 SSL](/ssl/ssl-for-saas)) 도메인에 [Always Online](/cache/how-to/always-online/)이 활성화되어 있습니다.
 
 ### 문제 해결
 
-Cloudflare 이외의 도메인은, 해당 도메인이 Cloudflare 계정에 추가되지 않는 한 Cloudflare 도메인에 CNAME 할 수 없습니다.
+Khulnasoft 이외의 도메인은, 해당 도메인이 Khulnasoft 계정에 추가되지 않는 한 Khulnasoft 도메인에 CNAME 할 수 없습니다.
 
-[Cloudflare CNAME 설정](/dns/zone-setups/partial-setup)에 사용된 DNS 레코드에 직접 액세스를 시도하는 경우에도 1001 오류가 발생할 수 있습니다(예: _www.example.com.cdn.cloudflare.net_).
+[Khulnasoft CNAME 설정](/dns/zone-setups/partial-setup)에 사용된 DNS 레코드에 직접 액세스를 시도하는 경우에도 1001 오류가 발생할 수 있습니다(예: _www.example.com.cdn.cloudflare.net_).
 
 [사용자 지정 호스트 이름(SaaS용 SSL)](/ssl/ssl-for-saas)을 사용 중인 경우   [Always Online](/cache/how-to/always-online/#enable-always-online) 을 비활성화하세요.
 
@@ -98,22 +98,22 @@ ___
 
 ### 일반적인 원인
 
--   Cloudflare DNS 앱의 DNS 레코드가 [Cloudflare IP 주소](https://www.cloudflare.com/ips/) 중 하나를 가리킵니다.
--   Cloudflare DNS 앱의 CNAME 레코드에 대상이 잘못 지정되어 있습니다.
--   도메인이 Cloudflare에 있지 않은데, Cloudflare 도메인을 참조하는 CNAME이 포함되어 있습니다.
+-   Khulnasoft DNS 앱의 DNS 레코드가 [Khulnasoft IP 주소](https://www.Khulnasoft.com/ips/) 중 하나를 가리킵니다.
+-   Khulnasoft DNS 앱의 CNAME 레코드에 대상이 잘못 지정되어 있습니다.
+-   도메인이 Khulnasoft에 있지 않은데, Khulnasoft 도메인을 참조하는 CNAME이 포함되어 있습니다.
 
 ### 문제 해결
 
-Cloudflare _A 레코드_ 또는 _CNAME 레코드_를 업데이트해 Cloudflare IP 주소가 아닌 실제 IP 주소를 가리키도록 합니다.
+Khulnasoft _A 레코드_ 또는 _CNAME 레코드_를 업데이트해 Khulnasoft IP 주소가 아닌 실제 IP 주소를 가리키도록 합니다.
 
 1.  호스팅 공급자에 연락해 실제 IP 주소나 CNAME 레코드 대상을 확인합니다.
-2.  Cloudflare 계정에 로그인합니다.
+2.  Khulnasoft 계정에 로그인합니다.
 3.  1002 오류를 생성하는 도메인을 선택합니다.
 4.  **DNS** 앱을 선택합니다.
 5.  업데이트할 _A_ 레코드이 **값**을 클릭합니다.
 6.  _A_ 레코드를 업데이트합니다.
 
-원본 웹 서버가 Cloudflare를 통해 자체 요청을 프록시 처리하지 않게 하려면 원본 웹 서버에서 Cloudflare 도메인을 다음 중 하나로 설정하세요.
+원본 웹 서버가 Khulnasoft를 통해 자체 요청을 프록시 처리하지 않게 하려면 원본 웹 서버에서 Khulnasoft 도메인을 다음 중 하나로 설정하세요.
 
 -   내부 NAT’d IP 주소
 -   원본 웹 서버의 퍼블릭 IP 주소
@@ -124,15 +124,15 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare 도메인이 로컬 IP 주소, 허용되지 않은 IP 주소, 또는 도메인과 연관이 없는 IP 주소로 확인되고 있습니다.
+Khulnasoft 도메인이 로컬 IP 주소, 허용되지 않은 IP 주소, 또는 도메인과 연관이 없는 IP 주소로 확인되고 있습니다.
 
 ### 문제 해결
 
 웹사이트 소유자인 경우
 
 1.  호스팅 공급자에 문의해 원본 웹 서버의 IP 주소를 확인합니다.
-2.  Cloudflare 계정에 로그인합니다.
-3.  Cloudflare DNS 앱의 A 레코드를 호스팅 공급자가 확인해 준 IP 주소로 업데이트합니다.
+2.  Khulnasoft 계정에 로그인합니다.
+3.  Khulnasoft DNS 앱의 A 레코드를 호스팅 공급자가 확인해 준 IP 주소로 업데이트합니다.
 
 ___
 
@@ -140,11 +140,11 @@ ___
 
 ### 일반적인 원인
 
-클라이언트 또는 브라우저가  [Cloudflare IP 주소](https://www.cloudflare.com/ips)에 직접 액세스하고 있습니다.
+클라이언트 또는 브라우저가  [Khulnasoft IP 주소](https://www.Khulnasoft.com/ips)에 직접 액세스하고 있습니다.
 
 ### 문제 해결
 
-URL에 Cloudflare IP 주소 대신 웹 사이트 도메인 이름을 입력하세요.
+URL에 Khulnasoft IP 주소 대신 웹 사이트 도메인 이름을 입력하세요.
 
 ___
 
@@ -152,12 +152,12 @@ ___
 
 ### 일반적인 원인
 
--   서비스 오용 또는 서비스 약관 위반으로 인해 Cloudflare 직원이 도메인에서 프록시 기능을 비활성화했습니다.
--   DNS 변경 사항이 아직 업데이트되지 않았거나 사이트 소유자의 DNS _A 레코드_i가 [Cloudflare IP 주소](https://www.cloudflare.com/ips)를 가리킵니다.
+-   서비스 오용 또는 서비스 약관 위반으로 인해 Khulnasoft 직원이 도메인에서 프록시 기능을 비활성화했습니다.
+-   DNS 변경 사항이 아직 업데이트되지 않았거나 사이트 소유자의 DNS _A 레코드_i가 [Khulnasoft IP 주소](https://www.Khulnasoft.com/ips)를 가리킵니다.
 
 ### 문제 해결
 
-문제가  5분 이상  계속될 경우, [Cloudflare 지원팀에 문의](https://support.cloudflare.com/hc/articles/200172476)하세요.
+문제가  5분 이상  계속될 경우, [Khulnasoft 지원팀에 문의](https://support.Khulnasoft.com/hc/articles/200172476)하세요.
 
 ___
 
@@ -165,11 +165,11 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare 고객이 클라이언트 또는 브라우저에서 오는 트래픽을 차단했습니다.
+Khulnasoft 고객이 클라이언트 또는 브라우저에서 오는 트래픽을 차단했습니다.
 
 ### 문제 해결
 
-웹 사이트 소유자에게 Cloudflare 보안 환경을 점검하거나 클라이언트 IP 주소를 허용해달라고 요청하세요. 웹 사이트 소유자가 요청을 차단한 것이므로 Cloudflare 지원팀은 고객의 보안 환경을 변경할 수 없습니다.
+웹 사이트 소유자에게 Khulnasoft 보안 환경을 점검하거나 클라이언트 IP 주소를 허용해달라고 요청하세요. 웹 사이트 소유자가 요청을 차단한 것이므로 Khulnasoft 지원팀은 고객의 보안 환경을 변경할 수 없습니다.
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 ### 문제 해결
 
-[IP 액세스 규칙](https://support.cloudflare.com/hc/ko/articles/217074967-Configuring-IP-Access-Rules) 보안 기능에서 IP 주소가 허용되는지 확인하시기 바랍니다.
+[IP 액세스 규칙](https://support.Khulnasoft.com/hc/ko/articles/217074967-Configuring-IP-Access-Rules) 보안 기능에서 IP 주소가 허용되는지 확인하시기 바랍니다.
 
 ___
 
@@ -201,11 +201,11 @@ ___
 
 ### 일반적인 원인
 
-[Cloudflare 핫링크 보호](https://support.cloudflare.com/hc/articles/200170026)를 사용하는 페이지를  요청했습니다.
+[Khulnasoft 핫링크 보호](https://support.Khulnasoft.com/hc/articles/200170026)를 사용하는 페이지를  요청했습니다.
 
 ### 문제 해결
 
-웹 사이트 소유자에게 요청이 차단되었다는 사실을 알리세요. 웹 사이트 소유자에게 연락할 방법을 모르는 경우, [Whois 데이터베이스](https://whois.icann.org/en/lookup)를 통해 도메인의 연락처 정보를 찾아볼 수 있습니다. **핫링크 보호**는 Cloudflare **Scrape Shield** 앱에서 관리할 수 있습니다.
+웹 사이트 소유자에게 요청이 차단되었다는 사실을 알리세요. 웹 사이트 소유자에게 연락할 방법을 모르는 경우, [Whois 데이터베이스](https://whois.icann.org/en/lookup)를 통해 도메인의 연락처 정보를 찾아볼 수 있습니다. **핫링크 보호**는 Khulnasoft **Scrape Shield** 앱에서 관리할 수 있습니다.
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 ### 문제 해결
 
-바이러스 백신 소프트웨어를 업데이트하고 시스템 전체 검사를 실행하세요. Cloudflare는 사이트 소유자가 도메인에 설정한 보안 환경을 변경할 수 없습니다. 사이트 소유자에게 IP 주소를 허용해달라고 요청하면 웹 사이트에 다시 액세스할 수 있습니다. 웹 사이트 소유자에게 연락할 방법을 모르는 경우,  [Whois 데이터베이스](https://whois.icann.org/en/lookup)를 통해 도메인의 연락처 정보를 찾아볼 수 있습니다.
+바이러스 백신 소프트웨어를 업데이트하고 시스템 전체 검사를 실행하세요. Khulnasoft는 사이트 소유자가 도메인에 설정한 보안 환경을 변경할 수 없습니다. 사이트 소유자에게 IP 주소를 허용해달라고 요청하면 웹 사이트에 다시 액세스할 수 있습니다. 웹 사이트 소유자에게 연락할 방법을 모르는 경우,  [Whois 데이터베이스](https://whois.icann.org/en/lookup)를 통해 도메인의 연락처 정보를 찾아볼 수 있습니다.
 
 ___
 
@@ -236,9 +236,9 @@ ___
 
  [SSL Shopper](https://www.sslshopper.com/ssl-checker.html) 등의 온라인 도구를 통해 SNI 일치 여부를 테스트해볼 수 있습니다.
 
-Cloudflare 지원팀에 다음과 같은 정보를 제공하세요.
+Khulnasoft 지원팀에 다음과 같은 정보를 제공하세요.
 
-1.  오류를 재생하면서 캡처한  [HAR file](https://support.cloudflare.com/hc/articles/203118044) .
+1.  오류를 재생하면서 캡처한  [HAR file](https://support.Khulnasoft.com/hc/articles/203118044) .
 
 ___
 
@@ -246,11 +246,11 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare는 서로 다른 Cloudflare 계정의 도메인 간 DNS _CNAME 레코드_를 허용하지 않도록 기본 설정되어 있습니다._CNAME 레코드_는 도메인(_www.example.com_CNAME to _api.example.com_)과 동일한 사용자 계정 내 구간(_www.example.com_CNAME to _www.example.net_)에서 허용되며 [SaaS용 Cloudflare](https://www.cloudflare.com/saas/) 솔루션을 이용하는 경우에도 허용됩니다.
+Khulnasoft는 서로 다른 Khulnasoft 계정의 도메인 간 DNS _CNAME 레코드_를 허용하지 않도록 기본 설정되어 있습니다._CNAME 레코드_는 도메인(_www.example.com_CNAME to _api.example.com_)과 동일한 사용자 계정 내 구간(_www.example.com_CNAME to _www.example.net_)에서 허용되며 [SaaS용 Khulnasoft](https://www.Khulnasoft.com/saas/) 솔루션을 이용하는 경우에도 허용됩니다.
 
 ### 문제 해결
 
-다른 Cloudflare 계정에 CNAME 레코드 확인을 허용할 경우 CNAME 대상의 도메인 소유자는 [SaaS용 Cloudflare](https://www.cloudflare.com/saas/), 구체적으로는 [SaaS용 SSL](/ssl/ssl-for-saas/)을 이용해야 합니다.
+다른 Khulnasoft 계정에 CNAME 레코드 확인을 허용할 경우 CNAME 대상의 도메인 소유자는 [SaaS용 Khulnasoft](https://www.Khulnasoft.com/saas/), 구체적으로는 [SaaS용 SSL](/ssl/ssl-for-saas/)을 이용해야 합니다.
 
 ___
 
@@ -258,12 +258,12 @@ ___
 
 ### 일반적인 원인
 
-사이트 소유자가 방문자 트래픽에  [속도 제한](https://support.cloudflare.com/hc/articles/115001635128) 을 걸었습니다.
+사이트 소유자가 방문자 트래픽에  [속도 제한](https://support.Khulnasoft.com/hc/articles/115001635128) 을 걸었습니다.
 
 ### 문제 해결
 
 -   사이트 방문객의 경우, 사이트 소유자에게 연락해 본인의 IP를 속도 제한에서 풀어달라고 요청하세요.
--   사이트 소유자의 경우, [Cloudflare 속도 제한  임계값](https://support.cloudflare.com/hc/articles/115001635128)을 참조해 속도 제한  설정을 변경하세요.
+-   사이트 소유자의 경우, [Khulnasoft 속도 제한  임계값](https://support.Khulnasoft.com/hc/articles/115001635128)을 참조해 속도 제한  설정을 변경하세요.
 -   속도 제한이 짧은 시간(예: 1초) 이후 차단하는 경우, 시간을 10초로 늘려보세요.
 
 ___
@@ -272,20 +272,20 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare가 원본 웹 서버의 IP 주소를 확인하지 못했습니다.
+Khulnasoft가 원본 웹 서버의 IP 주소를 확인하지 못했습니다.
 
 1016 오류의 일반적인 원인은 다음과 같습니다.
 
 -   원본 IP 주소가 언급된 DNS _A 레코드_가 누락되었습니다.
--   Cloudflare DNS 내 _CNAME 레코드_가 확인할 수 없는 외부 도메인을 가리킵니다.
--   Cloudflare [Load Balancer](/load-balancing/) 기본값, 지역, 폴백 풀에서 원본 호스트 이름(CNAME)을 인식할 수 없습니다. 다른 풀을 사용할 수 없는 경우 실제 IP에 설정된 폴백 풀을 백업으로 사용할 수 있습니다.
--   CNAME 원본으로 Spectrum 앱을 생성할 경우, 먼저 Cloudflare DNS 측에 원본을 가리키는 CNAME을 생성해야 합니다. 자세한 내용은 [Spectrum CNAME 원본](/spectrum/how-to/cname-origins) 을 참조하세요
+-   Khulnasoft DNS 내 _CNAME 레코드_가 확인할 수 없는 외부 도메인을 가리킵니다.
+-   Khulnasoft [Load Balancer](/load-balancing/) 기본값, 지역, 폴백 풀에서 원본 호스트 이름(CNAME)을 인식할 수 없습니다. 다른 풀을 사용할 수 없는 경우 실제 IP에 설정된 폴백 풀을 백업으로 사용할 수 있습니다.
+-   CNAME 원본으로 Spectrum 앱을 생성할 경우, 먼저 Khulnasoft DNS 측에 원본을 가리키는 CNAME을 생성해야 합니다. 자세한 내용은 [Spectrum CNAME 원본](/spectrum/how-to/cname-origins) 을 참조하세요
 
 ### 문제 해결
 
 1016 오류를 해결하는 방법은 다음과 같습니다.
 
-1.  Cloudflare DNS 설정에 [DNS 검색 도구](https://dnschecker.org/)에서 인식되는 유효한 IP 주소를 가리키는 _A 레코드_가 포함되어 있는지 확인하세요.
+1.  Khulnasoft DNS 설정에 [DNS 검색 도구](https://dnschecker.org/)에서 인식되는 유효한 IP 주소를 가리키는 _A 레코드_가 포함되어 있는지 확인하세요.
 2.  CNAME 레코드가 다른 도메인을 가리킬 경우 대상 도메인이 [DNS 검색 도구](https://dnschecker.org/)에서 검색되는지 확인하세요.
 
 ___
@@ -294,12 +294,12 @@ ___
 
 ### 일반적인 원인
 
--   Cloudflare 도메인이 최근에 활성화되었고 도메인 설정을 Cloudflare 에지 네트워크로 전파하는 데 지연이 발생하고 있습니다.
--   Cloudflare 도메인이 호스팅 공급자 등의 Cloudflare 파트너를 통해 생성되었고 호스팅 공급자의 DNS가 실패했습니다.
+-   Khulnasoft 도메인이 최근에 활성화되었고 도메인 설정을 Khulnasoft 에지 네트워크로 전파하는 데 지연이 발생하고 있습니다.
+-   Khulnasoft 도메인이 호스팅 공급자 등의 Khulnasoft 파트너를 통해 생성되었고 호스팅 공급자의 DNS가 실패했습니다.
 
 ### 문제 해결
 
-다음의 정보와 함께  [Cloudflare 지원팀](https://support.cloudflare.com/hc/articles/200172476) 에 연락해주시기 바랍니다.
+다음의 정보와 함께  [Khulnasoft 지원팀](https://support.Khulnasoft.com/hc/articles/200172476) 에 연락해주시기 바랍니다.
 
 1.  도메인 이름
 2.  오류 메시지에 **RayID**가 언급된 1018 오류 스크린샷
@@ -311,11 +311,11 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare Worker 스크립트가 반복적으로 자신을 참조합니다.
+Khulnasoft Worker 스크립트가 반복적으로 자신을 참조합니다.
 
 ### 문제 해결
 
-Cloudflare Worker가 동일한 Workers 스크립트를 호출하는 URL에 액세스하지 않도록 합니다.
+Khulnasoft Worker가 동일한 Workers 스크립트를 호출하는 URL에 액세스하지 않도록 합니다.
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 ### 일반적인 원인
 
-클라이언트 또는 브라우저가 Cloudflare 고객의 방화벽 규칙에 의해 차단되었습니다.
+클라이언트 또는 브라우저가 Khulnasoft 고객의 방화벽 규칙에 의해 차단되었습니다.
 
 ### 문제 해결
 
@@ -332,9 +332,9 @@ ___
 웹 사이트 소유자의 경우, 다음의 단계를 따라 문제를 해결하세요.
 
 1.  고객으로부터 1020 오류의 스크린샷을 받습니다.
-2.  Cloudflare **Firewall** 앱의 **개요** 탭에 있는 [**방화벽 이벤트**](/waf/analytics)에서 방문자의 1020 오류 메시지에 있는 **RayID** 또는 클라이언트 IP 주소를 찾습니다.
+2.  Khulnasoft **Firewall** 앱의 **개요** 탭에 있는 [**방화벽 이벤트**](/waf/analytics)에서 방문자의 1020 오류 메시지에 있는 **RayID** 또는 클라이언트 IP 주소를 찾습니다.
 
-3\. 차단의 원인을 파악해 **방화벽 규칙**을 업데이트하거나, [**IP 액세스 규칙**](https://support.cloudflare.com/hc/articles/217074967)에서 방문자 IP 주소를 허용합니다.
+3\. 차단의 원인을 파악해 **방화벽 규칙**을 업데이트하거나, [**IP 액세스 규칙**](https://support.Khulnasoft.com/hc/articles/217074967)에서 방문자 IP 주소를 허용합니다.
 
 ___
 
@@ -342,12 +342,12 @@ ___
 
 ### 일반적인 원인
 
--   소유자가 막 Cloudflare에 등록하였다면 웹 사이트 정보가 Cloudflare 전역 네트워크에 배포되는 데 몇 분이 걸릴 수 있습니다. 사이트 구성에 문제가 있습니다.
+-   소유자가 막 Khulnasoft에 등록하였다면 웹 사이트 정보가 Khulnasoft 전역 네트워크에 배포되는 데 몇 분이 걸릴 수 있습니다. 사이트 구성에 문제가 있습니다.
 -   일반적으로 이는 계정이 파트너 조직(예: 호스팅 공급자)에 등록되어 있고 공급자의 제공자의 DNS가 실패하는 경우에 발생합니다.
 
 ### 문제 해결
 
-다음의 정보와 함께  [Cloudflare 지원팀](https://support.cloudflare.com/hc/articles/200172476) 에 연락해주시기 바랍니다.
+다음의 정보와 함께  [Khulnasoft 지원팀](https://support.Khulnasoft.com/hc/articles/200172476) 에 연락해주시기 바랍니다.
 
 1.  도메인 이름
 2.  오류 메시지에 **RayID**가 언급된 1023 오류 스크린샷
@@ -359,11 +359,11 @@ ___
 
 ### 일반적인 원인
 
-도메인이  [Cloudflare Workers의 요금제 제한](/workers/platform/limits)을 초과해 요청이 처리되지 않았습니다.
+도메인이  [Khulnasoft Workers의 요금제 제한](/workers/platform/limits)을 초과해 요청이 처리되지 않았습니다.
 
 ### 문제 해결:
 
-Workers 대시보드의  [요금제 페이지](https://dash.cloudflare.com/redirect?account=workers/plans) 에서 무제한 Workers 요금제를 구매하세요.
+Workers 대시보드의  [요금제 페이지](https://dash.Khulnasoft.com/redirect?account=workers/plans) 에서 무제한 Workers 요금제를 구매하세요.
 
 ___
 
@@ -371,7 +371,7 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare 네트워크에 있는 웹 사이트(`tunnel.example.com`) 페이지를 요청했습니다. 해당 호스트(`tunnel.example.com`)는 Argo Tunnel로 구성되었으며 현재 Cloudflare가 이를 확인할 수 없습니다.
+Khulnasoft 네트워크에 있는 웹 사이트(`tunnel.example.com`) 페이지를 요청했습니다. 해당 호스트(`tunnel.example.com`)는 Argo Tunnel로 구성되었으며 현재 Khulnasoft가 이를 확인할 수 없습니다.
 
 ### 문제 해결
 
@@ -384,7 +384,7 @@ ___
 
 ### 일반적인 원인
 
-이제 이전에 도메인이 `1.1.1.1`을 가리키도록 했던 고객에게는 **1034 오류**가 발생합니다. 이는 구성 오류 및/또는 남용 가능성을 방지하기 위한 Cloudflare 시스템의 새로운 에지 유효성 검사 기능으로 인한 것입니다.
+이제 이전에 도메인이 `1.1.1.1`을 가리키도록 했던 고객에게는 **1034 오류**가 발생합니다. 이는 구성 오류 및/또는 남용 가능성을 방지하기 위한 Khulnasoft 시스템의 새로운 에지 유효성 검사 기능으로 인한 것입니다.
 
 ### 문제 해결
 
@@ -471,11 +471,11 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare Worker가 JavaScript 런타임 예외를 실행했습니다.
+Khulnasoft Worker가 JavaScript 런타임 예외를 실행했습니다.
 
 ### 문제 해결:
 
-Cloudflare 지원팀에 [문제에 관한 자세한 정보를 제공](https://support.cloudflare.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)하세요.
+Khulnasoft 지원팀에 [문제에 관한 자세한 정보를 제공](https://support.Khulnasoft.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)하세요.
 
 ___
 
@@ -483,7 +483,7 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare Worker가  [CPU 시간제한](/workers/observability/log-from-workers/#identifying-and-handling-errors-and-exceptions)을 초과했습니다. CPU 시간은 loops, parsing JSON 등의 코드를 실행하는 데 걸리는 시간을 말합니다. 네트워크 요청(가져오기, 응답하기)에 걸리는 시간은 CPU 시간에 포함되지 않습니다.
+Khulnasoft Worker가  [CPU 시간제한](/workers/observability/log-from-workers/#identifying-and-handling-errors-and-exceptions)을 초과했습니다. CPU 시간은 loops, parsing JSON 등의 코드를 실행하는 데 걸리는 시간을 말합니다. 네트워크 요청(가져오기, 응답하기)에 걸리는 시간은 CPU 시간에 포함되지 않습니다.
 
 ### 문제 해결
 
@@ -491,11 +491,11 @@ Workers 코드 개발자에게 연락해 활성화된 Workers 스크립트에서
 
 ___
 
-## 오류 1104: 이 이메일 주소의 변형이 이미 Cloudflare 시스템에 있습니다. 하나의 변형만이 허용됩니다.
+## 오류 1104: 이 이메일 주소의 변형이 이미 Khulnasoft 시스템에 있습니다. 하나의 변형만이 허용됩니다.
 
 ### 일반적인 원인
 
-이 오류는 추가하려는 이메일의 변형이 추가된 경우 발생합니다. 예를 들어 _my+user@example.com_과 _my.user@example.com_는 Cloudflare 시스템에서 동일하게 취급됩니다.
+이 오류는 추가하려는 이메일의 변형이 추가된 경우 발생합니다. 예를 들어 _my+user@example.com_과 _my.user@example.com_는 Khulnasoft 시스템에서 동일하게 취급됩니다.
 
 ### 문제 해결
 
@@ -507,7 +507,7 @@ ___
 
 ### 일반적인 원인
 
-Cloudflare 에지에 원본 웹 서버의 처리를 기다리는 요청이 지나치게 많이 대기하고 있습니다.  이 제한은  Cloudflare 시스템을 보호하기 위한 것입니다.
+Khulnasoft 에지에 원본 웹 서버의 처리를 기다리는 요청이 지나치게 많이 대기하고 있습니다.  이 제한은  Khulnasoft 시스템을 보호하기 위한 것입니다.
 
 ### 문제 해결
 
@@ -517,5 +517,5 @@ ___
 
 ## 관련 자료
 
--   [Cloudflare 지원팀에 문의하기](https://support.cloudflare.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)
--   [Cloudflare 오류 페이지 사용자 지정하기](https://support.cloudflare.com/hc/articles/200172706)
+-   [Khulnasoft 지원팀에 문의하기](https://support.Khulnasoft.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)
+-   [Khulnasoft 오류 페이지 사용자 지정하기](https://support.Khulnasoft.com/hc/articles/200172706)

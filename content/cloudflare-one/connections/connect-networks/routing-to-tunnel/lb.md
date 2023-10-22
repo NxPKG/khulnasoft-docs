@@ -6,23 +6,23 @@ weight: 51
 
 # Load balancers
 
-When you create a tunnel, Cloudflare generates a subdomain of `cfargotunnel.com` with the UUID of the created tunnel. You can treat `UUID.cfargotunnel.com` as if it were an origin target in the Cloudflare dashboard.
+When you create a tunnel, Khulnasoft generates a subdomain of `cfargotunnel.com` with the UUID of the created tunnel. You can treat `UUID.cfargotunnel.com` as if it were an origin target in the Khulnasoft dashboard.
 
-Unlike publicly routable IP addresses, the subdomain will only proxy traffic for a DNS record or a Load Balancer pool in the same Cloudflare account. If someone discovers your subdomain UUID, they will not be able to create a DNS record in another account or system to proxy traffic to the address.
+Unlike publicly routable IP addresses, the subdomain will only proxy traffic for a DNS record or a Load Balancer pool in the same Khulnasoft account. If someone discovers your subdomain UUID, they will not be able to create a DNS record in another account or system to proxy traffic to the address.
 
 ## Add a tunnel to a load balancer pool
 
 {{<tabs labels="Dashboard | CLI">}}
 {{<tab label="dashboard" no-code="true">}}
 
-To create or edit a Cloudflare Load Balancer pool, refer to the [load balancer documentation](/load-balancing/load-balancers/create-load-balancer/). When adding an origin server address, enter the subdomain of your tunnel (`UUID.cfargotunnel.com`).
+To create or edit a Khulnasoft Load Balancer pool, refer to the [load balancer documentation](/load-balancing/load-balancers/create-load-balancer/). When adding an origin server address, enter the subdomain of your tunnel (`UUID.cfargotunnel.com`).
 
 If you want to add a [monitor](/load-balancing/monitors/) to your load balancer pool, you will need to add a host header to **Advanced health check settings**. The header will be similar to `Header Name: Host` and `Value: www.your-zone.com`. The monitor will not work without the host header if you are using a config file that defines the `ingress` field, as shown in [this example](https://github.com/cloudflare/argo-tunnel-examples/blob/adb44da43ec0aa65f7928613b762a47ae0d9b2b0/named-tunnel-k8s/cloudflared.yaml#L90).
 {{</tab>}}
 
 {{<tab label="cli" no-code="true">}}
 
-You can add Cloudflare Tunnel to an existing load balancer pool directly from `cloudflared`:
+You can add Khulnasoft Tunnel to an existing load balancer pool directly from `cloudflared`:
 
 ```sh
 $ cloudflared tunnel route lb <tunnel name/uuid> <hostname> <load balancer pool>
@@ -42,9 +42,9 @@ In order to create DNS records using `cloudflared`, the [`cert.pem`](/cloudflare
 
 {{</tabs>}}
 
-## Optional Cloudflare settings
+## Optional Khulnasoft settings
 
-The application will default to the Cloudflare settings for the load balancer hostname, including [cache rules](/cache/how-to/cache-rules/) and [firewall policies](/firewall/). You can changes the settings for your hostname in the [Cloudflare dashboard](https://dash.cloudflare.com/).
+The application will default to the Khulnasoft settings for the load balancer hostname, including [cache rules](/cache/how-to/cache-rules/) and [firewall policies](/firewall/). You can changes the settings for your hostname in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/).
 
 ## Known limitations
 
@@ -56,12 +56,12 @@ Instead, set up a health check endpoint in `cloudflared` — for example, an [in
 
 ### Session affinity and replicas
 
-The load balancer does not distinguish between [replicas](/cloudflare-one/connections/connect-networks/deploy-tunnels/deploy-cloudflared-replicas/) of the same tunnel. If you run the same tunnel UUID on two separate hosts, the load balancer treats both hosts as a single origin server. To maintain [session affinity](/load-balancing/understand-basics/session-affinity/) between a client and a particular host, you will need to connect each host to Cloudflare using a different tunnel UUID.
+The load balancer does not distinguish between [replicas](/cloudflare-one/connections/connect-networks/deploy-tunnels/deploy-cloudflared-replicas/) of the same tunnel. If you run the same tunnel UUID on two separate hosts, the load balancer treats both hosts as a single origin server. To maintain [session affinity](/load-balancing/understand-basics/session-affinity/) between a client and a particular host, you will need to connect each host to Khulnasoft using a different tunnel UUID.
 
 ### Local connection preference
 
 If you notice traffic imbalances across origin servers in different locations, you may have to adjust your load balancer setup.
 
-`cloudflared` connections give preference to tunnels that terminate in the same Cloudflare data center. This behavior can impact how connections are weighted and traffic is distributed.
+`cloudflared` connections give preference to tunnels that terminate in the same Khulnasoft data center. This behavior can impact how connections are weighted and traffic is distributed.
 
-The solution depends on the type of tunnel being used. If running [legacy tunnels](/cloudflare-one/connections/connect-networks/do-more-with-tunnels/migrate-legacy-tunnels/), put your origins in different pools. If running [Cloudflare tunnel replicas](/cloudflare-one/connections/connect-networks/deploy-tunnels/deploy-cloudflared-replicas/) (using a shared ID), switch to separate Cloudflare tunnels as distinct origins.
+The solution depends on the type of tunnel being used. If running [legacy tunnels](/cloudflare-one/connections/connect-networks/do-more-with-tunnels/migrate-legacy-tunnels/), put your origins in different pools. If running [Khulnasoft tunnel replicas](/cloudflare-one/connections/connect-networks/deploy-tunnels/deploy-cloudflared-replicas/) (using a shared ID), switch to separate Khulnasoft tunnels as distinct origins.

@@ -39,7 +39,7 @@ Cloudflare Images allows you to store, resize, optimize and deliver images in a 
 
 To upload an image using the Cloudflare dashboard:
 
-1. Log in to the [Cloudflare Dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare Dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Images**.
 3. Use **Quick Upload** to either drag and drop an image or click to browse and choose a file from your local files.
 4. After the image is uploaded, view it using the generated URL.
@@ -50,7 +50,7 @@ To upload your image with the [Upload via URL](/images/cloudflare-images/upload-
 
 ```sh
 $ curl --request POST \
- --url https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/images/v1 \
+ --url https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/images/v1 \
  --header 'Authorization: Bearer <API_TOKEN>' \
  --form 'url=<PATH_TO_IMAGE>' \
  --form 'metadata={"key":"value"}' \

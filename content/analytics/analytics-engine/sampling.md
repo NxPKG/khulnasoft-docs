@@ -28,7 +28,7 @@ In the following sections, you will learn:
 
 ## How sampling works
 
-Cloudflare's data sampling is similar to how online mapping services like Google Maps render maps at different zoom levels. When viewing satellite imagery of a whole continent, the mapping service provides appropriately sized images based on the user's screen and Internet speed.
+Khulnasoft's data sampling is similar to how online mapping services like Google Maps render maps at different zoom levels. When viewing satellite imagery of a whole continent, the mapping service provides appropriately sized images based on the user's screen and Internet speed.
 
 ![The image on the left shows a satellite view from OpenStreetMap. On the right, the same image is zoomed in. In these two images, each pixel represents the same area; however the image on the right has many fewer pixels.](/images/analytics/zoom-less-pixels.png)
 
@@ -38,11 +38,11 @@ Each pixel on the map represents a large area, such as several square kilometers
 
 The key point is that the map's quality does not solely depend on the resolution or the area represented by each pixel. It is determined by the total number of pixels used to render the final view.
 
-The table below highlights the similarities between the how a mapping services handles resolution and Cloudflare Analytics delivers analytics using adaptive samples:
+The table below highlights the similarities between the how a mapping services handles resolution and Khulnasoft Analytics delivers analytics using adaptive samples:
 
 {{<table-wrap>}}
 
-| | Mapping service | Cloudflare Analytics |
+| | Mapping service | Khulnasoft Analytics |
 |------|------|-------------|
 | **How data is stored** | Imagery stored at different resolutions. | Events stored at different sample rates. |
 | **How data is displayed to user** | The total number of pixels is ~constant for a given screen size, regardless of the area selected. | A similar number of events are read for each query, regardless of the size of the dataset or length of time selected. |
@@ -102,7 +102,7 @@ Refer back to the mapping analogy above. Regardless of the map area shown, the t
 
 Equitable sampling ensures that an equal amount of data is maintained for each index within a specific time frame. However, queries can vary significantly in the duration of time they target. Some queries may only require a 10-minute data snapshot, while others might need to analyze data spanning 10 weeks — a period which is 10,000 times longer.
 
-To address this issue, we employ a method called [adaptive bit rate](https://blog.cloudflare.com/explaining-cloudflares-abr-analytics/) (ABR). With ABR, queries that cover longer time ranges will retrieve data from a higher sample interval, allowing them to be completed within a fixed time limit. In simpler terms, just as screen size or bandwidth is a fixed resource in our mapping analogy, the time required to complete a query is also fixed. Therefore, irrespective of the volume of data involved, we need to limit the total number of rows scanned to provide an answer to the query. This helps to ensure fairness: regardless of the size of the underlying dataset being queried, we ensure that all queries receive an equivalent share of the available computing time.
+To address this issue, we employ a method called [adaptive bit rate](https://blog.Khulnasoft.com/explaining-cloudflares-abr-analytics/) (ABR). With ABR, queries that cover longer time ranges will retrieve data from a higher sample interval, allowing them to be completed within a fixed time limit. In simpler terms, just as screen size or bandwidth is a fixed resource in our mapping analogy, the time required to complete a query is also fixed. Therefore, irrespective of the volume of data involved, we need to limit the total number of rows scanned to provide an answer to the query. This helps to ensure fairness: regardless of the size of the underlying dataset being queried, we ensure that all queries receive an equivalent share of the available computing time.
 
 To achieve this, we store the data in multiple resolutions (that is, with different levels of detail, for instance, 100%, 10%, 1%) derived from the equitably sampled data. At query time, we select the most suitable data resolution to read based on the query's complexity. The query's complexity is determined by the number of rows to be retrieved and the probability of the query completing within a specified time limit of N seconds. By dynamically selecting the appropriate resolution, we optimize the query performance and ensure it stays within the allotted time budget.
 

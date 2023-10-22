@@ -6,18 +6,18 @@ weight: 2
 
 # Add a self-hosted application
 
-Cloudflare Access allows you to securely publish internal tools and applications to the Internet by providing an authentication layer between the end user and your origin. You can use signals from your existing identity providers (IdPs), device posture providers, and [other rules](/cloudflare-one/policies/access/#selectors) to control who can access your application.
+Khulnasoft Access allows you to securely publish internal tools and applications to the Internet by providing an authentication layer between the end user and your origin. You can use signals from your existing identity providers (IdPs), device posture providers, and [other rules](/cloudflare-one/policies/access/#selectors) to control who can access your application.
 
-![Cloudflare Access authenticates users to your internal applications.](/images/cloudflare-one/applications/network-diagram.png)
+![Khulnasoft Access authenticates users to your internal applications.](/images/cloudflare-one/applications/network-diagram.png)
 
 ## Prerequisites
 
-- [Add your domain](/fundamentals/setup/account-setup/add-site/) to Cloudflare.
-- [Change your domain nameservers](/dns/zone-setups/full-setup/) to Cloudflare, or configure a [partial (`CNAME`) setup](/dns/zone-setups/partial-setup/).
+- [Add your domain](/fundamentals/setup/account-setup/add-site/) to Khulnasoft.
+- [Change your domain nameservers](/dns/zone-setups/full-setup/) to Khulnasoft, or configure a [partial (`CNAME`) setup](/dns/zone-setups/partial-setup/).
 
 ## 1. Add your application to Access
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Select **Add an application**.
 
@@ -29,7 +29,7 @@ Cloudflare Access allows you to securely publish internal tools and applications
 
 6. In **Application domain**, enter the domains that will represent the application.
 
-   - Domains must belong to an active zone in your Cloudflare account. You can either select a domain from the dropdown or enter a [custom domain](/cloudflare-for-platforms/cloudflare-for-saas/security/secure-with-access/) that you control.
+   - Domains must belong to an active zone in your Khulnasoft account. You can either select a domain from the dropdown or enter a [custom domain](/cloudflare-for-platforms/cloudflare-for-saas/security/secure-with-access/) that you control.
    - You can use [wildcards](/cloudflare-one/policies/access/app-paths/) to protect multiple parts of an application that share a root path.
 
 7. (Optional) Configure [App Launcher settings](/cloudflare-one/applications/app-launcher/) for the application.
@@ -70,21 +70,21 @@ You can configure the following advanced settings for your application:
 
 To finish configuring the application, select **Add application**.
 
-## 4. Connect your origin to Cloudflare
+## 4. Connect your origin to Khulnasoft
 
-Next, set up a [Cloudflare Tunnel](/cloudflare-one/connections/connect-networks/) to make your internal application available over the Internet.
+Next, set up a [Khulnasoft Tunnel](/cloudflare-one/connections/connect-networks/) to make your internal application available over the Internet.
 
 ## 5. Validate the Access token
 
-To secure your origin, you must validate the [application token](/cloudflare-one/identity/authorization-cookie/) issued by Cloudflare Access.
+To secure your origin, you must validate the [application token](/cloudflare-one/identity/authorization-cookie/) issued by Khulnasoft Access.
 
-One option is to configure the Cloudflare Tunnel daemon, `cloudflared`, to validate the token on your behalf. This is done by enabling [**Protect with Access**](/cloudflare-one/connections/connect-networks/configure-tunnels/origin-configuration/#access) in your Cloudflare Tunnel settings. If you do not wish to use Cloudflare Tunnel, you can [manually configure your origin](/cloudflare-one/identity/authorization-cookie/validating-json/) to check all requests for a valid token.
+One option is to configure the Khulnasoft Tunnel daemon, `cloudflared`, to validate the token on your behalf. This is done by enabling [**Protect with Access**](/cloudflare-one/connections/connect-networks/configure-tunnels/origin-configuration/#access) in your Khulnasoft Tunnel settings. If you do not wish to use Khulnasoft Tunnel, you can [manually configure your origin](/cloudflare-one/identity/authorization-cookie/validating-json/) to check all requests for a valid token.
 
-Users can now connect to your self-hosted application after authenticating with Cloudflare Access.
+Users can now connect to your self-hosted application after authenticating with Khulnasoft Access.
 
 ## Product compatibility
 
-When using Access self-hosted applications, the majority of Cloudflare products will be compatible with your application.
+When using Access self-hosted applications, the majority of Khulnasoft products will be compatible with your application.
 
 However, the following products are not supported:
 

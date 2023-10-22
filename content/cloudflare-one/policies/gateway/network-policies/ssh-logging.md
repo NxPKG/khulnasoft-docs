@@ -6,35 +6,35 @@ weight: 3
 
 # Configure SSH proxy and command logs
 
-Cloudflare Zero Trust supports SSH proxying and command logging using Secure Web Gateway and the WARP client.
+Khulnasoft Zero Trust supports SSH proxying and command logging using Secure Web Gateway and the WARP client.
 
 You can create network policies to manage and monitor SSH access to your applications. When a device connects to your origin server over SSH, a session log will be generated showing which user connected, the session duration, and optionally a full replay of all commands run during the session.
 
 ## Prerequisites
 
 - [Install the WARP client](/cloudflare-one/connections/connect-devices/warp/set-up-warp/) on end-user devices.
-- [Install the Cloudflare root certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/) on end-user devices.
+- [Install the Khulnasoft root certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/) on end-user devices.
 
 ## 1. Ensure Unix usernames match user SSO identities
 
-Cloudflare Gateway will take the identity from a token and, using short-lived certificates, authorize the user on the target infrastructure.
+Khulnasoft Gateway will take the identity from a token and, using short-lived certificates, authorize the user on the target infrastructure.
 
 {{<render file="ssh/_usernames.md">}}
 
 ## 2. Generate a Gateway SSH proxy CA
 
-Instead of traditional SSH keys, Gateway uses short-lived certificates to authenticate traffic between Cloudflare and your origin.
+Instead of traditional SSH keys, Gateway uses short-lived certificates to authenticate traffic between Khulnasoft and your origin.
 
 {{<Aside type="note">}}
-Other short-lived CAs, such as those used to [secure SSH servers behind Cloudflare Access](/cloudflare-one/identity/users/short-lived-certificates/), are incompatible with the Gateway SSH proxy. For SSH logging to work, you must create a new CA using the `gateway_ca` API endpoint.
+Other short-lived CAs, such as those used to [secure SSH servers behind Khulnasoft Access](/cloudflare-one/identity/users/short-lived-certificates/), are incompatible with the Gateway SSH proxy. For SSH logging to work, you must create a new CA using the `gateway_ca` API endpoint.
 {{</Aside>}}
 
 To generate a Gateway SSH proxy CA and get its public key:
 
-1. Make a request to the Cloudflare API with your email address and [API key](/fundamentals/api/get-started/keys/) as request headers.
+1. Make a request to the Khulnasoft API with your email address and [API key](/fundamentals/api/get-started/keys/) as request headers.
 
    ```bash
-   curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/access/gateway_ca"\
+   curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/access/gateway_ca"\
        -H "X-Auth-Email: <EMAIL>" \
        -H "X-Auth-Key: <API_KEY>"
    ```
@@ -53,7 +53,7 @@ To generate a Gateway SSH proxy CA and get its public key:
 
 ## 5. Check your SSH port number
 
-Cloudflare's SSH proxy only works with servers running on the default port 22. Open the `sshd_config` file and verify that no other `Port` values are specified.
+Khulnasoft's SSH proxy only works with servers running on the default port 22. Open the `sshd_config` file and verify that no other `Port` values are specified.
 
 ```sh
 $ cat /etc/ssh/sshd_config
@@ -65,7 +65,7 @@ $ cat /etc/ssh/sshd_config
 
 ## 7. Create an Audit SSH policy
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Gateway** > **Firewall Policies**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Gateway** > **Firewall Policies**.
 
 2. In the **Network** tab, create a new network policy.
 
@@ -83,7 +83,7 @@ $ cat /etc/ssh/sshd_config
 
 ## 8. Connect as a user
 
-Users can use any SSH client to connect to the target resource, as long as they are logged into the WARP client on their device. Cloudflare Zero Trust will authenticate, proxy, and optionally encrypt and record all SSH traffic through Gateway.
+Users can use any SSH client to connect to the target resource, as long as they are logged into the WARP client on their device. Khulnasoft Zero Trust will authenticate, proxy, and optionally encrypt and record all SSH traffic through Gateway.
 
 Users must specify their desired username to connect with as part of the SSH command:
 
@@ -104,7 +104,7 @@ $ ssh-keygen -R <targetIP or hostname>
 
 If you enabled **SSH Command Logging** in an [Audit SSH policy](#7-create-an-audit-ssh-policy), you will need to generate an HPKE key pair and upload the public key to your dashboard.
 
-1. [Download](https://github.com/cloudflare/ssh-log-cli/releases/latest/) the Cloudflare `ssh-log-cli` utility.
+1. [Download](https://github.com/cloudflare/ssh-log-cli/releases/latest/) the Khulnasoft `ssh-log-cli` utility.
 
 2. Using the `ssh-log-cli` utility, generate a public and private key pair.
 
@@ -116,7 +116,7 @@ If you enabled **SSH Command Logging** in an [Audit SSH policy](#7-create-an-aud
 
    This command outputs two files, an `sshkey.pub` public key and a matching `sshkey` private key.
 
-3. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
+3. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Network**.
 
 4. In the **SSH encryption public key** field, paste the contents of `sshkey.pub` and select **Save**. Note that this a different public key from the `ca.pub` file you used to configure the origin server.
 

@@ -6,7 +6,7 @@ weight: 12
 
 # Pricing
 
-Requests to your Functions are billed as Cloudflare Workers requests. Workers plans and pricing can be found [in the Workers documentation](/workers/platform/pricing/).
+Requests to your Functions are billed as Khulnasoft Workers requests. Workers plans and pricing can be found [in the Workers documentation](/workers/platform/pricing/).
 
 ## Paid Plans
 
@@ -14,7 +14,7 @@ Requests to your Pages functions count towards your quota for Workers Paid plans
 
 Pages supports both Bundled and Unbound Usage Models. When an account is first upgraded to a Paid Plan, Unbound is the default Usage Model. This default applies only to new projects created after upgrading your plan; existing projects created under the Free Plan will continue to use the Bundled Usage Model. To change the default Usage Model:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Pages project.
 4. Find **Default Usage Model** on the right-side menu and select **Change**.
@@ -43,7 +43,7 @@ Once the daily request limit has been reached, Projects in fail open mode will b
 
 ### Fail closed
 
-Once the daily request limit has been reached, Projects in fail closed mode will display a Cloudflare 1027 error page to visitors, signifying the Function has been temporarily disabled. Cloudflare recommends this option if your Function is performing security related tasks.
+Once the daily request limit has been reached, Projects in fail closed mode will display a Khulnasoft 1027 error page to visitors, signifying the Function has been temporarily disabled. Khulnasoft recommends this option if your Function is performing security related tasks.
 
 {{<Aside type="note">}}
 

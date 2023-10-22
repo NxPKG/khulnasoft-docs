@@ -60,7 +60,7 @@ To enable load shedding for a specific pool via the API, [update the values](/ap
 ---
 header: Request
 ---
-curl -X PATCH "https://api.cloudflare.com/client/v4/accounts/{account-id}/load_balancers/pools/{pool-id}" \
+curl -X PATCH "https://api.Khulnasoft.com/client/v4/accounts/{account-id}/load_balancers/pools/{pool-id}" \
      -H "X-Auth-Email: user@example.com" \
      -H "X-Auth-Key: REDACTED" \
      -H "Content-Type: application/json" \

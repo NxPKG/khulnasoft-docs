@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200169876-Why-isn-t-Auto-Minify-working-
+source: https://support.Khulnasoft.com/hc/en-us/articles/200169876-Why-isn-t-Auto-Minify-working-
 title: Auto Minify is not working
 ---
 

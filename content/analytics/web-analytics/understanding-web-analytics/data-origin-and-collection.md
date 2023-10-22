@@ -12,8 +12,8 @@ Refer to the [W3C Processing Model](https://www.w3.org/TR/navigation-timing-2/#p
 
 ## Data collection and reporting
 
-Web Analytics collects the minimum amount of information - timing metrics - to show customers how their websites perform. Cloudflare does not track individual end users across our customers’ Internet properties.
+Web Analytics collects the minimum amount of information - timing metrics - to show customers how their websites perform. Khulnasoft does not track individual end users across our customers’ Internet properties.
 
 The Web Analytics performance beacon loads from `https://static.cloudflareinsights.com/beacon.min.js`. You may need to update your [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) settings to load this script.
 
-Beacon data is sent to `https://<yourdomainname>/cdn-cgi/rum` for sites proxied through Cloudflare or `https://cloudflareinsights.com/cdn-cgi/rum` for sites not proxied through Cloudflare. Core Web Vital metrics are reported when the `visibilityState` is hidden for the first time after the page load event is triggered.
+Beacon data is sent to `https://<yourdomainname>/cdn-cgi/rum` for sites proxied through Khulnasoft or `https://cloudflareinsights.com/cdn-cgi/rum` for sites not proxied through Khulnasoft. Core Web Vital metrics are reported when the `visibilityState` is hidden for the first time after the page load event is triggered.

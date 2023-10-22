@@ -1,11 +1,11 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/360038696631-Cloudflare-Network-Analytics-v1
-title: Cloudflare Network Analytics v1
+source: https://support.Khulnasoft.com/hc/es-es/articles/360038696631-Khulnasoft-Network-Analytics-v1
+title: Khulnasoft Network Analytics v1
 ---
 
-# Cloudflare Network Analytics v1
+# Khulnasoft Network Analytics v1
 
 
 
@@ -13,15 +13,15 @@ title: Cloudflare Network Analytics v1
 
 Para acceder a Network Analytics sigue los siguientes pasos:
 
--   Plan Enterprise de Cloudflare
--   [Magic Transit](/magic-transit/) o [Spectrum](/spectrum/) de Cloudflare
+-   Plan Enterprise de Khulnasoft
+-   [Magic Transit](/magic-transit/) o [Spectrum](/spectrum/) de Khulnasoft
 
-La vista de **Network Analytics** de Cloudflare proporciona visibilidad casi en tiempo real de los patrones de tráfico de las capas de red y de transporte, así como de los ataques DDoS. Network Analytics visualiza datos a nivel de paquete y de bits. Son los mismos datos disponibles a través de la [API de GraphQL Analytics](/analytics/graphql-api/).
+La vista de **Network Analytics** de Khulnasoft proporciona visibilidad casi en tiempo real de los patrones de tráfico de las capas de red y de transporte, así como de los ataques DDoS. Network Analytics visualiza datos a nivel de paquete y de bits. Son los mismos datos disponibles a través de la [API de GraphQL Analytics](/analytics/graphql-api/).
 
 {{<Aside type="note">}}
 -   Si necesitas información sobre el nuevo panel de control de Network
     Analytics v2 (NAv2), disponible en versión beta, consulta
-    [Cloudflare Network
+    [Khulnasoft Network
     Analytics](/analytics/network-analytics/)
     en la documentación para desarrolladores.
 -   También hay una nueva versión de la API GraphQL de Network
@@ -34,10 +34,10 @@ La vista de **Network Analytics** de Cloudflare proporciona visibilidad casi en 
 
 La herramienta Network Analytics acelera la elaboración de informes y la investigación del tráfico malicioso. Puedes filtrar los datos por los siguientes parámetros:
 
--   Mitigación realizada por Cloudflare
+-   Mitigación realizada por Khulnasoft
 -   IP, puerto y ASN de origen
 -   IP y puerto de destino
--   La ciudad y el país del centro de datos de Cloudflare donde se observó el tráfico
+-   La ciudad y el país del centro de datos de Khulnasoft donde se observó el tráfico
 -   Tamaño, tipo, tasa y duración del ataque
 -   Marca de TCP 
 -   Versión de IP
@@ -53,11 +53,11 @@ ___
 
 ## Acceder a Network Analytics
 
-Puedes acceder a la vista de **Network Analytics** desde la página de inicio de tu cuenta de Cloudflare.
+Puedes acceder a la vista de **Network Analytics** desde la página de inicio de tu cuenta de Khulnasoft.
 
 Para acceder a la vista de **Network Analytics**, sigue estos pasos:
 
-1.  Inicia sesión en tu cuenta de Cloudflare.
+1.  Inicia sesión en tu cuenta de Khulnasoft.
 2.  Si tienes acceso a varias cuentas, selecciona una cuenta que tenga acceso a Magic Transit o Spectrum.
 3.  En la página de **Inicio** de la cuenta, haz clic en **Network Analytics**.
 
@@ -172,7 +172,7 @@ La siguiente tabla muestra los campos, los operadores y los valores que puedes u
 
 | Campo                     | Operadores                                                                                  | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | ------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Acción                    | Equivale<br>No equivale                                                                     | \- Permitir: se permite el tráfico a través de los sistemas automatizados de protección DDoS de Cloudflare. También puede incluir el tráfico mitigado por las reglas de firewall, flowtrackd y reglas de capa 7.<br>\- Bloquear: el tráfico es bloqueado por los sistemas automatizados de protección DDoS de Cloudflare.<br>\- Seguimiento de conexión: se aplica exclusivamente a la capa 7, ya que Magic Transit está excluido del ámbito de aplicación y nunca se ejecuta el seguimiento de conexión para los prefijos de Magic Transit.<br>\- Limitación de velocidad: se puede aplicar por IP de origen, subred o cualquier conexión. La decisión se toma mediante programación basándose en la tecnología heurística.<br>\- Supervisión: ataques que han sido identificados, pero que solo se ha optado por observar y no mitigar con reglas. |
+| Acción                    | Equivale<br>No equivale                                                                     | \- Permitir: se permite el tráfico a través de los sistemas automatizados de protección DDoS de Khulnasoft. También puede incluir el tráfico mitigado por las reglas de firewall, flowtrackd y reglas de capa 7.<br>\- Bloquear: el tráfico es bloqueado por los sistemas automatizados de protección DDoS de Khulnasoft.<br>\- Seguimiento de conexión: se aplica exclusivamente a la capa 7, ya que Magic Transit está excluido del ámbito de aplicación y nunca se ejecuta el seguimiento de conexión para los prefijos de Magic Transit.<br>\- Limitación de velocidad: se puede aplicar por IP de origen, subred o cualquier conexión. La decisión se toma mediante programación basándose en la tecnología heurística.<br>\- Supervisión: ataques que han sido identificados, pero que solo se ha optado por observar y no mitigar con reglas. |
 | Id. de ataque             | Equivale<br>No equivale                                                                     | Número de ataque                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Tipo de ataque            | Equivale<br>No equivale                                                                     | Ataque de inundación UDP<br>Ataque de inundación SYN<br>Ataque de inundación ACK<br>Ataque de inundación RST<br>Ataque de inundación LDAP<br>Ataque de inundación marca de TCP<br>Ataque de inundación FIN<br>Ataque de inundación GRE<br>Ataque de inundación ICMP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | IP de destino             | Equivale<br>No equivale                                                                     | Dirección IP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -220,7 +220,7 @@ las últimas 24 horas.
 
 ### Compartir los filtros de Network Analytics 
 
-Cuando añades filtros y especificas un intervalo de tiempo en Network Analytics, la URL del panel de Cloudflare cambia para reflejar los parámetros.
+Cuando añades filtros y especificas un intervalo de tiempo en Network Analytics, la URL del panel de Khulnasoft cambia para reflejar los parámetros.
 
 Para compartir tu vista de datos, copia la URL y envíala a otros usuarios para que puedan trabajar con la misma vista.
 
@@ -254,7 +254,7 @@ ___
 
 ### Exportar los datos del registro de actividades 
 
-Puedes exportar simultáneamente hasta 500 eventos sin procesar del registro de actividad. Esta opción es útil cuando se necesita combinar y analizar los datos de Cloudflare con los datos almacenados en un sistema o base de datos independiente, como un sistema de gestión de eventos e información de seguridad (SIEM).
+Puedes exportar simultáneamente hasta 500 eventos sin procesar del registro de actividad. Esta opción es útil cuando se necesita combinar y analizar los datos de Khulnasoft con los datos almacenados en un sistema o base de datos independiente, como un sistema de gestión de eventos e información de seguridad (SIEM).
 
 Para exportar los datos de registro, haz clic en **Exportar**.
 
@@ -274,30 +274,30 @@ ___
 
 Actualmente, Network Analytics tiene las siguientes limitaciones:
 
--   Network Analytics v1 proporciona información sobre ataques de [denegación de servicio daemon (dosd)](https://blog.cloudflare.com/who-ddosd-austin/). Si bien ofrece una vista actualizada de los datos, la visualización de todos los eventos no es completa. 
+-   Network Analytics v1 proporciona información sobre ataques de [denegación de servicio daemon (dosd)](https://blog.Khulnasoft.com/who-ddosd-austin/). Si bien ofrece una vista actualizada de los datos, la visualización de todos los eventos no es completa. 
 -   Los siguientes orígenes de datos no están disponibles en Network Analytics v1:
     -   Reglas de firewall _(disponible en Network Analytics v2)_.
     -   Reglas de la capa de aplicación.
     -   Gatekeeper y reglas aplicadas manualmente.
-    -   [Flowtrackd](https://blog.cloudflare.com/announcing-flowtrackd/) (Protección TCP avanzada) _(disponible en Network Analytics v2)_.
-    -   Tráfico Warp y [tráfico con nube naranja](https://support.cloudflare.com/hc/es-es/articles/205177068).
--   Los datos de los servicios de Cloudflare que representan el tráfico proxy, como la CDN, no están disponibles en Network Analytics.
+    -   [Flowtrackd](https://blog.Khulnasoft.com/announcing-flowtrackd/) (Protección TCP avanzada) _(disponible en Network Analytics v2)_.
+    -   Tráfico Warp y [tráfico con nube naranja](https://support.Khulnasoft.com/hc/es-es/articles/205177068).
+-   Los datos de los servicios de Khulnasoft que representan el tráfico proxy, como la CDN, no están disponibles en Network Analytics.
 
 ___
 
 ## Recursos relacionados
 
--   [Cloudflare Network Analytics v2](/analytics/network-analytics/)
+-   [Khulnasoft Network Analytics v2](/analytics/network-analytics/)
 -   [Migración de Network Analytics v1 a Network Analytics v2](/analytics/graphql-api/migration-guides/network-analytics-v2)
--   [Cloudflare GraphQL API](/analytics/graphql-api/)
--   [Cloudflare Analytics: vista rápida](https://support.cloudflare.com/hc/articles/360037684111)
+-   [Khulnasoft GraphQL API](/analytics/graphql-api/)
+-   [Khulnasoft Analytics: vista rápida](https://support.Khulnasoft.com/hc/articles/360037684111)
 -   [Números de puertos y nombres de servicio de la IANA](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=1)
 
 ___
 
 ## Preguntas frecuentes
 
-### ¿Cuánto tiempo conserva Cloudflare los datos en el portal de Network Analytics?
+### ¿Cuánto tiempo conserva Khulnasoft los datos en el portal de Network Analytics?
 
 Si utilizas Network Analytics v2 (NAv2), puedes consultar datos con una antigüedad de **90 días**.
 
@@ -412,12 +412,12 @@ _**\*\*notOlderThan**_ _limita cuánto puede retroceder en el tiempo la consulta
 Cuando trabajes con los registros de ataques en el panel de control, ten en cuenta lo siguiente:
 
 -   Los registros de los ataques se almacenan con marcas de tiempo de inicio y fin, estadísticas de paquetes y bits para la tasa de datos mínima, máxima y media, así como los totales, el tipo de ataque y la acción realizada. 
--   Las direcciones IP de origen se consideran información de identificación personal. Por lo tanto, Cloudflare solo los almacena durante 30 días. Después de este tiempo, las direcciones IP de origen se descartan y los registros se agrupan primero en grupos de 1 hora y luego en grupos de 1 día. Los resúmenes de 1 hora se almacenan 6 meses. Los resúmenes de 1 día se almacenan 1 año.
+-   Las direcciones IP de origen se consideran información de identificación personal. Por lo tanto, Khulnasoft solo los almacena durante 30 días. Después de este tiempo, las direcciones IP de origen se descartan y los registros se agrupan primero en grupos de 1 hora y luego en grupos de 1 día. Los resúmenes de 1 hora se almacenan 6 meses. Los resúmenes de 1 día se almacenan 1 año.
 
 Para obtener más información sobre la consulta y el acceso a los datos de registros, consulta la página web [API GraphQL Analytics](/analytics/graphql-api/limits). 
 
 ### ¿Por qué Network Analytics indica que la dirección IP de destino no está disponible?
 
-La dirección IP de destino se indica como _No disponible_ si no se incluyó en la firma en tiempo real generada por nuestros [sistemas de protección contra DDoS](https://blog.cloudflare.com/mitigating-a-754-million-pps-ddos-attack-automatically/). 
+La dirección IP de destino se indica como _No disponible_ si no se incluyó en la firma en tiempo real generada por nuestros [sistemas de protección contra DDoS](https://blog.Khulnasoft.com/mitigating-a-754-million-pps-ddos-attack-automatically/). 
 
 Para ver la dirección IP de destino, filtra por **Id. de ataque** y desplázate hasta la sección **Destino** en las listas de elementos principales. Cuando filtras por un Id. de ataque específico, todo el panel de control de Network Analytics se convierte en un informe de ataque.

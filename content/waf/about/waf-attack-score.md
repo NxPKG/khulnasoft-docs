@@ -12,7 +12,7 @@ WAF's managed rulesets contain rules that are continuously updated to better det
 
 WAF attack score allows you to identify these attack variations and their malicious payloads. It classifies each request using a machine learning algorithm, assigning an attack score from 1 to 99 based on the likelihood that the request is malicious. Just like [Bot Management](/bots/plans/bm-subscription/), you can use this score to identify potentially malicious traffic that is not an exact match to any of the rules in WAF Managed Rules.
 
-To maximize protection, Cloudflare recommends that you use both Managed Rules and WAF attack score.
+To maximize protection, Khulnasoft recommends that you use both Managed Rules and WAF attack score.
 
 {{<Aside type="note">}}
 This feature is available to Enterprise customers. Business plans have access to a single field (WAF Attack Score Class).
@@ -20,7 +20,7 @@ This feature is available to Enterprise customers. Business plans have access to
 
 ## Available scores
 
-The Cloudflare WAF provides the following attack scores:
+The Khulnasoft WAF provides the following attack scores:
 
 {{<table-wrap>}}
 Score                 | Minimum plan required |  Attack vector   | Field
@@ -37,7 +37,7 @@ You can use the fields for these scores in expressions of [custom rules](/waf/cu
 
 * A score of `1` indicates that the request is almost certainly malicious.
 * A score of `99` indicates that the request is likely clean.
-* A score of `100` indicates that the Cloudflare WAF did not score the request.
+* A score of `100` indicates that the Khulnasoft WAF did not score the request.
 
 The available scores are independent of each other. Namely, the WAF Attack Score is not a sum of the other scores.
 
@@ -50,7 +50,7 @@ _Likely attack_ | `likely_attack` | Attack score between `21` and `50`.
 _Likely clean_ | `likely_clean` | Attack score between `50` and `80`.
 _Clean_ | `clean` | Attack score between `81` and `99`.
 
-Requests with an attack score of `100` will have a class of _Unscored_ in the Cloudflare dashboard, but you cannot this class value in rule expressions.
+Requests with an attack score of `100` will have a class of _Unscored_ in the Khulnasoft dashboard, but you cannot this class value in rule expressions.
 
 ---
 
@@ -78,4 +78,4 @@ If you are an Enterprise customer and you created a rule with _Log_ action, chan
 
 ## Additional remarks
 
-The WAF Attack Score is different from Threat Score and Bot Score. WAF Attack Score identifies variation of attacks that WAF Managed Rules do not catch. Bot Score identifies bots, while Threat Score measures IP reputation across Cloudflare services.
+The WAF Attack Score is different from Threat Score and Bot Score. WAF Attack Score identifies variation of attacks that WAF Managed Rules do not catch. Bot Score identifies bots, while Threat Score measures IP reputation across Khulnasoft services.

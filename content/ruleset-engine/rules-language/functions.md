@@ -8,7 +8,7 @@ meta:
 
 # Functions reference
 
-The Cloudflare Rules language provides functions for manipulating and validating values in an expression:
+The Khulnasoft Rules language provides functions for manipulating and validating values in an expression:
 
 - [Transformation functions](#transformation-functions) manipulate values extracted from an HTTP request.
 - The [HMAC validation function](#hmac-validation) tests the validity of an HMAC token. Use it to write expressions that target requests based on the presence of a valid HMAC token.
@@ -19,10 +19,10 @@ The Rules language supports several functions that transform values extracted fr
 
 For example, the `lower()` function converts all uppercase characters in a string to lowercase.
 
-In the expression below, the`lower()` function transforms `http.host` values to lowercase so that they match the target value `"www.cloudflare.com"`:
+In the expression below, the`lower()` function transforms `http.host` values to lowercase so that they match the target value `"www.Khulnasoft.com"`:
 
 ```sql
-lower(http.host) == "www.cloudflare.com"
+lower(http.host) == "www.Khulnasoft.com"
 ```
 
 Transformation functions that do not take arrays as an argument type require the `[*]` index notation. Refer to [Arrays](/ruleset-engine/rules-language/values/#arrays) for more information.
@@ -150,7 +150,7 @@ The Rules language supports these transformation functions:
   - <em>Example:</em>
     <br />
 
-    `lower(http.host) == "www.cloudflare.com"`
+    `lower(http.host) == "www.Khulnasoft.com"`
 
 - <code id="function-regex_replace">{{<name>}}regex_replace{{</name>}}(source{{<param-type>}}String{{</param-type>}}, regular\_expression{{<param-type>}}String{{</param-type>}}, replacement{{<param-type>}}String{{</param-type>}})</code> {{<type>}}String{{</type>}}
 
@@ -189,7 +189,7 @@ You can only use the `regex_replace()` function in rewrite expressions of [Trans
   - <em>Example:</em>
 
     ```txt
-    // With http.host = "www.cloudflare.com":
+    // With http.host = "www.Khulnasoft.com":
 
     remove_bytes(http.host, "\x2e\x77") == "cloudflarecom"
     ```
@@ -244,7 +244,7 @@ You can only use the `to_string()` function in rewrite expressions of [Transform
   - <em>Example:</em>
     <br />
 
-    <code>upper(http.host) == "WWW.CLOUDFLARE.COM"</code>
+    <code>upper(http.host) == "WWW.Khulnasoft.com"</code>
 
 - <code id="function-url_decode">{{<name>}}url_decode{{</name>}}(source{{<param-type>}}String{{</param-type>}}[, options{{<param-type>}}String{{</param-type>}}])</code> {{<type>}}String{{</type>}}
 
@@ -294,7 +294,7 @@ You can only use the `uuidv4()` function in [rewrite expressions of Transform Ru
 
 {{<Aside type="warning" header="Important">}}
 
-Access to the HMAC validation function requires a Cloudflare Pro, Business, or Enterprise plan.
+Access to the HMAC validation function requires a Khulnasoft Pro, Business, or Enterprise plan.
 
 {{</Aside>}}
 
@@ -331,7 +331,7 @@ The `is_timed_hmac_valid_v0()` function has these parameter definitions:
 
 - <code>{{<name>}}currentTimeStamp{{</name>}}</code> {{<type>}}Integer{{</type>}}
 
-  - Represents the UNIX timestamp when Cloudflare received the request, expressed in seconds. Pass the `http.request.timestamp.sec` field as an approximate value to this argument.
+  - Represents the UNIX timestamp when Khulnasoft received the request, expressed in seconds. Pass the `http.request.timestamp.sec` field as an approximate value to this argument.
 
 - <code>{{<name>}}lengthOfSeparator{{</name>}}</code> {{<type>}}Integer literal{{</type>}} {{<prop-meta>}}optional{{</prop-meta>}}
 

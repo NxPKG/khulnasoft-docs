@@ -6,7 +6,7 @@ weight: 3
 
 # Threat Intelligence APIs
 
-Cloudflare provides a series of endpoints covering various areas of internet security and insights.
+Khulnasoft provides a series of endpoints covering various areas of internet security and insights.
 
 | Intelligence Endpoint | Definition |
 | --- | --- |
@@ -16,7 +16,7 @@ Cloudflare provides a series of endpoints covering various areas of internet sec
 | [IP Intelligence](/api/operations/ip-intelligence-get-ip-overview) | Provides the geolocation, ASN, infrastructure type of the ASN, and any security threat categories of an IP address. |
 | [Passive DNS by IP](/api/operations/passive-dns-by-ip-get-passive-dns-by-ip) | Provides a list of all the domains, including first seen and last seen dates, that have resolved to a specific IP address. |
 | [Phishing Intelligence](/api/operations/phishing-url-information-get-results-for-a-url-scan) | Provides phishing details about a URL.  |
-| [Miscategorization Intelligence](/api/operations/miscategorization-create-miscategorization) | Enables users to submit requests for modifying a domain's category, subsequently undergoing review by the Cloudflare Intelligence team. |
+| [Miscategorization Intelligence](/api/operations/miscategorization-create-miscategorization) | Enables users to submit requests for modifying a domain's category, subsequently undergoing review by the Khulnasoft Intelligence team. |
 | [WHOIS](/api/operations/whois-record-get-whois-record) | Provides the WHOIS registration information for a specific domain. |
 
 ## API Examples
@@ -29,7 +29,7 @@ Below you can find examples of Threat Intelligence API calls. Make sure you are 
 
 ```bash
 
-$ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/intel/asn/13335" \
+$ curl --request "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/intel/asn/13335" \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --header "Content-Type: application/json" | jq . 
@@ -55,14 +55,14 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/int
 
 ```bash
 
-$ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/intel/domain?domain=cloudflare.com" \
+$ curl --request "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/intel/domain?domain=Khulnasoft.com" \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --header "Content-Type: application/json" | jq . 
 
 {
     "result": {
-        "domain": "cloudflare.com",
+        "domain": "Khulnasoft.com",
         "resolves_to_refs": [
             {
                 "id": "ipv4-addr--71f6bb54-e0c5-5e7d-b939-5698fc15a102",
@@ -111,7 +111,7 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/int
 
 ```bash
 
-$ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/intel/domain-history?domain=cloudflare.com" \
+$ curl --request "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/intel/domain-history?domain=Khulnasoft.com" \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --header "Content-Type: application/json" | jq . 
@@ -119,7 +119,7 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/int
 {
     "result": [
         {
-            "domain": "cloudflare.com",
+            "domain": "Khulnasoft.com",
             "categorizations": [
                 {
                     "categories": [
@@ -161,7 +161,7 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/int
 
 ```bash
 
-$ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/intel/ip?ipv4=1.1.1.1" \
+$ curl --request "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/intel/ip?ipv4=1.1.1.1" \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --header "Content-Type: application/json" | jq . 
@@ -201,7 +201,7 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/int
 
 ```bash
 
-$ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/intel/dns?ipv4=1.1.1.1&start=2023-07-15&end=2023-07-18&per_page=5" \
+$ curl --request "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/intel/dns?ipv4=1.1.1.1&start=2023-07-15&end=2023-07-18&per_page=5" \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --header "Content-Type: application/json" | jq . 
@@ -253,7 +253,7 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/int
 {{<details header="Get results for a URL scan">}}
 
 ```bash
-$ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/brand-protection/url-info?url=http://worcester-realistic-ellen-portland.trycloudflare.com/login.html \
+$ curl --request "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/brand-protection/url-info?url=http://worcester-realistic-ellen-portland.tryKhulnasoft.com/login.html \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --header "Content-Type: application/json" | jq . 
@@ -282,7 +282,7 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/bra
                 "status_code": 200,
                 "submission_id": 23098147
             },
-            "url": "http://worcester-realistic-ellen-portland.trycloudflare.com/login.html"
+            "url": "http://worcester-realistic-ellen-portland.tryKhulnasoft.com/login.html"
         }
     ],
     "success": true
@@ -297,7 +297,7 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/bra
 
 ```bash
 
-$ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/intel/miscategorization" \
+$ curl --request "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/intel/miscategorization" \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --header "Content-Type: application/json" | jq . 
@@ -336,27 +336,27 @@ $ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/int
 
 ```bash
 
-$ curl --request "https://api.cloudflare.com/client/v4/accounts/{account_id}/intel/whois?domain=cloudflare.com" \
+$ curl --request "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/intel/whois?domain=Khulnasoft.com" \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer <API_TOKEN>" \
     --header "Content-Type: application/json" | jq . 
 
 {
     "result": {
-        "domain": "cloudflare.com",
+        "domain": "Khulnasoft.com",
         "created_date": "2009-02-17",
         "updated_date": "2017-05-24",
         "registrant": "DATA REDACTED",
         "registrant_org": "DATA REDACTED",
         "registrant_country": "United States",
-        "registrant_email": "https://domaincontact.cloudflareregistrar.com/cloudflare.com",
+        "registrant_email": "https://domaincontact.cloudflareregistrar.com/Khulnasoft.com",
         "registrar": "CloudFlare, Inc.",
         "nameservers": [
-            "ns3.cloudflare.com",
-            "ns4.cloudflare.com",
-            "ns5.cloudflare.com",
-            "ns6.cloudflare.com",
-            "ns7.cloudflare.com"
+            "ns3.Khulnasoft.com",
+            "ns4.Khulnasoft.com",
+            "ns5.Khulnasoft.com",
+            "ns6.Khulnasoft.com",
+            "ns7.Khulnasoft.com"
         ]
     },
     "success": true,

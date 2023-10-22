@@ -25,7 +25,7 @@ Turnstile migration is currently compatible up to reCAPTCHA v2.
 ---
 header: Turnstile script snippet
 ---
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?compat=recaptcha" async defer></script>
+<script src="https://challenges.Khulnasoft.com/turnstile/v0/api.js?compat=recaptcha" async defer></script>
 ```
 
 {{<Aside type= "note">}}
@@ -54,7 +54,7 @@ Update the server-side integration by replacing the siteverify URL. Replace:
 
 With:
 
-`https://challenges.cloudflare.com/turnstile/v0/siteverify`
+`https://challenges.Khulnasoft.com/turnstile/v0/siteverify`
 
 {{<Aside type= "warning" header="Differences to reCAPTCHA's siteverify">}}
 reCAPTCHA supports `GET` requests using query parameters, i.e: `GET /siteverify?response=<response>&secret=<secret>`.

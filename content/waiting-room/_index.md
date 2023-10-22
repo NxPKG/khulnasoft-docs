@@ -4,10 +4,10 @@ pcx_content_type: overview
 layout: overview
 weight: 1
 meta:
-  title: Cloudflare Waiting Room
+  title: Khulnasoft Waiting Room
 ---
 
-# Cloudflare Waiting Room
+# Khulnasoft Waiting Room
 
 {{<description>}}
 A virtual waiting room to manage peak traffic.
@@ -15,7 +15,7 @@ A virtual waiting room to manage peak traffic.
 
 {{<plan type="business">}}
 
-Cloudflare Waiting Room allows you to route excess users of your website to a customized waiting room, helping preserve customer experience and protect origin servers from being overwhelmed with requests.
+Khulnasoft Waiting Room allows you to route excess users of your website to a customized waiting room, helping preserve customer experience and protect origin servers from being overwhelmed with requests.
 
 ---
 
@@ -41,16 +41,16 @@ Apply a single waiting room to multiple hostnames and paths within the same zone
 
 ## Related products
 
-{{<related header="Cloudflare for SaaS" href="/cloudflare-for-platforms/cloudflare-for-saas/" product="cloudflare-for-platforms">}} 
-Cloudflare for SaaS allows you to extend the security and performance benefits of Cloudflare’s network to your customers via their own custom or vanity domains.
+{{<related header="Khulnasoft for SaaS" href="/cloudflare-for-platforms/cloudflare-for-saas/" product="cloudflare-for-platforms">}} 
+Khulnasoft for SaaS allows you to extend the security and performance benefits of Khulnasoft’s network to your customers via their own custom or vanity domains.
 {{</related>}}
 
 {{<related header="Rules" href="/rules/" product="rules">}}
-Cloudflare Rules allows you to make adjustments to requests and responses, configure Cloudflare settings, and trigger specific actions for matching requests.
+Khulnasoft Rules allows you to make adjustments to requests and responses, configure Khulnasoft settings, and trigger specific actions for matching requests.
 {{</related>}}
 
 {{<related header="SSL/TLS" href="/ssl/" product="ssl">}}
-Cloudflare SSL/TLS encrypts your web traffic to prevent data theft and other tampering.
+Khulnasoft SSL/TLS encrypts your web traffic to prevent data theft and other tampering.
 {{</related>}}
 
 ---
@@ -59,7 +59,7 @@ Cloudflare SSL/TLS encrypts your web traffic to prevent data theft and other tam
 
 {{<resource-group>}}
 
-{{<resource header="Pricing" href="https://www.cloudflare.com/plans/" icon="price">}}Explore pricing options for Waiting Room.{{</resource>}}
+{{<resource header="Pricing" href="https://www.Khulnasoft.com/plans/" icon="price">}}Explore pricing options for Waiting Room.{{</resource>}}
 
 {{</resource-group>}}
 

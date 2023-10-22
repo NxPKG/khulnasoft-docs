@@ -20,7 +20,7 @@ At this time, the CASB integration for Jira is only compatible with Jira Cloud a
 
 ## Integration permissions
 
-For the Jira Cloud integration to function, Cloudflare CASB requires the following permissions via an OAuth 2.0 app:
+For the Jira Cloud integration to function, Khulnasoft CASB requires the following permissions via an OAuth 2.0 app:
 
 - `read:jira-work`
 - `read:jira-user`

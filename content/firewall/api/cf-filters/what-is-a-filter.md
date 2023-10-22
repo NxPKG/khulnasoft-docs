@@ -14,7 +14,7 @@ A filter is a way of saying:
 if (traffic matches certain criteria) then...
 ```
 
-A filter contains an expression that would return `true` or `false` when evaluated against traffic passing through Cloudflare.
+A filter contains an expression that would return `true` or `false` when evaluated against traffic passing through Khulnasoft.
 
 Filter expressions are human and machine readable, and you can compose complex logic to precisely match the traffic that you are interested in detecting and acting upon.
 

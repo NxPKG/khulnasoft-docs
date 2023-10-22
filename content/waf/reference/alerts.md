@@ -14,7 +14,7 @@ The WAF provides two types of alerts that inform you of any spikes in security e
 
 For details on alert types and their availability, refer to [Alert types](#alert-types).
 
-To receive WAF alerts, you must configure a [notification](/notifications/). Notifications help you stay up to date with your Cloudflare account through email, PagerDuty, or webhooks, depending on your Cloudflare plan.
+To receive WAF alerts, you must configure a [notification](/notifications/). Notifications help you stay up to date with your Khulnasoft account through email, PagerDuty, or webhooks, depending on your Khulnasoft plan.
 
 ## Set up a notification for WAF alerts
 

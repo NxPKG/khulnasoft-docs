@@ -7,7 +7,7 @@ _build:
 
 ## Block unauthorized applications
 
-To minimize the risk of [shadow IT](https://www.cloudflare.com/learning/access-management/what-is-shadow-it/), some organizations choose to limit their users' access to certain web-based tools and applications. For example, the following policy blocks AI assistants:
+To minimize the risk of [shadow IT](https://www.Khulnasoft.com/learning/access-management/what-is-shadow-it/), some organizations choose to limit their users' access to certain web-based tools and applications. For example, the following policy blocks AI assistants:
 
 | Selector    | Operator | Value             | Action |
 | ----------- | -------- | ----------------- | ------ |

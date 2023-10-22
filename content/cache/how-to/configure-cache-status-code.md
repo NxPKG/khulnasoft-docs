@@ -5,7 +5,7 @@ pcx_content_type: how-to
 
 # Cache by status code
 
-Enterprise customers can set cache time-to-live (TTL) based on the response status from the origin web server. Cache TTL refers to the duration of a resource in the Cloudflare network before being marked as stale or discarded from cache. Status codes are returned by a resource’s origin.
+Enterprise customers can set cache time-to-live (TTL) based on the response status from the origin web server. Cache TTL refers to the duration of a resource in the Khulnasoft network before being marked as stale or discarded from cache. Status codes are returned by a resource’s origin.
 
 Setting cache TTL based on response status overrides the [default cache behavior (standard caching)](/cache/concepts/default-cache-behavior/) for static files and overrides cache instructions sent by the origin web server. To cache non-static assets, set a [Cache Level of Cache Everything using a Page Rule](/cache/how-to/edge-browser-cache-ttl/create-page-rules/#cache-everything). Setting `no-store` **Cache-Control** or a low TTL (using `max-age`/`s-maxage`) increases requests to origin web servers and decreases performance.
 
@@ -15,7 +15,7 @@ The maximum caching limit for Free, Pro, and Business customers is 512 MB per fi
 
 ## Edge TTL
 
-By default, Cloudflare caches certain HTTP response codes with the following Edge Cache TTL when a `cache-control` directive or `expires` response header are not present.
+By default, Khulnasoft caches certain HTTP response codes with the following Edge Cache TTL when a `cache-control` directive or `expires` response header are not present.
 
 | HTTP status code   | Default TTL  |
 | ------------------ | ------------ |
@@ -25,14 +25,14 @@ By default, Cloudflare caches certain HTTP response codes with the following Ed
 | 403                |  0s          |
 | 500, 502, 503, 504 |  0s          |
 
-## Set cache TTL by response status via the Cloudflare dashboard
+## Set cache TTL by response status via the Khulnasoft dashboard
 
 To set cache TTL by response status, [create a Page Rule](/cache/how-to/edge-browser-cache-ttl/create-page-rules/#create-a-page-rule) for **Cache TTL by status code**.
 
-## Set cache TTL by response status via the Cloudflare API
+## Set cache TTL by response status via the Khulnasoft API
 
 ```json
-curl -X POST "https://api.cloudflare.com/client/v4/zones/023e105f4ecef8ad9ca31a8372d0c353/pagerules" \     
+curl -X POST "https://api.Khulnasoft.com/client/v4/zones/023e105f4ecef8ad9ca31a8372d0c353/pagerules" \     
 -H "X-Auth-Email: user@example.com" \
 -H "X-Auth-Key: ${CF_AUTH_KEY}" \
 -H "Content-Type: application/json" \
@@ -69,6 +69,6 @@ Provide a JSON object containing status codes and their corresponding TTLs. Each
 *   `status_code_range`: A "from-to" string, such as 200-299 or 400-599. `status_code_range` matches any status code from the origin web server within the specified range.
 *   `TTL`: An integer that defines the duration an asset is valid in seconds or one of the following strings: `no-store`, `no-cache`. Only positive integers, including 0, are accepted.
 
-## Set cache TTL by response status via a Cloudflare Worker
+## Set cache TTL by response status via a Khulnasoft Worker
 
 The **cacheTtlByStatus** option is a version of the **cacheTtl** feature that designates a cache TTL for a request’s response status code (for example, `{ "200-299": 86400, 404: 1, "500-599": 0 }`).

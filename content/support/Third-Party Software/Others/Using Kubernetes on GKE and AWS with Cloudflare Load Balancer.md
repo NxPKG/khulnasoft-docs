@@ -1,20 +1,20 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/115003384591-Using-Kubernetes-on-GKE-and-AWS-with-Cloudflare-Load-Balancer
-title: Using Kubernetes on GKE and AWS with Cloudflare Load Balancer
+source: https://support.Khulnasoft.com/hc/en-us/articles/115003384591-Using-Kubernetes-on-GKE-and-AWS-with-Khulnasoft-Load-Balancer
+title: Using Kubernetes on GKE and AWS with Khulnasoft Load Balancer
 ---
 
-# Using Kubernetes on GKE and AWS with Cloudflare Load Balancer
+# Using Kubernetes on GKE and AWS with Khulnasoft Load Balancer
 
 
 
 ## Overview
 
-This tutorial will guide you through deploying simple application on Kubernetes cluster on Google Kubernetes Engine (GKE) and Amazon Web Services EC2 (AWS) and setting Cloudflare Load Balancer as a Global Load Balancer to distribute traffic intelligently across GKE and AWS. For simplicity we will be using one container cluster with 3 nodes.
+This tutorial will guide you through deploying simple application on Kubernetes cluster on Google Kubernetes Engine (GKE) and Amazon Web Services EC2 (AWS) and setting Khulnasoft Load Balancer as a Global Load Balancer to distribute traffic intelligently across GKE and AWS. For simplicity we will be using one container cluster with 3 nodes.
 
-The following diagram shows the output of this tutorial is deployed application running inside the Kubernetes cluster on GKE and AWS instances with Cloudflare Load Balancer distributing the traffic between them.
+The following diagram shows the output of this tutorial is deployed application running inside the Kubernetes cluster on GKE and AWS instances with Khulnasoft Load Balancer distributing the traffic between them.
 
-![Diagram showing the output of this tutorial with the deployed application running inside the Kubernetes cluster on GKE and AWS instances with Cloudflare Load Balancer distributing the traffic between them.](/images/support/hc-import-kubernetes_gke_http_aws_elb_with_cf_lb.png)
+![Diagram showing the output of this tutorial with the deployed application running inside the Kubernetes cluster on GKE and AWS instances with Khulnasoft Load Balancer distributing the traffic between them.](/images/support/hc-import-kubernetes_gke_http_aws_elb_with_cf_lb.png)
 
 ___
 
@@ -24,9 +24,9 @@ ___
 
 **Pods:** is a group of one or more containers (such as Docker containers), with shared storage/network, and a specification for how to run the containers. A pod’s contents are always co-located and co-scheduled, and run in a shared context. Pods are the smallest deployable units of computing that can be created and managed in Kubernetes. **Node:** is a worker machine in Kubernetes. A node may be a VM or physical machine, depending on the cluster. Each node has the services necessary to run pods and is managed by the master components. The services on a node include Docker, kubelet and kube-proxy. **Cluster:** A group of nodes firewalled from the Internet, that are the primary compute resources managed by Kubernetes. **Cluster master:** The cluster master runs the Kubernetes control plane processes, including the Kubernetes API server, scheduler, and core resource controllers. **Cluster network:** A set of links, logical or physical, that facilitate communication within a cluster according to the Kubernetes networking model. Examples of a Cluster network include Overlays such as flannel or SDNs such as OVS. **Service:** A Kubernetes Service that identifies a set of pods using label selectors. Unless mentioned otherwise, Services are assumed to have virtual IPs only routable within the cluster network. Kubernetes Engine assigns the external IP address to the [Service resource](https://kubernetes.io/docs/concepts/services-networking/service/)—not the Deployment. The kubectl expose command creates a Service resource, which provides networking and IP support to your application's Pods. Kubernetes Engine creates an external IP and a Load Balancer for your application **Kubectl:** A tool which is used to interact with the cluster. **Kops:** A simple tool provided by Kubernetes, that makes the creation of the cluster very easy. **Ingress:** An [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) is a collection of rules that allow inbound connections to reach the cluster services. It can be configured to give services externally-reachable URLs, load balance traffic, terminate SSL, offer name based virtual hosting, and more. Users request ingress by POSTing the Ingress resource to the API server. **Ingress Controller:** An [Ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress/#ingress-controllers) is responsible for fulfilling the Ingress, usually with a load balancer, though it may also configure your edge router or additional frontends to help handle the traffic in an HA manner.
 
-## [Cloudflare Load Balancer](/load-balancing/)
+## [Khulnasoft Load Balancer](/load-balancing/)
 
-**Load Balancer:** a DNS hostname that you want traffic to be load-balanced for. Geo-based routing is also configured at the Load Balancer level **Monitor:** the configuration used to determine the health of servers. Monitors attached to Pools, so you can monitor different locations or groups of servers differently **Pool:** a group of servers or containers, each identified by their IP address or hostname. You can configure multiple Pools and configure failover priority **Origins:** A single IP or hostname that exist within a Pool. Multiple Origins in a single Pool will be load balanced by Cloudflare via round robin.
+**Load Balancer:** a DNS hostname that you want traffic to be load-balanced for. Geo-based routing is also configured at the Load Balancer level **Monitor:** the configuration used to determine the health of servers. Monitors attached to Pools, so you can monitor different locations or groups of servers differently **Pool:** a group of servers or containers, each identified by their IP address or hostname. You can configure multiple Pools and configure failover priority **Origins:** A single IP or hostname that exist within a Pool. Multiple Origins in a single Pool will be load balanced by Khulnasoft via round robin.
 
 ## Set up
 
@@ -35,7 +35,7 @@ To run this tutorial, you’ll need the following:
 -   Access to Google Cloud Platform (GCP)
 -   Access to AWS
 -   Docker image
--   A domain on Cloudflare (on the Free, Pro, or Business plan) with a Load Balancing subscription
+-   A domain on Khulnasoft (on the Free, Pro, or Business plan) with a Load Balancing subscription
 
 ___
 
@@ -141,7 +141,7 @@ Find out the external IP address of the load balancer serving your application b
 $ kubectl get ingress basic-ingress
 ```
 
-This External IP (In my example, 35.227.204.26) is used for setting up pools with Cloudflare Load Balancer.
+This External IP (In my example, 35.227.204.26) is used for setting up pools with Khulnasoft Load Balancer.
 
 By default, Kubernetes Engine allocates ephemeral external IP addresses for HTTP applications exposed through an Ingress. In order to convert it to a static IP address, you can perform this action here.
 
@@ -201,7 +201,7 @@ $ aws route53 create-hosted-zone --name k8saws.usualwebsite.com --caller-referen
 
 It will automatically create four nameserver (NS) records. You must then set up your NS records in the parent domain, so that records in the domain will resolve.
 
-As Authoritative DNS for my domain usualwebsite.com I am using Cloudflare DNS. Just simply [add four NS records](/dns/manage-dns-records/how-to/create-dns-records/) under your DNS provider.
+As Authoritative DNS for my domain usualwebsite.com I am using Khulnasoft DNS. Just simply [add four NS records](/dns/manage-dns-records/how-to/create-dns-records/) under your DNS provider.
 
 To check if your records were added correctly run the following command:
 
@@ -273,7 +273,7 @@ $ kubectl get services
 $ kubectl describe service aws-http-lb
 ```
 
-The External IP address (in my example a2a0848d7d49611e7bfe20206b4bee2f-1914840563.us-east-1.elb.amazonaws.com) is used for setting up pools with Cloudflare Load Balancer.
+The External IP address (in my example a2a0848d7d49611e7bfe20206b4bee2f-1914840563.us-east-1.elb.amazonaws.com) is used for setting up pools with Khulnasoft Load Balancer.
 
 ### Step 5: Scale up your application
 
@@ -291,7 +291,7 @@ $ kubectl get pods
 
 All threes pods are running under AWS Elastic Load Balancer.
 
-We have our applications deployed on both clouds. Now we can set up Cloudflare Load Balancer.
+We have our applications deployed on both clouds. Now we can set up Khulnasoft Load Balancer.
 
 ### Deprovisioning:
 
@@ -315,9 +315,9 @@ $ kubectl delete ingress basic-ingress
 
 ---
 
-## Creating Cloudflare Load Balancer
+## Creating Khulnasoft Load Balancer
 
-For creating Cloudflare Load Balancer we will use the following IP addresses which we obtained from the steps above:
+For creating Khulnasoft Load Balancer we will use the following IP addresses which we obtained from the steps above:
 
 -   Google Load Balancer IP address: 35.227.204.26
 -   AWS Load balancer IP address:a2a0848d7d49611e7bfe20206b4bee2f-1914840563.us-east-1.elb.amazonaws.com
@@ -370,12 +370,12 @@ ___
 
 ## Argo Tunnel Ingress Controller
 
-In addition to Cloudflare Load Balancer, [Cloudflare Tunnel](/cloudflare-one/connections/connect-networks/) establishes an encrypted tunnel to the Cloudflare edge without needing to open ports in the firewall or have a public IP. This is perfect for NATted environments such as a home or office network, or to allow inbound traffic into egress-only services.
+In addition to Khulnasoft Load Balancer, [Khulnasoft Tunnel](/cloudflare-one/connections/connect-networks/) establishes an encrypted tunnel to the Khulnasoft edge without needing to open ports in the firewall or have a public IP. This is perfect for NATted environments such as a home or office network, or to allow inbound traffic into egress-only services.
 
-### **Cloudflare TunnelIngress**
+### **Khulnasoft TunnelIngress**
 
-To make it easy to work with Kubernetes we have developed a Cloudflare Tunnel Ingress. It implements an ingress controller using Cloudflare Tunnel tunnel to connect a Cloudflare managed URL to a Kubernetes service.
+To make it easy to work with Kubernetes we have developed a Khulnasoft Tunnel Ingress. It implements an ingress controller using Khulnasoft Tunnel tunnel to connect a Khulnasoft managed URL to a Kubernetes service.
 
-The Cloudflare Tunnel controller will manage ingress tunnels in a single namespace of the cluster. Multiple controllers can exist in different namespaces, with different credentials for each namespace.
+The Khulnasoft Tunnel controller will manage ingress tunnels in a single namespace of the cluster. Multiple controllers can exist in different namespaces, with different credentials for each namespace.
 
-![Diagram of Cloudflare Load Balancer integrating with AWS, GKE, and Cloudflare Tunnel.](/images/support/hc-import-kub_warp_cf_lb_gke_aws_diagrams.png)
+![Diagram of Khulnasoft Load Balancer integrating with AWS, GKE, and Khulnasoft Tunnel.](/images/support/hc-import-kub_warp_cf_lb_gke_aws_diagrams.png)

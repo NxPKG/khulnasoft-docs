@@ -27,7 +27,7 @@ The main chart displays the distribution of request rates for the top 50 unique 
 * **IP address and JA3 fingerprint** (only available to customers with Bot Management)
 
 {{<Aside type="note">}}
-For more information on how Cloudflare calculates the request rate of incoming traffic, refer to [How Cloudflare determines the request rate](/waf/rate-limiting-rules/request-rate/).
+For more information on how Khulnasoft calculates the request rate of incoming traffic, refer to [How Khulnasoft determines the request rate](/waf/rate-limiting-rules/request-rate/).
 {{</Aside>}}
 
 ---
@@ -36,7 +36,7 @@ For more information on how Cloudflare calculates the request rate of incoming t
 
 ### 1. Define the scope
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com), and select your account and zone.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com), and select your account and zone.
 2. Go to **Security** > **Analytics**.
 
 3. In the **HTTP requests** tab, select a specific time period:

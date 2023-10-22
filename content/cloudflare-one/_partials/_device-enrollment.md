@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client**.
 2. In the **Device enrollment** card, select **Manage**.
 3. In the **Rules** tab, configure one or more [Access policies](/cloudflare-one/policies/access/) to define who can join their device. For example, you could allow all users with a company email address:
   | Rule type | Selector | Value |

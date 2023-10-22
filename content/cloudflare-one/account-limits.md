@@ -48,7 +48,7 @@ This page lists the default account limits for rules, applications, fields, and 
 | Custom Wordlist keywords per spreadsheet | 200     |
 | Custom Wordlist keywords per account     | 1,000   |
 
-## Cloudflare Tunnel
+## Khulnasoft Tunnel
 
 | Feature                                  | Limit |
 | ---------------------------------------- | ----- |

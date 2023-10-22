@@ -12,7 +12,7 @@ Dynamic lists automatically add or remove elements based on set criteria.
 
 ## Used in
 
-When at all possible, Cloudflare seeks to avoid creating static representations of dynamic options.
+When at all possible, Khulnasoft seeks to avoid creating static representations of dynamic options.
 
 ## Structure
 

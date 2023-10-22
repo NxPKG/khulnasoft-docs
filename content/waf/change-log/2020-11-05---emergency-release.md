@@ -23,7 +23,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100501</td>
       <td>
         Oracle WebLogic - Deserialization - CVE:CVE-2020-14882,

@@ -6,6 +6,6 @@ layout: list
 
 # Glossary
 
-Review the definitions for terms used across Cloudflare's KV documentation.
+Review the definitions for terms used across Khulnasoft's KV documentation.
 
 {{<glossary product="KV">}}

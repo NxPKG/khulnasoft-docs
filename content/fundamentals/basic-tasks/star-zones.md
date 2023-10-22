@@ -5,13 +5,13 @@ pcx_content_type: how-to
 
 # Star websites
 
-For quick access to common websites, star up to ten websites per account in the Cloudflare dashboard.
+For quick access to common websites, star up to ten websites per account in the Khulnasoft dashboard.
 
 ## Star a website
 
 To star a website:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and website.
 3. On the website **Overview**, select **Star**.
 
@@ -21,6 +21,6 @@ To star a website:
 
 To view only starred websites in your account:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account.
 3. On the account **Home**, select **Starred**.

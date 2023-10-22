@@ -196,4 +196,4 @@ new_classes = ["Counter"]
 ```
 ### Related resources
 
-- [Durable Objects: Easy, Fast, Correct — Choose three](https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/)
+- [Durable Objects: Easy, Fast, Correct — Choose three](https://blog.Khulnasoft.com/durable-objects-easy-fast-correct-choose-three/)

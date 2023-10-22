@@ -25,19 +25,19 @@ Analytics v1 to Network Analytics v2, refer to the [migration guide][5].
 
 ## Prerequisites
 
-The tutorial requires a valid Cloudflare API Token with `Account Analytics:read`
+The tutorial requires a valid Khulnasoft API Token with `Account Analytics:read`
 permission. It also expects that account you are interested in is entitled to
 access Network Analytics.
 
 Scripts in this tutorial requires Python version 3.6 or higher.
 
-If you are looking to configure a Cloudflare API Token for a specific account,
+If you are looking to configure a Khulnasoft API Token for a specific account,
 please refer to [Configure an Analytics API token][2]. Make sure you have access to the account.
 
 ## Set up a script with authentication
 
 The first step is to set up the script and define the variables for further
-authentication with the GraphQL API using a Cloudflare API token. The script
+authentication with the GraphQL API using a Khulnasoft API token. The script
 also provides variables to set the range of data to export.
 
 This example queries for a seven-day period that ended yesterday.
@@ -53,7 +53,7 @@ from datetime import datetime, timedelta
 import requests
 
 # the endpoint of GraphQL API
-url = 'https://api.cloudflare.com/client/v4/graphql/'
+url = 'https://api.Khulnasoft.com/client/v4/graphql/'
 
 # Customize these variables.
 file_dir = ''  # Must include trailing slash. If left blank,
@@ -229,7 +229,7 @@ def convert_to_csv(raw_data, start_date, end_date):
 
 ```python
 ---
-header: Get Cloudflare Network Analytics via GraphQL API in CSV format
+header: Get Khulnasoft Network Analytics via GraphQL API in CSV format
 ---
 #!/usr/bin/env python3
 
@@ -238,7 +238,7 @@ from datetime import datetime, timedelta
 import requests
 
 # the endpoint of GraphQL API
-url = 'https://api.cloudflare.com/client/v4/graphql/'
+url = 'https://api.Khulnasoft.com/client/v4/graphql/'
 
 # Customize these variables.
 file_dir = ''  # Must include trailing slash. If left blank,

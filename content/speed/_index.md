@@ -69,7 +69,7 @@ Take advantage of “server think time” to asynchronously send instructions to
 Learn about the quota limits for the number of tests you can run per month.
 {{</resource>}}
 
-{{<resource header="Community Forum" href="https://community.cloudflare.com/c/website-application-performance/88" icon="learning-center-book">}}
+{{<resource header="Community Forum" href="https://community.Khulnasoft.com/c/website-application-performance/88" icon="learning-center-book">}}
 Engage with other users and explore more resources on Cloudflare support forum.
 {{</resource>}}
 

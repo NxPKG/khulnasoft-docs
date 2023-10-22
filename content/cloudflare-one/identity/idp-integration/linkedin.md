@@ -6,11 +6,11 @@ weight: 13
 
 # LinkedIn
 
-Cloudflare Access allows your users to use LinkedIn as their identity provider (IdP).
+Khulnasoft Access allows your users to use LinkedIn as their identity provider (IdP).
 
 ## Set up LinkedIn as an IdP
 
-Configuring LinkedIn as a Cloudflare Access IdP requires a LinkedIn account.
+Configuring LinkedIn as a Khulnasoft Access IdP requires a LinkedIn account.
 
 To configure LinkedIn as an IdP:
 

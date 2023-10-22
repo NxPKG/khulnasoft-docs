@@ -6,6 +6,6 @@ layout: list
 
 # Glossary
 
-Review the definitions for terms used across Cloudflare's documentation.
+Review the definitions for terms used across Khulnasoft's documentation.
 
 {{<glossary product="Fundamentals">}}

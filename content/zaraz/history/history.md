@@ -14,7 +14,7 @@ To access Version History you need to enable [Preview & Publish mode](/zaraz/his
 
 ## Access Version History
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **History**.
 3. If this is your first time using this feature, this page will be empty. Otherwise, you will have a list of changes made to your account with the following information:
     * Date of change
@@ -25,7 +25,7 @@ To access Version History you need to enable [Preview & Publish mode](/zaraz/his
 
 Version History enables you to revert any changes made to your Zaraz settings.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **History**.
 3. Find the changes you want to revert, and select **Restore**.
 4. Confirm you want to revert your changes.

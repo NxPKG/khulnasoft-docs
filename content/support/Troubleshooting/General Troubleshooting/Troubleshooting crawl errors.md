@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200169806-Troubleshooting-crawl-errors
+source: https://support.Khulnasoft.com/hc/en-us/articles/200169806-Troubleshooting-crawl-errors
 title: Troubleshooting crawl errors
 ---
 
@@ -10,13 +10,13 @@ title: Troubleshooting crawl errors
 
 ## Overview
 
-Cloudflare allows search engine crawlers and bots. If you observe crawl issues or Cloudflare challenges presented to the search engine crawler or bot, [contact Cloudflare support](https://support.cloudflare.com/hc/articles/200172476) with the information you gather when troubleshooting the crawl errors via the methods outlined in this guide.
+Khulnasoft allows search engine crawlers and bots. If you observe crawl issues or Khulnasoft challenges presented to the search engine crawler or bot, [contact Khulnasoft support](https://support.Khulnasoft.com/hc/articles/200172476) with the information you gather when troubleshooting the crawl errors via the methods outlined in this guide.
 
 ___
 
 ## Disable Anti-bot modules
 
-Search engine crawlers' requests, when proxied through Cloudflare, can be blocked by anti-bot modules installed on your origin server. Try disabling any anti-bot modules to prevent your origin from blocking these requests.
+Search engine crawlers' requests, when proxied through Khulnasoft, can be blocked by anti-bot modules installed on your origin server. Try disabling any anti-bot modules to prevent your origin from blocking these requests.
 
 
 ___
@@ -51,7 +51,7 @@ Confirm an IP address belongs to Google by consulting Google’s documentation o
 
 Google uses a [variety of User-Agents](https://support.google.com/webmasters/answer/1061943) to crawl your website. You can [test your robots.txt via Google](https://support.google.com/webmasters/answer/6062598?hl=en).
 
--   Do not allow crawling of files in the /cdn-cgi/ directory. This path is used internally by Cloudflare and Google encounters errors when crawling it. Disallow crawls of cdn-cgi via robots.txt:
+-   Do not allow crawling of files in the /cdn-cgi/ directory. This path is used internally by Khulnasoft and Google encounters errors when crawling it. Disallow crawls of cdn-cgi via robots.txt:
 
 `Disallow: /cdn-cgi/`
 
@@ -60,7 +60,7 @@ Errors for cdn-cgi do not impact site rankings.
 {{</Aside>}}
 
 -   Ensure your [robots.txt file allows the AdSense crawler](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1061943).
--   [Restore original visitor IP addresses](https://support.cloudflare.com/hc/articles/200170786) in your server logs.
+-   [Restore original visitor IP addresses](https://support.Khulnasoft.com/hc/articles/200170786) in your server logs.
 
 ___
 
@@ -70,15 +70,15 @@ Troubleshooting steps for the most commonly reported crawl errors are mentioned 
 
 ### HTTP 4XX Errors
 
-[HTTP 4XX errors](https://support.cloudflare.com/hc/articles/115003014512) are the most common type of crawl error. Cloudflare delivers these errors from your web server to Google. These errors are caused for various reasons such as a missing page on your web server or a malformed link in your HTML. The solution depends upon the problem encountered.
+[HTTP 4XX errors](https://support.Khulnasoft.com/hc/articles/115003014512) are the most common type of crawl error. Khulnasoft delivers these errors from your web server to Google. These errors are caused for various reasons such as a missing page on your web server or a malformed link in your HTML. The solution depends upon the problem encountered.
 
 ### HTTP 5XX Errors
 
-[HTTP 5XX errors](https://support.cloudflare.com/hc/articles/115003011431) indicate that either Cloudflare or your origin web server experienced an internal error. To correlate occurrences of crawl errors with site outages, monitor your origin web server’s health. Monitoring your website health both through Cloudflare and directly to your origin web server IPs determines whether errors occurred due to Cloudflare or your origin web server.
+[HTTP 5XX errors](https://support.Khulnasoft.com/hc/articles/115003011431) indicate that either Khulnasoft or your origin web server experienced an internal error. To correlate occurrences of crawl errors with site outages, monitor your origin web server’s health. Monitoring your website health both through Khulnasoft and directly to your origin web server IPs determines whether errors occurred due to Khulnasoft or your origin web server.
 
 ### DNS Errors
 
-Troubleshooting steps vary depending on whether your domain is on Cloudflare via a Full or CNAME setup. To verify which setup your domain uses, open a terminal and execute the following command (replace _www.example.com_ with your Cloudflare domain):
+Troubleshooting steps vary depending on whether your domain is on Khulnasoft via a Full or CNAME setup. To verify which setup your domain uses, open a terminal and execute the following command (replace _www.example.com_ with your Khulnasoft domain):
 
 `dig +short SOA` `_www.example.com_`
 
@@ -86,28 +86,28 @@ For domains on a CNAME setup, the result response contains cdn.cloudflare.net. F
 
 `example.com.cdn.cloudflare.net.`
 
-For domains on a Full setup, the result response contains the cloudflare.com domain in the nameservers listed. For example:
+For domains on a Full setup, the result response contains the Khulnasoft.com domain in the nameservers listed. For example:
 
-`josh.ns.cloudflare.com. dns.cloudflare.com. 2013050901 10000 2400 604800 3600`
+`josh.ns.Khulnasoft.com. dns.Khulnasoft.com. 2013050901 10000 2400 604800 3600`
 
-Once you’ve confirmed how your domain was setup with Cloudflare, proceed with the troubleshooting steps appropriate to your domain setup.
+Once you’ve confirmed how your domain was setup with Khulnasoft, proceed with the troubleshooting steps appropriate to your domain setup.
 
 **CNAME**
 
-Contact your hosting provider to investigate DNS errors and provide the date Google encountered DNS errors. Additionally, review the [Cloudflare System Status](http://www.cloudflare.com/system-status) page for any network outages on the date the errors were encountered by Google.
+Contact your hosting provider to investigate DNS errors and provide the date Google encountered DNS errors. Additionally, review the [Khulnasoft System Status](http://www.Khulnasoft.com/system-status) page for any network outages on the date the errors were encountered by Google.
 
 **Full**
 
-[Contact Cloudflare support](https://support.cloudflare.com/hc/articles/200172476) and provide the date and time that Google observed the errors.
+[Contact Khulnasoft support](https://support.Khulnasoft.com/hc/articles/200172476) and provide the date and time that Google observed the errors.
 
 ### Requesting troubleshooting assistance
 
-If the above troubleshooting steps do not resolve your crawl errors, follow the steps below to export crawler errors as a .csv file from your Google Webmaster Tools Dashboard. Include this .csv file when [contacting Cloudflare Support](https://support.cloudflare.com/hc/articles/200172476).
+If the above troubleshooting steps do not resolve your crawl errors, follow the steps below to export crawler errors as a .csv file from your Google Webmaster Tools Dashboard. Include this .csv file when [contacting Khulnasoft Support](https://support.Khulnasoft.com/hc/articles/200172476).
 
 1.  Log in to your Google Webmaster Tools account and navigate to the **Health** section of the affected domain.
 2.  Click **Crawl Errors** in the left hand navigation.
 3.  Click **Download** to export the list of errors as a .csv file.
-4.  Provide the downloaded .csv file to Cloudflare support.
+4.  Provide the downloaded .csv file to Khulnasoft support.
 
 ___
 

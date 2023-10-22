@@ -19,7 +19,7 @@ header: Request
 highlight: [11]
 ---
 curl --request PUT \
-  --url https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/access/certificates/settings \
+  --url https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/access/certificates/settings \
   --header 'content-type: application/json' \
   --header 'x-auth-email: <EMAIL>' \
   --header 'x-auth-key: <API_KEY>' \

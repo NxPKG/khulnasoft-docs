@@ -18,7 +18,7 @@ After enabling Preview & Publish you will also have access to [Zaraz History](/z
 
 By default, Zaraz is configured to commit changes in real time. To enable preview mode and test new features you are adding to Zaraz:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **Settings**.
 3. In **Workflow**, choose **Preview & Publish**.
 
@@ -28,7 +28,7 @@ You are now working in preview mode. To commit changes and make them live, you w
 
 Now that you have Zaraz working in preview mode, you can open your website and test your settings:
 
-1. In [Zaraz settings](https://dash.cloudflare.com/?to=/:account/:zone/zaraz/settings) copy your **Debug Key**.
+1. In [Zaraz settings](https://dash.Khulnasoft.com/?to=/:account/:zone/zaraz/settings) copy your **Debug Key**.
 2. Navigate to the website where you want to test your new settings.
 3. Access the browser’s developer tools. For example, to access developer tools in Google Chrome, select **View** > **Developer** > **Developer Tools**.
 4. Select the **Console** pane and enter the following command to start Zaraz’s preview mode:
@@ -37,7 +37,7 @@ Now that you have Zaraz working in preview mode, you can open your website and t
     zaraz.preview("<YOUR_DEBUG_KEY>")
     ```
 5. Your website will reload along with Zaraz debugger, and Zaraz will use the most recent changes in preview mode.
-6. If you are satisfied with your changes, go back to the [Zaraz dashboard](https://dash.cloudflare.com/?to=/:account/:zone/zaraz/) and select **Publish** to apply them to all users. If not, use the dashboard to continue adjusting your configuration.
+6. If you are satisfied with your changes, go back to the [Zaraz dashboard](https://dash.Khulnasoft.com/?to=/:account/:zone/zaraz/) and select **Publish** to apply them to all users. If not, use the dashboard to continue adjusting your configuration.
 
 To exit preview mode, close Zaraz debugger.
 
@@ -45,7 +45,7 @@ To exit preview mode, close Zaraz debugger.
 
 Disable Preview & Publish mode to work in real time. When you work in real time, any changes made on the dashboard are applied instantly to the domain you are working on.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **Settings**.
 3. In **Workflow**, choose **Real-time**.
 4. In the modal, decide if you want to delete all unpublished changes, or if you want to publish any change made in the meantime.

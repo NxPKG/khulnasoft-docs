@@ -9,9 +9,9 @@ layout: single
 
 ## Overview
 
-This tutorial covers how to configure certain Google Cloud Platform (GCP) components so that you can analyze your Cloudflare Logs data.
+This tutorial covers how to configure certain Google Cloud Platform (GCP) components so that you can analyze your Khulnasoft Logs data.
 
-Before proceeding, you need to enable [Cloudflare Logpush in Google Cloud Storage](/logs/get-started/enable-destinations/google-cloud-storage/) to ensure your log data is available for analyzing.
+Before proceeding, you need to enable [Khulnasoft Logpush in Google Cloud Storage](/logs/get-started/enable-destinations/google-cloud-storage/) to ensure your log data is available for analyzing.
 
 The components we'll use in this tutorial include:
 
@@ -19,9 +19,9 @@ The components we'll use in this tutorial include:
 - **Google BigQuery** to make log data available to the reporting engine, and
 - **Google Data Studio** to run interactive reports
 
-The following diagram depicts how data flows from Cloudflare Logs through the different components of the Google Cloud Platform discussed in this tutorial.
+The following diagram depicts how data flows from Khulnasoft Logs through the different components of the Google Cloud Platform discussed in this tutorial.
 
-![Data flow from Cloudflare Logpush to Google Cloud Platform](/images/fundamentals/google/cf-logpush-to-google-cloud-platform.png)
+![Data flow from Khulnasoft Logpush to Google Cloud Platform](/images/fundamentals/google/cf-logpush-to-google-cloud-platform.png)
 
 {{<Aside type="note">}}
 
@@ -31,15 +31,15 @@ Google Cloud is offering a credit towards a new Google Cloud account to help you
 
 ## Task 1 - Use Google Cloud Function to import log data into Google BigQuery
 
-After you configured Cloudflare Logpush to send your logs to a Google Cloud Storage bucket, your log data updates every five minutes by default.
+After you configured Khulnasoft Logpush to send your logs to a Google Cloud Storage bucket, your log data updates every five minutes by default.
 
 Google BigQuery makes data available for both querying using Structured Query Language (SQL) and for configuring as a data source for the Google Data Studio reporting engine. BigQuery is a highly scalable cloud database where SQL queries run quite fast.
 
-Importing data from Google Cloud Storage into Google BigQuery requires creating a function using Google Cloud Function and running it in the Google Cloud Shell. This function triggers every time new Cloudflare log data is uploaded to your Google Cloud Storage bucket.
+Importing data from Google Cloud Storage into Google BigQuery requires creating a function using Google Cloud Function and running it in the Google Cloud Shell. This function triggers every time new Khulnasoft log data is uploaded to your Google Cloud Storage bucket.
 
 ### Clone and deploy a Google Cloud Function
 
-To a create a cloud function to import data from Google Cloud Storage into Google BigQuery, you will need the following GitHub repository from Cloudflare: https://github.com/cloudflare/GCS-To-Big-Query.
+To a create a cloud function to import data from Google Cloud Storage into Google BigQuery, you will need the following GitHub repository from Khulnasoft: https://github.com/cloudflare/GCS-To-Big-Query.
 
 To clone and deploy the cloud function:
 
@@ -49,7 +49,7 @@ To clone and deploy the cloud function:
 
 3.  Next, edit the `deploy.sh` file and make sure that:
 
-- **BUCKET_NAME** is set to the bucket you created when you configured Cloudflare Logpush with Google Cloud Platform.
+- **BUCKET_NAME** is set to the bucket you created when you configured Khulnasoft Logpush with Google Cloud Platform.
 
 - **DATASET** and **TABLE** are unique names.
 
@@ -121,17 +121,17 @@ To analyze and visualize logs, you can use **Google Data Studio** or any other 3
 
 With Google Data Studio, you can generate graphs and charts from a Google BigQuery table. You can also refresh the data in your reports and get real-time analytics.
 
-### About the Cloudflare Logs Insights Template
+### About the Khulnasoft Logs Insights Template
 
-Cloudflare has published a [Logs Insights Template](https://datastudio.google.com/u/0/reporting/1ez3m7Yf8AZLfM6aYRjfgF0pPpRvOwhTh/page/mAzI/preview) in the **Google Data Studio Report Gallery**.
+Khulnasoft has published a [Logs Insights Template](https://datastudio.google.com/u/0/reporting/1ez3m7Yf8AZLfM6aYRjfgF0pPpRvOwhTh/page/mAzI/preview) in the **Google Data Studio Report Gallery**.
 
-![Cloudflare Logs Insights Template on Google Data Studio Report Gallery](/images/fundamentals/google/cf-logs-insights-template.png)
+![Khulnasoft Logs Insights Template on Google Data Studio Report Gallery](/images/fundamentals/google/cf-logs-insights-template.png)
 
-The Cloudflare Insights Template features several dashboards, or report pages, to help you analyze your Cloudflare Logs data. You can also use filters within the dashboards to narrow down the analysis by date and time, device type, country, user agent, client IP, hostname, and more. These insights further help with debugging and tracing.
+The Khulnasoft Insights Template features several dashboards, or report pages, to help you analyze your Khulnasoft Logs data. You can also use filters within the dashboards to narrow down the analysis by date and time, device type, country, user agent, client IP, hostname, and more. These insights further help with debugging and tracing.
 
 The following dashboards are included in the Insights template:
 
-- **Snapshot**: Gives you an overview of the most important metrics from your Cloudflare logs, including total number of requests, top visitors by geography, IP, user agent, traffic type, total number of threats, and bandwidth usage.
+- **Snapshot**: Gives you an overview of the most important metrics from your Khulnasoft logs, including total number of requests, top visitors by geography, IP, user agent, traffic type, total number of threats, and bandwidth usage.
 
 - **Security**: Provides insights on threat identification and mitigations by our **Web Application Firewall**, including **Firewall Rules**, **Rate Limiting**, and **IP Firewall**. Metrics include total threats stopped, threat traffic source, blocked IPs and user agents, top threat requests, security events (SQL injections, XSS, etc.), and rate limiting. Use this data to fine tune the firewall to target obvious threats and avoid false positives.
 
@@ -141,9 +141,9 @@ The following dashboards are included in the Insights template:
 
 ### Create a report based on the Insights Template
 
-To create a report for your log data based on the Cloudflare template:
+To create a report for your log data based on the Khulnasoft template:
 
-1.  In Data Studio, open the Cloudflare [template](https://datastudio.google.com/u/0/reporting/1ez3m7Yf8AZLfM6aYRjfgF0pPpRvOwhTh/page/mAzI/preview) and click **Use Template**. A _Create new report_ dialog opens.
+1.  In Data Studio, open the Khulnasoft [template](https://datastudio.google.com/u/0/reporting/1ez3m7Yf8AZLfM6aYRjfgF0pPpRvOwhTh/page/mAzI/preview) and click **Use Template**. A _Create new report_ dialog opens.
 
 2.  Under the **New Data Source** dropdown, select **Create New Data Source**. A page opens where you can enter additional configuration details.
 
@@ -153,14 +153,14 @@ To create a report for your log data based on the Cloudflare template:
 
 5.  Click **Connect** in the upper right.
 
-6.  In the list of Cloudflare Logs fields, locate _EdgeStartTimestamp_, click the three vertical dots and select **Duplicate**. This creates _Copy of EdgeStartTimestamp_ right below _EdgeStartTimestamp_.
+6.  In the list of Khulnasoft Logs fields, locate _EdgeStartTimestamp_, click the three vertical dots and select **Duplicate**. This creates _Copy of EdgeStartTimestamp_ right below _EdgeStartTimestamp_.
 
 7.  Update the **Type** for _Copy of EdgeStartTimestamp_ to set it to _Date & Time_ > _Date Hour (YYYYMMDDHH)_.
 
 8.  Next, update the **Type** for each of the following fields as indicated below:
 
     {{<table-wrap>}}
-| Cloudflare Log Field       | Type                                 |
+| Khulnasoft Log Field       | Type                                 |
 |----------------------------|--------------------------------------|
 | ZoneID                     | Text                                 |
 | EdgeColoID                 | Text                                 |
@@ -228,7 +228,7 @@ After you've added your report, you will notice that not all report components r
 
 To update Data Studio with fields added to BigQuery, refresh fields for the data source.
 
-1.  In Data Studio, open the Cloudflare dashboard in **Edit** mode.
+1.  In Data Studio, open the Khulnasoft dashboard in **Edit** mode.
 
 2.  Expand the **Resource** menu and select **Manage added data sources**.
 
@@ -240,7 +240,7 @@ To update Data Studio with fields added to BigQuery, refresh fields for the data
 
 You can also create custom fields directly in Data Studio.
 
-1.  In Data Studio, open the Cloudflare dashboard in **Edit** mode.
+1.  In Data Studio, open the Khulnasoft dashboard in **Edit** mode.
 
 2.  Expand the **Resource** menu and select **Manage added data sources**.
 
@@ -266,7 +266,7 @@ The following table summarizes which specific components require to be fixed:
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">2 Security Cloudflare&nbsp;</td>
+      <td rowspan="3">2 Security Khulnasoft&nbsp;</td>
       <td>
         <p>
           <em>Threats </em>(scorecard)
@@ -289,7 +289,7 @@ The following table summarizes which specific components require to be fixed:
       <td>&nbsp;Threats (Breadown Dimension)</td>
     </tr>
     <tr>
-      <td>3 Reliability Cloudflare</td>
+      <td>3 Reliability Khulnasoft</td>
       <td>
         <em>Status Codes Last 24 hours&nbsp;</em>(bar chart)
       </td>
@@ -298,7 +298,7 @@ The following table summarizes which specific components require to be fixed:
       </td>
     </tr>
     <tr>
-      <td>5&nbsp;Last 100s Requests Cloudflare</td>
+      <td>5&nbsp;Last 100s Requests Khulnasoft</td>
       <td>
         <em>Last 100 Requests</em> (table)
       </td>
@@ -323,7 +323,7 @@ The component should now render correctly.
 
 #### Update data filters
 
-This fix applies to report page: **3 Reliability Cloudflare**, for the following scorecard components in the report:
+This fix applies to report page: **3 Reliability Khulnasoft**, for the following scorecard components in the report:
 
 - **5xx Errors**
 - **4xx Errors**

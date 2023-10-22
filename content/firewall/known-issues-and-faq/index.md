@@ -25,11 +25,11 @@ You can create a large number of firewall rules. However, the number of active r
 
 No. The number of active rules is fixed based on customer plan. Refer to [Availability](/firewall/#availability).
 
-### Why does a firewall event display a Cloudflare IP address even though other fields match the client details?
+### Why does a firewall event display a Khulnasoft IP address even though other fields match the client details?
 
-This happens when a request goes through a Cloudflare Worker.
+This happens when a request goes through a Khulnasoft Worker.
 
-In this case, Cloudflare considers the client details, including its IP address, for triggering security settings. However, the IP displayed in Security Events will be a Cloudflare IP address.
+In this case, Khulnasoft considers the client details, including its IP address, for triggering security settings. However, the IP displayed in Security Events will be a Khulnasoft IP address.
 
 ## Rule configuration
 
@@ -51,7 +51,7 @@ Also, note that the `http.request.method` field requires all-caps for method nam
 
 ### How can I use the Threat Score effectively?
 
-The _Cloudflare Threat Score_ is a key item behind the **Security Level** functionality in the Cloudflare dashboard.
+The _Khulnasoft Threat Score_ is a key item behind the **Security Level** functionality in the Khulnasoft dashboard.
 
 _Threat Score_ as configured by **Security Level** is based on:
 
@@ -66,14 +66,14 @@ Enabling a high threat score for sensitive areas - like comment form pages or lo
 
 There may be situations in which you want to enforce a blocking or challenging action but make exceptions for specific types of requests.
 
-Cloudflare supports two methods to allow requests through firewall rules expressions:
+Khulnasoft supports two methods to allow requests through firewall rules expressions:
 
 * Exclude a type of request from being blocked or challenged, for example based on IP address, ASN, or country.
 * Create an independent firewall rule with an _Allow_ action.
 
 {{<Aside type="note" header="Note">}}
 
-Cloudflare Firewall Rules does not bypass other security measures configured under **Security**.
+Khulnasoft Firewall Rules does not bypass other security measures configured under **Security**.
 
 {{</Aside>}}
 
@@ -153,7 +153,7 @@ Exclude multiple IP addresses from a blocking/challenging rule that assesses Thr
 
 **Example 2**
 
-Block Amazon Web Services (AWS) and Google Cloud Platform (GCP) because of large volumes of undesired traffic, but allow Googlebot and other known bots that Cloudflare validates.
+Block Amazon Web Services (AWS) and Google Cloud Platform (GCP) because of large volumes of undesired traffic, but allow Googlebot and other known bots that Khulnasoft validates.
 
 {{<table-wrap>}}
 
@@ -174,7 +174,7 @@ Block Amazon Web Services (AWS) and Google Cloud Platform (GCP) because of large
     </tr>
     <tr>
       <td colspan="2">
-        <strong>Rule that excludes known bots that Cloudflare validates</strong>
+        <strong>Rule that excludes known bots that Khulnasoft validates</strong>
       </td>
     </tr>
     <tr>
@@ -226,7 +226,7 @@ Refer to [How do I create an exception to exclude certain requests from being bl
 
 #### Bots currently detected
 
-[Cloudflare Radar](https://radar.cloudflare.com/verified-bots) lists a **sample** of known bots that Cloudflare Firewall Rules currently detects. When traffic comes from these bots and others not listed, the `cf.client.bot` field is set to true.
+[Khulnasoft Radar](https://radar.Khulnasoft.com/verified-bots) lists a **sample** of known bots that Khulnasoft Firewall Rules currently detects. When traffic comes from these bots and others not listed, the `cf.client.bot` field is set to true.
 
 {{<Aside type="note">}}
 
@@ -248,24 +248,24 @@ When an XHR or AJAX request triggers a Challenge action, the HTTP response will 
 
 Your application can use this status codes to handle unexpected challenges, optionally using a [Custom Error Response](/rules/custom-error-responses/) for XHR and AJAX requests instead of a Challenge action. The application could capture the custom error response and raise a challenge by, for example, triggering a page refresh.
 
-For an additional layer of security against Credential Stuffing, you could use [Cloudflare Turnstile](/turnstile/) on the most vulnerable parts of your site (such as login or checkout forms).
+For an additional layer of security against Credential Stuffing, you could use [Khulnasoft Turnstile](/turnstile/) on the most vulnerable parts of your site (such as login or checkout forms).
 
 ### Does the 'challengeFailed' action accurately represent challenges that users did not pass?
 
-No. The `challengeFailed` and `jschallengeFailed` firewall rule actions account for observed requests that, under special circumstances, did not pass a challenge. However, some failed challenges cannot be traced back to a firewall rule. Additionally, Cloudflare Firewall Rules may not have a record of every request with a failed challenge.
+No. The `challengeFailed` and `jschallengeFailed` firewall rule actions account for observed requests that, under special circumstances, did not pass a challenge. However, some failed challenges cannot be traced back to a firewall rule. Additionally, Khulnasoft Firewall Rules may not have a record of every request with a failed challenge.
 
 Therefore, consider these actions with caution. A reliable indicator is the [Challenge Solve Rate (CSR)](/bots/concepts/challenge-solve-rate/) displayed in **Security** > **WAF** > **Firewall rules**, which is calculated as follows: `number of challenges solved / number of challenges issued`.
 
 ### Why would I not find any failed challenges? Why is 'ChallengeIssued' not equal to 'ChallengeSolved' plus 'ChallengeFailed'?
 
-Users do not complete all challenges. Cloudflare issues challenges that are never answered — only 2-3% of all served challenges are usually answered.
+Users do not complete all challenges. Khulnasoft issues challenges that are never answered — only 2-3% of all served challenges are usually answered.
 
 There are multiple reasons for this:
 
 - Users give up on a challenge.
 - Users try to solve a challenge but cannot provide an answer.
 - Users keep refreshing the challenge, but never submit an answer.
-- Cloudflare receives a malformed challenge answer.
+- Khulnasoft receives a malformed challenge answer.
 
 ### Why do I have matches for a firewall rule that was not supposed to match the request?
 

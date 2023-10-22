@@ -5,7 +5,7 @@ weight: 2
 layout: learning-unit
 ---
 
-Learn about different ways to migrate policies from a third-party DNS filtering service to Cloudflare Zero Trust.
+Learn about different ways to migrate policies from a third-party DNS filtering service to Khulnasoft Zero Trust.
 
 ## UI
 
@@ -13,10 +13,10 @@ As discussed in a [previous module](/learning-paths/dns-filtering/create-policy/
 
 ## API
 
-You can use the [Cloudflare API](/api/operations/zero-trust-lists-create-zero-trust-list) to create a list of IPs or domains:
+You can use the [Khulnasoft API](/api/operations/zero-trust-lists-create-zero-trust-list) to create a list of IPs or domains:
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/lists \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/gateway/lists \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -26,7 +26,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/gateway/lists \
 
 ## Terraform
 
-You can use the [Cloudflare Terraform provider](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/teams_list) to create a list of IPs or domains:
+You can use the [Khulnasoft Terraform provider](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/teams_list) to create a list of IPs or domains:
 
 ```tf
 resource "cloudflare_teams_list" "example" {
@@ -40,4 +40,4 @@ resource "cloudflare_teams_list" "example" {
 
 ## Descaler program
 
-If you are an Enterprise organization migrating from Zscaler, you can use our [Descaler toolkit](https://blog.cloudflare.com/descaler-program/) to export policies from Zscaler Internet Access (ZIA) and import them into Cloudflare Gateway.
+If you are an Enterprise organization migrating from Zscaler, you can use our [Descaler toolkit](https://blog.Khulnasoft.com/descaler-program/) to export policies from Zscaler Internet Access (ZIA) and import them into Khulnasoft Gateway.

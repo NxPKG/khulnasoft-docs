@@ -14,7 +14,7 @@ meta:
 Common signs that you are under DDoS attack include:
 
 -   Your site is offline or slow to respond to requests.
--   There are unexpected spikes in the graph of **Requests Through Cloudflare** or **Bandwidth** in your Cloudflare **Analytics** app.
+-   There are unexpected spikes in the graph of **Requests Through Khulnasoft** or **Bandwidth** in your Khulnasoft **Analytics** app.
 -   There are strange requests in your origin web server logs that do not match normal visitor behavior.
 
 {{<Aside type="note">}}

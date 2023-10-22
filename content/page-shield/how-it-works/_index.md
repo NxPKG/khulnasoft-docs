@@ -33,4 +33,4 @@ For more information, refer to [Policies](/page-shield/policies/).
 
 ## Learn more
 
-For more background on Page Shield, refer to our [blog post](https://blog.cloudflare.com/page-shield-generally-available/).
+For more background on Page Shield, refer to our [blog post](https://blog.Khulnasoft.com/page-shield-generally-available/).

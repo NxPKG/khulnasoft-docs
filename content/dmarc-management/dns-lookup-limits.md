@@ -12,7 +12,7 @@ The [Sender Policy Framework (SPF)](https://datatracker.ietf.org/doc/rfc4408/) s
 
 To check if your SPF records are compliant with the SPF specification: 
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Email** > **DMARC Management**.
 3. In **Email record overview**, select **View records**.
 4. Find your SPF record, and select the three dots next to it > **Inspect**. 

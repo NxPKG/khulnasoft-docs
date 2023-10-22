@@ -5,7 +5,7 @@ title: REST API
 
 # REST API
 
-The [Pages API](/api/operations/pages-project-get-projects) empowers you to build automations and integrate Pages with your development workflow. At a high level, the API endpoints let you manage deployments and builds and configure projects. Cloudflare supports [Deploy Hooks](/pages/platform/deploy-hooks/) for headless CMS deployments. Refer to the [API documentation](https://api.cloudflare.com/) for a full breakdown of object types and endpoints.
+The [Pages API](/api/operations/pages-project-get-projects) empowers you to build automations and integrate Pages with your development workflow. At a high level, the API endpoints let you manage deployments and builds and configure projects. Cloudflare supports [Deploy Hooks](/pages/platform/deploy-hooks/) for headless CMS deployments. Refer to the [API documentation](https://api.Khulnasoft.com/) for a full breakdown of object types and endpoints.
 
 ## How to use the API
 
@@ -13,9 +13,9 @@ The [Pages API](/api/operations/pages-project-get-projects) empowers you to buil
 
 To create an API token:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Select the user icon on the top right of your dashboard > **My Profile**.
-3. Select [**API Tokens**](https://dash.cloudflare.com/profile/api-tokens) > **Create Token**. 
+3. Select [**API Tokens**](https://dash.Khulnasoft.com/profile/api-tokens) > **Create Token**. 
 4. You can go to **Edit Cloudflare Workers** template > **Use template** or go to **Create Custom Token** > **Get started**. If you create a custom token, you will need to make sure to add the **Cloudflare Pages** permission with **Edit** access.
 
 ### Make requests
@@ -23,7 +23,7 @@ To create an API token:
 After creating your token, you can authenticate and make requests to the API using your API token in the request headers. For example, here is an API request to get all deployments in a project.
 
 ```sh
-$ curl 'https://api.cloudflare.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments' \
+$ curl 'https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments' \
   -H 'Authorization: Bearer {API_token}'
 ```
 
@@ -38,7 +38,7 @@ The API is even more powerful when combined with Cloudflare Workers: the easiest
 Suppose we have a CMS that pulls data from live sources to compile a static output. You can keep the static content as recent as possible by triggering new builds periodically using the API.
 
 ```js
-const endpoint = "https://api.cloudflare.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments";
+const endpoint = "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments";
 
 export default {
   async scheduled(_, env) {
@@ -46,7 +46,7 @@ export default {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=UTF-8",
-        // We recommend you store the API token as a secret using the Workers dashboard or using Wrangler as documented here: https://developers.cloudflare.com/workers/wrangler/commands/#secret
+        // We recommend you store the API token as a secret using the Workers dashboard or using Wrangler as documented here: https://developers.Khulnasoft.com/workers/wrangler/commands/#secret
         "Authorization": env.API_TOKEN,
       },
     };
@@ -63,7 +63,7 @@ After you have deployed the JavaScript Worker, set a cron trigger in your Worker
 Cloudflare Pages hosts and serves all project deployments on preview links. Suppose you want to keep your project private and prevent access to your old deployments. You can use the API to delete deployments after a month, so that they are no longer public online. The latest deployment for a branch cannot be deleted.
 
 ```js
-const endpoint = "https://api.cloudflare.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments";
+const endpoint = "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments";
 const expirationDays = 7;
 
 export default {
@@ -71,7 +71,7 @@ export default {
     const init = {
       headers: {
         "Content-Type": "application/json;charset=UTF-8",
-        // We recommend you store the API token as a secret using the Workers dashboard or using Wrangler as documented here: https://developers.cloudflare.com/workers/wrangler/commands/#secret
+        // We recommend you store the API token as a secret using the Workers dashboard or using Wrangler as documented here: https://developers.Khulnasoft.com/workers/wrangler/commands/#secret
         "Authorization": env.API_TOKEN,
       },
     };
@@ -104,16 +104,16 @@ Imagine you are working on a development team using Pages to build your websites
 
 ```js
 const deploymentsEndpoint =
-  "https://api.cloudflare.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments";
+  "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments";
 const projectEndpoint =
-  "https://api.cloudflare.com/client/v4/accounts/{account_id}/pages/projects/{project_name}";
+  "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pages/projects/{project_name}";
 
 export default {
   async fetch(request, env) {
     const init = {
       headers: {
         "content-type": "application/json;charset=UTF-8",
-        // We recommend you store the API token as a secret using the Workers dashboard or using Wrangler as documented here: https://developers.cloudflare.com/workers/wrangler/commands/#secret
+        // We recommend you store the API token as a secret using the Workers dashboard or using Wrangler as documented here: https://developers.Khulnasoft.com/workers/wrangler/commands/#secret
         "Authorization": env.API_TOKEN,
       },
     };

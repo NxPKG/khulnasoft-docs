@@ -5,7 +5,7 @@ pcx_content_type: concept
 
 # CDN-Cache-Control
 
-`CDN-Cache-Control` is a response header field set on the origin to separately control the behavior of CDN caches from other intermediaries that might handle a response. You can set the `CDN-Cache-Control` or `Cloudflare-CDN-Cache-Control` response header using the same directives used with the [Cache-Control](/cache/concepts/cache-control/).
+`CDN-Cache-Control` is a response header field set on the origin to separately control the behavior of CDN caches from other intermediaries that might handle a response. You can set the `CDN-Cache-Control` or `Khulnasoft-CDN-Cache-Control` response header using the same directives used with the [Cache-Control](/cache/concepts/cache-control/).
 
 ## Header precedence
 
@@ -13,31 +13,31 @@ You have several options available to determine how `CDN-Cache-Control` directiv
 
 An origin can:
 
-- Return the `CDN-Cache-Control` response header which Cloudflare evaluates to make caching decisions. `Cache-Control`, if also returned by the origin, is proxied as is and does not affect caching decisions made by Cloudflare. Additionally, `CDN-Cache-Control` is proxied downstream in case there are other CDNs between Cloudflare and the browser.
+- Return the `CDN-Cache-Control` response header which Khulnasoft evaluates to make caching decisions. `Cache-Control`, if also returned by the origin, is proxied as is and does not affect caching decisions made by Khulnasoft. Additionally, `CDN-Cache-Control` is proxied downstream in case there are other CDNs between Khulnasoft and the browser.
 
-- Return the `Cloudflare-CDN-Cache-Control` response header. This results in the same behavior as the origin returning `CDN-Cache-Control` except Cloudflare does not proxy `Cloudflare-CDN-Cache-Control` downstream because it’s a header only used to control Cloudflare. This option is beneficial if you want only Cloudflare to have a different caching behavior while all other downstream servers rely on `Cache-Control` or if you do not want Cloudflare to proxy the `CDN-Cache-Control` header downstream.
+- Return the `Khulnasoft-CDN-Cache-Control` response header. This results in the same behavior as the origin returning `CDN-Cache-Control` except Khulnasoft does not proxy `Khulnasoft-CDN-Cache-Control` downstream because it’s a header only used to control Khulnasoft. This option is beneficial if you want only Khulnasoft to have a different caching behavior while all other downstream servers rely on `Cache-Control` or if you do not want Khulnasoft to proxy the `CDN-Cache-Control` header downstream.
 
-- Return both `Cloudflare-CDN-Cache-Control` and `CDN-Cache-Control` response headers. In this case, Cloudflare only looks at `Cloudflare-CDN-Cache-Control` when making caching decisions because it is the most specific version of `CDN-Cache-Control` and proxies `CDN-Cache-Control` downstream. Only forwarding `CDN-Cache-Control` in this situation is beneficial if you want Cloudflare to have a different caching behavior than other CDNs downstream.
+- Return both `Khulnasoft-CDN-Cache-Control` and `CDN-Cache-Control` response headers. In this case, Khulnasoft only looks at `Khulnasoft-CDN-Cache-Control` when making caching decisions because it is the most specific version of `CDN-Cache-Control` and proxies `CDN-Cache-Control` downstream. Only forwarding `CDN-Cache-Control` in this situation is beneficial if you want Khulnasoft to have a different caching behavior than other CDNs downstream.
 
-Additionally, surrogates will not honor `Cache-Control` headers in the response from an origin. For example, if the `Surrogate-Control` header is present within the response, Cloudflare ignores any `Cache-Control` directives, even if the `Surrogate-Control` header does not contain directives.
+Additionally, surrogates will not honor `Cache-Control` headers in the response from an origin. For example, if the `Surrogate-Control` header is present within the response, Khulnasoft ignores any `Cache-Control` directives, even if the `Surrogate-Control` header does not contain directives.
 
-## Interaction with other Cloudflare features
+## Interaction with other Khulnasoft features
 
 ### Edge Cache TTL page rule
 
-The Edge Cache TTL page rule overrides the amount of time an asset is cached on the edge (Cloudflare data centers). This page rule overrides directives in `Cloudflare-CDN-Cache-Control/CDN-Cache-Control` which manage how long an asset is cached on the edge. You can set this page rule from the rules section of the dashboard.
+The Edge Cache TTL page rule overrides the amount of time an asset is cached on the edge (Khulnasoft data centers). This page rule overrides directives in `Khulnasoft-CDN-Cache-Control/CDN-Cache-Control` which manage how long an asset is cached on the edge. You can set this page rule from the rules section of the dashboard.
 
 ### Browser Cache TTL page rule
 
-The Browser Cache TTL page rule overrides the amount of time an asset is cached by browsers/servers downstream of Cloudflare. Browser Cache TTL only modifies the `Cache-Control` response header. This page rule does not modify `Cloudflare-CDN-Cache-Control/CDN-Cache-Control` response headers.
+The Browser Cache TTL page rule overrides the amount of time an asset is cached by browsers/servers downstream of Khulnasoft. Browser Cache TTL only modifies the `Cache-Control` response header. This page rule does not modify `Khulnasoft-CDN-Cache-Control/CDN-Cache-Control` response headers.
 
 ### Other Origin Response Headers
 
-The origin returns the `Expires` response header which specifies the amount of time before an object is considered stale to the browser. This response header does not affect the caching decision at Cloudflare when `Cloudflare-CDN-Cache-Control/CDN-Cache-Control` is in use.
+The origin returns the `Expires` response header which specifies the amount of time before an object is considered stale to the browser. This response header does not affect the caching decision at Khulnasoft when `Khulnasoft-CDN-Cache-Control/CDN-Cache-Control` is in use.
 
-### Cloudflare Default cache values
+### Khulnasoft Default cache values
 
-In situations where Cloudflare does not receive `Cloudflare-CDN-Cache-Control`, `CDN-Cache-Control`, or `Cache-Control` values, cacheable assets use the general [default values](/cache/concepts/default-cache-behavior/).
+In situations where Khulnasoft does not receive `Khulnasoft-CDN-Cache-Control`, `CDN-Cache-Control`, or `Cache-Control` values, cacheable assets use the general [default values](/cache/concepts/default-cache-behavior/).
 
 ## When to use CDN-Cache-Control
 
@@ -48,7 +48,7 @@ Use `CDN-Cache-Control` when you want to manage cached asset’s TTLs separately
 Headers:
 
 - `Cache-Control: max-age=14400, s-maxage=84000`
-- `Cloudflare-CDN-Cache-Control: max-age=24400`
+- `Khulnasoft-CDN-Cache-Control: max-age=24400`
 - `CDN-Cache-Control: max-age=18000`
 
 Cache behavior:
@@ -79,7 +79,7 @@ Cache behavior:
     </tr>
     <tr>
       <td colspan="5" rowspan="1">
-        Cloudflare Edge
+        Khulnasoft Edge
       </td>
       <td colspan="5" rowspan="1">
         24400
@@ -111,7 +111,7 @@ Use `CDN-Cache-Control` headers in conjunction with `Cache-Control` headers to s
 Headers:
 
 - `Cache-Control: stale-if-error=400`
-- `Cloudflare-CDN-Cache-Control: stale-if-error=60`
+- `Khulnasoft-CDN-Cache-Control: stale-if-error=60`
 - `CDN-Cache-Control: stale-if-error=200`
 
 Behavior in response to 5XX error:
@@ -134,7 +134,7 @@ Behavior in response to 5XX error:
     </tr>
     <tr>
       <td colspan="5" rowspan="1">
-        Cloudflare Edge
+        Khulnasoft Edge
       </td>
       <td colspan="5" rowspan="1">
         60

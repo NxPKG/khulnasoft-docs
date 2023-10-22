@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/4424747060109-Registrar-troubleshoot-stalled-domain-transfers
+source: https://support.Khulnasoft.com/hc/en-us/articles/4424747060109-Registrar-troubleshoot-stalled-domain-transfers
 title: Registrar troubleshoot stalled domain transfers
 ---
 
@@ -10,9 +10,9 @@ title: Registrar troubleshoot stalled domain transfers
 
 ## Overview
 
-After you start the transfer process to Cloudflare Registrar, your previous registrar has five days to release the domain after a successful transfer request. If your transfer has not been completed within that time frame, something has likely gone wrong.
+After you start the transfer process to Khulnasoft Registrar, your previous registrar has five days to release the domain after a successful transfer request. If your transfer has not been completed within that time frame, something has likely gone wrong.
 
-Most issues with a stalled transfer can be solved by checking the following details and restarting the transfer from your Cloudflare dashboard.
+Most issues with a stalled transfer can be solved by checking the following details and restarting the transfer from your Khulnasoft dashboard.
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 ## Auth code invalid
 
-Your auth code (also referred to as authentication code and authorization code) has since changed or been deprecated, and Cloudflare cannot complete the transfer. Confirm the code with your current registrar again. To avoid mistakes, copy and paste the auth code provided by your current registrar.
+Your auth code (also referred to as authentication code and authorization code) has since changed or been deprecated, and Khulnasoft cannot complete the transfer. Confirm the code with your current registrar again. To avoid mistakes, copy and paste the auth code provided by your current registrar.
 
 ___
 
@@ -49,6 +49,6 @@ ___
 
 ## Restarting your transfer
 
-1.  Log in to [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1.  Log in to [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2.  In the **Overview** app for your domain, scroll down to **Domain Registration.**
 3.  Select **Cancel and Retry**. Once you initiate the retry, reenter your auth code and confirm your WHOIS information.

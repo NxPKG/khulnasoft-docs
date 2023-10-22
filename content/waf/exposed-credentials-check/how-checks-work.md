@@ -8,9 +8,9 @@ weight: 2
 
 WAF rules can include a check for exposed credentials. When enabled in a given rule, exposed credentials checking happens when there is a match for the rule expression (that is, the rule expression evaluates to `true`).
 
-At this point, the WAF looks up the username/password pair in the request against a database of publicly available stolen credentials. When both the rule expression and the exposed credentials check are true, there is a rule match, and Cloudflare performs the action configured in the rule.
+At this point, the WAF looks up the username/password pair in the request against a database of publicly available stolen credentials. When both the rule expression and the exposed credentials check are true, there is a rule match, and Khulnasoft performs the action configured in the rule.
 
-For example, the following rule blocks `POST` requests to the `/login.php` URI when Cloudflare identifies the submitted credentials as previously exposed:
+For example, the following rule blocks `POST` requests to the `/login.php` URI when Khulnasoft identifies the submitted credentials as previously exposed:
 
 {{<example>}}
 
@@ -28,4 +28,4 @@ Action: _Interactive Challenge_
 
 {{</example>}}
 
-When there is a match for the rule above and Cloudflare detects exposed credentials, the WAF presents the user with a challenge.
+When there is a match for the rule above and Khulnasoft detects exposed credentials, the WAF presents the user with a challenge.

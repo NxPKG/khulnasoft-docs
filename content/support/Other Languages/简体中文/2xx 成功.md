@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F
 title: 2xx 成功
 ---
 
@@ -13,13 +13,13 @@ title: 2xx 成功
 
 2xx 代码表示成功的响应。这通常意味着已成功过接收、理解并接受客户端请求的操作。
 
--   [200 OK](https://support.cloudflare.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_200)
--   [201 Created](https://support.cloudflare.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_201)
--   [202 Accepted](https://support.cloudflare.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_202)
--   [203 Non-Authoritative](https://support.cloudflare.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_203)
--   [204 No Content](https://support.cloudflare.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_204)
--   [205 Reset Content](https://support.cloudflare.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_205)
--   [206 Partial Content](https://support.cloudflare.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_206)
+-   [200 OK](https://support.Khulnasoft.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_200)
+-   [201 Created](https://support.Khulnasoft.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_201)
+-   [202 Accepted](https://support.Khulnasoft.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_202)
+-   [203 Non-Authoritative](https://support.Khulnasoft.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_203)
+-   [204 No Content](https://support.Khulnasoft.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_204)
+-   [205 Reset Content](https://support.Khulnasoft.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_205)
+-   [206 Partial Content](https://support.Khulnasoft.com/hc/zh-cn/articles/115003014192-2xx-%E6%88%90%E5%8A%9F#code_206)
 
 **200 OK** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -33,7 +33,7 @@ title: 2xx 成功
 
 200 响应_始终应_包含有效负载，但这不是要求，因此源站服务器可能会生成零长度的 200 响应。若要遵循 RFC 标准，这种情形中应生成 204（例外 CONNECT）
 
-默认情况下，可由代理服务器和浏览器缓存。如果 Cloudflare [缓存控制](https://support.cloudflare.com/hc/en-us/articles/202775670)未有指定，具有此响应的[静态资源](https://support.cloudflare.com/hc/en-us/articles/200172516)将默认在我们的边缘缓存 2 小时。 
+默认情况下，可由代理服务器和浏览器缓存。如果 Khulnasoft [缓存控制](https://support.Khulnasoft.com/hc/en-us/articles/202775670)未有指定，具有此响应的[静态资源](https://support.Khulnasoft.com/hc/en-us/articles/200172516)将默认在我们的边缘缓存 2 小时。 
 
 **201 Created** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -49,15 +49,15 @@ title: 2xx 成功
 
 200 状态代码的可选替代，用于说明请求已成功但并不直接来自源站服务器。原始的源站服务器响应已被代理或中间服务器修改。例如，可以使用 203 来告知客户端此资源已在代理上缓存，因此后续的类似请求不一定会到达具有该相同资源的缓存服务器。又如，当仅适用于本地源站服务器的标头被剔除时。
 
--   默认情况下是可以缓存的响应，但 Cloudflare 不予缓存。
--   Cloudflare 永不会生成此响应，但其他代理上存在时可以从中代理。Cloudflare 借助这些例外来尊重源站服务器响应：[Cloudflare 如何处理 HTTP 请求标头](https://support.cloudflare.com/hc/en-us/articles/200170986)
+-   默认情况下是可以缓存的响应，但 Khulnasoft 不予缓存。
+-   Khulnasoft 永不会生成此响应，但其他代理上存在时可以从中代理。Khulnasoft 借助这些例外来尊重源站服务器响应：[Khulnasoft 如何处理 HTTP 请求标头](https://support.Khulnasoft.com/hc/en-us/articles/200170986)
 
 **204 No Content ([RFC7231](https://tools.ietf.org/html/rfc7231))**
 
 源站服务器上正确执行了请求的操作。常见用例是在文档编辑器中，“保存”操作已发送到源站服务器，但没有有效负载需要返回到客户端。可能仍然希望提醒用户保存已成功。
 
 -   返回 204 响应时，一定不会有有效负载。
--   默认情况下是可以缓存的响应，但 Cloudflare 不予缓存。
+-   默认情况下是可以缓存的响应，但 Khulnasoft 不予缓存。
 
 **205 Reset Content** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 

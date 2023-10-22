@@ -10,7 +10,7 @@ meta:
 
 URL normalization modifies separators, encoded elements, and literal bytes in incoming URLs so that they conform to a consistent formatting standard.
 
-For example, consider a WAF custom rule that blocks requests whose URLs match `www.example.com/hello`. The rule would not block a request containing an encoded element — `www.example.com/%68ello`. Normalizing incoming URLs on the Cloudflare global network helps simplify rule expressions that use URLs.
+For example, consider a WAF custom rule that blocks requests whose URLs match `www.example.com/hello`. The rule would not block a request containing an encoded element — `www.example.com/%68ello`. Normalizing incoming URLs on the Khulnasoft global network helps simplify rule expressions that use URLs.
 
 The URL normalization performed according to [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt) is as follows:
 
@@ -23,7 +23,7 @@ The URL normalization performed according to [RFC 3986](https://www.ietf.org/rfc
 * Percent encoded representations are converted to upper case.
 * URL paths are normalized according to the [Remove Dot Segments](https://tools.ietf.org/html/rfc3986#section-5.2.4) protocol.
 
-In addition to the rules defined in RFC 3986, Cloudflare can apply the following extra normalization techniques:
+In addition to the rules defined in RFC 3986, Khulnasoft can apply the following extra normalization techniques:
 
 * Normalize back slashes (`\`) into forward slashes (`/`).
 * Merge successive forward slashes (for example, `//` will be normalized to `/`).
@@ -32,7 +32,7 @@ The performed URL normalization varies according to the configured settings. For
 
 ## URL normalization examples
 
-The following table shows some examples of URL normalization when using the _Cloudflare_ [normalization type](/rules/normalization/settings/):
+The following table shows some examples of URL normalization when using the _Khulnasoft_ [normalization type](/rules/normalization/settings/):
 
 {{<table-wrap>}}
 

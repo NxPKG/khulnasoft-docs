@@ -7,11 +7,11 @@ layout: single
 
 # Configure a DLP profile
 
-A DLP profile is a collection of regular expressions (also known as detection entries) that define the data patterns you want to detect. Cloudflare DLP provides predefined profiles for common detections, or you can build custom DLP profiles specific to your data, organization, and risk tolerance.
+A DLP profile is a collection of regular expressions (also known as detection entries) that define the data patterns you want to detect. Khulnasoft DLP provides predefined profiles for common detections, or you can build custom DLP profiles specific to your data, organization, and risk tolerance.
 
 ## Configure a predefined profile
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **DLP** > **DLP Profiles**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **DLP** > **DLP Profiles**.
 2. Choose a [predefined profile](/cloudflare-one/policies/data-loss-prevention/dlp-profiles/predefined-profiles/) and select **Configure**.
 3. Enable one or more **Detection entries** according to your preferences. The DLP Profile matches using the OR logical operator — if multiple entries are enabled, your data needs to match only one of the entries.
 4. Select **Save profile**.
@@ -20,7 +20,7 @@ You can now use this profile in a [DLP policy](/cloudflare-one/policies/data-los
 
 ## Build a custom profile
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **DLP** > **DLP Profiles**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **DLP** > **DLP Profiles**.
 2. Select **Create profile**.
 3. Enter a name and optional description for the profile.
 4. Add custom or existing detection entries.

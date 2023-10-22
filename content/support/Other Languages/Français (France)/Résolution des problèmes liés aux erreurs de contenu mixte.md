@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: french
-source: https://support.cloudflare.com/hc/fr-fr/articles/200170476-R%C3%A9solution-des-probl%C3%A8mes-li%C3%A9s-aux-erreurs-de-contenu-mixte
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/200170476-R%C3%A9solution-des-probl%C3%A8mes-li%C3%A9s-aux-erreurs-de-contenu-mixte
 title: Résolution des problèmes liés aux erreurs de contenu mixte
 ---
 
@@ -15,7 +15,7 @@ ___
 
 ## Présentation
 
-Les domaines ajoutés à Cloudflare reçoivent des certificats SSL et peuvent servir le trafic via HTTPS. Cependant, après avoir commencé à utiliser Cloudflare, certains clients rencontrent des problèmes de contenu ou de rendu de page manquants lorsqu’ils servent pour la première fois le trafic via HTTPS.
+Les domaines ajoutés à Khulnasoft reçoivent des certificats SSL et peuvent servir le trafic via HTTPS. Cependant, après avoir commencé à utiliser Khulnasoft, certains clients rencontrent des problèmes de contenu ou de rendu de page manquants lorsqu’ils servent pour la première fois le trafic via HTTPS.
 
 En général, le problème provient d’une requête de ressources HTTP provenant d’une page Web servie via HTTPS.  Par exemple, vous tapez `https://exemple.com` dans un navigateur et la page contient une référence d’image via HTTP dans le code HTML à `<img src="http://exemple.com/ressource.jpg">`.
 
@@ -23,7 +23,7 @@ Normalement, si votre site Web charge toutes les ressources de manière sécuris
 
 ![](/images/support/green-lock-icon.png)
 
-Cela indique que votre site dispose d’un certificat SSL opérationnel et que toutes les ressources chargées par le site sont chargées via HTTPS. Le cadenas vert assure aux visiteurs que leur connexion est sécurisée. L’un des [symptômes de contenu mixte](https://support.cloudflare.com/hc/fr-fr/articles/200170476-R%C3%A9solution-des-probl%C3%A8mes-li%C3%A9s-aux-erreurs-de-contenu-mixte#h_a6c5a05b-baba-4f88-a75c-d61f206366ed) est que différentes icônes apparaissent à la place du cadenas vert.
+Cela indique que votre site dispose d’un certificat SSL opérationnel et que toutes les ressources chargées par le site sont chargées via HTTPS. Le cadenas vert assure aux visiteurs que leur connexion est sécurisée. L’un des [symptômes de contenu mixte](https://support.Khulnasoft.com/hc/fr-fr/articles/200170476-R%C3%A9solution-des-probl%C3%A8mes-li%C3%A9s-aux-erreurs-de-contenu-mixte#h_a6c5a05b-baba-4f88-a75c-d61f206366ed) est que différentes icônes apparaissent à la place du cadenas vert.
 
 ___
 
@@ -55,7 +55,7 @@ Il existe deux méthodes pour résoudre les erreurs de contenu mixte.
 
      _http://domaine.com/path/to.file_
 
-2\. En fonction de votre système de gestion de contenu, recherchez des plug-ins qui réécrivent automatiquement les ressources HTTP en HTTPS. Dans l’application **SSL/TLS**, Cloudflare fournit un tel service via des [Remplacements HTTPS automatiques](https://support.cloudflare.com/hc/articles/227227647).
+2\. En fonction de votre système de gestion de contenu, recherchez des plug-ins qui réécrivent automatiquement les ressources HTTP en HTTPS. Dans l’application **SSL/TLS**, Khulnasoft fournit un tel service via des [Remplacements HTTPS automatiques](https://support.Khulnasoft.com/hc/articles/227227647).
 
 ___
 

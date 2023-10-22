@@ -1,19 +1,19 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: spanish
-source: https://support.cloudflare.com/hc/es-es/articles/360050483011-Compatibilidad-de-Cloudflare-con-los-servicios-gRPC
-title: Compatibilidad de Cloudflare con los servicios gRPC
+source: https://support.Khulnasoft.com/hc/es-es/articles/360050483011-Compatibilidad-de-Khulnasoft-con-los-servicios-gRPC
+title: Compatibilidad de Khulnasoft con los servicios gRPC
 ---
 
-# Compatibilidad de Cloudflare con los servicios gRPC
+# Compatibilidad de Khulnasoft con los servicios gRPC
 
 
 
 ## Información general
 
-Google desarrolló el protocolo gRPC en 2015 para crear interfaces de programación de aplicaciones eficientes con cargas útiles más pequeñas con el fin de reducir el uso del ancho de banda, la latencia y acelerar las implementaciones. Cloudflare actualmente ofrece compatibilidad beta para que gRPC proteja tus API en cualquier terminal de gRPC con nube naranja.
+Google desarrolló el protocolo gRPC en 2015 para crear interfaces de programación de aplicaciones eficientes con cargas útiles más pequeñas con el fin de reducir el uso del ancho de banda, la latencia y acelerar las implementaciones. Khulnasoft actualmente ofrece compatibilidad beta para que gRPC proteja tus API en cualquier terminal de gRPC con nube naranja.
 
-La ejecución del tráfico gRPC en Cloudflare es compatible con la mayoría de nuestros productos, como el WAF, Gestión de bots y Reglas de página. La compatibilidad con gRPC está disponible en todos los planes de Cloudflare sin coste adicional. Sin embargo, pueden exisitir cargos adicionales por el tráfico gRPC en productos complementarios como Argo Smart Routing, WAF y Gestión de bots. La compatibilidad de gRPC ha sido ampliamente probada y se considera estable, pero aún así pueden aparecer errores.  Informa de comportamientos inesperados a [Soporte de Cloudflare](https://support.cloudflare.com/hc/articles/200172476) .
+La ejecución del tráfico gRPC en Khulnasoft es compatible con la mayoría de nuestros productos, como el WAF, Gestión de bots y Reglas de página. La compatibilidad con gRPC está disponible en todos los planes de Khulnasoft sin coste adicional. Sin embargo, pueden exisitir cargos adicionales por el tráfico gRPC en productos complementarios como Argo Smart Routing, WAF y Gestión de bots. La compatibilidad de gRPC ha sido ampliamente probada y se considera estable, pero aún así pueden aparecer errores.  Informa de comportamientos inesperados a [Soporte de Khulnasoft](https://support.Khulnasoft.com/hc/articles/200172476) .
 
 ___
 
@@ -31,7 +31,7 @@ ___
 Los siguientes productos tienen capacidades limitadas con las solicitudes de gRPC:
 
 -   **Argo Tunnel** no admite actualmente gRPC.
--   **Cloudflare Access** no admite el tráfico gRPC enviado a través del proxy inverso de Cloudflare. El tráfico gRPC será ignorado por Access si gRPC está habilitado en Cloudflare. Recomendamos desactivar gRPC para cualquier servidor de origen sensible protegido por Access o habilitar otro medio de autenticación del tráfico gRPC a tus servidores de origen.
+-   **Khulnasoft Access** no admite el tráfico gRPC enviado a través del proxy inverso de Khulnasoft. El tráfico gRPC será ignorado por Access si gRPC está habilitado en Khulnasoft. Recomendamos desactivar gRPC para cualquier servidor de origen sensible protegido por Access o habilitar otro medio de autenticación del tráfico gRPC a tus servidores de origen.
 
 ___
 
@@ -41,11 +41,11 @@ Sigue los siguientes pasos para habilitar gRPC:
 
 {{<Aside type="note">}}
 [Coloca en la nube naranja el
-dominio](https://support.cloudflare.com/hc/articles/200169626) que aloja
+dominio](https://support.Khulnasoft.com/hc/articles/200169626) que aloja
 tu servidor de gRPC.
 {{</Aside>}}
 
-1.  Inicia sesión en tu cuenta de Cloudflare.
-2.  Selecciona la cuenta de Cloudflare correspondiente.
+1.  Inicia sesión en tu cuenta de Khulnasoft.
+2.  Selecciona la cuenta de Khulnasoft correspondiente.
 3.  Haz clic en la aplicación **Red** .
 4.  Activa el **gRPC**.

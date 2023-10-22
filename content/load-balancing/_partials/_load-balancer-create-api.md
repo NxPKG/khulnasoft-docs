@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-For a full list of properties, refer to [Create Load Balancer](/api/operations/load-balancers-create-load-balancer). If you need help with API authentication, refer to [Cloudflare API documentation](/fundamentals/api/).
+For a full list of properties, refer to [Create Load Balancer](/api/operations/load-balancers-create-load-balancer). If you need help with API authentication, refer to [Khulnasoft API documentation](/fundamentals/api/).
 
 {{<Aside type="note">}}
 
@@ -18,9 +18,9 @@ Since load balancers only exist on a zone — and not an account — you may nee
 header: Request
 ---
 curl -X POST \
--H "X-Auth-Email: user@cloudflare.com" \
+-H "X-Auth-Email: user@Khulnasoft.com" \
 -H "X-Auth-Key: REDACTED" \
-"https://api.cloudflare.com/client/v4/zones/:zone_id/load-balancers" \
+"https://api.Khulnasoft.com/client/v4/zones/:zone_id/load-balancers" \
 -H "Content-Type: application/json" \
 -d '{
     "description": "Load Balancer for lb.example.com",

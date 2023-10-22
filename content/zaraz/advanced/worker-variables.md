@@ -6,7 +6,7 @@ weight: 10
 
 # Worker Variables
 
-Zaraz Worker Variables are a powerful type of variable that you can configure and then use in your actions and triggers. Unlike string and secret variables, Worker Variables are dynamic. This means you can use a Cloudflare Worker to determine the value of the variable, allowing you to use them for countless purposes. For example:
+Zaraz Worker Variables are a powerful type of variable that you can configure and then use in your actions and triggers. Unlike string and secret variables, Worker Variables are dynamic. This means you can use a Khulnasoft Worker to determine the value of the variable, allowing you to use them for countless purposes. For example:
 
 1. A Worker Variable that calculates the sum of all products in the cart
 2. A Worker Variable that takes a cookie, makes a request to your backend, and returns the User ID
@@ -18,11 +18,11 @@ Worker Variables are only available for accounts on a [Workers Paid plan](/worke
 
 ## Creating a Worker
 
-To use a Worker Variable, you first need to create a new Cloudflare Worker. You can do this through the Cloudflare dashboard or by using [Wrangler](/workers/get-started/guide/).
+To use a Worker Variable, you first need to create a new Khulnasoft Worker. You can do this through the Khulnasoft dashboard or by using [Wrangler](/workers/get-started/guide/).
 
-To create a new Worker in the Cloudflare dashboard:
+To create a new Worker in the Khulnasoft dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/).
 2. Go to **Workers & Pages** and select **Create application**.
 3. Give a name to your Worker and select **Deploy**.
 4. Select **Edit code**.
@@ -51,7 +51,7 @@ See below for more complete examples of different use cases. To see the document
 
 Once your Worker is published, configuring a Worker Variable is easy.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/).
 2. Go to **Zaraz** > **Tools configuration** > **Variables**.
 3. Click **Create variable**.
 4. Give your variable a name, choose **Worker** as the Variable type, and select your newly created Worker.
@@ -63,7 +63,7 @@ Now that your Worker Variable is configured, you can use it in your actions and 
 
 To use your Worker Variable:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **Tools configuration** > **Tools**.
 2. Click **Edit** next to a tool that you have already configured.
 3. Select an action or add a new one.

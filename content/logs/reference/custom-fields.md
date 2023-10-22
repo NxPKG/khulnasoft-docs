@@ -57,7 +57,7 @@ Perform the following steps to create the rule:
 1. Use the [List existing rulesets](/ruleset-engine/rulesets-api/view/#list-existing-rulesets) operation to check if there is already a ruleset for the `http_log_custom_fields` phase at the zone level (you can only have one zone ruleset per phase):
 
     ```bash
-    curl "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets" \
+    curl "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets" \
     -H "X-Auth-Email: <EMAIL>" \
     -H "X-Auth-Key: <API_KEY>"
     ```
@@ -68,7 +68,7 @@ Perform the following steps to create the rule:
 
     ```json
     curl -X POST \
-    "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets" \
+    "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets" \
     -H "X-Auth-Email: <EMAIL>" \
     -H "X-Auth-Key: <API_KEY>" \
     -d '{
@@ -87,7 +87,7 @@ Perform the following steps to create the rule:
 
     ```json
     curl -X PUT \
-    "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/<RULESET_ID>" \
+    "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/rulesets/<RULESET_ID>" \
     -H "X-Auth-Email: <EMAIL>" \
     -H "X-Auth-Key: <API_KEY>" \
     -d '{
@@ -174,7 +174,7 @@ For example, consider the following request that creates a job that includes cus
 
 ```json
 curl -X POST \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logpush/jobs" \
+"https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logpush/jobs" \
 -H "X-Auth-Email: <EMAIL>" \ 
 -H "X-Auth-Key: <API_KEY>" \
 -d '{
@@ -194,7 +194,7 @@ If you are a Cloudflare Access user, as of March 2022 you have to manually add t
 
 ## Enable custom fields via dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select the domain you want to use.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select the domain you want to use.
 2. Go to **Analytics & Logs** > **Logs**.
 3. In the **Custom Fields** section, select **Edit Custom Fields**.
 4. Select **Set new Custom Field**. 

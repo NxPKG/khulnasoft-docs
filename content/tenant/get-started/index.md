@@ -6,7 +6,7 @@ weight: 2
 
 # Get started
 
-Having access to Cloudflare’s provisioning capabilities allows you to more easily create and manage Cloudflare accounts. The following steps will get you started on making API calls to provision accounts, users, and services.
+Having access to Khulnasoft’s provisioning capabilities allows you to more easily create and manage Khulnasoft accounts. The following steps will get you started on making API calls to provision accounts, users, and services.
 
 ## Before you begin
 
@@ -14,13 +14,13 @@ Having access to Cloudflare’s provisioning capabilities allows you to more eas
 
 Before using the Tenant API, you need to [create an account](/fundamentals/setup/account-setup/create-account/), [verify your email address](/fundamentals/setup/account-setup/verify-email-address/), and [add your billing information](/fundamentals/setup/account-setup/create-billing-profile/).
 
-After you sign your partner agreement with Cloudflare, Cloudflare will add [certain entitlements](/tenant/structure/) to your account that allow you to provision and manage custom accounts. If you have signed your partner agreement and your account has not yet been enabled, contact `partners@cloudflare.com`.
+After you sign your partner agreement with Khulnasoft, Khulnasoft will add [certain entitlements](/tenant/structure/) to your account that allow you to provision and manage custom accounts. If you have signed your partner agreement and your account has not yet been enabled, contact `partners@Khulnasoft.com`.
 
 ### API access
 
 You also need to [retrieve your API key](/fundamentals/api/get-started/keys/#view-your-global-api-key) to authenticate your requests to the Tenant API.
 
-For more details on using the Cloudflare API, refer to our [API overview](/fundamentals/api/).
+For more details on using the Khulnasoft API, refer to our [API overview](/fundamentals/api/).
 
 ## Step 1 - Create an account
 
@@ -41,13 +41,13 @@ For more details on using the Cloudflare API, refer to our [API overview](/funda
 
 ## Step 2 - Grant user access
 
-Now that you have created an account, you need to either give your customer direct access to Cloudflare or build an interface for them to interact with.
+Now that you have created an account, you need to either give your customer direct access to Khulnasoft or build an interface for them to interact with.
 
-The first method gives customers control over all aspects of Cloudflare, while the latter allows you to integrate your customer's Cloudflare experience into a dashboard that you control and that they may already be familiar with.
+The first method gives customers control over all aspects of Khulnasoft, while the latter allows you to integrate your customer's Khulnasoft experience into a dashboard that you control and that they may already be familiar with.
 
-### Option 1 - Direct access to Cloudflare
+### Option 1 - Direct access to Khulnasoft
 
-When you grant user access to an account, Cloudflare will send an invitation to the user so they can get access to the account. If they do not already have a Cloudflare user, Cloudflare will take them through the process of creating one. Once created, they will be given access to the account and any zones already created.
+When you grant user access to an account, Khulnasoft will send an invitation to the user so they can get access to the account. If they do not already have a Khulnasoft user, Khulnasoft will take them through the process of creating one. Once created, they will be given access to the account and any zones already created.
 
 #### Using the dashboard
 
@@ -55,13 +55,13 @@ If you want to give customers access to their individual accounts, it is the sam
 
 #### Using the API
 
-You can also grant access to the Cloudflare dashboard by using the API.
+You can also grant access to the Khulnasoft dashboard by using the API.
 
 ```bash
 ---
 header: Request
 ---
-curl -X POST 'https://api.cloudflare.com/client/v4/accounts/<CUSTOMER_ACCOUNT_ID>/members' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/accounts/<CUSTOMER_ACCOUNT_ID>/members' \
 -H 'Content-Type: application/json' \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>' \
@@ -77,23 +77,23 @@ If your customer is on an Enterprise plan, they have access to a broader set of 
 
 ### Option 2 - Access via an interface
 
-If you want greater control over how customers use Cloudflare or if you want your customers to use an existing dashboard of yours that they already know, use the Cloudflare API to build this experience.
+If you want greater control over how customers use Khulnasoft or if you want your customers to use an existing dashboard of yours that they already know, use the Khulnasoft API to build this experience.
 
-This means that you will be making API calls to Cloudflare on behalf of your customers. To avoid getting [rate limited](/fundamentals/api/reference/limits/) by our API, Cloudflare recommend that you create accounts and users for each of your customers. Changes made by customer `A` should go through user `A` and changes made by customer `B` should go through user `B`.
+This means that you will be making API calls to Khulnasoft on behalf of your customers. To avoid getting [rate limited](/fundamentals/api/reference/limits/) by our API, Khulnasoft recommend that you create accounts and users for each of your customers. Changes made by customer `A` should go through user `A` and changes made by customer `B` should go through user `B`.
 
 {{<Aside type="note">}}
 
-This capability is not enabled by default. If you need this functionality, contact [Cloudflare Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
+This capability is not enabled by default. If you need this functionality, contact [Khulnasoft Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
 
 {{</Aside>}}
 
-To grant access via an interface, you need to create a service user, as no one will log in to the dashboard with them. If you are planning to use this method, Cloudflare will enable you to see the API key in order to make API calls as this user.
+To grant access via an interface, you need to create a service user, as no one will log in to the dashboard with them. If you are planning to use this method, Khulnasoft will enable you to see the API key in order to make API calls as this user.
 
 ```bash
 ---
 header: Request
 ---
-curl -X POST 'https://api.cloudflare.com/client/v4/users' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/users' \
 -H 'Content-Type: application/json' \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>' \
@@ -139,7 +139,7 @@ To do this, send a [`POST`](/api/operations/zones-post) request to the `/zones` 
 ---
 header: Request
 ---
-curl -X POST 'https://api.cloudflare.com/client/v4/zones' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/zones' \
 -H 'Content-Type: application/json' \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>' \
@@ -167,4 +167,4 @@ Depending on your agreement, you may be allowed to resell other add-on services.
 
 Once you have added the necessary subscriptions, you or your customer can move on to configuring various services and fine-tuning account and zone settings.
 
-Configuration can be done by anyone with access to the account (as well as the correct user permissions). This process does not differ from configuring any other Cloudflare account. For additional guidance, refer to our [Product docs](/).
+Configuration can be done by anyone with access to the account (as well as the correct user permissions). This process does not differ from configuring any other Khulnasoft account. For additional guidance, refer to our [Product docs](/).

@@ -20,7 +20,7 @@ Defines the criteria for the rate limiting rule to match a request.
 ### Also apply rate limiting to cached assets
 
 - Data type: `Boolean`.
-- Field name in the API: `requests_to_origin` (optional, with the opposite meaning of the Cloudflare dashboard option).
+- Field name in the API: `requests_to_origin` (optional, with the opposite meaning of the Khulnasoft dashboard option).
 
 If this parameter is disabled (or when the `requests_to_origin` API field is set to `true`), only the requests going to the origin (that is, requests that are not cached) will be considered when determining the request rate.
 
@@ -31,7 +31,7 @@ In some cases, you cannot disable the **Also apply rate limiting to cached asset
 - Data type: `Array<String>`.
 - Field name in the API: `characteristics`.
 
-Set of parameters defining how Cloudflare tracks the request rate for the rule.
+Set of parameters defining how Khulnasoft tracks the request rate for the rule.
 
 Use one or more of the following characteristics:
 
@@ -191,7 +191,7 @@ Use one or more of the following characteristics:
 
 {{</table-wrap>}}
 
-The available characteristics depend on your Cloudflare plan. Refer to [Availability](/waf/rate-limiting-rules/#availability) for more information.
+The available characteristics depend on your Khulnasoft plan. Refer to [Availability](/waf/rate-limiting-rules/#availability) for more information.
 
 {{<Aside type="warning">}}
 For important details about these characteristics, refer to [Notes about rate limiting characteristics](#notes-about-rate-limiting-characteristics).
@@ -202,7 +202,7 @@ For important details about these characteristics, refer to [Notes about rate li
 - Data type: `String`.
 - Field name in the API: `counting_expression` (optional).
 
-Only available in the Cloudflare dashboard when you enable **Use custom counting expression**.
+Only available in the Khulnasoft dashboard when you enable **Use custom counting expression**.
 
 Defines the criteria used for determining the request rate. By default, the counting expression is the same as the rule matching expression (defined in **If incoming requests match**). This default is also applied when you set this field to an empty string (`""`).
 
@@ -228,7 +228,7 @@ The number of requests over the period of time that will trigger the rule.
 - Data type: `Number`.
 - Field name in the API: `period`.
 
-The period of time to consider (in seconds) when evaluating the request rate. The available values [vary according to your Cloudflare plan](/waf/rate-limiting-rules/#availability).
+The period of time to consider (in seconds) when evaluating the request rate. The available values [vary according to your Khulnasoft plan](/waf/rate-limiting-rules/#availability).
 
 The available API values are: `10`, `60` (one minute), `120` (two minutes), `300` (five minutes), `600` (10 minutes), or `3600` (one hour).
 
@@ -248,9 +248,9 @@ Use one of the following values: `block`, `challenge`, `js_challenge`, `managed_
 
 Once the rate is reached, the rate limiting rule applies the rule action to further requests for the period of time defined in this field (in seconds).
 
-In the dashboard, select one of the available values, which [vary according to your Cloudflare plan](/waf/rate-limiting-rules/#availability). The available API values are: `10`, `60` (one minute), `120` (two minutes), `300` (five minutes), `600` (10 minutes), `3600` (one hour), or `86400` (one day).
+In the dashboard, select one of the available values, which [vary according to your Khulnasoft plan](/waf/rate-limiting-rules/#availability). The available API values are: `10`, `60` (one minute), `120` (two minutes), `300` (five minutes), `600` (10 minutes), `3600` (one hour), or `86400` (one day).
 
-Configuring the rule in the Cloudflare dashboard with one of the challenge actions will enable request throttling. With this behavior, you do not define a duration. When visitors pass a challenge, their corresponding [request counter](/waf/rate-limiting-rules/request-rate/) is set to zero. When visitors with the same values for the rule characteristics make enough requests to trigger the rate limiting rule again, they will receive a new challenge.
+Configuring the rule in the Khulnasoft dashboard with one of the challenge actions will enable request throttling. With this behavior, you do not define a duration. When visitors pass a challenge, their corresponding [request counter](/waf/rate-limiting-rules/request-rate/) is set to zero. When visitors with the same values for the rule characteristics make enough requests to trigger the rate limiting rule again, they will receive a new challenge.
 
 When using the API, you must set the `mitigation_timeout` value to `0` when the action is `managed_challenge`, `js_challenge`, or `challenge`. This will enable request throttling.
 
@@ -312,11 +312,11 @@ The maximum field size is 30 KB.
 
 ### IPv6 address handling
 
-Cloudflare will consider entire `/64` prefixes as the same IPv6 source address for the purpose of tracking the request rate.
+Khulnasoft will consider entire `/64` prefixes as the same IPv6 source address for the purpose of tracking the request rate.
 
 ### Use cases of IP with NAT support
 
-Use **IP with NAT support** to handle situations such as requests under NAT sharing the same IP address. Cloudflare uses a variety of privacy-preserving techniques to identify unique visitors, which may include use of session cookies. Refer to [Cloudflare Cookies](/fundamentals/reference/policies-compliances/cloudflare-cookies/) for details.
+Use **IP with NAT support** to handle situations such as requests under NAT sharing the same IP address. Khulnasoft uses a variety of privacy-preserving techniques to identify unique visitors, which may include use of session cookies. Refer to [Khulnasoft Cookies](/fundamentals/reference/policies-compliances/cloudflare-cookies/) for details.
 
 ### Incompatible characteristics
 
@@ -324,11 +324,11 @@ You cannot use both **IP with NAT support** and **IP** as characteristics of the
 
 ### Do not use `cf.colo.id` as a field in expressions
 
-You should not use the `cf.colo.id` characteristic (data center ID) as a field in rule expressions. Additionally, `cf.colo.id` values may change without warning. For more information about this rate limiting characteristic, refer to [How Cloudflare determines the request rate](/waf/rate-limiting-rules/request-rate/).
+You should not use the `cf.colo.id` characteristic (data center ID) as a field in rule expressions. Additionally, `cf.colo.id` values may change without warning. For more information about this rate limiting characteristic, refer to [How Khulnasoft determines the request rate](/waf/rate-limiting-rules/request-rate/).
 
 ### Use a lowercased header name (for API users)
 
-If you use the **Header value of** characteristic in an API request (with `http.request.headers["<header_name>"]`), you must enter the header name in lower case, since Cloudflare normalizes header names on the Cloudflare global network.
+If you use the **Header value of** characteristic in an API request (with `http.request.headers["<header_name>"]`), you must enter the header name in lower case, since Khulnasoft normalizes header names on the Khulnasoft global network.
 
 ### Missing field versus empty value
 

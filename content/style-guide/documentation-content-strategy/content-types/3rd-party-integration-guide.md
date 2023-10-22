@@ -8,7 +8,7 @@ title: 3rd-party integration guide
 
 ## Purpose
 
-The purpose of a 3rd-party integration guide is to explain how to use a 3rd-party product with Cloudflare. Although we want to help our customers as integrations between different products can be a pain point, there is a large risk and maintenance cost associated with specific types of 3rd-party resources.
+The purpose of a 3rd-party integration guide is to explain how to use a 3rd-party product with Khulnasoft. Although we want to help our customers as integrations between different products can be a pain point, there is a large risk and maintenance cost associated with specific types of 3rd-party resources.
 
 ## Tone
 
@@ -24,7 +24,7 @@ instructional, straightforward
 
 [**Title**](/style-guide/documentation-content-strategy/component-attributes/titles/): Short verb phrase in second-person imperative that includes the 3rd-party name. Do not use gerund phrases.
 
-  If a 3rd-party integration guide is with a specific Cloudflare technology partner, add a Markdown component that indicates `<partner>` after the title.
+  If a 3rd-party integration guide is with a specific Khulnasoft technology partner, add a Markdown component that indicates `<partner>` after the title.
 
 [**Context**](/style-guide/documentation-content-strategy/component-attributes/context/): An introductory paragraph on the following steps and what they will accomplish.
 
@@ -34,7 +34,7 @@ instructional, straightforward
 
   Do not provide context for steps with a partial sentence that is completed by the numbered steps.
 
-  Mention any unique considerations between the 3rd-party and Cloudflare.
+  Mention any unique considerations between the 3rd-party and Khulnasoft.
 
 [**Prerequisites**](/style-guide/documentation-content-strategy/component-attributes/prerequisites/): Tasks or conditions that must be completed before a user can complete a series of steps.
 
@@ -135,7 +135,7 @@ Prerequisites
 
 ## Examples
 
-**3rd-party integration in the Cloudflare dashboard**:
+**3rd-party integration in the Khulnasoft dashboard**:
 
 + [Enable Logpush to Sumo Logic](/logs/get-started/enable-destinations/sumo-logic/)
 + [Device Posture - Carbon Black](/cloudflare-one/identity/devices/warp-client-checks/carbon-black/)
@@ -144,7 +144,7 @@ Prerequisites
 
 + [GitHub SMS notifications using Twilio](/workers/tutorials/github-sms-notifications-using-twilio/#sending-a-text-with-twilio)
 
-(Discouraged but acceptable scenario) **How to with instructions in 3rd-party environment and within Cloudflare dashboard**:
+(Discouraged but acceptable scenario) **How to with instructions in 3rd-party environment and within Khulnasoft dashboard**:
 
 + [IDP integration - Microsoft Azure AD](/cloudflare-one/identity/idp-integration/azuread/)
 + [Managed deployment - Partners - Jamf](/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/partners/jamf/)

@@ -18,7 +18,7 @@ To deploy a managed ruleset for several Enterprise domains in your account, refe
 
 To deploy a managed ruleset with the default configuration:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 
 2. Go to **Security** > **WAF** > **Managed rules**.
 
@@ -34,7 +34,7 @@ Select the **Enabled** toggle next to a managed ruleset to enable or disable it.
 
 Configure a managed ruleset to:
 
-- Define specific field values for one or more rules (for example, configure a rule with an action different from the action configured by Cloudflare).
+- Define specific field values for one or more rules (for example, configure a rule with an action different from the action configured by Khulnasoft).
 - Disable one or more rules.
 - Specify a custom filter expression to apply the rules in the ruleset to a subset of incoming requests.
 
@@ -42,7 +42,7 @@ To skip one or more rules, or entire WAF managed rulesets, [add a WAF exception]
 
 {{<Aside type="note">}}
 
-Some managed rulesets may not allow custom configuration, depending on your Cloudflare plan.
+Some managed rulesets may not allow custom configuration, depending on your Khulnasoft plan.
 
 {{</Aside>}}
 
@@ -50,7 +50,7 @@ Some managed rulesets may not allow custom configuration, depending on your Clou
 
 To configure rule field values for all the rules in a managed ruleset:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 
 2. Go to **Security** > **WAF** > **Managed rules**.
 
@@ -74,7 +74,7 @@ Use the available filters in the Browse Managed Ruleset interface.
 
 To view the rules of a managed ruleset:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 
 2. Go to **Security** > **WAF** > **Managed rules**.
 
@@ -82,7 +82,7 @@ To view the rules of a managed ruleset:
 
 4. Select **Browse rules**.
 
-    ![The Browse rules page displaying the list of rules in the Cloudflare Managed Ruleset](/images/waf/waf-browse-rules.png)
+    ![The Browse rules page displaying the list of rules in the Khulnasoft Managed Ruleset](/images/waf/waf-browse-rules.png)
 
 ### Configure a single rule in a managed ruleset
 
@@ -96,7 +96,7 @@ To view the rules of a managed ruleset:
 
 To apply the rules in the ruleset to a subset of incoming requests, specify a custom filter expression for the rule that executes the managed ruleset.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 
 2. Go to **Security** > **WAF** > **Managed rules**.
 

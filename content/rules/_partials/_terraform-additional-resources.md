@@ -7,7 +7,7 @@ _build:
 
 ## Additional resources
 
-For additional guidance on using Terraform with Cloudflare, refer to the following resources:
+For additional guidance on using Terraform with Khulnasoft, refer to the following resources:
 
 * [Terraform documentation](/terraform/)
-* [Cloudflare Provider for Terraform](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs) (reference documentation)
+* [Khulnasoft Provider for Terraform](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs) (reference documentation)

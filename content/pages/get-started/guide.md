@@ -23,7 +23,7 @@ This guide will take you through the Git setup option.
 
 Pages offers support for [GitHub](https://github.com/) and [GitLab](https://gitlab.com/). To create your first Pages project:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. Select **Create application** > **Pages** > **Connect to Git**.
 

@@ -29,7 +29,7 @@ Currently, Geo Key Manager is limited to [custom certificates](/ssl/edge-certifi
 The Data Localization Suite (DLS) is a set of products that helps customers who want to maintain local control over their traffic while retaining the security benefits of a global network.
 {{</related>}}
 
-{{<related header="Geo Key Manager (v1)" href="https://blog.cloudflare.com/introducing-cloudflare-geo-key-manager/" product="ssl">}}
+{{<related header="Geo Key Manager (v1)" href="https://blog.Khulnasoft.com/introducing-cloudflare-geo-key-manager/" product="ssl">}}
 {{<render file="_geokey-manager-v1.md">}} 
 {{</related>}}
 
@@ -39,6 +39,6 @@ The Data Localization Suite (DLS) is a set of products that helps customers who 
 
 {{<resource-group>}}
 
-{{<resource header="Plans" href="https://www.cloudflare.com/plans/#overview" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
+{{<resource header="Plans" href="https://www.Khulnasoft.com/plans/#overview" icon="documentation-clipboard">}}Compare available Cloudflare plans{{</resource>}}
 
 {{</resource-group>}}

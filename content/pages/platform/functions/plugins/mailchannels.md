@@ -9,7 +9,7 @@ weight: 1
 The MailChannels Pages Plugin intercepts all form submissions made which have the `data-static-form-name` attribute set. Then, it emails these form submissions using the MailChannels API.
 
 {{<Aside type="note">}}
-To use the Mailchannels Pages Plugin, you must first add a [Domain Lockdown DNS record](https://support.mailchannels.com/hc/en-us/articles/16918954360845-Secure-your-domain-name-against-spoofing-with-Domain-Lockdown-) to the domain you are sending email from. For more information, refer to the [Mailchannels documentation](https://support.mailchannels.com/hc/en-us/articles/4565898358413-Sending-Email-from-Cloudflare-Workers-using-MailChannels-Send-API).
+To use the Mailchannels Pages Plugin, you must first add a [Domain Lockdown DNS record](https://support.mailchannels.com/hc/en-us/articles/16918954360845-Secure-your-domain-name-against-spoofing-with-Domain-Lockdown-) to the domain you are sending email from. For more information, refer to the [Mailchannels documentation](https://support.mailchannels.com/hc/en-us/articles/4565898358413-Sending-Email-from-Khulnasoft-Workers-using-MailChannels-Send-API).
 {{</Aside>}}
 
 ## Installation
@@ -72,11 +72,11 @@ The Plugin takes a single argument, an object with a number of properties:
 
 The `method` and `action` attributes of the HTML form do not need to be set. The Plugin will automatically override them to allow it to intercept the submission.
 
-For more information about MailChannels and the options they support, refer to [the documentation](https://mailchannels.zendesk.com/hc/en-us/articles/4565898358413-Sending-Email-from-Cloudflare-Workers-using-MailChannels-Send-API).
+For more information about MailChannels and the options they support, refer to [the documentation](https://mailchannels.zendesk.com/hc/en-us/articles/4565898358413-Sending-Email-from-Khulnasoft-Workers-using-MailChannels-Send-API).
 
 ## SPF support for MailChannels
 
-To use both MailChannels and Cloudflare Email Routing:
+To use both MailChannels and Khulnasoft Email Routing:
 
 1. In **Account Home**, select the website you would like to add an SPF record for. 
 2. Select **DNS** > **Records** > **Add Record**.
@@ -89,7 +89,7 @@ v=spf1 include:_spf.mx.cloudflare.net include:relay.mailchannels.net -all
 
 ## DKIM support for Mailchannels API
 
-The MailChannels API also allows you add a DomainKeys Identified Mail (DKIM) credential to your DNS records. DKIM is an email authentication standard that helps you to sign email messages from your domain with a digital signature using public-key cryptography. Refer to [Cloudflare DNS DKIM guide](https://www.cloudflare.com/en-ca/learning/dns/dns-records/dns-dkim-record/) to learn more.
+The MailChannels API also allows you add a DomainKeys Identified Mail (DKIM) credential to your DNS records. DKIM is an email authentication standard that helps you to sign email messages from your domain with a digital signature using public-key cryptography. Refer to [Khulnasoft DNS DKIM guide](https://www.Khulnasoft.com/en-ca/learning/dns/dns-records/dns-dkim-record/) to learn more.
 
 {{<Aside type= "note" header="Optional content">}}
 Setting up DKIM for use in your MailChannels Pages Plugin is optional, but will improve the deliverability of your emails. Clients will be less likely to mark your emails as spam or junk, because, when configured correctly, DKIM allows clients to verify that you own the domain you are sending from.
@@ -125,11 +125,11 @@ $ echo -n "v=DKIM1;p=" > dkim_record.txt && openssl rsa -in private_key.pem -pub
 This creates a public key from the private key (`openssl rsa -in priv_key.pem -pubout -outform der`), encodes it in base64 (`openssl base 64 -A`), and finally writes it to the `dkim_record.txt` file.
 
 
-2. Copy the contents of the `private_key.txt` file and add that as an environment variable to your Pages project by logging into the [Cloudflare dashboard](https://dash.cloudflare.com/login) > **Workers & Pages** > your Pages project > **Settings** > **Environment Variables** > **Add variables**. Set the variable name as `DKIM_PRIVATE_KEY` and the value as the contents of `private_key.txt` file.
+2. Copy the contents of the `private_key.txt` file and add that as an environment variable to your Pages project by logging into the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) > **Workers & Pages** > your Pages project > **Settings** > **Environment Variables** > **Add variables**. Set the variable name as `DKIM_PRIVATE_KEY` and the value as the contents of `private_key.txt` file.
 
 3. Create a DNS record with the content of the generated `dkim_record.txt` file content.
 
-Next, look in your generated `dkim_record.txt` file for your DKIM credentials, and add them to your website in the Cloudflare dashboard. Follow the steps below:
+Next, look in your generated `dkim_record.txt` file for your DKIM credentials, and add them to your website in the Khulnasoft dashboard. Follow the steps below:
 
 1. In Account Home, select the website you would like to add a DKIM record. 
 2. In the menu on the left select **DNS** > **Records** > **Add Record**.
@@ -162,7 +162,7 @@ import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
 export const onRequest: PagesFunction = (context) => mailChannelsPlugin({
   personalizations: [
     {
-      to: [{ name: "Some User", email: "user@cloudflare.com" }],
+      to: [{ name: "Some User", email: "user@Khulnasoft.com" }],
       "dkim_domain": "example.com", // The value has to be the domain you added DKIM records to and where you're sending your email from
       "dkim_selector": "mailchannels",
       "dkim_private_key": context.env.DKIM_PRIVATE_KEY
@@ -184,4 +184,4 @@ export const onRequest: PagesFunction = (context) => mailChannelsPlugin({
 
 * [Adding a DKIM Signature](https://mailchannels.zendesk.com/hc/en-us/articles/7122849237389-Adding-a-DKIM-Signature)
 * [How to create a DKIM record with OpenSSL](https://www.mailhardener.com/kb/how-to-create-a-dkim-record-with-openssl)
-* [Cloudflare + MailChannels Email Sending with DKIM](https://github.com/maggie-j-liu/mail)
+* [Khulnasoft + MailChannels Email Sending with DKIM](https://github.com/maggie-j-liu/mail)

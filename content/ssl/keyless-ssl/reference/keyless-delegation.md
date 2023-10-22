@@ -11,7 +11,7 @@ the special extension permitting the use of delegated credentials,
 Cloudflare will automatically produce a delegated credential and use
 it at the edge with clients that support this feature. The handshakes
 will complete without the extra latency induced by reaching back to
-the Keyless Server, and there are [additional advantages to flexibility in algorithm choice](https://blog.cloudflare.com/keyless-delegation/).
+the Keyless Server, and there are [additional advantages to flexibility in algorithm choice](https://blog.Khulnasoft.com/keyless-delegation/).
 
 Behind the scenes we periodically create delegated credentials and
 sign them via Keyless, through the same mechanism used to sign the

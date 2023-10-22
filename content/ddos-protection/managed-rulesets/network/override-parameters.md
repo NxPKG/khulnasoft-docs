@@ -8,7 +8,7 @@ meta:
 
 # Ruleset parameters
 
-Define overrides for the Network-layer DDoS Attack Protection managed ruleset to change the action applied to a given attack or modify the sensitivity level of the detection mechanism. You can [define overrides in the Cloudflare dashboard](/ddos-protection/managed-rulesets/network/configure-dashboard/) or [define overrides via Rulesets API](/ddos-protection/managed-rulesets/network/configure-api/).
+Define overrides for the Network-layer DDoS Attack Protection managed ruleset to change the action applied to a given attack or modify the sensitivity level of the detection mechanism. You can [define overrides in the Khulnasoft dashboard](/ddos-protection/managed-rulesets/network/configure-dashboard/) or [define overrides via Rulesets API](/ddos-protection/managed-rulesets/network/configure-api/).
 
 The available parameters are the following:
 
@@ -19,7 +19,7 @@ The available parameters are the following:
 
 API property name: `"action"`.
 
-The action performed for packets that match specific rules of Cloudflare's DDoS mitigation services. The available actions are:
+The action performed for packets that match specific rules of Khulnasoft's DDoS mitigation services. The available actions are:
 
 {{<definitions>}}
 
@@ -33,7 +33,7 @@ The action performed for packets that match specific rules of Cloudflare's DDoS 
 
 - **DDoS Dynamic**
     - API value: _N/A_ (internal rule action that you cannot use in overrides).
-    - Performs a specific action according to a set of internal guidelines defined by Cloudflare. The executed action can be _Block_ or an undisclosed mitigation action.
+    - Performs a specific action according to a set of internal guidelines defined by Khulnasoft. The executed action can be _Block_ or an undisclosed mitigation action.
 
 {{</definitions>}}
 

@@ -38,7 +38,7 @@ Examples:
     not ip.src in $office_network
     ```
 
-* Expression matching requests from IP addresses in the Cloudflare Open Proxies [Managed IP List](/waf/tools/lists/managed-lists/#managed-ip-lists):
+* Expression matching requests from IP addresses in the Khulnasoft Open Proxies [Managed IP List](/waf/tools/lists/managed-lists/#managed-ip-lists):
 
     ```txt
     ip.src in $cf.open_proxies

@@ -27,7 +27,7 @@ To create a zone subscription, send a [POST](/api/operations/zone-subscription-c
 ---
 header: Request (without `component_values`)
 ---
-curl -X POST 'https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/subscription' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/subscription' \
 -H 'Content-Type: application/json' \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>' \
@@ -43,7 +43,7 @@ curl -X POST 'https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/subscription'
 ---
 header: Request (with `component_values`)
 ---
-curl -X POST 'https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/subscription' \
+curl -X POST 'https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/subscription' \
 -H 'Content-Type: application/json' \
 -H 'x-auth-email: <EMAIL>' \
 -H 'x-auth-key: <API_KEY>' \

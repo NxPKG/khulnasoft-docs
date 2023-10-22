@@ -6,7 +6,7 @@ weight: 4
 
 # Download live stream videos
 
-You can enable downloads for live stream videos from the Cloudflare dashboard. Videos are available for download after they enter the **Ready** state.
+You can enable downloads for live stream videos from the Khulnasoft dashboard. Videos are available for download after they enter the **Ready** state.
 
 {{<Aside type="note">}}
 
@@ -14,7 +14,7 @@ Downloadable MP4s are only available for live recordings under four hours. Live 
 
 {{</Aside>}}
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to your [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Click **Stream** > **Live Inputs**.
 3. Click a live input from the list to select it.
 4. Under **Videos created by live input**, locate your video and click to select it.

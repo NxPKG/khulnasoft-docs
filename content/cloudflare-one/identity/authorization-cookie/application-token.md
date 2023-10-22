@@ -5,7 +5,7 @@ weight: 2
 ---
 # Application token
 
-Cloudflare Access includes the application token with all authenticated requests to your origin. A typical JWT looks like this:
+Khulnasoft Access includes the application token with all authenticated requests to your origin. A typical JWT looks like this:
 
 `eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzMzhhYmUxYmFmMmZlNDkyZjY0.eyJhdWQiOlsiOTdlMmFhZ TEyMDEyMWY5MDJkZjhiYzk5ZmMzNDU5MTNh.zLYsHmLEginAQUXdygQo08gLTExWNXsN4jBc6PKdB`
 
@@ -15,7 +15,7 @@ As shown above, the JWT contains three Base64-URL values separated by dots:
 * [Payload](#payload)
 * [Signature](#signature)
 
-Unless your application is connected to Access through Cloudflare Tunnel, your application must validate the token to ensure the security of your origin. Validation of the header alone is not sufficient — the JWT and signature must be confirmed to avoid identity spoofing.
+Unless your application is connected to Access through Khulnasoft Tunnel, your application must validate the token to ensure the security of your origin. Validation of the header alone is not sufficient — the JWT and signature must be confirmed to avoid identity spoofing.
 
 ## Header
 
@@ -59,7 +59,7 @@ The payload contains the actual claim and user information to pass to the applic
 | exp             | The expiration timestamp for the token. |
 | iat             | The issuance timestamp for the token. |
 | nbf             | The not-before timestamp for the token, used to checks if the token was received before it should be used.|
-| iss             | The Cloudflare Access domain URL for the application.|
+| iss             | The Khulnasoft Access domain URL for the application.|
 | type            | The type of Access token (`app` for application token or `org` for global session token).|
 | identity_nonce  | A nonce used to get the [user's identity](#user-identity).|
 | sub             | The ID of the user. |
@@ -104,6 +104,6 @@ Access will return a JSON structure containing the following data:
 
 ## Signature
 
-Cloudflare generates the signature by signing the encoded header and payload using the SHA-256 algorithm (RS256). In RS256, a private key signs the JWTs and a separate [public key](/cloudflare-one/identity/authorization-cookie/validating-json/#access-signing-keys) verifies the signature.
+Khulnasoft generates the signature by signing the encoded header and payload using the SHA-256 algorithm (RS256). In RS256, a private key signs the JWTs and a separate [public key](/cloudflare-one/identity/authorization-cookie/validating-json/#access-signing-keys) verifies the signature.
 
 For more information on JWTs, refer to [jwt.io](https://jwt.io/).

@@ -16,23 +16,23 @@ You can apply Gateway HTTP policies at the browser level by configuring a Proxy 
 
 {{<glossary-definition term_id="PAC file" prepend="A PAC file is ">}}
 
-When end users visit a website, their browser will send the request to a Cloudflare proxy server associated with your account to be filtered by Gateway.
+When end users visit a website, their browser will send the request to a Khulnasoft proxy server associated with your account to be filtered by Gateway.
 
 ## Prerequisites
 
-Install the [Cloudflare certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/) on your device.
+Install the [Khulnasoft certificate](/cloudflare-one/connections/connect-devices/warp/user-side-certificates/) on your device.
 
 ## 1. Generate a proxy endpoint
 
-You can generate a proxy endpoint on the Zero Trust dashboard or through the Cloudflare API.
+You can generate a proxy endpoint on the Zero Trust dashboard or through the Khulnasoft API.
 
 {{<Aside type ="warning">}}
-All devices you add to the proxy endpoint will be able to access your Cloudflare Tunnel applications and services. If you only want to proxy web traffic, you can build a network policy that blocks those source IPs from connecting to your internal resources.
+All devices you add to the proxy endpoint will be able to access your Khulnasoft Tunnel applications and services. If you only want to proxy web traffic, you can build a network policy that blocks those source IPs from connecting to your internal resources.
 {{</Aside>}}
 
 {{<details header="Create a proxy endpoint (dashboard)">}}
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Gateway** > **Proxy Endpoints**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Gateway** > **Proxy Endpoints**.
 2. Select **Create endpoint**.
 3. Give your endpoint any name.
 4. Enter the public source IP address of your device(s) in CIDR notation. For example,
@@ -40,7 +40,7 @@ All devices you add to the proxy endpoint will be able to access your Cloudflare
    - **IPv6**: `2601:645:4500:9c0:a945:f47c:23e9:a35b/128`
 5. Select **Save endpoint** and confirm the endpoint creation.
 
-Your Cloudflare proxy server domain is of the form:
+Your Khulnasoft proxy server domain is of the form:
 
 ```txt
 https://<SUBDOMAIN>.proxy.cloudflare-gateway.com
@@ -54,7 +54,7 @@ https://<SUBDOMAIN>.proxy.cloudflare-gateway.com
 
    ```bash
    curl --request POST \
-   --url https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/gateway/proxy_endpoints \
+   --url https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/gateway/proxy_endpoints \
    --header 'X-Auth-Email: <EMAIL>' \
    --header 'X-Auth-Key: <API_KEY>' \
    --data '{"name": "any_name", "ips": ["<PUBLIC_IP>", "<PUBLIC_IP2>", "<PUBLIC_IP3>"]}'
@@ -85,7 +85,7 @@ https://<SUBDOMAIN>.proxy.cloudflare-gateway.com
    }
    ```
 
-2. Note the `subdomain` value returned by the API. Your Cloudflare proxy server domain is of the form:
+2. Note the `subdomain` value returned by the API. Your Khulnasoft proxy server domain is of the form:
 
    ```txt
    <SUBDOMAIN>.proxy.cloudflare-gateway.com
@@ -97,7 +97,7 @@ https://<SUBDOMAIN>.proxy.cloudflare-gateway.com
 
 ## 2. Test your proxy server
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), create an [HTTP policy](/cloudflare-one/policies/gateway/http-policies/) for testing purposes. For example:
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), create an [HTTP policy](/cloudflare-one/policies/gateway/http-policies/) for testing purposes. For example:
 
    | Selector | Operator | Value         | Action |
    | -------- | -------- | ------------- | ------ |
@@ -119,7 +119,7 @@ If curl returns a `403` code, it means the public IP of your device does not mat
 
 A PAC file is a text file that specifies which traffic should redirect to the proxy server.
 
-Below is the default PAC file. You can [customize the file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) and host it somewhere your browser can access, such as on an internal web server or on [Cloudflare Workers](/workers/).
+Below is the default PAC file. You can [customize the file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) and host it somewhere your browser can access, such as on an internal web server or on [Khulnasoft Workers](/workers/).
 
 ```js
 function FindProxyForURL(url, host) {

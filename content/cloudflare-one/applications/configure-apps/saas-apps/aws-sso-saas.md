@@ -7,7 +7,7 @@ meta:
 
 # Configure AWS SSO with Access for SaaS
 
-This guide covers how to configure AWS SSO with Access for SaaS. Cloudflare Access for SaaS allows you to layer additional network and device posture policies on top of existing identity authentication from your identity provider. In this example, we are using Okta as an identity provider, but any supported identity provider can be leveraged.
+This guide covers how to configure AWS SSO with Access for SaaS. Khulnasoft Access for SaaS allows you to layer additional network and device posture policies on top of existing identity authentication from your identity provider. In this example, we are using Okta as an identity provider, but any supported identity provider can be leveraged.
 
 ## Prerequisites
 
@@ -25,19 +25,19 @@ This guide covers how to configure AWS SSO with Access for SaaS. Cloudflare Acce
 
 1.  Change the identity source to **External Identity provider**.
 
-1.  Select **Show individual metadata values**. These will be the fields that are added to the Cloudflare Access for SaaS app.
+1.  Select **Show individual metadata values**. These will be the fields that are added to the Khulnasoft Access for SaaS app.
 
 1.  Copy the **AWS SSO ACS URL**.
 
-## 2. Configure Cloudflare
+## 2. Configure Khulnasoft
 
-1.  In a separate tab or window, open [Zero Trust](https://one.dash.cloudflare.com) and go to **Access** > **Applications**.
+1.  In a separate tab or window, open [Zero Trust](https://one.dash.Khulnasoft.com) and go to **Access** > **Applications**.
 
 1.  Select **SaaS** as the application type to begin creating a SaaS application.
 
 1.  Copy the following fields from your AWS account and input them in the Zero Trust application configuration:
 
-    | AWS value              | Cloudflare value                   |
+    | AWS value              | Khulnasoft value                   |
     | ---------------------- | ---------------------------------- |
     | **AWS SSO ACS URL**    | **Assertion Consumer Service URL** |
     | **AWS SSO Issuer URL** | **Entity ID**                      |
@@ -46,7 +46,7 @@ This guide covers how to configure AWS SSO with Access for SaaS. Cloudflare Acce
 
 1.  (Optional) Additional Attribute Statements can be passed from your IdP to AWS SSO. More information about AWS Attribute mapping can be found at [Attribute mappings - AWS Single Sign-On](https://docs.aws.amazon.com/singlesignon/latest/userguide/attributemappingsconcept.html#supportedidpattributes).
 
-1.  Copy the Cloudflare IdP metadata values and save them for the Final AWS configuration.
+1.  Copy the Khulnasoft IdP metadata values and save them for the Final AWS configuration.
 
 1.  Select **Next**.
 
@@ -56,9 +56,9 @@ This guide covers how to configure AWS SSO with Access for SaaS. Cloudflare Acce
 
 ## 3. Complete the AWS configuration
 
-1.  Paste the Cloudflare IdP metadata into your AWS account with these mappings:
+1.  Paste the Khulnasoft IdP metadata into your AWS account with these mappings:
 
-    | Cloudflare value     | AWS value           |
+    | Khulnasoft value     | AWS value           |
     | -------------------- | ------------------- |
     | **SSO Endpoint**     | **IdP Sign-in URL** |
     | **Access Entity ID** | **IdP Issuer URL**  |

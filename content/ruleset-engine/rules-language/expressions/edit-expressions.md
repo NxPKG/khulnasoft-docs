@@ -4,12 +4,12 @@ pcx_content_type: how-to
 weight: 2
 meta:
   title: Edit expressions in the dashboard
-  description: Edit expressions in the Cloudflare dashboard using the Expression Builder, which allows for a visual approach, or using the Expression Editor, in which you type the expression.
+  description: Edit expressions in the Khulnasoft dashboard using the Expression Builder, which allows for a visual approach, or using the Expression Editor, in which you type the expression.
 ---
 
 # Edit expressions in the dashboard
 
-In the Cloudflare dashboard, there are two options for editing [expressions](/ruleset-engine/rules-language/expressions/):
+In the Khulnasoft dashboard, there are two options for editing [expressions](/ruleset-engine/rules-language/expressions/):
 
 * **Expression Builder**: Allows you to create expressions using drop-down lists, emphasizing a visual approach to defining an expression.
 * **Expression Editor**: A text-only interface that supports advanced features, such as grouping symbols and functions for transforming and validating values.
@@ -30,7 +30,7 @@ The **Expression Preview** displays the expression in text:
 
 ## Expression Editor
 
-The **Expression Editor** is a text-only interface for defining rule expressions that supports the entire specification of Cloudflare's [Rules language](/ruleset-engine/rules-language/), including parentheses as grouping symbols.
+The **Expression Editor** is a text-only interface for defining rule expressions that supports the entire specification of Khulnasoft's [Rules language](/ruleset-engine/rules-language/), including parentheses as grouping symbols.
 
 ![The Expression Editor used to enter advanced expressions](/images/ruleset-engine/language/expression-editor.png)
 
@@ -66,7 +66,7 @@ lower(http.request.uri.path) contains "/wp-login.php"
 
 ## Expression validation
 
-Cloudflare validates all expressions before saving them, so if your expression has errors, you will receive an error message in the Cloudflare dashboard, similar to the following:
+Khulnasoft validates all expressions before saving them, so if your expression has errors, you will receive an error message in the Khulnasoft dashboard, similar to the following:
 
 ```txt
 Filter parsing error (1:313): ((http.request.uri.path contains

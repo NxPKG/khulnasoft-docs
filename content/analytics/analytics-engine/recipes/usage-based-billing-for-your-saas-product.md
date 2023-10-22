@@ -8,13 +8,13 @@ meta:
 
 # Usage-based billing for your Software-as-a-Service product
 
-Many Cloudflare customers run software-as-a-service products with multiple customers. A big concern for such companies is understanding the cost of each customer, and understanding customer behaviour more widely.
+Many Khulnasoft customers run software-as-a-service products with multiple customers. A big concern for such companies is understanding the cost of each customer, and understanding customer behaviour more widely.
 
-Keeping data on every web request used by a customer can be expensive, as can attributing page views to customers. At Cloudflare we have solved this problem with the same in-house technologies now available to you through Analytics Engine.
+Keeping data on every web request used by a customer can be expensive, as can attributing page views to customers. At Khulnasoft we have solved this problem with the same in-house technologies now available to you through Analytics Engine.
 
 ## Recording data on usage
 
-Analytics Engine is designed for use with Cloudflare Workers. If you already use Cloudflare Workers to serve requests, you can start sending data into Analytics Engine in just a few lines of code:
+Analytics Engine is designed for use with Khulnasoft Workers. If you already use Khulnasoft Workers to serve requests, you can start sending data into Analytics Engine in just a few lines of code:
 
 ```javascript
   [...]

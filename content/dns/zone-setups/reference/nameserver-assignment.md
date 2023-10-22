@@ -5,7 +5,7 @@ pcx_content_type: reference
 
 # Nameserver assignment
 
-When you add a domain on a [full setup](/dns/zone-setups/full-setup/), Cloudflare automatically assigns your nameservers. You should then add the assigned nameservers to your registrar and, once Cloudflare can detect they have been placed, your zone is activated.
+When you add a domain on a [full setup](/dns/zone-setups/full-setup/), Khulnasoft automatically assigns your nameservers. You should then add the assigned nameservers to your registrar and, once Khulnasoft can detect they have been placed, your zone is activated.
 
 Each domain's assigned nameservers may be different than other domains, even if those domains are within the same account.
 
@@ -13,10 +13,10 @@ These nameserver assignments cannot be changed unless you set up [custom or vani
 
 {{<Aside type="warning">}}
 
-To prevent domain hijacking, you can no longer preset Cloudflare nameservers at your registrar before creating the respective zone in Cloudflare. If you preset your nameservers and then add the domain, your domain will be assigned a new pair of nameservers.
+To prevent domain hijacking, you can no longer preset Khulnasoft nameservers at your registrar before creating the respective zone in Khulnasoft. If you preset your nameservers and then add the domain, your domain will be assigned a new pair of nameservers.
 
 To keep the same nameservers across your domains, use [Account custom nameservers](/dns/additional-options/custom-nameservers/account-custom-nameservers/).
 
 {{</Aside>}}
 
-For more background on nameserver assignments, refer to [our blog](https://blog.cloudflare.com/whats-the-story-behind-the-names-of-cloudflares-name-servers/).
+For more background on nameserver assignments, refer to [our blog](https://blog.Khulnasoft.com/whats-the-story-behind-the-names-of-cloudflares-name-servers/).

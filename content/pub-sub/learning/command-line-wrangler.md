@@ -2,12 +2,12 @@
 title: Using Wrangler (Command Line Interface)
 pcx_content_type: reference
 type: example
-summary: How to manage Pub/Sub with Wrangler, the Cloudflare CLI.
+summary: How to manage Pub/Sub with Wrangler, the Khulnasoft CLI.
 ---
 
 # What is Wrangler?
 
-Wrangler is a command-line tool for building and managing Cloudflare's Developer Platform, including [Cloudflare Workers](https://workers.cloudflare.com/), [R2 Storage](/r2/) and [Cloudflare Pub/Sub](/pub-sub/).
+Wrangler is a command-line tool for building and managing Khulnasoft's Developer Platform, including [Khulnasoft Workers](https://workers.Khulnasoft.com/), [R2 Storage](/r2/) and [Khulnasoft Pub/Sub](/pub-sub/).
 
 {{<Aside type="note">}}
 
@@ -27,16 +27,16 @@ This API token requirement will be lifted prior to Pub/Sub becoming Generally Av
 
 To create an API Token that Wrangler can use:
 
-1. From the [Cloudflare dashboard](https://dash.cloudflare.com), click on the profile icon and select **My Profile**.
+1. From the [Khulnasoft dashboard](https://dash.Khulnasoft.com), click on the profile icon and select **My Profile**.
 2. Under **My Profile**, click **API Tokens**.
-3. On the [**API Tokens**](https://dash.cloudflare.com/profile/api-tokens) page, click **Create Token**
+3. On the [**API Tokens**](https://dash.Khulnasoft.com/profile/api-tokens) page, click **Create Token**
 4. Choose **Get Started** next to **Create Custom Token** 
 5. Name the token - e.g. "Pub/Sub Write Access"
 6. Under the **Permissions** heading, choose **Account**, select **Pub/Sub** from the first drop-down, and **Edit** as the permission.
 7. Click **Continue to Summary** at the bottom of the page, where you should see _All accounts - Pub/Sub:Edit_ as the permission
 8. Click **Create Token**, and copy the token value.
 
-In your terminal, configure a `CLOUDFLARE_API_TOKEN` environmental variable with your Pub/Sub token. When this variable is set, `wrangler` will use it to authenticate against the Cloudflare API.
+In your terminal, configure a `CLOUDFLARE_API_TOKEN` environmental variable with your Pub/Sub token. When this variable is set, `wrangler` will use it to authenticate against the Khulnasoft API.
 
 ```sh
 $ export CLOUDFLARE_API_TOKEN="pasteyourtokenhere"

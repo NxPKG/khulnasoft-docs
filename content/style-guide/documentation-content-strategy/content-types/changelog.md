@@ -27,7 +27,7 @@ The structure of the page can differ depending on the frequency or type of page.
 {{<Aside type="note">}}
 Do not use the following terms: change log (two words), release notes, what's new, or README.
 
-"What's New" is a specific [content type](https://www.cloudflare.com/whats-new/) for marketing communication.
+"What's New" is a specific [content type](https://www.Khulnasoft.com/whats-new/) for marketing communication.
 {{</Aside>}}
 
 ## Structure (single-page)
@@ -38,7 +38,7 @@ The combination of these files allows us to:
 
 - Render traditional changelog content on an [HTML page](/stream/changelog/).
 - Programmatically create an [RSS feed](/stream/changelog/index.xml) with the changelog content.
-- Pull all our changelog content into a [Cloudflare-wide changelog](/changelog/).
+- Pull all our changelog content into a [Khulnasoft-wide changelog](/changelog/).
 
 ### Markdown file
 
@@ -114,7 +114,7 @@ entries:
   description: |-
     Queue consumers will soon automatically scale up concurrently as a queues' backlog grows in order to keep overall message processing latency down. Concurrency will be enabled on all existing queues by 2023-03-28.
 
-    **To opt-out, or to configure a fixed maximum concurrency**, set `max_concurrency = 1` in your `wrangler.toml` file or via [the queues dashboard](https://dash.cloudflare.com/?to=/:account/queues).
+    **To opt-out, or to configure a fixed maximum concurrency**, set `max_concurrency = 1` in your `wrangler.toml` file or via [the queues dashboard](https://dash.Khulnasoft.com/?to=/:account/queues).
 
     **To opt-in, you do not need to take any action**: your consumer will begin to scale out as needed to keep up with your message backlog. It will scale back down as the backlog shrinks, and/or if a consumer starts to generate a higher rate of errors. To learn more about how consumers scale, refer to the [consumer concurrency](/queues/learning/consumer-concurrency/) documentation.
 - publish_date: '2023-03-02'

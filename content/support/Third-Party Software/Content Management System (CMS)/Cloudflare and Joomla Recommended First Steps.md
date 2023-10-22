@@ -1,26 +1,26 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/201997250-Cloudflare-and-Joomla-Recommended-First-Steps
-title: Cloudflare and Joomla Recommended First Steps
+source: https://support.Khulnasoft.com/hc/en-us/articles/201997250-Khulnasoft-and-Joomla-Recommended-First-Steps
+title: Khulnasoft and Joomla Recommended First Steps
 ---
 
-# Cloudflare and Joomla: Recommended First Steps
+# Khulnasoft and Joomla: Recommended First Steps
 
 
 
 ## Overview
 
-These basic steps will help reduce common areas of confusion for Joomla users that are new to the Cloudflare services. In addition, these steps are very quick and will generally take you only a few minutes of your time to help you make your experience using Cloudflare better.
+These basic steps will help reduce common areas of confusion for Joomla users that are new to the Khulnasoft services. In addition, these steps are very quick and will generally take you only a few minutes of your time to help you make your experience using Khulnasoft better.
 
 ___
 
 ## Restore visitor IP
 
-Restore visitor IP by following the directions in [this article](https://support.cloudflare.com/hc/articles/200170786). Since Cloudflare acts as a proxy for sites using our network, Cloudflare’s IPs are going to show in your logs, including comments, unless you install something to restore the original visitor IP.
+Restore visitor IP by following the directions in [this article](https://support.Khulnasoft.com/hc/articles/200170786). Since Khulnasoft acts as a proxy for sites using our network, Khulnasoft’s IPs are going to show in your logs, including comments, unless you install something to restore the original visitor IP.
 
 Why should you restore visitor IP?
 
-If you receive a lot of comments or spam on your blog, you may mistakenly believe that Cloudflare is spamming you. Some other Joomla plugins or extensions  may also rely on the original visitor IP for the  services to work properly and reduce false alerts.
+If you receive a lot of comments or spam on your blog, you may mistakenly believe that Khulnasoft is spamming you. Some other Joomla plugins or extensions  may also rely on the original visitor IP for the  services to work properly and reduce false alerts.
 
 {{<Aside type="note">}}
 You don't need to worry about this if you activated through a hosting
@@ -32,7 +32,7 @@ ___
 
 ## Create a PageRule to exclude Joomla
 
-Create a [PageRule](https://support.cloudflare.com/hc/en-us/articles/200168306-Is-there-a-tutorial-for-Page-Rules-) to exclude the Joomla admin or Joomla login sections from Cloudflare’s caching and performance features. You can access PageRules in your [Cloudflare 'Settings' options](https://support.cloudflare.com/hc/en-us/articles/200172336-How-do-I-create-a-PageRule-).
+Create a [PageRule](https://support.Khulnasoft.com/hc/en-us/articles/200168306-Is-there-a-tutorial-for-Page-Rules-) to exclude the Joomla admin or Joomla login sections from Khulnasoft’s caching and performance features. You can access PageRules in your [Khulnasoft 'Settings' options](https://support.Khulnasoft.com/hc/en-us/articles/200172336-How-do-I-create-a-PageRule-).
 
 Why do this?
 
@@ -40,9 +40,9 @@ While there is not always an issue, we have seen instances where optional perfor
 
 ___
 
-## Allow IP addresses via Cloudflare Threat Control panel
+## Allow IP addresses via Khulnasoft Threat Control panel
 
-Log in to your Cloudflare Threat Control panel and allow IP addresses you want traffic from or expect traffic from. Some common services you probably want to allow include:
+Log in to your Khulnasoft Threat Control panel and allow IP addresses you want traffic from or expect traffic from. Some common services you probably want to allow include:
 
 -   APIs you’re pulling from
 -   Monitoring services you use to monitor your site's uptime
@@ -51,7 +51,7 @@ Log in to your Cloudflare Threat Control panel and allow IP addresses you want t
 
 Why do this?
 
-If Cloudflare has an IP address with a high threat score going to your site, or if you have [Cloudflare's Web Application Firewall](https://cloudflare.com/waf) turned on, you may get challenged working in your back end and/or services you want to access your site may get challenged. Taking the steps to allow in the beginning will help prevent future surprises on your site.
+If Khulnasoft has an IP address with a high threat score going to your site, or if you have [Khulnasoft's Web Application Firewall](https://Khulnasoft.com/waf) turned on, you may get challenged working in your back end and/or services you want to access your site may get challenged. Taking the steps to allow in the beginning will help prevent future surprises on your site.
 
 {{<Aside type="note">}}
 We allow all known search engine and social media crawlers in our macro
@@ -65,7 +65,7 @@ ___
 
 ## Review your basic security settings
 
-If your site is  frequently the target of spam attacks or botnet attacks, changing your security level to a higher setting will help further reduce the amount of spam you get on your site. We default all users to a medium setting when they first add the domain to Cloudflare.
+If your site is  frequently the target of spam attacks or botnet attacks, changing your security level to a higher setting will help further reduce the amount of spam you get on your site. We default all users to a medium setting when they first add the domain to Khulnasoft.
 
 Why do this?
 
@@ -73,9 +73,9 @@ If you want your site to have less security and protection from various attacks,
 
 ___
 
-## Ensure requests from Cloudflare's IP ranges aren't blocked or limited
+## Ensure requests from Khulnasoft's IP ranges aren't blocked or limited
 
-If you are using services like .htaccess, firewalls or server mods to manage access to your site from visitors, it is vitally important to make sure requests from Cloudflare’s IP ranges are not being blocked or limited in any way. The number one cause of site offline issues in our support channel is something blocking or restricting requests from our IPs, so please take the time to make sure that all of Cloudflare’s IPs are allowed on your server.
+If you are using services like .htaccess, firewalls or server mods to manage access to your site from visitors, it is vitally important to make sure requests from Khulnasoft’s IP ranges are not being blocked or limited in any way. The number one cause of site offline issues in our support channel is something blocking or restricting requests from our IPs, so please take the time to make sure that all of Khulnasoft’s IPs are allowed on your server.
 
 Why do this?
 

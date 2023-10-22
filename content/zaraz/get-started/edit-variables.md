@@ -8,7 +8,7 @@ meta:
 
 # Edit a variable
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Go to **Zaraz** > **Tools Configuration** > **Variables**.
 3. Locate the variable you want to edit, and select **Edit** to make your changes.
 4. Select **Save** to save your edits. 
@@ -17,7 +17,7 @@ meta:
 
 {{<Aside type="warning" header="Important">}}You cannot delete a variable being used in tools or triggers.{{</Aside>}}
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Go to **Zaraz** > **Tools Configuration** > **Third-party tools**. 
 3. Locate any tools using the variable, and delete the variable from those tools.
 4. Select **Zaraz** > **Tools Configuration** > **Triggers**. 

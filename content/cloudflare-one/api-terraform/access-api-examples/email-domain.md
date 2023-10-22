@@ -12,7 +12,7 @@ pcx_content_type: configuration
 ```json
 {
   "email_domain": {
-    "domain": "cloudflare.com"
+    "domain": "Khulnasoft.com"
   }
 }
 ```

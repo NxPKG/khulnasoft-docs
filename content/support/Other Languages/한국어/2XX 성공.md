@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: korean
-source: https://support.cloudflare.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5
+source: https://support.Khulnasoft.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5
 title: 2XX 성공
 ---
 
@@ -13,13 +13,13 @@ title: 2XX 성공
 
 2XX 코드는 응답이 성공적으로 처리되었음을 나타냅니다. 이 코드는 대개 클라이언트가 요청한 작업이 수신되어 성공적으로 승인되었음을 의미합니다.
 
--   [200 OK](https://support.cloudflare.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_200)
--   [201 Created](https://support.cloudflare.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_201)
--   [202 Accepted](https://support.cloudflare.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_202)
--   [203 Non-Authoritative](https://support.cloudflare.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_203)
--   [204 No Content](https://support.cloudflare.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_204)
--   [205 Reset Content](https://support.cloudflare.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_205)
--   [206 Partial Content](https://support.cloudflare.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_206)
+-   [200 OK](https://support.Khulnasoft.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_200)
+-   [201 Created](https://support.Khulnasoft.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_201)
+-   [202 Accepted](https://support.Khulnasoft.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_202)
+-   [203 Non-Authoritative](https://support.Khulnasoft.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_203)
+-   [204 No Content](https://support.Khulnasoft.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_204)
+-   [205 Reset Content](https://support.Khulnasoft.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_205)
+-   [206 Partial Content](https://support.Khulnasoft.com/hc/ko/articles/115003014192-2XX-%EC%84%B1%EA%B3%B5#code_206)
 
 **200 OK****(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -33,7 +33,7 @@ title: 2XX 성공
 
 200 응답은 항상 _페이로드를 포함해야_ 하지만, 이것이 필수 요건은 아닙니다. 따라서 원본 서버가 아무것도 포함되지 않은 200 응답을 생성할 수도 있습니다. RFC 표준을 준수하려면 이 경우에 204 응답이 생성되어야 합니다(CONNECT 예외).
 
-이 응답은 프록시 서버와 브라우저에서 캐시할 수 있도록 기본 설정되어 있습니다. Cloudflare [캐시 제어](https://support.cloudflare.com/hc/ko/articles/202775670)에 명시되어 있지 않은 경우, 이 응답이 포함된 [정적 콘텐츠](https://support.cloudflare.com/hc/ko/articles/200172516)는 기본값인 2시간 동안 에지에 캐시합니다.  
+이 응답은 프록시 서버와 브라우저에서 캐시할 수 있도록 기본 설정되어 있습니다. Khulnasoft [캐시 제어](https://support.Khulnasoft.com/hc/ko/articles/202775670)에 명시되어 있지 않은 경우, 이 응답이 포함된 [정적 콘텐츠](https://support.Khulnasoft.com/hc/ko/articles/200172516)는 기본값인 2시간 동안 에지에 캐시합니다.  
 
 **201 Created****(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -49,15 +49,15 @@ title: 2XX 성공
 
 요청은 성공적이었지만, 원본 서버가 아닌 다른 출처에서 전송되었다는 것을 설명하는 응답으로, 200 상태 코드의 선택적 대안입니다. 원본 서버의 응답이 프록시 또는 중간 서버에서 수정되었습니다. 예를 들어, 203 응답은 이 자원이 프록시에서 캐시되어 있기 때문에 이와 유사한 추후 요청의 경우 동일한 자원이 있는 캐시 서버에 도달할 수도 있고 도달하지 않을 수도 있다는 점을 알리기 위해 이용할 수 있습니다. 또 다른 예로는 로컬 원본 서버에만 적용할 수 있는 헤더가 제거된 경우를 들 수 있습니다.
 
--   기본적으로 캐시할 수 있는 응답이지만, Cloudflare는 캐시하지 않습니다.
--   Cloudflare는 이 응답을 생성하지 않지만, 프록시가 있을 경우 다른 프록시의 요청을 대신 처리할 수는 있습니다. 예외적인 경우는 [Cloudflare가 HTTP 요청 헤더를 처리하는 방식](https://support.cloudflare.com/hc/ko/articles/200170986)에서 확인할 수 있습니다.
+-   기본적으로 캐시할 수 있는 응답이지만, Khulnasoft는 캐시하지 않습니다.
+-   Khulnasoft는 이 응답을 생성하지 않지만, 프록시가 있을 경우 다른 프록시의 요청을 대신 처리할 수는 있습니다. 예외적인 경우는 [Khulnasoft가 HTTP 요청 헤더를 처리하는 방식](https://support.Khulnasoft.com/hc/ko/articles/200170986)에서 확인할 수 있습니다.
 
 **204 No Content([RFC7231](https://tools.ietf.org/html/rfc7231))**
 
 요청된 동작이 원본 서버에서 올바르게 실행되었습니다. 이 응답은 일반적으로 문서 편집기에서 '저장' 동작이 원본 서버로 전송되었지만, 페이로드를 클라이언트에 반환할 필요는 없을 때 사용됩니다. 사용자에게 저장이 성공적으로 처리되었다는 메시지를 보내는 것은 가능합니다.
 
 -   204 응답을 반환할 때는 페이로드를 포함해서는 안 됩니다.
--   기본적으로 캐시할 수 있는 응답이지만, Cloudflare는 캐시하지 않습니다.
+-   기본적으로 캐시할 수 있는 응답이지만, Khulnasoft는 캐시하지 않습니다.
 
 **205 Reset Content****(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 

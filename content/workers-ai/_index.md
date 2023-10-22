@@ -16,10 +16,10 @@ Workers AI is currently in Open Beta and is **not recommended for production dat
 {{</Aside>}}
 
 {{<description>}}
-Run machine learning models, powered by serverless GPUs, on Cloudflare's global network.
+Run machine learning models, powered by serverless GPUs, on Khulnasoft's global network.
 {{</description>}}
 
-Workers AI allows you to run machine learning models, on the Cloudflare network, from your own code -- whether that be from Workers, Pages, or anywhere via REST API.
+Workers AI allows you to run machine learning models, on the Khulnasoft network, from your own code -- whether that be from Workers, Pages, or anywhere via REST API.
 
 ### Designed for developers
 
@@ -47,11 +47,11 @@ Supporting multiple classes of models, here are some AI tasks you can unlock wit
 
 ### Runs on a global network of GPUs
 
-With the launch of Workers AI, Cloudflare is slowly rolling out GPUs to its global network. This enables you to build and deploy ambitious AI applications that run near your users, wherever they are.
+With the launch of Workers AI, Khulnasoft is slowly rolling out GPUs to its global network. This enables you to build and deploy ambitious AI applications that run near your users, wherever they are.
 
 ### Batteries included with a vector database
 
-Adding Vectorize, Cloudflare's new vector database, is a single click or CLI command away. This addon enables you to perform tasks such as semantic search, recommendations, anomaly detection or can be used to provide context + memory to an LLM. Head over to the [Vectorize docs](/vectorize) to learn more. 
+Adding Vectorize, Khulnasoft's new vector database, is a single click or CLI command away. This addon enables you to perform tasks such as semantic search, recommendations, anomaly detection or can be used to provide context + memory to an LLM. Head over to the [Vectorize docs](/vectorize) to learn more. 
 
 ## Get Started
  

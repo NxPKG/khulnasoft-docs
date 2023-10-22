@@ -10,14 +10,14 @@ To customize the behavior of a managed ruleset, override the ruleset at deployme
 
 For example, to test a managed ruleset before enforcing it, consider executing the ruleset with all rules set to `log` instead of their default actions. To do this, override the configured behavior of the managed ruleset at the ruleset level, so that each rule uses the `log` action.
 
-To define overrides in the Cloudflare dashboard, edit the configuration of the managed ruleset you previously deployed to a zone or to an account.
+To define overrides in the Khulnasoft dashboard, edit the configuration of the managed ruleset you previously deployed to a zone or to an account.
 
 ## Working with overrides
 
 You can override a ruleset at three levels:
 
 * **Ruleset overrides** apply to all rules in the executed ruleset.
-* **Tag overrides** apply to all rules with a specific tag. For example, use a tag override to customize the Cloudflare Managed Ruleset so all rules with the `wordpress` tag are set to *Block*. If multiple tags have overrides and if a given rule has more than one of these tags, the tag overrides order determines the behavior. For rules tagged with multiple overridden tags, the last tag's overrides apply.
+* **Tag overrides** apply to all rules with a specific tag. For example, use a tag override to customize the Khulnasoft Managed Ruleset so all rules with the `wordpress` tag are set to *Block*. If multiple tags have overrides and if a given rule has more than one of these tags, the tag overrides order determines the behavior. For rules tagged with multiple overridden tags, the last tag's overrides apply.
 * **Rule overrides** apply to specific rules in a managed ruleset, referenced by their Rule ID.
 
 Specific overrides take precedence over more general ones, and rule overrides take precedence over tag overrides, which take precedence over ruleset overrides.
@@ -65,7 +65,7 @@ You can override the following rule properties:
 * `"action"`
 * `"enabled"`
 
-Some managed rulesets may have additional override requirements, or they may allow you to override other rule properties. Check each Cloudflare product’s documentation for details.
+Some managed rulesets may have additional override requirements, or they may allow you to override other rule properties. Check each Khulnasoft product’s documentation for details.
 
 {{<Aside type="warning" header="Important">}}
 
@@ -81,7 +81,7 @@ The following request adds a rule that executes a managed ruleset in the `http_r
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -115,7 +115,7 @@ The following request adds a rule that executes a managed ruleset in the `http_r
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

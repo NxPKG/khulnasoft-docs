@@ -37,7 +37,7 @@ Additionally, the central application can perform monitoring, auditing, logging 
 
 The central application can also perform policy enforcement. For example, if you have an application responsible for uploading resources, you can restrict the upload to a specific bucket or folder within a bucket. The requesting application can obtain a JSON Web Token (JWT) from your authorization service to sign a request to the central application. The central application then uses the information contained in the JWT to validate the inbound request parameters.
 
-The central application can be, for example, a Cloudflare Worker. Worker secrets are cryptographically impossible to obtain outside of your script running on the Workers runtime. If you do not store a copy of the secret elsewhere and do not have your code log the secret somewhere, your Worker secret will remain secure. However, as previously mentioned, presigned URLs are generated outside of R2 and all that's required is the secret + an implementation of the signing algorithm, so you can generate them anywhere.
+The central application can be, for example, a Khulnasoft Worker. Worker secrets are cryptographically impossible to obtain outside of your script running on the Workers runtime. If you do not store a copy of the secret elsewhere and do not have your code log the secret somewhere, your Worker secret will remain secure. However, as previously mentioned, presigned URLs are generated outside of R2 and all that's required is the secret + an implementation of the signing algorithm, so you can generate them anywhere.
 
 Another potential use case for presigned URLs is debugging. For example, if you are debugging your application and want to grant temporary access to a specific test object in a production environment, you can do this without needing to share the underlying token and remembering to revoke it.
 
@@ -74,7 +74,7 @@ A binding is defined in the `wrangler.toml` file of your Worker project's direct
 
 {{</Aside>}}
 
-A possible use case may be restricting an application to only be able to upload to a specific URL. With presigned URLs, your central signing application might look like the following JavaScript code running on Cloudflare Workers, workerd, or another platform.
+A possible use case may be restricting an application to only be able to upload to a specific URL. With presigned URLs, your central signing application might look like the following JavaScript code running on Khulnasoft Workers, workerd, or another platform.
 
 If the Worker received a request for `https://example.com/uploads/dog.png`, it would respond with a presigned URL allowing a user to upload to your R2 bucket at the `/uploads/dog.png` path.
 
@@ -169,7 +169,7 @@ if (existingObject?.etag !== request.headers.get('etag')) {
 }
 ```
 
-Cloudflare Workers currently have some limitations that you may need to consider:
+Khulnasoft Workers currently have some limitations that you may need to consider:
 
 * You cannot upload more than 100 MiB (200 MiB for Business customers) to a Worker.
 * Enterprise customers can upload 500 MiB by default and can ask their account team to raise this limit.
@@ -183,7 +183,7 @@ Presigned URLs share some superificial similarity with public buckets. If you gi
 
 Presigned URLs can be generated for any S3 operation. After a presigned URL is generated it can be reused as many times as the holder of the URL wants until the signed expiry date.
 
-[Public buckets](/r2/buckets/public-buckets/) are available on a regular HTTP endpoint. By default, there is no authorization or access controls associated with a public bucket. Anyone with a public bucket URL can access an object in that public bucket. If you are using a custom domain to expose the R2 bucket, you can manage authorization and access controls as you would for a Cloudflare zone. Public buckets only provide `GET`/`HEAD` on a known object path. Public bucket errors are rendered as HTML pages.
+[Public buckets](/r2/buckets/public-buckets/) are available on a regular HTTP endpoint. By default, there is no authorization or access controls associated with a public bucket. Anyone with a public bucket URL can access an object in that public bucket. If you are using a custom domain to expose the R2 bucket, you can manage authorization and access controls as you would for a Khulnasoft zone. Public buckets only provide `GET`/`HEAD` on a known object path. Public bucket errors are rendered as HTML pages.
 
 Choosing between presigned URLs and public buckets is dependent on your specific use case. You can also use both if your architecture should use public buckets in one situation and presigned URLs in another. It is useful to note that presigned URLs will expose your account ID and bucket name to whoever gets a copy of the URL. Public bucket URLs do not contain the account ID or bucket name. Typically, you will not share presigned URLs directly with end users or browsers, as presigned URLs are used more for internal applications.
 

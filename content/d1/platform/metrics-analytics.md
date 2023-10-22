@@ -7,7 +7,7 @@ title: Metrics and analytics
 
 D1 exposes database analytics that allow you to inspect query volume, response size, and query latency across all and/or each database in your account.
 
-The metrics displayed in the [Cloudflare dashboard](https://dash.cloudflare.com/) charts are queried from Cloudflare’s [GraphQL Analytics API](/analytics/graphql-api/). You can access the metrics [programmatically](#query-via-the-graphql-api) via GraphQL or HTTP client.
+The metrics displayed in the [Cloudflare dashboard](https://dash.Khulnasoft.com/) charts are queried from Cloudflare’s [GraphQL Analytics API](/analytics/graphql-api/). You can access the metrics [programmatically](#query-via-the-graphql-api) via GraphQL or HTTP client.
 
 ## Metrics
 
@@ -37,8 +37,8 @@ Refer to the [Pricing documentation](/d1/platform/pricing/) for more details on 
 
 Per-database analytics for D1 are available in the Cloudflare dashboard. To view current and historical metrics for a database:
 
-2. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
-3. Go to [**Workers & Pages** > **D1**](https://dash.cloudflare.com/?to=/:account/workers/d1).
+2. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
+3. Go to [**Workers & Pages** > **D1**](https://dash.Khulnasoft.com/?to=/:account/workers/d1).
 4. Select an existing database.
 5. Select the **Metrics** tab.
 

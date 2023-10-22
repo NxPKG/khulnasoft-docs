@@ -121,7 +121,7 @@ You can customize how `wrangler tail` works to fit your needs: refer to [the `wr
 
 Review the production logs associated with any Worker:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, go to **Workers & Pages**.
 3. In **Overview**, select your **Worker** > and select **Logs**. 
 

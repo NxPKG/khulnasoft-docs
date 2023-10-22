@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/360060692691-Accelerated-Mobile-Pages-AMP-FAQ
+source: https://support.Khulnasoft.com/hc/en-us/articles/360060692691-Accelerated-Mobile-Pages-AMP-FAQ
 title: Accelerated Mobile Pages (AMP) FAQ
 ---
 
@@ -10,7 +10,7 @@ title: Accelerated Mobile Pages (AMP) FAQ
 
 ## What is AMP and how can I use it?
 
-Accelerated Mobile Pages (AMP) are static pages that are rendered very quickly tailored towards mobile users. AMP uses a stricter flavor of HTML in order for mobile browsers to load faster. Please note that a standard web page isn't AMP compatible by default; your web page must be written in compliance with the AMP format.  Domains on [Cloudflare CNAME setups](https://support.cloudflare.com/hc/articles/360020348832) cannot utilize AMP Real URL. As a workaround, you can add the following CAA records in your authoritative DNS (the example below assumes that Cloudflare has issued a certificate from Digicert CA):
+Accelerated Mobile Pages (AMP) are static pages that are rendered very quickly tailored towards mobile users. AMP uses a stricter flavor of HTML in order for mobile browsers to load faster. Please note that a standard web page isn't AMP compatible by default; your web page must be written in compliance with the AMP format.  Domains on [Khulnasoft CNAME setups](https://support.Khulnasoft.com/hc/articles/360020348832) cannot utilize AMP Real URL. As a workaround, you can add the following CAA records in your authoritative DNS (the example below assumes that Khulnasoft has issued a certificate from Digicert CA):
 
 
 ```txt
@@ -55,6 +55,6 @@ ___
 
 ## Can I use WordPress with AMP?
 
-Yes! Accelerated Mobile Pages are designed to speed up external AMP enabled articles on your Cloudflare enabled site. If you have a WordPress site and would like to make it AMP enabled, the [WordPress AMP Plugin](https://en-gb.wordpress.org/plugins/amp/) will do this automatically.
+Yes! Accelerated Mobile Pages are designed to speed up external AMP enabled articles on your Khulnasoft enabled site. If you have a WordPress site and would like to make it AMP enabled, the [WordPress AMP Plugin](https://en-gb.wordpress.org/plugins/amp/) will do this automatically.
 
 Once you've installed the plugin, test the functionality by adding `?amp=1` to the end of your WordPress URL (for example: `https://example.com/2016/01/01/amp-on/?amp=1`).

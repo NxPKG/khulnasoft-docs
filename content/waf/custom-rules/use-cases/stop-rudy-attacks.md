@@ -27,7 +27,7 @@ This example combines three expressions to target HTTP `POST` requests that do n
     http.request.method eq "POST"
     ```
 
-The three expressions are combined into a compound expression using the `and` operator. When an HTTP `POST` request to any of the specified URIs does not contain a properly formatted `auth_session` cookie, Cloudflare blocks the request:
+The three expressions are combined into a compound expression using the `and` operator. When an HTTP `POST` request to any of the specified URIs does not contain a properly formatted `auth_session` cookie, Khulnasoft blocks the request:
 
 <table>
   <thead>
@@ -51,7 +51,7 @@ The three expressions are combined into a compound expression using the `and` op
 </table>
 
 {{<Aside type="note">}}
-The [`matches`](/ruleset-engine/rules-language/operators/#comparison-operators) operator requires a Cloudflare Business or Enterprise plan.
+The [`matches`](/ruleset-engine/rules-language/operators/#comparison-operators) operator requires a Khulnasoft Business or Enterprise plan.
 {{</Aside>}}
 
 

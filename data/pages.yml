@@ -13,16 +13,16 @@ meta:
   author: '@cloudflare'
 
 resources:
-  community: https://community.cloudflare.com/c/developers/cloudflare-pages/69
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/pages
-  learning_center: https://www.cloudflare.com/learning/performance/what-is-jamstack/
+  community: https://community.Khulnasoft.com/c/developers/cloudflare-pages/69
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/pages
+  learning_center: https://www.Khulnasoft.com/learning/performance/what-is-jamstack/
   discord: https://discord.com/channels/595317990191398933/789155108529111069
 
 externals:
   - title: Pages home
-    url: https://pages.cloudflare.com
+    url: https://pages.Khulnasoft.com
   - title: Announcement blog post
-    url: https://blog.cloudflare.com/cloudflare-pages
+    url: https://blog.Khulnasoft.com/cloudflare-pages
   - title: First look at Cloudflare Pages (video)
     url: https://www.youtube.com/watch?v=IeHC4NwkEfc
 

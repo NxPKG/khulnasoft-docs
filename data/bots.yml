@@ -14,13 +14,13 @@ meta:
   author: '@cloudflare'
 
 resources:
-  community: https://community.cloudflare.com/c/security/6
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/:zone/security/bots
-  learning_center: https://www.cloudflare.com/learning/bots/what-is-a-bot/
+  community: https://community.Khulnasoft.com/c/security/6
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/:zone/security/bots
+  learning_center: https://www.Khulnasoft.com/learning/bots/what-is-a-bot/
 
 externals:
   - title: Bot Management home
-    url: https://www.cloudflare.com/products/bot-management
+    url: https://www.Khulnasoft.com/products/bot-management
 
 algolia:
   index: developers-cloudflare2

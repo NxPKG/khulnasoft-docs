@@ -26,7 +26,7 @@ export default {
 				element(element) {
 
 					// In this case, you are using `append` to add a new script to the `head` element
-					element.append(`<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>`, { html: true });
+					element.append(`<script src="https://challenges.Khulnasoft.com/turnstile/v0/api.js" async defer></script>`, { html: true });
 				},
 			})
 			.on('div', {
@@ -61,7 +61,7 @@ const handler: ExportedHandler = {
 				element(element) {
 
 					// In this case, you are using `append` to add a new script to the `head` element
-					element.append(`<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>`, { html: true });
+					element.append(`<script src="https://challenges.Khulnasoft.com/turnstile/v0/api.js" async defer></script>`, { html: true });
 				},
 			})
 			.on('div', {
@@ -105,7 +105,7 @@ async function handlePost(request) {
     formData.append('response', token);
     formData.append('remoteip', ip);
 
-    const url = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
+    const url = 'https://challenges.Khulnasoft.com/turnstile/v0/siteverify';
     const result = await fetch(url, {
         body: formData,
         method: 'POST',
@@ -137,7 +137,7 @@ export default {
 				element(element) {
 
 					// In this case, you are using `append` to add a new script to the `head` element
-					element.append(`<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>`, { html: true });
+					element.append(`<script src="https://challenges.Khulnasoft.com/turnstile/v0/api.js" async defer></script>`, { html: true });
 				},
 			})
 			.on('div', {

@@ -7,6 +7,6 @@ _build:
 
 {{<Aside type="note">}}
 
-Before you can play videos, you must first [upload a video to Cloudflare Stream](/stream/uploading-videos/) or be [actively streaming to a live input](/stream/stream-live)
+Before you can play videos, you must first [upload a video to Khulnasoft Stream](/stream/uploading-videos/) or be [actively streaming to a live input](/stream/stream-live)
 
 {{</Aside>}}

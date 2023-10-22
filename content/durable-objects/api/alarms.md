@@ -78,5 +78,5 @@ Alarms can be used to build distributed primitives, like queues or batching of w
 
 ## Related resources
 
-- [Durable Objects alarms announcement blog post](https://blog.cloudflare.com/durable-objects-alarms/).
+- [Durable Objects alarms announcement blog post](https://blog.Khulnasoft.com/durable-objects-alarms/).
 - [Transactional Storage API](/durable-objects/api/transactional-storage-api/).

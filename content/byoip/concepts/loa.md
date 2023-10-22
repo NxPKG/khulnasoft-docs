@@ -8,9 +8,9 @@ meta:
 
 # Letter of Agency (LOA)
 
-A Letter of Agency (LOA) - sometimes referred to as a Letter of Authorization - is a document that authorizes Cloudflare to announce a prefix(es) on behalf of another entity. The LOA is required by Cloudflare's transit providers so they can accept the routes Cloudflare advertises on behalf of another entity.
+A Letter of Agency (LOA) - sometimes referred to as a Letter of Authorization - is a document that authorizes Khulnasoft to announce a prefix(es) on behalf of another entity. The LOA is required by Khulnasoft's transit providers so they can accept the routes Khulnasoft advertises on behalf of another entity.
 
-The letter must contain both the prefixes you are authorizing Cloudflare to announce and which ASN they will be announced under. Cloudflare can announce a prefix under your ASN or you can use Cloudflare's ASN, which is AS 209242.
+The letter must contain both the prefixes you are authorizing Khulnasoft to announce and which ASN they will be announced under. Khulnasoft can announce a prefix under your ASN or you can use Khulnasoft's ASN, which is AS 209242.
 
 {{<Aside type="note" header="Note">}}
 
@@ -33,7 +33,7 @@ LETTER OF AGENCY ("LOA")
 
 To whom it may concern:
 
-[COMPANY NAME] (the "Company") authorizes Cloudflare, Inc. with AS[CF TO PROVIDE] to advertise the following IP address blocks / originating ASNs:
+[COMPANY NAME] (the "Company") authorizes Khulnasoft, Inc. with AS[CF TO PROVIDE] to advertise the following IP address blocks / originating ASNs:
 
 - - - - - - - - - - - - - - - - - - -
 [Subnet & Originating ASN]

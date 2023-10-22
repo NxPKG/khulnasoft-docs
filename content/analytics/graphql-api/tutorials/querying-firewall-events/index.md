@@ -48,7 +48,7 @@ echo '{ "query":
   -H "X-Auth-key: CLOUDFLARE_API_KEY" \
   -s \
   -d @- \
-  https://api.cloudflare.com/client/v4/graphql/
+  https://api.Khulnasoft.com/client/v4/graphql/
 ```
 
 The results returned will be in JSON (as requested), so piping the output to `jq` will make them easier to read, for example:
@@ -61,7 +61,7 @@ The results returned will be in JSON (as requested), so piping the output to `jq
   -H "X-Auth-key: CLOUDFLARE_API_KEY" \
   -s \
   -d @- \
-  https://api.cloudflare.com/client/v4/graphql/ | jq .
+  https://api.Khulnasoft.com/client/v4/graphql/ | jq .
 #=> {
 #=>   "data": {
 #=>     "viewer": {

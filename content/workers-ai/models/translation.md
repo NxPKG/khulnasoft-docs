@@ -58,7 +58,7 @@ export default {
 ```js
 async function run(model, input) {
   const response = await fetch(
-    `https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/${model}`,
+    `https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/${model}`,
     {
       headers: { Authorization: "Bearer {API_TOKEN}" },
       method: "POST",
@@ -85,7 +85,7 @@ run('@cf/meta/m2m100-1.2b', {
 ```py
 import requests
 
-API_BASE_URL = "https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/"
+API_BASE_URL = "https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/"
 headers = {"Authorization": "Bearer {API_TOKEN}"}
 
 def run(model, input):
@@ -105,7 +105,7 @@ print(output)
 {{<tab label="curl">}}
 
 ```sh
-$ curl https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/meta/m2m100-1.2b \
+$ curl https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/meta/m2m100-1.2b \
     -X POST \
     -H "Authorization: Bearer {API_TOKEN}" \
     -d '{ "text": "Ill have an order of the moule frites", "source_lang": "english", "target_lang": "french" }'

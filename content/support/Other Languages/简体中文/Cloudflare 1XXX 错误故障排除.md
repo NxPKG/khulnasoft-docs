@@ -1,57 +1,57 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4
-title: Cloudflare 1XXX 错误故障排除
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4
+title: Khulnasoft 1XXX 错误故障排除
 ---
 
-# Cloudflare 1XXX 错误故障排除
+# Khulnasoft 1XXX 错误故障排除
 
-_诊断并解决 Cloudflare 代理的站点的 1XXX 错误。_
+_诊断并解决 Khulnasoft 代理的站点的 1XXX 错误。_
 
 ### 本文内容
 
--   [概述](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_e6ba4204-ab4f-464b-afdc-e8177e418e34)
--   [错误 1000：DNS 指向禁止的 IP](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1000)
--   [错误 1001：DNS 解析错误](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1001)
--   [错误 1002：DNS 指向禁止的 IP](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1002a)
--   [错误 1002：受到限制](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1003)
--   [错误 1003 访问遭拒：直接 IP 访问不被允许](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1003)
--   [错误 1004：主机未配置为服务 Web 流量](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1004)
--   [错误 1006、1007、1008 或 1106 拒绝访问：您的 IP 地址已被禁止](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error100610071008)
--   [错误 1009 访问被拒绝：国家或地区被禁止](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_1FIuVf9XCVpeBz8Cn6B0Fj)
--   [错误 1010：本网站的所有者已根据您的浏览器签名禁止您的访问](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1010)
--   [错误 1011：访问遭拒（热链接被拒绝）](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1011)
--   [错误 1012：访问遭拒](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1012)
--   [错误 1013：HTTP 主机名和 TLS SNI 主机名不匹配](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1013)
--   [错误 1014：禁止跨用户 CNAME](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1014)
--   [错误 1015：您受到速率限制](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1015)
--   [错误 1016：源 DNS 错误](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1016)
--   [错误 1018：找不到主机](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1018)
--   [错误 1019：计算服务器错误](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1019)
--   [错误 1020：访问遭拒](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1020)
--   [错误 1023：找不到主机](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1023)
--   [错误 1025：请稍后再检查](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1025)
--   [错误 1033：Argo Tunnel 错误](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_W81O7hTPalZtYqNYkIHgH)
--   [错误 1034：边缘 IP 受限](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_4eD6Gcxp4zQqS4ciCJaLt0)
--   [错误 1035：无效请求重写（无效 URI 路径）](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1035)
--   [错误 1036：无效请求重写（超过最大长度）](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1036)
--   [错误 1037：无效重写规则（无法对表达式求值）](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1037)
--   [错误 1040：无效请求重写（不允许修改标头）](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1040)
--   [错误 1041：无效请求重写（无效标头值）](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1041)
--   [错误 1101：渲染错误](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1101)
--   [错误 1102：渲染错误](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1102)
--   [错误 1104：此电子邮件地址的一个变体在我们的系统中已被占用。只允许有一种变体。](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1104)
--   [错误 1200：缓存连接限制](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_302a97f3-eba3-4c0a-a589-76ba95f60dcf)
--   [相关资源](https://support.cloudflare.com/hc/zh-cn/articles/360029779472-Cloudflare-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_80755d09-43f2-4656-b1f9-2989196b30a6)
+-   [概述](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_e6ba4204-ab4f-464b-afdc-e8177e418e34)
+-   [错误 1000：DNS 指向禁止的 IP](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1000)
+-   [错误 1001：DNS 解析错误](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1001)
+-   [错误 1002：DNS 指向禁止的 IP](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1002a)
+-   [错误 1002：受到限制](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1003)
+-   [错误 1003 访问遭拒：直接 IP 访问不被允许](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1003)
+-   [错误 1004：主机未配置为服务 Web 流量](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1004)
+-   [错误 1006、1007、1008 或 1106 拒绝访问：您的 IP 地址已被禁止](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error100610071008)
+-   [错误 1009 访问被拒绝：国家或地区被禁止](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_1FIuVf9XCVpeBz8Cn6B0Fj)
+-   [错误 1010：本网站的所有者已根据您的浏览器签名禁止您的访问](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1010)
+-   [错误 1011：访问遭拒（热链接被拒绝）](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1011)
+-   [错误 1012：访问遭拒](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1012)
+-   [错误 1013：HTTP 主机名和 TLS SNI 主机名不匹配](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1013)
+-   [错误 1014：禁止跨用户 CNAME](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1014)
+-   [错误 1015：您受到速率限制](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1015)
+-   [错误 1016：源 DNS 错误](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1016)
+-   [错误 1018：找不到主机](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1018)
+-   [错误 1019：计算服务器错误](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1019)
+-   [错误 1020：访问遭拒](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1020)
+-   [错误 1023：找不到主机](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1023)
+-   [错误 1025：请稍后再检查](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1025)
+-   [错误 1033：Argo Tunnel 错误](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_W81O7hTPalZtYqNYkIHgH)
+-   [错误 1034：边缘 IP 受限](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_4eD6Gcxp4zQqS4ciCJaLt0)
+-   [错误 1035：无效请求重写（无效 URI 路径）](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1035)
+-   [错误 1036：无效请求重写（超过最大长度）](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1036)
+-   [错误 1037：无效重写规则（无法对表达式求值）](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1037)
+-   [错误 1040：无效请求重写（不允许修改标头）](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1040)
+-   [错误 1041：无效请求重写（无效标头值）](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1041)
+-   [错误 1101：渲染错误](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1101)
+-   [错误 1102：渲染错误](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1102)
+-   [错误 1104：此电子邮件地址的一个变体在我们的系统中已被占用。只允许有一种变体。](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#error1104)
+-   [错误 1200：缓存连接限制](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_302a97f3-eba3-4c0a-a589-76ba95f60dcf)
+-   [相关资源](https://support.Khulnasoft.com/hc/zh-cn/articles/360029779472-Khulnasoft-1XXX-%E9%94%99%E8%AF%AF%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4#h_80755d09-43f2-4656-b1f9-2989196b30a6)
 
 ___
 
 ## 概述
 
-本文描述的错误可能会在访问由 Cloudflare 代理的网站时发生。对于 Cloudflare API 或仪表板错误，请查阅我们的 [Cloudflare API 文档](https://api.cloudflare.com/)。HTTP 409、530、403 和 429 错误是 HTTP 错误代码，在响应的 HTTP 标头中返回。1XXX 错误出现在响应的 HTML 正文中。
+本文描述的错误可能会在访问由 Khulnasoft 代理的网站时发生。对于 Khulnasoft API 或仪表板错误，请查阅我们的 [Khulnasoft API 文档](https://api.Khulnasoft.com/)。HTTP 409、530、403 和 429 错误是 HTTP 错误代码，在响应的 HTTP 标头中返回。1XXX 错误出现在响应的 HTML 正文中。
 
-如果下方各错误描述中的解决方案未能解决错误，请联系 [Cloudflare 支持](https://support.cloudflare.com/hc/articles/200172476)。
+如果下方各错误描述中的解决方案未能解决错误，请联系 [Khulnasoft 支持](https://support.Khulnasoft.com/hc/articles/200172476)。
 
 ___
 
@@ -59,18 +59,18 @@ ___
 
 ### 常见原因
 
-Cloudflare 因为以下某一原因停止了请求：
+Khulnasoft 因为以下某一原因停止了请求：
 
--   Cloudflare DNS 应用中的 A 记录指向 [Cloudflare IP 地址](https://www.cloudflare.com/ips/)，或负载平衡器源站指向代理记录。
--   您的 Cloudflare DNS A 或 CNAME 记录引用了其他反向代理（如使用 proxy\_pass 功能的 Nginx Web 服务器），它将请求二次代理到 Cloudflare。
+-   Khulnasoft DNS 应用中的 A 记录指向 [Khulnasoft IP 地址](https://www.Khulnasoft.com/ips/)，或负载平衡器源站指向代理记录。
+-   您的 Khulnasoft DNS A 或 CNAME 记录引用了其他反向代理（如使用 proxy\_pass 功能的 Nginx Web 服务器），它将请求二次代理到 Khulnasoft。
 -   请求的 X-Forwarded-For 标头的长度超过 100 个字符。
 -   该请求包括两个 X-Forwarded-For 标头。
 -   服务器名称指示（SNI）问题或在源站不匹配。
 
 ### 解决方案
 
--   如果 Cloudflare DNS 应用中的 A 记录指向 [Cloudflare IP 地址](https://www.cloudflare.com/ips/)，请将该 IP 地址更新为您的源 Web 服务器 IP 地址。
--   您的源站上有反向代理通过 Cloudflare 代理将请求发回。 请联系主机提供商或站点管理员在源站上配置 HTTP 重定向，而不要使用反向代理。
+-   如果 Khulnasoft DNS 应用中的 A 记录指向 [Khulnasoft IP 地址](https://www.Khulnasoft.com/ips/)，请将该 IP 地址更新为您的源 Web 服务器 IP 地址。
+-   您的源站上有反向代理通过 Khulnasoft 代理将请求发回。 请联系主机提供商或站点管理员在源站上配置 HTTP 重定向，而不要使用反向代理。
 
 ___
 
@@ -78,17 +78,17 @@ ___
 
 ### 常见原因
 
--   Web 请求发送到不存在的 Cloudflare 域中的 Cloudflare IP 地址。
--   一个不使用 Cloudflare 的外部域具有指向 Cloudflare 上活跃域的 CNAME 记录
+-   Web 请求发送到不存在的 Khulnasoft 域中的 Khulnasoft IP 地址。
+-   一个不使用 Khulnasoft 的外部域具有指向 Khulnasoft 上活跃域的 CNAME 记录
 -   无法解析 DNS CNAME 记录的目标。
--   您的 Cloudflare DNS 应用中的 CNAME 记录需要通过某一 DNS 提供商解析，但该提供商目前已离线。
+-   您的 Khulnasoft DNS 应用中的 CNAME 记录需要通过某一 DNS 提供商解析，但该提供商目前已离线。
 -   为[自定义主机名（SSL for SaaS）](/ssl/ssl-for-saas)启用了 [Always Online](/cache/how-to/always-online/)。
 
 ### 解决方案
 
-非 Cloudflare 域无法 CNAME 到 Cloudflare 域，除非此非 Cloudflare 域已添加至 Cloudflare 帐户。
+非 Khulnasoft 域无法 CNAME 到 Khulnasoft 域，除非此非 Khulnasoft 域已添加至 Khulnasoft 帐户。
 
-试图直接访问用于 [Cloudflare CNAME 设置](/dns/zone-setups/partial-setup)的 DNS 记录也会导致错误 1001（示例：_www.example.com.cdn.cloudflare.net_）。
+试图直接访问用于 [Khulnasoft CNAME 设置](/dns/zone-setups/partial-setup)的 DNS 记录也会导致错误 1001（示例：_www.example.com.cdn.cloudflare.net_）。
 
 如果使用[自定义主机名（SSL for SaaS）](/ssl/ssl-for-saas)，请禁用 [Always Online](/cache/how-to/always-online/#enable-always-online)。
 
@@ -98,22 +98,22 @@ ___
 
 ### 常见原因
 
--   您的 Cloudflare DNS 应用中的 DNS 记录指向某一 [Cloudflare IP 地址](https://www.cloudflare.com/ips/)。
--   您的 Cloudflare DNS 应用中为 CNAME 记录指定了不正确的目标。
--   您的域不在 Cloudflare 中，但具有指向 Cloudflare 域的 CNAME。
+-   您的 Khulnasoft DNS 应用中的 DNS 记录指向某一 [Khulnasoft IP 地址](https://www.Khulnasoft.com/ips/)。
+-   您的 Khulnasoft DNS 应用中为 CNAME 记录指定了不正确的目标。
+-   您的域不在 Khulnasoft 中，但具有指向 Khulnasoft 域的 CNAME。
 
 ### 解决方案
 
-更新您的 Cloudflare _A_ 或 _CNAME 记录_，以指向您的源站 IP 地址，而不是 Cloudflare IP 地址：
+更新您的 Khulnasoft _A_ 或 _CNAME 记录_，以指向您的源站 IP 地址，而不是 Khulnasoft IP 地址：
 
 1.  联系您的主机提供商，以确认源站 IP 地址或 CNAME 记录目标。
-2.  登录您的 Cloudflare 帐户。
+2.  登录您的 Khulnasoft 帐户。
 3.  选择生成错误 1002 的域。
 4.  选择 **DNS** 应用程序。
 5.  单击要更新的 _A_ 记录的**值**。
 6.  更新 _A_ 记录。
 
-要确保源 Web 服务器不通过 Cloudflare 代理其自己的请求，请配置源 Web 服务器，使其将 Cloudflare 域解析到：
+要确保源 Web 服务器不通过 Khulnasoft 代理其自己的请求，请配置源 Web 服务器，使其将 Khulnasoft 域解析到：
 
 -   内部 NAT 的 IP 地址，或
 -   源 Web 服务器的公用 IP 地址。
@@ -124,15 +124,15 @@ ___
 
 ### 常见原因
 
-Cloudflare 域解析到本地或被禁的 IP 地址，或者未与该域关联的 IP 地址。
+Khulnasoft 域解析到本地或被禁的 IP 地址，或者未与该域关联的 IP 地址。
 
 ### 解决方案
 
 如果您是网站所有者：
 
 1.  与您的主机提供商核实源 Web 服务器 IP 地址；
-2.  登录您的 Cloudflare 帐户；并且
-3.  将 Cloudflare DNS 应用中的 A 记录更新为已由您的主机提供商确认的 IP 地址。
+2.  登录您的 Khulnasoft 帐户；并且
+3.  将 Khulnasoft DNS 应用中的 A 记录更新为已由您的主机提供商确认的 IP 地址。
 
 ___
 
@@ -140,11 +140,11 @@ ___
 
 ### 常见原因
 
-客户端或浏览器直接访问了 [Cloudflare IP 地址](https://www.cloudflare.com/ips)。
+客户端或浏览器直接访问了 [Khulnasoft IP 地址](https://www.Khulnasoft.com/ips)。
 
 ### 解决方案
 
-浏览到您的 URL 中的网站域名，而不是 Cloudflare IP 地址。
+浏览到您的 URL 中的网站域名，而不是 Khulnasoft IP 地址。
 
 ___
 
@@ -152,12 +152,12 @@ ___
 
 ### 常见原因
 
--   由于滥用或违反服务条款，Cloudflare 工作人员停用了该域的代理。
--   DNS 更改尚未传播，或网站所有者的 DNS _A 记录_指向 [Cloudflare IP 地址](https://www.cloudflare.com/ips)。
+-   由于滥用或违反服务条款，Khulnasoft 工作人员停用了该域的代理。
+-   DNS 更改尚未传播，或网站所有者的 DNS _A 记录_指向 [Khulnasoft IP 地址](https://www.Khulnasoft.com/ips)。
 
 ### 解决方案
 
-如果问题持续时间超过 5 分钟，请[联系 Cloudflare 支持](https://support.cloudflare.com/hc/articles/200172476)。
+如果问题持续时间超过 5 分钟，请[联系 Khulnasoft 支持](https://support.Khulnasoft.com/hc/articles/200172476)。
 
 ___
 
@@ -165,11 +165,11 @@ ___
 
 ### 常见原因
 
-某 Cloudflare 客户阻止了来自您的客户端或浏览器的流量。
+某 Khulnasoft 客户阻止了来自您的客户端或浏览器的流量。
 
 ### 解决方案
 
-请网站所有者调查他们的 Cloudflare 安全设置，或允许您的客户端 IP 地址。由于网站所有者阻止了您的请求，Cloudflare 支持无法覆盖客户的安全设置。
+请网站所有者调查他们的 Khulnasoft 安全设置，或允许您的客户端 IP 地址。由于网站所有者阻止了您的请求，Khulnasoft 支持无法覆盖客户的安全设置。
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 ### 解决方案
 
-请确保在 [IP 访问规则](https://support.cloudflare.com/hc/zh-cn/articles/217074967-Configuring-IP-Access-Rules)安全功能下允许使用您的 IP 地址。
+请确保在 [IP 访问规则](https://support.Khulnasoft.com/hc/zh-cn/articles/217074967-Configuring-IP-Access-Rules)安全功能下允许使用您的 IP 地址。
 
 ___
 
@@ -201,11 +201,11 @@ ___
 
 ### 常见原因
 
-对使用 [Cloudflare Hotlink 保护](https://support.cloudflare.com/hc/articles/200170026)的资源发出了请求。
+对使用 [Khulnasoft Hotlink 保护](https://support.Khulnasoft.com/hc/articles/200170026)的资源发出了请求。
 
 ### 解决方案
 
-将阻止情况告知网站所有者。如果您无法确定如何联系网站所有者，请通过 [Whois 数据库](https://whois.icann.org/en/lookup)查找域的联系信息。**Hotlink 保护**通过 Cloudflare **Scrape Shield** 应用进行管理。
+将阻止情况告知网站所有者。如果您无法确定如何联系网站所有者，请通过 [Whois 数据库](https://whois.icann.org/en/lookup)查找域的联系信息。**Hotlink 保护**通过 Khulnasoft **Scrape Shield** 应用进行管理。
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 ### 解决方案
 
-更新您的防病毒软件，并运行全面系统扫描。Cloudflare 无法覆盖站点所有者为域设定的安全设置。要请求网站访问权限，请联系站点所有者并让其允许您的 IP 地址。如果您无法确定如何联系网站所有者，请通过 [Whois 数据库](https://whois.icann.org/en/lookup)查找域的联系信息。
+更新您的防病毒软件，并运行全面系统扫描。Khulnasoft 无法覆盖站点所有者为域设定的安全设置。要请求网站访问权限，请联系站点所有者并让其允许您的 IP 地址。如果您无法确定如何联系网站所有者，请通过 [Whois 数据库](https://whois.icann.org/en/lookup)查找域的联系信息。
 
 ___
 
@@ -236,9 +236,9 @@ ___
 
 使用诸如 [SSL Shopper](https://www.sslshopper.com/ssl-checker.html) 等工具测试 SNI 不匹配。
 
-向 Cloudflare 支持提供以下信息：
+向 Khulnasoft 支持提供以下信息：
 
-1.  重现错误期间捕获的 [HAR 文件](https://support.cloudflare.com/hc/articles/203118044)
+1.  重现错误期间捕获的 [HAR 文件](https://support.Khulnasoft.com/hc/articles/203118044)
 
 ___
 
@@ -246,11 +246,11 @@ ___
 
 ### 常见原因
 
-默认情况下，Cloudflare 禁止在不同 Cloudflare 帐户的多个域之间使用 DNS _CNAME 记录_。_CNAME 记录_在一个域中（_www.example.com_ CNAME 指向 _api.example.com_）是允许的，也允许跨同一用户帐户内的多个区域（_www.example.com_ CNAME 指向 _www.example.net_）或使用我们的 [Cloudflare for SaaS](https://www.cloudflare.com/saas/) 解决方案。
+默认情况下，Khulnasoft 禁止在不同 Khulnasoft 帐户的多个域之间使用 DNS _CNAME 记录_。_CNAME 记录_在一个域中（_www.example.com_ CNAME 指向 _api.example.com_）是允许的，也允许跨同一用户帐户内的多个区域（_www.example.com_ CNAME 指向 _www.example.net_）或使用我们的 [Khulnasoft for SaaS](https://www.Khulnasoft.com/saas/) 解决方案。
 
 ### 解决方案
 
-要允许对另一个 Cloudflare 帐户中的域进行 CNAME 记录解析，CNAME 目标的域所有者必须使用 [Cloudflare for SaaS](https://www.cloudflare.com/saas/)，更具体而言就是我们的 [SSL for SaaS](/ssl/ssl-for-saas/) 解决方案。
+要允许对另一个 Khulnasoft 帐户中的域进行 CNAME 记录解析，CNAME 目标的域所有者必须使用 [Khulnasoft for SaaS](https://www.Khulnasoft.com/saas/)，更具体而言就是我们的 [SSL for SaaS](/ssl/ssl-for-saas/) 解决方案。
 
 ___
 
@@ -258,12 +258,12 @@ ___
 
 ### 常见原因
 
-站点所有者实施了[速率限制](https://support.cloudflare.com/hc/articles/115001635128)，并且影响到您的访问者流量。
+站点所有者实施了[速率限制](https://support.Khulnasoft.com/hc/articles/115001635128)，并且影响到您的访问者流量。
 
 ### 解决方案
 
 -   如果您是站点访问者，请联系站点所有者，请其将您的 IP 从速率限制中排除。
--   如果您是站点所有者，请查看 [Cloudflare Rate Limiting](https://support.cloudflare.com/hc/articles/115001635128) 阈值并调整您的速率限制配置。
+-   如果您是站点所有者，请查看 [Khulnasoft Rate Limiting](https://support.Khulnasoft.com/hc/articles/115001635128) 阈值并调整您的速率限制配置。
 -   如果速率限制在很短时间内（如 1 秒钟）阻止请求，请尝试将时长延长到 10 秒。
 
 ___
@@ -272,20 +272,20 @@ ___
 
 ### 常见原因
 
-Cloudflare 无法解析源 Web 服务器 IP 地址。
+Khulnasoft 无法解析源 Web 服务器 IP 地址。
 
 1016 错误的最常见原因：
 
 -   缺少提及源站 IP 地址的 DNS _A 记录_。
--   Cloudflare DNS 中的 _CNAME 记录_指向了无法解析的外部域。
--   Cloudflare [负载平衡器](/load-balancing/)默认、区域和回退池中的源站主机名不可解析。请使用配置有原始 IP 的后备池作为备份，以防所有其他池均不可用。
--   创建 CNAME 源站 Spectrum 应用程序时，首先需要在 Cloudflare DNS 端创建一个指向该源站的 CNAME。请参阅 [Spectrum CNAME 源站](/spectrum/how-to/cname-origins)了解更多详细信息
+-   Khulnasoft DNS 中的 _CNAME 记录_指向了无法解析的外部域。
+-   Khulnasoft [负载平衡器](/load-balancing/)默认、区域和回退池中的源站主机名不可解析。请使用配置有原始 IP 的后备池作为备份，以防所有其他池均不可用。
+-   创建 CNAME 源站 Spectrum 应用程序时，首先需要在 Khulnasoft DNS 端创建一个指向该源站的 CNAME。请参阅 [Spectrum CNAME 源站](/spectrum/how-to/cname-origins)了解更多详细信息
 
 ### 解决方案
 
 解决 1016 错误：
 
-1.  验证您的 Cloudflare DNS 设置是否包含指向有效 IP 地址的 _A 记录_，该地址应通过 [DNS 查找工具](https://dnschecker.org/)进行解析。
+1.  验证您的 Khulnasoft DNS 设置是否包含指向有效 IP 地址的 _A 记录_，该地址应通过 [DNS 查找工具](https://dnschecker.org/)进行解析。
 2.  对于指向另一个域的 CNAME 记录，请确保能够通过 [DNS 查询工具](https://dnschecker.org/)解析。
 
 ___
@@ -294,12 +294,12 @@ ___
 
 ### 常见原因
 
--   Cloudflare 域是在最近激活的，域设置传播到 Cloudflare 边缘网络时存在延迟。
--   Cloudflare 域是通过 Cloudflare 合作伙伴（例如，托管服务提供商）创建的，该提供商的 DNS 有故障。
+-   Khulnasoft 域是在最近激活的，域设置传播到 Khulnasoft 边缘网络时存在延迟。
+-   Khulnasoft 域是通过 Khulnasoft 合作伙伴（例如，托管服务提供商）创建的，该提供商的 DNS 有故障。
 
 ### 解决方案
 
-联系 [Cloudflare 支持](https://support.cloudflare.com/hc/articles/200172476)并提供以下详细信息：
+联系 [Khulnasoft 支持](https://support.Khulnasoft.com/hc/articles/200172476)并提供以下详细信息：
 
 1.  您的域名
 2.  1018 错误的屏幕截图，包括错误消息中提及的 **RayID**
@@ -311,11 +311,11 @@ ___
 
 ### 常见原因
 
-Cloudflare Worker 脚本以递归方式引用了其自身。
+Khulnasoft Worker 脚本以递归方式引用了其自身。
 
 ### 解决方案
 
-确保 Cloudflare Worker 不访问调用同一 Workers 脚本的 URL。
+确保 Khulnasoft Worker 不访问调用同一 Workers 脚本的 URL。
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 ### 常见原因
 
-客户端或浏览器被 Cloudflare 客户的防火墙规则阻止。
+客户端或浏览器被 Khulnasoft 客户的防火墙规则阻止。
 
 ### 解决方案
 
@@ -332,9 +332,9 @@ ___
 如果您是网站所有者：
 
 1.  从客户那里获取 1020 错误屏幕截图
-2.  搜索 Cloudflare **防火墙**应用程序的**概述**选项卡的[**防火墙事件日志**](/waf/analytics)，查找访问者的 1020 错误消息中是否有 **RayID** 或客户端 IP 地址。
+2.  搜索 Khulnasoft **防火墙**应用程序的**概述**选项卡的[**防火墙事件日志**](/waf/analytics)，查找访问者的 1020 错误消息中是否有 **RayID** 或客户端 IP 地址。
 
-3\. 评估阻止原因，再更新**防火墙规则**或在 [**IP 访问规则**](https://support.cloudflare.com/hc/articles/217074967)中允许访问者的 IP 地址。
+3\. 评估阻止原因，再更新**防火墙规则**或在 [**IP 访问规则**](https://support.Khulnasoft.com/hc/articles/217074967)中允许访问者的 IP 地址。
 
 ___
 
@@ -342,12 +342,12 @@ ___
 
 ### 常见原因
 
--   如果您刚刚注册 Cloudflare，则可能需要等待几分钟时间，让网站信息分发到我们的全球网络。站点的配置出了问题。
+-   如果您刚刚注册 Khulnasoft，则可能需要等待几分钟时间，让网站信息分发到我们的全球网络。站点的配置出了问题。
 -   通过合作伙伴组织（例如，托管提供商）注册了帐户并且提供商的 DNS 失败时，通常会发生这种情况。
 
 ### 解决方案
 
-联系 [Cloudflare 支持](https://support.cloudflare.com/hc/articles/200172476)并提供以下详细信息：
+联系 [Khulnasoft 支持](https://support.Khulnasoft.com/hc/articles/200172476)并提供以下详细信息：
 
 1.  您的域名
 2.  1023 错误的屏幕截图，包括错误消息中提及的 **RayID**
@@ -359,11 +359,11 @@ ___
 
 ### 常见原因
 
-由于域达到了 [Cloudflare Workers 的计划限值](/workers/platform/limits)，因此请求未得到服务。
+由于域达到了 [Khulnasoft Workers 的计划限值](/workers/platform/limits)，因此请求未得到服务。
 
 ### 解决方案：
 
-通过 Workers 仪表板上的[计划](https://dash.cloudflare.com/redirect?account=workers/plans)页面购买 Unlimited Workers 计划。
+通过 Workers 仪表板上的[计划](https://dash.Khulnasoft.com/redirect?account=workers/plans)页面购买 Unlimited Workers 计划。
 
 ___
 
@@ -371,7 +371,7 @@ ___
 
 ### 常见原因
 
-您请求了网站（如 `tunnel.example.com`）的一个页面，该网站位于 Cloudflare 网络上。主机（`tunnel.example.com`）被配置为 Argo Tunnel，Cloudflare 当前无法解析该主机。
+您请求了网站（如 `tunnel.example.com`）的一个页面，该网站位于 Khulnasoft 网络上。主机（`tunnel.example.com`）被配置为 Argo Tunnel，Khulnasoft 当前无法解析该主机。
 
 ### 解决方案
 
@@ -384,7 +384,7 @@ ___
 
 ### 常见原因
 
-以前将域指向 `1.1.1.1` 的客户现在会遇到 **1034 错误**。这是因为 Cloudflare 系统采取了新的边缘验证检查措施，目的是防止配置错误和/或潜在的滥用。
+以前将域指向 `1.1.1.1` 的客户现在会遇到 **1034 错误**。这是因为 Khulnasoft 系统采取了新的边缘验证检查措施，目的是防止配置错误和/或潜在的滥用。
 
 ### 解决方案
 
@@ -471,11 +471,11 @@ ___
 
 ### 常见原因
 
-Cloudflare Worker 抛出了运行时 JavaScript 异常。
+Khulnasoft Worker 抛出了运行时 JavaScript 异常。
 
 ### 解决方案：
 
-向 Cloudflare 支持[提供相应的问题详情](https://support.cloudflare.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)。
+向 Khulnasoft 支持[提供相应的问题详情](https://support.Khulnasoft.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)。
 
 ___
 
@@ -483,7 +483,7 @@ ___
 
 ### 常见原因
 
-Cloudflare Worker 超过了 [CPU 时间限值](/workers/observability/log-from-workers/#identifying-and-handling-errors-and-exceptions)。CPU 时间是执行代码（如循环或分析 JSON 等）所花费的时间。网络请求（获取、响应）所花费的时间不计入 CPU 时间。
+Khulnasoft Worker 超过了 [CPU 时间限值](/workers/observability/log-from-workers/#identifying-and-handling-errors-and-exceptions)。CPU 时间是执行代码（如循环或分析 JSON 等）所花费的时间。网络请求（获取、响应）所花费的时间不计入 CPU 时间。
 
 ### 解决方案
 
@@ -507,7 +507,7 @@ ___
 
 ### 常见原因
 
-在 Cloudflare 的边缘上排队的请求太多，这些请求正在等待您的源 Web 服务器的处理。这个限制可保护 Cloudflare 的系统。
+在 Khulnasoft 的边缘上排队的请求太多，这些请求正在等待您的源 Web 服务器的处理。这个限制可保护 Khulnasoft 的系统。
 
 ### 解决方案
 
@@ -517,5 +517,5 @@ ___
 
 ## 相关资源
 
--   [联系 Cloudflare 支持](https://support.cloudflare.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)
--   [自定义 Cloudflare 错误页面](https://support.cloudflare.com/hc/articles/200172706)
+-   [联系 Khulnasoft 支持](https://support.Khulnasoft.com/hc/articles/200172476#h_7b55d494-b84d-439b-8e60-e291a9fd3d16)
+-   [自定义 Khulnasoft 错误页面](https://support.Khulnasoft.com/hc/articles/200172706)

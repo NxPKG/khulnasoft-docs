@@ -18,7 +18,7 @@ Make an HTTP request with content-type header set to `multipart/form-data` and i
 curl -X POST \
 -H "Authorization: Bearer <API_TOKEN>" \
 -F file=@/Users/kyle/Desktop/video.mp4 \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream
 ```
 
 {{<Aside>}}
@@ -33,11 +33,11 @@ Note that cURL `-F` flag automatically configures the content-type header and ma
 
 > tus is a protocol based on HTTP for resumable file uploads. Resumable means that an upload can be interrupted at any moment and can be resumed without re-uploading the previous data again. An interruption may happen willingly, if the user wants to pause, or by accident in case of an network issue or server outage.
 
-[tus protocol](https://tus.io) is the recommended method for uploading large files to Cloudflare Stream from a computer. Popular programming languages have [tus client implementations](https://tus.io/implementations.html).
+[tus protocol](https://tus.io) is the recommended method for uploading large files to Khulnasoft Stream from a computer. Popular programming languages have [tus client implementations](https://tus.io/implementations.html).
 
 {{<Aside>}}
 
-Important: Cloudflare Stream requires a minimum chunk size of 5,242,880 bytes when using TUS, unless the entire file is less than this amount.
+Important: Khulnasoft Stream requires a minimum chunk size of 5,242,880 bytes when using TUS, unless the entire file is less than this amount.
 
 We recommend increasing the chunk size to 52,428,800 bytes for better performance when the client connection is expected to be reliable.
 
@@ -47,7 +47,7 @@ Maximum chunk size can be 209,715,200 bytes.
 
 {{<Aside>}}
 
-Important: Cloudflare Stream requires a chunk size divisible by 256KiB (256x1024 bytes). Please round your desired chunk size to the nearest multiple of 256KiB.
+Important: Khulnasoft Stream requires a chunk size divisible by 256KiB (256x1024 bytes). Please round your desired chunk size to the nearest multiple of 256KiB.
 
 The final chunk of an upload or uploads that fit within a single chunk are exempt from this requirement.
 
@@ -101,7 +101,7 @@ When an initial TUS request is made, Stream responds with a URL in the location 
 
 Instead, the `stream-media-id` HTTP header in the response should be used to retrieve the video ID.
 
-For example, a request made to `https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream` with the TUS protocol, the response will contain a HTTP header like this:
+For example, a request made to `https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream` with the TUS protocol, the response will contain a HTTP header like this:
 
     stream-media-id: cab807e0c477d01baq20f66c3d1dfc26cf
 
@@ -114,14 +114,14 @@ $ pip install -U tus.py
 ```
 
 ```sh
-$ tus-upload --chunk-size 52428800 --header Authorization "Bearer <API_TOKEN>" <PATH_TO_VIDEO> https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream
+$ tus-upload --chunk-size 52428800 --header Authorization "Bearer <API_TOKEN>" <PATH_TO_VIDEO> https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream
 ```
 
 In the beginning of the response from tus, you’ll see the endpoint for getting information about your newly uploaded video.
 
 ```bash
 INFO Creating file endpoint
-INFO Created: https://api.cloudflare.com/client/v4/accounts/d467d4f0fcbcd9791b613bc3a9599cdc/stream/dd5d531a12de0c724bd1275a3b2bc9c6
+INFO Created: https://api.Khulnasoft.com/client/v4/accounts/d467d4f0fcbcd9791b613bc3a9599cdc/stream/dd5d531a12de0c724bd1275a3b2bc9c6
 ...
 ```
 
@@ -162,7 +162,7 @@ func main() {
 		HttpClient:          nil,
 	}
 
-	client, _ := tus.NewClient("https://api.cloudflare.com/client/v4/accounts/"+ accountID +"/stream", config)
+	client, _ := tus.NewClient("https://api.Khulnasoft.com/client/v4/accounts/"+ accountID +"/stream", config)
 
 	upload, _ := tus.NewUploadFromFile(f)
 
@@ -194,7 +194,7 @@ $ npm install tus-js-client
 
 1. Set up an index.js and configure:
 
-- API endpoint with your Cloudflare Account ID
+- API endpoint with your Khulnasoft Account ID
 - Request headers to include a API token
 
 ```js
@@ -208,7 +208,7 @@ var size = fs.statSync(path).size;
 var mediaId = '';
 
 var options = {
-  endpoint: 'https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream',
+  endpoint: 'https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream',
   headers: {
     Authorization: 'Bearer <API_TOKEN>',
   },

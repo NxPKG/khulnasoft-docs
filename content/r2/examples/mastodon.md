@@ -24,7 +24,7 @@ If you move from R2 to another S3 compatible service later on, you can continue 
 
 ### 2. Create and set up an R2 bucket
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/?account=r2).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?account=r2).
 2. From **Account Home**, select **R2**.
 3. From **R2**, select **Create bucket**.
 4. Enter your bucket name and then select **Create bucket**. This name is internal when setting up your Mastodon instance and is not publicly accessible.

@@ -6,7 +6,7 @@ _build:
 inputParameters: param1
 ---
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 
 2. Locate the IdP you want to synchronize and select **Edit**.
 

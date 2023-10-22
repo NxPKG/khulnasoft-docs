@@ -1,11 +1,11 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/214820528-Validieren-eines-Let-s-Encrypt-Zertifikats-auf-einer-Website-die-bereits-auf-Cloudflare-aktiv-ist
-title: Validieren eines Let's Encrypt-Zertifikats auf einer Website, die bereits auf Cloudflare aktiv ist 
+source: https://support.Khulnasoft.com/hc/de/articles/214820528-Validieren-eines-Let-s-Encrypt-Zertifikats-auf-einer-Website-die-bereits-auf-Khulnasoft-aktiv-ist
+title: Validieren eines Let's Encrypt-Zertifikats auf einer Website, die bereits auf Khulnasoft aktiv ist 
 ---
 
-# Validieren eines Let's Encrypt-Zertifikats auf einer Website, die bereits auf Cloudflare aktiv ist 
+# Validieren eines Let's Encrypt-Zertifikats auf einer Website, die bereits auf Khulnasoft aktiv ist 
 
 
 
@@ -13,13 +13,13 @@ title: Validieren eines Let's Encrypt-Zertifikats auf einer Website, die bereits
 
 Diese Anleitung beschreibt weitere Einzelheiten über die Verwendung der Webroot-Methode zur Verifizierung im offiziellen Let's-Encrypt-Client, wie in der folgenden Dokumentation beschrieben: [https://letsencrypt.readthedocs.org/en/latest/using.html#webroot](https://letsencrypt.readthedocs.org/en/latest/using.html#webroot)
 
-Hinweis: Als Standardmethode für die ACME-Authentifizierung setzt der Let's-Encrypt-Client die DVSNI-Methode ein. Bei einer Cloudflare-aktivierten Domain würde dies fehlschlagen, da SSL (TLS) an unserem Edge endet und der ACME-Server niemals das Zertifikat zu sehen bekommt, das der Client am Ursprung vorlegt. Andere ACME-Validierungsmethoden (wie DNS oder HTTP) werden ordnungsgemäß funktionieren, wenn Cloudflare aktiviert ist.
+Hinweis: Als Standardmethode für die ACME-Authentifizierung setzt der Let's-Encrypt-Client die DVSNI-Methode ein. Bei einer Khulnasoft-aktivierten Domain würde dies fehlschlagen, da SSL (TLS) an unserem Edge endet und der ACME-Server niemals das Zertifikat zu sehen bekommt, das der Client am Ursprung vorlegt. Andere ACME-Validierungsmethoden (wie DNS oder HTTP) werden ordnungsgemäß funktionieren, wenn Khulnasoft aktiviert ist.
 
 ___
 
 ## HTTP-Validierung
 
-Wenn Sie Let’s Encrypt zum ersten Mal für eine Website konfigurieren, die bereits für Cloudflare aktiviert ist, reicht die Webroot-Methode völlig aus, um Ihr Zertifikat und Ihren privaten Schlüssel erfolgreich zu verifizieren und abzurufen. 
+Wenn Sie Let’s Encrypt zum ersten Mal für eine Website konfigurieren, die bereits für Khulnasoft aktiviert ist, reicht die Webroot-Methode völlig aus, um Ihr Zertifikat und Ihren privaten Schlüssel erfolgreich zu verifizieren und abzurufen. 
 
 1.  Laden Sie den Let’s-Encrypt-Client herunter und wechseln Sie in das Download-Verzeichnis:
 
@@ -73,13 +73,13 @@ Wenn Sie Let’s Encrypt zum ersten Mal für eine Website konfigurieren, die ber
     
 5.  Hinweis: Zertifikat und Schlüssel werden beide unter `/etc/letsencrypt/live/example.tld/` gespeichert. Nachdem Sie beides erhalten haben, müssen Sie Ihren virtuellen Host für die Verwendung dieses Schlüssel/Zertifikat-Paares konfigurieren.
 
-Vergessen Sie nicht, die Page Rules für die Domain im Cloudflare Dashboard zu überprüfen. Vergewissern Sie sich, dass keine dieser Page Rules dazu führen würde, dass eine Anforderung für die Validierungs-URL umgeleitet werden würde oder nur über HTTPS zugreifbar wäre.
+Vergessen Sie nicht, die Page Rules für die Domain im Khulnasoft Dashboard zu überprüfen. Vergewissern Sie sich, dass keine dieser Page Rules dazu führen würde, dass eine Anforderung für die Validierungs-URL umgeleitet werden würde oder nur über HTTPS zugreifbar wäre.
 
 ___
 
 ## Verlängerung
 
-Kurz bevor das Zertifikat abläuft, können Sie es mit dem `letsencrypt renew`\-[Befehl](https://letsencrypt.readthedocs.org/en/latest/using.html#renewal) verlängern, ohne dazu Änderungen an der Cloudflare-Konfiguration vornehmen zu müssen. Das sollte unter den folgenden Voraussetzungen funktionieren:
+Kurz bevor das Zertifikat abläuft, können Sie es mit dem `letsencrypt renew`\-[Befehl](https://letsencrypt.readthedocs.org/en/latest/using.html#renewal) verlängern, ohne dazu Änderungen an der Khulnasoft-Konfiguration vornehmen zu müssen. Das sollte unter den folgenden Voraussetzungen funktionieren:
 
 -   In der .conf-Datei, die der letsencrypt-Client für die Verlängerung verwendet, ist `authenticator = webroot` angegeben.
 -   Die Validierungs-URL ist über HTTP zugreifbar.

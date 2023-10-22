@@ -20,13 +20,13 @@ Tag overrides take precedence over ruleset overrides. Only the rules with the sp
 
 ## Example 1
 
-This example uses the [Update ruleset](/ruleset-engine/rulesets-api/update/) operation to deploy the Cloudflare Managed Ruleset to a phase with only Joomla rules enabled. The `name`, `kind`, and `phase` fields are omitted from the request because they are immutable.
+This example uses the [Update ruleset](/ruleset-engine/rulesets-api/update/) operation to deploy the Khulnasoft Managed Ruleset to a phase with only Joomla rules enabled. The `name`, `kind`, and `phase` fields are omitted from the request because they are immutable.
 
 {{<details header="Example: Enable only Joomla rules using category overrides at the zone level">}}
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -52,7 +52,7 @@ https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_reques
 }'
 ```
 
-* `"id": "<MANAGED_RULESET_ID>"` adds a rule to the ruleset of a phase that will apply the Cloudflare Managed Ruleset to requests for the specified zone (`{zone_id}`).
+* `"id": "<MANAGED_RULESET_ID>"` adds a rule to the ruleset of a phase that will apply the Khulnasoft Managed Ruleset to requests for the specified zone (`{zone_id}`).
 * `"enabled": false` defines an override at the ruleset level that disables all rules in the managed ruleset.
 * `"categories": [{"category": "joomla", "action": "block", "enabled": true}]` defines an override at the tag level that enables the Joomla rules and sets their action to `block`.
 
@@ -62,7 +62,7 @@ https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_reques
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -88,7 +88,7 @@ https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/http_
 }'
 ```
 
-* `"id": "<MANAGED_RULESET_ID>"` adds a rule to the ruleset of a phase that will apply the Cloudflare Managed Ruleset to requests for `example.com`.
+* `"id": "<MANAGED_RULESET_ID>"` adds a rule to the ruleset of a phase that will apply the Khulnasoft Managed Ruleset to requests for `example.com`.
 * `"enabled": false` defines an override at the ruleset level that disables all rules in the managed ruleset.
 * `"categories": [{"category": "joomla", "action": "block", "enabled": true}]` defines an override at the tag level that enables the Joomla rules and sets their action to `block`.
 
@@ -104,7 +104,7 @@ This example uses a `PUT` request to add two overrides to the rule that executes
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -140,7 +140,7 @@ https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_reques
 
 ```bash
 curl --request PUT \
-https://api.cloudflare.com/client/v4/account/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
+https://api.Khulnasoft.com/client/v4/account/{account_id}/rulesets/phases/http_request_firewall_managed/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

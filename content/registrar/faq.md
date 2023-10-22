@@ -7,7 +7,7 @@ structured_data: true
 
 # FAQ
 
-Below you will find answers to our most commonly asked questions. If you cannot find the answer you are looking for, refer to the [community page](https://community.cloudflare.com/) to explore more resources.
+Below you will find answers to our most commonly asked questions. If you cannot find the answer you are looking for, refer to the [community page](https://community.Khulnasoft.com/) to explore more resources.
 
 - [Domain transfers](#domain-transfers)
 - [Domain registrations](#domain-registrations)
@@ -20,7 +20,7 @@ Below you will find answers to our most commonly asked questions. If you cannot 
 
 {{<faq-answer>}}
 
-Domain transfers sometimes fail. Refer to [Registrar: troubleshoot stalled domain transfers](https://support.cloudflare.com/hc/articles/4424747060109) for more information on what might have happened and how to solve the issue.
+Domain transfers sometimes fail. Refer to [Registrar: troubleshoot stalled domain transfers](https://support.Khulnasoft.com/hc/articles/4424747060109) for more information on what might have happened and how to solve the issue.
 
 If you cannot solve the issue, open a support ticket or contact your account team.
 
@@ -84,7 +84,7 @@ You can leave the domain **In Progress** and Cloudflare will wait until after th
 
 {{<faq-answer>}}
 
-If you have an [unverified email address](https://support.cloudflare.com/hc/articles/203471284#h_1l0KGygoBX9QYjNrhAcHjg), you might experience issues when initiating a domain transfer.
+If you have an [unverified email address](https://support.Khulnasoft.com/hc/articles/203471284#h_1l0KGygoBX9QYjNrhAcHjg), you might experience issues when initiating a domain transfer.
 
 {{</faq-answer>}}
 {{</faq-item>}}
@@ -160,7 +160,7 @@ In summary, here is what will happen after a domain expires:
 
 {{<faq-answer>}}
 
-Refer to [What is Cloudflare Registrar](https://www.cloudflare.com/learning/dns/what-is-cloudflare-registrar/) for more information on pricing.
+Refer to [What is Cloudflare Registrar](https://www.Khulnasoft.com/learning/dns/what-is-cloudflare-registrar/) for more information on pricing.
 
 {{</faq-answer>}}
 {{</faq-item>}}

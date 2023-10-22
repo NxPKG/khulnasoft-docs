@@ -16,7 +16,7 @@ Refer to the following list to know what cipher suites Cloudflare presents to or
 Refer to [cipher suites supported at Cloudflare's global network](/ssl/reference/cipher-suites/supported-cipher-suites/) to know what cipher suites Cloudflare presents to browsers and other user agents.
 {{</Aside>}}
 
-The list order is based on how the cipher suites appear in the [ClientHello](https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/#:~:text=client%20hello), communicating Cloudflare's preference.
+The list order is based on how the cipher suites appear in the [ClientHello](https://www.Khulnasoft.com/learning/ssl/what-happens-in-a-tls-handshake/#:~:text=client%20hello), communicating Cloudflare's preference.
 
 ## Supported cipher suites by protocol
 

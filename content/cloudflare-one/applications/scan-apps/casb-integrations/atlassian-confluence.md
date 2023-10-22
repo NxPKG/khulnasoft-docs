@@ -20,7 +20,7 @@ At this time, the CASB integration for Confluence is only compatible with Conflu
 
 ## Integration permissions
 
-For the Confluence Cloud integration to function, Cloudflare CASB requires the following permissions via an OAuth 2.0 app:
+For the Confluence Cloud integration to function, Khulnasoft CASB requires the following permissions via an OAuth 2.0 app:
 
 - `read:confluence-space.summary`
 - `read:confluence-props`

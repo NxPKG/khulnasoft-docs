@@ -6,9 +6,9 @@ weight: 13
 
 # Google
 
-You can integrate Google authentication with Cloudflare Access without a Google Workspace account. The integration allows any user with a Google account to log in (if the [Access policy](/cloudflare-one/policies/access/) allows them to reach the resource). Unlike the instructions for [Google Workspace](/cloudflare-one/identity/idp-integration/gsuite/), the steps below will not allow you to pull group membership information from a Google Workspace account.
+You can integrate Google authentication with Khulnasoft Access without a Google Workspace account. The integration allows any user with a Google account to log in (if the [Access policy](/cloudflare-one/policies/access/) allows them to reach the resource). Unlike the instructions for [Google Workspace](/cloudflare-one/identity/idp-integration/gsuite/), the steps below will not allow you to pull group membership information from a Google Workspace account.
 
-You do not need to be a Google Cloud Platform user to integrate Google Suite as an identity provider with Cloudflare Zero Trust. You will only need to open the Google Cloud Platform to configure IdP integration settings.
+You do not need to be a Google Cloud Platform user to integrate Google Suite as an identity provider with Khulnasoft Zero Trust. You will only need to open the Google Cloud Platform to configure IdP integration settings.
 
 ## Set up Google as an identity provider
 
@@ -39,7 +39,7 @@ You do not need to be a Google Cloud Platform user to integrate Google Suite as 
 
 9. Google will present the OAuth Client ID and Secret values. The secret field functions like a password and should not be shared. Copy both values.
 
-10. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **Authentication**.
+10. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **Authentication**.
 
 11. Under **Login methods**, select **Add new**. Choose **Google** on the next page.
 

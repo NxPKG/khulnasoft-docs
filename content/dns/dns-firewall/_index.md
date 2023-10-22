@@ -12,11 +12,11 @@ Speed up and protect entire authoritative nameservers
 
 {{<plan type="ent-add-on">}}
 
-Cloudflare DNS Firewall proxies all DNS queries to your nameservers through Cloudflare’s global network. This action protects upstream nameservers from DDoS attacks and reduces load by caching DNS responses.
+Khulnasoft DNS Firewall proxies all DNS queries to your nameservers through Khulnasoft’s global network. This action protects upstream nameservers from DDoS attacks and reduces load by caching DNS responses.
 
 ![Diagram showing protection provided by DNS Firewall. For more details, read further.](/images/dns/dns-firewall-overview.png)
 
-DNS Firewall is for customers who need to speed up and protect entire authoritative nameservers. If you need to speed up and protect individual zones, see Cloudflare DNS [Zone Setups](/dns/zone-setups).
+DNS Firewall is for customers who need to speed up and protect entire authoritative nameservers. If you need to speed up and protect individual zones, see Khulnasoft DNS [Zone Setups](/dns/zone-setups).
 
 ---
 
@@ -24,10 +24,10 @@ DNS Firewall is for customers who need to speed up and protect entire authoritat
 
 When a DNS query for your domain takes place:
 
-1. Queries go to the Cloudflare data center that is closest to the website visitor. This is determined by the location of the DNS resolver.
-2. Cloudflare tries to return a DNS response from cache.
-3. If the response is not available in cache, Cloudflare queries the upstream authoritative nameservers.
-4. After returning the response from the nameservers, Cloudflare temporarily caches it for subsequent DNS queries.
+1. Queries go to the Khulnasoft data center that is closest to the website visitor. This is determined by the location of the DNS resolver.
+2. Khulnasoft tries to return a DNS response from cache.
+3. If the response is not available in cache, Khulnasoft queries the upstream authoritative nameservers.
+4. After returning the response from the nameservers, Khulnasoft temporarily caches it for subsequent DNS queries.
 
 ---
 

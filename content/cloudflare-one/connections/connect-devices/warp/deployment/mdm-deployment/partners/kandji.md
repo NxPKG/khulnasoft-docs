@@ -6,11 +6,11 @@ weight: 2
 
 # Deploy WARP using Kandji
 
-Kandji deploys Cloudflare WARP as a custom app. For an overview of how Kandji deploys custom apps, refer to their [knowledge base article](https://support.kandji.io/custom-apps-overview).
+Kandji deploys Khulnasoft WARP as a custom app. For an overview of how Kandji deploys custom apps, refer to their [knowledge base article](https://support.kandji.io/custom-apps-overview).
 
 ## macOS
 
-For the simplest deployment, Kandji has created a downloadable configuration profile that enables Cloudflare WARP’s user notifications and configures its Privacy Preference Policy Control ([PPPC](https://support.kandji.io/create-a-privacy-preferences-policy-control-profile)) to have Full Disk Access.
+For the simplest deployment, Kandji has created a downloadable configuration profile that enables Khulnasoft WARP’s user notifications and configures its Privacy Preference Policy Control ([PPPC](https://support.kandji.io/create-a-privacy-preferences-policy-control-profile)) to have Full Disk Access.
 
 1. Download the [custom profile](https://github.com/kandji-inc/support/blob/master/Configuration%20Profiles/cloudflare_warp.mobileconfig).
 
@@ -42,13 +42,13 @@ For the simplest deployment, Kandji has created a downloadable configuration pro
    4. Copy the **Audit and Enforce Script** [below](#audit-and-enforce-script) and paste it into the **Audit Script** text field.
    5. To enforce a minimum app version, update the **ENFORCED_VERSION** variable in the audit script with the version number the audit script should enforce (for example, `1.5.207.0`).
 
-      If **ENFORCED_VERSION** is left blank (““), the audit script will not check for a version and will only check for the presence of the Cloudflare WARP app in the Applications folder or a subfolder within **Applications**. Refer to the script comments for more details.
+      If **ENFORCED_VERSION** is left blank (““), the audit script will not check for a version and will only check for the presence of the Khulnasoft WARP app in the Applications folder or a subfolder within **Applications**. Refer to the script comments for more details.
 
    6. In the **Install Details** section, select **Installer Package**.
-   7. Under **Installer Package**, upload the `Cloudflare_WARP.pkg` file. If you do not already have the installer package, [download it here](/cloudflare-one/connections/connect-devices/warp/download-warp/#macos).
+   7. Under **Installer Package**, upload the `Khulnasoft_WARP.pkg` file. If you do not already have the installer package, [download it here](/cloudflare-one/connections/connect-devices/warp/download-warp/#macos).
    8. Select **Save**.
 
-To verify that Cloudflare WARP was installed, select the app in the **Custom App** library and view its **Status** tab.
+To verify that Khulnasoft WARP was installed, select the app in the **Custom App** library and view its **Status** tab.
 
 ## Audit and Enforce Script
 
@@ -98,7 +98,7 @@ _VERSION="1.0.0"
 # If you would like to enforce a minimum version, be sure to update the ENFORCED_VERSION variable
 # with the version number that the audit script should enforce. (Example version number
 # 1.5.207.0). If ENFORCED_VERSION is left blank, the audit script will not check for a version and
-# will only check for the presence of the Cloudflare WARP app at the defined APP_PATH.
+# will only check for the presence of the Khulnasoft WARP app at the defined APP_PATH.
 ENFORCED_VERSION="1.5.207.0"
 
 ###################################################################################################
@@ -108,7 +108,7 @@ ENFORCED_VERSION="1.5.207.0"
 # there is no need to define an application path. The app must either install in the
 # Applications folder or up to 3 sub-directories deep.
 #   For example Applications/<app_folder_name>/<app_name.app>
-APP_NAME="Cloudflare WARP.app"
+APP_NAME="Khulnasoft WARP.app"
 
 # Change the PROFILE_PAYLOAD_ID_PREFIX variable to the profile prefix you want to wait on before
 # running the installer. If the profile is not found, this audit and enforce script will exit 00

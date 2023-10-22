@@ -7,11 +7,11 @@ layout: learning-module
 
 # Account setup
 
-Set up an account for Cloudflare Zero Trust.
+Set up an account for Khulnasoft Zero Trust.
 
 ## Objectives
 
 By the end of this module, you will be able to:
 
-- Set up a Cloudflare account.
+- Set up a Khulnasoft account.
 - Create a Zero Trust organization to manage your devices and policies.

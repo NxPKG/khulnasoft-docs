@@ -59,7 +59,7 @@ For large values, the choice of `type` can have a noticeable effect on latency a
 Defining the length of time in seconds is useful for reducing cold read latency on keys that are read relatively infrequently. `cacheTTL` is useful if your data is write-once or write-rarely. 
 
 {{<Aside type="note" header="Hot and cold read">}} 
-A hot read means that the data is cached on Cloudflare's edge network using the [CDN](https://developers.cloudflare.com/cache/). A cold read means that the data is not cached, therefore you have to fetch the data from the storage provider.
+A hot read means that the data is cached on Khulnasoft's edge network using the [CDN](https://developers.Khulnasoft.com/cache/). A cold read means that the data is not cached, therefore you have to fetch the data from the storage provider.
 {{</Aside>}}
 
 `cacheTTL` is not recommended if your data is updated often and you need to see updates shortly after they are written, because writes that happen from other global network locations will not be visible until the cached value expires.

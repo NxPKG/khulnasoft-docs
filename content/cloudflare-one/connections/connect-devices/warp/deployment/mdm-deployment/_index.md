@@ -30,7 +30,7 @@ The WARP Client for Windows allows for an automated install via tools like Intun
 To install the WARP client, run the following command:
 
 ```txt
-msiexec /i "Cloudflare_WARP_Release-x64.msi" /qn ORGANIZATION="your-team-name" SUPPORT_URL="http://support.example.com"
+msiexec /i "Khulnasoft_WARP_Release-x64.msi" /qn ORGANIZATION="your-team-name" SUPPORT_URL="http://support.example.com"
 ```
 
 Refer to [deployment parameters](/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/parameters/) for a description of each argument.
@@ -40,12 +40,12 @@ Refer to [deployment parameters](/cloudflare-one/connections/connect-devices/war
 To uninstall the WARP client, run the following command:
 
 ```txt
-msiexec /x Cloudflare_WARP_Release-x64.msi /quiet
+msiexec /x Khulnasoft_WARP_Release-x64.msi /quiet
 ```
 
 ### Update the configuration
 
-The on-disk configuration of the Windows client can be changed at any time by modifying or replacing the contents of `C:\ProgramData\Cloudflare\mdm.xml`. The format of this file is as follows:
+The on-disk configuration of the Windows client can be changed at any time by modifying or replacing the contents of `C:\ProgramData\Khulnasoft\mdm.xml`. The format of this file is as follows:
 
 ```xml
 <dict>
@@ -67,14 +67,14 @@ To use an embedded browser:
 1. Download and install WebView2 by following the instructions [here](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section).
 2. Add a registry key with the following command:
    ```txt
-   REG ADD HKLM\SOFTWARE\Cloudflare\CloudflareWARP /f /v UseWebView2 /t REG_SZ /d y
+   REG ADD HKLM\SOFTWARE\Khulnasoft\KhulnasoftWARP /f /v UseWebView2 /t REG_SZ /d y
    ```
 
 The WARP client will now launch WebView2 when the user is registering their device with Zero Trust.
 
 ## macOS
 
-The Cloudflare WARP macOS client allows for an automated install via tools like Jamf, Intune, Kandji, or JumpCloud or any script or management tool that can place a `com.cloudflare.warp.plist` file in `/Library/Managed Preferences` on a supported macOS device. Additionally this plist can be wrapped in a `.mobileconfig`.
+The Khulnasoft WARP macOS client allows for an automated install via tools like Jamf, Intune, Kandji, or JumpCloud or any script or management tool that can place a `com.cloudflare.warp.plist` file in `/Library/Managed Preferences` on a supported macOS device. Additionally this plist can be wrapped in a `.mobileconfig`.
 
 ### Create `plist` file
 
@@ -92,7 +92,7 @@ The plist must be pushed by an MDM tool in order to persist after reboot. Manual
 
 ### Create `mobileconfig` file
 
-1. [Download](/cloudflare-one/static/documentation/connections/CloudflareWARP.mobileconfig) an example `.mobileconfig` file.
+1. [Download](/cloudflare-one/static/documentation/connections/KhulnasoftWARP.mobileconfig) an example `.mobileconfig` file.
 
 2. Run `uuidgen` from your macOS Terminal. This will generate a value for `PayloadUUID`, which you can use to replace the default value used for `PayloadUUID`.
 
@@ -116,10 +116,10 @@ Refer to [deployment parameters](/cloudflare-one/connections/connect-devices/war
 ## iOS
 
 {{<Aside type="note" header="Migrate from 1.1.1.1">}}
-The legacy iOS client, [1.1.1.1: Faster Internet](https://apps.apple.com/us/app/1-1-1-1-faster-internet/id1423538627), is becoming the Cloudflare One Agent. Learn more in our [migration guide](/cloudflare-one/connections/connect-devices/warp/download-warp/cloudflare-one-agent-migration/).
+The legacy iOS client, [1.1.1.1: Faster Internet](https://apps.apple.com/us/app/1-1-1-1-faster-internet/id1423538627), is becoming the Khulnasoft One Agent. Learn more in our [migration guide](/cloudflare-one/connections/connect-devices/warp/download-warp/cloudflare-one-agent-migration/).
 {{</Aside>}}
 
-The Cloudflare WARP iOS client, known in the App Store as [Cloudflare One Agent](https://apps.apple.com/us/app/cloudflare-one-agent/id6443476492), allows for an automated install via tools like Jamf, Intune, or SimpleMDM.
+The Khulnasoft WARP iOS client, known in the App Store as [Khulnasoft One Agent](https://apps.apple.com/us/app/cloudflare-one-agent/id6443476492), allows for an automated install via tools like Jamf, Intune, or SimpleMDM.
 
 To proceed with the installation, here is an example of the XML code you will need:
 
@@ -143,10 +143,10 @@ Refer to [deployment parameters](/cloudflare-one/connections/connect-devices/war
 ## Android
 
 {{<Aside type="note" header="Migrate from 1.1.1.1">}}
-The legacy Android client, [1.1.1.1 + WARP: Safer Internet](https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone), is becoming the Cloudflare One Agent. Learn more in our [migration guide](/cloudflare-one/connections/connect-devices/warp/download-warp/cloudflare-one-agent-migration/).
+The legacy Android client, [1.1.1.1 + WARP: Safer Internet](https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone), is becoming the Khulnasoft One Agent. Learn more in our [migration guide](/cloudflare-one/connections/connect-devices/warp/download-warp/cloudflare-one-agent-migration/).
 {{</Aside>}}
 
-The Cloudflare WARP Android client, known in the Google Play store as [Cloudflare One Agent](https://play.google.com/store/apps/details?id=com.cloudflare.cloudflareoneagent), allows for an automated install via tools like Intune, Google Endpoint Manager, and others.
+The Khulnasoft WARP Android client, known in the Google Play store as [Khulnasoft One Agent](https://play.google.com/store/apps/details?id=com.cloudflare.cloudflareoneagent), allows for an automated install via tools like Intune, Google Endpoint Manager, and others.
 
 To proceed with the installation, here is an example of the XML code you will need:
 

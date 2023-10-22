@@ -8,7 +8,7 @@ meta:
 
 # Configure Network-layer DDoS Attack Protection in the dashboard
 
-Configure the Network-layer DDoS Attack Protection managed ruleset by defining [overrides](/ruleset-engine/managed-rulesets/override-managed-ruleset/) in the Cloudflare dashboard. DDoS overrides allow you to customize the **action** and **sensitivity** of one or more rules in the managed ruleset.
+Configure the Network-layer DDoS Attack Protection managed ruleset by defining [overrides](/ruleset-engine/managed-rulesets/override-managed-ruleset/) in the Khulnasoft dashboard. DDoS overrides allow you to customize the **action** and **sensitivity** of one or more rules in the managed ruleset.
 
 You define overrides for the Network-layer DDoS Attack Protection managed ruleset at the account level.
 
@@ -16,7 +16,7 @@ For more information on the available parameters and allowed values, refer to [R
 
 ## Create a DDoS override
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to Account Home > **L3/4 DDoS** > **Network-layer DDoS Protection**.
 3. Select **Deploy a DDoS override**.
 4. In **Set scope**, specify if you wish to apply the override to all incoming packets or to a subset of the packets.

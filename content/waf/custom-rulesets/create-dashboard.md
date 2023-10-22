@@ -15,11 +15,11 @@ Account-level WAF configuration requires an Enterprise plan with a paid add-on.
 
 ## Create a custom ruleset
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 
 2. Go to Account Home > **WAF** > **Custom rulesets**.
 
-    ![Custom rulesets page in the Cloudflare dashboard](/images/waf/account/custom-rulesets-dashboard.png)
+    ![Custom rulesets page in the Khulnasoft dashboard](/images/waf/account/custom-rulesets-dashboard.png)
 
 3. Next to **Your custom rulesets**, select **Create new ruleset**.
 
@@ -31,7 +31,7 @@ Account-level WAF configuration requires an Enterprise plan with a paid add-on.
 
 7. Under **When incoming requests match**, use the **Field** drop-down list to choose an HTTP property. For each request, the value of the property you choose for **Field** is compared to the value you specify for **Value** using the operator selected in **Operator**. Alternatively, select **Edit expression** to define your expression using the [Expression Editor](/ruleset-engine/rules-language/expressions/edit-expressions/#expression-editor).
 
-8. Select the rule action from the **Choose action** drop-down list. For example, selecting _Block_ tells Cloudflare to refuse requests that match the conditions you specified.
+8. Select the rule action from the **Choose action** drop-down list. For example, selecting _Block_ tells Khulnasoft to refuse requests that match the conditions you specified.
 
 9. (Optional) If you selected the _Block_ action, you can [configure a custom response](#configuring-a-custom-response-for-blocked-requests).
 
@@ -45,7 +45,7 @@ To enable the custom ruleset you created, you must deploy it to your account.
 
 ## Deploy a custom ruleset
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account.
 
 2. Go to Account Home > **WAF** > **Custom rulesets**.
 

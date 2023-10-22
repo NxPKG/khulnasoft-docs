@@ -9,7 +9,7 @@ weight: 1002
 layout: example
 ---
 
-This example is a snippet from our Cloudflare Pages Template repo. 
+This example is a snippet from our Khulnasoft Pages Template repo. 
 
 ```ts
 ---

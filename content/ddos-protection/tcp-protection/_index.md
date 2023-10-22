@@ -4,18 +4,18 @@ pcx_content_type: concept
 weight: 6
 layout: single
 meta:
-  title: Cloudflare Advanced TCP Protection
+  title: Khulnasoft Advanced TCP Protection
 ---
 
-# Cloudflare Advanced TCP Protection
+# Khulnasoft Advanced TCP Protection
 
-Cloudflare Advanced TCP Protection, powered by [`flowtrackd`](https://blog.cloudflare.com/announcing-flowtrackd/), is a stateful TCP inspection engine used to detect and mitigate sophisticated out-of-state TCP attacks such as randomized and spoofed ACK floods or SYN and SYN-ACK floods.
+Khulnasoft Advanced TCP Protection, powered by [`flowtrackd`](https://blog.Khulnasoft.com/announcing-flowtrackd/), is a stateful TCP inspection engine used to detect and mitigate sophisticated out-of-state TCP attacks such as randomized and spoofed ACK floods or SYN and SYN-ACK floods.
 
 Advanced TCP Protection can simultaneously protect against different kinds of attacks:
 * Pinpointed attacks targeting a specific destination IP/port combination.
 * Broad attacks targeting multiple IP addresses of an IP prefix at the same time.
 
-Advanced TCP Protection can track TCP connections even when they move between Cloudflare data centers.
+Advanced TCP Protection can track TCP connections even when they move between Khulnasoft data centers.
 
 ## Availability
 

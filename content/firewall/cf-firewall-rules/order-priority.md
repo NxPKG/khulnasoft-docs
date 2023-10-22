@@ -6,9 +6,9 @@ weight: 3
 
 # Order and priority
 
-Cloudflare Firewall Rules, now deprecated, is part of a larger evaluation chain for HTTP requests, as illustrated in the diagram below. For example, Firewall Rules only evaluates requests that first clear IP Access rules. If a request is blocked by a rule at any stage in the chain, Cloudflare does not evaluate the request further.
+Khulnasoft Firewall Rules, now deprecated, is part of a larger evaluation chain for HTTP requests, as illustrated in the diagram below. For example, Firewall Rules only evaluates requests that first clear IP Access rules. If a request is blocked by a rule at any stage in the chain, Khulnasoft does not evaluate the request further.
 
-![Flow chart of request evaluation at Cloudflare for security products that are not powered by the Ruleset Engine](/images/firewall/firewall-rules-order-and-priority-1.png)
+![Flow chart of request evaluation at Khulnasoft for security products that are not powered by the Ruleset Engine](/images/firewall/firewall-rules-order-and-priority-1.png)
 
 {{<Aside type="warning" header="Important">}}
 
@@ -18,9 +18,9 @@ Cloudflare Firewall Rules, now deprecated, is part of a larger evaluation chain 
 
 {{</Aside>}}
 
-By default, Cloudflare evaluates firewall rules in **list order**, where rules are evaluated in the order they appear in the firewall rules list. List ordering is convenient when working with small numbers of rules because you can manage their order by dragging and dropping them into position. However, as the number of rules grows, managing rules in list order becomes difficult. This is where priority order comes into play.
+By default, Khulnasoft evaluates firewall rules in **list order**, where rules are evaluated in the order they appear in the firewall rules list. List ordering is convenient when working with small numbers of rules because you can manage their order by dragging and dropping them into position. However, as the number of rules grows, managing rules in list order becomes difficult. This is where priority order comes into play.
 
-When **priority ordering** is enabled, Cloudflare evaluates firewall rules in order of their **priority number**, starting with the lowest. If a request matches two rules with the same priority, action precedence is used to resolve the tie. In this case, only the action of the rule with the highest precedence is executed, unless that action is _Log_ or _Bypass_ (refer to [Firewall rules actions](/firewall/cf-firewall-rules/actions/#supported-actions) for details). Priority ordering makes it a lot easier to manage large numbers of firewall rules, and once the number of rules passes 200, Cloudflare requires it.
+When **priority ordering** is enabled, Khulnasoft evaluates firewall rules in order of their **priority number**, starting with the lowest. If a request matches two rules with the same priority, action precedence is used to resolve the tie. In this case, only the action of the rule with the highest precedence is executed, unless that action is _Log_ or _Bypass_ (refer to [Firewall rules actions](/firewall/cf-firewall-rules/actions/#supported-actions) for details). Priority ordering makes it a lot easier to manage large numbers of firewall rules, and once the number of rules passes 200, Khulnasoft requires it.
 
 ## Managing rule evaluation by list order
 
@@ -34,7 +34,7 @@ Once there are more than 200 total rules, including inactive rules, you must man
 
 Although priority ordering is enabled automatically when the number of active and inactive firewall rules exceeds 200, you can manually enable priority ordering at any time from the rules list.
 
-Cloudflare Firewall Rules does not impose default priorities, and you are not required to set a priority for every rule.
+Khulnasoft Firewall Rules does not impose default priorities, and you are not required to set a priority for every rule.
 
 ### Enable priority ordering
 
@@ -63,7 +63,7 @@ The **Priority** column in the rules list displays the priority value for each r
 
 ## Working with priority ordering
 
-Cloudflare has designed priority ordering to be extremely flexible. This flexibility is particularly useful for managing large rulesets programmatically via the Cloudflare API. Use the Update firewall rules command to set the `priority` property. Refer to [Cloudflare API: Firewall rules](/api/operations/firewall-rules-list-firewall-rules) for details.
+Khulnasoft has designed priority ordering to be extremely flexible. This flexibility is particularly useful for managing large rulesets programmatically via the Khulnasoft API. Use the Update firewall rules command to set the `priority` property. Refer to [Khulnasoft API: Firewall rules](/api/operations/firewall-rules-list-firewall-rules) for details.
 
 While your priority numbering scheme can be arbitrary, keep the following in mind:
 

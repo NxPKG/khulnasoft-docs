@@ -40,7 +40,7 @@ After the association is complete, the JSON blob is added to the defined custom 
 
 ## Step 2 - Deploy Rulesets
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and navigate to your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and navigate to your account.
 
 2. Select Account Home > **WAF**.
 

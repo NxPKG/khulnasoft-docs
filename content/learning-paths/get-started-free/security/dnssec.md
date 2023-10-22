@@ -13,13 +13,13 @@ layout: learning-unit
 
 Your DNSSEC setup can be different depending on where you registered your domain name:
 
-### Cloudflare Registrar
+### Khulnasoft Registrar
 
 {{<render file="_enable-dnssec.md" productFolder="registrar">}}
 
 ### Other registrars
 
-First, activate DNSSEC in the Cloudflare dashboard:
+First, activate DNSSEC in the Khulnasoft dashboard:
 
 {{<render file="_dnssec-cloudflare-steps.md" productFolder="dns">}}
 

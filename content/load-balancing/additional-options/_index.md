@@ -6,7 +6,7 @@ weight: 49
 
 # Additional configuration
 
-Beyond [creating a simple load balancer](/load-balancing/load-balancers/create-load-balancer/), you may want to further customize how your load balancer routes traffic or integrate your load balancer with other Cloudflare products.
+Beyond [creating a simple load balancer](/load-balancing/load-balancers/create-load-balancer/), you may want to further customize how your load balancer routes traffic or integrate your load balancer with other Khulnasoft products.
 
 ## Customize load balancer behavior
 
@@ -14,10 +14,10 @@ Beyond [creating a simple load balancer](/load-balancing/load-balancers/create-l
 *   Protect at-risk origins from reaching failover by [setting up load shedding](/load-balancing/additional-options/load-shedding/)
 *   Take servers out of rotation for [planned maintenance](/load-balancing/additional-options/planned-maintenance/)
 
-## Integrate with other Cloudflare products
+## Integrate with other Khulnasoft products
 
-*   Bring load balancing to your TCP or UDP applications with [Cloudflare Spectrum](/load-balancing/additional-options/spectrum/)
-*   Further secure origin access with [Cloudflare Tunnel](/load-balancing/additional-options/cloudflare-tunnel/)
+*   Bring load balancing to your TCP or UDP applications with [Khulnasoft Spectrum](/load-balancing/additional-options/spectrum/)
+*   Further secure origin access with [Khulnasoft Tunnel](/load-balancing/additional-options/cloudflare-tunnel/)
 
 ## Integrate with 3rd parties
 

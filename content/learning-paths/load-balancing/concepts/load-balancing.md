@@ -27,4 +27,4 @@ A load balancer spreads requests across your servers, which prevents any one ser
 
 ## Related resources
 
-For more background information on load balancers, refer to our [Learning Center](https://www.cloudflare.com/learning/performance/what-is-load-balancing/).
+For more background information on load balancers, refer to our [Learning Center](https://www.Khulnasoft.com/learning/performance/what-is-load-balancing/).

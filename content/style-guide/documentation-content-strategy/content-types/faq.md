@@ -68,7 +68,7 @@ Questions, answers
 
 ### Large FAQ pages (>15 questions)
 
-Large FAQ pages (for product suites like Teams/Cloudflare One) will need structuring into sections, and each section will have its own subpage, to facilitate readability and discoverability of content.
+Large FAQ pages (for product suites like Teams/Khulnasoft One) will need structuring into sections, and each section will have its own subpage, to facilitate readability and discoverability of content.
 
 #### Main FAQ page
 
@@ -127,8 +127,8 @@ With this question type, users want to inquire about capabilities. Does the prod
         + (Can/Does) the product...
 + **Answer**
     + Start the answer with Yes/No.
-        + ✅ Yes. Cloudflare Access supports several providers simultaneously.
-        + ❌ Cloudflare Access supports several providers simultaneously.
+        + ✅ Yes. Khulnasoft Access supports several providers simultaneously.
+        + ❌ Khulnasoft Access supports several providers simultaneously.
     + Always follow with a short contextualization. Give the user all the information they need.
 
 ### Procedural
@@ -183,4 +183,4 @@ This is a peculiar question type, in that the user notices something unexpected 
 
 If the FAQ includes more than 5-10 questions, revisit the user workflow and determine if any of the content in the FAQ should live elsewhere in the doc set.
 
-Use sections if your product is large or incorporates several other products (like Cloudflare One). Try to limit the number of questions in each example and revisit the user workflow if the number of FAQs grows unwieldy.
+Use sections if your product is large or incorporates several other products (like Khulnasoft One). Try to limit the number of questions in each example and revisit the user workflow if the number of FAQs grows unwieldy.

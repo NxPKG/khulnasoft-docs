@@ -19,7 +19,7 @@ Watermark profile has many customizable options. However, the default parameters
 ```bash
 curl -X POST -H 'Authorization: Bearer <API_TOKEN>' \
 -F file=@/Users/rchen/cloudflare.png \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks
 ```
 
 ### Step 2: Specify the profile UID at upload
@@ -28,17 +28,17 @@ https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks
 tus-upload --chunk-size 5242880 \
 --header Authentication 'Bearer <API_TOKEN>' \
 --metadata watermark <WATERMARK_UID> \
-/Users/rchen/cat.mp4 https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream
+/Users/rchen/cat.mp4 https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream
 ```
 
 ### Step 3: Done
 
-![Screenshot of a video with Cloudflare watermark at top right](/images/stream/cat.png)
+![Screenshot of a video with Khulnasoft watermark at top right](/images/stream/cat.png)
 
 ## Profiles
 
 To create, list, delete, or get information about the profile, you will need your
-[Cloudflare API token](https://www.cloudflare.com/a/account/my-account).
+[Khulnasoft API token](https://www.Khulnasoft.com/a/account/my-account).
 
 ### Optional parameters
 
@@ -88,7 +88,7 @@ curl -X POST -H "Authorization: Bearer <API_TOKEN>" \
 -F padding=0.05 \
 -F scale=0.15 \
 -F position=upperRight \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks
 ```
 
 ### Use Case 2: Pass a URL to an image
@@ -106,7 +106,7 @@ curl -X POST -H "Authorization: Bearer <API_TOKEN>" \
   "scale": 0.15,
   "position": "upperRight"
 }' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks
 ```
 
 #### Example response to creating a watermark profile
@@ -153,7 +153,7 @@ curl -X POST -H "Authorization: Bearer <API_TOKEN>" \
     "uid": "<WATERMARK_UID>"
   }
 }' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/copy
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/copy
 ```
 
 #### Example response to upload video with a link
@@ -194,7 +194,7 @@ highlight: [10,11,12,13,14,15,16,17,18,19,20,21,22]
 tus-upload --chunk-size 5242880 \
 --header Authentication 'Bearer <API_TOKEN>' \
 --metadata watermark <WATERMARK_UID> \
-<PATH_TO_VIDEO> https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream
+<PATH_TO_VIDEO> https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream
 ```
 
 ### Direct creator uploads
@@ -210,7 +210,7 @@ curl -X POST -H "Authorization: Bearer <API_TOKEN>" \
     "uid": "<WATERMARK_UID>"
   }
 }' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/direct_upload
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/direct_upload
 ```
 
 #### Example response to direct user uploads
@@ -249,7 +249,7 @@ To view a watermark profile that you created:
 
 ```bash
 curl -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks/<WATERMARK_UID>
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks/<WATERMARK_UID>
 ```
 
 ### Example response to get a watermark profile
@@ -281,7 +281,7 @@ To list watermark profiles that you created:
 
 ```bash
 curl -H "Authorization: Bearer <API_TOKEN>" \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks/
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks/
 ```
 
 ### Example response to list watermark profiles
@@ -328,7 +328,7 @@ To delete a watermark profile that you created:
 
 ```bash
 curl -X DELETE -H 'Authorization: Bearer <API_TOKEN>' \
-https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks/<WATERMARK_UID>
+https://api.Khulnasoft.com/client/v4/accounts/<ACCOUNT_ID>/stream/watermarks/<WATERMARK_UID>
 ```
 
 If the operation was successful, it will return a success response:

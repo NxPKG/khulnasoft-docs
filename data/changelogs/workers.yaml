@@ -19,7 +19,7 @@ entries:
 - publish_date: '2023-07-14'
   description: |-
     - An implementation of the [`util.MIMEType`](https://nodejs.org/api/util.html#class-utilmimetype)
-      API from Node.js is now available when the [`nodejs_compat` compatibility flag](https://developers.cloudflare.com/workers/runtime-apis/nodejs/)
+      API from Node.js is now available when the [`nodejs_compat` compatibility flag](https://developers.Khulnasoft.com/workers/runtime-apis/nodejs/)
       is enabled.
 - publish_date: '2023-07-07'
   description: |-
@@ -59,7 +59,7 @@ entries:
     questions about Cloudflare's Developer Platform, is now available to preview!
     Cursor can answer questions about Workers and the Cloudflare Developer Platform,
     and is itself built on Workers. You can read more about Cursor in the [announcement
-    blog](https://blog.cloudflare.com/introducing-cursor-the-ai-assistant-for-docs/).
+    blog](https://blog.Khulnasoft.com/introducing-cursor-the-ai-assistant-for-docs/).
 - publish_date: '2023-05-12'
   description: |-
     - The [`performance.now()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now)

@@ -23,13 +23,13 @@ layout: list
   </thead>
   <tbody>
       <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>...ec9f34e1</td>
       <td>100604,100605</td>
       <td>Atlassian Confluence - Privilege Escalation - CVE:CVE-2023-22515</td>
       <td>N/A</td>
       <td>Block</td>
-      <td>This rule is released for our Cloudflare Free customers as well, rule ID: ...91935fcb</td>
+      <td>This rule is released for our Khulnasoft Free customers as well, rule ID: ...91935fcb</td>
       </tr>
   </tbody>
 </table>

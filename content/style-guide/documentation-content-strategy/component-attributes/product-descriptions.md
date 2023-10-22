@@ -12,7 +12,7 @@ Statements about the product and its benefits for customers.
 
 ## Used in
 
-[Overview (or Landing Page)](/style-guide/documentation-content-strategy/content-types/overview/), Support home page, Cloudflare Docs home page
+[Overview (or Landing Page)](/style-guide/documentation-content-strategy/content-types/overview/), Support home page, Khulnasoft Docs home page
 
 ## Structure
 
@@ -24,7 +24,7 @@ The short description should be a short summary statement about the product. Thi
 
 **Example**
 
-Cloudflare Registrar: Cloudflare's domain registrar
+Khulnasoft Registrar: Khulnasoft's domain registrar
 
 ### Long description
 
@@ -36,4 +36,4 @@ A long product description should summarize the product and the value or benefit
 
 **Example**
 
-Cloudflare Registrar: Manage your domain with Cloudflare Registrar and add an additional layer of security to your DNS records for free.
+Khulnasoft Registrar: Manage your domain with Khulnasoft Registrar and add an additional layer of security to your DNS records for free.

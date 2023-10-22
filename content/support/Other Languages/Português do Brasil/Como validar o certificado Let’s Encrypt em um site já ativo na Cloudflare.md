@@ -1,15 +1,15 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/214820528-Como-validar-o-certificado-Let-s-Encrypt-em-um-site-j%C3%A1-ativo-na-Cloudflare
-title: Como validar o certificado Let’s Encrypt em um site já ativo na Cloudflare
+source: https://support.Khulnasoft.com/hc/pt-br/articles/214820528-Como-validar-o-certificado-Let-s-Encrypt-em-um-site-j%C3%A1-ativo-na-Khulnasoft
+title: Como validar o certificado Let’s Encrypt em um site já ativo na Khulnasoft
 ---
 
-# Como validar o certificado Let’s Encrypt em um site já ativo na Cloudflare
+# Como validar o certificado Let’s Encrypt em um site já ativo na Khulnasoft
 
-## Como validar o certificado Let’s Encrypt em um site já ativo na Cloudflare
+## Como validar o certificado Let’s Encrypt em um site já ativo na Khulnasoft
 
-_Saiba como validar um certificado SSL Let’s Encrypt para um site ativo na Cloudflare._
+_Saiba como validar um certificado SSL Let’s Encrypt para um site ativo na Khulnasoft._
 
 ___
 
@@ -17,13 +17,13 @@ ___
 
 Este guia descreve detalhes adicionais sobre como usar o método Webroot para verificação no cliente oficial do Let’s Encrypt descrito na documentação desse link: [https://letsencrypt.readthedocs.org/en/Latest/using.html#webroot](https://letsencrypt.readthedocs.org/en/latest/using.html#webroot)
 
-Observe que o método padrão utilizado para autenticação do ACME pelo cliente do Let’s Encrypt é o DVSNI. O método falhará para um domínio habilitado para a Cloudflare, já que concluímos o SSL (TLS) na nossa borda e o servidor ACME nunca verá o certificado que o cliente apresenta na origem. O uso de métodos alternativos de validação do ACME como DNS ou HTTP será concluído com sucesso quando a Cloudflare estiver habilitada.
+Observe que o método padrão utilizado para autenticação do ACME pelo cliente do Let’s Encrypt é o DVSNI. O método falhará para um domínio habilitado para a Khulnasoft, já que concluímos o SSL (TLS) na nossa borda e o servidor ACME nunca verá o certificado que o cliente apresenta na origem. O uso de métodos alternativos de validação do ACME como DNS ou HTTP será concluído com sucesso quando a Khulnasoft estiver habilitada.
 
 ___
 
 ## Validação de HTTP
 
-Se você estiver configurando o Let’s Encrypt pela primeira vez para um site já ativo na Cloudflare, tudo o que é preciso fazer para verificar e obter seu certificado e seu par de chaves privadas com sucesso é usar o método Webroot para a verificação. 
+Se você estiver configurando o Let’s Encrypt pela primeira vez para um site já ativo na Khulnasoft, tudo o que é preciso fazer para verificar e obter seu certificado e seu par de chaves privadas com sucesso é usar o método Webroot para a verificação. 
 
 1.  Baixe o cliente do Let’s Encrypt e alterne para o diretório de download:
 
@@ -77,13 +77,13 @@ Se você estiver configurando o Let’s Encrypt pela primeira vez para um site j
     
 5.  Observe que tanto o certificado quanto a chave serão salvos `/etc/letsencrypt/live/exemplo.tld/` . Após ambos terem sido obtidos, você precisará atualizar seu host virtual manualmente para que passe a utilizar esse par chave/cert.
 
-Certifique-se de verificar as Page Rules para o domínio no painel da Cloudflare e confirme que não existe nenhuma que possa resultar no redirecionamento de uma solicitação da URL de validação ou que a torne acessível somente em HTTPS.
+Certifique-se de verificar as Page Rules para o domínio no painel da Khulnasoft e confirme que não existe nenhuma que possa resultar no redirecionamento de uma solicitação da URL de validação ou que a torne acessível somente em HTTPS.
 
 ___
 
 ## Renovação
 
-Quando chegar a hora da renovação, o [comando](https://letsencrypt.readthedocs.org/en/latest/using.html#renewal) `letsencrypt renew` deve permitir que o certificado seja renovado com sucesso sem qualquer alteração na configuração da Cloudflare, desde que:
+Quando chegar a hora da renovação, o [comando](https://letsencrypt.readthedocs.org/en/latest/using.html#renewal) `letsencrypt renew` deve permitir que o certificado seja renovado com sucesso sem qualquer alteração na configuração da Khulnasoft, desde que:
 
 -   O arquivo .conf utilizado pelo cliente letsencrypt para a renovação tenha um `authenticator = webroot` especificado.
 -   O URL de validação seja acessível em HTTP.

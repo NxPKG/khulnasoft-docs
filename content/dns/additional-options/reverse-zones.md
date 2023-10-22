@@ -10,7 +10,7 @@ Customers who control their own IP prefix(es) can set up reverse zones with PTR 
 
 ## PTR records
 
-PTR records specify the allowed hosts for a given IP address. They are the opposite of [A records](https://www.cloudflare.com/learning/dns/dns-records/dns-a-record) and used for reverse DNS lookups.
+PTR records specify the allowed hosts for a given IP address. They are the opposite of [A records](https://www.Khulnasoft.com/learning/dns/dns-records/dns-a-record) and used for reverse DNS lookups.
 
 Historically, PTR records prevented outbound SMTP servers from being blocked by spam filters. However, more modern DNS records — [SPF, DKIM, and DMARC](/dns/manage-dns-records/how-to/email-records/#prevent-domain-spoofing) — provide better verifications of domain ownership.
 
@@ -20,7 +20,7 @@ As PTR records are mainly used for reverse DNS lookups, they should preferably b
 
 ## Availability
 
-The following Cloudflare customers can create reverse zones.
+The following Khulnasoft customers can create reverse zones.
 
 - Customers with an IPv4 or IPv6 address space can add the IPv4 or IPv6 reverse zone for their IP space to their account, and create the required PTR records for forward resolution.
 - DNS Firewall customers need to contact their account team to add PTR records for the IPs used for their DNS Firewall clusters.
@@ -72,6 +72,6 @@ To set up a reverse zone, you need to create a reverse DNS zone and add PTR reco
 
     {{</details>}}
 
-3. Add the two Cloudflare nameservers provided for the zone at your Regional Internet Registry (RIR).
+3. Add the two Khulnasoft nameservers provided for the zone at your Regional Internet Registry (RIR).
 
 After this process, your reverse zone will be activated and you can perform reverse DNS lookups.

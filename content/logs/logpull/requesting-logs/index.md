@@ -33,13 +33,13 @@ The API expects endpoint parameters in the GET request query string. The followi
 `logs/received`
 
 ```bash
-https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logs/received?start=<unix|rfc3339>&end=<unix|rfc3339>[&count=<int>][&sample=<float>][&fields=<FIELDS>][&timestamps=<string>][&CVE-2021-44228=<boolean>]
+https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logs/received?start=<unix|rfc3339>&end=<unix|rfc3339>[&count=<int>][&sample=<float>][&fields=<FIELDS>][&timestamps=<string>][&CVE-2021-44228=<boolean>]
 ```
 
 `logs/rayids/<RAY_ID>`
 
 ```bash
-https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logs/rayids/<RAY_ID>?[&fields=<string>][&timestamps=<strings>]
+https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logs/rayids/<RAY_ID>?[&fields=<string>][&timestamps=<strings>]
 ```
 
 The following table describes the parameters available:
@@ -76,7 +76,7 @@ The overlap will be handled correctly.
 curl -s \
     -H "X-Auth-Email: <EMAIL>" \
     -H "X-Auth-Key: <API_KEY>" \
-    "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logs/received?start=2017-07-18T22:00:00Z&end=2017-07-18T22:01:00Z&count=1&fields=ClientIP,ClientRequestHost,ClientRequestMethod,ClientRequestURI,EdgeEndTimestamp,EdgeResponseBytes,EdgeResponseStatus,EdgeStartTimestamp,RayID"
+    "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logs/received?start=2017-07-18T22:00:00Z&end=2017-07-18T22:01:00Z&count=1&fields=ClientIP,ClientRequestHost,ClientRequestMethod,ClientRequestURI,EdgeEndTimestamp,EdgeResponseBytes,EdgeResponseStatus,EdgeStartTimestamp,RayID"
 ```
 
 `logs/rayids/<RAY_ID>`
@@ -85,7 +85,7 @@ curl -s \
 curl -s \
     -H "X-Auth-Email: <EMAIL>" \
     -H "X-Auth-Key: <API_KEY>" \
-    "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logs/rayids/47ff6e2c812d3ccb?timestamps=rfc3339"
+    "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logs/rayids/47ff6e2c812d3ccb?timestamps=rfc3339"
 ```
 
 {{<Aside type="note" header="Note">}}
@@ -98,7 +98,7 @@ The IATA code returned as part of the **Ray ID** does not need to included in th
 
 Unless specified in the **fields** parameter, the API returns a limited set of log fields. This default field set may change at any time. The list of all available fields is at:
 
-`https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logs/received/fields`
+`https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logs/received/fields`
 
 The order in which fields are specified does not matter, and the order of fields in the response is not specified.
 
@@ -108,7 +108,7 @@ Using bash subshell and `jq`, you can download the logs with all available field
 curl -s \
     -H "X-Auth-Email: <EMAIL>" \
     -H "X-Auth-Key: <API_KEY>" \
-    "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logs/received?start=2017-07-18T22:00:00Z&end=2017-07-18T22:01:00Z&count=1&fields=$(curl -s -H "X-Auth-Email: <EMAIL>" -H "X-Auth-Key: <API_KEY>" "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/logs/received/fields" | jq '. | to_entries[] | .key' -r | paste -sd "," -)"
+    "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logs/received?start=2017-07-18T22:00:00Z&end=2017-07-18T22:01:00Z&count=1&fields=$(curl -s -H "X-Auth-Email: <EMAIL>" -H "X-Auth-Key: <API_KEY>" "https://api.Khulnasoft.com/client/v4/zones/<ZONE_ID>/logs/received/fields" | jq '. | to_entries[] | .key' -r | paste -sd "," -)"
 ```
 
 Refer to [HTTP request fields](/logs/reference/log-fields/zone/http_requests) for the currently available fields.

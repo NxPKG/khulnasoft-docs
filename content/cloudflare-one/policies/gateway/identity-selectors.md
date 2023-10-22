@@ -6,7 +6,7 @@ weight: 9
 
 # Identity-based policies
 
-With Cloudflare Zero Trust, you can create Secure Web Gateway policies that filter outbound traffic down to the user identity level. To do that, you can build DNS, HTTP or Network policies using a set of [identity-based selectors](#identity-based-selectors). These selectors require you to deploy the Zero Trust WARP client in [Gateway with WARP mode](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/).
+With Khulnasoft Zero Trust, you can create Secure Web Gateway policies that filter outbound traffic down to the user identity level. To do that, you can build DNS, HTTP or Network policies using a set of [identity-based selectors](#identity-based-selectors). These selectors require you to deploy the Zero Trust WARP client in [Gateway with WARP mode](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/).
 
 ## Gateway identity checks
 
@@ -75,7 +75,7 @@ In Gateway, a **User Group** refers to a group in your IdP (for example, an Okta
 
 ## IdP groups in Gateway
 
-Cloudflare Gateway can integrate with your organization's identity providers (IdPs). Before building a Gateway policy for IdP users or groups, be sure to [add the IdP as an authentication method](/cloudflare-one/identity/idp-integration/).
+Khulnasoft Gateway can integrate with your organization's identity providers (IdPs). Before building a Gateway policy for IdP users or groups, be sure to [add the IdP as an authentication method](/cloudflare-one/identity/idp-integration/).
 
 Because IdPs expose user groups in different formats, reference the list below to choose the appropriate identity-based selector.
 

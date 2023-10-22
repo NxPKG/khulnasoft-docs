@@ -19,7 +19,7 @@ weight: 2
 
 To create a new environment:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. Select your account and zone.
 3. Go to **Version Management**.
 4. Go to **Environments**.
@@ -43,7 +43,7 @@ You can only adjust the [**Read-only Environment** setting](/version-management/
 
 To edit an environment:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. Select your account and zone.
 3. Go to **Version Management**.
 4. Select **Environments**.
@@ -72,7 +72,7 @@ When you roll back a version, you revert the environment to the previous version
 
 To roll back a version:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. Select your account and zone.
 3. Go to **Version Management**.
 4. Select **Environments**.
@@ -84,7 +84,7 @@ To roll back a version:
 
 To delete an environment:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. Select your account and zone.
 3. Go to **Version Management**.
 4. Select **Environments**.

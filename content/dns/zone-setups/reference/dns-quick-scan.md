@@ -5,15 +5,15 @@ title: Records quick scan
 
 # DNS records quick scan
 
-To help all customers get started when a new zone is created, Cloudflare offers a DNS records quick scan.
+To help all customers get started when a new zone is created, Khulnasoft offers a DNS records quick scan.
 
 ## How the quick scan works
 
-The scan is built upon a list of recurring patterns of DNS records `type` and `name`, that Cloudflare identifies as being used in existing active zones.
+The scan is built upon a list of recurring patterns of DNS records `type` and `name`, that Khulnasoft identifies as being used in existing active zones.
 
 Since DNS record names are automatically appended with the domain that the records are set for, two completely different domains - `domain.com` and `test.xyz`, for example - would probably have a few matches if the lists of DNS records on their zones were compared side by side and the criterion was `type`/`name` combination.
 
-The DNS records `content` would be different for each zone but, based on record `type` and `name`, Cloudflare can identify recurring patterns and expect to find the same pairs when a new domain is added.
+The DNS records `content` would be different for each zone but, based on record `type` and `name`, Khulnasoft can identify recurring patterns and expect to find the same pairs when a new domain is added.
 
 The following section provides some examples of DNS records `type`/`name` combinations that the scan usually finds.
 
@@ -29,7 +29,7 @@ The following section provides some examples of DNS records `type`/`name` combin
 
 The value `@` indicates the domain apex - in the example above, `domain.com` or `test.xyz`.
 
-Virtually all zones on a full setup are expected to have at least one [address record](https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/) pointing to the IP address where the website or application is hosted.
+Virtually all zones on a full setup are expected to have at least one [address record](https://www.Khulnasoft.com/learning/dns/dns-records/dns-a-record/) pointing to the IP address where the website or application is hosted.
 
 ### `www` records
 
@@ -71,9 +71,9 @@ Mail exchanger (`MX`) and other record types combined with names like `mail`, `w
 
 ## Limitations
 
-Since the DNS records quick scan is based on this predefined list of commonly used record types and names, and is not tailored to the specific zone you are adding to Cloudflare, there can be cases where not all records are picked up.
+Since the DNS records quick scan is based on this predefined list of commonly used record types and names, and is not tailored to the specific zone you are adding to Khulnasoft, there can be cases where not all records are picked up.
 
-For example, if you have very specific hostnames - such as `my-store1900.example.com` instead of `store.example.com` - or if you have set up a [DKIM record](https://www.cloudflare.com/learning/dns/dns-records/dns-dkim-record/) that uses a more custom name - `this._domainkey` instead of `default._domainkey` - it is expected that the scan will not find the specific DNS records.
+For example, if you have very specific hostnames - such as `my-store1900.example.com` instead of `store.example.com` - or if you have set up a [DKIM record](https://www.Khulnasoft.com/learning/dns/dns-records/dns-dkim-record/) that uses a more custom name - `this._domainkey` instead of `default._domainkey` - it is expected that the scan will not find the specific DNS records.
 
 {{<Aside type="warning" header="Important">}}
 

@@ -10,7 +10,7 @@ meta:
 
 ## Prefixes
 
-Advanced TCP Protection protects the IP prefixes you select from sophisticated TCP attacks. A prefix can be an IP address or an IP range in CIDR format. You must add prefixes to Advanced TCP Protection so that Cloudflare can analyze incoming packets and offer protection against sophisticated TCP DDoS attacks.
+Advanced TCP Protection protects the IP prefixes you select from sophisticated TCP attacks. A prefix can be an IP address or an IP range in CIDR format. You must add prefixes to Advanced TCP Protection so that Khulnasoft can analyze incoming packets and offer protection against sophisticated TCP DDoS attacks.
 
 Prefixes added to Advanced TCP Protection must be one of the following:
 
@@ -45,7 +45,7 @@ Each Advanced TCP Protection system component has its own filters. You can confi
 
 When there is a match, a filter will alter the execution mode for all configured rules in a given system component (SYN flood protection or out-of-state TCP protection), including disabled rules.
 
-For instructions on creating filters in the Cloudflare dashboard, refer to [Create a filter](/ddos-protection/tcp-protection/how-to/create-filter/). For API examples, refer to [Common API calls](/ddos-protection/tcp-protection/api/examples/).
+For instructions on creating filters in the Khulnasoft dashboard, refer to [Create a filter](/ddos-protection/tcp-protection/how-to/create-filter/). For API examples, refer to [Common API calls](/ddos-protection/tcp-protection/api/examples/).
 
 ### Example use case
 

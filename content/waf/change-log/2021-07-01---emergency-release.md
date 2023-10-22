@@ -23,14 +23,14 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100197</td>
       <td>Block ReGeorg webshell</td>
       <td>N/A</td>
       <td>Block</td>
     </tr>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100197B</td>
       <td>Block ReGeorg webshell</td>
       <td>N/A</td>

@@ -17,7 +17,7 @@ meta:
 
 ## Integration permissions
 
-For the GitHub integration to function, Cloudflare CASB requires the following GitHub API permissions:
+For the GitHub integration to function, Khulnasoft CASB requires the following GitHub API permissions:
 
 | Permission                  | Access      | Description                                                                                             |
 | --------------------------- | ----------- | ------------------------------------------------------------------------------------------------------- |

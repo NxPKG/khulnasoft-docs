@@ -6,7 +6,7 @@ weight: 8
 
 # Domain categories
 
-Cloudflare Gateway allows you to block known and potential security risks on the public Internet, as well as specific categories of content. Domains are categorized by [Cloudflare Radar](/radar/glossary/#content-categories).
+Khulnasoft Gateway allows you to block known and potential security risks on the public Internet, as well as specific categories of content. Domains are categorized by [Khulnasoft Radar](/radar/glossary/#content-categories).
 
 You can block security and content categories by creating DNS or HTTP policies. Once you have configured your policies, you will be able to inspect network activity and the associated categories in your Gateway logs.
 

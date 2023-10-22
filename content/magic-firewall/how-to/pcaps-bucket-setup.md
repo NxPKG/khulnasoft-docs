@@ -17,7 +17,7 @@ Learn how to set up a bucket for use with full packet captures.
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select you account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select you account.
 2. Select **Magic Transit** or **Magic WAN**.
 3. In **Packet captures**, select **Start a capture**.
 4. From the **Packet captures** page, select the **Buckets** tab.
@@ -62,7 +62,7 @@ The `bucket` field should be the URI of the bucket. For Amazon S3, the `bucket` 
 ---
 header: Ownership challenge request example
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps/ownership \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pcaps/ownership \
 --header 'Content-Type: application/json' \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
@@ -98,7 +98,7 @@ Validate the bucket by inserting the copied text in the `ownership_text` below:
 ---
 header: Bucket validation example
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps/ownership/validate \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pcaps/ownership/validate \
 --header 'Content-Type: application/json' \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
@@ -145,7 +145,7 @@ View a list of all buckets configured on your account.
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select you account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select you account.
 2. Select **Magic Transit** or **Magic WAN**.
 3. In **Packet captures**, select **Start a capture**.
 4. Select the **Buckets** tab.
@@ -159,7 +159,7 @@ The list of buckets associated with your account displays.
 ---
 header: Bucket list request example
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps/ownership \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pcaps/ownership \
 -H 'Content-Type: application/json' \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>"

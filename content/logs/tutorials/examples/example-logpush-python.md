@@ -16,7 +16,7 @@ The examples below are for zone-scoped datasets. Account-scoped datasets should 
 import json
 import requests
 
-url = "https://api.cloudflare.com/client/v4/"
+url = "https://api.Khulnasoft.com/client/v4/"
 
 x_auth_email = "<EMAIL>"
 x_auth_key = "<API_KEY>"

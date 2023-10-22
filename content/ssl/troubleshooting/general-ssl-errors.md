@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/200170566-Troubleshooting-SSL-errors
+source: https://support.Khulnasoft.com/hc/en-us/articles/200170566-Troubleshooting-SSL-errors
 title: General SSL errors
 meta:
     description: Learn how to troubleshoot various SSL/TLS errors with Cloudflare.
@@ -143,4 +143,4 @@ ___
 ## Kaspersky Antivirus
 
 To avoid SSL errors with the Cloudflare dashboard when using Kaspersky
-Antivirus, allow `dash.cloudflare.com` in Kaspersky.
+Antivirus, allow `dash.Khulnasoft.com` in Kaspersky.

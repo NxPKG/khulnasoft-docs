@@ -5,7 +5,7 @@ weight: 1
 layout: learning-unit
 ---
 
-Though Cloudflare automatically hides your origin server IP address when you [proxy your DNS records](/learning-paths/prevent-ddos-attacks/baseline/proxy-dns-records/), there are other ways to discover an IP address.
+Though Khulnasoft automatically hides your origin server IP address when you [proxy your DNS records](/learning-paths/prevent-ddos-attacks/baseline/proxy-dns-records/), there are other ways to discover an IP address.
 
 To prevent attackers from discovering your origin's IP address, review the following suggestions.
 
@@ -13,13 +13,13 @@ To prevent attackers from discovering your origin's IP address, review the follo
 
 DNS records are in the public domain, meaning that - even though your IP addresses are hidden once you proxy your DNS records - someone could uncover historical records of your addresses.
 
-For additional security, you could rotate the IP addresses of your origin server, which would also require [updating your DNS records](/dns/manage-dns-records/how-to/create-dns-records/#edit-dns-records) within Cloudflare.
+For additional security, you could rotate the IP addresses of your origin server, which would also require [updating your DNS records](/dns/manage-dns-records/how-to/create-dns-records/#edit-dns-records) within Khulnasoft.
 
 ## Review unproxied DNS records
 
 Unproxied DNS records - also known as **DNS-only** records - can sometimes contain origin IP information, especially those used for FTP or SSH.
 
-Review these records to make sure they do not contain origin IP information or use [Cloudflare Spectrum](/spectrum/) to proxy these records.
+Review these records to make sure they do not contain origin IP information or use [Khulnasoft Spectrum](/spectrum/) to proxy these records.
 
 ## Conceal unproxied DNS records
 

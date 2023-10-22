@@ -3,9 +3,9 @@ title: About
 pcx_content_type: navigation
 weight: 3
 meta:
-  title: Understand Cloudflare Network Analytics v2
+  title: Understand Khulnasoft Network Analytics v2
 ---
 
-# Understand Cloudflare Network Analytics
+# Understand Khulnasoft Network Analytics
 
 {{<directory-listing>}}

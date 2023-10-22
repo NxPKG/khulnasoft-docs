@@ -7,13 +7,13 @@ meta:
 
 # Origin Cache Control
 
-Set `Cache-Control` headers to tell Cloudflare how to handle content from the origin.
+Set `Cache-Control` headers to tell Khulnasoft how to handle content from the origin.
 
-When a user sends an HTTP request, the user’s request URL is matched against a [list of cacheable file extensions](/cache/concepts/default-cache-behavior/#default-cached-file-extensions). If the request matches an extension on this list, Cloudflare serves the resource from cache if it is present. If the content is stale in Cloudflare’s cache, Cloudflare attempts to revalidate the content with the origin before serving the response to the client.
+When a user sends an HTTP request, the user’s request URL is matched against a [list of cacheable file extensions](/cache/concepts/default-cache-behavior/#default-cached-file-extensions). If the request matches an extension on this list, Khulnasoft serves the resource from cache if it is present. If the content is stale in Khulnasoft’s cache, Khulnasoft attempts to revalidate the content with the origin before serving the response to the client.
 
-In the response, Cloudflare first examines its caches in multiple network locations for content. If the resource is not present in the cache, Cloudflare requests the resource from your origin web server to fill the cache. The response is then sent to the client who initiated the request.
+In the response, Khulnasoft first examines its caches in multiple network locations for content. If the resource is not present in the cache, Khulnasoft requests the resource from your origin web server to fill the cache. The response is then sent to the client who initiated the request.
 
-At this point, Cloudflare’s cache logic examines the HTTP response received from your origin server. Based on how Cloudflare interprets request headers, the response is either deemed cacheable and written to disk for use with the next request for the same resource, or the request is deemed un-cacheable which means the next request misses the cache and repeats this flow.
+At this point, Khulnasoft’s cache logic examines the HTTP response received from your origin server. Based on how Khulnasoft interprets request headers, the response is either deemed cacheable and written to disk for use with the next request for the same resource, or the request is deemed un-cacheable which means the next request misses the cache and repeats this flow.
 
 ## Cache-control directives
 
@@ -34,7 +34,7 @@ Directives can be broken down into four groups: cacheability, expiration, revali
 Cacheability refers to whether or not a resource should enter a cache, and the directives below indicate a resource’s cacheability.
 
 - `public` — Indicates any cache may store the response, even if the response is normally non-cacheable or cacheable only within a private cache.
-- `private` — Indicates the response message is intended for a single user (for example, a browser cache) and must not be stored by a shared cache like Cloudflare or a corporate proxy.
+- `private` — Indicates the response message is intended for a single user (for example, a browser cache) and must not be stored by a shared cache like Khulnasoft or a corporate proxy.
 - `no-store` — Indicates any cache (i.e., a client or proxy cache) must not store any part of either the immediate request or response.
 
 ### Expiration
@@ -43,11 +43,11 @@ Expiration refers to how long a resource should remain in the cache, and the dir
 
 {{<Aside type="note" header="Note">}}
 
-Cloudflare respects whichever value is higher: the [Browser Cache TTL](/cache/how-to/edge-browser-cache-ttl/) in Cloudflare or the `max-age` header. You can also simultaneously specify a Cloudflare Edge Cache TTL different than a Browser’s Cache TTL respectively via the `s-maxage` and `max-age` Cache-Control headers.
+Khulnasoft respects whichever value is higher: the [Browser Cache TTL](/cache/how-to/edge-browser-cache-ttl/) in Khulnasoft or the `max-age` header. You can also simultaneously specify a Khulnasoft Edge Cache TTL different than a Browser’s Cache TTL respectively via the `s-maxage` and `max-age` Cache-Control headers.
 
-When using Origin Cache-Control and setting `max-age=0`, Cloudflare prefers to cache and revalidate. With Origin Cache-Control off and `max-age=0`, Cloudflare will bypass cache.
+When using Origin Cache-Control and setting `max-age=0`, Khulnasoft prefers to cache and revalidate. With Origin Cache-Control off and `max-age=0`, Khulnasoft will bypass cache.
 
-When setting `no-cache` with Origin Cache-Control off, Cloudflare does not cache. When setting `no-cache` with Origin Cache-Control on, Cloudflare caches and always revalidates.
+When setting `no-cache` with Origin Cache-Control off, Khulnasoft does not cache. When setting `no-cache` with Origin Cache-Control on, Khulnasoft caches and always revalidates.
 
 {{</Aside>}}
 
@@ -73,8 +73,8 @@ The `stale-if-error` directive is ignored if [Always Online](/cache/how-to/alway
 Additional directives that influence cache behavior are listed below.
 
 - `no-transform` — Indicates that an intermediary — regardless of whether it implements a cache — must not transform the payload.
-- `vary` — Cloudflare does not consider vary values in caching decisions. Nevertheless, vary values are respected when [Vary for images](/cache/advanced-configuration/vary-for-images/) is configured and when the vary header is [`vary: accept-encoding`](/speed/optimization/content/brotli/).
-- `immutable` — Indicates to clients the response body does not change over time. The resource, if unexpired, is unchanged on the server. The user should not send a conditional revalidation for it (for example, `If-None-Match` or `If-Modified-Since`) to check for updates, even when the user explicitly refreshes the page. This directive has no effect on public caches like Cloudflare, but does change browser behavior.
+- `vary` — Khulnasoft does not consider vary values in caching decisions. Nevertheless, vary values are respected when [Vary for images](/cache/advanced-configuration/vary-for-images/) is configured and when the vary header is [`vary: accept-encoding`](/speed/optimization/content/brotli/).
+- `immutable` — Indicates to clients the response body does not change over time. The resource, if unexpired, is unchanged on the server. The user should not send a conditional revalidation for it (for example, `If-None-Match` or `If-Modified-Since`) to check for updates, even when the user explicitly refreshes the page. This directive has no effect on public caches like Khulnasoft, but does change browser behavior.
 
 ## Origin Cache-Control behavior
 
@@ -323,11 +323,11 @@ This configuration also disables transformation like gzip or brotli compression 
 
 `Cache-Control: public, max-age=3600, stale-if-error=60`
 
-With this configuration, Cloudflare attempts to revalidate the content with the origin server after it has been in cache for 3600 seconds (one hour). If the server returns an error instead of proper revalidation responses, Cloudflare continues serving the stale resource for a total of one minute beyond the expiration of the resource.
+With this configuration, Khulnasoft attempts to revalidate the content with the origin server after it has been in cache for 3600 seconds (one hour). If the server returns an error instead of proper revalidation responses, Khulnasoft continues serving the stale resource for a total of one minute beyond the expiration of the resource.
 
 {{</details>}}
 
-{{<details header="Cache assets for different amounts of time on Cloudflare and in visitor browsers">}}
+{{<details header="Cache assets for different amounts of time on Khulnasoft and in visitor browsers">}}
 
 `Cache-Control: public, max-age=7200, s-maxage=3600`
 
@@ -341,11 +341,11 @@ This configuration indicates the asset is fresh for 600 seconds. The asset can b
 
 {{</details>}}
 
-## Interaction with other Cloudflare features
+## Interaction with other Khulnasoft features
 
 ### Edge Cache TTL
 
-[Edge Cache TTL](/cache/how-to/edge-browser-cache-ttl/#edge-cache-ttl) Page Rules override `s-maxage` and disable revalidation directives if present. When Origin Cache-Control is enabled at Cloudflare, the original Cache-Control header passes downstream from our edge even if Edge Cache TTL overrides are present. Otherwise, when Origin Cache-Control is disabled at Cloudflare, Cloudflare overrides the origin cache control.
+[Edge Cache TTL](/cache/how-to/edge-browser-cache-ttl/#edge-cache-ttl) Page Rules override `s-maxage` and disable revalidation directives if present. When Origin Cache-Control is enabled at Khulnasoft, the original Cache-Control header passes downstream from our edge even if Edge Cache TTL overrides are present. Otherwise, when Origin Cache-Control is disabled at Khulnasoft, Khulnasoft overrides the origin cache control.
 
 ### Browser Cache TTL
 

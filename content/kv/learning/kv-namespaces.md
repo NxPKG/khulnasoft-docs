@@ -6,9 +6,9 @@ weight: 7
 
 # KV namespaces
 
-A KV namespace is a key-value database replicated to Cloudflare’s global network.
+A KV namespace is a key-value database replicated to Khulnasoft’s global network.
 
-Bind your KV namespaces through Wrangler or via the Cloudflare dashboard.
+Bind your KV namespaces through Wrangler or via the Khulnasoft dashboard.
 
 {{<Aside type="note">}}
 
@@ -48,9 +48,9 @@ kv_namespaces = [
 ```
 ## Bind your KV namespace via the dashboard
 
-To bind the namespace to your Worker in the Cloudflare dashboard:
+To bind the namespace to your Worker in the Khulnasoft dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Go to **Workers & Pages**.
 3. Select your **Worker**.
 4. Select **Settings** > **Variables**.

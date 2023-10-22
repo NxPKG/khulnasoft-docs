@@ -1,14 +1,14 @@
 ---
 pcx_content_type: reference
-source: https://support.cloudflare.com/hc/en-us/articles/360038696631-Understanding-Cloudflare-Network-Analytics-v1
+source: https://support.Khulnasoft.com/hc/en-us/articles/360038696631-Understanding-Khulnasoft-Network-Analytics-v1
 title: Network Analytics v1 (deprecated)
 meta:
-  title: Cloudflare Network Analytics v1 (deprecated)
+  title: Khulnasoft Network Analytics v1 (deprecated)
   description: Network Analytics v1 (deprecated) provides near real-time visibility into network and transport-layer traffic patterns and DDoS attacks.
 weight: 3
 ---
 
-{{<heading-pill style="deprecated">}} Cloudflare Network Analytics v1 {{</heading-pill>}}
+{{<heading-pill style="deprecated">}} Khulnasoft Network Analytics v1 {{</heading-pill>}}
 
 {{<Aside type="warning">}}
 - {{<render file="_network-analytics-v1-deprecation.md">}}
@@ -17,19 +17,19 @@ weight: 3
 
 Access to Network Analytics requires the following:
 
--   A Cloudflare Enterprise plan
--   Cloudflare [Magic Transit](/magic-transit/) or [Spectrum](/spectrum/).
+-   A Khulnasoft Enterprise plan
+-   Khulnasoft [Magic Transit](/magic-transit/) or [Spectrum](/spectrum/).
 
-Cloudflare’s **Network Analytics** view provides near real-time visibility into network and transport-layer traffic patterns and DDoS attacks. Network Analytics visualizes packet and bit-level data, the same data available via the [GraphQL Analytics API](/analytics/graphql-api/).
+Khulnasoft’s **Network Analytics** view provides near real-time visibility into network and transport-layer traffic patterns and DDoS attacks. Network Analytics visualizes packet and bit-level data, the same data available via the [GraphQL Analytics API](/analytics/graphql-api/).
 
 ![Analytics panel showing packets summary per type](/images/analytics/network-analytics/v1-main-dashboard.png)
 
 Network Analytics accelerates reporting and investigation of malicious traffic. You can filter data by these parameters:
 
--   Mitigation action taken by Cloudflare
+-   Mitigation action taken by Khulnasoft
 -   Source IP, port, ASN
 -   Destination IP and port
--   The Cloudflare data center city and country of where the traffic was observed
+-   The Khulnasoft data center city and country of where the traffic was observed
 -   Attack size, type, rate, and duration
 -   TCP flag 
 -   IP version
@@ -45,7 +45,7 @@ ___
 
 ## Access Network Analytics v1
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select an account that has access to Magic Transit or Spectrum.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select an account that has access to Magic Transit or Spectrum.
 2. Go to Account Home > **Analytics & Logs** > **Network Analytics**.
 
 ___
@@ -154,7 +154,7 @@ The table below shows the range of fields, operators, and values you can use to 
 
 | Field | Operators | Value |
 | --- | --- | --- |
-| Action | Equals<br/>Does not equal | **Allow:** Traffic allowed through Cloudflare's automated DDoS protection systems. May also include traffic mitigated by Firewall Rules, flowtrackd and L7 rules.<br/>**Block:** Traffic blocked by Cloudflare's automated DDoS protection systems.<br/>**Connection-tracking:** Applies only exclusively to L7, as Magic Transit is excluded from scope and no conntrack ever runs for Magic Transit prefixes.<br/>**Rate-limit:** Can be applied per source IP, subnet or any connection. The decision is made programmatically based on heuristics.<br/>**Monitor:** Attacks which were identified but have chosen to simply observe and not mitigate with any rule. |
+| Action | Equals<br/>Does not equal | **Allow:** Traffic allowed through Khulnasoft's automated DDoS protection systems. May also include traffic mitigated by Firewall Rules, flowtrackd and L7 rules.<br/>**Block:** Traffic blocked by Khulnasoft's automated DDoS protection systems.<br/>**Connection-tracking:** Applies only exclusively to L7, as Magic Transit is excluded from scope and no conntrack ever runs for Magic Transit prefixes.<br/>**Rate-limit:** Can be applied per source IP, subnet or any connection. The decision is made programmatically based on heuristics.<br/>**Monitor:** Attacks which were identified but have chosen to simply observe and not mitigate with any rule. |
 | Attack ID | Equals<br/>Does not equal | Attack number |
 | Attack Type | Equals<br/>Does not equal | UDP Flood<br/>SYN Flood<br/>ACK Flood<br/>RST Flood<br/>LDAP Flood<br/>Christmas Flood<br/>FIN Flood<br/>GRE Flood<br/>ICMP Flood |
 | Destination IP | Equals<br/>Does not equal| IP address |
@@ -232,7 +232,7 @@ ___
 
 ### Export activity log data 
 
-You can export up to 500 raw events from the Activity log at a time. This option is useful when you need to combine and analyze Cloudflare data with data stored in a separate system or database, such as a security information and event management system (SIEM).
+You can export up to 500 raw events from the Activity log at a time. This option is useful when you need to combine and analyze Khulnasoft data with data stored in a separate system or database, such as a security information and event management system (SIEM).
 
 To export log data, select **Export**.
 
@@ -252,23 +252,23 @@ ___
 
 Network Analytics currently has these limitations:
 
--   Network Analytics v1 provides insights on [denial of service daemon (dosd)](https://blog.cloudflare.com/who-ddosd-austin/) attacks. Although it provides a timely view of the data, it does not have a complete view of all events. 
+-   Network Analytics v1 provides insights on [denial of service daemon (dosd)](https://blog.Khulnasoft.com/who-ddosd-austin/) attacks. Although it provides a timely view of the data, it does not have a complete view of all events. 
 
 -   The following data sources are not available in Network Analytics v1:
 
     -   Firewall Rules (available in [Network Analytics v2](/analytics/network-analytics/))
     -   Application layer rules
     -   Gatekeeper and manually applied rules
-    -   [flowtrackd](https://blog.cloudflare.com/announcing-flowtrackd/) (Advanced TCP protection) (available in Network Analytics v2)
+    -   [flowtrackd](https://blog.Khulnasoft.com/announcing-flowtrackd/) (Advanced TCP protection) (available in Network Analytics v2)
     -   WARP traffic and [Orange-clouded traffic](/fundamentals/concepts/how-cloudflare-works/)
 
--   Data from Cloudflare services that proxy traffic, such as CDN, is not available in Network Analytics.
+-   Data from Khulnasoft services that proxy traffic, such as CDN, is not available in Network Analytics.
 
 ___
 
 ## Frequently asked questions
 
-### How long does Cloudflare retain data in the Network Analytics portal?
+### How long does Khulnasoft retain data in the Network Analytics portal?
 
 If you are using Network Analytics v2 (NAv2), the range of historical data you can query is **90 days**.
 
@@ -304,7 +304,7 @@ GraphQL data nodes:
 When working with attack logs in the dashboard, keep the following in mind:
 
 -   Attack logs are stored with start and end timestamps, packet and bit statistics for minimum, maximum, and average data rate, as well as totals, attack type, and action taken. 
--   Source IP addresses are considered personally identifiable information. Therefore, Cloudflare only stores them for 30 days. After 30 days, source IP addresses are discarded, and the logs are rolled up first into 1-hour groups, then 1-day groups. The 1-hour rollups are stored for 6 month. The one day rollups are stored for 1 year.
+-   Source IP addresses are considered personally identifiable information. Therefore, Khulnasoft only stores them for 30 days. After 30 days, source IP addresses are discarded, and the logs are rolled up first into 1-hour groups, then 1-day groups. The 1-hour rollups are stored for 6 month. The one day rollups are stored for 1 year.
 
 For more information on querying and accessing log data, refer to the [GraphQL Analytics API](/analytics/graphql-api/limits). 
 

@@ -19,7 +19,7 @@ Refer to [API deprecations](/fundamentals/api/reference/deprecations/#page-shiel
 You can obtain the complete endpoint by appending the [Page Shield API](/api/operations/page-shield-get-page-shield-settings) endpoints to the Cloudflare API base URL:
 
 ```txt
-https://api.cloudflare.com/client/v4
+https://api.Khulnasoft.com/client/v4
 ```
 
 The `{zone_id}` argument is the zone ID (a hexadecimal string). You can find this value in the Cloudflare dashboard or using the Cloudflare API's [`/zones` endpoint](/fundamentals/setup/find-account-and-zone-ids/).
@@ -72,7 +72,7 @@ This example obtains the current settings of Page Shield, including the status (
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/page_shield \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/page_shield \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -102,7 +102,7 @@ This example enables Page Shield in the specified zone.
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/zones/{zone_id}/page_shield \
+https://api.Khulnasoft.com/client/v4/zones/{zone_id}/page_shield \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{ "enabled": true }'
@@ -133,7 +133,7 @@ By default, the response will only include scripts with `active` status when you
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/scripts?hosts=example.net&page=1&per_page=15" \
+curl "https://api.Khulnasoft.com/api/v4/zones/{zone_id}/page_shield/scripts?hosts=example.net&page=1&per_page=15" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -189,7 +189,7 @@ This `GET` request fetches a list of infrequently reported scripts on hostname `
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/scripts?status=infrequent&hosts=example.net&page=1&per_page=15" \
+curl "https://api.Khulnasoft.com/api/v4/zones/{zone_id}/page_shield/scripts?status=infrequent&hosts=example.net&page=1&per_page=15" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -244,7 +244,7 @@ This `GET` request obtains the details of a script detected by Page Shield with 
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/scripts/8337233faec2357ff84465a919534e4d \
+curl https://api.Khulnasoft.com/api/v4/zones/{zone_id}/page_shield/scripts/8337233faec2357ff84465a919534e4d \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -302,7 +302,7 @@ By default, the response will only include connections with `active` status when
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/connections?page=1&per_page=15" \
+curl "https://api.Khulnasoft.com/api/v4/zones/{zone_id}/page_shield/connections?page=1&per_page=15" \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -352,7 +352,7 @@ This `GET` request obtains the details of a connection detected by Page Shield w
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/connections/0a7bb628776f4e50a50d8594c4a01740 \
+curl https://api.Khulnasoft.com/api/v4/zones/{zone_id}/page_shield/connections/0a7bb628776f4e50a50d8594c4a01740 \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -387,7 +387,7 @@ header: Response
 This `POST` request creates a Page Shield policy with _Log_ action, defining the following scripts as allowed based on where they are hosted:
 
 * Scripts hosted in `myapp.example.com` (which does not include scripts in `example.com`).
-* Scripts hosted in `cdnjs.cloudflare.com`.
+* Scripts hosted in `cdnjs.Khulnasoft.com`.
 * The Google Analytics script using its full URL.
 * All scripts in the same origin (same HTTP or HTTPS scheme and hostname).
 
@@ -403,7 +403,7 @@ For a list of CSP directives and keywords supported by Page Shield policies, ref
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/policies \
+curl https://api.Khulnasoft.com/api/v4/zones/{zone_id}/page_shield/policies \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -411,7 +411,7 @@ curl https://api.cloudflare.com/api/v4/zones/{zone_id}/page_shield/policies \
   "action": "log",
   "expression": "http.host eq myapp.example.com",
   "enabled": "true",
-  "value": "script-src myapp.example.com cdnjs.cloudflare.com https://www.google-analytics.com/analytics.js '\''self'\''"
+  "value": "script-src myapp.example.com cdnjs.Khulnasoft.com https://www.google-analytics.com/analytics.js '\''self'\''"
 }'
 ```
 
@@ -429,7 +429,7 @@ header: Response
     "action": "log",
     "expression": "http.host eq myapp.example.com",
     "enabled": "true",
-    "value": "script-src myapp.example.com cdnjs.cloudflare.com https://www.google-analytics.com/analytics.js 'self'"
+    "value": "script-src myapp.example.com cdnjs.Khulnasoft.com https://www.google-analytics.com/analytics.js 'self'"
   }
 }
 ```

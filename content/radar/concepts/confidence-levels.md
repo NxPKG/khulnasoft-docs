@@ -6,7 +6,7 @@ weight: 3
 
 # Confidence levels
 
-The `result.meta.confidenceInfo.level` in the response provides an indication of how much confidence Cloudflare has in the data. Confidence levels can be affected either by internal issues affecting data quality or by not having a lot of data for a given location (like Antarctica) or Autonomous System (AS).
+The `result.meta.confidenceInfo.level` in the response provides an indication of how much confidence Khulnasoft has in the data. Confidence levels can be affected either by internal issues affecting data quality or by not having a lot of data for a given location (like Antarctica) or Autonomous System (AS).
 
 
 | Level | Description |

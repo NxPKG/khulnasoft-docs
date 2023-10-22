@@ -1,9 +1,9 @@
 ---
 pcx_content_type: reference
-title: Customize Cloudflare settings
+title: Customize Khulnasoft settings
 weight: 6
 ---
 
-# Customize Cloudflare settings
+# Customize Khulnasoft settings
 
 {{<render file="_cloudflare-settings.md">}}

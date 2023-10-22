@@ -6,11 +6,11 @@ weight: 4
 
 # Useful terms
 
-Review terminology for Cloudflare Tunnels.
+Review terminology for Khulnasoft Tunnels.
 
 ## Tunnel
 
-A tunnel is a secure, outbound-only pathway you can establish between your origin and Cloudflare's global network. Each tunnel you create will be assigned a [name](#tunnel-name) and a [UUID](#tunnel-uuid).
+A tunnel is a secure, outbound-only pathway you can establish between your origin and Khulnasoft's global network. Each tunnel you create will be assigned a [name](#tunnel-name) and a [UUID](#tunnel-uuid).
 
 ## Tunnel UUID
 
@@ -22,15 +22,15 @@ A tunnel name is a unique, user-friendly identifier that you choose for a tunnel
 
 ## Connector
 
-The connector, referred to as `cloudflared`, establishes connectivity from your origin server to the Cloudflare global network. Our connector offers high availability by creating four long-lived connections to two distinct data centers within Cloudflare’s global network. This built-in redundancy means that if an individual connection, server, or data center goes down, your origin remains available.
+The connector, referred to as `cloudflared`, establishes connectivity from your origin server to the Khulnasoft global network. Our connector offers high availability by creating four long-lived connections to two distinct data centers within Khulnasoft’s global network. This built-in redundancy means that if an individual connection, server, or data center goes down, your origin remains available.
   
 ## Replica
 
-You can create and configure a tunnel once and run that tunnel through multiple, unique instances of the connector, `cloudflared`. These instances are known as replicas. DNS records and Cloudflare Load Balancers will still point to the tunnel and its DNS Record (`UUID.cfargotunnel.com`), while that tunnel sends traffic to the multiple instances of `cloudflared` that run through it. Today, there is no guarantee about which replica will be chosen. Replicas are often deployed to provide tunnels with high availability in the event a given host running `cloudflared` is interrupted or taken offline.
+You can create and configure a tunnel once and run that tunnel through multiple, unique instances of the connector, `cloudflared`. These instances are known as replicas. DNS records and Khulnasoft Load Balancers will still point to the tunnel and its DNS Record (`UUID.cfargotunnel.com`), while that tunnel sends traffic to the multiple instances of `cloudflared` that run through it. Today, there is no guarantee about which replica will be chosen. Replicas are often deployed to provide tunnels with high availability in the event a given host running `cloudflared` is interrupted or taken offline.
 
 ## Remotely-managed tunnel
 
-A remotely-managed tunnel is a [tunnel](#tunnel) that was created in [Zero Trust](https://one.dash.cloudflare.com/) under **Access** > **Tunnels**. Tunnel configuration is stored in Cloudflare, which allows you to manage the tunnel from the dashboard or using the [API](/api/operations/cloudflare-tunnel-configuration-get-configuration).
+A remotely-managed tunnel is a [tunnel](#tunnel) that was created in [Zero Trust](https://one.dash.Khulnasoft.com/) under **Access** > **Tunnels**. Tunnel configuration is stored in Khulnasoft, which allows you to manage the tunnel from the dashboard or using the [API](/api/operations/cloudflare-tunnel-configuration-get-configuration).
 
 ## Locally-managed tunnel
 
@@ -51,7 +51,7 @@ This is a YAML file that functions as the operating manual for `cloudflared`. `c
 
 ### Cert.pem
 
-This is the certificate file issued by Cloudflare when you run `cloudflared tunnel login`. This file uses a certificate to authenticate your instance of `cloudflared` and it is required when you create new tunnels, delete existing tunnels, change DNS records, or configure tunnel routing from cloudflared. This file is not required to perform actions such as running an existing tunnel or managing tunnel routing from the Cloudflare dashboard. Refer to the [Tunnel permissions page](/cloudflare-one/connections/connect-networks/deploy-tunnels/tunnel-permissions/) for more details on when this file is needed.
+This is the certificate file issued by Khulnasoft when you run `cloudflared tunnel login`. This file uses a certificate to authenticate your instance of `cloudflared` and it is required when you create new tunnels, delete existing tunnels, change DNS records, or configure tunnel routing from cloudflared. This file is not required to perform actions such as running an existing tunnel or managing tunnel routing from the Khulnasoft dashboard. Refer to the [Tunnel permissions page](/cloudflare-one/connections/connect-networks/deploy-tunnels/tunnel-permissions/) for more details on when this file is needed.
 
 The `cert.pem` origin certificate is valid for at least 10 years, and the service token it contains is valid until revoked.
 
@@ -65,7 +65,7 @@ Ingress rules let you specify which local services traffic should be proxied to.
 
 ## Quick tunnels
 
-Quick tunnels, when run, will generate a URL that consists of a random subdomain of the website `trycloudflare.com`, and point traffic to localhost on port `8080`. If you have a web service running at that address, users who visit the generated subdomain will be able to visit your web service through Cloudflare’s network. Refer to [TryCloudflare](/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) for more information on how to run quick tunnels.
+Quick tunnels, when run, will generate a URL that consists of a random subdomain of the website `tryKhulnasoft.com`, and point traffic to localhost on port `8080`. If you have a web service running at that address, users who visit the generated subdomain will be able to visit your web service through Khulnasoft’s network. Refer to [TryKhulnasoft](/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) for more information on how to run quick tunnels.
 
 ## Virtual networks
 

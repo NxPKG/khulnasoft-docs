@@ -6,7 +6,7 @@ _build:
 inputParameters: param1
 ---
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **WARP Client** > **Service provider checks**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **WARP Client** > **Service provider checks**.
 2. Select **Add new**.
 3. Select the $1 provider.
 4. Configure a [device posture check](#device-posture-attributes) and enter any name.

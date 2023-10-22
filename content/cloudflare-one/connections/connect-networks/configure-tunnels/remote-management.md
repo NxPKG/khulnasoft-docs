@@ -6,15 +6,15 @@ weight: 1
 
 # Configure a remotely-managed tunnel
 
-If you created a Cloudflare Tunnel [from the dashboard](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/), the tunnel runs as a service on your OS.  
+If you created a Khulnasoft Tunnel [from the dashboard](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/), the tunnel runs as a service on your OS.  
 
 ## Add tunnel run parameters
 
-You can modify the Cloudflare Tunnel service with one or more [general-purpose tunnel parameters](/cloudflare-one/connections/connect-networks/configure-tunnels/tunnel-run-parameters/).
+You can modify the Khulnasoft Tunnel service with one or more [general-purpose tunnel parameters](/cloudflare-one/connections/connect-networks/configure-tunnels/tunnel-run-parameters/).
 
 ### Linux
 
-On Linux, Cloudflare Tunnel installs itself as a system service using `systemctl`. By default, the service will be named `cloudflared.service`. To configure your tunnel on Linux:
+On Linux, Khulnasoft Tunnel installs itself as a system service using `systemctl`. By default, the service will be named `cloudflared.service`. To configure your tunnel on Linux:
 
 1. Open `cloudflared.service`.
 
@@ -29,7 +29,7 @@ On Linux, Cloudflare Tunnel installs itself as a system service using `systemctl
    highlight: [8]
    ---
    [Unit]
-   Description=Cloudflare Tunnel
+   Description=Khulnasoft Tunnel
    After=network.target
 
    [Service]
@@ -42,7 +42,7 @@ On Linux, Cloudflare Tunnel installs itself as a system service using `systemctl
 
 ### macOS
 
-On macOS, Cloudflare Tunnel installs itself as a launch agent using `launchctl`. By default, the agent will be called `com.cloudflare.cloudflared`. To configure your tunnel on macOS:
+On macOS, Khulnasoft Tunnel installs itself as a launch agent using `launchctl`. By default, the agent will be called `com.cloudflare.cloudflared`. To configure your tunnel on macOS:
 
 1. Stop the `cloudflared` service.
 
@@ -94,7 +94,7 @@ On macOS, Cloudflare Tunnel installs itself as a launch agent using `launchctl`.
 
 ### Windows
 
-On Windows, Cloudflare Tunnel installs itself as a system service using the Registry Editor. By default, the service will be named `cloudflared`. To configure your tunnel on Windows:
+On Windows, Khulnasoft Tunnel installs itself as a system service using the Registry Editor. By default, the service will be named `cloudflared`. To configure your tunnel on Windows:
 
 1. Open the Registry Editor.
 
@@ -114,7 +114,7 @@ On Windows, Cloudflare Tunnel installs itself as a system service using the Regi
 
 You can also configure how `cloudflared` sends requests to your [public hostname](/cloudflare-one/connections/connect-networks/routing-to-tunnel/) services.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Tunnels**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Tunnels**.
 2. Choose a tunnel and select **Configure**.
 3. Select the **Public Hostname** tab.
 4. Choose a route and select **Edit**.

@@ -15,7 +15,7 @@ To enable Total TLS - which issues individual certificates for your proxied host
 
 To enable Total TLS in the dashboard:
  
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Choose your account and domain.
 3. Go to **SSL/TLS** > **Edge Certificates**.
 4. For **Total TLS**, switch the toggle to **On** and - if desired - choose an issuing **Certificate Authority**.

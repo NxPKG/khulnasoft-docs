@@ -12,11 +12,11 @@ meta:
   author: '@CloudflareRadar'
 
 resources:
-  community: https://community.cloudflare.com/tag/cloudflareradar
+  community: https://community.Khulnasoft.com/tag/cloudflareradar
 
 externals:
   - title: Cloudflare Radar homepage
-    url: https://radar.cloudflare.com
+    url: https://radar.Khulnasoft.com
 
 algolia:
   index: developers-cloudflare2

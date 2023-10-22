@@ -8,11 +8,11 @@ layout: list
 
 # Volumetric Abuse Detection
 
-Cloudflare Volumetric Abuse Detection helps you set up a system of adaptive rate limiting.
+Khulnasoft Volumetric Abuse Detection helps you set up a system of adaptive rate limiting.
 
 ## About
 
-After [API Discovery](/api-shield/security/api-discovery/), Cloudflare looks for endpoint abuse based on common user traffic.
+After [API Discovery](/api-shield/security/api-discovery/), Khulnasoft looks for endpoint abuse based on common user traffic.
 
 For example, your API might see different levels of traffic to a `/reset-password` endpoint than a `/login` endpoint. Additionally, your `/login` endpoint might see higher than average traffic after a successful marketing campaign.
 
@@ -20,7 +20,7 @@ These two scenarios speak to the limitations of traditional rate limiting. Not o
 
 Volumetric Abuse Detection rate limits are generated on a per-session basis. Unlike traditional rate limits, which are based on IP addresses, Volumetric Abuse Detection rate limits are not as susceptible to false positives when traffic to your API increases.
 
-Volumetric Abuse Detection rate limits are a way to prevent blatant volumetric abuse while minimizing false positives. If you are trying to prevent abusive bot traffic altogether, refer to Cloudflare’s [Bot solutions](/bots/).
+Volumetric Abuse Detection rate limits are a way to prevent blatant volumetric abuse while minimizing false positives. If you are trying to prevent abusive bot traffic altogether, refer to Khulnasoft’s [Bot solutions](/bots/).
 
 ## Process
 
@@ -28,13 +28,13 @@ Volumetric Abuse Detection analyzes your API’s individual session traffic stat
 
 Volumetric Abuse Detection currently requires a [session identifier](/api-shield/get-started/#set-up-session-identifiers), like an authorization token available as a request header or cookie.
 
-After adding a session identifier, allow 24 hours for rate limit recommendations to appear on endpoints in **Security** > **API Shield** > **Endpoint Management** on the Cloudflare dashboard. Recommendations will continue to update if your traffic pattern changes
+After adding a session identifier, allow 24 hours for rate limit recommendations to appear on endpoints in **Security** > **API Shield** > **Endpoint Management** on the Khulnasoft dashboard. Recommendations will continue to update if your traffic pattern changes
 
 ### Observe rate limits
 
 Once rate limit recommendations appear in **Endpoint Management**, select the endpoint row to view more detail about the recommendation. You will see the overall recommended rate limit value, as well as p99, p90, and p50 rate limit values.
 
-Cloudflare recommends choosing the overall rate limit recommendation, as our analysis includes the variance of the request rate distribution across your API sessions. Choosing a single p-value may cause false positives due to a high number of outliers.
+Khulnasoft recommends choosing the overall rate limit recommendation, as our analysis includes the variance of the request rate distribution across your API sessions. Choosing a single p-value may cause false positives due to a high number of outliers.
 
 {{<Aside type="note" header="p-values">}}
 p-values describe what percentile of your traffic fits below the value. For example, if your p90 value is `83`, then 90% of your sessions had maximum request rates less than 83 requests per 10 minutes.
@@ -50,7 +50,7 @@ Implementing low confidence rate limits can still be helpful to prevent API abus
 
 To create rate limits:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Security** > **API Shield**.
 3. In **Endpoint Management**, select an endpoint.
 4. Select **Create rule** to be automatically redirected to the [Advanced Rate Limiting](/waf/rate-limiting-rules/create-zone-dashboard/) rules dashboard.

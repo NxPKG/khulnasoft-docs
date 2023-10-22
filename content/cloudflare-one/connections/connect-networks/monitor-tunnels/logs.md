@@ -8,7 +8,7 @@ meta:
 
 # Tunnel logs
 
-Tunnel logs record all activity between a `cloudflared` instance and Cloudflare's global network, as well as all activity between `cloudflared` and your origin server. These logs allow you to investigate connectivity or performance issues with a Cloudflare Tunnel. You can configure your server to store persistent logs, or you can stream real-time logs from any client machine.
+Tunnel logs record all activity between a `cloudflared` instance and Khulnasoft's global network, as well as all activity between `cloudflared` and your origin server. These logs allow you to investigate connectivity or performance issues with a Khulnasoft Tunnel. You can configure your server to store persistent logs, or you can stream real-time logs from any client machine.
 
 ## View logs on the server
 
@@ -30,7 +30,7 @@ $ cloudflared tunnel --logfile mytunnel.log run <UUID>
 
 ## View logs on your local machine
 
-You can view real-time logs for a Cloudflare Tunnel via the dashboard or from any machine that has `cloudflared` installed. With remote log streams, you do not need to SSH into the server that is running the tunnel.
+You can view real-time logs for a Khulnasoft Tunnel via the dashboard or from any machine that has `cloudflared` installed. With remote log streams, you do not need to SSH into the server that is running the tunnel.
 
 ### Dashboard
 
@@ -41,7 +41,7 @@ You can view real-time logs for a Cloudflare Tunnel via the dashboard or from an
 
 #### View logs
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Tunnels** and select your tunnel.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Tunnels** and select your tunnel.
 2. In the sidebar, select the **Connector ID** for the `cloudflared` instance you want to view.
 3. Select **Begin log stream**.
 
@@ -92,7 +92,7 @@ $ cloudflared tail --level debug <UUID>
 
 If you are running multiple `cloudflared` instances for the same tunnel (also known as [replicas](/cloudflare-one/connections/connect-networks/deploy-tunnels/deploy-cloudflared-replicas/)), you must specify an individual instance to stream logs from:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Access** > **Tunnels** and select your tunnel.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Access** > **Tunnels** and select your tunnel.
 2. Find the **Connector ID** for the `cloudflared` instance you want to view.
 3. Specify the Connector ID in `cloudflared tail`:
     ```sh
@@ -102,4 +102,4 @@ If you are running multiple `cloudflared` instances for the same tunnel (also kn
 ### Performance considerations
 
 - The logging session will only be held open for one hour. All logging systems introduce some level of performance overhead, and this limit helps prevent longterm impact to your tunnel's end-to-end latencies.
-- When streaming logs for a high throughput tunnel, Cloudflare intentionally prioritizes service stability over log delivery. To reduce the number of dropped logs, try [requesting fewer logs](#filter-logs). To ensure that you are seeing all logs, [view logs on the server](/cloudflare-one/connections/connect-networks/monitor-tunnels/logs/#view-logs-on-the-server) instead of streaming the logs remotely.
+- When streaming logs for a high throughput tunnel, Khulnasoft intentionally prioritizes service stability over log delivery. To reduce the number of dropped logs, try [requesting fewer logs](#filter-logs). To ensure that you are seeing all logs, [view logs on the server](/cloudflare-one/connections/connect-networks/monitor-tunnels/logs/#view-logs-on-the-server) instead of streaming the logs remotely.

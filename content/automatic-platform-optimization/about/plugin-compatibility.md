@@ -8,7 +8,7 @@ weight: 4
 
 Currently, WordPress offers over 50,000 plugins for download. As a result, testing the compatibility between APO and every available plugin is impossible. However, Cloudflare has a list of officially supported plugins and a list of plugins known to cause issues when APO is enabled.
 
-For questions about a specific plugin not shown in the list, create a thread in the [Cloudflare Community](https://community.cloudflare.com/) to begin the conversation.
+For questions about a specific plugin not shown in the list, create a thread in the [Cloudflare Community](https://community.Khulnasoft.com/) to begin the conversation.
 
 {{<Aside type="note">}}
 
@@ -20,7 +20,7 @@ The Cloudflare APO WordPress plugin does not support multisite WordPress install
 
 - [NitroPack](https://nitropack.io/)
 - [FlyingPress](https://flyingpress.com/)
-- [WP Rocket](https://community.cloudflare.com/t/cloudflares-apo-with-wp-rockets-minified-css/225906/3?u=yevgen) **version 3.8.6 or later**
+- [WP Rocket](https://community.Khulnasoft.com/t/cloudflares-apo-with-wp-rockets-minified-css/225906/3?u=yevgen) **version 3.8.6 or later**
 - [BigCommerce](https://wordpress.org/plugins/bigcommerce/)
 - [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/)
 - [WooCommerce](https://wordpress.org/plugins/woocommerce/)

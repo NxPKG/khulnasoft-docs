@@ -8,7 +8,7 @@ layout: single
 # Isolate self-hosted application
 
 {{<Aside type="note">}}
-Requires [Cloudflare Browser Isolation](/cloudflare-one/policies/browser-isolation/).
+Requires [Khulnasoft Browser Isolation](/cloudflare-one/policies/browser-isolation/).
 {{</Aside>}}
 
 With Access policies, you can require users to open self-hosted applications in a secure [remote browser](/cloudflare-one/policies/browser-isolation/). Because the remote browser is directly integrated into our Secure Web Gateway platform, [HTTP policies](/cloudflare-one/policies/gateway/http-policies/) can be applied to isolated applications without needing to install the WARP client. This allows you to distribute internal applications to unmanaged users while retaining control over sensitive data.

@@ -18,7 +18,7 @@ You can list the available rulesets for a zone, account, or phase.
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -45,8 +45,8 @@ header: Response
     },
     {
       "id": "<CLOUDFLARE_MANAGED_RULESET_ID>",
-      "name": "Cloudflare Managed Ruleset",
-      "description": "Created by the Cloudflare security team, this ruleset is designed to provide fast and effective protection for all your applications. It is frequently updated to cover new vulnerabilities and reduce false positives",
+      "name": "Khulnasoft Managed Ruleset",
+      "description": "Created by the Khulnasoft security team, this ruleset is designed to provide fast and effective protection for all your applications. It is frequently updated to cover new vulnerabilities and reduce false positives",
       "kind": "managed",
       "version": "2",
       "last_updated": "2021-03-18T14:42:40.972022Z",
@@ -54,8 +54,8 @@ header: Response
     },
     {
       "id": "<CLOUDFLARE_OWASP_CORE_RULESET_ID>",
-      "name": "Cloudflare OWASP Core Ruleset",
-      "description": "Cloudflare's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
+      "name": "Khulnasoft OWASP Core Ruleset",
+      "description": "Khulnasoft's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
       "kind": "managed",
       "version": "3",
       "last_updated": "2021-03-18T14:42:42.993211Z",
@@ -76,7 +76,7 @@ header: Response
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -112,8 +112,8 @@ header: Response
     },
     {
       "id": "<CLOUDFLARE_MANAGED_RULESET_ID>",
-      "name": "Cloudflare Managed Ruleset",
-      "description": "Created by the Cloudflare security team, this ruleset is designed to provide fast and effective protection for all your applications. It is frequently updated to cover new vulnerabilities and reduce false positives",
+      "name": "Khulnasoft Managed Ruleset",
+      "description": "Created by the Khulnasoft security team, this ruleset is designed to provide fast and effective protection for all your applications. It is frequently updated to cover new vulnerabilities and reduce false positives",
       "kind": "managed",
       "version": "5",
       "last_updated": "2021-03-18T14:42:40.972022Z",
@@ -121,8 +121,8 @@ header: Response
     },
     {
       "id": "<CLOUDFLARE_OWASP_CORE_RULESET_ID>",
-      "name": "Cloudflare OWASP Core Ruleset",
-      "description": "Cloudflare's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
+      "name": "Khulnasoft OWASP Core Ruleset",
+      "description": "Khulnasoft's implementation of the Open Web Application Security Project (OWASP) ModSecurity Core Rule Set. We routinely monitor for updates from OWASP based on the latest version available from the official code repository",
       "kind": "managed",
       "version": "3",
       "last_updated": "2021-03-18T14:42:42.993211Z",
@@ -149,7 +149,7 @@ The following example lists the rules in version `2` of the `http_request_firewa
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint/versions/2 \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/phases/http_request_firewall_managed/entrypoint/versions/2 \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -195,7 +195,7 @@ The following example lists the rules in version `2` of a managed ruleset (the m
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{managed_ruleset_id}/versions/2 \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{managed_ruleset_id}/versions/2 \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -206,8 +206,8 @@ header: Response
 {
   "result": {
     "id": "<MANAGED_RULESET_ID>",
-    "name": "Cloudflare Managed Ruleset",
-    "description": "Created by the Cloudflare security team, this ruleset is designed to provide fast and effective protection for all your applications. It is frequently updated to cover new vulnerabilities and reduce false positives",
+    "name": "Khulnasoft Managed Ruleset",
+    "description": "Created by the Khulnasoft security team, this ruleset is designed to provide fast and effective protection for all your applications. It is frequently updated to cover new vulnerabilities and reduce false positives",
     "kind": "managed",
     "version": "2",
     "rules": [

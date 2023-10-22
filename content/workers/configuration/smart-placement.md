@@ -68,7 +68,7 @@ To enable Smart Placement via Wrangler:
 
 To enable Smart Placement via the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In **Account Home**, select **Workers & Pages**.
 3. In **Overview**,select your Worker.
 4. Select **Settings** > **General**.
@@ -83,7 +83,7 @@ To enable Smart Placement via the dashboard:
 A Worker's metadata contains details about a Worker's placement status. Query your Worker's placement status through the following Workers API endpoint:
 
 ```bash
-$ curl -X GET https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/workers/services/{WORKER_NAME} \
+$ curl -X GET https://api.Khulnasoft.com/client/v4/accounts/{ACCOUNT_ID}/workers/services/{WORKER_NAME} \
 -H "Authorization: Bearer <TOKEN>" \ 
 -H "Content-Type: application/json" | jq .
 ```

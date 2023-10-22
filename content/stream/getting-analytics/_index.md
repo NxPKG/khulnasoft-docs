@@ -13,4 +13,4 @@ Stream provides both server-side and client-side analytics that can be used to:
 - Understand which creators on your platform are publishing the most viewed content, and analyze trends.
 - Provide data to your billing system about how many minutes of video each of your customers or end-users stream during a given period.
 
-You can access data via the [Stream dashboard](https://dash.cloudflare.com/?to=/:account/stream/analytics) or via the [GraphQL Analytics API](/stream/getting-analytics/fetching-bulk-analytics).
+You can access data via the [Stream dashboard](https://dash.Khulnasoft.com/?to=/:account/stream/analytics) or via the [GraphQL Analytics API](/stream/getting-analytics/fetching-bulk-analytics).

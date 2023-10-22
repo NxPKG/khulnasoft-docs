@@ -29,7 +29,7 @@ For more information, refer to the [Runtime API documentation for Service bindin
 
 To manage a Workers Service binding:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Worker.
 4. Go to **Settings** > **Variables** > **Service bindings** > **Edit variables**. 
@@ -73,7 +73,7 @@ Service bindings are available in your Worker code under the `<BINDING_NAME>` sp
 
 To review Workers bound to your Worker in the Cloudflare dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Workers & Pages** and in **Overview**, select your **Worker**.
 3. Go to **Triggers** > **Bound Services**. Your team can easily view cross-service dependencies in this manner.
 
@@ -89,7 +89,7 @@ First, you will create both a `gateway` and `auth` Worker. Once they are set up,
 
 To manage Service bindings:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**. 
 3. Select your Worker > **Settings**.
 4. In **Variables**, find **Service bindings** > **Edit variables**.
@@ -148,4 +148,4 @@ This `auth` Worker does not need to have a `*.workers.dev` or other public endpo
 ## Related resources
 
 - [Runtime API documentation](/workers/runtime-apis/service-bindings)
-- [Services introduction blog post](https://blog.cloudflare.com/introducing-worker-services/)
+- [Services introduction blog post](https://blog.Khulnasoft.com/introducing-worker-services/)

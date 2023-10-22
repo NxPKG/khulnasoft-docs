@@ -6,7 +6,7 @@ weight: 11
 
 # Order of enforcement
 
-With Cloudflare Gateway, you can [enable and configure](/cloudflare-one/policies/gateway/initial-setup/) any combination of DNS, network, and HTTP policies.
+With Khulnasoft Gateway, you can [enable and configure](/cloudflare-one/policies/gateway/initial-setup/) any combination of DNS, network, and HTTP policies.
 
 ```mermaid
 flowchart TB
@@ -53,7 +53,7 @@ flowchart TB
     end
 
     %% Finish
-    network1--Egress with Cloudflare IP-->internet([Internet])
+    network1--Egress with Khulnasoft IP-->internet([Internet])
     egress1--Egress with dedicated IP-->internet
 ```
 
@@ -123,7 +123,7 @@ Lastly, Gateway evaluates all Allow, Block, and Do Not Scan policies. These poli
 {{<render file="gateway/_order-of-precedence.md" withParameters="DNS, network, or HTTP">}}
 
 {{<Aside type="warning" header="Terraform precedence limitation">}}
-To avoid conflicts, Terraform applies a hash calculation to precedences. For example, a precedence of `1000` may become `1000901`. This can cause errors when reordering policies. To avoid this issue, manually set the precedence of your policies via the [Cloudflare API](/api/operations/zero-trust-gateway-rules-update-zero-trust-gateway-rule).
+To avoid conflicts, Terraform applies a hash calculation to precedences. For example, a precedence of `1000` may become `1000901`. This can cause errors when reordering policies. To avoid this issue, manually set the precedence of your policies via the [Khulnasoft API](/api/operations/zero-trust-gateway-rules-update-zero-trust-gateway-rule).
 {{</Aside>}}
 
 ## Example

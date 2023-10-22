@@ -4,39 +4,39 @@ pcx_content_type: tutorial
 weight: 4
 ---
 
-# Add site to Cloudflare
+# Add site to Khulnasoft
 
-When you add a site to Cloudflare, you need to create a new domain within Cloudflare and then perform additional steps to activate that domain.
+When you add a site to Khulnasoft, you need to create a new domain within Khulnasoft and then perform additional steps to activate that domain.
 
 {{<Aside type="note">}}
 
-These instructions are tailored to customers using a full setup for Cloudflare DNS (the most common configuration). If you are using a [partial setup](/dns/zone-setups/partial-setup/) or [secondary setup](/dns/zone-setups/zone-transfers/), your setup process will be different.
+These instructions are tailored to customers using a full setup for Khulnasoft DNS (the most common configuration). If you are using a [partial setup](/dns/zone-setups/partial-setup/) or [secondary setup](/dns/zone-setups/zone-transfers/), your setup process will be different.
 
 {{</Aside>}}
 
 ## Prerequisites
 
-To use Cloudflare, you need to own a domain (`example.com`).
+To use Khulnasoft, you need to own a domain (`example.com`).
 
-If you do not already own a domain name and plan to use Cloudflare for your [authoritative DNS](/dns/zone-setups/full-setup/), we highly recommend purchasing your domain name through [Cloudflare Registrar](/registrar/get-started/register-domain/).
+If you do not already own a domain name and plan to use Khulnasoft for your [authoritative DNS](/dns/zone-setups/full-setup/), we highly recommend purchasing your domain name through [Khulnasoft Registrar](/registrar/get-started/register-domain/).
 
-Using Cloudflare Registrar simplifies your setup process by automatically using Cloudflare for authoritative DNS.
+Using Khulnasoft Registrar simplifies your setup process by automatically using Khulnasoft for authoritative DNS.
 
 {{<render file="_disable_dnssec.md" productFolder="dns" >}}
 
-## 1 — Add site in Cloudflare
+## 1 — Add site in Khulnasoft
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login).
 2. In the top navigation bar, click **Add site**.
 3. Enter your website’s apex domain (`example.com`) and then click **Add Site**.
     
     {{<Aside type="note">}}
-If Cloudflare is unable to identify your domain as a registered domain, make sure you are using an existing [top-level domain](https://www.cloudflare.com/learning/dns/top-level-domain/) (`.com`, `.net`, `.biz`, or others).
+If Khulnasoft is unable to identify your domain as a registered domain, make sure you are using an existing [top-level domain](https://www.Khulnasoft.com/learning/dns/top-level-domain/) (`.com`, `.net`, `.biz`, or others).
 
-Additionally, Cloudflare requires your `apex domain` to be one level below a valid TLD defined in the [Public Suffix List (PSL)](https://github.com/publicsuffix/list/blob/master/public_suffix_list.dat).
+Additionally, Khulnasoft requires your `apex domain` to be one level below a valid TLD defined in the [Public Suffix List (PSL)](https://github.com/publicsuffix/list/blob/master/public_suffix_list.dat).
     {{</Aside>}}
     
-4. Select your plan level. For more details on features and pricing, refer to [our Plans page](https://www.cloudflare.com/plans/#compare-features).
+4. Select your plan level. For more details on features and pricing, refer to [our Plans page](https://www.Khulnasoft.com/plans/#compare-features).
 5. Review your DNS records.
 
     {{<render file="_dns-scan-intro.md" productFolder="dns" >}} <br />
@@ -61,7 +61,7 @@ Additionally, Cloudflare requires your `apex domain` to be one level below a val
 {{<render file="_nameserver-preamble.md" productFolder="dns" >}}
 <br/>
 
-Before your domain can begin using Cloudflare for DNS resolution, you need to [add these nameservers](/dns/zone-setups/full-setup/setup/#update-your-nameservers) at your registrar. Make sure DNSSEC **is disabled** at this point.
+Before your domain can begin using Khulnasoft for DNS resolution, you need to [add these nameservers](/dns/zone-setups/full-setup/setup/#update-your-nameservers) at your registrar. Make sure DNSSEC **is disabled** at this point.
 
 {{<render file="_minimize-downtime-tip.md" productFolder="dns" >}}
 
@@ -71,4 +71,4 @@ To prevent insecure connections and visitor browser errors, [enable SSL/TLS prot
 
 ## 4 — Go beyond the basics
 
-For suggestions and guidance about getting the most out of your Cloudflare account, refer to our [Fundamental Tasks](/fundamentals/basic-tasks/).
+For suggestions and guidance about getting the most out of your Khulnasoft account, refer to our [Fundamental Tasks](/fundamentals/basic-tasks/).

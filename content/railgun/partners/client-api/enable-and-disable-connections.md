@@ -28,13 +28,13 @@ Establish a connection between a domain and a Railgun.
 
 ```txt
 POST /api/v2/railgun/conn_set HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example form parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 mode=0
@@ -79,13 +79,13 @@ Establish a connection between a domain and a Railgun.
 
 ```txt
 GET /api/v2/railgun/conn_set?email=&tkn=&rtkn=&z=&mode= HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example query string parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 mode=0
@@ -129,13 +129,13 @@ Enable a Railgun. If request is successful, the specified Railgun will be enable
 
 ```txt
 POST /api/v2/railgun/conn_setmode_enabled HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example form parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 z=example.com
@@ -178,13 +178,13 @@ Enable a Railgun. If request is successful, the specified Railgun will be enable
 
 ```txt
 GET /api/v2/railgun/conn_setmode_enabled?email=&tkn=&rtkn=&z= HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example query string parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5pp
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 z=example.com
@@ -227,13 +227,13 @@ Disable a Railgun. If request is successful, the specified Railgun will be disab
 
 ```txt
 POST /api/v2/railgun/conn_setmode_disabled HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example form parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 z=example.com
@@ -276,13 +276,13 @@ Disable a Railgun. If request is successful, the specified Railgun will be disab
 
 ```txt
 GET /api/v2/railgun/conn_setmode_disabled?email=&tkn=&rtkn=&z= HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example query string parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 z=example.com
@@ -325,13 +325,13 @@ Remove a connection between a domain and a Railgun. This API call will allow a c
 
 ```txt
 POST /api/v2/railgun/conn_delete HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example form parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 z=example.com
@@ -374,13 +374,13 @@ Remove a connection between a domain and a Railgun. This API call will allow a c
 
 ```txt
 GET /api/v2/railgun/conn_delete?email=&tkn=&rtkn=&z= HTTP/1.1
-Host: www.cloudflare.com
+Host: www.Khulnasoft.com
 Accept: */*
 Content-Type: application/x-www-form-urlencoded
 
 Example query string parameters:
 
-email=user%40cloudflare.com
+email=user%40Khulnasoft.com
 tkn=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p
 rtkn=7h8i9j0k1l2m3n4o5p6q7r8id9h0j1l
 z=example.com

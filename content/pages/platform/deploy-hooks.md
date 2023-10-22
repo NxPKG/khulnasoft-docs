@@ -13,12 +13,12 @@ With Deploy Hooks, you can trigger deployments using event sources beyond commit
 
 To create a Deploy Hook:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Pages project.
 4. Go to **Settings** > **Builds & deployments** and select **Add deploy hook** to start configuration.
 
-![Add a deploy hook on the Cloudflare dashboard](/images/pages/platform/deploy-hooks-add.png)
+![Add a deploy hook on the Khulnasoft dashboard](/images/pages/platform/deploy-hooks-add.png)
 
 ## Parameters needed
 
@@ -27,7 +27,7 @@ To configure your Deploy Hook, you must enter two key parameters:
 1.  **Deploy hook name:** a unique identifier for your Deploy Hook (for example, `contentful-site`)
 2.  **Branch to build:** the repository branch your Deploy Hook should build
 
-![Choosing Deploy Hook name and branch to build on Cloudflare dashboard](/images/pages/platform/deploy-hooks-configure.png)
+![Choosing Deploy Hook name and branch to build on Khulnasoft dashboard](/images/pages/platform/deploy-hooks-configure.png)
 
 ## Using your Deploy Hook
 
@@ -51,7 +51,7 @@ Every CMS provider is different and will offer different pathways in integrating
 
 ### Contentful
 
-Contentful supports integration with Cloudflare Pages via its **Webhooks** feature. In your Contentful project settings, go to **Webhooks**, create a new Webhook, and paste in your unique Deploy Hook URL in the **URL** field. Optionally, you can specify events that the Contentful Webhook should forward. By default, Contentful will trigger a Pages deployment on all project activity, which may be a bit too frequent. You can filter for specific events, such as Create, Publish, and many others.
+Contentful supports integration with Khulnasoft Pages via its **Webhooks** feature. In your Contentful project settings, go to **Webhooks**, create a new Webhook, and paste in your unique Deploy Hook URL in the **URL** field. Optionally, you can specify events that the Contentful Webhook should forward. By default, Contentful will trigger a Pages deployment on all project activity, which may be a bit too frequent. You can filter for specific events, such as Create, Publish, and many others.
 
 ![Configuring Deploy Hooks with Contentful](/images/pages/platform/contentful.png)
 
@@ -59,7 +59,7 @@ Contentful supports integration with Cloudflare Pages via its **Webhooks** featu
 
 You can configure your Ghost website to trigger Pages deployments by creating a new **Custom Integration**. In your Ghost website’s settings, create a new Custom Integration in the **Integrations** page.
 
-Each custom integration created can have multiple **webhooks** attached to it. Create a new webhook by selecting **Add webhook** and **Site changed (rebuild)** as the **Event**. Then paste your unique Deploy Hook URL as the **Target URL** value. After creating this webhook, your Cloudflare Pages application will redeploy whenever your Ghost site changes.
+Each custom integration created can have multiple **webhooks** attached to it. Create a new webhook by selecting **Add webhook** and **Site changed (rebuild)** as the **Event**. Then paste your unique Deploy Hook URL as the **Target URL** value. After creating this webhook, your Khulnasoft Pages application will redeploy whenever your Ghost site changes.
 
 ![Configuring Deploy Hooks with Ghost](/images/pages/platform/ghost.png)
 
@@ -77,17 +77,17 @@ You can configure WordPress to trigger a Pages Deploy Hook by installing the fre
 
 ### Strapi
 
-In your Strapi Admin Panel, you can set up and configure webhooks to enhance your experience with Cloudflare Pages. In the Strapi Admin Panel:
+In your Strapi Admin Panel, you can set up and configure webhooks to enhance your experience with Khulnasoft Pages. In the Strapi Admin Panel:
 
 1.  Navigate to **Settings**.
 2.  Select **Webhooks**.
 3.  Select **Add New Webhook**.
 4.  In the **Name** form field, give your new webhook a unique name.
-5.  In the **URL** form field, paste your unique Cloudflare Deploy Hook URL.
+5.  In the **URL** form field, paste your unique Khulnasoft Deploy Hook URL.
 
-In the Strapi Admin Panel, you can configure your webhook to be triggered based on events. You can adjust these settings to create a new deployment of your Cloudflare Pages site automatically when a Strapi entry or media asset is created, updated, or deleted.
+In the Strapi Admin Panel, you can configure your webhook to be triggered based on events. You can adjust these settings to create a new deployment of your Khulnasoft Pages site automatically when a Strapi entry or media asset is created, updated, or deleted.
 
-Be sure to add the webhook configuration to the [production](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/installation.html) Strapi application that powers your Cloudflare site.
+Be sure to add the webhook configuration to the [production](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/installation.html) Strapi application that powers your Khulnasoft site.
 
 ![Configuring Deploy Hooks with Strapi](/images/pages/platform/strapi.png)
 

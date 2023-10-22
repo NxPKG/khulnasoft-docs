@@ -55,7 +55,7 @@ Centrify secures access to infrastructure, DevOps, cloud, and other modern enter
 
 16. Select the roles to grant access to your application.
 
-17. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+17. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 
 18. Under **Login methods**, select **Add new**.
 

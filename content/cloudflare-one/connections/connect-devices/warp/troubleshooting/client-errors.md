@@ -6,7 +6,7 @@ weight: 2
 
 # Client errors
 
-This page lists the error codes that can appear in the WARP client GUI. If you do not see your error below, refer to [common issues](/cloudflare-one/connections/connect-devices/warp/troubleshooting/common-issues/) or [contact Cloudflare Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
+This page lists the error codes that can appear in the WARP client GUI. If you do not see your error below, refer to [common issues](/cloudflare-one/connections/connect-devices/warp/troubleshooting/common-issues/) or [contact Khulnasoft Support](/support/troubleshooting/general-troubleshooting/contacting-cloudflare-support/).
 
 <div class="medium-img">
 
@@ -230,7 +230,7 @@ The device is not authenticated to a Zero Trust organization because:
 2. Select the gear icon and go to **Preferences** > **Account**.
 3. Select **Re-Authenticate Session**.
 4. Complete the authentication steps required by your organization.
-5. If this does not resolve the error, select **Logout from Cloudflare Zero Trust** and then log back in. Logging out is only possible if [Allow device to leave organization](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-settings/#allow-device-to-leave-organization) is enabled for your device.
+5. If this does not resolve the error, select **Logout from Khulnasoft Zero Trust** and then log back in. Logging out is only possible if [Allow device to leave organization](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-settings/#allow-device-to-leave-organization) is enabled for your device.
 
 ## CF_TLS_INTERCEPTION_BLOCKING_DOH
 

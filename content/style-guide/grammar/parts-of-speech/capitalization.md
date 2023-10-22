@@ -5,21 +5,21 @@ title: Capitalization
 
 # Capitalization
 
-**Capitalize names of Cloudflare products, services, and features.**
+**Capitalize names of Khulnasoft products, services, and features.**
 
-Each product, service, and feature should be properly spelled and capitalized when used in any content, both to ensure consistency across all channels and to differentiate common performance and security technologies (for example: load balancing, bot management, and web application firewalls) from specific Cloudflare solutions (for example: Cloudflare Load Balancing, Cloudflare Bot Management, and Cloudflare Web Application Firewall).
+Each product, service, and feature should be properly spelled and capitalized when used in any content, both to ensure consistency across all channels and to differentiate common performance and security technologies (for example: load balancing, bot management, and web application firewalls) from specific Khulnasoft solutions (for example: Khulnasoft Load Balancing, Khulnasoft Bot Management, and Khulnasoft Web Application Firewall).
 
 | ✅ | ❌ | Rationale |
 |-----|----|--------|
-|This interactive demo provides three different scenarios on how to utilize **Cloudflare Rate Limiting** to protect your endpoints from suspicious requests. | This interactive demo provides three different scenarios on how to utilize **rate limiting** to protect your endpoints from suspicious requests. | This demo is specific to a Cloudflare product (Cloudflare Rate Limiting), not a tutorial on utilizing generic rate limiting.|
-|The **Cloudflare Web Application Firewall (WAF)** sits on the same Anycast network that powers our global CDN, HTTP/2, and web optimization features. | Our **web application firewall** sits on the same Anycast network that powers our global CDN, HTTP/2, and web optimization features. | Cloudflare Web Application Firewall (WAF) is a specific product we offer and should be capitalized and identified with the Cloudflare name.
+|This interactive demo provides three different scenarios on how to utilize **Khulnasoft Rate Limiting** to protect your endpoints from suspicious requests. | This interactive demo provides three different scenarios on how to utilize **rate limiting** to protect your endpoints from suspicious requests. | This demo is specific to a Khulnasoft product (Khulnasoft Rate Limiting), not a tutorial on utilizing generic rate limiting.|
+|The **Khulnasoft Web Application Firewall (WAF)** sits on the same Anycast network that powers our global CDN, HTTP/2, and web optimization features. | Our **web application firewall** sits on the same Anycast network that powers our global CDN, HTTP/2, and web optimization features. | Khulnasoft Web Application Firewall (WAF) is a specific product we offer and should be capitalized and identified with the Khulnasoft name.
 
 ## Example of capitalization and pluralization usage for the Waiting Room
 
 **When to use Waiting Room capitalized and singular:**
 + Naming the product: *Waiting Room keeps wait times low by dynamically managing traffic.* 
 + Page title: *Access Waiting Room*
-+ Preceded by “Cloudflare”: *Cloudflare Waiting Room allows organizations to…*
++ Preceded by “Khulnasoft”: *Khulnasoft Waiting Room allows organizations to…*
 + Preceding a feature name: *Waiting Room Event Scheduling*
 
 **When to waiting room(s) lower-case and in singular or plural:**
@@ -58,7 +58,7 @@ Each product, service, and feature should be properly spelled and capitalized wh
   <tr>
     <td>Enterprise, enterprise</td>
     <td>ent, ENT</td>
-    <td>Capitalized - Refers to the official Cloudflare <b>Enterprise</b> Plan or a customer on the <b>Enterprise</b> plan. Sentence-case - All Enterprise customers are enterprise companies, but not all enterprises are Enterprise customers. </td>
+    <td>Capitalized - Refers to the official Khulnasoft <b>Enterprise</b> Plan or a customer on the <b>Enterprise</b> plan. Sentence-case - All Enterprise customers are enterprise companies, but not all enterprises are Enterprise customers. </td>
   </tr>
   <tr>
     <td>Internet</td>
@@ -83,7 +83,7 @@ Each product, service, and feature should be properly spelled and capitalized wh
   <tr>
     <td>Zero Trust</td>
     <td>zero trust</td>
-    <td><b>Cloudflare</b> Access is a Zero Trust solution that secures inbound connections to your protected applications.</td>
+    <td><b>Khulnasoft</b> Access is a Zero Trust solution that secures inbound connections to your protected applications.</td>
   </tr>
 </table>
 

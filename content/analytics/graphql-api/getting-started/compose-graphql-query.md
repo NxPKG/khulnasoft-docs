@@ -7,7 +7,7 @@ weight: 51
 # Compose a query in GraphiQL
 
 Many clients might need help using [the semantics][1] of GraphQL and exploring
-the possibilities of Cloudflare GraphQL API.
+the possibilities of Khulnasoft GraphQL API.
 
 This page details how to use a [GraphiQL client][2] to compose and execute a
 GraphQL query.
@@ -19,14 +19,14 @@ You can find all details on how to [configure][3] a client here.
 ## Set up a query and choose a dataset
 
 Click on the editing pane of GraphiQL and add this base query, replacing
-`zone-id` with your Cloudflare zone ID:
+`zone-id` with your Khulnasoft zone ID:
 
 ![Adding a base query in the GraphiQL pane][4]
 
 {{<Aside type="note" header="Note">}}
 
-To find the zone's tag, log in to your Cloudflare account and select the site for
-which you want to obtain the tag. In the Cloudflare dashboard **Overview** page,
+To find the zone's tag, log in to your Khulnasoft account and select the site for
+which you want to obtain the tag. In the Khulnasoft dashboard **Overview** page,
 scroll to the **API** section in the right sidebar, which displays your zone and
 account tags.
 

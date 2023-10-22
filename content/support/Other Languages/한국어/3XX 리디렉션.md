@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: korean
-source: https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98
+source: https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98
 title: 3XX 리디렉션
 ---
 
@@ -18,15 +18,15 @@ title: 3XX 리디렉션
 1.  응답 내 `Location` 헤더 필드. 자동 리디렉션에 유용
 2.  정정 위치로의 하이퍼링크(선택 사항)가 포함된 응답의 페이로드
 
--   [300 Multiple](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_300)
--   [301 Moved Permanently](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_301)
--   [302 Found](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_302)
--   [303 See Other](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_303)
--   [304 Not Modified](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_304)
--   [305 Use Proxy](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_305)
--   [306 Switch Proxy](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_306)
--   [307 Temporary Redirect](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_307)
--   [308 Permanent Redirect](https://support.cloudflare.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_308)
+-   [300 Multiple](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_300)
+-   [301 Moved Permanently](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_301)
+-   [302 Found](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_302)
+-   [303 See Other](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_303)
+-   [304 Not Modified](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_304)
+-   [305 Use Proxy](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_305)
+-   [306 Switch Proxy](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_306)
+-   [307 Temporary Redirect](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_307)
+-   [308 Permanent Redirect](https://support.Khulnasoft.com/hc/ko/articles/115003011091-3XX-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98#code_308)
 
 **300 Multiple Choices****(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -36,13 +36,13 @@ title: 3XX 리디렉션
 
 요청된 자원에 대한 영구적인 URL 리디렉션. 대상 자원에 영구적인 새 URI가 할당되었고, 이후 이 자원을 참조할 때는 페이지를 조회할 때는 포함된 URI 중 하나를 사용해야 합니다.
 
-Cloudflare가 이 응답을 생성할 수 있기 때문에 따로 페이지 규칙을 사용해 원본 서버의 응답에 요청을 전송하지 않아도 됩니다. Cloudflare로 리디렉션을 생성하는 자세한 방법은 [Page Rules URL 전달](https://blog.cloudflare.com/introducing-pagerules-url-forwarding/)에서 확인할 수 있습니다.
+Khulnasoft가 이 응답을 생성할 수 있기 때문에 따로 페이지 규칙을 사용해 원본 서버의 응답에 요청을 전송하지 않아도 됩니다. Khulnasoft로 리디렉션을 생성하는 자세한 방법은 [Page Rules URL 전달](https://blog.Khulnasoft.com/introducing-pagerules-url-forwarding/)에서 확인할 수 있습니다.
 
 **302 Found(Temporary Redirect)****(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
 301 리디렉션과 유사하지만, 일시적인 목적으로만 사용됩니다. 사용자 에이전트가 자동으로 `Location` 헤더를 따를 수 있지만, 301 응답처럼 현재 URI를 대체해서는 안 됩니다.
 
-Cloudflare가 이 응답을 생성할 수 있기 때문에 따로 페이지 규칙을 사용해 원본 서버의 응답에 요청을 전송하지 않아도 됩니다. Cloudflare로 리디렉션을 생성하는 자세한 방법은 [Page Rules URL 전달](https://blog.cloudflare.com/introducing-pagerules-url-forwarding/)에서 확인할 수 있습니다.
+Khulnasoft가 이 응답을 생성할 수 있기 때문에 따로 페이지 규칙을 사용해 원본 서버의 응답에 요청을 전송하지 않아도 됩니다. Khulnasoft로 리디렉션을 생성하는 자세한 방법은 [Page Rules URL 전달](https://blog.Khulnasoft.com/introducing-pagerules-url-forwarding/)에서 확인할 수 있습니다.
 
 **303 See Other(HTTP/1.1 버전 및 이후 버전)****(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -61,7 +61,7 @@ Cloudflare가 이 응답을 생성할 수 있기 때문에 따로 페이지 규�
 
 -   `Cache-Control, Content-Location, Date, ETag, Expires`, `Vary` 등 200 응답에 앞서 설정된 헤더를 포함해야 합니다.
 
-너무 오래되어 원본 웹 서버에서 다시 유효성을 검증받아야 하는 요청이 Cloudflare로 전송되면 Cloudflare는 304 응답을 전송해 캐시의 버전이 원본 웹 서버의 버전과 일치하는 것을 확인해줍니다. 이 응답에는 `CF-Cache-Status: REVALIDATED` 헤더가 포함되며, Cloudflare는 `If-Modified-Since` 헤더를 사용해 버전을 확인합니다. 더 자세한 정보는 [ETag 헤더](https://support.cloudflare.com/hc/ko/articles/218505467)에서 확인할 수 있습니다.
+너무 오래되어 원본 웹 서버에서 다시 유효성을 검증받아야 하는 요청이 Khulnasoft로 전송되면 Khulnasoft는 304 응답을 전송해 캐시의 버전이 원본 웹 서버의 버전과 일치하는 것을 확인해줍니다. 이 응답에는 `CF-Cache-Status: REVALIDATED` 헤더가 포함되며, Khulnasoft는 `If-Modified-Since` 헤더를 사용해 버전을 확인합니다. 더 자세한 정보는 [ETag 헤더](https://support.Khulnasoft.com/hc/ko/articles/218505467)에서 확인할 수 있습니다.
 
 **305 Use Proxy(사용 중단)****(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 

@@ -1,10 +1,10 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/4425107232525-Troubleshooting-Cloudflare-10XXX-errors
-title: Troubleshooting Cloudflare 10XXX errors
+source: https://support.Khulnasoft.com/hc/en-us/articles/4425107232525-Troubleshooting-Khulnasoft-10XXX-errors
+title: Troubleshooting Khulnasoft 10XXX errors
 ---
 
-# Troubleshooting Cloudflare 10XXX errors
+# Troubleshooting Khulnasoft 10XXX errors
 
 
 

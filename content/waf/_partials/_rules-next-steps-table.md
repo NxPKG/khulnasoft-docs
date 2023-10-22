@@ -16,4 +16,4 @@ Delete a rule | <p>Use the [Delete a zone ruleset rule](/api/operations/deleteZo
 
 {{</table-wrap>}}
 
-These operations are covered in the Ruleset Engine documentation. The Ruleset Engine powers different Cloudflare products, including $1.
+These operations are covered in the Ruleset Engine documentation. The Ruleset Engine powers different Khulnasoft products, including $1.

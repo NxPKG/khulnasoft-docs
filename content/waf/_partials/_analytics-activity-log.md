@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-The **Activity log** summarizes security events by date to show the action taken and the applied Cloudflare security feature.
+The **Activity log** summarizes security events by date to show the action taken and the applied Khulnasoft security feature.
 
 ![Example list of events in the Activity log, with one of the events expanded to show its details](/images/waf/events-activity-log.png)
 
@@ -23,7 +23,7 @@ For example, if you are diagnosing a bot-related issue, you may want to display 
 
 For details on most actions that appear in the **Activity Log**, refer to [Actions](/ruleset-engine/rules-language/actions/).
 
-Besides the actions you can select when configuring rules in Cloudflare security products, you may also find events with the following associated actions:
+Besides the actions you can select when configuring rules in Khulnasoft security products, you may also find events with the following associated actions:
 
 * _Connection Close_
 * _Force Connection Close_

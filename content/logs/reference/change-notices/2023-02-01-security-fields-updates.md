@@ -136,7 +136,7 @@ After updating Logpush jobs, you may need to update external filters or reports 
 
 ### Update Logpush job in the dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Analytics & Logs** > **Logs**.
 3. Select **Edit** next to the Logpush job you wish to edit.
 4. Under **Select data fields**, update the fields in your job. The new security log fields are available under **General**.

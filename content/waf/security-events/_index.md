@@ -9,20 +9,20 @@ layout: single
 
 Security Events allows you to review mitigated requests (rule matches) and helps you tailor your security configurations.
 
-Users on a Free plan can view summarized security events by date in the **Activity log**. Customers on paid plans have access to additional graphs and dashboards that summarize the most relevant information about the current behavior of Cloudflare's security features on your zone.
+Users on a Free plan can view summarized security events by date in the **Activity log**. Customers on paid plans have access to additional graphs and dashboards that summarize the most relevant information about the current behavior of Khulnasoft's security features on your zone.
 
 ## Main features
 
 *   **Events summary**: Provides the number of security events on traffic during the selected time period, grouped according to the selected dimension (for example, Action, Host, Country).
 *   **Events by service**: Lists the security-related activity per security feature (for example, WAF, API Shield).
-*   **Top events by source**: Provides details of the traffic flagged or actioned by a Cloudflare security feature (for example, IP addresses, User Agents, Paths, Countries, Hosts, ASNs).
-*   **Activity log**: Summarizes security events by date to show the action taken and the applied Cloudflare security product.
+*   **Top events by source**: Provides details of the traffic flagged or actioned by a Khulnasoft security feature (for example, IP addresses, User Agents, Paths, Countries, Hosts, ASNs).
+*   **Activity log**: Summarizes security events by date to show the action taken and the applied Khulnasoft security product.
 
-Security Events displays information about requests actioned or flagged by Cloudflare security products, including features such as [Browser Integrity Check](/waf/tools/browser-integrity-check/). Each incoming HTTP request might generate one or more security events. The Security Events dashboard only shows these events, not the HTTP requests themselves.
+Security Events displays information about requests actioned or flagged by Khulnasoft security products, including features such as [Browser Integrity Check](/waf/tools/browser-integrity-check/). Each incoming HTTP request might generate one or more security events. The Security Events dashboard only shows these events, not the HTTP requests themselves.
 
 ## Availability
 
-The available features vary according to your Cloudflare plan:
+The available features vary according to your Khulnasoft plan:
 
 {{<feature-table id="security.security_events">}}
 

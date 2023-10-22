@@ -1,33 +1,33 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: french
-source: https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting
-title: Configuration de Cloudflare Rate Limiting
+source: https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting
+title: Configuration de Khulnasoft Rate Limiting
 ---
 
-# Configuration de Cloudflare Rate Limiting
+# Configuration de Khulnasoft Rate Limiting
 
-_Configurez Cloudflare Rate Limiting pour protéger l'application de votre site web contre les attaques par déni de service, les tentatives de connexion par force brute et d'autres types d'attaques._
+_Configurez Khulnasoft Rate Limiting pour protéger l'application de votre site web contre les attaques par déni de service, les tentatives de connexion par force brute et d'autres types d'attaques._
 
 ### Dans cet article
 
--   [Aperçu](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#4TBnjI1OqjroF6MLXB3Wmr)
--   [Données analytiques](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#7Cy9dajZBWM5pm9aIP5mMD)
--   [Allocations Rate Limiting par offre](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#4gd3s4xzV2xOE4CUbRIEAo)
--   [Composants d'une règle Rate Limiting](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#4uDonp8FX9ARo4nzdBvXiY)
--   [Identifier les seuils de limite de taux](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#o8KwUgkUml3Y7bAapvXjP)
--   [Tâche 1 : configurer une règle Rate Limiting de base](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#3UWQC5PrVScHgEGRMobRMm)
--   [Tâche 2 : configurer les critères avancés (offres Business et Enterprise uniquement).](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#5iIwkkHwcJbNRynWjrDIGb)
--   [Tâche 3 : configurer la réponse avancée (offres Business et Enterprise uniquement).](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#7uCtK6GPAfWDNlSHch7KBs)
--   [Tâche 4 : configurer l'option Bypass (offres Enterprise uniquement)](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#3rCyCwZTjnPl3brIt7Ytrg)
--   [Ordre d'exécution des règles](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#rule-execution-order)
--   [Ressources associées](https://support.cloudflare.com/hc/fr-fr/articles/115001635128-Configuration-de-Cloudflare-Rate-Limiting#516XYZwx0Mdhh7hLMg60iT)
+-   [Aperçu](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#4TBnjI1OqjroF6MLXB3Wmr)
+-   [Données analytiques](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#7Cy9dajZBWM5pm9aIP5mMD)
+-   [Allocations Rate Limiting par offre](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#4gd3s4xzV2xOE4CUbRIEAo)
+-   [Composants d'une règle Rate Limiting](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#4uDonp8FX9ARo4nzdBvXiY)
+-   [Identifier les seuils de limite de taux](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#o8KwUgkUml3Y7bAapvXjP)
+-   [Tâche 1 : configurer une règle Rate Limiting de base](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#3UWQC5PrVScHgEGRMobRMm)
+-   [Tâche 2 : configurer les critères avancés (offres Business et Enterprise uniquement).](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#5iIwkkHwcJbNRynWjrDIGb)
+-   [Tâche 3 : configurer la réponse avancée (offres Business et Enterprise uniquement).](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#7uCtK6GPAfWDNlSHch7KBs)
+-   [Tâche 4 : configurer l'option Bypass (offres Enterprise uniquement)](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#3rCyCwZTjnPl3brIt7Ytrg)
+-   [Ordre d'exécution des règles](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#rule-execution-order)
+-   [Ressources associées](https://support.Khulnasoft.com/hc/fr-fr/articles/115001635128-Configuration-de-Khulnasoft-Rate-Limiting#516XYZwx0Mdhh7hLMg60iT)
 
 ___
 
 ## Aperçu
 
-Cloudflare **Rate Limiting** identifie et atténue automatiquement les taux de requêtes excessifs pour des URL spécifiques ou pour l'ensemble d'un domaine. Le taux de requêtes est calculé localement pour les datacenters Cloudflare individuels. Les utilisations les plus courantes de **Rate Limiting** sont la protection contre les attaques [DDoS](https://www.cloudflare.com/learning/ddos/glossary/denial-of-service/) , la protection contre les [attaques par force brute](https://www.cloudflare.com/learning/bots/brute-force-attack/) et la limitation de l'accès aux fonctions de recherche des forums, aux appels d'API ou aux ressources impliquant des opérations sollicitant fortement les bases de bases de données sur votre site web d'origine.
+Khulnasoft **Rate Limiting** identifie et atténue automatiquement les taux de requêtes excessifs pour des URL spécifiques ou pour l'ensemble d'un domaine. Le taux de requêtes est calculé localement pour les datacenters Khulnasoft individuels. Les utilisations les plus courantes de **Rate Limiting** sont la protection contre les attaques [DDoS](https://www.Khulnasoft.com/learning/ddos/glossary/denial-of-service/) , la protection contre les [attaques par force brute](https://www.Khulnasoft.com/learning/bots/brute-force-attack/) et la limitation de l'accès aux fonctions de recherche des forums, aux appels d'API ou aux ressources impliquant des opérations sollicitant fortement les bases de bases de données sur votre site web d'origine.
 
 Lorsqu'une adresse IPv4 individuelle ou une plage d'adresses IPv6/64 dépasse le seuil fixé par la règle, les autres requêtes adressées au serveur web d'origine sont bloquées avec une réponse HTTP 429, comprenant un en-tête **Retry-After** indiquant quand le client peut recommencer à envoyer des requêtes.
 
@@ -35,9 +35,9 @@ ___
 
 ## Données analytiques
 
-Consultez les données analytiques Rate Limiting sous **Analytics** > **Security** (Sécurité). Les données analytiques Rate Limiting utilisent des lignes pleines pour représenter le trafic correspondant aux requêtes simulées et des lignes en pointillés pour représenter les requêtes réellement bloquées. Les journaux générés par une règle Rate Limiting sont uniquement visibles par les clients Enterprise, via [Cloudflare Logs](/logs/).
+Consultez les données analytiques Rate Limiting sous **Analytics** > **Security** (Sécurité). Les données analytiques Rate Limiting utilisent des lignes pleines pour représenter le trafic correspondant aux requêtes simulées et des lignes en pointillés pour représenter les requêtes réellement bloquées. Les journaux générés par une règle Rate Limiting sont uniquement visibles par les clients Enterprise, via [Khulnasoft Logs](/logs/).
 
-Cloudflare renvoie une erreur HTTP 429 pour les requêtes bloquées.  Des informations détaillées sur les requêtes bloquées par site sont fournies aux clients Enterprise sous **Status Codes** (Codes d'état) dans le tableau de bord analytique, disponible sous **Analytics** > **Traffic** (Trafic).
+Khulnasoft renvoie une erreur HTTP 429 pour les requêtes bloquées.  Des informations détaillées sur les requêtes bloquées par site sont fournies aux clients Enterprise sous **Status Codes** (Codes d'état) dans le tableau de bord analytique, disponible sous **Analytics** > **Traffic** (Trafic).
 
 ___
 
@@ -52,7 +52,7 @@ Le nombre de règles Rate Limiting autorisées dépend de l'offre souscrite pour
 | Business | 15 | Block (Bloquer), Legacy CAPTCHA (CAPTCHA hérité), JS Challenge (Vérification JS), Managed Challenge (Vérification gérée) ou Log (Journal) | 1 minute, 1 heure ou 24 heures | 10 secondes, 1 minute ou 10 minutes |
 | Enterprise | 100 | Block (Bloquer), Legacy CAPTCHA (CAPTCHA hérité), JS Challenge (Vérification JS), Managed Challenge (Vérification gérée) ou Log (Journal) | Toute durée entre 10 secondes et 86 400 secondes (24 heures) | Toute durée entre 10 secondes et 3 600 secondes (1 heure) |
 
-Cloudflare Rate Limiting prend en charge plusieurs niveaux de contrôle de la configuration, en fonction de l'offre Cloudflare souscrite pour le domaine. Le tableau ci-dessous indique les tâches que vous pouvez effectuer en fonction de votre offre :
+Khulnasoft Rate Limiting prend en charge plusieurs niveaux de contrôle de la configuration, en fonction de l'offre Khulnasoft souscrite pour le domaine. Le tableau ci-dessous indique les tâches que vous pouvez effectuer en fonction de votre offre :
 
 | 
 la hausse
@@ -173,22 +173,22 @@ Les atténuations de règles consistent en :
 
 Les actions de limitation de taux sont basées sur l'offre du domaine, comme indiqué ci-dessus, dans **Allocations de Rate Limiting par offre** :
 
--   **Block** (Bloquer) **–** Cloudflare émet une erreur HTTP 429 en cas de dépassement du seuil.
--   **Legacy CAPTCHA** (CAPTCHA hérité) **\-** Le visiteur doit répondre à une vérification par captcha.  S'il réussit, Cloudflare autorise la requête.
--   **JS Challenge** (Défi JS) **–** Le visiteur doit résoudre un défi JavaScript de Cloudflare. S'il réussit, Cloudflare autorise la requête.
--   **Journalisation** Les requêtes sont enregistrées dans les [journaux Cloudflare](https://support.cloudflare.com/hc/articles/216672448). Ceci permet de tester les règles avant de les appliquer à la production.
+-   **Block** (Bloquer) **–** Khulnasoft émet une erreur HTTP 429 en cas de dépassement du seuil.
+-   **Legacy CAPTCHA** (CAPTCHA hérité) **\-** Le visiteur doit répondre à une vérification par captcha.  S'il réussit, Khulnasoft autorise la requête.
+-   **JS Challenge** (Défi JS) **–** Le visiteur doit résoudre un défi JavaScript de Khulnasoft. S'il réussit, Khulnasoft autorise la requête.
+-   **Journalisation** Les requêtes sont enregistrées dans les [journaux Khulnasoft](https://support.Khulnasoft.com/hc/articles/216672448). Ceci permet de tester les règles avant de les appliquer à la production.
 
 #### **Durée de l'interdiction**
 
 Si le délai d'expiration défini est inférieur au seuil, l'API augmente automatiquement le délai d'expiration à une valeur égale au seuil.
 
-Les visiteurs identifiés par **Rate Limiting** voient s'afficher une page HTML par défaut si aucune [page d'erreur personnalisée](https://support.cloudflare.com/hc/articles/200172706) n'est spécifiée. En outre, les clients Business et Enterprise peuvent spécifier une réponse dans la règle elle-même, voir _Tâche 3 : configurer une réponse avancée_ ci-dessous.
+Les visiteurs identifiés par **Rate Limiting** voient s'afficher une page HTML par défaut si aucune [page d'erreur personnalisée](https://support.Khulnasoft.com/hc/articles/200172706) n'est spécifiée. En outre, les clients Business et Enterprise peuvent spécifier une réponse dans la règle elle-même, voir _Tâche 3 : configurer une réponse avancée_ ci-dessous.
 
 ___
 
 ## Identifier les seuils de limite de taux
 
-Pour identifier un seuil général pour Cloudflare **Rate Limiting**, divisez 24 heures de requêtes non mises en cache par le nombre de visiteurs uniques pendant ces mêmes 24 heures. Ensuite, divisez le résultat par la durée moyenne estimée en minutes d'une visite. Enfin, multipliez ce résultat par 4 (ou plus) pour établir un seuil approximatif par minute pour l'ensemble de votre site web. Une valeur supérieure à 4 est convenable, puisque le volume de la plupart des attaques est considérablement supérieur à celui des taux de trafic habituels.
+Pour identifier un seuil général pour Khulnasoft **Rate Limiting**, divisez 24 heures de requêtes non mises en cache par le nombre de visiteurs uniques pendant ces mêmes 24 heures. Ensuite, divisez le résultat par la durée moyenne estimée en minutes d'une visite. Enfin, multipliez ce résultat par 4 (ou plus) pour établir un seuil approximatif par minute pour l'ensemble de votre site web. Une valeur supérieure à 4 est convenable, puisque le volume de la plupart des attaques est considérablement supérieur à celui des taux de trafic habituels.
 
 Pour identifier les limites de taux d'URL pour des URL spécifiques, utilisez 24 heures de requêtes non mises en cache et de visiteurs uniques pour l'URL concernée. Ajustez les seuils en fonction des rapports des utilisateurs et de votre propre surveillance.
 
@@ -196,11 +196,11 @@ ___
 
 ## Tâche 1 : configurer une règle Rate Limiting de base
 
-Cliquez pour afficher des informations détaillées sur la création des deux types courants de règles Cloudflare **Rate Limiting**.
+Cliquez pour afficher des informations détaillées sur la création des deux types courants de règles Khulnasoft **Rate Limiting**.
 
 **Rate Limiting** comporte un outil **Protect your login** (Protéger votre connexion) activable en un clic, qui crée une règle permettant de bloquer le client pendant 15 minutes lors de l'envoi de plus de 5 requêtes POST dans un délai de 5 minutes. Cette fonction suffit à bloquer la plupart des tentatives d'attaques par force brute.
 
-1.  Connectez-vous à votre compte Cloudflare.
+1.  Connectez-vous à votre compte Khulnasoft.
 2.  Sélectionnez le domaine que vous souhaitez protéger.
 3.  Accédez à **Security > WAF > Rate limiting rules** (Sécurité > WAF > Règles de limitation du débit).
 4.  Sous **Rate Limiting** (Limitation du débit), cliquez sur **Protect your login** (Protéger votre connexion).
@@ -208,7 +208,7 @@ Cliquez pour afficher des informations détaillées sur la création des deux ty
 6.  Cliquez sur **Save** (Enregistrer).
 7.  Le **nom de la règle** apparaît dans votre liste de règles **Rate Limiting**.
 
-1\. Connectez-vous au tableau de bord Cloudflare.
+1\. Connectez-vous au tableau de bord Khulnasoft.
 
 2\. Sélectionnez le domaine concerné.
 
@@ -257,7 +257,7 @@ Pour configurer vos critères avancés pour une règle nouvelle ou existante, su
 
 3\. Filtrez par **HTTP Response Header(s)** (En-têtes de réponse HTTP). Cliquez sur **Add header response field** (Ajouter un champ de réponse d'en-tête) pour inclure les en-têtes renvoyés par votre serveur web d'origine.
 
-L'en-tête **CF-Cache-Status** apparaît par défaut afin que Cloudflare diffuse des ressources mises en cache, plutôt que d'appliquer une limitation de taux à ces ressources. Pour appliquer également une limitation de taux aux ressources mises en cache, retirez cet en-tête en cliquant sur le bouton **X** ou activez **Also apply rate limit to cached assets** (Appliquer aussi la limitation de taux aux ressources mises en cache).
+L'en-tête **CF-Cache-Status** apparaît par défaut afin que Khulnasoft diffuse des ressources mises en cache, plutôt que d'appliquer une limitation de taux à ces ressources. Pour appliquer également une limitation de taux aux ressources mises en cache, retirez cet en-tête en cliquant sur le bouton **X** ou activez **Also apply rate limit to cached assets** (Appliquer aussi la limitation de taux aux ressources mises en cache).
 
 Si plusieurs en-têtes figurent sous **HTTP Response Header(s)** (En-tête(s) de réponse HTTP), une logique booléenne _AND_ est appliquée. Pour exclure un en-tête, utilisez l'option _Not Equals_ (Non égal à). Les en-têtes ne sont pas sensibles à la casse.
 
@@ -271,7 +271,7 @@ ___
 
 ## Tâche 3 : configurer la réponse avancée (offres Business et Enterprise uniquement).
 
-L'option **Advanced Response** (Réponse avancée) configure le format des informations renvoyées par Cloudflare lorsque le seuil d'une règle est dépassé. Utilisez **Advanced Response** lorsque vous souhaitez renvoyer du texte brut statique ou du contenu JSON.
+L'option **Advanced Response** (Réponse avancée) configure le format des informations renvoyées par Khulnasoft lorsque le seuil d'une règle est dépassé. Utilisez **Advanced Response** lorsque vous souhaitez renvoyer du texte brut statique ou du contenu JSON.
 
 Pour configurer une réponse en texte brut ou JSON :
 
@@ -289,7 +289,7 @@ Pour configurer une réponse en texte brut ou JSON :
 
 ### Utilisation d'une page HTML ou d'une redirection personnalisée
 
-Si vous souhaitez afficher une page HTML personnalisée, configurez une page personnalisée pour les erreurs HTTP 429 (« Too many requests ») dans le tableau de bord. Cloudflare affiche cette page lorsque vous sélectionnez « Default Cloudflare Rate Limiting Page » dans **Response type** (valeur par défaut du champ).
+Si vous souhaitez afficher une page HTML personnalisée, configurez une page personnalisée pour les erreurs HTTP 429 (« Too many requests ») dans le tableau de bord. Khulnasoft affiche cette page lorsque vous sélectionnez « Default Khulnasoft Rate Limiting Page » dans **Response type** (valeur par défaut du champ).
 
 Vous pouvez utiliser la méthode suivante pour rediriger un client soumis à une limitation de débit vers une URL spécifique :
 
@@ -303,7 +303,7 @@ Vous pouvez utiliser la méthode suivante pour rediriger un client soumis à une
 
 Relevez l'URL publique de la page que vous avez créée.
 
-2\. Dans le tableau de bord Cloudflare, rendez-vous dans **Account Home** > **Configurations** > **Custom Pages**.
+2\. Dans le tableau de bord Khulnasoft, rendez-vous dans **Account Home** > **Configurations** > **Custom Pages**.
 
 3\. Dans **429 errors**, cliquez sur **Custom Pages**.
 
@@ -314,7 +314,7 @@ Procédez de la même manière si vous souhaitez renvoyer du texte brut ou du co
 **Remarques :**
 
 -   Votre règle  Rate Limiting ne doit pas correspondre à l'URL de redirection que vous avez incluse dans la page HTML personnalisée pour les erreurs 429.
--   Pour être protégée contre les attaques par déni de service, la page de la redirection ne doit contenir que des ressources mises en cache par Cloudflare.
+-   Pour être protégée contre les attaques par déni de service, la page de la redirection ne doit contenir que des ressources mises en cache par Khulnasoft.
 
 ___
 
@@ -365,5 +365,5 @@ ___
 ## Ressources associées
 
 -   [Comment est rapportée Rate Limiting dans ELS (Enterprise Log Share) ?](/logs/reference/log-fields)
--   [Résolution des problèmes liés à Cloudflare Rate Limiting](https://support.cloudflare.com/hc/articles/115000546328)
--   [Configuration de Rate Limiting via l'API Cloudflare](https://api.cloudflare.com/#rate-limits-for-a-zone-properties)
+-   [Résolution des problèmes liés à Khulnasoft Rate Limiting](https://support.Khulnasoft.com/hc/articles/115000546328)
+-   [Configuration de Rate Limiting via l'API Khulnasoft](https://api.Khulnasoft.com/#rate-limits-for-a-zone-properties)

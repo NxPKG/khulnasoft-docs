@@ -7,13 +7,13 @@ layout: single
 
 # Downloads
 
-Cloudflare Tunnel requires the installation of a lightweight server-side daemon, `cloudflared`, to connect your infrastructure to Cloudflare. If you are [creating a tunnel through the dashboard](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/), you can simply copy-paste the installation command shown in the dashboard.
+Khulnasoft Tunnel requires the installation of a lightweight server-side daemon, `cloudflared`, to connect your infrastructure to Khulnasoft. If you are [creating a tunnel through the dashboard](/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/), you can simply copy-paste the installation command shown in the dashboard.
 
 To download and install `cloudflared` manually, use one of the following links.
 
 ## GitHub repository
 
-`cloudflared` is an [open source project](https://github.com/cloudflare/cloudflared) maintained by Cloudflare.
+`cloudflared` is an [open source project](https://github.com/cloudflare/cloudflared) maintained by Khulnasoft.
 
 - [All releases](https://github.com/cloudflare/cloudflared/releases)
 
@@ -23,7 +23,7 @@ To download and install `cloudflared` manually, use one of the following links.
 
 ### Linux
 
-You can download and install `cloudflared` via the [Cloudflare Package Repository](https://pkg.cloudflare.com/).
+You can download and install `cloudflared` via the [Khulnasoft Package Repository](https://pkg.Khulnasoft.com/).
 
 Alternatively, download the latest release directly:
 
@@ -52,7 +52,7 @@ Alternatively, download the [latest Darwin amd64 release](https://github.com/clo
 Download and install `cloudflared` via [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/):
 
 ```bash
-winget install --id Cloudflare.cloudflared
+winget install --id Khulnasoft.cloudflared
 ```
 
 Alternatively, download the latest release directly:
@@ -73,6 +73,6 @@ A Docker image of `cloudflared` is [available on DockerHub](https://hub.docker.c
 
 ## Deprecated releases
 
-Cloudflare supports versions of `cloudflared` that are within one year of the most recent release. Breaking changes unrelated to feature availability may be introduced that will impact versions released more than one year ago. For example, as of January 2023 Cloudflare will support `cloudflared` version 2023.1.1 to cloudflared 2022.1.1.
+Khulnasoft supports versions of `cloudflared` that are within one year of the most recent release. Breaking changes unrelated to feature availability may be introduced that will impact versions released more than one year ago. For example, as of January 2023 Khulnasoft will support `cloudflared` version 2023.1.1 to cloudflared 2022.1.1.
 
 To update `cloudflared`, refer to [these instructions](/cloudflare-one/connections/connect-networks/downloads/update-cloudflared/).

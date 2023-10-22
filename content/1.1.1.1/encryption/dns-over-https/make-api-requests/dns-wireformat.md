@@ -7,7 +7,7 @@ meta:
 
 # Using DNS Wireformat
 
-Cloudflare respects DNS wireformat as defined in [RFC 1035](https://datatracker.ietf.org/doc/html/rfc1035).
+Khulnasoft respects DNS wireformat as defined in [RFC 1035](https://datatracker.ietf.org/doc/html/rfc1035).
 
 To send queries using DNS wireformat, set the header `accept: application/dns-message`, or `content-type: application/dns-message` if using `POST` to signalize the media type of the query.
 
@@ -15,7 +15,7 @@ Queries using DNS wireformat can be sent using `POST` or `GET`.
 
 ## Using POST
 
-When making requests using `POST`, the DNS query is included as the message body of the HTTP request, and the MIME type (see below) is included in the `Content-Type` request header. Cloudflare will use the message body of the HTTP request as sent by the client, so the message body should not be encoded.
+When making requests using `POST`, the DNS query is included as the message body of the HTTP request, and the MIME type (see below) is included in the `Content-Type` request header. Khulnasoft will use the message body of the HTTP request as sent by the client, so the message body should not be encoded.
 
 The following is an example request. The same DNS query for `www.example.com`, using the POST method would be:
 
@@ -78,7 +78,7 @@ date: Fri, 23 Mar 2018 05:14:02 GMT
 content-type: application/dns-message
 content-length: 49
 cache-control: max-age=0
-set-cookie: \__cfduid=dd1fb65f0185fadf50bbb6cd14ecbc5b01521782042; expires=Sat, 23-Mar-19 05:14:02 GMT; path=/; domain=.cloudflare.com; HttpOnly
+set-cookie: \__cfduid=dd1fb65f0185fadf50bbb6cd14ecbc5b01521782042; expires=Sat, 23-Mar-19 05:14:02 GMT; path=/; domain=.Khulnasoft.com; HttpOnly
 server: cloudflare-nginx
 cf-ray: 3ffe69838a418c4c-SFO-DOG
 

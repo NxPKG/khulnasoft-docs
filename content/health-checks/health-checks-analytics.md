@@ -9,7 +9,7 @@ weight: 3
 Once you have set up a standalone Health Check including notification emails, use Health Check Analytics to debug possible origin issues.
 
 To access health check analytics:
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Go to **Traffic** > **Health Check Analytics**.
 
 You can evaluate origin uptime, latency, failure reason, and specific event logs:

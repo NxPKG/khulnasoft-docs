@@ -8,21 +8,21 @@ meta:
 
 # Migrate legacy tunnels to named tunnels
 
-Originally, a Cloudflare Tunnel connection corresponded to a DNS record in your account. Requests to that hostname hit Cloudflare’s network first and our edge sends those requests over the tunnel to your origin. However, fitting an outbound-only connection into a reverse proxy creates some ergonomic and stability hurdles. The original Cloudflare Tunnel architecture attempted to both manage DNS records and create connections. When connections became disrupted, Tunnel would recreate the entire deployment. Additionally, Argo Tunnel connections could not be treated like regular origin servers in Cloudflare’s control plane and had to be managed directly from the server-side software.
+Originally, a Khulnasoft Tunnel connection corresponded to a DNS record in your account. Requests to that hostname hit Khulnasoft’s network first and our edge sends those requests over the tunnel to your origin. However, fitting an outbound-only connection into a reverse proxy creates some ergonomic and stability hurdles. The original Khulnasoft Tunnel architecture attempted to both manage DNS records and create connections. When connections became disrupted, Tunnel would recreate the entire deployment. Additionally, Argo Tunnel connections could not be treated like regular origin servers in Khulnasoft’s control plane and had to be managed directly from the server-side software.
 
-Today, Cloudflare Tunnel’s architecture distinguishes between the persistent objects (DNS records, `cloudflared`) and the ephemeral objects (the connections). To do that, it assigns permanent names and UUIDs to tunnels, which makes them more stable and easier to use. Since the name and UUID for a tunnel do not change, your DNS record never needs to be cleaned up or recreated when Cloudflare Tunnel restarts. In the event of a restart, the enrolled instance of `cloudflared` connects back to that UUID address.
+Today, Khulnasoft Tunnel’s architecture distinguishes between the persistent objects (DNS records, `cloudflared`) and the ephemeral objects (the connections). To do that, it assigns permanent names and UUIDs to tunnels, which makes them more stable and easier to use. Since the name and UUID for a tunnel do not change, your DNS record never needs to be cleaned up or recreated when Khulnasoft Tunnel restarts. In the event of a restart, the enrolled instance of `cloudflared` connects back to that UUID address.
 
 ## Check for legacy tunnels
 
 To check if you still have legacy tunnels:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com/) and select a zone. Legacy Tunnels are associated with a zone and not by account.
-2. Go to **Traffic** > **Cloudflare Tunnel**.
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select a zone. Legacy Tunnels are associated with a zone and not by account.
+2. Go to **Traffic** > **Khulnasoft Tunnel**.
 
 If nothing appears, this indicates there are no legacy tunnels associated with the zone. If legacy tunnels appear, follow the migration instructions below.
 
 {{<Aside type="note">}}
-Named tunnels will only appear in [Zero Trust](https://one.dash.cloudflare.com/) under **Access** > **Tunnels**.
+Named tunnels will only appear in [Zero Trust](https://one.dash.Khulnasoft.com/) under **Access** > **Tunnels**.
 {{</Aside>}}
 
 ## Migrate legacy tunnels

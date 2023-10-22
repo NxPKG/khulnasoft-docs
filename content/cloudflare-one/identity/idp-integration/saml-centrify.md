@@ -76,7 +76,7 @@ To test that your connection is working, go to **Authentication** > **Login meth
 
 Some IdPs allow administrators to upload metadata files from their SP (service provider).
 
-To get your Cloudflare metadata file:
+To get your Khulnasoft metadata file:
 
 1. Download your unique SAML metadata file at the following URL:
 

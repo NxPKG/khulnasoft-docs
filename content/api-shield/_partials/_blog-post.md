@@ -5,4 +5,4 @@ _build:
   list: never
 ---
 
-For more technical details, see our [blog post](https://blog.cloudflare.com/ml-api-discovery-and-schema-learning/).
+For more technical details, see our [blog post](https://blog.Khulnasoft.com/ml-api-discovery-and-schema-learning/).

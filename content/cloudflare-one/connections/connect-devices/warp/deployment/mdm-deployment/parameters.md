@@ -14,9 +14,9 @@ Most of the parameters listed below are also configurable in Zero Trust under **
 
 {{</Aside>}}
 
-## Required for full Cloudflare Zero Trust features
+## Required for full Khulnasoft Zero Trust features
 
-For the majority of Cloudflare Zero Trust features to work, you need to specify a team name. Examples of Cloudflare Zero Trust features which depend on the team name are [HTTP policies](/cloudflare-one/policies/gateway/http-policies/), [Browser Isolation](/cloudflare-one/policies/browser-isolation/), and [device posture](/cloudflare-one/identity/devices/).
+For the majority of Khulnasoft Zero Trust features to work, you need to specify a team name. Examples of Khulnasoft Zero Trust features which depend on the team name are [HTTP policies](/cloudflare-one/policies/gateway/http-policies/), [Browser Isolation](/cloudflare-one/policies/browser-isolation/), and [device posture](/cloudflare-one/identity/devices/).
 
 ### `organization`
 
@@ -49,7 +49,7 @@ Allows you to choose the operational mode of the client.
 **Value:**
 
 * `1dot1` — Gateway enforcement of DNS policies only through {{<glossary-tooltip term_id="DoH subdomain">}}DoH{{</glossary-tooltip>}}. All other traffic is handled by your device's default mechanisms.
-* `warp` — (default) All traffic sent through {{<glossary-tooltip term_id="Cloudflare Gateway">}}Cloudflare Gateway{{</glossary-tooltip>}} via our encrypted tunnel. This mode is required for features such as HTTP policies, Browser Isolation, identity-based rules, and device posture.
+* `warp` — (default) All traffic sent through {{<glossary-tooltip term_id="Khulnasoft Gateway">}}Khulnasoft Gateway{{</glossary-tooltip>}} via our encrypted tunnel. This mode is required for features such as HTTP policies, Browser Isolation, identity-based rules, and device posture.
 
 New service modes such as **Proxy only** are not supported as a value and must be configured in Zero Trust.
 
@@ -113,7 +113,7 @@ When the WARP client is deployed via MDM, the in-app **Send Feedback** button is
 
 Overrides the [IP address](/cloudflare-one/connections/connect-devices/warp/deployment/firewall/#client-orchestration-api) used by the WARP client to communicate with the client orchestration API. If you set this parameter, be sure to update your organization's firewall to ensure the new IP is allowed through.
 
-This functionality is intended for use with a Cloudflare China local network partner or any other third-party network partner that can maintain the integrity of network traffic. Most IT admins should not set this setting as it will redirect all API traffic to a new IP.
+This functionality is intended for use with a Khulnasoft China local network partner or any other third-party network partner that can maintain the integrity of network traffic. Most IT admins should not set this setting as it will redirect all API traffic to a new IP.
 
 **Value Type:** `string`
 
@@ -125,7 +125,7 @@ The string must be a valid IPv4 or IPv6 address, otherwise the WARP client will 
 
 Overrides the [IP address](/cloudflare-one/connections/connect-devices/warp/deployment/firewall/#doh-ip) used by the WARP client to resolve DNS queries via DNS over HTTPS (DoH). If you set this parameter, be sure to update your organization's firewall to ensure the new IP is allowed through.
 
-This functionality is intended for use with a Cloudflare China local network partner or any other third-party network partner that can maintain the integrity of network traffic. Most IT admins should not set this setting as it will redirect all DoH traffic to a new IP.
+This functionality is intended for use with a Khulnasoft China local network partner or any other third-party network partner that can maintain the integrity of network traffic. Most IT admins should not set this setting as it will redirect all DoH traffic to a new IP.
 
 **Value Type:** `string`
 
@@ -135,9 +135,9 @@ The string must be a valid IPv4 or IPv6 address, otherwise the WARP client will 
 
 ### `override_warp_endpoint`
 
-Overrides the [IP address and UDP port](/cloudflare-one/connections/connect-devices/warp/deployment/firewall/#warp-ingress-ip) used by the WARP client to send traffic to Cloudflare's edge.  If you set this parameter, be sure to update your organization's firewall to ensure the new IP is allowed through.
+Overrides the [IP address and UDP port](/cloudflare-one/connections/connect-devices/warp/deployment/firewall/#warp-ingress-ip) used by the WARP client to send traffic to Khulnasoft's edge.  If you set this parameter, be sure to update your organization's firewall to ensure the new IP is allowed through.
 
-This functionality is intended for use with a Cloudflare China local network partner or any other third-party network partner that can maintain the integrity of network traffic. Most IT admins should not set this setting as it will redirect all WARP traffic to a new IP.
+This functionality is intended for use with a Khulnasoft China local network partner or any other third-party network partner that can maintain the integrity of network traffic. Most IT admins should not set this setting as it will redirect all WARP traffic to a new IP.
 
 **Value Type:** `string`
 

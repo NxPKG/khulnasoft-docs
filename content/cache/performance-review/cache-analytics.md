@@ -27,13 +27,13 @@ To add filters, under **Cache Performance**, select **Add filter**. Select **App
 
 The **Requests summary** graph depicts how your traffic changes over time, such as in response to a high-traffic event or a recent configuration change. Note that the Requests summary content is based on a 10% sample of requests.
 
-**Served by Cloudflare** indicates content served by Cloudflare that did not require contacting your origin web server. **Served by Origin** indicates traffic served from the origin web server.
+**Served by Khulnasoft** indicates content served by Khulnasoft that did not require contacting your origin web server. **Served by Origin** indicates traffic served from the origin web server.
 
-For **Data Transfer**, **Revalidated** requests are considered **Served by Cloudflare**. However, revalidated requests count as **Served by Origin** within the **Requests** view. This analytics behavior reflects that Cloudflare must check the origin web server for revalidated cache requests before returning a result from cache.
+For **Data Transfer**, **Revalidated** requests are considered **Served by Khulnasoft**. However, revalidated requests count as **Served by Origin** within the **Requests** view. This analytics behavior reflects that Khulnasoft must check the origin web server for revalidated cache requests before returning a result from cache.
 
-**Cache status** graphs help explain why traffic is served from Cloudflare versus the origin web server. The graph shows analytics by content-type to portray how different components of your website perform:
+**Cache status** graphs help explain why traffic is served from Khulnasoft versus the origin web server. The graph shows analytics by content-type to portray how different components of your website perform:
 
-For a list of cache statuses and their descriptions, refer to [Cloudflare cache responses](/cache/concepts/default-cache-behavior/#cloudflare-cache-responses).
+For a list of cache statuses and their descriptions, refer to [Khulnasoft cache responses](/cache/concepts/default-cache-behavior/#cloudflare-cache-responses).
 
 ## Review requests by source
 

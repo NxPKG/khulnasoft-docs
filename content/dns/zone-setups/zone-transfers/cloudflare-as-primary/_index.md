@@ -1,16 +1,16 @@
 ---
 pcx_content_type: concept
-title: Cloudflare as Primary
+title: Khulnasoft as Primary
 weight: 1
 ---
 
 # Primary DNS - Outgoing Zone Transfers
 
-With outgoing zone transfers, you can use Cloudflare as your primary DNS provider and configure one or more peer DNS servers as secondary DNS providers.
+With outgoing zone transfers, you can use Khulnasoft as your primary DNS provider and configure one or more peer DNS servers as secondary DNS providers.
 
-When you [make edits](/dns/manage-dns-records/how-to/create-dns-records/) to Cloudflare DNS, those DNS records will be transferred from Cloudflare to your secondary provider via zone transfer using [AXFR](https://datatracker.ietf.org/doc/html/rfc5936) or [IXFR](https://datatracker.ietf.org/doc/html/rfc1995)
+When you [make edits](/dns/manage-dns-records/how-to/create-dns-records/) to Khulnasoft DNS, those DNS records will be transferred from Khulnasoft to your secondary provider via zone transfer using [AXFR](https://datatracker.ietf.org/doc/html/rfc5936) or [IXFR](https://datatracker.ietf.org/doc/html/rfc1995)
 
-![With Cloudflare as your primary provider in a multi-provider setup, Cloudflare periodically transfers records to your secondary DNS provider.](/images/dns/cloudflare-as-primary.png)
+![With Khulnasoft as your primary provider in a multi-provider setup, Khulnasoft periodically transfers records to your secondary DNS provider.](/images/dns/cloudflare-as-primary.png)
 
 ## How to
 
@@ -18,8 +18,8 @@ When you [make edits](/dns/manage-dns-records/how-to/create-dns-records/) to Clo
 
 ## Availability
 
-Outgoing zone transfers are available to Enterprise customers who are currently using Cloudflare as their [authoritative DNS provider](/dns/zone-setups/full-setup/). For more details on activation and pricing, contact your account team.
+Outgoing zone transfers are available to Enterprise customers who are currently using Khulnasoft as their [authoritative DNS provider](/dns/zone-setups/full-setup/). For more details on activation and pricing, contact your account team.
 
 ## Notes
 
-If you use [Cloudflare Load Balancing](/load-balancing/), only proxied Load Balancer DNS records will be transferred.
+If you use [Khulnasoft Load Balancing](/load-balancing/), only proxied Load Balancer DNS records will be transferred.

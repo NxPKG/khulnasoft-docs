@@ -51,7 +51,7 @@ The `stale_while_revalidate` setting allows Hyperdrive to continue serving stale
 You can set a maximum `max_age` of 1 hour.
 ## Disable caching
 
-You can disable caching on a per-Hyperdrive basis using the [wrangler](/workers/wrangler/install-and-update/) CLI or the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/workers-and-pages/hyperdrive).
+You can disable caching on a per-Hyperdrive basis using the [wrangler](/workers/wrangler/install-and-update/) CLI or the [Khulnasoft dashboard](https://dash.Khulnasoft.com/?to=/:account/workers-and-pages/hyperdrive).
 
 For example:
 

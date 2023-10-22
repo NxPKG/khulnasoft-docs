@@ -26,7 +26,7 @@ The following request adds two rules to a custom ruleset. These will be the only
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{custom_ruleset_id} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{custom_ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -99,7 +99,7 @@ The following request edits one rule in a custom ruleset and updates the executi
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id} \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

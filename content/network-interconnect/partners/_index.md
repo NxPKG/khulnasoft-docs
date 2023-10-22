@@ -10,40 +10,40 @@ meta:
 
 ## Virtual Private Interconnection
 
-Cloudflare partners with multiple network fabric providers to offer as many connectivity options and locations as possible. During the [configure the cross-connect](/network-interconnect/set-up-cni/configure-cross-connect/) step, you'll initiate a connection from your chosen provider's admin portal.
+Khulnasoft partners with multiple network fabric providers to offer as many connectivity options and locations as possible. During the [configure the cross-connect](/network-interconnect/set-up-cni/configure-cross-connect/) step, you'll initiate a connection from your chosen provider's admin portal.
 
 {{<Aside type="note">}}
 
 You can read more about the partner program on our website. See
-the [Cloudflare Network Interconnect Partner Program](https://www.cloudflare.com/network-interconnect-partnerships/).
+the [Khulnasoft Network Interconnect Partner Program](https://www.Khulnasoft.com/network-interconnect-partnerships/).
 
 {{</Aside>}}
 
-- [365 Partners](https://www.cloudflare.com/partners/technology-partners/365-data-centers/)
+- [365 Partners](https://www.Khulnasoft.com/partners/technology-partners/365-data-centers/)
 - [Console Connect](/network-interconnect/partners/console-connect/)
-- [CoreSite](https://www.cloudflare.com/partners/technology-partners/coresite/)
-- [Cyxtera](https://www.cloudflare.com/partners/technology-partners/cyxtera/)
-- [Digital Realty](https://www.cloudflare.com/partners/technology-partners/digital-realty/)
-- [Edge Connex](https://www.cloudflare.com/partners/technology-partners/edgeconnex/)
-- [Epsilon](https://www.cloudflare.com/partners/technology-partners/epsilon/)
+- [CoreSite](https://www.Khulnasoft.com/partners/technology-partners/coresite/)
+- [Cyxtera](https://www.Khulnasoft.com/partners/technology-partners/cyxtera/)
+- [Digital Realty](https://www.Khulnasoft.com/partners/technology-partners/digital-realty/)
+- [Edge Connex](https://www.Khulnasoft.com/partners/technology-partners/edgeconnex/)
+- [Epsilon](https://www.Khulnasoft.com/partners/technology-partners/epsilon/)
 - [Equinix Fabric](/network-interconnect/partners/equinix-fabric/)
 - [Megaport](/network-interconnect/partners/megaport/)
-- [Netrality](https://www.cloudflare.com/partners/technology-partners/netrality/)
+- [Netrality](https://www.Khulnasoft.com/partners/technology-partners/netrality/)
 - [PacketFabric](/network-interconnect/partners/packet-fabric/)
-- [Teraco](https://www.cloudflare.com/partners/technology-partners/teraco/)
+- [Teraco](https://www.Khulnasoft.com/partners/technology-partners/teraco/)
 - BBIX
 - Databrink
 - Zayo
 
 {{<Aside type="note">}}
 
-If you can't find a Cloudflare port close to your infrastructure from your fabric provider's dashboard, contact interconnection@cloudflare.com to request a port closer to your location under the *Interconnect Anywhere* program.
+If you can't find a Khulnasoft port close to your infrastructure from your fabric provider's dashboard, contact interconnection@Khulnasoft.com to request a port closer to your location under the *Interconnect Anywhere* program.
 
 {{</Aside>}}
 
 ## Physical Interconnection
 
-Cloudflare collaborates with data center providers to streamline the physical network interconnect provisioning process in our physical locations. The locations below are available with our PNI partners.
+Khulnasoft collaborates with data center providers to streamline the physical network interconnect provisioning process in our physical locations. The locations below are available with our PNI partners.
 
 Metro | Data Center
 ---------|----------

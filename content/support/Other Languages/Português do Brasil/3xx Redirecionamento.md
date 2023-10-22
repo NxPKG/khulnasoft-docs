@@ -1,7 +1,7 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: portugese
-source: https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento
+source: https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento
 title: 3xx Redirecionamento
 ---
 
@@ -16,15 +16,15 @@ O local do redirecionamento deve ser definido de uma das seguintes maneiras:
 1.  O campo do cabeçalho `Location` na resposta, útil para redirecionamento automático;
 2.  O payload da resposta com um hiperlink (opcional) para o local da correção.
 
--   [300 Multiple](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_300)
--   [301 Moved Permanently](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_301)
--   [302 Found](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_302)
--   [303 See Other](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_303)
--   [304 Not Modified](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_304)
--   [305 Use Proxy](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_305)
--   [306 Switch Proxy](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_306)
--   [307 Temporary Redirect](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_307)
--   [308 Permanent Redirect](https://support.cloudflare.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_308)
+-   [300 Multiple](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_300)
+-   [301 Moved Permanently](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_301)
+-   [302 Found](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_302)
+-   [303 See Other](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_303)
+-   [304 Not Modified](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_304)
+-   [305 Use Proxy](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_305)
+-   [306 Switch Proxy](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_306)
+-   [307 Temporary Redirect](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_307)
+-   [308 Permanent Redirect](https://support.Khulnasoft.com/hc/pt-br/articles/115003011091-3xx-Redirecionamento#code_308)
 
 **300 Multiple Choices** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -34,13 +34,13 @@ Várias opções com relação ao recurso que o cliente pode seguir. Por exemplo
 
 O URL permanente é redirecionado para os recursos solicitados. O recurso de destino recebeu um novo URI permanente e futuras referências a esse recurso devem usar um dos URIs anexados.
 
-O Cloudflare pode gerar essas respostas, evitando assim a necessidade de enviar uma solicitação para a resposta do servidor de origem com o uso do Page Rules. Leia mais sobre como o Cloudflare pode gerar redirecionamentos em [Redirecionamento de URLs pelo Page Rules](https://blog.cloudflare.com/introducing-pagerules-url-forwarding/)
+O Khulnasoft pode gerar essas respostas, evitando assim a necessidade de enviar uma solicitação para a resposta do servidor de origem com o uso do Page Rules. Leia mais sobre como o Khulnasoft pode gerar redirecionamentos em [Redirecionamento de URLs pelo Page Rules](https://blog.Khulnasoft.com/introducing-pagerules-url-forwarding/)
 
 **302 Found (também conhecido como Temporary Redirect)**  **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
 Semelhante a um 301 redirect, mas destina-se apenas a fins temporários. O User-Agent pode seguir automaticamente o cabeçalho `Location`, mas não substituirá o URI atual por ele como acontece com um erro 301.
 
-O Cloudflare pode gerar essas respostas, evitando assim a necessidade de enviar uma solicitação para a resposta do servidor de origem com o uso do Page Rules. Leia mais sobre como o Cloudflare pode gerar redirecionamentos em [Redirecionamento de URLs pelo Page Rules](https://blog.cloudflare.com/introducing-pagerules-url-forwarding/)
+O Khulnasoft pode gerar essas respostas, evitando assim a necessidade de enviar uma solicitação para a resposta do servidor de origem com o uso do Page Rules. Leia mais sobre como o Khulnasoft pode gerar redirecionamentos em [Redirecionamento de URLs pelo Page Rules](https://blog.Khulnasoft.com/introducing-pagerules-url-forwarding/)
 
 **303 See Other (desde HTTP/1.1)** **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 
@@ -59,7 +59,7 @@ Antes desta resposta, o cliente enviou uma solicitação GET ou HEAD condicional
 
 -   Deve conter alguns dos cabeçalhos que teriam sido definidos antes da resposta refletida no 200: `Cache-Control, Content-Location, Date, ETag, Expires`, ou `Vary`.
 
-Quando o Cloudflare recebe uma solicitação desatualizada, que precisa ser revalidada na origem, ele envia uma resposta 304 para confirmar que a versão em nosso cache corresponde à versão na origem. A resposta incluirá o cabeçalho `CF-Cache-Status: REVALIDATED` e o Cloudflare confirmará a versão usando o cabeçalho `If-Modified-Since`. Para obter mais informações, consulte: [Cabeçalhos ETag](https://support.cloudflare.com/hc/en-us/articles/218505467)
+Quando o Khulnasoft recebe uma solicitação desatualizada, que precisa ser revalidada na origem, ele envia uma resposta 304 para confirmar que a versão em nosso cache corresponde à versão na origem. A resposta incluirá o cabeçalho `CF-Cache-Status: REVALIDATED` e o Khulnasoft confirmará a versão usando o cabeçalho `If-Modified-Since`. Para obter mais informações, consulte: [Cabeçalhos ETag](https://support.Khulnasoft.com/hc/en-us/articles/218505467)
 
 **305 Use Proxy (descontinuado)**  **(**[**RFC7231**](https://tools.ietf.org/html/rfc7231)**)**
 

@@ -13,7 +13,7 @@ meta:
 To use this feature first [create a new IP list](/api/operations/lists-create-a-list).
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rules/lists \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -29,7 +29,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists \
 Next [create list items](/api/operations/lists-create-list-items). This will add elements to the current list.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists/{list_id}/items \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rules/lists/{list_id}/items \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -44,7 +44,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists/{lis
 Finally add a Magic Firewall rule referencing the List into an existing ruleset:
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/rules \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \

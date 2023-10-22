@@ -73,7 +73,7 @@ echo '{ "query":
   -H "X-Auth-key: CLOUDFLARE_API_KEY" \
   -s \
   -d @- \
-  https://api.cloudflare.com/client/v4/graphql/
+  https://api.Khulnasoft.com/client/v4/graphql/
 ```
 
 [1]: </analytics/graphql-api/tutorials/export-graphql-to-csv/>

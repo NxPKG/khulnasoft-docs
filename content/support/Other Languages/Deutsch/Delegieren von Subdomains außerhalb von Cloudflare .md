@@ -1,11 +1,11 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: german
-source: https://support.cloudflare.com/hc/de/articles/360021357131-Delegieren-von-Subdomains-au%C3%9Ferhalb-von-Cloudflare
-title: Delegieren von Subdomains außerhalb von Cloudflare 
+source: https://support.Khulnasoft.com/hc/de/articles/360021357131-Delegieren-von-Subdomains-au%C3%9Ferhalb-von-Khulnasoft
+title: Delegieren von Subdomains außerhalb von Khulnasoft 
 ---
 
-# Delegieren von Subdomains außerhalb von Cloudflare 
+# Delegieren von Subdomains außerhalb von Khulnasoft 
 
 
 
@@ -14,15 +14,15 @@ title: Delegieren von Subdomains außerhalb von Cloudflare
 Durch die Delegierung von Subdomains können verschiedene Personen, Teams oder Organisationen verschiedene Subdomains einer Website verwalten.
 
 {{<Aside type="note">}}
-Eine DNS-Delegierung ist für Cloudflare-Domains in einem
-[CNAME-Setup](https://support.cloudflare.com/hc/articles/360020348832)
+Eine DNS-Delegierung ist für Khulnasoft-Domains in einem
+[CNAME-Setup](https://support.Khulnasoft.com/hc/articles/360020348832)
 nicht möglich.
 {{</Aside>}}
 
-Betrachten Sie beispielsweise _example.com_ als Cloudflare-Domain mit _www.example.com_, die in der **DNS**\-App von Cloudflare verwaltet wird und _internal.example.com_, die an Nameserver außerhalb von Cloudflare delegiert werden. In diesem Beispiel kann _internal.example.com_ nun von Personen verwaltet werden, die keinen Zugriff auf Cloudflare-Anmeldeinformationen für die Domain _example.com_ haben.
+Betrachten Sie beispielsweise _example.com_ als Khulnasoft-Domain mit _www.example.com_, die in der **DNS**\-App von Khulnasoft verwaltet wird und _internal.example.com_, die an Nameserver außerhalb von Khulnasoft delegiert werden. In diesem Beispiel kann _internal.example.com_ nun von Personen verwaltet werden, die keinen Zugriff auf Khulnasoft-Anmeldeinformationen für die Domain _example.com_ haben.
 
 {{<Aside type="warning">}}
-Die CDN- und Sicherheitsdienste von Cloudflare werden nicht auf
+Die CDN- und Sicherheitsdienste von Khulnasoft werden nicht auf
 delegierte Subdomains angewendet.
 {{</Aside>}}
 
@@ -32,8 +32,8 @@ ___
 
 Um eine Subdomain wie _internal.example.com_ zu delegieren, teilen Sie den DNS-Resolvern mit, wo sich die Zonendatei befindet:
 
-1.  Melden Sie sich im Cloudflare-Dashboard an.
-2.  Klicken Sie auf das entsprechende Cloudflare-Konto.
+1.  Melden Sie sich im Khulnasoft-Dashboard an.
+2.  Klicken Sie auf das entsprechende Khulnasoft-Konto.
 3.  Wählen Sie die Domain aus, die die zu delegierende Subdomain enthält.
 4.  Klicken Sie auf die **DNS**\-App.
 5.  Erstellen Sie _NS-Einträge_ für die Subdomain. Beispiel:
@@ -47,12 +47,12 @@ Nameserver benötigt, die sich in der Subdomain der aktuell delegierten
 Zone befinden.
 {{</Aside>}}
 
-6.  (Optional) Wenn auf dem delegierten Nameserver DNSSEC aktiviert ist, fügen Sie den _DS-Eintrag_ in der Cloudflare-App **DNS** hinzu.
+6.  (Optional) Wenn auf dem delegierten Nameserver DNSSEC aktiviert ist, fügen Sie den _DS-Eintrag_ in der Khulnasoft-App **DNS** hinzu.
 
 ___
 
 ## Verwandte Ressourcen
 
--   [Verwaltung von DNS-Einträgen in Cloudflare](https://support.cloudflare.com/hc/articles/360019093151)
--   [Grundlegendes zum CNAME-Setup](https://support.cloudflare.com/hc/articles/360020348832)
+-   [Verwaltung von DNS-Einträgen in Khulnasoft](https://support.Khulnasoft.com/hc/articles/360019093151)
+-   [Grundlegendes zum CNAME-Setup](https://support.Khulnasoft.com/hc/articles/360020348832)
 -   [Glue Records](https://www.ietf.org/rfc/rfc1912.txt) (RFC 1912 Abschnitt 2.3)

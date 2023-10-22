@@ -10,7 +10,7 @@ An API schema defines which API requests are valid based on several request prop
 
 Schema Validation allows you to check if incoming traffic complies with a previously supplied API schema. When you provide an API schema or select from a list of learned schema, API Shield creates rules for incoming traffic from the schema definitions. These rules define which traffic is allowed and which traffic gets logged or blocked.
 
-Cloudflare has recently launched Schema Validation 2.0. For help configuring the previous version of Schema Validation for one or more hosts using the dashboard, refer to [Configure Classic Schema Validation](/api-shield/reference/classic-schema-validation/). You can make changes to your Classic Schema Validation settings but you cannot add any new schemas.
+Khulnasoft has recently launched Schema Validation 2.0. For help configuring the previous version of Schema Validation for one or more hosts using the dashboard, refer to [Configure Classic Schema Validation](/api-shield/reference/classic-schema-validation/). You can make changes to your Classic Schema Validation settings but you cannot add any new schemas.
 
 You can migrate to Schema Validation 2.0 manually by uploading your schemas to the new system, or you can wait for a future release where we will add an easy migrate option per-schema.
 
@@ -20,7 +20,7 @@ Endpoints must be added to [Endpoint Management](/api-shield/management-and-moni
 
 ### Add validation by uploading a schema
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Go to **Schema Validation** and select **Add validation**.
 4. Select your schema file for upload.
@@ -34,7 +34,7 @@ Changes may take a few minutes to process depending on the number of added endpo
 
 ### Add validation by applying a learned schema to a single endpoint
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Go to **Schema Validation** and filter by the learned schema available.
 4. Select **Apply learned schema**.
@@ -44,7 +44,7 @@ Changes may take a few minutes to process depending on the number of added endpo
 
 At this time, learned schemas will not overwrite customer-uploaded schemas. If an endpoint is covered by a customer-uploaded schema and also appears in a learned schema, the **Changes** field is set to `Unaffected`.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Go to **Schema Validation** and select **Add Validation**.
 4. Select **Apply learned schema**.
@@ -58,7 +58,7 @@ If an endpoint is currently protected by a learned schema, the date of the last 
 
 ### Change the action of an entire schema
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Go to **Schema Validation** and select the schema in the Schema list.
 4. Check the multi-select box to select the endpoints shown on the current page.
@@ -77,7 +77,7 @@ Schema Validation’s default action is visible on the main Schema Validation pa
 
 To change the default action:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Security** > **API Shield**.
 3. Select **Schema Validation**.
 4. Under the default `Log` action, select **Change**.
@@ -94,7 +94,7 @@ This allows you to be stricter on blocking non-compliant requests on certain end
 
 To change the action on an individual endpoint:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Go to **Security** > **API Shield**.
 3. Select **Schema Validation** and filter the selected endpoint.
 4. Select the ellipses on the endpoint's row.
@@ -105,7 +105,7 @@ To change the action on an individual endpoint:
 
 You can disable Schema Validation entirely for temporary troubleshooting. You can override all actions at once, preventing Schema Validation from taking any action while you complete your troubleshooting.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Go to the **Schema Validation** settings.
 4. Select **Disable**.
@@ -116,7 +116,7 @@ Your per-endpoint configurations will be saved when modifying the setting, so th
 
 To view currently uploaded or learned schemas:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Go to your **Schema Validation** settings.
 4. View your schemas under **Uploaded Schemas** and **Learned schemas**.
@@ -128,7 +128,7 @@ Deleting the schema will remove validation from the currently associated endpoin
 
 To delete currently uploaded or learned schemas:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 2. Select **Security** > **API Shield**.
 3. Go to your **Schema Validation** settings.
 4. View your schemas under **Uploaded Schemas** and **Learned schemas**.
@@ -158,4 +158,4 @@ The supported content-type format is `application/json`. The code must validate 
 
 Schema Validation is available for all API Shield customers. 
 
-Enterprise customers who have not purchased API Shield can preview [API Shield as a non-contract service](https://dash.cloudflare.com/?to=/:account/:zone/security/api-shield) in the Cloudflare dashboard or by contacting your account team.
+Enterprise customers who have not purchased API Shield can preview [API Shield as a non-contract service](https://dash.Khulnasoft.com/?to=/:account/:zone/security/api-shield) in the Khulnasoft dashboard or by contacting your account team.

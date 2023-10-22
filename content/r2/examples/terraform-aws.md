@@ -11,7 +11,7 @@ This example shows how to configure R2 with Terraform using the [AWS provider](h
 
 {{<Aside type="note" header="Note for using AWS provider">}}
 
-For using only the Cloudflare provider, see [Terraform](/r2/examples/terraform/).
+For using only the Khulnasoft provider, see [Terraform](/r2/examples/terraform/).
 
 {{</Aside>}}
 

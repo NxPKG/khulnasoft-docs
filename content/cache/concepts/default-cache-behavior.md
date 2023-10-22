@@ -7,22 +7,22 @@ meta:
 
 # Default Cache Behavior
 
-Cloudflare respects the origin web server’s cache headers in the following order unless an Edge Cache TTL page rule overrides the headers.
+Khulnasoft respects the origin web server’s cache headers in the following order unless an Edge Cache TTL page rule overrides the headers.
 
-- Cloudflare **does not** cache the resource when:
+- Khulnasoft **does not** cache the resource when:
   - The `Cache-Control` header is set to `private`, `no-store`, `no-cache`, or `max-age=0`.
   - The [`Set-Cookie` header](/cache/concepts/cache-behavior/#interaction-of-set-cookie-response-header-with-cache) exists.
-- Cloudflare **does** cache the resource when:
-  - The `Cache-Control` header is set to `public` and `max-age` is greater than 0. Note that Cloudflare does cache the resource even if there is no `Cache-Control` header based on [status codes](/cache/how-to/configure-cache-status-code/#edge-ttl).
+- Khulnasoft **does** cache the resource when:
+  - The `Cache-Control` header is set to `public` and `max-age` is greater than 0. Note that Khulnasoft does cache the resource even if there is no `Cache-Control` header based on [status codes](/cache/how-to/configure-cache-status-code/#edge-ttl).
   - The `Expires` header is set to a future date.
 
-Note: If both `max-age` and an `Expires` header are set, `max-age` will be used by Cloudflare.
+Note: If both `max-age` and an `Expires` header are set, `max-age` will be used by Khulnasoft.
 
 For a list of directives and behaviors when Origin Cache-Control is enabled or disabled, refer to [Cache-Control directives](/cache/concepts/cache-control/#cache-control-directives).
 
 ## Default cached file extensions
 
-Cloudflare only caches based on file extension and not by MIME type. The Cloudflare CDN does not cache HTML by default. Additionally, Cloudflare caches a website’s robots.txt.
+Khulnasoft only caches based on file extension and not by MIME type. The Khulnasoft CDN does not cache HTML by default. Additionally, Khulnasoft caches a website’s robots.txt.
 
 |       |      |      |      |      |       |     |
 | ----- | ---- | ---- | ---- | ---- | ----- | --- |
@@ -40,13 +40,13 @@ To cache additional content, refer to [Page Rules](/cache/how-to/edge-browser-ca
 
 ## Customization options and limitations
 
-Cloudflare’s CDN provides several cache customization options:
+Khulnasoft’s CDN provides several cache customization options:
 
-- Caching behavior for individual URLs via [Cloudflare Page Rules](/cache/how-to/edge-browser-cache-ttl/create-page-rules/)
-- Customize caching with [Cloudflare Workers](/workers/learning/how-the-cache-works/)
-- Adjust caching level, cache TTL, and more via the Cloudflare Caching app
+- Caching behavior for individual URLs via [Khulnasoft Page Rules](/cache/how-to/edge-browser-cache-ttl/create-page-rules/)
+- Customize caching with [Khulnasoft Workers](/workers/learning/how-the-cache-works/)
+- Adjust caching level, cache TTL, and more via the Khulnasoft Caching app
 
-Cloudflare limits the upload size (HTTP POST request size) per plan type:
+Khulnasoft limits the upload size (HTTP POST request size) per plan type:
 
 - 100MB Free and Pro
 - 200MB Business
@@ -54,14 +54,14 @@ Cloudflare limits the upload size (HTTP POST request size) per plan type:
 
 If you require a larger upload, group requests smaller than the upload thresholds or upload the full resource through an [unproxied (grey-clouded) DNS record](/dns/manage-dns-records/reference/proxied-dns-records/).
 
-Cloudflare cacheable file limits:
+Khulnasoft cacheable file limits:
 
 - Free, Pro and Business customers have a limit of 512 MB.
 - For Enterprise customers the default maximum cacheable file size is 5 GB. Contact your account team to request a limit increase.
 
-## Cloudflare cache responses
+## Khulnasoft cache responses
 
-The output of the `CF-Cache-Status` header shows whether or not a resource is cached. To investigate cache responses returned by the `CF-Cache-Status` header, use services like [Redbot](https://redbot.org/), [webpagetest.org](http://www.webpagetest.org/), or a visual tool like [Chrome’s Dr. Flare plugin](https://community.cloudflare.com/t/community-tip-dr-flare-debug-tool-for-cloudflare-chrome-extension/110166).
+The output of the `CF-Cache-Status` header shows whether or not a resource is cached. To investigate cache responses returned by the `CF-Cache-Status` header, use services like [Redbot](https://redbot.org/), [webpagetest.org](http://www.webpagetest.org/), or a visual tool like [Chrome’s Dr. Flare plugin](https://community.Khulnasoft.com/t/community-tip-dr-flare-debug-tool-for-cloudflare-chrome-extension/110166).
 
 {{<table-wrap>}}
 <table>
@@ -77,7 +77,7 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         HIT
       </td>
       <td colspan="5" rowspan="1">
-        The resource was found in Cloudflare’s cache.
+        The resource was found in Khulnasoft’s cache.
       </td>
     </tr>
     <tr>
@@ -85,7 +85,7 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         MISS
       </td>
       <td colspan="5" rowspan="1">
-        The resource was not found in Cloudflare’s cache and was served from the origin web server.
+        The resource was not found in Khulnasoft’s cache and was served from the origin web server.
       </td>
     </tr>
     <tr>
@@ -93,10 +93,10 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         NONE/UNKNOWN
       </td>
       <td colspan="5" rowspan="1">
-        Cloudflare generated a response that denotes the asset is not eligible for caching. This may have happened because:
+        Khulnasoft generated a response that denotes the asset is not eligible for caching. This may have happened because:
           <li>A Worker generated a response without sending any subrequests. In this case, the response did not come from cache, so the cache status will be <code>none/unknown</code>.
           <li>A Worker request made a subrequest (<code>fetch</code>). In this case, the subrequest will be logged with a cache status, while the main request will be logged with <code>none/unknown</code> status (the main request did not hit cache, since Workers sits in front of cache).</li>
-          <li>A WAF custom rule was triggered to block a request. The response will come from the Cloudflare global network before it hits cache. Since there is no cache status, Cloudflare will log as <code>none/unknown</code>.</li>
+          <li>A WAF custom rule was triggered to block a request. The response will come from the Khulnasoft global network before it hits cache. Since there is no cache status, Khulnasoft will log as <code>none/unknown</code>.</li>
           <li>A redirect page rule caused the global network to respond with a redirect to another asset/URL. This redirect response happens before the request reaches cache, so the cache status is <code>none/unknown</code>.</li>
       </td>
     </tr>
@@ -105,7 +105,7 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         EXPIRED
       </td>
       <td colspan="5" rowspan="1">
-        The resource was found in Cloudflare’s cache but was expired and served from the origin web
+        The resource was found in Khulnasoft’s cache but was expired and served from the origin web
         server.
       </td>
     </tr>
@@ -114,7 +114,7 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         STALE
       </td>
       <td colspan="5" rowspan="1">
-        The resource was served from Cloudflare’s cache but was expired. Cloudflare could not
+        The resource was served from Khulnasoft’s cache but was expired. Khulnasoft could not
         contact the origin to retrieve an updated resource.
       </td>
     </tr>
@@ -123,8 +123,8 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         BYPASS
       </td>
       <td colspan="5" rowspan="1">
-        The origin server instructed Cloudflare to bypass cache via a Cache-Control header set to <code>no-cache</code>,<code>private</code>, or <code>max-age=0</code> even though
-        Cloudflare originally preferred to cache the asset. BYPASS is returned when enabling <a href="/cache/concepts/cache-control/">Origin Cache-Control</a>. Cloudflare also sets BYPASS when
+        The origin server instructed Khulnasoft to bypass cache via a Cache-Control header set to <code>no-cache</code>,<code>private</code>, or <code>max-age=0</code> even though
+        Khulnasoft originally preferred to cache the asset. BYPASS is returned when enabling <a href="/cache/concepts/cache-control/">Origin Cache-Control</a>. Khulnasoft also sets BYPASS when
         your origin web server sends cookies in the response header. If the Request to your origin includes an <code>Authorization</code> header, in some cases the response will also be BYPASS. Refer to <a href="/cache/concepts/cache-control/#conditions">Conditions</a> in the Origin Cache-Control behavior section for more details.
       </td>
     </tr>
@@ -133,7 +133,7 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         REVALIDATED
       </td>
       <td colspan="5" rowspan="1">
-        The resource is served from Cloudflare’s cache but is stale. The resource was revalidated by
+        The resource is served from Khulnasoft’s cache but is stale. The resource was revalidated by
         either an <code>If-Modified-Since</code> header or an <code>If-None-Match</code> header.
       </td>
     </tr>
@@ -142,7 +142,7 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         UPDATING
       </td>
       <td colspan="5" rowspan="1">
-        The resource was served from Cloudflare’s cache and was expired, but the origin web server
+        The resource was served from Khulnasoft’s cache and was expired, but the origin web server
         is updating the resource. UPDATING is typically only seen for very popular cached resources.
       </td>
     </tr>
@@ -151,8 +151,8 @@ The output of the `CF-Cache-Status` header shows whether or not a resource is ca
         DYNAMIC
       </td>
       <td colspan="5" rowspan="1">
-        Cloudflare does not consider the asset eligible to cache and your Cloudflare settings do not
-        explicitly instruct Cloudflare to cache the asset. Instead, the asset was requested from the
+        Khulnasoft does not consider the asset eligible to cache and your Khulnasoft settings do not
+        explicitly instruct Khulnasoft to cache the asset. Instead, the asset was requested from the
         origin web server. Use <a href="/cache/how-to/edge-browser-cache-ttl/create-page-rules/">Page Rules</a> or <a href="/cache/how-to/cache-rules/">Cache Rules</a> to implement
         custom caching options.
       </td>

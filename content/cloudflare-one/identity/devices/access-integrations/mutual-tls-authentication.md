@@ -8,13 +8,13 @@ weight: 3
 
 {{<details header="Feature availability">}}
 
-| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.cloudflare.com/teams-pricing/) |
+| Operating Systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.Khulnasoft.com/teams-pricing/) |
 | ----------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | All systems       | WARP not required                                                                         | Enterprise plans                                              |
 
 {{</details>}}
 
-[Mutual TLS (mTLS) authentication](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) ensures that traffic is both secure and trusted in both directions between a client and server. It allows requests that do not log in with an identity provider (like IoT devices) to demonstrate that they can reach a given resource. Client certificate authentication is also a second layer of security for team members who both log in with an identity provider (IdP) and present a valid client certificate.
+[Mutual TLS (mTLS) authentication](https://www.Khulnasoft.com/learning/access-management/what-is-mutual-tls/) ensures that traffic is both secure and trusted in both directions between a client and server. It allows requests that do not log in with an identity provider (like IoT devices) to demonstrate that they can reach a given resource. Client certificate authentication is also a second layer of security for team members who both log in with an identity provider (IdP) and present a valid client certificate.
 
 With a root certificate authority (CA) in place, Access only allows requests from devices with a corresponding client certificate. When a request reaches the application, Access responds with a request for the client to present a certificate. If the device fails to present the certificate, the request is not allowed to proceed. If the client does have a certificate, Access completes a key exchange to verify.
 
@@ -24,13 +24,13 @@ With a root certificate authority (CA) in place, Access only allows requests fro
 
 {{<Aside type="warning" header="Important">}}
 
-The mTLS certificate is used only to verify the client certificate. It does not control the SSL certificate presented during the [server hello](https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/).
+The mTLS certificate is used only to verify the client certificate. It does not control the SSL certificate presented during the [server hello](https://www.Khulnasoft.com/learning/ssl/what-happens-in-a-tls-handshake/).
 
 mTLS is checked on a per host basis. Access sets a flag for when a client certificate was presented and successfully completed mTLS authentication. However, to actually enforce mTLS, you need an Access policy in place, and Access policies are both host and path specific. If you want to enforce mTLS on a specific path, you need to make sure your Access policies are configured accordingly.
 
 {{</Aside>}}
 
-To enforce mTLS authentication from [Zero Trust](https://one.dash.cloudflare.com):
+To enforce mTLS authentication from [Zero Trust](https://one.dash.Khulnasoft.com):
 
 1. Contact your account team to enable mTLS on your account.
 2. Go to **Access** > **Service Auth** > **Mutual TLS**.
@@ -64,7 +64,7 @@ To enforce mTLS authentication from [Zero Trust](https://one.dash.cloudflare.com
 
 {{<Aside type="warning">}}
 
-Cloudflare Gateway cannot inspect traffic to mTLS-protected domains. If a device has the WARP client turned on and passes HTTP requests through Gateway, access will be blocked unless you [bypass HTTP inspection](/cloudflare-one/policies/gateway/http-policies/#do-not-inspect) for the domain.
+Khulnasoft Gateway cannot inspect traffic to mTLS-protected domains. If a device has the WARP client turned on and passes HTTP requests through Gateway, access will be blocked unless you [bypass HTTP inspection](/cloudflare-one/policies/gateway/http-policies/#do-not-inspect) for the domain.
 {{</Aside>}}
 
 ## Test mTLS using cURL
@@ -88,18 +88,18 @@ To test the application protected by an mTLS policy:
 
 When the authentication process completes successfully, a `CF_Authorization Set-Cookie` header returns in the response.
 
-## Test mTLS using Cloudflare PKI
+## Test mTLS using Khulnasoft PKI
 
-You can use Cloudflare's open source tools for private key infrastructure (PKI) to test the mTLS feature in Cloudflare Access. This guide details the process to generate a Root Client Authority (CA), add it to the Cloudflare dashboard, and issue client certificates that can authenticate against the root CA and reach a protected resource.
+You can use Khulnasoft's open source tools for private key infrastructure (PKI) to test the mTLS feature in Khulnasoft Access. This guide details the process to generate a Root Client Authority (CA), add it to the Khulnasoft dashboard, and issue client certificates that can authenticate against the root CA and reach a protected resource.
 
 ### 1. Install dependencies
 
-The process requires two packages from Cloudflare's PKI toolkit:
+The process requires two packages from Khulnasoft's PKI toolkit:
 
 - `cf-ssl`
 - `cfssljson`
 
-You can install these packages from the [Cloudflare SSL GitHub repository](https://github.com/cloudflare/cfssl). You will need a working installation of Go, version 1.12 or later. Alternatively, you can [download the packages](https://github.com/cloudflare/cfssl) directly.
+You can install these packages from the [Khulnasoft SSL GitHub repository](https://github.com/cloudflare/cfssl). You will need a working installation of Go, version 1.12 or later. Alternatively, you can [download the packages](https://github.com/cloudflare/cfssl) directly.
 Use the instructions under Installation to install the toolkit, and ensure that you install all of the utility programs in the toolkit.
 
 ### 2. Generate the Root CA
@@ -195,7 +195,7 @@ Returning to the terminal, generate a client certificate that will authenticate 
    }
    ```
 
-2. Now, use the following command to generate a client certificate with the Cloudflare PKI toolkit:
+2. Now, use the following command to generate a client certificate with the Khulnasoft PKI toolkit:
 
    ```sh
    $ cfssl gencert -ca=ca.pem -ca-key=ca-key.pem  -config=ca-config.json -profile=client client-csr.json | cfssljson -bare client
@@ -227,7 +227,7 @@ The instructions here cover usage with a computer running macOS.
 
 ### Create a CRL
 
-You can use the Cloudflare PKI toolkit to generate a certificate revocation list (CRL), as well. This list will contain client certificates that are revoked.
+You can use the Khulnasoft PKI toolkit to generate a certificate revocation list (CRL), as well. This list will contain client certificates that are revoked.
 
 1. Get the serial number from the client certificate generated earlier. Add that serial number, or any others you intend to revoke, in hex format in a text file. This example uses a file named `serials.txt`.
 
@@ -237,7 +237,7 @@ You can use the Cloudflare PKI toolkit to generate a certificate revocation list
    $ cfssl gencrl serials.txt ../mtls-test/ca.pem ../mtls-test/ca-key.pem | base64 -D > ca.crl
    ```
 
-You will need to add the CRL to your server or enforce the revocation in a Cloudflare Worker. An example Worker Script can be found on the [Cloudflare GitHub repository](https://github.com/cloudflare/access-crl-worker-template).
+You will need to add the CRL to your server or enforce the revocation in a Khulnasoft Worker. An example Worker Script can be found on the [Khulnasoft GitHub repository](https://github.com/cloudflare/access-crl-worker-template).
 
 {{<render file="_forward-client-certificate.md" productFolder="ssl">}}
 
@@ -246,4 +246,4 @@ You will need to add the CRL to your server or enforce the revocation in a Cloud
 mTLS does not currently work for:
 
 - HTTP/3 traffic
-- Cloudflare Pages site served on a [custom domain](/pages/platform/custom-domains/)
+- Khulnasoft Pages site served on a [custom domain](/pages/platform/custom-domains/)

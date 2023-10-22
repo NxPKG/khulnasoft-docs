@@ -25,7 +25,7 @@ Cloudflare supports two types of packet captures:
 
 {{<Aside type="note" header="Note:">}}
 
-For help determining which data center to select for a packet capture, visit https://cloudflare.com/cdn-cgi/trace and refer to the `colo` field. Note some colos can be regional such as `ORD` while other names may be more specific like `ord02`. Either of these names can be used for this same field.
+For help determining which data center to select for a packet capture, visit https://Khulnasoft.com/cdn-cgi/trace and refer to the `colo` field. Note some colos can be regional such as `ORD` while other names may be more specific like `ord02`. Either of these names can be used for this same field.
 
 {{</Aside>}}
 
@@ -43,7 +43,7 @@ For help determining which data center to select for a packet capture, visit htt
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select you account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select you account.
 2. Select **Magic Transit** or **Magic WAN**.
 3. In **Captures**, select **Start a capture**.
 4. Select the **Captures** tab > **Start a capture**.
@@ -71,7 +71,7 @@ Leave `filter_v1` empty to collect all packets without any filtering.
 ---
 header: Full PCAP example request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pcaps \
 --header 'Content-Type: application/json' \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
@@ -125,7 +125,7 @@ Leave `filter_v1` to collect all packets without any filtering.
 ---
 header: Simple PCAP example request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pcaps \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -183,7 +183,7 @@ header: Simple PCAP example response
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select you account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select you account.
 2. Select **Magic Transit** or **Magic WAN**.
 3. In **Packet captures**, select **Start a capture**.
 4. Select the **Captures** tab.
@@ -194,7 +194,7 @@ header: Simple PCAP example response
 To check the status of a running job, send a request to the endpoint and specify the PCAP identifier. The PCAP identifier is received in the response of a collect request as shown in the previous step.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps/{pcap_id} \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pcaps/{pcap_id} \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>'
@@ -245,7 +245,7 @@ After your request finishes processing, you can download your packet captures.
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select you account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select you account.
 2. Select **Magic Transit** or **Magic WAN**.
 3. In **Packet captures**, select **Start a capture**.
 4. Select the **Captures** tab.
@@ -267,7 +267,7 @@ To obtain full PCAPs, download the files from the bucket specified in `destinati
 Once the simple PCAP collection is complete, you can download the PCAP by specifying the PCAP identifier used earlier.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps/{pcap_id}/download \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pcaps/{pcap_id}/download \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>' \
@@ -282,7 +282,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps/{pcap_id}/
 {{<tabs labels="Dashboard | API">}}
 {{<tab label="dashboard" no-code="true">}}
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select you account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select you account.
 2. Select **Magic Transit** or **Magic WAN**.
 3. In **Packet captures**, select **Start a capture**.
 4. Select the **Captures** tab.
@@ -298,7 +298,7 @@ To view a list of sent requests, use the following command:
 ---
 header: List request example
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/pcaps \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/pcaps \
 --header 'Content-Type: application/json' \
 --header 'X-Auth-Email: <YOUR_EMAIL>' \
 --header 'X-Auth-Key: <API_KEY>'

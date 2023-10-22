@@ -54,9 +54,9 @@ The `warp-debugging-info-<date>-<time>.zip` archive contains the following files
 {{<table-wrap>}}
 | File name          | Description |
 | ------------------ | ----------- |
-| `boringtun.log`    | Log for the WARP tunnel that serves traffic from the device to Cloudflare's global network. |
+| `boringtun.log`    | Log for the WARP tunnel that serves traffic from the device to Khulnasoft's global network. |
 | `connectivity.txt` | DNS resolution and HTTP trace requests to [validate a successful connection](/cloudflare-one/connections/connect-devices/warp/deployment/firewall/#connectivity-check).
-| `daemon.log`       | Detailed log of all actions performed by the WARP client, including all communication between the device and Cloudflare's global network.  **Note:** This is the most useful debug log. |
+| `daemon.log`       | Detailed log of all actions performed by the WARP client, including all communication between the device and Khulnasoft's global network.  **Note:** This is the most useful debug log. |
 | `daemon_dns.log`   | Contains detailed DNS logs if **Log DNS queries** was enabled on WARP. |
 | `date.txt`         | Date and time (UTC) when you ran the `warp-diag` command.|
 | `dns-check.txt`    | Verifies that the WARP DNS servers are set as system default. For [operating modes](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) where DNS filtering is enabled, this file contains the IPs of the local WARP DNS proxy (`127.0.2.2:0`, `127.0.2.3:0`, `[fd01:db8:1111::2]:0`, and `[fd01:db8:1111::3]:0`).|
@@ -81,7 +81,7 @@ The `warp-debugging-info-<date>-<time>.zip` archive contains the following files
 | `sysinfo.json`     | CPU and memory usage when `warp-diag` was run. This information is useful for determining whether slow speeds are due to heavy system load. |
 | `systeminfo.txt` </br> `system-profile.txt` | System software overview.  |
 | `timezone.txt`     | Local timezone of the device specified as a UTC offset. |
-| `traceroute.txt`   | Traceroute to the [WARP ingress IPs](/cloudflare-one/connections/connect-devices/warp/deployment/firewall/#warp-ingress-ip) showing the path from the device to Cloudflare's global network.|
+| `traceroute.txt`   | Traceroute to the [WARP ingress IPs](/cloudflare-one/connections/connect-devices/warp/deployment/firewall/#warp-ingress-ip) showing the path from the device to Khulnasoft's global network.|
 | `uname.txt`        |  Linux-only system information including kernel version. |
 | `v4interfaces.txt` </br> `v4subinterfaces.txt` </br> `v6interfaces.txt` </br> `v6subinterfaces.txt` | IPv4 and IPv6 network configuration on Windows. |
 | `version.txt`      | [WARP client version](/cloudflare-one/connections/connect-devices/warp/download-warp/) installed on the device. |

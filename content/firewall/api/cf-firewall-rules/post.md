@@ -12,7 +12,7 @@ This example creates several firewall rules using a single API call.
 
 {{<Aside type="note">}}
 
-To create a firewall rule you need a [filter](/firewall/api/cf-filters/what-is-a-filter/) identifier (`id`). If you have not created a filter yet, refer to the [Cloudflare Filters API documentation](/firewall/api/cf-filters/).
+To create a firewall rule you need a [filter](/firewall/api/cf-filters/what-is-a-filter/) identifier (`id`). If you have not created a filter yet, refer to the [Khulnasoft Filters API documentation](/firewall/api/cf-filters/).
 
 {{</Aside>}}
 
@@ -20,7 +20,7 @@ To create a firewall rule you need a [filter](/firewall/api/cf-filters/what-is-a
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules" \
+curl "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/firewall/rules" \
 --header "X-Auth-Email: <EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \

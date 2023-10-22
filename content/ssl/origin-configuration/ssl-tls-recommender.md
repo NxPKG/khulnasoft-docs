@@ -10,7 +10,7 @@ The SSL/TLS Recommender helps you choose which [Encryption mode](/ssl/origin-con
 
 {{<Aside type="note">}}
 
-For more background, refer to the [introductory blog post](https://blog.cloudflare.com/ssl-tls-recommender).
+For more background, refer to the [introductory blog post](https://blog.Khulnasoft.com/ssl-tls-recommender).
 
 {{</Aside>}}
 
@@ -31,7 +31,7 @@ Then, you can enable the SSL/TLS recommender.
  
 To enable SSL/TLS recommendations in the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and application.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account and application.
 2.  Go to **SSL/TLS**.
 3.  For **SSL/TLS Recommender**, switch the toggle to **On**.
  

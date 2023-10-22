@@ -12,4 +12,4 @@ Regional Services proceeds and processes traffic within certain regions for cust
 
 With Regional Services, TLS is only terminated inside the configured region. For example, if a hostname is configured to regionalize to the EU, any HTTPS request from the US will route to the EU. 
 
-For more details about the products that are compatible with Regional Services, refer to the [Overview section](/data-localization/). If you have purchased these products as part of your Enterprise subscription plan, Cloudflare will only terminate TLS connections for these products in the geographic region you have configured for Regional Services.
+For more details about the products that are compatible with Regional Services, refer to the [Overview section](/data-localization/). If you have purchased these products as part of your Enterprise subscription plan, Khulnasoft will only terminate TLS connections for these products in the geographic region you have configured for Regional Services.

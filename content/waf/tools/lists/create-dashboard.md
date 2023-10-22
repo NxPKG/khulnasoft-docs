@@ -8,7 +8,7 @@ weight: 5
 
 To create a list, follow these steps:
 
-1.  Log in to your [Cloudflare account](https://dash.cloudflare.com) and select your account.
+1.  Log in to your [Khulnasoft account](https://dash.Khulnasoft.com) and select your account.
 
 2. Go to Account Home > **Manage Account** > **Configurations**, and then select **Lists**.
 

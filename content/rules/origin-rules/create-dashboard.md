@@ -8,7 +8,7 @@ meta:
 
 # Create an origin rule in the dashboard
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account and domain.
 2. Go to **Rules** > **Origin Rules**.
 3. Select **Create origin rule**.
 4. Enter a descriptive name for the rule in **Rule name**.

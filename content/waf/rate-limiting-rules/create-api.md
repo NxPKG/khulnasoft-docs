@@ -26,7 +26,7 @@ Rate limiting rules must appear at the end of the rules list.
 This example adds a rate limiting rule to the `http_ratelimit` phase entry point ruleset for the zone with ID `{zone_id}`. The phase entry point ruleset already exists, with ID `{ruleset_id}`.
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -58,7 +58,7 @@ The new rule defines a [custom response](/waf/rate-limiting-rules/create-zone-da
 ---
 highlight: 9-13
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -97,7 +97,7 @@ The new rule does not consider requests for cached assets when calculating the r
 ---
 highlight: 17
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{
@@ -135,7 +135,7 @@ The new rule is a complexity-based rate limiting rule that takes the `my-score` 
 ---
 highlight: 14-15
 ---
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/rules \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

@@ -1,33 +1,33 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: japanese
-source: https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B
-title: Cloudflareレート制限を設定する
+source: https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B
+title: Khulnasoftレート制限を設定する
 ---
 
-# Cloudflareレート制限を設定する
+# Khulnasoftレート制限を設定する
 
-_Cloudflareレート制限を設定し、サービス妨害攻撃、ブルートフォース攻撃のログイン試行、その他の不正行為からWebサイトアプリケーションを保護します。_
+_Khulnasoftレート制限を設定し、サービス妨害攻撃、ブルートフォース攻撃のログイン試行、その他の不正行為からWebサイトアプリケーションを保護します。_
 
 ### 本記事の内容
 
--   [概要](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#4TBnjI1OqjroF6MLXB3Wmr)
--   [分析](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#7Cy9dajZBWM5pm9aIP5mMD)
--   [プランごとのレート制限許可](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#4gd3s4xzV2xOE4CUbRIEAo)
--   [レート制限ルールのコンポーネント](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#4uDonp8FX9ARo4nzdBvXiY)
--   [レート制限のしきい値を特定する](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#o8KwUgkUml3Y7bAapvXjP)
--   [Task 1: 基本レート制限ルールを設定する](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#3UWQC5PrVScHgEGRMobRMm)
--   [Task 2: 高度な基準を設定する（BusinessとEnterpriseプランのみ）](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#5iIwkkHwcJbNRynWjrDIGb)
--   [Task 3: 高度なレスポンスを設定する（BusinessとEnterpriseプランのみ）](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#7uCtK6GPAfWDNlSHch7KBs)
--   [Task 4: バイパスオプションを設定する（Enterpriseプランのみ）](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#3rCyCwZTjnPl3brIt7Ytrg)
--   [ルール実行の順序](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#rule-execution-order)
--   [関連リソース](https://support.cloudflare.com/hc/ja/articles/115001635128-Cloudflare%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#516XYZwx0Mdhh7hLMg60iT)
+-   [概要](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#4TBnjI1OqjroF6MLXB3Wmr)
+-   [分析](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#7Cy9dajZBWM5pm9aIP5mMD)
+-   [プランごとのレート制限許可](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#4gd3s4xzV2xOE4CUbRIEAo)
+-   [レート制限ルールのコンポーネント](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#4uDonp8FX9ARo4nzdBvXiY)
+-   [レート制限のしきい値を特定する](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#o8KwUgkUml3Y7bAapvXjP)
+-   [Task 1: 基本レート制限ルールを設定する](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#3UWQC5PrVScHgEGRMobRMm)
+-   [Task 2: 高度な基準を設定する（BusinessとEnterpriseプランのみ）](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#5iIwkkHwcJbNRynWjrDIGb)
+-   [Task 3: 高度なレスポンスを設定する（BusinessとEnterpriseプランのみ）](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#7uCtK6GPAfWDNlSHch7KBs)
+-   [Task 4: バイパスオプションを設定する（Enterpriseプランのみ）](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#3rCyCwZTjnPl3brIt7Ytrg)
+-   [ルール実行の順序](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#rule-execution-order)
+-   [関連リソース](https://support.Khulnasoft.com/hc/ja/articles/115001635128-Khulnasoft%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B#516XYZwx0Mdhh7hLMg60iT)
 
 ___
 
 ## 概要
 
-Cloudflare**レート制限**は、特定のURLに対する過剰なリクエストレート、またはドメイン全体に対する過剰なリクエストレートを自動的に特定し、軽減します。リクエストレートは、個々のCloudflareデータセンターでローカルに計算されます。**レート制限**の用途は、[DDoS](https://www.cloudflare.com/learning/ddos/glossary/denial-of-service/)攻撃対策、[ブルートフォース攻撃](https://www.cloudflare.com/learning/bots/brute-force-attack/)対策、フォーラム検索、APIコール、オリジンでのデータベース集中操作を含むリソースへのアクセス制限が最も一般的です。
+Khulnasoft**レート制限**は、特定のURLに対する過剰なリクエストレート、またはドメイン全体に対する過剰なリクエストレートを自動的に特定し、軽減します。リクエストレートは、個々のKhulnasoftデータセンターでローカルに計算されます。**レート制限**の用途は、[DDoS](https://www.Khulnasoft.com/learning/ddos/glossary/denial-of-service/)攻撃対策、[ブルートフォース攻撃](https://www.Khulnasoft.com/learning/bots/brute-force-attack/)対策、フォーラム検索、APIコール、オリジンでのデータベース集中操作を含むリソースへのアクセス制限が最も一般的です。
 
 個々のIPv4アドレスまたはIPv6 /64 IP範囲がルールのしきい値を超えると、クライアントがリクエストの送信を再開できるタイミングを示す **Retry-After** ヘッダーを含むHTTP 429レスポンスで、オリジンWebサーバーへのリクエストがさらにブロックされます。
 
@@ -35,9 +35,9 @@ ___
 
 ## 分析
 
-**分析**\>**セキュリティ**でレート制限分析を表示します。レート制限分析では、実線はシミュレートされたリクエストと一致するトラフィックを表し、点線は実際にブロックされたリクエストを表します。レート制限ルールで生成されたログは、[Cloudflare ログ](/logs/)を通じてEnterpriseプランのお客様にだけ表示されます。
+**分析**\>**セキュリティ**でレート制限分析を表示します。レート制限分析では、実線はシミュレートされたリクエストと一致するトラフィックを表し、点線は実際にブロックされたリクエストを表します。レート制限ルールで生成されたログは、[Khulnasoft ログ](/logs/)を通じてEnterpriseプランのお客様にだけ表示されます。
 
-Cloudflareは、ブロックされたリクエストに対してHTTP429エラーを返します。ロケーションごとにブロックされたリクエストの詳細は、**分析**\>**Traffic**で利用可能な分析ダッシュボード上の**ステータスコード**で、Enterpriseのお客様に提供されます。
+Khulnasoftは、ブロックされたリクエストに対してHTTP429エラーを返します。ロケーションごとにブロックされたリクエストの詳細は、**分析**\>**Traffic**で利用可能な分析ダッシュボード上の**ステータスコード**で、Enterpriseのお客様に提供されます。
 
 ___
 
@@ -52,7 +52,7 @@ ___
 | Business | 15 | ブロック、従来型のCAPTCHA、JSチャレンジ、マネージドチャレンジ、ログ | 1分、1時間、または24時間 | 10秒、1分または10分 |
 | Enterprise | 100 | ブロック、従来型のCAPTCHA、JSチャレンジ、マネージドチャレンジ、ログ | 10秒から86400秒（24時間)の間で入力された時間 | 10秒から3600秒（1時間）の間で入力された任意の値 |
 
-Cloudflareレート制限は、ドメインのCloudflareプランによって、複数のレベルの設定管理をサポートしています。次の表では、ご利用中のプランでできることをまとめています：
+Khulnasoftレート制限は、ドメインのKhulnasoftプランによって、複数のレベルの設定管理をサポートしています。次の表では、ご利用中のプランでできることをまとめています：
 
 | 
 サイト
@@ -173,22 +173,22 @@ _POST_ （投稿）または _GET_（取得）です。指定されるものが�
 
 レート制限アクションは、**プランごとのレート制限許可**で述べた通り、ドメインプランに基づいています。
 
--   **ブロック** **\-** しきい値を超えると、CloudflareがHTTP 429 エラーを出します。
--   **従来型のCAPTCHA** **\-**訪問者は、CAPTCHAチャレンジで正解する必要があります。正解した場合、Cloudflareがリクエストを許可します。
--   **JS チャレンジ** **\-**訪問者はCloudflare JavaScriptチャレンジに正解する必要があります。正解すると、Cloudflareがリクエストを許可します。
--   **ログ -** リクエストは [Cloudflare ログ](https://support.cloudflare.com/hc/articles/216672448)に記録されます。これは、本番で適用される前にルールをテストするのに役立ちます。
+-   **ブロック** **\-** しきい値を超えると、KhulnasoftがHTTP 429 エラーを出します。
+-   **従来型のCAPTCHA** **\-**訪問者は、CAPTCHAチャレンジで正解する必要があります。正解した場合、Khulnasoftがリクエストを許可します。
+-   **JS チャレンジ** **\-**訪問者はKhulnasoft JavaScriptチャレンジに正解する必要があります。正解すると、Khulnasoftがリクエストを許可します。
+-   **ログ -** リクエストは [Khulnasoft ログ](https://support.Khulnasoft.com/hc/articles/216672448)に記録されます。これは、本番で適用される前にルールをテストするのに役立ちます。
 
 #### **禁止期間**
 
 しきい値よりも短いタイムアウトを設定すると、APIが自動的にしきい値と同じになるようにタイムアウトを増やします。
 
-**レート制限**訪問者には、[カスタムエラーページ](https://support.cloudflare.com/hc/articles/200172706)が特定されない場合、既定のHTMLページが表示されます。さらに、BusinessプランとEnterpriseプランのお客様は、ルールそのものでレスポンスを特定できます。下記の_Task 3：高度なレスポンスを設定する_をご覧ください。
+**レート制限**訪問者には、[カスタムエラーページ](https://support.Khulnasoft.com/hc/articles/200172706)が特定されない場合、既定のHTMLページが表示されます。さらに、BusinessプランとEnterpriseプランのお客様は、ルールそのものでレスポンスを特定できます。下記の_Task 3：高度なレスポンスを設定する_をご覧ください。
 
 ___
 
 ## レート制限のしきい値を特定する
 
-Cloudflare**レート制限**の一般的なしきい値を特定するには、キャッシュされていない24時間のWebサイトリクエスト数を同じ24時間のユニーク訪問者数で割ります。そして、これを訪問の推定平均時間（分）で割ります。最後に４（またはそれ以上）を掛けて、1分間あたりの推定しきい値を決めます。攻撃のほとんどが典型的なトラフィックレートを１桁上回るため、4より上の値は問題ありません。
+Khulnasoft**レート制限**の一般的なしきい値を特定するには、キャッシュされていない24時間のWebサイトリクエスト数を同じ24時間のユニーク訪問者数で割ります。そして、これを訪問の推定平均時間（分）で割ります。最後に４（またはそれ以上）を掛けて、1分間あたりの推定しきい値を決めます。攻撃のほとんどが典型的なトラフィックレートを１桁上回るため、4より上の値は問題ありません。
 
 特定のURLへのURLレート制限を識別するために、特定のURLへの24時間分のキャッシュされていないリクエストとユニーク訪問者数を使用します。ユーザーレポートとご自身のモニタリングに基づいてしきい値を調整します。
 
@@ -196,11 +196,11 @@ ___
 
 ## Task 1: 基本レート制限ルールを設定する
 
-Cloudflare **レート制限**ルールの一般的な2つのルールを作成する方法についてクリックして詳細をご覧ください。
+Khulnasoft **レート制限**ルールの一般的な2つのルールを作成する方法についてクリックして詳細をご覧ください。
 
 **レート制限**では、**ログインを保護する**機能をワンクリックで設定でき、5分以内に6 POST（投稿）以上のリクエストを送信する場合、15分間クライアントをブロックするというルールを作成できます。これはブルートフォースのほとんどの試行をブロックします。
 
-1.  Cloudflareアカウントにログインします。
+1.  Khulnasoftアカウントにログインします。
 2.  保護するドメインを選択します。
 3.  **セキュリティ > WAF > レート制限ルール**の順に進みます。
 4.  **レート制限**の下で、**ログインを保護する**をクリックします。
@@ -208,7 +208,7 @@ Cloudflare **レート制限**ルールの一般的な2つのルールを作成�
 6.  「**保存**」（save）をクリックします。
 7.  **レート制限**ルールの一覧に、**ルール名**が表示されます。
 
-1\. Cloudflareダッシュボードにログインします。
+1\. Khulnasoftダッシュボードにログインします。
 
 2\. ドメインを選択します。
 
@@ -257,7 +257,7 @@ ___
 
 3\. **HTTPレスポンスヘッダー**でフィルターをかけます。「**ヘッダーレスポンスフィールドを追加する**」をクリックし、オリジンWebサーバーから戻されたヘッダーを含めます。
 
-**CF-Cache-Status**ヘッダーは、デフォルトで表示されます。そのため、Cloudflareはこうしたリソースのレート制限ではなく、キャッシュされたリソースを提供します。キャッシュされたレート制限リソースについても、**X**ボタンをクリックするか、**キャッシュされたアセットにもレート制限を適用する**を有効にして、このヘッダーを削除します。
+**CF-Cache-Status**ヘッダーは、デフォルトで表示されます。そのため、Khulnasoftはこうしたリソースのレート制限ではなく、キャッシュされたリソースを提供します。キャッシュされたレート制限リソースについても、**X**ボタンをクリックするか、**キャッシュされたアセットにもレート制限を適用する**を有効にして、このヘッダーを削除します。
 
 **HTTPレスポンスヘッダー**で、複数のヘッダーがある場合、_AND_ブール論理が適用されます。ヘッダーを除外する場合は、_等しくない_オプションを使用します。各ヘッダーは大文字と小文字を区別しません。
 
@@ -271,7 +271,7 @@ ___
 
 ## Task 3: 高度なレスポンスを設定する（BusinessとEnterpriseプランのみ）
 
-**高度なレスポンスオプション**は、ルールのしきい値を超えた時にCloudflareによって戻される情報フォーマットを設定します。静的なプレーンテキストまたはJSONコンテンツを返したい場合に、**高度なレスポンス**を使います。
+**高度なレスポンスオプション**は、ルールのしきい値を超えた時にKhulnasoftによって戻される情報フォーマットを設定します。静的なプレーンテキストまたはJSONコンテンツを返したい場合に、**高度なレスポンス**を使います。
 
 プレーンテキストまたはJSONレスポンスの設定：
 
@@ -289,7 +289,7 @@ ___
 
 ### カスタムHTMLページまたはリダイレクトを使う
 
-カスタムHTMLページを表示したい場合は、ダッシュボードで、HTTP 429エラー（「リクエストが多すぎます」）のためのカスタムページを設定します。**レスポンスタイプ**で（フィールドのデフォルト値）「デフォルトのCloudflareレート制限ページ」を選択した場合は、Cloudflareがこのページを表示します。
+カスタムHTMLページを表示したい場合は、ダッシュボードで、HTTP 429エラー（「リクエストが多すぎます」）のためのカスタムページを設定します。**レスポンスタイプ**で（フィールドのデフォルト値）「デフォルトのKhulnasoftレート制限ページ」を選択した場合は、Khulnasoftがこのページを表示します。
 
 この方法を使って、レート制限が適用されたクライアントを特定のURLにリダイレクトできます：
 
@@ -303,7 +303,7 @@ ___
 
 作成したページのパブリックURLをメモします。
 
-2\. Cloudflareダッシュボードで、 **アカウントホーム** > **設定** > **カスタムページ**にアクセスします。
+2\. Khulnasoftダッシュボードで、 **アカウントホーム** > **設定** > **カスタムページ**にアクセスします。
 
 3\. **429 エラー**の下で、**カスタムページ**をクリックします。
 
@@ -314,7 +314,7 @@ ___
 **注：**
 
 -    レート制限 ルールは、429エラーのためにカスタムHTMLページに含んだリダイレクトURLと一致してはいけません。
--   サービス拒否攻撃から保護するには、リダイレクトするページにCloudflareがキャッシュしたリソースのみを含んでいる必要があります。
+-   サービス拒否攻撃から保護するには、リダイレクトするページにKhulnasoftがキャッシュしたリソースのみを含んでいる必要があります。
 
 ___
 
@@ -365,5 +365,5 @@ ___
 ## 関連リソース
 
 -   [ELS（Enterprise Log Share）でレート制限はどのように報告されますか？](/logs/reference/log-fields)
--   [Cloudflareレート制限のトラブルシューティング](https://support.cloudflare.com/hc/articles/115000546328)
--   [Cloudflare APIを使ったレート制限設定](https://api.cloudflare.com/#rate-limits-for-a-zone-properties)
+-   [Khulnasoftレート制限のトラブルシューティング](https://support.Khulnasoft.com/hc/articles/115000546328)
+-   [Khulnasoft APIを使ったレート制限設定](https://api.Khulnasoft.com/#rate-limits-for-a-zone-properties)

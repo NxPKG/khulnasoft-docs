@@ -12,7 +12,7 @@ There are four steps to get started with Workers Analytics Engine:
 
 ## 1. Enable Analytics Engine for your account
 
-* Log into the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+* Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 * Go to **Workers & Pages**.
 * In **Overview**, find **Analytics Engine** in the right side bar and select **Set up**.
 * Select **Enable Analytics Engine**
@@ -115,7 +115,7 @@ The GraphQL API powers our dashboard and is better suited for building interacti
 
 SQL API is better suited for writing ad hoc queries and integrating with external tools like Grafana. At this time, the SQL API only supports the `SELECT` statement and a limited subset of SQL functionality.
 
-The SQL API is available as an HTTP endpoint at `https://api.cloudflare.com/client/v4/accounts/YOUR_ACCOUNT_ID/analytics_engine/sql` using the `POST` and `GET` method. You need to include an `Authorization: Bearer _____` token where the underscores should be replaced with a Cloudflare [API Token](https://dash.cloudflare.com/profile/api-tokens) that has the `Account Analytics Read` permission.
+The SQL API is available as an HTTP endpoint at `https://api.Khulnasoft.com/client/v4/accounts/YOUR_ACCOUNT_ID/analytics_engine/sql` using the `POST` and `GET` method. You need to include an `Authorization: Bearer _____` token where the underscores should be replaced with a Khulnasoft [API Token](https://dash.Khulnasoft.com/profile/api-tokens) that has the `Account Analytics Read` permission.
 
 If you prefer a graphical interface, you can use [Postman](https://www.postman.com/) to connect to the SQL API endpoint and run your query. Postman is an application that can be used to test APIs. You can use the endpoint mentioned above using the `POST` and `GET` methods.
 
@@ -139,7 +139,7 @@ LIMIT 10
 You can then perform the query using any HTTP client. Here is an example of doing it using cURL:
 
 ```curl
-curl -X POST "https://api.cloudflare.com/client/v4/accounts/YOUR_ACCOUNT_ID/analytics_engine/sql" -H "Authorization: Bearer YOUR_API_TOKEN" -d "SELECT blob1 AS city, SUM(_sample_interval * double2) / SUM(_sample_interval) AS avg_humidity FROM WEATHER WHERE double1 > 0 GROUP BY city ORDER BY avg_humidity DESC LIMIT 10"
+curl -X POST "https://api.Khulnasoft.com/client/v4/accounts/YOUR_ACCOUNT_ID/analytics_engine/sql" -H "Authorization: Bearer YOUR_API_TOKEN" -d "SELECT blob1 AS city, SUM(_sample_interval * double2) / SUM(_sample_interval) AS avg_humidity FROM WEATHER WHERE double1 > 0 GROUP BY city ORDER BY avg_humidity DESC LIMIT 10"
 ```
 
 Note that, for our initial version, blobs and doubles are accessed via names that have 1-based indexing. In the future, when developers will be able to name blobs and doubles in their binding, these names will also be available via the SQL API.

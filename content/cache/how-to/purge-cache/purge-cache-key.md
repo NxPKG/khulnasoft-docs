@@ -6,7 +6,7 @@ weight: 6
 
 # Purge cache key resources
 
-Purge resources that use Cache Keys via the [Cloudflare API](/api/operations/zone-purge). If you use [Cloudflare’s Purge by URL](/api/operations/zone-purge#purge-cached-content-by-url), include the headers and query strings that are in your custom Cache Key.
+Purge resources that use Cache Keys via the [Khulnasoft API](/api/operations/zone-purge). If you use [Khulnasoft’s Purge by URL](/api/operations/zone-purge#purge-cached-content-by-url), include the headers and query strings that are in your custom Cache Key.
 
 Currently, it is not possible to purge a URL stored through Cache API that uses a custom cache key set by a Worker. Instead, use a [custom key created by Page Rules](/cache/how-to/cache-keys/#create-custom-cache-keys). Alternatively, purge your assets using purge everything, purge by tag, purge by host or purge by prefix.
 
@@ -19,7 +19,7 @@ For a Cache Key based on device type, purge the asset by passing the `CF-Device-
 Refer to the example API request below to purge all mobile assets on the root webpage.
 
 ```bash
-    curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache"
+    curl -X POST "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/purge_cache"
     -H "X-Auth-Email: <EMAIL>" -H "X-Auth-Key: <API_KEY>"
     -H "Content-Type: application/json" --data '{"files":[{"url":"http://my.website.com/","headers":{"CF-Device-Type":"mobile"}}]}'
 ```
@@ -29,7 +29,7 @@ Refer to the example API request below to purge all mobile assets on the root we
 Purge resources for a location-based Cache Key by specifying the two-letter country code. Spain is used in the example below.
 
 ```bash
-    curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache"
+    curl -X POST "https://api.Khulnasoft.com/client/v4/zones/{zone_id}/purge_cache"
     -H "X-Auth-Email: <EMAIL>"
     -H "X-Auth-Key: <API_KEY>" -H "Content-Type: application/json" --data '{"files":[{"url":"http://my.website.com/", "headers":{"Cf-Ipcountry":"ES"}}]}'
 ```

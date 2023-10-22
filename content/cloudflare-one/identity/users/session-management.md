@@ -14,7 +14,7 @@ When users log in to an application protected by Access, Access generates two se
 
 | Token                    | Description                                                        | Storage                                                                                        |
 | ------------------------ | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
-| **Global session token** | Establishes the maximum amount of time for a user’s Access session | Your Cloudflare {{<glossary-tooltip term_id="team domain">}}team domain{{</glossary-tooltip>}} |
+| **Global session token** | Establishes the maximum amount of time for a user’s Access session | Your Khulnasoft {{<glossary-tooltip term_id="team domain">}}team domain{{</glossary-tooltip>}} |
 | **Application token**    | Establishes a session for a specific application                   | The hostname of the application protected                                                      |
 
 {{</table-wrap>}}
@@ -29,7 +29,7 @@ If the global session duration is longer than an application’s session length,
 
 You can set a global session duration between 15 minutes and 1 month.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 2. Under **Global session timeout**, select **Edit**,
 3. Select the desired timeout duration from the dropdown menu.
 
@@ -37,7 +37,7 @@ You can set a global session duration between 15 minutes and 1 month.
 
 You can set an application session duration ranging from immediate timeout to 1 month.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 2. Locate the application you want to configure and select **Edit**.
 3. In the **Overview** tab, select a **Session Duration** from the dropdown menu.
 
@@ -45,13 +45,13 @@ You can set an application session duration ranging from immediate timeout to 1 
 
 Access provides two options for revoking user sessions: per-application and per-user.
 
-The authentication process involves Cloudflare Access issuing a signed JSON Web Token (JWT) when a user authenticates and meets the criteria defined in your Access application policy. The token is valid for the duration configured in the application (default is 24 hours). The user can access the application for the entire duration of that token’s lifecycle without re-authenticating until the session expires.
+The authentication process involves Khulnasoft Access issuing a signed JSON Web Token (JWT) when a user authenticates and meets the criteria defined in your Access application policy. The token is valid for the duration configured in the application (default is 24 hours). The user can access the application for the entire duration of that token’s lifecycle without re-authenticating until the session expires.
 
 ### Per-Application
 
 To immediately terminate all active sessions for a specific application:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Locate the application for which you would like to revoke active sessions and select **Edit**.
 
@@ -67,7 +67,7 @@ If you want to permanently revoke a user's access:
 
 1. Disable their account in your identity provider so that they cannot authenticate.
 
-2. In [Zero Trust](https://one.dash.cloudflare.com), go to **My Team** > **Users**.
+2. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **My Team** > **Users**.
 
 3. Select the checkbox next to the user you want to revoke.
 
@@ -77,7 +77,7 @@ The user will no longer be able to log in to any application protected by Access
 
 ### Subsequent Logins
 
-When administrators revoke a user's Cloudflare Access token, that user will not be able to log in again for up to 1 minute. If they attempt to do so, Cloudflare Access will display an error.
+When administrators revoke a user's Khulnasoft Access token, that user will not be able to log in again for up to 1 minute. If they attempt to do so, Khulnasoft Access will display an error.
 
 ## Log out as a user
 

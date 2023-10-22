@@ -7,7 +7,7 @@ weight: 7
 
 # Serve images
 
-To serve images uploaded to Cloudflare Images, you need three pieces of information:
+To serve images uploaded to Khulnasoft Images, you need three pieces of information:
 
 * Your Images account hash.
 * Image ID.
@@ -15,7 +15,7 @@ To serve images uploaded to Cloudflare Images, you need three pieces of informat
 
 Assuming you have at least one image uploaded to Images, you will find the basic URL format on your Images dashboard, under **Developer Resources**:
 
-![Serving images with Cloudflare Images](/images/images/image-delivery-url.png)
+![Serving images with Khulnasoft Images](/images/images/image-delivery-url.png)
 
 A typical image delivery URL looks like this:
 
@@ -37,4 +37,4 @@ In this example:
 * `083eb7b2-5392-4565-b69e-aff66acddd00` is the image ID; you can also use [Custom IDs](/images/cloudflare-images/upload-images/custom-id) instead of the generated ID.
 * `public` is the variant name.
 
-When a client requests an image, Cloudflare Images will pick the optimal format. This is determined by client headers and the image type. Refer to [Adaptive optimized format delivery](/images/cloudflare-images/serve-images/adaptive-images-format/) for more information.
+When a client requests an image, Khulnasoft Images will pick the optimal format. This is determined by client headers and the image type. Refer to [Adaptive optimized format delivery](/images/cloudflare-images/serve-images/adaptive-images-format/) for more information.

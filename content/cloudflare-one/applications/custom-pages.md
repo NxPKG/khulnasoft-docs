@@ -6,13 +6,13 @@ weight: 7
 
 # Customize an application
 
-You can customize the pages your end users will see when trying to reach applications behind Cloudflare Access.
+You can customize the pages your end users will see when trying to reach applications behind Khulnasoft Access.
 
 ## Login page
 
 To change the appearance of your Access login page:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **Custom Pages**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **Custom Pages**.
 2. Find the **Login page** setting and select **Customize**.
 3. Give the login page the look and feel of your organization by adding:
     - Your organization's name
@@ -36,7 +36,7 @@ To customize the page that users see when they are blocked by a Gateway firewall
 
 To create a custom block page for Access:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com/), go to **Settings** > **Custom Pages**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com/), go to **Settings** > **Custom Pages**.
 2. Find the **Access Custom Pages** setting and select **Manage**.
 3. Select **Add a page template**.
 4. Enter a unique name for the block page.

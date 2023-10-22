@@ -6,7 +6,7 @@ weight: 21
 
 # Configure an Analytics API token
 
-Cloudflare recommends API tokens as the preferred authentication method with Cloudflare APIs. This article walks through creating API tokens for authentication to the GraphQL Analytics API.
+Khulnasoft recommends API tokens as the preferred authentication method with Khulnasoft APIs. This article walks through creating API tokens for authentication to the GraphQL Analytics API.
 
 For more details on API tokens and the full range of supported options, refer to [Creating API tokens](/fundamentals/api/get-started/create-token/).
 
@@ -21,7 +21,7 @@ To create an API token for authentication to the GraphQL Analytics API, use this
 
 To access the **Create Custom Token** page, follow these steps:
 
-1.  Log in to your Cloudflare account and select _My Profile_ from the user account drop-down list.
+1.  Log in to your Khulnasoft account and select _My Profile_ from the user account drop-down list.
 
 ![User account drop-down menu](/images/analytics/account-profile.png)
 

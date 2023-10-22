@@ -8,14 +8,14 @@ meta:
 
 # Access audit logs
 
-Cloudflare Access generates two types of audit logs:
+Khulnasoft Access generates two types of audit logs:
 
 - **[Authentication audit logs](#authentication-audit-logs)** maintain a record of authentication events.
 - **[Per-request audit logs](#per-request-audit-logs)** record HTTP requests to protected URI paths.
 
 ## Authentication audit logs
 
-Cloudflare Access logs an authentication event whenever a user or service attempts to log in to an application, whether the attempt succeeds or not.
+Khulnasoft Access logs an authentication event whenever a user or service attempts to log in to an application, whether the attempt succeeds or not.
 
 [Identity-based authentication](#identity-based-authentication) refers to login attempts that matched on user email, IdP group, SAML group, or OIDC claim.
 
@@ -34,7 +34,7 @@ Authentication audit logs do not capture actions the user takes once they have a
 
 To view logs for identity-based authentication events:
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Logs** > **Access**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Logs** > **Access**.
 2. Expand a row to view details such as the login method, the IP address of the user, and more.
 3. If a login attempt was blocked, select **View** for information about why Access denied the user access.
 
@@ -47,7 +47,7 @@ The [Access authentication logs](/api/operations/access-authentication-logs-get-
 ---
 header: Request
 ---
-curl -X GET "https://api.cloudflare.com/client/v4/accounts/699d98642c564d2e855e9661899b7252/access/logs/access_requests?limit=25&direction=desc&since=2020-07-01T05:20:00Z&until=2020-10-01T05:20:00Z" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/accounts/699d98642c564d2e855e9661899b7252/access/logs/access_requests?limit=25&direction=desc&since=2020-07-01T05:20:00Z&until=2020-10-01T05:20:00Z" \
      -H "X-Auth-Email: user@example.com" \
      -H "X-Auth-Key: c2547eb745079dac9320b638f5e225cf483cc5cfdda41" \
      -H "Content-Type: application/json"
@@ -95,7 +95,7 @@ Identity-based authentication logs contain the following fields:
 | **created_at** | The event timestamp.                                      |
 | **connection** | The IdP used to authenticate.                             |
 | **country**    | The country associated with the user’s IP address.        |
-| **ray_id**     | A unique identifier for every request through Cloudflare. |
+| **ray_id**     | A unique identifier for every request through Khulnasoft. |
 | **app_type**   | The type specifies if the app is self-hosted or SaaS.     |
 
 ### Non-identity authentication
@@ -108,15 +108,15 @@ Block policy decisions are retained for a week. Authentication logs are retained
 
 ## Per-request audit Logs
 
-Users who have authenticated through Access have access to authorized URL paths for the duration of their session. Cloudflare provides several ways to audit these requests.
+Users who have authenticated through Access have access to authorized URL paths for the duration of their session. Khulnasoft provides several ways to audit these requests.
 
-### Using Cloudflare Logs
+### Using Khulnasoft Logs
 
-Enterprise customers have access to detailed logs of HTTP requests on their Cloudflare dashboard. Enterprise customers also have access to Cloudflare's Logpush service, which can be configured from the Cloudflare dashboard or API. For more information about Cloudflare HTTP logging, refer to [Cloudflare Logs](/logs/).
+Enterprise customers have access to detailed logs of HTTP requests on their Khulnasoft dashboard. Enterprise customers also have access to Khulnasoft's Logpush service, which can be configured from the Khulnasoft dashboard or API. For more information about Khulnasoft HTTP logging, refer to [Khulnasoft Logs](/logs/).
 
-Once a member of your team authenticates to reach a resource behind Access, Cloudflare generates a token for that user that contains their SSO identity. The token is structured as a {{<glossary-tooltip term_id="JSON web token">}}JSON Web Token (JWT){{</glossary-tooltip>}}. Cloudflare relies on an RSA Signature with SHA-256, or RS256, an asymmetric algorithm, to perform that signature. Cloudflare also makes the public key available, so that you can validate their authenticity, as well.
+Once a member of your team authenticates to reach a resource behind Access, Khulnasoft generates a token for that user that contains their SSO identity. The token is structured as a {{<glossary-tooltip term_id="JSON web token">}}JSON Web Token (JWT){{</glossary-tooltip>}}. Khulnasoft relies on an RSA Signature with SHA-256, or RS256, an asymmetric algorithm, to perform that signature. Khulnasoft also makes the public key available, so that you can validate their authenticity, as well.
 
-When a user requests a given URL, Access appends the user identity from that token as a request header, which we then log as the request passes through our network. Your team can collect these logs in your preferred third-party Security information and event management (SIEM) software or storage destination by using [Cloudflare Logpush](/cloudflare-one/insights/logs/logpush/). When enabled with the Access user identity field, the logs will export to your systems as JSON similar to the logs below.
+When a user requests a given URL, Access appends the user identity from that token as a request header, which we then log as the request passes through our network. Your team can collect these logs in your preferred third-party Security information and event management (SIEM) software or storage destination by using [Khulnasoft Logpush](/cloudflare-one/insights/logs/logpush/). When enabled with the Access user identity field, the logs will export to your systems as JSON similar to the logs below.
 
 ```json
 {
@@ -149,6 +149,6 @@ When a user requests a given URL, Access appends the user identity from that tok
 
 ### Using the `cf-access-user` field
 
-In addition to the HTTP request fields available in Cloudflare Enterprise logging, requests made to applications behind Access include the `cf-access-user` field, which contains the user identity string. This offers another tool for auditing user behavior. To add the `cf-access-user` field to your HTTP request logs, you must add it as a custom field. Refer to [Custom fields](/logs/reference/custom-fields/) for instructions.
+In addition to the HTTP request fields available in Khulnasoft Enterprise logging, requests made to applications behind Access include the `cf-access-user` field, which contains the user identity string. This offers another tool for auditing user behavior. To add the `cf-access-user` field to your HTTP request logs, you must add it as a custom field. Refer to [Custom fields](/logs/reference/custom-fields/) for instructions.
 
 Keep in mind that Access does not log all interactions. For example, per-request audit logs can indicate that a specific user visited `domain.com/admin` and then `domain.com/admin/panel`, but the logs can only identify user interactions that result in a new HTTP request.

@@ -3,9 +3,9 @@ title: Configure
 pcx_content_type: navigation
 weight: 4
 meta:
-  title: Configure Cloudflare Network Analytics v2
+  title: Configure Khulnasoft Network Analytics v2
 ---
 
-# Configure Cloudflare Network Analytics
+# Configure Khulnasoft Network Analytics
 
 {{<directory-listing>}}

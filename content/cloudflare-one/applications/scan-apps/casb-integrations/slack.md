@@ -16,7 +16,7 @@ rss: file
 
 ## Integration permissions
 
-For the Slack integration to function, Cloudflare CASB requires the following Slack API permissions:
+For the Slack integration to function, Khulnasoft CASB requires the following Slack API permissions:
 
 - `channels:read`
 - `files:read`

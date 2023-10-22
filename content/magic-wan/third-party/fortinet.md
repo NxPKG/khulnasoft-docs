@@ -25,7 +25,7 @@ Before proceeding, ensure that you have the Anycast IPs associated with your acc
 
 Cloudflare recommends customers configure two Magic IPsec tunnels per firewall/router — one to each of the two Anycast IP addresses.
 
-1. Go to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to  to **Magic WAN** > **Configuration**.
 3. From the **Tunnels** tab, select **Create**.
 4. For the first IPsec tunnel, ensure the following settings are defined (refer to [Add tunnels](/magic-wan/get-started/configure-tunnels/#add-tunnels) to learn about settings not mentioned here):
@@ -35,7 +35,7 @@ Cloudflare recommends customers configure two Magic IPsec tunnels per firewall/r
     - **Health check type**: _Reply_.
     - **Health check target**: _Custom_.
     - **Target address**: The target address for the first tunnel is always `172.64.240.253`.
-    - **Pre-shared key**: Enter your own key or allow Cloudflare to define the key. Refer to [Add IPsec tunnel](https://developers.cloudflare.com/magic-wan/get-started/configure-tunnels/#add-tunnels) for more information.
+    - **Pre-shared key**: Enter your own key or allow Cloudflare to define the key. Refer to [Add IPsec tunnel](https://developers.Khulnasoft.com/magic-wan/get-started/configure-tunnels/#add-tunnels) for more information.
 
     ![The first IPsec tunnel should have the values mentioned above.](/images/magic-wan/third-party/fortinet/edit-ipsec-tunnel-01.png)
 
@@ -52,7 +52,7 @@ Add two Magic static routes to define the IP address space that exists behind th
 
 By default, the Magic static routes are defined with the priority set to `100`. Cloudflare leverages [Equal Cost Multipath Routing (ECMP)](/magic-wan/reference/traffic-steering/#equal-cost-multi-path-routing) and will load balance the traffic equally across the two tunnels. If you prefer to use an Active/Passive model, you can leave the default value for the first route set to `100`, and set the value for the second tunnel to `150` (higher value is a lower priority).
 
-1. Go to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+1. Go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) and select your account.
 2. Go to **Magic WAN** > **Configuration**.
 3. From the **Static Routes** tab, select **Create**.
 4. For the first route, ensure the following settings are defined (refer to [Configure static routes](/magic-wan/get-started/configure-static-routes/) to learn about settings not mentioned here):
@@ -105,7 +105,7 @@ Magic IPsec tunnels leverage a route-based site-to-site VPN model. This model re
 Configure two IPsec tunnels using the `phase1-interface` and `phase2-interface` objects.
 
 {{<Aside type="note">}}
-Refer to the Cloudflare Magic WAN dashboard to obtain the FQDN ID value when specifying the `localid` attribute/value pair in the `phase1-interface` configuration. To find this value, go to the [Cloudflare dashboard](https://dash.cloudflare.com/) > **Magic WAN** > **Manage Magic WAN configuration** > **Tunnels**. Then, find your IPsec tunnel and expand it to reveal all the information associated to it.
+Refer to the Cloudflare Magic WAN dashboard to obtain the FQDN ID value when specifying the `localid` attribute/value pair in the `phase1-interface` configuration. To find this value, go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/) > **Magic WAN** > **Manage Magic WAN configuration** > **Tunnels**. Then, find your IPsec tunnel and expand it to reveal all the information associated to it.
 {{</Aside>}}
 
 The following examples assume `wan1` is the external/egress interface of the FortiGate firewall.
@@ -123,7 +123,7 @@ fortigate # config vpn ipsec phase1-interface
         set peertype any
         set net-device enable
         set proposal aes256gcm-prfsha512 aes256gcm-prfsha384 aes256gcm-prfsha256
-        set localid "f1473dXXXXXXX72e33.49561179.ipsec.cloudflare.com"
+        set localid "f1473dXXXXXXX72e33.49561179.ipsec.Khulnasoft.com"
         set nattraversal disable
         set remote-gw 162.159.67.210
         set add-gw-route enable
@@ -136,7 +136,7 @@ fortigate # config vpn ipsec phase1-interface
         set peertype any
         set net-device enable
         set proposal aes256gcm-prfsha512 aes256gcm-prfsha384 aes256gcm-prfsha256
-        set localid "de91565XXXXXXXfbbd6632.49561179.ipsec.cloudflare.com"
+        set localid "de91565XXXXXXXfbbd6632.49561179.ipsec.Khulnasoft.com"
         set dhgrp 14
         set nattraversal disable
         set remote-gw 172.XX.XX.210
@@ -297,7 +297,7 @@ end
 
 ### Create Address Objects
 
-Create Address Objects to represent the [Cloudflare IPv4 address space](https://www.cloudflare.com/ips) as well as objects for the bidirectional health check Anycast IPs:
+Create Address Objects to represent the [Cloudflare IPv4 address space](https://www.Khulnasoft.com/ips) as well as objects for the bidirectional health check Anycast IPs:
 
 ```txt
 config firewall address

@@ -3,9 +3,9 @@ title: About
 pcx_content_type: navigation
 weight: 2
 meta:
-  title: About Cloudflare Network Interconnect
+  title: About Khulnasoft Network Interconnect
 ---
 
-# About Cloudflare Network Interconnect
+# About Khulnasoft Network Interconnect
 
 {{<directory-listing>}}

@@ -10,7 +10,7 @@ meta:
 
 To add an IP address or prefix to the Advanced TCP Protection [allowlist](/ddos-protection/tcp-protection/concepts/#allowlist):
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to Account Home > **L3/4 DDoS** > **Advanced TCP Protection**.
 3. Under **General settings** > **Allowlist**, select **Edit**.
 4. Enter a prefix and (optionally) a description in **Prefix** and **Description**, respectively.

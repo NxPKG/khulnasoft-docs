@@ -4,8 +4,8 @@ title: Access integrations
 weight: 4
 ---
 
-# Device posture checks with Cloudflare Access
+# Device posture checks with Khulnasoft Access
 
-These device posture checks can only be enforced for Cloudflare Access applications. They cannot be used in Gateway network policies.
+These device posture checks can only be enforced for Khulnasoft Access applications. They cannot be used in Gateway network policies.
 
 {{<directory-listing>}}

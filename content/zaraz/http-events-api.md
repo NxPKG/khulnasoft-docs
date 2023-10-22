@@ -20,11 +20,11 @@ The API is disabled unless you configure an endpoint for it. The endpoint determ
 
 To enable the API endpoint:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), and select your account and domain.
 2. Go to **Zaraz** > **Settings**.
 3. Under **Endpoints** > **HTTP Events API**, set your desired path. Remember the path is relative to your domain, and it must start with a `/`.
 
-{{<Aside type="warning" header="Important">}}To avoid getting the API used by unwanted actors, Cloudflare recommends choosing a unique path.{{</Aside>}}
+{{<Aside type="warning" header="Important">}}To avoid getting the API used by unwanted actors, Khulnasoft recommends choosing a unique path.{{</Aside>}}
 
 ## Send events
 

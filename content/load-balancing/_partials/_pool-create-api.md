@@ -5,16 +5,16 @@ _build:
   list: never
 ---
 
-For a full list of properties, refer to [Create Pool](/api/operations/account-load-balancer-pools-create-pool). If you need help with API authentication, refer to [Cloudflare API documentation](/fundamentals/api/).
+For a full list of properties, refer to [Create Pool](/api/operations/account-load-balancer-pools-create-pool). If you need help with API authentication, refer to [Khulnasoft API documentation](/fundamentals/api/).
 
 ```json
 ---
 header: Request
 ---
 curl -X POST \
--H "X-Auth-Email: user@cloudflare.com" \
+-H "X-Auth-Email: user@Khulnasoft.com" \
 -H "X-Auth-Key: REDACTED" \
-"https://api.cloudflare.com/client/v4/accounts/:account_id/load-balancers/pools" \
+"https://api.Khulnasoft.com/client/v4/accounts/:account_id/load-balancers/pools" \
 -H "Content-Type: application/json" \
 -d '{
     "description":"Primary data center - Provider XYZ",

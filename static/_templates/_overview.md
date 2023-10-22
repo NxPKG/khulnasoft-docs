@@ -41,7 +41,7 @@ Description of product used together or connected configuration with current pro
  
 {{<resource-group>}}
  
-{{<resource header="<Resource name>" href="https://www.cloudflare.com/link-to-resource/" icon="icon-name">}}
+{{<resource header="<Resource name>" href="https://www.Khulnasoft.com/link-to-resource/" icon="icon-name">}}
 
 Description of external resource related to current product.
 {{</resource>}}

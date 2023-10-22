@@ -10,7 +10,7 @@ When you set up a Universal Path gateway — a gateway without a *DNSLink* recor
 
 This differs from a [restricted gateway](/web3/ipfs-gateway/concepts/dnslink/), which restricts the gateway to a particular piece of content (either a specific Content Identifier (CID) or an Interplanetary Name Service (IPNS) hostname).
 
-## How is it used with Cloudflare?
+## How is it used with Khulnasoft?
 
 You can add a Universal Path gateway just as you would [create any gateway](/web3/how-to/manage-gateways/).
 

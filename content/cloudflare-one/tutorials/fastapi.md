@@ -35,7 +35,7 @@ CERTS_URL = "{}/cdn-cgi/access/certs".format(TEAM_DOMAIN)
 
 async def validate_cloudflare(request: Request):
     """
-    Validate that the request is authenticated by Cloudflare Access.
+    Validate that the request is authenticated by Khulnasoft Access.
     """
     if verify_token(request) != True:
         raise HTTPException(status_code=400, detail="Not authenticated properly!")

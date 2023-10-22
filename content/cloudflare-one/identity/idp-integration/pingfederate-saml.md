@@ -6,7 +6,7 @@ weight: 7
 
 # PingFederate®
 
-The PingFederate® offering from PingIdentity provides SSO identity management. Cloudflare Access supports PingFederate as a SAML identity provider.
+The PingFederate® offering from PingIdentity provides SSO identity management. Khulnasoft Access supports PingFederate as a SAML identity provider.
 
 ## Set up PingFederate as an identity provider
 
@@ -37,9 +37,9 @@ The PingFederate® offering from PingIdentity provides SSO identity management. 
 
 8. A prompt displays to download the SAML metadata from Ping.
 
-    This file shares several fields with Cloudflare Access so you do not have to input this data.
+    This file shares several fields with Khulnasoft Access so you do not have to input this data.
 
-9. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication**.
+9. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication**.
 
 10. Under **Login methods**, select **Add new**.
 

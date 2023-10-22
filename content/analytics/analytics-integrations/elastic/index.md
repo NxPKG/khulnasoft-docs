@@ -7,29 +7,29 @@ layout: single
 
 # Elastic
 
-This tutorial explains how to analyze [Cloudflare Logs](https://www.cloudflare.com/products/cloudflare-logs/) using Elastic and Kibana.
+This tutorial explains how to analyze [Khulnasoft Logs](https://www.Khulnasoft.com/products/cloudflare-logs/) using Elastic and Kibana.
 
 ## Overview
 
-If you have not used Cloudflare Logs before, refer to the [Logs documentation](/logs/) for more details. Contact your Cloudflare Customer Account Team to enable logs for your account.
+If you have not used Khulnasoft Logs before, refer to the [Logs documentation](/logs/) for more details. Contact your Khulnasoft Customer Account Team to enable logs for your account.
 
 ### Prerequisites
 
-Before sending your Cloudflare log data to Elastic, make sure that you:
+Before sending your Khulnasoft log data to Elastic, make sure that you:
 
 - Have an existing Elastic instance (versions 6.x and 7.x supported)
-- Have a Cloudflare Enterprise account with Cloudflare Logs enabled
+- Have a Khulnasoft Enterprise account with Khulnasoft Logs enabled
 - Configure [Logpush](/logs/about/) or [Logpull](/logs/logpull/)
 
 {{<Aside type="note" header="Note">}}
 
-Cloudflare logs are HTTP/HTTPS request logs in JSON format and are gathered from our 200+ data centers globally. By default, timestamps are returned as Unix nanosecond integers. We recommend using the RFC 3339 format for sending logs to Elastic.
+Khulnasoft logs are HTTP/HTTPS request logs in JSON format and are gathered from our 200+ data centers globally. By default, timestamps are returned as Unix nanosecond integers. We recommend using the RFC 3339 format for sending logs to Elastic.
 
 {{</Aside>}}
 
 ## Task 1 - Preparation
 
-Before getting Cloudflare logs into Elastic:
+Before getting Khulnasoft logs into Elastic:
 
 1.  Install an AWS Lambda function, available in the file _cloudflare-elastic-lambda.zip_ from GitHub at this location: <https://github.com/cloudflare/cloudflare-elastic/releases/tag/v0.3-7.x>.
 
@@ -41,7 +41,7 @@ Before getting Cloudflare logs into Elastic:
 
 1.  Create an account on [Elastic Cloud](https://cloud.elastic.co) and log in.
 
-2.  Once logged in, create a new deployment where the Cloudflare logs will reside.
+2.  Once logged in, create a new deployment where the Khulnasoft logs will reside.
     ![Create your first deployment page](/images/fundamentals/elastic/screenshots/create-your-first-deployment.png)
 
 3.  Configure your new deployment with the following parameters:
@@ -75,7 +75,7 @@ Before getting Cloudflare logs into Elastic:
 5.  Add an index pattern for `cloudflare-*` and set it to migrate data off the hot zone after 7 days.
     ![Adding an index pattern in the index curation section of the Index Management page](/images/fundamentals/elastic/screenshots/index-curation-add-cloudflare.png)
 
-6.  You are now ready to create your Elastic deployment. Click **Create deployment**. The page will refresh with details of your new cluster. It is important to save the randomly generated password (see screenshot). All Elastic deployments are secure by default and are bootstrapped with a randomly generated password for the **Elastic** user. You will use this password to log in to view your Cloudflare logs.
+6.  You are now ready to create your Elastic deployment. Click **Create deployment**. The page will refresh with details of your new cluster. It is important to save the randomly generated password (see screenshot). All Elastic deployments are secure by default and are bootstrapped with a randomly generated password for the **Elastic** user. You will use this password to log in to view your Khulnasoft logs.
 
 ![Details of the user created: username, password, Cloud ID and APM Server secret token](/images/fundamentals/elastic/screenshots/generated-user-details-elastic-deployment.png)
 
@@ -101,7 +101,7 @@ Next, to configure your deployment:
     ./install-artifacts.sh -u elastic -p <RANDOM PASSWORD> -e https://_<YOUR DEPLOYMENT ENDPOINT>_:9243
     ```
 
-3.  To install the Cloudflare dashboards, log in to the Kibana user interface using the **elastic** username and the randomly generated password.
+3.  To install the Khulnasoft dashboards, log in to the Kibana user interface using the **elastic** username and the randomly generated password.
 
 4.  Navigate to **Management** > **Kibana** > **Saved Objects**.
 
@@ -113,7 +113,7 @@ Next, to configure your deployment:
 
 To create the Lambda function:
 
-1.  Install the function: create the Lambda, which will read Cloudflare logs from S3 and import them into your Elastic cluster.
+1.  Install the function: create the Lambda, which will read Khulnasoft logs from S3 and import them into your Elastic cluster.
 
 2.  Log in to your AWS console and navigate to the Lambda section. Create a new function, using the Java 8 runtime and give it a name such as _cloudflare-elastic-logs_.
 
@@ -128,7 +128,7 @@ To create the Lambda function:
 
     - **elastic_password**: Use the randomly generated password that was created for you.
 
-5.  To connect your Cloudflare S3 log bucket. the last step is to tell the Lambda function to listen for events on the S3 bucket where your Cloudflare logs reside. Choose the S3 trigger type and configure it with the name of the S3 bucket. For **Event type**, select _All object create events_.
+5.  To connect your Khulnasoft S3 log bucket. the last step is to tell the Lambda function to listen for events on the S3 bucket where your Khulnasoft logs reside. Choose the S3 trigger type and configure it with the name of the S3 bucket. For **Event type**, select _All object create events_.
 
 6.  Ensure your execution role is configured. In order for the function to be able to read logs from the S3 bucket, you may have to configure the execution role.
     ![Configuring the Elastic Lambda execution role](/images/fundamentals/elastic/screenshots/execution-role-aws.png)
@@ -140,56 +140,56 @@ To create the Lambda function:
 
 9.  Save the Lambda and start logging.
 
-10. Finally, save the Lambda configuration. Once it is saved, the Cloudflare logs will start showing up in Kibana on your Elastic Cloud deployment.
+10. Finally, save the Lambda configuration. Once it is saved, the Khulnasoft logs will start showing up in Kibana on your Elastic Cloud deployment.
 
 ## Task 5 - View the Dashboards in Kibana
 
-Once Successfully imported, you can find all Cloudflare dashboards under **Kibana** > **Dashboard**.
+Once Successfully imported, you can find all Khulnasoft dashboards under **Kibana** > **Dashboard**.
 
 ### About the dashboards
 
-There are nine dashboards to help you analyze Cloudflare logs. You can also use filters within the dashboards to help narrow the analysis by date and time, device type, country, user agent, client IP, hostname, and more. Filtering can further help you with debugging and tracing.
+There are nine dashboards to help you analyze Khulnasoft logs. You can also use filters within the dashboards to help narrow the analysis by date and time, device type, country, user agent, client IP, hostname, and more. Filtering can further help you with debugging and tracing.
 
 #### Snapshot
 
-This is a quick overview of the most important metrics from your Cloudflare Logs, including the total number of requests, top visitors by geography, IP, user agent, traffic type, the total number of threats, and bandwidth usage.
-![Cloudflare dashboard showing Web Traffic Overview](/images/fundamentals/elastic/dashboards/elastic-snapshot.png)
+This is a quick overview of the most important metrics from your Khulnasoft Logs, including the total number of requests, top visitors by geography, IP, user agent, traffic type, the total number of threats, and bandwidth usage.
+![Khulnasoft dashboard showing Web Traffic Overview](/images/fundamentals/elastic/dashboards/elastic-snapshot.png)
 
 #### Security
 
-_Cloudflare - Security (Overview)_ - Get insights on threats to your websites and applications, including the number of threats stopped, threats over time, top threat countries, and more.
-![Cloudflare dashboard showing Threats](/images/fundamentals/elastic/dashboards/elastic-security.png)
+_Khulnasoft - Security (Overview)_ - Get insights on threats to your websites and applications, including the number of threats stopped, threats over time, top threat countries, and more.
+![Khulnasoft dashboard showing Threats](/images/fundamentals/elastic/dashboards/elastic-security.png)
 
-_Cloudflare - Security (WAF)_ - Get insights on threat identification and mitigation by our Web Application Firewall, including events like SQL injections, XSS, and more. Use this data to fine tune the firewall to target obvious threats and prevent false positives.
-![Cloudflare dashboard showing security WAF](/images/fundamentals/elastic/dashboards/elastic-security-waf.png)
+_Khulnasoft - Security (WAF)_ - Get insights on threat identification and mitigation by our Web Application Firewall, including events like SQL injections, XSS, and more. Use this data to fine tune the firewall to target obvious threats and prevent false positives.
+![Khulnasoft dashboard showing security WAF](/images/fundamentals/elastic/dashboards/elastic-security-waf.png)
 
-_Cloudflare - Security (Rate Limiting)_ - Get insights on rate limiting protection against denial-of-service attacks, brute-force login attempts, and other types of abusive behavior targeted at your websites or applications.
-![Cloudflare dashboard showing security Rate Limiting](/images/fundamentals/elastic/dashboards/elastic-security-rate-limiting.png)
+_Khulnasoft - Security (Rate Limiting)_ - Get insights on rate limiting protection against denial-of-service attacks, brute-force login attempts, and other types of abusive behavior targeted at your websites or applications.
+![Khulnasoft dashboard showing security Rate Limiting](/images/fundamentals/elastic/dashboards/elastic-security-rate-limiting.png)
 
-_Cloudflare - Security (Bot Management)_ - Reliably detects and mitigates bad bots to prevent credential stuffing, spam registration, content scraping, click fraud, inventory hoarding, and other malicious activities.
-![Cloudflare dashboard showing bot management](/images/fundamentals/elastic/dashboards/elastic-bot-management.png)
+_Khulnasoft - Security (Bot Management)_ - Reliably detects and mitigates bad bots to prevent credential stuffing, spam registration, content scraping, click fraud, inventory hoarding, and other malicious activities.
+![Khulnasoft dashboard showing bot management](/images/fundamentals/elastic/dashboards/elastic-bot-management.png)
 
 #### Performance
 
-_Cloudflare - Performance (Requests, Bandwidth, Cache)_ - Identify and address performance issues and caching misconfigurations. Metrics include total vs. cached bandwidth, saved bandwidth, total requests, cache ratio, top uncached requests, and more.
-![Cloudflare dashboard showing Performance Overiew (requests, bandwidth, cache)](/images/fundamentals/elastic/dashboards/elastic-performance.png)
+_Khulnasoft - Performance (Requests, Bandwidth, Cache)_ - Identify and address performance issues and caching misconfigurations. Metrics include total vs. cached bandwidth, saved bandwidth, total requests, cache ratio, top uncached requests, and more.
+![Khulnasoft dashboard showing Performance Overiew (requests, bandwidth, cache)](/images/fundamentals/elastic/dashboards/elastic-performance.png)
 
-_Cloudflare - Performance (Hostname, Content Type, Request Methods, Connection Type)_ - Get insights into your most popular hostnames, most requested content types, breakdown of request methods, and connection type.
-![Cloudflare dashboard showing Origin Request hostname, content type, request methods, and connection type](/images/fundamentals/elastic/dashboards/elastic-origin-requests-by-hostname-type.png)
+_Khulnasoft - Performance (Hostname, Content Type, Request Methods, Connection Type)_ - Get insights into your most popular hostnames, most requested content types, breakdown of request methods, and connection type.
+![Khulnasoft dashboard showing Origin Request hostname, content type, request methods, and connection type](/images/fundamentals/elastic/dashboards/elastic-origin-requests-by-hostname-type.png)
 
-_Cloudflare - Performance (Static vs. Dynamic Content)_ - Get insights into the performance of your static and dynamic content, including slowest URLs.
-![Cloudflare dashboard showing static vs. dynamic content](/images/fundamentals/elastic/dashboards/elastic-performance-static-vs-dynamic-content.png)
+_Khulnasoft - Performance (Static vs. Dynamic Content)_ - Get insights into the performance of your static and dynamic content, including slowest URLs.
+![Khulnasoft dashboard showing static vs. dynamic content](/images/fundamentals/elastic/dashboards/elastic-performance-static-vs-dynamic-content.png)
 
 #### Reliability
 
 Get insights on the availability of your websites and applications. Metrics include origin response error ratio, origin response status over time, percentage of 3xx/4xx/5xx errors over time, and more.
-![Cloudflare dashboard showing Summary of Edge and Origin Response Status](/images/fundamentals/elastic/dashboards/elastic-reliability.png)
+![Khulnasoft dashboard showing Summary of Edge and Origin Response Status](/images/fundamentals/elastic/dashboards/elastic-reliability.png)
 
 ### Filters
 
 All dashboard have a set of filters that you can apply to the entire dashboard, as shown in the following example. Filters are applied across the entire dashboard.
 
-![Cloudflare dashboard filters](/images/fundamentals/elastic/screenshots/cloudflare-dashboards-filters-elastic-kibana.png)
+![Khulnasoft dashboard filters](/images/fundamentals/elastic/screenshots/cloudflare-dashboards-filters-elastic-kibana.png)
 
 {{<Aside type="note" header="Note">}}
 
@@ -251,7 +251,7 @@ When you click to review a stream, you want to look for messages starting with t
 
 ![Visualizing AWS Lambda log stream messages](/images/fundamentals/elastic/screenshots/aws-lambda-log-streams-messages.png)
 
-If you see _status: \[RED]_, then your cluster isn’t healthy and it’s likely that your Cloudflare logs won’t appear. If this is the case, review how to debug in Kibana (see below).
+If you see _status: \[RED]_, then your cluster isn’t healthy and it’s likely that your Khulnasoft logs won’t appear. If this is the case, review how to debug in Kibana (see below).
 
 It is important to verify the return status of the call to Elasticsearch. Lines starting with _Flushing \[N] logs to elasticsearch_ and followed by a response line indicate that everything is working as expected.
 
@@ -261,7 +261,7 @@ You might see a _WARNING_ message containing text that says _‘y’ year should
 
 {{</Aside>}}
 
-If you run into any other issues, take note of the exact return message and contact your Cloudflare support team.
+If you run into any other issues, take note of the exact return message and contact your Khulnasoft support team.
 
 #### Review the AWS Lambda function health status from the Kibana console in Elastic Cloud
 

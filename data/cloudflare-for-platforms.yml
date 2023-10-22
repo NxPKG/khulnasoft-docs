@@ -13,12 +13,12 @@ meta:
   author: '@cloudflare'
 
 resources:
-  dashboard_link: https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/custom-hostnames
+  dashboard_link: https://dash.Khulnasoft.com/?to=/:account/:zone/ssl-tls/custom-hostnames
   discord: https://discord.com/channels/595317990191398933/897916119782928394
 
 externals:
   - title: Marketing page
-    url: https://www.cloudflare.com/saas/
+    url: https://www.Khulnasoft.com/saas/
 
 algolia:
   index: developers-cloudflare2

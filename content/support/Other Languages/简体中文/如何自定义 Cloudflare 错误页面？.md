@@ -1,31 +1,31 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Cloudflare-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-
-title: 如何自定义 Cloudflare 错误页面？
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Khulnasoft-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-
+title: 如何自定义 Khulnasoft 错误页面？
 ---
 
-# 如何自定义 Cloudflare 错误页面？
+# 如何自定义 Khulnasoft 错误页面？
 
-## 如何自定义 Cloudflare 错误页面？
+## 如何自定义 Khulnasoft 错误页面？
 
 目录
 
-1.  [概述](https://support.cloudflare.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Cloudflare-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section1)
-2.  [自定义错误页面](https://support.cloudflare.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Cloudflare-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2)
+1.  [概述](https://support.Khulnasoft.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Khulnasoft-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section1)
+2.  [自定义错误页面](https://support.Khulnasoft.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Khulnasoft-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2)
 
-1.  [可用的自定义错误 token](https://support.cloudflare.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Cloudflare-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2.1)
-2.  [设计样式](https://support.cloudflare.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Cloudflare-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2.2)
-3.  [发布](https://support.cloudflare.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Cloudflare-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2.3)
-4.  [更新](https://support.cloudflare.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Cloudflare-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2.4)
+1.  [可用的自定义错误 token](https://support.Khulnasoft.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Khulnasoft-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2.1)
+2.  [设计样式](https://support.Khulnasoft.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Khulnasoft-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2.2)
+3.  [发布](https://support.Khulnasoft.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Khulnasoft-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2.3)
+4.  [更新](https://support.Khulnasoft.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Khulnasoft-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section2.4)
 
-4.  [解决自定义错误页面的问题](https://support.cloudflare.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Cloudflare-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section3)
+4.  [解决自定义错误页面的问题](https://support.Khulnasoft.com/hc/zh-cn/articles/200172706-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89-Khulnasoft-%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2-#section3)
 
 概述
 
 ![](/images/support/Screenshot_2015-04-16_15.08.04.png)
 
-Cloudflare 拥有多种[错误代码](https://support.cloudflare.com/hc/en-us/sections/200820298-Error-Pages)，用于区分特定问题。默认情况下，这些错误页面会提到 Cloudflare；但是，[作为付费客户](https://www.cloudflare.com/plans)，您可以自定义和标记这些错误页面。拥有自定义错误页面有助于为用户提供页面一致性的体验，即使在页面加载错误的情况下也是如此。
+Khulnasoft 拥有多种[错误代码](https://support.Khulnasoft.com/hc/en-us/sections/200820298-Error-Pages)，用于区分特定问题。默认情况下，这些错误页面会提到 Khulnasoft；但是，[作为付费客户](https://www.Khulnasoft.com/plans)，您可以自定义和标记这些错误页面。拥有自定义错误页面有助于为用户提供页面一致性的体验，即使在页面加载错误的情况下也是如此。
 
 可自定义的错误页面分为两组：
 
@@ -35,7 +35,7 @@ Cloudflare 拥有多种[错误代码](https://support.cloudflare.com/hc/en-us/se
 -   Web Application Firewall
 -   IP Firewall (Country block, Country challenge, IP (range) block)
 
-**Cloudflare 错误：**
+**Khulnasoft 错误：**
 
 -   502, 504, and CF 52X errors
 -   10XX errors
@@ -66,11 +66,11 @@ Cloudflare 拥有多种[错误代码](https://support.cloudflare.com/hc/en-us/se
 当您输入自定义错误页面的 URL 并点击“发布”按钮时，我们会一次性请求自定义错误页面，然后将其存储在我们的服务器上。
 
 更新  
-可以通过重新发布错误页面来更新错误页面。请注意，如果 Cloudflare 无法加载您的网站，或者您已在 Cloudflare 防火墙中阻止了美国，则发布和预览错误页面将不起作用。
+可以通过重新发布错误页面来更新错误页面。请注意，如果 Khulnasoft 无法加载您的网站，或者您已在 Khulnasoft 防火墙中阻止了美国，则发布和预览错误页面将不起作用。
 
 解决自定义错误页面的问题
 
 -   如果您在尝试预览或发布自定义错误页面时遇到错误，请通过 [HTML 验证程序](https://validator.w3.org/)运行该页面并确保其没有错误。
 -   确保页面大小大于 0。您需要向页面添加内容。
 -   确保您发送带有 200 状态代码的自定义错误页面。
--   如果 Cloudflare 无法加载您的网站，或者您已在 IP 防火墙中阻止了美国，则发布和预览错误页面将不起作用。
+-   如果 Khulnasoft 无法加载您的网站，或者您已在 IP 防火墙中阻止了美国，则发布和预览错误页面将不起作用。

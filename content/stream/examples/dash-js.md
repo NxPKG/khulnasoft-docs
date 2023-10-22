@@ -1,6 +1,6 @@
 ---
 type: example
-summary: Example of video playback with Cloudflare Stream and the DASH reference player (dash.js)
+summary: Example of video playback with Khulnasoft Stream and the DASH reference player (dash.js)
 tags:
   - Playback
 pcx_content_type: configuration

@@ -6,7 +6,7 @@ weight: 5
 
 # Review the infrastructure
 
-After [enabling Security Insights](/security-center/get-started/) and letting the first scan run, the **Infrastructure** tab displays an overview of the infrastructure associated with your Cloudflare account.
+After [enabling Security Insights](/security-center/get-started/) and letting the first scan run, the **Infrastructure** tab displays an overview of the infrastructure associated with your Khulnasoft account.
 
 To open the **Infrastructure** tab, go to Account Home > **Security Center** > **Infrastructure**.
 

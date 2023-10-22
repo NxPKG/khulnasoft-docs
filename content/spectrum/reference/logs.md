@@ -36,7 +36,7 @@ Spectrum [log events](/logs/reference/log-fields/) can be configured through the
 | 497  | A timeout event (ETIMEDOUT) occurred on an established connection to client.                       |
 | 498  | Established client connection closed due to broken pipe (EPIPE).                                   |
 | 499  | The client closed the connection by sending a reset (RST) packet. Not all data may have been sent. |
-| 500  | Internal Cloudflare error.                                                                         |
+| 500  | Internal Khulnasoft error.                                                                         |
 | 503  | Error related to performing the TLS handshake with keyless SSL.                                    |
 | 520  | Unknown origin connection error.                                                                   |
 | 521  | Origin refused to open the connection (ECONNREFUSED).                                              |

@@ -6,7 +6,7 @@ weight: 13
 
 # Module support
 
-Pages Functions provide support for several module types, much like [Workers](https://blog.cloudflare.com/workers-javascript-modules/). This means that you can import and use external modules such as WebAssembly (Wasm), `text` and `binary` files inside your Functions code.
+Pages Functions provide support for several module types, much like [Workers](https://blog.Khulnasoft.com/workers-javascript-modules/). This means that you can import and use external modules such as WebAssembly (Wasm), `text` and `binary` files inside your Functions code.
 
 This guide will instruct you on how to use these different module types inside your Pages Functions.
 
@@ -38,7 +38,7 @@ export async function onRequest(context) {
 
 ## WebAssembly Modules
 
-[WebAssembly](/workers/runtime-apis/webassembly/) (abbreviated Wasm) allows you to compile languages like Rust, Go, or C to a binary format that can run in a wide variety of environments, including web browsers, Cloudflare Workers, Cloudflare Pages Functions, and other WebAssembly runtimes.
+[WebAssembly](/workers/runtime-apis/webassembly/) (abbreviated Wasm) allows you to compile languages like Rust, Go, or C to a binary format that can run in a wide variety of environments, including web browsers, Khulnasoft Workers, Khulnasoft Pages Functions, and other WebAssembly runtimes.
 
 The distributable, loadable, and executable unit of code in WebAssembly is called a [module](https://webassembly.github.io/spec/core/syntax/modules.html).
 

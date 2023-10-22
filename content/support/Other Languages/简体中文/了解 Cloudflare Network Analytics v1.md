@@ -1,26 +1,26 @@
 ---
 pcx_content_type: troubleshooting
 language_tag: chinese
-source: https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1
-title: 了解 Cloudflare Network Analytics v1
+source: https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1
+title: 了解 Khulnasoft Network Analytics v1
 ---
 
-# 了解 Cloudflare Network Analytics v1
+# 了解 Khulnasoft Network Analytics v1
 
-_了解 Magic Transit 和 Cloudflare Spectrum 客户如何使用帐户级 Network Analytics 来探索第 3 层和第 4 层流量和 DDoS 攻击详情。_
+_了解 Magic Transit 和 Khulnasoft Spectrum 客户如何使用帐户级 Network Analytics 来探索第 3 层和第 4 层流量和 DDoS 攻击详情。_
 
 ### 本文内容
 
--   [概述](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#7rrlY887ZX7ZDVmx2V4bcm)
--   [查看网络分析](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#7x2T95w9RGgg782pVMujPb)
--   [浏览 Network Analytics](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#h_3WlP6WsWFl28h92oS2k8O2)
--   [对数据应用过滤器](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#h_4Agjkc3QlLuhrCW43NsN3p)
--   [选择要绘图的维度](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#h_4UZtmYClrU0N7OYwZgHHoh)
--   [查看活动日志](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#h_6GOQ2ficyicPxirroGewJP)
--   [导出日志数据和报告](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#h_3grb6OPVreABUQaQBekfHn)
--   [局限性](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#h_6tCVFw0V6ufdvQnRIxu19t)
--   [相关资源](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#7flIreW1Np8fuxZYTbduF2)
--   [常见问题](https://support.cloudflare.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Cloudflare-Network-Analytics-v1#h_2CqXhNxV03M5IUwklSR3n6)
+-   [概述](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#7rrlY887ZX7ZDVmx2V4bcm)
+-   [查看网络分析](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#7x2T95w9RGgg782pVMujPb)
+-   [浏览 Network Analytics](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#h_3WlP6WsWFl28h92oS2k8O2)
+-   [对数据应用过滤器](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#h_4Agjkc3QlLuhrCW43NsN3p)
+-   [选择要绘图的维度](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#h_4UZtmYClrU0N7OYwZgHHoh)
+-   [查看活动日志](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#h_6GOQ2ficyicPxirroGewJP)
+-   [导出日志数据和报告](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#h_3grb6OPVreABUQaQBekfHn)
+-   [局限性](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#h_6tCVFw0V6ufdvQnRIxu19t)
+-   [相关资源](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#7flIreW1Np8fuxZYTbduF2)
+-   [常见问题](https://support.Khulnasoft.com/hc/zh-cn/articles/360038696631-%E4%BA%86%E8%A7%A3-Khulnasoft-Network-Analytics-v1#h_2CqXhNxV03M5IUwklSR3n6)
 
 ___
 
@@ -28,19 +28,19 @@ ___
 
 访问 Network Analytics 具有以下要求：
 
--   Cloudflare Enterprise 计划
--   Cloudflare [Magic Transit](/magic-transit/) 或 [Spectrum](/spectrum/)。
+-   Khulnasoft Enterprise 计划
+-   Khulnasoft [Magic Transit](/magic-transit/) 或 [Spectrum](/spectrum/)。
 
-Cloudflare **Network Analytics** 视图提供对网络层和传输层流量模式及 DDoS 攻击的近实时洞察能力。Network Analytics 可视化呈现数据包和位级别的数据，与通过 [GraphQL Analytics API](/analytics/graphql-api/) 提供的数据相同。
+Khulnasoft **Network Analytics** 视图提供对网络层和传输层流量模式及 DDoS 攻击的近实时洞察能力。Network Analytics 可视化呈现数据包和位级别的数据，与通过 [GraphQL Analytics API](/analytics/graphql-api/) 提供的数据相同。
 
 ![分析面板显示每个类型的数据包摘要](/images/support/na-main-dashboard.png)
 
 Network Analytics 可以加快恶意流量的报告和调查。您可以按照以下参数来过滤数据：
 
--   Cloudflare 采取的缓解措施
+-   Khulnasoft 采取的缓解措施
 -   来源 IP、端口、ASN
 -   目的地 IP 和端口
--   观察流量的 Cloudflare 数据中心所属的城市和国家/地区
+-   观察流量的 Khulnasoft 数据中心所属的城市和国家/地区
 -   攻击规模、类型、速率和持续时间
 -   TCP 标志
 -   IP 版本
@@ -56,11 +56,11 @@ ___
 
 ## 查看网络分析
 
-您可以从 Cloudflare 帐户的主页中访问 **Network Analytics** 视图。
+您可以从 Khulnasoft 帐户的主页中访问 **Network Analytics** 视图。
 
 若要访问 **Network Analytics** 视图，请按照下列步骤操作：
 
-1.  登录您的 Cloudflare 帐户。
+1.  登录您的 Khulnasoft 帐户。
 2.  如果您拥有多个帐户，请选择有权访问 Magic Transit 或 Spectrum 的帐户。
 3.  在帐户的**主页**中，单击 **Network Analytics**。
 
@@ -173,9 +173,9 @@ Magic Firewall 规则编辑器显示了选定的筛选器和值。
 
  | 
 
-\- 允许：允许通过 Cloudflare 自动化 DDoS 保护系统的流量。还可能包括通过防火墙规则、flowtrackd 和 L7 规则缓解的流量。
+\- 允许：允许通过 Khulnasoft 自动化 DDoS 保护系统的流量。还可能包括通过防火墙规则、flowtrackd 和 L7 规则缓解的流量。
 
-\- 阻止：被 Cloudflare 自动化 DDoS 保护系统阻止的流量。
+\- 阻止：被 Khulnasoft 自动化 DDoS 保护系统阻止的流量。
 
 \- 连接跟踪：仅适用于 L7，因为 Magic Transit 被排除在范围之外，而且连接跟踪模块也从未针对 Magic Transit 前缀运行。
 
@@ -485,7 +485,7 @@ ___
 
 ### 导出活动日志数据
 
-一次最多可以从活动日志中导出 500 个源事件。如果需要将 Cloudflare 数据与存储在其他系统或数据库（例如安全信息与事件管理系统（SIEM））中的数据进行合并和分析，您可以使用这个选项。
+一次最多可以从活动日志中导出 500 个源事件。如果需要将 Khulnasoft 数据与存储在其他系统或数据库（例如安全信息与事件管理系统（SIEM））中的数据进行合并和分析，您可以使用这个选项。
 
 要导出日志数据，可单击**导出**。
 
@@ -505,30 +505,30 @@ ___
 
 Network Analytics 目前具有以下限制：
 
--   Network Analytics v1 提供有关[拒绝服务后台程序（dosd）](https://blog.cloudflare.com/who-ddosd-austin/)攻击的见解。尽管它可适时提供数据视图，但没有所有事件的完整视图。
+-   Network Analytics v1 提供有关[拒绝服务后台程序（dosd）](https://blog.Khulnasoft.com/who-ddosd-austin/)攻击的见解。尽管它可适时提供数据视图，但没有所有事件的完整视图。
 -   Network Analytics v1 中不提供下列数据源：
     -   防火墙规则 _（在 Network Analytics v2 中提供）_
     -   应用程序层规则
     -   Gatekeeper 和手动应用的规则
-    -   [flowtrackd](https://blog.cloudflare.com/announcing-flowtrackd/)（高级 TCP 保护）_（在 Network Analytics v2 中提供）_
-    -   WARP 流量和[橙色云流量](https://support.cloudflare.com/hc/zh-cn/articles/205177068)
--   Network Analytics 不提供来自用于代理流量的 Cloudflare 服务的数据，如 CDN。
+    -   [flowtrackd](https://blog.Khulnasoft.com/announcing-flowtrackd/)（高级 TCP 保护）_（在 Network Analytics v2 中提供）_
+    -   WARP 流量和[橙色云流量](https://support.Khulnasoft.com/hc/zh-cn/articles/205177068)
+-   Network Analytics 不提供来自用于代理流量的 Khulnasoft 服务的数据，如 CDN。
 
 ___
 
 ## 相关资源
 
--   [Cloudflare Network Analytics v2](/analytics/network-analytics/)
+-   [Khulnasoft Network Analytics v2](/analytics/network-analytics/)
 -   [从 Network Analytics v1 迁移至 Network Analytics v2](/analytics/graphql-api/migration-guides/network-analytics-v2)
--   [Cloudflare GraphQL API](/analytics/graphql-api/)
--   [Cloudflare Analytics：快速概览](https://support.cloudflare.com/hc/articles/360037684111)
+-   [Khulnasoft GraphQL API](/analytics/graphql-api/)
+-   [Khulnasoft Analytics：快速概览](https://support.Khulnasoft.com/hc/articles/360037684111)
 -   [IANA 端口号和服务名称](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=1)
 
 ___
 
 ## 常见问题
 
-### Cloudflare 在 Network Analytics 门户网站中将数据保留多久时间？
+### Khulnasoft 在 Network Analytics 门户网站中将数据保留多久时间？
 
 如果您使用的是 Network Analytics v2 (NAv2)，您可以查询的历史数据范围是 **90 天**。
 
@@ -643,12 +643,12 @@ _**\*\*notOlderThan**_ _限制查询可以搜索的记录时间范围。它指�
 在操作仪表板中的攻击日志时，请记住以下几点：
 
 -   攻击日志中会存储开始和结束时间戳，最小、最大和平均数据速率的数据包和比特数统计信息，以及总数、攻击类型和采取的操作。
--   来源 IP 地址被视为个人个识别信息。因此，Cloudflare 仅将它们存储 30 天。30 天后，来源 IP 地址会被丢弃，并且日志将先汇总为 1 小时分组，然后汇总为 1 天分组。1 小时汇总将存储 6 个月，1 天汇总则存储 1 年。
+-   来源 IP 地址被视为个人个识别信息。因此，Khulnasoft 仅将它们存储 30 天。30 天后，来源 IP 地址会被丢弃，并且日志将先汇总为 1 小时分组，然后汇总为 1 天分组。1 小时汇总将存储 6 个月，1 天汇总则存储 1 年。
 
 如需有关查询和访问日志数据的更多信息，请参考 [GraphQL Analytics API](/analytics/graphql-api/limits)。
 
 ### 为什么 Network Analytics 表示目的地 IP 的状态是“不可用”？
 
-当目的地 IP 没有包含在 [DDoS 保护系统](https://blog.cloudflare.com/mitigating-a-754-million-pps-ddos-attack-automatically/)生成的实时签名中时，该目的地 IP 就会显示为_不可用_。
+当目的地 IP 没有包含在 [DDoS 保护系统](https://blog.Khulnasoft.com/mitigating-a-754-million-pps-ddos-attack-automatically/)生成的实时签名中时，该目的地 IP 就会显示为_不可用_。
 
 若要查看目的地 IP，请按**攻击 ID** 过滤，然后滚动到顶部项目列表的**目的地**部分。对某个特定的攻击 ID 进行过滤时，整个 Network Analytics 仪表板就变成了一份攻击报告。

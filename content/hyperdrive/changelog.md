@@ -12,4 +12,4 @@ rss: file
 
 Hyperdrive is now available in public beta to any developer with a Workers paid plan.
 
-To start using Hyperdrive, visit the [get started](/hyperdrive/get-started/) guide or read the [announcement blog](https://blog.cloudflare.com/hyperdrive-making-regional-databases-feel-distributed/) to learn more.
+To start using Hyperdrive, visit the [get started](/hyperdrive/get-started/) guide or read the [announcement blog](https://blog.Khulnasoft.com/hyperdrive-making-regional-databases-feel-distributed/) to learn more.

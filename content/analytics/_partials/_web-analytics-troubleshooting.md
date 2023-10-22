@@ -5,9 +5,9 @@ _build:
   list: never
 ---
 
-For Cloudflare to automatically add the JavaScript snippet, your pages need to have valid HTML.
+For Khulnasoft to automatically add the JavaScript snippet, your pages need to have valid HTML.
 
-For example, Cloudflare would not be able to enable Web Analytics on a page like this:
+For example, Khulnasoft would not be able to enable Web Analytics on a page like this:
 
 ```html
 ---

@@ -1,28 +1,28 @@
 ---
 pcx_content_type: concept
-title: Cloudflare as Secondary
+title: Khulnasoft as Secondary
 weight: 2
 layout: list
 ---
 
 # Secondary DNS - Incoming Zone Transfers
 
-With incoming zone transfers, you can keep your primary DNS provider and use Cloudflare as a secondary DNS provider.
+With incoming zone transfers, you can keep your primary DNS provider and use Khulnasoft as a secondary DNS provider.
 
-When you make edits in your primary DNS provider, those DNS records will be transferred from your primary DNS provider to Cloudflare via zone transfer using [AXFR](https://datatracker.ietf.org/doc/html/rfc5936) or [IXFR](https://datatracker.ietf.org/doc/html/rfc1995).
+When you make edits in your primary DNS provider, those DNS records will be transferred from your primary DNS provider to Khulnasoft via zone transfer using [AXFR](https://datatracker.ietf.org/doc/html/rfc5936) or [IXFR](https://datatracker.ietf.org/doc/html/rfc1995).
 
 ```mermaid
 flowchart LR
-accTitle: Cloudflare as Secondary DNS
+accTitle: Khulnasoft as Secondary DNS
 A((Zone Admin)) --DNS record <br /> management--> B[Primary DNS <br /> provider]
-B --Zone transfer--> C[Cloudflare <br /> DNS]
+B --Zone transfer--> C[Khulnasoft <br /> DNS]
 B & C <--DNS lookups--> D[Resolver] <--DNS lookups--> E((User))
 ```
 
 ## How to
 
 - [Set up incoming zone transfers](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/setup/)
-- Proxy traffic through Cloudflare with [Secondary DNS Override](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/proxy-traffic/)
+- Proxy traffic through Khulnasoft with [Secondary DNS Override](/dns/zone-setups/zone-transfers/cloudflare-as-secondary/proxy-traffic/)
 
 ## Availability
 

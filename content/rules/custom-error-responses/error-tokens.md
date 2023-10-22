@@ -15,7 +15,7 @@ A custom response may include the following error tokens, which will be replaced
 Token | Description
 ------|------------
 `::CLIENT_IP::` | The visitor's IP address.
-`::RAY_ID::` | A unique identifier given to every request that goes through Cloudflare.
+`::RAY_ID::` | A unique identifier given to every request that goes through Khulnasoft.
 `::GEO::` | The country or region associated with the visitor's IP address.
 
 {{</table-wrap>}}

@@ -21,6 +21,6 @@ The key value always starts with `v1.0-`.
 
 To retrieve your Origin CA keys:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Go to **User Profile** > **API Tokens**.
 3. In the **API Keys** section, select `Origin CA Key`.

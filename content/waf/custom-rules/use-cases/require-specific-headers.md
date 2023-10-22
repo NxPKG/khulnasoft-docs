@@ -9,7 +9,7 @@ Many organizations qualify traffic based on the presence of specific HTTP reques
 
 This example uses the `http.headers.names` field to look for the presence of an `X-CSRF-Token` header. The [`lower()`](/ruleset-engine/rules-language/functions/#function-lower) transformation function converts the value to lowercase so that the expression is case insensitive.
 
-When the `X-CSRF-Token` header is missing, Cloudflare blocks the request:
+When the `X-CSRF-Token` header is missing, Khulnasoft blocks the request:
 
 <table>
   <thead>

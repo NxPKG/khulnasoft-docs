@@ -23,7 +23,7 @@ meta:
   </thead>
   <tbody>
     <tr>
-      <td>Cloudflare Specials</td>
+      <td>Khulnasoft Specials</td>
       <td>100035C</td>
       <td>
         Improve Fake Google Bot detection. Merge 100035C_BETA into 100035C.

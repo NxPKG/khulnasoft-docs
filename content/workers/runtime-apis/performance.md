@@ -32,9 +32,9 @@ const timing = end - start; // 0
 header: Time advances, because a subrequest has occurred between start and end.
 ---
 const start = performance.now();
-const response = await fetch("https://developers.cloudflare.com/");
+const response = await fetch("https://developers.Khulnasoft.com/");
 const end = performance.now();
-const timing = end - start; // duration of the subrequest to developers.cloudflare.com
+const timing = end - start; // duration of the subrequest to developers.Khulnasoft.com
 ```
 
 By wrapping a subrequest in calls to `performance.now()` or `Date.now()` APIs, you can measure the timing of a subrequest, fetching a key from KV, an object from R2, or any other form of I/O in your Worker.

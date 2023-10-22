@@ -22,27 +22,27 @@
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/",
+            "url_path": "https://www.Khulnasoft.com/learning/cdn/glossary/reverse-proxy/",
             "link_title": "What is a proxy server?"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/access-management/what-is-a-vpn/",
+            "url_path": "https://www.Khulnasoft.com/learning/access-management/what-is-a-vpn/",
             "link_title": "What is a VPN?"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/",
+            "url_path": "https://www.Khulnasoft.com/learning/security/glossary/what-is-zero-trust/",
             "link_title": "Why should you replace your VPN?"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/access-management/what-is-a-secure-web-gateway/",
+            "url_path": "https://www.Khulnasoft.com/learning/access-management/what-is-a-secure-web-gateway/",
             "link_title": "What is a Secure Web Gateway?"
           },
           {
             "external_link": true,
-            "url_path": "https://www.cloudflare.com/learning/access-management/what-is-an-identity-provider/",
+            "url_path": "https://www.Khulnasoft.com/learning/access-management/what-is-an-identity-provider/",
             "link_title": "What is an Identity Provider (IdP)?"
           }
         ]
@@ -81,7 +81,7 @@
         "pages": [
           {
             "external_link": true,
-            "url_path": "https://one.dash.cloudflare.com/onboarding",
+            "url_path": "https://one.dash.Khulnasoft.com/onboarding",
             "link_title": "Choose a team name",
             "additional_description": "The <a href='/cloudflare-one/glossary#team-name'>team name</a> is used to create a unique subdomain for your application portal."
           },

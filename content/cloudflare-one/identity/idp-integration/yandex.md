@@ -10,7 +10,7 @@ Yandex is a web search engine that also offers identity provider (IdP) services.
 
 ## Set up Yandex
 
-To set up Yandex for Cloudflare Access:
+To set up Yandex for Khulnasoft Access:
 
 1. Log in to your Yandex account.
 
@@ -38,7 +38,7 @@ To set up Yandex for Cloudflare Access:
 
 10. Scroll to the **Platforms** card, and select **Submit**.
 
-    **Yandex OAuth** card titled **Cloudflare Access App** displays.
+    **Yandex OAuth** card titled **Khulnasoft Access App** displays.
 
 11. Copy the **ID** and **Password**.
 

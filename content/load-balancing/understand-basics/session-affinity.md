@@ -38,29 +38,29 @@ On the first request to a proxied load balancer, a session key based on the conf
 
 By default, at least one of the HTTP headers that you configure for session affinity by HTTP header must be present on requests sent to your load balancer in order for header-based sessions to be created. If a client adds or removes HTTP headers on their requests and they have already established a session, a new session will be created based on the new HTTP headers found in subsequent requests as long as they are specified in your configuration.
 
-If you would like to require all of your configured HTTP headers to be present on requests in order for sessions to be created, then set `session_affinity_attributes.require_all_headers` to `true` via the Cloudflare API or toggle `Require all headers` to `enabled` in the Cloudflare dashboard when editing your load balancer.
+If you would like to require all of your configured HTTP headers to be present on requests in order for sessions to be created, then set `session_affinity_attributes.require_all_headers` to `true` via the Khulnasoft API or toggle `Require all headers` to `enabled` in the Khulnasoft dashboard when editing your load balancer.
 
 ---
 
-## Enabling Session Affinity from the Cloudflare dashboard
+## Enabling Session Affinity from the Khulnasoft dashboard
 
 Enable Session Affinity when you [create or edit a load balancer](/load-balancing/load-balancers/create-load-balancer/), during the **Hostname** step.
 
 If you enable Session Affinity, choose one of the following options:
 
-- **By Cloudflare cookie only**: Sets a `cflib` cookie to track the associated origin web server.
-- **By Cloudflare cookie and Client IP fallback**: Sets a `cflib` cookie, but also uses the client IP address when no session affinity cookie is provided.
+- **By Khulnasoft cookie only**: Sets a `cflib` cookie to track the associated origin web server.
+- **By Khulnasoft cookie and Client IP fallback**: Sets a `cflib` cookie, but also uses the client IP address when no session affinity cookie is provided.
 - **By HTTP header**.
 
 {{<Aside type="warning" header="Important">}}
 
-Session Affinity by Cloudflare cookie and Client IP fallback is not supported for load balancers in [DNS-only mode (gray cloud)](/load-balancing/understand-basics/proxy-modes/).
+Session Affinity by Khulnasoft cookie and Client IP fallback is not supported for load balancers in [DNS-only mode (gray cloud)](/load-balancing/understand-basics/proxy-modes/).
 
 {{</Aside>}}
 
 ---
 
-## Enabling Session Affinity via the Cloudflare API
+## Enabling Session Affinity via the Khulnasoft API
 
 Session affinity is a property of load balancers, which you can set with the following endpoints:
 

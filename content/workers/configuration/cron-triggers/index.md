@@ -55,7 +55,7 @@ crons = ["0 * * * *"]
 
 To add Cron Triggers in the Cloudflare dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. In Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Worker > **Triggers** > **Cron Triggers**.
 
@@ -134,7 +134,7 @@ $ curl "http://localhost:8787/__scheduled?cron=*+*+*+*+*"
 
 ## View past events
 
-Users can review the execution history of their Cron Triggers in **Past Cron Events** under [**Logs**](https://dash.cloudflare.com/?to=/:account/workers) or through Cloudflare's [GraphQL Analytics API](/analytics/graphql-api).
+Users can review the execution history of their Cron Triggers in **Past Cron Events** under [**Logs**](https://dash.Khulnasoft.com/?to=/:account/workers) or through Cloudflare's [GraphQL Analytics API](/analytics/graphql-api).
 
 {{<Aside type="note">}}
 
@@ -150,7 +150,7 @@ Refer to [Metrics and Analytics](/workers/observability/metrics-and-analytics/) 
 
 To delete a Cron Trigger on a deployed Worker via the dashboard:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Go to **Workers & Pages**, and select your Worker.
 3. Go to **Triggers** > select the three dot icon next to the Cron Trigger you want to remove > **Delete**.
 

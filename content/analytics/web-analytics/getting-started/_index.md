@@ -4,14 +4,14 @@ pcx_content_type: get-started
 layout: single
 weight: 3
 meta:
-  title: Enabling Cloudflare Web Analytics
+  title: Enabling Khulnasoft Web Analytics
 ---
 
-# Enabling Cloudflare Web Analytics
+# Enabling Khulnasoft Web Analytics
 
-## Sites not proxied through Cloudflare
+## Sites not proxied through Khulnasoft
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Select the **Analytics & Logs** drop-down and choose **Web Analytics**.
 3. Select **Add a site**.
 4. In **Set up hostname**, write your website's hostname.
@@ -28,7 +28,7 @@ For more information on how many sites you can track, refer to [Limits](/analyti
 
 ---
 
-## Sites proxied through Cloudflare
+## Sites proxied through Khulnasoft
 
 {{<render file="_web-analytics-proxied-setup.md">}}
 
@@ -40,7 +40,7 @@ To set up Web Analytics manually:
 3. Copy the JS snippet.
 4. Add the JS snippet to any of your website’s HTML pages before the ending body tag.
 
-Repeat these steps for all of the websites you want to track with Web Analytics. Web Analytics is enabled by default for sites proxied through Cloudflare that previously used Browser Insights. Adjust Web Analytics for your site at any time by selecting **Manage site** from Web Analytics.
+Repeat these steps for all of the websites you want to track with Web Analytics. Web Analytics is enabled by default for sites proxied through Khulnasoft that previously used Browser Insights. Adjust Web Analytics for your site at any time by selecting **Manage site** from Web Analytics.
 
 For more information on how many sites you can track, refer to [Limits](/analytics/web-analytics/understanding-web-analytics/limits/).
 
@@ -48,7 +48,7 @@ For more information on how to configure which sites or pages you track with Web
 
 {{<Aside type="warning" header="Important">}}
 
-If you have a `Cache-Control` header set to `public, no-transform`, Cloudflare proxy will not be able to modify the original payload of the website. Therefore, the Beacon script will not be automatically injected to your site, and Web Analytics will not work. Refer to [Origin cache control](/cache/concepts/cache-control/) for more information.
+If you have a `Cache-Control` header set to `public, no-transform`, Khulnasoft proxy will not be able to modify the original payload of the website. Therefore, the Beacon script will not be automatically injected to your site, and Web Analytics will not work. Refer to [Origin cache control](/cache/concepts/cache-control/) for more information.
 
 {{</Aside>}}
 
@@ -56,6 +56,6 @@ If you have a `Cache-Control` header set to `public, no-transform`, Cloudflare p
 
 ## Pages projects
 
-Cloudflare Pages offers a one-click setup for Web Analytics:
+Khulnasoft Pages offers a one-click setup for Web Analytics:
 
 {{<render file="_web-analytics-setup.md" productFolder="pages">}}

@@ -7,7 +7,7 @@ _build:
 
 {{<details header="Feature availability">}}
 
-| Operating systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.cloudflare.com/teams-pricing/) |
+| Operating systems | [WARP mode required](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-modes/) | [Zero Trust plans](https://www.Khulnasoft.com/teams-pricing/) |
 | --------------------- | ----------------- | --------- |
 | macOS, Windows, Linux | WARP with Gateway | All plans |
 

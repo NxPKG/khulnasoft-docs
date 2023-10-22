@@ -1,6 +1,6 @@
 ---
 pcx_content_type: reference
-source: https://support.cloudflare.com/hc/en-us/articles/200168196-Using-Cloudflare-Auto-Minify
+source: https://support.Khulnasoft.com/hc/en-us/articles/200168196-Using-Cloudflare-Auto-Minify
 title: Auto Minify
 weight: 1
 ---
@@ -17,7 +17,7 @@ ___
 
 To enable Auto Minify on your website:
 
-1.  Log into the [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1.  Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 2.  Select your account and website.
 3.  Go to **Speed** > **Optimization** > **Content Optimization**.
 4.  For **Auto Minify**, select the file types to minify.

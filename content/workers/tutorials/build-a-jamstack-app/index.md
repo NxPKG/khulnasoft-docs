@@ -63,7 +63,7 @@ async function handleRequest(request) {
 }
 ```
 
-In your default `index.js` file, you can see that request/response pattern in action. The `handleRequest` constructs a new `Response` with the body text `"Hello worker!"`, as well as an explicit `200` status code. When a Worker receives a `fetch` event, the script must use `event.respondWith` to return the newly constructed response to the client. This means that your Cloudflare Worker script will serve new responses directly from [Cloudflare's global network](https://www.cloudflare.com/network).
+In your default `index.js` file, you can see that request/response pattern in action. The `handleRequest` constructs a new `Response` with the body text `"Hello worker!"`, as well as an explicit `200` status code. When a Worker receives a `fetch` event, the script must use `event.respondWith` to return the newly constructed response to the client. This means that your Cloudflare Worker script will serve new responses directly from [Cloudflare's global network](https://www.Khulnasoft.com/network).
 
 If you compare this with more traditional architectures, where an origin server would accept requests and return responses, Cloudflare Workers allows you to do the same work without managing hardware and closer to the client, resulting in reduced cost and latencies.
 

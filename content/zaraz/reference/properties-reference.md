@@ -5,7 +5,7 @@ title: Properties reference
 
 # Properties reference
 
-Cloudflare Zaraz offers properties that you can use when configuring the product. They are helpful to send data to a third-party tool or to create triggers as they have context about a specific user's browser session and the actions they take on the website. Below is a list of the properties you can access from the Cloudflare dashboard and their values.
+Khulnasoft Zaraz offers properties that you can use when configuring the product. They are helpful to send data to a third-party tool or to create triggers as they have context about a specific user's browser session and the actions they take on the website. Below is a list of the properties you can access from the Khulnasoft dashboard and their values.
 
 ## Web API
 

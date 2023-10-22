@@ -6,7 +6,7 @@ weight: 4
 
 # Normalization methods
 
-Cloudflare Radar does not normally return raw values. Instead, values are returned as percentages or normalized using min-max.
+Khulnasoft Radar does not normally return raw values. Instead, values are returned as percentages or normalized using min-max.
 
 Refer to the `result.meta.normalization` property in the response to check which post-processing method was applied to the raw values, if any.
 

@@ -38,7 +38,7 @@ First, shorter-lived certificates limit the damage from key compromise and mista
 
 Second, shorter certificates encourage automation. The more frequently you have to do a task, the more likely you will want to automate it. Automation also means that you are less likely to let a certificate expire in production or give a person access to key material.
 
-For more details on the benefits of shorter validity periods, refer to our [blog post introducing Advanced Certificate Manager](https://blog.cloudflare.com/advanced-certificate-manager/).
+For more details on the benefits of shorter validity periods, refer to our [blog post introducing Advanced Certificate Manager](https://blog.Khulnasoft.com/advanced-certificate-manager/).
 
 ## Failure to renew and certificate replacement
 

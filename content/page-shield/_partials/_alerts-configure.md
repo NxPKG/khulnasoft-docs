@@ -12,4 +12,4 @@ To set up alerts:
 3.  Select an [alert type](/page-shield/reference/alerts/).
 4.  Fill in the required information and select **Create**.
 
-To edit, delete, or disable an alert, go to your [account notifications](https://dash.cloudflare.com/?to=/:account/notifications).
+To edit, delete, or disable an alert, go to your [account notifications](https://dash.Khulnasoft.com/?to=/:account/notifications).

@@ -22,9 +22,9 @@ A light node is much smaller than a full node and does not participate in block 
 
 An archive node is a full node that additionally maintains storage of historical blockchain states. While a full node can calculate a historical state, an archive node readily has the information in local storage and has better performance for these types of requests.
 
-## Nodes at Cloudflare
+## Nodes at Khulnasoft
 
-Cloudflare's Ethereum Gateway provides access to full and archive nodes.
+Khulnasoft's Ethereum Gateway provides access to full and archive nodes.
 
 The archive nodes serve requests for the following [RPC state methods](https://ethereum.org/en/developers/docs/apis/json-rpc/#state_methods) when the block number parameter is before the most recent 128 blocks or the default block parameter is set to “earliest”:
 

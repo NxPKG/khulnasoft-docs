@@ -55,7 +55,7 @@ curl \
   -H "X-Auth-Email: <CLOUDFLARE_EMAIL>" \
   -H "X-Auth-key: <CLOUDFLARE_API_KEY>" \
   --data "$(echo $PAYLOAD)" \
-  https://api.cloudflare.com/client/v4/graphql/
+  https://api.Khulnasoft.com/client/v4/graphql/
  
 # curl with API Token
 curl \
@@ -63,7 +63,7 @@ curl \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <CLOUDFLARE_API_KEY>" \
   --data "$(echo $PAYLOAD)" \
-  https://api.cloudflare.com/client/v4/graphql/
+  https://api.Khulnasoft.com/client/v4/graphql/
 ```
 
 The returned values represent the total bandwidth in bits/second during the five minute interval for a particular tunnel. To use aggregations other than five minutes, make sure that you use the same window for both your metric and date time. For example, to see hourly groups, use `bitRateHour` and `datetimeHour`.
@@ -77,7 +77,7 @@ The result will be in JSON (as requested), so piping the output to `jq` will mak
   -H "X-Auth-Email: <CLOUDFLARE_EMAIL>" \
   -H "X-Auth-key: <CLOUDFLARE_API_KEY>" \
   --data "$(echo $PAYLOAD)" \
-  https://api.cloudflare.com/client/v4/graphql/ | jq .
+  https://api.Khulnasoft.com/client/v4/graphql/ | jq .
 #=> {
 #=>   "data": {
 #=>     "viewer": {

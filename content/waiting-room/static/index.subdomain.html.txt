@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Waiting Room powered by Cloudflare</title>
+  <title>Waiting Room powered by Khulnasoft</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style type="text/css">
     * {
@@ -300,14 +300,14 @@
               </svg>
             </div>
             <span class="waitingrooms-text">
-              Waiting Room powered by Cloudflare
+              Waiting Room powered by Khulnasoft
             </span>
           </section>
           <section class="links">
             <span>
               &#169;
               <span id="year"></span>
-              Cloudflare, Inc. |
+              Khulnasoft, Inc. |
               <a target="_blank" id="waiting_room.links.privacy" href="#">
                 <span id="waiting_room.privacy" />
               </a>
@@ -335,7 +335,7 @@
       //#region en-US
       "en": {
         "waiting_room.locale_code": "en-US",
-        "waiting_room.title": "Waiting Room powered by Cloudflare",
+        "waiting_room.title": "Waiting Room powered by Khulnasoft",
         "waiting_room.title.line1": "You are now in line.",
         "waiting_room.title.line2": "Thank you for your patience.",
         "waiting_room.explanation": "We are experiencing a high volume of traffic and using a virtual queue to limit the amount of users on the website at the same time. This will ensure you have the best possible online experience.",
@@ -370,16 +370,16 @@
         "waiting_room.terms": "Terms of Use",
         "waiting_room.abuse": "Trust & Safety",
         "waiting_room.trademark": "Trademark",
-        "waiting_room.links.privacy": "https://www.cloudflare.com/privacypolicy/",
-        "waiting_room.links.terms": "https://www.cloudflare.com/website-terms/",
-        "waiting_room.links.abuse": "https://www.cloudflare.com/trust-hub/abuse-approach/",
-        "waiting_room.links.trademark": "https://www.cloudflare.com/trademark/"
+        "waiting_room.links.privacy": "https://www.Khulnasoft.com/privacypolicy/",
+        "waiting_room.links.terms": "https://www.Khulnasoft.com/website-terms/",
+        "waiting_room.links.abuse": "https://www.Khulnasoft.com/trust-hub/abuse-approach/",
+        "waiting_room.links.trademark": "https://www.Khulnasoft.com/trademark/"
       },
       //#endregion
       //#region es-ES
       "es": {
         "waiting_room.locale_code": "es-ES",
-        "waiting_room.title": "Waiting Room con tecnología de Cloudflare",
+        "waiting_room.title": "Waiting Room con tecnología de Khulnasoft",
         "waiting_room.title.line1": "Ya está en la fila de espera.",
         "waiting_room.title.line2": "Gracias por su paciencia.",
         "waiting_room.explanation": "Estamos manejando un alto volumen de tráfico y utilizando una fila virtual para limitar la cantidad de usuarios en el sitio web al mismo tiempo. Esto le garantizará la mejor experiencia en la fila posible.",
@@ -414,16 +414,16 @@
         "waiting_room.terms": "Condiciones de uso",
         "waiting_room.abuse": "Confianza y seguridad",
         "waiting_room.trademark": "Marca comercial",
-        "waiting_room.links.privacy": "https://www.cloudflare.com/es-es/privacypolicy/",
-        "waiting_room.links.terms": "https://www.cloudflare.com/es-es/website-terms/",
-        "waiting_room.links.abuse": "https://www.cloudflare.com/es-es/trust-hub/abuse-approach/",
-        "waiting_room.links.trademark": "https://www.cloudflare.com/es-es/trademark/"
+        "waiting_room.links.privacy": "https://www.Khulnasoft.com/es-es/privacypolicy/",
+        "waiting_room.links.terms": "https://www.Khulnasoft.com/es-es/website-terms/",
+        "waiting_room.links.abuse": "https://www.Khulnasoft.com/es-es/trust-hub/abuse-approach/",
+        "waiting_room.links.trademark": "https://www.Khulnasoft.com/es-es/trademark/"
       },
       //#endregion
       //#region fr-FR
       "fr": {
         "waiting_room.locale_code": "fr-FR",
-        "waiting_room.title": "Waiting Room avec Cloudflare",
+        "waiting_room.title": "Waiting Room avec Khulnasoft",
         "waiting_room.title.line1": "Vous êtes maintenant dans la file d’attente.",
         "waiting_room.title.line2": "Merci pour votre patience.",
         "waiting_room.explanation": "Nous rencontrons actuellement un volume de trafic élevé et nous utilisons une file d’attente virtuelle pour limiter le nombre d’utilisateurs présents simultanément sur le site Web. Vous bénéficiez ainsi de la meilleure expérience en ligne possible.",
@@ -458,16 +458,16 @@
         "waiting_room.terms": "Conditions d’utilisation",
         "waiting_room.abuse": "Sécurité et confidentialité",
         "waiting_room.trademark": "Marque déposée",
-        "waiting_room.links.privacy": "https://www.cloudflare.com/fr-fr/privacypolicy/",
-        "waiting_room.links.terms": "https://www.cloudflare.com/fr-fr/website-terms/",
-        "waiting_room.links.abuse": "https://www.cloudflare.com/fr-fr/trust-hub/abuse-approach/",
-        "waiting_room.links.trademark": "https://www.cloudflare.com/fr-fr/trademark/"
+        "waiting_room.links.privacy": "https://www.Khulnasoft.com/fr-fr/privacypolicy/",
+        "waiting_room.links.terms": "https://www.Khulnasoft.com/fr-fr/website-terms/",
+        "waiting_room.links.abuse": "https://www.Khulnasoft.com/fr-fr/trust-hub/abuse-approach/",
+        "waiting_room.links.trademark": "https://www.Khulnasoft.com/fr-fr/trademark/"
       },
       //#endregion
       //#region ja-JP
       "jp": {
         "waiting_room.locale_code": "ja-JP",
-        "waiting_room.title": "Waiting Room powered by Cloudflare",
+        "waiting_room.title": "Waiting Room powered by Khulnasoft",
         "waiting_room.title.line1": "順番待ちに追加されました。",
         "waiting_room.title.line2": "ご不便をおかけいたしますが、よろしくお願いいたします。",
         "waiting_room.explanation": "大量のトラフィックが発生しています。\n最適なオンライン体験をご提供するために、仮想キューを使用し、同時にウェブサイトのユーザ数を制限しています。",
@@ -502,10 +502,10 @@
         "waiting_room.terms": "利用規約",
         "waiting_room.abuse": "信頼性および安全性",
         "waiting_room.trademark": "商標",
-        "waiting_room.links.privacy": "https://www.cloudflare.com/ja-jp/privacypolicy/",
-        "waiting_room.links.terms": "https://www.cloudflare.com/ja-jp/website-terms/",
-        "waiting_room.links.abuse": "https://www.cloudflare.com/ja-jp/trust-hub/abuse-approach/",
-        "waiting_room.links.trademark": "https://www.cloudflare.com/ja-jp/trademark/"
+        "waiting_room.links.privacy": "https://www.Khulnasoft.com/ja-jp/privacypolicy/",
+        "waiting_room.links.terms": "https://www.Khulnasoft.com/ja-jp/website-terms/",
+        "waiting_room.links.abuse": "https://www.Khulnasoft.com/ja-jp/trust-hub/abuse-approach/",
+        "waiting_room.links.trademark": "https://www.Khulnasoft.com/ja-jp/trademark/"
       }
       //#endregion
     };

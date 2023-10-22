@@ -210,5 +210,5 @@ The `put()` method returns a `Promise`, but most applications can discard this p
 
 ### Related resources
 
-- [Durable Objects: Easy, Fast, Correct – Choose Three](https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/).
+- [Durable Objects: Easy, Fast, Correct – Choose Three](https://blog.Khulnasoft.com/durable-objects-easy-fast-correct-choose-three/).
 - [Hibernatable WebSockets API](/durable-objects/api/websockets/).

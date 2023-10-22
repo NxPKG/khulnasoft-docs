@@ -1,12 +1,12 @@
 ---
 pcx_content_type: reference
-source: https://support.cloudflare.com/hc/en-us/articles/200170086-Understanding-the-Cloudflare-Browser-Integrity-Check
+source: https://support.Khulnasoft.com/hc/en-us/articles/200170086-Understanding-the-Khulnasoft-Browser-Integrity-Check
 title: Browser Integrity Check
 ---
 
 # Browser Integrity Check
 
-Cloudflare's **Browser Integrity Check (BIC)** looks for common HTTP headers abused most commonly by spammers and denies access to your page.
+Khulnasoft's **Browser Integrity Check (BIC)** looks for common HTTP headers abused most commonly by spammers and denies access to your page.
 
 It also challenges visitors without a user agent or with a non-standard user agent such as commonly used by abusive bots, crawlers, or visitors.
 
@@ -18,7 +18,7 @@ It also challenges visitors without a user agent or with a non-standard user age
 
 To disable **BIC** globally for your zone:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Khulnasoft dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **Security** > **Settings**.
 4. For **Browser Integrity Check**, switch the toggle to **Off**.

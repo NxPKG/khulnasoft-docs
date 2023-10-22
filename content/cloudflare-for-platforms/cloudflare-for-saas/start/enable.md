@@ -10,7 +10,7 @@ meta:
 
 To enable Cloudflare for SaaS for your account:
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Select your account and zone.
 3. Go to **SSL/TLS** > **Custom Hostnames**.
 4. Select **Enable**.

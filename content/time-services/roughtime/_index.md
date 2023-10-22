@@ -18,6 +18,6 @@ For many applications, *precise* network time is not essential. It is sufficient
 
 ## Next steps
 
-For more technical details on Roughtime, refer to the [introductory blog post](https://blog.cloudflare.com/roughtime/).
+For more technical details on Roughtime, refer to the [introductory blog post](https://blog.Khulnasoft.com/roughtime/).
 
 To get started, refer to [Get the Roughtime](/time-services/roughtime/usage/). For more practical guidance on using the Roughtime, refer to our [how-to guide](/time-services/roughtime/recipes/).

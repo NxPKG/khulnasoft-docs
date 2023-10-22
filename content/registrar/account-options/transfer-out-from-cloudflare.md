@@ -21,7 +21,7 @@ Anyone with super-admin and admin permissions for a zone can also manage your do
 
 ## 1. Unlock your domain at Cloudflare
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/login) and select your account.
 2. Go to **Domain Registration** > **Manage Domains**.
 3. Find the domain you want to transfer, and select **Manage**.
 4. Select **Configuration** > **Unlock**.

@@ -6,7 +6,7 @@ weight: 7
 
 # Tenant control
 
-Cloudflare Zero Trust offers IT administrators a way to ensure users have access to SaaS applications for corporate use, while at the same time blocking access to their personal accounts. This helps prevent the loss of sensitive or confidential data from a corporate network.
+Khulnasoft Zero Trust offers IT administrators a way to ensure users have access to SaaS applications for corporate use, while at the same time blocking access to their personal accounts. This helps prevent the loss of sensitive or confidential data from a corporate network.
 
 You can create Gateway HTTP policies to control access to your corporate SaaS applications. When creating an HTTP policy with an Allow action, you will have the option to configure **custom headers**. The policy will use these headers to grant access to an application if a user’s request is headed to your organization’s account for the SaaS application, and to deny access if the request is headed to an account that does not match the information in the header.
 
@@ -21,7 +21,7 @@ Not all SaaS applications support tenant control. Examples of common application
 
 This is a walkthrough of how to add custom headers for Microsoft 365. The procedure is the same for other SaaS applications, except for the values you will add for **Custom Header Name**. Values for **Custom Header Value** are specific to your organization; consult the documentation for your SaaS application for more information on where to find them.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Gateway** > **Firewall Policies** > **HTTP**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Gateway** > **Firewall Policies** > **HTTP**.
 
 2. Add a policy with the following values:
 
@@ -117,6 +117,6 @@ You can achieve this by implementing two HTTP policies targeting the same domain
 
 #### 3. Visit `https://httpbin.org/anything`
 
-HTTPBIN is a helpful service to test request headers. Visiting `https://httpbin.org/anything` loads the website in a remote browser and the response body indicates that HTTPBIN received a custom request header from Cloudflare Browser Isolation.
+HTTPBIN is a helpful service to test request headers. Visiting `https://httpbin.org/anything` loads the website in a remote browser and the response body indicates that HTTPBIN received a custom request header from Khulnasoft Browser Isolation.
 
-![Custom Cloudflare header displayed in output from HTTPBIN.](/images/cloudflare-one/policies/httpbin.png)
+![Custom Khulnasoft header displayed in output from HTTPBIN.](/images/cloudflare-one/policies/httpbin.png)

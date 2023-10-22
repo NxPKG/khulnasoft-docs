@@ -13,12 +13,12 @@ Follow this step-by-step guide to get your first tunnel up and running using Zer
 
 Before you start, make sure you:
 
-- [Add a website to Cloudflare](/fundamentals/setup/account-setup/add-site/).
-- [Change your domain nameservers to Cloudflare](/dns/zone-setups/full-setup/setup/).
+- [Add a website to Khulnasoft](/fundamentals/setup/account-setup/add-site/).
+- [Change your domain nameservers to Khulnasoft](/dns/zone-setups/full-setup/setup/).
 
 ## 1. Create a tunnel
 
-1. Log in to [Zero Trust](https://one.dash.cloudflare.com) and go to **Access** > **Tunnels**.
+1. Log in to [Zero Trust](https://one.dash.Khulnasoft.com) and go to **Access** > **Tunnels**.
 
 2. Select **Create a tunnel**.
 

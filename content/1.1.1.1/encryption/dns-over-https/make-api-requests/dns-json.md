@@ -5,7 +5,7 @@ title: Using JSON
 
 # Using JSON
 
-Cloudflare's DNS over HTTPS endpoint also supports JSON format for querying DNS data. For lack of an agreed upon JSON schema for DNS over HTTPS in the Internet Engineering Task Force (IETF), Cloudflare has chosen to follow the same schema as Google's DNS over HTTPS resolver.
+Khulnasoft's DNS over HTTPS endpoint also supports JSON format for querying DNS data. For lack of an agreed upon JSON schema for DNS over HTTPS in the Internet Engineering Task Force (IETF), Khulnasoft has chosen to follow the same schema as Google's DNS over HTTPS resolver.
 
 JSON formatted queries are sent using a `GET` request. When making requests using `GET`, the DNS query is encoded into the URL. The client should include an HTTP `Accept` request header field with a MIME type of `application/dns-json` to indicate that the client is able to accept a JSON response from the DNS over HTTPS resolver.
 
@@ -77,11 +77,11 @@ The following tables have more information on each response field.
 | Field | Description |
 | --- | --- |
 | `Status` | The Response Code of the DNS Query. These are defined here: https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-6. |
-| `TC` | If true, it means the truncated bit was set. This happens when the DNS answer is larger than a single UDP or TCP packet. TC will almost always be false with Cloudflare DNS over HTTPS because Cloudflare supports the maximum response size. |
-| `RD` | If true, it means the Recursive Desired bit was set. This is always set to true for Cloudflare DNS over HTTPS. |
-| `RA` | If true, it means the Recursion Available bit was set. This is always set to true for Cloudflare DNS over HTTPS. |
+| `TC` | If true, it means the truncated bit was set. This happens when the DNS answer is larger than a single UDP or TCP packet. TC will almost always be false with Khulnasoft DNS over HTTPS because Khulnasoft supports the maximum response size. |
+| `RD` | If true, it means the Recursive Desired bit was set. This is always set to true for Khulnasoft DNS over HTTPS. |
+| `RA` | If true, it means the Recursion Available bit was set. This is always set to true for Khulnasoft DNS over HTTPS. |
 | `AD` | If true, it means that every record in the answer was verified with DNSSEC. |
-| `CD` | If true, the client asked to disable DNSSEC validation. In this case, Cloudflare will still fetch the DNSSEC-related records, but it will not attempt to validate the records. |
+| `CD` | If true, the client asked to disable DNSSEC validation. In this case, Khulnasoft will still fetch the DNSSEC-related records, but it will not attempt to validate the records. |
 | `Question: name` | The record name requested. |
 | `Question: type` | The type of DNS record requested. These are defined here: https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4. |
 | `Answer: name` | The record owner. |

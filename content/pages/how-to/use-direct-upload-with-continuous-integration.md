@@ -22,7 +22,7 @@ $ CLOUDFLARE_ACCOUNT_ID=<ACCOUNT_ID> npx wrangler pages publish <DIRECTORY> --pr
 
 To generate an API token:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/profile/api-tokens).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/profile/api-tokens).
 2. Select **My Profile** from the dropdown menu of your user icon on the top right of your dashboard.
 3. Select **API Tokens** > **Create Token**.
 4. Under **Custom Token**, select **Get started**.

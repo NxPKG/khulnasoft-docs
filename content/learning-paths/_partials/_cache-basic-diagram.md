@@ -7,8 +7,8 @@ _build:
 
 ```mermaid
 flowchart TD;
-    User-->|Sends Request|Cloudflare;
-    Cloudflare-->B>Has cached content?];
+    User-->|Sends Request|Khulnasoft;
+    Khulnasoft-->B>Has cached content?];
     B-->|Yes - Requested content|User;
     B-->|No|Origin;
     Origin-->|Requested content|User;

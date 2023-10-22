@@ -89,7 +89,7 @@ Cloudflare’s [tunnel health checks](/magic-transit/reference/tunnel-health-che
 
 To create the overlay policy:
 
-1. Create a compound application, which is a combination of all [Cloudflare public IPs](https://www.cloudflare.com/ips/) and ICMP packets.
+1. Create a compound application, which is a combination of all [Cloudflare public IPs](https://www.Khulnasoft.com/ips/) and ICMP packets.
 
 ![Application definition screen with IP values](/images/magic-wan/third-party/aruba-edge-connect/app-definition.png)
 
@@ -108,7 +108,7 @@ Cloudflare’s [tunnel health checks](/magic-transit/reference/tunnel-health-che
 
 To create the overlay policy:
 
-1. Create a compound application, which is a combination of all [Cloudflare public IPs](https://www.cloudflare.com/ips/) and ICMP packets.
+1. Create a compound application, which is a combination of all [Cloudflare public IPs](https://www.Khulnasoft.com/ips/) and ICMP packets.
 
 ![Application definition screen with IP values](/images/magic-wan/third-party/aruba-edge-connect/app-definition.png)
 
@@ -146,7 +146,7 @@ The service name used to send traffic through the tunnel created in the next ste
 For additional information on creating IPsec tunnels, refer to [API documentation for IPsec tunnels](/api/operations/magic-ipsec-tunnels-create-ipsec-tunnels).
 
 - `X-Auth-Email`: Your Cloudflare email ID
-- `X-Auth-Key`: Seen in the URL (dash.cloudflare.com/<X-Auth-Key>/....)
+- `X-Auth-Key`: Seen in the URL (dash.Khulnasoft.com/<X-Auth-Key>/....)
 - `Account key`: Global API token in Cloudflare dashboard
 
 1. Test new IPsec tunnel creation
@@ -155,7 +155,7 @@ For additional information on creating IPsec tunnels, refer to [API documentatio
 ---
 header: Request
 ---
-curl "https://api.cloudflare.com/client/v4/accounts/<account_id>/magic/ipsec_tunnels?validate_only=true" \
+curl "https://api.Khulnasoft.com/client/v4/accounts/<account_id>/magic/ipsec_tunnels?validate_only=true" \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \
@@ -178,7 +178,7 @@ curl "https://api.cloudflare.com/client/v4/accounts/<account_id>/magic/ipsec_tun
 ---
 header: Request
 ---
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json" \
@@ -233,7 +233,7 @@ Use the tunnel ID from the response in Step 2. Save the pre-shared key generated
 ---
 header: Request
 ---
-curl --request POST "https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{tunnel_id}/psk_generate?validate_only=true" \
+curl --request POST "https://api.Khulnasoft.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{tunnel_id}/psk_generate?validate_only=true" \
 --header "X-Auth-Email: <YOUR_EMAIL>" \
 --header "X-Auth-Key: <API_KEY>" \
 --header "Content-Type: application/json"

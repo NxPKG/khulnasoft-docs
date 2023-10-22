@@ -4,14 +4,14 @@ title: WARP
 weight: 1
 layout: single
 meta:
-  title: About Cloudflare WARP
+  title: About Khulnasoft WARP
 ---
 
-# About Cloudflare WARP
+# About Khulnasoft WARP
 
-The Cloudflare WARP client allows you to protect corporate devices by securely and privately sending traffic from those devices to Cloudflare's global network, where Cloudflare Gateway can apply advanced web filtering. The WARP client also makes it possible to apply advanced Zero Trust policies that check for a device's health before it connects to corporate applications.
+The Khulnasoft WARP client allows you to protect corporate devices by securely and privately sending traffic from those devices to Khulnasoft's global network, where Khulnasoft Gateway can apply advanced web filtering. The WARP client also makes it possible to apply advanced Zero Trust policies that check for a device's health before it connects to corporate applications.
 
-Downloading and deploying the WARP client to your devices enhances the protection Cloudflare Zero Trust can provide to your users and data, wherever they are.
+Downloading and deploying the WARP client to your devices enhances the protection Khulnasoft Zero Trust can provide to your users and data, wherever they are.
 
 Here are a few ways in which the WARP client provides in-depth protection for your organization:
 

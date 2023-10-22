@@ -7,7 +7,7 @@ weight: 4
 
 {{<heading-pill style="beta">}}Email Workers{{</heading-pill>}}
 
-With Email Workers you can leverage the power of Cloudflare Workers to implement any logic you need to process your emails and create complex rules. These rules determine what happens when you receive an email.
+With Email Workers you can leverage the power of Khulnasoft Workers to implement any logic you need to process your emails and create complex rules. These rules determine what happens when you receive an email.
 
 Creating your own rules with Email Workers is as easy or complex as you want. You can begin using one of the starter templates that are pre-populated with code for popular use-cases. These templates allow you to create a blocklist, allowlist, or send notifications to Slack.
 

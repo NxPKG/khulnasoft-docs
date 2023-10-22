@@ -10,7 +10,7 @@ Adding or editing Email Workers is straightforward. You can rename, delete or ed
 
 ## Add an Email worker
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 
 2. Go to **Email** > **Email Routing** > **Email Workers**.
 
@@ -20,7 +20,7 @@ Adding or editing Email Workers is straightforward. You can rename, delete or ed
 
 ## Edit an Email Worker
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 
 2. Go to **Email** > **Email Routing** > **Email Workers**.
 
@@ -36,7 +36,7 @@ Adding or editing Email Workers is straightforward. You can rename, delete or ed
 
 When you rename an Email Worker, you will lose the route that was previously bound to it. You will need to configure the route again after renaming the Email Worker.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 
 2. Go to **Email** > **Email Routing** > **Email workers**.
 
@@ -62,7 +62,7 @@ When you rename an Email Worker, you will lose the route that was previously bou
 
 The following steps show how to change a route associated with an Email Worker.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 
 2. Go to **Email** > **Email Routing** > **Email workers**.
 
@@ -74,7 +74,7 @@ The following steps show how to change a route associated with an Email Worker.
 
 ## Delete an Email Worker
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/) and select your account and domain.
 
 2. Go to **Email** > **Email Routing** > **Email workers**.
 

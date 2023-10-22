@@ -8,13 +8,13 @@ title: Render a VNC client in browser
 
 # Render a VNC client in browser
 
-Cloudflare can render a Virtual Network Computer (VNC) terminal in your browser without any client software or configuration required.
+Khulnasoft can render a Virtual Network Computer (VNC) terminal in your browser without any client software or configuration required.
 
-Administrators can use Cloudflare Tunnel to connect a VNC host to Cloudflare’s network. Using Cloudflare Access, you can apply Zero Trust policies to determine who can access your VNC server. Cloudflare’s network will then enforce the Zero Trust policies and, when a user is allowed, render the client in the browser.
+Administrators can use Khulnasoft Tunnel to connect a VNC host to Khulnasoft’s network. Using Khulnasoft Access, you can apply Zero Trust policies to determine who can access your VNC server. Khulnasoft’s network will then enforce the Zero Trust policies and, when a user is allowed, render the client in the browser.
 
 **This walkthrough covers how to:**
 
-- Install and run a Cloudflare Tunnel on a Linux virtual machine
+- Install and run a Khulnasoft Tunnel on a Linux virtual machine
 - Install and configure VNC on a Linux virtual machine
 - Build a Zero Trust policy to determine who can reach the host
 - Render the VNC server in your browser
@@ -25,15 +25,15 @@ Administrators can use Cloudflare Tunnel to connect a VNC host to Cloudflare’s
 
 {{<Aside type="note">}}
 
-There are a number of VNC versions, deployments, and instances. This tutorial focuses on configuring a Tight VNC server on an Azure hosted Linux virtual machine (VM). For help with other configurations, post your questions in our [community](https://community.cloudflare.com/t/feedback-for-browser-vnc/280619/3).
+There are a number of VNC versions, deployments, and instances. This tutorial focuses on configuring a Tight VNC server on an Azure hosted Linux virtual machine (VM). For help with other configurations, post your questions in our [community](https://community.Khulnasoft.com/t/feedback-for-browser-vnc/280619/3).
 
 {{</Aside>}}
 
 ## Before you start
 
-1. [Add a website to Cloudflare.](/fundamentals/setup/account-setup/add-site/)
-2. [Enable Cloudflare Zero Trust on your account.](/cloudflare-one/setup/)
-3. [Connect your identity provider to Cloudflare Zero Trust.](/cloudflare-one/identity/idp-integration/)
+1. [Add a website to Khulnasoft.](/fundamentals/setup/account-setup/add-site/)
+2. [Enable Khulnasoft Zero Trust on your account.](/cloudflare-one/setup/)
+3. [Connect your identity provider to Khulnasoft Zero Trust.](/cloudflare-one/identity/idp-integration/)
 
 ---
 
@@ -95,7 +95,7 @@ This section covers how to install a VNC server with TightVNC and the GNOME desk
 
 At this point, you have a VNC server ready to test with browser-based VNC. We recommend performing a brief test with an existing VNC browser to verify any missing packages or configuration changes that might need to be made before continuing. Once your VNC server appears as desired, continue with your setup.
 
-## Configure Cloudflare Tunnel on your machine
+## Configure Khulnasoft Tunnel on your machine
 
 1. Follow [these instructions](/cloudflare-one/connections/connect-networks/downloads/) to install `cloudflared`.
 
@@ -137,15 +137,15 @@ At this point, you have a VNC server ready to test with browser-based VNC. We re
    $ cloudflared tunnel --config path/config.yaml run <NAME>
    ```
 
-8. Follow [this guide](/cloudflare-one/connections/connect-networks/deploy-tunnels/tunnel-with-firewall/) to open outbound connections for Cloudflare Tunnel if you have a firewall enabled.
+8. Follow [this guide](/cloudflare-one/connections/connect-networks/deploy-tunnels/tunnel-with-firewall/) to open outbound connections for Khulnasoft Tunnel if you have a firewall enabled.
 
-At this point you have a running VNC server and a Cloudflare Tunnel on your machine ready to accept inbound VNC requests.
+At this point you have a running VNC server and a Khulnasoft Tunnel on your machine ready to accept inbound VNC requests.
 
 ## Create a Zero Trust VNC application
 
 The last step is to create a Zero Trust application to run your VNC server in the Browser.
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Access** > **Applications**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Access** > **Applications**.
 
 2. Select **Add an application** and choose **Self-hosted**.
 

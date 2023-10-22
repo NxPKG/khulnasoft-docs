@@ -18,14 +18,14 @@ To construct a Magic Firewall GraphQL query for an object, you will need a Cloud
 
 ### Obtain your Cloudflare Account ID
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/), and select your account.
-2. The URL in your browser's address bar should show `https://dash.cloudflare.com/` followed by a hex string. The hex string is your Cloudflare Account ID.
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com/), and select your account.
+2. The URL in your browser's address bar should show `https://dash.Khulnasoft.com/` followed by a hex string. The hex string is your Cloudflare Account ID.
 
 ### Obtain the rule ID for a firewall rule
 
 To construct queries to gather analytics for a particular rule, you need the rule ID for each firewall rule.
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login), and select you account.
+1. Log in to your [Cloudflare dashboard](https://dash.Khulnasoft.com/login), and select you account.
 2. Select **Magic Firewall**.
 3. Locate the rule you need the rule ID for from the list, and select **Edit**.
 4. Locate the **Rule ID**, and select the copy button.

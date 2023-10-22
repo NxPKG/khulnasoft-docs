@@ -14,7 +14,7 @@ header: Request
 ---
 curl -X GET \
 -H "Authorization: Bearer <API_TOKEN>" \
-https://dash.cloudflare.com/api/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/<LIVE_INPUT_UID>/videos
+https://dash.Khulnasoft.com/api/v4/accounts/<ACCOUNT_ID>/stream/live_inputs/<LIVE_INPUT_UID>/videos
 ```
 
 ```json

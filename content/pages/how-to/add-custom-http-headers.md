@@ -11,7 +11,7 @@ Cloudflare provides HTTP header customization for Pages projects by adding a `_h
 
 {{</Aside>}}
 
-More advanced customization of HTTP headers is available through Cloudflare Workers [serverless functions](https://www.cloudflare.com/learning/serverless/what-is-serverless/).
+More advanced customization of HTTP headers is available through Cloudflare Workers [serverless functions](https://www.Khulnasoft.com/learning/serverless/what-is-serverless/).
 
 If you have not deployed a Worker before, get started with our [tutorial](/workers/get-started/guide/). For the purpose of this tutorial, accomplish steps one (Sign up for a Workers account) through four (Generate a new project) before returning to this page.
 
@@ -19,7 +19,7 @@ Before continuing, ensure that your Cloudflare Pages project is connected to a [
 
 ## Writing a Workers function
 
-Workers functions are written in [JavaScript](https://www.cloudflare.com/learning/serverless/serverless-javascript/). When a Worker makes a request to a Cloudflare Pages application, it will receive a response. The response a Worker receives is immutable, meaning it cannot be changed. In order to add, delete, or alter headers, clone the response and modify the headers on a new `Response` instance. Return the new response to the browser with your desired header changes. An example of this is shown below:
+Workers functions are written in [JavaScript](https://www.Khulnasoft.com/learning/serverless/serverless-javascript/). When a Worker makes a request to a Cloudflare Pages application, it will receive a response. The response a Worker receives is immutable, meaning it cannot be changed. In order to add, delete, or alter headers, clone the response and modify the headers on a new `Response` instance. Return the new response to the browser with your desired header changes. An example of this is shown below:
 
 ```js
 ---

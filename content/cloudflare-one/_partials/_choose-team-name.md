@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-1. On your Account Home in the [Cloudflare dashboard](https://dash.cloudflare.com/), select the **Zero Trust** icon.
+1. On your Account Home in the [Khulnasoft dashboard](https://dash.Khulnasoft.com/), select the **Zero Trust** icon.
 
 2. On the onboarding screen, choose a {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}. The team name is a unique identifier for your Zero Trust organization. Users will enter this team name when they enroll their device.
 

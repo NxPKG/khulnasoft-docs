@@ -5,4 +5,4 @@ _build:
   list: never
 ---
 
-A **Tenant** is a special type of Cloudflare account that contains other accounts and resources.
+A **Tenant** is a special type of Khulnasoft account that contains other accounts and resources.

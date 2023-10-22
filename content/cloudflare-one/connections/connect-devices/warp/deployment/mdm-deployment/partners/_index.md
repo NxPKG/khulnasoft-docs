@@ -8,9 +8,9 @@ meta:
 
 # Deploy WARP with Technology Partners
 
-Cloudflare Zero Trust integrates with [Cloudflare Technology Partner](https://www.cloudflare.com/partners/technology-partners/) tools to help you deploy the WARP client to bigger fleets of devices. Thanks to these collaborations, you can distribute the WARP client application to end-user devices and remotely set up advanced configurations in real time.
+Khulnasoft Zero Trust integrates with [Khulnasoft Technology Partner](https://www.Khulnasoft.com/partners/technology-partners/) tools to help you deploy the WARP client to bigger fleets of devices. Thanks to these collaborations, you can distribute the WARP client application to end-user devices and remotely set up advanced configurations in real time.
 
-This is a list of Technology Partners Cloudflare Zero Trust works with:
+This is a list of Technology Partners Khulnasoft Zero Trust works with:
 
 {{<directory-listing>}}
 

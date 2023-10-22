@@ -6,7 +6,7 @@ weight: 6
 
 # SAML | Active Directory®
 
-Active Directory is a directory service developed by Microsoft for Windows domain networks. It is included in most Windows Server operating systems as a set of processes and services. Active Directory integrates with Cloudflare Access for using Security Assertion Markup Language ({{<glossary-tooltip term_id="SAML">}}SAML{{</glossary-tooltip>}}).
+Active Directory is a directory service developed by Microsoft for Windows domain networks. It is included in most Windows Server operating systems as a set of processes and services. Active Directory integrates with Khulnasoft Access for using Security Assertion Markup Language ({{<glossary-tooltip term_id="SAML">}}SAML{{</glossary-tooltip>}}).
 
 ## Before you start
 
@@ -19,11 +19,11 @@ To get started, you need:
 
 Once you fulfill the requirements above, you are ready to begin. Installation and basic configuration of Active Directory Federation Services (ADFS) is outside the scope of this guide. A detailed guide can be found in a [Microsoft KB](<https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/deployment-administrators-guide/gg188612(v=crm.8)>).
 
-Then to begin the connection between Cloudflare Access and ADFS create a Relying Party Trust in ADFS.
+Then to begin the connection between Khulnasoft Access and ADFS create a Relying Party Trust in ADFS.
 
 ## Create a Relying Party Trust
 
-Run the Add Relying Party Trust wizard to begin SAML AD integration with Cloudflare Access.
+Run the Add Relying Party Trust wizard to begin SAML AD integration with Khulnasoft Access.
 
 To create a Relying Party Trust:
 
@@ -75,13 +75,13 @@ To create a Relying Party Trust:
 
 21. Review your settings.
 
-22. Select **Next**. Cloudflare now relies on ADFS for user-identity authorization.
+22. Select **Next**. Khulnasoft now relies on ADFS for user-identity authorization.
 
 The **Edit Claim Rules for CF Login** screen automatically displays.
 
 ## Create claim rules
 
-Now create 2 Claim Rules so that ADFS can take information from Cloudflare and return it to create [Access policies](/cloudflare-one/policies/access/).
+Now create 2 Claim Rules so that ADFS can take information from Khulnasoft and return it to create [Access policies](/cloudflare-one/policies/access/).
 
 If you closed the Add Relying Trust wizard, use Explorer to find the **Relying Party Trusts** folder, select the newly created RPT file, and select **Edit Claim Rules** in the **Action** sidebar.
 
@@ -117,11 +117,11 @@ To create Claim Rules:
 
 15. Select **OK**.
 
-Both Claim Rules are now available to export to your Cloudflare Access account.
+Both Claim Rules are now available to export to your Khulnasoft Access account.
 
 ## Export the certificate
 
-Now you’ll configure Cloudflare to recognize ADFS by extracting the _token-signing certificate_ from ADFS.
+Now you’ll configure Khulnasoft to recognize ADFS by extracting the _token-signing certificate_ from ADFS.
 
 To export the certificate:
 
@@ -151,15 +151,15 @@ To export the certificate:
 
 ## Configure ADFS to sign SAML responses
 
-To ensure that ADFS signs the full response when communicating with Cloudflare, open your local **PowerShell** and enter the following command:
+To ensure that ADFS signs the full response when communicating with Khulnasoft, open your local **PowerShell** and enter the following command:
 
 ```bash
 Set-ADFSRelyingPartyTrust -TargetName "Name of RPT Display Name" -SamlResponseSignature "MessageAndAssertion"
 ```
 
-## Configure Cloudflare Zero Trust
+## Configure Khulnasoft Zero Trust
 
-To enable Cloudflare Zero Trust to accept the claims and assertions sent from ADFS, follow these steps:
+To enable Khulnasoft Zero Trust to accept the claims and assertions sent from ADFS, follow these steps:
 
 1. In Zero Trust, go to **Settings** > **Authentication**.
 
@@ -195,7 +195,7 @@ To test that your connection is working, go to **Authentication** > **Login meth
 
 Some IdPs allow administrators to upload metadata files from their SP (service provider).
 
-To get your Cloudflare metadata file:
+To get your Khulnasoft metadata file:
 
 1. Download your unique SAML metadata file at the following URL (replace `<your-team-name>` in this example with your own {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}):
 
@@ -203,7 +203,7 @@ To get your Cloudflare metadata file:
     https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/saml-metadata
     ```
 
-    In Cloudflare Access, you can find a link to this URL in the **Edit a SAML identity provider** dialog. The link returns a web page with your SAML SP data in XML format.
+    In Khulnasoft Access, you can find a link to this URL in the **Edit a SAML identity provider** dialog. The link returns a web page with your SAML SP data in XML format.
 
 2. Save the file in XML format.
 

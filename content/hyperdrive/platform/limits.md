@@ -32,6 +32,6 @@ The following limits apply to Hyperdrive configuration, connections, and queries
 
 {{<Aside type="note">}}
 
-You can request adjustments to limits that conflict with your project goals by contacting Cloudflare. Not all limits can be increased. To request an increase, submit a [Limit Increase Request](https://forms.gle/ukpeZVLWLnKeixDu7) and we will contact you with next steps.
+You can request adjustments to limits that conflict with your project goals by contacting Khulnasoft. Not all limits can be increased. To request an increase, submit a [Limit Increase Request](https://forms.gle/ukpeZVLWLnKeixDu7) and we will contact you with next steps.
 
 {{</Aside>}}

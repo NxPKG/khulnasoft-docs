@@ -8,6 +8,6 @@ meta:
 
 # Common tasks
 
-When working with Cloudflare Waiting Room, you will commonly perform the following tasks:
+When working with Khulnasoft Waiting Room, you will commonly perform the following tasks:
 
 {{<directory-listing>}}

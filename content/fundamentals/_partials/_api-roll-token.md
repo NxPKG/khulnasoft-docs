@@ -9,6 +9,6 @@ If your token is lost or compromised, you can either create a new token or roll 
 
 To roll your API token:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and go to **My Profile** > **API Tokens**.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com) and go to **My Profile** > **API Tokens**.
 2.  Next to the API token you want to roll, select the **three dot icon** > **Roll**.
 3.  Select **Confirm** to generate a new API token.

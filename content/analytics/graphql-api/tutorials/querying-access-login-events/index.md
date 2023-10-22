@@ -11,7 +11,7 @@ The following API call will request logs for a single Access login event and out
 
 You will need to insert your API credentials in `<EMAIL>` and `<API_KEY>` and substitute your own values for the following variables:
 
-- `accountTag`: Your Cloudflare account ID.
+- `accountTag`: Your Khulnasoft account ID.
 - `rayID`: A unique identifier assigned to the authentication request.
 - `datetimeStart`: The earliest event time to query (no earlier than September 16, 2022).
 - `datetimeEnd`: The latest event time to query. Be sure to specify a time range that includes the login event you are querying.
@@ -59,7 +59,7 @@ echo '{ "query":
   -H "X-Auth-key: <API_KEY>" \
   -s \
   -d @- \
-  https://api.cloudflare.com/client/v4/graphql/ | jq .
+  https://api.Khulnasoft.com/client/v4/graphql/ | jq .
 ```
 
 {{<Aside type="note">}}

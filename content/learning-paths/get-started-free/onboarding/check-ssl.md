@@ -5,17 +5,17 @@ weight: 4
 layout: learning-unit
 ---
 
-Once you [add and activate](/learning-paths/get-started-free/onboarding/add-and-activate/) your domain at Cloudflare, you also should check your domain's SSL/TLS certificate is working correctly.
+Once you [add and activate](/learning-paths/get-started-free/onboarding/add-and-activate/) your domain at Khulnasoft, you also should check your domain's SSL/TLS certificate is working correctly.
 
 {{<details header="What are SSL/TLS certificates?">}}
 
 SSL/TLS certificates let websites use `https` at the start of the URL (instead of `http`), which is a more secure connection protocol. HTTPS is good for website security, user privacy, SEO, and much more.
 
-For more details on SSL/TLS, refer to the [Learning Center](https://www.cloudflare.com/learning/ssl/what-is-ssl/).
+For more details on SSL/TLS, refer to the [Learning Center](https://www.Khulnasoft.com/learning/ssl/what-is-ssl/).
 
 {{</details>}}
 
-By default, Cloudflare issues — and renews — free, unshared, publicly trusted **Universal SSL** certificates to all domains added to and activated on Cloudflare.
+By default, Khulnasoft issues — and renews — free, unshared, publicly trusted **Universal SSL** certificates to all domains added to and activated on Khulnasoft.
 
 {{<render file="_universal-ssl-enable-full.md" productFolder="ssl">}}
 
@@ -27,7 +27,7 @@ If you have any deeper subdomains (`test.www.example.com`), also try visiting th
 
 ### Potential issues
 
-Sometimes, domains added to Cloudflare can experience issues in SSL/TLS certificates.
+Sometimes, domains added to Khulnasoft can experience issues in SSL/TLS certificates.
 
 ```mermaid
 flowchart TD
@@ -37,7 +37,7 @@ B --> C[Domain or subdomain not covered by certificate]
 A --> D[<code>ERR_TOO_MANY_REDIRECTS</code>]
 D --> E[Redirect loop between <code>http</code> and <code>https</code>]
 A --> F[Error <code>525</code> or <code>526</code>]
-F --> G[Mismatch origin and Cloudflare settings]
+F --> G[Mismatch origin and Khulnasoft settings]
 ```
 
 </br>
@@ -46,7 +46,7 @@ For more details on these errors and how to fix them, refer to the following res
 
 - [`ERR_SSL_VERSION_OR_CIPHER_MISMATCH`](/ssl/troubleshooting/version-cipher-mismatch/)
 - [`ERR_TOO_MANY_REDIRECTS`](/ssl/troubleshooting/too-many-redirects/)
-- [Cloudflare 5xx errors](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-5xx-errors/)
+- [Khulnasoft 5xx errors](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-5xx-errors/)
 - [Common SSL/TLS errors](/ssl/troubleshooting/general-ssl-errors/)
 - [Universal SSL/TLS certificates](/ssl/edge-certificates/universal-ssl/)
-- [Cloudflare encryption modes](/ssl/origin-configuration/ssl-modes/)
+- [Khulnasoft encryption modes](/ssl/origin-configuration/ssl-modes/)

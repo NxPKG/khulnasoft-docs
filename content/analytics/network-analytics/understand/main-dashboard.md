@@ -50,11 +50,11 @@ In the main dashboard card you can apply filters to the displayed data.
 
 You can filter by the following parameters:
 
-* Mitigation action taken by Cloudflare
+* Mitigation action taken by Khulnasoft
 * Mitigation system that performed the action
 * Source IP, port, ASN, tunnel
 * Destination IP, port, IP range (description or CIDR of provisioned prefixes), tunnel
-* Source Cloudflare data center and data center country of where the traffic was observed
+* Source Khulnasoft data center and data center country of where the traffic was observed
 * Packet size
 * TCP flag
 * TTL
@@ -105,7 +105,7 @@ Expand each row to display event details, including the full packet headers and 
 
 ## Data center country/Source data center
 
-Displays the top source Cloudflare data centers where the displayed traffic was ingested. The same card can also display the country associated with these top source data centers.
+Displays the top source Khulnasoft data centers where the displayed traffic was ingested. The same card can also display the country associated with these top source data centers.
 
 To switch between **Data center country** and **Source data center** information, use the dropdown in the card.
 

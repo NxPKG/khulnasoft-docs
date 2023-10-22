@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/4729826525965-Configuring-URL-forwarding-or-redirects-with-Page-Rules
+source: https://support.Khulnasoft.com/hc/en-us/articles/4729826525965-Configuring-URL-forwarding-or-redirects-with-Page-Rules
 title: Configuring URL forwarding or redirects with Page Rules
 ---
 
@@ -8,14 +8,14 @@ title: Configuring URL forwarding or redirects with Page Rules
 
 ## Overview
 
-If you want to forward or redirect traffic to a different URL, you have the following options using Cloudflare:
+If you want to forward or redirect traffic to a different URL, you have the following options using Khulnasoft:
 
 -   [Single Redirects](/rules/url-forwarding/single-redirects/): Create static or dynamic redirects at the zone level. Dynamic redirects are advanced URL redirects, such as redirects based on the source country of requests.
 -   [Bulk Redirects](/rules/url-forwarding/bulk-redirects/): Define a large number (thousands or even millions) of essentially static URL redirects at the account level.
--   [Page Rules](https://support.cloudflare.com/hc/en-us/articles/4729826525965-Configuring-URL-forwarding-or-redirects-with-Page-Rules#how-to): Should only be used when the other two options do not meet your use case.
+-   [Page Rules](https://support.Khulnasoft.com/hc/en-us/articles/4729826525965-Configuring-URL-forwarding-or-redirects-with-Page-Rules#how-to): Should only be used when the other two options do not meet your use case.
 
 {{<Aside type="warning">}}
-In order to ensure that traffic to the hostname (e.g. `www.example.com`) you want to redirect is reaching Cloudflare, you need to create a DNS record with the proxy status set to \"[proxied](/dns/manage-dns-records/reference/proxied-dns-records)\". 
+In order to ensure that traffic to the hostname (e.g. `www.example.com`) you want to redirect is reaching Khulnasoft, you need to create a DNS record with the proxy status set to \"[proxied](/dns/manage-dns-records/reference/proxied-dns-records)\". 
 Depending on the record type, you can use different values as the target as a placeholder. Either one of these achieves the same outcome and you only need to create one:
 
 ```
@@ -41,13 +41,13 @@ Page Rule subdomains require an [\"Orange
 Clouded\"](/dns/manage-dns-records/reference/proxied-dns-records)
 DNS record for the Page Rule to work. Page Rules won\'t apply to
 subdomains that don\'t exist in DNS or aren\'t being directed to
-Cloudflare.
+Khulnasoft.
 {{</Aside>}}
 
 To configure URL forwarding or redirects using Page Rules:
 
-1.  Log into your Cloudflare account.
-2.  Click the appropriate Cloudflare account for the domain where you want to add URL forwarding.
+1.  Log into your Khulnasoft account.
+2.  Click the appropriate Khulnasoft account for the domain where you want to add URL forwarding.
 3.  Go to **Rules** > **Page Rules**.
 4.  Under **Page Rules,** click **Create Page Rule**. The _Create Page Rule for <your domain>_ dialog opens.
 5.  Under **If the URL matches**, enter the URL or URL pattern that should match the rule. 
@@ -153,4 +153,4 @@ ___
 
 -   [Single Redirects](/rules/url-forwarding/single-redirects/)
 -   [Bulk Redirects](/rules/url-forwarding/bulk-redirects/)
--   [Understanding and Configuring Cloudflare Page Rules (Page Rules Tutorial)](/support/page-rules/understanding-and-configuring-cloudflare-page-rules-page-rules-tutorial/)
+-   [Understanding and Configuring Khulnasoft Page Rules (Page Rules Tutorial)](/support/page-rules/understanding-and-configuring-cloudflare-page-rules-page-rules-tutorial/)

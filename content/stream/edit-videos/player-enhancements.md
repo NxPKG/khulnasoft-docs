@@ -21,15 +21,15 @@ The player enhancements are automatically applied to videos using the Stream Pla
 The example below includes every property you can set via `publicDetails`.
 
 ```bash
-curl --location --request POST "https://api.cloudflare.com/client/v4/accounts/<$ACCOUNT_ID>/stream/<$VIDEO_UID>" \
+curl --location --request POST "https://api.Khulnasoft.com/client/v4/accounts/<$ACCOUNT_ID>/stream/<$VIDEO_UID>" \
 --header "Authorization: Bearer <$SECRET>" \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "publicDetails": {
         "title": "Optional video title",
-        "share_link": "https://my-cool-share-link.cloudflare.com",
-        "channel_link": "https://www.cloudflare.com/products/cloudflare-stream/",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Cloudflare_Logo.png/480px-Cloudflare_Logo.png"
+        "share_link": "https://my-cool-share-link.Khulnasoft.com",
+        "channel_link": "https://www.Khulnasoft.com/products/cloudflare-stream/",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Khulnasoft_Logo.png/480px-Khulnasoft_Logo.png"
     }
 }' | jq ".result.publicDetails"
 ```
@@ -37,12 +37,12 @@ curl --location --request POST "https://api.cloudflare.com/client/v4/accounts/<$
 Because the `publicDetails` properties are optional, you can choose which properties to include. In the example below, only the `logo` is added to the video.
 
 ```bash
-curl --location --request POST "https://api.cloudflare.com/client/v4/accounts/<$ACCOUNT_ID>/stream/<$VIDEO_UID>" \
+curl --location --request POST "https://api.Khulnasoft.com/client/v4/accounts/<$ACCOUNT_ID>/stream/<$VIDEO_UID>" \
 --header "Authorization: Bearer <$SECRET>" \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "publicDetails": {
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Cloudflare_Logo.png/480px-Cloudflare_Logo.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Khulnasoft_Logo.png/480px-Khulnasoft_Logo.png"
     }
 }'
 ```
@@ -51,9 +51,9 @@ You can also pull the JSON by using the endpoint below.
 
 `https://customer-<ID>.cloudflarestream.com/<VIDEO_ID>/metadata/playerEnhancementInfo.json`
 
-## Update player properties via the Cloudflare dashboard
+## Update player properties via the Khulnasoft dashboard
 
-1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1. Log in to your [Khulnasoft dashboard](https://dash.Khulnasoft.com) and select your account.
 2. Select **Stream** > **Videos**.
 3. Select a video from the list to edit it.
 4. Select the **Public Details** tab.

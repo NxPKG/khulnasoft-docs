@@ -3,7 +3,7 @@ pcx_content_type: how-to
 title: Deploy a custom ruleset
 weight: 4
 meta:
-  description: Learn how to deploy a custom ruleset to your Cloudflare account.
+  description: Learn how to deploy a custom ruleset to your Khulnasoft account.
 ---
 
 # Deploy a custom ruleset
@@ -29,7 +29,7 @@ The following `PUT` request adds a rule that executes a custom ruleset when the 
 header: Request
 ---
 curl --request PUT \
-https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_custom/entrypoint \
+https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/phases/http_request_firewall_custom/entrypoint \
 --header "Authorization: Bearer <API_TOKEN>" \
 --header "Content-Type: application/json" \
 --data '{

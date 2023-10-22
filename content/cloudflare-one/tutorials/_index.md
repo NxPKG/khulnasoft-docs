@@ -8,7 +8,7 @@ layout: table
 column_text: Category
 column_param: category
 meta:
-    description: View tutorials for Cloudflare Zero Trust.
+    description: View tutorials for Khulnasoft Zero Trust.
 length: false
 ---
 

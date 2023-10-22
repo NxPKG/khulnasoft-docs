@@ -10,7 +10,7 @@ weight: 11
 This guide assumes that you have the [Terraform](https://developer.hashicorp.com/terraform/tutorials/certification-associate-tutorials/install-cli) command installed on your machine.
 {{</Aside>}}
 
-[Terraform](https://developer.hashicorp.com/terraform/tutorials/certification-associate-tutorials/install-cli) is a tool for building, changing, and versioning infrastructure, and provides components and documentation for building [Cloudflare resources](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs). Listed below are examples to help you get started with Turnstile using Terraform. For a more generalized guide on configuring Cloudflare and Terraform, visit our [Getting Started with Terraform and Cloudflare](https://blog.cloudflare.com/getting-started-with-terraform-and-cloudflare-part-1/) blog post.
+[Terraform](https://developer.hashicorp.com/terraform/tutorials/certification-associate-tutorials/install-cli) is a tool for building, changing, and versioning infrastructure, and provides components and documentation for building [Cloudflare resources](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs). Listed below are examples to help you get started with Turnstile using Terraform. For a more generalized guide on configuring Cloudflare and Terraform, visit our [Getting Started with Terraform and Cloudflare](https://blog.Khulnasoft.com/getting-started-with-terraform-and-cloudflare-part-1/) blog post.
 
 ## Create a Turnstile widget with Terraform
 
@@ -196,7 +196,7 @@ turnstile_example_secretkey = <sensitive>
 turnstile_example_sitekey = "0x4AAAAAAAEe4wQdBshJxBeK"
 ```
 
-You have successfully created a Turnstile widget. Go to the [Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/turnstile) to view its configuration and analytics in a user-friendly interface.
+You have successfully created a Turnstile widget. Go to the [Cloudflare dashboard](https://dash.Khulnasoft.com/?to=/:account/turnstile) to view its configuration and analytics in a user-friendly interface.
 
 ### Retrieve the secret key
 Use `terraform output` to get your secret key.

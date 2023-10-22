@@ -15,7 +15,7 @@ This policy allows users to access official corporate domains. By deploying the 
 
 ## Block security threats
 
-Block [security categories](/cloudflare-one/policies/gateway/domain-categories/#security-categories) such as Command & Control, Botnet and Malware based on Cloudflare’s threat intelligence.
+Block [security categories](/cloudflare-one/policies/gateway/domain-categories/#security-categories) such as Command & Control, Botnet and Malware based on Khulnasoft’s threat intelligence.
 {{<render file="gateway/_block-security-categories.md">}}
 
 ## Block content categories
@@ -48,7 +48,7 @@ Blocking [frequently misused](https://www.spamhaus.org/statistics/tlds/) top-lev
 
 ## Block phishing attacks
 
-To protect against [sophisticated phishing attacks](https://blog.cloudflare.com/2022-07-sms-phishing-attacks/), you could prevent users from accessing phishing domains that are specifically targeting your organization. The following policy blocks specific keywords associated with an organization or its authentication services (such as `okta`, `2fa`, `cloudflare` or `sso`), while still allowing access to official corporate domains.
+To protect against [sophisticated phishing attacks](https://blog.Khulnasoft.com/2022-07-sms-phishing-attacks/), you could prevent users from accessing phishing domains that are specifically targeting your organization. The following policy blocks specific keywords associated with an organization or its authentication services (such as `okta`, `2fa`, `cloudflare` or `sso`), while still allowing access to official corporate domains.
 
 | Selector | Operator      | Value                                       | Logic | Action |
 | -------- | ------------- | ------------------------------------------- | ----- | ------ |

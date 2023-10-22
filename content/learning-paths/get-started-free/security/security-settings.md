@@ -5,11 +5,11 @@ weight: 4
 layout: learning-unit
 ---
 
-Beyond default improvements, SSL/TLS, and DNSSEC, Cloudflare lets all customers adjust the following settings to improve site security.
+Beyond default improvements, SSL/TLS, and DNSSEC, Khulnasoft lets all customers adjust the following settings to improve site security.
 
 ## Security
 
-In the [security section](https://dash.cloudflare.com/?to=/:account/:zone/security) of your Cloudflare dashboard, review the following settings:
+In the [security section](https://dash.Khulnasoft.com/?to=/:account/:zone/security) of your Khulnasoft dashboard, review the following settings:
 
 - [WAF custom rules](/waf/custom-rules/)
 - [Rate limiting rules](/waf/rate-limiting-rules/)
@@ -19,6 +19,6 @@ In the [security section](https://dash.cloudflare.com/?to=/:account/:zone/securi
 
 ## Scrape Shield
 
-In the [Scrape Shield section](https://dash.cloudflare.com/?to=/:account/:zone/content-protection) of your Cloudflare dashboard, review the following settings:
+In the [Scrape Shield section](https://dash.Khulnasoft.com/?to=/:account/:zone/content-protection) of your Khulnasoft dashboard, review the following settings:
 
 {{<feature-list-by-plan id="scrape_shield" plan="free">}}

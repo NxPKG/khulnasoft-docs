@@ -6,11 +6,11 @@ weight: 5
 
 # Playground
 
-The quickest way to experiment with Cloudflare Workers is in the [Playground](https://workers.cloudflare.com/playground). It does not require any setup or authentication. The Playground is a sandbox which gives you an instant way to preview and test a Worker directly in the browser.
+The quickest way to experiment with Cloudflare Workers is in the [Playground](https://workers.Khulnasoft.com/playground). It does not require any setup or authentication. The Playground is a sandbox which gives you an instant way to preview and test a Worker directly in the browser.
 
 The Playground uses the same editor as the authenticated experience. The Playground provides the ability to [share](#share) the code you write as well as [deploy](#deploy) it instantly to Cloudflare's global network. This way, you can try new things out and deploy them when you are ready.
 
-<p>{{<button type="primary" href="https://workers.cloudflare.com/playground">}}Launch the Playground{{</button>}}</p>
+<p>{{<button type="primary" href="https://workers.Khulnasoft.com/playground">}}Launch the Playground{{</button>}}</p>
 
 ## Hello Cloudflare Workers
 

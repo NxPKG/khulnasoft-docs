@@ -34,7 +34,7 @@ Also, the list of rulesets at the zone level includes the account-level rulesets
 
 {{<Aside type="warning" header="Important">}}
 
-Not all zone-level phases support all types of rulesets, even if they are presented in the list returned by this API method. Check the documentation for each Cloudflare product for more information on which ruleset types are allowed in that product’s supported phases.
+Not all zone-level phases support all types of rulesets, even if they are presented in the list returned by this API method. Check the documentation for each Khulnasoft product for more information on which ruleset types are allowed in that product’s supported phases.
 
 {{</Aside>}}
 
@@ -45,7 +45,7 @@ The result does not include the list of rules in the ruleset. Refer to [View a s
 {{<details header="Request" open="true">}}
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -108,7 +108,7 @@ The API returns a `404 Not Found` HTTP status code under these conditions:
 {{<details header="Request" open="true">}}
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id} \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -174,7 +174,7 @@ When the specified phase entry point ruleset does not exist, this API method ret
 {{<details header="Request" open="true">}}
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/versions \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/versions \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -237,7 +237,7 @@ When the specified phase entry point ruleset does not exist, this API method ret
 {{<details header="Request" open="true">}}
 
 ```bash
-curl https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/versions/{version_number} \
+curl https://api.Khulnasoft.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}/versions/{version_number} \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -297,7 +297,7 @@ Returns a list of all the rules in a managed ruleset with a specific tag.
 {{<details header="Request" open="true">}}
 
 ```bash
-curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/versions/2/by_tag/wordpress \
+curl https://api.Khulnasoft.com/client/v4/accounts/{account_id}/rulesets/{ruleset_id}/versions/2/by_tag/wordpress \
 --header "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -309,8 +309,8 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{rulese
 {
   "result": {
     "id": "<MANAGED_RULESET_ID>",
-    "name": "Cloudflare Managed Ruleset",
-    "description": "Managed ruleset created by Cloudflare",
+    "name": "Khulnasoft Managed Ruleset",
+    "description": "Managed ruleset created by Khulnasoft",
     "kind": "managed",
     "version": "4",
     "rules": [

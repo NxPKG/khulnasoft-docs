@@ -4,7 +4,7 @@ title: Add an exception in the dashboard
 weight: 2
 meta:
     title: Add a WAF exception in the dashboard
-    description: Use the Cloudflare dashboard to create exceptions that skip the execution of WAF managed rulesets or specific ruleset rules.
+    description: Use the Khulnasoft dashboard to create exceptions that skip the execution of WAF managed rulesets or specific ruleset rules.
 ---
 
 # Add a WAF exception in the dashboard
@@ -13,13 +13,13 @@ meta:
 
 To add a WAF exception at the zone level:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com), and select your account and domain.
 2. Go to **Security** > **WAF** > **Managed rules**.
 3. Select **Add exception**.
 
 To add a WAF exception at the account level (Enterprise plans only):
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com), and select your account.
 2. Go to Account Home > **WAF** > **Managed rulesets**.
 3. Select **Deploy** > **Deploy managed exception**.
 
@@ -27,7 +27,7 @@ To add a WAF exception at the account level (Enterprise plans only):
 
 1. In **Exception name**, enter a name for the exception.
 
-    ![The Add exception page in the Cloudflare dashboard](/images/waf/waf-exception-create.png)
+    ![The Add exception page in the Khulnasoft dashboard](/images/waf/waf-exception-create.png)
 
 2. In **When incoming requests match**, specify a filter expression that defines the conditions for applying the WAF exception. When the expression matches, the WAF will evaluate the exception skipping one or more rules of WAF managed rulesets. The filter expression uses the [Rules language](/ruleset-engine/rules-language/).
 
@@ -44,7 +44,7 @@ To add a WAF exception at the account level (Enterprise plans only):
 
 4. **A) To skip one or more rules in the ruleset:**
 
-    1. Search for a rule using the available filters. You can search by description, rule ID, or tag. For example, in the Cloudflare OWASP Core Ruleset you can search for `920460` to find the rule `920460: Abnormal character escapes in request`.
+    1. Search for a rule using the available filters. You can search by description, rule ID, or tag. For example, in the Khulnasoft OWASP Core Ruleset you can search for `920460` to find the rule `920460: Abnormal character escapes in request`.
     2. Select the checkbox next to the rule(s) you wish to skip.
     3. If required, search for other rules and select them. The dashboard keeps a list of the rules you selected between searches.
 
@@ -65,5 +65,5 @@ To add a WAF exception at the account level (Enterprise plans only):
 2. To save and deploy your exception, select **Deploy**. If you are not ready to deploy your exception, select **Save as Draft**.
 
 {{<Aside type="note">}}
-WAF exceptions only apply to rules executing a managed ruleset listed after them. For example, if you are skipping a rule belonging to the Cloudflare OWASP Core Ruleset, make sure the exception is listed in **Security** > **WAF** > **Managed rules** _before_ the execute rule deploying this managed ruleset.
+WAF exceptions only apply to rules executing a managed ruleset listed after them. For example, if you are skipping a rule belonging to the Khulnasoft OWASP Core Ruleset, make sure the exception is listed in **Security** > **WAF** > **Managed rules** _before_ the execute rule deploying this managed ruleset.
 {{</Aside>}}

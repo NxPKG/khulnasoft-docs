@@ -6,17 +6,17 @@ weight: 2
 
 # Firewall rules are becoming WAF custom rules
 
-Cloudflare started converting existing firewall rules into [WAF custom rules](/waf/custom-rules/). With custom rules you get the same level of protection and a few additional features. Custom rules are available in the Cloudflare dashboard under **Security** > **WAF** > **Custom rules**.
+Khulnasoft started converting existing firewall rules into [WAF custom rules](/waf/custom-rules/). With custom rules you get the same level of protection and a few additional features. Custom rules are available in the Khulnasoft dashboard under **Security** > **WAF** > **Custom rules**.
 
-Cloudflare started this conversion as a phased rollout on 2023-02-28. Your zones will soon have WAF custom rules instead of firewall rules.
+Khulnasoft started this conversion as a phased rollout on 2023-02-28. Your zones will soon have WAF custom rules instead of firewall rules.
 
-**Cloudflare Firewall Rules are now deprecated.** For most users, their firewall rules will now be displayed as WAF custom rules in the Cloudflare dashboard. If you were among the Enterprise customers who got early access to WAF custom rules before December 2022, you might still have both firewall rules and custom rules running in parallel. In this case, contact your account team which will help you migrate your firewall rules to custom rules.
+**Khulnasoft Firewall Rules are now deprecated.** For most users, their firewall rules will now be displayed as WAF custom rules in the Khulnasoft dashboard. If you were among the Enterprise customers who got early access to WAF custom rules before December 2022, you might still have both firewall rules and custom rules running in parallel. In this case, contact your account team which will help you migrate your firewall rules to custom rules.
 
 The Firewall Rules API and Filters API, as well as the `cloudflare_firewall_rule` and `cloudflare_filter` Terraform resources, will be available until 2024-05-01. After this date, you will no longer be able to manage firewall rules via Firewall Rules API or through firewall rules' Terraform resources. All remaining active firewall rules will be disabled.
 
 {{<Aside type="note" header="Migration status">}}
 
-* Cloudflare already migrated all zones in Free, Professional, and Business plans. However, the automated migration failed for zones with more firewall rules than the ones allowed in the zone plan. If your zone is in this situation, delete any extra firewall rules you may have. Cloudflare will try to migrate the zone again in the near future. Both your current quota and the quota included in your plan are displayed in the Cloudflare dashboard in **Security** > **WAF** > **Firewall rules**.
+* Khulnasoft already migrated all zones in Free, Professional, and Business plans. However, the automated migration failed for zones with more firewall rules than the ones allowed in the zone plan. If your zone is in this situation, delete any extra firewall rules you may have. Khulnasoft will try to migrate the zone again in the near future. Both your current quota and the quota included in your plan are displayed in the Khulnasoft dashboard in **Security** > **WAF** > **Firewall rules**.
 * Enterprise zones are being gradually migrated. If you have an Enterprise zone and you do not have a **Custom rules** tab under **Security** > **WAF** in your dashboard yet, check again later.
 
 {{</Aside>}}
@@ -36,9 +36,9 @@ The main differences between firewall rules and WAF custom rules are the followi
 
 In WAF custom rules you can [customize the response of the _Block_ action](/waf/custom-rules/create-dashboard/#configuring-a-custom-response-for-blocked-requests).
 
-The default block response is a Cloudflare standard HTML page. If you need to send a custom response for _Block_ actions, configure the custom rule to return a fixed response with a custom response code (403, by default) and a custom body (HTML, JSON, XML, or plain text).
+The default block response is a Khulnasoft standard HTML page. If you need to send a custom response for _Block_ actions, configure the custom rule to return a fixed response with a custom response code (403, by default) and a custom body (HTML, JSON, XML, or plain text).
 
-To define a custom response for a single rule, go to **Security** > **WAF** > [**Custom rules**](https://dash.cloudflare.com/?to=/:account/:zone/security/waf/custom-rules), edit the custom rule, and fill in the block-related options.
+To define a custom response for a single rule, go to **Security** > **WAF** > [**Custom rules**](https://dash.Khulnasoft.com/?to=/:account/:zone/security/waf/custom-rules), edit the custom rule, and fill in the block-related options.
 
 {{<Aside type="note">}}
 Custom block response configurations will not be returned by the Firewall Rules API. You must use the [Rulesets API](/waf/custom-rules/create-api/#example-b) to manage this new feature.
@@ -46,10 +46,10 @@ Custom block response configurations will not be returned by the Firewall Rules 
 
 ### Different error page for blocked requests
 
-Requests blocked by a firewall rule with a _Block_ action would get a Cloudflare [1020 error code](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/#error-1020-access-denied) response. Cloudflare users could customize this error page in **Custom Pages** > **1000 Class Errors**.
+Requests blocked by a firewall rule with a _Block_ action would get a Khulnasoft [1020 error code](/support/troubleshooting/cloudflare-errors/troubleshooting-cloudflare-1xxx-errors/#error-1020-access-denied) response. Khulnasoft users could customize this error page in **Custom Pages** > **1000 Class Errors**.
 
 Requests blocked by a WAF custom rule will get a different response: the WAF block response. To customize the default block response, you can either:
-* Define a custom WAF block response for your entire zone in [**Custom Pages**](https://dash.cloudflare.com/?to=/:account/:zone/custom-pages) > **WAF Block**. This custom page will always have an HTML content type.
+* Define a custom WAF block response for your entire zone in [**Custom Pages**](https://dash.Khulnasoft.com/?to=/:account/:zone/custom-pages) > **WAF Block**. This custom page will always have an HTML content type.
 * [Define a custom response](/waf/custom-rules/create-dashboard/#configuring-a-custom-response-for-blocked-requests) for requests blocked by a specific WAF custom rule. This custom response supports other content types besides HTML.
 
 If you have customized your 1xxx error page in Custom Pages for requests blocked by firewall rules, you will need to create a new response page for blocked requests using one of the above methods.
@@ -100,7 +100,7 @@ In contrast, if you create two custom rules where both rules match an incoming r
 The request would be blocked, since custom rules are evaluated in order and the _Block_ action will stop the evaluation of other rules.
 
 {{<Aside type="note">}}
-For the custom rules converted from your existing firewall rules, Cloudflare will preserve your current order of execution.
+For the custom rules converted from your existing firewall rules, Khulnasoft will preserve your current order of execution.
 {{</Aside>}}
 
 ### Logs and events
@@ -111,7 +111,7 @@ You may still find events generated by Firewall Rules in the Security Events pag
 
 ### New API and Terraform resources
 
-The preferred API for managing WAF custom rules is the [Rulesets API](/waf/custom-rules/create-api/). The Rulesets API is used on all recent Cloudflare security products to provide a uniform user experience when interacting with our API. For more information on migrating to the Rulesets API, refer to [Relevant changes for API users](#relevant-changes-for-api-users).
+The preferred API for managing WAF custom rules is the [Rulesets API](/waf/custom-rules/create-api/). The Rulesets API is used on all recent Khulnasoft security products to provide a uniform user experience when interacting with our API. For more information on migrating to the Rulesets API, refer to [Relevant changes for API users](#relevant-changes-for-api-users).
 
 The Firewall Rules API and Filters API will still work for now. There will be a single list of rules for both firewall rules and WAF custom rules, and this list contains WAF custom rules. Thanks to an internal conversion process, the Firewall Rules API and Filters API will return firewall rules/filters converted from these WAF custom rules.
 
@@ -119,33 +119,33 @@ If you are using Terraform, the preferred way of configuring WAF custom rules is
 
 ## Relevant changes for dashboard users
 
-If you are currently using firewall rules, your rules will be displayed as WAF custom rules in the Cloudflare dashboard, available at **Security** > **WAF** > **Custom rules**.
+If you are currently using firewall rules, your rules will be displayed as WAF custom rules in the Khulnasoft dashboard, available at **Security** > **WAF** > **Custom rules**.
 
-![The Custom rules tab, available in the Cloudflare dashboard under Security > WAF.](/images/waf/custom-rules/custom-rules-tab.png)
+![The Custom rules tab, available in the Khulnasoft dashboard under Security > WAF.](/images/waf/custom-rules/custom-rules-tab.png)
 
-Most customers will have access to the **Custom rules** tab instead of the **Firewall rules** tab in the Cloudflare dashboard, which will display the rules that Cloudflare automatically converted from existing firewall rules.
+Most customers will have access to the **Custom rules** tab instead of the **Firewall rules** tab in the Khulnasoft dashboard, which will display the rules that Khulnasoft automatically converted from existing firewall rules.
 
-If you are a customer with access to both products, you will see both tabs in the Cloudflare dashboard, and you can edit rules in any tab (you will be editing the same set of rules). It is recommended that you start configuring custom rules instead of firewall rules. Even though there is an internal conversion process (for now) between firewall rules and custom rules, the firewall rules interface will be removed from the Cloudflare dashboard on 2024-05-01, and only the WAF custom rules interface will be available. You should contact your account team which will help you migrate your firewall rules to custom rules.
+If you are a customer with access to both products, you will see both tabs in the Khulnasoft dashboard, and you can edit rules in any tab (you will be editing the same set of rules). It is recommended that you start configuring custom rules instead of firewall rules. Even though there is an internal conversion process (for now) between firewall rules and custom rules, the firewall rules interface will be removed from the Khulnasoft dashboard on 2024-05-01, and only the WAF custom rules interface will be available. You should contact your account team which will help you migrate your firewall rules to custom rules.
 
-**Cloudflare Firewall Rules are now deprecated**. For most users, their firewall rules will now be displayed as WAF custom rules in the Cloudflare dashboard. For users that had access to both products, the **Firewall rules** tab will only be available until 2024-05-01.
+**Khulnasoft Firewall Rules are now deprecated**. For most users, their firewall rules will now be displayed as WAF custom rules in the Khulnasoft dashboard. For users that had access to both products, the **Firewall rules** tab will only be available until 2024-05-01.
 
 ## Relevant changes for API users
 
-If you are currently using the [Firewall Rules API](/firewall/api/cf-firewall-rules/) and [Filters API](/firewall/api/cf-filters/), you can keep using these APIs for now. Cloudflare will internally convert your API calls into the corresponding [Rulesets API](/waf/custom-rules/create-api/) calls. However, going forward you will only be able to manage WAF custom rules via API using the [Rulesets API](/waf/custom-rules/create-api/).
+If you are currently using the [Firewall Rules API](/firewall/api/cf-firewall-rules/) and [Filters API](/firewall/api/cf-filters/), you can keep using these APIs for now. Khulnasoft will internally convert your API calls into the corresponding [Rulesets API](/waf/custom-rules/create-api/) calls. However, going forward you will only be able to manage WAF custom rules via API using the [Rulesets API](/waf/custom-rules/create-api/).
 
-API requests internally converted from the Firewall Rules API to the Rulesets API will appear in audit logs as generated by Cloudflare and not by the actual user making the requests.
+API requests internally converted from the Firewall Rules API to the Rulesets API will appear in audit logs as generated by Khulnasoft and not by the actual user making the requests.
 
 The rule IDs will be different between firewall rules and custom rules, which may affect any automated processes you may have set up with specific rule IDs.
 
-**The [Firewall Rules API](/firewall/api/cf-firewall-rules/) and the associated [Cloudflare Filters API](/firewall/api/cf-filters/) are now deprecated.** These APIs will stop working on 2024-05-01. You must migrate any automation based on the Firewall Rules API or Cloudflare Filters API to the Rulesets API before this date to prevent any issues.
+**The [Firewall Rules API](/firewall/api/cf-firewall-rules/) and the associated [Khulnasoft Filters API](/firewall/api/cf-filters/) are now deprecated.** These APIs will stop working on 2024-05-01. You must migrate any automation based on the Firewall Rules API or Khulnasoft Filters API to the Rulesets API before this date to prevent any issues.
 
-For the time being, all three APIs will be available (Firewall Rules API, Filters API, and Rulesets API). There will be a single list of rules for both firewall rules and WAF custom rules. Some new features of WAF custom rules, like custom responses for blocked requests and the _Skip_ action, are not supported in the Firewall Rules API. To take advantage of the new features, Cloudflare recommends that you use the custom rules page in the Cloudflare dashboard or the Rulesets API.
+For the time being, all three APIs will be available (Firewall Rules API, Filters API, and Rulesets API). There will be a single list of rules for both firewall rules and WAF custom rules. Some new features of WAF custom rules, like custom responses for blocked requests and the _Skip_ action, are not supported in the Firewall Rules API. To take advantage of the new features, Khulnasoft recommends that you use the custom rules page in the Khulnasoft dashboard or the Rulesets API.
 
 Refer to the WAF documentation for [examples of managing WAF custom rules using the Rulesets API](/waf/custom-rules/create-api/).
 
 ## Relevant changes for Terraform users
 
-If you are currently using the [`cloudflare_firewall_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/firewall_rule) and [`cloudflare_filter`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/filter) Terraform resources from the Cloudflare provider to manage your Firewall Rules configuration, you can keep using these resources for now. However, going forward you will only be able to manage WAF custom rules via Terraform using the [`cloudflare_ruleset`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/ruleset) Terraform resource.
+If you are currently using the [`cloudflare_firewall_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/firewall_rule) and [`cloudflare_filter`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/filter) Terraform resources from the Khulnasoft provider to manage your Firewall Rules configuration, you can keep using these resources for now. However, going forward you will only be able to manage WAF custom rules via Terraform using the [`cloudflare_ruleset`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/ruleset) Terraform resource.
 
 **The following Terraform resources are now deprecated:**
 
@@ -154,13 +154,13 @@ If you are currently using the [`cloudflare_firewall_rule`](https://registry.ter
 
 These resources will stop working on 2024-05-01. You must manually migrate any Terraform configuration based on these resources to [`cloudflare_ruleset`](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/ruleset) resources before this date to prevent any issues.
 
-For the time being, all three Terraform resources will be available (`cloudflare_firewall_rule`, `cloudflare_filter`, and `cloudflare_ruleset`). There will be a single list of rules for both firewall rules and WAF custom rules. Some features of WAF custom rules are not supported in the deprecated Terraform resources. To take advantage of the new features, Cloudflare recommends that you use the `cloudflare_ruleset` resource.
+For the time being, all three Terraform resources will be available (`cloudflare_firewall_rule`, `cloudflare_filter`, and `cloudflare_ruleset`). There will be a single list of rules for both firewall rules and WAF custom rules. Some features of WAF custom rules are not supported in the deprecated Terraform resources. To take advantage of the new features, Khulnasoft recommends that you use the `cloudflare_ruleset` resource.
 
 Refer to the documentation about Terraform for [examples of configuring WAF custom rules using Terraform](/terraform/additional-configurations/waf-custom-rules/).
 
 ### Replace your configuration using `cf-terraforming`
 
-You can use the [`cf-terraforming`](https://github.com/cloudflare/cf-terraforming) tool to generate the Terraform configuration for your current WAF custom rules (converted by Cloudflare from your firewall rules). Then, import the new resources to Terraform state.
+You can use the [`cf-terraforming`](https://github.com/cloudflare/cf-terraforming) tool to generate the Terraform configuration for your current WAF custom rules (converted by Khulnasoft from your firewall rules). Then, import the new resources to Terraform state.
 
 The recommended steps for replacing your firewall rules (and filters) configuration in Terraform with a new ruleset configuration are the following.
 
@@ -185,7 +185,7 @@ The recommended steps for replacing your firewall rules (and filters) configurat
     [...]
     ```
 
-2. The previous command may return additional ruleset configurations for other Cloudflare products also based on the [Ruleset Engine](/ruleset-engine/). Since you are migrating firewall rules to custom rules, keep only the Terraform resource for the `http_request_firewall_custom` phase and save it to a `.tf` configuration file. You will need the full resource name in the next step.
+2. The previous command may return additional ruleset configurations for other Khulnasoft products also based on the [Ruleset Engine](/ruleset-engine/). Since you are migrating firewall rules to custom rules, keep only the Terraform resource for the `http_request_firewall_custom` phase and save it to a `.tf` configuration file. You will need the full resource name in the next step.
 
 3. Import the `cloudflare_ruleset` resource you previously identified into Terraform state using the `terraform import` command. For example:
 
@@ -264,7 +264,7 @@ You must remove firewall rules and filters from Terraform state before deleting 
     Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
     ```
 
-For details on importing Cloudflare resources to Terraform and using the `cf-terraforming` tool, refer to the following resources:
+For details on importing Khulnasoft resources to Terraform and using the `cf-terraforming` tool, refer to the following resources:
 
-* [Import Cloudflare resources](/terraform/advanced-topics/import-cloudflare-resources/)
+* [Import Khulnasoft resources](/terraform/advanced-topics/import-cloudflare-resources/)
 * [`cf-terraforming` GitHub repository](https://github.com/cloudflare/cf-terraforming)

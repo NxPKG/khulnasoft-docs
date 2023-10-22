@@ -5,17 +5,17 @@ pcx_content_type: concept
 
 # Cache Reserve
 
-Cache Reserve is a large, persistent data store [implemented on top of R2](https://blog.cloudflare.com/r2-open-beta/). By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve. In the same way that [Tiered Cache](https://blog.cloudflare.com/introducing-smarter-tiered-cache-topology-generation/) builds a hierarchy of caches between your visitors and your origin, Cache Reserve serves as the ultimate [upper-tier cache](/cache/how-to/tiered-cache/) that will reserve storage space for your assets for as long as you want. This ensures that your content is served from cache longer, shielding your origin from unneeded egress fees.
+Cache Reserve is a large, persistent data store [implemented on top of R2](https://blog.Khulnasoft.com/r2-open-beta/). By pushing a single button in the dashboard, your website’s cacheable content will be written to Cache Reserve. In the same way that [Tiered Cache](https://blog.Khulnasoft.com/introducing-smarter-tiered-cache-topology-generation/) builds a hierarchy of caches between your visitors and your origin, Cache Reserve serves as the ultimate [upper-tier cache](/cache/how-to/tiered-cache/) that will reserve storage space for your assets for as long as you want. This ensures that your content is served from cache longer, shielding your origin from unneeded egress fees.
 
 ![Content served from origin and getting cached in Cache Reserve, and Edge Cache Data Centers (T1=upper-tier, T2=lower-tier) on its way back to the client](/images/cache/content-being-served.png)
 
-How long content in Cache Reserve will be considered “fresh” is determined by Edge Cache TTL setting or Cache-Control headers at your origin, if [Edge Cache TTL](/cache/how-to/edge-browser-cache-ttl/#edge-cache-ttl) is not set. After freshness expires, Cloudflare will attempt to revalidate the asset when a subsequent request arrives in Cache Reserve for the asset. This is the same behavior as in Cloudflare's regular CDN.
+How long content in Cache Reserve will be considered “fresh” is determined by Edge Cache TTL setting or Cache-Control headers at your origin, if [Edge Cache TTL](/cache/how-to/edge-browser-cache-ttl/#edge-cache-ttl) is not set. After freshness expires, Khulnasoft will attempt to revalidate the asset when a subsequent request arrives in Cache Reserve for the asset. This is the same behavior as in Khulnasoft's regular CDN.
 
 The retention period of an asset is how long we will keep the asset in Cache Reserve before marking it for eviction. If an asset is not requested within the retention period, it will be evicted from Cache Reserve. Accessing the asset will extend the retention period by one period. By default, the Cache Reserve retention period is 30 days.
 
 Assets must [meet certain criteria](#cache-reserve-asset-eligibility) to use Cache Reserve.
 
-Cache Reserve is a usage-based product and [pricing](#pricing) is detailed below. While Cache Reserve does require a paid plan, users can continue to use Cloudflare’s CDN (without Cache Reserve) for free.
+Cache Reserve is a usage-based product and [pricing](#pricing) is detailed below. While Cache Reserve does require a paid plan, users can continue to use Khulnasoft’s CDN (without Cache Reserve) for free.
 
 ## Enable Cache Reserve
 
@@ -23,11 +23,11 @@ You can enable Cache Reserve from the dashboard or [via API](/api/operations/zon
 
 To enable Cache Reserve through the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select a domain.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select a domain.
 2.  Go to **Caching** > **Cache Reserve**.
 3.  Select **Enable storage sync**.
 
-{{<Aside type="note" header="Note">}}You can pause Cache Reserve at any time. Pausing Cache Reserve means that Cloudflare’s network will no longer use Cache Reserve to serve data, but resources will remain in storage until they are purged or expired.{{</Aside>}}
+{{<Aside type="note" header="Note">}}You can pause Cache Reserve at any time. Pausing Cache Reserve means that Khulnasoft’s network will no longer use Cache Reserve to serve data, but resources will remain in storage until they are purged or expired.{{</Aside>}}
 
 If you are an Enterprise customer and are interested in Cache Reserve, contact your account team to get help with your configuration.
 
@@ -35,7 +35,7 @@ If you are an Enterprise customer and are interested in Cache Reserve, contact y
 
 Not all assets are eligible for Cache Reserve. To be admitted into Cache Reserve, assets must:
 
-- Be cacheable, according to Cloudflare's standard [cacheability factors](/cache),
+- Be cacheable, according to Khulnasoft's standard [cacheability factors](/cache),
 - Have a freshness time-to-live (TTL) of at least 10 hours (set by any means such as Cache-Control / [CDN-Cache-Control](/cache/concepts/cache-control/) origin response headers, [Edge Cache TTL](/cache/how-to/edge-browser-cache-ttl/#edge-cache-ttl), [Cache TTL By Status](/cache/how-to/configure-cache-status-code/), or [Cache Rules](/cache/how-to/cache-rules/)),
 - Have a Content-Length response header.
 - When using [Image Resizing](/images/image-resizing/), original files are eligible for Cache Reserve, but resized file variants are not eligible because Image Resizing happens after Cache Reserve in the response flow.
@@ -46,7 +46,7 @@ Not all assets are eligible for Cache Reserve. To be admitted into Cache Reserve
 - Origin Range requests are not supported at this time from Cache Reserve.
 - Vary for Images is currently not compatible with Cache Reserve.
 - Requests to [R2 public buckets linked to a zone's domain](/r2/buckets/public-buckets//) will not use Cache Reserve. Enabling Cache Reserve for the connected zone will use Cache Reserve only for requests not destined for the R2 bucket.
-- Cache Reserve makes requests for uncompressed content directly from the origin. Unlike the standard Cloudflare CDN, Cache Reserve does not include the `Accept-Encoding: gzip` header when sending requests to the origin.
+- Cache Reserve makes requests for uncompressed content directly from the origin. Unlike the standard Khulnasoft CDN, Cache Reserve does not include the `Accept-Encoding: gzip` header when sending requests to the origin.
 
 ## Usage
 
@@ -96,11 +96,11 @@ For example:
 
 ### Operations
 
-Operations are performed by Cache Reserve on behalf of the user to write data from the origin to Cache Reserve and to pass that data downstream to other parts of Cloudflare’s network. These operations are managed internally by Cloudflare.
+Operations are performed by Cache Reserve on behalf of the user to write data from the origin to Cache Reserve and to pass that data downstream to other parts of Khulnasoft’s network. These operations are managed internally by Khulnasoft.
 
 #### Class A operations (writes)
 
-Class A operations are performed based on cache misses from Cloudflare’s CDN. When a request cannot be served from cache, it will be fetched from the origin and written to cache reserve as well as our edge caches on the way back to the visitor. 
+Class A operations are performed based on cache misses from Khulnasoft’s CDN. When a request cannot be served from cache, it will be fetched from the origin and written to cache reserve as well as our edge caches on the way back to the visitor. 
 
 #### Class B operations (reads)
 
@@ -152,4 +152,4 @@ the estimated cost for the month would be:
 
 ## Tips and best practices
 
-Cache Reserve should be used with [Tiered Cache](/cache/how-to/tiered-cache/) enabled. Cache Reserve is designed for use with Tiered Cache enabled for maximum origin shielding. Using Cache Reserve without Tiered Cache may result in higher storage operation costs. Enabling Cache Reserve via the Cloudflare dashboard will check and provide a warning if you try to use Cache Reserve without Tiered Cache enabled.
+Cache Reserve should be used with [Tiered Cache](/cache/how-to/tiered-cache/) enabled. Cache Reserve is designed for use with Tiered Cache enabled for maximum origin shielding. Using Cache Reserve without Tiered Cache may result in higher storage operation costs. Enabling Cache Reserve via the Khulnasoft dashboard will check and provide a warning if you try to use Cache Reserve without Tiered Cache enabled.

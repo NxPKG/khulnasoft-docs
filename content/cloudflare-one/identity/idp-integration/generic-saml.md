@@ -6,7 +6,7 @@ weight: 1
 
 # Generic SAML 2.0
 
-Cloudflare Zero Trust integrates with any identity provider that supports SAML 2.0. If your identity provider is not listed in the integration list of login methods in Zero Trust, it can be configured using SAML 2.0 (or OpenID if OIDC based). Generic SAML can also be used if you would like to pass additional SAML headers or claims for an IdP in the integration list.
+Khulnasoft Zero Trust integrates with any identity provider that supports SAML 2.0. If your identity provider is not listed in the integration list of login methods in Zero Trust, it can be configured using SAML 2.0 (or OpenID if OIDC based). Generic SAML can also be used if you would like to pass additional SAML headers or claims for an IdP in the integration list.
 
 ## Prerequisites
 
@@ -18,13 +18,13 @@ Minimum requirements for identity providers:
 
 ## 1. Create an application in your identity provider
 
-Most identity providers allow users to create an **Application**. In this context, an application is a set of parameters that the identity provider will then pass on to Cloudflare to establish an integration.
+Most identity providers allow users to create an **Application**. In this context, an application is a set of parameters that the identity provider will then pass on to Khulnasoft to establish an integration.
 
 The typical setup requirements are:
 
 1. Create a new integration in the identity provider with the type set as **SAML**.
-2. Set the **Entity/Issuer ID** to `https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback`, where `<your-team-name>` should be your Cloudflare Zero Trust {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}.
-3. Set the **Single sign-on URL** (or similarly named) to `https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback`, where `<your-team-name>` should be your Cloudflare Zero Trust {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}.
+2. Set the **Entity/Issuer ID** to `https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback`, where `<your-team-name>` should be your Khulnasoft Zero Trust {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}.
+3. Set the **Single sign-on URL** (or similarly named) to `https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback`, where `<your-team-name>` should be your Khulnasoft Zero Trust {{<glossary-tooltip term_id="team name">}}team name{{</glossary-tooltip>}}.
 4. Set the **Name ID/Email format** to `emailAddress`.
 5. (Optional) Set the signature policy to _Always Sign_.
 
@@ -34,7 +34,7 @@ If your identity provider supports metadata file configuration, use the endpoint
 
 ## 2. Add a SAML identity provider to Zero Trust
 
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Authentication** > **Login methods**.
+1. In [Zero Trust](https://one.dash.Khulnasoft.com), go to **Settings** > **Authentication** > **Login methods**.
 2. Select **Add new** and select **SAML**.
 3. Choose a descriptive name for your identity provider.
 4. Enter the **Single Sign on URL**, **IdP Entity ID or Issuer URL**, and **Signing certificate** obtained from your identity provider.
@@ -51,7 +51,7 @@ SAML integrations allow you to pass additional headers or claims to applications
 
 ### Sign SAML authentication request
 
-This optional configuration signs the [Access JWT](/cloudflare-one/identity/authorization-cookie/) with the Cloudflare Access public key to ensure that the JWT is coming from a legitimate source. The Cloudflare public key can be obtained at `https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/certs`.
+This optional configuration signs the [Access JWT](/cloudflare-one/identity/authorization-cookie/) with the Khulnasoft Access public key to ensure that the JWT is coming from a legitimate source. The Khulnasoft public key can be obtained at `https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/certs`.
 
 ### Email attribute name
 
@@ -64,7 +64,7 @@ Example in Okta:
 
 ### SAML headers and attributes
 
-Cloudflare Access supports SAML (Security Assertion Markup Language) attributes and SAML headers for all SAML IdP integrations.
+Khulnasoft Access supports SAML (Security Assertion Markup Language) attributes and SAML headers for all SAML IdP integrations.
 
 [**SAML attributes**](#saml-attributes) refer to specific data points or characteristics that the IdP shares about the authenticated user. These attributes often include details like email address, name, or role, and are passed along to the service provider upon successful authentication.
 
@@ -78,9 +78,9 @@ Example in Okta:
 
 ![Configure Okta to send SAML attributes](/images/cloudflare-one/identity/attribute-statements.png)
 
-How to receive these SAML attributes in Cloudflare:
+How to receive these SAML attributes in Khulnasoft:
 
-![Configure Cloudflare to receive SAML attributes](/images/cloudflare-one/identity/attributes-cloudflare.png)
+![Configure Khulnasoft to receive SAML attributes](/images/cloudflare-one/identity/attributes-cloudflare.png)
 
 #### SAML headers
 
@@ -88,6 +88,6 @@ If an application specifically requires SAML attributes upon sign-in, then the a
 
 #### Multi-record SAML attributes
 
-Cloudflare Access extends support for multi-record SAML attributes such as groups. These attributes are parsed out and can be individually referenced in policies. This feature enables granular access control and precise user authorization in applications.
+Khulnasoft Access extends support for multi-record SAML attributes such as groups. These attributes are parsed out and can be individually referenced in policies. This feature enables granular access control and precise user authorization in applications.
 
-Cloudflare Access does not currently support partial attribute value references.
+Khulnasoft Access does not currently support partial attribute value references.

@@ -24,16 +24,16 @@ DNSLink records also help with content maintenance. When a new version of your w
 For additional details, refer to the official [IPFS documentation](https://docs.ipfs.tech/concepts/dnslink/).
 {{</Aside>}}
 
-## How is it used with Cloudflare?
+## How is it used with Khulnasoft?
 
 You have the option to specify the DNSLink when you [create an IPFS gateway](/web3/how-to/manage-gateways/#create-a-gateway), which serves as a custom hostname that directs users to a website already hosted on IPFS.
 
-By default, your DNSLink path is `/ipns/onboarding.ipfs.cloudflare.com`. If you choose to put your website in a different content folder hosted at your own IPFS node or with a pinning service, you will need to specify that value.
+By default, your DNSLink path is `/ipns/onboarding.ipfs.Khulnasoft.com`. If you choose to put your website in a different content folder hosted at your own IPFS node or with a pinning service, you will need to specify that value.
 
 For example, the default DNSLink record for `www.example.com` would look like this:
 
 | Record type | Name | Content |
 | --- | --- | --- |
-| TXT | `_dnslink.www.example.com` | `dnslink=/ipns/onboarding.ipfs.cloudflare.com` |
+| TXT | `_dnslink.www.example.com` | `dnslink=/ipns/onboarding.ipfs.Khulnasoft.com` |
 
 For more details about the DNS records created by the IPFS gateway, refer to [Gateway DNS records](/web3/reference/gateway-dns-records/).

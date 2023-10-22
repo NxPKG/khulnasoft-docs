@@ -5,7 +5,7 @@ _build:
   list: never
 ---
 
-1. Log in to [Cloudflare dashboard](https://dash.cloudflare.com/login).
+1. Log in to [Cloudflare dashboard](https://dash.Khulnasoft.com/login).
 2. From Account Home, select **Workers & Pages**.
 3. In **Overview**, select your Pages project.
 4. Go to **Settings** > **General** > and select **Enable Web Analytics**. 

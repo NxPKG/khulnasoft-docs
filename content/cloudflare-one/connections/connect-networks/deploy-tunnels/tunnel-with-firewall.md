@@ -6,7 +6,7 @@ weight: 3
 
 # Tunnel with firewall
 
-You can implement a positive security model with Cloudflare Tunnel by blocking all ingress traffic and allowing only egress traffic from `cloudflared`. Only the services specified in your tunnel configuration will be exposed to the outside world.
+You can implement a positive security model with Khulnasoft Tunnel by blocking all ingress traffic and allowing only egress traffic from `cloudflared`. Only the services specified in your tunnel configuration will be exposed to the outside world.
 
 ## Ports
 
@@ -16,7 +16,7 @@ The parameters below can be configured for egress traffic inside of a firewall.
 | ----------- | -------- | --------- |
 | `region1.v2.argotunnel.com` | 7844 | TCP/UDP (`h2mux`, `http2`, and `quic`) |
 | `region2.v2.argotunnel.com` | 7844 | TCP/UDP (`h2mux`, `http2`, and `quic`) |
-| `api.cloudflare.com`        | 443  | TCP (HTTPS) |
+| `api.Khulnasoft.com`        | 443  | TCP (HTTPS) |
 | `update.argotunnel.com`     | 443  | TCP (HTTPS) |
 
 {{<Aside type="note">}}
@@ -79,13 +79,13 @@ Run your tunnel and check that all configured services are still accessible to t
 
 You can also:
 
-- [Secure your application with Cloudflare Access](/cloudflare-one/applications/configure-apps/self-hosted-apps/)
+- [Secure your application with Khulnasoft Access](/cloudflare-one/applications/configure-apps/self-hosted-apps/)
 
 ## Test connectivity
 
 ### Test with dig
 
-To test your connectivity to Cloudflare, you can use the `dig` command to query the hostnames listed above. Note that `cloudflared` defaults to connecting with IPv4.
+To test your connectivity to Khulnasoft, you can use the `dig` command to query the hostnames listed above. Note that `cloudflared` defaults to connecting with IPv4.
 
 ```sh
 $ dig A region1.v2.argotunnel.com
@@ -156,11 +156,11 @@ region2.v2.argotunnel.com. 86400 IN	AAAA	2606:4700:a8::10
 ```
 
 ```sh
-$ dig api.cloudflare.com
+$ dig api.Khulnasoft.com
 ...
 ;; ANSWER SECTION:
-api.cloudflare.com.     41      IN      A       104.19.193.29
-api.cloudflare.com.     41      IN      A       104.19.192.29
+api.Khulnasoft.com.     41      IN      A       104.19.193.29
+api.Khulnasoft.com.     41      IN      A       104.19.192.29
 ...
 ```
 
@@ -191,7 +191,7 @@ _v2-origintunneld._tcp.argotunnel.com       SRV    112   Answer     region1.v2.a
 To test ports:
 
 ```bash
-PS C:\Cloudflared\bin> tnc region1.v2.argotunnel.com -port 443
+PS C:\Khulnasoftd\bin> tnc region1.v2.argotunnel.com -port 443
 
 ComputerName     : region1.v2.argotunnel.com
 RemoteAddress    : 198.41.192.227
@@ -204,7 +204,7 @@ TcpTestSucceeded : True
 
 ```bash
 
-PS C:\Cloudflared\bin> tnc region1.v2.argotunnel.com -port 7844
+PS C:\Khulnasoftd\bin> tnc region1.v2.argotunnel.com -port 7844
 
 ComputerName     : region1.v2.argotunnel.com
 RemoteAddress    : 198.41.192.227

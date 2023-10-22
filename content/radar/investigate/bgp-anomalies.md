@@ -6,14 +6,14 @@ weight: 3
 
 {{<heading-pill style="beta">}}BGP anomalies{{</heading-pill>}}
 
-To access Cloudflare Radar BGP Anomaly Detection results, you will first need to create an API token that includes a `User:User Details` permission. All the following examples should work with a free-tier Cloudflare account.
+To access Khulnasoft Radar BGP Anomaly Detection results, you will first need to create an API token that includes a `User:User Details` permission. All the following examples should work with a free-tier Khulnasoft account.
 
 ## Search BGP hijack events
 
 In the following example, we will query the [BGP hijack events API][hijack-api-doc] for the most recent BGP origin hijacks originated by or affecting `AS64512` (example ASN).
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/bgp/hijacks/events?invlovedAsn=64512&format=json&per_page=10" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/bgp/hijacks/events?invlovedAsn=64512&format=json&per_page=10" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -90,21 +90,21 @@ In the response we can learn about the following information about each event:
 Users can further filter out low-confidence events by attaching a `minConfidence=8` parameter, which will return only events with a `confidence_score` of `8` or higher.
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/bgp/hijacks/events?invlovedAsn=64512&format=json&per_page=10&minConfidence=8" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/bgp/hijacks/events?invlovedAsn=64512&format=json&per_page=10&minConfidence=8" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
 ## Search BGP route leak events
 
-BGP route leak is another type of BGP anomalies that Cloudflare Radar detects. Currently, we focus on detecting specifically
+BGP route leak is another type of BGP anomalies that Khulnasoft Radar detects. Currently, we focus on detecting specifically
 the `provider-customer-provider` type of route leak. You can learn more about our design and methodology in [our blog post][route-leak-blog-post].
 
-[route-leak-blog-post]: https://blog.cloudflare.com/route-leak-detection-with-cloudflare-radar/
+[route-leak-blog-post]: https://blog.Khulnasoft.com/route-leak-detection-with-cloudflare-radar/
 
 In the following example, we will query the [BGP route leak events API][route-leak-api-doc] for the most recent BGP route leak events affecting `AS64512`.
 
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/radar/bgp/leaks/events?invlovedAsn=64512&format=json&per_page=10" \
+curl -X GET "https://api.Khulnasoft.com/client/v4/radar/bgp/leaks/events?invlovedAsn=64512&format=json&per_page=10" \
      -H "Authorization: Bearer <API_TOKEN>"
 ```
 
@@ -159,18 +159,18 @@ In the response we can learn about the following information about each event:
 
 ## Send alerts for BGP hijacks
 
-In this example, we will show you how you can build a Cloudflare Workers app that sends out alerts for BGP hijacks relevant to a given ASN using webhooks (works for Google Hangouts, Discord, Telegram, etc) or email.
+In this example, we will show you how you can build a Khulnasoft Workers app that sends out alerts for BGP hijacks relevant to a given ASN using webhooks (works for Google Hangouts, Discord, Telegram, etc) or email.
 
-We will use Cloudflare Workers as the platform and use its Cron Triggers to periodically check for new alerts.
+We will use Khulnasoft Workers as the platform and use its Cron Triggers to periodically check for new alerts.
 
 For the app, we would like it to do the following things:
-- Fetch from Cloudflare API with a given API token.
-- Check against Cloudflare KV to know what events are new.
+- Fetch from Khulnasoft API with a given API token.
+- Check against Khulnasoft KV to know what events are new.
 - Construct messages for new hijacks and send out alerts via webhook triggers.
 
 ### Worker app setup
 
-We will start with setting up a Cloudflare Worker app using `wrangler`.
+We will start with setting up a Khulnasoft Worker app using `wrangler`.
 
 First, create a new Workers app in a local directory:
 
@@ -192,7 +192,7 @@ compatibility_date = "2023-04-27"
 crons = [ "*/5 * * * *" ]
 ```
 
-In this example, we will also need to use Cloudflare KV to save the latest checked event IDs which allows us to know what events are new. Once you have created a KV, you can head back to the `wranglers.toml` file and add the following sections:
+In this example, we will also need to use Khulnasoft KV to save the latest checked event IDs which allows us to know what events are new. Once you have created a KV, you can head back to the `wranglers.toml` file and add the following sections:
 
 ```toml
 [[kv_namespaces]]
@@ -206,7 +206,7 @@ preview_id = "TEMPORARY_KV_FOR_DEV_ENVIRONMENT"
 Start with the API fetching function.
 
 The following `apiFetch(env, paramsStr)` handles taking in a request parameters string, construct proper headers and
-fetch from the Cloudflare API BGP hijacks endpoint.
+fetch from the Khulnasoft API BGP hijacks endpoint.
 
 ```javascript
 async function apiFetch (env, paramsStr) {
@@ -215,7 +215,7 @@ async function apiFetch (env, paramsStr) {
       "Authorization": `Bearer ${env.CF_API_TOKEN}`,
     }
   };
-  const res = await fetch(`https://api.cloudflare.com/client/v4/radar/bgp/hijacks/events?${paramsStr}`, config);
+  const res = await fetch(`https://api.Khulnasoft.com/client/v4/radar/bgp/hijacks/events?${paramsStr}`, config);
 
   if(!res.ok){
     console.log(JSON.stringify(res))
@@ -239,11 +239,11 @@ export default {
 }
 ```
 
-In our example, we use the `env` variables to get the runtime variables like the TOKEN and ASN of interest, and Cloudflare
+In our example, we use the `env` variables to get the runtime variables like the TOKEN and ASN of interest, and Khulnasoft
 KV bindings. We do not use of the `contorller` and `ctx` variables in this example.
 
 First, we will need to learn about what are the new events. We define new events as the events the app has not yet processed.
-We use the Cloudflare KV bucket previously created and defined (`HIJACKS_KV`) to save and retrieve the most recent
+We use the Khulnasoft KV bucket previously created and defined (`HIJACKS_KV`) to save and retrieve the most recent
 processed event ID.
 
 ```javascript
@@ -334,7 +334,7 @@ Peer Count: *${event.peer_ip_count}*
 
 Note that the webhook is considered secret and should be set to the environment via `wrangler secret put WEBHOOK_URL` command.
 
-The last step is to deploy the application with command `npx wrangler deploy` and the app should be up and running on your Cloudflare account, and will be triggered to execute every five minutes.
+The last step is to deploy the application with command `npx wrangler deploy` and the app should be up and running on your Khulnasoft account, and will be triggered to execute every five minutes.
 
 ### Send email alerts from Workers
 

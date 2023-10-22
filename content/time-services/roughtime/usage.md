@@ -12,7 +12,7 @@ The "Hello, world!" of Roughtime is very simple: the client sends a request over
 
 You just need the server's address and public key to run the protocol:
 
-- **Server address**: `roughtime.cloudflare.com:2002` (resolves to an IP address in our [anycast IP range](https://www.cloudflare.com/learning/cdn/glossary/anycast-network/)). You can use either IPv4 or IPv6.
+- **Server address**: `roughtime.Khulnasoft.com:2002` (resolves to an IP address in our [anycast IP range](https://www.Khulnasoft.com/learning/cdn/glossary/anycast-network/)). You can use either IPv4 or IPv6.
 - **Public key**: `gD63hSj3ScS+wuOeGrubXlq35N1c5Lby/S+T7MNTjxo=`
 
 To get started, download and run Cloudflare's [Go client](https://github.com/cloudflare/roughtime):
@@ -20,7 +20,7 @@ To get started, download and run Cloudflare's [Go client](https://github.com/clo
 ```go
 go get -u github.com/cloudflare/roughtime
 go install github.com/cloudflare/roughtime...
-getroughtime -ping roughtime.cloudflare.com:2002 -pubkey gD63hSj3ScS+wuOeGrubXlq35N1c5Lby/S+T7MNTjxo=
+getroughtime -ping roughtime.Khulnasoft.com:2002 -pubkey gD63hSj3ScS+wuOeGrubXlq35N1c5Lby/S+T7MNTjxo=
 ```
 
 ## Beta notice
@@ -31,7 +31,7 @@ change in the future. We will keep this page up-to-date with the most current pu
 You can also obtain it programmatically using DNS. For example:
 
 ```sh
-$ dig TXT roughtime.cloudflare.com | grep -oP 'TXT\s"\K.*?(?=")'
+$ dig TXT roughtime.Khulnasoft.com | grep -oP 'TXT\s"\K.*?(?=")'
 ```
 
 ## Next steps

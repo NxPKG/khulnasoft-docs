@@ -52,7 +52,7 @@ Guiding, straightforward, educational, authoritative
 **A tutorial can:**
 
 + Describe how to integrate with a third party
-+ Be delivered in the Cloudflare dashboard
++ Be delivered in the Khulnasoft dashboard
 + Describe how to set up multiple products to complete a single job-to-be-done
 
 **A tutorial is not:**

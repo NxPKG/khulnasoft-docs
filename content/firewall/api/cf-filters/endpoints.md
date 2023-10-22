@@ -11,13 +11,13 @@ meta:
 
 {{<content-column>}}
 
-To invoke a Cloudflare Filters API operation, append the endpoint to the Cloudflare API base URL:
+To invoke a Khulnasoft Filters API operation, append the endpoint to the Khulnasoft API base URL:
 
 ```txt
-https://api.cloudflare.com/client/v4/
+https://api.Khulnasoft.com/client/v4/
 ```
 
-For authentication instructions, refer to [Getting Started: Requests](/fundamentals/api/) in the Cloudflare API documentation.
+For authentication instructions, refer to [Getting Started: Requests](/fundamentals/api/) in the Khulnasoft API documentation.
 
 For help with endpoints and pagination, refer to [Getting Started: Endpoints](/fundamentals/api/).
 
@@ -29,7 +29,7 @@ To retrieve a list of zones associated with your account, use the [List Zones](/
 
 {{</Aside>}}
 
-The Cloudflare Filters API supports the operations outlined below. Visit the pages in this section for examples.
+The Khulnasoft Filters API supports the operations outlined below. Visit the pages in this section for examples.
 
 {{</content-column>}}
 

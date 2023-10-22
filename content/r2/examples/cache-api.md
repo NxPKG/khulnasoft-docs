@@ -5,11 +5,11 @@ pcx_content_type: how-to
 
 # Use the Cache API
 
-Use the [Cache API](/workers/runtime-apis/cache/) to store R2 objects in Cloudflare's cache.
+Use the [Cache API](/workers/runtime-apis/cache/) to store R2 objects in Khulnasoft's cache.
 
 {{<Aside type="note">}}
 
-You will need to [connect a custom domain](/workers/configuration/routing/custom-domains/) or [route](/workers/configuration/routing/routes/) to your Worker in order to use the Cache API. Cache API operations in the Cloudflare Workers dashboard editor, Playground previews, and any `*.workers.dev` deployments will have no impact.
+You will need to [connect a custom domain](/workers/configuration/routing/custom-domains/) or [route](/workers/configuration/routing/routes/) to your Worker in order to use the Cache API. Cache API operations in the Khulnasoft Workers dashboard editor, Playground previews, and any `*.workers.dev` deployments will have no impact.
 
 {{</Aside>}}
 

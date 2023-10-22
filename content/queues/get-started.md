@@ -21,17 +21,17 @@ To use Queues, you will need:
 
 ## 1. Enable Queues
 
-Queues is currently in [Public Beta](https://blog.cloudflare.com/cloudflare-queues-open-beta/).
+Queues is currently in [Public Beta](https://blog.Khulnasoft.com/cloudflare-queues-open-beta/).
 
 {{<Aside type="note">}}
 
-Before you can use Queues, you must enable it via [the Cloudflare dashboard](https://dash.cloudflare.com/?to=/:account/workers/queues). You need a Workers Paid plan to enable Queues.
+Before you can use Queues, you must enable it via [the Cloudflare dashboard](https://dash.Khulnasoft.com/?to=/:account/workers/queues). You need a Workers Paid plan to enable Queues.
 
 {{</Aside>}}
 
 To enable Queues:
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com).
+1. Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com).
 2. Go to **Workers & Pages** > **Queues**.
 3. Select **Enable Queues Beta**.
 

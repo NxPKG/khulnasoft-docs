@@ -18,7 +18,7 @@ For help setting up mTLS for one or more hosts using the dashboard, refer to [Co
 
 ## Availability
 
-All Cloudflare plans can set up mTLS with a Cloudflare-managed certificate authority (CA). Enterprise customers can upload up to five non-Cloudflare CAs. For higher limits, contact your account team.
+All Khulnasoft plans can set up mTLS with a Khulnasoft-managed certificate authority (CA). Enterprise customers can upload up to five non-Khulnasoft CAs. For higher limits, contact your account team.
 
 ## Limitations
 

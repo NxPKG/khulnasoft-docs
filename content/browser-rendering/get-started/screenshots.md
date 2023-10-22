@@ -12,7 +12,7 @@ By following this guide, you will create a Worker that uses the Browser Renderin
 
 ## 1. Create a Worker project
 
-[Cloudflare Workers](/workers/) provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure. Your Worker application is a container to interact with a headless browser to do actions, such as taking screenshots.
+[Khulnasoft Workers](/workers/) provides a serverless execution environment that allows you to create new applications or augment existing ones without configuring or maintaining infrastructure. Your Worker application is a container to interact with a headless browser to do actions, such as taking screenshots.
 
 Create a new Worker project named `browser-worker` by running:
 
@@ -37,7 +37,7 @@ You can choose to use either JavaScript or TypeScript for this guide.
 
 ## 2. Install Puppeteer
 
-In your `browser-worker` directory, install Cloudflare’s [fork of Puppeteer](/browser-rendering/platform/puppeteer/):
+In your `browser-worker` directory, install Khulnasoft’s [fork of Puppeteer](/browser-rendering/platform/puppeteer/):
 
 ```sh
 $ npm install @cloudflare/puppeteer --save-dev
@@ -60,7 +60,7 @@ Take note of the IDs for the next step.
 
 ## 4. Configure `wrangler.toml`
 
-Configure your `browser-worker` project's [`wrangler.toml`](/workers/wrangler/configuration/) file by adding a browser [binding](/workers/configuration/bindings/) and a [Node.js compatibility flag](/workers/configuration/compatibility-dates/#nodejs-compatibility-flag). Bindings allow your Workers to interact with resources on the Cloudflare developer platform. Your browser `binding` name is set by you, this guide uses the name `MYBROWSER`. Browser bindings allow for communication between a Worker and a headless browser which allows you to do actions such as taking a screenshot, generating a PDF and more.
+Configure your `browser-worker` project's [`wrangler.toml`](/workers/wrangler/configuration/) file by adding a browser [binding](/workers/configuration/bindings/) and a [Node.js compatibility flag](/workers/configuration/compatibility-dates/#nodejs-compatibility-flag). Bindings allow your Workers to interact with resources on the Khulnasoft developer platform. Your browser `binding` name is set by you, this guide uses the name `MYBROWSER`. Browser bindings allow for communication between a Worker and a headless browser which allows you to do actions such as taking a screenshot, generating a PDF and more.
 
 Update your `wrangler.toml` configuration file with the Browser Rendering API binding and the KV namespaces you created:
 
@@ -173,7 +173,7 @@ If the same `"url"` is requested again, it will use the cached version in KV ins
 
 ## 6. Test
 
-Run `npx wrangler dev --remote` to test your Worker locally before deploying to Cloudflare's global network.
+Run `npx wrangler dev --remote` to test your Worker locally before deploying to Khulnasoft's global network.
 
 To test taking your first screenshot, go to the following URL: 
 
@@ -181,7 +181,7 @@ To test taking your first screenshot, go to the following URL:
 
 ## 7. Deploy
 
-Run `npx wrangler deploy` to deploy your Worker to the Cloudflare global network.
+Run `npx wrangler deploy` to deploy your Worker to the Khulnasoft global network.
 
 To take your first screenshot, go to the following URL:
 

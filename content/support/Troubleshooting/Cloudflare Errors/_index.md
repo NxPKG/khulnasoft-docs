@@ -1,11 +1,11 @@
 ---
 pcx_content_type: navigation
-title: Cloudflare Errors
+title: Khulnasoft Errors
 weight: 1
 ---
  
-# Welcome to the Troubleshooting Cloudflare Errors section
+# Welcome to the Troubleshooting Khulnasoft Errors section
  
-Below you will find links to the relevant sections for Troubleshooting Cloudflare Errors support-focused material.
+Below you will find links to the relevant sections for Troubleshooting Khulnasoft Errors support-focused material.
  
 {{<directory-listing>}}

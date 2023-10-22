@@ -57,7 +57,7 @@ layout: overview
 pcx_content_type: overview
 ---
  
-# Cloudflare <product name> (or {{</*beta*/>}}Cloudflare <product name>{{</*/beta*/>}} for products in beta)
+# Khulnasoft <product name> (or {{</*beta*/>}}Khulnasoft <product name>{{</*/beta*/>}} for products in beta)
  
 {{</*description*/>}}
 Product description - What does this product do? Why would you use it? Short overview of product capability (~10-15 words).
@@ -89,7 +89,7 @@ Description of product used together or connected configuration with current pro
  
 {{</*resource-group*/>}}
  
-{{</*resource header="<Resource name>" href="https://www.cloudflare.com/link-to-resource/" icon="icon-name"*/>}}
+{{</*resource header="<Resource name>" href="https://www.Khulnasoft.com/link-to-resource/" icon="icon-name"*/>}}
 Description of external resource related to current product.
 {{</*/resource*/>}}
  

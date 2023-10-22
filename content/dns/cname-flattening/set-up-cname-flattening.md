@@ -10,7 +10,7 @@ meta:
 
 {{<Aside type="note">}}
 
-If the `CNAME` target is on the same zone as the `CNAME` record, Cloudflare proceeds with `CNAME` flattening and ignores the **CNAME Flattening** setting.
+If the `CNAME` target is on the same zone as the `CNAME` record, Khulnasoft proceeds with `CNAME` flattening and ignores the **CNAME Flattening** setting.
 
 {{</Aside>}}
 
@@ -20,9 +20,9 @@ If the `CNAME` target is on the same zone as the `CNAME` record, Cloudflare proc
 
 ## For all CNAME records
 
-Accounts on paid plans can also choose to flatten all `CNAME` records on their domain. This option is useful for DNS-only (unproxied) `CNAME` records since proxied records are flattened by default (as they return Cloudflare IPv4 and IPv6 addresses).
+Accounts on paid plans can also choose to flatten all `CNAME` records on their domain. This option is useful for DNS-only (unproxied) `CNAME` records since proxied records are flattened by default (as they return Khulnasoft IPv4 and IPv6 addresses).
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account and domain.
+1.  Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login) and select your account and domain.
 2.  Navigate to **DNS** > **Settings**.
 3.  For **CNAME Flattening**, select **Flatten all CNAMEs**.
 

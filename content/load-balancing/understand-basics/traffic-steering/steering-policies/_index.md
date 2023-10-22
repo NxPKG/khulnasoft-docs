@@ -34,8 +34,8 @@ Customers can configure their load balancer using the `location_strategy` parame
 
 | Type | Description |
 | --- | --- |
-| `"pop"` | Uses the Cloudflare PoP location. |
-| `"resolver_ip"` | Uses the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, it uses the Cloudflare PoP location. |
+| `"pop"` | Uses the Khulnasoft PoP location. |
+| `"resolver_ip"` | Uses the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, it uses the Khulnasoft PoP location. |
 
 {{<Aside type="note">}}
 

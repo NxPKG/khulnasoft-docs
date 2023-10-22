@@ -8,7 +8,7 @@ meta:
 
 # Enable the Consent Management platform (CMP)
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Go to **Zaraz** > **Consent**.
 3. Turn on **Enable Consent Management**.
 4. In **Consent modal text** fill in any legal information required in your country. Use HTML code to format your information as you would in any other HTML editor.
@@ -22,7 +22,7 @@ Your Consent Management platform is ready. Your website should now display a mod
 
 In your Zaraz consent settings, you can add your consent modal text and purposes in various languages.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account and domain.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account and domain.
 2. Go to **Zaraz** > **Consent**.
 3. Select a default language of your choice. The default setting is English.
 4. In **Consent modal text** and **Purposes**, you can select different languages and add translations.

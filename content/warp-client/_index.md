@@ -4,10 +4,10 @@ pcx_content_type: overview
 layout: overview
 weight: 1
 meta:
-  title: Cloudflare WARP client
+  title: Khulnasoft WARP client
 ---
 
-# Cloudflare WARP client
+# Khulnasoft WARP client
 
 {{<description>}}
 Connect to the Internet faster and in a more secure way.
@@ -15,9 +15,9 @@ Connect to the Internet faster and in a more secure way.
 
 {{<plan type="all">}}
 
-The Cloudflare WARP client allows individuals to have a faster, more secure, and more private experience online. The WARP client sits between your device and the Internet, and has several connection modes to better suit different needs.
+The Khulnasoft WARP client allows individuals to have a faster, more secure, and more private experience online. The WARP client sits between your device and the Internet, and has several connection modes to better suit different needs.
 
-This documentation is for the consumer version of WARP. If you are using WARP with Cloudflare Zero Trust, refer to the [Zero Trust documentation](/cloudflare-one/connections/connect-devices/warp/).
+This documentation is for the consumer version of WARP. If you are using WARP with Khulnasoft Zero Trust, refer to the [Zero Trust documentation](/cloudflare-one/connections/connect-devices/warp/).
 
 ## Features
 
@@ -34,7 +34,7 @@ WARP is available to several operating systems, including iOS and Android.
 ## Related products
  
 {{<related header="1.1.1.1" href="/1.1.1.1/" product="1.1.1.1">}}
-1.1.1.1 is Cloudflare’s public DNS resolver. It offers a fast and private way to browse the Internet.
+1.1.1.1 is Khulnasoft’s public DNS resolver. It offers a fast and private way to browse the Internet.
 {{</related>}}
 
 {{<related header="WARP for Zero Trust" href="/cloudflare-one/connections/connect-devices/warp/" product="cloudflare-one">}}

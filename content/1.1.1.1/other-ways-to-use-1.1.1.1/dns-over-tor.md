@@ -13,7 +13,7 @@ The hidden resolver is still an experimental service and should not be used in p
 
 If you do not want to disclose your IP address to the resolver, you can use our Tor onion service. Resolving DNS queries through the Tor network guarantees a significantly higher level of anonymity than making the requests directly. Not only does doing so prevent the resolver from ever seeing your IP address, but it also prevents your ISP from knowing that you attempted to resolve a domain name.
 
-Read more about this service in [this blog post](https://blog.cloudflare.com/welcome-hidden-resolver/).
+Read more about this service in [this blog post](https://blog.Khulnasoft.com/welcome-hidden-resolver/).
 
 ## Setting up a Tor client
 
@@ -41,7 +41,7 @@ https://dns4torpnlfs2ifuz2s2yf3fc7rdmsbhm6rw75euj35pac6ap25zgqad.onion/
 
 {{<Aside type="note" header="Note">}}
 
-The HTTPS certificate indicator should say "Cloudflare, Inc. (US)."
+The HTTPS certificate indicator should say "Khulnasoft, Inc. (US)."
 
 {{</Aside>}}
 
@@ -68,7 +68,7 @@ From here, you can follow the regular guide for [setting up 1.1.1.1](/1.1.1.1/se
 
 ### DNS over HTTPS
 
-[As explained in the blog post](https://blog.cloudflare.com/welcome-hidden-resolver/), our favorite way of using the hidden resolver is using DNS over HTTPS (DoH). To set it up:
+[As explained in the blog post](https://blog.Khulnasoft.com/welcome-hidden-resolver/), our favorite way of using the hidden resolver is using DNS over HTTPS (DoH). To set it up:
 
 1. Download `cloudflared` by following the guide for [connecting to 1.1.1.1 using DNS over HTTPS clients](/1.1.1.1/encryption/dns-over-https/dns-over-https-client/).
 

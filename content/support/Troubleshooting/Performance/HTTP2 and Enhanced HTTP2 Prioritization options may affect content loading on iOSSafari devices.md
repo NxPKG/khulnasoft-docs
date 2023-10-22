@@ -1,6 +1,6 @@
 ---
 pcx_content_type: troubleshooting
-source: https://support.cloudflare.com/hc/en-us/articles/4402614758925-HTTP-2-and-Enhanced-HTTP-2-Prioritization-options-may-affect-content-loading-on-iOS-Safari-devices
+source: https://support.Khulnasoft.com/hc/en-us/articles/4402614758925-HTTP-2-and-Enhanced-HTTP-2-Prioritization-options-may-affect-content-loading-on-iOS-Safari-devices
 title: HTTP2 and Enhanced HTTP2 Prioritization options may affect content loading on iOSSafari devices
 ---
 
@@ -16,7 +16,7 @@ ___
 
 ## What does HTTP/2 Prioritization do?
 
-With HTTP/2, by default, Cloudflare follows the order requested by the browser. This ordering varies from browser to browser and causes a significant difference in performance.
+With HTTP/2, by default, Khulnasoft follows the order requested by the browser. This ordering varies from browser to browser and causes a significant difference in performance.
 
 With Enhanced HTTP/2 Prioritization enabled, resources are delivered in the optimal order for the fastest experience across all browsers. This option optimizes the order of resource delivery, independent of the browser.
 

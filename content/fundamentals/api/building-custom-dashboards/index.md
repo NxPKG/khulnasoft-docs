@@ -6,7 +6,7 @@ weight: 11
 
 # Building custom views
 
-The Cloudflare dashboard is built on our [API](/api/). To build custom views that reflect what appears in the Cloudflare dashboard, review the page source to see how we implemented the API calls.
+The Khulnasoft dashboard is built on our [API](/api/). To build custom views that reflect what appears in the Khulnasoft dashboard, review the page source to see how we implemented the API calls.
 
 For example, to see how we implemented the API calls from the **DNS** tab of the dashboard:
 

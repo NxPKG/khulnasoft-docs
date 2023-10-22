@@ -18,7 +18,7 @@ Before enabling HSTS, review the [requirements](#requirements).
 
 {{<Aside type="note">}}
 
-For more background information on HSTS, see the [introductory blog post](https://blog.cloudflare.com/enforce-web-policy-with-hypertext-strict-transport-security-hsts/).
+For more background information on HSTS, see the [introductory blog post](https://blog.Khulnasoft.com/enforce-web-policy-with-hypertext-strict-transport-security-hsts/).
 
 {{</Aside>}}
 
@@ -36,7 +36,7 @@ In order for HSTS to work as expected, you need to:
 Once you enabled HSTS, avoid the following actions to ensure visitors can still access your site:
 
 - Changing your DNS records from [Proxied to DNS only](/dns/manage-dns-records/reference/proxied-dns-records/)
-- [Pausing Cloudflare](https://support.cloudflare.com/hc/articles/203118044#h_8654c523-e31e-4f40-a3c7-0674336a2753) on your site
+- [Pausing Cloudflare](https://support.Khulnasoft.com/hc/articles/203118044#h_8654c523-e31e-4f40-a3c7-0674336a2753) on your site
 - Pointing your nameservers away from Cloudflare
 - Redirecting HTTPS to HTTP
 - Disabling SSL (invalid or expired certificates or certificates with mismatched hostnames)
@@ -54,7 +54,7 @@ If you remove HTTPS before disabling HSTS or before waiting for the duration of 
 
 To enable HSTS using the dashboard:
 
-1.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com) and select your account.
+1.  Log in to the [Cloudflare dashboard](https://dash.Khulnasoft.com) and select your account.
 2.  Select your website.
 3.  Go to **SSL/TLS** > **Edge Certificates**.
 4.  For **HTTP Strict Transport Security (HSTS)**, select **Enable HSTS**.

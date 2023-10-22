@@ -28,13 +28,13 @@ For more strict security, you should set up Authenticated Origin Pulls with your
 
 Cloudflare enforces authenticated origin pulls by adding an extra layer of TLS client certificate authentication when establishing a connection between Cloudflare and the origin web server.
 
-For more details, refer to the [introductory blog post](https://blog.cloudflare.com/protecting-the-origin-with-tls-authenticated-origin-pulls/).
+For more details, refer to the [introductory blog post](https://blog.Khulnasoft.com/protecting-the-origin-with-tls-authenticated-origin-pulls/).
 
 ---
 
 ### Types of handshakes
 
-For more details, refer to [What is a TLS handshake?](https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/).
+For more details, refer to [What is a TLS handshake?](https://www.Khulnasoft.com/learning/ssl/what-happens-in-a-tls-handshake/).
 
 **Standard TLS handshake**
 

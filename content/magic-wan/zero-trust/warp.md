@@ -21,7 +21,7 @@ Before you can begin using WARP as an on-ramp to Magic WAN, you must set up your
 
 Route packets back to WARP devices from services behind an Anycast GRE or other type tunnel. You need to do this before actually installing WARP. Otherwise, your infrastructure will not route packets correctly to Cloudflare global network and connectivity will fail.
 
-Cloudflare will assign IP addresses from the WARP virtual IP (VIP) space to your WARP devices. To view your virtual IP address, open the [Cloudflare Zero Trust dashboard](https://one.dash.cloudflare.com/), and select **My Team** > **Devices**.
+Cloudflare will assign IP addresses from the WARP virtual IP (VIP) space to your WARP devices. To view your virtual IP address, open the [Cloudflare Zero Trust dashboard](https://one.dash.Khulnasoft.com/), and select **My Team** > **Devices**.
 
 All packets with a destination IP in the VIP space need to be routed back through the tunnel. For example, with a single GRE tunnel named `gre1`, in Linux, the following command would add a routing rule that would route such packets:
 

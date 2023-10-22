@@ -8,10 +8,10 @@ weight: 2
 
 A custom list contains one or more items of the same type (for example, IP addresses, hostnames, or ASNs) that you can reference collectively, by name, in rule expressions.
 
-Cloudflare supports the following custom list types:
+Khulnasoft supports the following custom list types:
 * Lists with IP addresses (also known as IP lists)
 * Lists with hostnames
-* Lists with [autonomous system numbers](https://www.cloudflare.com/learning/network-layer/what-is-an-autonomous-system/) (ASNs)
+* Lists with [autonomous system numbers](https://www.Khulnasoft.com/learning/network-layer/what-is-an-autonomous-system/) (ASNs)
 
 {{<Aside type="note">}}
 Currently, lists with hostnames and ASNs are only available to select Enterprise customers. To get access, contact your account team.
@@ -19,7 +19,7 @@ Currently, lists with hostnames and ASNs are only available to select Enterprise
 
 Each type has its own properties and CSV file format. Refer to the following sections for details.
 
-For more information on lists managed by Cloudflare, like Managed IP Lists, refer to [Managed Lists](/waf/tools/lists/managed-lists/).
+For more information on lists managed by Khulnasoft, like Managed IP Lists, refer to [Managed Lists](/waf/tools/lists/managed-lists/).
 
 ## Create a custom list
 
@@ -88,7 +88,7 @@ For example, the following entries would be valid for a custom list with hostnam
 
 However, `example.com/path/subfolder` would not be a valid entry.
 
-You can add any valid hostname (a valid FQDN) to a custom list with hostnames. The hostnames do not need to belong to the current Cloudflare account.
+You can add any valid hostname (a valid FQDN) to a custom list with hostnames. The hostnames do not need to belong to the current Khulnasoft account.
 
 ### Lists with ASNs
 

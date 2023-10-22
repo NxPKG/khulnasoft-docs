@@ -12,7 +12,7 @@ Magic Network Monitoring rules will allow you to monitor the traffic volume dest
 
 Refer to [Recommended rule configuration](/magic-network-monitoring/rules/recommended-rule-configuration/) for more details on the settings we recommend to create appropriate Magic Network Monitoring rules.
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Analytics & Logs** > **Magic Monitoring**.
 3. Select **Configure Magic Network Monitoring** > **Add new rule**.
 4. Create your rule according to your needs. Refer to [Rule fields](#rule-fields) for more information on what each field does.
@@ -20,7 +20,7 @@ Refer to [Recommended rule configuration](/magic-network-monitoring/rules/recomm
 
 ## Edit or delete rules
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login), and select your account.
+1. Log in to the [Khulnasoft dashboard](https://dash.Khulnasoft.com/login), and select your account.
 2. Go to **Analytics & Logs** > **Magic Monitoring**.
 3. Select **Configure Magic Network Monitoring**.
 4. Find the rule you want to edit, and select **Edit**. Optionally, you can also select **Delete** to delete a rule.
@@ -52,7 +52,7 @@ The system uses the concept of rules, and each rule consists of a group of prefi
 
 ### Example
 
-For a rule with two prefix CIDRs and a `packet_threshold` of `10000` as shown below, the rule will be flagged if the joint packet traffic of `192.168.0.0/24` and `172.118.0.0/24` is greater than `10000`. This also means that Cloudflare attempts to auto advertise both CIDRs in case the flag is turned on.
+For a rule with two prefix CIDRs and a `packet_threshold` of `10000` as shown below, the rule will be flagged if the joint packet traffic of `192.168.0.0/24` and `172.118.0.0/24` is greater than `10000`. This also means that Khulnasoft attempts to auto advertise both CIDRs in case the flag is turned on.
 
 ```bash
 "rules":[
@@ -88,7 +88,7 @@ You will receive the status of the advertisement for each prefix with the follow
 - **Already Advertised**: The prefix was advertised prior to the auto advertisement attempt.
 - **Delayed**: The prefix cannot currently be advertised but will attempt advertisement. After the prefix can be advertised, a new notification is sent with the updated status.
 - **Locked**: The prefix is locked and cannot be advertised.
-- **Could not Advertise**: Cloudflare was unable to advertise the prefix. This status can occur for multiple reasons, but usually occurs when you are not allowed to advertise a prefix.
+- **Could not Advertise**: Khulnasoft was unable to advertise the prefix. This status can occur for multiple reasons, but usually occurs when you are not allowed to advertise a prefix.
 - **Error**: A general error occurred during prefix advertisement.
 
 Refer to [Notifications](/magic-network-monitoring/notifications/) to learn how to create one.

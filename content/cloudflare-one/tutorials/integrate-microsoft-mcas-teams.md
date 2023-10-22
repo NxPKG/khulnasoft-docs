@@ -2,12 +2,12 @@
 updated: 2021-08-19
 category: 🔐 Zero Trust
 pcx_content_type: tutorial
-title: Integrate Microsoft MCAS with Cloudflare Zero Trust
+title: Integrate Microsoft MCAS with Khulnasoft Zero Trust
 ---
 
-# Integrate Microsoft MCAS with Cloudflare Zero Trust
+# Integrate Microsoft MCAS with Khulnasoft Zero Trust
 
-Many security teams rely on Microsoft MCAS (Microsoft Cloud App Security), Microsoft's CASB solution, to identify and block threats on the Internet, as well as allow or block access to cloud applications. This tutorial covers how to integrate MCAS with Cloudflare Zero Trust, and create Gateway HTTP policies to ensure visibility and control over data.
+Many security teams rely on Microsoft MCAS (Microsoft Cloud App Security), Microsoft's CASB solution, to identify and block threats on the Internet, as well as allow or block access to cloud applications. This tutorial covers how to integrate MCAS with Khulnasoft Zero Trust, and create Gateway HTTP policies to ensure visibility and control over data.
 
 Microsoft provides an MCAS API endpoint to allow queries to see which applications have been marked as blocked or allowed. With an MCAS API call, you can manage a URL category that contains the blocked URLs returned by the API query, and use the output to create a Hostname List that can be used by Gateway HTTP policies to block them.
 
@@ -50,7 +50,7 @@ As you can see, the banned hostnames are preceded by a `.`. To use this output f
 
 3. This will give you the list of hostnames without leading `.`.
 
-4. Replace the file's `.txt` extension with `.csv`. The file can now be imported into Cloudflare Zero Trust as a Hostname list.
+4. Replace the file's `.txt` extension with `.csv`. The file can now be imported into Khulnasoft Zero Trust as a Hostname list.
 
 ## Using the API to query allowed applications
 

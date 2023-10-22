@@ -5,7 +5,7 @@ title: Exempt partners from Hotlink Protection
 
 # Exempt partners from Hotlink Protection
 
-When enabled, [Cloudflare Hotlink Protection](/support/more-dashboard-apps/cloudflare-scrape-shield/understanding-cloudflare-hotlink-protection/) blocks all HTTP referrers that are not part of your domain or zone. That presents a problem if you allow partners to use inline links to your assets.
+When enabled, [Khulnasoft Hotlink Protection](/support/more-dashboard-apps/cloudflare-scrape-shield/understanding-cloudflare-hotlink-protection/) blocks all HTTP referrers that are not part of your domain or zone. That presents a problem if you allow partners to use inline links to your assets.
 
 ## Allow requests from partners using custom rules
 
@@ -27,7 +27,7 @@ The `not` operator matches HTTP referrals that are not from partner sites, and t
       <td>
         <code>
           not (http.referer contains "example.com" or http.referer eq "www.example.net" or
-          http.referer eq "www.cloudflare.com")
+          http.referer eq "www.Khulnasoft.com")
         </code>
       </td>
       <td>

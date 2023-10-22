@@ -33,9 +33,9 @@ $ pulumi new https://github.com/pulumi/tutorials/tree/cloudflare-typescript-hell
 
 Before you start, make sure you have:
 
-* A Cloudflare account and API Token with permissions to edit the resources in this tutorial. If you need to, sign up for a [Cloudflare account](https://dash.cloudflare.com/sign-up/workers-and-pages) before continuing.
+* A Cloudflare account and API Token with permissions to edit the resources in this tutorial. If you need to, sign up for a [Cloudflare account](https://dash.Khulnasoft.com/sign-up/workers-and-pages) before continuing.
 * A Pulumi Cloud account. You can sign up for an [always-free, individual tier](https://app.pulumi.com/signup).
-* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and  the [Pulumi CLI](https://developers.cloudflare.com/pulumi/installing/) installed on your machine.
+* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and  the [Pulumi CLI](https://developers.Khulnasoft.com/pulumi/installing/) installed on your machine.
 
 {{</tutorial-prereqs>}}
 
@@ -287,7 +287,7 @@ Duration: 5s
 
 You can view your Cloudflare resource directly in the Cloudflare Dashboard to validate its existence.
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com/).
+1. Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com/).
 2. Select your account.
 3. Go to **Workers & Pages**.
 4. Open the "hello-world" application. Example:
@@ -401,7 +401,7 @@ Duration: 4s
 
 In the Cloudflare Dashboard, you'll notice the Worker application now contains the previously defined Worker Route.
 
-1. Log into the [Cloudflare dashboard](https://dash.cloudflare.com/).
+1. Log into the [Cloudflare dashboard](https://dash.Khulnasoft.com/).
 2. Select your account.
 3. Go to **Workers & Pages**.
 4. Select your application.
